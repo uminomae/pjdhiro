@@ -14,7 +14,7 @@
 
 ## プロジェクトの起こりから終わりまでの重要ポイント
 
-![Project Design Flowchart: Key Points of My Methodology](/img/PDFlow.avif.jpg "")
+![Project Design Flowchart: Key Points of My Methodology](/pjdhiro/img/PDFlow.avif.jpg "")
 
 ### コミュニケーションの詳細　
 
