@@ -1,5 +1,5 @@
 # _config.yml
-
+baseurl: "/pjdhiro"
 # テーマの設定（例：minima テーマを使用する場合）
 theme: minima
 
