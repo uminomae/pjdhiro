@@ -15,10 +15,14 @@
 ## プロジェクトの起こりから終わりまでの重要ポイント
 
 <img src="/pjdhiro/img/PDFlow.avif.jpg" alt="Project Design Flowchart: Key Points of My Methodology">
+<!-- 
+![Project Design Flowchart: Key Points of My Methodology](/pjdhiro/img/PDFlow.avif.jpg "") -->
 
 ### コミュニケーションの詳細　
 
-![Communication Flowchart: Key Points of My Methodology](/img/PD&ComFlow.avif.jpg "")
+<img src="/pjdhiro/img/PD&ComFlow.avif.jpg" alt="Communication Flowchart: Key Points of My Methodology">
+
+<!-- ![Communication Flowchart: Key Points of My Methodology](/img/PD&ComFlow.avif.jpg "") -->
 
 ## この記事を読むと「プロジェクト遂行能力」が上がるのか？
 
