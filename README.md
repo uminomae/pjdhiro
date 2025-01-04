@@ -5,7 +5,7 @@
 - Github pages 公開URL  
 https://uminomae.github.io/pjdhiro/
 
-- 本サイト下記のBLOGの内容について解説した際の対話をもとに構成されています  
+- 本サイトは下記のBLOGの内容について解説した際の対話をもとに構成されています  
 https://pjdhiro.blogspot.com/
 
 ## コンテンツの編集方法
