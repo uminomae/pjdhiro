@@ -28,4 +28,10 @@ defaults:
     scope:
       path: "" # プロジェクト内のすべてのファイルに適用
     values:
+      layout: default
       toc: true # デフォルトですべてのページに目次を表示
+  -
+    scope:
+      path: "word"
+    values:
+      permalink: /word/:basename/ # docsディレクトリ内のリンク形式
