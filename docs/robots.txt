@@ -1,1 +1,1 @@
-Sitemap: /pjdhiro/sitemap.xml
+Sitemap: https://uminomae.github.io/sitemap.xml
