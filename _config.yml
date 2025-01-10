@@ -35,3 +35,6 @@ defaults:
       path: "word"
     values:
       permalink: /word/:basename/ # docsディレクトリ内のリンク形式
+
+exclude:
+  - _markdown_only
