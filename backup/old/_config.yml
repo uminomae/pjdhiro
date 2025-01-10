@@ -1,0 +1,8 @@
+title: Project Design
+description: A description.
+baseurl: "" # サイトがサブディレクトリの場合、ここに指定
+url: "https://uminomae.github.io" # GitHub PagesのURL
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-feed
