@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: HOME
 ---
-# Welcome to My Jekyll Site
-This is the homepage of your Jekyll site.
+
+工事中
