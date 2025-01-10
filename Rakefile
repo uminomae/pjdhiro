@@ -7,15 +7,27 @@ require "shellwords"
 require "time"
 require "yaml"
 
-# Build and copy to docs/
 desc "Build site and copy to docs/"
 task :deploy do
   sh "bundle exec jekyll build"
   sh "rm -rf docs/*"       # docs ディレクトリをクリーンアップ
   sh "cp -r _site/* docs/" # _site の内容を docs にコピー
+  sh "mv docs/minimal-mistakes/* docs/" # minimal-mistakes 内のファイルを docs に移動
+  sh "rm -rf docs/minimal-mistakes" # minimal-mistakes フォルダを削除
   sh "touch docs/.nojekyll" # GitHub PagesでJekyllをスキップ
   puts "Site built and copied to docs/"
 end
+
+
+# # Build and copy to docs/
+# desc "Build site and copy to docs/"
+# task :deploy do
+#   sh "bundle exec jekyll build"
+#   sh "rm -rf docs/*"       # docs ディレクトリをクリーンアップ
+#   sh "cp -r _site/* docs/" # _site の内容を docs にコピー
+#   sh "touch docs/.nojekyll" # GitHub PagesでJekyllをスキップ
+#   puts "Site built and copied to docs/"
+# end
 
 # Serve the site locally
 desc "Build and preview the site locally"
@@ -217,8 +229,8 @@ file "README.md" => "package.json" do |t|
   File.write(t.name, content)
 end
 
-file "docs/_pages/home.md" => "package.json" do |t|
-  content = File.read(t.name)
-  content = content.gsub(/(\breleases\/tag\/|Latest release v)[\d.]+/, '\1' + package_json["version"])
-  File.write(t.name, content)
-end
+# file "docs/_pages/home.md" => "package.json" do |t|
+#   content = File.read(t.name)
+#   content = content.gsub(/(\breleases\/tag\/|Latest release v)[\d.]+/, '\1' + package_json["version"])
+#   File.write(t.name, content)
+# end
