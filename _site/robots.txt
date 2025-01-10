@@ -1,1 +1,1 @@
-Sitemap: /pjdhiro/sitemap.xml
+Sitemap: http://localhost:4000/pjdhiro/sitemap.xml
