@@ -6,3 +6,4 @@ gem "csv"
 gem "base64"
 gem "faraday-retry"
 gem "minimal-mistakes-jekyll"
+# gem "github-pages", group: :jekyll_plugins
