@@ -7,13 +7,21 @@ require "shellwords"
 require "time"
 require "yaml"
 
+# Build and copy to docs/
+desc "Build site and copy to docs/"
+task :deploy do
+  sh "bundle exec jekyll build"
+  sh "rm -rf docs/*"       # docs ディレクトリをクリーンアップ
+  sh "cp -r _site/* docs/" # _site の内容を docs にコピー
+  sh "touch docs/.nojekyll" # GitHub PagesでJekyllをスキップ
+  puts "Site built and copied to docs/"
+end
 
-# costum
+# Serve the site locally
 desc "Build and preview the site locally"
 task :go do
   sh "bundle exec jekyll serve"
 end
-
 
 # --------------default
 task :default => %i[copyright changelog js version]
