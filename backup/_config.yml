@@ -1,0 +1,40 @@
+# _config.yml
+baseurl: "/pjdhiro"
+# テーマの設定（例：minima テーマを使用する場合）
+theme: minima
+
+# Markdown処理エンジンの設定
+markdown: kramdown
+kramdown:
+  auto_ids: true
+
+# プラグインの設定
+plugins:
+  - jekyll-toc
+
+# 目次（TOC）のグローバル設定
+toc:
+  min_level: 1
+  max_level: 3
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_class: toc
+  sublist_class: toc-sublist
+  item_class: toc-entry
+
+# すべてのページにデフォルトで適用される設定
+defaults:
+  -
+    scope:
+      path: "" # プロジェクト内のすべてのファイルに適用
+    values:
+      layout: default
+      toc: true # デフォルトですべてのページに目次を表示
+  -
+    scope:
+      path: "word"
+    values:
+      permalink: /word/:basename/ # docsディレクトリ内のリンク形式
+
+exclude:
+  - _markdown_only
