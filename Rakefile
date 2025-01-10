@@ -1,4 +1,4 @@
-require "bundler/gem_tasks"
+# require "bundler/gem_tasks"
 require "jekyll"
 require "json"
 require "listen"
@@ -8,12 +8,14 @@ require "time"
 require "yaml"
 
 
+# costum
 desc "Build and preview the site locally"
 task :go do
   sh "bundle exec jekyll serve"
 end
 
 
+# --------------default
 task :default => %i[copyright changelog js version]
 
 package_json = JSON.parse(File.read("package.json"))
