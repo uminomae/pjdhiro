@@ -6,11 +6,6 @@ categories:
 tags:
   - Jekyll
 ---
-
-## 記事やページデータ(.mdファイル)は下記にまとめています。
-
-- 静的ページ [github](https://github.com/uminomae/pjdhiro/tree/main/_pages)
-- BLOG記事 [github](https://github.com/uminomae/pjdhiro/tree/main/_posts)
   
 ## 下記のスターターを利用しました
 
@@ -20,8 +15,8 @@ tags:
 ## 記事やページデータ(.mdファイル)は下記にまとめています
 
 - ローカル(手元のパソコン)で閲覧する際に活用ください。
-  - 静的ページ [github](https://github.com/uminomae/pjdhiro/tree/main/_pages)
-  - BLOG記事 [github](https://github.com/uminomae/pjdhiro/tree/main/_posts)
+  - 静的ページ [github](https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages)
+  - BLOG記事 [github](https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_posts)
 
 ## 本サイトについて
 

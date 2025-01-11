@@ -19,7 +19,10 @@ title: "about"
 
 ### 環境:Github pagesで公開
 
-- 下記のスターターを利用して構築しました
+- VS CODE & GitHub で編集
+  - テスト駆動開発的にCodeを日本語で書くような作成がしたい。
+    - ラフスケッチを起点に少しずつ修正を重ね、細部を整えています。
+- テーマは下記のスターターを利用
   - [Minimal Mistakes remote theme starter](https://github.com/new?template_name=mm-github-pages-starter&template_owner=mmistakes) で作成されたリポジトリのファイルを複製して使用しています。  
     - ※ドキュメント：[Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
@@ -27,7 +30,3 @@ title: "about"
 
 - 静的ページ [github](https://github.com/uminomae/pjdhiro/tree/main/_pages)
 - BLOG記事 [github](https://github.com/uminomae/pjdhiro/tree/main/_posts)
-
-### コンテンツの修正・更新
-
-- テスト駆動開発的に文章を作成してます。ラフスケッチを起点に少しずつ修正を重ね、細部を整えています。
