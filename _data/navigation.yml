@@ -5,16 +5,33 @@ main:
     url: /posts/
 
 docs:
-  - title: Pages
+  # - title: "Pages"
+  #   children:
+  - title: "感情処理"
+    url: /emotional-processing/
     children:
-      - title: "Project design"
+      - title: "瞑想"
+        url: /meditation/
+  - title: "作成中"
+    children:
+      - title: "情動伝染"
         url: /project-design/
-      - title: "About"
+      - title: "感情メタ認知"
+        url: /project-design/
+      - title: "心理的境界"
+        url: /project-design/
+      - title: "価値（認知・評価）"
+        url: /project-design/
+      - title: "受容"
+        url: /project-design/
+  - title: "General"
+    children:
+      - title: "サイトについて"
         url: /about/
   - title: "Posts"
     url: /posts/
     children:
-    - title: "Posts categories"
-      url: /categories/
-    - title: "Posts tags"
-      url: /tags/
+      - title: "Posts categories"
+        url: /categories/
+      - title: "Posts tags"
+        url: /tags/

@@ -1,7 +1,7 @@
 ---
 # _pages/about.md
 permalink: /about/
-title: "About"
+title: "about"
 # categories:
 #   - Information
 # tags:
