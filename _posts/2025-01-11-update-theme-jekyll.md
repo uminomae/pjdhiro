@@ -28,4 +28,4 @@ tags:
 ## 本サイトについて
 
 - [https://pjdhiro.blogspot.com/](https://pjdhiro.blogspot.com/)に記載した内容を、推敲&日本語で紹介することを目的としています。
-- 
+

@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+# GitHub Pages用（本番）
 gem "github-pages", group: :jekyll_plugins
 
 # gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
@@ -12,7 +13,8 @@ gem 'mutex_m'
 gem 'faraday-retry'
 # ----
 
-# If you have any plugins, put them here!
+
+# ローカル環境用
 group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-sitemap"

@@ -5,7 +5,13 @@ main:
     url: /categories/
   - title: "Posts tags"
     url: /tags/
-  - title: "About"
-    url: /about/
-  - title: "page-categories"
-    url: /Page-categories/
+  # - title: "About"
+  #   url: /about/
+  # - title: "page-categories"
+  #   url: /Page-categories/
+
+docs:
+  - title: Pages
+    children:
+      - title: "About"
+        url: /about/
