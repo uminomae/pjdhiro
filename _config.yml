@@ -12,6 +12,9 @@ search: true
 
 # Build settings
 markdown: kramdown
+kramdown:
+  toc_levels: 1..6  # 目次に含める見出しのレベルを指定
+
 remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
@@ -40,7 +43,7 @@ plugins:
 author:
   name   : "pjdhiro"
   avatar : "/assets/images/101631407.jpeg"
-  bio    : "工事中です"
+  bio    : "コンテンツを作成中です"
   links:
     - label: "blogspot"
       icon: "fas fa-fw fa-link"

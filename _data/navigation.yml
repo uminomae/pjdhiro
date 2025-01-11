@@ -15,3 +15,5 @@ docs:
     children:
       - title: "About"
         url: /about/
+      - title: "Project design"
+        url: /project-design/
