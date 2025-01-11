@@ -21,7 +21,7 @@ title: "Project design"
 
 ### プロジェクトデザイン:概要
 
-[![Project Design Flowchart](/assets/images/PDFlow.jpg)](/assets/images/PDFlow.jpg)
+[![Project Design Flowchart](../assets/images/PDFlow.jpg)](../assets/images/PDFlow.jpg)
 
 <!-- ![Project Design Flowchart](../assets/images/PDFlow.avif.jpg) -->
 
