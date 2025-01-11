@@ -1,4 +1,7 @@
-# 受容
+---
+permalink: /acceptance/
+title: "受容について"
+---
 
 ## 受容のプロセス
 
