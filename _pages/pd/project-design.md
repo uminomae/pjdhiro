@@ -47,7 +47,7 @@ title: "Project design"
   * 誤解・干渉
   * 符号化・構築
   * 伝達
-* 感情処理
+* [感情処理](/emotional-processing/)
   * [瞑想(準備・リセット)](/meditation/)
   * 情動伝染
   * 感情メタ認知
