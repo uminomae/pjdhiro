@@ -81,9 +81,13 @@ author:
     #   url: "https://instagram.com/"
 
 
+# ヘッダー設定
 header:
-  nav: main  # ヘッダーで使用するナビゲーション
+  nav: main  # データファイル _data/navigation.yml の main を参照
 
+# サイドバー設定
+sidebar:
+  nav: sidebar  # データファイル _data/sidebar.yml の sidebar を参照
 
 footer:
   links:
@@ -109,6 +113,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: sidebar
   # _pages
   - scope:
       path: "_pages"
@@ -120,6 +126,8 @@ defaults:
       # tags:
       #   - General
       author_profile: true
+      sidebar:
+        nav: sidebar
 
 category_archive:
   type: liquid
