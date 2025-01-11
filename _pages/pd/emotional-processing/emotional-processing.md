@@ -3,7 +3,7 @@ permalink: /emotional-processing/
 title: "感情処理"
 ---
 
-## 感情処理の流れ
+## 感情処理のキーポイント
 
 * 瞑想
 * 情動伝染
