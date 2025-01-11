@@ -21,7 +21,7 @@ title: "Project design"
 
 ### プロジェクトデザイン:概要
 
-[![Project Design Flowchart](/assets/images/PDFlow.avif.jpg)](/assets/images/PDFlow.avif.jpg)
+[![Project Design Flowchart](../assets/images/PDFlow.jpg)](../assets/images/PDFlow.jpg)
 
 <!-- ![Project Design Flowchart](../assets/images/PDFlow.avif.jpg) -->
 
@@ -36,7 +36,7 @@ title: "Project design"
 
 ### プロジェクトデザイン:コミュニケーションについて
 
-[![Communication Flowchart](../assets/images/PD&ComFlow.avif.jpg)](../assets/images/PD&ComFlow.avif.jpg)
+[![Communication Flowchart](../assets/images/PDComFlow.jpg)](../assets/images/PDComFlow.pg)
 
 <!-- <img src="../assets/img/PD&ComFlow.avif.jpg" alt="Communication Flowchart: Key Points of My Methodology"> -->
 
