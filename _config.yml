@@ -54,9 +54,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
-    - label: "GitHub"
+    - label: "GitHub pages/*.md"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/uminomae"
+      url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
 
 # ヘッダー設定
 header:
@@ -73,9 +73,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
-    - label: "GitHub"
+    - label: "GitHub pages/*.md"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/uminomae"
+      url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
 
 defaults:
   # _posts
