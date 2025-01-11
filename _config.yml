@@ -80,6 +80,11 @@ author:
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
+
+header:
+  nav: main  # ヘッダーで使用するナビゲーション
+
+
 footer:
   links:
     - label: "Twitter"
