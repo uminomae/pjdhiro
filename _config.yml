@@ -16,6 +16,9 @@
 title: Project Design
 email:
 description: >- # this means to ignore newlines until "baseurl:"
+locale: ja-JP  # ロケールを日本語に設定
+timezone: Asia/Tokyo  # 日本のタイムゾーンを設定
+lang: ja  # HTMLのlang属性を日本語に設定
 
 twitter_username: pjdhiro
 # github_username: username
