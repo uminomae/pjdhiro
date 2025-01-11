@@ -7,6 +7,8 @@ main:
 docs:
   # - title: "Pages"
   #   children:
+  - title: "Project design"
+    url: /project-design/
   - title: "感情処理"
     url: /emotional-processing/
     children:
