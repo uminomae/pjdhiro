@@ -46,7 +46,7 @@ plugins:
 author:
   name   : "pjdhiro"
   avatar : "/assets/images/101631407.jpeg"
-  bio    : "とりあえずざっくりと"
+  bio    : "とりあえずざっくりと。それから細部に。"
   links:
     - label: "EN blog@Blogspot"
       icon: "fas fa-fw fa-link"
