@@ -1,20 +1,31 @@
 require "rake"
 require "jekyll"
 
-# ローカルサーバーを起動
-desc "Build and preview the site locally"
-task :go do
-  sh "bundle install"
-  sh "bundle exec jekyll serve"
+
+desc "Clean _site directory"
+task :clean do
+  sh "rm -rf _site"
 end
 
-# サイトをビルドして docs/ にコピー
-desc "Build site and deploy to GitHub Pages"
-task :deploy do
-  # sh "bundle install"
+desc "Build the site"
+task :build do
   sh "bundle exec jekyll build"
-  sh "rm -rf docs/*"       # docs ディレクトリをクリーンアップ
-  sh "cp -r _site/* docs/" # _site の内容を docs にコピー
-  sh "touch docs/.nojekyll" # GitHub PagesでJekyllをスキップ
-  puts "Site built and copied to docs/"
 end
+
+# desc "Serve the site locally"
+# task :serve do
+#   sh "bundle exec jekyll serve"
+# end
+
+# 変更があったファイルのみ
+desc "Serve the site locally with incremental build"
+task :serve do
+  sh "bundle exec jekyll serve --incremental"
+end
+
+desc "Build and preview the site locally"
+task :go => [:clean, :build, :serve] do
+  puts "Site is being built and served..."
+end
+
+
