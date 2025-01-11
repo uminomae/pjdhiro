@@ -13,7 +13,7 @@ end
 
 desc "Serve the site locally"
 task :serve do
-  sh "bundle exec jekyll serve"
+  sh "bundle exec jekyll serve --watch --livereload"
 end
 
 desc "Build and preview the site locally"

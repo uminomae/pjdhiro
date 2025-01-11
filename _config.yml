@@ -5,10 +5,13 @@ locale: ja-JP  # ロケールを日本語に設定
 timezone: Asia/Tokyo  # 日本のタイムゾーンを設定
 lang: ja  # HTMLのlang属性を日本語に設定
 
+
 twitter_username: pjdhiro
 # github_username: username
-minimal_mistakes_skin: default
 search: true
+
+minimal_mistakes_skin: default
+# minimal_mistakes_skin: contrast
 
 # Build settings
 markdown: kramdown

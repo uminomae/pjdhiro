@@ -3,16 +3,14 @@ source "https://rubygems.org"
 # GitHub Pages用（本番）
 gem "github-pages", group: :jekyll_plugins
 
-# gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # 追加---
 gem 'mutex_m'
-# gem 'httpclient', '~> 2.8.2.3'
 gem 'faraday-retry'
+gem 'ostruct'
 # ----
-
 
 # ローカル環境用
 group :jekyll_plugins do
