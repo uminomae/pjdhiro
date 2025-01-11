@@ -48,7 +48,7 @@ author:
   avatar : "/assets/images/101631407.jpeg"
   bio    : "コンテンツを作成中です"
   links:
-    - label: "previous blog@blogspot"
+    - label: "EN blog@blogspot"
       icon: "fas fa-fw fa-link"
       url: "https://pjdhiro.blogspot.com/"
     - label: "pjdhiro@Facebook "  # Facebookを追加
@@ -57,7 +57,7 @@ author:
     - label: "pjdhiro@X/Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
-    - label: "GitHub pages/*.md"
+    - label: "pages/*.md@GitHub "
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
 
@@ -76,7 +76,7 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
-    - label: "GitHub pages/*.md"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
 
