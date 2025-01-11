@@ -1,4 +1,5 @@
 ---
+# _pages/about.md
 permalink: /about/
 title: "About"
 categories:

@@ -37,7 +37,9 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - backup/
+  - theme/
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
@@ -59,7 +61,7 @@ author:
   name   : "pjdhiro"
   # avatar : "/assets/images/bio-photo.jpg"
   avatar : "/assets/images/101631407.jpeg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "工事中です"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -116,3 +118,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+collections:
+  posts:
+    output: true
+  pages:
+    output: true

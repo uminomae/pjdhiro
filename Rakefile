@@ -24,7 +24,8 @@ task :serve do
 end
 
 desc "Build and preview the site locally"
-task :go => [:clean, :build, :serve] do
+task :go => [:build, :serve] do
+# task :go => [:clean, :build, :serve] do
   puts "Site is being built and served..."
 end
 

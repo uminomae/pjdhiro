@@ -1,4 +1,5 @@
 ---
+# _pages/category-archive.md
 title: "Posts by Category"
 layout: categories
 permalink: /categories/
