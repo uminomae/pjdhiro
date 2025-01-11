@@ -46,7 +46,7 @@ plugins:
 author:
   name   : "pjdhiro"
   avatar : "/assets/images/101631407.jpeg"
-  bio    : "コンテンツを作成中です"
+  bio    : "とりあえずざっくりと"
   links:
     - label: "EN blog@Blogspot"
       icon: "fas fa-fw fa-link"
