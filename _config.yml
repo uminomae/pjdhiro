@@ -42,39 +42,37 @@ author:
   avatar : "/assets/images/101631407.jpeg"
   bio    : "工事中です"
   links:
-    - label: "Website"
+    - label: "blogspot"
       icon: "fas fa-fw fa-link"
       url: "https://pjdhiro.blogspot.com/"
+    - label: "Facebook"  # Facebookを追加
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/pjdhiro"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
-
 
 # ヘッダー設定
 header:
   nav: main  # データファイル _data/navigation.yml の main を参照
 
-# サイドバー設定
-# sidebar:
-#   nav: sidebar  # データファイル _data/sidebar.yml の sidebar を参照
-
 footer:
   links:
+    - label: "blogspot"
+      icon: "fas fa-fw fa-link"
+      url: "https://pjdhiro.blogspot.com/"
+    - label: "Facebook"  # Facebookを追加
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/pjdhiro"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
