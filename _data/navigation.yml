@@ -3,7 +3,8 @@ main:
     url: /project-design/
   - title: "Posts"
     url: /posts/
-
+  - title: "About"
+    url: /about/
 docs:
   # - title: "Pages"
   #   children:
@@ -26,10 +27,6 @@ docs:
         url: /project-design/
       - title: "受容"
         url: /project-design/
-  - title: "General"
-    children:
-      - title: "サイトについて"
-        url: /about/
   - title: "Posts"
     url: /posts/
     children:
@@ -37,3 +34,7 @@ docs:
         url: /categories/
       - title: "Posts tags"
         url: /tags/
+  - title: "General"
+    children:
+      - title: "About"
+        url: /about/

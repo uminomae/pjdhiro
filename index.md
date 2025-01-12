@@ -1,15 +1,15 @@
 ---
 # layout: single
-# layout: home
+layout: home
 author_profile: true
 sidebar:
   nav: docs
-layout: splash
+# layout: splash
 title: "HOME"
 permalink: /
 feature_row:
   - title: "Project Design"
-    excerpt: "プロジェクトデザインについて"
+    excerpt: "プロジェクトデザイン"
     url: /project-design/
     btn_label: "Learn More"
     btn_class: "btn--primary"
@@ -29,12 +29,12 @@ feature_row:
 ## Get Started
 
 
-このサイトでは、プロジェクトデザインや心理的安全性に関する体験や知見を共有しています。  
-対人スキルや感情処理の視点を取り入れたアプローチを紹介します。
+このサイトでは、プロジェクトデザインに関する体験や知見を共有しています。  
+特に、対人スキルや感情処理の視点を取り入れたアプローチを紹介します。
 
 {% include feature_row %}
 
-## 最新のBLOG記事
+<!-- ## 最新のBLOG記事
 
 <ul>
   {% for post in site.posts limit:5 %}
@@ -43,4 +43,4 @@ feature_row:
       <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
