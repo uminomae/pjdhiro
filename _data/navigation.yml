@@ -6,19 +6,19 @@ main:
   - title: "About"
     url: /about/
 docs:
-  # - title: "Pages"
-  #   children:
   - title: "Project design"
-    url: /project-design/
+    children:
+      - title: "Project design: 概要"
+        url: /project-design/
   - title: "感情処理"
     url: /emotional-processing/
     children:
       - title: "瞑想"
         url: /meditation/
+      - title: "情動伝染"
+        url: /emotional-contagion/
   - title: "作成中"
     children:
-      - title: "情動伝染"
-        url: /project-design/
       - title: "感情メタ認知"
         url: /project-design/
       - title: "心理的境界"

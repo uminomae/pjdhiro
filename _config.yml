@@ -107,6 +107,7 @@ defaults:
         nav: docs
       toc: true
       toc_sticky: true
+      pagination: false
 
 category_archive:
   type: liquid

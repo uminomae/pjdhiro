@@ -1,6 +1,6 @@
 ---
 permalink: /project-design/
-title: "Project design"
+title: "Project design: 概要"
 
 ---
 
