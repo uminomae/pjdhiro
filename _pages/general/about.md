@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "about"
+description: ""
 # categories:
 #   - Information
 # tags:

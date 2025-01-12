@@ -1,6 +1,7 @@
 ---
 permalink: /emotional-contagion/
 title: "情動伝染"
+description: ""
 ---
 (随時更新中)
 

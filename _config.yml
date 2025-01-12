@@ -1,35 +1,51 @@
-title: Emotion Processing in Project Design
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-locale: ja-JP  # ロケールを日本語に設定
-timezone: Asia/Tokyo  # 日本のタイムゾーンを設定
-lang: ja  # HTMLのlang属性を日本語に設定
-
-twitter_username: pjdhiro
-# github_username: username
-search: true
-
-minimal_mistakes_skin: default
-remote_theme: mmistakes/minimal-mistakes
-markdown: kramdown
+# ---------------------------------------------------
+# サイト基本設定
+# ---------------------------------------------------
+title: "Emotion Processing in Project Design" # サイトのタイトル
+email: # サイトに関する連絡先メールアドレス
+locale: ja-JP  # サイトのロケール（日本語）
+timezone: Asia/Tokyo  # タイムゾーンを日本時間に設定
+lang: ja  # HTML の lang 属性
+search: true # サイト内検索の有効化
+# ---------------------------------------------------
+# SEO
+# ---------------------------------------------------
+description: "プロジェクトデザインに関する知見を共有するブログ"
+keywords: "プロジェクト管理, 感情処理, 共感, 心理的安全性"
+# ---------------------------------------------------
+# テーマ設定
+# ---------------------------------------------------
+remote_theme: mmistakes/minimal-mistakes # 使用するリモートテーマ
+minimal_mistakes_skin: default # Minimal Mistakes のスキン設定
+# ---------------------------------------------------
+# md設定
+# ---------------------------------------------------
+markdown: kramdown # Markdown 処理エンジン
 kramdown:
   toc_levels: 1..6  # 目次に含める見出しのレベルを指定
-
-# Outputting
+# ---------------------------------------------------
+# 出力設定
+# ---------------------------------------------------
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-
-include:
-  - _pages
-
-exclude:
+breadcrumbs: true
+# ---------------------------------------------------
+# ファイル設定
+# ---------------------------------------------------
+include: # インクルードするファイルまたはフォルダ
+  - _pages 
+exclude: # 除外するフォルダ
   - backup/
   - theme/
   - _posts/old/
   - minimal-mistakes-theme/
-
-# Plugins (previously gems:)
+# ---------------------------------------------------
+# SNS アカウント
+# ---------------------------------------------------
+twitter_username: pjdhiro
+# github_username: uminomae
+# ---------------------------------------------------
+# プラグイン設定
+# ---------------------------------------------------
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -37,7 +53,13 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
+  - jekyll-picture-tag
+  - jekyll-seo-tag
+  - jekyll-assets
+  - jekyll-algolia
+# ---------------------------------------------------
+# 作者情報
+# ---------------------------------------------------
 author:
   name   : "pjdhiro"
   avatar : "/assets/images/101631407.jpeg"
@@ -55,11 +77,11 @@ author:
     - label: ".mdファイル "
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
-
-# ヘッダー設定
+# ---------------------------------------------------
+# ヘッダー、フッター設定
+# ---------------------------------------------------
 header:
   nav: main  # データファイル _data/navigation.yml の main を参照
-
 footer:
   links:
     - label: "Blogspot"
@@ -74,25 +96,28 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
-
+# ---------------------------------------------------
+# デフォルト値設定
+# ---------------------------------------------------
 defaults:
-  # _posts
+  # BLOG投稿 (_posts)
   - scope:
       path: "" # 全ての投稿に適用
       type: posts
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      read_time: true # 読了時間を表示
+      comments: true # コメント機能の有効化
+      share: true # ソーシャル共有リンクの有効化
+      related: true # 関連記事の表示
       sidebar:
-        nav: docs # _data/navigation.ymlで編集
-      toc: true # table of contents
-      toc_sticky: true 
-      show_date: true # 投稿日時の表示を有効化
-  # _pages
+        nav: docs # _data/navigation.yml で定義されたサイドバーを使用
+      toc: true # 目次を表示
+      toc_sticky: true # 固定目次を有効化
+      show_date: true # 投稿日時の表示
+      # breadcrumbs: true # パンくずリストを有効化
+  # 静的ページ (_pages)
   - scope:
       path: "_pages"
       type: pages
@@ -108,30 +133,41 @@ defaults:
       toc: true
       toc_sticky: true
       pagination: false
-
+      breadcrumbs: false
+# ---------------------------------------------------
+# カテゴリ・タグアーカイブの設定
+# ---------------------------------------------------
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-
+# ---------------------------------------------------
+# コレクション設定
+# ---------------------------------------------------
 collections:
   posts:
     output: true
   pages:
     output: true
-
+# ---------------------------------------------------
+# 共有リンクの設定
+# ---------------------------------------------------
 share:
   twitter: true
   facebook: true
   linkedin: true
-
+# ---------------------------------------------------
+# 関連記事の設定
+# ---------------------------------------------------
 related_posts:
 enable: true
 headline: "Related Posts" # 見出しのテキスト（任意で変更可能）
 show_excerpt: true # 記事の概要を表示するか
-
+# ---------------------------------------------------
+# Google アナリティクス設定
+# ---------------------------------------------------
 google_analytics: 
   production: "G-WV09PB2PZT" # 本番環境の測定ID
   development: "" # 開発環境では空に設定

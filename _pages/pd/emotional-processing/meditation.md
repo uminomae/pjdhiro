@@ -1,11 +1,7 @@
 ---
 permalink: /meditation/
 title: "瞑想"
----
-
-<!-- * TOC
-{:toc} -->
-
+description: ""
 ---
 
 ## プロジェクトデザインにおける瞑想の役割

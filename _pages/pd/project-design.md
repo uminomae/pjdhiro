@@ -1,7 +1,7 @@
 ---
 permalink: /project-design/
 title: "Project design: 概要"
-
+description: "プロジェクトデザインの概要"
 ---
 
 <!-- * TOC

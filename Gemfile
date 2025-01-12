@@ -10,6 +10,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'mutex_m'
 gem 'faraday-retry'
 gem 'ostruct'
+gem "minimal-mistakes-jekyll"
 # ----
 
 # ローカル環境用

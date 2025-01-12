@@ -33,14 +33,3 @@ feature_row:
 特に、対人スキルや感情処理の視点を取り入れたアプローチを紹介します。
 
 {% include feature_row %}
-
-<!-- ## 最新のBLOG記事
-
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    </li>
-  {% endfor %}
-</ul> -->
