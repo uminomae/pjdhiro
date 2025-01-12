@@ -5,20 +5,15 @@ locale: ja-JP  # ロケールを日本語に設定
 timezone: Asia/Tokyo  # 日本のタイムゾーンを設定
 lang: ja  # HTMLのlang属性を日本語に設定
 
-
 twitter_username: pjdhiro
 # github_username: username
 search: true
 
 minimal_mistakes_skin: default
-# minimal_mistakes_skin: contrast
-
-# Build settings
+remote_theme: mmistakes/minimal-mistakes
 markdown: kramdown
 kramdown:
   toc_levels: 1..6  # 目次に含める見出しのレベルを指定
-
-remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
 permalink: /:categories/:title/
@@ -48,16 +43,16 @@ author:
   avatar : "/assets/images/101631407.jpeg"
   bio    : "まずはラフに下書きし、少しずつ細部を整えていく。完成目標は2026末"
   links:
-    - label: "EN blog@Blogspot"
+    - label: "Blogspot"
       icon: "fas fa-fw fa-link"
       url: "https://pjdhiro.blogspot.com/"
-    - label: "pjdhiro@Facebook "  # Facebookを追加
+    - label: "pjdhiro" 
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/pjdhiro"
-    - label: "pjdhiro@X/Twitter"
+    - label: "pjdhiro"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/pjdhiro"
-    - label: "pages/*.md@GitHub "
+    - label: ".mdファイル "
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
 
@@ -83,7 +78,7 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "" # 全ての投稿に適用
       type: posts
     values:
       layout: single
@@ -93,9 +88,10 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: docs
-      toc: true
-      toc_sticky: true
+        nav: docs # _data/navigation.ymlで編集
+      toc: true # table of contents
+      toc_sticky: true 
+      show_date: true # 投稿日時の表示を有効化
   # _pages
   - scope:
       path: "_pages"
@@ -124,3 +120,17 @@ collections:
     output: true
   pages:
     output: true
+
+share:
+  twitter: true
+  facebook: true
+  linkedin: true
+
+related_posts:
+enable: true
+headline: "Related Posts" # 見出しのテキスト（任意で変更可能）
+show_excerpt: true # 記事の概要を表示するか
+
+google_analytics: 
+  production: "G-WV09PB2PZT" # 本番環境の測定ID
+  development: "" # 開発環境では空に設定
