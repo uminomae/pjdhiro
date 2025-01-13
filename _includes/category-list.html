@@ -6,17 +6,23 @@
 {% endcase %}
 
 {% assign categories_sorted = page.categories | sort_natural %}
+<!-- <p>DEBUG: categories_sorted = {{ categories_sorted | join: ', ' }}</p> -->
+
+{% assign base_url = site.baseurl | default: '' %}
+<!-- <p>DEBUG: base_url = {{ base_url }}</p> -->
 
 <p class="page__taxonomy">
   <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
   <span itemprop="keywords">
   {% for category_word in categories_sorted %}
     {% if page.collection == 'pages' %}
-      <a href="/pages-categories/#{{ category_word | slugify }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>
+      {% assign link_url = base_url | append: '/pages-categories/' | append: path_type | append: category_word %}
+      <!-- <p>DEBUG: link_url = {{ link_url }}</p> -->
+      <a href="{{ link_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>
     {% else %}
       <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>
     {% endif %}
-    {% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% unless forloop.last %}<span class="sep"> or </span>{% endunless %}
   {% endfor %}
   </span>
 </p>
