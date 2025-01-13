@@ -2,7 +2,7 @@
 permalink: /project-design/
 title: "Project designとは"
 description: "プロジェクトデザインの概要"
-date: 2025-01-11
+date: 2025-01-14
 categories:
   - Project design
 ---
@@ -47,7 +47,7 @@ categories:
 
 ### プロジェクトデザイン:コミュニケーション
 
-[![Communication Flowchart](../assets/images/PDComFlow.jpg)](../assets/images/PDComFlow.pg)
+[![Communication Flowchart](../assets/images/PDComFlow.jpg)](../assets/images/PDComFlow.jpg)
 
 <!-- <img src="../assets/img/PD&ComFlow.avif.jpg" alt="Communication Flowchart: Key Points of My Methodology"> -->
 
