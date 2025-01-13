@@ -2,6 +2,8 @@
 permalink: /word-project/
 title: "用語: Project"
 date: 2024-12-31
+categories:
+  - 用語
 ---
 
 <!-- * TOC

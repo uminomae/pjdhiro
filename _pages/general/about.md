@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 description: ""
 categories:
-  - general
+  - General
 date: 2025-01-11
 ---
 

@@ -2,6 +2,8 @@
 permalink: /dialogue-acceptance/
 title: "対話: 受容について"
 date: 2024-12-31
+categories:
+  - 対話
 ---
 
 ## 受容のプロセス

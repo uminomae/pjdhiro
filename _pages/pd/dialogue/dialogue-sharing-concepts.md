@@ -2,6 +2,8 @@
 permalink: /dialogue-sharing-concepts/
 title: "対話: 概念を共有するには？"
 date: 2024-12-31
+categories:
+  - 対話
 ---
 
 ## 概念の共有についてどう思いますか？, 共有するには？  
