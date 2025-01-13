@@ -133,7 +133,7 @@ defaults:
       toc: true
       toc_sticky: true
       pagination: false
-      breadcrumbs: false
+      breadcrumbs: true
       exclude_from_yearly: false
 # ---------------------------------------------------
 # カテゴリ・タグアーカイブの設定

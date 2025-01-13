@@ -12,10 +12,14 @@ categories:
 
 ## プロジェクトデザインとは
 
+{: .notice--info}
+このページは、プロジェクトデザインの概要を示すと同時に、サイト内の目次としても機能します。
+本サイトでは、特に、感情や心理面に重点を置いています。
+
 ### 定義
 
-* プロジェクトの管理方法の構想・設計  
-* 設計の実行・管理  
+* プロジェクトの構想・設計・実行  
+* プロジェクトの実行・管理方法の構想・設計  
 
 ### 行動
 
@@ -36,15 +40,18 @@ categories:
 
 プロジェクトでは、非物質的な側面を重視する「コミュニケーション」と、物質的な側面を重視する「環境適応」を行います。プロジェクトデザインでは、これらを事前に構想・計画し、実行しながら適宜修正・管理する方法を検討します。
 
-「環境適応」は「PMBOK7」で詳しく解説されているため、ここでは「コミュニケーション」に焦点を当てて説明します。  
+{: .notice--info}
+「環境適応」については「PMBOK第7版」で詳しく説明されています。このサイトではその解説を省き、「コミュニケーション」や「対人スキル」に焦点を当てて掘り下げます。  
 [参考:【PMBOK - Wikipedia】](https://ja.wikipedia.org/wiki/PMBOK)  
 [参考:【界隈がざわつくほど超進化したPMBOK第7版の解説【プロジェクトマネジメント】｜Miz Kushida】](https://note.com/miz_kushida/n/n103a7da460c5)
 
-### プロジェクトデザイン:コミュニケーションについて
+### プロジェクトデザイン:コミュニケーション
 
 [![Communication Flowchart](../assets/images/PDComFlow.jpg)](../assets/images/PDComFlow.pg)
 
 <!-- <img src="../assets/img/PD&ComFlow.avif.jpg" alt="Communication Flowchart: Key Points of My Methodology"> -->
+
+#### キーワード
 
 * 情報処理
   * 受信
