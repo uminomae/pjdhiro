@@ -8,18 +8,18 @@ sidebar:
 title: "HOME"
 permalink: /
 feature_row:
-  - title: "Project Design"
-    excerpt: "プロジェクトデザイン"
+  - title: "Project<br>Design<br>Overview"
+    excerpt: "プロジェクトデザインとは"
     url: /project-design/
     btn_label: "Learn More"
     btn_class: "btn--primary"
-  - title: "Posts"
-    excerpt: "ブログ記事"
-    url: /categories/
+  - title: "Emotion<br>Processing<br>Insights"
+    excerpt: "感情処理について"
+    url: /emotional-processing/
     posts: true
-    btn_label: "View Posts"
+    btn_label: "Learn More"
     btn_class: "btn--primary"
-  - title: "About"
+  - title: "About<br>site<br>Details"
     excerpt: "このサイトについて"
     url: /about/
     btn_label: "Read More"
@@ -27,7 +27,6 @@ feature_row:
 ---
 
 ## Get Started
-
 
 このサイトでは、プロジェクトデザインに関する体験や知見を共有しています。  
 特に、対人スキルや感情処理の視点を取り入れたアプローチを紹介します。

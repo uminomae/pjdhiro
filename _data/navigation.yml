@@ -3,14 +3,12 @@ main:
     url: /project-design/
   - title: "Posts"
     url: /posts/
+  - title: "Pages"
+    url: /pages-year/
   # - title: "Pages"
   #   url: /page-categories/
 docs:
-  - title: "General"
-    children:
-      - title: "About"
-        url: /about/
-  - title: "Project design"
+  - title: "プロジェクトデザインとは"
     url: /project-design/
     # children:
     #   - title: "Project design: 概要"
@@ -32,16 +30,22 @@ docs:
         url: /project-design/
       - title: "受容"
         url: /project-design/
+  - title: "General"
+    children:
+      - title: "About site"
+        url: /about/
   - title: "Posts"
     children:
-      - title: "Posts by Year"
+      - title: "Posts by year"
         url: /posts/
       - title: "Posts categories"
         url: /categories/
       - title: "Posts tags"
         url: /tags/
   - title: "Pages"
-    url: /pages-year/
+    # url: /pages-year/
     children:
+      - title: "Pages by year"
+        url: /pages-year/
       - title: "Pages categories"
         url: /pages-categories/
