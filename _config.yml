@@ -1,7 +1,9 @@
 # ---------------------------------------------------
 # サイト基本設定
 # ---------------------------------------------------
-baseurl: "/pjdhiro" # リポジトリ名がURLに含まれる場合
+baseurl: "/pjdhiro" # リポジトリ名
+url: "https://uminomae.github.io" # GitHub PagesのURL
+
 title: "Emotion Processing in Project Design" # サイトのタイトル
 email: # サイトに関する連絡先メールアドレス
 locale: ja-JP  # サイトのロケール（日本語）

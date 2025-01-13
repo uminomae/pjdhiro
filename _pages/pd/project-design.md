@@ -60,7 +60,7 @@ categories:
   * 符号化・構築
   * 伝達
 * [感情処理](/emotional-processing/)
-  * [瞑想(準備・リセット)](/meditation/)
+  * [瞑想(準備・リセット)](/smeditation/)
   * 情動伝染
   * 感情メタ認知
   * 心理的境界

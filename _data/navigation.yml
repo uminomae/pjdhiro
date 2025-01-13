@@ -18,7 +18,7 @@ docs:
     children:
       - title: "瞑想"
         url: /meditation/
-      - title: "情動伝染(作成中)"
+      - title: "情動伝染"
         url: /emotional-contagion/
   - title: "作成中"
     children:
