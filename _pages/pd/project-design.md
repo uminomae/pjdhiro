@@ -1,6 +1,6 @@
 ---
 permalink: /project-design/
-title: "Project design"
+title: "Project designとは"
 description: "プロジェクトデザインの概要"
 date: 2025-01-11
 categories:
@@ -10,7 +10,7 @@ categories:
 <!-- * TOC
 {:toc} -->
 
-## プロジェクトデザインとは
+<!-- ## プロジェクトデザインとは -->
 
 {: .notice--info}
 このページは、プロジェクトデザインの概要を示すと同時に、サイト内の目次としても機能します。
