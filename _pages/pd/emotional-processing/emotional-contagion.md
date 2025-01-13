@@ -2,6 +2,9 @@
 permalink: /emotional-contagion/
 title: "情動伝染"
 description: ""
+categories:
+  - 感情処理
+date: 2025-01-13
 ---
 (随時更新中)
 

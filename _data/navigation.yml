@@ -3,13 +3,27 @@ main:
     url: /project-design/
   - title: "Posts"
     url: /posts/
-  - title: "About"
-    url: /about/
+  # - title: "Pages"
+  #   url: /page-categories/
+  # - title: "About"
+  #   url: /about/
+    # children:
+    #   - title: "Posts by Year"
+    #     url: /posts/
+    #   - title: "Posts categories"
+    #     url: /categories/
+    #   - title: "Posts tags"
+    #     url: /tags/
 docs:
-  - title: "Project design"
+  - title: "General"
     children:
-      - title: "Project design: 概要"
-        url: /project-design/
+      - title: "About"
+        url: /about/
+  - title: "Project design"
+    url: /project-design/
+    # children:
+    #   - title: "Project design: 概要"
+    #     url: /project-design/
   - title: "感情処理"
     url: /emotional-processing/
     children:
@@ -28,13 +42,16 @@ docs:
       - title: "受容"
         url: /project-design/
   - title: "Posts"
-    url: /posts/
+    # url: /posts/
     children:
+      - title: "Posts by Year"
+        url: /posts/
       - title: "Posts categories"
         url: /categories/
       - title: "Posts tags"
         url: /tags/
-  - title: "General"
+  - title: "Pages"
+    # url: /pages/
     children:
-      - title: "About"
-        url: /about/
+      - title: "Pages categories"
+        url: /pages-categories/

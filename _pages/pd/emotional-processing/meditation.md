@@ -2,6 +2,9 @@
 permalink: /meditation/
 title: "瞑想"
 description: ""
+categories:
+  - 感情処理
+date: 2025-01-12
 ---
 
 ## プロジェクトデザインにおける瞑想の役割

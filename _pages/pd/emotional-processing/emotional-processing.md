@@ -2,6 +2,10 @@
 permalink: /emotional-processing/
 title: "感情処理"
 description: ""
+categories:
+  - Project design
+  - 感情処理
+date: 2025-01-12
 ---
 (随時更新中)
 

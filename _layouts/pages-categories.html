@@ -1,0 +1,33 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign taxonomies = site.pages | map: "categories" | compact | uniq | sort %}
+<ul class="taxonomy__index">
+  {% for category in taxonomies %}
+    <li>
+      <a href="#{{ category | slugify }}">
+        {{ category }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="taxonomy__entries">
+  {% for category in taxonomies %}
+    <section id="{{ category | slugify }}">
+      <h2 class="taxonomy__title">{{ category }}</h2>
+      {% assign pages_in_category = site.pages | where: "categories", category %}
+      <ul>
+        {% for page in pages_in_category %}
+          <li>
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>
+

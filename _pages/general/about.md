@@ -1,11 +1,10 @@
 ---
 permalink: /about/
-title: "about"
+title: "About"
 description: ""
-# categories:
-#   - Information
-# tags:
-#   - About
+categories:
+  - general
+date: 2025-01-11
 ---
 
 ## 目的・意欲
@@ -23,8 +22,7 @@ description: ""
 ### 環境:Github pagesで公開
 
 - VS CODE & GitHub で編集
-  - テスト駆動開発的にCodeを日本語で書くような作成がしたい。
-    - ラフスケッチを起点に少しずつ修正を重ね、細部を整えています。
+  - テスト駆動開発的に、ラフスケッチを起点に少しずつ修正を重ね、細部を整えています。
 - テーマは下記のスターターを利用
   - [Minimal Mistakes remote theme starter](https://github.com/new?template_name=mm-github-pages-starter&template_owner=mmistakes) で作成されたリポジトリのファイルを複製して使用しています。  
     - ※ドキュメント：[Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)

@@ -1,0 +1,27 @@
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+<ul class="taxonomy__index">
+  {% for item in include.taxonomies %}
+    <li>
+      <a href="#{{ item | slugify }}">
+        {{ item }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="taxonomy__entries">
+  {% for taxonomy in include.taxonomies %}
+    <section id="{{ taxonomy | slugify }}">
+      <h2 class="taxonomy__title">{{ taxonomy }}</h2>
+      {% assign pages_in_taxonomy = site.pages | where: "categories", taxonomy %}
+      <ul>
+        {% for page in pages_in_taxonomy %}
+          <li>
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>

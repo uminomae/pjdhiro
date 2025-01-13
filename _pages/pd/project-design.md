@@ -1,7 +1,10 @@
 ---
 permalink: /project-design/
-title: "Project design: 概要"
+title: "Project design"
 description: "プロジェクトデザインの概要"
+date: 2025-01-11
+categories:
+  - Project design
 ---
 
 <!-- * TOC
