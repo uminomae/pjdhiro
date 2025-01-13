@@ -1,0 +1,36 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<!-- 年ごとのインデックスリスト（新しい順） -->
+<ul class="taxonomy__index">
+  {% assign pages_in_year = site.pages | where: "exclude_from_yearly", false | group_by_exp: "page", "page.date | date: '%Y'" | sort: "name" | reverse %}
+  {% for year in pages_in_year %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- 各年のページ一覧（新しい順） -->
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% for year in pages_in_year %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      <ul>
+        {% assign sorted_pages = year.items | sort: "date" | reverse %}
+        {% for page in sorted_pages %}
+          <li>
+            <h3><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}

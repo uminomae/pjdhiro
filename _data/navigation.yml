@@ -5,15 +5,6 @@ main:
     url: /posts/
   # - title: "Pages"
   #   url: /page-categories/
-  # - title: "About"
-  #   url: /about/
-    # children:
-    #   - title: "Posts by Year"
-    #     url: /posts/
-    #   - title: "Posts categories"
-    #     url: /categories/
-    #   - title: "Posts tags"
-    #     url: /tags/
 docs:
   - title: "General"
     children:
@@ -42,7 +33,6 @@ docs:
       - title: "受容"
         url: /project-design/
   - title: "Posts"
-    # url: /posts/
     children:
       - title: "Posts by Year"
         url: /posts/
@@ -51,7 +41,7 @@ docs:
       - title: "Posts tags"
         url: /tags/
   - title: "Pages"
-    # url: /pages/
+    url: /pages-year/
     children:
       - title: "Pages categories"
         url: /pages-categories/

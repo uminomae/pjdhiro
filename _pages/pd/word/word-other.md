@@ -1,6 +1,7 @@
 ---
 permalink: /word-other/
 title: "用語: その他"
+date: 2024-12-31
 ---
 
 # 言葉の定義

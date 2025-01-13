@@ -1,6 +1,7 @@
 ---
 permalink: /dialogue-project-design/
 title: "対話: プロジェクトデザイン"
+date: 2024-12-31
 ---
 
 * TOC
