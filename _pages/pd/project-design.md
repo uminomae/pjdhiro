@@ -61,7 +61,7 @@ categories:
   * 伝達
 * [感情処理]({{ '/emotional-processing/' | relative_url }})
   * [瞑想]({{ '/meditation/' | relative_url }})
-  * 情動伝染
+  * [情動伝染]({{ '/emotional-contagion/' | relative_url }})
   * 感情メタ認知
   * 心理的境界
   * 価値

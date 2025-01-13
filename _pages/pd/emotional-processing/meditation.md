@@ -31,7 +31,7 @@ date: 2025-01-12
 ## 瞑想とは：細かく感じること
 
 瞑想の形式や方法は、宗教や文化によって多様であり、その歴史は古代文明にまで遡ります。多様な文化や宗教的伝統において、瞑想はさまざまな形で実践されてきました。  
-参考：[瞑想 - Wikipedia](https://en.wikipedia.org/wiki/Meditation)
+[参考：瞑想 - Wikipedia](https://en.wikipedia.org/wiki/Meditation)
 
 ここで取り上げる瞑想は、私自身の経験と背景に基づいたものです。
 
