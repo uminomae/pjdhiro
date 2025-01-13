@@ -25,6 +25,8 @@ minimal_mistakes_skin: default # Minimal Mistakes のスキン設定
 # ---------------------------------------------------
 markdown: kramdown # Markdown 処理エンジン
 kramdown:
+  input: GFM
+  auto_ids: true
   toc_levels: 1..6  # 目次に含める見出しのレベルを指定
 # ---------------------------------------------------
 # 出力設定
