@@ -23,13 +23,17 @@ docs:
   - title: "作成中"
     children:
       - title: "感情メタ認知"
-        url: /project-design/
+        url: /emotional-metacognition/
       - title: "心理的境界"
-        url: /project-design/
+        url: /personal-boundaries/
       - title: "価値（認知・評価）"
-        url: /project-design/
+        url: /value/
       - title: "受容"
-        url: /project-design/
+        url: /acceptance/
+  - title: "対話"
+    url: /pages-categories/dialogue/
+  - title: "用語"
+    url: /pages-categories/word/
   - title: "General"
     children:
       - title: "About site"

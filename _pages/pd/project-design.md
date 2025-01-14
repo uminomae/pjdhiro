@@ -51,6 +51,17 @@ categories:
 
 <!-- <img src="../assets/img/PD&ComFlow.avif.jpg" alt="Communication Flowchart: Key Points of My Methodology"> -->
 
+
+#### 情報処理と感情処理
+
+コミュニケーションには大きく二つの側面があります。  
+
+1. 耳や目で捉える、言葉や情報の側面
+2. 心の反応を通じて感じ取る、感情の側面
+
+言葉や記号を用いた情報の伝達や理解については、数学や情報科学で詳しく扱われています。
+ここでは、「感情処理」に焦点を当てて説明します。
+
 #### キーワード
 
 * 情報処理
@@ -62,17 +73,7 @@ categories:
 * [感情処理]({{ '/emotional-processing/' | relative_url }})
   * [瞑想]({{ '/meditation/' | relative_url }})
   * [情動伝染]({{ '/emotional-contagion/' | relative_url }})
-  * 感情メタ認知
-  * 心理的境界
-  * 価値
-  * 受容
-
-#### 情報処理と感情処理
-
-コミュニケーションには大きく二つの側面があります。  
-
-1. 耳や目で捉える、言葉や情報の側面
-2. 心の反応を通じて感じ取る、感情の側面
-
-言葉や記号を用いた情報の伝達や理解については、数学や情報科学で詳しく扱われています。
-ここでは、「感情処理」に焦点を当てて説明します。
+  * [感情メタ認知]({{ '/emotional-metacognition/' | relative_url }})
+  * [心理的境界]({{ '/personal-boundaries/' | relative_url }})
+  * [価値]({{ '/value/' | relative_url }})
+  * [受容]({{ '/acceptance/' | relative_url }})
