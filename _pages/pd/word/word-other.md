@@ -4,6 +4,12 @@ title: "用語: その他"
 date: 2024-12-31
 categories:
   - 用語
+sidebar:
+  nav: docs
+  nav2: ""
+  nav3: cat-design-topics
+  nav4: ""
+  nav5: ""
 ---
 
 ## 投影の比喩：プロジェクター

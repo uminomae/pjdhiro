@@ -4,8 +4,15 @@ title: "用語: Project"
 date: 2024-12-31
 categories:
   - 用語
+sidebar:
+  nav: docs
+  nav2: ""
+  nav3: cat-design-topics
+  nav4: ""
+  nav5: ""
 ---
-
+<!-- <p>DEBUG: Categories = {{ page.categories | join: ', ' }}</p>
+<p>DEBUG: Sidebar = {{ page.sidebar }}</p> -->
 <!-- * TOC
 {:toc} -->
 

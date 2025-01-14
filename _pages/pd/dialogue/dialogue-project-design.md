@@ -4,6 +4,12 @@ title: "対話: プロジェクトデザイン"
 date: 2024-12-31
 categories:
   - 対話
+sidebar:
+  nav: docs
+  nav2: ""
+  nav3: cat-design-topics
+  nav4: ""
+  nav5: ""
 ---
 
 <!-- * TOC

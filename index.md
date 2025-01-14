@@ -4,6 +4,11 @@ layout: home
 author_profile: true
 sidebar:
   nav: docs
+  nav2: ""
+  nav3: ""
+  nav4: cat-general
+  nav5: ""
+
 # layout: splash
 title: "HOME"
 permalink: /

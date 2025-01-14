@@ -5,6 +5,12 @@ description: "プロジェクトデザインの概要"
 date: 2025-01-14
 categories:
   - Project design
+sidebar:
+  nav: docs
+  nav2: cat-emotional-processing
+  nav3: cat-design-topics
+  nav4: ""
+  nav5: ""
 ---
 
 <!-- * TOC

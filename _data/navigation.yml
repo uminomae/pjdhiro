@@ -1,18 +1,16 @@
 main:
-  - title: "Project design"
-    url: /project-design/
+  # - title: "Project design"
+  #   url: /project-design/
   - title: "Posts"
     url: /posts/
   - title: "Pages"
     url: /pages-year/
-  # - title: "Pages"
-  #   url: /page-categories/
+
 docs:
   - title: "プロジェクトデザインとは"
     url: /project-design/
-    # children:
-    #   - title: "Project design: 概要"
-    #     url: /project-design/
+
+cat-emotional-processing:
   - title: "感情処理"
     url: /emotional-processing/
     children:
@@ -30,14 +28,30 @@ docs:
         url: /value/
       - title: "受容"
         url: /acceptance/
-  - title: "対話"
-    url: /pages-categories/dialogue/
-  - title: "用語"
-    url: /pages-categories/word/
+
+cat-design-topics:
+  - title: "Design Topics"
+    children:
+    - title: "対話"
+      url: /pages-categories/dialogue/
+    - title: "用語"
+      url: /pages-categories/word/
+
+cat-general:
   - title: "General"
     children:
       - title: "About site"
         url: /about/
+
+pages-cat:
+  - title: "Pages"
+    children:
+      - title: "Pages by year"
+        url: /pages-year/
+      - title: "Pages categories"
+        url: /pages-categories/
+
+posts-cat:
   - title: "Posts"
     children:
       - title: "Posts by year"
@@ -46,10 +60,3 @@ docs:
         url: /categories/
       - title: "Posts tags"
         url: /tags/
-  - title: "Pages"
-    # url: /pages-year/
-    children:
-      - title: "Pages by year"
-        url: /pages-year/
-      - title: "Pages categories"
-        url: /pages-categories/

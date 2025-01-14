@@ -118,6 +118,10 @@ defaults:
       related: true # 関連記事の表示
       sidebar:
         nav: docs # _data/navigation.yml で定義されたサイドバーを使用
+        nav2: ""
+        nav3: ""
+        nav4: ""
+        nav5: posts-cat
       toc: true # 目次を表示
       toc_sticky: true # 固定目次を有効化
       show_date: true # 投稿日時の表示
@@ -128,18 +132,38 @@ defaults:
       type: pages
     values:
       layout: single
-      # categories:
-      #   - Pages
-      # tags:
-      #   - General
       author_profile: true
       sidebar:
         nav: docs
+        nav2: ""
+        nav3: ""
+        nav4: ""
+        nav5: pages-cat
       toc: true
       toc_sticky: true
       pagination: false
       breadcrumbs: true
       exclude_from_yearly: false
+  - scope:
+      path: "_pages"
+      type: pages
+      categories: 
+        - 感情処理
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: docs
+        nav2: cat-emotional-processing
+        nav3: ""
+        nav4: ""
+        nav5: ""
+      toc: true
+      toc_sticky: true
+      pagination: false
+      breadcrumbs: true
+      exclude_from_yearly: false
+
 # ---------------------------------------------------
 # カテゴリ・タグアーカイブの設定
 # ---------------------------------------------------
