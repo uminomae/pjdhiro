@@ -1,6 +1,6 @@
 main:
-  # - title: "Project design"
-  #   url: /project-design/
+  - title: "Project design"
+    url: /project-design/
   - title: "Posts"
     url: /posts/
   - title: "Pages"

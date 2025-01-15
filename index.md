@@ -4,8 +4,8 @@ layout: home
 author_profile: true
 sidebar:
   nav: docs
-  nav2: ""
-  nav3: ""
+  nav2: cat-emotional-processing
+  nav3: cat-design-topics
   nav4: cat-general
   nav5: ""
 
