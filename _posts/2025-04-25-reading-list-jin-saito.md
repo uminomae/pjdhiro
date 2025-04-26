@@ -1,6 +1,6 @@
 ---
 title: "「世界秩序が変わるとき」読書中のメモ"
-date: 2025-04-25T20:05:31+09:00
+date: 2025-04-26T16:05:31+09:00
 categories:
   - Reading list
 tags:
@@ -11,12 +11,29 @@ tags:
 
 - [参考:【Amazon.co.jp: 世界秩序が変わるとき　新自由主義からのゲームチェンジ (文春新書) eBook : 齋藤 ジン: Kindleストア】](https://www.amazon.co.jp/gp/product/B0DQ7WQNPM/ref=kinw_myk_ro_title)
 
-### 問い
+### 日本に追い風の理由
+- 理由
+  - 労働力がレアで賃金が上がっている
+  - 国内投資が伸びている
+  - 政財官の癒着が得意。次の時代は「市場が知っている」から「政治家が知っている」へ。
+  - コンセンサスをとる時間があるスローな展開
+  - 社会的な分断や混乱が無い
+  - サービス業の生産性が低い。つまり、伸び代がある。
+  - 輸入品の価格が下がる
+  - 主婦が労働せずに済む可能性がある
+- 投資対象として魅力的
+  - 賃金が上がるから経済成長する。インフレになる。金利も不動産も上がる
+- 中国を封じ込めるアジア太平洋の中心となる
+  - 先端技術や資源が手に入りやすい
+
+### トランプ政策
 
 - 大きな政府はなぜ必要になるのか？
-  - 心理面でないか？  
-    - 信認と恐怖と諦念がヒント
+  - 信認と恐怖と諦念がヒント
     - 成人発達理論で説明できるかもしれない。
+      - [参考:【My Developmental History: In Light of Ego Development Theory】](https://pjdhiro.blogspot.com/2023/11/tracing-my-journey-reflections-through.html#)
+  - 分裂と統合のサイクルによる進化は普遍的に観察されている
+    - [参考:【[Ken Wilber's Integral Psychology]: Experiences and Insights】](https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html)
   - 完全市場や、精神発達のレベルが理想的すぎてついていけない。
     - 人間臭さ、脆さ、不完全さへが理想達成の邪魔になっている。
 
