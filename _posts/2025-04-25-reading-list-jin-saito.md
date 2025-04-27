@@ -34,9 +34,9 @@ tags:
       - [参考:【My Developmental History: In Light of Ego Development Theory】](https://pjdhiro.blogspot.com/2023/11/tracing-my-journey-reflections-through.html#)
   - 分裂と統合のサイクルによる進化は普遍的に観察されている。※ウィルバーなど
     - [参考:【[Ken Wilber's Integral Psychology]: Experiences and Insights】](https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html)
-    https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html
+    参考:【My Developmental History: In Light of Ego Development Theory】 https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html
   - 完全市場や、精神発達のレベルが理想的すぎてついていけない。
-    - 人間臭さ、脆さ、不完全さへが理想達成の邪魔になっている。
+    - 人間の、脆さ、不完全さが理想達成の邪魔になっている。
 
 - トランプ現象と日本の田舎との類似性は？
   - 都市部の人からの「今どきのフツー」の押し付け
@@ -47,7 +47,7 @@ tags:
   - 分裂（精神的危機）を経験した人しか経験できない統合がある。
     - 世界と魂のカタチがあまりにも違う時の葛藤と、その後の消化と昇華を経ることで、自己の内面と同じことが外的世界（他者・社会）でもフラクタルに起きてるように感じる、かなと。自己同一性危機の効能。
 
-## 印象に残った箇所
+### 印象に残った箇所
 
 - 「耐久性のあるシステムとは、柔軟なシステムです。」
   - 私が震災復興を通じて思ったことと似ています。防災がどうあるべきか、経営とはどうあるべきか、人生とはどうあるべきか。GRIT、レジリエンス。
