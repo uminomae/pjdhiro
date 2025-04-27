@@ -11,7 +11,7 @@ tags:
 
 - [参考:【Amazon.co.jp: 世界秩序が変わるとき　新自由主義からのゲームチェンジ (文春新書) eBook : 齋藤 ジン: Kindleストア】](https://www.amazon.co.jp/gp/product/B0DQ7WQNPM/ref=kinw_myk_ro_title)
 
-### 日本に追い風の理由
+### 著者の日本に追い風の理由
 - 理由
   - 労働力がレアで賃金が上がっている
   - 国内投資が伸びている
@@ -26,26 +26,26 @@ tags:
 - 中国を封じ込めるアジア太平洋の中心となる
   - 先端技術や資源が手に入りやすい
 
-### トランプ政策
+### トランプ政策の私の反応
 
 - 大きな政府はなぜ必要になるのか？
   - 信認と恐怖と諦念がヒント
     - 成人発達理論で説明できるかもしれない。
       - [参考:【My Developmental History: In Light of Ego Development Theory】](https://pjdhiro.blogspot.com/2023/11/tracing-my-journey-reflections-through.html#)
-  - 分裂と統合のサイクルによる進化は普遍的に観察されている
-    - [参考:【[Ken Wilber's Integral Psychology]: Experiences and Insights】](https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html)
+  - 分裂と統合のサイクルによる進化は普遍的に観察されている  
+    - [参考:【[Ken Wilber's Integral Psychology]: Experiences and Insights】](https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html)  
     https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html
   - 完全市場や、精神発達のレベルが理想的すぎてついていけない。
     - 人間臭さ、脆さ、不完全さへが理想達成の邪魔になっている。
 
 - トランプ現象と日本の田舎との類似性は？
   - 都市部の人からの「今どきのフツー」の押し付け
-  - 苦しみの押し付け、そこからの解放の希求
+    - そこからの解放の希求
 
 - 著者と私の類似点は？
   - 歴史の認識、価値観や判断は私と近い。
   - 分裂（精神的危機）を経験した人しか経験できない統合がある。
-    - 世界と魂のカタチがあまりにも違う時の葛藤と、その後の消化と昇華を経ると、自己の内面と同じことが、外的世界で、他者・社会で、フラクタルに起きてるように感じる、かなと。自己同一性危機の効能。
+    - 世界と魂のカタチがあまりにも違う時の葛藤と、その後の消化と昇華を経ることで、自己の内面と同じことが外的世界（他者・社会）でもフラクタルに起きてるように感じる、かなと。自己同一性危機の効能。
 
 ## 印象に残った箇所
 
