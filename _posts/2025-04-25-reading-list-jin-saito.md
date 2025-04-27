@@ -34,6 +34,7 @@ tags:
       - [参考:【My Developmental History: In Light of Ego Development Theory】](https://pjdhiro.blogspot.com/2023/11/tracing-my-journey-reflections-through.html#)
   - 分裂と統合のサイクルによる進化は普遍的に観察されている
     - [参考:【[Ken Wilber's Integral Psychology]: Experiences and Insights】](https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html)
+    https://pjdhiro.blogspot.com/2023/11/ken-wilbers-integral-psychology.html
   - 完全市場や、精神発達のレベルが理想的すぎてついていけない。
     - 人間臭さ、脆さ、不完全さへが理想達成の邪魔になっている。
 
@@ -46,7 +47,6 @@ tags:
   - 分裂（精神的危機）を経験した人しか経験できない統合がある。
     - 世界と魂のカタチがあまりにも違う時の葛藤と、その後の消化と昇華を経ると、自己の内面と同じことが、外的世界で、他者・社会で、フラクタルに起きてるように感じる、かなと。自己同一性危機の効能。
 
-  
 ## 印象に残った箇所
 
 - 「耐久性のあるシステムとは、柔軟なシステムです。」
