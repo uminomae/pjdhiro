@@ -7,3 +7,7 @@
 
 - 本サイトは下記のBLOGの内容について解説した際の対話をもとに構成されています  
 [https://pjdhiro.blogspot.com/](https://pjdhiro.blogspot.com/)
+
+## 開発時
+- rake go
+  - http://127.0.0.1:4000/pjdhiro/
