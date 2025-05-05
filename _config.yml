@@ -42,6 +42,7 @@ exclude: # 除外するフォルダ
   - backup/
   - theme/
   - _posts/old/
+  - _posts/edit/
   - minimal-mistakes-theme/
 # ---------------------------------------------------
 # SNS アカウント
