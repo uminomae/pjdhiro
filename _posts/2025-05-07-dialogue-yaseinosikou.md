@@ -1,15 +1,11 @@
 ---
 permalink: /dialogue-yaseinosikou/
 title: "対話: 野性の思考について"
-date: 2025-05-07
+date: 2025-05-07T17:40:31+09:00
 categories:
   - 対話
-sidebar:
-  nav: docs
-  nav2: ""
-  nav3: cat-design-topics
-  nav4: ""
-  nav5: ""
+tags:
+  - 思考
 ---
 
 ## 対話した記事
