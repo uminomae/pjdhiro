@@ -1,6 +1,6 @@
 ---
 permalink: /20250505softpowerPre/
-title: "ジョセフ・ナイ『ソフトパワー』序文 Preface で印象に残ったこと"
+title: "読書log：ジョセフ・ナイ『ソフトパワー』序文 Preface で印象に残ったこと"
 date: 2025-05-05T19:30:31+09:00
 categories:
   - Reading list

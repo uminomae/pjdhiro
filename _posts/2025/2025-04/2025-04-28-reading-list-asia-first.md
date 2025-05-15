@@ -1,6 +1,6 @@
 ---
 permalink: /20250428asia-first/
-title: "『アジア・ファースト 新・アメリカの軍事戦略』読書中のメモ"
+title: "読書log：『アジア・ファースト 新・アメリカの軍事戦略』読書中のメモ"
 date: 2025-04-28T18:05:31+09:00
 categories:
   - Reading list

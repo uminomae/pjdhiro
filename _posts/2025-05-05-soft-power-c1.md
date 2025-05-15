@@ -1,6 +1,6 @@
 ---
 permalink: /20250505softpower-c1/
-title: "ジョセフ・ナイ『ソフトパワー』 第1章 で印象に残ったこと"
+title: "読書log：ジョセフ・ナイ『ソフトパワー』 第1章 で印象に残ったこと"
 date: 2025-05-05T20:10:31+09:00
 categories:
   - Reading list

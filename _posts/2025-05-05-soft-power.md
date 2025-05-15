@@ -1,6 +1,6 @@
 ---
 permalink: /20250505softpower/
-title: "日米の内部環境：パワーの現状 ジョセフ・ナイ『ソフトパワー』読書時log"
+title: "読書log：日米の内部環境：パワーの現状 ジョセフ・ナイ『ソフトパワー』"
 date: 2025-05-05T19:30:31+09:00
 categories:
   - Reading list
