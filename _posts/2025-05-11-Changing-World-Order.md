@@ -1,6 +1,6 @@
 ---
 permalink: /20250511ChangingWorldOrder/
-title: "レイ・ダリオ 「変わりゆく世界秩序」 YouTube視聴log"
+title: "視聴log：レイ・ダリオ 「変わりゆく世界秩序」 YouTube"
 date: 2025-05-11T04:00:31+09:00
 categories:
   - Economy

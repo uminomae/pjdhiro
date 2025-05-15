@@ -1,6 +1,6 @@
 ---
 permalink: /2025-05-14-dimension/
-title: "分かちがたい宇宙を分けてマージ：中心の無と盆踊り"
+title: "対話：分かちがたい宇宙を分けてマージ：中心の無と盆踊り"
 date: 2025-05-14T014:00:31+09:00
 categories:
   - philosophy

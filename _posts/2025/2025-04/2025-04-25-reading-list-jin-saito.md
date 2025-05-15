@@ -1,6 +1,6 @@
 ---
 permalink: /20250425reading-list-jin-saito/
-title: "齋藤 ジン「世界秩序が変わるとき」読書中のメモ"
+title: "読書log：齋藤 ジン「世界秩序が変わるとき」読書中のメモ"
 date: 2025-04-26T16:05:31+09:00
 categories:
   - Reading list
