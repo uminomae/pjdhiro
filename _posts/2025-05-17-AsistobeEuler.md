@@ -23,4 +23,6 @@ tags:
 
 ---
 
-[![Communication Flowchart](../assets/images/humor/RotateBeforeRush.png)](../assets/images/humor/RotateBeforeRush.png)
+[![image](../assets/images/humor/RotateBeforeRush.png)](../assets/images/humor/RotateBeforeRush.png)
+
+<video src="../assets/images/humor/rotate.mov" controls="true"></video>
