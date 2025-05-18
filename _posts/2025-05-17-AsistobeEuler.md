@@ -25,4 +25,11 @@ tags:
 
 [![image](../assets/images/humor/RotateBeforeRush.png)](../assets/images/humor/RotateBeforeRush.png)
 
-<video src="../assets/images/humor/rotate.mov" controls="true"></video>
+
+参考:【How to Fold a Julia Fractal — Acko.net】 <https://acko.net/blog/how-to-fold-a-julia-fractal/>
+
+<video 
+  src="{{ '/assets/images/humor/rotate.mp4' | relative_url }}"
+  controls 
+  width="480">
+</video>
