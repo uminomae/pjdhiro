@@ -3,7 +3,7 @@ permalink: /2025-05-14-dimension/
 title: "対話：分かちがたい宇宙を分けてマージ：中心の無と盆踊り"
 date: 2025-05-14T014:00:31+09:00
 categories:
-  - philosophy
+  - Philosophy
 tags:
   - 四元数
   - 宇宙
@@ -12,7 +12,7 @@ tags:
   - 分ける
 ---
 
-[このページの説明 by Chat GPT](https://chatgpt.com/share/68242c4d-cfac-800b-9954-ed255e938476)
+[ChatGPTによる解説はこちら](https://chatgpt.com/share/68242c4d-cfac-800b-9954-ed255e938476)
 
 ```
 世界はまるでメリーゴーランド! 愛で回るよ スリートゥーワン! キラめいてエブリデイっ
