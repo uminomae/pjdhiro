@@ -34,7 +34,10 @@ tags:
 
 <video 
   src="{{ '/assets/images/humor/rotate.mp4' | relative_url }}"
-  controls 
+  autoplay  
+  muted  
+  loop  
+  playsinline  
   width="480">
 </video>
 
