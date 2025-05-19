@@ -47,11 +47,3 @@ MBAを買う国と、MBAを使いこなす国。その国家の事業構想の�
 
 
 ---
-
-昨日のFB上げた図はBLOGにも残しときました。バズワード魔改造辞典としても、「場」の概念の類推にも。
-
-時代と場の違いはまだ。
-場が目の前方で、時代は後方で。
-って感じはあるんですよね。追い風とか言われるくらいに。放置気味に熟成します。
-
-参考:【発散：創造の構え-As is/To beフレームワーク- - Emotion Processing in Project Design】 <https://uminomae.github.io/pjdhiro/20250517AsistobeEuler/>
