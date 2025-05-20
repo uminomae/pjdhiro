@@ -21,11 +21,11 @@ tags:
 
 ## 創造の構え-As is/To beフレームワーク-
 
-[![image](../assets/images/humor/RotateBeforeRush.png)](../assets/images/humor/RotateBeforeRush.png)
+[![image](../assets/images/humor/RotateBeforeRush.jpg)](../assets/images/humor/RotateBeforeRush.jpg)
 
 ---
 
-## memo
+## 次の発散の方向 memo
 
 - 場：瞬間的、前方・下方、二人称的、空間で区切る
 - 時代：同時多発性、後方・上方、三人称的、時間で区切る

@@ -33,7 +33,10 @@ feature_row:
 
 ## Get Started
 
-このサイトでは、プロジェクトデザインに関する体験や知見を共有しています。  
-特に、対人スキルや感情処理の視点を取り入れたアプローチを紹介します。
+このサイトでは、[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有しています。  
+特に、
+対人スキルや[感情処理]({{ '/emotional-processing/' | relative_url }})の視点を取り入れたアプローチを紹介します。
 
 {% include feature_row %}
+
+[Post]({{ '/posts/' | relative_url }})(BLOG)は場に差し出す「私の構え」、「世界がどう見えているか？」の間主観的な自己紹介です。
