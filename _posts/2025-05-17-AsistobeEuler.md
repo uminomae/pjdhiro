@@ -1,6 +1,6 @@
 ---
 permalink: /20250517AsistobeEuler/
-title: "発散：創造の構え-As is/To beフレームワーク-"
+title: "発散：創造の「構え」-As is/To beフレームワーク-"
 date: 2025-05-14T014:00:31+09:00
 categories:
   - Project
@@ -19,7 +19,7 @@ tags:
 
 ---
 
-## 創造の構え-As is/To beフレームワーク-
+## 創造の「構え」-As is/To beフレームワーク-
 
 [![image](../assets/images/humor/RotateBeforeRush.jpg)](../assets/images/humor/RotateBeforeRush.jpg)
 
