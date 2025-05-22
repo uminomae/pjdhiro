@@ -1,7 +1,7 @@
 ---
 permalink: /20250522Tenkamochi/
 title: "発散：天下餅〜従属と低ボラティリティの静かな覇権〜"
-date: 2025-05-14T014:00:31+09:00
+date: 2025-05-22T017:30:31+09:00
 categories:
   - Project
 tags:
