@@ -24,6 +24,6 @@ tags:
 
 ## 関連
 
-- [日記：国家の連結会計と国富、陰徳的「静かな覇権」]({{ '/20250519KokkaRenketsu/' | relative_url }})
-- [日記：仮説：次の覇権国が日本だとしたら〜「魅力」を「ディール」する〜]({{ '/Economy/haken' | relative_url }})
-- [日記：人生の60/40ポートフォリオ]({{ '/20250429AlternativeInvestment/' | relative_url }})
+- 日本の海外資産は期待以上に一国分 [日記：国家の連結会計と国富、陰徳的「静かな覇権」]({{ '/20250519KokkaRenketsu/' | relative_url }})
+- 日本のソフトパワー [日記：仮説：次の覇権国が日本だとしたら〜「魅力」を「ディール」する〜]({{ '/Economy/haken' | relative_url }})
+- フォールド以外のオルタナ投資先 [日記：人生の60/40ポートフォリオ]({{ '/20250429AlternativeInvestment/' | relative_url }})
