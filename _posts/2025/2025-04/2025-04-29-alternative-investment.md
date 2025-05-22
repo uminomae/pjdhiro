@@ -1,4 +1,5 @@
 ---
+permalink: /20250429AlternativeInvestment/
 title: "日記：人生の60/40ポートフォリオ"
 date: 2025-04-29T18:35:31+09:00
 categories:

@@ -4,6 +4,7 @@ title: "日記：国家の連結会計と国富、陰徳的「静かな覇権」
 date: 2025-05-14T014:00:31+09:00
 categories:
   - Project
+  - Economy
 tags:
   - 経済
   - 時代  
