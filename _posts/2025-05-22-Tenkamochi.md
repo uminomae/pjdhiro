@@ -20,12 +20,13 @@ tags:
 
 ## 思考時のメモ：従属と低ボラティリティの静かな覇権（気づくたび更新中）
 
-- 5/24 Ver. 2.1
+- 5/24 Ver. 2.1 国家の不安感情処理
+  - 図は「国家の心理的安全性という視点です。」という言い方がいいのかもしれない。
 [![image](../assets/images/humor/zukai/tenkamochi21.png)](../assets/images/humor/zukai/tenkamochi21.png)
 
 ---
 
-- Ver. 1  
+- 5/22 Ver. 1  天下餅の比喩  
 <img src="../assets/images/humor/zukai/tenkamochi.png" 
   alt="tenkamochi"
   style="width: 240px; height: auto;">
