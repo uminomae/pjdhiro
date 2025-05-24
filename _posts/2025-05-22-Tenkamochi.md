@@ -20,7 +20,15 @@ tags:
 
 ## 思考時のメモ：従属と低ボラティリティの静かな覇権（気づくたび更新中）
 
-[![image](../assets/images/humor/zukai/tenkamochi.png)](../assets/images/humor/zukai/tenkamochi.png)
+- 5/24 Ver. 2.1
+[![image](../assets/images/humor/zukai/tenkamochi21.png)](../assets/images/humor/zukai/tenkamochi21.png)
+
+---
+
+- Ver. 1  
+<img src="../assets/images/humor/zukai/tenkamochi.png" 
+  alt="tenkamochi"
+  style="width: 240px; height: auto;">
 
 ## 関連
 
