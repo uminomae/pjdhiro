@@ -37,6 +37,14 @@ cat-design-topics:
     - title: "用語"
       url: /pages-categories/word/
 
+cat-side-notes:
+  - title: "Side Notes"
+    children:
+    - title: "経済"
+      url: /pages-categories/economy/
+    - title: "サイト編集"
+      url: /pages-categories/dev/
+
 cat-general:
   - title: "General"
     children:

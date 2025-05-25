@@ -6,8 +6,8 @@ sidebar:
   nav: docs
   nav2: cat-emotional-processing
   nav3: cat-design-topics
-  nav4: cat-general
-  nav5: ""
+  nav4: cat-side-notes
+  nav5: cat-general
 
 # layout: splash
 title: "HOME"
