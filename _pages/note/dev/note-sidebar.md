@@ -37,6 +37,14 @@ style="
 
 ### 呼び出し
 
+<img src="../assets/images/pages/sidenote/dev/vscode_pages.png" 
+alt=""
+style="
+  width: 180px;
+  height: auto;
+  margin: 0px 0px 0px 80px;
+  ">
+
 - `_pages/general/system/`　にカテゴリindex用ファイルを新規作成する
   - 既存ページ`pages-categories-word.md`などを参考にする。修正箇所は画像参照
     - "nav"に登録したカテゴリだけがページ左側に表示される

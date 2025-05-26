@@ -1,7 +1,7 @@
 ---
-permalink: /dialogue-acceptance/
-title: "対話: 受容について"
-date: 2024-12-31
+permalink: /dialogue2025/
+title: "対話: 2025"
+date: 2025-05-26
 categories:
   - 対話
 sidebar:
@@ -12,12 +12,29 @@ sidebar:
   nav5: ""
 ---
 
-## 受容のプロセス
+- オイラーの等式とAs is/To beフレームワークをマージしてみた
+    <img src="../assets/images/humor/zukai/toueiseidouitsushi.png" 
+    alt="「共創もつれ」のイメージ"
+    style="
+      width: 160px; 
+      height: auto; 
+      margin: 20px 20px 20px 20px;
+      ">
+    <img src="../assets/images/humor/RotateBeforeRush.jpg" 
+    alt="おいらの公式"
+    style="
+      width: 240px; 
+      height: auto; 
+      margin: 20px 20px 20px 20px;
+      ">
+  - [【発散：創造の「構え」-As is/To beフレームワーク-】]({{ '/20250517AsistobeEuler/' | relative_url }})
 
-ロスの「死の受容」は死にゆく人の心理の変化を「否認」「怒り」「取り引き」「抑うつ」「受容」の5段階としてます。
-これは死以外の「受容」にもかなり当てはまるように思います。
 
-また、新田信也という方は、ひきこもりからの脱却を、「期待」「自惚れ」「おせっかい」「裏切られ」「諦念」と進むとしています。
-怒りは引きこもりを生みます。取り引きでは予期や警戒といった将来予測が入ります。裏切られると抑うつになります。受容は諦め、手放すことで達成されます。
-
-両者は似ていると思います。
+     <!-- <img src="../assets/images/humor/zukai/toueiseidouitsushi.png" 
+    alt="tenkamochi"
+    style="
+      width: 180px; 
+      height: auto; 
+      margin: 40px 20px 20px 20px;
+      float:right;　
+      "> -->
