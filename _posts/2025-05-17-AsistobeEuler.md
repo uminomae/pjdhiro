@@ -25,6 +25,11 @@ tags:
 
 ---
 
+5/26：さらに発散：量子もつれと投影性同一視
+
+[![image](../assets/images/humor/zukai/toueiseidouitsushi.png)](../assets/images/zukai/toueiseidouitsushi.png)
+
+
 ## 次の発散の方向 memo
 
 - 場：瞬間的、前方・下方、二人称的、空間で区切る
