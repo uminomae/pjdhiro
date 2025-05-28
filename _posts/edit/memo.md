@@ -7,6 +7,8 @@
       height: auto; 
       margin: 20px 20px 20px 20px;
       ">
+      
+  - [発散：創造の「構え」-As is/To beフレームワーク-]({{ '/20250517AsistobeEuler/' | relative_url }})
 
 
 - 戦狼外交
