@@ -32,7 +32,7 @@ sidebar:
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
-- そしたら、☯️陰陽マークを入れたくなった。
+- 複素平面見ると☯️陰陽マークを入れたくなる。
   - 君（相手、他者）が心理投影にも思えてきた。  
   <img src="{{ '/assets/images//humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }}"
   alt="「共創もつれ」のイメージ"
