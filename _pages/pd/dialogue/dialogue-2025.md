@@ -19,7 +19,7 @@ sidebar:
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
-  <img src="{{ '/assets/images//humor/RotateBeforeRush.jpg' | relative_url }}"
+  <img src="{{ '/assets/images//humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }}"
   alt="おいらの公式"
   style="
     width: 240px; 

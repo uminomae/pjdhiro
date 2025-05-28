@@ -21,7 +21,7 @@ tags:
 
 ## 創造の「構え」-As is/To beフレームワーク-
 
-[![image]({{ '/assets/images/humor/RotateBeforeRush.jpg' | relative_url }})]({{ '/assets/images/humor/RotateBeforeRush.jpg' | relative_url }})
+[![image]({{ '/assets/images/humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }})]({{ '/assets/images/humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }})
 
 ---
 
