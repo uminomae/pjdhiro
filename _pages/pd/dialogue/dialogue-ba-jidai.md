@@ -44,18 +44,18 @@ sidebar:
 - 時間方向も考えたい。時間結晶の量子電池はヒントにならないものかと期待した。
   - 重ね合わせともつれが竹取物語に似てると思ったので脱線。  
   <img src="{{ '/assets/images//humor/zukai/asistobe/kimiTaketori.png' | relative_url }}"
-  alt="「共創もつれ」のイメージ"
+  alt="竹取物語の比喩"
   style="
     width: 480px; 
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
-- ”君”が私の中と外の2名なら、
+- 発散中：”君”が私の中と外の2名なら、
   - 「私」と「私の内側の”君”」、それが「外側の"君"」である、あなたにも１セット。二者関係は三者のような四者関係
-    - 二つの平面が、それぞれに”君”で回転するなら四元数っぽい。
+    - 二つの平面の回転：自我=実部ゼロで回転するならステレオ投影っぽく三次元に特別な像が立ち上がらないだろうか、と夢想。
   <iframe width="1070" height="602" src="https://www.youtube.com/embed/94NmanMgR9k?start=1113" title="4次元の数 ｢四元数｣の見た目" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+---
 
 ## ここから詳細
 
@@ -82,6 +82,7 @@ sidebar:
     - [日記：軸という「間」の結晶：日本債40年債のスプレッド差の日、無リスク資産の分母]({{ '/20250513-40y/' | relative_url }})
 
 #### 発散の参考にしたもの
+
 <video 
   src="{{ '/assets/images/humor/rotate.mp4' | relative_url }}"
   autoplay  
@@ -144,8 +145,18 @@ sidebar:
 ### 今後の発散の方向
 
 - 四元数モデルによるユングのシャドーの数学的表現
-  - [例](https://chatgpt.com/share/6836cbc0-7d64-800b-a471-e47dcd5fe5b7)
-- パウリ
+  - [イメージ](https://chatgpt.com/share/6836d28c-42f8-800b-91d8-200c65d6efbe)
+- 特定感情ごとのパターン
+  - [参考:【人格 - Wikipedia】](https://ja.wikipedia.org/wiki/%E4%BA%BA%E6%A0%BC)
+  - [参考:【防衛機制 - Wikipedia】](https://ja.wikipedia.org/wiki/%E9%98%B2%E8%A1%9B%E6%A9%9F%E5%88%B6)  
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Plutchik_Dyads.svg/langja-2560px-Plutchik_Dyads.svg.png" 
+    alt="感情の輪"
+    style="
+      width: 400px; 
+      height: auto; 
+      margin: 0px 0px 0px 0px;
+      ">
+- パウリな方向
   - 参考:【「量子物理学者パウリ」と「心理学者ユング」物質と意識を結びつける意外な研究｜ニフティニュース】 <https://news.nifty.com/article/item/neta/12363-4081221/>
   - Reference:【Wolfgang Pauli - Wikipedia】 https://en.wikipedia.org/wiki/Wolfgang_Pauli?utm_source=chatgpt.com#Philosophy
     > In his discussions with Carl Jung, Pauli developed an ontological theory that has been dubbed the "Pauli–Jung Conjecture" and has been seen as a kind of dual-aspect theory. The theory holds that there is "a psychophysically neutral reality" and that mental and physical aspects are derivative of this reality.  
