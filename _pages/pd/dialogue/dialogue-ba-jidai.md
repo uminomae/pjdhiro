@@ -60,11 +60,11 @@ sidebar:
       - 虚軸と概念の概念は使いたいし
     - 野中郁次郎の「知識創造」のような
     - As is/To be分析にあてこめば”プロジェクト最中”に使えそう。
-- 補足
+- 補足：回転の中心と軸
   - 「中心の無」について
-    - 北極のライトの比喩
-      - [発散：創造の「構え」-As is/To beフレームワーク-]({{ '/20250517AsistobeEuler/' | relative_url }})
-  - 回転と「軸」について
+    - 「ライトはライト自身を照らせない」 - 北極のライトの比喩
+      - [対話：分かちがたい宇宙を分けてマージ：中心の無と盆踊り]({{ '/2025-05-14-dimension/' | relative_url }})
+  - 「軸」について：「点と点の間」の束
     - [日記：軸という「間」の結晶：日本債40年債のスプレッド差の日、無リスク資産の分母]({{ '/20250513-40y/' | relative_url }})
 
 #### 発散の参考にしたもの
@@ -77,15 +77,15 @@ sidebar:
   width="480">
 </video>
 
-  - Complex operations
-    - [参考:【How to Fold a Julia Fractal — Acko.net】](https://acko.net/blog/how-to-fold-a-julia-fractal/)
+- Complex operations：複素数演算
+  - [参考:【How to Fold a Julia Fractal — Acko.net】](https://acko.net/blog/how-to-fold-a-julia-fractal/)
 
 ---
 
 [![image]({{ '/assets/images/humor/Fujinraijin-tawarayaCom.avif.jpg' | relative_url }})]({{ '/assets/images/humor/Fujinraijin-tawarayaCom.avif.jpg' | relative_url }})
 
-  - Communication
-    - [参考:【Wind God and Thunder God: An Angle of Communication】](https://pjdhiro.blogspot.com/2023/10/wind-god-and-thunder-god.html)
+- Communication - ロゴスとパトスのスパイラル - 風神雷神図屏風
+  - [参考:【Wind God and Thunder God: An Angle of Communication】](https://pjdhiro.blogspot.com/2023/10/wind-god-and-thunder-god.html)
 
 ---
 
