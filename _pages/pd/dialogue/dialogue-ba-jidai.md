@@ -25,7 +25,7 @@ sidebar:
 
 - まず、エネルギーについて
   - オイラーの等式とAs is/To beフレームワークをマージしてみた。  
-  <img src="{{ '/assets/images//humor/RotateBeforeRush.jpg' | relative_url }}"
+  <img src="{{ '/assets/images//humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }}"
   alt="おいらの公式"
   style="
     width: 240px; 
@@ -47,7 +47,7 @@ sidebar:
 
 ### 創造の「構え」-As is/To beフレームワーク-
 
-[![image]({{ '/assets/images/humor/RotateBeforeRush.jpg' | relative_url }})]({{ '/assets/images/humor/RotateBeforeRush.jpg' | relative_url }})
+[![image]({{ '/assets/images/humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }})]({{ '/assets/images/humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }})
 - [ChatGPTによる図の解説はこちら](https://chatgpt.com/share/68294736-26ac-800b-9cf2-740ed7a4721f)
 
 ---
@@ -98,7 +98,7 @@ sidebar:
 - 背景：複素平面で回転を扱う時、いつも☯️陰陽マークをイメージしてしまう。
   - 最近見つけた「量子もつれの☯️陰陽マーク」を使ってみようと思った。
     - [参考:【陰陽マーク？　「量子もつれ」をリアルタイムに可視化することに成功　国際チームが23年に発表：ちょっと昔のInnovative Tech - ITmedia NEWS】](https://www.itmedia.co.jp/news/articles/2409/09/news051.html)
-- 他者との関係：そもそも「場」とは、心理世界の投影も含まれてるのでは？と疑っている。
+- 対象関係論的な他者との関係：そもそも「場」とは、心理世界の投影も含まれてるのでは？と疑っている。
   - なので「You」の正体は、本当は自分の深層心理では？としてみた。
     - 映画「マトリックス」や「桶の中の脳」というよりは、母子関係
   - そんな「精神発達の場」があるように思う。マズローに代表される発達心理学的な方向の。
