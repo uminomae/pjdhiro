@@ -11,16 +11,16 @@ sidebar:
   nav4: ""
   nav5: ""
 ---
-
-- オイラーの等式とAs is/To beフレームワークをマージしてみた
-    <img src="../assets/images/humor/zukai/toueiseidouitsushi.png" 
+- オイラーの等式とAs is/To beフレームワークをマージしてみた  
+  - ☯️陰陽マークを入れたくなった  
+    <img src="{{ '/assets/images//humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }}"
     alt="「共創もつれ」のイメージ"
     style="
       width: 160px; 
       height: auto; 
       margin: 20px 20px 20px 20px;
       ">
-    <img src="../assets/images/humor/RotateBeforeRush.jpg" 
+    <img src="{{ '/assets/images//humor/RotateBeforeRush.jpg' | relative_url }}"
     alt="おいらの公式"
     style="
       width: 240px; 
@@ -28,13 +28,3 @@ sidebar:
       margin: 20px 20px 20px 20px;
       ">
   - [【発散：創造の「構え」-As is/To beフレームワーク-】]({{ '/20250517AsistobeEuler/' | relative_url }})
-
-
-     <!-- <img src="../assets/images/humor/zukai/toueiseidouitsushi.png" 
-    alt="tenkamochi"
-    style="
-      width: 180px; 
-      height: auto; 
-      margin: 40px 20px 20px 20px;
-      float:right;　
-      "> -->

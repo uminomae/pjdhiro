@@ -21,14 +21,15 @@ tags:
 
 ## 創造の「構え」-As is/To beフレームワーク-
 
-[![image](../assets/images/humor/RotateBeforeRush.jpg)](../assets/images/humor/RotateBeforeRush.jpg)
+[![image]({{ '/assets/images/humor/RotateBeforeRush.jpg' | relative_url }})]({{ '/assets/images/humor/RotateBeforeRush.jpg' | relative_url }})
 
 ---
 
 5/26：さらに発散：量子もつれと投影性同一視
 
-[![image](../assets/images/humor/zukai/toueiseidouitsushi.png)](../assets/images/zukai/toueiseidouitsushi.png)
+[![image]({{ '/assets/images/humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }})]({{ '/assets/images/humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }})
 
+- [参考:【陰陽マーク？　「量子もつれ」をリアルタイムに可視化することに成功　国際チームが23年に発表：ちょっと昔のInnovative Tech - ITmedia NEWS】](https://www.itmedia.co.jp/news/articles/2409/09/news051.html)
 
 ## 次の発散の方向 memo
 
@@ -53,4 +54,4 @@ tags:
 - Communication
   - [参考:【Wind God and Thunder God: An Angle of Communication】](https://pjdhiro.blogspot.com/2023/10/wind-god-and-thunder-god.html)
 
-[![image](../assets/images/humor/Fujinraijin-tawarayaCom.avif.jpg)](../assets/images/humor/Fujinraijin-tawarayaCom.avif.jpg)
+[![image]({{ '/assets/images/humor/Fujinraijin-tawarayaCom.avif.jpg' | relative_url }})]({{ '/assets/images/humor/Fujinraijin-tawarayaCom.avif.jpg' | relative_url }})
