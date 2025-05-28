@@ -32,7 +32,7 @@ sidebar:
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
-- 複素平面見ると☯️陰陽マークを入れたくなる。
+- 複素平面を見ると☯️陰陽マークを入れたくなる。
   - 君（相手、他者）が心理投影にも思えてきた。  
   <img src="{{ '/assets/images//humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }}"
   alt="「共創もつれ」のイメージ"
@@ -42,7 +42,7 @@ sidebar:
     margin: 20px 20px 20px 20px;
     ">
 - 時間方向も考えたい。時間結晶の量子電池はヒントにならないものかと期待した。
-  - 重ね合わせともつれが竹取物語に似てると思ったので脱線。  
+  - 重ね合わせと"もつれ"が竹取物語に似てると思ったので脱線。  
   <img src="{{ '/assets/images//humor/zukai/asistobe/kimiTaketori.png' | relative_url }}"
   alt="竹取物語の比喩"
   style="
