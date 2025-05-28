@@ -1,6 +1,6 @@
 ---
-permalink: /dialogue2025/
-title: "対話: 2025"
+permalink: /dialogueBaJidai/
+title: "対話：場と時代の違いを考えた"
 date: 2025-05-26
 categories:
   - 対話
@@ -11,6 +11,7 @@ sidebar:
   nav4: ""
   nav5: ""
 ---
+
 - オイラーの等式とAs is/To beフレームワークをマージしてみた  
   - ☯️陰陽マークを入れたくなった  
     <img src="{{ '/assets/images//humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }}"
