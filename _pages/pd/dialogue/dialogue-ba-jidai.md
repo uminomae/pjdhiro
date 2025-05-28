@@ -21,14 +21,14 @@ sidebar:
   - 時代：同時多発性、後方・上方、三人称的、時間で区切る
   - 間主観性：自他未分で自分・場・時代が一続き（境界が曖昧、膜のよう）。共感や創造の力。
 
-## 概要
+## 目次的な概要：詳細は後述
 
 - まず、共通点として、場にも時代にも創出のエネルギーがある。
   - ゼロイチのとこを、オイラーの等式とAs is/To beフレームワークでマージしてみた。  
   <img src="{{ '/assets/images//humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }}"
   alt="おいらの公式"
   style="
-    width: 240px; 
+    width: 480px; 
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
@@ -37,7 +37,7 @@ sidebar:
   <img src="{{ '/assets/images//humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }}"
   alt="「共創もつれ」のイメージ"
   style="
-    width: 160px; 
+    width: 480px; 
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
@@ -46,10 +46,16 @@ sidebar:
   <img src="{{ '/assets/images//humor/zukai/asistobe/kimiTaketori.png' | relative_url }}"
   alt="「共創もつれ」のイメージ"
   style="
-    width: 160px; 
+    width: 480px; 
     height: auto; 
     margin: 20px 20px 20px 20px;
     ">
+- ”君”が私の中と外の2名なら、
+  - 「私」と「私の内側の”君”」、それが「外側の"君"」である、あなたにも１セット。二者関係は三者のような四者関係
+    - 二つの平面が、それぞれに”君”で回転するなら四元数っぽい。
+  <iframe width="1070" height="602" src="https://www.youtube.com/embed/94NmanMgR9k?start=1113" title="4次元の数 ｢四元数｣の見た目" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 ## ここから詳細
 
@@ -134,3 +140,13 @@ sidebar:
   - 普遍性が神話にないものかと。河合隼雄っぽく
     - [それをChatGPT o3に聞いてみた。回答はこちら](https://chatgpt.com/share/68369849-69ec-800b-967a-cc9605541771)
 
+
+### 今後の発散の方向
+
+- 四元数モデルによるユングのシャドーの数学的表現
+  - [例](https://chatgpt.com/share/6836cbc0-7d64-800b-a471-e47dcd5fe5b7)
+- パウリ
+  - 参考:【「量子物理学者パウリ」と「心理学者ユング」物質と意識を結びつける意外な研究｜ニフティニュース】 <https://news.nifty.com/article/item/neta/12363-4081221/>
+  - Reference:【Wolfgang Pauli - Wikipedia】 https://en.wikipedia.org/wiki/Wolfgang_Pauli?utm_source=chatgpt.com#Philosophy
+    > In his discussions with Carl Jung, Pauli developed an ontological theory that has been dubbed the "Pauli–Jung Conjecture" and has been seen as a kind of dual-aspect theory. The theory holds that there is "a psychophysically neutral reality" and that mental and physical aspects are derivative of this reality.  
+  
