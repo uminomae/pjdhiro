@@ -7,6 +7,6 @@ minimal-mistakes-theme
 .DS*
 backup/
 
-
+memo.*
 
 # git rm -r --cached backup
