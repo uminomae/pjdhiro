@@ -7,7 +7,7 @@ sidebar:
   nav: docs
   nav2: ""
   nav3: cat-design-topics
-  nav4: ""
+  nav4: cat-side-notes
   nav5: ""
 ---
 
