@@ -18,16 +18,16 @@ feature_row:
     url: /project-design/
     btn_label: "Learn More"
     btn_class: "btn--primary"
-  - title: "Emotion<br>Processing<br>Insights"
-    excerpt: "感情処理について"
-    url: /emotional-processing/
+  - title: "Dialogue<br>Design<br>Insights"
+    excerpt: "対話の記録"
+    url: /pages-categories/dialogue/
     posts: true
     btn_label: "Learn More"
     btn_class: "btn--primary"
-  - title: "About<br>site<br>Details"
-    excerpt: "このサイトについて"
-    url: /about/
-    btn_label: "Read More"
+  - title: "Side<br>Notes<br>Economics"
+    excerpt: "経済関連のノート"
+    url: /pages-categories/economy/
+    btn_label: "Learn More"
     btn_class: "btn--primary"
 ---
 
