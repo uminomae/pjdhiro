@@ -12,16 +12,24 @@ sidebar:
   nav5: ""
 ---
 
-## 背景
+## はじめに：この記事について
+
+- 「答え」ではなく、「問いを深める材料」としてリフレーミングに役立てたら。
+  - 発散と収束（スライドにラフスケッチ）を繰り返す過程をそのまま時系列に並べてます。
+  - 心理的な視点を論理実証・科学至上主義的に無理やりまとめてみた系ネタ集でもあります。
+- 場と時代のアウトプットについては大したこと言ってません。
+  - 場と時代は創造の源だが、切り口（空間／時間）が違う。
+  - 「ゼロ→イチ」は「境界があいまい」になると起きやすい。
+
+## 背景：私の構え
 
 - 「場」と「時代」の理解が曖昧な気がした。
-  - なので、いろんな視点で切って、共有できるように整理しようと思った。
-- 発散思考の方向性
   - 場：瞬間的、前方・下方、二人称的、空間で区切る
   - 時代：同時多発性、後方・上方、三人称的、時間で区切る
-  - 間主観性：自他未分で自分・場・時代が一続き（境界が曖昧、膜のよう）。共感や創造の力。
+- なんでも間主観性という視点で切ってみたい
+  - 自他未分で自分・場・時代が一続き（境界が曖昧、膜のよう）。共感や創造の力。
 
-## 目次的な概要：詳細は後述
+## この記事の流れ：詳細は後述
 
 - まず、共通点として、場にも時代にも創出のエネルギーがある。
   - ゼロイチのとこを、オイラーの等式とAs is/To beフレームワークでマージしてみた。  
@@ -59,7 +67,7 @@ sidebar:
 
 ## ここから詳細
 
-### 創造の「構え」-As is/To beフレームワーク-
+### 1.創造の「構え」-As is/To beフレームワーク-
 
 [![image]({{ '/assets/images/humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }})]({{ '/assets/images/humor/zukai/asistobe/RotateBeforeRush.jpg' | relative_url }})
 - [ChatGPTによる図の解説はこちら](https://chatgpt.com/share/68294736-26ac-800b-9cf2-740ed7a4721f)
@@ -104,7 +112,7 @@ sidebar:
 
 ---
 
-### さらに発散：量子もつれと投影性同一視
+### 2.さらに発散：量子もつれと投影性同一視
 
 [![image]({{ '/assets/images/humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }})]({{ '/assets/images/humor/zukai/asistobe/toueiseidouitsushi.png' | relative_url }})
 
@@ -124,7 +132,7 @@ sidebar:
   
 ---
 
-### 精神分析論の方向に発散：竹取物語
+### 3.精神分析論の方向に発散：竹取物語
 
 [![image]({{ '/assets/images/humor/zukai/asistobe/kimiTaketori.png' | relative_url }})]({{ '/assets/images/humor/zukai/asistobe/kimiTaketori.png' | relative_url }})
 
@@ -141,8 +149,9 @@ sidebar:
   - 普遍性が神話にないものかと。河合隼雄っぽく
     - [それをChatGPT o3に聞いてみた。回答はこちら](https://chatgpt.com/share/68369849-69ec-800b-967a-cc9605541771)
 
+---
 
-### 今後の発散の方向
+## 今後の発散の方向
 
 - 四元数モデルによるユングのシャドーの数学的表現
   - [イメージ](https://chatgpt.com/share/6836d28c-42f8-800b-91d8-200c65d6efbe)
