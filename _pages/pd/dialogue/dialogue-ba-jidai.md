@@ -154,7 +154,7 @@ sidebar:
 ## 今後の発散の方向
 
 - 四元数モデルによるユングのシャドーの数学的表現
-  - [イメージ](https://chatgpt.com/share/6836d28c-42f8-800b-91d8-200c65d6efbe)
+  - [方向性としてはこんな感じのイメージ](https://chatgpt.com/share/6836d28c-42f8-800b-91d8-200c65d6efbe)
 - 特定感情ごとのパターン
   - [参考:【人格 - Wikipedia】](https://ja.wikipedia.org/wiki/%E4%BA%BA%E6%A0%BC)
   - [参考:【防衛機制 - Wikipedia】](https://ja.wikipedia.org/wiki/%E9%98%B2%E8%A1%9B%E6%A9%9F%E5%88%B6)  
