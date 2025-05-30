@@ -1,6 +1,6 @@
 ---
 permalink: /note2025Economy/
-title: "経済:まとめ：2025/4~トランプ関税関連"
+title: "経済:まとめ:2025/4~トランプ関税関連"
 date: 2025-05-25
 categories:
   - 経済
@@ -127,6 +127,8 @@ MBAを買って終わりでなく、買って始まる、にしたかった私�
 
 国富（ストック）とGDP（フロー）の特徴に、「国家の心理的安全性」と呼べそうなものを感じる。  
 成人の発達心理のレベルとも似てる。  
+  - [参考:【成人発達理論を管理職・マネジャー育成に活かす～マネジャーを忙しさから解放し、マネジメントの質を上げる～ - 株式会社グローセンパートナー】](https://www.growthen.co.jp/column/20230822/)  
+ 　
 なので、国家の発達を天下餅のプロセスとして考えてみた。  
 [![image](../assets/images/humor/zukai/tenkamochi21.png)](../assets/images/humor/zukai/tenkamochi21.png)
 - [【日記：図解：天下餅〜従属と低ボラティリティの静かな覇権〜 - Emotion Processing in Project Design】](http://127.0.0.1:4000/pjdhiro/20250522Tenkamochi/)
