@@ -1,6 +1,6 @@
 ---
 permalink: /note2025Economy/
-title: "経済: 2025/4~トランプ関税関連"
+title: "経済:まとめ：2025/4~トランプ関税関連"
 date: 2025-05-25
 categories:
   - 経済
