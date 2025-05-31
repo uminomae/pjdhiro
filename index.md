@@ -39,4 +39,4 @@ feature_row:
 
 {% include feature_row %}
 
-[Post]({{ '/posts/' | relative_url }})(BLOG)は場に差し出す「私の構え」、「世界がどう見えているか？」の間主観的な自己紹介です。
+[Post]({{ '/posts/' | relative_url }})(BLOG)は場に差し出す「私の構え」。「世界がどう見えているか？」の間主観的な自己紹介です。
