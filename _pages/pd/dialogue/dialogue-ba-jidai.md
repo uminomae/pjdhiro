@@ -150,6 +150,17 @@ sidebar:
   - 普遍性が神話にないものかと。河合隼雄っぽく
     - [それをChatGPT o3に聞いてみた。回答はこちら](https://chatgpt.com/share/68369849-69ec-800b-967a-cc9605541771)
 
+- 脱線：かぐや姫はジュリアでも良いのかもしれない
+  - [【１パイ：Julia集合を逆再生】]({{ '/20250531julia/' | relative_url }})
+  <video 
+    src="{{ '/assets/movie/julia.mp4' | relative_url }}"
+    autoplay  
+    muted  
+    loop  
+    playsinline  
+    width="640">
+  </video>
+
 ---
 
 ## 今後の発散の方向
