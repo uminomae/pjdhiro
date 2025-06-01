@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Three.js 逆写像・陰陽リボン (実部＋位相ミックス)</title>
+  <title>Three.js 逆写像（陰陽マーク的な分岐）を Z に実部で可視化</title>
   <style>
     body {
       margin: 0;
@@ -63,14 +63,14 @@
     <span id="status">(待機中)</span>
   </div>
 
-  <!-- 【③ Three.js＋改良版スクリプト】 -->
+  <!-- 【③ Three.js＋実部Z描画スクリプト】 -->
   <script type="module">
     import * as THREE from 'three';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { Complex } from './js/complex.js';
     import { animateInverseYinYang } from './js/threeJulia-yinyang.js';
 
-    // ── シーン・カメラ・レンダラー・OrbitControls のセットアップ ──
+    // ── シーン、カメラ、レンダラー、OrbitControls のセットアップ ──
     const container = document.getElementById('canvas-container');
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x111111);
@@ -92,37 +92,38 @@
     controls.target.set(0, 0, 0);
     controls.update();
 
-    // 軸ヘルパー・グリッドヘルパー を配置
+    // 軸ヘルパー (X: 赤, Y: 緑, Z: 青)
     const axesHelper = new THREE.AxesHelper(1.5);
     scene.add(axesHelper);
+    // グリッドヘルパー (XY 平面に Z=0 のグリッド)
     const gridHelper = new THREE.GridHelper(2, 20, 0x333333, 0x222222);
     gridHelper.rotation.x = Math.PI / 2;
     scene.add(gridHelper);
 
     // ── 「Run」ボタン処理 ──
-    const inputRe   = document.getElementById('input-re');
-    const inputIm   = document.getElementById('input-im');
-    const inputIter = document.getElementById('input-iter');
-    const btnRun    = document.getElementById('btn-run');
-    const statusElem= document.getElementById('status');
+    const inputRe    = document.getElementById('input-re');
+    const inputIm    = document.getElementById('input-im');
+    const inputIter  = document.getElementById('input-iter');
+    const btnRun     = document.getElementById('btn-run');
+    const statusElem = document.getElementById('status');
 
     btnRun.addEventListener('click', async () => {
-      // 既存の Points を一掃
+      // 既存の Points を削除
       scene.traverse(obj => {
         if (obj.isPoints) scene.remove(obj);
       });
 
-      // Julia定数 c を作成
+      // 入力から Julia 定数 c を取得
       const cre = parseFloat(inputRe.value);
       const cim = parseFloat(inputIm.value);
       const c   = new Complex(cre, cim);
 
-      // 逆写像の最大世代
+      // 逆写像の最大世代数
       const maxIter = parseInt(inputIter.value, 10);
 
       statusElem.textContent = '(実行中…)';
 
-      // 初期単位円の点群
+      // 初期：単位円の点群（200 サンプル）
       const initialCircle = [];
       const N = 200;
       for (let i = 0; i < N; i++) {
