@@ -1,6 +1,7 @@
 // js/inverseAnimate.js
 
 import { Complex } from './complex.js';
+const DOT_DIAMETER = 4;
 
 /**
  * 一時停止フラグ
@@ -90,7 +91,7 @@ function updateFormula(text) {
 
 /**
  * 逆写像をステップごとに描画し、各ステップで pause すると同時に
- * 「一世代前(白) → 半角度１本目(黄) → 半角度２本目(黄) → √(緑) → 緑→白リカラー」
+ * 「一世代前(白) → 半角度１本目(黄) → 半角度２本目(黄) → √(ピンク) → ピンク→白リカラー」
  * の順に表示し、次世代では真っ黒にクリアして始めるアニメーション。
  *
  * @param {CanvasRenderingContext2D} ctx      ── 描画先 2D コンテキスト
@@ -110,7 +111,7 @@ export async function animateInverseWithPause(ctx, cx, cy, scale, c, initPts, ma
 
   let prevSqrtPts = initPts.slice();
 
-  drawPts(ctx, initPts, cx, cy, scale, '#fff', 2);
+  drawPts(ctx, initPts, cx, cy, scale, '#fff', DOT_DIAMETER);
   drawIterationCount(ctx, 0);
   updateFormula(
 `===== 世代 0 (初期) =====
@@ -141,8 +142,8 @@ export async function animateInverseWithPause(ctx, cx, cy, scale, c, initPts, ma
     // ──── 1) 半角度ステップ：第1ブランチだけを描く ────
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    drawPts(ctx, prevSqrtPts, cx, cy, scale, '#fff', 1);
-    drawPts(ctx, halfPts1, cx, cy, scale, 'yellow', 1);
+    drawPts(ctx, prevSqrtPts, cx, cy, scale, '#fff', DOT_DIAMETER);
+    drawPts(ctx, halfPts1,    cx, cy, scale, 'yellow', DOT_DIAMETER);
     drawIterationCount(ctx, iter);
     updateFormula(
 `===== 世代 ${String(iter).padStart(3, '0')}：半角度ステップ（1本目） =====
@@ -153,7 +154,7 @@ export async function animateInverseWithPause(ctx, cx, cy, scale, c, initPts, ma
     await sleepWithPause(pauseMs);
 
     // ──── 2) 半角度ステップ：第2ブランチ（反転コピー）を描く ────
-    drawPts(ctx, halfPts2, cx, cy, scale, 'yellow', 1);
+    drawPts(ctx, halfPts2, cx, cy, scale, 'yellow', DOT_DIAMETER);
     drawIterationCount(ctx, iter);
     updateFormula(
 `===== 世代 ${String(iter).padStart(3, '0')}：半角度ステップ（反転コピー） =====
@@ -164,45 +165,51 @@ export async function animateInverseWithPause(ctx, cx, cy, scale, c, initPts, ma
     await sleepWithPause(pauseMs);
 
     // ──── 3) 内側収縮ステップ：sqrtPts を計算・描画 ────
-    const sqrtPts = halfPts1.concat(halfPts2).map(z => {  
+    const sqrtPts = halfPts1.concat(halfPts2).map(z => {
       const r_half = z.abs();
       const sqrtR = Math.sqrt(r_half);
       const theta = Math.atan2(z.im, z.re);
       return new Complex(sqrtR * Math.cos(theta), sqrtR * Math.sin(theta));
     });
 
-    // 画面をクリアせずに「白 + 黄 + 緑」を重ね描き
-    drawPts(ctx, prevSqrtPts, cx, cy, scale, '#fff', 1);
-    drawPts(ctx, halfPts1.concat(halfPts2), cx, cy, scale, 'yellow', 1);
-    drawPts(ctx, sqrtPts, cx, cy, scale, '#FF69B4', 1);
+    // 画面をクリアせずに「白 + 黄 + ピンク」を重ね描き
+    drawPts(ctx, prevSqrtPts,         cx, cy, scale, '#fff', DOT_DIAMETER);
+    drawPts(ctx, halfPts1.concat(halfPts2), cx, cy, scale, 'yellow', DOT_DIAMETER);
+    drawPts(ctx, sqrtPts,              cx, cy, scale, '#FF69B4', DOT_DIAMETER);
     drawIterationCount(ctx, iter);
     updateFormula(
 `===== 世代 ${String(iter).padStart(3, '0')}：内側収縮ステップ =====
 6) 半角度で得られた点 (r, θ) を r' = √r, θ のままに変換  
-7) 緑：(√r, θ) をすべて重ね描き
+7) ピンク：(√r, θ) をすべて重ね描き
 \n`
     );
     await sleepWithPause(pauseMs);
 
-    // ──── 4) 緑を白にリカラー ────
+    // ──── 4) ピンクを白にリカラー ────
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    drawPts(ctx, sqrtPts, cx, cy, scale, '#fff', 1);
+    drawPts(ctx, sqrtPts, cx, cy, scale, '#fff', DOT_DIAMETER);
     drawIterationCount(ctx, iter);
     updateFormula(
-`===== 世代 ${String(iter).padStart(3, '0')}：緑→白リカラー =====
-8) 緑で描いた (√r, θ) をすべて白に置き換える  
+`===== 世代 ${String(iter).padStart(3, '0')}：ピンク→白リカラー =====
+8) ピンクで描いた (√r, θ) をすべて白に置き換える  
 9) 次世代へ向けてリセット
 \n`
     );
     await sleepWithPause(pauseMs);
 
     // ──── 5) 次世代に向けて真っ黒にクリアし、更新 ────
-    ctx.fillStyle = '#000';
-    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    prevSqrtPts = sqrtPts.slice();
-    wPoints = sqrtPts.slice();
+    // ── ここを「最終世代(maxIter) ならクリアせずにスキップ」するよう変更 ──
+    if (iter < maxIter) {
+      ctx.fillStyle = '#000';
+      ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      prevSqrtPts = sqrtPts.slice();
+      wPoints = sqrtPts.slice();
+    }
+    // ── もし iter === maxIter のときは、ここでクリアせずにループを抜けるので、
+    //     最後に描画された白点のままキャンバスが残ります。
   }
 
+  // 全世代終了後
   updateFormula("===== 完了 =====\n全世代の逆写像を終了しました。");
 }

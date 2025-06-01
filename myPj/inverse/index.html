@@ -88,37 +88,38 @@
     <!-- c (実部) -->
     <div class="field">
       <label for="cRe">c の実部 (cRe)</label>
-      <input type="number" id="cRe" step="0.001" value="0.3">
+      <input type="number" id="cRe" step="0.001" value="-0.4">
       <small>ジュリア集合を決める複素定数 c の実部です。<br>
         値を変えるとフラクタルの形が大きく変化します。<br>
-        一般的には −1.5～1.5 の範囲を試してみてください。</small>
+        推奨：−1.5～1.5<br>
+        <br>
+        ex.実部-0.8+虚部0.156,  -0.4+0.6, 0.285+0.01</small>
     </div>
     <!-- c (虚部) -->
     <div class="field">
       <label for="cIm">c の虚部 (cIm)</label>
-      <input type="number" id="cIm" step="0.001" value="0.5">
+      <input type="number" id="cIm" step="0.001" value="0.6">
       <small>ジュリア集合を決める複素定数 c の虚部です。<br>
-        実部と合わせてパラメータ空間を探索してみましょう。<br>
-        0.0～1.0 の間で動かすと面白い形が得られやすいです。</small>
+        推奨：0.0～1.0</small>
     </div>
     <!-- samples -->
     <div class="field">
       <label for="samples">samples (サンプリング数)</label>
-      <input type="number" id="samples" step="1" value="180">
-      <small>単位円上に打つ点の数。360〜720 程度が目安。<br>
+      <input type="number" id="samples" step="1" value="90">
+      <small>最初の円を描画する点の数（単位円上に打つ点の数）。45〜360 程度が目安。<br>
         あまり多すぎると描画に時間がかかりますので注意してください。</small>
     </div>
     <!-- maxIter -->
     <div class="field">
       <label for="maxIter">maxIter (世代数)</label>
-      <input type="number" id="maxIter" step="1" value="15">
+      <input type="number" id="maxIter" step="1" value="12">
       <small>逆写像を繰り返す回数。10〜20 程度が目安。</small>
     </div>
     <!-- pauseMs -->
     <div class="field">
       <label for="pauseMs">pauseMs (一時停止時間)</label>
-      <input type="number" id="pauseMs" step="100" value="1000">
-      <small>各ステップの停止時間 (ms)。1000〜3000ms 程度がおすすめ。</small>
+      <input type="number" id="pauseMs" step="100" value="500">
+      <small>各ステップの停止時間 (ms)。500〜3000ms 程度がおすすめ。</small>
     </div>
   </div>
 
