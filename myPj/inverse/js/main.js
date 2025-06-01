@@ -1,9 +1,13 @@
 // js/main.js
 
-import { Complex }                 from './complex.js';
-import { generateCirclePoints }    from './circle.js';
-import { drawPoints }              from './draw.js';
-import { animateInverseWithPause } from './inverseAnimate.js';
+import { Complex } from './complex.js';
+import { generateCirclePoints } from './circle.js';
+import { drawPoints } from './draw.js';
+import {
+  animateInverseWithPause,
+  pauseAnimation,
+  resumeAnimation
+} from './inverseAnimate.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('inverse-canvas');
@@ -15,29 +19,69 @@ document.addEventListener('DOMContentLoaded', () => {
   const W = canvas.width;
   const H = canvas.height;
 
-  // Canvas の中心座標
   const cx = W / 2;
   const cy = H / 2;
-
-  // 複素平面上の「長さ 1」を 200px として扱う
   const scale = 200;
 
-  // Julia の定数 c
-  const c = new Complex(-0.33, 0.77);
+  // フォーム要素を取得
+  const cReInput = document.getElementById('cRe');
+  const cImInput = document.getElementById('cIm');
+  const samplesInput = document.getElementById('samples');
+  const maxIterInput = document.getElementById('maxIter');
+  const pauseMsInput = document.getElementById('pauseMs');
+  const startBtn = document.getElementById('start-btn');
+  const pauseBtn = document.getElementById('pause-btn');
+  const resumeBtn = document.getElementById('resume-btn');
 
-  // 単位円を何分割してサンプリングするか (例：360)
-  const samples = 360;
+  let animationStarted = false;
 
-  // 逆写像を何世代繰り返すか (例：10)
-  const maxIter = 10;
+  startBtn.addEventListener('click', () => {
+    if (animationStarted) {
+      console.warn('すでにアニメーションが開始されています。');
+      return;
+    }
 
-  // 各ステップ (扇形／内側収縮) ごとの停止時間 (ミリ秒)
-  const pauseMs = 3000;
+    // 入力値を読み取る
+    const cRe = parseFloat(cReInput.value);
+    const cIm = parseFloat(cImInput.value);
+    const samples = parseInt(samplesInput.value, 10);
+    const maxIter = parseInt(maxIterInput.value, 10);
+    const pauseMs = parseInt(pauseMsInput.value, 10);
 
-  // 1) 単位円上の点列を生成
-  const initPts = generateCirclePoints(samples);
+    // 入力チェック
+    if (isNaN(cRe) || isNaN(cIm) || isNaN(samples) || isNaN(maxIter) || isNaN(pauseMs)) {
+      alert('すべてのパラメータを正しく入力してください。');
+      return;
+    }
 
-  // 2) アニメーションを開始
-  //    「扇形ができたら 0.1 秒停止 → 内側に収縮(緑)を描いて 0.1 秒停止 → 次世代…」を maxIter 回繰り返す
-  animateInverseWithPause(ctx, cx, cy, scale, c, initPts, maxIter, drawPoints, pauseMs);
+    animationStarted = true;
+    startBtn.disabled = true;
+
+    // Julia の定数 c
+    const c = new Complex(cRe, cIm);
+
+    // 単位円上の点列をサンプリング
+    const initPts = generateCirclePoints(samples);
+
+    // アニメーションを開始
+    animateInverseWithPause(
+      ctx,
+      cx,
+      cy,
+      scale,
+      c,
+      initPts,
+      maxIter,
+      drawPoints,
+      pauseMs
+    );
+  });
+
+  // 一時停止・再生ボタンのイベント設定
+  pauseBtn.addEventListener('click', () => {
+    pauseAnimation();
+  });
+  resumeBtn.addEventListener('click', () => {
+    resumeAnimation();
+  });
 });
