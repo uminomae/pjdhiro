@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js CDN 確認テスト</title>
+</head>
+<body>
+  <h3>もしこのテキストが出たらページ表示OK</h3>
+  <script type="module">
+    // CDN から Three.js を import してみる
+    import * as THREE from 'https://unpkg.com/three@0.152.0/build/three.module.js';
+    console.log('✅ Three.js は CDN から読み込めました:', THREE);
+
+    // さらに OrbitControls も試す
+    import { OrbitControls } from 'https://unpkg.com/three@0.152.0/examples/jsm/controls/OrbitControls.js';
+    console.log('✅ OrbitControls も CDN から読み込めました:', OrbitControls);
+
+    // テストとして、シーンをひとつ作ってみる（Canvas はページに自動挿入されるわけではないので、Console ログのみの確認で OK）
+    const scene = new THREE.Scene();
+    console.log('Scene:', scene);
+  </script>
+</body>
+</html>
