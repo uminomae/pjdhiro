@@ -317,9 +317,7 @@ export async function animateInverseWithPause(
   pauseMs = 800, interpSteps = 30
 ) {
   // 初期描画：背景黒 + 単位円(白)
-  ctx.fillStyle = '#000';
-  ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
   // prevSqrtPts は「前回の世代の白点」を表す
   let prevSqrtPts = initPts.slice();
 
