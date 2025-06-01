@@ -35,7 +35,7 @@ export function initThree() {
     0.1,
     1000
   );
-  camera.position.set(0, -3, 3);
+  camera.position.set(0, -7, 3);
   camera.up.set(0, 0, 1);
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
