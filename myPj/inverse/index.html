@@ -1,23 +1,27 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>逆写像ムービー（最小構成）</title>
+  <title>逆写像アニメーション (ジュリア集合に近づく)</title>
   <style>
-    body { margin: 0; background: #000; }
-    canvas { display: block; margin: 0 auto; background: #000; }
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    canvas {
+      border: 1px solid #444;
+    }
   </style>
 </head>
 <body>
-  <!-- これだけで Canvas が表示されます -->
-  <canvas id="inverse-movie-canvas" width="600" height="600"></canvas>
+  <!-- 幅高さはお好みで調整してください -->
+  <canvas id="inverse-canvas" width="600" height="600"></canvas>
 
-  <!-- 外部スクリプトを読み込む -->
-  <script src="js/inverse.js"></script>
+  <!-- ES モジュールとして main.js を読み込む -->
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
-
-<!-- python3 -m http.server 8000 -->
-<!-- http://localhost:8000/test.html -->

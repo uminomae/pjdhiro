@@ -1,20 +1,15 @@
-<!-- test.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>逆写像ムービー TDD テストページ</title>
+  <title>逆写像ライブラリ テストページ (分割構成)</title>
 </head>
 <body>
   <h2>逆写像ライブラリ テストページ</h2>
-  <p>
-    ブラウザのデベロッパーツール (F12) を開いて、コンソールにエラーが出ないことを確認してください。
-  </p>
+  <p>ブラウザの開発者ツール (F12) を開いて、コンソールにエラーが出ないことを確認してください。</p>
 
-  <!-- テスト対象のライブラリ -->
-  <script src="js/inverse.js"></script>
-  <!-- テストスクリプト -->
-  <script src="js/test_inverse.js"></script>
+  <!-- ES モジュール版テストスクリプトを読み込む -->
+  <script type="module" src="js/test_inverse.js"></script>
 </body>
 </html>
