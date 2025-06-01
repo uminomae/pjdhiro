@@ -2,7 +2,6 @@
 
 import { Complex } from './complex.js';
 import { generateCirclePoints } from './circle.js';
-import { drawPoints } from './draw.js';
 import {
   animateInverseWithPause,
   pauseAnimation,
@@ -21,29 +20,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cx = W / 2;
   const cy = H / 2;
-  const scale = 200;
+  const scale = 150;
 
   // フォーム要素を取得
-  const cReInput = document.getElementById('cRe');
-  const cImInput = document.getElementById('cIm');
+  const cReInput     = document.getElementById('cRe');
+  const cImInput     = document.getElementById('cIm');
   const samplesInput = document.getElementById('samples');
   const maxIterInput = document.getElementById('maxIter');
   const pauseMsInput = document.getElementById('pauseMs');
-  const startBtn = document.getElementById('start-btn');
-  const pauseBtn = document.getElementById('pause-btn');
-  const resumeBtn = document.getElementById('resume-btn');
+  const startBtn     = document.getElementById('start-btn');
+  const pauseBtn     = document.getElementById('pause-btn');
+  const resumeBtn    = document.getElementById('resume-btn');
 
   let animationStarted = false;
 
-  startBtn.addEventListener('click', () => {
+  startBtn.addEventListener('click', async () => {
     if (animationStarted) {
       console.warn('すでにアニメーションが開始されています。');
       return;
     }
 
     // 入力値を読み取る
-    const cRe = parseFloat(cReInput.value);
-    const cIm = parseFloat(cImInput.value);
+    const cRe     = parseFloat(cReInput.value);
+    const cIm     = parseFloat(cImInput.value);
     const samples = parseInt(samplesInput.value, 10);
     const maxIter = parseInt(maxIterInput.value, 10);
     const pauseMs = parseInt(pauseMsInput.value, 10);
@@ -63,8 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 単位円上の点列をサンプリング
     const initPts = generateCirclePoints(samples);
 
+    // 補間ステップ数（<input>で指定したい場合はフォームを追加しても構いません）
+    // ここでは「1 サブステップあたり 20 フレーム」で固定
+    const interpSteps = 10;
+
     // アニメーションを開始
-    animateInverseWithPause(
+    // ※ drawPoints を渡さず、pauseMs は第８引数、interpSteps は第９引数
+    await animateInverseWithPause(
       ctx,
       cx,
       cy,
@@ -72,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
       c,
       initPts,
       maxIter,
-      drawPoints,
-      pauseMs
+      pauseMs,
+      interpSteps
     );
   });
 
