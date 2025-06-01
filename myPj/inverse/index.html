@@ -2,24 +2,127 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>逆写像アニメーション (ジュリア集合に近づく)</title>
+  <title>逆写像アニメーション (扇形折り畳み)</title>
   <style>
     body {
       margin: 0;
       background: #111;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       height: 100vh;
+      color: #fff;
+      font-family: sans-serif;
+      padding-top: 20px;
     }
     canvas {
       border: 1px solid #444;
+      margin-top: 20px;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+    #config {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 300px;
+    }
+    #config .field {
+      display: flex;
+      flex-direction: column;
+    }
+    #config label {
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+    #config input {
+      width: 100%;
+      padding: 4px;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    #config small {
+      font-size: 12px;
+      color: #ccc;
+    }
+    #controls button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    /* フォーミュラ表示領域：固定高さを解除 */
+    #formula {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5em;
+      white-space: pre-wrap;
+      text-align: center;
+      max-width: 600px;
+    }
+    button {
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <!-- 幅高さはお好みで調整してください -->
+  <!-- 計算スタート・一時停止・再生ボタン（上部に配置） -->
+  <div id="controls">
+    <button id="start-btn">計算スタート</button>
+    <span style="margin: 0 10px;"></span>
+    <button id="pause-btn">一時停止</button>
+    <button id="resume-btn">再生</button>
+  </div>
+
+  <!-- Canvas 要素 -->
   <canvas id="inverse-canvas" width="600" height="600"></canvas>
+
+  <!-- 計算式を表示する領域 -->
+  <div id="formula">ここに計算式・処理内容が表示されます。<br><br><br></div>
+
+  <!-- 設定フォーム（下部に縦並びで配置） -->
+  <div id="config">
+    <!-- c (実部) -->
+    <div class="field">
+      <label for="cRe">c の実部 (cRe)</label>
+      <input type="number" id="cRe" step="0.001" value="0.3">
+      <small>ジュリア集合を決める複素定数 c の実部です。<br>
+        値を変えるとフラクタルの形が大きく変化します。<br>
+        一般的には −1.5～1.5 の範囲を試してみてください。</small>
+    </div>
+    <!-- c (虚部) -->
+    <div class="field">
+      <label for="cIm">c の虚部 (cIm)</label>
+      <input type="number" id="cIm" step="0.001" value="0.5">
+      <small>ジュリア集合を決める複素定数 c の虚部です。<br>
+        実部と合わせてパラメータ空間を探索してみましょう。<br>
+        0.0～1.0 の間で動かすと面白い形が得られやすいです。</small>
+    </div>
+    <!-- samples -->
+    <div class="field">
+      <label for="samples">samples (サンプリング数)</label>
+      <input type="number" id="samples" step="1" value="180">
+      <small>単位円上に打つ点の数。360〜720 程度が目安。<br>
+        あまり多すぎると描画に時間がかかりますので注意してください。</small>
+    </div>
+    <!-- maxIter -->
+    <div class="field">
+      <label for="maxIter">maxIter (世代数)</label>
+      <input type="number" id="maxIter" step="1" value="15">
+      <small>逆写像を繰り返す回数。10〜20 程度が目安。</small>
+    </div>
+    <!-- pauseMs -->
+    <div class="field">
+      <label for="pauseMs">pauseMs (一時停止時間)</label>
+      <input type="number" id="pauseMs" step="100" value="1000">
+      <small>各ステップの停止時間 (ms)。1000〜3000ms 程度がおすすめ。</small>
+    </div>
+  </div>
+
+
 
   <!-- ES モジュールとして main.js を読み込む -->
   <script type="module" src="js/main.js"></script>

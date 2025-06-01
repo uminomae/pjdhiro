@@ -3,16 +3,54 @@
 import { Complex } from './complex.js';
 
 /**
- * 指定ミリ秒だけ待機する Promise を返す
+ * 一時停止フラグ
+ */
+let isPaused = false;
+
+/**
+ * 一時停止時の Promise 解決用に保持する関数群
+ */
+const resumeResolvers = [];
+
+/**
+ * アニメーションを一時停止する（外部から呼び出し）
+ */
+export function pauseAnimation() {
+  isPaused = true;
+}
+
+/**
+ * アニメーションを再開する（外部から呼び出し）
+ */
+export function resumeAnimation() {
+  if (!isPaused) return;
+  isPaused = false;
+  while (resumeResolvers.length) {
+    const resolve = resumeResolvers.shift();
+    resolve();
+  }
+}
+
+/**
+ * 指定ミリ秒だけ待機するが、一時停止フラグをチェックする sleep
  * @param {number} ms ── 待機時間 (ミリ秒)
  */
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+async function sleepWithPause(ms) {
+  const interval = 50; // 50ms ごとに一時停止判定
+  let elapsed = 0;
+  while (elapsed < ms) {
+    if (isPaused) {
+      await new Promise(resolve => resumeResolvers.push(resolve));
+    }
+    const wait = Math.min(interval, ms - elapsed);
+    await new Promise(resolve => setTimeout(resolve, wait));
+    elapsed += wait;
+  }
 }
 
 /**
  * 右上に「現在の世代番号」を描画する関数
- * @param {CanvasRenderingContext2D} ctx 
+ * @param {CanvasRenderingContext2D} ctx
  * @param {number}                  iter ── 現在の世代 (1 から始まる)
  */
 function drawIterationCount(ctx, iter) {
@@ -20,34 +58,40 @@ function drawIterationCount(ctx, iter) {
   const fontSize = 24;               // フォントサイズ (px)
   const fontFamily = 'monospace';    // モノスペースで桁幅一定に
 
-  // 3桁表示を想定してゼロ埋めまたはスペースでパディング
   const text = String(iter).padStart(3, '0');
 
-  // テキストのスタイルを指定
   ctx.font = `${fontSize}px ${fontFamily}`;
   ctx.textAlign = 'right';
   ctx.textBaseline = 'top';
 
-  // テキストの幅を取得
   const metrics = ctx.measureText(text);
   const textWidth = metrics.width;
-  const textHeight = fontSize; // だいたい fontSize と同じ高さ
+  const textHeight = fontSize;
 
-  // 右上に「背景となる黒半透明の四角」を描いて前の文字を隠す
   const x = ctx.canvas.width - padding;
   const y = padding;
   ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
   ctx.fillRect(x - textWidth - 4, y - 2, textWidth + 8, textHeight + 4);
 
-  // 文字色を白にして描画
   ctx.fillStyle = '#fff';
   ctx.fillText(text, x - 4, y);
 }
 
 /**
+ * 「計算式・処理内容」を下部の <div id="formula"> に表示する
+ * @param {string} text ── 表示したい文字列 (改行可)
+ */
+function updateFormula(text) {
+  const elem = document.getElementById('formula');
+  if (elem) {
+    elem.textContent = text;
+  }
+}
+
+/**
  * 逆写像をステップごとに描画し、各ステップで pause すると同時に
- * 「一世代前(白)＋半角度(黄)＋√(緑)」を表示し、
- * さらに「緑を白に変換して一時停止」した後は真っ黒にして次世代に移行するアニメーション。
+ * 「一世代前(白) → 半角度１本目(黄) → 半角度２本目(黄) → √(緑) → 緑→白リカラー」
+ * の順に表示し、次世代では真っ黒にクリアして始めるアニメーション。
  *
  * @param {CanvasRenderingContext2D} ctx      ── 描画先 2D コンテキスト
  * @param {number}                  cx       ── Canvas 中心の x 座標 (ピクセル)
@@ -64,93 +108,101 @@ export async function animateInverseWithPause(ctx, cx, cy, scale, c, initPts, ma
   ctx.fillStyle = '#000';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
-  // 初期世代(0)として「√後点列」を持っておく (便宜上、単位円自体を prevSqrtPts とする)
   let prevSqrtPts = initPts.slice();
 
-  // 単位円 (白点) を描画
   drawPts(ctx, initPts, cx, cy, scale, '#fff', 2);
-
-  // 右上に「000」として世代 0 を表示（必要なければコメントアウト可）
   drawIterationCount(ctx, 0);
+  updateFormula(
+`===== 世代 0 (初期) =====
+単位円を白で表示しています。
+\n\n`
+  );
+  await sleepWithPause(pauseMs);
 
-  // 初期描画後、少し待機
-  await sleep(pauseMs);
-
-  // 前世代 wPoints は initPts を使う
   let wPoints = initPts.slice();
 
-  // ────────────────── 1世代目～maxIter世代目 を順に繰り返す ──────────────────
   for (let iter = 1; iter <= maxIter; iter++) {
-    // ──── 1a) halfPts を作成: φ = arg(w - c), r = |diff| から θ₁=φ/2, θ₂=φ/2+π の２つを生成 ────
-    const halfPts = [];
+    // 各 wPoints について diff = w - c, φ, r を計算し、θ1, θ2 を得る
+    const halfPts1 = []; // 角度半分：第1ブランチ
+    const halfPts2 = []; // 角度半分：第2（反転コピー）ブランチ
+
     for (const w of wPoints) {
       const diff = w.sub(c);
       let phi = Math.atan2(diff.im, diff.re);
-      if (phi < 0) phi += 2 * Math.PI; // [0, 2π) に正規化
+      if (phi < 0) phi += 2 * Math.PI;
       const r = diff.abs();
       const theta1 = phi / 2;
       const theta2 = theta1 + Math.PI;
 
-      // (r, theta1) → Complex
-      halfPts.push(new Complex(r * Math.cos(theta1), r * Math.sin(theta1)));
-      // (r, theta2) → Complex
-      halfPts.push(new Complex(r * Math.cos(theta2), r * Math.sin(theta2)));
+      halfPts1.push(new Complex(r * Math.cos(theta1), r * Math.sin(theta1)));
+      halfPts2.push(new Complex(r * Math.cos(theta2), r * Math.sin(theta2)));
     }
 
-    // ──── 1b) 【半角度ステップ】描画 ────
-    // まずキャンバスを黒でクリアし、prevSqrtPts（前世代の最終点）を白で描画
+    // ──── 1) 半角度ステップ：第1ブランチだけを描く ────
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     drawPts(ctx, prevSqrtPts, cx, cy, scale, '#fff', 1);
-
-    // その上に現在の halfPts（黄色）を重ね描き
-    drawPts(ctx, halfPts, cx, cy, scale, 'yellow', 1);
-
-    // 右上に「現在の世代番号 = iter」を表示
+    drawPts(ctx, halfPts1, cx, cy, scale, 'yellow', 1);
     drawIterationCount(ctx, iter);
+    updateFormula(
+`===== 世代 ${String(iter).padStart(3, '0')}：半角度ステップ（1本目） =====
+1) w - c を計算  
+2) φ = arg(w - c) → θ₁ = φ/2  
+3) 半径 r = |w - c| → 黄色：(r, θ₁) を表示`
+    );
+    await sleepWithPause(pauseMs);
 
-    // 停止
-    await sleep(pauseMs);
+    // ──── 2) 半角度ステップ：第2ブランチ（反転コピー）を描く ────
+    drawPts(ctx, halfPts2, cx, cy, scale, 'yellow', 1);
+    drawIterationCount(ctx, iter);
+    updateFormula(
+`===== 世代 ${String(iter).padStart(3, '0')}：半角度ステップ（反転コピー） =====
+4) 反転コピー角度 θ₂ = θ₁ + π  
+5) 黄色：(r, θ₂) を追加描画
+\n`
+    );
+    await sleepWithPause(pauseMs);
 
-    // ──── 2a) sqrtPts を作成: halfPts 各点 (r, θ) から (√r, θ) を計算 ────
-    const sqrtPts = halfPts.map(z => {
-      // |z| = r として、√r を計算
+    // ──── 3) 内側収縮ステップ：sqrtPts を計算・描画 ────
+    const sqrtPts = halfPts1.concat(halfPts2).map(z => {  
       const r_half = z.abs();
       const sqrtR = Math.sqrt(r_half);
-      const theta = Math.atan2(z.im, z.re); // z の偏角 (θ₁ または θ₂)
+      const theta = Math.atan2(z.im, z.re);
       return new Complex(sqrtR * Math.cos(theta), sqrtR * Math.sin(theta));
     });
 
-    // ──── 2b) 【内側収縮ステップ】描画 ────
-    // キャンバスはクリアせず、前世代（白）＋黄色（半角度結果）を保持し、その上に緑を重ねる
+    // 画面をクリアせずに「白 + 黄 + 緑」を重ね描き
     drawPts(ctx, prevSqrtPts, cx, cy, scale, '#fff', 1);
-    drawPts(ctx, halfPts, cx, cy, scale, 'yellow', 1);
-    drawPts(ctx, sqrtPts, cx, cy, scale, 'green', 1);
-
-    // 右上に「現在の世代番号 = iter」を再表示
+    drawPts(ctx, halfPts1.concat(halfPts2), cx, cy, scale, 'yellow', 1);
+    drawPts(ctx, sqrtPts, cx, cy, scale, '#FF69B4', 1);
     drawIterationCount(ctx, iter);
+    updateFormula(
+`===== 世代 ${String(iter).padStart(3, '0')}：内側収縮ステップ =====
+6) 半角度で得られた点 (r, θ) を r' = √r, θ のままに変換  
+7) 緑：(√r, θ) をすべて重ね描き
+\n`
+    );
+    await sleepWithPause(pauseMs);
 
-    // 停止
-    await sleep(pauseMs);
-
-    // ──── 3) 【緑を白にリカラー】描画 ────
-    // 真っ黒にクリアし、sqrtPts のみを白で描画
+    // ──── 4) 緑を白にリカラー ────
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     drawPts(ctx, sqrtPts, cx, cy, scale, '#fff', 1);
-
-    // 右上に「現在の世代番号 = iter」を表示
     drawIterationCount(ctx, iter);
+    updateFormula(
+`===== 世代 ${String(iter).padStart(3, '0')}：緑→白リカラー =====
+8) 緑で描いた (√r, θ) をすべて白に置き換える  
+9) 次世代へ向けてリセット
+\n`
+    );
+    await sleepWithPause(pauseMs);
 
-    // 停止
-    await sleep(pauseMs);
-
-    // ──── 次世代へ移る前に改めて真っ黒にクリア ────
+    // ──── 5) 次世代に向けて真っ黒にクリアし、更新 ────
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-
-    // 次世代として sqrtPts を採用
-    prevSqrtPts = sqrtPts.slice(); // 今回の sqrtPts が次回の「前世代」になる
+    prevSqrtPts = sqrtPts.slice();
     wPoints = sqrtPts.slice();
   }
+
+  updateFormula("===== 完了 =====\n全世代の逆写像を終了しました。");
 }
