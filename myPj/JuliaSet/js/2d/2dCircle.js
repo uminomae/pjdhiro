@@ -1,6 +1,6 @@
 // js/circle.js
 
-import { Complex } from '../complex.js';
+import { Complex } from '../util/complex-number.js';
 
 /**
  * 単位円 (|z|=1) を samples 分割して点列 (Complex[]) を返す
