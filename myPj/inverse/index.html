@@ -2,199 +2,34 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Julia集合 - 逆写像- </title>
-  <meta name="google-site-verification" content="google1dd9a6e9f696a4f9" />
-  <!-- Google アナリティクス (gtag.js) 設定 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV09PB2PZT"></script>
+  <title>リダイレクト中…</title>
+  <!-- 即時に ../julia-set/d2-julia.html へリダイレクト -->
+  <meta http-equiv="refresh" content="0; url=../julia-set/d2-julia.html" />
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-WV09PB2PZT');
+    // 万一 Meta Refresh が効かない場合はこちらでもリダイレクト
+    window.location.replace('../julia-set/d2-julia.html');
   </script>
   <style>
-    /* ───（以下、あとで説明するCSS）────────────────────────────────── */
     body {
       margin: 0;
-      background: #111;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
+      justify-content: center;
+      background: #111;
       color: #fff;
       font-family: sans-serif;
-      padding-top: 20px;
     }
-    /* ─── ボタン類／フォーム／テキストなどは z-index:2 で最前面 ─── */
-    #controls,
-    #formula,
-    #config {
-      position: relative;
-      z-index: 2;
-    }
-    /* ─── キャンバス＋背景画像を重ねるコンテナ ─── */
-    #canvas-container {
-      position: relative;
-      width: 800px;
-      height: 600px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      z-index: 0;
-    }
-    /* ─── 背景の陰陽マーク画像 ─── */
-    #bg-image {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      /* 見かけ上キャンバスの 80% 幅に */
-      width: 40%;
-      height: auto;
-      opacity: 0.1;
-      pointer-events: none;
-      z-index: 0;
-    }
-    /* ─── アニメーション用キャンバス ─── */
-    #inverse-canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      /* 親コンテナいっぱいに見せる */
-      width: 100%;
-      height: 100%;
-      border: 1px solid #444;
-      background: transparent; /* 透明にして画像を透かす */
-      z-index: 1;
-    }
-
-    /* 元々あったフォームまわりなど */
-    #config {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 300px;
-    }
-    #config .field {
-      display: flex;
-      flex-direction: column;
-    }
-    #config label {
-      margin-bottom: 4px;
-      font-size: 14px;
-    }
-    #config input {
-      width: 100%;
-      padding: 4px;
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-    #config small {
-      font-size: 12px;
-      color: #ccc;
-    }
-    #controls button {
-      margin: 0 5px;
-      padding: 5px 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #formula {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.5em;
-      white-space: pre-wrap;
-      text-align: center;
-      max-width: 600px;
+    a {
+      color: #5fa;
     }
   </style>
 </head>
 <body>
-  <!-- ① 計算スタート・一時停止・再生ボタン（最前面 z-index:2） -->
-  <div id="controls">
-    <button id="start-btn">計算スタート</button>
-    <button id="pause-btn">一時停止</button>
-    <button id="resume-btn">再生</button>
+  <div>
+    <p>自動的に <strong>d2-julia.html</strong> へ移動します。</p>
+    <p>もし自動で移動しない場合は、以下のリンクをクリックしてください：</p>
+    <p><a href="../julia-set/d2-julia.html">d2-julia.html を開く</a></p>
   </div>
-
-  <!-- ② キャンバス＋背景画像を重ねるコンテナ（z-index:0〜1） -->
-  <div id="canvas-container">
-    <!-- 背後に薄く表示したい陰陽マーク -->
-    <img id="bg-image" src="js/onmyo.png" alt="陰陽マーク" />
-    <!-- アニメーション用canvas：描画バッファは必ず width/height 属性で指定すること！ -->
-    <canvas id="inverse-canvas" width="800" height="600"></canvas>
-  </div>
-
-  <!-- ③ 計算式表示エリア（z-index:2） -->
-  <div id="formula">
-    ここに計算式・処理内容が表示されます。<br><br><br><br>
-  </div>
-
-  <!-- ④ 各種設定フォーム（z-index:2） -->
-  <div id="config">
-    <div class="field">
-      <label for="cRe">c の実部 (cRe)</label>
-      <input type="number" id="cRe" step="0.001" value="-0.4">
-      <small>ジュリア集合を決める複素定数 c の実部です。<br>
-        値を変えるとフラクタルの形が大きく変化します。推奨：−1.5〜1.5</small>
-    </div>
-    <div class="field">
-      <label for="cIm">c の虚部 (cIm)</label>
-      <input type="number" id="cIm" step="0.001" value="0.6">
-      <small>ジュリア集合を決める複素定数 c の虚部です。推奨：0.0〜1.0</small>
-    </div>
-    <div class="field">
-      <label for="samples">samples (サンプリング数)</label>
-      <input type="number" id="samples" step="1" value="45">
-      <small>最初の円を描画する点の数。45〜360 程度が目安。</small>
-    </div>
-    <div class="field">
-      <label for="maxIter">maxIter (世代数)</label>
-      <input type="number" id="maxIter" step="1" value="12">
-      <small>逆写像を繰り返す回数。10〜20 程度が目安。</small>
-    </div>
-    <div class="field">
-      <label for="pauseMs">pauseMs (一時停止時間)</label>
-      <input type="number" id="pauseMs" step="100" value="500">
-      <small>各ステップの停止時間 (ms)。500〜3000ms 程度がおすすめ。</small>
-    </div>
-  </div>
-
-  <!-- ──────────── 更新履歴セクション ──────────── -->
-  <section id="update-history" style="margin: 40px 0; max-width: 800px; width: 100%;">
-    <h2 style="font-size: 1.25rem; margin-bottom: 0.5em; text-align: center; color: #eee;">
-      更新履歴
-    </h2>
-    <ul style="list-style: none; padding-left: 0; color: #ddd; font-size: 0.95rem; line-height: 1.6;">
-        <time datetime="2025-05-30" style="font-weight: bold; color: #fff;">
-          2025-06-01
-        </time>
-        — 逆写像アニメーションの極座標補間を追加、ステップごとのカラー表示を改善
-        — 背景画像とキャンバスの重ね合わせ機能を実装
-      </li>
-      <li>
-        <time datetime="2025-05-28" style="font-weight: bold; color: #fff;">
-          2025-05-31
-        </time>
-        — 初期バージョン公開（単位円→逆写像アニメーション）
-      </li>
-    </ul>
-  </section>
-
-  <!-- 関連リンクを表示 -->
-  <div id="related-link" style="margin: 20px 0; text-align: center;">
-    関連 ▶▶ 
-    <a href="https://uminomae.github.io/pjdhiro/20250531julia/" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       style="color: #4af; text-decoration: underline;">
-      陰陽なJulia集合を逆にたどる
-    </a>
-  </div>
-
-  <!-- ⑤ スクリプト本体 -->
-  <script type="module" src="js/main.js"></script>
 </body>
 </html>
