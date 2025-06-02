@@ -118,7 +118,7 @@
     </div>
     <div class="offcanvas-body">
       <form>
-        <!-- 凡例表示スイッチ（ここに移動） -->
+        <!-- 凡例表示スイッチ -->
         <div class="form-check form-switch mb-3">
           <input
             class="form-check-input"
@@ -206,63 +206,10 @@
   <!-- Three.js 用メインスクリプト -->
   <script type="module" src="js/3d/d3-app.js"></script>
 
-  <!-- 凡例描画モジュール -->
-  <script type="module">
-    import { drawLegend, showLegend, hideLegend } from './js/util/legend.js';
+  <!-- 凡例制御（外部ファイルに切り出し） -->
+  <script type="module" src="js/controller/legend-controller.js"></script>
 
-    // 画面ロード時に凡例を初期表示
-    window.addEventListener('DOMContentLoaded', () => {
-      showLegend();
-      drawLegend();
-    });
-
-    // ウィンドウリサイズ時にも再描画
-    window.addEventListener('resize', () => {
-      drawLegend();
-    });
-
-    // 「凡例表示」チェックボックス に連動して凡例を表示/非表示
-    const chkLegend = document.getElementById('chk-legend');
-    chkLegend.addEventListener('change', () => {
-      if (chkLegend.checked) {
-        showLegend();
-        drawLegend();
-      } else {
-        hideLegend();
-      }
-    });
-  </script>
-
-  <!-- Run / Pause / Stop ボタン制御 -->
-  <script>
-    document.getElementById('btn-run').addEventListener('click', () => {
-      runInverseMapping();
-      document.getElementById('status').textContent = '(描画中…)';
-      document.getElementById('btn-pause').classList.remove('d-none');
-    });
-
-    document.getElementById('btn-pause').addEventListener('click', () => {
-      pauseInverseMapping();
-      document.getElementById('status').textContent = '(一時停止中…)';
-      // 必要に応じて Run ボタンなどに切り替える処理を追加
-    });
-
-    document.getElementById('btn-stop').addEventListener('click', () => {
-      stopInverseMapping();
-      document.getElementById('status').textContent = '(待機中)';
-      document.getElementById('btn-pause').classList.add('d-none');
-    });
-
-    function runInverseMapping() {
-      console.log('Run処理を呼び出しました');
-      // ここに描画開始ロジックを記述
-    }
-    function pauseInverseMapping() {
-      console.log('Pause処理を呼び出しました');
-    }
-    function stopInverseMapping() {
-      console.log('Stop処理を呼び出しました');
-    }
-  </script>
+  <!-- ボタン制御（外部ファイルに切り出し） -->
+  <script type="module" src="js/controller/button-controller.js"></script>
 </body>
 </html>
