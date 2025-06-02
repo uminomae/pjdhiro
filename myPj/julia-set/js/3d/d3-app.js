@@ -1,4 +1,9 @@
+// js/3d/d3-app.js（リファクタリング後）
+
 import { Complex } from '../util/complex-number.js';
+// ① 設定値をインポート
+import { FORM_DEFAULTS, DRAW_PARAMS, LEGEND_DEFAULT } from './d3-config.js';
+
 import {
   initThree,
   animateLoop,
@@ -29,6 +34,12 @@ const btnStop   = document.getElementById('btn-stop');
 const chkLegend = document.getElementById('chk-legend');
 const status    = document.getElementById('status');
 
+// ─── 初期フォームにデフォルト値をセット ───
+inputRe.value   = FORM_DEFAULTS.re;
+inputIm.value   = FORM_DEFAULTS.im;
+inputN.value    = FORM_DEFAULTS.N;
+inputIter.value = FORM_DEFAULTS.maxIter;
+
 // ─── Runボタンイベント（凡例再描画含む） ───
 btnRun.addEventListener('click', async () => {
   if (!window.isRunning) {
@@ -39,6 +50,7 @@ btnRun.addEventListener('click', async () => {
     btnRun.classList.add('d-none');
     btnPause.classList.remove('d-none');
 
+    // フォームからの値取得
     const cre     = parseFloat(inputRe.value);
     const cim     = parseFloat(inputIm.value);
     const c       = new Complex(cre, cim);
@@ -47,7 +59,13 @@ btnRun.addEventListener('click', async () => {
 
     status.textContent = '(実行中…)';
     try {
-      const { minZ, maxZ, totalPoints } = await runInverseAnimation(c, N, maxIter, 800);
+      // ② interval も設定値から参照
+      const { minZ, maxZ, totalPoints } = await runInverseAnimation(
+        c,
+        N,
+        maxIter,
+        DRAW_PARAMS.interval
+      );
       window.isRunning = false;
 
       btnPause.classList.add('d-none');
@@ -56,6 +74,8 @@ btnRun.addEventListener('click', async () => {
       btnRun.classList.remove('d-none');
 
       status.textContent = `(完了: N=${N}, maxIter=${maxIter}, 点数=${totalPoints})`;
+
+      // ③ 凡例再描画：minZ/maxZ は戻り値を利用
       drawLegend(minZ, maxZ);
     } catch (err) {
       window.isRunning = false;
@@ -91,6 +111,7 @@ btnStop.addEventListener('click', () => {
   window.isPaused  = false;
   window.isRunning = false;
 
+  // シーン上の Points（点群）をクリア
   const toRemove = [];
   scene.traverse(obj => {
     if (obj.isPoints) toRemove.push(obj);
@@ -103,12 +124,14 @@ btnStop.addEventListener('click', () => {
   btnRun.classList.remove('d-none');
   status.textContent = '(待機中)';
 
-  drawLegend(0, 2);
+  // ④ 凡例をデフォルトに戻す
+  drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
 
-  inputRe.value   = '-0.4';
-  inputIm.value   = '0.6';
-  inputN.value    = '90';
-  inputIter.value = '12';
+  // ⑤ フォーム項目を設定値のデフォルトに戻す
+  inputRe.value   = FORM_DEFAULTS.re;
+  inputIm.value   = FORM_DEFAULTS.im;
+  inputN.value    = FORM_DEFAULTS.N;
+  inputIter.value = FORM_DEFAULTS.maxIter;
 });
 
 // ─── 凡例の表示/非表示スイッチ ───
@@ -120,8 +143,8 @@ chkLegend.addEventListener('change', () => {
   }
 });
 
-
+// グローバルにエクスポート（他モジュールが利用できるように）
 window.runInverseAnimation = runInverseAnimation;
 window.scene               = scene;
 window.Complex             = Complex;
-window.drawLegend          = drawLegend; // legend.js の関数を使いたいならまとめてエクスポート
+window.drawLegend          = drawLegend;
