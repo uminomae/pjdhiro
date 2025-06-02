@@ -40,6 +40,8 @@ cat-design-topics:
 cat-side-notes:
   - title: "Side Notes"
     children:
+    - title: "WEBツール"
+      url: /pages-categories/web-tools/
     - title: "経済"
       url: /pages-categories/economy/
     - title: "サイト編集"
