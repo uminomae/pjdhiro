@@ -1,7 +1,9 @@
-// js/controller/button-ui.js
+// js/3d/ui/button-ui.js
 
-import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../../3d/d3-config.js';
-import { Complex } from '../../util/complex-number.js';
+import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../d3-config.js';
+import { Complex }                                  from '../../util/complex-number.js';
+import { runInverseAnimation }                      from '../d3-renderer.js';
+import { drawLegend, hideLegend }                   from '../../util/legend.js';
 
 const btnRun   = document.getElementById('btn-run');
 const btnPause = document.getElementById('btn-pause');
@@ -10,7 +12,7 @@ const status   = document.getElementById('status');
 
 if (btnRun) {
   btnRun.addEventListener('click', async () => {
-    // ─── ここで「前回の描画をクリア」 ───
+    // ── シーン内の既存の点群をすべて削除 ──
     if (window.scene) {
       const toRemove = [];
       window.scene.traverse(obj => {
@@ -18,21 +20,14 @@ if (btnRun) {
       });
       toRemove.forEach(p => window.scene.remove(p));
     }
-    // ──────────────────────────────
 
+    // ── 実行中でなければ逆写像アニメーションを開始 ──
     if (!window.isRunning) {
-      // ● フォーム値を取得
-      const inputRe   = document.getElementById('input-re');
-      const inputIm   = document.getElementById('input-im');
-      const inputN    = document.getElementById('input-n');
-      const inputIter = document.getElementById('input-iter');
-
-      const cre     = parseFloat(inputRe.value);
-      const cim     = parseFloat(inputIm.value);
-      // const c       = new window.Complex(cre, cim);
+      const cre     = parseFloat(document.getElementById('input-re').value);
+      const cim     = parseFloat(document.getElementById('input-im').value);
       const c       = new Complex(cre, cim);
-      const N       = parseInt(inputN.value, 10);
-      const maxIter = parseInt(inputIter.value, 10);
+      const N       = parseInt(document.getElementById('input-n').value,  10);
+      const maxIter = parseInt(document.getElementById('input-iter').value, 10);
 
       window.isRunning = true;
       window.isPaused  = false;
@@ -40,11 +35,10 @@ if (btnRun) {
 
       btnRun.classList.add('d-none');
       btnPause.classList.remove('d-none');
-      status.textContent = '(実行中…)';
+      status.textContent = '(実行中...)';
 
       try {
-        // runInverseAnimation の第４引数（interval）は config から取得
-        const { minZ, maxZ, totalPoints } = await window.runInverseAnimation(
+        const { minZ, maxZ, totalPoints } = await runInverseAnimation(
           c,
           N,
           maxIter,
@@ -58,10 +52,9 @@ if (btnRun) {
         btnRun.classList.remove('d-none');
         status.textContent = `(完了: N=${N}, maxIter=${maxIter}, 点数=${totalPoints})`;
 
-        // 完了時に凡例を再描画（minZ, maxZ は戻り値）
-        window.drawLegend(minZ, maxZ);
+        // 凡例を再描画
+        drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
       } catch (err) {
-        // Stop されたときなど例外が飛んできた場合
         window.isRunning = false;
         btnPause.classList.add('d-none');
         btnPause.textContent = 'Pause';
@@ -70,10 +63,9 @@ if (btnRun) {
         status.textContent = '(Stopped)';
       }
     } else if (window.isPaused) {
-      // 「Run 押下 → 一時停止 → 再度 Run（Resume）」のとき
       window.isPaused = false;
       btnPause.textContent = 'Pause';
-      status.textContent   = '(実行中…)';
+      status.textContent   = '(実行中...)';
     }
   });
 }
@@ -81,15 +73,13 @@ if (btnRun) {
 if (btnPause) {
   btnPause.addEventListener('click', () => {
     if (!window.isPaused) {
-      // 一時停止
       window.isPaused = true;
       btnPause.textContent = 'Resume';
       status.textContent   = '(Paused)';
     } else {
-      // 再開
       window.isPaused = false;
       btnPause.textContent = 'Pause';
-      status.textContent   = '(実行中…)';
+      status.textContent   = '(実行中...)';
     }
   });
 }
@@ -100,7 +90,7 @@ if (btnStop) {
     window.isPaused  = false;
     window.isRunning = false;
 
-    // Three.js シーンのポイントを全消し
+    // Three.js シーンのすべての点群を削除
     const toRemove = [];
     window.scene.traverse(obj => {
       if (obj.isPoints) toRemove.push(obj);
@@ -113,8 +103,8 @@ if (btnStop) {
     btnRun.classList.remove('d-none');
     status.textContent = '(待機中)';
 
-    // 凡例を初期状態に戻す（Config の初期値を参照）
-    window.drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
+    // 凡例を初期状態（config 由来）に戻す
+    drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
 
     // フォームを初期値に戻す
     document.getElementById('input-re').value   = FORM_DEFAULTS.re;

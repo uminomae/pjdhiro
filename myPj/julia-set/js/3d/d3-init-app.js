@@ -1,21 +1,15 @@
-// js/3d/d3-init-app.js  （旧：d3-ui.js）
+// js/3d/d3-init-app.js
 
-import { initThree, animateLoop, runInverseAnimation } from './d3-renderer.js';
-import { FORM_DEFAULTS, DRAW_PARAMS, LEGEND_DEFAULT }    from './d3-config.js';
-import { drawLegend, hideLegend }                       from '../util/legend.js';
+import { initThree, animateLoop } from './d3-renderer.js';
+import { FORM_DEFAULTS, LEGEND_DEFAULT } from './d3-config.js';
 
-// ※ button-ui.js, legend-ui.js を読み込むことで UI イベント登録を行う
+// UI イベント登録用に button-ui.js と legend-ui.js をインポート
 import './ui/button-ui.js';
 import './ui/legend-ui.js';
 
-// ─── runInverseAnimation, drawLegend, hideLegend をグローバルに公開 ───
-window.runInverseAnimation = runInverseAnimation;
-window.drawLegend         = drawLegend;
-window.hideLegend         = hideLegend;
-
-// ─── ページ読み込み後に実行する初期化処理 ───
+// ページ読み込み後に実行する初期化処理
 window.addEventListener('DOMContentLoaded', () => {
-  // 1) フォームの初期値を config からセット
+  // ── 1) フォームの初期値を config からセット ──
   const inputRe   = document.getElementById('input-re');
   const inputIm   = document.getElementById('input-im');
   const inputN    = document.getElementById('input-n');
@@ -28,14 +22,18 @@ window.addEventListener('DOMContentLoaded', () => {
   if (inputIter) inputIter.value = FORM_DEFAULTS.maxIter;
   if (chkLegend) chkLegend.checked = true; // デフォルトで凡例を ON
 
-  // 2) Three.js シーンを初期化してレンダーループ開始
+  // ── 2) Three.js シーンを初期化してレンダーループ開始 ──
   initThree();
   animateLoop();
 
-  // 3) チェックボックスのデフォルトに従って凡例を描画 or 非表示
+  // ── 3) チェックボックスのデフォルトに従って凡例を描画 or 非表示 ──
   if (chkLegend && chkLegend.checked) {
-    drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
+    import('../util/legend.js').then(({ drawLegend }) => {
+      drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
+    });
   } else {
-    hideLegend();
+    import('../util/legend.js').then(({ hideLegend }) => {
+      hideLegend();
+    });
   }
 });
