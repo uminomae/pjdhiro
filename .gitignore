@@ -8,5 +8,7 @@ minimal-mistakes-theme
 backup/
 
 _posts/edit/memo.md
+myPj/inverse/js/Old
 
 # git rm -r --cached backup
+# git rm -r --cached myPj/inverse/js/Old
