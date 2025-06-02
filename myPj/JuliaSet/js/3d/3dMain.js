@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import { Complex } from '../complex.js';
+import { Complex } from '../util/complex-number.js';
 import { computeInverseGeneration, generateUnitCircle } from './3dInverseLogic.js';
 import { getZ } from './3dHeightFunction.js';
 
