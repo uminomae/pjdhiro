@@ -1,12 +1,12 @@
 // js/main.js
 
-import { Complex } from './complex.js';
-import { generateCirclePoints } from './circle.js';
+import { Complex } from '../complex.js';
+import { generateCirclePoints } from './2dCircle.js';
 import {
   animateInverseWithPause,
   pauseAnimation,
   resumeAnimation
-} from './inverseAnimate.js';
+} from './2dInverseAnimate.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('inverse-canvas');

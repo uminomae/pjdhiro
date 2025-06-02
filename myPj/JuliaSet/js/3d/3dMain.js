@@ -3,9 +3,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import { Complex } from './complex.js';
-import { computeInverseGeneration, generateUnitCircle } from './inverseLogic.js';
-import { getZ } from './heightFunction.js';
+import { Complex } from '../complex.js';
+import { computeInverseGeneration, generateUnitCircle } from './3dInverseLogic.js';
+import { getZ } from './3dHeightFunction.js';
 
 /**
  * Three.js 版・逆写像アニメーションの本体モジュールです。
