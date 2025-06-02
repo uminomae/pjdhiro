@@ -5,8 +5,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import { Complex } from '../util/complex-number.js';
 import { generateCirclePoints } from '../util/generate-circle.js';
-// ↓ ここを変更：pauseAwareSleep を sleep としてインポート
-import { pauseAwareSleep as sleep } from '../util/sleep.js';
+import { sleep } from '../util/sleep.js';
 
 import { computeInverseGeneration } from './d3-Inverse-logic.js';
 import { getZ } from './d3-height-function.js';
@@ -482,9 +481,6 @@ export async function runInverseAnimation(c, N = 100, maxIter = 8, interval = 80
 
   // (3) 各世代ループ
   for (let iter = 1; iter <= maxIter; iter++) {
-    // もし停止リクエストが入っていれば中断
-    if (window.isStopped) throw new Error('Stopped');
-
     // —— ステップ①：引き算ステップ —— 
     const diffPts = await step1_subtract3D(
       currentGen,
@@ -496,7 +492,6 @@ export async function runInverseAnimation(c, N = 100, maxIter = 8, interval = 80
       0.02
     );
 
-    if (window.isStopped) throw new Error('Stopped');
     // —— ステップ②：√ステップ① （第一解・黄色） —— 
     const sqrtPts1 = await step2_sqrt1_3D(
       diffPts,
@@ -507,7 +502,6 @@ export async function runInverseAnimation(c, N = 100, maxIter = 8, interval = 80
       0.02
     );
 
-    if (window.isStopped) throw new Error('Stopped');
     // —— ステップ③：√ステップ② （第二解・ピンク） —— 
     const combinedPts = await step3_sqrt2_3D(
       diffPts,
@@ -519,7 +513,6 @@ export async function runInverseAnimation(c, N = 100, maxIter = 8, interval = 80
       0.02
     );
 
-    if (window.isStopped) throw new Error('Stopped');
     // (4) 次世代準備：combinedPts をコピーして currentGen を更新
     currentGen = combinedPts.slice();
 
