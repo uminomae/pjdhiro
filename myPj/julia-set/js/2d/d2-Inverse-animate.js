@@ -3,13 +3,13 @@
 import { Complex } from '../util/complex-number.js';
 import { drawComplexPoints, drawIterationCount, clearBlack } from './modules/d2-render.js';
 import { updateFormula } from './modules/d2-ui.js';
-import { pauseAnimation, resumeAnimation, pauseCtrl } from './modules/d2-pause-controller.js';
+import { pauseCtrl } from './modules/d2-pause-controller.js';
 
 const DOT_DIAMETER = 4;
 
 /**
  * アニメーション本体。
- * shouldStopCallback() が true を返した場合に途中で return して終了します。
+ * shouldStopCallback() が true を返したら中断して即リターンする。
  *
  * @param {CanvasRenderingContext2D} ctx
  * @param {number} cx
@@ -34,7 +34,7 @@ export async function animateInverseWithPause(
   interpSteps = 30,
   shouldStopCallback = () => false
 ) {
-  // (0) 初期化：キャンバスをクリアし、世代0を描画
+  // === 初期描画: 世代0 ===
   clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
   let prevWhitePts = initPts.slice();
   drawComplexPoints(ctx, initPts, cx, cy, scale, '#fff', DOT_DIAMETER);
@@ -45,46 +45,31 @@ export async function animateInverseWithPause(
   );
   await pauseCtrl.sleep(pauseMs);
 
-  // (1) 現在の世代の wPoints
+  // === 1世代ずつループ ===
   let wPoints = initPts.slice();
-
   for (let iter = 1; iter <= maxIter; iter++) {
-    // ── (A) Reset チェック ──
-    if (shouldStopCallback()) {
-      return;
-    }
+    if (shouldStopCallback()) return;
 
-    // ── (B) diffPts を計算 ──
+    // ── 角度＋半径を求める準備 ──
     const diffPts  = wPoints.map(z => z.sub(c));
-    const diffPhis = diffPts.map(z => {
-      let φ = z.arg();
-      if (φ < 0) φ += 2 * Math.PI;
-      return φ;
-    });
-    const diffRs = diffPts.map(z => z.abs());
+    const diffPhis = diffPts.map(z => { let φ = z.arg(); if (φ < 0) φ += 2*Math.PI; return φ; });
+    const diffRs   = diffPts.map(z => z.abs());
 
-    // ── 1) 引き算ステップ ──
+    // 1) 引き算ステップ
     await step1_subtract(
       ctx, cx, cy, scale,
       wPoints, diffPts,
       interpSteps, pauseMs,
       prevWhitePts,
-      c,
-      iter,
+      c, iter,
       shouldStopCallback
     );
     if (shouldStopCallback()) return;
 
-    // ── 2) √ステップ (第一解) ──
+    // 2) √補間(第一解)
     const sqrtPts1 = diffPts.map((z, i) => {
-      const r  = diffRs[i];
-      const φ  = diffPhis[i];
-      const φh = φ / 2;
-      const sR = Math.sqrt(r);
-      return new Complex(
-        sR * Math.cos(φh),
-        sR * Math.sin(φh)
-      );
+      const r = diffRs[i], φ = diffPhis[i], φh = φ/2, sR = Math.sqrt(r);
+      return new Complex(sR * Math.cos(φh), sR * Math.sin(φh));
     });
     await step2_sqrt1(
       ctx, cx, cy, scale,
@@ -92,22 +77,15 @@ export async function animateInverseWithPause(
       interpSteps, pauseMs,
       diffPhis, diffRs,
       prevWhitePts,
-      c,
-      iter,
+      c, iter,
       shouldStopCallback
     );
     if (shouldStopCallback()) return;
 
-    // ── 3) √ステップ (第二解) ──
+    // 3) √補間(第二解)
     const sqrtPts2 = diffPts.map((z, i) => {
-      const r  = diffRs[i];
-      const φ  = diffPhis[i];
-      const φh = φ / 2 + Math.PI;
-      const sR = Math.sqrt(r);
-      return new Complex(
-        sR * Math.cos(φh),
-        sR * Math.sin(φh)
-      );
+      const r = diffRs[i], φ = diffPhis[i], φh = φ/2 + Math.PI, sR = Math.sqrt(r);
+      return new Complex(sR * Math.cos(φh), sR * Math.sin(φh));
     });
     await step3_sqrt2(
       ctx, cx, cy, scale,
@@ -115,14 +93,13 @@ export async function animateInverseWithPause(
       interpSteps, pauseMs,
       diffPhis, diffRs,
       prevWhitePts,
-      c,
-      iter,
+      c, iter,
       sqrtPts1,
       shouldStopCallback
     );
     if (shouldStopCallback()) return;
 
-    // ── 4) 白リカラー ──
+    // 4) 白リカラー
     clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, '#fff', DOT_DIAMETER);
     drawComplexPoints(ctx, sqrtPts2, cx, cy, scale, '#fff', DOT_DIAMETER);
@@ -134,7 +111,7 @@ export async function animateInverseWithPause(
     await pauseCtrl.sleep(pauseMs);
     if (shouldStopCallback()) return;
 
-    // ── 5) 次世代準備 ──
+    // 次世代の準備
     if (iter < maxIter) {
       clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
       prevWhitePts = sqrtPts1.concat(sqrtPts2).slice();
@@ -142,12 +119,13 @@ export async function animateInverseWithPause(
     }
   }
 
+  // 全世代が終わったあとのメッセージ
   updateFormula("===== 完了 =====\n全世代の逆写像を終了しました。\n\n\n");
 }
 
 
 /**
- * ステップ１：線形補間 → w から (w - c) へ
+ * ステップ１：線形補間 → w から (w - c) への引き算
  */
 async function step1_subtract(
   ctx, cx, cy, scale,
@@ -174,8 +152,7 @@ async function step1_subtract(
     ctx.fillStyle = '#FFA500';
     const interpPts = [];
     for (let i = 0; i < N; i++) {
-      const p = parentPts[i];
-      const q = diffPts[i];
+      const p = parentPts[i], q = diffPts[i];
       const x = p.re * (1 - t) + q.re * t;
       const y = p.im * (1 - t) + q.im * t;
       interpPts.push(new Complex(x, y));
@@ -190,7 +167,7 @@ w - c を計算し、補間中…`
 
     await pauseCtrl.sleep(Math.ceil(pauseMs / steps));
   }
-  // 最後はオレンジ点を残さずクリア
+  // 最終フレームではオレンジ点を残さずにクリア
   clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
 }
 
@@ -208,7 +185,6 @@ async function step2_sqrt1(
   shouldStopCallback
 ) {
   const N = diffPts.length;
-
   for (let k = 1; k <= steps; k++) {
     if (shouldStopCallback()) return;
     if (pauseCtrl.isPaused()) {
@@ -217,25 +193,24 @@ async function step2_sqrt1(
 
     const t = k / steps;
 
-    // 白点のみ描く
+    // (i) 白点のみ描画
     clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, prevWhitePts, cx, cy, scale, '#fff', DOT_DIAMETER);
     drawComplexPoints(ctx, diffPts,    cx, cy, scale, '#fff', DOT_DIAMETER);
 
-    // √補間：diffPts → sqrtPts1 を黄色で描画
+    // (ii) √補間：差分→第一解 を黄色で描画
     ctx.fillStyle = 'yellow';
     const interpPts = [];
     for (let i = 0; i < N; i++) {
-      const φ0 = diffPhis[i];
-      const r0 = diffRs[i];
+      const φ0 = diffPhis[i], r0 = diffRs[i];
       const z1 = sqrtPts1[i];
       let φ1 = Math.atan2(z1.im, z1.re);
-      if (φ1 < 0) φ1 += 2 * Math.PI;
+      if (φ1 < 0) φ1 += 2*Math.PI;
       const r1 = z1.abs();
 
       let dφ = φ1 - φ0;
-      if (dφ > Math.PI)      dφ -= 2 * Math.PI;
-      else if (dφ < -Math.PI) dφ += 2 * Math.PI;
+      if (dφ > Math.PI)      dφ -= 2*Math.PI;
+      else if (dφ < -Math.PI) dφ += 2*Math.PI;
 
       const r_t = r0 * (1 - t) + r1 * t;
       const φ_t = φ0 + dφ * t;
@@ -254,7 +229,7 @@ async function step2_sqrt1(
     await pauseCtrl.sleep(Math.ceil(pauseMs / steps));
   }
 
-  // 補間後、黄色点を残す
+  // 補間終了後、黄色点をそのまま残す
   clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
   drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, 'yellow', DOT_DIAMETER);
 }
@@ -274,7 +249,6 @@ async function step3_sqrt2(
   shouldStopCallback
 ) {
   const N = diffPts.length;
-
   for (let k = 1; k <= steps; k++) {
     if (shouldStopCallback()) return;
     if (pauseCtrl.isPaused()) {
@@ -283,27 +257,26 @@ async function step3_sqrt2(
 
     const t = k / steps;
 
-    // まず黄色点（sqrtPts1）のみ描画
+    // (i) 黄色点（第一解）だけ描画
     clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, 'yellow', DOT_DIAMETER);
 
-    // 次に白点（diffPts）を描画
+    // (ii) 白点（差分）を描画
     drawComplexPoints(ctx, diffPts, cx, cy, scale, '#fff', DOT_DIAMETER);
 
-    // √補間：diffPts → sqrtPts2 をピンクで描画
+    // (iii) √補間：差分→第二解 をピンクで描画
     ctx.fillStyle = '#FF69B4';
     const interpPts = [];
     for (let i = 0; i < N; i++) {
-      const φ0 = diffPhis[i];
-      const r0 = diffRs[i];
+      const φ0 = diffPhis[i], r0 = diffRs[i];
       const z2 = sqrtPts2[i];
       let φ1 = Math.atan2(z2.im, z2.re);
-      if (φ1 < 0) φ1 += 2 * Math.PI;
+      if (φ1 < 0) φ1 += 2*Math.PI;
       const r1 = z2.abs();
 
       let dφ = φ1 - φ0;
-      if (dφ > Math.PI)      dφ -= 2 * Math.PI;
-      else if (dφ < -Math.PI) dφ += 2 * Math.PI;
+      if (dφ > Math.PI)      dφ -= 2*Math.PI;
+      else if (dφ < -Math.PI) dφ += 2*Math.PI;
 
       const r_t = r0 * (1 - t) + r1 * t;
       const φ_t = φ0 + dφ * t;
@@ -322,7 +295,7 @@ async function step3_sqrt2(
     await pauseCtrl.sleep(Math.ceil(pauseMs / steps));
   }
 
-  // 補間後、黄色＋ピンクをそのまま残す
+  // 補間終了後、黄色＋ピンクをそのまま残す
   clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
   drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, 'yellow', DOT_DIAMETER);
   drawComplexPoints(ctx, sqrtPts2, cx, cy, scale, '#FF69B4', DOT_DIAMETER);

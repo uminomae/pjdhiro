@@ -67,6 +67,7 @@
   <!-- ────────────── メインコンテナ ────────────── -->
   <div class="container-fluid px-3 py-4">
     <div class="row justify-content-center">
+      <!-- この col-* を flexbox の縦並びかつ中央寄せに変更 -->
       <div class="col-lg-8 col-md-10 col-12 mb-4 d-flex flex-column align-items-center">
 
         <!-- Canvas を包むコンテナ -->
@@ -118,7 +119,7 @@
       ></button>
     </div>
     <div class="offcanvas-body">
-      <!-- ここから元の設定フォームを復活させる -->
+      <!-- 設定フォーム -->
       <div id="config">
         <div class="mb-3">
           <label for="cRe" class="form-label">c の実部 (cRe)</label>
@@ -213,13 +214,41 @@
         type="button"
         class="btn-close btn-close-white"
         data-bs-dismiss="offcanvas"
-        aria-label="閉じ�ちる"
+        aria-label="閉じる"
       ></button>
     </div>
     <div class="offcanvas-body">
-      <!-- 更新履歴内容をここに -->
+      <ul class="list-unstyled small" style="line-height: 1.6;">
+        <li class="mb-3">
+          <time datetime="2025-06-01" class="fw-bold">2025-06-01</time><br>
+          — 逆写像アニメーションの極座標補間を追加、ステップごとのカラー表示を改善<br>
+          — 背景画像とキャンバスの重ね合わせ機能を実装
+        </li>
+        <li class="mb-3">
+          <time datetime="2025-05-31" class="fw-bold">2025-05-31</time><br>
+          — 初期バージョン公開（単位円→逆写像アニメーション）
+        </li>
+        <!-- 必要に応じてさらに追加できます -->
+      </ul>
     </div>
   </div>
+
+  <!-- ────────────── ページ下部：関連リンク ────────────── -->
+  <footer class="text-center text-light mt-4">
+    <div class="container">
+      <p>
+        関連 ▶▶
+        <a
+          href="https://uminomae.github.io/pjdhiro/20250531julia/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-info"
+        >
+          陰陽なJulia集合を逆にたどる
+        </a>
+      </p>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script

@@ -4,157 +4,201 @@ import { AppConfig }               from './d2-config.js';
 import { Complex }                 from '../util/complex-number.js';
 import { generateCirclePoints }    from '../util/generate-circle.js';
 import { animateInverseWithPause } from './d2-inverse-animate.js';
-import { pauseAnimation, resumeAnimation, pauseCtrl } from './modules/d2-pause-controller.js';
+import { pauseAnimation, resumeAnimation } from './modules/d2-pause-controller.js';
 
-// アニメーション中断用のフラグ
-let shouldStop = false;
+/**
+ * 各種 DOM 要素と状態フラグをまとめたオブジェクト
+ */
+const elements = {
+  // Canvas 関連
+  canvas:     null,
+  ctx:        null,
 
-export function initApp() {
-  console.log('[initApp] start');
-  const canvas = document.getElementById('inverse-canvas');
-  if (!canvas) return;
+  // フォーム入力欄
+  cReInput:     null,
+  cImInput:     null,
+  samplesInput: null,
+  maxIterInput: null,
+  pauseMsInput: null,
 
-  const ctx = canvas.getContext('2d');
-  const cx = canvas.width / 2;
-  const cy = canvas.height / 2;
-  const scale = AppConfig.defaultScale;
+  // コントロールボタン
+  playBtn:   null,
+  pauseBtn:  null,
+  resumeBtn: null,
+  resetBtn:  null,
+};
 
-  // フォーム要素を取得
-  const cReInput     = document.getElementById('cRe');
-  const cImInput     = document.getElementById('cIm');
-  const samplesInput = document.getElementById('samples');
-  const maxIterInput = document.getElementById('maxIter');
-  const pauseMsInput = document.getElementById('pauseMs');
+const state = {
+  animationStarted: false,
+  isPaused:         false,
+  shouldStop:       false,
+};
 
-  // ボタン要素を取得
-  const playBtn   = document.getElementById('play-btn');
-  const pauseBtn  = document.getElementById('pause-btn');
-  const resumeBtn = document.getElementById('resume-btn');
-  const resetBtn  = document.getElementById('reset-btn');
+/**
+ * DOM 要素を一括で取得し、elements オブジェクトに格納する
+ */
+function bindElements() {
+  elements.canvas       = document.getElementById('inverse-canvas');
+  if (!elements.canvas) return false;
 
-  console.log('[initApp] resetBtn=', resetBtn);
-  console.log('[initApp] typeof resetBtn.addEventListener =', typeof resetBtn.addEventListener);
+  elements.ctx          = elements.canvas.getContext('2d');
 
-  // ── フォームに AppConfig のデフォルト値をセット ──
+  elements.cReInput     = document.getElementById('cRe');
+  elements.cImInput     = document.getElementById('cIm');
+  elements.samplesInput = document.getElementById('samples');
+  elements.maxIterInput = document.getElementById('maxIter');
+  elements.pauseMsInput = document.getElementById('pauseMs');
+
+  elements.playBtn   = document.getElementById('play-btn');
+  elements.pauseBtn  = document.getElementById('pause-btn');
+  elements.resumeBtn = document.getElementById('resume-btn');
+  elements.resetBtn  = document.getElementById('reset-btn');
+
+  return true;
+}
+
+/**
+ * フォーム欄にデフォルト値をセットする
+ */
+function setDefaultFormValues() {
+  elements.cReInput.value     = AppConfig.defaultCRe;
+  elements.cImInput.value     = AppConfig.defaultCIm;
+  elements.samplesInput.value = AppConfig.defaultSamples;
+  elements.maxIterInput.value = AppConfig.defaultMaxIter;
+  elements.pauseMsInput.value = AppConfig.defaultPauseMsInput;
+}
+
+/**
+ * 各ボタンの初期状態を設定する
+ */
+function updateButtonStates({ play, pause, resume, reset }) {
+  elements.playBtn.disabled   = !play;
+  elements.pauseBtn.disabled  = !pause;
+  elements.resumeBtn.disabled = !resume;
+  elements.resetBtn.disabled  = !reset;
+}
+
+/**
+ * キャンバスとフォームを「完全に」初期状態に戻し、
+ * state のフラグだけリセットする（shouldStop はリセットしない）
+ */
+function resetCanvasAndForm() {
+  const { canvas, ctx, cReInput, cImInput, samplesInput, maxIterInput, pauseMsInput } = elements;
+
+  // (1) キャンバスを真っさらに
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // (2) フォームをデフォルト値に戻す
   cReInput.value     = AppConfig.defaultCRe;
   cImInput.value     = AppConfig.defaultCIm;
   samplesInput.value = AppConfig.defaultSamples;
   maxIterInput.value = AppConfig.defaultMaxIter;
   pauseMsInput.value = AppConfig.defaultPauseMsInput;
 
-  // ボタンの初期状態：Play/Reset 有効、Pause/Resume は無効
-  playBtn.disabled   = false;
-  pauseBtn.disabled  = true;
-  resumeBtn.disabled = true;
-  resetBtn.disabled  = false; // Reset は常に有効にしておく
+  // (3) 各種フラグをリセット（shouldStop は維持する）
+  state.animationStarted = false;
+  state.isPaused         = false;
+}
 
-  let animationStarted = false;
-  let isPaused         = false;
+/**
+ * Play ボタン押下時の処理
+ */
+async function onPlayClick() {
+  if (state.animationStarted) return;
 
-  function clearCanvasAndReset() {
-    // (1) キャンバスをクリア
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const cReVal     = parseFloat(elements.cReInput.value);
+  const cImVal     = parseFloat(elements.cImInput.value);
+  const samplesVal = parseInt(elements.samplesInput.value, 10);
+  const maxIterVal = parseInt(elements.maxIterInput.value, 10);
+  const pauseMsVal = parseInt(elements.pauseMsInput.value, 10);
 
-    // (2) フォームをデフォルト値に戻す
-    cReInput.value     = AppConfig.defaultCRe;
-    cImInput.value     = AppConfig.defaultCIm;
-    samplesInput.value = AppConfig.defaultSamples;
-    maxIterInput.value = AppConfig.defaultMaxIter;
-    pauseMsInput.value = AppConfig.defaultPauseMsInput;
-
-    // (3) 各種フラグをリセット
-    animationStarted = false;
-    isPaused         = false;
-    // shouldStop のリセットは削除しました
+  // 入力チェック
+  if ([cReVal, cImVal, samplesVal, maxIterVal, pauseMsVal].some(v => isNaN(v))) {
+    alert('パラメータを正しく入力してください。');
+    return;
   }
 
-  async function onPlayClick() {
-    if (animationStarted) return;
+  // フラグを更新し、ボタン UI を切り替え
+  state.animationStarted = true;
+  state.shouldStop       = false;
+  updateButtonStates({ play: false, pause: true, resume: false, reset: true });
 
-    const cRe     = parseFloat(cReInput.value);
-    const cIm     = parseFloat(cImInput.value);
-    const samples = parseInt(samplesInput.value, 10);
-    const maxIter = parseInt(maxIterInput.value, 10);
-    const pauseMs = parseInt(pauseMsInput.value, 10);
+  // Julia 定数および初期点群を作成
+  const c       = new Complex(cReVal, cImVal);
+  const initPts = generateCirclePoints(samplesVal);
+  const interpSteps = AppConfig.defaultInterpSteps;
 
-    if ([cRe, cIm, samples, maxIter, pauseMs].some(v => isNaN(v))) {
-      alert('パラメータを正しく入力してください。');
-      return;
-    }
+  // アニメーション本体を呼び出す
+  await animateInverseWithPause(
+    elements.ctx,
+    elements.canvas.width / 2,
+    elements.canvas.height / 2,
+    AppConfig.defaultScale,
+    c,
+    initPts,
+    maxIterVal,
+    pauseMsVal,
+    interpSteps,
+    () => state.shouldStop
+  );
 
-    animationStarted = true;
-    shouldStop       = false;
+  // アニメーションが完了または途中で中断された
+  state.animationStarted = false;
+  updateButtonStates({ play: true, pause: false, resume: false, reset: true });
+}
 
-    playBtn.disabled   = true;
-    pauseBtn.disabled  = false;
-    resumeBtn.disabled = true;
-    // resetBtn.disabled  = true;  // 削除：Reset は常に有効
+/**
+ * Pause ボタン押下時の処理
+ */
+function onPauseClick() {
+  if (!state.animationStarted || state.isPaused) return;
+  state.isPaused = true;
+  pauseAnimation();
+  updateButtonStates({ play: false, pause: false, resume: true, reset: true });
+}
 
-    const c           = new Complex(cRe, cIm);
-    const initPts     = generateCirclePoints(samples);
-    const interpSteps = AppConfig.defaultInterpSteps;
+/**
+ * Resume ボタン押下時の処理
+ */
+function onResumeClick() {
+  if (!state.animationStarted || !state.isPaused) return;
+  state.isPaused = false;
+  resumeAnimation();
+  updateButtonStates({ play: false, pause: true, resume: false, reset: true });
+}
 
-    await animateInverseWithPause(
-      ctx, cx, cy, scale,
-      c, initPts,
-      maxIter, pauseMs, interpSteps,
-      () => {
-        console.log('[animateInverseWithPause] shouldStopCallback called, shouldStop =', shouldStop);
-        return shouldStop;
-      }
-    );
-
-    // アニメーションが完了または Reset によって中断されたあと
-    animationStarted = false;
-    playBtn.disabled   = false;
-    pauseBtn.disabled  = true;
-    resumeBtn.disabled = true;
-    resetBtn.disabled  = false; // Reset は常に有効
+/**
+ * Reset ボタン押下時の処理
+ */
+function onResetClick() {
+  // どんな状態でも shouldStop フラグを立てる
+  state.shouldStop = true;
+  if (state.isPaused) {
+    resumeAnimation();  // pause 中だったら resume して内部の sleep を解除
+    state.isPaused = false;
   }
 
-  function onPauseClick() {
-    if (!animationStarted || isPaused) return;
-    isPaused = true;
-    pauseAnimation();
-    pauseBtn.disabled  = true;
-    resumeBtn.disabled = false;
+  // キャンバス／フォームだけ初期化
+  resetCanvasAndForm();
+  updateButtonStates({ play: true, pause: false, resume: false, reset: true });
+}
+
+/**
+ * アプリ初期化。DOMContentLoaded 後に呼び出されるべき。
+ */
+export function initApp() {
+  if (!bindElements()) {
+    console.error('[initApp] Canvas 要素が見つかりません。');
+    return;
   }
 
-  function onResumeClick() {
-    if (!animationStarted || !isPaused) return;
-    isPaused = false;
-    resumeAnimation();
-    pauseBtn.disabled  = false;
-    resumeBtn.disabled = true;
-  }
+  // フォーム初期値とボタン状態を設定
+  setDefaultFormValues();
+  updateButtonStates({ play: true, pause: false, resume: false, reset: true });
 
-  function onResetClick() {
-    console.log('[onResetClick] Reset ボタンが押されました。animationStarted =', animationStarted, ', isPaused =', isPaused);
-
-    // ── いつでも中断フラグを立てる ──
-    shouldStop = true;
-    console.log('[onResetClick] shouldStop を true にセットしました');
-
-    // 一時停止中であれば再開して sleep を止める
-    if (isPaused) {
-      console.log('[onResetClick] isPaused = true なので resumeAnimation() を呼びます');
-      resumeAnimation();
-      isPaused = false;
-    }
-
-    // ── キャンバス／フォームをリセット ──
-    clearCanvasAndReset();
-    console.log('[onResetClick] clearCanvasAndReset() 後: animationStarted =', animationStarted, ', shouldStop =', shouldStop);
-
-    // ── ボタン状態を初期化 ──
-    playBtn.disabled   = false;
-    pauseBtn.disabled  = true;
-    resumeBtn.disabled = true;
-    resetBtn.disabled  = false; // Reset は常に有効
-  }
-
-  playBtn.addEventListener('click', onPlayClick);
-  pauseBtn.addEventListener('click', onPauseClick);
-  resumeBtn.addEventListener('click', onResumeClick);
-  resetBtn.addEventListener('click', onResetClick);
+  // 各種イベント登録
+  elements.playBtn.addEventListener('click', onPlayClick);
+  elements.pauseBtn.addEventListener('click', onPauseClick);
+  elements.resumeBtn.addEventListener('click', onResumeClick);
+  elements.resetBtn.addEventListener('click', onResetClick);
 }
