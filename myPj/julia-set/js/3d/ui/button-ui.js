@@ -3,7 +3,7 @@
 import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../d3-config.js';
 import { Complex }                                  from '../../util/complex-number.js';
 import { runInverseAnimation }                      from '../d3-renderer.js';
-import { drawLegend, hideLegend }                   from '../../util/legend.js';
+import { drawLegend }                               from '../../util/legend.js';
 
 const btnRun   = document.getElementById('btn-run');
 const btnPause = document.getElementById('btn-pause');
@@ -36,6 +36,7 @@ if (btnRun) {
       btnRun.classList.add('d-none');
       btnPause.classList.remove('d-none');
       status.textContent = '(実行中...)';
+      status.classList.remove('status-stopped');
 
       try {
         const { minZ, maxZ, totalPoints } = await runInverseAnimation(
@@ -55,12 +56,15 @@ if (btnRun) {
         // 凡例を再描画
         drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
       } catch (err) {
+        // ここには基本的に来ない（Stop 時は runInverseAnimation が例外を投げずに return するため）
+        console.error('[button-ui] Unexpected error in runInverseAnimation:', err);
         window.isRunning = false;
         btnPause.classList.add('d-none');
         btnPause.textContent = 'Pause';
         btnRun.textContent   = 'Run';
         btnRun.classList.remove('d-none');
-        status.textContent = '(Stopped)';
+        status.textContent = '(エラー発生)';
+        status.classList.add('status-stopped');
       }
     } else if (window.isPaused) {
       window.isPaused = false;
@@ -91,17 +95,20 @@ if (btnStop) {
     window.isRunning = false;
 
     // Three.js シーンのすべての点群を削除
-    const toRemove = [];
-    window.scene.traverse(obj => {
-      if (obj.isPoints) toRemove.push(obj);
-    });
-    toRemove.forEach(p => window.scene.remove(p));
+    if (window.scene) {
+      const toRemove = [];
+      window.scene.traverse(obj => {
+        if (obj.isPoints) toRemove.push(obj);
+      });
+      toRemove.forEach(p => window.scene.remove(p));
+    }
 
     btnPause.classList.add('d-none');
     btnPause.textContent = 'Pause';
     btnRun.textContent   = 'Run';
     btnRun.classList.remove('d-none');
-    status.textContent = '(待機中)';
+    status.textContent = '(停止中)';
+    status.classList.add('status-stopped');
 
     // 凡例を初期状態（config 由来）に戻す
     drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
