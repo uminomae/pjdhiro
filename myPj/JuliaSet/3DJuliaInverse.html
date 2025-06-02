@@ -2,14 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Three.js 逆写像アニメーション (Z→赤チャネル)</title>
+  <title>Three.js 逆写像アニメーション (Z→赤チャネル)＋凡例</title>
   <!-- Google アナリティクス (gtag.js) 設定 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV09PB2PZT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-WV09PB2PZT');
   </script>
   
@@ -27,11 +26,28 @@
       height: 100vh;
       position: relative;
     }
+    /* Three.js のキャンバスは JS 側でここに append される */
+    /* 凡例用 Canvas を右下に重ねて表示 */
+    #legend-canvas {
+      position: absolute;
+
+      top: 20px;
+      right: 20px;
+      left: auto;
+      bottom: auto;
+      
+      width: 60px;   /* 必要に応じて調整 */
+      height: 300px;  /* 必要に応じて調整 */
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      z-index: 10;
+      pointer-events: none; /* マウス操作を Three.js 側に透過 */
+    }
     #overlay {
       position: absolute;
       top: 10px;
       left: 10px;
-      z-index: 10;
+      z-index: 20;
       background: rgba(0,0,0,0.6);
       padding: 6px 12px;
       border-radius: 4px;
@@ -42,9 +58,20 @@
     #overlay input {
       width: 60px;
       margin-right: 8px;
+      background: #222;
+      border: 1px solid #444;
+      color: #fff;
     }
     #overlay button {
       margin-right: 8px;
+      background: #333;
+      border: 1px solid #555;
+      color: #fff;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+    #overlay button:hover {
+      background: #444;
     }
   </style>
 
@@ -60,22 +87,24 @@
 </head>
 <body>
   <!-- ─── 3D 描画領域 ─── -->
-  <div id="canvas-container"></div>
-
-  <!-- ─── オーバーレイ UI ─── -->
-  <div id="overlay">
-    c = 
-    <input type="number" id="input-re" step="0.01" value="-0.4" /> + 
-    <input type="number" id="input-im" step="0.01" value="0.6" /> i,  
-    N = 
-    <input type="number" id="input-n" min="10" step="10" value="90" />,  
-    maxIter = 
-    <input type="number" id="input-iter" min="1" step="1" value="12" />
-    <button id="btn-run">Run</button>
-    <span id="status">(待機中)</span>
-    <p>赤色は発散と収束の境界です</p>
-    <p>ドラッグ、ホイールでカメラ（視点）を移動できます</p>
-    <p>やり直す場合は毎回ブラウザを更新してください</p>
+  <div id="canvas-container">
+    <!-- Three.js の renderer.domElement は JS 側でここに append -->
+    <canvas id="legend-canvas"></canvas>
+    <!-- オーバーレイ UI -->
+    <div id="overlay">
+      c = 
+      <input type="number" id="input-re" step="0.01" value="-0.4" /> + 
+      <input type="number" id="input-im" step="0.01" value="0.6" /> i,  
+      N = 
+      <input type="number" id="input-n" min="10" step="10" value="90" />,  
+      maxIter = 
+      <input type="number" id="input-iter" min="1" step="1" value="12" />
+      <button id="btn-run">Run</button>
+      <span id="status">(待機中)</span>
+      <p>赤色は発散と収束の境界です</p>
+      <p>ドラッグ、ホイールでカメラ（視点）を移動できます</p>
+      <p>やり直す場合は毎回ブラウザを更新してください</p>
+    </div>
   </div>
 
   <!-- ─── メインスクリプト読み込み ─── -->
@@ -100,8 +129,65 @@
     const btnRun    = document.getElementById('btn-run');
     const status    = document.getElementById('status');
 
+    // 凡例用 Canvas のコンテキスト
+    const legendCanvas = document.getElementById('legend-canvas');
+    const legendCtx    = legendCanvas.getContext('2d');
+
+    // 凡例の最小・最大 Z 値を格納する変数
+    let legendMinZ = 0;
+    let legendMaxZ = 2.0;
+
+    /**
+     * drawLegend(minZ, maxZ)
+     *  legendCanvas 全体に「青→赤」の縦グラデーションを描き、
+     *  上下と中央に数値ラベルを表示する
+     */
+    function drawLegend(minZ, maxZ) {
+      // Canvas の内部解像度をクライアント幅／高さに合わせる
+      const cw = legendCanvas.clientWidth;
+      const ch = legendCanvas.clientHeight;
+      legendCanvas.width  = cw;
+      legendCanvas.height = ch;
+
+      // 上下にマージンを取る
+      const margin = 10;
+      const usableHeight = ch - 2 * margin;
+      const steps = 100;
+
+      // (1) 縦方向にグラデーションを塗り重ね
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps;           // 0 → 1
+        const hue = 240 - 240 * t;     // 240(青)→0(赤)
+        legendCtx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+        const y = margin + usableHeight * (1 - t);
+        const sliceHeight = usableHeight / steps + 1;
+        legendCtx.fillRect(0, y, cw, sliceHeight);
+      }
+
+      // (2) 枠線
+      legendCtx.strokeStyle = '#fff';
+      legendCtx.strokeRect(0, 0, cw, ch);
+
+      // (3) 数値ラベル
+      legendCtx.fillStyle = '#fff';
+      legendCtx.font = '12px monospace';
+      legendCtx.textAlign = 'right';
+      legendCtx.textBaseline = 'middle';
+
+      // 上端に maxZ
+      legendCtx.fillText(maxZ.toFixed(2), cw - 4, margin);
+      // 中央に中間値
+      const midZ = (minZ + maxZ) / 2;
+      legendCtx.fillText(midZ.toFixed(2), cw - 4, ch / 2);
+      // 下端に minZ
+      legendCtx.fillText(minZ.toFixed(2), cw - 4, ch - margin);
+    }
+
+    // 初期表示：凡例を一度描画しておく
+    drawLegend(legendMinZ, legendMaxZ);
+
     btnRun.addEventListener('click', async () => {
-      // 既存の Points をすべて消す
+      // 既存の Points オブジェクトをすべて削除
       const toRemove = [];
       scene.traverse(obj => {
         if (obj.isPoints) toRemove.push(obj);
@@ -121,8 +207,16 @@
 
       status.textContent = '(実行中…)';
       try {
-        await runInverseAnimation(c, N, maxIter, 800);
-        status.textContent = `(完了: N=${N}, maxIter=${maxIter})`;
+        // runInverseAnimation は { minZ, maxZ, totalPoints } を返すように修正済み前提
+        const { minZ, maxZ, totalPoints } = await runInverseAnimation(c, N, maxIter, 800);
+
+        // ステータスを更新
+        status.textContent = `(完了: N=${N}, maxIter=${maxIter}, 点数=${totalPoints})`;
+
+        // 凡例を新しい範囲で更新
+        legendMinZ = minZ;
+        legendMaxZ = maxZ;
+        drawLegend(legendMinZ, legendMaxZ);
       } catch (err) {
         console.error(err);
         status.textContent = '(エラー発生)';
