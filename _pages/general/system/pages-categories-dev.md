@@ -11,6 +11,8 @@ sidebar:
   nav5: ""
 ---
 
+## このサイトの編集方法：自分用
+
 {% assign dialogue_pages = site.pages | where_exp: "page", "page.categories contains 'サイト編集'" %}
 <ul class="taxonomy__entries">
   {% for page in dialogue_pages %}
