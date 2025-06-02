@@ -37,7 +37,7 @@ export function drawLegend(minZ = legendMinZ, maxZ = legendMaxZ) {
 
   // ─── (3) フォントサイズを「Canvas幅の10%」で決定 ───
   //      例: Canvas 幅が 100px → 文字サイズ = 10px
-  const fontSize = cssW * 0.40;
+  const fontSize = cssW * 0.30;
   legendCtx.font = `${fontSize}px monospace`;
   legendCtx.fillStyle = '#fff';
   legendCtx.textAlign = 'right';
