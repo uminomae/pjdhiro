@@ -1,4 +1,4 @@
-// js/3d/d3-color-map.js
+// js/3d/renderer/d3-color-map.js
 
 import * as THREE from 'three';
 

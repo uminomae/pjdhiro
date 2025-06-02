@@ -1,15 +1,15 @@
 // js/3d/d3-steps.js
 
-import { Complex } from '../util/complex-number.js';
+import { Complex } from '../../util/complex-number.js';
 import { createColoredPoints3D } from './d3-utils.js';
-import { pauseAwareSleep as sleep } from '../util/sleep.js';
+import { pauseAwareSleep as sleep } from '../../util/sleep.js';
 
 import {
   DRAW_PARAMS,
   STAGE_NAMES,
   OBJECT_NAMES,
   ERROR_MESSAGES
-} from './d3-config.js';
+} from '../d3-config.js';
 
 /**
  * step1_subtract3D

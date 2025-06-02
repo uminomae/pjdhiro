@@ -1,4 +1,4 @@
-// js/3d/d3-main.js（リファクタリング後）
+// js/3d/d3-renderer.js（リファクタリング後）
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -8,14 +8,14 @@ import { generateCirclePoints } from '../util/generate-circle.js';
 import { pauseAwareSleep as sleep } from '../util/sleep.js';
 
 // ユーティリティ関数
-import { createColoredPoints3D } from './d3-utils.js';
+import { createColoredPoints3D } from './renderer/d3-utils.js';
 
 // ステップ関数
 import {
   step1_subtract3D,
   step2_sqrt1_3D,
   step3_sqrt2_3D
-} from './d3-steps.js';
+} from './renderer/d3-steps.js';
 
 // ─── 設定値をインポート ───
 import { CAMERA_PARAMS, SCENE_PARAMS, DRAW_PARAMS, LEGEND_DEFAULT } from './d3-config.js';
