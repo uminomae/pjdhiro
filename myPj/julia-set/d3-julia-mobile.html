@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julia集合 逆写像</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+    #canvas-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    #legend-canvas {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 2rem;
+      height: 18rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      z-index: 10;
+      pointer-events: none;
+      /* 初期表示は CSS 側で block */
+      display: block;
+    }
+  </style>
+
+  <!-- Import Map（三.js用モジュール解決） -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- ナビバー -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Julia集合 逆写像</a>
+      <button
+        class="btn btn-outline-light"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasForm"
+        aria-controls="offcanvasForm"
+      >
+        設定
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas: 設定フォーム -->
+  <div
+    class="offcanvas offcanvas-end text-dark bg-light"
+    tabindex="-1"
+    id="offcanvasForm"
+    aria-labelledby="offcanvasFormLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasFormLabel">パラメータ設定</h5>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <form>
+        <!-- フォームスイッチ → form-switch-reverse を使って左右を反転 -->
+        <div class="form-check form-switch mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="chk-legend"
+            checked
+          />
+          <label class="form-check-label text-body" for="chk-legend">
+            凡例を表示
+          </label>
+        </div>
+
+        <!-- Re(c) -->
+        <div class="mb-3">
+          <label for="input-re" class="form-label">Re(c)</label>
+          <input
+            type="number"
+            step="0.01"
+            class="form-control"
+            id="input-re"
+            value="-0.4"
+          />
+        </div>
+        <!-- Im(c) -->
+        <div class="mb-3">
+          <label for="input-im" class="form-label">Im(c)</label>
+          <input
+            type="number"
+            step="0.01"
+            class="form-control"
+            id="input-im"
+            value="0.6"
+          />
+        </div>
+        <!-- N (ポイント数) -->
+        <div class="mb-3">
+          <label for="input-n" class="form-label">N (ポイント数)</label>
+          <input
+            type="number"
+            min="10"
+            step="10"
+            class="form-control"
+            id="input-n"
+            value="90"
+          />
+        </div>
+        <!-- maxIter -->
+        <div class="mb-3">
+          <label for="input-iter" class="form-label">maxIter</label>
+          <input
+            type="number"
+            min="1"
+            step="1"
+            class="form-control"
+            id="input-iter"
+            value="12"
+          />
+        </div>
+
+        <!-- Run / Pause / Stop ボタン群 -->
+        <div class="d-flex align-items-center mb-3">
+          <button
+            type="button"
+            id="btn-run"
+            class="btn btn-primary btn-sm me-3"
+            data-bs-dismiss="offcanvas"
+          >
+            Run
+          </button>
+          <button
+            type="button"
+            id="btn-pause"
+            class="btn btn-secondary btn-sm me-3 d-none"
+          >
+            Pause
+          </button>
+          <button
+            type="button"
+            id="btn-stop"
+            class="btn btn-danger btn-sm"
+          >
+            Stop
+          </button>
+        </div>
+
+        <!-- ステータス表示 -->
+        <div class="mb-3">
+          <span id="status">(待機中)</span>
+        </div>
+
+        <hr />
+
+        <p class="small text-muted">赤色は発散と収束の境界です。</p>
+        <p class="small text-muted">ドラッグ・ホイールでカメラを移動できます。</p>
+        <p class="small text-muted">Stopを押すと初期状態に戻ります。</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3D 描画領域 -->
+  <div id="canvas-container">
+    <canvas id="legend-canvas"></canvas>
+  </div>
+
+  <!-- Bootstrap JS (Bundle) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- メインスクリプト -->
+  <script type="module">
+    import { Complex } from './js/util/complex-number.js';
+    import {
+      initThree,
+      animateLoop,
+      runInverseAnimation,
+      scene
+    } from './js/3d/d3-main.js';
+
+    // legend.js から必要な関数群をインポート
+    import { drawLegend, toggleLegend, showLegend, hideLegend } from './js/util/legend.js';
+
+    // ─── グローバルフラグ ───
+    window.isRunning = false;
+    window.isPaused  = false;
+    window.isStopped = false;
+
+    // ─── Three.js 初期化 ───
+    initThree();
+    animateLoop();
+
+    // ─── 要素取得 ───
+    const inputRe   = document.getElementById('input-re');
+    const inputIm   = document.getElementById('input-im');
+    const inputN    = document.getElementById('input-n');
+    const inputIter = document.getElementById('input-iter');
+    const btnRun    = document.getElementById('btn-run');
+    const btnPause  = document.getElementById('btn-pause');
+    const btnStop   = document.getElementById('btn-stop');
+    const chkLegend = document.getElementById('chk-legend');
+    const status    = document.getElementById('status');
+
+    // ─── Runボタンイベント（凡例再描画含む） ───
+    btnRun.addEventListener('click', async () => {
+      if (!window.isRunning) {
+        window.isRunning = true;
+        window.isPaused  = false;
+        window.isStopped = false;
+
+        btnRun.classList.add('d-none');
+        btnPause.classList.remove('d-none');
+
+        const cre = parseFloat(inputRe.value);
+        const cim = parseFloat(inputIm.value);
+        const c   = new Complex(cre, cim);
+        const N       = parseInt(inputN.value, 10);
+        const maxIter = parseInt(inputIter.value, 10);
+
+        status.textContent = '(実行中…)';
+        try {
+          const { minZ, maxZ, totalPoints } = await runInverseAnimation(c, N, maxIter, 800);
+          window.isRunning = false;
+
+          btnPause.classList.add('d-none');
+          btnPause.textContent = 'Pause';
+          btnRun.textContent   = 'Run';
+          btnRun.classList.remove('d-none');
+
+          status.textContent = `(完了: N=${N}, maxIter=${maxIter}, 点数=${totalPoints})`;
+          drawLegend(minZ, maxZ);
+        } catch (err) {
+          window.isRunning = false;
+          btnPause.classList.add('d-none');
+          btnPause.textContent = 'Pause';
+          btnRun.textContent   = 'Run';
+          btnRun.classList.remove('d-none');
+          status.textContent = '(Stopped)';
+        }
+      } else if (window.isPaused) {
+        window.isPaused = false;
+        btnPause.textContent = 'Pause';
+        status.textContent   = '(実行中…)';
+      }
+    });
+
+    // ─── Pause/Resume ───
+    btnPause.addEventListener('click', () => {
+      if (!window.isPaused) {
+        window.isPaused = true;
+        btnPause.textContent = 'Resume';
+        status.textContent   = '(Paused)';
+      } else {
+        window.isPaused = false;
+        btnPause.textContent = 'Pause';
+        status.textContent   = '(実行中…)';
+      }
+    });
+
+    // ─── Stop ───
+    btnStop.addEventListener('click', () => {
+      window.isStopped = true;
+      window.isPaused  = false;
+      window.isRunning = false;
+
+      const toRemove = [];
+      scene.traverse(obj => {
+        if (obj.isPoints) toRemove.push(obj);
+      });
+      toRemove.forEach(p => scene.remove(p));
+
+      btnPause.classList.add('d-none');
+      btnPause.textContent = 'Pause';
+      btnRun.textContent   = 'Run';
+      btnRun.classList.remove('d-none');
+      status.textContent = '(待機中)';
+
+      drawLegend(0, 2);
+
+      inputRe.value   = '-0.4';
+      inputIm.value   = '0.6';
+      inputN.value    = '90';
+      inputIter.value = '12';
+    });
+
+    // ─── 凡例の表示/非表示スイッチ ───
+    chkLegend.addEventListener('change', () => {
+      if (chkLegend.checked) {
+        showLegend();
+      } else {
+        hideLegend();
+      }
+    });
+  </script>
+</body>
+</html>
