@@ -15,11 +15,11 @@
   <style>
     /* ─── レスポンシブな基本フォントサイズ ─── */
     html {
-      font-size: 1.2vw; /* ビューポート幅の 1.2% を基準とする */
+      font-size: 1.2vw; /* ビューポート幅の 1.2% */
     }
     @media (max-width: 768px) {
       html {
-        font-size: 2.5vw; /* Mobileでは文字が小さくなりすぎないように */
+        font-size: 2.5vw;
       }
     }
 
@@ -31,28 +31,80 @@
       display: flex;
       flex-direction: column;
     }
+
+    /* ─── Canvas コンテナ ─── */
     #canvas-container {
       flex: 1;
       position: relative;
       overflow: hidden;
+      min-height: 0;
     }
+
+    /* ─── 凡例キャンバス ─── */
     #legend-canvas {
       position: absolute;
       top: 1rem;
       left: 1rem;
       width: 5vw;
       height: 20vw;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      padding: 0.2rem;
       z-index: 10;
       pointer-events: none;
-      display: block;
     }
     @media (max-width: 768px) {
       #legend-canvas {
         width: 7vw;
         height: 25vw;
+        top: 0.5rem;
+        left: 0.5rem;
       }
+    }
+
+    /* ─── Offcanvas (パラメータ設定) ─── */
+    .offcanvas.offcanvas-end {
+      width: 100%;
+      max-width: 300px; /* デスクトップでの最大幅 */
+    }
+    @media (max-width: 576px) {
+      .offcanvas.offcanvas-end {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* ─── ナビバー ─── */
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+    .navbar .btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    /* ─── フォームスタイル ─── */
+    .offcanvas-body .form-label {
+      font-size: 0.9rem;
+    }
+    .offcanvas-body .form-control {
+      font-size: 0.9rem;
+    }
+    .offcanvas-body .form-check-label {
+      font-size: 0.9rem;
+    }
+
+    /* ─── ステータス表示 ─── */
+    #status {
+      font-weight: bold;
+      color: #0f0;
+    }
+    .status-stopped {
+      color: #f00; /* 停止/エラー時は赤文字 */
     }
   </style>
 
@@ -70,10 +122,8 @@
   <!-- ナビバー -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <!-- 左端：タイトル -->
       <a class="navbar-brand" href="#">Julia Set Inverse Mapping Visualizer</a>
-  
-      <!-- 中央：Run／Pause／Stop をまとめる -->
+
       <div class="mx-auto">
         <button id="btn-run" class="btn btn-success btn-sm me-2" type="button">
           Run
@@ -85,8 +135,7 @@
           Stop
         </button>
       </div>
-  
-      <!-- 右端：設定ボタン -->
+
       <button
         class="btn btn-outline-light btn-sm"
         type="button"
@@ -98,7 +147,6 @@
       </button>
     </div>
   </nav>
-  
 
   <!-- Offcanvas: 設定フォーム -->
   <div
@@ -199,8 +247,7 @@
     crossorigin="anonymous"
   ></script>
 
-  <!-- Three.js 用メインスクリプト -->
+  <!-- エントリポイント：d3-init-app.js のみ読み込む -->
   <script type="module" src="js/3d/d3-init-app.js"></script>
-
 </body>
 </html>
