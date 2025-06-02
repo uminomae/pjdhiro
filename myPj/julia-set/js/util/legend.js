@@ -1,128 +1,107 @@
 // ─── legend.js ───
 // Three.js の凡例（legend-canvas）描画・表示制御をまとめるモジュール
 
-// 初期の最小/最大 Z 値（後からアルゴリズムで変更可能）
 let legendMinZ = 0;
 let legendMaxZ = 2.0;
 
-/**
- * getCanvasContext()
- * DOM から legend-canvas 要素を取得し、そのコンテキストを返します。
- * showLegend()／hideLegend()／drawLegend() で都度呼び出すようにします。
- */
 function getCanvasContext() {
-  const legendCanvas = document.getElementById('legend-canvas');
-  if (!legendCanvas) return null;
-  const legendCtx = legendCanvas.getContext('2d');
-  return { legendCanvas, legendCtx };
+  const canvas = document.getElementById('legend-canvas');
+  if (!canvas) return null;
+  return {
+    legendCanvas: canvas,
+    legendCtx:    canvas.getContext('2d')
+  };
 }
 
 /**
  * drawLegend(minZ, maxZ)
- * legendCanvas に「青→赤」の縦グラデーションを描き、
- * 上下と中央に CSS 指定されたフォントサイズで数値ラベルを表示します。
+ * 1) Canvas の「見かけサイズ」（CSS で指定された幅・高さ）を取得
+ * 2) 内部バッファを devicePixelRatio に合わせて設定
+ * 3) フォントサイズを「Canvas幅の10%」などで計算し、ctx.font にセット
+ * 4) グラデーション → 枠線 → 数値ラベルを描画
  */
 export function drawLegend(minZ = legendMinZ, maxZ = legendMaxZ) {
-  const ctxInfo = getCanvasContext();
-  if (!ctxInfo) return;
-  const { legendCanvas, legendCtx } = ctxInfo;
+  const info = getCanvasContext();
+  if (!info) return;
+  const { legendCanvas, legendCtx } = info;
 
-  // (1) Canvas の表示サイズ（CSS で指定された width/height）を取得
-  const cw = legendCanvas.clientWidth;
-  const ch = legendCanvas.clientHeight;
+  // ─── (1) CSSで指定された見かけ幅・高さを取得 ───
+  const cssW = legendCanvas.clientWidth;
+  const cssH = legendCanvas.clientHeight;
 
-  // (2) DPI (devicePixelRatio) を考慮して内部解像度を合わせる
+  // ─── (2) 内部バッファを「見かけサイズ × devicePixelRatio」で設定 ───
   const dpr = window.devicePixelRatio || 1;
-  legendCanvas.width  = cw * dpr;
-  legendCanvas.height = ch * dpr;
-  // scale しておかないと描画がぼやける
+  legendCanvas.width  = Math.floor(cssW * dpr);
+  legendCanvas.height = Math.floor(cssH * dpr);
   legendCtx.scale(dpr, dpr);
 
-  // (3) CSS で指定されているフォントサイズを取得
-  //    getComputedStyle() で "16px" のような文字列が返ってくる
-  const computedStyle = window.getComputedStyle(legendCanvas);
-  const fontSizeCSS = computedStyle.getPropertyValue('font-size'); // 例: "10px" や "1.2vw" など
-  // ここで「px 以外の単位（vw など）が返ってくる場合」はブラウザが自動でピクセルに変換した値を返す
-  // → たとえば font-size:0.8vw; なら、ビューポート幅が 1000px のとき "8px" として取得できる
-  //    したがって、これをそのまま ctx.font に流し込めば OK
-  const fontSizePx = fontSizeCSS.trim(); // 文字列ごと "8px" の形式
-
-  // (4) グラデーションを描画
-  const margin = 10; // 上下の余白
-  const usableHeight = ch - 2 * margin;
-  const steps = 100;
-
-  for (let i = 0; i <= steps; i++) {
-    const t = i / steps;
-    const hue = 240 - 240 * t; // 240(青)→0(赤)
-    legendCtx.fillStyle = `hsl(${hue}, 100%, 50%)`;
-    const y = margin + usableHeight * (1 - t);
-    // "sliceHeight" をやや大きめにすると隙間ができにくい
-    const sliceHeight = usableHeight / steps + 1;
-    legendCtx.fillRect(0, y, cw, sliceHeight);
-  }
-
-  // (5) 枠線
-  legendCtx.strokeStyle = '#fff';
-  legendCtx.lineWidth = 1;
-  legendCtx.strokeRect(0, 0, cw, ch);
-
-  // (6) 数値ラベル描画
+  // ─── (3) フォントサイズを「Canvas幅の10%」で決定 ───
+  //      例: Canvas 幅が 100px → 文字サイズ = 10px
+  const fontSize = cssW * 0.40;
+  legendCtx.font = `${fontSize}px monospace`;
   legendCtx.fillStyle = '#fff';
-  // CSS で取得したフォントサイズ文字列（"8px" など）をそのまま利用
-  legendCtx.font = `${fontSizePx} monospace`;
   legendCtx.textAlign = 'right';
   legendCtx.textBaseline = 'middle';
 
+  // ─── (4) 背景グラデーションを描く ───
+  const margin = fontSize;                // 文字サイズ分だけ上下に余白を取る
+  const usableHeight = cssH - margin * 2;
+  const steps = 100;
+  for (let i = 0; i <= steps; i++) {
+    const t   = i / steps;
+    const hue = 240 - 240 * t;            // 240(青)→0(赤)
+    legendCtx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+    const y = margin + usableHeight * (1 - t);
+    const sliceH = usableHeight / steps + 1;
+    legendCtx.fillRect(0, y, cssW, sliceH);
+  }
+
+  // ─── (5) 枠線 ───
+  legendCtx.strokeStyle = '#fff';
+  legendCtx.lineWidth = 1;
+  legendCtx.strokeRect(0, 0, cssW, cssH);
+
+  // ─── (6) 数値ラベルを描画 ───
+  legendCtx.fillStyle = '#fff';
   // 上端に maxZ
-  legendCtx.fillText(maxZ.toFixed(2), cw - 4, margin);
+  legendCtx.fillText(maxZ.toFixed(2), cssW - 4, margin);
   // 中央に中間値
   const midZ = (minZ + maxZ) / 2;
-  legendCtx.fillText(midZ.toFixed(2), cw - 4, ch / 2);
+  legendCtx.fillText(midZ.toFixed(2), cssW - 4, cssH / 2);
   // 下端に minZ
-  legendCtx.fillText(minZ.toFixed(2), cw - 4, ch - margin);
+  legendCtx.fillText(minZ.toFixed(2), cssW - 4, cssH - margin);
 }
 
-/**
- * showLegend()
- * 凡例 Canvas の表示を「block」にします
- */
 export function showLegend() {
-  const ctxInfo = getCanvasContext();
-  if (!ctxInfo) return;
-  const { legendCanvas } = ctxInfo;
-  legendCanvas.style.display = 'block';
+  const info = getCanvasContext();
+  if (!info) return;
+  info.legendCanvas.style.display = 'block';
 }
 
-/**
- * hideLegend()
- * 凡例 Canvas の表示を「none」にします
- */
 export function hideLegend() {
-  const ctxInfo = getCanvasContext();
-  if (!ctxInfo) return;
-  const { legendCanvas } = ctxInfo;
-  legendCanvas.style.display = 'none';
+  const info = getCanvasContext();
+  if (!info) return;
+  info.legendCanvas.style.display = 'none';
 }
 
-/**
- * toggleLegend()
- * 現在の表示状態をトグル（表示 → 非表示、 非表示 → 表示）
- */
 export function toggleLegend() {
-  const ctxInfo = getCanvasContext();
-  if (!ctxInfo) return;
-  const { legendCanvas } = ctxInfo;
-  const style = window.getComputedStyle(legendCanvas);
-  if (style.display === 'none') {
-    showLegend();
+  const info = getCanvasContext();
+  if (!info) return;
+  const canvas = info.legendCanvas;
+  if (getComputedStyle(canvas).display === 'none') {
+    canvas.style.display = 'block';
   } else {
-    hideLegend();
+    canvas.style.display = 'none';
   }
 }
 
-// 初期状態では凡例を表示＆描画
+// ページ読み込み時に初期描画
 window.addEventListener('DOMContentLoaded', () => {
   showLegend();
+  drawLegend(legendMinZ, legendMaxZ);
+});
+
+// ウィンドウリサイズ時にも文字サイズを再計算して描画し直す
+window.addEventListener('resize', () => {
   drawLegend(legendMinZ, legendMaxZ);
 });
