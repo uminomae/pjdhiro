@@ -1,20 +1,27 @@
 // js/3d/d3-steps.js
 
 import { Complex } from '../util/complex-number.js';
-import { createColoredPoints3D } from './d3-utils.js';  // 後述のユーティリティ関数を使う想定
+import { createColoredPoints3D } from './d3-utils.js';
 import { pauseAwareSleep as sleep } from '../util/sleep.js';
+
+import {
+  DRAW_PARAMS,
+  STAGE_NAMES,
+  OBJECT_NAMES,
+  ERROR_MESSAGES
+} from './d3-config.js';
 
 /**
  * step1_subtract3D
- * ・currentGen: Complex[]（wPoints）
- * ・c: Complex (Julia 定数)
- * ・prevWhiteName: 前世代・白点の name
- * ・iter: 今回の世代番号
- * ・steps: 補間分割数
- * ・interval: 世代インターバル (ms)
- * ・pointSize: 点の大きさ
+ * ・currentGen: Complex[]
+ * ・c: Complex
+ * ・prevWhiteName: 前世代 白点の name
+ * ・iter: 世代番号
+ * ・steps: 補間ステップ数
+ * ・interval: ms
+ * ・pointSize: 点サイズ（default は config から参照）
  *
- * @returns {Promise<Complex[]>} diffPts: (w - c) の Complex[] を返す
+ * @returns {Promise<Complex[]>} diffPts
  */
 export async function step1_subtract3D(
   scene,
@@ -24,7 +31,7 @@ export async function step1_subtract3D(
   iter,
   steps,
   interval,
-  pointSize = 0.02
+  pointSize = DRAW_PARAMS.pointSize
 ) {
   // (1) wPoints → diffPts を計算
   const diffPts = currentGen.map(w => w.sub(c));
@@ -33,53 +40,53 @@ export async function step1_subtract3D(
   for (let k = 1; k <= steps; k++) {
     const t = k / steps;
 
-    // (i) 前世代 白点 (currentGen) を再描画
+    // (i) 前世代 白点 を再描画
     const existingPrev = scene.getObjectByName(prevWhiteName);
     if (existingPrev) scene.remove(existingPrev);
     const ptsWhitePrev = createColoredPoints3D(
       scene,
       currentGen,
-      'init',
+      STAGE_NAMES.init,
       iter - 1,
       pointSize,
       prevWhiteName
     );
     scene.add(ptsWhitePrev);
 
-    // (ii) currentGen → diffPts の線形補間をオレンジ (stage='subtract') で表示
+    // (ii) currentGen → diffPts の線形補間を表示 (stage='subtract')
     const interpPts = currentGen.map((w, i) => {
       const d = diffPts[i];
       const x = w.re * (1 - t) + d.re * t;
       const y = w.im * (1 - t) + d.im * t;
       return new Complex(x, y);
     });
-    const existingInterp = scene.getObjectByName('ptsSubtract');
+    const existingInterp = scene.getObjectByName(OBJECT_NAMES.subtractInterp);
     if (existingInterp) scene.remove(existingInterp);
     const ptsSubtract = createColoredPoints3D(
       scene,
       interpPts,
-      'subtract',
+      STAGE_NAMES.subtract,
       iter,
       pointSize,
-      'ptsSubtract'
+      OBJECT_NAMES.subtractInterp
     );
     scene.add(ptsSubtract);
 
     await sleep(interval / steps);
 
-    // (iii) オレンジ点を消して次ループへ
+    // (iii) オレンジ点を消して次へ
     scene.remove(ptsSubtract);
     scene.remove(ptsWhitePrev);
   }
 
-  // (3) 最終的な diffPts を一度だけ白点（stage='subtract'）で描画
+  // (3) 最終 diffPts を一度だけ白点（stage='subtract'）で描画
   const ptsDiffFinal = createColoredPoints3D(
     scene,
     diffPts,
-    'subtract',
+    STAGE_NAMES.subtract,
     iter,
     pointSize,
-    'ptsDiffFinal'
+    OBJECT_NAMES.diffFinal
   );
   scene.add(ptsDiffFinal);
   await sleep(interval / steps);
@@ -90,14 +97,14 @@ export async function step1_subtract3D(
 
 /**
  * step2_sqrt1_3D
- * ・diffPts: Complex[]（w - c）
+ * ・diffPts: Complex[]
  * ・prevWhiteName: 前世代 白点の name
  * ・iter: 世代番号
- * ・steps: 補間分割数
- * ・interval: インターバル (ms)
- * ・pointSize: 点サイズ
+ * ・steps: 補間ステップ数
+ * ・interval: ms
+ * ・pointSize: 点サイズ（default は config から参照）
  *
- * @returns {Promise<Complex[]>} sqrtPts1 (第一解) の配列
+ * @returns {Promise<Complex[]>} sqrtPts1
  */
 export async function step2_sqrt1_3D(
   scene,
@@ -106,7 +113,7 @@ export async function step2_sqrt1_3D(
   iter,
   steps,
   interval,
-  pointSize = 0.02
+  pointSize = DRAW_PARAMS.pointSize
 ) {
   const N = diffPts.length;
   const diffPhis = [];
@@ -137,13 +144,13 @@ export async function step2_sqrt1_3D(
   for (let k = 1; k <= steps; k++) {
     const t = k / steps;
 
-    // (i) 前世代「白点」(diffPts を白) を描く
+    // (i) 前世代「白点」（diffPts を白）を描く
     const existingWhite = scene.getObjectByName(prevWhiteName);
     if (existingWhite) scene.remove(existingWhite);
     const ptsWhitePrev = createColoredPoints3D(
       scene,
       diffPts,
-      'subtract',
+      STAGE_NAMES.subtract,
       iter - 1,
       pointSize,
       prevWhiteName
@@ -151,19 +158,19 @@ export async function step2_sqrt1_3D(
     scene.add(ptsWhitePrev);
 
     // (ii) diffPts を白で表示
-    const existingDiffWhite = scene.getObjectByName('ptsDiffWhite2');
+    const existingDiffWhite = scene.getObjectByName(OBJECT_NAMES.diffWhite2);
     if (existingDiffWhite) scene.remove(existingDiffWhite);
     const ptsDiffWhite2 = createColoredPoints3D(
       scene,
       diffPts,
-      'subtract',
+      STAGE_NAMES.subtract,
       iter,
       pointSize,
-      'ptsDiffWhite2'
+      OBJECT_NAMES.diffWhite2
     );
     scene.add(ptsDiffWhite2);
 
-    // (iii) diffPts → sqrtPts1 極座標補間を黄色 (stage='sqrt1') で表示
+    // (iii) diffPts → sqrtPts1 補間を黄色で表示
     const interpPts = [];
     for (let i = 0; i < N; i++) {
       const r0   = diffRs[i];
@@ -184,34 +191,34 @@ export async function step2_sqrt1_3D(
       interpPts.push(new Complex(x, y));
     }
 
-    const existingYellow = scene.getObjectByName('ptsYellow');
+    const existingYellow = scene.getObjectByName(OBJECT_NAMES.yellow);
     if (existingYellow) scene.remove(existingYellow);
     const ptsYellow = createColoredPoints3D(
       scene,
       interpPts,
-      'sqrt1',
+      STAGE_NAMES.sqrt1,
       iter,
       pointSize,
-      'ptsYellow'
+      OBJECT_NAMES.yellow
     );
     scene.add(ptsYellow);
 
     await sleep(interval / steps);
 
-    // (iv) 黄色を消去して次ループ
+    // (iv) 黄色を消して次ループへ
     scene.remove(ptsYellow);
     scene.remove(ptsDiffWhite2);
     scene.remove(ptsWhitePrev);
   }
 
-  // (3) 最終的な sqrtPts1 を一度だけ黄色で描画して返す
+  // (3) 最終 sqrtPts1 を一度だけ黄色で描画して返す
   const ptsYellowFinal = createColoredPoints3D(
     scene,
     sqrtPts1,
-    'sqrt1',
+    STAGE_NAMES.sqrt1,
     iter,
     pointSize,
-    'ptsYellowFinal'
+    OBJECT_NAMES.yellowFinal
   );
   scene.add(ptsYellowFinal);
   await sleep(interval / steps);
@@ -223,14 +230,14 @@ export async function step2_sqrt1_3D(
 /**
  * step3_sqrt2_3D
  * ・diffPts: Complex[]
- * ・sqrtPts1: Complex[]（第一解）
+ * ・sqrtPts1: Complex[]
  * ・prevWhiteName: 前世代 白点の name
  * ・iter: 世代番号
- * ・steps: 補間分割数
- * ・interval: インターバル
- * ・pointSize: 点サイズ
+ * ・steps: 補間ステップ数
+ * ・interval: ms
+ * ・pointSize: 点サイズ（default は config から参照）
  *
- * @returns {Promise<Complex[]>} combinedPts (第一解＋第二解) の配列
+ * @returns {Promise<Complex[]>} combinedPts
  */
 export async function step3_sqrt2_3D(
   scene,
@@ -240,7 +247,7 @@ export async function step3_sqrt2_3D(
   iter,
   steps,
   interval,
-  pointSize = 0.02
+  pointSize = DRAW_PARAMS.pointSize
 ) {
   const N = diffPts.length;
   const diffPhis = [];
@@ -274,32 +281,32 @@ export async function step3_sqrt2_3D(
     const t = k / steps;
 
     // (i) “黄色 (sqrtPts1)” を描く
-    const existingYellowKeep = scene.getObjectByName('ptsYellowFinal');
+    const existingYellowKeep = scene.getObjectByName(OBJECT_NAMES.yellowKeep);
     if (existingYellowKeep) scene.remove(existingYellowKeep);
     const ptsYellowKeep = createColoredPoints3D(
       scene,
       sqrtPts1,
-      'sqrt1',
+      STAGE_NAMES.sqrt1,
       iter,
       pointSize,
-      'ptsYellowFinal'
+      OBJECT_NAMES.yellowKeep
     );
     scene.add(ptsYellowKeep);
 
     // (ii) “diffPts” を白で描く
-    const existingDiffKeep = scene.getObjectByName('ptsDiffKeep');
+    const existingDiffKeep = scene.getObjectByName(OBJECT_NAMES.diffKeep);
     if (existingDiffKeep) scene.remove(existingDiffKeep);
     const ptsDiffKeep = createColoredPoints3D(
       scene,
       diffPts,
-      'subtract',
+      STAGE_NAMES.subtract,
       iter,
       pointSize,
-      'ptsDiffKeep'
+      OBJECT_NAMES.diffKeep
     );
     scene.add(ptsDiffKeep);
 
-    // (iii) diffPts → sqrtPts2 の極座標補間を “ピンク (stage='sqrt2')” で表示
+    // (iii) diffPts → sqrtPts2 補間を “ピンク” で表示
     const interpPts = [];
     for (let i = 0; i < N; i++) {
       const r0   = diffRs[i];
@@ -317,15 +324,15 @@ export async function step3_sqrt2_3D(
       const y = r_t * Math.sin(phi_t);
       interpPts.push(new Complex(x, y));
     }
-    const existingPink = scene.getObjectByName('ptsPink');
+    const existingPink = scene.getObjectByName(OBJECT_NAMES.pink);
     if (existingPink) scene.remove(existingPink);
     const ptsPink = createColoredPoints3D(
       scene,
       interpPts,
-      'sqrt2',
+      STAGE_NAMES.sqrt2,
       iter,
       pointSize,
-      'ptsPink'
+      OBJECT_NAMES.pink
     );
     scene.add(ptsPink);
 
@@ -342,10 +349,10 @@ export async function step3_sqrt2_3D(
   const ptsWhiteFinal = createColoredPoints3D(
     scene,
     combinedPts,
-    'recolor',
+    STAGE_NAMES.recolor,
     iter,
     pointSize,
-    'ptsWhiteFinal'
+    OBJECT_NAMES.whiteFinal
   );
   scene.add(ptsWhiteFinal);
   await sleep(interval);
