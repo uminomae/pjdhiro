@@ -2,132 +2,34 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Three.js 逆写像アニメーション (Z→赤チャネル)</title>
-  <!-- Google アナリティクス (gtag.js) 設定 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV09PB2PZT"></script>
+  <title>リダイレクト中…</title>
+  <!-- 即時に ../julia-set/d3-julia.html へリダイレクト -->
+  <meta http-equiv="refresh" content="0; url=../julia-set/d3-julia.html" />
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-WV09PB2PZT');
+    // 万一 Meta Refresh が効かない場合はこちらでもリダイレクト
+    window.location.replace('../julia-set/d3-julia.html');
   </script>
-  
   <style>
     body {
       margin: 0;
-      overflow: hidden;
-      background-color: #111;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-    }
-    #canvas-container {
-      width: 100vw;
       height: 100vh;
-      position: relative;
-    }
-    #overlay {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 10;
-      background: rgba(0,0,0,0.6);
-      padding: 6px 12px;
-      border-radius: 4px;
-      font-family: monospace;
-      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111;
       color: #fff;
+      font-family: sans-serif;
     }
-    #overlay input {
-      width: 60px;
-      margin-right: 8px;
-    }
-    #overlay button {
-      margin-right: 8px;
+    a {
+      color: #5fa;
     }
   </style>
-
-  <!-- ─── Import Map 定義 ─── -->
-  <script type="importmap">
-  {
-    "imports": {
-      "three":        "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/"
-    }
-  }
-  </script>
 </head>
 <body>
-  <!-- ─── 3D 描画領域 ─── -->
-  <div id="canvas-container"></div>
-
-  <!-- ─── オーバーレイ UI ─── -->
-  <div id="overlay">
-    c = 
-    <input type="number" id="input-re" step="0.01" value="-0.4" /> + 
-    <input type="number" id="input-im" step="0.01" value="0.6" /> i,  
-    N = 
-    <input type="number" id="input-n" min="10" step="10" value="90" />,  
-    maxIter = 
-    <input type="number" id="input-iter" min="1" step="1" value="12" />
-    <button id="btn-run">Run</button>
-    <span id="status">(待機中)</span>
-    <p>赤色は発散と収束の境界です</p>
-    <p>ドラッグ、ホイールでカメラ（視点）を移動できます</p>
-    <p>やり直す場合は毎回ブラウザを更新してください</p>
+  <div>
+    <p>自動的に <strong>d3-julia.html</strong> へ移動します。</p>
+    <p>もし自動で移動しない場合は、以下のリンクをクリックしてください：</p>
+    <p><a href="../julia-set/d3-julia.html">d3-julia.html を開く</a></p>
   </div>
-
-  <!-- ─── メインスクリプト読み込み ─── -->
-  <script type="module">
-    import { Complex } from './js/complex.js';
-    import {
-      initThree,
-      animateLoop,
-      runInverseAnimation,
-      scene
-    } from './js/threeInverseAnimate-main.js';
-
-    // Three.js の初期化
-    initThree();
-    animateLoop();
-
-    // UI 要素を取得
-    const inputRe   = document.getElementById('input-re');
-    const inputIm   = document.getElementById('input-im');
-    const inputN    = document.getElementById('input-n');
-    const inputIter = document.getElementById('input-iter');
-    const btnRun    = document.getElementById('btn-run');
-    const status    = document.getElementById('status');
-
-    btnRun.addEventListener('click', async () => {
-      // 既存の Points をすべて消す
-      const toRemove = [];
-      scene.traverse(obj => {
-        if (obj.isPoints) toRemove.push(obj);
-      });
-      for (const p of toRemove) {
-        scene.remove(p);
-      }
-
-      // Julia 定数 c を作成
-      const cre = parseFloat(inputRe.value);
-      const cim = parseFloat(inputIm.value);
-      const c   = new Complex(cre, cim);
-
-      // N, maxIter を取得
-      const N       = parseInt(inputN.value, 10);
-      const maxIter = parseInt(inputIter.value, 10);
-
-      status.textContent = '(実行中…)';
-      try {
-        await runInverseAnimation(c, N, maxIter, 800);
-        status.textContent = `(完了: N=${N}, maxIter=${maxIter})`;
-      } catch (err) {
-        console.error(err);
-        status.textContent = '(エラー発生)';
-      }
-    });
-  </script>
 </body>
 </html>
