@@ -1,4 +1,4 @@
-// ─── legend.js ───
+// ─── js/util/legend.js ───
 // Three.js の凡例（legend-canvas）描画・表示制御をまとめるモジュール
 
 let legendMinZ = 0;
