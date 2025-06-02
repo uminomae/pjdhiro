@@ -30,16 +30,3 @@ export function computeInverseGeneration(wPoints, c) {
   }
   return nextGen;
 }
-
-/**
- * generateUnitCircle
- * ── 単位円上に N 点を等間隔にサンプリングした Complex[] を返します。
- */
-export function generateUnitCircle(N) {
-  const pts = [];
-  for (let i = 0; i < N; i++) {
-    const theta = (2 * Math.PI * i) / N;
-    pts.push(new Complex(Math.cos(theta), Math.sin(theta)));
-  }
-  return pts;
-}
