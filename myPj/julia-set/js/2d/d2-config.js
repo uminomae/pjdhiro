@@ -19,7 +19,7 @@ export const AppConfig = {
 	defaultCIm: 0.6,
 	defaultSamples: 45,
 	defaultMaxIter: 10,
-	defaultPauseMsInput: 100,
+	defaultPauseMsInput: 1000,
   
 	// ── その他UI関連（余白やフォントサイズ、ブレークポイントなどを定めてもOK） ──
 	// 例: breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200 }
