@@ -56,7 +56,7 @@
     }
   </style>
 
-  <!-- Import Map（三.js 用モジュール解決）-->
+  <!-- Import Map（三.js用モジュール解決） -->
   <script type="importmap">
   {
     "imports": {
@@ -70,23 +70,18 @@
   <!-- ナビバー -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <!-- 左端：タイトル -->
       <a class="navbar-brand" href="#">Julia Set Inverse Mapping Visualizer</a>
-  
-      <!-- 中央：Run／Pause／Stop をまとめる -->
-      <div class="mx-auto">
-        <button id="btn-run" class="btn btn-success btn-sm me-2" type="button">
-          Run
-        </button>
-        <button id="btn-pause" class="btn btn-secondary btn-sm me-2 d-none" type="button">
-          Pause
-        </button>
-        <button id="btn-stop" class="btn btn-danger btn-sm" type="button">
-          Stop
-        </button>
-      </div>
-  
-      <!-- 右端：設定ボタン -->
+
+      <!-- Run ボタンをナビバー上に独立して配置 -->
+      <button
+        id="btn-run"
+        class="btn btn-primary btn-sm me-3"
+        type="button"
+      >
+        Run
+      </button>
+
+      <!-- 設定パネルのトグル -->
       <button
         class="btn btn-outline-light btn-sm"
         type="button"
@@ -98,7 +93,6 @@
       </button>
     </div>
   </nav>
-  
 
   <!-- Offcanvas: 設定フォーム -->
   <div
@@ -118,7 +112,7 @@
     </div>
     <div class="offcanvas-body">
       <form>
-        <!-- 凡例表示スイッチ（ここに移動） -->
+        <!-- 凡例表示スイッチ -->
         <div class="form-check form-switch mb-3">
           <input
             class="form-check-input"
@@ -126,7 +120,7 @@
             id="chk-legend"
             checked
           />
-          <label class="form-check-label" for="chk-legend">
+          <label class="form-check-label text-body" for="chk-legend">
             凡例を表示
           </label>
         </div>
@@ -178,16 +172,34 @@
           />
         </div>
 
+        <!-- Pause / Stop ボタン -->
+        <div class="d-flex align-items-center mb-3">
+          <button
+            type="button"
+            id="btn-pause"
+            class="btn btn-secondary btn-sm me-3"
+          >
+            Pause
+          </button>
+          <button
+            type="button"
+            id="btn-stop"
+            class="btn btn-danger btn-sm"
+          >
+            Stop
+          </button>
+        </div>
+
         <!-- ステータス表示 -->
         <div class="mb-3">
           <span id="status">(待機中)</span>
         </div>
 
         <hr />
-        <p class="small text-muted">Run で描画開始（初期値が推奨パラメータです）</p>
+        <p class="small text-muted">Runで描画開始（初期値が推奨パラメータです）</p>
         <p class="small text-muted">赤色は発散と収束の境界です。</p>
         <p class="small text-muted">ドラッグ・ホイールでカメラを移動できます。</p>
-        <p class="small text-muted">Stop を押すと初期状態に戻ります。</p>
+        <p class="small text-muted">Stopを押すと初期状態に戻ります。</p>
       </form>
     </div>
   </div>
@@ -203,48 +215,23 @@
     crossorigin="anonymous"
   ></script>
 
-  <!-- Three.js 用メインスクリプト -->
+  <!-- メインスクリプト -->
   <script type="module" src="js/3d/d3-app.js"></script>
 
-  <!-- 凡例描画モジュール -->
-  <script type="module">
-    import { drawLegend, showLegend, hideLegend } from './js/util/legend.js';
-
-    // 画面ロード時に凡例を初期表示
-    window.addEventListener('DOMContentLoaded', () => {
-      showLegend();
-      drawLegend();
-    });
-
-    // ウィンドウリサイズ時にも再描画
-    window.addEventListener('resize', () => {
-      drawLegend();
-    });
-
-    // 「凡例表示」チェックボックス に連動して凡例を表示/非表示
-    const chkLegend = document.getElementById('chk-legend');
-    chkLegend.addEventListener('change', () => {
-      if (chkLegend.checked) {
-        showLegend();
-        drawLegend();
-      } else {
-        hideLegend();
-      }
-    });
-  </script>
-
-  <!-- Run / Pause / Stop ボタン制御 -->
   <script>
+    // 例: Run / Pause / Stop ボタンの動作をここで設定
     document.getElementById('btn-run').addEventListener('click', () => {
+      // offcanvas を閉じる必要はなく、Run ボタン単独で処理を開始する
+      // 例: runInverseMapping() という関数を呼び出して描画を開始
       runInverseMapping();
       document.getElementById('status').textContent = '(描画中…)';
+      // Pause / Stop ボタンの表示切り替えなどもここで行える
       document.getElementById('btn-pause').classList.remove('d-none');
     });
 
     document.getElementById('btn-pause').addEventListener('click', () => {
       pauseInverseMapping();
       document.getElementById('status').textContent = '(一時停止中…)';
-      // 必要に応じて Run ボタンなどに切り替える処理を追加
     });
 
     document.getElementById('btn-stop').addEventListener('click', () => {
@@ -254,8 +241,8 @@
     });
 
     function runInverseMapping() {
+      // ここに描画開始のロジックを入れる
       console.log('Run処理を呼び出しました');
-      // ここに描画開始ロジックを記述
     }
     function pauseInverseMapping() {
       console.log('Pause処理を呼び出しました');
