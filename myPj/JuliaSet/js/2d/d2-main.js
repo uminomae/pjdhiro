@@ -1,12 +1,15 @@
-// js/main.js
+// 修正: js/2d/d2-main.js
 
 import { Complex } from '../util/complex-number.js';
-import { generateCirclePoints } from './2dCircle.js';
+// 旧: import { generateCirclePoints } from './d2-circle.js';
+// 新: util/generate-circle.js から呼び出す
+import { generateCirclePoints } from '../util/generate-circle.js';
+
 import {
   animateInverseWithPause,
   pauseAnimation,
   resumeAnimation
-} from './2dInverseAnimate.js';
+} from './d2-Inverse-animate.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('inverse-canvas');
@@ -59,15 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Julia の定数 c
     const c = new Complex(cRe, cIm);
 
-    // 単位円上の点列をサンプリング
+    // util/generate-circle.js から単位円上の点群を取得
     const initPts = generateCirclePoints(samples);
 
-    // 補間ステップ数（<input>で指定したい場合はフォームを追加しても構いません）
-    // ここでは「1 サブステップあたり 20 フレーム」で固定
+    // 補間ステップ数（任意固定）
     const interpSteps = 10;
 
     // アニメーションを開始
-    // ※ drawPoints を渡さず、pauseMs は第８引数、interpSteps は第９引数
     await animateInverseWithPause(
       ctx,
       cx,
