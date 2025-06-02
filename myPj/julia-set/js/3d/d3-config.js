@@ -1,20 +1,18 @@
 // js/3d/d3-config.js
 
 export const FORM_DEFAULTS = {
-	re:       -0.4,  // Re(c) の初期値
-	im:        0.6,  // Im(c) の初期値
-	N:        90,    // ポイント数の初期値
-	maxIter:   9     // 最大世代数の初期値
+	re:      -0.4,
+	im:       0.6,
+	N:       90,
+	maxIter:  9
   };
   
-  // runInverseAnimation 等で使う「点サイズ」「補間ステップ数」「インターバル時間」
   export const DRAW_PARAMS = {
-	pointSize: 0.02,  // 各ステップで使う Three.Points のサイズ
-	steps:     30,    // 補間アニメーション時の分割数
-	interval:  800    // 世代間インターバル (ms)
+	pointSize: 0.02,
+	steps:     30,
+	interval:  800
   };
   
-  // Three.js カメラ初期位置・背景色・軸サイズなど
   export const CAMERA_PARAMS = {
 	position: { x: -3, y: -7, z: 7 },
 	up:       { x: 0, y: 0, z: 1 },
@@ -24,17 +22,24 @@ export const FORM_DEFAULTS = {
 	far:      1000
   };
   
-  // 背景色やグリッドサイズ
   export const SCENE_PARAMS = {
 	backgroundColor: 0x111111,
 	axesSize:        3,
 	gridSize:        4,
 	gridDivisions:   20,
 	gridColorMajor:  0x333333,
-	gridColorMinor:  0x222222
+	gridColorMinor:  0x222222,
+	// ─── ここから追加 ───
+	gridRotationX:   Math.PI / 2,    // グリッドの X 軸回転角度
+	containerId:     'canvas-container', // Canvas を埋め込む要素の ID
+	defaultStageInit:    'init',     // 初期世代ステージ名
+	defaultStageRecolor: 'recolor',  // 再描画ステージ名
+	errorStopped:        'Stopped'   // runInverseAnimation 中断時のエラー文字列
+	// ─── ここまで追加 ───
   };
   
   export const LEGEND_DEFAULT = {
 	minZ: 0,
 	maxZ: 2
   };
+  
