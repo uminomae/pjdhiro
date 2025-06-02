@@ -1,6 +1,6 @@
 // js/inverseAnimate.js
 
-import { Complex } from './complex.js';
+import { Complex } from '../complex.js';
 const DOT_DIAMETER = 4;
 
 /** 一時停止フラグ */

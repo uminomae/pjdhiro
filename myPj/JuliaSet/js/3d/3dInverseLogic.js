@@ -1,5 +1,5 @@
 // js/inverseLogic.js
-import { Complex } from './complex.js';
+import { Complex } from '../complex.js';
 
 /**
  * computeInverseGeneration
