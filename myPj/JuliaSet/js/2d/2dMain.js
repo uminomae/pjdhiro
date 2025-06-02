@@ -1,6 +1,6 @@
 // js/main.js
 
-import { Complex } from '../complex.js';
+import { Complex } from '../util/complex-number.js';
 import { generateCirclePoints } from './2dCircle.js';
 import {
   animateInverseWithPause,

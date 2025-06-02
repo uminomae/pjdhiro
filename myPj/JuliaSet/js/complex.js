@@ -1,4 +1,4 @@
-// js/complex.js
+// js/util/complex-number.js
 // 複素数クラス：変更不要です。
 
 export class Complex {
