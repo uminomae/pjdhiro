@@ -1,0 +1,125 @@
+/* -------------------------------------------------
+   全体のベーススタイル
+------------------------------------------------- */
+body {
+	margin: 0;
+	background: #111;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 100vh;
+	color: #fff;
+	font-family: sans-serif;
+	padding-top: 20px;
+  }
+  
+  /* ─── ボタン／フォーム／テキストは最前面に置く ─── */
+  #controls,
+  #formula,
+  #config {
+	position: relative;
+	z-index: 2;
+  }
+  
+  /* -------------------------------------------------
+	 キャンバス＋背景画像を重ねるコンテナ
+	 ── レスポンシブ化のため width:800px 固定を解除し、
+		最大幅を 800px、幅は 100% ベースとする
+  ------------------------------------------------- */
+  #canvas-container {
+	position: relative;
+	width: 100%;
+	max-width: 800px;   /* 最大 800px まで広がる */
+	aspect-ratio: 4 / 3; /* アスペクト比 4:3（800×600 と同じ比率） */
+	margin: 20px 0;
+	z-index: 0;
+  }
+  
+  /* -------------------------------------------------
+	 背景の陰陽マーク（キャンバスの中央に半透明で表示）
+  ------------------------------------------------- */
+  #bg-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	height: auto;
+	opacity: 0.1;
+	pointer-events: none;
+	z-index: 0;
+  }
+  
+  /* -------------------------------------------------
+	 アニメーション用キャンバス
+	 ──  width/height は CSS では 100% にしておきつつ、
+	   JavaScript 側で実際のピクセル数 (canvas.width, .height) を設定する
+  ------------------------------------------------- */
+  #inverse-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #444;
+	background: transparent;
+	z-index: 1;
+  }
+  
+  /* -------------------------------------------------
+	 設定フォーム回り
+  ------------------------------------------------- */
+  #config {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 90%;
+	max-width: 300px; /* PC では横幅 300px、スマホでは 90% まで縮小 */
+  }
+  
+  #config .field {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  #config label {
+	margin-bottom: 4px;
+	font-size: 14px;
+  }
+  
+  #config input {
+	width: 100%;
+	padding: 4px;
+	font-size: 14px;
+	margin-bottom: 4px;
+  }
+  
+  #config small {
+	font-size: 12px;
+	color: #ccc;
+  }
+  
+  /* -------------------------------------------------
+	 コントロールボタン回り
+  ------------------------------------------------- */
+  #controls button {
+	margin: 0 5px;
+	padding: 5px 10px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  /* -------------------------------------------------
+	 計算式表示エリア
+  ------------------------------------------------- */
+  #formula {
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 1.5em;
+	white-space: pre-wrap;
+	text-align: center;
+	max-width: 90%;
+  }
+  

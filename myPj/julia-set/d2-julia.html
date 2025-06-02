@@ -2,199 +2,237 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Julia集合 - 逆写像- </title>
+  <title>Julia-set Inverse Mapping</title>
   <meta name="google-site-verification" content="google1dd9a6e9f696a4f9" />
-  <!-- Google アナリティクス (gtag.js) 設定 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV09PB2PZT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-WV09PB2PZT');
-  </script>
-  <style>
-    /* ───（以下、あとで説明するCSS）────────────────────────────────── */
-    body {
-      margin: 0;
-      background: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      color: #fff;
-      font-family: sans-serif;
-      padding-top: 20px;
-    }
-    /* ─── ボタン類／フォーム／テキストなどは z-index:2 で最前面 ─── */
-    #controls,
-    #formula,
-    #config {
-      position: relative;
-      z-index: 2;
-    }
-    /* ─── キャンバス＋背景画像を重ねるコンテナ ─── */
-    #canvas-container {
-      position: relative;
-      width: 800px;
-      height: 600px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      z-index: 0;
-    }
-    /* ─── 背景の陰陽マーク画像 ─── */
-    #bg-image {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      /* 見かけ上キャンバスの 80% 幅に */
-      width: 40%;
-      height: auto;
-      opacity: 0.1;
-      pointer-events: none;
-      z-index: 0;
-    }
-    /* ─── アニメーション用キャンバス ─── */
-    #inverse-canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      /* 親コンテナいっぱいに見せる */
-      width: 100%;
-      height: 100%;
-      border: 1px solid #444;
-      background: transparent; /* 透明にして画像を透かす */
-      z-index: 1;
-    }
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
 
-    /* 元々あったフォームまわりなど */
-    #config {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 300px;
-    }
-    #config .field {
-      display: flex;
-      flex-direction: column;
-    }
-    #config label {
-      margin-bottom: 4px;
-      font-size: 14px;
-    }
-    #config input {
-      width: 100%;
-      padding: 4px;
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-    #config small {
-      font-size: 12px;
-      color: #ccc;
-    }
-    #controls button {
-      margin: 0 5px;
-      padding: 5px 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #formula {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.5em;
-      white-space: pre-wrap;
-      text-align: center;
-      max-width: 600px;
-    }
-  </style>
+  <!-- 自作の CSS -->
+  <link rel="stylesheet" href="css/d2-style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
 </head>
-<body>
-  <!-- ① 計算スタート・一時停止・再生ボタン（最前面 z-index:2） -->
-  <div id="controls">
-    <button id="start-btn">計算スタート</button>
-    <button id="pause-btn">一時停止</button>
-    <button id="resume-btn">再生</button>
+<body class="bg-dark text-light">
+
+  <!-- ────────────── ナビバー ────────────── -->
+  <!-- 置換対象：画面上部にあった <nav>…</nav> 部分を以下に差し替え -->
+  <nav class="navbar navbar-dark bg-secondary fixed-top">
+    <div class="container-fluid">
+      <!-- 左端：ブランド／ページタイトル -->
+      <a class="navbar-brand" href="#">
+        Julia-set Inverse Mapping
+      </a>
+
+      <!-- 中央：Run/一時停止/再開 ボタン群 -->
+      <div class="d-flex mx-auto">
+        <button id="start-btn" class="btn btn-primary mx-1">Run</button>
+        <button id="pause-btn" class="btn btn-warning mx-1">一時停止</button>
+        <button id="resume-btn" class="btn btn-success mx-1">再開</button>
+      </div>
+
+      <!-- 右端：設定 Offcanvas 用トグル ＋ 更新履歴 Offcanvas 用トグル -->
+      <div class="d-flex">
+        <!-- 設定用 Offcanvas を開くボタン -->
+        <button
+          class="btn btn-outline-light mx-1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasConfig"
+          aria-controls="offcanvasConfig"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <small class="ms-1">設定</small>
+        </button>
+
+        <!-- 更新履歴用 Offcanvas を開くボタン -->
+        <button
+          class="btn btn-outline-light mx-1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasHistory"
+          aria-controls="offcanvasHistory"
+        >
+          <i class="bi bi-journal-text"></i>
+          <small class="ms-1">更新履歴</small>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- ここまで差し替え -->
+
+  <!-- （下のコンテンツはナビバーのすぐ下に “十分な余白” を入れておきます） -->
+  <div style="height: 56px;"></div>
+    
+  <!-- ────────────── メインコンテナ ────────────── -->
+  <div class="container-fluid px-3 py-4">
+    <!-- キャンバスをセンターに配置 -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-12 mb-4">
+        <div id="canvas-container" class="position-relative border rounded overflow-hidden">
+          <img
+            id="bg-image"
+            src="img/onmyo.png"
+            alt="陰陽マーク"
+            class="position-absolute top-50 start-50 translate-middle opacity-10"
+            style="width: 40%;"
+          />
+          <canvas
+            id="inverse-canvas"
+            class="w-100"
+            style="aspect-ratio: 4/3; background: transparent;"
+            width="800"
+            height="600"
+          ></canvas>
+        </div>
+
+        <!-- 計算式表示：キャンバス真下、横長 -->
+        <div id="formula" class="mt-3 p-3 rounded" style="white-space: pre-wrap; background: transparent;">
+          ここに計算式・処理内容が表示されます。
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container-fluid -->
+
+  <!-- ────────────── 設定フォーム用 Offcanvas ────────────── -->
+  <div
+    class="offcanvas offcanvas-start bg-dark text-light"
+    tabindex="-1"
+    id="offcanvasConfig"
+    aria-labelledby="offcanvasConfigLabel"
+  >
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title" id="offcanvasConfigLabel">設定</h5>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="offcanvas"
+        aria-label="閉じる"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="config">
+        <div class="mb-3">
+          <label for="cRe" class="form-label">c の実部 (cRe)</label>
+          <input
+            type="number"
+            id="cRe"
+            class="form-control form-control-lg"
+            step="0.001"
+            placeholder="例: -0.4"
+            data-default-value="-0.4"
+          >
+          <div class="form-text text-light">
+            ジュリア集合を決める複素定数 c の実部です。<br>
+            推奨：−1.5〜1.5
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="cIm" class="form-label">c の虚部 (cIm)</label>
+          <input
+            type="number"
+            id="cIm"
+            class="form-control form-control-lg"
+            step="0.001"
+            placeholder="例: 0.6"
+            data-default-value="0.6"
+          >
+          <div class="form-text text-light">
+            ジュリア集合を決める複素定数 c の虚部です。推奨：0.0〜1.0
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="samples" class="form-label">samples (サンプリング数)</label>
+          <input
+            type="number"
+            id="samples"
+            class="form-control form-control-lg"
+            step="1"
+            placeholder="例: 45"
+            data-default-value="45"
+          >
+          <div class="form-text text-light">
+            最初の円を描画する点の数。45〜360 程度が目安。
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="maxIter" class="form-label">maxIter (世代数)</label>
+          <input
+            type="number"
+            id="maxIter"
+            class="form-control form-control-lg"
+            step="1"
+            placeholder="例: 12"
+            data-default-value="12"
+          >
+          <div class="form-text text-light">
+            逆写像を繰り返す回数。10〜20 程度が目安。
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="pauseMs" class="form-label">pauseMs (一時停止時間)</label>
+          <input
+            type="number"
+            id="pauseMs"
+            class="form-control form-control-lg"
+            step="100"
+            placeholder="例: 500"
+            data-default-value="500"
+          >
+          <div class="form-text text-light">
+            各ステップの停止時間 (ms)。500〜3000ms 程度がおすすめ。
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- ② キャンバス＋背景画像を重ねるコンテナ（z-index:0〜1） -->
-  <div id="canvas-container">
-    <!-- 背後に薄く表示したい陰陽マーク -->
-    <img id="bg-image" src="img/onmyo.png" alt="陰陽マーク" />
-    <!-- アニメーション用canvas：描画バッファは必ず width/height 属性で指定すること！ -->
-    <canvas id="inverse-canvas" width="800" height="600"></canvas>
-  </div>
-
-  <!-- ③ 計算式表示エリア（z-index:2） -->
-  <div id="formula">
-    ここに計算式・処理内容が表示されます。<br><br><br><br>
-  </div>
-
-  <!-- ④ 各種設定フォーム（z-index:2） -->
-  <div id="config">
-    <div class="field">
-      <label for="cRe">c の実部 (cRe)</label>
-      <input type="number" id="cRe" step="0.001" value="-0.4">
-      <small>ジュリア集合を決める複素定数 c の実部です。<br>
-        値を変えるとフラクタルの形が大きく変化します。推奨：−1.5〜1.5</small>
+  <!-- ────────────── 更新履歴用 Offcanvas ────────────── -->
+  <div
+    class="offcanvas offcanvas-end bg-dark text-light"
+    tabindex="-1"
+    id="offcanvasHistory"
+    aria-labelledby="offcanvasHistoryLabel"
+  >
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title" id="offcanvasHistoryLabel">更新履歴</h5>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="offcanvas"
+        aria-label="閉じる"
+      ></button>
     </div>
-    <div class="field">
-      <label for="cIm">c の虚部 (cIm)</label>
-      <input type="number" id="cIm" step="0.001" value="0.6">
-      <small>ジュリア集合を決める複素定数 c の虚部です。推奨：0.0〜1.0</small>
-    </div>
-    <div class="field">
-      <label for="samples">samples (サンプリング数)</label>
-      <input type="number" id="samples" step="1" value="45">
-      <small>最初の円を描画する点の数。45〜360 程度が目安。</small>
-    </div>
-    <div class="field">
-      <label for="maxIter">maxIter (世代数)</label>
-      <input type="number" id="maxIter" step="1" value="12">
-      <small>逆写像を繰り返す回数。10〜20 程度が目安。</small>
-    </div>
-    <div class="field">
-      <label for="pauseMs">pauseMs (一時停止時間)</label>
-      <input type="number" id="pauseMs" step="100" value="500">
-      <small>各ステップの停止時間 (ms)。500〜3000ms 程度がおすすめ。</small>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled small" style="line-height: 1.6;">
+        <li class="mb-3">
+          <time datetime="2025-06-01" class="fw-bold">2025-06-01</time><br>
+          — 逆写像アニメーションの極座標補間を追加、ステップごとのカラー表示を改善<br>
+          — 背景画像とキャンバスの重ね合わせ機能を実装
+        </li>
+        <li class="mb-3">
+          <time datetime="2025-05-31" class="fw-bold">2025-05-31</time><br>
+          — 初期バージョン公開（単位円→逆写像アニメーション）
+        </li>
+        <!-- 必要に応じて追加 -->
+      </ul>
     </div>
   </div>
 
-  <!-- ──────────── 更新履歴セクション ──────────── -->
-  <section id="update-history" style="margin: 40px 0; max-width: 800px; width: 100%;">
-    <h2 style="font-size: 1.25rem; margin-bottom: 0.5em; text-align: center; color: #eee;">
-      更新履歴
-    </h2>
-    <ul style="list-style: none; padding-left: 0; color: #ddd; font-size: 0.95rem; line-height: 1.6;">
-        <time datetime="2025-05-30" style="font-weight: bold; color: #fff;">
-          2025-06-01
-        </time>
-        — 逆写像アニメーションの極座標補間を追加、ステップごとのカラー表示を改善
-        — 背景画像とキャンバスの重ね合わせ機能を実装
-      </li>
-      <li>
-        <time datetime="2025-05-28" style="font-weight: bold; color: #fff;">
-          2025-05-31
-        </time>
-        — 初期バージョン公開（単位円→逆写像アニメーション）
-      </li>
-    </ul>
-  </section>
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
 
-  <!-- 関連リンクを表示 -->
-  <div id="related-link" style="margin: 20px 0; text-align: center;">
-    関連 ▶▶ 
-    <a href="https://uminomae.github.io/pjdhiro/20250531julia/" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       style="color: #4af; text-decoration: underline;">
-      陰陽なJulia集合を逆にたどる
-    </a>
-  </div>
-
-  <!-- ⑤ スクリプト本体 -->
+  <!-- スクリプト本体 -->
   <script type="module" src="js/2d/d2-main.js"></script>
 </body>
 </html>
