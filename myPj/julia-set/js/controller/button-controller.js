@@ -1,5 +1,7 @@
 // js/controller/button-controller.js
 
+import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../3d/d3-config.js';
+
 const btnRun   = document.getElementById('btn-run');
 const btnPause = document.getElementById('btn-pause');
 const btnStop  = document.getElementById('btn-stop');
@@ -15,12 +17,12 @@ if (btnRun) {
         if (obj.isPoints) toRemove.push(obj);
       });
       toRemove.forEach(p => window.scene.remove(p));
-      // 必要ならレンダリングも再度回す（d3-app.js 側にanimateLoopがあれば自動で描画更新される）
+      // animateLoop が動作していれば自動で再描画される
     }
     // ──────────────────────────────
 
     if (!window.isRunning) {
-      // モジュール側で定義している runInverseAnimation を呼び出す
+      // フォームから値を取得
       const inputRe   = document.getElementById('input-re');
       const inputIm   = document.getElementById('input-im');
       const inputN    = document.getElementById('input-n');
@@ -41,7 +43,12 @@ if (btnRun) {
       status.textContent = '(実行中…)';
 
       try {
-        const { minZ, maxZ, totalPoints } = await window.runInverseAnimation(c, N, maxIter, 800);
+        const { minZ, maxZ, totalPoints } = await window.runInverseAnimation(
+          c,
+          N,
+          maxIter,
+          DRAW_PARAMS.interval
+        );
         window.isRunning = false;
 
         btnPause.classList.add('d-none');
@@ -51,7 +58,7 @@ if (btnRun) {
         status.textContent = `(完了: N=${N}, maxIter=${maxIter}, 点数=${totalPoints})`;
 
         // 凡例再描画
-        window.drawLegend(minZ, maxZ);
+        window.drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
       } catch (err) {
         window.isRunning = false;
         btnPause.classList.add('d-none');
@@ -102,12 +109,12 @@ if (btnStop) {
     status.textContent = '(待機中)';
 
     // 凡例だけ初期状態に戻す
-    window.drawLegend(0, 2);
+    window.drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
 
     // フォーム項目を初期値に戻す
-    document.getElementById('input-re').value   = '-0.4';
-    document.getElementById('input-im').value   = '0.6';
-    document.getElementById('input-n').value    = '90';
-    document.getElementById('input-iter').value = '12';
+    document.getElementById('input-re').value   = FORM_DEFAULTS.re;
+    document.getElementById('input-im').value   = FORM_DEFAULTS.im;
+    document.getElementById('input-n').value    = FORM_DEFAULTS.N;
+    document.getElementById('input-iter').value = FORM_DEFAULTS.maxIter;
   });
 }

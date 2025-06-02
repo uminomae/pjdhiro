@@ -4,7 +4,7 @@ export const FORM_DEFAULTS = {
 	re:      -0.4,
 	im:       0.6,
 	N:       90,
-	maxIter:  9
+	maxIter:  8
   };
   
   export const DRAW_PARAMS = {
