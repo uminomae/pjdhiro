@@ -1,4 +1,4 @@
-// js/inverseLogic.js
+// js/3d/d3-Inverse-logic.js
 import { Complex } from '../util/complex-number.js';
 
 /**

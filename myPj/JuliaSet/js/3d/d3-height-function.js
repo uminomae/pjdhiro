@@ -1,4 +1,4 @@
-// js/heightFunction.js
+// js/3d/d3-height-function.js
 
 /**
  * getZ(complex, info)

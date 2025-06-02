@@ -1,11 +1,11 @@
-// js/threeInverseAnimate-main.js
+// js/3d/d3-main.js
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import { Complex } from '../util/complex-number.js';
-import { computeInverseGeneration, generateUnitCircle } from './3dInverseLogic.js';
-import { getZ } from './3dHeightFunction.js';
+import { computeInverseGeneration, generateUnitCircle } from './d3-Inverse-logic.js';
+import { getZ } from './d3-height-function.js';
 
 /**
  * Three.js 版・逆写像アニメーションの本体モジュールです。
