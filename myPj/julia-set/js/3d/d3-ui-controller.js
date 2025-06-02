@@ -1,4 +1,4 @@
-// js/3d/d3-app.js（リファクタリング後）
+// js/3d/d3-ui-controller.js（リファクタリング後）
 
 import { Complex } from '../util/complex-number.js';
 // ① 設定値をインポート
@@ -9,7 +9,7 @@ import {
   animateLoop,
   runInverseAnimation,
   scene
-} from './d3-main.js';
+} from './d3-renderer.js';
 
 // legend.js から必要な関数群をインポート
 import { drawLegend, showLegend, hideLegend } from '../util/legend.js';

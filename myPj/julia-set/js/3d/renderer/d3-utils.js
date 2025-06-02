@@ -1,4 +1,4 @@
-// js/3d/d3-utils.js
+// js/3d/renderer/d3-utils.js
 
 import * as THREE from 'three';
 import { getZ } from './d3-height-function.js';
