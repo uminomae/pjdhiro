@@ -1,9 +1,10 @@
-// js/3d/d3-ui.js
-import { initThree, animateLoop, runInverseAnimation } from './d3-renderer.js';
-import { FORM_DEFAULTS, DRAW_PARAMS, LEGEND_DEFAULT } from './d3-config.js';
-import { drawLegend, hideLegend } from '../util/legend.js';
+// js/3d/d3-init-app.js  （旧：d3-ui.js）
 
-// ※ button-ui.js, legend-ui.js を読み込むことでそれぞれのイベント登録を行う
+import { initThree, animateLoop, runInverseAnimation } from './d3-renderer.js';
+import { FORM_DEFAULTS, DRAW_PARAMS, LEGEND_DEFAULT }    from './d3-config.js';
+import { drawLegend, hideLegend }                       from '../util/legend.js';
+
+// ※ button-ui.js, legend-ui.js を読み込むことで UI イベント登録を行う
 import './ui/button-ui.js';
 import './ui/legend-ui.js';
 
