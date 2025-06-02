@@ -119,3 +119,9 @@ chkLegend.addEventListener('change', () => {
     hideLegend();
   }
 });
+
+
+window.runInverseAnimation = runInverseAnimation;
+window.scene               = scene;
+window.Complex             = Complex;
+window.drawLegend          = drawLegend; // legend.js の関数を使いたいならまとめてエクスポート
