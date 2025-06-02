@@ -1,94 +1,23 @@
-// js/2d/d2-Inverse-animate.js
+// ファイル：js/2d/d2-Inverse-animate.js
 
+import { AppConfig } from './d2-config.js';
 import { Complex } from '../util/complex-number.js';
-import { drawPoints, clearCanvas } from '../util/canvas-draw.js';
-import { createPauseController } from '../util/pause-controller.js';
 import { sleep } from '../util/sleep.js';
 
+// ─── 切り分けたモジュールをインポート ───
+import {
+  drawComplexPoints,
+  drawIterationCount,
+  clearBlack
+} from './modules/d2-render.js';
+import { updateFormula } from './modules/d2-ui.js';
+import {
+  pauseAnimation,
+  resumeAnimation,
+  pauseCtrl
+} from './modules/d2-pause-controller.js';
+
 const DOT_DIAMETER = 4;
-
-// 一時停止コントローラ
-const pauseCtrl = createPauseController();
-
-/** 一時停止 */
-export function pauseAnimation() {
-  pauseCtrl.pause();
-}
-
-/** 再開 */
-export function resumeAnimation() {
-  pauseCtrl.resume();
-}
-
-/**
- * Canvas 上に「現在の世代番号」と複素定数 c の実部・虚部を表示する
- */
-function drawIterationCount(ctx, iter, c) {
-  const padding = 10;
-  const fontSize = 20;
-  const fontFamily = 'monospace';
-
-  const iterText = String(iter).padStart(3, '0');
-  // ← complex-number.js ではプロパティ名が this.re / this.im なので、
-  //    ここも c.re / c.im に合わせる
-  const cre = c.re.toFixed(3);  // ← 修正
-  const cim = c.im.toFixed(3);  // ← 修正
-
-  ctx.font = `${fontSize}px ${fontFamily}`;
-  ctx.textAlign = 'right';
-  ctx.textBaseline = 'top';
-  const iterMetrics = ctx.measureText(iterText);
-  const iterWidth  = iterMetrics.width;
-  const iterHeight = fontSize;
-
-  const cText1 = `Re: ${cre}`;
-  const cText2 = `Im: ${cim}`;
-  const cMetrics1 = ctx.measureText(cText1);
-  const cMetrics2 = ctx.measureText(cText2);
-  const cWidth  = Math.max(cMetrics1.width, cMetrics2.width);
-  const cHeight = fontSize * 2 + 4;
-
-  const totalWidth  = Math.max(iterWidth, cWidth) + 8;
-  const totalHeight = iterHeight + cHeight + 12;
-  const x0 = ctx.canvas.width - padding - totalWidth;
-  const y0 = padding;
-
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
-  ctx.fillRect(x0, y0, totalWidth, totalHeight);
-
-  ctx.fillStyle = '#fff';
-  ctx.fillText(iterText, x0 + totalWidth - 4, y0 + 4);
-
-  ctx.textAlign = 'left';
-  ctx.textBaseline = 'top';
-  const cxText = x0 + 4;
-  const cyText = y0 + 4 + iterHeight + 4;
-  ctx.fillText(cText1, cxText, cyText);
-  ctx.fillText(cText2, cxText, cyText + fontSize + 2);
-}
-
-/**
- * “数式欄”に文字列を書き込む
- */
-function updateFormula(text) {
-  const elem = document.getElementById('formula');
-  if (elem) {
-    elem.textContent = text;
-  }
-}
-
-/**
- * Complex[] → Canvas 座標 ({x, y}) に変換し、
- * util/canvas-draw.js の drawPoints() を呼ぶヘルパー
- */
-function drawComplexPoints(ctx, complexArray, cx, cy, scale, color, diameter) {
-  // ← z.r / z.i ではなく、z.re / z.im なので修正
-  const pixelArray = complexArray.map(z => ({
-    x: cx + z.re * scale,  // ← 修正
-    y: cy - z.im * scale   // ← 修正
-  }));
-  drawPoints(ctx, pixelArray, color, diameter);
-}
 
 /**
  * -----------------------
@@ -105,14 +34,13 @@ async function step1_subtract(
   const N = parentPts.length;
   for (let k = 1; k <= steps; k++) {
     if (pauseCtrl.isPaused()) {
-      // 一時停止中なら待機
       await pauseCtrl.sleep(Math.ceil(pauseMs / steps));
     }
 
     const t = k / steps;
 
     // (i) まず前世代の“白点”だけを描く
-    clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+    clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, prevWhitePts, cx, cy, scale, '#fff', DOT_DIAMETER);
 
     // (ii) 線形補間した点をオレンジで描く
@@ -121,9 +49,8 @@ async function step1_subtract(
     for (let i = 0; i < N; i++) {
       const p = parentPts[i]; // Complex
       const q = diffPts[i];   // Complex
-      // z の実部・虚部は p.re, p.im / q.re, q.im
-      const x = p.re * (1 - t) + q.re * t;  // ← 修正
-      const y = p.im * (1 - t) + q.im * t;  // ← 修正
+      const x = p.re * (1 - t) + q.re * t;
+      const y = p.im * (1 - t) + q.im * t;
       interpPts.push(new Complex(x, y));
     }
     drawComplexPoints(ctx, interpPts, cx, cy, scale, '#FFA500', DOT_DIAMETER);
@@ -137,7 +64,7 @@ w - c を計算し、補間中…`
     await pauseCtrl.sleep(Math.ceil(pauseMs / steps));
   }
   // ラストはオレンジ点を残さない
-  clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+  clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
 }
 
 /**
@@ -162,7 +89,7 @@ async function step2_sqrt1(
     const t = k / steps;
 
     // 白点だけを描く
-    clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+    clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, prevWhitePts, cx, cy, scale, '#fff', DOT_DIAMETER);
     drawComplexPoints(ctx, diffPts,    cx, cy, scale, '#fff', DOT_DIAMETER);
 
@@ -173,7 +100,7 @@ async function step2_sqrt1(
       const φ0 = diffPhis[i];
       const r0 = diffRs[i];
       const z1 = sqrtPts1[i];
-      let φ1 = Math.atan2(z1.im, z1.re); // ← z1.im, z1.re
+      let φ1 = Math.atan2(z1.im, z1.re);
       if (φ1 < 0) φ1 += 2 * Math.PI;
       const r1 = z1.abs();
 
@@ -199,7 +126,7 @@ async function step2_sqrt1(
   }
 
   // 補間が終わったら、黄色点（sqrtPts1）を残す
-  clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+  clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
   drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, 'yellow', DOT_DIAMETER);
 }
 
@@ -226,7 +153,7 @@ async function step3_sqrt2(
     const t = k / steps;
 
     // まず黄色点（sqrtPts1）だけ
-    clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+    clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, 'yellow', DOT_DIAMETER);
 
     // 次に白点（diffPts）
@@ -239,7 +166,7 @@ async function step3_sqrt2(
       const φ0 = diffPhis[i];
       const r0 = diffRs[i];
       const z2 = sqrtPts2[i];
-      let φ1 = Math.atan2(z2.im, z2.re); // ← z2.im, z2.re
+      let φ1 = Math.atan2(z2.im, z2.re);
       if (φ1 < 0) φ1 += 2 * Math.PI;
       const r1 = z2.abs();
 
@@ -265,15 +192,25 @@ async function step3_sqrt2(
   }
 
   // 補間後、黄色＋ピンクをそのまま残す
-  clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
-  drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, 'yellow', DOT_DIAMETER);
-  drawComplexPoints(ctx, sqrtPts2, cx, cy, scale, '#FF69B4', DOT_DIAMETER);
+  clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
+  drawComplexPoints(ctx, sqrtPts1, ctx.canvas.width/2, ctx.canvas.height/2, scale, 'yellow', DOT_DIAMETER);
+  drawComplexPoints(ctx, sqrtPts2, ctx.canvas.width/2, ctx.canvas.height/2, scale, '#FF69B4', DOT_DIAMETER);
 }
 
 /**
  * -----------------------
  * メイン：世代ごとの逆写像アニメーション
  * -----------------------
+ *
+ * @param {CanvasRenderingContext2D} ctx
+ * @param {number} cx
+ * @param {number} cy
+ * @param {number} scale
+ * @param {Complex} c
+ * @param {Complex[]} initPts
+ * @param {number} maxIter
+ * @param {number} [pauseMs=800]
+ * @param {number} [interpSteps=30]
  */
 export async function animateInverseWithPause(
   ctx, cx, cy, scale,
@@ -281,7 +218,7 @@ export async function animateInverseWithPause(
   pauseMs = 800, interpSteps = 30
 ) {
   // (0) 初期化：キャンバスをクリアし、「世代0」を描画
-  clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+  clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
   let prevWhitePts = initPts.slice();
   drawComplexPoints(ctx, initPts, cx, cy, scale, '#fff', DOT_DIAMETER);
   drawIterationCount(ctx, 0, c);
@@ -299,7 +236,7 @@ export async function animateInverseWithPause(
     const diffPts = wPoints.map(z => z.sub(c));
     // 角度・半径を計算
     const diffPhis = diffPts.map(z => {
-      let φ = z.arg();  // Complex#arg() を使って位相を取得
+      let φ = z.arg();
       if (φ < 0) φ += 2 * Math.PI;
       return φ;
     });
@@ -356,7 +293,7 @@ export async function animateInverseWithPause(
     );
 
     // ── 4) 白リカラー ──
-    clearCanvas(ctx, ctx.canvas.width, ctx.canvas.height);
+    clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
     drawComplexPoints(ctx, sqrtPts1, cx, cy, scale, '#fff', DOT_DIAMETER);
     drawComplexPoints(ctx, sqrtPts2, cx, cy, scale, '#fff', DOT_DIAMETER);
     drawIterationCount(ctx, iter, c);
@@ -368,8 +305,7 @@ export async function animateInverseWithPause(
 
     // ── 5) 次世代の準備 or 終了 ──
     if (iter < maxIter) {
-      ctx.fillStyle = '#000';
-      ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      clearBlack(ctx, ctx.canvas.width, ctx.canvas.height);
       prevWhitePts = sqrtPts1.concat(sqrtPts2).slice();
       wPoints = prevWhitePts.slice();
     }
