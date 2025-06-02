@@ -11,7 +11,7 @@ sidebar:
   nav5: ""
 ---
 
-- [2D Julia集合の逆写像]({{ '/myPj/inverse/' | relative_url }})
+### [2D Julia集合の逆写像]({{ '/myPj/inverse/' | relative_url }})
 
 <video 
   src="{{ '/assets/movie/2D-Julia-set.mp4' | relative_url }}"
@@ -24,8 +24,7 @@ sidebar:
   >
 </video>
 
-
-- [3D Julia集合の逆写像]({{ '/myPj/inverse/threeJuliaInverseAnimate.html' | relative_url }})
+### [3D Julia集合の逆写像]({{ '/myPj/inverse/threeJuliaInverseAnimate.html' | relative_url }})
 
 <video 
   src="{{ '/assets/movie/3dJulia.mp4' | relative_url }}"
