@@ -13,16 +13,14 @@
   />
 
   <style>
-    /* ─── レスポンシブな基本フォントサイズ ─── */
     html {
-      font-size: 1.2vw; /* ビューポート幅の 1.2% を基準とする */
+      font-size: 1.2vw;
     }
     @media (max-width: 768px) {
       html {
-        font-size: 2.5vw; /* Mobileでは文字が小さくなりすぎないように */
+        font-size: 2.5vw;
       }
     }
-
     body {
       margin: 0;
       height: 100vh;
@@ -70,10 +68,8 @@
   <!-- ナビバー -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <!-- 左端：タイトル -->
       <a class="navbar-brand" href="#">Julia Set Inverse Mapping Visualizer</a>
-  
-      <!-- 中央：Run／Pause／Stop をまとめる -->
+
       <div class="mx-auto">
         <button id="btn-run" class="btn btn-success btn-sm me-2" type="button">
           Run
@@ -85,8 +81,7 @@
           Stop
         </button>
       </div>
-  
-      <!-- 右端：設定ボタン -->
+
       <button
         class="btn btn-outline-light btn-sm"
         type="button"
@@ -98,7 +93,6 @@
       </button>
     </div>
   </nav>
-  
 
   <!-- Offcanvas: 設定フォーム -->
   <div
@@ -199,8 +193,7 @@
     crossorigin="anonymous"
   ></script>
 
-  <!-- Three.js 用メインスクリプト -->
+  <!-- ↓エントリポイント（これだけを読み込めばOK）↓ -->
   <script type="module" src="js/3d/d3-init-app.js"></script>
-
 </body>
 </html>
