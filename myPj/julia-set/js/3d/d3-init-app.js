@@ -3,13 +3,14 @@
 import { initThree, animateLoop } from './d3-renderer.js';
 import { FORM_DEFAULTS, LEGEND_DEFAULT } from './d3-config.js';
 
-// UI イベント登録用に button-ui.js と legend-ui.js をインポート
+// UI イベント登録用に：button-ui.js と legend-ui.js をインポート
 import './ui/button-ui.js';
 import './ui/legend-ui.js';
 
-// ページ読み込み後に実行する初期化処理
-window.addEventListener('DOMContentLoaded', () => {
-  // ── 1) フォームの初期値を config からセット ──
+/**
+ * フォームの初期値 (Re, Im, N, maxIter, チェックボックス) をセットする
+ */
+function initFormValues() {
   const inputRe   = document.getElementById('input-re');
   const inputIm   = document.getElementById('input-im');
   const inputN    = document.getElementById('input-n');
@@ -21,13 +22,23 @@ window.addEventListener('DOMContentLoaded', () => {
   if (inputN)    inputN.value    = FORM_DEFAULTS.N;
   if (inputIter) inputIter.value = FORM_DEFAULTS.maxIter;
   if (chkLegend) chkLegend.checked = true; // デフォルトで凡例を ON
+}
 
-  // ── 2) Three.js シーンを初期化してレンダーループ開始 ──
+/**
+ * Three.js シーンを初期化し、レンダーループを開始する
+ */
+function init3DSceneAndLoop() {
   initThree();
   animateLoop();
+}
 
-  // ── 3) チェックボックスのデフォルトに従って凡例を描画 or 非表示 ──
+/**
+ * 初期表示時の凡例の ON/OFF を行う
+ */
+function initLegend() {
+  const chkLegend = document.getElementById('chk-legend');
   if (chkLegend && chkLegend.checked) {
+    // drawLegend は legend-ui.js 内でインポート済み
     import('../util/legend.js').then(({ drawLegend }) => {
       drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
     });
@@ -36,4 +47,11 @@ window.addEventListener('DOMContentLoaded', () => {
       hideLegend();
     });
   }
+}
+
+// ─── ページ読み込み後に一度だけ実行 ───
+window.addEventListener('DOMContentLoaded', () => {
+  initFormValues();
+  init3DSceneAndLoop();
+  initLegend();
 });
