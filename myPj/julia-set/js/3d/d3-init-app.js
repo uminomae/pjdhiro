@@ -50,8 +50,17 @@ function initLegend() {
 }
 
 // ─── ページ読み込み後に一度だけ実行 ───
-window.addEventListener('DOMContentLoaded', () => {
+// window.addEventListener('DOMContentLoaded', () => {
+//   initFormValues();
+//   init3DSceneAndLoop();
+//   initLegend();
+// });
+// ─── モジュールが読み込まれたら即実行 ───
+(function() {
+  // 1) フォーム初期値をセット
   initFormValues();
+  // 2) Three.js シーンの初期化とループを開始
   init3DSceneAndLoop();
+  // 3) 初期凡例の描画/非描画
   initLegend();
-});
+})();
