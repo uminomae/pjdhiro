@@ -1,10 +1,5 @@
 /* d3-components.css */
 
-/* ─── Offcanvas 幅の定義 ─── */
-/* .offcanvas.offcanvas-end {
-  width: 100%;
-} */
-
 /* ─── オフキャンバス本体を半透明に ─── */
 .offcanvas {
   background-color: rgba(70, 23, 1, 0.0) !important;
@@ -32,56 +27,17 @@
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
 }
 
+/* d3-components.css のどこか（既存の .offcanvas .form-control の下など）に追加 */
 
+@media (max-width: 576px) {
+  /* モバイル（xs～sm）向けに、フォーム入力欄の文字サイズを16pxまで上げる */
+  .offcanvas .form-control {
+    font-size: 16px !important;
+    line-height: 1.2; /* 必要に応じて行間を調整 */
+  }
 
-/* ──────────── */
-/* ナビバーを最前面に表示する */
-/* ──────────── */
-.navbar {
-  z-index: 20;           /* 10 より大きい値を設定すれば legend-canvas(10) より手前に */
-}
-
-/* ─── ボタン類を半透明／透過にする ─── */
-
-/* 1) Run ボタン（btn-success）を半透明に */
-.navbar .btn-success {
-  background-color: rgba(25, 135, 84, 0.1) !important; /* 元 #198754 を 60% 透過に */
-  border-color: rgba(25, 135, 84, 0.5) !important;
-}
-.navbar .btn-success:hover,
-.navbar .btn-success:focus {
-  background-color: rgba(25, 135, 84, 1) !important; /* ホバー時は不透明にしてクリックしやすく */
-  border-color: rgba(25, 135, 84, 1) !important;
-}
-
-/* 2) Stop ボタン（btn-danger）を半透明に */
-.navbar .btn-danger {
-  background-color: rgba(220, 53, 69, 0.1) !important; 
-  border-color: rgba(220, 53, 69, 0.5) !important;
-}
-.navbar .btn-danger:hover,
-.navbar .btn-danger:focus {
-  background-color: rgba(220, 53, 69, 1) !important;
-  border-color: rgba(220, 53, 69, 1) !important;
-}
-.navbar .btn-pause {
-  background-color: rgba(213, 185, 25, 0.1) !important; 
-  border-color: rgba(213, 185, 25, 0.5) !important;
-}
-.navbar .btn-pause:hover,
-.navbar .btn-pause:focus {
-  background-color: rgba(213, 185, 25, 0.6) !important;
-  border-color: rgba(213, 185, 25, 1) !important;
-}
-
-/* 3) 設定ボタン（btn-outline-light）を半透明にしたい場合 */
-.navbar .btn-outline-light {
-  background-color: rgba(255, 255, 255, 0.1) !important; /* 背景をほんのり白く透過 */
-  border-color: rgba(255, 255, 255, 0.5) !important;   /* 枠線をやや薄い白 */
-}
-.navbar .btn-outline-light:hover,
-.navbar .btn-outline-light:focus {
-  color: #fff !important;
-  border-color: #fff !important;
-  background-color: rgba(255, 255, 255, 0.5) !important; /* ホバー時に少しだけ白透過を強める */
+  /* プレースホルダー文字も16pxに合わせておく */
+  .offcanvas .form-control::placeholder {
+    font-size: 16px !important;
+  }
 }
