@@ -1,0 +1,95 @@
+<div
+  class="offcanvas offcanvas-start bg-dark text-light"
+  tabindex="-1"
+  id="offcanvasConfig"
+  aria-labelledby="offcanvasConfigLabel"
+>
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title" id="offcanvasConfigLabel">設定</h5>
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="閉じる"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="config">
+      <div class="mb-3">
+        <label for="cRe" class="form-label">c の実部 (cRe)</label>
+        <input
+          type="number"
+          id="cRe"
+          class="form-control form-control-lg"
+          step="0.001"
+          placeholder="例: -0.4"
+          data-default-value="-0.4"
+        />
+        <div class="form-text text-light">
+          ジュリア集合を決める複素定数 c の実部です。<br />
+          推奨：−1.5〜1.5
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="cIm" class="form-label">c の虚部 (cIm)</label>
+        <input
+          type="number"
+          id="cIm"
+          class="form-control form-control-lg"
+          step="0.001"
+          placeholder="例: 0.6"
+          data-default-value="0.6"
+        />
+        <div class="form-text text-light">
+          ジュリア集合を決める複素定数 c の虚部です。推奨：0.0〜1.0
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="samples" class="form-label">samples (サンプリング数)</label>
+        <input
+          type="number"
+          id="samples"
+          class="form-control form-control-lg"
+          step="1"
+          placeholder="例: 45"
+          data-default-value="45"
+        />
+        <div class="form-text text-light">
+          最初の円を描画する点の数。45〜360 程度が目安。
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="maxIter" class="form-label">maxIter (世代数)</label>
+        <input
+          type="number"
+          id="maxIter"
+          class="form-control form-control-lg"
+          step="1"
+          placeholder="例: 12"
+          data-default-value="12"
+        />
+        <div class="form-text text-light">
+          逆写像を繰り返す回数。10〜20 程度が目安。
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="pauseMs" class="form-label">pauseMs (一時停止時間)</label>
+        <input
+          type="number"
+          id="pauseMs"
+          class="form-control form-control-lg"
+          step="100"
+          placeholder="例: 500"
+          data-default-value="500"
+        />
+        <div class="form-text text-light">
+          各ステップの停止時間 (ms)。500〜3000ms 程度がおすすめ。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -23,46 +23,8 @@
 </head>
 <body class="bg-dark text-light">
 
-  <!-- ────────────── ナビバー ────────────── -->
-  <nav class="navbar navbar-dark bg-secondary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        Julia-set Inverse Mapping
-      </a>
-      <div class="d-flex mx-auto">
-        <button id="play-btn"   class="btn btn-primary mx-1">Play</button>
-        <button id="pause-btn"  class="btn btn-warning mx-1" disabled>Pause</button>
-        <button id="resume-btn" class="btn btn-success mx-1" disabled>Resume</button>
-        <button id="reset-btn"  class="btn btn-secondary mx-1">Reset</button>
-      </div>
-      <div class="d-flex">
-        <button
-          class="btn btn-outline-light mx-1"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasConfig"
-          aria-controls="offcanvasConfig"
-        >
-          <span class="navbar-toggler-icon"></span>
-          <small class="ms-1">設定</small>
-        </button>
-        <button
-          class="btn btn-outline-light mx-1"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasHistory"
-          aria-controls="offcanvasHistory"
-        >
-          <i class="bi bi-journal-text"></i>
-          <small class="ms-1">更新履歴</small>
-        </button>
-      </div>
-    </div>
-  </nav>
-  <!-- ────────────── ナビバーここまで ────────────── -->
-
-  <!-- ナビバー高さ分スペース確保 -->
-  <div style="height: 56px;"></div>
+  <!-- ─── ① ナビバー（外部ファイル読み込み） ─── -->
+  <div id="navbar-placeholder"></div>
     
   <!-- ────────────── メインコンテナ ────────────── -->
   <div class="container-fluid px-3 py-4">
@@ -250,6 +212,51 @@
     </div>
   </footer>
 
+
+<!-- ─── ナビバー読み込み＆d2-main.js 読み込み用スクリプト ─── -->
+<script>
+  async function includeHTML(selector, url) {
+    const container = document.querySelector(selector);
+    if (!container) {
+      console.warn(`includeHTML: "${selector}" が見つかりません`);
+      return;
+    }
+    try {
+      console.log(`★ includeHTML: "${url}" を fetch 開始`);
+      const resp = await fetch(url);
+      if (!resp.ok) {
+        throw new Error(`${url} の読み込みに失敗しました: ${resp.status}`);
+      }
+      const html = await resp.text();
+      console.log(`★ includeHTML: "${url}" の取得成功 (${html.length} bytes)`);
+      container.innerHTML = html;
+      console.log(`★ includeHTML: "${selector}" に HTML を挿入完了`);
+    } catch (err) {
+      console.error(`★ includeHTML Error (${url}):`, err);
+      container.innerHTML = `<!-- ${url} の読み込みエラー -->`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded 発火 → navbar 読み込み開始');
+    includeHTML('#navbar-placeholder', '2d-partials/navbar.html')
+      .then(() => {
+        console.log('→ navbar の読み込みが完了しました。ここで d2-main.js を追加します');
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'js/2d/d2-main.js';
+        script.onload = () => console.log('★★ d2-main.js 読み込み完了');
+        script.onerror = () => console.error('★★ d2-main.js の読み込みに失敗しました');
+        document.body.appendChild(script);
+      })
+      .catch(err => {
+        console.error('navbar の読み込みに失敗しました:', err);
+        // 必要ならここで main.js を読み込むコードを呼び出す
+      });
+  });
+</script>
+
+
   <!-- Bootstrap JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -257,6 +264,6 @@
   ></script>
 
   <!-- スクリプト本体 -->
-  <script type="module" src="js/2d/d2-main.js"></script>
+  <!-- <script type="module" src="js/2d/d2-main.js"></script> -->
 </body>
 </html>

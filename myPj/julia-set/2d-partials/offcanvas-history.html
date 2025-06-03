@@ -1,0 +1,23 @@
+<div
+  class="offcanvas offcanvas-end bg-dark text-light"
+  tabindex="-1"
+  id="offcanvasHistory"
+  aria-labelledby="offcanvasHistoryLabel"
+>
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title" id="offcanvasHistoryLabel">更新履歴</h5>
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="閉じる"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <!-- ここを外部から読み込まれるリストにしたい -->
+    <ul id="history-list" class="list-unstyled small" style="line-height: 1.6;">
+      <!-- JavaScriptで別ファイル（history-data.htmlなど）をフェッチしてここに入れる -->
+    </ul>
+  </div>
+</div>
