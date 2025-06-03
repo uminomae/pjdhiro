@@ -1,10 +1,9 @@
 <!-- ファイル: julia-set/2d-partials/navbar.html -->
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
   <div class="container-fluid">
-    <!-- サイト名／ブランドロゴ -->
     <a class="navbar-brand" href="#">Julia-set Inverse Mapping</a>
 
-    <!-- ① Collapse を開閉する “ハンバーガー” ボタン -->
+    <!-- ハンバーガーボタン -->
     <button
       class="navbar-toggler"
       type="button"
@@ -17,27 +16,47 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- ② Collapse で畳まれる領域：Play/Pause/Resume/Reset と Offcanvas トグルをまとめて配置 -->
+    <!-- Collapse 領域（展開／格納される部分） -->
     <div class="collapse navbar-collapse" id="navbarCollapseContent">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <!-- Play / Pause / Resume / Reset -->
+        <!-- Play ボタン -->
         <li class="nav-item me-2 mb-2 mb-md-0">
-          <button id="play-btn" class="btn btn-primary w-100">Play</button>
-        </li>
-        <li class="nav-item me-2 mb-2 mb-md-0">
-          <button id="pause-btn" class="btn btn-warning w-100" disabled>Pause</button>
-        </li>
-        <li class="nav-item me-2 mb-2 mb-md-0">
-          <button id="resume-btn" class="btn btn-success w-100" disabled>Resume</button>
-        </li>
-        <li class="nav-item me-2 mb-2 mb-md-0">
-          <button id="reset-btn" class="btn btn-light w-100">Reset</button>
+          <button id="play-btn"
+                  class="btn btn-play w-100">
+            Play
+          </button>
         </li>
 
-        <!-- 設定用 Offcanvas トグル -->
+        <!-- Pause ボタン -->
+        <li class="nav-item me-2 mb-2 mb-md-0">
+          <button id="pause-btn"
+                  class="btn btn-pause w-100"
+                  disabled>
+            Pause
+          </button>
+        </li>
+
+        <!-- Resume ボタン -->
+        <li class="nav-item me-2 mb-2 mb-md-0">
+          <button id="resume-btn"
+                  class="btn btn-resume w-100"
+                  disabled>
+            Resume
+          </button>
+        </li>
+
+        <!-- Reset ボタン -->
+        <li class="nav-item me-2 mb-2 mb-md-0">
+          <button id="reset-btn"
+                  class="btn btn-reset w-100">
+            Reset
+          </button>
+        </li>
+
+        <!-- 設定用 Offcanvas トグルボタン -->
         <li class="nav-item me-2 mb-2 mb-md-0">
           <button
-            class="btn btn-outline-light w-100 d-flex align-items-center justify-content-center"
+            class="btn btn-toggle w-100 d-flex align-items-center justify-content-center"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasConfig"
@@ -48,10 +67,10 @@
           </button>
         </li>
 
-        <!-- 更新履歴用 Offcanvas トグル -->
-        <li class="nav-item mb-2 mb-md-0">
+        <!-- 更新履歴用 Offcanvas トグルボタン -->
+        <li class="nav-item me-2 mb-2 mb-md-0">
           <button
-            class="btn btn-outline-light w-100 d-flex align-items-center justify-content-center"
+            class="btn btn-toggle w-100 d-flex align-items-center justify-content-center"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasHistory"
@@ -65,6 +84,3 @@
     </div>
   </div>
 </nav>
-
-<!-- fixed-top ナビバーの高さ分だけ余白をとるダミー -->
-<div style="height: 56px;"></div>
