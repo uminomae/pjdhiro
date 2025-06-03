@@ -264,3 +264,34 @@ body {
 .navbar.bg-secondary {
   background-color: transparent !important;
 }
+
+/* -------------------------------
+   計算式表示エリアのスタイル
+------------------------------- */
+#formula {
+  box-sizing: border-box;
+  width: 100%;
+  /* 四行分の高さ（行間を 1.2 の場合の例） */
+  line-height: 1.2;       /* 行送りを1.2em に */
+  height: calc(1.2em * 4); /* 行間 1.2em × 4行 = 4.8em 相当 */
+  
+  padding: 0.75rem;       /* 12px の余白を確保 */
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  
+  /* オーバーフローは隠す。ただしフォントサイズ調整で収める */
+  overflow: hidden;
+  
+  /* 初期フォントサイズ（あとで JS で調整可能） */
+  font-size: 1rem;        /* 1rem = 16px 相当（お好みで変更可） */
+}
+
+/* メディアクエリでスマホ時にもう少し高さを増やしたい場合など */
+@media (max-width: 576px) {
+  #formula {
+    line-height: 1.2;
+    height: calc(1.2em * 4); /* スマホでも 4 行分に */
+    font-size: 0.75rem;       /* 若干小さめにスタートしたい場合 */
+  }
+}
