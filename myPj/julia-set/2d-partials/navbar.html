@@ -1,0 +1,36 @@
+<!-- ファイル: julia-set/2d-partials/navbar.html -->
+<nav class="navbar navbar-dark bg-secondary fixed-top">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="#">Julia-set Inverse Mapping</a>
+	  <div class="d-flex mx-auto">
+		<button id="play-btn"   class="btn btn-primary mx-1">Play</button>
+		<button id="pause-btn"  class="btn btn-warning mx-1" disabled>Pause</button>
+		<button id="resume-btn" class="btn btn-success mx-1" disabled>Resume</button>
+		<button id="reset-btn"  class="btn btn-secondary mx-1">Reset</button>
+	  </div>
+	  <div class="d-flex">
+		<button
+		  class="btn btn-outline-light mx-1"
+		  type="button"
+		  data-bs-toggle="offcanvas"
+		  data-bs-target="#offcanvasConfig"
+		  aria-controls="offcanvasConfig"
+		>
+		  <span class="navbar-toggler-icon"></span>
+		  <small class="ms-1">設定</small>
+		</button>
+		<button
+		  class="btn btn-outline-light mx-1"
+		  type="button"
+		  data-bs-toggle="offcanvas"
+		  data-bs-target="#offcanvasHistory"
+		  aria-controls="offcanvasHistory"
+		>
+		  <i class="bi bi-journal-text"></i>
+		  <small class="ms-1">更新履歴</small>
+		</button>
+	  </div>
+	</div>
+  </nav>
+  <div style="height: 56px;"></div>
+  
