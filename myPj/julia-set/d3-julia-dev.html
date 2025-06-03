@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Julia Set Inverse Mapping Visualizer</title>
-
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
     crossorigin="anonymous"
   />
-
   <link rel="stylesheet" href="css/d3-style.css" />
 
   <script type="importmap">
@@ -24,48 +22,18 @@
   </script>
 </head>
 <body>
-  <!-- ナビバー -->
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Julia Set Inverse Mapping Visualizer</a>
-
-      <div class="mx-auto">
-        <button id="btn-run" class="btn btn-success btn-sm me-2" type="button">
-          Run
-        </button>
-        <button id="btn-pause" class="btn btn-secondary btn-sm me-2 d-none" type="button">
-          Pause
-        </button>
-        <button id="btn-stop" class="btn btn-danger btn-sm" type="button">
-          Stop
-        </button>
-      </div>
-
-      <button
-        class="btn btn-outline-light btn-sm"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasForm"
-        aria-controls="offcanvasForm"
-      >
-        設定
-      </button>
-    </div>
-  </nav>
-
+  <div id="navbar-placeholder"></div>
   <div id="offcanvas-placeholder"></div>
+
   <!-- 3D 描画領域 -->
   <div id="canvas-container">
     <canvas id="legend-canvas"></canvas>
   </div>
 
-  <!-- Bootstrap JS (Bundle) -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"
   ></script>
   <script src="js/3d/d3-load-partials.js"></script>
-  <!-- エントリポイント：d3-init-app.js のみ読み込む -->
-  <!-- <script type="module" src="js/3d/d3-init-app.js"></script> -->
 </body>
 </html>

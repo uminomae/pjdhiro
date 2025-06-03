@@ -49,12 +49,6 @@ function initLegend() {
   }
 }
 
-// ─── ページ読み込み後に一度だけ実行 ───
-// window.addEventListener('DOMContentLoaded', () => {
-//   initFormValues();
-//   init3DSceneAndLoop();
-//   initLegend();
-// });
 // ─── モジュールが読み込まれたら即実行 ───
 (function() {
   // 1) フォーム初期値をセット
