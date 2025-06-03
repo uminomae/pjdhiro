@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
   includeHTML('#navbar-placeholder', '2d-partials/navbar.html')
     .then(() => {
       console.log('→ navbar 読み込み完了 → 設定フォーム用 Offcanvas 読み込み');
+      
+      // ▼▼▼  ← ナビバーが DOM に挿入されたタイミングで Collapse イベントをセットする
+      bindCollapseCloseOnClick();
+
       return includeHTML('#offcanvas-config-placeholder', '2d-partials/offcanvas-config.html');
     })
     .then(() => {
@@ -54,3 +58,35 @@ document.addEventListener('DOMContentLoaded', () => {
       // 必要があればここでフォールバックとして d2-main.js を直接追加するなどの処理を入れられます
     });
 });
+
+
+/**
+ * bindCollapseCloseOnClick
+ * ——————————
+ * ナビバーの Collapse 部分 (#navbarCollapseContent) に対して、
+ * 内部の .btn をクリックしたら自動的に折りたたまれるように設定する関数
+ */
+function bindCollapseCloseOnClick() {
+  // Collapse 本体の要素を取得
+  const collapseElem = document.getElementById('navbarCollapseContent');
+  if (!collapseElem) {
+    console.warn('bindCollapseCloseOnClick: #navbarCollapseContent が見つかりません');
+    return;
+  }
+
+  // Bootstrap の Collapse インスタンスを取得
+  let bsCollapse = bootstrap.Collapse.getInstance(collapseElem);
+  if (!bsCollapse) {
+    // まだ初期化されていなければ、自分でインスタンスを生成
+    bsCollapse = new bootstrap.Collapse(collapseElem, { toggle: false });
+  }
+
+  // Collapse 内のすべての .btn 要素を選択
+  const buttons = collapseElem.querySelectorAll('.btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // console.log('Collapse 内のボタンがクリックされた → Collapse を閉じます');
+      bsCollapse.hide();
+    });
+  });
+}
