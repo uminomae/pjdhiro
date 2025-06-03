@@ -39,12 +39,12 @@ function initLegend() {
   const chkLegend = document.getElementById('chk-legend');
   if (chkLegend && chkLegend.checked) {
     // drawLegend は legend.js から import していないので、動的 import で呼び出す
-    import('../util/legend.js').then(({ drawLegend, showLegend }) => {
+    import('./ui/d3-legend-sub.js').then(({ drawLegend, showLegend }) => {
       showLegend();  // まず表示させる
       drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
     });
   } else {
-    import('../util/legend.js').then(({ hideLegend }) => {
+    import('./ui/d3-legend-sub.js').then(({ hideLegend }) => {
       hideLegend();
     });
   }
