@@ -67,38 +67,9 @@
   <!-- 設定フォーム用 Offcanvas は外部ファイルを読み込む -->
   <div id="offcanvas-config-placeholder"></div>
 
-  <!-- ────────────── 更新履歴用 Offcanvas ────────────── -->
-  <div
-    class="offcanvas offcanvas-end bg-dark text-light"
-    tabindex="-1"
-    id="offcanvasHistory"
-    aria-labelledby="offcanvasHistoryLabel"
-  >
-    <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title" id="offcanvasHistoryLabel">更新履歴</h5>
-      <button
-        type="button"
-        class="btn-close btn-close-white"
-        data-bs-dismiss="offcanvas"
-        aria-label="閉じる"
-      ></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="list-unstyled small" style="line-height: 1.6;">
-        <li class="mb-3">
-          <time datetime="2025-06-01" class="fw-bold">2025-06-01</time><br>
-          — 逆写像アニメーションの極座標補間を追加、ステップごとのカラー表示を改善<br>
-          — 背景画像とキャンバスの重ね合わせ機能を実装
-        </li>
-        <li class="mb-3">
-          <time datetime="2025-05-31" class="fw-bold">2025-05-31</time><br>
-          — 初期バージョン公開（単位円→逆写像アニメーション）
-        </li>
-        <!-- 必要に応じてさらに追加できます -->
-      </ul>
-    </div>
-  </div>
-
+  <!-- 更新履歴用 Offcanvas は外部ファイルを読み込み -->
+  <div id="offcanvas-history-placeholder"></div>
+  
   <!-- ────────────── ページ下部：関連リンク ────────────── -->
   <footer class="text-center text-light mt-4">
     <div class="container">
@@ -129,7 +100,7 @@
       console.log(`★ includeHTML: "${url}" を fetch 開始`);
       const resp = await fetch(url);
       if (!resp.ok) {
-        throw new Error(`${url} の読み込みに失敗しました: ${resp.status}`);
+        throw new Error(`${url} の読み込みに失敗: ${resp.status}`);
       }
       const html = await resp.text();
       console.log(`★ includeHTML: "${url}" の取得成功 (${html.length} bytes)`);
@@ -144,28 +115,31 @@
   document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded 発火 → navbar 読み込み開始');
 
-    // (1) まずナビバーを読み込む
+    // (1) ナビバー読み込み
     includeHTML('#navbar-placeholder', '2d-partials/navbar.html')
       .then(() => {
-        console.log('→ navbar の読み込みが完了しました。次に設定フォーム用 Offcanvas を読み込みます');
-
+        console.log('→ navbar 読み込み完了。次に設定フォーム用 Offcanvas 読み込み');
         // (2) 設定フォーム用 Offcanvas を読み込む
         return includeHTML('#offcanvas-config-placeholder', '2d-partials/offcanvas-config.html');
       })
       .then(() => {
-        console.log('→ 設定フォーム用 Offcanvas の読み込みが完了しました。ここで d2-main.js を追加します');
-
-        // (3) すべての HTML が揃ったところで main.js を動的に追加
+        console.log('→ 設定フォーム用 Offcanvas 読み込み完了。次に更新履歴用 Offcanvas 読み込み');
+        // (3) 更新履歴用 Offcanvas を読み込む
+        return includeHTML('#offcanvas-history-placeholder', '2d-partials/offcanvas-history.html');
+      })
+      .then(() => {
+        console.log('→ 更新履歴用 Offcanvas 読み込み完了。ここで d2-main.js を動的追加');
+        // (4) すべての HTML が揃ったところで main.js を動的に追加
         const script = document.createElement('script');
         script.type = 'module';
         script.src = 'js/2d/d2-main.js';
         script.onload = () => console.log('★★ d2-main.js 読み込み完了');
-        script.onerror = () => console.error('★★ d2-main.js の読み込みに失敗しました');
+        script.onerror = () => console.error('★★ d2-main.js の読み込み失敗');
         document.body.appendChild(script);
       })
       .catch(err => {
-        console.error('どこかで読み込みに失敗しました:', err);
-        // 条件に応じて main.js を読み込むなどのフォールバックを入れる場合はここに追加
+        console.error('どこかで読み込み失敗:', err);
+        // 必要ならフォールバックで main.js を直接追加するコードをここに書く
       });
   });
 </script>
