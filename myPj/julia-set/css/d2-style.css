@@ -2,124 +2,265 @@
    全体のベーススタイル
 ------------------------------------------------- */
 body {
-	margin: 0;
-	background: #111;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	min-height: 100vh;
-	color: #fff;
-	font-family: sans-serif;
-	padding-top: 20px;
-  }
-  
-  /* ─── ボタン／フォーム／テキストは最前面に置く ─── */
-  #controls,
-  #formula,
-  #config {
-	position: relative;
-	z-index: 2;
-  }
-  
-  /* -------------------------------------------------
-	 キャンバス＋背景画像を重ねるコンテナ
-	 ── レスポンシブ化のため width:800px 固定を解除し、
-		最大幅を 800px、幅は 100% ベースとする
-  ------------------------------------------------- */
-  #canvas-container {
-	position: relative;
-	width: 100%;
-	max-width: 800px;   /* 最大 800px まで広がる */
-	aspect-ratio: 4 / 3; /* アスペクト比 4:3（800×600 と同じ比率） */
-	margin: 20px 0;
-	z-index: 0;
-  }
-  
-  /* -------------------------------------------------
-	 背景の陰陽マーク（キャンバスの中央に半透明で表示）
-  ------------------------------------------------- */
-  #bg-image {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 40%;
-	height: auto;
-	opacity: 0.1;
-	pointer-events: none;
-	z-index: 0;
-  }
-  
-  /* -------------------------------------------------
-	 アニメーション用キャンバス
-	 ──  width/height は CSS では 100% にしておきつつ、
-	   JavaScript 側で実際のピクセル数 (canvas.width, .height) を設定する
-  ------------------------------------------------- */
-  #inverse-canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border: 1px solid #444;
-	background: transparent;
-	z-index: 1;
-  }
-  
-  /* -------------------------------------------------
-	 設定フォーム回り
-  ------------------------------------------------- */
-  #config {
-	margin-top: 10px;
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-	width: 90%;
-	max-width: 300px; /* PC では横幅 300px、スマホでは 90% まで縮小 */
-  }
-  
-  #config .field {
-	display: flex;
-	flex-direction: column;
-  }
-  
-  #config label {
-	margin-bottom: 4px;
-	font-size: 14px;
-  }
-  
+  margin: 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+  padding-top: 20px;
+}
+
+/* ─── ボタン／フォーム／テキストは最前面に置く ─── */
+#controls,
+#formula,
+#config {
+  position: relative;
+  z-index: 2;
+}
+
+/* -------------------------------------------------
+   キャンバス＋背景画像を重ねるコンテナ
+   ── レスポンシブ化のため width:800px 固定を解除し、
+      最大幅を 800px、幅は 100% ベースとする
+------------------------------------------------- */
+#canvas-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;      /* 最大 800px まで広がる */
+  aspect-ratio: 4 / 3;   /* アスペクト比 4:3（800×600 と同じ比率） */
+  margin: 20px 0;
+  z-index: 0;
+}
+
+/* -------------------------------------------------
+   背景の陰陽マーク（キャンバスの中央に半透明で表示）
+------------------------------------------------- */
+#bg-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: auto;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* -------------------------------------------------
+   アニメーション用キャンバス
+   ──  width/height は CSS では 100% にしておきつつ、
+       JavaScript 側で実際のピクセル数 (canvas.width, .height) を設定する
+------------------------------------------------- */
+#inverse-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #444; */
+  background: transparent;
+  z-index: 1;
+}
+
+/* -------------------------------------------------
+   設定フォーム回り
+------------------------------------------------- */
+#config {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
+  max-width: 300px; /* PC では横幅 300px、スマホでは 90% まで縮小 */
+}
+
+#config .field {
+  display: flex;
+  flex-direction: column;
+}
+
+#config label {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+#config input {
+  width: 100%;
+  padding: 0.25rem;    /* 0.25rem ≒ 4px */
+  font-size: 0.875rem; /* 0.875rem ≒ 14px */
+  margin-bottom: 0.25rem; /* 0.25rem ≒ 4px */
+}
+
+/* モバイル（≤576px）では自動ズーム防止のため 1rem に引き上げ */
+@media (max-width: 576px) {
   #config input {
-	width: 100%;
-	padding: 4px;
-	font-size: 14px;
-	margin-bottom: 4px;
+    font-size: 1rem; /* 1rem = 16px 相当 */
   }
-  
-  #config small {
-	font-size: 12px;
-	color: #ccc;
+}
+
+#config small {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* -------------------------------------------------
+   コントロールボタン回り
+------------------------------------------------- */
+#controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------
+   計算式表示エリア
+------------------------------------------------- */
+#formula {
+  margin-top: 20px;
+  font-size: 0.75m;
+  line-height: 1.5em;
+  white-space: pre-wrap;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* ──────────────────────────────────────────────────────────
+   設定用オフキャンバス (#offcanvasConfig) と更新履歴用 (#offcanvasHistory) の背景
+   — 20% 不透明の薄いカラーを適用
+────────────────────────────────────────────────────────── */
+
+#offcanvasConfig,
+#offcanvasHistory {
+  background-color: rgba(20, 0, 0, 0.2); /* 暗めの赤を薄く透過 */
+}
+
+#offcanvasConfig .offcanvas-header,
+#offcanvasConfig .offcanvas-body,
+#offcanvasHistory .offcanvas-header,
+#offcanvasHistory .offcanvas-body {
+  color: #ffffff;
+}
+/* ──────────────────────────────────────────────────────────
+   ナビバー Collapse 部分の背景を半透明化（20% 不透明）
+────────────────────────────────────────────────────────── */
+
+#navbarCollapseContent.show {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+/* 
+@media (max-width: 767.98px) {
+  #navbarCollapseContent.show {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    overflow-y: auto;
+    z-index: 3;
   }
-  
-  /* -------------------------------------------------
-	 コントロールボタン回り
-  ------------------------------------------------- */
-  #controls button {
-	margin: 0 5px;
-	padding: 5px 10px;
-	font-size: 16px;
-	cursor: pointer;
-  }
-  
-  /* -------------------------------------------------
-	 計算式表示エリア
-  ------------------------------------------------- */
-  #formula {
-	margin-top: 20px;
-	font-size: 16px;
-	line-height: 1.5em;
-	white-space: pre-wrap;
-	text-align: center;
-	max-width: 90%;
-  }
-  
+} */
+
+/* =========================================================================
+   Collapse 内のボタン共通スタイル（幅・余白・フォントサイズなど）
+============================================================================ */
+#navbarCollapseContent .btn {
+  display:           block;           /* 縦並びに */
+  width:             100%;            /* Collapse 領域いっぱいに広げる */
+  margin-bottom:     0.5rem;          /* 各ボタンの上下マージン */
+  padding:           0.75rem 1rem;    /* 十分なクリック領域を確保 */
+  border-radius:     0.25rem;         /* 角をわずかに丸く */
+  text-align:        center;
+  font-size:         1rem;            /* 16px 相当 */
+  background-color:  transparent;     /* 背景は透過 */
+}
+
+/* 最後のボタンだけ下マージンを消す（任意） */
+#navbarCollapseContent .btn:last-child {
+  margin-bottom: 0;
+}
+/* =========================================================================
+   Collapse 内のボタン個別スタイルを “背景半透明” に書き換え
+============================================================================ */
+
+/* =====================================================================
+   Play ボタン (.btn-play) の“中身を 20% 透過のブルー”にする
+   「他のスタイルに打ち消されないよう、最も優先度の高いセレクタ＋!important を使用」
+============================================================================= */
+
+/* 1) Collapse 内かつ btn-play を持つ button 要素を明示的にターゲットにする */
+#navbarCollapseContent .btn-play {
+  background-color: rgba(30, 136, 229, 0.2) !important;
+  border:           2px solid rgba(30, 136, 229, 0.8) !important;
+  color:            rgba(30, 136, 229, 1)   !important;
+}
+
+/* 2) ホバー時の不透明度を上げる */
+#navbarCollapseContent .btn-play:hover {
+  background-color: rgba(30, 136, 229, 0.4) !important;  /* 40% 透過 */
+  border-color:     rgba(30, 136, 229, 1)   !important;  /* 枠線は完全不透過 */
+}
+
+/* ================================================================
+   もし Collapse が別 ID や別構造の場合は、
+   セレクタを調整して「btn-play を必ず上書きする」ようにしてください
+================================================================ */
+
+/* ─── Pause ボタン (.btn-pause) ─── */
+#navbarCollapseContent .btn-pause {
+  background-color: rgba(251, 192, 45, 0.2); /* 黄系20%透過 */
+  border:           2px solid rgba(251, 192, 45, 0.8);
+  color:            rgba(251, 192, 45, 1);
+}
+#navbarCollapseContent .btn-pause:hover {
+  background-color: rgba(251, 192, 45, 0.4);
+  border-color:     rgba(251, 192, 45, 1);
+}
+
+/* ─── Resume ボタン (.btn-resume) ─── */
+#navbarCollapseContent .btn-resume {
+  background-color: rgba(67, 160, 71, 0.2);  /* 緑系20%透過 */
+  border:           2px solid rgba(67, 160, 71, 0.8);
+  color:            rgba(67, 160, 71, 1);
+}
+#navbarCollapseContent .btn-resume:hover {
+  background-color: rgba(67, 160, 71, 0.4);
+  border-color:     rgba(67, 160, 71, 1);
+}
+
+/* ─── Reset ボタン (.btn-reset) ─── */
+#navbarCollapseContent .btn-reset {
+  background-color: rgba(229, 57, 53, 0.2);  /* 赤系20%透過 */
+  border:           2px solid rgba(229, 57, 53, 0.8);
+  color:            rgba(229, 57, 53, 1);
+}
+#navbarCollapseContent .btn-reset:hover {
+  background-color: rgba(229, 57, 53, 0.4);
+  border-color:     rgba(229, 57, 53, 1);
+}
+
+/* ─── Offcanvas トグルボタン (.btn-toggle) ─── */
+#navbarCollapseContent .btn-toggle {
+  background-color: rgba(66, 66, 66, 0.7); /* 20%透過 */
+  border:           2px solid rgba(66, 66, 66, 0.8);
+  color:            rgba(255, 255, 255, 1);
+}
+#navbarCollapseContent .btn-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color:     rgba(255, 255, 255, 1);
+}
+
+
+/* =========================================================================
+   ナビバー自体（.navbar.bg-secondary）を透明にする
+============================================================================ */
+/* HTML 上で bg-secondary を外せない場合、CSS オーバーライドで透明にする */
+.navbar.bg-secondary {
+  background-color: transparent !important;
+}
