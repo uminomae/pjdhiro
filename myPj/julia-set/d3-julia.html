@@ -12,6 +12,7 @@
   />
   <!-- <link rel="stylesheet" href="css/d3-style.css" /> -->
   <link rel="stylesheet" href="css/d3-base.css" />
+  <link rel="stylesheet" href="css/d3-nav.css" />
   <link rel="stylesheet" href="css/d3-components.css" />
   <link rel="stylesheet" href="css/d3-utilities.cs" />
   <script type="importmap">
@@ -30,6 +31,8 @@
 
   <!-- 3D 描画領域 -->
   <div id="canvas-container" class="position-relative overflow-hidden flex-grow-1">
+    <!-- Three.js のレンダーターゲットは下記 <canvas> とは別に生成される想定 -->
+    <!-- ここでは「凡例用キャンバス」を置いておく -->
     <canvas id="legend-canvas"></canvas>
   </div>
 
