@@ -1,18 +1,14 @@
-<!-- ファイル: 3d-partials/offcanvas.html -->
+<!-- Offcanvas 内のフォーム例 -->
 <div
   class="offcanvas offcanvas-end text-dark bg-light"
   tabindex="-1"
   id="offcanvasForm"
   aria-labelledby="offcanvasFormLabel"
 >
+
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasFormLabel">パラメータ設定</h5>
-    <button
-      type="button"
-      class="btn-close text-reset"
-      data-bs-dismiss="offcanvas"
-      aria-label="Close"
-    ></button>
+    <h5 class="offcanvas-title fs-5" id="offcanvasFormLabel">パラメータ設定</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <form>
@@ -24,9 +20,7 @@
           id="chk-legend"
           checked
         />
-        <label class="form-check-label" for="chk-legend">
-          凡例を表示
-        </label>
+        <label class="form-check-label small" for="chk-legend">凡例を表示</label>
       </div>
 
       <!-- Re(c) -->
@@ -35,28 +29,28 @@
         <input
           type="number"
           step="0.01"
-          class="form-control"
+          class="form-control form-control-sm"
           id="input-re"
         />
       </div>
-      <!-- Im(c) -->
+      <!-- Im(c) 同様 -->
       <div class="mb-3">
         <label for="input-im" class="form-label">Im(c)</label>
         <input
           type="number"
           step="0.01"
-          class="form-control"
+          class="form-control form-control-sm"
           id="input-im"
         />
       </div>
-      <!-- N (ポイント数) -->
+      <!-- N -->
       <div class="mb-3">
         <label for="input-n" class="form-label">N (ポイント数)</label>
         <input
           type="number"
           min="10"
           step="10"
-          class="form-control"
+          class="form-control form-control-sm"
           id="input-n"
         />
       </div>
@@ -67,14 +61,14 @@
           type="number"
           min="1"
           step="1"
-          class="form-control"
+          class="form-control form-control-sm"
           id="input-iter"
         />
       </div>
 
       <!-- ステータス表示 -->
       <div class="mb-3">
-        <span id="status">(待機中)</span>
+        <span id="status" class="fs-6 fw-bold text-success">(待機中)</span>
       </div>
 
       <hr />
