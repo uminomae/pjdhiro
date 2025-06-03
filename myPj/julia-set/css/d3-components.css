@@ -1,0 +1,20 @@
+/* components.css */
+/* Offcanvas の最大幅設定だけ */
+.offcanvas.offcanvas-end {
+	width: 100%;
+	/* max-width: 300px; */
+  }
+  /* @media (max-width: 576px) {
+	.offcanvas.offcanvas-end {
+	  max-width: 100%;
+	}
+  } */
+  /* ステータス表示の色だけ */
+  #status {
+	/* font-weight: bold; */
+	color: #0f0;
+  }
+  /* .status-stopped {
+	color: #f00;
+  } */
+  
