@@ -1,12 +1,24 @@
 <!-- ファイル: julia-set/2d-partials/offcanvas-config.html -->
 <div
-  class="offcanvas offcanvas-start offcanvas-fullscreen-sm-b text-light"
+  class="offcanvas offcanvas-start offcanvas-fullscreen-sm-down text-light"
   tabindex="-1"
   id="offcanvasConfig"
   aria-labelledby="offcanvasConfigLabel"
 >
   <div class="offcanvas-header border-bottom border-secondary">
-    <h5 class="offcanvas-title" id="offcanvasConfigLabel">設定  ※Resetしてから変更ください</h5>
+    <h5 class="offcanvas-title" id="offcanvasConfigLabel">設定</h5>
+
+    <!-- 設定完了ボタン：クリックで描画リセット＆フォーム初期化してオフキャンバスを閉じる -->
+    <button
+      id="config-complete-btn"
+      type="button"
+      class="btn btn-sm btn-light me-2"
+      title="設定を反映して閉じる"
+      data-bs-dismiss="offcanvas"
+    >
+      設定完了
+    </button>
+
     <button
       type="button"
       class="btn-close btn-close-white"
