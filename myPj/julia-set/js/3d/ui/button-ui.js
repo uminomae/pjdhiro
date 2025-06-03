@@ -3,7 +3,7 @@
 import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../d3-config.js';
 import { Complex }                                  from '../../util/complex-number.js';
 import { runInverseAnimation }                      from '../d3-renderer.js';
-import { drawLegend }                               from '../../util/legend.js';
+import { drawLegend }                               from './d3-legend-sub.js';
 
 const btnRun   = document.getElementById('btn-run');
 const btnPause = document.getElementById('btn-pause');

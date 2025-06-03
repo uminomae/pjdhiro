@@ -1,7 +1,7 @@
 // js/3d/ui/legend-ui.js
 
 import { LEGEND_DEFAULT } from '../d3-config.js';
-import { drawLegend, hideLegend, showLegend } from '../../util/legend.js';
+import { drawLegend, hideLegend, showLegend } from './d3-legend-sub.js';
 
 /**
  * Offcanvas 内の <input id="chk-legend"> を使って、
