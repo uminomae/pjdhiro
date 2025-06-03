@@ -1,20 +1,33 @@
-/* components.css */
-/* Offcanvas の最大幅設定だけ */
-.offcanvas.offcanvas-end {
-	width: 100%;
-	/* max-width: 300px; */
-  }
-  /* @media (max-width: 576px) {
-	.offcanvas.offcanvas-end {
-	  max-width: 100%;
-	}
-  } */
-  /* ステータス表示の色だけ */
-  #status {
-	/* font-weight: bold; */
-	color: #0f0;
-  }
-  /* .status-stopped {
-	color: #f00;
-  } */
-  
+/* d3-components.css */
+
+/* ─── Offcanvas 幅の定義 ─── */
+/* .offcanvas.offcanvas-end {
+  width: 100%;
+} */
+
+/* ─── オフキャンバス本体を半透明に ─── */
+.offcanvas {
+  background-color: rgba(70, 23, 1, 0.0) !important;
+  color: #fff;
+  /* border: none; */
+}
+
+/* ─── オフキャンバス内の input を透明化＋白文字に ─── */
+.offcanvas .form-control {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* プレースホルダー文字を薄い白に */
+.offcanvas .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* フォーカス時の枠線を白くする */
+.offcanvas .form-control:focus {
+  background-color: transparent !important;
+  /* color: #fff !important; */
+  border-color: #fff !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
