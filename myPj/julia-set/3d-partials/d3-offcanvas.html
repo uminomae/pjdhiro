@@ -1,14 +1,18 @@
-<!-- Offcanvas 内のフォーム例 -->
+<!-- d3-offcanvas.html のお手本版 -->
 <div
-  class="offcanvas offcanvas-end text-dark bg-light"
+  class="offcanvas offcanvas-end text-light border-0"
   tabindex="-1"
   id="offcanvasForm"
   aria-labelledby="offcanvasFormLabel"
 >
-
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title fs-5" id="offcanvasFormLabel">パラメータ設定</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="offcanvas-header mt-5">
+    <h5 class="offcanvas-title mt-3 fs-5" id="offcanvasFormLabel">パラメータ設定</h5>
+    <button
+      type="button"
+      class="btn-close btn-close-white mt-2"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
   </div>
   <div class="offcanvas-body">
     <form>
@@ -33,7 +37,8 @@
           id="input-re"
         />
       </div>
-      <!-- Im(c) 同様 -->
+
+      <!-- Im(c) -->
       <div class="mb-3">
         <label for="input-im" class="form-label">Im(c)</label>
         <input
@@ -43,7 +48,8 @@
           id="input-im"
         />
       </div>
-      <!-- N -->
+
+      <!-- N (ポイント数) -->
       <div class="mb-3">
         <label for="input-n" class="form-label">N (ポイント数)</label>
         <input
@@ -54,6 +60,7 @@
           id="input-n"
         />
       </div>
+
       <!-- maxIter -->
       <div class="mb-3">
         <label for="input-iter" class="form-label">maxIter</label>
@@ -66,16 +73,20 @@
         />
       </div>
 
-      <!-- ステータス表示 -->
+      <!-- ステータス表示（白文字で） -->
       <div class="mb-3">
-        <span id="status" class="fs-6 fw-bold text-success">(待機中)</span>
+        <span id="status" class="fs-6 fw-bold text-white">(待機中)</span>
       </div>
 
       <hr />
-      <p class="small text-muted">Run で描画開始（初期値が推奨パラメータです）</p>
-      <p class="small text-muted">赤色は発散と収束の境界です。</p>
-      <p class="small text-muted">ドラッグ・ホイールでカメラを移動できます。</p>
-      <p class="small text-muted">Stop を押すと初期状態に戻ります。</p>
+
+      <!-- 説明文を一つの <p> にまとめ、白文字で表示 -->
+      <p class="small text-white">
+        Run で描画開始（初期値が推奨パラメータです）<br />
+        赤色は発散と収束の境界です。<br />
+        ドラッグ・ホイールでカメラを移動できます。<br />
+        Stop を押すと初期状態に戻ります。
+      </p>
     </form>
   </div>
 </div>
