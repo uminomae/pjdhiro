@@ -202,3 +202,36 @@ export function initApp() {
   elements.resumeBtn.addEventListener('click', onResumeClick);
   elements.resetBtn.addEventListener('click', onResetClick);
 }
+
+  // ────────────── ここから追加 ──────────────
+
+// 「設定完了」ボタンをクリックしたときの処理
+const configCompleteBtn = document.getElementById('config-complete-btn');
+if (configCompleteBtn) {
+  configCompleteBtn.addEventListener('click', () => {
+    // 1) 進行中のアニメーションを止める（state.shouldStop を true にするなど）
+    state.shouldStop = true;
+    state.animationStarted = false;
+    // もし pause 状態だったら解除しておく
+    state.isPaused = false;
+
+   // 2) キャンバスだけクリア（描画をリセット）
+   const canvas = elements.canvas;
+   const ctx    = elements.ctx;
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // 3) フォームの現在値を読み込んで、内部パラメータを更新する
+    // （次に Play が押されたときにこの値が使われるようにする）
+    AppConfig.currentCRe     = parseFloat(elements.cReInput.value);
+    AppConfig.currentCIm     = parseFloat(elements.cImInput.value);
+    AppConfig.currentSamples = parseInt(elements.samplesInput.value,  10);
+    AppConfig.currentMaxIter = parseInt(elements.maxIterInput.value, 10);
+    AppConfig.currentPauseMs = parseInt(elements.pauseMsInput.value,  10);
+
+    // 3) Play ボタンを有効化し、ほかのボタンを無効化または適切に設定
+    updateButtonStates({ play: true, pause: false, resume: false, reset: true });
+
+    // Offcanvas は data-bs-dismiss="offcanvas" で自動的に閉じる
+  });
+}
+  // ────────────── ここまで追加 ──────────────
+
