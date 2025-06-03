@@ -1,4 +1,4 @@
-// js/d3-load-partials.js
+// ファイル: js/d3-load-partials.js
 
 /**
  * includeHTML: selector で指定した要素に対し、url の HTML を fetch → innerHTML で挿入するヘルパー
@@ -21,14 +21,14 @@ async function includeHTML(selector, url) {
   }
   
   document.addEventListener('DOMContentLoaded', () => {
-	includeHTML('#offcanvas-placeholder', '3d-partials/d3-offcanvas.html')
-	// includeHTML('#navbar-placeholder', '3d-partials/navbar.html')
-	//   .then(() => {
-	// 	// 2) Offcanvas 読み込み
-	// 	return includeHTML('#offcanvas-placeholder', '3d-partials/offcanvas.html');
-	//   })
+	// 1) まずはナビバーを読み込む
+	includeHTML('#navbar-placeholder', '3d-partials/d3-navbar.html')
 	  .then(() => {
-		// 3) offcanvas.html を挿入し終えたタイミングで d3-init-app.js を動的に読み込む
+		// 2) ナビバー挿入後に Offcanvas を読み込む
+		return includeHTML('#offcanvas-placeholder', '3d-partials/d3-offcanvas.html');
+	  })
+	  .then(() => {
+		// 3) Offcanvas 読み込み後に d3-init-app.js を動的に追加
 		const script = document.createElement('script');
 		script.type = 'module';
 		script.src  = 'js/3d/d3-init-app.js';
