@@ -1,62 +1,41 @@
-// ─────────────────────────────────────────────────────────────
-// ファイルパス: js/modules/quantStereo/qt-main.js
-// ─────────────────────────────────────────────────────────────
+// js/modules/quantStereo/qt-main.js
 
-import { initScene, addHelpersAndLights, initPointCloud, initUI, startLoop } from './qt-init/qt-st-init.js';
+import { addHelpersAndLights, createAndAddPointCloud, initUI, startLoop }
+  from './qt-init/qt-st-init.js';
 
 /**
  * initialize()
- * ────────────────────────────────────────────────────────────
- * quantStereo（四元数ステレオ投影ビジュアライザ）の
- * エントリポイント「指揮者」です。
+ *  ────────────────────────────────────────────────────────────
+ *  quantStereo モジュール全体を起動する関数。以下を順に実行する：
+ *    1) 照明・軸ヘルパーを追加
+ *    2) UI（スライダー・ボタン・変数表示）を初期化
+ *    3) 初期の四元数点群を作成 (index=0)
+ *    4) アニメーションループ開始
  *
- * 「シーン初期化 → UI 初期化 → 点群レンダリング → アニメーションループ開始」
- * の順で呼び出します。
- *
- * @returns {void}
+ *  @param {{
+ *    scene:    THREE.Scene,
+ *    camera:   THREE.PerspectiveCamera,
+ *    renderer: THREE.WebGLRenderer,
+ *    controls: OrbitControls
+ *  }} context
  */
-export function initialize() {
-  console.log('[qt-main] initialize() を実行 (Init → UI → Render)');
+export function initialize(context) {
+  console.log('[qt-main] initialize() START');
 
-  // ───────────────────────────────────────────────────────────
-  // 1) Three.js のシーン/カメラ/レンダラー/コントロールを初期化
-  // ───────────────────────────────────────────────────────────
-  // initScene(): { scene, camera, renderer, controls } を返す
-  const { scene, camera, renderer, controls } = initScene();
-  console.log('[qt-main] initScene() 完了');
-
-  // ───────────────────────────────────────────────────────────
-  // 2) 照明と軸ヘルパー（Helpers & Lights）を追加
-  // ───────────────────────────────────────────────────────────
-  addHelpersAndLights(scene);
+  // 1) 照明と軸ヘルパーを追加
+  addHelpersAndLights(context.scene);
   console.log('[qt-main] addHelpersAndLights() 完了');
 
-  // ───────────────────────────────────────────────────────────
-  // 3) UI（スライダー・ボタン・変数表示）の初期化
-  // ───────────────────────────────────────────────────────────
-  //
-  //   ここで UI を先に組み立てることで、
-  //   ユーザーがページを開いた直後からスライダーなどが
-  //   すぐに操作できるようにします。
-  //
-  initUI({ scene, camera, renderer, controls });
+  // 2) UI 初期化
+  initUI(context);
   console.log('[qt-main] initUI() 完了');
 
-  // ───────────────────────────────────────────────────────────
-  // 4) 四元数点群を初期生成してシーンに追加 (index = 0)
-  // ───────────────────────────────────────────────────────────
-  //
-  //   initUI の後にレンダリングを行うことで、
-  //   UI の操作で「点群のスケール変更」や「Next Q ボタン」などを
-  //   すぐにテストできるようになります。
-  //
-  initPointCloud(scene);
-  console.log('[qt-main] initPointCloud() 完了');
+  // 3) 初期点群 (index=0) を作成してシーンに追加
+  createAndAddPointCloud(context.scene, 0);
+  console.log('[qt-main] createAndAddPointCloud() 完了');
 
-  // ───────────────────────────────────────────────────────────
-  // 5) アニメーションループを開始 (Render Loop)
-  // ───────────────────────────────────────────────────────────
-  startLoop({ scene, camera, renderer, controls });
+  // 4) アニメーションループを開始
+  startLoop(context);
   console.log('[qt-main] startLoop() 完了');
 
   console.log('[qt-main] initialize() COMPLETE');
