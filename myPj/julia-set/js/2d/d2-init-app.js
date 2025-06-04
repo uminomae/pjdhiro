@@ -5,6 +5,9 @@ import { Complex }                 from '../util/complex-number.js';
 import { generateCirclePoints }    from '../util/generate-circle.js';
 import { animateInverseWithPause } from './d2-inverse-animate.js';
 import { pauseAnimation, resumeAnimation } from './modules/d2-pause-controller.js';
+// js/3d/d3-init-app.js
+import './ui/button-ui.js';
+import { initLegendToggle } from './ui/legend-ui.js';
 
 /**
  * 各種 DOM 要素と状態フラグをまとめたオブジェクト
