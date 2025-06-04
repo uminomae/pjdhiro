@@ -7,6 +7,7 @@ minimal-mistakes-theme
 .DS*
 backup/
 old/
+memo.md
 
 _posts/edit/memo.md
 myPj/inverse/js/Old
