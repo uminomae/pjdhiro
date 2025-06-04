@@ -8,32 +8,27 @@ import { switchToTopView } from './legend-ui.js'; // あるいは定義したフ
 import * as THREE from 'three';                  // three.js を参照可能に
 
 
-// Offcanvas を挿入するプレースホルダ要素
-const placeholder = document.getElementById('offcanvas-placeholder');
-if (placeholder) {
-  const observer = new MutationObserver((mutationsList, obs) => {
-    for (const mutation of mutationsList) {
-      if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-        // offcanvas HTML が入ってきた可能性があるので btn-top-view を探す
-        const btnTopView = document.getElementById('btn-top-view');
-        if (btnTopView) {
-          btnTopView.addEventListener('click', () => {
-            console.log('▶ 天井ビュー切り替えボタン がクリックされました');
-            switchToTopView();
-          });
-          // 一度リスナーが貼れたら、これ以上は不要なので監視を止める
-          obs.disconnect();
-          break;
-        }
-      }
-    }
-  });
 
-  // childList と subtree を監視して、offcanvas 中身が挿入されるのをキャッチ
-  observer.observe(placeholder, { childList: true, subtree: true });
-} else {
-  console.warn('[button-ui] offcanvas-placeholder が見つかりません');
-}
+
+(function attach2DViewListener() {
+  // 1) まずは即座にボタン要素を探してみる
+  const btnTopView = document.getElementById('btn-top-view');
+
+  if (btnTopView) {
+    // 見つかった → ここでイベントリスナーをひとつだけ貼る
+    console.log('[button-ui] btn-top-view を発見、クリックリスナーを貼ります');
+    btnTopView.addEventListener('click', () => {
+      console.log('▶ button-ui: 2D view ボタンがクリックされました');
+      switchToTopView();
+    });
+  } else {
+    // まだ見つからない → 50ms 後に再試行
+    // （offcanvas や partial 挿入が完了していない可能性があるため）
+    setTimeout(attach2DViewListener, 50);
+  }
+})();
+
+
 // ──────────────────────────────────────────────────────
 // （1）グローバルに使う状態・パラメータを定義
 // ──────────────────────────────────────────────────────
