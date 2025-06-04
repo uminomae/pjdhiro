@@ -18,7 +18,7 @@ export function getAlgFromURL() {
  * loadAlgModule()
  * ────────────────────────────────────────────────────────────
  * alg キーに対応するモジュールパスを ALG_MODULE_PATHS から取得し、
- * 動的 import → initialize(context) を呼び出す
+ * 動的 import → startModule(context) を呼び出す
  *
  * @param {string} alg
  * @param {{ scene, camera, renderer, controls }} context
@@ -34,12 +34,12 @@ export async function loadAlgModule(alg, context) {
     const mod = await import(modulePath);
     console.log('[load-module] モジュールインポート完了:', mod);
 
-    if (typeof mod.initialize !== 'function') {
-      throw new Error(`[load-module] ${modulePath} に initialize(context) が定義されていません`);
+    if (typeof mod.startModule !== 'function') {
+      throw new Error(`[load-module] ${modulePath} に startModule(context) が定義されていません`);
     }
-    // モジュールの initialize() を呼び出す
-    mod.initialize(context);
-    console.log('[load-module] initialize() を実行完了');
+    // モジュールの startModule() を呼び出す
+    mod.startModule(context);
+    console.log('[load-module] startModule() を実行完了');
   } catch (err) {
     throw new Error(`[load-module] ${modulePath} の読み込み失敗: ${err}`);
   }
