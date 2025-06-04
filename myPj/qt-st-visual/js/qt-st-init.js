@@ -1,10 +1,6 @@
 // js/qt-st-init.js の先頭を次のように変更
-// import { THREE } from '../app.js';
-// import { THREE, OrbitControls } from '../app.js';
-
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-
 
 /**
  * three.js の共通初期化。
