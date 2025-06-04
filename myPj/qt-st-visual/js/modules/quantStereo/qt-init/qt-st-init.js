@@ -1,10 +1,8 @@
 // js/modules/quantStereo/qt-st-init.js
 
-import * as THREE from 'three';
 import { UI_DOM_IDS } from '../qt-config.js';
-import { addHelpersAndLights } from './qt-st-init-helpers.js'; // 照明・ヘルパーのみ
 
-let currentQIndex = 0;
+// let currentQIndex = 0;
 
 /**
  * initUI(context)
