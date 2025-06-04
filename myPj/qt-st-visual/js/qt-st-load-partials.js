@@ -37,4 +37,24 @@ export async function loadPartials(alg) {
   console.log('[load-partials] Offcanvas を挿入:', offcanvasUrl);
   await includeHTML('#offcanvas-placeholder', offcanvasUrl);
   console.log('[load-partials] Offcanvas 挿入完了');
+
+  let mainUrl;
+  if (alg === 'julia-inverse') {
+    mainUrl = './partials/d3-julia-main.html';
+  } else {
+    mainUrl = './partials/qt-main.html';
+  }
+  console.log('[load-partials] main.html を挿入:', mainUrl);
+  await includeHTML('#main-content-placeholder', mainUrl);
+  console.log('[load-partials] main.html 挿入完了');
+
+  let canvasContainer;
+  if (alg === 'julia-inverse') {
+    canvasContainer = './partials/d3-julia-canvas-container.html';
+  } else {
+    canvasContainer = './partials/qt-canvas-container.html';
+  }
+  console.log('[load-partials] canvas-container.html を挿入:', canvasContainer);
+  await includeHTML('#canvas-area-placeholder', canvasContainer);
+  console.log('[load-partials] canvas-container.html 挿入完了');
 }
