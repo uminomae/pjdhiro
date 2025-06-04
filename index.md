@@ -34,9 +34,12 @@ feature_row:
 ## Get Started
 
 このサイトでは、[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有しています。  
-特に、
-対人スキルや[感情処理]({{ '/emotional-processing/' | relative_url }})の視点を取り入れたアプローチを紹介します。
+特に、対人スキルや[感情処理]({{ '/emotional-processing/' | relative_url }})の視点を取り入れたアプローチを紹介します。
 
-{% include feature_row %}
+2025年は、
+経済関連だと信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})、
+心理関連だと[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }})、
+[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
+を考えることが多いです。
 
-[Post]({{ '/posts/' | relative_url }})(BLOG)は場に差し出す「私の構え」。「世界がどう見えているか？」の間主観的な自己紹介です。
+[Post]({{ '/posts/' | relative_url }})(BLOG)は場に差し出す「私の構え」。「世界がどう見えているか？」の間主観的な自己紹介。心と身体の繋ぎ目に興味があります。
