@@ -5,7 +5,10 @@ import { addHelpersAndLights } from './qt-init-helpers.js';
 import {
   overlayEarthGridAndProjection
 } from './qt-pointcloud.js';
-import { RES_THETA, RES_PHI } from './qt-config.js';
+
+// ↓ ここで定数をインポート
+import { RES_THETA, RES_PHI, FULL_CYCLE, HALF_CYCLE, ROTATION_SPEED } from './qt-config.js';
+
 import { create, normalize } from './qt-quat-utils.js';
 import * as THREE from 'three';
 
@@ -42,22 +45,26 @@ export function initialize({ scene, camera, renderer, controls }) {
 
 /**
  * animateLoop(scene)
- *   ・経過時間に応じた四元数 qRot を計算
+ *   ・経過時間から回転角 theta を得る (0 ～ 4π)
  *   ・overlayEarthGridAndProjection() で
- *       「地球グリッド(青) + ステレオ投影球(白→黒)」を再描画
- *   ・背景色を θ に応じて暗<→>明 に補間
- *   ・球のオーバーレイカラー(白 or 黒) を θ で切り替え
+ *       「地球グリッド(青) + ステレオ投影球(グレースケール)」を再描画
+ *   ・背景色を 0 ≤ θ < 2π: 暗 → 明、2π ≤ θ < 4π: 明 → 暗
+ *   ・球の全面オーバーレイカラー（白 or 黒）も
+ *     0 ≤ θ < 2π: 白、2π ≤ θ < 4π: 黒 に分岐
  */
 function animateLoop(scene) {
   (function loop() {
     requestAnimationFrame(loop);
 
     // (A) 経過時間から回転角 θ を得る
-    const elapsed = clock.getElapsedTime();    // 経過秒数
-    const omega = Math.PI / 2;                 // 毎秒 90° (π/2 rad)
-    const theta = (elapsed * omega) % (2 * Math.PI); // θ ∈ [0, 2π)
+    const elapsed = clock.getElapsedTime();      // 経過秒数
+    const omega   = ROTATION_SPEED;              // 毎秒 90° (π/2 rad)
+    // FULL_CYCLE = 4π: 720度で一周させる
+    const theta   = (elapsed * omega) % FULL_CYCLE; // θ ∈ [0, 4π)
 
     // (B) θ に応じた四元数 qRot（x 軸まわりの回転）を生成
+    //     ※ half = θ/2 なので、1回転(360°)で qRot は２回転分になるが、
+    //        あくまで「θ の進み」を 720度に引き延ばしたいだけなので問題なし
     const half = theta / 2;
     const qRot = normalize(create(Math.cos(half), Math.sin(half), 0, 0));
 
@@ -66,13 +73,13 @@ function animateLoop(scene) {
 
     // (D) θ に応じた背景色の補間
     let bgColor;
-    if (theta < Math.PI) {
-      // 0 ≤ θ < π: 暗 → 明
-      const t = theta / Math.PI; // 0→1
+    if (theta < HALF_CYCLE) {
+      // 0 ≤ θ < 2π: 暗 → 明
+      const t = theta / HALF_CYCLE; // 0→1
       bgColor = colorDark.clone().lerp(colorLight, t);
     } else {
-      // π ≤ θ < 2π: 明 → 暗
-      const t = (theta - Math.PI) / Math.PI; // 0→1
+      // 2π ≤ θ < 4π: 明 → 暗
+      const t = (theta - HALF_CYCLE) / HALF_CYCLE; // 0→1
       bgColor = colorLight.clone().lerp(colorDark, t);
     }
     scene.background = bgColor;
@@ -80,11 +87,13 @@ function animateLoop(scene) {
     // (E) θ に応じた「球の全面オーバーレイカラー」を設定
     const projObj = scene.getObjectByName('quaternionSpherePoints');
     if (projObj && projObj.material) {
-      if (theta < Math.PI) {
+      if (theta < HALF_CYCLE) {
+        // 0 ≤ θ < 2π のあいだ、球は白
         projObj.material.color.set(0xffffff);
         projObj.material.opacity = 1.0;
         projObj.material.transparent = true;
       } else {
+        // 2π ≤ θ < 4π のあいだ、球は黒
         projObj.material.color.set(0x000000);
         projObj.material.opacity = 1.0;
         projObj.material.transparent = true;
