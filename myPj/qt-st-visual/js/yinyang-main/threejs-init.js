@@ -1,34 +1,36 @@
-// ─────────────────────────────────────────────────────────────
-// ファイルパス: /js/yinyang-main/threejs-init.js
-// ─────────────────────────────────────────────────────────────
+// js/qt-main/threejs-init.js
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { THREE_INIT } from '../yinyang-config.js';  // 設定ファイルを参照
+import { THREE_INIT } from '../yinyang-config.js';
 
 export let scene, camera, renderer, controls;
 
 /**
  * initThreejs()
- *  - <div id="canvas-container"> のサイズを取得して WebGLRenderer, Scene, Camera, Controls を生成
- *  - 設定ファイル THREE_INIT から ID を取得する
- *  - 戻り値: { scene, camera, renderer, controls }
+ *  ────────────────────────────────────────────────────────────
+ *  <div id="canvas-container"> からサイズを取得して、WebGLRenderer, Scene, Camera, Controls を生成。
+ *  呼び出すのはアプリ起動時に一度だけ。
+ *
+ *  @returns {{
+ *    scene:    THREE.Scene,
+ *    camera:   THREE.PerspectiveCamera,
+ *    renderer: THREE.WebGLRenderer,
+ *    controls: OrbitControls
+ *  }}
  */
 export function initThreejs() {
   console.log('[threejs-init] initThreejs() を実行');
 
-  // 1) 親要素を ID から取得
   const container = document.getElementById(THREE_INIT.CANVAS_CONTAINER_ID);
   if (!container) {
-    throw new Error(`[threejs-init] threejs-init: ID "${THREE_INIT.CANVAS_CONTAINER_ID}" の要素が見つかりません`);
+    throw new Error(`[threejs-init] ID="${THREE_INIT.CANVAS_CONTAINER_ID}" が見つかりません`);
   }
 
-  // 2) サイズを取得
-  const width = container.clientWidth;
+  const width  = container.clientWidth;
   const height = container.clientHeight;
-  console.log('[threejs-init] container size =', width, 'x', height);
+  console.log('[threejs-init] container size =', width, '×', height);
 
-  // 3) レンダラー生成
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(width, height);
   renderer.setPixelRatio(window.devicePixelRatio);
@@ -36,19 +38,27 @@ export function initThreejs() {
   container.appendChild(renderer.domElement);
   console.log('[threejs-init] WebGLRenderer を追加');
 
-  // 4) シーン生成
   scene = new THREE.Scene();
 
-  // 5) カメラ生成
   camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000);
   camera.position.set(2, 2, 2);
   camera.lookAt(0, 0, 0);
 
-  // 6) OrbitControls 生成
   controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.1;
-
+  controls.enableDamping   = true;
+  controls.dampingFactor   = 0.1;
+  controls.enablePan       = false;
+  controls.rotateSpeed     = 0.5;
   console.log('[threejs-init] Scene/Camera/Controls を初期化完了');
+
+  window.addEventListener('resize', () => {
+    const w = container.clientWidth;
+    const h = container.clientHeight;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+    console.log('[threejs-init] リサイズ処理:', w, '×', h);
+  });
+
   return { scene, camera, renderer, controls };
 }
