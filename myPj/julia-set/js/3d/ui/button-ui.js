@@ -4,8 +4,36 @@ import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../d3-config.js';
 import { Complex }                                  from '../../util/complex-number.js';
 import { runInverseAnimation }                      from '../d3-renderer.js';
 import { drawLegend }                               from './d3-legend-sub.js';
+import { switchToTopView } from './legend-ui.js'; // あるいは定義したファイルを参照
+import * as THREE from 'three';                  // three.js を参照可能に
 
 
+// Offcanvas を挿入するプレースホルダ要素
+const placeholder = document.getElementById('offcanvas-placeholder');
+if (placeholder) {
+  const observer = new MutationObserver((mutationsList, obs) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+        // offcanvas HTML が入ってきた可能性があるので btn-top-view を探す
+        const btnTopView = document.getElementById('btn-top-view');
+        if (btnTopView) {
+          btnTopView.addEventListener('click', () => {
+            console.log('▶ 天井ビュー切り替えボタン がクリックされました');
+            switchToTopView();
+          });
+          // 一度リスナーが貼れたら、これ以上は不要なので監視を止める
+          obs.disconnect();
+          break;
+        }
+      }
+    }
+  });
+
+  // childList と subtree を監視して、offcanvas 中身が挿入されるのをキャッチ
+  observer.observe(placeholder, { childList: true, subtree: true });
+} else {
+  console.warn('[button-ui] offcanvas-placeholder が見つかりません');
+}
 // ──────────────────────────────────────────────────────
 // （1）グローバルに使う状態・パラメータを定義
 // ──────────────────────────────────────────────────────

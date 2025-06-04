@@ -3,6 +3,26 @@
 import { LEGEND_DEFAULT } from '../d3-config.js';
 import { drawLegend, hideLegend, showLegend } from './d3-legend-sub.js';
 
+import * as THREE from 'three';
+
+// d3-renderer.js から直接 import する
+import { camera, controls } from '../d3-renderer.js';
+
+export function switchToTopView() {
+  if (!camera || !controls) {
+    console.warn('[switchToTopView] camera または controls が未定義です');
+    return;
+  }
+
+  // ── カメラを真上に移動 ──
+  camera.position.set(0, 0, 10);
+  camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+  // ── OrbitControls のターゲットも原点にする ──
+  controls.target.set(0, 0, 0);
+  controls.update();
+}
+
 /**
  * Offcanvas 内の <input id="chk-legend"> を使って、
  * 解除 → hideLegend(), ON → showLegend()→drawLegend() を行う。
