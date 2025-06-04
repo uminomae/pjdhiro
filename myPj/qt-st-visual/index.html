@@ -30,7 +30,27 @@
   <link rel="stylesheet" href="css/qt-base.css" />
   <link rel="stylesheet" href="css/qt-nav.css" />
   <link rel="stylesheet" href="css/qt-components.css" />
-  
+  <style>
+    /* スライダー用の簡易スタイル */
+    #ui {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 8px;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    #ui input {
+      width: 100px;
+    }
+    #ui label {
+      display: block;
+      margin-top: 6px;
+    }
+  </style>
 </head>
 
 <body class="d-flex flex-column">
@@ -44,13 +64,6 @@
   <div id="main-content-placeholder"></div>
   <!-- Three.js の描画領域 -->
   <div id="canvas-area-placeholder"></div>
-
-  <!-- 3D 描画領域 -->
-  <!-- <div id="canvas-container" class="position-relative flex-grow-1"> -->
-    <!-- Three.js がレンダリングする WebGL Canvas（JS 内で生成） -->
-    <!-- 凡例用 canvas などもここに置く -->
-    <!-- <canvas id="legend-canvas"></canvas> -->
-  <!-- </div> -->
 
   <!-- Bootstrap JS (Offcanvas 用) -->
   <script
