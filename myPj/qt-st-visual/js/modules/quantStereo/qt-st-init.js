@@ -1,6 +1,6 @@
 // js/modules/quantStereo/qt-st-init.js
 
-import { UI_DOM_IDS } from '../qt-config.js';
+import { UI_DOM_IDS } from './qt-config.js';
 
 // let currentQIndex = 0;
 

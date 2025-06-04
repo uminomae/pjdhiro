@@ -1,7 +1,7 @@
 // js/modules/quantStereo/qt-main.js
 
-import { initUI } from './qt-init/qt-st-init.js';
-import { addHelpersAndLights } from './qt-init/qt-st-init-helpers.js';
+import { initUI } from './qt-st-init.js';
+import { addHelpersAndLights } from './qt-st-init-helpers.js';
 import {
   overlayEarthGridAndProjection
 } from './qt-st-pointcloud.js';
