@@ -27,7 +27,7 @@ const colorLight = new THREE.Color(0xffffff); // ピュアホワイト
  * @param {THREE.Renderer} renderer // 必要に応じて渡す
  * @param {OrbitControls} controls  // カメラ操作用コントローラ (optional)
  */
-export function startAnimationLoop(scene, camera, renderer, controls) {
+export function animationLoop(scene, camera, renderer, controls) {
   (function loop() {
     requestAnimationFrame(loop);
 

@@ -2,7 +2,7 @@
 import * as THREE from 'three';
 import { initUI } from './qt-init.js';
 import { addHelpersAndLights } from './qt-init-helpers.js';
-import { startAnimationLoop } from './qt-loop.js';
+import { animationLoop } from './qt-animation.js';
 const colorDark  = new THREE.Color(0x000011); // 夜空っぽいダークブルー
 
 /**
@@ -25,7 +25,7 @@ export function startModule({ scene, camera, renderer, controls }) {
   initUI({ scene, camera, renderer, controls });
 
   // (4) 自動アニメーションループ開始
-  startAnimationLoop(scene, camera, renderer, controls);
+  animationLoop(scene, camera, renderer, controls);
 
   console.log('[qt-main] initialize() COMPLETE');
 }
