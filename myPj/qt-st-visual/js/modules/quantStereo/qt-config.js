@@ -6,11 +6,6 @@ export const RES_PHI   = 40;
 
 // UI の各要素 ID
 export const UI_DOM_IDS = {
-  SLIDER_I: 'input-i-scale',
-  LABEL_I:  'label-i-scale',
-  SLIDER_K: 'input-k-scale',
-  LABEL_K:  'label-k-scale',
-  BTN_NEXT_Q: 'btn-next-q',
   BTN_TOP:    'btn-top-view',
   VAL_ALPHA:  'val-alpha',
   VAL_BETA:   'val-beta',
