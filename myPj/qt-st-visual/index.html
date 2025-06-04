@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QT-ST-Visual (Quaternion Stereographic Visualizer)</title>
+  <!-- three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+  <!-- Bootstrap ／ Icons の CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+
+  <!-- プロジェクトの共通 CSS -->
+  <link rel="stylesheet" href="css/qt-base.css" />
+  <link rel="stylesheet" href="css/qt-nav.css" />
+  <link rel="stylesheet" href="css/qt-components.css" />
+  
+</head>
+
+<body class="d-flex flex-column">
+  <!-- ナビゲーションバーを partial で読み込む場合 -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Offcanvas（パラメータフォーム）を読み込む placeholder -->
+  <div id="offcanvas-placeholder"></div>
+
+  <!-- 3D 描画領域 -->
+  <div id="canvas-container" class="position-relative flex-grow-1">
+    <!-- Three.js がレンダリングする WebGL Canvas（JS 内で生成） -->
+    <!-- 凡例用 canvas などもここに置く -->
+    <canvas id="legend-canvas"></canvas>
+  </div>
+
+  <!-- Bootstrap JS (Offcanvas 用) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- main.js: URL クエリを読み、対応モジュールを動的 import -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

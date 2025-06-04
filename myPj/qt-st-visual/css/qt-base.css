@@ -1,0 +1,113 @@
+/* base.css */
+body {
+	margin: 0;
+	min-height: 100vh;
+	/* background-color: #111;
+	color: #fff; */
+	display: flex;
+	flex-direction: column;
+  }
+  /* Canvas コンテナは Bootstrap のユーティリティで */
+  /* #canvas-container {
+	position: relative;
+	overflow: hidden;
+	flex-grow: 1;
+  } */
+  /* レジェンドキャンバスはサイズだけ定義 */
+  #legend-canvas {
+	position: absolute;
+	top: 5rem;
+	left: 1rem;
+	width: 5vw;
+	height: 20vw;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	z-index: 10;
+	pointer-events: none;
+  }
+  @media (max-width: 768px) {
+	#legend-canvas {
+	  width: 7vw;
+	  height: 25vw;
+	  top: 5rem;
+	  left: 0.5rem;
+	}
+  }
+  
+/* ──────────────────────────────────────────────── */
+/* 2D view ボタン（小さな正方形）の共通スタイル      */
+/* ──────────────────────────────────────────────── */
+.btn-top-view {
+	position: absolute;               /* 親の #canvas-container を基準に絶対配置 */
+	background-color: rgba(255, 255, 255, 0.2) !important; /* 半透明の白背景 */
+	border: 1px solid rgba(255, 255, 255, 0.4) !important;
+	color: #fff !important;           /* アイコン・ラベル文字は白 */
+	width: 48px;                      /* 正方形のサイズ */
+	height: 48px;
+	padding: 0;                       /* 内側余白なし */
+	display: flex;                    /* アイコンと文字を中央揃え */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;               /* 角を少し丸める */
+	font-size: 10px;                  /* ボタン内文字を小さく */
+	line-height: 1;                   /* ラベル行間を詰める */
+	opacity: 0.7;                     /* 通常時は少し透明 */
+	transition: opacity 0.2s ease, background-color 0.2s ease;
+	cursor: pointer;
+	z-index: 15;                      /* 凡例 (z-index:10 想定) の上に表示 */
+  }
+  
+  /* ── ホバー時に少し濃く表示 ── */
+  .btn-top-view:hover {
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.4) !important;
+  }
+  
+  /* ── ボタン内のアイコンを少し大きめに ── */
+  .btn-top-view .icon {
+	font-size: 16px;
+	display: block;
+	margin-bottom: 2px;               /* アイコンと文字ラベルの間隔 */
+  }
+  
+  /* ── ボタン内の文字ラベルを設定 ── */
+  .btn-top-view .label {
+	font-size: 7px;                   /* さらに小さく */
+	display: block;
+  }
+  
+  /* ──────────────────────────────────────────────── */
+  /* ボタン配置位置：凡例キャンバスの真下に浮かせる     */
+  /* ──────────────────────────────────────────────── */
+  /* legend-canvas が position: relative または static なら、        */
+  /* その親要素である #canvas-container を position: relative に    */
+  /* しておき、以下で凡例の高さをベースに top 値を設定する。         */
+  #btn-top-view {
+	/* 例として、凡例キャンバスの高さを 100px と想定し── */
+	top: calc(100px + 8px);
+	/* canvas-container の右側から 16px の位置に寄せる */
+	right: 16px;
+  }
+  
+  /* ── モバイルなどで凡例サイズが変わる場合はメディアクエリで変更 ── */
+  @media (max-width: 576px) {
+	.btn-top-view {
+	  width: 40px;
+	  height: 40px;
+	}
+	.btn-top-view .icon {
+	  font-size: 14px;
+	}
+	.btn-top-view .label {
+	  font-size: 6px;
+	}
+	/* 仮に凡例の高さが小さくなる想定で top を少し下げる */
+	#btn-top-view {
+	  top: calc(80px + 8px);
+	  right: 8px;
+	}
+  }
+	

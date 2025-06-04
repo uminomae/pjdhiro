@@ -1,0 +1,105 @@
+<!-- d3-offcanvas.html のお手本版 -->
+<div
+  class="offcanvas offcanvas-end text-light border-0"
+  tabindex="-1"
+  id="offcanvasForm"
+  aria-labelledby="offcanvasFormLabel"
+>
+  <div class="offcanvas-header mt-4">
+    <h5 class="offcanvas-title fs-5" id="offcanvasFormLabel">パラメータ設定</h5>
+    <button
+    type="button"
+    class="btn-close btn-close-white"
+    data-bs-dismiss="offcanvas"
+    aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <form>
+      <!-- 凡例表示スイッチ -->
+      <div class="form-check form-switch mb-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="chk-legend"
+          checked
+        />
+        <label class="form-check-label small" for="chk-legend">凡例を表示</label>
+      </div>
+
+      <!-- Re(c) -->
+      <div class="mb-3">
+        <label for="input-re" class="form-label">Re(c)</label>
+        <input
+          type="number"
+          step="0.01"
+          class="form-control form-control-sm"
+          id="input-re"
+        />
+      </div>
+
+      <!-- Im(c) -->
+      <div class="mb-3">
+        <label for="input-im" class="form-label">Im(c)</label>
+        <input
+          type="number"
+          step="0.01"
+          class="form-control form-control-sm"
+          id="input-im"
+        />
+      </div>
+
+      <!-- N (ポイント数) -->
+      <div class="mb-3">
+        <label for="input-n" class="form-label">N (ポイント数)</label>
+        <input
+          type="number"
+          min="10"
+          step="10"
+          class="form-control form-control-sm"
+          id="input-n"
+        />
+      </div>
+
+      <!-- maxIter -->
+      <div class="mb-3">
+        <label for="input-iter" class="form-label">maxIter</label>
+        <input
+          type="number"
+          min="1"
+          step="1"
+          class="form-control form-control-sm"
+          id="input-iter"
+        />
+      </div>
+
+      <!-- ステータス表示（白文字で） -->
+      <div class="mb-3 d-none">
+        <span id="status" class="fs-6 fw-bold text-white">(待機中)</span>
+      </div>
+
+      <hr />
+
+      <!-- 説明文を一つの <p> にまとめ、白文字で表示 -->
+      <p class="small text-white">
+        Run：描画開始（初期値が推奨パラメータです）<br />
+        ドラッグ・ホイール：カメラを移動できます<br />
+        凡例：赤色は発散と収束の境界です<br />
+        設定完了：設定保存と描画消去<br />
+      </p>
+      
+      <!-- ─────────── ここから追加 ─────────── -->
+      <div class="d-grid mt-4">
+        <button
+          id="config-complete-btn"
+          class="btn btn-primary"
+          type="button"
+          data-bs-dismiss="offcanvas"
+        >
+          設定完了
+        </button>
+      </div>
+      <!-- ─────────── ここまで追加 ─────────── -->
+    </form>
+  </div>
+</div>
