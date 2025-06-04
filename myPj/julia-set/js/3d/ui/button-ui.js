@@ -5,6 +5,104 @@ import { Complex }                                  from '../../util/complex-num
 import { runInverseAnimation }                      from '../d3-renderer.js';
 import { drawLegend }                               from './d3-legend-sub.js';
 
+
+// ──────────────────────────────────────────────────────
+// （1）グローバルに使う状態・パラメータを定義
+// ──────────────────────────────────────────────────────
+
+// 3D 用：現在のフォーム入力値（設定完了ボタンを押したときに更新する）
+const AppConfig3D = {
+  currentCRe:     FORM_DEFAULTS.re,
+  currentCIm:     FORM_DEFAULTS.im,
+  currentN:       FORM_DEFAULTS.N,
+  currentMaxIter: FORM_DEFAULTS.maxIter,
+};
+
+// 進行中／一時停止／停止フラグ
+window.isRunning = false; // アニメーション実行中か
+window.isPaused  = false; // Pause 中か
+window.isStopped = false; // Stop 指示が出たか
+
+// ──────────────────────────────────────────────────────
+// （2）「設定完了」ボタンのクリック処理を追加
+// ──────────────────────────────────────────────────────
+
+// Offcanvas 内の「設定完了」ボタンを取得
+const configCompleteBtn = document.getElementById('config-complete-btn');
+if (configCompleteBtn) {
+  configCompleteBtn.addEventListener('click', () => {
+    // 1) 進行中のアニメーションを止める
+    window.isStopped = true;
+    window.isPaused  = false;
+    window.isRunning = false;
+
+    // 2) シーン（canvas）を真っさらに戻す
+    if (window.scene) {
+      const toRemove = [];
+      window.scene.traverse((obj) => {
+        if (obj.isPoints) {
+          toRemove.push(obj);
+        }
+      });
+      toRemove.forEach((p) => window.scene.remove(p));
+    }
+
+     // WebGLRenderer のバッファもクリアして、真っ白あるいは背景色だけの状態にする
+     if (window.renderer) {
+       window.renderer.clear();
+     }
+
+    // 3) Run／Pause／Stop ボタンの表示・状態をリセット
+    const btnRun   = document.getElementById('btn-run');
+    const btnPause = document.getElementById('btn-pause');
+    const btnStop  = document.getElementById('btn-stop');
+
+    if (btnPause) {
+      btnPause.classList.add('d-none');
+      btnPause.textContent = 'Pause';
+      btnPause.disabled    = false;
+    }
+    if (btnRun) {
+      btnRun.classList.remove('d-none');
+      btnRun.textContent = 'Run';
+      btnRun.disabled    = false;
+    }
+    if (btnStop) {
+      btnStop.disabled = true;
+    }
+
+    // 4) ステータス表示を「(待機中)」に戻す
+    const status = document.getElementById('status');
+    if (status) {
+      status.textContent = '(待機中)';
+      status.classList.remove('status-stopped');
+    }
+
+    // 5) 凡例を初期状態に戻す
+    drawLegend(LEGEND_DEFAULT.minZ, LEGEND_DEFAULT.maxZ);
+
+    // 6) フォーム入力値を AppConfig3D にコピーしておく
+    //    （次回 Run を押したときにここから読み取る）
+    const reInput   = document.getElementById('input-re');
+    const imInput   = document.getElementById('input-im');
+    const nInput    = document.getElementById('input-n');
+    const iterInput = document.getElementById('input-iter');
+
+    const newRe   = reInput   ? parseFloat(reInput.value)   : FORM_DEFAULTS.re;
+    const newIm   = imInput   ? parseFloat(imInput.value)   : FORM_DEFAULTS.im;
+    const newN    = nInput    ? parseInt(nInput.value,  10) : FORM_DEFAULTS.N;
+    const newIter = iterInput ? parseInt(iterInput.value, 10) : FORM_DEFAULTS.maxIter;
+
+    AppConfig3D.currentCRe     = isNaN(newRe)   ? FORM_DEFAULTS.re   : newRe;
+    AppConfig3D.currentCIm     = isNaN(newIm)   ? FORM_DEFAULTS.im   : newIm;
+    AppConfig3D.currentN       = isNaN(newN)    ? FORM_DEFAULTS.N    : newN;
+    AppConfig3D.currentMaxIter = isNaN(newIter) ? FORM_DEFAULTS.maxIter : newIter;
+
+    // Offcanvas は data-bs-dismiss="offcanvas" で自動的に閉じる
+  });
+}
+
+
 const btnRun   = document.getElementById('btn-run');
 const btnPause = document.getElementById('btn-pause');
 const btnStop  = document.getElementById('btn-stop');
