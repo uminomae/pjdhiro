@@ -1,7 +1,7 @@
 // app.js
 
-import { loadPartials } from './js/qt-st-load-partials.js';
-import { startMain }      from './js/qt-st-main.js';
+import { loadPartials } from './js/yinyang-load-partials.js';
+import { startMain }      from './js/yinyang-main.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   console.log('[app] DOMContentLoaded');
@@ -13,10 +13,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadPartials(alg);
     console.log('[app] loadPartials() が完了');
 
-    // 2) loadPartials 完了後に main の初期化を呼ぶ
-    console.log('[test] モジュール切り替え:', alg);
-    startMain(alg);
-    console.log('[app] startMain() を呼び出し完了');
+    // ────────────────
+    // #canvas-container が本当に挿入されるまで待つ
+    // ────────────────
+    const waitForContainer = () => {
+      const container = document.getElementById('canvas-container');
+      if (container) {
+        // 存在したら startMain() を呼んで次に進む
+        startMain(alg);
+        console.log('[app] startMain() を呼び出し完了');
+      } else {
+        // 50ms 待ってからもう一度チェック
+        setTimeout(waitForContainer, 50);
+      }
+    };
+    waitForContainer();
+    console.log('[app] waitForContainer() を呼び出し完了');
   } catch (err) {
     console.error('[app] loadPartials か startMain でエラー', err);
   }

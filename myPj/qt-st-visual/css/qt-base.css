@@ -13,6 +13,14 @@ body {
 	overflow: hidden;
 	flex-grow: 1;
   } */
+
+  #canvas-container {
+	width: 100vw;      /* 横幅は画面幅いっぱい */
+	height: 100vh;     /* 縦幅も画面高さいっぱい */
+	position: relative;/* 絶対配置の子要素がある場合は relative にしておく */
+	background-color: #111; /* デバッグ用に背景色をつけると見えやすい */
+  }
+  
   /* レジェンドキャンバスはサイズだけ定義 */
   #legend-canvas {
 	position: absolute;
