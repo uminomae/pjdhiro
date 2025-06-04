@@ -22,7 +22,7 @@ export async function startMain() {
     // 2) Three.js の共通初期化
     const context = initThreejs({
       canvasContainerId: THREE_INIT.CANVAS_CONTAINER_ID,
-      canvasContainerId: THREE_INIT.LEGEND_CANVAS_ID,
+      legendCanvasId: THREE_INIT.LEGEND_CANVAS_ID,
     });
     console.log('[qt-st-main] Three.js 共通初期化 完了');
 
