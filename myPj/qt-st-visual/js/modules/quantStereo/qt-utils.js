@@ -1,6 +1,5 @@
 // js/modules/quant-stereo/utils.js
 import * as THREE from 'three';
-// import { THREE, OrbitControls } from '../app.js';
 
 /**
  * 四元数 S^3 上を分割サンプリングし、ステレオ投影を行うユーティリティ。

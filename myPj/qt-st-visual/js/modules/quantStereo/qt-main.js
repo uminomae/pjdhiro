@@ -1,10 +1,10 @@
 // js/modules/quantStereo/qt-main.js
 
-import { initUI } from './qt-st-init.js';
-import { addHelpersAndLights } from './qt-st-init-helpers.js';
+import { initUI } from './qt-init.js';
+import { addHelpersAndLights } from './qt-init-helpers.js';
 import {
   overlayEarthGridAndProjection
-} from './qt-st-pointcloud.js';
+} from './qt-pointcloud.js';
 import { RES_THETA, RES_PHI } from './qt-config.js';
 import { create, normalize } from './qt-quat-utils.js';
 import * as THREE from 'three';
