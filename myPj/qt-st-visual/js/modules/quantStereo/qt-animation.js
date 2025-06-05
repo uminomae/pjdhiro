@@ -11,26 +11,38 @@ import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
 let clock = null;            // THREE.Clock インスタンス
 let rafId = null;            // requestAnimationFrame の返り値
 let isPaused = false;        // 一時停止中フラグ
-let accumulatedTime = 0;     // 一時停止中に「溜めておく経過時間」の補正値
+let accumulatedTime = 0;     // 一時停止中に溜めておく経過時間の補正値
+
+/**
+ * getColorOrDefault
+ *   ・window.<varName> が THREE.Color の場合はそのまま返し、
+ *     文字列 ("#rrggbb") の場合は new THREE.Color(str) に変換して返す
+ *   ・未定義ならデフォルト colorHex を返す
+ */
+function getColorOrDefault(varName, colorHex) {
+  const v = window[varName];
+  if (v instanceof THREE.Color) return v;
+  if (typeof v === 'string') return new THREE.Color(v);
+  return new THREE.Color(colorHex);
+}
 
 /**
  * animationLoop(scene)
- *   ・「一時停止状態かどうか」をチェックし、停止中なら折り返す
- *   ・clock.getElapsedTime() + accumulatedTime を使って θ を算出
+ *   ・一時停止中なら抜ける
+ *   ・clock.getElapsedTime() + accumulatedTime によって θ を計算
  *   ・overlayEarthGridAndProjection() で地球グリッド＋投影球を再描画
- *   ・背景色および球色を θ の値に応じて補間
- *   ・次フレームを requestAnimationFrame で予約
- *
- * @param {THREE.Scene} scene
+ *   ・背景色を Offcanvas から取得して lerp 補間
+ *   ・球色を Offcanvas から取得して4段階補間
+ *   ・次フレームを予約
  */
 function animationLoop(scene) {
   if (isPaused) return;
 
-  // elapsed = 「現在の経過 (秒)」 + 「一時停止前に累積した時間」
+  // elapsed = 現在の経過(sec) + 一時停止前に貯めた時間
   const elapsed = clock.getElapsedTime() + accumulatedTime;
-  const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE; // θ ∈ [0, 4π)
+  const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE; // θ ∈ [0,4π)
 
-  // — (1) 四元数回転を作成 (x 軸まわりに回転) —
+  // — (1) 四元数回転を作成 (x 軸まわり回転) —
   const half = theta / 2;
   const qRot = normalize(create(Math.cos(half), Math.sin(half), 0, 0));
 
@@ -38,56 +50,69 @@ function animationLoop(scene) {
   overlayEarthGridAndProjection(scene, qRot, RES_THETA, RES_PHI);
 
   // — (3) 背景色 (暗⇔明⇔暗) の補間 —
+  //    Offcanvas で指定された bgColorDark, bgColorLight を取得し、
+  //    θ < 2π のとき暗→明、それ以降は明→暗となるよう lerp
+  const darkDefault  = '#000011';
+  const lightDefault = '#ffffff';
+  const bgDark  = getColorOrDefault('_bgColorDark', darkDefault);
+  const bgLight = getColorOrDefault('_bgColorLight', lightDefault);
+
   if (theta < HALF_CYCLE) {
     // 0 ≤ θ < 2π: 暗 → 明
     const t = theta / HALF_CYCLE; // 0 → 1
-    scene.background = new THREE.Color(0x000011).clone().lerp(new THREE.Color(0xffffff), t);
+    scene.background = bgDark.clone().lerp(bgLight, t);
   } else {
     // 2π ≤ θ < 4π: 明 → 暗
-    const phi = theta - HALF_CYCLE;            // φ ∈ [0, 2π)
-    const t   = phi / HALF_CYCLE;              // 0 → 1
-    scene.background = new THREE.Color(0xffffff).clone().lerp(new THREE.Color(0x000011), t);
+    const phi = theta - HALF_CYCLE; // φ ∈ [0,2π)
+    const t   = phi / HALF_CYCLE;   // 0 → 1
+    scene.background = bgLight.clone().lerp(bgDark, t);
   }
 
-  // — (4) 球のオーバーレイ色を「4段階補間」で設定 —
+  // — (4) 球のオーバーレイ色を4段階補間で設定 —
+  //    Offcanvas で指定された
+  //      _sphereBaseColor, _peakColor1, _peakColor2
+  //    を使って補間。未指定時は従来の白/灰/黒/灰サイクルとなる。
   const projObj = scene.getObjectByName('quaternionSpherePoints');
   if (projObj && projObj.material) {
-    // θ < 2π のとき「１回転目: 白 → 灰 → 黒 → 灰」
-    // θ ≥ 2π のとき「２回転目: 灰 → 黒 → 灰 → 白」
+    // Offcanvas で設定された色を取得 (未定義ならデフォルト)
+    const baseColor = getColorOrDefault('_sphereBaseColor', '#ffffff');
+    const midColor  = getColorOrDefault('_peakColor1',    '#808080');
+    const endColor  = getColorOrDefault('_peakColor2',    '#000000');
+
     let color = new THREE.Color();
 
     if (theta < HALF_CYCLE) {
-      // 1st revolution (0 ≤ θ < 2π)
-      const frac = (theta / HALF_CYCLE) * 360; // 0～360 (degrees within first rev)
+      // 1st revolution: 0 ≤ θ < 2π
+      const frac = (theta / HALF_CYCLE) * 360; // 0～360 (度として扱う)
       if (frac < 120) {
-        // 0°～120°: 白 → 灰
+        // 0°～120°: base → mid
         const t = frac / 120;
-        color.copy(new THREE.Color(0xffffff)).lerp(new THREE.Color(0x808080), t);
+        color.copy(baseColor).lerp(midColor, t);
       } else if (frac < 240) {
-        // 120°～240°: 灰 → 黒
+        // 120°～240°: mid → end
         const t = (frac - 120) / 120;
-        color.copy(new THREE.Color(0x808080)).lerp(new THREE.Color(0x000000), t);
+        color.copy(midColor).lerp(endColor, t);
       } else {
-        // 240°～360°: 黒 → 灰
+        // 240°～360°: end → mid
         const t = (frac - 240) / 120;
-        color.copy(new THREE.Color(0x000000)).lerp(new THREE.Color(0x808080), t);
+        color.copy(endColor).lerp(midColor, t);
       }
     } else {
-      // 2nd revolution (2π ≤ θ < 4π)
-      const phi = theta - HALF_CYCLE;
-      const frac = (phi / HALF_CYCLE) * 360; // 0～360 (degrees within second rev)
+      // 2nd revolution: 2π ≤ θ < 4π → φ = θ - 2π
+      const phi  = theta - HALF_CYCLE;           
+      const frac = (phi / HALF_CYCLE) * 360; // 0～360
       if (frac < 120) {
-        // 0°～120°: 灰 → 黒
+        // 0°～120°: mid → end
         const t = frac / 120;
-        color.copy(new THREE.Color(0x808080)).lerp(new THREE.Color(0x000000), t);
+        color.copy(midColor).lerp(endColor, t);
       } else if (frac < 240) {
-        // 120°～240°: 黒 → 灰
+        // 120°～240°: end → mid
         const t = (frac - 120) / 120;
-        color.copy(new THREE.Color(0x000000)).lerp(new THREE.Color(0x808080), t);
+        color.copy(endColor).lerp(midColor, t);
       } else {
-        // 240°～360°: 灰 → 白
+        // 240°～360°: mid → base
         const t = (frac - 240) / 120;
-        color.copy(new THREE.Color(0x808080)).lerp(new THREE.Color(0xffffff), t);
+        color.copy(midColor).lerp(baseColor, t);
       }
     }
 
@@ -102,16 +127,9 @@ function animationLoop(scene) {
 
 /**
  * startAnimation(scene)
- *   ・初回に呼ばれたときのみ THREE.Clock を新規生成し、ループを開始
- *   ・既に rafId が入っている (＝すでに動いている) 場合は何もしない
- *
- * @param {THREE.Scene} scene
  */
 export function startAnimation(scene) {
-  if (rafId !== null) {
-    // すでにアニメーション中なら何もしない
-    return;
-  }
+  if (rafId !== null) return;
   console.log('[qt-animation] startAnimation()');
   clock = new THREE.Clock();
   isPaused = false;
@@ -121,14 +139,9 @@ export function startAnimation(scene) {
 
 /**
  * pauseAnimation()
- *   ・現在の requestAnimationFrame をキャンセルして一時停止
- *   ・clock.getElapsedTime() を accumulatedTime に足して、「途中までの経過」を保持
  */
 export function pauseAnimation() {
-  if (rafId === null || isPaused) {
-    // すでに停止中 or 既に一時停止中なら何もしない
-    return;
-  }
+  if (rafId === null || isPaused) return;
   console.log('[qt-animation] pauseAnimation()');
   const elapsed = clock.getElapsedTime();
   accumulatedTime += elapsed;
@@ -139,25 +152,17 @@ export function pauseAnimation() {
 
 /**
  * resumeAnimation(scene)
- *   ・一時停止中 (isPaused === true) かつ rafId === null のときだけ再開
- *
- * @param {THREE.Scene} scene
  */
 export function resumeAnimation(scene) {
-  if (!isPaused || rafId !== null) {
-    // 一時停止状態でない or 既に rAF が存在するなら何もしない
-    return;
-  }
+  if (!isPaused || rafId !== null) return;
   console.log('[qt-animation] resumeAnimation()');
-  clock = new THREE.Clock(); // elapsed はゼロから始まるが accumulatedTime で補正
+  clock = new THREE.Clock();
   isPaused = false;
   animationLoop(scene);
 }
 
 /**
  * stopAnimation()
- *   ・現在の rAF をキャンセルし、内部ステートを完全リセット
- *   ・シーンを完全にクリアしたい場合は、呼び出し側で scene.children を全削除するなどを行う
  */
 export function stopAnimation() {
   if (rafId !== null) {

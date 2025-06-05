@@ -1,4 +1,4 @@
-<!-- d3-offcanvas.html のお手本版 -->
+<!-- js/modules/quantStereo/qt-offcanvas.html -->
 <div
   class="offcanvas offcanvas-end text-light border-0"
   tabindex="-1"
@@ -6,89 +6,68 @@
   aria-labelledby="offcanvasFormLabel"
 >
   <div class="offcanvas-header mt-4">
-    <h5 class="offcanvas-title fs-5" id="offcanvasFormLabel">パラメータ設定</h5>
+    <h5 class="offcanvas-title fs-5" id="offcanvasFormLabel">カラー設定</h5>
     <button
-    type="button"
-    class="btn-close btn-close-white"
-    data-bs-dismiss="offcanvas"
-    aria-label="Close"
+      type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
     ></button>
   </div>
+
   <div class="offcanvas-body">
     <form>
-      <!-- 凡例表示スイッチ -->
-      <div class="form-check form-switch mb-3">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="chk-legend"
-          checked
-        />
-        <label class="form-check-label small" for="chk-legend">凡例を表示</label>
-      </div>
-
-      <!-- Re(c) -->
+      <!-- 背景色 (Background Color) -->
       <div class="mb-3">
-        <label for="input-re" class="form-label">Re(c)</label>
+        <label for="input-bg-color" class="form-label small">背景色</label>
         <input
-          type="number"
-          step="0.01"
-          class="form-control form-control-sm"
-          id="input-re"
+          type="color"
+          class="form-control form-control-color form-control-sm"
+          id="input-bg-color"
+          value="#000011"
+          title="背景色を選択"
         />
       </div>
 
-      <!-- Im(c) -->
+      <!-- 球のベース色 (Sphere Base Color) -->
       <div class="mb-3">
-        <label for="input-im" class="form-label">Im(c)</label>
+        <label for="input-sphere-color" class="form-label small">球の色</label>
         <input
-          type="number"
-          step="0.01"
-          class="form-control form-control-sm"
-          id="input-im"
+          type="color"
+          class="form-control form-control-color form-control-sm"
+          id="input-sphere-color"
+          value="#ffffff"
+          title="球の色を選択"
         />
       </div>
 
-      <!-- N (ポイント数) -->
+      <!-- ピークカラー１ (Peak Color 1) -->
       <div class="mb-3">
-        <label for="input-n" class="form-label">N (ポイント数)</label>
+        <label for="input-peak1-color" class="form-label small">ピーク色①</label>
         <input
-          type="number"
-          min="10"
-          step="10"
-          class="form-control form-control-sm"
-          id="input-n"
+          type="color"
+          class="form-control form-control-color form-control-sm"
+          id="input-peak1-color"
+          value="#808080"
+          title="ピーク中間色を選択"
         />
       </div>
 
-      <!-- maxIter -->
+      <!-- ピークカラー２ (Peak Color 2) -->
       <div class="mb-3">
-        <label for="input-iter" class="form-label">maxIter</label>
+        <label for="input-peak2-color" class="form-label small">ピーク色②</label>
         <input
-          type="number"
-          min="1"
-          step="1"
-          class="form-control form-control-sm"
-          id="input-iter"
+          type="color"
+          class="form-control form-control-color form-control-sm"
+          id="input-peak2-color"
+          value="#000000"
+          title="ピーク最終色を選択"
         />
-      </div>
-
-      <!-- ステータス表示（白文字で） -->
-      <div class="mb-3 d-none">
-        <span id="status" class="fs-6 fw-bold text-white">(待機中)</span>
       </div>
 
       <hr />
 
-      <!-- 説明文を一つの <p> にまとめ、白文字で表示 -->
-      <p class="small text-white">
-        Run：描画開始（初期値が推奨パラメータです）<br />
-        ドラッグ・ホイール：カメラを移動できます<br />
-        凡例：赤色は発散と収束の境界です<br />
-        設定完了：設定保存と描画消去<br />
-      </p>
-      
-      <!-- ─────────── ここから追加 ─────────── -->
+      <!-- 設定完了ボタン -->
       <div class="d-grid mt-4">
         <button
           id="config-complete-btn"
@@ -99,7 +78,6 @@
           設定完了
         </button>
       </div>
-      <!-- ─────────── ここまで追加 ─────────── -->
     </form>
   </div>
 </div>

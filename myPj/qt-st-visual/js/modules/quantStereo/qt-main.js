@@ -7,6 +7,9 @@ import { addHelpersAndLights } from './qt-init-helpers.js';
 import { initUI }              from './qt-init.js';
 import { setupNavbarControls } from './qt-navbar.js';
 
+// ★ もしページ読み込み時にアニメを自動で開始したい場合は、以下をアンコメントしてください。
+import { startAnimation } from './qt-animation.js';
+
 /**
  * startModule({ scene, camera, renderer, controls })
  *   ・このモジュール（quantStereo）の唯一のエントリーポイントです。
@@ -36,17 +39,34 @@ export function startModule({ scene, camera, renderer, controls }) {
   // (4) ナビバー (Run / Pause / Reset) のイベントリスナを登録
   setupNavbarControls({ scene, camera, renderer, controls });
 
-  // (5) アニメーションは自動開始しない
-  //     ユーザーが Run ボタンを押したときに初めて動き始める設計です。
+  // (5) アニメーションは自動開始しない設計です。
+  //     ユーザーが Run ボタンを押したときに初めて動き始めます。
+
+  // ────────────────────────────────────────────────────
+  // ★ ページロード時に自動でアニメーションを開始したい場合はこちらをアンコメントして有効化：
+  // ────────────────────────────────────────────────────
+  //
+  //  以下の行の先頭の "//" を削除して有効化：
+      startAnimation(scene);
+  //  Run ボタンを「押された」状態に見せる：Run を隠し、Pause を表示
+      const btnRun   = document.getElementById('btn-run');
+      const btnPause = document.getElementById('btn-pause');
+      if (btnRun && btnPause) {
+        btnRun.classList.add('d-none');
+        btnPause.classList.remove('d-none');
+      }
+  //
+  // これにより、ロード直後に θ=0 の状態から自動でアニメーションが開始されます。
+  // ────────────────────────────────────────────────────
 
   // (6) 必要に応じて、ロード時点の静的表示を「最初の地球グリッド＋投影球」にしたい場合は、
   //     Reset と同じロジックで初期描画を行ってもよいです。たとえば↓を有効化:
   //
-  // import { create, normalize } from './qt-quat-utils.js';
-  // import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
-  // import { RES_THETA, RES_PHI } from './qt-config.js';
-  // const qIdentity = normalize(create(1, 0, 0, 0));
-  // overlayEarthGridAndProjection(scene, qIdentity, RES_THETA, RES_PHI);
+  // // import { create, normalize } from './qt-quat-utils.js';
+  // // import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
+  // // import { RES_THETA, RES_PHI } from './qt-config.js';
+  // // const qIdentity = normalize(create(1, 0, 0, 0));
+  // // overlayEarthGridAndProjection(scene, qIdentity, RES_THETA, RES_PHI);
 
   console.log('[qt-st-main] startModule() の初期化が完了しました');
 }
