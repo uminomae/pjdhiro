@@ -37,6 +37,45 @@ export const CAMERA_AUTO_ROTATE_ENABLED = true;
 export const CAMERA_AUTO_ROTATE_PERIOD = 200;
 
 
+
+/**
+ * 上下往復させる「角度の最大範囲」をここで指定する。
+ * ─────────────────────────────────────────────────────────────
+ *  Math.PI    → 180°往復 (真上 ⇔ 真下)
+ *  Math.PI/2  →  90°往復 (真上 ⇔ 水平面)
+ *  Math.PI/4  →  45°往復 (中心を水平にずらして使うとき など)
+ */
+// export const CAMERA_OSCILLATION_RANGE   = Math.PI;      // ← デフォルト：180°往復
+export const CAMERA_OSCILLATION_RANGE = Math.PI / 2;  // ← 90°往復に切り替えたいときはこちらを有効に
+
+
+// // 縦回転（Polar）と水平回転（Azimuth）の角度制限 (qt-main.js で使用)
+// //  0 ～ π の範囲で上下をぐるりと回せるように設定
+export const CAMERA_POLAR_ANGLE = {
+  // 0 ～ π → 真上（θ=0）〜真下（θ=π）をぐるりと回す
+  // MIN: 0,
+  // MAX: Math.PI
+
+  // 0 ～ π/2 → 真上（θ=0）〜水平（θ=π/2）を往復
+  MIN: 0,
+  MAX: CAMERA_OSCILLATION_RANGE
+};
+
+// // 水平回転は制限なし (−∞ ～ +∞)
+export const CAMERA_AZIMUTH_ANGLE = {
+  MIN: -Infinity,
+  MAX:  Infinity
+};
+
+// ———————————————————————————————————————————————
+// カメラ上下往復（Oscillation）設定 (qt-animation.js で使用)
+// ———————————————————————————————————————————————
+// 上下往復アニメーションを有効にするか
+export const CAMERA_OSCILLATION_ENABLED = true;
+// 上下往復速度 (rad/sec)。
+export const CAMERA_OSCILLATION_SPEED   = 0.5;
+
+
 // ────────────────────────────────────────────────────
 // Projection Sphere（ステレオ投影球）用設定
 // ────────────────────────────────────────────────────
