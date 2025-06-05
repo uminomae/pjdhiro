@@ -24,9 +24,14 @@ let hasEverStarted = false;
  * @param {OrbitControls}  context.controls
  */
 export function setupNavbarControls({ scene, camera, renderer, controls }) {
+  // ページロード直後の Run/Pause ボタン初期状態を設定
   const btnRun   = document.getElementById('btn-run');
   const btnPause = document.getElementById('btn-pause');
   const btnReset = document.getElementById('btn-reset');
+  if (btnRun && btnPause) {
+    btnRun.classList.add('d-none');
+    btnPause.classList.remove('d-none');
+  }
 
   if (!btnRun || !btnPause || !btnReset) {
     console.warn('[qt-ui-navbar] Run/Pause/Reset ボタンが見つかりません。');
@@ -120,10 +125,6 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
 
     // 5) UI (Top View ボタン・αβγδ 表示) を再初期化
     initUI({ scene, camera, renderer, controls });
-
-    // 6) θ=0 の状態で「地球グリッド＋投影球」を静的に再描画
-    // const qIdentity = normalize(create(1, 0, 0, 0));
-    // overlayEarthGridAndProjection(scene, qIdentity, RES_THETA, RES_PHI);
 
     // 7) 必要ならカメラ位置をリセット
     //    camera.position.set(0, 0, 5);
