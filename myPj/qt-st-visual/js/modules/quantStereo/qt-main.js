@@ -5,8 +5,9 @@
 
 import { initUI }              from './qt-init-ui.js';
 import { setupNavbarControls } from './qt-ui-navbar.js';
-import { startAnimation, initializeControls }      from './qt-animation.js';
-import { initializeScene } from './qt-init-scene-helpers.js'; // 既存
+import { startAnimation }      from './qt-animation.js';
+import { initializeControls }      from './qt-controls.js';
+import { initializeScene } from './qt-init-scene-helpers.js'; 
 
 export function startModule({ scene, camera, renderer, controls }) {
   console.log('[qt-main] startModule() が呼ばれました');

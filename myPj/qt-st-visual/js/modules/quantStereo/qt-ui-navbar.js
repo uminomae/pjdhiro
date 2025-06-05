@@ -1,12 +1,9 @@
 // js/modules/quantStereo/qt-ui-navbar.js
 
 import * as THREE from 'three';
-import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation.js';
+import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation-loop.js';
 import { addHelpersAndLights } from './qt-init-scene-helpers.js';
 import { initUI }              from './qt-init-ui.js';
-import { create, normalize }   from './qt-math-quat-utils.js';
-import { overlayEarthGridAndProjection } from './qt-render-pointcloud.js';
-import { RES_THETA, RES_PHI } from './qt-config.js';
 
 let hasEverStarted = false;
 
