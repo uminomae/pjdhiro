@@ -6,7 +6,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { addHelpersAndLights } from './qt-init-helpers.js';
 import { initUI }              from './qt-init.js';
 import { setupNavbarControls } from './qt-navbar.js';
+// CAMERA_* 定数をインポート
+import {
+  CAMERA_INITIAL_POSITION,
+  CAMERA_AUTO_ROTATE_ENABLED,
+  CAMERA_AUTO_ROTATE_PERIOD
+} from './qt-config.js';
 
+// 自動起動を使う場合に必要
 // ★ もしページ読み込み時にアニメを自動で開始したい場合は、以下をアンコメントしてください。
 import { startAnimation } from './qt-animation.js';
 
@@ -27,6 +34,30 @@ import { startAnimation } from './qt-animation.js';
 export function startModule({ scene, camera, renderer, controls }) {
   console.log('[qt-st-main] startModule() が呼ばれました');
 
+  // (1) カメラの初期位置を config から設定
+  // ---------------------------------------------------
+  camera.position.set(
+    CAMERA_INITIAL_POSITION[0],
+    CAMERA_INITIAL_POSITION[1],
+    CAMERA_INITIAL_POSITION[2]
+  );
+  camera.lookAt(0, 0, 0);
+  // OrbitControls も必ず更新しておく
+  controls.update();
+
+  // (2) OrbitControls の自動回転設定
+  // ---------------------------------------------------
+  //  autoRotateEnabled が true の場合、controls.autoRotate = true。
+  //  autoRotateSpeed は「360°/CAMERA_AUTO_ROTATE_PERIOD (秒)」→ OrbitControls の単位は「deg/sec」。
+  //  NOTE: OrbitControls.autoRotateSpeed のデフォルトは 2.0 (deg/sec)。
+  if (CAMERA_AUTO_ROTATE_ENABLED) {
+    controls.autoRotate = true;
+    // 360度 / T 秒 = deg/sec　なので
+    controls.autoRotateSpeed = 360 / CAMERA_AUTO_ROTATE_PERIOD;
+  } else {
+    controls.autoRotate = false;
+  }
+  
   // (1) シーンの背景色を暗色に設定
   scene.background = new THREE.Color(0x000011);
 
