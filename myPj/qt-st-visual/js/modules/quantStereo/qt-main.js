@@ -14,7 +14,8 @@ import {
   CAMERA_AUTO_ROTATE_PERIOD,
   CAMERA_POLAR_ANGLE,
   CAMERA_AZIMUTH_ANGLE,
-  YIN_YANG_SYMBOL
+  YIN_YANG_SYMBOL,
+  CAMERA_TARGET
 } from './qt-config.js';
 
 let groundMesh;
@@ -36,7 +37,9 @@ export function startModule({ scene, camera, renderer, controls }) {
     CAMERA_INITIAL_POSITION[1],
     CAMERA_INITIAL_POSITION[2]
   );
-  camera.lookAt(0, 0, 0);
+  const [tx, ty, tz] = CAMERA_TARGET;
+  camera.lookAt(tx, ty, tz);
+  // camera.lookAt(0, 0, 0);
   controls.update();
 
   // 2) OrbitControls 自動回転設定

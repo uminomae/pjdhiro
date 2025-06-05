@@ -13,23 +13,22 @@ export const UI_DOM_IDS = {
   VAL_DELTA: 'val-delta'
 };
 
-// path
-export const YIN_YANG_SYMBOL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Yin_and_Yang_symbol.svg/1920px-Yin_and_Yang_symbol.svg.png'
-// export const YIN_YANG_SYMBOL = '/myPj/qt-st-visual/assets/onmyo.png'
+// — 外部画像パス — 
+export const YIN_YANG_SYMBOL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Yin_and_Yang_symbol.svg/1920px-Yin_and_Yang_symbol.svg.png';
 
 // — 色変更サイクル関連 — 
-export const FULL_CYCLE    = 4 * Math.PI;  // 720° = 4π
-export const HALF_CYCLE    = 2 * Math.PI;  // 360° = 2π
+export const FULL_CYCLE     = 4 * Math.PI;  // 720° = 4π
+export const HALF_CYCLE     = 2 * Math.PI;  // 360° = 2π
 export const ROTATION_SPEED = Math.PI / 2;  // 90°/秒 = π/2 rad/sec
 
-// — カメラ初期位置・自動回転設定 — 
-export const CAMERA_INITIAL_POSITION   = [-15, 8, 10];
+// — カメラ初期設定 — 
+export const CAMERA_INITIAL_POSITION    = [-15, 8, 10];
 export const CAMERA_AUTO_ROTATE_ENABLED = true;
 export const CAMERA_AUTO_ROTATE_PERIOD  = 200; // 360°にかかる秒数
 
-// — カメラ振動（上下往復）設定 — 
-//  Math.PI    → 180°往復 (真上 ⇔ 真下)
-//  Math.PI/2  →  90°往復 (真上 ⇔ 水平面)
+// — カメラ上下往復（Oscillation）設定 — 
+//   Math.PI    → 180°往復 (真上 ⇔ 真下)
+//   Math.PI/2  →  90°往復 (真上 ⇔ 水平面)
 export const CAMERA_OSCILLATION_RANGE   = Math.PI / 2;
 export const CAMERA_OSCILLATION_ENABLED = true;
 export const CAMERA_OSCILLATION_SPEED   = 0.5; // rad/sec
@@ -44,7 +43,22 @@ export const CAMERA_AZIMUTH_ANGLE = {
   MAX:  Infinity
 };
 
-// — Projection Sphere（ステレオ投影球）設定 — 
+// — 背景色補間設定 — 
+export const BG_COLOR_DARK    = '#000011';
+export const BG_COLOR_LIGHT   = '#ffffff';
+//   暗→明 の補間に使う指数（Math.pow の底）
+//   たとえば 8 にすると「暗い時間を伸ばし、最後で一気に明るく」
+export const BG_EXPONENT_RISE = 8;
+//   明→暗 の補間に使う指数（Math.pow の底）
+//   たとえば 1 にすると線形補間（変化が早い）、0.5 にすると前半で一気に暗くなる
+export const BG_EXPONENT_FALL = 1;
+
+// — 投影球（ステレオ投影球）色設定 — 
+export const SPHERE_BASE_COLOR = '#ffffff';
+export const SPHERE_MID_COLOR  = '#808080';
+export const SPHERE_END_COLOR  = '#000000';
+
+// — Projection Sphere（ステレオ投影球）サイズ — 
 export const PROJ_SPHERE_POINT_SIZE = 0.05;
 
 // — Earth Grid（地球グリッド）設定 — 
@@ -56,15 +70,17 @@ export const EARTH_GRID_POINT_SIZE       = 0.02;
 export const EARTH_GRID_RADIUS           = 1.0;
 
 // — 床グリッド設定 — 
-export const GRID_SIZE        = 0;
-// export const GRID_SIZE        = 10;
-export const GRID_DIVISIONS   = 10;
+export const GRID_SIZE           = 0;
+export const GRID_DIVISIONS      = 10;
 export const GRID_COLOR_CENTERLINE = 0x444444;
-export const GRID_COLOR       = 0x888888;
+export const GRID_COLOR          = 0x888888;
 
 // — 床テクスチャ設定 — 
 export const GROUND_TEXTURE_OPACITY = 0.05;
 
 // — 軸ヘルパー設定 — 
 export const AXES_SIZE = 0;
-// export const AXES_SIZE = 1.5;
+
+// — カメラの注視点（lookAt で使う座標） — 
+//   [x, y, z]の配列で指定。今は原点を見せたいので [0, 0, 0] に設定。
+export const CAMERA_TARGET = [0, 0, 0];

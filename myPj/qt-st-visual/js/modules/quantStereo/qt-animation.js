@@ -9,7 +9,15 @@ import {
   RES_PHI,
   CAMERA_OSCILLATION_ENABLED,
   CAMERA_OSCILLATION_SPEED,
-  CAMERA_OSCILLATION_RANGE
+  CAMERA_OSCILLATION_RANGE,
+  BG_COLOR_DARK,
+  BG_COLOR_LIGHT,
+  BG_EXPONENT_RISE,
+  BG_EXPONENT_FALL,
+  SPHERE_BASE_COLOR,
+  SPHERE_MID_COLOR,
+  SPHERE_END_COLOR,
+  CAMERA_TARGET
 } from './qt-config.js';
 import { create, normalize } from './qt-quat-utils.js';
 import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
@@ -20,8 +28,8 @@ let isPaused = false;
 let accumulatedTime = 0;
 
 /**
- * window 上の変数(varName)を THREE.Color として取得。
- * 未定義なら defaultHex で新規生成。
+ * window 上の変数(varName)を THREE.Color として返す
+ * 未定義なら defaultHex を THREE.Color で返す
  */
 function getColorOrDefault(varName, defaultHex) {
   const v = window[varName];
@@ -35,7 +43,7 @@ function getColorOrDefault(varName, defaultHex) {
  * 1) カメラ上下往復 (oscillation)
  * 2) 四元数回転を生成
  * 3) 地球グリッド＋ステレオ投影球を再描画
- * 4) 背景色・投影球色の補間
+ * 4) 背景色・投影球色を補間
  * 5) controls.update() と次フレーム予約
  */
 function animationLoop(scene, camera, controls) {
@@ -48,16 +56,17 @@ function animationLoop(scene, camera, controls) {
   if (CAMERA_OSCILLATION_ENABLED) {
     const r   = Math.hypot(camera.position.x, camera.position.y, camera.position.z);
     const phi = Math.atan2(camera.position.z, camera.position.x);
-    const RANGE = CAMERA_OSCILLATION_RANGE;
-    const raw   = (elapsed * CAMERA_OSCILLATION_SPEED) % (2 * RANGE);
-    const oscTheta = raw <= RANGE ? raw : (2 * RANGE - raw);
+    const raw = (elapsed * CAMERA_OSCILLATION_SPEED) % (2 * CAMERA_OSCILLATION_RANGE);
+    const oscTheta = raw <= CAMERA_OSCILLATION_RANGE ? raw : (2 * CAMERA_OSCILLATION_RANGE - raw);
 
     camera.position.set(
       r * Math.sin(oscTheta) * Math.cos(phi),
       r * Math.cos(oscTheta),
       r * Math.sin(oscTheta) * Math.sin(phi)
     );
-    camera.lookAt(0, 0, 0);
+    const [tx, ty, tz] = CAMERA_TARGET;
+    camera.lookAt(tx, ty, tz);
+    // camera.lookAt(0, 0, 0);
   }
 
   // 2) 四元数回転 (x軸まわり)
@@ -67,25 +76,25 @@ function animationLoop(scene, camera, controls) {
   // 3) 地球グリッド＋ステレオ投影球の再描画
   overlayEarthGridAndProjection(scene, qRot, RES_THETA, RES_PHI);
 
-  // 4) 背景色（暗⇔明⇔暗）の補間
-  const bgDark  = getColorOrDefault('_bgColorDark',  '#000011');
-  const bgLight = getColorOrDefault('_bgColorLight', '#ffffff');
+  // 4-a) 背景色（暗⇔明⇔暗）の補間
+  const bgDark  = getColorOrDefault('_bgColorDark',  BG_COLOR_DARK);
+  const bgLight = getColorOrDefault('_bgColorLight', BG_COLOR_LIGHT);
   if (theta < HALF_CYCLE) {
-    const t = theta / HALF_CYCLE; // 0→1
-    const tAdjusted = Math.pow(t, 8); 
+    const t = theta / HALF_CYCLE;                                  // 0→1
+    const tAdjusted = Math.pow(t, BG_EXPONENT_RISE);               // 暗→明 を調整
     scene.background = bgDark.clone().lerp(bgLight, tAdjusted);
   } else {
-    const t = (theta - HALF_CYCLE) / HALF_CYCLE;
-    const tAdjusted = Math.pow(t, 1); 
+    const t = (theta - HALF_CYCLE) / HALF_CYCLE;                   // 0→1
+    const tAdjusted = Math.pow(t, BG_EXPONENT_FALL);               // 明→暗 を調整
     scene.background = bgLight.clone().lerp(bgDark, tAdjusted);
   }
 
-  // 投影球の色を４段階補間で設定
+  // 4-b) 投影球色を 4 段階補間で設定
   const projObj = scene.getObjectByName('quaternionSpherePoints');
   if (projObj && projObj.material) {
-    const baseColor = getColorOrDefault('_sphereBaseColor', '#ffffff');
-    const midColor  = getColorOrDefault('_peakColor1',    '#808080');
-    const endColor  = getColorOrDefault('_peakColor2',    '#000000');
+    const baseColor = getColorOrDefault('_sphereBaseColor', SPHERE_BASE_COLOR);
+    const midColor  = getColorOrDefault('_peakColor1',    SPHERE_MID_COLOR);
+    const endColor  = getColorOrDefault('_peakColor2',    SPHERE_END_COLOR);
     const color     = new THREE.Color();
     const fracDeg   = ((theta % HALF_CYCLE) / HALF_CYCLE) * 360;
 
