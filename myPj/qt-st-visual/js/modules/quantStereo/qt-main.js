@@ -60,6 +60,14 @@ export function startModule({ scene, camera, renderer, controls }) {
   } else {
     controls.autoRotate = false;
   }
+  // (2.1) 縦方向（上下）にもカメラを回転できる範囲を広げる
+controls.minPolarAngle = 0;
+controls.maxPolarAngle = Math.PI;
+
+// (2.2) 念のために、水平回転（Azimuth）の制限を完全に解除
+controls.minAzimuthAngle = -Infinity;
+controls.maxAzimuthAngle =  Infinity;
+
 
   // (1) シーンの背景色を暗色に設定
   scene.background = new THREE.Color(0x000011);

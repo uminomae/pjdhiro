@@ -42,6 +42,43 @@ function animationLoop(scene, camera, controls) {
   const elapsed = clock.getElapsedTime() + accumulatedTime;
   const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE; // θ ∈ [0,4π)
 
+  // ---------------------------------------------
+  // 【追加部分】カメラを「原点を見ながら上下180度往復」させる
+  // ---------------------------------------------
+  // (1) カメラの現在位置から半径（r）と方位角（φ）を算出
+  const r = Math.sqrt(
+    camera.position.x * camera.position.x +
+    camera.position.y * camera.position.y +
+    camera.position.z * camera.position.z
+  );
+  // φ = atan2(z, x) → 水平面（XZ平面）における角度
+  const phi = Math.atan2(camera.position.z, camera.position.x);
+
+  // (2) elapsed に応じて極角 θ を “上下往復” するように計算
+  //     Math.sin(elapsed * speed) は -1～+1 を往復するので、
+  //     (sin + 1)/2 → 0～1 を往復  → × π で 0～π の範囲を往復
+  const oscSpeed = 0.5; // 調整用：1秒間に 0.5rad 変化（好みで調整してください）
+  const oscTheta = (Math.sin(elapsed * oscSpeed) + 1) / 4 * Math.PI;
+  //    ・oscTheta = 0 のとき：カメラは (x=0,y=r,z=0)（真上）
+  //    ・oscTheta = π のとき：カメラは (x=0,y=-r,z=0)（真下）
+  //    ・その中間は半円弧を上下に往復するイメージです。
+
+  // (3) 球面座標からデカルト座標へ変換し、camera.position を更新
+  //     x = r*sin(θ)*cos(φ)
+  //     y = r*cos(θ)
+  //     z = r*sin(θ)*sin(φ)
+  camera.position.set(
+    r * Math.sin(oscTheta) * Math.cos(phi),
+    r * Math.cos(oscTheta),
+    r * Math.sin(oscTheta) * Math.sin(phi)
+  );
+
+  // (4) 常に原点を見るようにする
+  camera.lookAt(0, 0, 0);
+  // ---------------------------------------------
+  // 【追加部分ここまで】
+  // ---------------------------------------------
+
   // — (1) 四元数回転を作成 (x 軸まわり回転) —
   const half = theta / 2;
   const qRot = normalize(create(Math.cos(half), Math.sin(half), 0, 0));
