@@ -2,35 +2,50 @@
 <nav class="navbar bg-transparent position-fixed w-100">
   <div class="container-fluid">
     <!-- <a class="navbar-brand" href="#">Julia Set Inverse Mapping Visualizer</a> -->
-    <!-- PC 以上（sm 以上）で表示される長いタイトル -->
-    <a class="navbar-brand d-none d-sm-block text-white fs-6" href="#">
+    <!-- PC 以上（md 以上）で表示される長いタイトル -->
+    <a class="navbar-brand d-none d-md-block text-white fs4" href="#">
       Quaternion Rotation Stereographic Projection
     </a>
-    <!-- xs（スマホ）でだけ表示される短いタイトル -->
-    <a class="navbar-brand d-block d-sm-none text-white fs-6" href="#">
+    <!-- （スマホ）でだけ表示される短いタイトル -->
+    <a class="navbar-brand d-block d-md-none text-white fs-2" href="#">
       Quaternion Stereo
     </a>
     
     <div class="mx-auto">
-      <button id="btn-run" class="btn btn-success btn-sm me-2" type="button">
-        Run
+      <button
+        id="btn-run"
+        class="btn btn-success btn-sm"
+        type="button"
+        aria-label="Run"
+      >
+        <i class="bi-play-fill"></i>
       </button>
-      <button id="btn-pause" class="btn btn-secondary btn-pause btn-sm me-2 d-none" type="button">
-        Pause
+    
+      <button
+        id="btn-pause"
+        class="btn btn-secondary btn-pause btn-sm d-none"
+        type="button"
+        aria-label="Pause"
+      >
+        <i class="bi-pause-fill"></i>
       </button>
+    
       <button id="btn-reset" class="btn btn-danger btn-sm" type="button">
         Reset
       </button>
     </div>
 
-    <button
-      class="btn btn-outline-light btn-sm"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasForm"
-      aria-controls="offcanvasForm"
-    >
-      設定
-    </button>
+      <button
+        class="btn btn-outline-light btn-sm"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasForm"
+        aria-controls="offcanvasForm"
+        aria-label="設定"
+        title="設定"
+      >
+        <i class="bi-gear-fill"></i>
+      </button>
+
   </div>
 </nav>

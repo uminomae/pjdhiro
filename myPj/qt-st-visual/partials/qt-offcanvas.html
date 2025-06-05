@@ -69,53 +69,117 @@
       </label>
     </div>
 
-      <!-- 背景色 (Background Color) -->
-      <div class="mb-3">
-        <label for="input-bg-color" class="form-label small">背景色</label>
-        <input
-          type="color"
-          class="form-control form-control-color form-control-sm"
-          id="input-bg-color"
-          value="#000011"
-          title="背景色を選択"
-        />
-      </div>
+    <hr class="bg-secondary" />
 
-      <!-- 球のベース色 (Sphere Base Color) -->
-      <div class="mb-3">
-        <label for="input-sphere-color" class="form-label small">球の色</label>
-        <input
-          type="color"
-          class="form-control form-control-color form-control-sm"
-          id="input-sphere-color"
-          value="#ffffff"
-          title="球の色を選択"
-        />
-      </div>
+    <!-- カラー設定アコーディオン -->
+    <div class="accordion" id="colorSettingsAccordion">
+      <div class="accordion-item bg-transparent border-secondary">
+        <h2 class="accordion-header" id="headingColor">
+          <button
+            class="accordion-button bg-transparent text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseColor"
+            aria-expanded="true"
+            aria-controls="collapseColor"
+          >
+            カラー設定
+          </button>
+        </h2>
+        <div
+          id="collapseColor"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingColor"
+          data-bs-parent="#colorSettingsAccordion"
+        >
+          <div class="accordion-body bg-secondary bg-opacity-25">
 
-      <!-- ピークカラー１ (Peak Color 1) -->
-      <div class="mb-3">
-        <label for="input-peak1-color" class="form-label small">中間色</label>
-        <input
-          type="color"
-          class="form-control form-control-color form-control-sm"
-          id="input-peak1-color"
-          value="#808080"
-          title="中間色を選択"
-        />
-      </div>
+            <div class="row g-3">
 
-      <!-- ピークカラー２ (Peak Color 2) -->
-      <div class="mb-3">
-        <label for="input-peak2-color" class="form-label small">ピーク最終色</label>
-        <input
-          type="color"
-          class="form-control form-control-color form-control-sm"
-          id="input-peak2-color"
-          value="#000000"
-          title="ピーク最終色を選択"
-        />
-      </div>
+              <!-- 背景色 -->
+              <div class="col-12 col-md-6">
+                <!-- col を外して d-flex に変更 -->
+                <div class="d-flex align-items-center">
+                  <input
+                    type="color"
+                    class="form-control form-control-color p-0 border-0"
+                    id="input-bg-color"
+                    value="#000011"
+                    title="背景色を選択"
+                  />
+                  <label
+                    for="input-bg-color"
+                    class="col-form-label text-white ms-2"
+                  >
+                    背景色
+                  </label>
+                </div>
+              </div>
+
+              <!-- 球の色 -->
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center">
+                  <input
+                    type="color"
+                    class="form-control form-control-color p-0 border-0"
+                    id="input-sphere-color"
+                    value="#ffffff"
+                    title="球の色を選択"
+                  />
+                  <label
+                    for="input-sphere-color"
+                    class="col-form-label text-white ms-2"
+                  >
+                    球の色
+                  </label>
+                </div>
+              </div>
+
+              <!-- 中間色 -->
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center">
+                  <input
+                    type="color"
+                    class="form-control form-control-color p-0 border-0"
+                    id="input-peak1-color"
+                    value="#808080"
+                    title="中間色を選択"
+                  />
+                  <label
+                    for="input-peak1-color"
+                    class="col-form-label text-white ms-2"
+                  >
+                    中間色
+                  </label>
+                </div>
+              </div>
+
+              <!-- ピーク最終色 -->
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center">
+                  <input
+                    type="color"
+                    class="form-control form-control-color p-0 border-0"
+                    id="input-peak2-color"
+                    value="#000000"
+                    title="ピーク最終色を選択"
+                  />
+                  <label
+                    for="input-peak2-color"
+                    class="col-form-label text-white ms-2"
+                  >
+                    ピーク最終色
+                  </label>
+                </div>
+              </div>
+
+            </div> <!-- /.row -->
+
+          </div> <!-- /.accordion-body -->
+        </div> <!-- /.accordion-collapse -->
+      </div> <!-- /.accordion-item -->
+    </div> <!-- /.accordion -->
+      <!-- ───── /カラー設定アコーディオン ───── -->
 
       <hr />
 
