@@ -12,6 +12,7 @@ import {
   CAMERA_INITIAL_POSITION,
   CAMERA_AUTO_ROTATE_ENABLED,
   CAMERA_AUTO_ROTATE_PERIOD,
+  CAMERA_ENABLE_HORIZONTAL,
   CAMERA_POLAR_ANGLE,
   CAMERA_AZIMUTH_ANGLE,
   YIN_YANG_SYMBOL,
@@ -37,13 +38,18 @@ export function startModule({ scene, camera, renderer, controls }) {
     CAMERA_INITIAL_POSITION[1],
     CAMERA_INITIAL_POSITION[2]
   );
+
+  // 2) 水平方向（OrbitControls.rotate）を有効/無効
+  //    ・enableRotate = false にするとマウスドラッグで水平回転ができなくなる
+  controls.enableRotate = CAMERA_ENABLE_HORIZONTAL;
+
   const [tx, ty, tz] = CAMERA_TARGET;
   camera.lookAt(tx, ty, tz);
-  // camera.lookAt(0, 0, 0);
   controls.update();
 
+  
   // 2) OrbitControls 自動回転設定
-  if (CAMERA_AUTO_ROTATE_ENABLED) {
+  if (CAMERA_AUTO_ROTATE_ENABLED && CAMERA_ENABLE_HORIZONTAL) {
     controls.autoRotate      = true;
     controls.autoRotateSpeed = 360 / CAMERA_AUTO_ROTATE_PERIOD;
   } else {
@@ -63,10 +69,8 @@ export function startModule({ scene, camera, renderer, controls }) {
   groundMesh = addGroundWithTexture(
     scene,
     YIN_YANG_SYMBOL,
-    // '/myPj/qt-st-visual/assets/onmyo.png',
     { width: 10, depth: 10, repeatX: 1, repeatZ: 1 }
   );
-  // groundMesh.visible = false;
   setupGroundToggle();
 
   // 5) UI 初期化、ナビバーボタン登録

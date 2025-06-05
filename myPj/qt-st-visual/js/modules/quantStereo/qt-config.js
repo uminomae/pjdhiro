@@ -21,11 +21,16 @@ export const FULL_CYCLE     = 4 * Math.PI;  // 720° = 4π
 export const HALF_CYCLE     = 2 * Math.PI;  // 360° = 2π
 export const ROTATION_SPEED = Math.PI / 2;  // 90°/秒 = π/2 rad/sec
 
+// ———————————————
+// カメラ回転制御フラグ
+// ———————————————
+
+// 水平方向（OrbitControls の回転）を有効にする／無効にする
+export const CAMERA_ENABLE_HORIZONTAL = true;
 // — カメラ初期設定 — 
 export const CAMERA_INITIAL_POSITION    = [-15, 8, 10];
 export const CAMERA_AUTO_ROTATE_ENABLED = true;
 export const CAMERA_AUTO_ROTATE_PERIOD  = 200; // 360°にかかる秒数
-
 // — カメラ上下往復（Oscillation）設定 — 
 //   Math.PI    → 180°往復 (真上 ⇔ 真下)
 //   Math.PI/2  →  90°往復 (真上 ⇔ 水平面)

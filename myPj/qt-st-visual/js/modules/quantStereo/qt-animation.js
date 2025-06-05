@@ -66,7 +66,6 @@ function animationLoop(scene, camera, controls) {
     );
     const [tx, ty, tz] = CAMERA_TARGET;
     camera.lookAt(tx, ty, tz);
-    // camera.lookAt(0, 0, 0);
   }
 
   // 2) 四元数回転 (x軸まわり)
