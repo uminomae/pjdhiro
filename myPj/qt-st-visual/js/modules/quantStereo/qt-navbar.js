@@ -2,9 +2,9 @@
 
 import * as THREE from 'three';
 import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation.js';
-import { addHelpersAndLights } from './qt-init-helpers.js';
+import { addHelpersAndLights } from './qt-init-scene-helpers.js';
 import { initUI }              from './qt-init.js';
-import { create, normalize }   from './qt-quat-utils.js';
+import { create, normalize }   from './qt-math-quat-utils.js';
 import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
 import { RES_THETA, RES_PHI } from './qt-config.js';
 

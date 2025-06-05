@@ -19,7 +19,7 @@ import {
   SPHERE_END_COLOR,
   CAMERA_TARGET
 } from './qt-config.js';
-import { create, normalize } from './qt-quat-utils.js';
+import { create, normalize } from './qt-math-quat-utils.js';
 import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
 
 let clock = null;
@@ -27,6 +27,11 @@ let rafId = null;
 let isPaused = false;
 let accumulatedTime = 0;
 
+let enableVertical = CAMERA_OSCILLATION_ENABLED;
+
+export function setEnableVertical(flag) {
+  enableVertical = flag;
+}
 /**
  * window 上の変数(varName)を THREE.Color として返す
  * 未定義なら defaultHex を THREE.Color で返す
@@ -53,7 +58,7 @@ function animationLoop(scene, camera, controls) {
   const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE;
 
   // 1) カメラ上下往復 (oscillation)
-  if (CAMERA_OSCILLATION_ENABLED) {
+  if (enableVertical) {
     const r   = Math.hypot(camera.position.x, camera.position.y, camera.position.z);
     const phi = Math.atan2(camera.position.z, camera.position.x);
     const raw = (elapsed * CAMERA_OSCILLATION_SPEED) % (2 * CAMERA_OSCILLATION_RANGE);
@@ -72,7 +77,7 @@ function animationLoop(scene, camera, controls) {
   const halfQ = theta / 2;
   const qRot  = normalize(create(Math.cos(halfQ), Math.sin(halfQ), 0, 0));
 
-  // 3) 地球グリッド＋ステレオ投影球の再描画
+  //  地球グリッド＋ステレオ投影球の再描画
   overlayEarthGridAndProjection(scene, qRot, RES_THETA, RES_PHI);
 
   // 4-a) 背景色（暗⇔明⇔暗）の補間
