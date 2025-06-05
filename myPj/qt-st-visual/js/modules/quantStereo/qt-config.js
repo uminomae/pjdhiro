@@ -12,7 +12,9 @@ export const UI_DOM_IDS = {
   VAL_GAMMA:  'val-gamma',
   VAL_DELTA:  'val-delta'
 };
-
+// ────────────────────────────────────────────────────────────
+// 色変更のスピード
+// ────────────────────────────────────────────────────────────
 // １サイクルを “720度（＝4πラジアン）” とする
 // “720°の回転” をひとまとまり（１サイクル）
 // 「１回転目」と「２回転目」で別々に切り替えるため
@@ -23,8 +25,16 @@ export const HALF_CYCLE = 2 * Math.PI;
 // 回転速度：（毎秒90°＝π/2ラジアン）
 // 分母を小さくすると遅くなる（例：Math.PI / 4 → 45°/秒）
 export const ROTATION_SPEED = Math.PI / 2;
-
-
+// ────────────────────────────────────────────────────────────
+// カメラ初期位置 + 自動回転設定
+// ────────────────────────────────────────────────────────────
+// (A) カメラ初期位置 [x, y, z]（シーン内単位）。例: [0, 0, 5]
+export const CAMERA_INITIAL_POSITION = [-7, 15, 10];
+// (B) 自動回転を有効にするか（true/false）
+export const CAMERA_AUTO_ROTATE_ENABLED = true;
+// (C) １周にかかる秒数。autoRotate を有効にするときのみ意味を持ちます。
+//     例えば 10 を指定すると、「10秒でカメラが360°回る」設定になります。
+export const CAMERA_AUTO_ROTATE_PERIOD = 100;
 // ───────────────────────────────────────────────────
 // Earth Grid（地球グリッド）用設定
 // ───────────────────────────────────────────────────
@@ -56,8 +66,8 @@ export const EARTH_GRID_RADIUS = 1.0;
 // ────────────────────────────────────────────────────────────
 
 // グリッド全体の幅（シーン単位）
-export const GRID_SIZE = 0;
-// export const GRID_SIZE = 10;
+// export const GRID_SIZE = 0;
+export const GRID_SIZE = 10;
 
 // グリッドの分割数（何マスに分割するか）
 export const GRID_DIVISIONS = 10;
@@ -73,5 +83,5 @@ export const GRID_COLOR = 0x888888;
 // ────────────────────────────────────────────────────────────
 
 // AxesHelper の大きさ (長さ)
-export const AXES_SIZE = 0;
-// export const AXES_SIZE = 1.5;
+// export const AXES_SIZE = 0;
+export const AXES_SIZE = 1.5;
