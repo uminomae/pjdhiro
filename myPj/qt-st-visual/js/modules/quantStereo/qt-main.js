@@ -6,143 +6,112 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { addHelpersAndLights, addGroundWithTexture } from './qt-init-helpers.js';
 import { initUI }              from './qt-init.js';
 import { setupNavbarControls } from './qt-navbar.js';
-// CAMERA_* 定数をインポート
+import { startAnimation }      from './qt-animation.js';
+
 import {
   CAMERA_INITIAL_POSITION,
   CAMERA_AUTO_ROTATE_ENABLED,
-  CAMERA_AUTO_ROTATE_PERIOD
+  CAMERA_AUTO_ROTATE_PERIOD,
+  CAMERA_POLAR_ANGLE,
+  CAMERA_AZIMUTH_ANGLE
 } from './qt-config.js';
 
 let groundMesh;
 
-
-// 自動起動を使う場合に必要
-// ★ もしページ読み込み時にアニメを自動で開始したい場合は、以下をアンコメントしてください。
-import { startAnimation } from './qt-animation.js';
-
 /**
  * startModule({ scene, camera, renderer, controls })
- *   ・このモジュール（quantStereo）の唯一のエントリーポイントです。
- *   ・シーン初期化 (背景色・照明＋ヘルパー)／UI 初期化／
- *     ナビバーボタン (Run/Pause/Reset) のセットアップを行うだけ。
- *   ・アニメーションの開始・一時停止・再開・リセット（初期化）は、
- *     qt-animation.js / qt-navbar.js に委譲します。
+ *  ・quantStereo モジュールのエントリーポイント
+ *  ・シーン背景色の設定、照明・ヘルパー追加、UI 初期化、
+ *    ナビバーボタンのセットアップを行う
+ *  ・アニメーション (Run / Pause / Reset の処理) は qt-animation.js / qt-navbar.js に委譲
  *
  * @param {Object}       context
- * @param {THREE.Scene}    context.scene
- * @param {THREE.Camera}   context.camera
- * @param {THREE.Renderer} context.renderer
- * @param {OrbitControls}  context.controls
+ * @param {THREE.Scene}  context.scene
+ * @param {THREE.Camera} context.camera
+ * @param {THREE.Renderer}context.renderer
+ * @param {OrbitControls}context.controls
  */
 export function startModule({ scene, camera, renderer, controls }) {
   console.log('[qt-st-main] startModule() が呼ばれました');
 
-  // (1) カメラの初期位置を config から設定
-  // ---------------------------------------------------
+  // ——————————————————————————————
+  // (1) カメラ初期位置の設定
+  // ——————————————————————————————
   camera.position.set(
     CAMERA_INITIAL_POSITION[0],
     CAMERA_INITIAL_POSITION[1],
     CAMERA_INITIAL_POSITION[2]
   );
   camera.lookAt(0, 0, 0);
-  // OrbitControls も必ず更新しておく
   controls.update();
 
-  // (2) OrbitControls の自動回転設定
-  // ---------------------------------------------------
-  //  autoRotateEnabled が true の場合、controls.autoRotate = true。
-  //  autoRotateSpeed は「360°/CAMERA_AUTO_ROTATE_PERIOD (秒)」→ OrbitControls の単位は「deg/sec」。
-  //  NOTE: OrbitControls.autoRotateSpeed のデフォルトは 2.0 (deg/sec)。
+  // ——————————————————————————————
+  // (2) OrbitControls 自動回転の設定
+  // ——————————————————————————————
   if (CAMERA_AUTO_ROTATE_ENABLED) {
-    controls.autoRotate = true;
-    // 360度 / T 秒 = deg/sec　なので
-    controls.autoRotateSpeed = 360 / CAMERA_AUTO_ROTATE_PERIOD;
+    controls.autoRotate      = true;
+    controls.autoRotateSpeed = 360 / CAMERA_AUTO_ROTATE_PERIOD; // deg/sec
   } else {
     controls.autoRotate = false;
   }
-  // (2.1) 縦方向（上下）にもカメラを回転できる範囲を広げる
-controls.minPolarAngle = 0;
-controls.maxPolarAngle = Math.PI;
 
-// (2.2) 念のために、水平回転（Azimuth）の制限を完全に解除
-controls.minAzimuthAngle = -Infinity;
-controls.maxAzimuthAngle =  Infinity;
+  // ——————————————————————————————
+  // (3) カメラの上下・左右回転角度範囲を設定
+  // ——————————————————————————————
+  controls.minPolarAngle   = CAMERA_POLAR_ANGLE.MIN;   // 真上(0) ～ 真下(π)
+  controls.maxPolarAngle   = CAMERA_POLAR_ANGLE.MAX;
+  controls.minAzimuthAngle = CAMERA_AZIMUTH_ANGLE.MIN; // 水平回転は制限なし
+  controls.maxAzimuthAngle = CAMERA_AZIMUTH_ANGLE.MAX;
 
-
-  // (1) シーンの背景色を暗色に設定
+  // ——————————————————————————————
+  // (4) シーン初期化
+  //   ・背景色、照明 + 軸ヘルパー、地面 (最初は非表示) を設定
+  // ——————————————————————————————
   scene.background = new THREE.Color(0x000011);
-
-  // (2) 照明 + 軸ヘルパー を追加
   addHelpersAndLights(scene);
 
-  // (3) 画像付きの床面を作成
-  //    画像パスは適宜書き換えてください（public フォルダなどから参照可能な URL）
-  groundMesh = addGroundWithTexture(scene, '/myPj/qt-st-visual//assets/onmyo.png', {
-    width: 10,      // X 方向に 20 ユニット分の大きさ
-    depth: 10,      // Z 方向に 20 ユニット分の大きさ
-    repeatX: 1,     // 画像を X 方向に 4 回タイル
-    repeatZ: 1      // 画像を Z 方向に 4 回タイル
-  });
-  // **最初に非表示にしておく**
-  groundMesh.visible = false
+  groundMesh = addGroundWithTexture(
+    scene,
+    '/myPj/qt-st-visual/assets/onmyo.png',
+    { width: 10, depth: 10, repeatX: 1, repeatZ: 1 }
+  );
+  groundMesh.visible = false;
   setupGroundToggle();
 
-  // (3) UI 初期化 (Top View ボタンや α,β,γ,δ の表示など)
+  // ——————————————————————————————
+  // (5) UI 初期化・ナビバーボタン登録
+  // ——————————————————————————————
   initUI({ scene, camera, renderer, controls });
-
-  // (4) ナビバー (Run / Pause / Reset) のイベントリスナを登録
   setupNavbarControls({ scene, camera, renderer, controls });
 
-  // ────────────────────────────────────────────────────
-  // ★ ページロード時に自動でアニメーションを開始したい場合はこちらをアンコメントして有効化：
-  // ────────────────────────────────────────────────────
-  //
-  //  以下の行の先頭の "//" を削除して有効化：
-      startAnimation(scene, camera, controls);
-      // startAnimation(scene);
-  //  Run ボタンを「押された」状態に見せる：Run を隠し、Pause を表示
-      const btnRun   = document.getElementById('btn-run');
-      const btnPause = document.getElementById('btn-pause');
-      if (btnRun && btnPause) {
-        btnRun.classList.add('d-none');
-        btnPause.classList.remove('d-none');
-      }
-  //
-  // これにより、ロード直後に θ=0 の状態から自動でアニメーションが開始されます。
-  // ────────────────────────────────────────────────────
-
-  // (6) 必要に応じて、ロード時点の静的表示を「最初の地球グリッド＋投影球」にしたい場合は、
-  //     Reset と同じロジックで初期描画を行ってもよいです。たとえば↓を有効化:
-  //
-  // // import { create, normalize } from './qt-quat-utils.js';
-  // // import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
-  // // import { RES_THETA, RES_PHI } from './qt-config.js';
-  // // const qIdentity = normalize(create(1, 0, 0, 0));
-  // // overlayEarthGridAndProjection(scene, qIdentity, RES_THETA, RES_PHI);
+  // ——————————————————————————————
+  // (6) ページ読み込み時に自動でアニメーション開始したい場合
+  //     → 以下のコメントを外すと即時開始
+  // ——————————————————————————————
+  startAnimation(scene, camera, controls);
+  const btnRun   = document.getElementById('btn-run');
+  const btnPause = document.getElementById('btn-pause');
+  if (btnRun && btnPause) {
+    btnRun.classList.add('d-none');
+    btnPause.classList.remove('d-none');
+  }
+  // ← これにより Load 時点で θ=0 から即スタートする設定にできます
 
   console.log('[qt-st-main] startModule() の初期化が完了しました');
 }
 
-
 /**
  * setupGroundToggle()
- * -------------------
- * オフキャンバスのチェックボックス（id="toggle-ground-visibility"）
- * の change イベントを監視し、groundMesh.visible を切り替えます。
- * チェックがある → 床を表示、チェックがない → 床を非表示
+ *  ・Offcanvas の「床表示」チェックボックスを監視し、
+ *    groundMesh.visible を切り替える
  */
 function setupGroundToggle() {
-  // (1) チェックボックス要素を取得
   const checkbox = document.getElementById('toggle-ground-visibility');
   if (!checkbox) {
-    console.warn('[setupGroundToggle] チェックボックスが見つかりません: toggle-ground-visibility');
+    console.warn('[qt-st-main] チェックボックスが見つかりません: toggle-ground-visibility');
     return;
   }
-
-  // (2) 初期状態を groundMesh.visible に反映しておく
   groundMesh.visible = checkbox.checked;
-
-  // (3) change イベントを監視し、切り替える
   checkbox.addEventListener('change', () => {
     if (groundMesh) {
       groundMesh.visible = checkbox.checked;
