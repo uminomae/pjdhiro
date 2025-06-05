@@ -72,9 +72,11 @@ function animationLoop(scene, camera, controls) {
   const bgLight = getColorOrDefault('_bgColorLight', '#ffffff');
   if (theta < HALF_CYCLE) {
     const t = theta / HALF_CYCLE; // 0→1
+    const tAdjusted = Math.pow(t, 2); // < 1のとき tAdjusted>t → 明くなるのを早く見せたい
     scene.background = bgDark.clone().lerp(bgLight, t);
   } else {
     const t = (theta - HALF_CYCLE) / HALF_CYCLE;
+    const tAdjusted = Math.pow(t, 0.5); // < 1のとき 値が小さいほど早くピークになる
     scene.background = bgLight.clone().lerp(bgDark, t);
   }
 

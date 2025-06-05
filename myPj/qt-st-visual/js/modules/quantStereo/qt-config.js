@@ -56,7 +56,8 @@ export const EARTH_GRID_POINT_SIZE       = 0.02;
 export const EARTH_GRID_RADIUS           = 1.0;
 
 // — 床グリッド設定 — 
-export const GRID_SIZE        = 10;
+export const GRID_SIZE        = 0;
+// export const GRID_SIZE        = 10;
 export const GRID_DIVISIONS   = 10;
 export const GRID_COLOR_CENTERLINE = 0x444444;
 export const GRID_COLOR       = 0x888888;
@@ -65,4 +66,5 @@ export const GRID_COLOR       = 0x888888;
 export const GROUND_TEXTURE_OPACITY = 0.05;
 
 // — 軸ヘルパー設定 — 
-export const AXES_SIZE = 1.5;
+export const AXES_SIZE = 0;
+// export const AXES_SIZE = 1.5;
