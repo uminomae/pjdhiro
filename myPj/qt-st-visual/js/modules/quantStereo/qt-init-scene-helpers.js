@@ -202,9 +202,4 @@ export function resetScene(scene, camera, controls) {
   // 3) 照明 + 軸ヘルパーを再追加
   addHelpersAndLights(scene);
 
-  // 4) カメラをワールド原点を向くように戻す（必要なら）
-  camera.position.set(0, 0, 5);
-  camera.up.set(0, 1, 0);
-  camera.lookAt(0, 0, 0);
-  controls.update();
 }
