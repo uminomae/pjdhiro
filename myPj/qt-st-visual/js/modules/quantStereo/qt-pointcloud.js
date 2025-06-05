@@ -1,11 +1,19 @@
-// js/modules/quantStereo/qt-st-pointcloud.js
+// js/modules/quantStereo/qt-pointcloud.js
 
 import * as THREE from 'three';
 import { multiply, rotatePoint } from './qt-quat-utils.js';
+import {
+  EARTH_GRID_LAT_LINES,
+  EARTH_GRID_LON_LINES,
+  EARTH_GRID_SAMPLES_PER_LINE,
+  EARTH_GRID_COLOR,
+  EARTH_GRID_POINT_SIZE
+} from './qt-config.js';
 
 /**
  * generateImagSpherePoints(resTheta, resPhi)
  * 「w=0, x²+y²+z²=1」の純虚四元数点群を生成して返す
+ * （既存まま）
  */
 export function generateImagSpherePoints(resTheta = 40, resPhi = 40) {
   const points = [];
@@ -25,7 +33,7 @@ export function generateImagSpherePoints(resTheta = 40, resPhi = 40) {
 /**
  * stereographicProj(qp)
  * 四元数 qp={w,x,y,z} をステレオ投影して {x,y,z} を返す
- *   X = x/(1 - w), Y = y/(1 - w), Z = z/(1 - w)
+ * （既存まま）
  */
 export function stereographicProj(qp) {
   let denom = 1 - qp.w;
@@ -37,25 +45,21 @@ export function stereographicProj(qp) {
   };
 }
 
+
 /**
- * createEarthGridRotatedPointCloud(scene, qRot, latLines, lonLines, samplesPerLine)
- * 「地球の緯度・経度線をドットで表現」し、それを純粋な3D回転 (rotatePoint) で
- * 回転させて描画します。色はブルー系です。
+ * createEarthGridRotatedPointCloud(scene, qRot)
+ * ────────────────────────────────────────────────────────────
+ * 「地球の緯度・経度線をドットで表現」し、
+ * それを純粋な3D回転 (rotatePoint) で回転させて描画します。
+ * 点数・色・サイズは config から取得します。
  *
  * @param {THREE.Scene} scene
  * @param {{w:number,x:number,y:number,z:number}} qRot  3D回転を表す単位四元数
- * @param {number[]} latLines     緯度ライン (度単位) の配列。例: [-60, -30, 0, 30, 60]
- * @param {number[]} lonLines     経度ライン (度単位) の配列。例: [0, 30, 60, ..., 330]
- * @param {number} samplesPerLine  各ラインあたりのサンプル点数 (>=2)
  */
-export function createEarthGridRotatedPointCloud(
-  scene,
-  qRot,
-  latLines = [-60, -30, 0, 30, 60],
-  lonLines = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330],
-  samplesPerLine = 100
-) {
-  // 1) 既存の『earthGridPoints』を削除
+export function createEarthGridRotatedPointCloud(scene, qRot) {
+  // ────────────────────────────────────────────────────────
+  // (1) 既存の『earthGridPoints』を削除
+  // ────────────────────────────────────────────────────────
   const old = scene.getObjectByName('earthGridPoints');
   if (old) {
     scene.remove(old);
@@ -63,18 +67,19 @@ export function createEarthGridRotatedPointCloud(
     old.material.dispose();
   }
 
-  // 2) 緯度線・経度線をサンプリングして『純虚四元数点』を作成
-  //    緯度: φ = deg→ラジアン (–90°～+90°)
-  //    経度: λ = deg→ラジアン (0°～360°)
+  // ────────────────────────────────────────────────────────
+  // (2) 緯度ライン・経度ラインをサンプリングして
+  //     『純虚四元数点』を作成
+  // ────────────────────────────────────────────────────────
   const points = [];
 
   // (A) 緯度線 (latitude) をサンプリング
-  for (let φdeg of latLines) {
-    const φ = (φdeg * Math.PI) / 180;
+  for (let φdeg of EARTH_GRID_LAT_LINES) {
+    const φ = (φdeg * Math.PI) / 180;  // 緯度角をラジアンに変換
     const cosφ = Math.cos(φ);
     const sinφ = Math.sin(φ);
-    for (let i = 0; i < samplesPerLine; i++) {
-      const λ = (i / (samplesPerLine - 1)) * 2 * Math.PI;
+    for (let i = 0; i < EARTH_GRID_SAMPLES_PER_LINE; i++) {
+      const λ = (i / (EARTH_GRID_SAMPLES_PER_LINE - 1)) * 2 * Math.PI; // 経度0～2π
       const x = cosφ * Math.cos(λ);
       const y = cosφ * Math.sin(λ);
       const z = sinφ;
@@ -83,10 +88,10 @@ export function createEarthGridRotatedPointCloud(
   }
 
   // (B) 経度線 (longitude) をサンプリング
-  for (let λdeg of lonLines) {
-    const λ = (λdeg * Math.PI) / 180;
-    for (let j = 0; j < samplesPerLine; j++) {
-      const φ = ((j / (samplesPerLine - 1)) - 0.5) * Math.PI; // –π/2 .. +π/2
+  for (let λdeg of EARTH_GRID_LON_LINES) {
+    const λ = (λdeg * Math.PI) / 180;  // 経度角をラジアンに変換
+    for (let j = 0; j < EARTH_GRID_SAMPLES_PER_LINE; j++) {
+      const φ = ((j / (EARTH_GRID_SAMPLES_PER_LINE - 1)) - 0.5) * Math.PI; // –π/2 .. +π/2
       const cosφ = Math.cos(φ);
       const sinφ = Math.sin(φ);
       const x = cosφ * Math.cos(λ);
@@ -97,85 +102,51 @@ export function createEarthGridRotatedPointCloud(
   }
 
   const n = points.length;
-  console.log(`[qt-st-pointcloud] EarthGrid: サンプル点数 = ${n}`);
+  console.log(`[qt-pointcloud] EarthGrid: サンプル点数 = ${n}`);
 
-  // 3) rotatePoint で 3D 回転させ、positions を作成
+  // ────────────────────────────────────────────────────────
+  // (3) rotatePoint で 3D 回転を適用し、positions を作成
+  // ────────────────────────────────────────────────────────
   const positions = new Float32Array(n * 3);
   for (let i = 0; i < n; i++) {
     const p = points[i];
-    const rp = rotatePoint(p, qRot); // rp.w=0 のまま
+    const rp = rotatePoint(p, qRot); // 回転後の点 (w=0 のまま)
     positions[3 * i + 0] = rp.x;
     positions[3 * i + 1] = rp.y;
     positions[3 * i + 2] = rp.z;
   }
 
-  // 4) BufferGeometry + Blue のマテリアルで THREE.Points を作成
+  // ────────────────────────────────────────────────────────
+  // (4) BufferGeometry + PointsMaterial を作成 (色・サイズは config から取得)
+  // ────────────────────────────────────────────────────────
   const geom = new THREE.BufferGeometry();
   geom.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
+  // PointsMaterial の color → EARTH_GRID_COLOR ／ size → EARTH_GRID_POINT_SIZE
   const mat = new THREE.PointsMaterial({
-    size:            0.02,
+    size:            EARTH_GRID_POINT_SIZE,
     sizeAttenuation: true,
-    color:           new THREE.Color(0.2, 0.5, 1.0), // 薄い青系
+    color:           new THREE.Color(EARTH_GRID_COLOR),
     opacity:         0.9,
     transparent:     true
   });
 
+  // ────────────────────────────────────────────────────────
+  // (5) Points オブジェクトを作成してシーンに追加
+  // ────────────────────────────────────────────────────────
   const pointsMesh = new THREE.Points(geom, mat);
   pointsMesh.name = 'earthGridPoints';
   scene.add(pointsMesh);
 
-  console.log('[qt-st-pointcloud] EarthGrid Rotated PointCloud を追加');
+  console.log('[qt-pointcloud] EarthGrid Rotated PointCloud を追加');
   return pointsMesh;
 }
 
-/**
- * createRawRotatedPointCloud(scene, qRot, resTheta, resPhi)
- * 「純粋に3D回転だけ（rotatePoint）」で得られる (rp.x, rp.y, rp.z) を赤色で表示
- */
-export function createRawRotatedPointCloud(
-  scene,
-  qRot,
-  resTheta = 40,
-  resPhi = 40
-) {
-  const oldRaw = scene.getObjectByName('rawRotatedSpherePoints');
-  if (oldRaw) {
-    scene.remove(oldRaw);
-    oldRaw.geometry.dispose();
-    oldRaw.material.dispose();
-  }
-
-  const rawImag = generateImagSpherePoints(resTheta, resPhi);
-  const n = rawImag.length;
-  const positions = new Float32Array(n * 3);
-
-  for (let i = 0; i < n; i++) {
-    const p = rawImag[i];
-    const rp = rotatePoint(p, qRot);
-    positions[3 * i + 0] = rp.x;
-    positions[3 * i + 1] = rp.y;
-    positions[3 * i + 2] = rp.z;
-  }
-
-  const geom = new THREE.BufferGeometry();
-  geom.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-
-  const mat = new THREE.PointsMaterial({
-    size:            0.015,
-    sizeAttenuation: true,
-    color:           0xff0000 // 赤
-  });
-
-  const points = new THREE.Points(geom, mat);
-  points.name = 'rawRotatedSpherePoints';
-  scene.add(points);
-  return points;
-}
 
 /**
  * createAndAddPointCloud(scene, qRot, resTheta, resPhi)
- * 左乗算 (qRot * p) → ステレオ投影 → グレースケール → 白～灰で表示
+ *  既存の「ステレオ投影球」をそのまま描画する関数です。
+ *  厳密には “地球グリッド” ではなく投影球なので、ここでは変更しません。
  */
 export function createAndAddPointCloud(
   scene,
@@ -238,7 +209,7 @@ export function createAndAddPointCloud(
 
 /**
  * overlayEarthGridAndProjection(scene, qRot, resTheta, resPhi)
- * 「地球グリッド（青い緯度経度線球） + ステレオ投影球」を重ねて表示
+ * 地球グリッド（青い緯度経度線球） + ステレオ投影球 を重ねて表示
  */
 export function overlayEarthGridAndProjection(
   scene,
@@ -260,15 +231,9 @@ export function overlayEarthGridAndProjection(
     oldProj.material.dispose();
   }
 
-  // (1) 地球グリッド（青）を追加
-  createEarthGridRotatedPointCloud(
-    scene,
-    qRot,
-    [-60, -30, 0, 30, 60],                  // 緯度ライン (度)
-    [0,30,60,90,120,150,180,210,240,270,300,330], // 経度ライン (度)
-    100                                     // 各ラインあたりサンプル数
-  );
+  // (1) 地球グリッド（青系）を追加
+  createEarthGridRotatedPointCloud(scene, qRot);
 
-  // (2) ステレオ投影球（白→黒）を追加
+  // (2) ステレオ投影球（白→灰→黒→…）を追加
   createAndAddPointCloud(scene, qRot, resTheta, resPhi);
 }
