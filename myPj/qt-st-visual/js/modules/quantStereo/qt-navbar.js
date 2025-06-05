@@ -82,10 +82,10 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     btnPause.classList.remove('d-none');
 
     if (!hasEverStarted) {
-      startAnimation(scene);
+      startAnimation(scene, camera, controls);
       hasEverStarted = true;
     } else {
-      resumeAnimation(scene);
+      resumeAnimation(scene, camera, controls);
     }
   });
 

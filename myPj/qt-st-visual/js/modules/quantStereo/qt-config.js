@@ -29,12 +29,12 @@ export const ROTATION_SPEED = Math.PI / 2;
 // カメラ初期位置 + 自動回転設定
 // ────────────────────────────────────────────────────────────
 // (A) カメラ初期位置 [x, y, z]（シーン内単位）。例: [0, 0, 5]
-export const CAMERA_INITIAL_POSITION = [-7, 15, 10];
+export const CAMERA_INITIAL_POSITION = [-15, 8, 10];
 // (B) 自動回転を有効にするか（true/false）
 export const CAMERA_AUTO_ROTATE_ENABLED = true;
 // (C) １周にかかる秒数。autoRotate を有効にするときのみ意味を持ちます。
 //     例えば 10 を指定すると、「10秒でカメラが360°回る」設定になります。
-export const CAMERA_AUTO_ROTATE_PERIOD = 100;
+export const CAMERA_AUTO_ROTATE_PERIOD = 200;
 // ───────────────────────────────────────────────────
 // Earth Grid（地球グリッド）用設定
 // ───────────────────────────────────────────────────
@@ -50,7 +50,7 @@ export const EARTH_GRID_LON_LINES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270
 export const EARTH_GRID_SAMPLES_PER_LINE = 100;
 
 // (D) 地球グリッド点の色 (Hex か THREE.Color 互換)。ここでは薄い青系に。
-export const EARTH_GRID_COLOR = 0x3399ff;
+export const EARTH_GRID_COLOR = 0x51077c;
 
 // (E) 地球グリッド点のサイズ (PointsMaterial の size)。小さいほど細かい点に。
 export const EARTH_GRID_POINT_SIZE = 0.02;
