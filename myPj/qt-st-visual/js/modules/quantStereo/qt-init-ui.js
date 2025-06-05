@@ -1,4 +1,4 @@
-// js/modules/quantStereo/qt-st-init.js
+// js/modules/quantStereo/qt-init-ui.js
 
 import { UI_DOM_IDS } from './qt-config.js';
 
@@ -12,13 +12,13 @@ import { UI_DOM_IDS } from './qt-config.js';
  * createAndAddPointCloud は呼び出さない（qt-main.js 側で管理する）
  */
 export function initUI({ scene, camera, renderer, controls }) {
-  console.log('[qt-st-init] initUI()');
+  console.log('[qt-init-ui] initUI()');
 
   // Top View ボタン
   const btnTop = document.getElementById(UI_DOM_IDS.BTN_TOP);
   if (btnTop) {
     btnTop.addEventListener('click', () => {
-      console.log('[qt-st-init] Top View がクリックされました');
+      console.log('[qt-init-ui] Top View がクリックされました');
       camera.position.set(0, 5, 0);
       camera.up.set(0, 0, -1);
       camera.lookAt(0, 0, 0);
@@ -32,5 +32,5 @@ export function initUI({ scene, camera, renderer, controls }) {
     if (el) el.textContent = '0.000';
   });
 
-  console.log('[qt-st-init] initUI() 完了');
+  console.log('[qt-init-ui] initUI() 完了');
 }
