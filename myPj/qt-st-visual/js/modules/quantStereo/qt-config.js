@@ -56,7 +56,8 @@ export const EARTH_GRID_RADIUS = 1.0;
 // ────────────────────────────────────────────────────────────
 
 // グリッド全体の幅（シーン単位）
-export const GRID_SIZE = 10;
+export const GRID_SIZE = 0;
+// export const GRID_SIZE = 10;
 
 // グリッドの分割数（何マスに分割するか）
 export const GRID_DIVISIONS = 10;
@@ -72,4 +73,5 @@ export const GRID_COLOR = 0x888888;
 // ────────────────────────────────────────────────────────────
 
 // AxesHelper の大きさ (長さ)
-export const AXES_SIZE = 1.5;
+export const AXES_SIZE = 0;
+// export const AXES_SIZE = 1.5;
