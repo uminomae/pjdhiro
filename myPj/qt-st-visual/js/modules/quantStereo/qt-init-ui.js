@@ -32,6 +32,23 @@ export function initUI({ scene, camera, renderer, controls }) {
     if (el) el.textContent = '0.000';
   });
 
+  // ──────────────── グリッド単位球の表示切り替え ────────────────
+  const checkboxGrid = document.getElementById('toggle-grid-sphere');
+  if (checkboxGrid instanceof HTMLInputElement) {
+
+    // チェック状態が変わったときに可視性を切り替える
+    checkboxGrid.addEventListener('change', (e) => {
+      const target = e.target;
+      const visible = target.checked; // true: 表示, false: 非表示
+      const grid = scene.getObjectByName('earthGridPoints');
+      if (grid) {
+        grid.visible = visible;
+      }
+    });
+  } else {
+    console.warn('[qt-init-ui] toggle-grid-sphere チェックボックスが見つかりません');
+  }
+
   console.log('[qt-init-ui] initUI() 完了');
 }
 

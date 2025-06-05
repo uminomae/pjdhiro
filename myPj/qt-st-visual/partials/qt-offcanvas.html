@@ -17,7 +17,19 @@
 
   <div class="offcanvas-body">
     <form>
-      <!-- 床画像表示のチェックボックス -->
+    <!-- グリッド単位球のスイッチ -->
+    <div class="form-check form-switch">
+      <input 
+        class="form-check-input"
+        type="checkbox" 
+        id="toggle-grid-sphere" 
+      >
+      <label style="display: flex; align-items: center; gap: 4px;">
+        <span>グリッド単位球を表示</span>
+      </label>
+    </div>
+
+    <!-- 床画像表示のスイッチ-->
     <div class="form-check form-switch">
       <input
         class="form-check-input"
@@ -31,7 +43,7 @@
       </label>
     </div>
 
-    <!-- 垂直往復 (Vertical Oscillation) のトグル -->
+    <!-- 垂直往復 (Vertical Oscillation) のスイッチ -->
     <div class="form-check form-switch mt-2">
       <input
         class="form-check-input"
@@ -44,7 +56,7 @@
       </label>
     </div>
 
-    <!-- 水平回転 (OrbitControls.rotate) のトグル -->
+    <!-- 水平回転 (OrbitControls.rotate) のスイッチ -->
     <div class="form-check form-switch mt-2">
       <input
         class="form-check-input"
