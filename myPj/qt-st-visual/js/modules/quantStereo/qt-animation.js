@@ -72,11 +72,11 @@ function animationLoop(scene, camera, controls) {
   const bgLight = getColorOrDefault('_bgColorLight', '#ffffff');
   if (theta < HALF_CYCLE) {
     const t = theta / HALF_CYCLE; // 0→1
-    const tAdjusted = Math.pow(t, 4); 
+    const tAdjusted = Math.pow(t, 8); 
     scene.background = bgDark.clone().lerp(bgLight, tAdjusted);
   } else {
     const t = (theta - HALF_CYCLE) / HALF_CYCLE;
-    const tAdjusted = Math.pow(t, 0.2); 
+    const tAdjusted = Math.pow(t, 1); 
     scene.background = bgLight.clone().lerp(bgDark, tAdjusted);
   }
 

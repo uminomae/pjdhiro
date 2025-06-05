@@ -63,7 +63,7 @@ export function startModule({ scene, camera, renderer, controls }) {
     // '/myPj/qt-st-visual/assets/onmyo.png',
     { width: 10, depth: 10, repeatX: 1, repeatZ: 1 }
   );
-  groundMesh.visible = false;
+  // groundMesh.visible = false;
   setupGroundToggle();
 
   // 5) UI 初期化、ナビバーボタン登録
