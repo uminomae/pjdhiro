@@ -176,3 +176,35 @@ export function addGroundWithTexture(
   scene.add(mesh);
   return mesh;
 }
+
+
+/**
+ * resetScene(scene, camera, controls)
+ *
+ * ・シーン内の全オブジェクトを削除
+ * ・背景色を初期色 (#000011) に戻す
+ * ・照明 / ヘルパーを再追加
+ * ・（必要なら）カメラ位置やコントロールもリセット可能
+ *
+ * @param {THREE.Scene}   scene
+ * @param {THREE.Camera}  camera    ※カメラリセットが必要なら利用
+ * @param {OrbitControls} controls  ※controls.update() など
+ */
+export function resetScene(scene, camera, controls) {
+  // 1) シーン内オブジェクトをすべて削除
+  while (scene.children.length > 0) {
+    scene.remove(scene.children[0]);
+  }
+
+  // 2) 背景色を “初期のダーク (#000011)” に戻す
+  scene.background = new THREE.Color('#000011');
+
+  // 3) 照明 + 軸ヘルパーを再追加
+  addHelpersAndLights(scene);
+
+  // 4) カメラをワールド原点を向くように戻す（必要なら）
+  camera.position.set(0, 0, 5);
+  camera.up.set(0, 1, 0);
+  camera.lookAt(0, 0, 0);
+  controls.update();
+}

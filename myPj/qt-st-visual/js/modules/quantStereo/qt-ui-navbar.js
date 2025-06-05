@@ -2,8 +2,7 @@
 
 import * as THREE from 'three';
 import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation-loop.js';
-import { addHelpersAndLights } from './qt-init-scene-helpers.js';
-import { initUI }              from './qt-init-ui.js';
+import { resetScene } from './qt-init-scene-helpers.js';
 
 let hasEverStarted = false;
 
@@ -104,29 +103,8 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     console.log('[qt-ui-navbar] Reset clicked');
     btnPause.classList.add('d-none');
     btnRun.classList.remove('d-none');
-
-    // 1) アニメーションを停止
     stopAnimation();
     hasEverStarted = false;
-
-    // 2) シーン内オブジェクトをすべて削除
-    while (scene.children.length > 0) {
-      scene.remove(scene.children[0]);
-    }
-
-    // 3) 背景色を「初期のダーク (#000011)」に戻す
-    scene.background = new THREE.Color('#000011');
-
-    // 4) 照明 + 軸ヘルパー を再追加
-    addHelpersAndLights(scene);
-
-    // 5) UI (Top View ボタン・αβγδ 表示) を再初期化
-    initUI({ scene, camera, renderer, controls });
-
-    // 7) 必要ならカメラ位置をリセット
-    //    camera.position.set(0, 0, 5);
-    //    camera.up.set(0, 1, 0);
-    //    camera.lookAt(0, 0, 0);
-    //    controls.update();
+    resetScene(scene, camera, controls);
   });
 }
