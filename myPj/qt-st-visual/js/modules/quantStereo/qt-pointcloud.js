@@ -1,7 +1,7 @@
 // js/modules/quantStereo/qt-pointcloud.js
 
 import * as THREE from 'three';
-import { multiply, rotatePoint } from './qt-quat-utils.js';
+import { multiply, rotatePoint } from './qt-math-quat-utils.js';
 import {
   EARTH_GRID_LAT_LINES,
   EARTH_GRID_LON_LINES,

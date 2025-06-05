@@ -1,4 +1,4 @@
-// js/modules/quantStereo/qt-quat-utils.js
+// js/modules/quantStereo/qt-math-quat-utils.js
 
 /**
  * multiply(q1, q2)
