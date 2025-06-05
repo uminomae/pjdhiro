@@ -35,7 +35,7 @@ function getColorOrDefault(varName, colorHex) {
  *   ・球色を Offcanvas から取得して4段階補間
  *   ・次フレームを予約
  */
-function animationLoop(scene) {
+function animationLoop(scene, camera, controls) {
   if (isPaused) return;
 
   // elapsed = 現在の経過(sec) + 一時停止前に貯めた時間
@@ -121,20 +121,33 @@ function animationLoop(scene) {
     projObj.material.transparent = true;
   }
 
+  // ── () カメラと OrbitControls の自動回転更新（必要なら） ──
+  controls.update();
+
+  // ── () 「カメラ位置表示用 div」を更新 ──
+  const posDiv = document.getElementById('camera-position-display');
+  if (posDiv) {
+    // 小数点以下2桁で丸めて表示
+    const x = camera.position.x.toFixed(1);
+    const y = camera.position.y.toFixed(1);
+    const z = camera.position.z.toFixed(1);
+    posDiv.innerText = `Camera: x=${x}, y=${y}, z=${z}`;
+  }
+
   // — (5) 次フレームを予約 —
-  rafId = requestAnimationFrame(() => animationLoop(scene));
+  rafId = requestAnimationFrame(() => animationLoop(scene, camera, controls));
 }
 
 /**
  * startAnimation(scene)
  */
-export function startAnimation(scene) {
+export function startAnimation(scene, camera, controls) {
   if (rafId !== null) return;
   console.log('[qt-animation] startAnimation()');
   clock = new THREE.Clock();
   isPaused = false;
   accumulatedTime = 0;
-  animationLoop(scene);
+  animationLoop(scene, camera, controls);
 }
 
 /**
@@ -153,12 +166,12 @@ export function pauseAnimation() {
 /**
  * resumeAnimation(scene)
  */
-export function resumeAnimation(scene) {
+export function resumeAnimation(scene, camera, controls) {
   if (!isPaused || rafId !== null) return;
   console.log('[qt-animation] resumeAnimation()');
   clock = new THREE.Clock();
   isPaused = false;
-  animationLoop(scene);
+  animationLoop(scene, camera, controls);
 }
 
 /**

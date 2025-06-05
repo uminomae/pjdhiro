@@ -57,7 +57,7 @@ export function startModule({ scene, camera, renderer, controls }) {
   } else {
     controls.autoRotate = false;
   }
-  
+
   // (1) シーンの背景色を暗色に設定
   scene.background = new THREE.Color(0x000011);
 
@@ -78,7 +78,8 @@ export function startModule({ scene, camera, renderer, controls }) {
   // ────────────────────────────────────────────────────
   //
   //  以下の行の先頭の "//" を削除して有効化：
-      startAnimation(scene);
+      startAnimation(scene, camera, controls);
+      // startAnimation(scene);
   //  Run ボタンを「押された」状態に見せる：Run を隠し、Pause を表示
       const btnRun   = document.getElementById('btn-run');
       const btnPause = document.getElementById('btn-pause');
