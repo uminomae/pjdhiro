@@ -14,8 +14,8 @@ export function startModule({ scene, camera, renderer, controls }) {
   initializeScene({scene, camera, controls});
   initializeControls(controls);
   initUI({ scene, camera, renderer, controls });
-  console.log('[qt-main] 初期化が完了しました');
   setupNavbarControls({ scene, camera, renderer, controls });
+  console.log('[qt-main] 初期化が完了しました');
   startAnimation(scene, camera, controls);
 }
 

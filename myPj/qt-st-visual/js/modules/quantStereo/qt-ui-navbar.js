@@ -72,9 +72,10 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     });
   }
 
-  // 初期状態：Run を表示、Pause は隠す
-  btnRun.classList.remove('d-none');
-  btnPause.classList.add('d-none');
+  btnRun.classList.add('d-none');
+  btnPause.classList.remove('d-none');
+  // btnRun.classList.remove('d-none');
+  // btnPause.classList.add('d-none');
 
   // — Run ボタン押下時 —
   btnRun.addEventListener('click', () => {

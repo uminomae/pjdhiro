@@ -233,7 +233,11 @@ export function overlayEarthGridAndProjection(
   }
 
   // (1) 地球グリッド（青系）を追加
-  createEarthGridRotatedPointCloud(scene, qRot);
+  const gridSphere = createEarthGridRotatedPointCloud(scene, qRot);
+  const checkboxGrid = document.getElementById('toggle-grid-sphere');
+  if (checkboxGrid instanceof HTMLInputElement) {
+    gridSphere.visible = checkboxGrid.checked;
+  }
 
   // (2) ステレオ投影球（白→灰→黒→…）を追加
   createAndAddPointCloud(scene, qRot, resTheta, resPhi);
