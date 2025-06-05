@@ -1,11 +1,11 @@
-// js/modules/quantStereo/qt-navbar.js
+// js/modules/quantStereo/qt-ui-navbar.js
 
 import * as THREE from 'three';
 import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation.js';
 import { addHelpersAndLights } from './qt-init-scene-helpers.js';
-import { initUI }              from './qt-init.js';
+import { initUI }              from './qt-init-ui.js';
 import { create, normalize }   from './qt-math-quat-utils.js';
-import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
+import { overlayEarthGridAndProjection } from './qt-render-pointcloud.js';
 import { RES_THETA, RES_PHI } from './qt-config.js';
 
 let hasEverStarted = false;
@@ -29,7 +29,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
   const btnReset = document.getElementById('btn-reset');
 
   if (!btnRun || !btnPause || !btnReset) {
-    console.warn('[qt-navbar] Run/Pause/Reset ボタンが見つかりません。');
+    console.warn('[qt-ui-navbar] Run/Pause/Reset ボタンが見つかりません。');
     return;
   }
 
@@ -41,7 +41,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
   const btnConfigComplete = document.getElementById('config-complete-btn');
 
   if (!inputBgColor || !inputSphereColor || !inputPeak1Color || !inputPeak2Color || !btnConfigComplete) {
-    console.warn('[qt-navbar] Offcanvas のカラー入力要素が見つかりません。ID を確認してください。');
+    console.warn('[qt-ui-navbar] Offcanvas のカラー入力要素が見つかりません。ID を確認してください。');
   } else {
     // 「設定完了」ボタン押下時に各カラーをグローバルに保存
     btnConfigComplete.addEventListener('click', () => {
@@ -61,7 +61,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
       window._peakColor2 = inputPeak2Color.value || '#000000';
 
       console.log(
-        '[qt-navbar] カラー設定更新: ',
+        '[qt-ui-navbar] カラー設定更新: ',
         '_bgColorDark=', window._bgColorDark,
         ' _bgColorLight=', window._bgColorLight,
         ' _sphereBaseColor=', window._sphereBaseColor,
@@ -77,7 +77,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
 
   // — Run ボタン押下時 —
   btnRun.addEventListener('click', () => {
-    console.log('[qt-navbar] Run clicked');
+    console.log('[qt-ui-navbar] Run clicked');
     btnRun.classList.add('d-none');
     btnPause.classList.remove('d-none');
 
@@ -91,7 +91,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
 
   // — Pause ボタン押下時 —
   btnPause.addEventListener('click', () => {
-    console.log('[qt-navbar] Pause clicked');
+    console.log('[qt-ui-navbar] Pause clicked');
     btnPause.classList.add('d-none');
     btnRun.classList.remove('d-none');
     pauseAnimation();
@@ -99,7 +99,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
 
   // — Reset ボタン押下時 —
   btnReset.addEventListener('click', () => {
-    console.log('[qt-navbar] Reset clicked');
+    console.log('[qt-ui-navbar] Reset clicked');
     btnPause.classList.add('d-none');
     btnRun.classList.remove('d-none');
 

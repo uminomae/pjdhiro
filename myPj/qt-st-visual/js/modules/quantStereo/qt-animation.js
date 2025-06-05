@@ -20,7 +20,7 @@ import {
   CAMERA_TARGET
 } from './qt-config.js';
 import { create, normalize } from './qt-math-quat-utils.js';
-import { overlayEarthGridAndProjection } from './qt-pointcloud.js';
+import { overlayEarthGridAndProjection } from './qt-render-pointcloud.js';
 
 let clock = null;
 let rafId = null;

@@ -4,8 +4,8 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import { addHelpersAndLights, addGroundWithTexture } from './qt-init-scene-helpers.js';
-import { initUI }              from './qt-init.js';
-import { setupNavbarControls } from './qt-navbar.js';
+import { initUI }              from './qt-init-ui.js';
+import { setupNavbarControls } from './qt-ui-navbar.js';
 import { startAnimation }      from './qt-animation.js';
 
 import {
