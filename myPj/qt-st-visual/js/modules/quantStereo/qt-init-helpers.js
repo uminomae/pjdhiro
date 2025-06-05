@@ -106,7 +106,7 @@ export function addGroundWithTexture(
 
   // MeshBasicMaterial に透明設定を入れ、alphaTest で「ある値以下（黒）のピクセルを描かない」ようにする
     transparent: true,      // 透明を許可
-    alphaTest: 0.05,         // 「テクスチャの alpha 値が 0.5 未満なら描画しない＝透過扱いにする」
+    alphaTest: 0.01,         // 「テクスチャの alpha 値が 0.5 未満なら描画しない＝透過扱いにする」
     opacity: GROUND_TEXTURE_OPACITY 
     // ※黒背景PNGにアルファが無い場合、「黒色を透過させたい」が目的なら、
     // 例えば r,g,b のいずれかが 0 の場合は透明扱い、という仕組みを別途シェーダで
