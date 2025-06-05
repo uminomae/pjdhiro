@@ -3,24 +3,19 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import { addHelpersAndLights, addGroundWithTexture } from './qt-init-scene-helpers.js';
+// import { addHelpersAndLights, addGroundWithTexture } from './qt-init-scene-helpers.js';
 import { initUI }              from './qt-init-ui.js';
 import { setupNavbarControls } from './qt-ui-navbar.js';
 import { startAnimation }      from './qt-animation.js';
 
 import {
-  CAMERA_INITIAL_POSITION,
   CAMERA_AUTO_ROTATE_ENABLED,
   CAMERA_AUTO_ROTATE_PERIOD,
-  CAMERA_ENABLE_HORIZONTAL,
   CAMERA_POLAR_ANGLE,
   CAMERA_AZIMUTH_ANGLE,
-  YIN_YANG_SYMBOL,
-  CAMERA_TARGET
 } from './qt-config.js';
 import { setEnableVertical } from './qt-animation.js';
-
-let groundMesh;
+import { initializeScene, addHelpersAndLights, addGroundWithTexture } from './qt-init-scene-helpers.js'; // 既存
 
 /**
  * quantStereo モジュールのエントリーポイント
@@ -32,16 +27,7 @@ let groundMesh;
  */
 export function startModule({ scene, camera, renderer, controls }) {
   console.log('[qt-st-main] startModule() が呼ばれました');
-
-  // 1) カメラ初期位置
-  camera.position.set(
-    CAMERA_INITIAL_POSITION[0],
-    CAMERA_INITIAL_POSITION[1],
-    CAMERA_INITIAL_POSITION[2]
-  );
-
-  // 2) 水平方向（OrbitControls.rotate）を有効/無効
-  //    ・enableRotate = false にするとマウスドラッグで水平回転ができなくなる
+  initializeScene({scene, camera, controls});
 
   // --- 水平回転(on/off) の初期設定 ---
   // --- 手動回転は常に有効にする／自動回転はチェックボックスで制御 ---
@@ -54,12 +40,6 @@ export function startModule({ scene, camera, renderer, controls }) {
     // チェックボックスが存在しない場合はデフォルト true（あるいは false）にしておく
     controls.enableRotate = true;
   }
-  // controls.enableRotate = CAMERA_ENABLE_HORIZONTAL;
-
-  const [tx, ty, tz] = CAMERA_TARGET;
-  camera.lookAt(tx, ty, tz);
-  controls.update();
-
   
   // 2) OrbitControls 自動回転設定
   if (CAMERA_AUTO_ROTATE_ENABLED && controls.enableRotate) {
@@ -74,17 +54,6 @@ export function startModule({ scene, camera, renderer, controls }) {
   controls.maxPolarAngle   = CAMERA_POLAR_ANGLE.MAX;
   controls.minAzimuthAngle = CAMERA_AZIMUTH_ANGLE.MIN;
   controls.maxAzimuthAngle = CAMERA_AZIMUTH_ANGLE.MAX;
-
-  // 4) シーン背景色、照明・ヘルパー、床メッシュ（非表示）
-  scene.background = new THREE.Color(0x000011);
-  addHelpersAndLights(scene);
-
-  groundMesh = addGroundWithTexture(
-    scene,
-    YIN_YANG_SYMBOL,
-    { width: 10, depth: 10, repeatX: 1, repeatZ: 1 }
-  );
-  setupGroundToggle();
 
   // 5) UI 初期化、ナビバーボタン登録
   initUI({ scene, camera, renderer, controls });
@@ -122,16 +91,3 @@ export function startModule({ scene, camera, renderer, controls }) {
   console.log('[qt-st-main] 初期化が完了しました');
 }
 
-function setupGroundToggle() {
-  const checkbox = document.getElementById('toggle-ground-visibility');
-  if (!checkbox) {
-    console.warn('[qt-st-main] toggle-ground-visibility が見つかりません');
-    return;
-  }
-  groundMesh.visible = checkbox.checked;
-  checkbox.addEventListener('change', () => {
-    if (groundMesh) {
-      groundMesh.visible = checkbox.checked;
-    }
-  });
-}
