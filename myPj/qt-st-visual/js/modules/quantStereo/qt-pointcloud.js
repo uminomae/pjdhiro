@@ -7,10 +7,8 @@ import {
   EARTH_GRID_LON_LINES,
   EARTH_GRID_SAMPLES_PER_LINE,
   EARTH_GRID_COLOR,
-  EARTH_GRID_POINT_SIZE
-} from './qt-config.js';
-import {
-  PROJ_SPHERE_POINT_SIZE,
+  EARTH_GRID_POINT_SIZE,
+  PROJ_SPHERE_POINT_SIZE
 } from './qt-config.js';
 
 /**
