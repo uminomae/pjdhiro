@@ -9,6 +9,9 @@ import {
   EARTH_GRID_COLOR,
   EARTH_GRID_POINT_SIZE
 } from './qt-config.js';
+import {
+  PROJ_SPHERE_POINT_SIZE,
+} from './qt-config.js';
 
 /**
  * generateImagSpherePoints(resTheta, resPhi)
@@ -196,7 +199,7 @@ export function createAndAddPointCloud(
   geom.setAttribute('color',    new THREE.BufferAttribute(colors,    3));
 
   const mat = new THREE.PointsMaterial({
-    size:            0.02,
+    size:            PROJ_SPHERE_POINT_SIZE,
     sizeAttenuation: true,
     vertexColors:    true
   });

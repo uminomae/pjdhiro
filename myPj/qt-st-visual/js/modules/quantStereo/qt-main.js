@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import { addHelpersAndLights } from './qt-init-helpers.js';
+import { addHelpersAndLights, addGroundWithTexture } from './qt-init-helpers.js';
 import { initUI }              from './qt-init.js';
 import { setupNavbarControls } from './qt-navbar.js';
 // CAMERA_* 定数をインポート
@@ -63,6 +63,15 @@ export function startModule({ scene, camera, renderer, controls }) {
 
   // (2) 照明 + 軸ヘルパー を追加
   addHelpersAndLights(scene);
+
+  // (3) 画像付きの床面を作成
+  //    画像パスは適宜書き換えてください（public フォルダなどから参照可能な URL）
+  addGroundWithTexture(scene, '/myPj/qt-st-visual//assets/onmyo.png', {
+    width: 10,      // X 方向に 20 ユニット分の大きさ
+    depth: 10,      // Z 方向に 20 ユニット分の大きさ
+    repeatX: 1,     // 画像を X 方向に 4 回タイル
+    repeatZ: 1      // 画像を Z 方向に 4 回タイル
+  });
 
   // (3) UI 初期化 (Top View ボタンや α,β,γ,δ の表示など)
   initUI({ scene, camera, renderer, controls });
