@@ -13,6 +13,10 @@ export const UI_DOM_IDS = {
   VAL_DELTA: 'val-delta'
 };
 
+// path
+export const YIN_YANG_SYMBOL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Yin_and_Yang_symbol.svg/1920px-Yin_and_Yang_symbol.svg.png'
+// export const YIN_YANG_SYMBOL = '/myPj/qt-st-visual/assets/onmyo.png'
+
 // — 色変更サイクル関連 — 
 export const FULL_CYCLE    = 4 * Math.PI;  // 720° = 4π
 export const HALF_CYCLE    = 2 * Math.PI;  // 360° = 2π

@@ -13,7 +13,8 @@ import {
   CAMERA_AUTO_ROTATE_ENABLED,
   CAMERA_AUTO_ROTATE_PERIOD,
   CAMERA_POLAR_ANGLE,
-  CAMERA_AZIMUTH_ANGLE
+  CAMERA_AZIMUTH_ANGLE,
+  YIN_YANG_SYMBOL
 } from './qt-config.js';
 
 let groundMesh;
@@ -58,7 +59,8 @@ export function startModule({ scene, camera, renderer, controls }) {
 
   groundMesh = addGroundWithTexture(
     scene,
-    '/myPj/qt-st-visual/assets/onmyo.png',
+    YIN_YANG_SYMBOL,
+    // '/myPj/qt-st-visual/assets/onmyo.png',
     { width: 10, depth: 10, repeatX: 1, repeatZ: 1 }
   );
   groundMesh.visible = false;
