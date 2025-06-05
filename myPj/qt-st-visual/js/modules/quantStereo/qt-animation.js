@@ -72,12 +72,12 @@ function animationLoop(scene, camera, controls) {
   const bgLight = getColorOrDefault('_bgColorLight', '#ffffff');
   if (theta < HALF_CYCLE) {
     const t = theta / HALF_CYCLE; // 0→1
-    const tAdjusted = Math.pow(t, 2); // < 1のとき tAdjusted>t → 明くなるのを早く見せたい
-    scene.background = bgDark.clone().lerp(bgLight, t);
+    const tAdjusted = Math.pow(t, 4); 
+    scene.background = bgDark.clone().lerp(bgLight, tAdjusted);
   } else {
     const t = (theta - HALF_CYCLE) / HALF_CYCLE;
-    const tAdjusted = Math.pow(t, 0.5); // < 1のとき 値が小さいほど早くピークになる
-    scene.background = bgLight.clone().lerp(bgDark, t);
+    const tAdjusted = Math.pow(t, 0.2); 
+    scene.background = bgLight.clone().lerp(bgDark, tAdjusted);
   }
 
   // 投影球の色を４段階補間で設定
