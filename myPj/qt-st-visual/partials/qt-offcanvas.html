@@ -1,4 +1,4 @@
-<!-- js/modules/quantStereo/qt-offcanvas.html -->
+<!-- === qt-offcanvas.html === -->
 <div
   class="offcanvas offcanvas-end text-light border-0"
   tabindex="-1"
@@ -18,189 +18,238 @@
   <div class="offcanvas-body">
     <form>
       
-      <div id="speed-control-container" style="display: flex; align-items: center; gap: 8px;">
-        <!-- 数値入力 -->
-        <label for="speed-input">Speed ×</label>
+      <!-- ──────────────── 速度制御UI（Bootstrap版） ──────────────── -->
+<div id="speed-control-container" class="mb-3">
+  <!-- ラベルと数値入力を Input Group で囲む -->
+  <div class="input-group input-group-sm">
+    <span class="input-group-text bg-secondary text-white">Speed ×</span>
+    <input
+      type="number"
+      id="speed-input"
+      class="form-control form-control-sm bg-dark text-white border-secondary"
+      value="1"
+      step="0.1"
+      min="0.1"
+      aria-label="速度倍率入力"
+    />
+  </div>
+
+  <!-- プリセットボタンは Button Group を使って横並びに -->
+  <div class="btn-group btn-group-sm mt-2" role="group" aria-label="速度プリセット">
+    <button type="button" class="btn btn-outline-light" data-speed="0.5">0.5×</button>
+    <button type="button" class="btn btn-outline-light" data-speed="1">1×</button>
+    <button type="button" class="btn btn-outline-light" data-speed="2">2×</button>
+    <button type="button" class="btn btn-outline-light" data-speed="4">4×</button>
+    <button type="button" class="btn btn-outline-light" data-speed="8">8×</button>
+  </div>
+</div>
+<!-- ──────────────── /速度制御UI（Bootstrap版） ──────────────── -->
+
+
+      <hr class="bg-secondary" />
+
+      <!-- ──────────────── カラー設定アコーディオン ──────────────── -->
+      <div class="accordion mb-3" id="colorSettingsAccordion">
+        <div class="accordion-item bg-transparent border-secondary">
+          <h2 class="accordion-header" id="headingColor">
+            <button
+              class="accordion-button bg-transparent text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseColor"
+              aria-expanded="true"
+              aria-controls="collapseColor"
+            >
+              カラー設定
+            </button>
+          </h2>
+          <div
+            id="collapseColor"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingColor"
+            data-bs-parent="#colorSettingsAccordion"
+          >
+            <div class="accordion-body bg-secondary bg-opacity-25">
+              <div class="row g-3">
+                <!-- 背景色 -->
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="color"
+                      class="form-control form-control-color p-0 border-0"
+                      id="input-bg-color"
+                      value="#000011"
+                      title="背景色を選択"
+                    />
+                    <label
+                      for="input-bg-color"
+                      class="col-form-label text-white ms-2"
+                    >
+                      背景色
+                    </label>
+                  </div>
+                </div>
+                <!-- 球の色 -->
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="color"
+                      class="form-control form-control-color p-0 border-0"
+                      id="input-sphere-color"
+                      value="#ffffff"
+                      title="球の色を選択"
+                    />
+                    <label
+                      for="input-sphere-color"
+                      class="col-form-label text-white ms-2"
+                    >
+                      球の色
+                    </label>
+                  </div>
+                </div>
+                <!-- 中間色 -->
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="color"
+                      class="form-control form-control-color p-0 border-0"
+                      id="input-peak1-color"
+                      value="#808080"
+                      title="中間色を選択"
+                    />
+                    <label
+                      for="input-peak1-color"
+                      class="col-form-label text-white ms-2"
+                    >
+                      中間色
+                    </label>
+                  </div>
+                </div>
+                <!-- ピーク最終色 -->
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="color"
+                      class="form-control form-control-color p-0 border-0"
+                      id="input-peak2-color"
+                      value="#000000"
+                      title="ピーク最終色を選択"
+                    />
+                    <label
+                      for="input-peak2-color"
+                      class="col-form-label text-white ms-2"
+                    >
+                      ピーク最終色
+                    </label>
+                  </div>
+                </div>
+              </div> <!-- /.row -->
+            </div> <!-- /.accordion-body -->
+          </div> <!-- /.accordion-collapse -->
+        </div> <!-- /.accordion-item -->
+      </div> <!-- /.accordion -->
+      <!-- ──────────────── /カラー設定アコーディオン ──────────────── -->
+
+      <!-- ──────────────── オブジェクト表示設定アコーディオン ──────────────── -->
+      <div class="accordion mb-3" id="objectDisplayAccordion">
+        <div class="accordion-item bg-transparent border-secondary">
+          <h2 class="accordion-header" id="headingObjectDisplay">
+            <button
+              class="accordion-button bg-transparent text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseObjectDisplay"
+              aria-expanded="false"
+              aria-controls="collapseObjectDisplay"
+            >
+              オブジェクト表示設定
+            </button>
+          </h2>
+          <div
+            id="collapseObjectDisplay"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingObjectDisplay"
+            data-bs-parent="#objectDisplayAccordion"
+          >
+            <div class="accordion-body bg-secondary bg-opacity-25">
+              <!-- グリッド単位球のスイッチ -->
+              <div class="form-check form-switch">
+                <input 
+                  class="form-check-input"
+                  type="checkbox" 
+                  id="toggle-grid-sphere" 
+                >
+                <label class="form-check-label text-white" for="toggle-grid-sphere">
+                  グリッド単位球を表示
+                </label>
+              </div>
+              <!-- 床画像表示のスイッチ -->
+              <div class="form-check form-switch mt-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggle-ground-visibility"
+                  checked
+                >
+                <label class="form-check-label text-white" for="toggle-ground-visibility">
+                  床画像を表示
+                </label>
+              </div>
+              <!-- 床面グリッドのスイッチ -->
+              <div class="form-check form-switch mt-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggle-helper-grid"
+                >
+                <label class="form-check-label text-white" for="toggle-helper-grid">
+                  床面グリッドを表示
+                </label>
+              </div>
+              <!-- 座標軸のスイッチ -->
+              <div class="form-check form-switch mt-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggle-helper-axes"
+                >
+                <label class="form-check-label text-white" for="toggle-helper-axes">
+                  座標軸を表示
+                </label>
+              </div>
+            </div> <!-- /.accordion-body -->
+          </div> <!-- /.accordion-collapse -->
+        </div> <!-- /.accordion-item -->
+      </div> <!-- /.accordion -->
+      <!-- ──────────────── /オブジェクト表示設定アコーディオン ──────────────── -->
+
+      <hr class="bg-secondary" />
+
+      <!-- 垂直往復 (Vertical Oscillation) のスイッチ -->
+      <div class="form-check form-switch mt-2">
         <input
-          type="number"
-          id="speed-input"
-          value="1"
-          step="0.1"
-          min="0.1"
-          style="width: 60px;"
-        />
-      
-        <!-- プリセットボタン -->
-        <button class="speed-preset-btn" data-speed="0.5">0.5×</button>
-        <button class="speed-preset-btn" data-speed="1">1×</button>
-        <button class="speed-preset-btn" data-speed="2">2×</button>
-        <button class="speed-preset-btn" data-speed="4">4×</button>
-        <button class="speed-preset-btn" data-speed="8">8×</button>
+          class="form-check-input"
+          type="checkbox"
+          id="toggle-camera-vertical"
+          checked
+        >
+        <label class="form-check-label text-white" for="toggle-camera-vertical">
+          カメラの自動回転（垂直）
+        </label>
       </div>
 
-    <!-- グリッド単位球のスイッチ -->
-    <div class="form-check form-switch">
-      <input 
-        class="form-check-input"
-        type="checkbox" 
-        id="toggle-grid-sphere" 
-      >
-      <label class="form-check-label" for="toggle-grid-sphere">
-        グリッド単位球を表示
-      </label>
-    </div>
-
-    <!-- 床画像表示のスイッチ-->
-    <div class="form-check form-switch">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="toggle-ground-visibility"
-        checked
-      >
-      <label class="form-check-label" for="toggle-ground-visibility">
-        床画像を表示
-      </label>
-    </div>
-
-    <!-- 垂直往復 (Vertical Oscillation) のスイッチ -->
-    <div class="form-check form-switch mt-2">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        id="toggle-camera-vertical"
-        checked
-      >
-      <label class="form-check-label" for="toggle-camera-vertical">
-        カメラの自動回転（垂直）
-      </label>
-    </div>
-
-    <!-- 水平回転 (OrbitControls.rotate) のスイッチ -->
-    <div class="form-check form-switch mt-2">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        id="toggle-camera-horizontal"
-        checked
-      >
-      <label class="form-check-label" for="toggle-camera-horizontal">
-        カメラの自動回転（水平）
-      </label>
-    </div>
-
-    <hr class="bg-secondary" />
-
-    <!-- カラー設定アコーディオン -->
-    <div class="accordion" id="colorSettingsAccordion">
-      <div class="accordion-item bg-transparent border-secondary">
-        <h2 class="accordion-header" id="headingColor">
-          <button
-            class="accordion-button bg-transparent text-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseColor"
-            aria-expanded="true"
-            aria-controls="collapseColor"
-          >
-            カラー設定
-          </button>
-        </h2>
-        <div
-          id="collapseColor"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingColor"
-          data-bs-parent="#colorSettingsAccordion"
+      <!-- 水平回転 (OrbitControls.rotate) のスイッチ -->
+      <div class="form-check form-switch mt-2">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="toggle-camera-horizontal"
+          checked
         >
-          <div class="accordion-body bg-secondary bg-opacity-25">
-
-            <div class="row g-3">
-
-              <!-- 背景色 -->
-              <div class="col-12 col-md-6">
-                <!-- col を外して d-flex に変更 -->
-                <div class="d-flex align-items-center">
-                  <input
-                    type="color"
-                    class="form-control form-control-color p-0 border-0"
-                    id="input-bg-color"
-                    value="#000011"
-                    title="背景色を選択"
-                  />
-                  <label
-                    for="input-bg-color"
-                    class="col-form-label text-white ms-2"
-                  >
-                    背景色
-                  </label>
-                </div>
-              </div>
-
-              <!-- 球の色 -->
-              <div class="col-12 col-md-6">
-                <div class="d-flex align-items-center">
-                  <input
-                    type="color"
-                    class="form-control form-control-color p-0 border-0"
-                    id="input-sphere-color"
-                    value="#ffffff"
-                    title="球の色を選択"
-                  />
-                  <label
-                    for="input-sphere-color"
-                    class="col-form-label text-white ms-2"
-                  >
-                    球の色
-                  </label>
-                </div>
-              </div>
-
-              <!-- 中間色 -->
-              <div class="col-12 col-md-6">
-                <div class="d-flex align-items-center">
-                  <input
-                    type="color"
-                    class="form-control form-control-color p-0 border-0"
-                    id="input-peak1-color"
-                    value="#808080"
-                    title="中間色を選択"
-                  />
-                  <label
-                    for="input-peak1-color"
-                    class="col-form-label text-white ms-2"
-                  >
-                    中間色
-                  </label>
-                </div>
-              </div>
-
-              <!-- ピーク最終色 -->
-              <div class="col-12 col-md-6">
-                <div class="d-flex align-items-center">
-                  <input
-                    type="color"
-                    class="form-control form-control-color p-0 border-0"
-                    id="input-peak2-color"
-                    value="#000000"
-                    title="ピーク最終色を選択"
-                  />
-                  <label
-                    for="input-peak2-color"
-                    class="col-form-label text-white ms-2"
-                  >
-                    ピーク最終色
-                  </label>
-                </div>
-              </div>
-
-            </div> <!-- /.row -->
-
-          </div> <!-- /.accordion-body -->
-        </div> <!-- /.accordion-collapse -->
-      </div> <!-- /.accordion-item -->
-    </div> <!-- /.accordion -->
-      <!-- ───── /カラー設定アコーディオン ───── -->
+        <label class="form-check-label text-white" for="toggle-camera-horizontal">
+          カメラの自動回転（水平）
+        </label>
+      </div>
 
       <hr />
 

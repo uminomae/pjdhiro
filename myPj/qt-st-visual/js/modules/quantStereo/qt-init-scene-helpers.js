@@ -84,6 +84,7 @@ export function addHelpersAndLights(scene) {
   // (3) Axes Helper (X=赤, Y=緑, Z=青)
   // ───────────────────────────────────────────────
   const axesHelper = new THREE.AxesHelper(AXES_SIZE);
+  axesHelper.name = 'HelperAxes'; 
   scene.add(axesHelper);
 
   // ───────────────────────────────────────────────
@@ -95,6 +96,7 @@ export function addHelpersAndLights(scene) {
     GRID_COLOR_CENTERLINE,
     GRID_COLOR
   );
+  gridHelper.name = 'HelperGrid';
   scene.add(gridHelper);
 }
 
@@ -169,6 +171,7 @@ export function addGroundWithTexture(
   mesh.rotation.x = -Math.PI / 2; // デフォルトの平面は XY 平面なので X 軸回転で XZ 平面に
   mesh.position.y = 0;           // Y=0 に置く（地面とする）
   mesh.receiveShadow = true;     // もしシャドウを受けたい場合
+  mesh.name = 'GroundMesh';  
 
   // ──────────────────────────────────────────────────
   // (4) シーンに追加
