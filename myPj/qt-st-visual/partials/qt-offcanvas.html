@@ -223,6 +223,54 @@
       </div> <!-- /.accordion -->
       <!-- ──────────────── /オブジェクト表示設定アコーディオン ──────────────── -->
 
+      <!-- 例：オブジェクト表示設定アコーディオンの下あたりに「テクスチャ回転速度」UI を追加 -->
+      <div class="accordion mb-3" id="textureSettingsAccordion">
+        <div class="accordion-item bg-transparent border-secondary">
+          <h2 class="accordion-header" id="headingTexture">
+            <button
+              class="accordion-button bg-transparent text-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTexture"
+              aria-expanded="false"
+              aria-controls="collapseTexture"
+            >
+              床テクスチャ回転設定
+            </button>
+          </h2>
+          <div
+            id="collapseTexture"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTexture"
+            data-bs-parent="#textureSettingsAccordion"
+          >
+            <div class="accordion-body bg-secondary bg-opacity-25">
+              <!-- 数値入力: テクスチャ回転速度 -->
+              <div class="input-group input-group-sm mb-2">
+                <span class="input-group-text bg-secondary text-white">回転速度</span>
+                <input
+                  type="number"
+                  id="texture-speed-input"
+                  class="form-control form-control-sm bg-dark text-white border-secondary"
+                  value="0"
+                  step="0.1"
+                  aria-label="テクスチャ回転速度"
+                />
+                <span class="input-group-text bg-secondary text-white">rad/sec</span>
+              </div>
+              <!-- プリセットボタン -->
+              <div class="btn-group btn-group-sm" role="group" aria-label="テクスチャ回転プリセット">
+                <button type="button" class="btn btn-outline-light texture-preset-btn" data-speed="0">0</button>
+                <button type="button" class="btn btn-outline-light texture-preset-btn" data-speed="0.5">0.5</button>
+                <button type="button" class="btn btn-outline-light texture-preset-btn" data-speed="1">1</button>
+                <button type="button" class="btn btn-outline-light texture-preset-btn" data-speed="2">2</button>
+              </div>
+            </div> <!-- /.accordion-body -->
+          </div> <!-- /.accordion-collapse -->
+        </div> <!-- /.accordion-item -->
+      </div> <!-- /.accordion -->
+
+
       <hr class="bg-secondary" />
 
       <!-- 垂直往復 (Vertical Oscillation) のスイッチ -->

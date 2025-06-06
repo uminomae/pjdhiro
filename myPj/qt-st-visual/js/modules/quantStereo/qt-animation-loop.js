@@ -16,10 +16,12 @@ import {
   SPHERE_BASE_COLOR,
   SPHERE_MID_COLOR,
   SPHERE_END_COLOR,
-  CAMERA_TARGET
+  CAMERA_TARGET,
+  TEXTURE_DEFAULT_SPEED
 } from './qt-config.js';
 import { create, normalize } from './qt-math-quat-utils.js';
 import { overlayEarthGridAndProjection } from './qt-render-pointcloud.js';
+import { getGroundTexture } from './qt-init-scene-helpers.js';
 
 let clock = null;
 let rafId = null;
@@ -28,8 +30,14 @@ let accumulatedTime = 0;
 
 // 「垂直往復」アニメーション on/off フラグ
 let enableVertical = CAMERA_OSCILLATION_ENABLED;
-
-
+// 既存の「オブジェクト回転速度」に加えて、テクスチャ回転用の速度変数を作成
+let textureSpeedMultiplier = TEXTURE_DEFAULT_SPEED || 0.0;
+export function setGroundTextureSpeed(value) {
+  const v = parseFloat(value);
+  if (!isNaN(v)) {
+    textureSpeedMultiplier = v;
+  }
+}
 
 // ── ここで速度倍率を定義し、外部から変更できるようにエクスポートする ──
 let speedMultiplier = 1;
@@ -88,7 +96,14 @@ export function animationLoop(scene, camera, controls) {
   const elapsed = clock.getElapsedTime() + accumulatedTime;
   // ── ここで speedMultiplier を掛け合わせる ──
   const theta = (elapsed * ROTATION_SPEED * speedMultiplier) % FULL_CYCLE;
-  // const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE;
+
+  const groundTexture = getGroundTexture();
+  if (groundTexture) {
+    // 回転させたい角度 = 経過時間 × textureSpeedMultiplier
+    // ※必要に応じて speedMultiplier を掛けたい場合はここで掛け算
+    groundTexture.rotation = elapsed * textureSpeedMultiplier;
+    // （もし「瞬間的に回転角度をリセットしたい」とかあれば追加ロジックを書く）
+  }
 
   // 1) カメラ上下往復（oscillation）
   if (enableVertical) {

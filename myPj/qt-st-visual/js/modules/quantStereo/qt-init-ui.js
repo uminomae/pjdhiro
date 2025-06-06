@@ -2,8 +2,7 @@
 // js/modules/quantStereo/qt-init-ui.js
 
 import { UI_DOM_IDS } from './qt-config.js';
-import { setSpeedMultiplier } from './qt-animation-loop.js';
-
+import { setSpeedMultiplier, setGroundTextureSpeed } from './qt-animation-loop.js';
 /**
  * initUI(context)
  * ・スライダー (i-scale, k-scale) と
@@ -142,6 +141,33 @@ export function initUI({ scene, camera, renderer, controls }) {
     });
   });
   console.log('[qt-init-ui] 速度制御UI を初期化しました');
+
+
+  // ──────────────── 床テクスチャ回転速度コントロール ────────────────
+  const textureSpeedInput = document.getElementById('texture-speed-input');
+  if (textureSpeedInput instanceof HTMLInputElement) {
+    textureSpeedInput.addEventListener('change', (e) => {
+      const v = parseFloat(e.target.value);
+      if (!isNaN(v)) {
+        setGroundTextureSpeed(v);
+      } else {
+        e.target.value = '0';
+        setGroundTextureSpeed(0);
+      }
+    });
+  }
+
+  const texturePresetBtns = document.querySelectorAll('.texture-preset-btn');
+  texturePresetBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const v = parseFloat(btn.getAttribute('data-speed'));
+      if (!isNaN(v) && textureSpeedInput instanceof HTMLInputElement) {
+        textureSpeedInput.value = v;
+        setGroundTextureSpeed(v);
+      }
+    });
+  });
+  console.log('[qt-init-ui] 床テクスチャ回転速度UI 初期化');
 
   console.log('[qt-init-ui] initUI() 完了');
 }
