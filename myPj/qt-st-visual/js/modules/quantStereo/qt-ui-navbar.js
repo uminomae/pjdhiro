@@ -114,7 +114,6 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
 
     // 〈B〉アニメーション停止＆シーンクリア
     stopAnimation();
-    hasEverStarted = false;
 
     while (scene.children.length > 0) {
       scene.remove(scene.children[0]);
@@ -141,8 +140,12 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     initializeScene({ scene, camera, controls });
 
     // 〈G〉アニメーション再開と Run/Pause ボタン表示リセット
-    // startAnimation(scene, camera, controls);
-    btnRun.classList.remove('d-none');
-    btnPause.classList.add('d-none');
+    startAnimation(scene, camera, controls);
+    hasEverStarted = true;   // 自動再生状態に戻す
+
+    // ──── ここでボタン表示を「Pause のみ見える」ようにする ────
+    btnRun.classList.add('d-none');    // ▶︎（再生）ボタンを隠す
+    btnPause.classList.remove('d-none'); // ■（一時停止）ボタンを表示
+    // ───────────────────────────────────────
   });
 }
