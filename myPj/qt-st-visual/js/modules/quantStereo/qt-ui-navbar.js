@@ -13,6 +13,11 @@ import {
 
 let hasEverStarted = false;
 
+// 外部からフラグをセットできるように関数をエクスポート
+export function setHasEverStarted(val) {
+  hasEverStarted = val;
+}
+
 /**
  * setupNavbarControls(context)
  *
