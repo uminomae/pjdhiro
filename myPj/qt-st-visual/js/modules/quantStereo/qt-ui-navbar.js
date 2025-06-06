@@ -40,47 +40,13 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
   }
 
   // Offcanvas の各入力要素を取得
-  const inputBgColor     = document.getElementById('input-bg-color');
-  const inputSphereColor = document.getElementById('input-sphere-color');
-  const inputPeak1Color  = document.getElementById('input-peak1-color');
-  const inputPeak2Color  = document.getElementById('input-peak2-color');
-  const btnConfigComplete = document.getElementById('config-complete-btn');
-
-  if (!inputBgColor || !inputSphereColor || !inputPeak1Color || !inputPeak2Color || !btnConfigComplete) {
-    console.warn('[qt-ui-navbar] Offcanvas のカラー入力要素が見つかりません。ID を確認してください。');
-  } else {
-    // 「設定完了」ボタン押下時に各カラーをグローバルに保存
-    btnConfigComplete.addEventListener('click', () => {
-      // 1) 背景色ダーク／ライトを分割して保持
-      //    ここでは Offcanvas に「背景色」一つだけの入力なので、
-      //    暗→明 の補間時には「暗色をそのまま暗で使い、明色は白固定」としています。
-      //    より正確に「暗色／明色」両方設定したい場合は Offcanvas 側で2つ用意してください。
-      const bgHex = inputBgColor.value || '#000011';
-      window._bgColorDark  = bgHex;
-      window._bgColorLight = '#ffffff'; // もし「明」も Offcanvas で選びたい場合は別 input を用意し、ここで取得
-
-      // 2) 球ベース色
-      window._sphereBaseColor = inputSphereColor.value || '#ffffff';
-
-      // 3) ピーク色①・ピーク色②
-      window._peakColor1 = inputPeak1Color.value || '#808080';
-      window._peakColor2 = inputPeak2Color.value || '#000000';
-
-      console.log(
-        '[qt-ui-navbar] カラー設定更新: ',
-        '_bgColorDark=', window._bgColorDark,
-        ' _bgColorLight=', window._bgColorLight,
-        ' _sphereBaseColor=', window._sphereBaseColor,
-        ' _peakColor1=', window._peakColor1,
-        ' _peakColor2=', window._peakColor2
-      );
-    });
-  }
+  // const inputBgColor     = document.getElementById('input-bg-color');
+  // const inputSphereColor = document.getElementById('input-sphere-color');
+  // const inputPeak1Color  = document.getElementById('input-peak1-color');
+  // const inputPeak2Color  = document.getElementById('input-peak2-color');
 
   btnRun.classList.add('d-none');
   btnPause.classList.remove('d-none');
-  // btnRun.classList.remove('d-none');
-  // btnPause.classList.add('d-none');
 
   // — Run ボタン押下時 —
   btnRun.addEventListener('click', () => {
