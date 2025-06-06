@@ -19,31 +19,31 @@
     <form>
       
       <!-- ──────────────── 速度制御UI（Bootstrap版） ──────────────── -->
-<div id="speed-control-container" class="mb-3">
-  <!-- ラベルと数値入力を Input Group で囲む -->
-  <div class="input-group input-group-sm">
-    <span class="input-group-text bg-secondary text-white">Speed ×</span>
-    <input
-      type="number"
-      id="speed-input"
-      class="form-control form-control-sm bg-dark text-white border-secondary"
-      value="1"
-      step="0.1"
-      min="0.1"
-      aria-label="速度倍率入力"
-    />
-  </div>
+      <div id="speed-control-container" class="mb-3">
+        <!-- ラベルと数値入力を Input Group で囲む -->
+        <div class="input-group input-group-sm">
+          <span class="input-group-text bg-secondary text-white">Speed ×</span>
+          <input
+            type="number"
+            id="speed-input"
+            class="form-control form-control-sm bg-dark text-white border-secondary"
+            value="1"
+            step="0.1"
+            min="0.1"
+            aria-label="速度倍率入力"
+          />
+        </div>
 
-  <!-- プリセットボタンは Button Group を使って横並びに -->
-  <div class="btn-group btn-group-sm mt-2" role="group" aria-label="速度プリセット">
-    <button type="button" class="btn btn-outline-light" data-speed="0.5">0.5×</button>
-    <button type="button" class="btn btn-outline-light" data-speed="1">1×</button>
-    <button type="button" class="btn btn-outline-light" data-speed="2">2×</button>
-    <button type="button" class="btn btn-outline-light" data-speed="4">4×</button>
-    <button type="button" class="btn btn-outline-light" data-speed="8">8×</button>
-  </div>
-</div>
-<!-- ──────────────── /速度制御UI（Bootstrap版） ──────────────── -->
+        <!-- プリセットボタンは Button Group を使って横並びに -->
+        <div class="btn-group btn-group-sm mt-2" role="group" aria-label="速度プリセット">
+          <button type="button" class="btn btn-outline-light speed-preset-btn" data-speed="0.5">0.5×</button>
+          <button type="button" class="btn btn-outline-light speed-preset-btn" data-speed="1">1×</button>
+          <button type="button" class="btn btn-outline-light speed-preset-btn" data-speed="2">2×</button>
+          <button type="button" class="btn btn-outline-light speed-preset-btn" data-speed="4">4×</button>
+          <button type="button" class="btn btn-outline-light speed-preset-btn" data-speed="8">8×</button>
+        </div>
+      </div>
+      <!-- ──────────────── /速度制御UI（Bootstrap版） ──────────────── -->
 
 
       <hr class="bg-secondary" />
