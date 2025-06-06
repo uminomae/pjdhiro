@@ -147,7 +147,6 @@ export function createEarthGridRotatedPointCloud(scene, qRot) {
 /**
  * createAndAddPointCloud(scene, qRot, resTheta, resPhi)
  *  既存の「ステレオ投影球」をそのまま描画する関数です。
- *  厳密には “地球グリッド” ではなく投影球なので、ここでは変更しません。
  */
 export function createAndAddPointCloud(
   scene,
