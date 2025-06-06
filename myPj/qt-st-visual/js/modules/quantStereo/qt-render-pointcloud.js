@@ -103,7 +103,7 @@ export function createEarthGridRotatedPointCloud(scene, qRot) {
   }
 
   const n = points.length;
-  console.log(`[qt-render-pointcloud] EarthGrid: サンプル点数 = ${n}`);
+  // console.log(`[qt-render-pointcloud] EarthGrid: サンプル点数 = ${n}`);
 
   // ────────────────────────────────────────────────────────
   // (3) rotatePoint で 3D 回転を適用し、positions を作成
@@ -139,7 +139,7 @@ export function createEarthGridRotatedPointCloud(scene, qRot) {
   pointsMesh.name = 'earthGridPoints';
   scene.add(pointsMesh);
 
-  console.log('[qt-render-pointcloud] EarthGrid Rotated PointCloud を追加');
+  // console.log('[qt-render-pointcloud] EarthGrid Rotated PointCloud を追加');
   return pointsMesh;
 }
 
@@ -184,11 +184,11 @@ export function createAndAddPointCloud(
     colors[3 * i + 2] = gx;
 
     if (sampleIdx.includes(i)) {
-      console.log(
-        `    サンプル i=${i}: rp=`, rp,
-        `→ sp=`, sp,
-        `→ gray=${gx.toFixed(3)}`
-      );
+      // console.log(
+      //   `    サンプル i=${i}: rp=`, rp,
+      //   `→ sp=`, sp,
+      //   `→ gray=${gx.toFixed(3)}`
+      // );
     }
   }
 

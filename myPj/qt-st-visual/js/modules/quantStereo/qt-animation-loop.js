@@ -30,6 +30,18 @@ let accumulatedTime = 0;
 let enableVertical = CAMERA_OSCILLATION_ENABLED;
 
 
+
+// ── ここで速度倍率を定義し、外部から変更できるようにエクスポートする ──
+let speedMultiplier = 1;
+export function setSpeedMultiplier(value) {
+  // 引数が数値かチェックし、0以下は無視する（必要に応じてアサートを追加）
+  const v = parseFloat(value);
+  if (!isNaN(v) && v > 0) {
+    speedMultiplier = v;
+  }
+}
+
+
 /**
  * アニメーション開始
  */
@@ -74,7 +86,9 @@ export function animationLoop(scene, camera, controls) {
 
   // 累積経過時間（一時停止分を考慮）
   const elapsed = clock.getElapsedTime() + accumulatedTime;
-  const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE;
+  // ── ここで speedMultiplier を掛け合わせる ──
+  const theta = (elapsed * ROTATION_SPEED * speedMultiplier) % FULL_CYCLE;
+  // const theta   = (elapsed * ROTATION_SPEED) % FULL_CYCLE;
 
   // 1) カメラ上下往復（oscillation）
   if (enableVertical) {
