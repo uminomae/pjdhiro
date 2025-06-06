@@ -1,10 +1,10 @@
 // js/modules/quantStereo/qt-config.js
 
 // — 点群サンプリング解像度 — 
-// export const RES_THETA = 160;
-// export const RES_PHI   = 160;
-export const RES_THETA = 320;
-export const RES_PHI   = 320;
+export const RES_THETA = 160;
+export const RES_PHI   = 160;
+// export const RES_THETA = 320;
+// export const RES_PHI   = 320;
 
 // — UI の各要素 ID — 
 export const UI_DOM_IDS = {
@@ -23,6 +23,10 @@ export const FULL_CYCLE     = 4 * Math.PI;  // 720° = 4π
 export const HALF_CYCLE     = 2 * Math.PI;  // 360° = 2π
 // export const ROTATION_SPEED = Math.PI * 2;  // 90°/秒 = π/2 rad/sec
 export const ROTATION_SPEED = Math.PI / 2;  // 90°/秒 = π/2 rad/sec
+
+// 床テクスチャをデフォルトでどのくらいの速さで回すか（1 秒で何ラジアン回すかなど）。
+// たとえば 0.2 にすると「1 秒間で約0.2ラジアンずつ回転」する（実際の角度 = elapsed * 0.2）。
+export const TEXTURE_DEFAULT_SPEED = 1;
 
 // ———————————————
 // カメラ回転制御フラグ

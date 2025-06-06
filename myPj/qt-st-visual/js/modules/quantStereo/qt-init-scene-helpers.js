@@ -11,7 +11,7 @@ import {
 } from './qt-config.js';
 
 let groundMesh;
-
+let groundTexture;
 /**
  * initializeScene(scene, camera, controls)
  * ---------------------------------------
@@ -138,13 +138,19 @@ export function addGroundWithTexture(
       texture.wrapT = THREE.RepeatWrapping;
       texture.repeat.set(repeatX, repeatZ);
       texture.anisotropy = 8; // 必要に応じてアンチエイリアス向上
+
+      // ★重要: texture の回転中心をメッシュの中心にセット
+      texture.center.set(0.5, 0.5);
+      // 最初は回転 0
+      texture.rotation = 0;
+
     },
     undefined,
     (err) => {
       console.error('[addGroundWithTexture] テクスチャの読み込みに失敗:', err);
     }
   );
-
+  groundTexture = texture;
   // ──────────────────────────────────────────────────
   // (2) 床面用のジオメトリとマテリアルを作成
   // ──────────────────────────────────────────────────
@@ -152,17 +158,9 @@ export function addGroundWithTexture(
   const mat = new THREE.MeshBasicMaterial({
     map: texture,
     side: THREE.DoubleSide, // 必要なら裏表両方に
-  //   transparent: false
-  // });
-
-  // MeshBasicMaterial に透明設定を入れ、alphaTest で「ある値以下（黒）のピクセルを描かない」ようにする
     transparent: true,      // 透明を許可
-    alphaTest: 0.01,         // 「テクスチャの alpha 値が 0.5 未満なら描画しない＝透過扱いにする」
+    alphaTest: 0.01,         // 「テクスチャの alpha 値が 0.5 未満なら＝透過扱い
     opacity: GROUND_TEXTURE_OPACITY 
-    // ※黒背景PNGにアルファが無い場合、「黒色を透過させたい」が目的なら、
-    // 例えば r,g,b のいずれかが 0 の場合は透明扱い、という仕組みを別途シェーダで
-    // 実装する必要があります。ただし多くの場合、PNG自体が黒バックではなく
-    // アルファ付きPNGになっていればこれだけで黒い背景が透過されます。
   });
   // ──────────────────────────────────────────────────
   // (3) メッシュを作成し、XZ 平面に配置
@@ -178,6 +176,23 @@ export function addGroundWithTexture(
   // ──────────────────────────────────────────────────
   scene.add(mesh);
   return mesh;
+}
+
+
+/**
+ * getGroundTexture()
+ * ・他から groundTexture.rotation を参照・更新したりできるよう
+ */
+export function getGroundTexture() {
+  return groundTexture;
+}
+
+/**
+ * getGroundMesh()
+ * ・もしメッシュ自体を操作したければ呼び出せる
+ */
+export function getGroundMesh() {
+  return groundMesh;
 }
 
 
