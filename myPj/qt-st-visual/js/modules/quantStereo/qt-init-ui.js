@@ -167,14 +167,29 @@ export function initUI({ scene, camera, renderer, controls }) {
   if (inputBgColor instanceof HTMLInputElement) {
     inputBgColor.addEventListener('input', (e) => {
       const col = e.target.value;        // 例: "#000011"
-      scene.background.set(col);
+      // ここで、animationLoop が参照するグローバル変数を更新
+      window._bgColorDark  = col;
+      window._bgColorLight = col;
+      // さらに renderer のクリア色を同じにしておくと安心
       renderer.setClearColor(col);
     });
     // オフキャンバスを開いたとき、現在の background 色を同期しておく
-    if (scene.background && scene.background.isColor) {
-      inputBgColor.value = '#' + scene.background.getHexString();
-      renderer.setClearColor(scene.background);
+    // 初期状態の同期：現在の scene.background ではなく、window._bgColorDark / _bgColorLight を使う
+    if (typeof window._bgColorDark === 'string') {
+      inputBgColor.value = window._bgColorDark;
+    } else {
+      // 初回起動時は、qt-init-scene-helpers で scene.background = "#000011" にしているので
+      const defaultBg = '#000011';
+      inputBgColor.value = defaultBg;
+      window._bgColorDark  = defaultBg;
+      window._bgColorLight = defaultBg;
+      // レンダラークリア色にも反映
+      renderer.setClearColor(defaultBg);
     }
+    // if (scene.background && scene.background.isColor) {
+    //   inputBgColor.value = '#' + scene.background.getHexString();
+    //   renderer.setClearColor(scene.background);
+    // }
   }
 
   // ===== 投影球（quaternionSpherePoints）の色を即時反映 =====
