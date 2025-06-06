@@ -39,7 +39,7 @@ export function initializeScene({ scene, camera, controls }) {
   groundMesh = addGroundWithTexture(
     scene,
     YIN_YANG_SYMBOL,
-    { width: 10, depth: 10, repeatX: 1, repeatZ: 1 }
+    { width: 10, depth: 10 }
   );
   setupGroundToggle();
 }
@@ -110,8 +110,6 @@ export function addHelpersAndLights(scene) {
  * @param {Object} [options]    - オプション
  *   - width {number}         : 平面の幅（X方向）。デフォルト 10
  *   - depth {number}         : 平面の奥行き（Z方向）。デフォルト 10
- *   - repeatX {number}       : テクスチャを X 方向に何回タイルさせるか。デフォルト 1
- *   - repeatZ {number}       : テクスチャを Z 方向に何回タイルさせるか。デフォルト 1
  * @returns {THREE.Mesh}        - 作成した床面メッシュ
  */
 export function addGroundWithTexture(
@@ -121,9 +119,7 @@ export function addGroundWithTexture(
 ) {
   const {
     width   = 10,
-    depth   = 10,
-    repeatX = 1,
-    repeatZ = 1
+    depth   = 10
   } = options;
 
   // ──────────────────────────────────────────────────
@@ -134,9 +130,9 @@ export function addGroundWithTexture(
     textureUrl,
     () => {
       // 読み込み成功時にテクスチャ特性を設定
-      texture.wrapS = THREE.RepeatWrapping;
-      texture.wrapT = THREE.RepeatWrapping;
-      texture.repeat.set(repeatX, repeatZ);
+      texture.wrapS = THREE.ClampToEdgeWrapping;;
+      texture.wrapT = THREE.ClampToEdgeWrapping;;
+      texture.repeat.set(1, 1);
       texture.anisotropy = 8; // 必要に応じてアンチエイリアス向上
 
       // ★重要: texture の回転中心をメッシュの中心にセット

@@ -168,10 +168,12 @@ export function initUI({ scene, camera, renderer, controls }) {
     inputBgColor.addEventListener('input', (e) => {
       const col = e.target.value;        // 例: "#000011"
       scene.background.set(col);
+      renderer.setClearColor(col);
     });
     // オフキャンバスを開いたとき、現在の background 色を同期しておく
     if (scene.background && scene.background.isColor) {
       inputBgColor.value = '#' + scene.background.getHexString();
+      renderer.setClearColor(scene.background);
     }
   }
 
