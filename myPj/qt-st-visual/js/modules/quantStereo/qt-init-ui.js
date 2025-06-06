@@ -1,8 +1,16 @@
 // === qt-init-ui.js ===
 // js/modules/quantStereo/qt-init-ui.js
 
+import * as THREE from 'three';
+
 import { UI_DOM_IDS } from './qt-config.js';
 import { setSpeedMultiplier, setGroundTextureSpeed } from './qt-animation-loop.js';
+import {
+  SPHERE_BASE_COLOR,
+  SPHERE_MID_COLOR,
+  SPHERE_END_COLOR
+} from './qt-config.js';
+
 /**
  * initUI(context)
  * ・スライダー (i-scale, k-scale) と
@@ -151,6 +159,84 @@ export function initUI({ scene, camera, renderer, controls }) {
     });
   });
   console.log('[qt-init-ui] 床テクスチャ回転速度UI 初期化');
+
+  // ──────────────── カラー設定を即時反映させるリスナー群 ────────────────
+  
+  // ===== 背景色を 即時反映 =====
+  const inputBgColor = document.getElementById('input-bg-color');
+  if (inputBgColor instanceof HTMLInputElement) {
+    inputBgColor.addEventListener('input', (e) => {
+      const col = e.target.value;        // 例: "#000011"
+      scene.background.set(col);
+    });
+    // オフキャンバスを開いたとき、現在の background 色を同期しておく
+    if (scene.background && scene.background.isColor) {
+      inputBgColor.value = '#' + scene.background.getHexString();
+    }
+  }
+
+  // ===== 投影球（quaternionSpherePoints）の色を即時反映 =====
+
+  // (1) ベース色 (_sphereBaseColor)
+  const inputSphereBase = document.getElementById('input-sphere-color');
+  if (inputSphereBase instanceof HTMLInputElement) {
+    inputSphereBase.addEventListener('input', (e) => {
+      const col = e.target.value;           // 例: "#ffffff"
+      // window._sphereBaseColor にセットしておく
+      window._sphereBaseColor = col;
+    });
+    // 初期値を同期：もし window._sphereBaseColor があればそれを、なければ qt-config.js の SPHERE_BASE_COLOR
+    if (typeof window._sphereBaseColor === 'string') {
+      inputSphereBase.value = window._sphereBaseColor;
+    } else {
+      // qt-config.js に定義されている SPHERE_BASE_COLOR は文字列か THREE.Color の可能性があるので
+      const base = (window._sphereBaseColor instanceof THREE.Color)
+        ? '#' + window._sphereBaseColor.getHexString()
+        : SPHERE_BASE_COLOR;
+      inputSphereBase.value = base;
+      // ついでにグローバルにセットしておくと初期フレームから反映される
+      window._sphereBaseColor = base;
+    }
+  }
+
+  // (2) 中間色 (_peakColor1)
+  const inputPeak1 = document.getElementById('input-peak1-color');
+  if (inputPeak1 instanceof HTMLInputElement) {
+    inputPeak1.addEventListener('input', (e) => {
+      const col = e.target.value;
+      window._peakColor1 = col;
+    });
+    // 初期値を同期
+    if (typeof window._peakColor1 === 'string') {
+      inputPeak1.value = window._peakColor1;
+    } else {
+      const mid = (SPHERE_MID_COLOR instanceof THREE.Color)
+        ? '#' + SPHERE_MID_COLOR.getHexString()
+        : SPHERE_MID_COLOR;
+      inputPeak1.value = mid;
+      window._peakColor1 = mid;
+    }
+  }
+
+  // (3) 終端色 (_peakColor2)
+  const inputPeak2 = document.getElementById('input-peak2-color');
+  if (inputPeak2 instanceof HTMLInputElement) {
+    inputPeak2.addEventListener('input', (e) => {
+      const col = e.target.value;
+      window._peakColor2 = col;
+    });
+    // 初期値を同期
+    if (typeof window._peakColor2 === 'string') {
+      inputPeak2.value = window._peakColor2;
+    } else {
+      const end = (SPHERE_END_COLOR instanceof THREE.Color)
+        ? '#' + SPHERE_END_COLOR.getHexString()
+        : SPHERE_END_COLOR;
+      inputPeak2.value = end;
+      window._peakColor2 = end;
+    }
+  }
+  console.log('[qt-init-ui] カラー設定の即時更新リスナーを登録');
 
   console.log('[qt-init-ui] initUI() 完了');
 }
