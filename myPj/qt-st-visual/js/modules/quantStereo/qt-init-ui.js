@@ -98,23 +98,6 @@ export function initUI({ scene, camera, renderer, controls }) {
     console.warn('[qt-init-ui] toggle-helper-axes チェックボックスが見つかりません');
   }
 
-  // ──────────────── 垂直往復 (Vertical Oscillation) のスイッチ ────────────────
-  const checkboxCamV = document.getElementById('toggle-camera-vertical');
-  if (checkboxCamV instanceof HTMLInputElement) {
-    checkboxCamV.addEventListener('change', (e) => {
-      // 既存のカメラ垂直自動回転処理に合わせたコードをここに
-      // 例: controls.autoRotate = e.target.checked; etc.
-    });
-  }
-
-  // ──────────────── 水平回転 (OrbitControls.rotate) のスイッチ ────────────────
-  const checkboxCamH = document.getElementById('toggle-camera-horizontal');
-  if (checkboxCamH instanceof HTMLInputElement) {
-    checkboxCamH.addEventListener('change', (e) => {
-      // 既存のカメラ水平自動回転処理に合わせたコードをここに
-      // 例: controls.autoRotate = e.target.checked; etc.
-    });
-  }
 
   // ──────────────── 速度制御UI の初期化 ────────────────
   const speedInput = document.getElementById('speed-input');
