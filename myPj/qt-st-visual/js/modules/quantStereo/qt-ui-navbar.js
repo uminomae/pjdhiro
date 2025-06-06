@@ -6,7 +6,9 @@ import { initializeScene } from './qt-init-scene-helpers.js';
 import { initializeControls } from './qt-controls.js';
 import {
   CAMERA_INITIAL_POSITION,
-  CAMERA_TARGET
+  CAMERA_TARGET,
+  BG_COLOR_DARK, BG_COLOR_LIGHT,
+  SPHERE_BASE_COLOR, SPHERE_MID_COLOR, SPHERE_END_COLOR 
 } from './qt-config.js';
 
 let hasEverStarted = false;
@@ -38,12 +40,6 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     console.warn('[qt-ui-navbar] Run/Pause/Reset ボタンが見つかりません。');
     return;
   }
-
-  // Offcanvas の各入力要素を取得
-  // const inputBgColor     = document.getElementById('input-bg-color');
-  // const inputSphereColor = document.getElementById('input-sphere-color');
-  // const inputPeak1Color  = document.getElementById('input-peak1-color');
-  // const inputPeak2Color  = document.getElementById('input-peak2-color');
 
   btnRun.classList.add('d-none');
   btnPause.classList.remove('d-none');
@@ -88,10 +84,28 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     if (cbVert   instanceof HTMLInputElement) cbVert.checked   = true;       // 垂直回転 ON
     if (cbHoriz  instanceof HTMLInputElement) cbHoriz.checked  = true;       // 水平回転 ON
 
-    if (inBg   instanceof HTMLInputElement) { inBg.value   = '#000011'; window._bgColorDark  = '#000011'; window._bgColorLight = '#ffffff'; }
-    if (inSp   instanceof HTMLInputElement) { inSp.value   = '#ffffff'; window._sphereBaseColor = '#ffffff'; }
-    if (inPk1  instanceof HTMLInputElement) { inPk1.value  = '#808080'; window._peakColor1    = '#808080'; }
-    if (inPk2  instanceof HTMLInputElement) { inPk2.value  = '#000000'; window._peakColor2    = '#000000'; }
+    // 背景色の初期値（config から）
+    if (inBg instanceof HTMLInputElement) {
+      inBg.value                  = BG_COLOR_DARK;
+      window._bgColorDark  = BG_COLOR_DARK;
+      window._bgColorLight = BG_COLOR_LIGHT;
+    }
+    // 投影球（ステレオ投影球）のベース色
+    if (inSp instanceof HTMLInputElement) {
+      inSp.value               = SPHERE_BASE_COLOR;
+      window._sphereBaseColor  = SPHERE_BASE_COLOR;
+    }
+    // 投影球の中間色（ピーク1）
+    if (inPk1 instanceof HTMLInputElement) {
+      inPk1.value             = SPHERE_MID_COLOR;
+      window._peakColor1      = SPHERE_MID_COLOR;
+    }
+    // 投影球の終端色（ピーク2）
+    if (inPk2 instanceof HTMLInputElement) {
+      inPk2.value             = SPHERE_END_COLOR;
+      window._peakColor2      = SPHERE_END_COLOR;
+    }
+
 
     // 〈B〉アニメーション停止＆シーンクリア
     stopAnimation();
@@ -101,7 +115,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
       scene.remove(scene.children[0]);
     }
     // 背景色をデフォルトに戻す
-    scene.background = new THREE.Color('#000011');
+    scene.background = new THREE.Color(BG_COLOR_DARK);
 
     // 〈C〉ライト + ヘルパーを再追加
     // addHelpersAndLights(scene);

@@ -8,7 +8,8 @@ import { setSpeedMultiplier, setGroundTextureSpeed } from './qt-animation-loop.j
 import {
   SPHERE_BASE_COLOR,
   SPHERE_MID_COLOR,
-  SPHERE_END_COLOR
+  SPHERE_END_COLOR,
+  BG_COLOR_DARK, BG_COLOR_LIGHT 
 } from './qt-config.js';
 
 /**
@@ -178,18 +179,14 @@ export function initUI({ scene, camera, renderer, controls }) {
     if (typeof window._bgColorDark === 'string') {
       inputBgColor.value = window._bgColorDark;
     } else {
-      // 初回起動時は、qt-init-scene-helpers で scene.background = "#000011" にしているので
-      const defaultBg = '#000011';
-      inputBgColor.value = defaultBg;
-      window._bgColorDark  = defaultBg;
-      window._bgColorLight = defaultBg;
-      // レンダラークリア色にも反映
-      renderer.setClearColor(defaultBg);
+      const defaultDark  = BG_COLOR_DARK;
+      const defaultLight = BG_COLOR_LIGHT;  // たとえばリセット後と同じ“明”のデフォルト
+      inputBgColor.value = defaultDark;
+      window._bgColorDark  = defaultDark;
+      window._bgColorLight = defaultLight;
+      // レンダラーのクリア色にも反映しておく
+      renderer.setClearColor(defaultDark);
     }
-    // if (scene.background && scene.background.isColor) {
-    //   inputBgColor.value = '#' + scene.background.getHexString();
-    //   renderer.setClearColor(scene.background);
-    // }
   }
 
   // ===== 投影球（quaternionSpherePoints）の色を即時反映 =====
