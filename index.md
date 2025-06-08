@@ -31,7 +31,7 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-## Affective Project Design
+## Project Design: Emotion-Driven Agile Project Design
 
 このサイトでは、[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有しています。  
 特に、対人スキルや[感情処理]({{ '/emotional-processing/' | relative_url }})の視点を取り入れたアプローチを紹介します。
