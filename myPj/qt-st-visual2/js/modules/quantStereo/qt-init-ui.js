@@ -14,8 +14,6 @@ import {
 
 /**
  * initUI(context)
- * ・スライダー (i-scale, k-scale) と
- * ・Next Q ボタン、Top View ボタン
  * ・変数表示 (α,β,γ,δ) などを初期化
  * ※今回は「オブジェクト表示設定アコーディオン」に対応するチェックボックスも登録
  */
@@ -35,10 +33,10 @@ export function initUI({ scene, camera, renderer, controls }) {
   }
 
   // ──────────────── 変数表示 (α,β,γ,δ) 初期化 ────────────────
-  ['VAL_ALPHA', 'VAL_BETA', 'VAL_GAMMA', 'VAL_DELTA'].forEach((key) => {
-    const el = document.getElementById(UI_DOM_IDS[key]);
-    if (el) el.textContent = '0.000';
-  });
+  // ['VAL_ALPHA', 'VAL_BETA', 'VAL_GAMMA', 'VAL_DELTA'].forEach((key) => {
+  //   const el = document.getElementById(UI_DOM_IDS[key]);
+  //   if (el) el.textContent = '0.000';
+  // });
 
   // ──────────────── グリッド単位球の表示切り替え ────────────────
   const checkboxGridSphere = document.getElementById('toggle-grid-sphere');

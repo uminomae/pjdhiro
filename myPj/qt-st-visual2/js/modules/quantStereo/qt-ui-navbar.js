@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation-loop.js';
 // import { initializeScene } from './qt-init-scene-helpers.js';
 import { initializeControls } from './qt-controls.js';
+import { resetModule } from './qt-main.js';
 import {
   CAMERA_INITIAL_POSITION,
   CAMERA_TARGET,
@@ -121,17 +122,19 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     // 背景色をデフォルトに戻す
     scene.background = new THREE.Color(BG_COLOR_DARK);
 
+    resetModule({ scene, camera, renderer, controls });
+    
     // 〈C〉ライト + ヘルパーを再追加
     // addHelpersAndLights(scene);
 
     // 〈D〉カメラ位置・向きを起動時のデフォルトに戻し
     // ※CAMERA_INITIAL_POSITION／CAMERA_TARGET は qt-config.js で定義
-    camera.position.set(
-      ...CAMERA_INITIAL_POSITION
-    );
-    camera.lookAt(...CAMERA_TARGET);
-    camera.up.set(0, 1, 0);
-    controls.update();
+    // camera.position.set(
+    //   ...CAMERA_INITIAL_POSITION
+    // );
+    // camera.lookAt(...CAMERA_TARGET);
+    // camera.up.set(0, 1, 0);
+    // controls.update();
 
     // 〈E〉OrbitControls の設定を“デフォルト”で再初期化
     initializeControls(controls);
