@@ -1,16 +1,16 @@
 // js/core/SceneModule.js
-import { DOMEventManager } from './DOMEventManager.js';
+import { DOMEventManager } from '../../core/DOMEventManager.js';
 import * as THREE from 'three';
 import {
   addHelpersAndLights,
   addGroundWithTexture
-} from '../modules/quantStereo/qt-init-scene-helpers.js';
+} from './qt-init-scene-helpers.js';
 import {
   YIN_YANG_SYMBOL,
   CAMERA_INITIAL_POSITION,
   CAMERA_TARGET,
   BG_COLOR_DARK
-} from '../modules/quantStereo/qt-config.js';
+} from './qt-config.js';
 
 export class SceneModule {
   /**
