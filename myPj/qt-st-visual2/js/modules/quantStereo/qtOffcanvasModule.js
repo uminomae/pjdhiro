@@ -16,9 +16,9 @@ import { setSpeedMultiplier, setGroundTextureSpeed } from './qt-animation-loop.j
  */
 export class OffcanvasModule extends FormModule {
   /**
-   * @param {{ dom: DOMEventManager, scene:THREE.Scene, camera:THREE.Camera, renderer:THREE.Renderer, controls:any }} opts
+   * @param {{scene:THREE.Scene, camera:THREE.Camera, renderer:THREE.Renderer, controls:any }} opts
    */
-  constructor({ dom, scene, camera, renderer, controls }) {
+  constructor({ scene, camera, renderer, controls }) {
     super({
       rootSelector: '#offcanvasForm',
       handlers: [
@@ -37,7 +37,7 @@ export class OffcanvasModule extends FormModule {
         { selector: '#input-peak2-color',                  type: 'input',  handler: e => this._onPeak2Color(e) }
       ]
     });
-    this.dom      = dom;
+    // this.dom      = dom;
     this.scene    = scene;
     this.camera   = camera;
     this.renderer = renderer;
@@ -85,6 +85,34 @@ export class OffcanvasModule extends FormModule {
     if (axes) axes.visible = e.target.checked;
   }
 
+
+
+    // ──────────────── 速度制御UI の初期化 ────────────────
+    // const speedInput = document.getElementById('speed-input');
+    // if (speedInput instanceof HTMLInputElement) {
+    //   speedInput.addEventListener('change', (e) => {
+    //     const v = parseFloat(e.target.value);
+    //     if (!isNaN(v) && v > 0) {
+    //       setSpeedMultiplier(v);
+    //     } else {
+    //       // 無効な値なら 1 にリセット（または直前の valid な値を表示）
+    //       e.target.value = '1';
+    //       setSpeedMultiplier(1);
+    //     }
+    //   });
+    // }
+    // const presetBtns = document.querySelectorAll('.speed-preset-btn');
+    // presetBtns.forEach((btn) => {
+    //   btn.addEventListener('click', (e) => {
+    //     const speedVal = parseFloat(btn.getAttribute('data-speed'));
+    //     if (!isNaN(speedVal) && speedInput instanceof HTMLInputElement) {
+    //       speedInput.value = speedVal;
+    //       setSpeedMultiplier(speedVal);
+    //     }
+    //   });
+    // });
+    // console.log('[qt-init-ui] 速度制御UI を初期化しました');
+  
   _onSpeedChange(e) {
     const v = parseFloat(e.target.value);
     if (!isNaN(v) && v > 0) {
@@ -116,6 +144,33 @@ export class OffcanvasModule extends FormModule {
       setGroundTextureSpeed(0);
     }
   }
+
+
+    // ──────────────── 床テクスチャ回転速度コントロール ────────────────
+    // const textureSpeedInput = document.getElementById('texture-speed-input');
+    // if (textureSpeedInput instanceof HTMLInputElement) {
+    //   textureSpeedInput.addEventListener('change', (e) => {
+    //     const v = parseFloat(e.target.value);
+    //     if (!isNaN(v)) {
+    //       setGroundTextureSpeed(v);
+    //     } else {
+    //       e.target.value = '0';
+    //       setGroundTextureSpeed(0);
+    //     }
+    //   });
+    // }
+  
+    // const texturePresetBtns = document.querySelectorAll('.texture-preset-btn');
+    // texturePresetBtns.forEach((btn) => {
+    //   btn.addEventListener('click', (e) => {
+    //     const v = parseFloat(btn.getAttribute('data-speed'));
+    //     if (!isNaN(v) && textureSpeedInput instanceof HTMLInputElement) {
+    //       textureSpeedInput.value = v;
+    //       setGroundTextureSpeed(v);
+    //     }
+    //   });
+    // });
+    // console.log('[qt-init-ui] 床テクスチャ回転速度UI 初期化');
 
   _onTexturePresetClick(e) {
     const btn = e.currentTarget;

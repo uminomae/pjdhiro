@@ -4,11 +4,13 @@ import { initUI }              from './qt-init-ui.js';
 import { setupNavbarControls } from './qt-ui-navbar.js';
 import { startAnimation, stopAnimation } from './qt-animation.js';
 import { initializeControls }  from './qt-controls.js';
-import { SceneModule }         from '../quantStereo/qtSceneModule.js';  // パスは環境に合わせて調整
+import { SceneModule }         from './qtSceneModule.js';  // パスは環境に合わせて調整
+import { UIControlsModule }         from './qtUIControlsModule.js';  // パスは環境に合わせて調整
 import { setHasEverStarted }   from './qt-ui-navbar.js';
 
 /** @type {SceneModule|null} */
 let sceneModule = null;
+let uiControls = null;
 
 /**
  * シーン／コントロール／UI／アニメーションの初期化フロー
@@ -21,10 +23,18 @@ export function initializeModule(context) {
     sceneModule = new SceneModule(context);
   }
   sceneModule.init();
+  console.log('[qt-main] sceneModule.init(); 完了');
   // --- コントロール初期化 ---
-  initializeControls(controls);
+  if (!uiControls) {
+    uiControls = new UIControlsModule( { scene, camera, renderer, controls });
+  }
+  uiControls.init();
+  console.log('[qt-main] uiControls.init(); 完了');
+
+  
+  // initializeControls(controls);
   // --- UI 初期化 ---
-  initUI(context);
+  // initUI(context);
   setupNavbarControls(context);
   // --- アニメーション開始 ---
   startAnimation(scene, camera, controls);
@@ -48,6 +58,10 @@ export function disposeModule() {
   if (sceneModule) {
     sceneModule.dispose();
     sceneModule = null;
+  }
+  if (uiControls) {
+    uiControls.dispose();
+    uiControls = null;
   }
 }
 
