@@ -12,12 +12,36 @@ import {
   BG_COLOR_DARK, BG_COLOR_LIGHT 
 } from './qt-config.js';
 
+
+import { OffcanvasModule } from './qtOffcanvasModule.js';
+
+let offcanvasModule = null;
+
+/**
+ * free function initUI の置き換え
+ * @param {{ scene: THREE.Scene, camera: THREE.Camera, renderer: THREE.Renderer, controls: any }} context
+ */
+export function initUI(context) {
+  if (!offcanvasModule) {
+    offcanvasModule = new OffcanvasModule(context);
+  }
+  offcanvasModule.init();
+}
+
+/** UI（Offcanvas 内イベント）破棄 */
+export function disposeUI() {
+  if (offcanvasModule) {
+    offcanvasModule.dispose();
+    offcanvasModule = null;
+  }
+}
+
 /**
  * initUI(context)
  * ・変数表示 (α,β,γ,δ) などを初期化
  * ※今回は「オブジェクト表示設定アコーディオン」に対応するチェックボックスも登録
  */
-export function initUI({ scene, camera, renderer, controls }) {
+export function initUI1({ scene, camera, renderer, controls }) {
   console.log('[qt-init-ui] initUI()');
 
   // ──────────────── Top View ボタン ────────────────
@@ -33,10 +57,10 @@ export function initUI({ scene, camera, renderer, controls }) {
   }
 
   // ──────────────── 変数表示 (α,β,γ,δ) 初期化 ────────────────
-  // ['VAL_ALPHA', 'VAL_BETA', 'VAL_GAMMA', 'VAL_DELTA'].forEach((key) => {
-  //   const el = document.getElementById(UI_DOM_IDS[key]);
-  //   if (el) el.textContent = '0.000';
-  // });
+  ['VAL_ALPHA', 'VAL_BETA', 'VAL_GAMMA', 'VAL_DELTA'].forEach((key) => {
+    const el = document.getElementById(UI_DOM_IDS[key]);
+    if (el) el.textContent = '0.000';
+  });
 
   // ──────────────── グリッド単位球の表示切り替え ────────────────
   const checkboxGridSphere = document.getElementById('toggle-grid-sphere');
