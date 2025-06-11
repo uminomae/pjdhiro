@@ -11,16 +11,16 @@ sidebar:
   nav5: ""
 ---
 
-### [2D Julia集合の逆写像]({{ '/myPj/julia-set/d2-julia.html' | relative_url }})
+### [四元数ステレオ投影ビジュアライザ]({{ '/note-web-tool/yinyang/' | relative_url }})
 
 <video 
-  src="{{ '/assets/movie/2D-julia-set.mp4' | relative_url }}"
+  src="{{ '/assets/movie/place2.mp4' | relative_url }}"
   autoplay  
   muted  
   loop  
   playsinline  
-  width="640"
   controls
+  style="max-width:100%; height:auto; display:block;"
   >
 </video>
 
@@ -32,7 +32,20 @@ sidebar:
   muted  
   loop  
   playsinline  
-  width="640"
+  style="max-width:100%; height:auto; display:block;"
   controls
   >
 </video>
+
+<!-- ### [2D Julia集合の逆写像]({{ '/myPj/julia-set/d2-julia.html' | relative_url }}) -->
+<!-- 
+<video 
+  src="{{ '/assets/movie/2D-julia-set.mp4' | relative_url }}"
+  autoplay  
+  muted  
+  loop  
+  playsinline  
+  style="max-width:100%; height:auto; display:block;"
+  controls
+  >
+</video> -->
