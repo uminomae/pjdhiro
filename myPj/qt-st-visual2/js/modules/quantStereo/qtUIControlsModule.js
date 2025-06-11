@@ -155,11 +155,17 @@ export class UIControlsModule extends FormModule {
   }
 
   _onSpeedPresetClick(e) {
-    const btn = e.currentTarget;
-    const v = parseFloat(btn.getAttribute('data-speed'));
-    if (!isNaN(v) && this._speedInput instanceof HTMLInputElement) {
-      this._speedInput.value = v;
-      setSpeedMultiplier(v);
+   // クリックされた要素またはその親で .speed-preset-btn を探す
+    const btn = /** @type {HTMLElement|null} */(
+      e.target instanceof Element
+        ? e.target.closest('.speed-preset-btn')
+        : null
+    );
+    if (!btn) return;
+    const speedVal = parseFloat(btn.dataset.speed);
+    if (!isNaN(speedVal) && this._speedInput instanceof HTMLInputElement) {
+      this._speedInput.value = String(speedVal);
+      setSpeedMultiplier(speedVal);
     }
   }
 
@@ -170,10 +176,15 @@ export class UIControlsModule extends FormModule {
   }
 
   _onTexturePresetClick(e) {
-    const btn = e.currentTarget;
-    const v = parseFloat(btn.getAttribute('data-speed'));
+    const btn = /** @type {HTMLElement|null} */(
+      e.target instanceof Element
+        ? e.target.closest('.texture-preset-btn')
+        : null
+    );
+    if (!btn) return;
+    const v = parseFloat(btn.dataset.speed);
     if (!isNaN(v) && this._texInput instanceof HTMLInputElement) {
-      this._texInput.value = v;
+      this._texInput.value = String(v);
       setGroundTextureSpeed(v);
     }
   }
