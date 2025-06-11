@@ -8,40 +8,60 @@ import { getCameraHandlers }  from './handlers/qtCameraHandlers.js';
 import { getDisplayHandlers } from './handlers/qtDisplayHandlers.js';
 import { getSpeedHandlers }   from './handlers/qtSpeedHandlers.js';
 import { getColorHandlers }   from './handlers/qtColorHandlers.js';
+import { getNavbarHandlers }       from './handlers/qtNavbarHandlers.js';
 
-export class UIControlsModule extends FormModule {
+export class UIControlsModule {
   /**
    * @param {{ scene: THREE.Scene, camera: THREE.Camera, renderer: THREE.Renderer, controls: any }} context
    */
   constructor({ scene, camera, renderer, controls }) {
-    // 事前に handlers をローカルで組み立てることで super 呼び出し前に this を使わない
-    
-    const handlers = [
-      // ...UIControlsModule._getTopViewHandlers(camera, controls),
+    // Offcanvas 用ハンドラをまとめる
+    const offcanvasHandlers = [
       ...getTopViewHandlers(camera, controls),
       ...getCameraHandlers(controls),
       ...getDisplayHandlers(scene),
       ...getSpeedHandlers(),
       ...getColorHandlers(renderer)
     ];
+    // Navbar 用ハンドラをまとめる
+    const navbarHandlers = [
+      ...getNavbarHandlers(this)
+    ];
 
-    super({ rootSelector: '#offcanvasForm', handlers });
-    // ここではじめて this をセット
+    // Offcanvas モジュール
+    this.offcanvasModule = new FormModule({
+      rootSelector: '#offcanvasForm',
+      handlers: offcanvasHandlers
+    });
+    // Navbar モジュール
+    this.navbarModule = new FormModule({
+      rootSelector: '#navbar',
+      handlers: navbarHandlers
+    });
+
+    this.controls = controls;
     this.scene    = scene;
     this.camera   = camera;
     this.renderer = renderer;
-    this.controls = controls;
+    this._hasStarted = false;
   }
 
+  // ─────────── init/dispose ───────────
   init() {
+    // 初期同期
     this._syncCameraToggles();
     this._syncDisplayToggles();
     this._syncColorInputs();
-    super.init();
+    // 登録
+    this.offcanvasModule.init();
+    this.navbarModule.init();
+    // ナビバー初期状態
+    this._resetNavbarState();
   }
 
   dispose() {
-    super.dispose();
+    this.offcanvasModule.dispose();
+    this.navbarModule.dispose();
   }
 
   // ─────────── 初期同期: カメラ ───────────
@@ -86,5 +106,17 @@ export class UIControlsModule extends FormModule {
         inp.value = window[key];
       }
     });
+  }
+
+
+  /** ナビバーの Run/Pause ボタン表示を初期化 */
+  _resetNavbarState() {
+    const btnRun   = document.getElementById('btn-run');
+    const btnPause = document.getElementById('btn-pause');
+    if (btnRun && btnPause) {
+      btnRun.classList.add('d-none');
+      btnPause.classList.remove('d-none');
+    }
+    this._hasStarted = false;
   }
 }
