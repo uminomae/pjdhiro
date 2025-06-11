@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from './qt-animation-loop.js';
 // import { initializeScene } from './qt-init-scene-helpers.js';
-import { initializeControls } from './qt-controls.js';
+// import { initializeControls } from './qt-controls.js';
 import { resetModule } from './qt-main.js';
 import {
   CAMERA_INITIAL_POSITION,
@@ -137,7 +137,7 @@ export function setupNavbarControls({ scene, camera, renderer, controls }) {
     // controls.update();
 
     // 〈E〉OrbitControls の設定を“デフォルト”で再初期化
-    initializeControls(controls);
+    // initializeControls(controls);
 
     // 〈F〉シーン全体の再初期化
     // initializeScene({ scene, camera, controls });

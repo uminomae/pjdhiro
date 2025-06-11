@@ -1,9 +1,7 @@
 // js/modules/quantStereo/qt-main.js
 
-// import { initUI }              from './qt-init-ui.js';
 import { setupNavbarControls } from './qt-ui-navbar.js';
 import { startAnimation, stopAnimation } from './qt-animation.js';
-// import { initializeControls }  from './qt-controls.js';
 import { SceneModule }         from './qtSceneModule.js';  // パスは環境に合わせて調整
 import { UIControlsModule }         from './qtUIControlsModule.js';  // パスは環境に合わせて調整
 import { setHasEverStarted }   from './qt-ui-navbar.js';
