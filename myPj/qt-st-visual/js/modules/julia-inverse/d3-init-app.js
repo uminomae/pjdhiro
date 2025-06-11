@@ -10,7 +10,7 @@ import { initLegendToggle } from './ui/legend-ui.js';
 /**
  * フォームの初期値 (Re, Im, N, maxIter, チェックボックス) をセットする
  */
-function initFormValues() {
+export function initFormValues() {
   const inputRe   = document.getElementById('input-re');
   const inputIm   = document.getElementById('input-im');
   const inputN    = document.getElementById('input-n');
@@ -27,7 +27,7 @@ function initFormValues() {
 /**
  * Three.js シーンを初期化し、レンダーループを開始する
  */
-function init3DSceneAndLoop() {
+export function init3DSceneAndLoop() {
   initThree();
   animateLoop();
 }
@@ -35,7 +35,7 @@ function init3DSceneAndLoop() {
 /**
  * 初期表示時の凡例の描画／非描画を行う
  */
-function initLegend() {
+export function initLegend() {
   const chkLegend = document.getElementById('chk-legend');
   if (chkLegend && chkLegend.checked) {
     // drawLegend は legend.js から import していないので、動的 import で呼び出す
