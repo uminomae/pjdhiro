@@ -2,7 +2,7 @@
 
 import { DRAW_PARAMS, LEGEND_DEFAULT, FORM_DEFAULTS } from '../d3-config.js';
 import { Complex }                                  from '../util/complex-number.js';
-import { runInverseAnimation }                      from '..d3-renderer.js';
+import { runInverseAnimation }                      from '../d3-renderer.js';
 import { drawLegend }                               from './d3-legend-sub.js';
 import { switchToTopView } from './legend-ui.js'; // あるいは定義したファイルを参照
 import * as THREE from 'three';                  // three.js を参照可能に
