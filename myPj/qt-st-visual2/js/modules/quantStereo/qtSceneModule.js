@@ -1,4 +1,5 @@
 // js/core/SceneModule.js
+
 import { DOMEventManager } from '../../core/DOMEventManager.js';
 import * as THREE from 'three';
 import {
@@ -14,9 +15,6 @@ import {
 } from './qt-config.js';
 
 export class SceneModule {
-  /**
-   * @param {{ scene: THREE.Scene, camera: THREE.Camera, controls: any }} context
-   */
   constructor({ scene, camera, controls }) {
     this.scene    = scene;
     this.camera   = camera;
@@ -25,53 +23,53 @@ export class SceneModule {
     this.groundMesh = null;
   }
 
-  /**
-   * シーンの初期化
-   */
   init() {
-    // --- カメラ初期位置・向き設定 ---
+    // 地面表示トグルのイベント登録
+    const checkbox = document.getElementById('toggle-ground-visibility');
+    this.dom.on(checkbox, 'change', () => {
+      if (this.groundMesh) {
+        this.groundMesh.visible = checkbox.checked;
+      }
+    });
+    // 初期状態を反映
+    this.sync();
+  }
+
+  sync() {
+    // カメラ初期位置・向き
     const [x, y, z] = CAMERA_INITIAL_POSITION;
     this.camera.position.set(x, y, z);
     const [tx, ty, tz] = CAMERA_TARGET;
     this.camera.lookAt(tx, ty, tz);
     this.controls.update();
 
-    // --- 背景色・ヘルパー・ライトの追加 ---
+    // 背景色・ヘルパー・ライト
     this.scene.background = new THREE.Color(BG_COLOR_DARK);
     addHelpersAndLights(this.scene);
 
-    // --- 地面メッシュの追加 & イベント登録 ---
-    this.groundMesh = addGroundWithTexture(
-      this.scene,
-      YIN_YANG_SYMBOL,
-      { width: 10, depth: 10 }
-    );
-
-    const checkbox = document.getElementById('toggle-ground-visibility');
-    const initialVisible = GROUND_TEXTURE_VISIBLE;
-    this.groundMesh.visible = initialVisible;
-    if (checkbox instanceof HTMLInputElement) {
-      // 初期表示とイベントを DOMEventManager で管理
-      checkbox.checked = initialVisible;
-      // this.groundMesh.visible = checkbox.checked;
-      this.dom.on(checkbox, 'change', () => {
-        this.groundMesh.visible = checkbox.checked;
+    // 地面メッシュの生成・表示同期
+    if (!this.groundMesh) {
+      this.groundMesh = addGroundWithTexture(
+        this.scene,
+        YIN_YANG_SYMBOL,
+        { width: 10, depth: 10 }
+      );
+    }
+    this.groundMesh.visible = GROUND_TEXTURE_VISIBLE;
+    const cb = document.getElementById('toggle-ground-visibility');
+    if (cb instanceof HTMLInputElement) {
+      cb.checked = GROUND_TEXTURE_VISIBLE;
+      this.dom.on(cb, 'change', () => {
+        this.groundMesh.visible = cb.checked;
       });
-    } else {
-      console.warn('[SceneModule] toggle-ground-visibility が見つかりません');
     }
   }
 
-  /**
-   * 登録したイベントを解除し、シーンをクリア
-   */
   dispose() {
-    // イベントリスナを一括解除
     this.dom.clear();
-
-    // シーン内オブジェクトをすべて削除
     while (this.scene.children.length > 0) {
       this.scene.remove(this.scene.children[0]);
     }
+    this.groundMesh = null;
   }
 }
