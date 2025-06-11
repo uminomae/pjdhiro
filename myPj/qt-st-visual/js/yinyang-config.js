@@ -13,7 +13,7 @@ export const DEFAULT_ALG = 'qt-st';   // デフォルトのアルゴリズムキ
  */
 export const ALG_MODULE_PATHS = {
   'qt-st': '../modules/quantStereo/qt-main.js',
-  'julia-inverse': './modules/julia-inverse/julia-init.js'
+  'julia-inverse': '../modules/julia-inverse/julia-main.js'
 };
 
 /**
