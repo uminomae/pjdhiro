@@ -20,23 +20,23 @@ export let scene, camera, renderer, controls;
  *  }}
  */
 export function initThreejs() {
-  console.log('[threejs-init] initThreejs() を実行');
+  console.log('[yinyang-threejs-init] initThreejs() を実行');
 
   const container = document.getElementById(THREE_INIT.CANVAS_CONTAINER_ID);
   if (!container) {
-    throw new Error(`[threejs-init] ID="${THREE_INIT.CANVAS_CONTAINER_ID}" が見つかりません`);
+    throw new Error(`[yinyang-threejs-init] ID="${THREE_INIT.CANVAS_CONTAINER_ID}" が見つかりません`);
   }
 
   const width  = container.clientWidth;
   const height = container.clientHeight;
-  console.log('[threejs-init] container size =', width, '×', height);
+  console.log('[yinyang-threejs-init] container size =', width, '×', height);
 
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(width, height);
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setClearColor(0x111111, 1);
   container.appendChild(renderer.domElement);
-  console.log('[threejs-init] WebGLRenderer を追加');
+  console.log('[yinyang-threejs-init] WebGLRenderer を追加');
 
   scene = new THREE.Scene();
 
@@ -49,7 +49,7 @@ export function initThreejs() {
   controls.dampingFactor   = 0.1;
   controls.enablePan       = false;
   controls.rotateSpeed     = 0.5;
-  console.log('[threejs-init] Scene/Camera/Controls を初期化完了');
+  console.log('[yinyang-threejs-init] Scene/Camera/Controls を初期化完了');
 
   window.addEventListener('resize', () => {
     const w = container.clientWidth;
@@ -57,7 +57,7 @@ export function initThreejs() {
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
     renderer.setSize(w, h);
-    console.log('[threejs-init] リサイズ処理:', w, '×', h);
+    console.log('[yinyang-threejs-init] リサイズ処理:', w, '×', h);
   });
 
   return { scene, camera, renderer, controls };

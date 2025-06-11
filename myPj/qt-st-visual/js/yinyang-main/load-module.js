@@ -24,23 +24,23 @@ export function getAlgFromURL() {
  * @param {{ scene, camera, renderer, controls }} context
  */
 export async function loadAlgModule(alg, context) {
-  console.log('[load-module] loadAlgModule() を実行 (alg =', alg, ')');
+  console.log('[yinyang-load-module] loadAlgModule() を実行 (alg =', alg, ')');
 
   // キーがあればそのモジュールパス、なければフォールバック
   const modulePath = ALG_MODULE_PATHS[alg] || ALG_FALLBACK_PATH;
-  console.log('[load-module] インポート対象モジュール:', modulePath);
+  console.log('[yinyang-load-module] インポート対象モジュール:', modulePath);
 
   try {
     const mod = await import(modulePath);
-    console.log('[load-module] モジュールインポート完了:', mod);
+    console.log('[yinyang-load-module] モジュールインポート完了:', mod);
 
     if (typeof mod.startModule !== 'function') {
-      throw new Error(`[load-module] ${modulePath} に startModule(context) が定義されていません`);
+      throw new Error(`[yinyang-load-module] ${modulePath} に startModule(context) が定義されていません`);
     }
     // モジュールの startModule() を呼び出す
     mod.startModule(context);
-    console.log('[load-module] startModule() を実行完了');
+    console.log('[yinyang-load-module] startModule() を実行完了');
   } catch (err) {
-    throw new Error(`[load-module] ${modulePath} の読み込み失敗: ${err}`);
+    throw new Error(`[yinyang-load-module] ${modulePath} の読み込み失敗: ${err}`);
   }
 }
