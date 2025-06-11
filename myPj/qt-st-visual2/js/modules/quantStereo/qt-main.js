@@ -28,15 +28,9 @@ export function initializeModule(context) {
   }
   uiControls.init();
   console.log('[qt-main] uiControls.init(); 完了');
-
-
-  // --- UI 初期化 ---
-  // initializeControls(controls);
-  // initUI(context);
-  setupNavbarControls(context);
   // --- アニメーション開始 ---
   startAnimation(scene, camera, controls);
-  setHasEverStarted(true);
+  uiControls._hasStarted = true;
 }
 
 /**
