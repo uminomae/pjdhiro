@@ -1,7 +1,6 @@
 // js/core/handlers/cameraHandlers.js
-import { setEnableVertical } from '../qt-animation-loop.js';
 
-export function getCameraHandlers(controls) {
+export function getCameraHandlers({ controls, animController }) {
   return [
     {
       selector: '#toggle-camera-horizontal',
@@ -15,7 +14,7 @@ export function getCameraHandlers(controls) {
       selector: '#toggle-camera-vertical',
       type: 'change',
       handler: e => {
-        setEnableVertical(e.target.checked);
+        animController.setEnableVertical(e.target.checked);
       }
     }
   ];

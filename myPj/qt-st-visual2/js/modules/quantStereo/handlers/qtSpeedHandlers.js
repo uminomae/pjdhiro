@@ -1,7 +1,6 @@
 // js/core/handlers/speedHandlers.js
-import { setSpeedMultiplier, setGroundTextureSpeed } from '../qt-animation-loop.js';
 
-export function getSpeedHandlers() {
+export function getSpeedHandlers(animController) {
   return [
     {
       selector: '#speed-input',
@@ -9,10 +8,10 @@ export function getSpeedHandlers() {
       handler: e => {
       const v = parseFloat(e.target.value);
       if (!isNaN(v) && v > 0) {
-        setSpeedMultiplier(v);
+        animController.etSpeedMultiplier(v);
       } else {
         e.target.value = '1';
-        setSpeedMultiplier(1);
+        animController.setSpeedMultiplier(1);
       }
       }
     },
@@ -26,7 +25,7 @@ export function getSpeedHandlers() {
       if (!isNaN(v)) {
         const inp = document.getElementById('speed-input');
         if (inp instanceof HTMLInputElement) inp.value = String(v);
-        setSpeedMultiplier(v);
+        animController.setSpeedMultiplier(v);
       }
       }
     },
@@ -36,10 +35,10 @@ export function getSpeedHandlers() {
       handler: e => {
       const v = parseFloat(e.target.value);
       if (!isNaN(v)) {
-        setGroundTextureSpeed(v);
+        animController.setTextureSpeed(v);
       } else {
         e.target.value = '0';
-        setGroundTextureSpeed(0);
+        animController.setTextureSpeed(v);
       }
       }
     },
@@ -53,7 +52,7 @@ export function getSpeedHandlers() {
       if (!isNaN(v)) {
         const inp = document.getElementById('texture-speed-input');
         if (inp instanceof HTMLInputElement) inp.value = String(v);
-        setGroundTextureSpeed(v);
+        animController.setTextureSpeed(v);
       }
       }
     }

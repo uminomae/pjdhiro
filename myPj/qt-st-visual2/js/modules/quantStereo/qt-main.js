@@ -1,8 +1,9 @@
 // js/modules/quantStereo/qt-main.js
 
-import { startAnimation, stopAnimation } from './qt-animation.js';
+// import { startAnimation, stopAnimation } from './qt-animation.js';
 import { SceneModule }                  from './qtSceneModule.js';
 import { UIControlsModule }             from './qtUIControlsModule.js';
+import { AnimationController } from './qt-animation-loop.js';
 
 let qtMainModule = null;
 
@@ -31,19 +32,27 @@ export function disposeModule() {
 
 class QtMainModule {
   constructor(context) {
-    this.context     = context;
-    this.sceneModule = new SceneModule(context);
-    this.uiModule    = new UIControlsModule(context);
+    this.context        = context;
+    this.sceneModule    = new SceneModule(context);
+    this.animController = new AnimationController(
+      this.context.scene,
+      this.context.camera,
+      this.context.controls
+    )
+    
+    this.uiModule       = new UIControlsModule({
+      ...context,
+      animController: this.animController
+    });
+    
+
   }
 
   init() {
     this.sceneModule.init();
     this.uiModule.init();
-    startAnimation(
-      this.context.scene,
-      this.context.camera,
-      this.context.controls
-    );
+    this.animController.start();
+
   }
 
   sync() {
@@ -52,7 +61,7 @@ class QtMainModule {
   }
 
   dispose() {
-    stopAnimation();
+    this.animController.stop();
     this.uiModule.dispose();
     this.sceneModule.dispose();
   }

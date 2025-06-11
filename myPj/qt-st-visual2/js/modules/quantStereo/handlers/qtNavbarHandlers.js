@@ -1,14 +1,14 @@
 // js/core/handlers/navbarHandlers.js
 
-import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from '../qt-animation.js';
+// import { startAnimation, pauseAnimation, resumeAnimation, stopAnimation } from '../qt-animation.js';
 import { resetModule }   from '../qt-main.js';
-import { BG_COLOR_DARK } from '../qt-config.js';
-import * as THREE        from 'three';
+// import { BG_COLOR_DARK } from '../qt-config.js';
+// import * as THREE        from 'three';
 
 /**
  * UIControlsModule インスタンスを受け取り、
  * #navbar 配下のハンドラ配列を返します。
- * @param {import('../UIControlsModule.js').UIControlsModule} ctx
+ * @param {{ scene, camera, controls, animController, _hasStarted }} ctx
  */
 export function getNavbarHandlers(ctx) {
   return [
@@ -23,10 +23,10 @@ export function getNavbarHandlers(ctx) {
           btnPause.classList.remove('d-none');
         }
         if (!ctx._hasStarted) {
-          startAnimation(ctx.scene, ctx.camera, ctx.controls);
+          ctx.animController.start();
           ctx._hasStarted = true;
         } else {
-          resumeAnimation(ctx.scene, ctx.camera, ctx.controls);
+          ctx.animController.resume();
         }
       }
     },
@@ -40,7 +40,7 @@ export function getNavbarHandlers(ctx) {
           btnPause.classList.add('d-none');
           btnRun.classList.remove('d-none');
         }
-        pauseAnimation();
+        ctx.animController.pause();
       }
     },
     {
@@ -62,7 +62,8 @@ export function getNavbarHandlers(ctx) {
         });
 
         // 再度アニメーション開始
-        startAnimation(ctx.scene, ctx.camera, ctx.controls);
+        // ctx.animController.stop();
+        ctx.animController.start();
         ctx._hasStarted = true;
       }
     }
