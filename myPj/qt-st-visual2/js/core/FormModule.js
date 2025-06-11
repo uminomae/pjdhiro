@@ -31,9 +31,7 @@ export class FormModule {
           handler(e);
         }
       };
-      const off = this.dom.on(this.root, type, wrapped);
-      // もし個別の要素に直付けしたいなら、querySelectorAll + each でもOK
-      this.dom._registry.push(off);
+      this.dom.on(this.root, type, wrapped);
     });
   }
 
