@@ -22,6 +22,8 @@ import {
 import { create, normalize } from './qt-math-quat-utils.js';
 import { overlayEarthGridAndProjection } from './qt-render-pointcloud.js';
 import { getGroundTexture } from './qt-init-scene-helpers.js';
+import * as Config            from './qt-config.js';
+
 
 let clock = null;
 let rafId = null;

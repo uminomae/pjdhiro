@@ -9,6 +9,7 @@ import {
   YIN_YANG_SYMBOL,
   CAMERA_INITIAL_POSITION,
   CAMERA_TARGET,
+  GROUND_TEXTURE_VISIBLE,
   BG_COLOR_DARK
 } from './qt-config.js';
 
@@ -47,9 +48,12 @@ export class SceneModule {
     );
 
     const checkbox = document.getElementById('toggle-ground-visibility');
+    const initialVisible = GROUND_TEXTURE_VISIBLE;
+    this.groundMesh.visible = initialVisible;
     if (checkbox instanceof HTMLInputElement) {
       // 初期表示とイベントを DOMEventManager で管理
-      this.groundMesh.visible = checkbox.checked;
+      checkbox.checked = initialVisible;
+      // this.groundMesh.visible = checkbox.checked;
       this.dom.on(checkbox, 'change', () => {
         this.groundMesh.visible = checkbox.checked;
       });

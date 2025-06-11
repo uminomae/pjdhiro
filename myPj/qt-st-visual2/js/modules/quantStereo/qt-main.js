@@ -1,14 +1,25 @@
 // js/modules/quantStereo/qt-main.js
-
-import { setupNavbarControls } from './qt-ui-navbar.js';
 import { startAnimation, stopAnimation } from './qt-animation.js';
 import { SceneModule }         from './qtSceneModule.js';  // パスは環境に合わせて調整
 import { UIControlsModule }         from './qtUIControlsModule.js';  // パスは環境に合わせて調整
-import { setHasEverStarted }   from './qt-ui-navbar.js';
+import * as Config            from './qt-config.js';
 
 /** @type {SceneModule|null} */
 let sceneModule = null;
 let uiControls = null;
+
+
+/**
+ * アルゴリズムモジュールのエントリーポイント
+ * （アプリ起動時はこちらが呼ばれる）
+ */
+export function startModule(context) {
+  console.log('[qt-main] startModule() が呼ばれました');
+  initializeModule(context);
+  console.log('[qt-main] initializeModule: 完了');
+}
+
+
 
 /**
  * シーン／コントロール／UI／アニメーションの初期化フロー
@@ -34,16 +45,6 @@ export function initializeModule(context) {
 }
 
 /**
- * アルゴリズムモジュールのエントリーポイント
- * （アプリ起動時はこちらが呼ばれる）
- */
-export function startModule(context) {
-  console.log('[qt-main] startModule() が呼ばれました');
-  initializeModule(context);
-  console.log('[qt-main] 初期化が完了しました');
-}
-
-/**
  * モジュール破棄用
  */
 export function disposeModule() {
@@ -61,10 +62,7 @@ export function disposeModule() {
  * リセット用：アニメーション停止→破棄→初期化フロー再実行
  */
 export function resetModule(context) {
-  // アニメーション停止
   stopAnimation();
-  // シーン／イベントを破棄
   disposeModule();
-  // 再度初期化
   initializeModule(context);
 }
