@@ -5,125 +5,82 @@
 // import { FORM_DEFAULTS, LEGEND_DEFAULT } from './d3-config.js';
 // import './ui/button-ui.js';                   // ボタン系のイベント登録
 import { initLegendToggle } from './ui/legend-ui.js';
-import { initFormValues, init3DSceneAndLoop, initLegend } from './d3-init-app.js';
+// import { initFormValues, init3DSceneAndLoop, initLegend } from './d3-init-app.js';
+// import { FormModule } from '../../core/FormModule.js';
+
+import { initJuliaApp, resetJuliaApp, disposeJuliaApp } from './d3Init.js';
 
 /**
- * JuliaMainModule クラス
- *  - init(): 初期化フローをメソッド単位で呼び出し
- *  - reset(): シーンをクリアして init() を再実行
- *  - dispose(): シーン／ループ／凡例を破棄
+ * JuliaMainModule: アプリのライフサイクルを管理するメインクラス
  */
-class JuliaMainModule {
+export class JuliaMainModule {
+  /**
+   * @param {Object} context - アプリケーションコンテキスト
+   */
   constructor(context) {
-    this.context = context;
-    this._hasInitialized = false;
+    this.context    = context;
+    // D3InitApp をラップ
+    this.appController = {
+      init:    () => initJuliaApp(this._onReset.bind(this)),
+      reset:   () => resetJuliaApp(),
+      dispose: () => disposeJuliaApp()
+    };
   }
 
-  /**
-   * モジュール初期化のエントリーポイント
-   */
+  /** 初期化: フォーム・シーン・ループ・凡例バインド */
   init() {
-    if (this._hasInitialized) return;
-    this._setupForm();
-    this._setupScene();
-    this._setupLegend();
-    this._setupControls();
-    this._hasInitialized = true;
+    this.appController.init();
     console.log('[julia-main] init() 完了');
   }
 
-  /** シーンの完全リセットと再初期化 */
+  /** 同期処理: 必要に応じて実装 */
+  sync() {
+    // D3 には特別な sync 処理なし
+  }
+
+  /** 破棄: イベント・シーン・凡例をクリア */
+  dispose() {
+    this.appController.dispose();
+    console.log('[julia-main] dispose() 完了');
+  }
+
+  /** リセット: dispose → init */
   reset() {
     console.log('[julia-main] reset() 開始');
     this.dispose();
-    this._hasInitialized = false;
     this.init();
     console.log('[julia-main] reset() 完了');
   }
 
-  /** シーン／ループ／凡例を破棄 */
-  dispose() {
-    this._clearScene();
-    this._clearRenderer();
-    this._hideLegend();
-    console.log('[julia-main] dispose() 完了');
-  }
-
-  // --- private methods ---
-
-  /** フォームの初期化と submit イベントのバインド */
-  _setupForm() {
-    initFormValues();
-    const form = document.getElementById('julia-form');
-    if (form instanceof HTMLFormElement) {
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        this.reset();
-      });
-    }
-  }
-
-  /** Three.js シーンの初期化とレンダーループ開始 */
-  _setupScene() {
-    init3DSceneAndLoop();
-  }
-
-  /** 凡例の描画 */
-  _setupLegend() {
-    initLegend();
-  }
-
-  /** Offcanvas 凡例トグルの初期化 */
-  _setupControls() {
-    initLegendToggle();
-  }
-
-  /** シーン中のオブジェクトを全削除 */
-  _clearScene() {
-    if (window.scene) {
-      while (window.scene.children.length) {
-        window.scene.remove(window.scene.children[0]);
-      }
-    }
-  }
-
-  /** レンダラーをクリア */
-  _clearRenderer() {
-    if (window.renderer) window.renderer.clear();
-  }
-
-  /** 凡例を非表示にする */
-  _hideLegend() {
-    import('../../3d/ui/d3-legend-sub.js')
-      .then(({ hideLegend }) => hideLegend())
-      .catch(err => console.warn('hideLegend エラー', err));
+  /** フォームや入力変更時のコールバック */
+  _onReset() {
+    console.log('[julia-main] onReset callback');
+    this.reset();
   }
 }
 
-let juliaMainModule = null;
+let _instance = null;
 
-/** アプリ側から呼び出す開始用 */
+/** モジュール開始エントリーポイント */
 export function startModule(context) {
-  if (!juliaMainModule) {
-    juliaMainModule = new JuliaMainModule(context);
+  if (!_instance) {
+    _instance = new JuliaMainModule(context);
     console.log('[julia-main] new JuliaMainModule() 完了');
   }
-  juliaMainModule.init();
+  _instance.init();
 }
 
-/** リセット用（フォーム submit や外部呼び出し） */
+/** リセット用エクスポート */
 export function resetModule(context) {
-  if (juliaMainModule) {
-    juliaMainModule.reset();
-  } else {
-    startModule(context);
+  if (_instance) {
+    _instance.reset();
   }
 }
 
-/** アンロードや切り替え時の破棄用 */
+/** 破棄用エクスポート */
 export function disposeModule() {
-  if (juliaMainModule) {
-    juliaMainModule.dispose();
-    juliaMainModule = null;
+  if (_instance) {
+    _instance.dispose();
+    _instance = null;
   }
 }
