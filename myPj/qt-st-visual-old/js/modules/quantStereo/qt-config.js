@@ -24,7 +24,6 @@ export const HALF_CYCLE     = 2 * Math.PI;  // 360° = 2π
 // export const ROTATION_SPEED = Math.PI * 2;  // 90°/秒 = π/2 rad/sec
 export const ROTATION_SPEED = Math.PI / 2;  // 90°/秒 = π/2 rad/sec
 
-export const ROTATION_DEFAULT_SPEED = 1;  
 // 床テクスチャをデフォルトでどのくらいの速さで回すか（1 秒で何ラジアン回すかなど）。
 // たとえば 0.2 にすると「1 秒間で約0.2ラジアンずつ回転」する（実際の角度 = elapsed * 0.2）。
 export const TEXTURE_DEFAULT_SPEED = 1;
@@ -36,7 +35,7 @@ export const TEXTURE_DEFAULT_SPEED = 1;
 // 水平方向（OrbitControls の回転）を有効にする／無効にする
 export const CAMERA_ENABLE_HORIZONTAL = true;
 // — カメラ初期設定 — 
-export const CAMERA_INITIAL_POSITION    = [-5, 4, 10];
+export const CAMERA_INITIAL_POSITION    = [-15, 8, 10];
 export const CAMERA_AUTO_ROTATE_ENABLED = true;
 export const CAMERA_AUTO_ROTATE_PERIOD  = 200; // 360°にかかる秒数
 // — カメラ上下往復（Oscillation）設定 — 
@@ -71,8 +70,7 @@ export const SPHERE_BASE_COLOR = '#ffffff';
 export const SPHERE_MID_COLOR  = '#808080';
 export const SPHERE_END_COLOR  = '#000000';
 
-// — Projection Sphere（ステレオ投影球）ドットサイズ — 
-// export const PROJ_SPHERE_POINT_SIZE = 0.1;
+// — Projection Sphere（ステレオ投影球）サイズ — 
 export const PROJ_SPHERE_POINT_SIZE = 0.05;
 
 // — Earth Grid（地球グリッド）設定 — 
@@ -82,9 +80,6 @@ export const EARTH_GRID_SAMPLES_PER_LINE = 100;
 export const EARTH_GRID_COLOR            = 0x51077c;
 export const EARTH_GRID_POINT_SIZE       = 0.02;
 export const EARTH_GRID_RADIUS           = 1.0;
-// Earth Grid（地球グリッド）を初期表示するかどうか
-export const EARTH_GRID_VISIBLE = false;
-
 
 // — 床グリッド設定 — 
 export const GRID_SIZE           = 10;
@@ -94,7 +89,6 @@ export const GRID_COLOR          = 0x888888;
 
 // — 床テクスチャ設定 — 
 export const GROUND_TEXTURE_OPACITY = 0.05;
-export const GROUND_TEXTURE_VISIBLE = true;
 
 // — 軸ヘルパー設定 — 
 export const AXES_SIZE = 6;

@@ -4,60 +4,11 @@ import * as THREE from 'three';
 import {
   GRID_SIZE, GRID_DIVISIONS, GRID_COLOR_CENTERLINE, GRID_COLOR,
   AXES_SIZE,
-  GROUND_TEXTURE_OPACITY,
-  CAMERA_INITIAL_POSITION,
-  CAMERA_TARGET,
-  YIN_YANG_SYMBOL
+  GROUND_TEXTURE_OPACITY
 } from './qt-config.js';
 
 let groundMesh;
 let groundTexture;
-/**
- * initializeScene(scene, camera, controls)
- * ---------------------------------------
- * ・カメラの初期位置と lookAt を設定
- * ・OrbitControls の自動回転・回転制限はここでは除外し、呼び出し元で制御しても OK
- * ・背景色、照明／ヘルパー、床メッシュを追加、床の表示切り替えイベントを登録
- */
-export function initializeScene({ scene, camera, controls }) {
-  // 1) カメラ初期位置
-  camera.position.set(
-    CAMERA_INITIAL_POSITION[0],
-    CAMERA_INITIAL_POSITION[1],
-    CAMERA_INITIAL_POSITION[2]
-  );
-  // 2) カメラの注視点（lookAt）
-  const [tx, ty, tz] = CAMERA_TARGET;
-  camera.lookAt(tx, ty, tz);
-  controls.update();
-
-  // 3) シーン背景色、照明・ヘルパーを追加
-  scene.background = new THREE.Color(0x000011);
-  addHelpersAndLights(scene);
-
-  // 4) 床メッシュを追加し、トグル用イベントを登録
-  groundMesh = addGroundWithTexture(
-    scene,
-    YIN_YANG_SYMBOL,
-    { width: 10, depth: 10 }
-  );
-  setupGroundToggle();
-}
-
-function setupGroundToggle() {
-  const checkbox = document.getElementById('toggle-ground-visibility');
-  if (!checkbox) {
-    console.warn('[qt-st-main] toggle-ground-visibility が見つかりません');
-    return;
-  }
-  groundMesh.visible = checkbox.checked;
-  checkbox.addEventListener('change', () => {
-    if (groundMesh) {
-      groundMesh.visible = checkbox.checked;
-    }
-  });
-}
-
 
 /**
  * addHelpersAndLights(scene)
@@ -191,29 +142,3 @@ export function getGroundMesh() {
   return groundMesh;
 }
 
-
-/**
- * resetScene(scene, camera, controls)
- *
- * ・シーン内の全オブジェクトを削除
- * ・背景色を初期色 (#000011) に戻す
- * ・照明 / ヘルパーを再追加
- * ・（必要なら）カメラ位置やコントロールもリセット可能
- *
- * @param {THREE.Scene}   scene
- * @param {THREE.Camera}  camera    ※カメラリセットが必要なら利用
- * @param {OrbitControls} controls  ※controls.update() など
- */
-export function resetScene(scene, camera, controls) {
-  // 1) シーン内オブジェクトをすべて削除
-  while (scene.children.length > 0) {
-    scene.remove(scene.children[0]);
-  }
-
-  // 2) 背景色を “初期のダーク (#000011)” に戻す
-  scene.background = new THREE.Color('#000011');
-
-  // 3) 照明 + 軸ヘルパーを再追加
-  addHelpersAndLights(scene);
-
-}

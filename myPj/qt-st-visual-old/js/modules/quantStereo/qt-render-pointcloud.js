@@ -235,8 +235,7 @@ export function overlayEarthGridAndProjection(
   const gridSphere = createEarthGridRotatedPointCloud(scene, qRot);
   const checkboxGrid = document.getElementById('toggle-grid-sphere');
   if (checkboxGrid instanceof HTMLInputElement) {
-    gridSphere.visible = window._earthGridVisible;
-    // gridSphere.visible = checkboxGrid.checked;
+    gridSphere.visible = checkboxGrid.checked;
   }
 
   // (2) ステレオ投影球（白→灰→黒→…）を追加

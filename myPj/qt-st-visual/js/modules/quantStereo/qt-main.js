@@ -1,26 +1,73 @@
 // js/modules/quantStereo/qt-main.js
 
-// import * as THREE from 'three';
-// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { startAnimation, stopAnimation } from './qt-animation.js';
+import { SceneModule }                  from './qtSceneModule.js';
+import { UIControlsModule }             from './qtUIControlsModule.js';
+import { AnimationController } from './qt-animation-loop.js';
 
-import { initUI }              from './qt-init-ui.js';
-import { setupNavbarControls } from './qt-ui-navbar.js';
-import { startAnimation }      from './qt-animation.js';
-import { initializeControls }      from './qt-controls.js';
-import { initializeScene } from './qt-init-scene-helpers.js'; 
-import { setHasEverStarted } from './qt-ui-navbar.js';
+let qtMainModule = null;
 
-export function startModule({ scene, camera, renderer, controls }) {
-  console.log('[qt-main] startModule() が呼ばれました');
-  initializeScene({scene, camera, controls});
-  initializeControls(controls);
-  initUI({ scene, camera, renderer, controls });
-  setupNavbarControls({ scene, camera, renderer, controls });
-  console.log('[qt-main] 初期化が完了しました');
-  startAnimation(scene, camera, controls);
-    // ──────────── ここを追加 ────────────
-  
-  setHasEverStarted(true);  // 自動再生を「一度実行済み」にする
-  // ────────────────────────────────
+export function startModule(context) {
+  if (!qtMainModule) {
+    qtMainModule = new QtMainModule(context);
+    qtMainModule.init();
+  }
 }
 
+export function resetModule(context) {
+  // 動的にリセットを呼べるようエクスポート
+  if (qtMainModule) {
+    qtMainModule.reset();
+  } else {
+    startModule(context);
+  }
+}
+
+export function disposeModule() {
+  if (qtMainModule) {
+    qtMainModule.dispose();
+    qtMainModule = null;
+  }
+}
+
+class QtMainModule {
+  constructor(context) {
+    this.context        = context;
+    this.sceneModule    = new SceneModule(context);
+    this.animController = new AnimationController(
+      this.context.scene,
+      this.context.camera,
+      this.context.controls
+    )
+    
+    this.uiModule       = new UIControlsModule({
+      ...context,
+      animController: this.animController
+    });
+    
+
+  }
+
+  init() {
+    this.sceneModule.init();
+    this.uiModule.init();
+    this.animController.start();
+
+  }
+
+  sync() {
+    this.sceneModule.sync();
+    this.uiModule.sync();
+  }
+
+  dispose() {
+    this.animController.stop();
+    this.uiModule.dispose();
+    this.sceneModule.dispose();
+  }
+
+  reset() {
+    this.dispose();
+    this.init();
+  }
+}
