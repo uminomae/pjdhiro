@@ -31,17 +31,29 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-## Project Design: Emotion-Driven Agile Project Design
+## Emotion-Driven Agile Project Design
 
 このサイトでは、[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有しています。  
 特に、対人スキルや[感情処理]({{ '/emotional-processing/' | relative_url }})の視点を取り入れたアプローチを紹介します。
 
-## Side Notes: 2025 Insights
+## 2025 Insights
+
+<video 
+  src="{{ '/assets/movie/place2.mp4' | relative_url }}"
+  autoplay  
+  muted  
+  loop  
+  playsinline  
+  controls
+  style="max-width:100%; height:auto; display:block;"
+  >
+</video>
 
 - 2025年は下記の事柄を考えることが多いです。
   - 経済関連：信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})
   - 心理関連：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }})
-  - IT関連：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
+  - 哲学関連：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
+  - IT関連：[WEBツール]({{ '/pages-categories/web-tools/' | relative_url }})
 
 ## Post: An Intersubjective Glimpse of the World
 
