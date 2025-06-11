@@ -1,10 +1,7 @@
 // js/core/UIControlsModule.js
-
-import { setEnableVertical, setSpeedMultiplier, setGroundTextureSpeed } from './qt-animation-loop.js';
 import { FormModule }                     from '../../core/FormModule.js';
 import * as Config                        from './qt-config.js';
 import { resetModule }                    from './qt-main.js';
-
 import { getTopViewHandlers }    from './handlers/qtTopViewHandlers.js';
 import { getCameraHandlers }     from './handlers/qtCameraHandlers.js';
 import { getDisplayHandlers }    from './handlers/qtDisplayHandlers.js';
@@ -13,22 +10,29 @@ import { getColorHandlers }      from './handlers/qtColorHandlers.js';
 import { getNavbarHandlers }     from './handlers/qtNavbarHandlers.js';
 
 export class UIControlsModule {
-  constructor({ scene, camera, renderer, controls }) {
+  constructor(
+    { scene, camera, renderer, controls,
+      animController
+    }
+  ){
     this.context  = { scene, camera, renderer, controls };
     this.controls = controls;
     this.scene    = scene;
     this.camera   = camera;
     this.renderer = renderer;
+    this.animController = animController;
     this._hasStarted = false;
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
       rootSelector: '#offcanvasForm',
-      handlers: [...getTopViewHandlers(camera, controls),
-                 ...getCameraHandlers(controls),
+      handlers: [
+                 ...getTopViewHandlers(camera, controls), 
+                 ...getCameraHandlers({ controls, animController }),
                  ...getDisplayHandlers(scene),
-                 ...getSpeedHandlers(),
-                 ...getColorHandlers(renderer)]
+                 ...getSpeedHandlers(animController),
+                 ...getColorHandlers(renderer)
+                ]
     });
     this.navbarModule = new FormModule({
       rootSelector: '#navbar',
@@ -69,7 +73,7 @@ export class UIControlsModule {
     // btn-reset のリスナは調整が必要ならここで外す
   }
 
-  // — 以下、これまでの _sync… メソッド群 —
+
   _syncGridSphereToggle() {
     const cb = document.getElementById('toggle-grid-sphere');
     window._earthGridVisible = Config.EARTH_GRID_VISIBLE;
@@ -92,14 +96,14 @@ export class UIControlsModule {
     this.controls.minPolarAngle   = Config.CAMERA_POLAR_ANGLE.MIN;
     this.controls.maxPolarAngle   = Config.CAMERA_POLAR_ANGLE.MAX;
     this.controls.autoRotateSpeed = 360 / Config.CAMERA_AUTO_ROTATE_PERIOD;
-    setEnableVertical(Config.CAMERA_OSCILLATION_ENABLED);
+    this.animController.setEnableVertical(Config.CAMERA_OSCILLATION_ENABLED);
   }
 
   _syncSpeedInputs() {
     window._speedMultiplier        = Config.ROTATION_DEFAULT_SPEED;
     window._textureSpeedMultiplier = Config.TEXTURE_DEFAULT_SPEED;
-    setSpeedMultiplier(window._speedMultiplier);
-    setGroundTextureSpeed(window._textureSpeedMultiplier);
+    this.animController.setSpeedMultiplier(window._speedMultiplier);
+    this.animController.setTextureSpeed(window._textureSpeedMultiplier);
     [
       { id: 'speed-input', value: Config.ROTATION_DEFAULT_SPEED },
       { id: 'texture-speed-input',  value: Config.TEXTURE_DEFAULT_SPEED }
@@ -118,7 +122,7 @@ export class UIControlsModule {
     const vert = document.getElementById('toggle-camera-vertical');
     if (vert instanceof HTMLInputElement) {
       vert.checked = Config.CAMERA_OSCILLATION_ENABLED;
-      setEnableVertical(vert.checked);
+      this.animController.setEnableVertical(vert.checked);
     }
   }
 

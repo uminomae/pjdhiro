@@ -5,8 +5,8 @@ export function getDisplayHandlers(scene) {
       selector: '#toggle-grid-sphere',
       type: 'change',
       handler: e => {
-      const m = scene.getObjectByName('earthGridPoints');
-      if (m) m.visible = e.target.checked;
+        const m = scene.getObjectByName('earthGridPoints');
+        if (m) m.visible = e.target.checked;
       }
     },
     {
@@ -20,16 +20,16 @@ export function getDisplayHandlers(scene) {
       selector: '#toggle-helper-grid',
       type: 'change',
       handler: e => {
-      const o = scene.getObjectByName('HelperGrid');
-      if (o) o.visible = e.target.checked;
+        const o = scene.getObjectByName('HelperGrid');
+        if (o) o.visible = e.target.checked;
       }
     },
     {
       selector: '#toggle-helper-axes',
       type: 'change',
       handler: e => {
-      const o = scene.getObjectByName('HelperAxes');
-      if (o) o.visible = e.target.checked;
+        const o = scene.getObjectByName('HelperAxes');
+        if (o) o.visible = e.target.checked;
       }
     }
   ];
