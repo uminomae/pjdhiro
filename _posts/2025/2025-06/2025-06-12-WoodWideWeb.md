@@ -96,8 +96,23 @@ tags:
 ## 救いと赦し駆動開発
 
 全員の幸福を最大化する実用的なデザインを探してた頃で。  
-罪と赦し、恥と救いDrivenで開発される、人生というプロジェクトがあるだろう、と。  
+罪と赦し、恥（弱さ）と救い駆動で開発される、人生というプロジェクトがあるだろう、と。  
 善悪の知識の実を食べたアダムとイブは、それで罪を背負い恥を知った、と聞いた。  
+
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/a/af/Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png" 
+  alt="風神雷神図 by 俵屋宗達"
+  style="
+    max-width:100%; height:auto; display:block; margin-bottom:0px;
+  ">
+<p style="font-size:0.8em; color:#666; text-align:right; margin-bottom:2rem">
+  出典：
+  <a href="https://commons.wikimedia.org/wiki/File:Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png" target="_blank" style="color:#666; text-decoration:none;">
+    Wikimedia Commons
+  </a>
+  （パブリックドメイン）
+</p>
+
 
 救いと赦しは分かりづらい。  
 なので「風神と雷神」を間に挟む。西洋心理学やキリスト教文化を和風に解釈したつもり。  
@@ -105,14 +120,14 @@ tags:
 - 風のように包む受容の器、赦しの癒し。重ね合わせるような曖昧さで。平方根みたいに。  
 - 雷のように鋭いAgility（機敏さ）、英雄の救い。指し示す、光をあてる。自乗するような能動さ。  
 
-あまり伝えられなかったと思う。  
-けど、神と人間の垂直と水平を、別軸な視点でロゴを作ってもらった。それで十分な気もする。  
+あまりうまく伝えられなかった。  
+けど、神と人間の垂直と水平を別の視点で解釈し、ロゴを作ってもらった。それで十分な気もする。  
 「〜」（波線）を山と海に見立てて、そこを時間の「→」（矢印）で貫く意匠の。空間と時間。  
 
 - 時間と空間
 - 垂直と水平
 - 神と人
-- 罪と恥
+- 罪と恥（不安・弱さ・惨めさ）
 - 赦しと救い
 - 風と光
 - 受容と能動
@@ -137,6 +152,17 @@ tags:
 ジュリア集合を逆算する過程に☯️陰陽マークを重ねて眺めるのはそんな理由。  
 
 心境不二的な。
+
+<video 
+  src="{{ '/assets/movie/place2.mp4' | relative_url }}"
+  autoplay  
+  muted  
+  loop  
+  playsinline  
+  controls
+  style="max-width:100%; height:auto; display:block;"
+  >
+</video>
 
 ---
 
