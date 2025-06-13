@@ -58,41 +58,26 @@ class JuliaMainModule {
     this._dispose();
     this._init();
     this.ui.sync(); 
-
-    console.log(
-      '▶ form:', 
-      document.getElementById('input-re').value,
-      document.getElementById('input-im').value,
-      // …
-    );
-    console.log(
-      '▶ renderer flags:', 
-      this.rendererModule.isStarted, 
-      this.rendererModule.isPaused
-    );
-    console.log(
-      '▶ loop running:', 
-      this.loopCtrl.isRunning()
-    );
-    console.log(
-      '▶ scene children:', 
-      this.context.scene.children.length
-    );
     console.log('[DEBUG] _reset 完了');
-
   }
 
   /** 全破棄 */
-  _dispose() {
-    console.log('[DEBUG] _dispose 開始');
-    this.loopCtrl.dispose();
-    this.rendererModule.dispose();
-    this.sceneModule.dispose();
-    this.ui.dispose();
-    this.sceneModule  = null;
-    this.rendererModule = null;
-    this.loopCtrl     = null;
-    this.ui           = null;
-    console.log('[JuliaMainModule] dispose() 完了');
+  dispose() {
+    [this.loopCtrl, this.rendererModule, this.sceneModule, this.ui].forEach(m => {
+      if (m && typeof m.dispose === 'function') m.dispose();
+    });
   }
+
+  // _dispose() {
+  //   console.log('[DEBUG] _dispose 開始');
+  //   this.loopCtrl.dispose();
+  //   this.rendererModule.dispose();
+  //   this.sceneModule.dispose();
+  //   this.ui.dispose();
+  //   this.sceneModule  = null;
+  //   this.rendererModule = null;
+  //   this.loopCtrl     = null;
+  //   this.ui           = null;
+  //   console.log('[JuliaMainModule] dispose() 完了');
+  // }
 }
