@@ -13,49 +13,41 @@ export function startModule(context) {
   _instance.init();
 }
 
-export function resetModule(context) {
-  if (_instance) {
-    _instance.reset();
-  }
+export function resetModule() {
+  if (_instance) _instance.reset();
 }
 
 export function disposeModule() {
-  if (_instance) {
-    _instance.dispose();
-    _instance = null;
-  }
+  if (_instance) { _instance.dispose(); _instance = null; }
 }
 
-// メインクラス: UI と描画ライフサイクルを統括
-export class JuliaMainModule {
-  /**
-   * @param {{ scene, camera, renderer, controls }} context
-   */
+class JuliaMainModule {
   constructor(context) {
     this.context = context;
-
-    // UI 操作を一括管理
-    this.uiModule = new UIControlsModule({
-      context: this.context,
-      onReset: this.reset.bind(this)
+    this.ui      = new UIControlsModule({
+      onReset:   () => this.reset(),
+      onTopView: () => context.controls.resetToTopView()
     });
-
   }
 
   init() {
-    this.uiModule.init();
-    initJuliaApp(this.reset.bind(this));  // 描画モジュール初期化
+    this.ui.init();
+    initJuliaApp(() => this.reset());
+    console.log('[JuliaMainModule] init() 完了');
   }
 
   reset() {
-    disposeJuliaApp();    // render/dispose
-    this.uiModule.dispose();
+    // ループ停止・破棄
+    context.stopLoop?.();
+    disposeJuliaApp();
+    this.ui.dispose();
+    // 再初期化
     this.init();
   }
 
   dispose() {
+    context.stopLoop?.();
     disposeJuliaApp();
-    this.uiModule.dispose();
+    this.ui.dispose();
   }
 }
-
