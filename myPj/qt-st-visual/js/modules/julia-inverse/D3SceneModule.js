@@ -20,8 +20,8 @@ export class D3SceneModule {
 
   /** シーン内オブジェクトとレンダラーをクリア */
   dispose() {
-    clearScene();
-    clearRenderer();
+    this._clearScene();
+    this._clearRenderer();
     this._inited = false;
     console.log('[D3SceneModule] dispose() 完了');
   }

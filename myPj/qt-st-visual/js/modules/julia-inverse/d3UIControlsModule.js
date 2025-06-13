@@ -55,9 +55,7 @@ export class UIControlsModule {
   init() {
     this._modules.forEach(m => m.init());
     // sync 一発目
-    syncFormDefaults();
-    syncLoopButtons(this.loopCtrl);
-
+    this.sync();
     console.log('[UIControlsModule] init() 完了');
   }
 
@@ -68,9 +66,7 @@ export class UIControlsModule {
   }
 
   dispose() {
-    this.formModule.dispose();
-    this.loopModule.dispose();
-    this.canvasModule.dispose();
+    this._modules.forEach(m => m.dispose());
     console.log('[UIControlsModule] dispose() 完了');
   }
 }

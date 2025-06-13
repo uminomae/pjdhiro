@@ -1,6 +1,6 @@
 import { Complex }                    from '../util/complex-number.js';
 import { DRAW_PARAMS, FORM_DEFAULTS } from '../d3-config.js';
-
+import { resetModule } from '../julia-main.js';
 /**
  * Run/Pause/Resume/Stop ボタンのハンドラ一覧
  * @param {D3RendererModule} rendererModule
@@ -33,7 +33,7 @@ export function getRunHandlers(rendererModule, loopCtrl) {
           // アニメーション実行＆描画ループ開始
           try {
             await rendererModule.runInverseAnimation(c, N, maxI, DRAW_PARAMS.interval);
-            loopCtrl.start();
+            loopCtrl.init();
           } catch (err) {
             console.error('[RunHandler] runInverseAnimation error', err);
             rendererModule.isStarted = false;
@@ -52,21 +52,24 @@ export function getRunHandlers(rendererModule, loopCtrl) {
 
         // 3) Resumed → Pause 再開
         rendererModule.isPaused = false;
-        loopCtrl.start();
+        loopCtrl.init();
         btn.textContent = 'Pause';
       }
     },
     {
-      selector: '#btn-stop',
+      selector: '#btn-reset',
       type:     'click',
       handler:  () => {
+        console.log('[ResetHandler] Reset button clicked');
         // 完全リセット
-        rendererModule.isPaused  = false;
-        rendererModule.isStarted = false;
-        loopCtrl.stop();
-        rendererModule.dispose();
-        const btn = document.getElementById('btn-run');
-        if (btn) btn.textContent = 'Run';
+        resetModule();
+
+        // rendererModule.isPaused  = false;
+        // rendererModule.isStarted = false;
+        // loopCtrl.stop();
+        // rendererModule.dispose();
+        // const btn = document.getElementById('btn-run');
+        // if (btn) btn.textContent = 'Run';
       }
     }
   ];
