@@ -1,8 +1,10 @@
-// js/modules/julia/julia-main.js
+// modules/julia-inverse/julia-main.js
 
-import { initLegendToggle } from './ui/legend-ui.js';
-import { initJuliaApp, resetJuliaApp, disposeJuliaApp } from './d3Init.js';
-import { UIControlsModule } from './d3UIControlsModule.js';
+import { UIControlsModule }      from './d3UIControlsModule.js';
+import { LoopController }        from './LoopController.js';
+import { initJuliaApp, disposeJuliaApp } from './d3Init.js';
+import { D3SceneModule }      from './D3SceneModule.js';
+import { D3RendererModule }      from './D3RendererModule.js';
 
 let _instance = null;
 
@@ -18,36 +20,49 @@ export function resetModule() {
 }
 
 export function disposeModule() {
-  if (_instance) { _instance.dispose(); _instance = null; }
+  if (_instance) {
+    _instance.dispose();
+    _instance = null;
+  }
 }
 
+/** メインクラス：UI・シーン・ループを統括 */
 class JuliaMainModule {
   constructor(context) {
-    this.context = context;
-    this.ui      = new UIControlsModule({
+    this.context      = context;
+    this.sceneModule  = new D3SceneModule(context);
+    this.loopCtrl     = new LoopController(context);
+    this.rendererModule = new D3RendererModule(context);
+    this.ui           = new UIControlsModule({
+      rendererModule: this.rendererModule,
+      loopCtrl:  this.loopCtrl,
       onReset:   () => this.reset(),
       onTopView: () => context.controls.resetToTopView()
     });
   }
 
+  /** 初期描画 & ループ開始 */
   init() {
+    this.sceneModule.init();
     this.ui.init();
-    initJuliaApp(() => this.reset());
+    this.loopCtrl.start();
     console.log('[JuliaMainModule] init() 完了');
   }
 
+  /** 停止→破棄→再初期化 */
   reset() {
-    // ループ停止・破棄
-    context.stopLoop?.();
-    disposeJuliaApp();
+    // ループ停止 & シーン破棄
+    this.loopCtrl?.stop();
+    this.sceneModule.dispose();
     this.ui.dispose();
-    // 再初期化
     this.init();
   }
 
+  /** 全破棄 */
   dispose() {
-    context.stopLoop?.();
-    disposeJuliaApp();
+    this.loopCtrl?.stop();
+    this.sceneModule.dispose();
     this.ui.dispose();
+    console.log('[JuliaMainModule] dispose() 完了');
   }
 }
