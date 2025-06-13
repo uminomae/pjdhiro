@@ -1,111 +1,64 @@
-// modules/julia-inverse/UIControlsModule.js
+// modules/julia-inverse/ui/UIControlsModule.js
 
-import { FORM_DEFAULTS, LEGEND_DEFAULT } from './d3-config.js';
-import './ui/button-ui.js';
-import { toggleLegend }                 from './ui/d3-legend-sub.js';
-import { FormModule }                   from '../../core/FormModule.js';
-import { resetModule }                  from './julia-main.js';
+import { FormModule }                from '../../core/FormModule.js';
+import { getFormHandlers }           from './handlers/formHandlers.js';
+import { getNavbarHandlers }         from './handlers/navbarHandlers.js';
+import { getCanvasHandlers }         from './handlers/canvasHandlers.js';
+import { syncFormDefaults }          from './formSync.js';
+// import { syncNavbarButtons }      from './syncers/navbarSync.js';   // 任意
+// import { syncCanvasView }         from './syncers/canvasSync.js';   // 任意
 
-/**
- * UIControlsModule
- * - Offcanvas 内の Julia フォーム (RE/IM/N/ITER/Legend)
- * - 設定完了ボタン
- * - Navbar のリセットボタン
- * をすべて FormModule で管理
- */
 export class UIControlsModule {
   /**
    * @param {Object} options
-   * @param {Object} options.context 描画 context (scene, camera など)
-   * @param {Function} options.onReset 設定変更後に描画をリセットするコールバック
+   * @param {Function} options.onReset
+   * @param {Function} options.onTopView
    */
-  constructor({ context, onReset }) {
-    this.context = context;
-    this.onReset = onReset;
-
-    // Offcanvas フォーム周り
+  constructor({ onReset, onTopView }) {
+    // Offcanvas フォーム
     this.formModule = new FormModule({
       rootSelector: '#offcanvasForm form',
-      handlers: [
-        {
-          // submit → reset
-          selector: '#offcanvasForm form',
-          type:     'submit',
-          handler:  e => {
-            e.preventDefault();
-            this.onReset();
-          }
-        },
-        {
-          // 数値フォームが変更されたら reset
-          selector: '#input-re, #input-im, #input-n, #input-iter',
-          type:     'change',
-          handler:  () => this.onReset()
-        },
-        {
-          // 凡例チェック変更 → toggleLegend + reset
-          selector: '#chk-legend',
-          type:     'change',
-          handler:  () => {
-            toggleLegend();
-            this.onReset();
-          }
-        },
-        {
-          // 「設定完了」ボタン押下 → reset
-          selector: '#config-complete-btn',
-          type:     'click',
-          handler:  () => this.onReset()
-        }
-      ]
+      handlers:     getFormHandlers(onReset)
     });
 
-    // Navbar のリセットボタン
+    // Navbar
     this.navbarModule = new FormModule({
-      rootSelector: '#navbar',
-      handlers: [
-        {
-          selector: '#btn-reset',
-          type:     'click',
-          handler:  () => resetModule(this.context)
-        }
-      ]
+      rootSelector: 'nav.navbar',
+      handlers:     getNavbarHandlers()
+    });
+
+    // Canvas 上の 2D view
+    this.canvasModule = new FormModule({
+      rootSelector: '#canvas-container',
+      handlers:     getCanvasHandlers(onTopView)
     });
   }
 
-  /** イベントバインド＆フォーム初期値セット */
+  /** イベント登録＋UI同期 */
   init() {
-    // フォーム入力のデフォルト値を設定
-    const setVal = (sel, v) => {
-      const el = document.querySelector(sel);
-      if (el instanceof HTMLInputElement) el.value = v;
-    };
-    setVal('#input-re',   FORM_DEFAULTS.re);
-    setVal('#input-im',   FORM_DEFAULTS.im);
-    setVal('#input-n',    FORM_DEFAULTS.N);
-    setVal('#input-iter', FORM_DEFAULTS.maxIter);
-
-    const chk = document.getElementById('chk-legend');
-    if (chk instanceof HTMLInputElement) {
-      chk.checked = LEGEND_DEFAULT.enabled;
-    }
-
-    // FormModule の初期化（イベントバインド）
     this.formModule.init();
     this.navbarModule.init();
-
+    this.canvasModule.init();
+    // sync
+    // syncFormDefaults();
+    this.sync();
+    // syncNavbarButtons();
+    // syncCanvasView();
     console.log('[UIControlsModule] init() 完了');
   }
 
-  /** UI 状態をモデルに同期（必要なら追加実装） */
+  /** 必要に応じた UI⇄モデル同期処理をまとめる */
   sync() {
-    // ここに「UI→model」 or 「model→UI」の同期処理を入れられます
+    syncFormDefaults();
+    // syncNavbarButtons();
+    // syncCanvasView();
   }
 
-  /** イベントリスナ解除などのクリーンアップ */
+  /** リスナ解除 */
   dispose() {
     this.formModule.dispose();
     this.navbarModule.dispose();
+    this.canvasModule.dispose();
     console.log('[UIControlsModule] dispose() 完了');
   }
 }
