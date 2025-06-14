@@ -24,7 +24,9 @@ export class FormModule {
 
   /** 初期化：セレクタごとにイベント登録 */
   init() {
+    console.log(`[FormModule] start`);
     this.handlers.forEach(({ selector, type, handler }) => {
+      console.log(`[FormModule] bind ${type} on  ${selector}`);
       // イベント委譲：root にまとめて登録
       const wrapped = e => {
         if (e.target.matches(selector) || e.target.closest(selector)) {

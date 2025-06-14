@@ -37,6 +37,22 @@ export class D3RendererModule {
     this.renderer.render(this.scene, this.camera);
   }
 
+   /** 描画ループを一時停止 */
+   pause() {
+    if (!this.isStarted || this.isPaused) return;
+    this.isPaused = true;
+    console.log('[D3RendererModule] paused');
+  }
+
+  /** 描画ループを再開 */
+  resume() {
+    if (!this.isStarted || !this.isPaused) return;
+    this.isPaused = false;
+    console.log('[D3RendererModule] resumed');
+    // もしループ中なら再度 _loop を呼び出す
+    if (this._running) this._loop();
+  }
+  
   /** 描画ループ開始 */
   startLoop() {
     if (this._running) return;
@@ -55,12 +71,19 @@ export class D3RendererModule {
 
   /** シーンとレンダラーをクリア */
   dispose() {
-    this._cancel = true;
+    // ① 既存 RAF を確実にキャンセル
+    if (this._rafId) cancelAnimationFrame(this._rafId);
     this.stopLoop();
+    // ② 中断フラグ立て
+    this._cancel = true;
+
     while (this.scene.children.length) {
       this.scene.remove(this.scene.children[0]);
     }
     this.renderer.clear();
+    this._rafId    = null;
+    this.isStarted = false;
+    this.isPaused  = false;
     console.log('[D3RendererModule] dispose() 完了');
   }
 
@@ -87,7 +110,7 @@ export class D3RendererModule {
     console.log('[runInverseAnimation] START', { c, N, maxIter, interval });
     // Run ボタンクリック時に初期化
     this.isStarted = true;
-    this._cancel = true;
+    this._cancel = false;
     this.isPaused  = false;
 
     if (!(c instanceof Complex)) {

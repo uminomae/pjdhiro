@@ -2,69 +2,110 @@
 
 import { UIControlsModule }      from './d3UIControlsModule.js';
 import { LoopController }        from './LoopController.js';
-import { D3SceneModule }      from './D3SceneModule.js';
-import { D3RendererModule }      from './D3RendererModule.js';
-import * as Config            from './d3-config.js';
+import { D3SceneModule }         from './D3SceneModule.js';
 
-let _instance = null;
+let _juliaMainModule = null;
 
+/**
+ * モジュールを開始／シングルトン生成
+ * @param {object} context - Three.js コンテキスト (scene, camera, renderer, controls)
+ */
 export function startModule(context) {
-  if (!_instance) {
-    _instance = new JuliaMainModule(context);
+  if (!_juliaMainModule) {
+    _juliaMainModule = new JuliaMainModule(context);
+    _juliaMainModule.init();
   }
 }
 
-export function resetModule() {
-  if (_instance) _instance._reset();
+/**
+ * 外部からリセットを呼び出すインターフェース
+ */
+export function resetModule(context) {
+  if (_juliaMainModule) {
+    _juliaMainModule.reset();
+  } else {
+    startModule(context);
+  }
 }
 
+/**
+ * モジュールの破棄とインスタンスクリア
+ */
 export function disposeModule() {
-  if (_instance) {
-    _instance._dispose();
-    _instance = null;
+  if (_juliaMainModule) {
+    _juliaMainModule.dispose();
+    _juliaMainModule = null;
   }
 }
 
-/** メインクラス：UI・シーン・ループを統括 */
+/**
+ * メインクラス：
+ * UIControlsModule, LoopController, D3SceneModule の
+ * 初期化・破棄を統括する
+ */
 class JuliaMainModule {
+  /**
+   * @param {object} context - 共通コンテキスト
+   */
   constructor(context) {
-    this.context      = context;
-    this._init();
+    this.context = context;
   }
 
-  /** 初期描画 & ループ開始 */
-  _init() {
-    this.sceneModule  = new D3SceneModule(this.context);
-    this.rendererModule = new D3RendererModule(this.context);
-    this.loopCtrl     = new LoopController(this.context);
-    this.ui           = new UIControlsModule({
-      rendererModule: this.rendererModule,
-      loopCtrl:  this.loopCtrl,
-      onReset:   () => this._reset(),
-      onTopView: () => this.context.controls.resetToTopView()
+  /**
+   * 初期化処理：
+   * シーン、UI、ループ制御のセットアップ
+   */
+  init() {
+    console.log('[JuliaMainModule] init() start');
+    console.log('[JuliaMainModule] D3SceneModule() start');
+    this.sceneModule = new D3SceneModule(this.context);
+    console.log('[JuliaMainModule] LoopController() start');
+    this.animController = new LoopController(
+      this.context.scene,
+      this.context.camera,
+      this.context.controls
+    );
+    console.log('[JuliaMainModule] UIControlsModule() start');
+    this.uiModule    = new UIControlsModule({
+      scene:         this.context.scene,
+      camera:        this.context.camera,
+      renderer:      this.context.renderer,
+      controls:      this.context.controls,
+      animController:this.animController
     });
-
+    
+    console.log('[JuliaMainModule] sceneModule.init() start');
     this.sceneModule.init();
-    this.ui.init();
-    this.loopCtrl.init();
-    // this.rendererModule.init();  
-    this.rendererModule.startLoop();  
-    console.log('[JuliaMainModule] _init() 完了');
+    console.log('[JuliaMainModule] uiModule.init() start');
+    this.uiModule.init();
+    console.log('[JuliaMainModule] animController.init() start');
+    // this.animController.start();
   }
 
-  /** 停止→破棄→再初期化 */
-  _reset() {
-    console.log('[DEBUG] _reset 開始');
-    this._dispose();
-    this._init();
-    this.ui.sync(); 
-    console.log('[DEBUG] _reset 完了');
+  /**
+   * 状態再同期
+   */
+  sync() {
+    this.sceneModule.sync();
+    this.uiModule.sync();
   }
 
-  /** 全破棄 */
-  _dispose() {
-    [this.loopCtrl, this.rendererModule, this.sceneModule, this.ui].forEach(m => {
-      if (m && typeof m.dispose === 'function') m.dispose();
-    });
+  /**
+   * 破棄処理：
+   * シーン、UI、ループ制御の停止・クリア
+   */
+  dispose() {
+    this.animController._resetState();
+    this.uiModule.dispose();
+    this.sceneModule.dispose();
+  }
+
+  /**
+   * リセット処理：
+   * 完全破棄の後、再初期化
+   */
+  reset() {
+    this.dispose();
+    this.init();
   }
 }

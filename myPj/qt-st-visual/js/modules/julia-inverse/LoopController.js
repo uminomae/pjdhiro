@@ -1,38 +1,179 @@
+// modules/julia-inverse/LoopController.js
+
+import * as THREE from 'three';
+import { Complex } from './util/complex-number.js';
+import { generateCirclePoints } from './util/generate-circle.js';
+import { pauseAwareSleep as sleep } from './util/sleep.js';
+import { createColoredPoints3D } from './renderer/d3-utils.js';
+import {
+  step1_subtract3D,
+  step2_sqrt1_3D,
+  step3_sqrt2_3D
+} from './renderer/d3-steps.js';
+import {
+  DRAW_PARAMS,
+  FORM_DEFAULTS,
+  STAGE_NAMES,
+  ERROR_MESSAGES
+} from './d3-config.js';
+
 export class LoopController {
-  /** @param {object} context { scene, camera, renderer, controls } */
-  constructor(context) {
-    this.context = context;
-    this._running = false;
-    this._rafId   = null;
+  constructor(scene, camera, controls) {
+    this.scene    = scene;
+    this.camera   = camera;
+    this.controls = controls;
+    this._resetState();
   }
 
-  init() {
-    if (this._running) return;
-    this._running = true;
-    this._loop();
+  /** 内部状態を初期化 */
+  _resetState() {
+    this.isPaused   = false;
+    this._cancel    = false;
+    this.isStarted  = false;
   }
 
+  /** アニメーション実行中かどうか */
+  isRunning() {
+    return this.isStarted && !this._cancel;
+  }
+
+  /** 中断フラグをセット */
+  cancel() {
+    this._cancel = true;
+  }
+
+  /** 一時停止 */
   pause() {
-    if (!this._running) return;
-    this._running = false;
-    if (this._rafId) cancelAnimationFrame(this._rafId);
+    if (this.isStarted) {
+      this.isPaused = true;
+      console.log('[LoopController] paused');
+    }
   }
 
-  reset() {
-    this.pause();
-    this.init();
+  /** 再開 */
+  resume() {
+    if (this.isStarted && this.isPaused) {
+      this.isPaused = false;
+      console.log('[LoopController] resumed');
+    }
   }
 
-  dispose() {
-    this.pause();
-    this.context = null;
-  }
+  /**
+   * 逆写像アニメーションを実行
+   * @param {Complex} c - 定数 c
+   * @param {number} N - 初期円の分割数
+   * @param {number} maxIter - 最大世代数
+   * @param {number} interval - フレーム間隔（ms）
+   */
+  async runInverseAnimation(
+    c,
+    N = FORM_DEFAULTS.N,
+    maxIter = FORM_DEFAULTS.maxIter,
+    interval = DRAW_PARAMS.interval
+  ) {
+    console.log('[runInverseAnimation] START', { c, N, maxIter, interval });
 
-  _loop() {
-    if (!this._running) return;
-    this._rafId = requestAnimationFrame(() => this._loop());
-    // 描画とコントロール更新
-    this.context.controls.update();
-    this.context.renderer.render(this.context.scene, this.context.camera);
+    // バリデーション
+    if (!(c instanceof Complex)) {
+      console.error('[runInverseAnimation] ERROR: c is not Complex', c);
+      throw new Error(ERROR_MESSAGES.invalidC);
+    }
+
+    // 状態リセット
+    this._cancel   = false;
+    this.isPaused  = false;
+    this.isStarted = true;
+
+    // ① 初期円を生成・描画
+    let currentGen = generateCirclePoints(N);
+    const pts0 = createColoredPoints3D(
+      this.scene,
+      currentGen,
+      STAGE_NAMES.init,
+      0,
+      DRAW_PARAMS.pointSize,
+      'ptsWhite0'
+    );
+    this.scene.add(pts0);
+    await sleep(interval);
+    if (!this.isPaused) this.scene.remove(pts0);
+
+    let prevName = 'ptsWhite0';
+
+    // ② 各世代ループ
+    for (let iter = 1; iter <= maxIter; iter++) {
+      if (this._cancel) {
+        console.log('[runInverseAnimation] CANCELLED at gen', iter);
+        break;
+      }
+
+      // Pause 中は待機
+      while (this.isPaused) {
+        await sleep(100);
+      }
+
+      // ステップ1：引き算
+      const diffPts = await step1_subtract3D(
+        this.scene,
+        currentGen,
+        c,
+        prevName,
+        iter,
+        DRAW_PARAMS.steps,
+        interval / 2,
+        DRAW_PARAMS.pointSize
+      );
+
+      // ステップ2：第一平方根
+      const sqrtPts1 = await step2_sqrt1_3D(
+        this.scene,
+        diffPts,
+        prevName,
+        iter,
+        DRAW_PARAMS.steps,
+        interval / 2,
+        DRAW_PARAMS.pointSize
+      );
+
+      // ステップ3：第二平方根
+      const combinedPts = await step3_sqrt2_3D(
+        this.scene,
+        diffPts,
+        sqrtPts1,
+        prevName,
+        iter,
+        DRAW_PARAMS.steps,
+        interval / 2,
+        DRAW_PARAMS.pointSize
+      );
+
+      // 前世代の白点を消去（Pause 中はスキップ）
+      if (!this.isPaused) {
+        const prevObj = this.scene.getObjectByName(prevName);
+        if (prevObj) this.scene.remove(prevObj);
+      }
+
+      // 新たな白点を描画
+      const newName = `ptsWhite${iter}`;
+      const ptsWhite = createColoredPoints3D(
+        this.scene,
+        combinedPts,
+        STAGE_NAMES.recolor,
+        iter,
+        DRAW_PARAMS.pointSize,
+        newName
+      );
+      this.scene.add(ptsWhite);
+
+      // 次世代へ
+      currentGen = combinedPts.slice();
+      prevName   = newName;
+
+      console.log(`[runInverseAnimation] Generation ${iter} done`);
+      await sleep(interval);
+    }
+
+    console.log('[runInverseAnimation] FINISH');
+    this.isStarted = false;
   }
 }
