@@ -1,67 +1,74 @@
+// modules/julia-inverse/ui/handlers/getRunHandlers.js
+
 import { Complex }                    from '../util/complex-number.js';
-import { DRAW_PARAMS, FORM_DEFAULTS } from '../d3-config.js';
-import { resetModule } from '../julia-main.js';
-/**
- * Run/Pause/Resume/Stop ボタンのハンドラ一覧
- * @param {D3RendererModule} rendererModule
- * @param {LoopController}   loopCtrl
- */
-export function getRunHandlers(rendererModule, loopCtrl) {
+import { DRAW_PARAMS }                from '../d3-config.js';
+import { resetModule }                from '../julia-main.js';
+
+export function getRunHandlers(loopCtrl) {
   return [
     {
       selector: '#btn-run',
-      type:     'click',
-      handler:  async () => {
-        const btn = document.getElementById('btn-run');
+      type: 'click',
+      handler: async () => {
+        const btnRun    = document.getElementById('btn-run');
+        const btnPause  = document.getElementById('btn-pause');
 
-        // 1) 初回 Run
-        if (!rendererModule.isStarted) {
-          rendererModule.isStarted = true;
-          rendererModule.isPaused  = false;
-          btn.textContent = 'Pause';
+        // ① Run は隠して、Pause を表示
+        btnRun.classList.add('d-none');
+        btnPause.classList.remove('d-none');
 
-          // 前の結果をクリア
-          rendererModule.dispose();
+        // ② 既存アニメーションをキャンセルして、新規に実行
+        loopCtrl.cancel();
+        const reVal   = parseFloat(document.getElementById('input-re').value);
+        const imVal   = parseFloat(document.getElementById('input-im').value);
+        const c       = new Complex(reVal, imVal);
+        const N       = parseInt(document.getElementById('input-n').value, 10);
+        const maxIter = parseInt(document.getElementById('input-iter').value, 10);
 
-          // フォームからパラメータ取得
-          const re   = parseFloat(document.getElementById('input-re').value);
-          const im   = parseFloat(document.getElementById('input-im').value);
-          const c    = new Complex(re, im);
-          const N    = parseInt(document.getElementById('input-n').value,  10) || FORM_DEFAULTS.N;
-          const maxI = parseInt(document.getElementById('input-iter').value, 10) || FORM_DEFAULTS.maxIter;
+        await loopCtrl.runInverseAnimation(c, N, maxIter, DRAW_PARAMS.interval);
 
-          // アニメーション実行＆描画ループ開始
-          try {
-            await rendererModule.runInverseAnimation(c, N, maxI, DRAW_PARAMS.interval);
-            loopCtrl.init();
-          } catch (err) {
-            console.error('[RunHandler] runInverseAnimation error', err);
-            rendererModule.isStarted = false;
-            btn.textContent = 'Run';
-          }
-          return;
-        }
+        // ③ アニメーション完了時は、元に戻す
+        btnPause.classList.add('d-none');
+        btnRun.classList.remove('d-none');
+      }
+    },
+    {
+      selector: '#btn-pause',
+      type: 'click',
+      handler: () => {
+        const btnPause  = document.getElementById('btn-pause');
+        const btnResume = document.getElementById('btn-resume');
 
-        // 2) Running → Pause
-        if (!rendererModule.isPaused) {
-          rendererModule.isPaused = true;
-          loopCtrl.pause();
-          btn.textContent = 'Resume';
-          return;
-        }
+        loopCtrl.pause();
+        btnPause.classList.add('d-none');
+        btnResume.classList.remove('d-none');
+      }
+    },
+    {
+      selector: '#btn-resume',
+      type: 'click',
+      handler: () => {
+        const btnPause  = document.getElementById('btn-pause');
+        const btnResume = document.getElementById('btn-resume');
 
-        // 3) Resumed → Pause 再開
-        rendererModule.isPaused = false;
-        loopCtrl.init();
-        btn.textContent = 'Pause';
+        loopCtrl.resume();
+        btnResume.classList.add('d-none');
+        btnPause.classList.remove('d-none');
       }
     },
     {
       selector: '#btn-reset',
-      type:     'click',
-      handler:  () => {
-        console.log('[ResetHandler] Reset button clicked');
+      type: 'click',
+      handler: () => {
+        const btnRun    = document.getElementById('btn-run');
+        const btnPause  = document.getElementById('btn-pause');
+        const btnResume = document.getElementById('btn-resume');
+
         resetModule();
+        // リセット時は初期状態に戻す
+        btnRun.classList.remove('d-none');
+        btnPause.classList.add('d-none');
+        btnResume.classList.add('d-none');
       }
     }
   ];

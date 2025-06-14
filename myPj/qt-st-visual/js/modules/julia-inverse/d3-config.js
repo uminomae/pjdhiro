@@ -9,7 +9,7 @@
 export const FORM_DEFAULTS = {
 	re:      -0.4,  // Re(c) の初期値
 	im:       0.6,  // Im(c) の初期値
-	N:       90,    // ポイント数の初期値
+	N:       45,    // ポイント数の初期値
 	maxIter:  8     // 最大世代数の初期値
   };
   
@@ -109,3 +109,27 @@ export const FORM_DEFAULTS = {
 	maxZ: 2
   };
   
+// — 床グリッド設定 — 
+export const GRID_SIZE           = 10;
+export const GRID_DIVISIONS      = 10;
+export const GRID_COLOR_CENTERLINE = 0x444444;
+export const GRID_COLOR          = 0x888888;
+
+// — 軸ヘルパー設定 — 
+export const AXES_SIZE = 6;
+// — 床テクスチャ設定 — 
+export const GROUND_TEXTURE_OPACITY = 0.05;
+export const GROUND_TEXTURE_VISIBLE = true;
+export const BG_COLOR_DARK    = '#000011';
+
+
+// — カメラの注視点（lookAt で使う座標） — 
+//   [x, y, z]の配列で指定。今は原点を見せたいので [0, 0, 0] に設定。
+export const CAMERA_TARGET = [0, 0, 0];
+// — カメラ初期設定 — 
+export const CAMERA_INITIAL_POSITION    = [-5, 4, 10];
+export const CAMERA_AUTO_ROTATE_ENABLED = true;
+export const CAMERA_AUTO_ROTATE_PERIOD  = 200; // 360°にかかる秒数
+
+// — 外部画像パス — 
+export const YIN_YANG_SYMBOL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Yin_and_Yang_symbol.svg/1920px-Yin_and_Yang_symbol.svg.png';
