@@ -28,7 +28,7 @@ export class LoopController {
     this.context = null;
   }
 
-  sub _loop() {
+  _loop() {
     if (!this._running) return;
     this._rafId = requestAnimationFrame(() => this._loop());
     // 描画とコントロール更新

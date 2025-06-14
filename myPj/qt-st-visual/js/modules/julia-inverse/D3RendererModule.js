@@ -26,6 +26,7 @@ export class D3RendererModule {
     // Run/Pause 用フラグ
     this.isStarted = false;
     this.isPaused  = false;
+    this._cancel = false;
   }
 
   /** 内部ループ */
@@ -54,6 +55,7 @@ export class D3RendererModule {
 
   /** シーンとレンダラーをクリア */
   dispose() {
+    this._cancel = true;
     this.stopLoop();
     while (this.scene.children.length) {
       this.scene.remove(this.scene.children[0]);
@@ -85,6 +87,7 @@ export class D3RendererModule {
     console.log('[runInverseAnimation] START', { c, N, maxIter, interval });
     // Run ボタンクリック時に初期化
     this.isStarted = true;
+    this._cancel = true;
     this.isPaused  = false;
 
     if (!(c instanceof Complex)) {
@@ -111,6 +114,10 @@ export class D3RendererModule {
 
       // Pause 中はここで待機
       await this._awaitWhilePaused();
+      if (this._cancel) {
+        console.log('[runInverseAnimation] Cancelled at generation', iter);
+        return;
+      }
 
       // Step 1
       const diffPts = await step1_subtract3D(
