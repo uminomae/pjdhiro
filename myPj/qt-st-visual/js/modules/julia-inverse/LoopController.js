@@ -42,6 +42,17 @@ export class LoopController {
     this._cancel = true;
   }
 
+  stop() {
+    // もし RAF が残っていればキャンセル
+    if (this.rafId != null) {
+      cancelAnimationFrame(this.rafId);
+      this.rafId = null;
+    }
+    // 内部状態を完全リセット
+    this._resetState();
+    console.log('[LoopController] stop() 完了');
+  }
+  
   /** 一時停止 */
   pause() {
     if (this.isStarted) {
