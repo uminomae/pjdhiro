@@ -60,7 +60,7 @@ class JuliaMainModule {
     console.log('[JuliaMainModule] D3SceneModule() start');
     this.sceneModule = new D3SceneModule(this.context);
     console.log('[JuliaMainModule] LoopController() start');
-    this.animController = new LoopController(
+    this.loopCtrl = new LoopController(
       this.context.scene,
       this.context.camera,
       this.context.controls
@@ -71,7 +71,7 @@ class JuliaMainModule {
       camera:        this.context.camera,
       renderer:      this.context.renderer,
       controls:      this.context.controls,
-      animController:this.animController
+      animController:this.loopCtrl
     });
     
     console.log('[JuliaMainModule] sceneModule.init() start');
@@ -80,6 +80,7 @@ class JuliaMainModule {
     this.uiModule.init();
     console.log('[JuliaMainModule] animController.init() start');
     // this.animController.start();
+    this.loopCtrl._resetState();
   }
 
   /**
@@ -95,7 +96,12 @@ class JuliaMainModule {
    * シーン、UI、ループ制御の停止・クリア
    */
   dispose() {
-    this.animController._resetState();
+    // this.animController._resetState();
+    // cancel() で async ループを抜けさせてから…
+    this.loopCtrl.cancel();
+    // stop() で RAF をキャンセルし内部状態を初期化
+    this.loopCtrl.stop();
+
     this.uiModule.dispose();
     this.sceneModule.dispose();
   }
