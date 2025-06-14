@@ -45,7 +45,7 @@ export function getRunHandlers(rendererModule, loopCtrl) {
         // 2) Running → Pause
         if (!rendererModule.isPaused) {
           rendererModule.isPaused = true;
-          loopCtrl.stop();
+          loopCtrl.pause();
           btn.textContent = 'Resume';
           return;
         }
@@ -61,15 +61,7 @@ export function getRunHandlers(rendererModule, loopCtrl) {
       type:     'click',
       handler:  () => {
         console.log('[ResetHandler] Reset button clicked');
-        // 完全リセット
         resetModule();
-
-        // rendererModule.isPaused  = false;
-        // rendererModule.isStarted = false;
-        // loopCtrl.stop();
-        // rendererModule.dispose();
-        // const btn = document.getElementById('btn-run');
-        // if (btn) btn.textContent = 'Run';
       }
     }
   ];
