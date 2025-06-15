@@ -35,10 +35,9 @@ tags:
 
 <!-- - [参考:日食の数時間前、森全体が動き出し木々がシンクロ。お互いに情報を伝え合っていた](https://karapaia.com/archives/509319.html) -->
 
-<!-- 
 
 <video 
-  src="{{ '/assets/movie/2D-Julia-set.mp4' | relative_url }}"
+  src="{{ '/assets/movie/yinyang/empathy.mp4 | relative_url }}"
   autoplay  
   muted  
   loop  
@@ -46,7 +45,8 @@ tags:
   controls
   style="max-width:100%; height:auto; display:block;"
   >
-</video> -->
+</video>
+
 <!-- 
 <img
   src="https://upload.wikimedia.org/wikipedia/commons/a/af/Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png" 
