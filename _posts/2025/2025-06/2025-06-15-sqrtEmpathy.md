@@ -35,9 +35,8 @@ tags:
 
 <!-- - [参考:日食の数時間前、森全体が動き出し木々がシンクロ。お互いに情報を伝え合っていた](https://karapaia.com/archives/509319.html) -->
 
-
 <video 
-  src="{{ '/assets/movie/yinyang/empathy.mp4 | relative_url }}"
+  src="{{ '/assets/movie/yinyang/empathy.mp4' | relative_url }}"
   autoplay  
   muted  
   loop  
