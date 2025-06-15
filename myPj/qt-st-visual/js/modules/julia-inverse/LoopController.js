@@ -1,5 +1,3 @@
-// modules/julia-inverse/LoopController.js
-
 import * as THREE from 'three';
 import { Complex } from './util/complex-number.js';
 import { generateCirclePoints } from './util/generate-circle.js';
@@ -25,7 +23,6 @@ export class LoopController {
     this._resetState();
   }
 
-  /** 内部状態を初期化 */
   _resetState() {
     this.isPaused   = false;
     this._cancel    = false;
@@ -40,16 +37,18 @@ export class LoopController {
   /** 中断フラグをセット */
   cancel() {
     this._cancel = true;
+    this.isPaused = false; // 強制解除して待機ループを脱出
   }
 
+  /** 完全停止 */
   stop() {
-    // もし RAF が残っていればキャンセル
     if (this.rafId != null) {
       cancelAnimationFrame(this.rafId);
       this.rafId = null;
     }
-    // 内部状態を完全リセット
-    this._resetState();
+    // キャンセルフラグセット＆停止状態へ
+    this.cancel();
+    this.isStarted = false;
     console.log('[LoopController] stop() 完了');
   }
   
@@ -84,18 +83,17 @@ export class LoopController {
   ) {
     console.log('[runInverseAnimation] START', { c, N, maxIter, interval });
 
-    // バリデーション
     if (!(c instanceof Complex)) {
       console.error('[runInverseAnimation] ERROR: c is not Complex', c);
       throw new Error(ERROR_MESSAGES.invalidC);
     }
 
-    // 状態リセット
+    // 新規実行時に状態リセット
     this._cancel   = false;
     this.isPaused  = false;
     this.isStarted = true;
 
-    // ① 初期円を生成・描画
+    // ① 初期円の生成・描画
     let currentGen = generateCirclePoints(N);
     const pts0 = createColoredPoints3D(
       this.scene,
@@ -107,7 +105,7 @@ export class LoopController {
     );
     this.scene.add(pts0);
     await sleep(interval);
-    if (!this.isPaused) this.scene.remove(pts0);
+    if (!this.isPaused && !this._cancel) this.scene.remove(pts0);
 
     let prevName = 'ptsWhite0';
 
@@ -118,9 +116,13 @@ export class LoopController {
         break;
       }
 
-      // Pause 中は待機
-      while (this.isPaused) {
+      // Pause 中の待機
+      while (this.isPaused && !this._cancel) {
         await sleep(100);
+      }
+      if (this._cancel) {
+        console.log('[runInverseAnimation] CANCELLED during pause at gen', iter);
+        break;
       }
 
       // ステップ1：引き算
@@ -158,13 +160,13 @@ export class LoopController {
         DRAW_PARAMS.pointSize
       );
 
-      // 前世代の白点を消去（Pause 中はスキップ）
-      if (!this.isPaused) {
+      // 前世代の描画削除
+      if (!this.isPaused && !this._cancel) {
         const prevObj = this.scene.getObjectByName(prevName);
         if (prevObj) this.scene.remove(prevObj);
       }
 
-      // 新たな白点を描画
+      // 新規世代の描画
       const newName = `ptsWhite${iter}`;
       const ptsWhite = createColoredPoints3D(
         this.scene,
@@ -176,7 +178,6 @@ export class LoopController {
       );
       this.scene.add(ptsWhite);
 
-      // 次世代へ
       currentGen = combinedPts.slice();
       prevName   = newName;
 
