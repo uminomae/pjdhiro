@@ -2,7 +2,7 @@
 
 import { Complex } from '../util/complex-number.js';
 import { createColoredPoints3D } from './d3-utils.js';
-import { pauseAwareSleep as sleep } from '../util/sleep.js';
+// import { pauseAwareSleep as sleep } from '../util/sleep.js';
 
 import {
   DRAW_PARAMS,
@@ -31,7 +31,8 @@ export async function step1_subtract3D(
   iter,
   steps,
   interval,
-  pointSize = DRAW_PARAMS.pointSize
+  pointSize = DRAW_PARAMS.pointSize,
+  sleepFn
 ) {
   // (1) wPoints → diffPts を計算
   const diffPts = currentGen.map(w => w.sub(c));
@@ -72,7 +73,7 @@ export async function step1_subtract3D(
     );
     scene.add(ptsSubtract);
 
-    await sleep(interval / steps);
+    await sleepFn(interval / steps);
 
     // (iii) オレンジ点を消して次へ
     scene.remove(ptsSubtract);
@@ -89,7 +90,7 @@ export async function step1_subtract3D(
     OBJECT_NAMES.diffFinal
   );
   scene.add(ptsDiffFinal);
-  await sleep(interval / steps);
+  await sleepFn(interval / steps);
   scene.remove(ptsDiffFinal);
 
   return diffPts;
@@ -113,7 +114,8 @@ export async function step2_sqrt1_3D(
   iter,
   steps,
   interval,
-  pointSize = DRAW_PARAMS.pointSize
+  pointSize = DRAW_PARAMS.pointSize,
+  sleepFn
 ) {
   const N = diffPts.length;
   const diffPhis = [];
@@ -203,7 +205,7 @@ export async function step2_sqrt1_3D(
     );
     scene.add(ptsYellow);
 
-    await sleep(interval / steps);
+    await sleepFn(interval / steps);
 
     // (iv) 黄色を消して次ループへ
     scene.remove(ptsYellow);
@@ -221,7 +223,7 @@ export async function step2_sqrt1_3D(
     OBJECT_NAMES.yellowFinal
   );
   scene.add(ptsYellowFinal);
-  await sleep(interval / steps);
+  await sleepFn(interval / steps);
   scene.remove(ptsYellowFinal);
 
   return sqrtPts1;
@@ -247,7 +249,8 @@ export async function step3_sqrt2_3D(
   iter,
   steps,
   interval,
-  pointSize = DRAW_PARAMS.pointSize
+  pointSize = DRAW_PARAMS.pointSize,
+  sleepFn
 ) {
   const N = diffPts.length;
   const diffPhis = [];
@@ -336,7 +339,7 @@ export async function step3_sqrt2_3D(
     );
     scene.add(ptsPink);
 
-    await sleep(interval / steps);
+    await sleepFn(interval / steps);
 
     // (iv) ピンクを消去して次へ
     scene.remove(ptsPink);
@@ -355,7 +358,7 @@ export async function step3_sqrt2_3D(
     OBJECT_NAMES.whiteFinal
   );
   scene.add(ptsWhiteFinal);
-  await sleep(interval);
+  await sleepFn(interval);
   scene.remove(ptsWhiteFinal);
 
   return combinedPts;

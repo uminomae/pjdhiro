@@ -60,6 +60,7 @@ export function getRunHandlers(loopCtrl) {
       selector: '#btn-reset',
       type: 'click',
       handler: () => {
+        loopCtrl.stop();
         const btnRun    = document.getElementById('btn-run');
         const btnPause  = document.getElementById('btn-pause');
         const btnResume = document.getElementById('btn-resume');
