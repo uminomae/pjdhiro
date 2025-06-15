@@ -181,6 +181,6 @@ sidebar:
       ">
 - パウリな方向
   - 参考:【「量子物理学者パウリ」と「心理学者ユング」物質と意識を結びつける意外な研究｜ニフティニュース】 <https://news.nifty.com/article/item/neta/12363-4081221/>
-  - Reference:【Wolfgang Pauli - Wikipedia】 https://en.wikipedia.org/wiki/Wolfgang_Pauli?utm_source=chatgpt.com#Philosophy
+  - [参考:【Wolfgang Pauli - Wikipedia】](https://en.wikipedia.org/wiki/Wolfgang_Pauli)
     > In his discussions with Carl Jung, Pauli developed an ontological theory that has been dubbed the "Pauli–Jung Conjecture" and has been seen as a kind of dual-aspect theory. The theory holds that there is "a psychophysically neutral reality" and that mental and physical aspects are derivative of this reality.  
   
