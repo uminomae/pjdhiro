@@ -11,10 +11,13 @@ tags:
   - 陰陽
   - ポリネシアン
   - 森林
+header:
+  teaser: "https://upload.wikimedia.org/wikipedia/commons/a/af/Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png"   
+# excerpt: "スピノールを場として扱う"  
 ---
 
 森のコミュニケーションのニュースを読んだ。虚軸のような「海流を逆行して移動した」相撲が似合う人々を思い出した。
-
+<!-- more -->
 ## この記事の概要・趣旨
 
 - 森の話題を出発点に思索
