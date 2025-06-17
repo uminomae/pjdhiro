@@ -213,4 +213,12 @@ sidebar:
   - 参考:【「量子物理学者パウリ」と「心理学者ユング」物質と意識を結びつける意外な研究｜ニフティニュース】 <https://news.nifty.com/article/item/neta/12363-4081221/>
   - [参考:【Wolfgang Pauli - Wikipedia】](https://en.wikipedia.org/wiki/Wolfgang_Pauli)
     > In his discussions with Carl Jung, Pauli developed an ontological theory that has been dubbed the "Pauli–Jung Conjecture" and has been seen as a kind of dual-aspect theory. The theory holds that there is "a psychophysically neutral reality" and that mental and physical aspects are derivative of this reality.  
-  
+
+<iframe
+  width="1027" height="578" 
+  style="display:block; border:none;"
+  src="https://www.youtube.com/embed/S0vn6vDeYSI?autoplay=1&mute=1"
+  title="Left of Centre - A Julia Set Fractal Zoom"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
