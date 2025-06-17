@@ -37,7 +37,7 @@ permalink: /
 
 <div markdown="0" style="position: relative; margin: 0 auto;">
   <video 
-    src="{{ '/assets/movie/place2.mp4' | relative_url }}"
+    src="{{ '/assets/movie/yinyang/hero.mp4' | relative_url }}"
     autoplay  
     muted  
     loop  
@@ -58,18 +58,18 @@ permalink: /
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
       pointer-events: none;
     ">
-    Emotion-Driven
+    Love-Driven Dev
   </div>
 </div>
 
-このサイトでは、[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有しています。  
-特に、対人スキルや[感情処理]({{ '/emotional-processing/' | relative_url }})の視点を取り入れたアプローチを紹介します。
+[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有します。  
+特に、[感情処理]({{ '/emotional-processing/' | relative_url }})の視点で整理していきます。
 
 ---
 
-## 2025 Insights
+## 2025: Insights
 
-- 2025年は下記の事柄を考えてました。
+- 最近は下記の事柄を考えてました。
   - 経済関連：信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})
   - 心理関連：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }})
   - 哲学関連：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
@@ -93,4 +93,7 @@ permalink: /
 
 ## Post: An Intersubjective Glimpse of the World
 
-[Post]({{ '/posts/' | relative_url }})(BLOG)は場に差し出す「私の構え」。「世界がどう見えているか？」の間主観的な自己紹介。心と身体の繋ぎ目に興味があります。
+- [Post]({{ '/posts/' | relative_url }})(BLOG)は、
+  - 場に差し出す「私の構え」
+  - 「世界がどう見えているか？」の間主観的な自己紹介
+  - 心と身体の繋ぎ目の探索
