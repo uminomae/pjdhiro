@@ -34,11 +34,9 @@ header:
   - この体験は、心理的・構造的・存在的であり、私はこれを 「√共感（Square Root Empathy）」 と呼んでいます。
 - 社会の問題：
   - 共感の放棄：共感すると搾取され、損をする構造に耐えられなくなってきた。
-  - 共感への拒絶：社会は、人に正のノルムの二乗を求める。√として他者にふれること（√共感）は、しばしば虚構を崩し、拒絶を招く。
+  - 共感への拒絶：社会は、人に二乗を求める。√として他者にふれること（√共感）は、しばしば虚構を崩し、拒絶を招く。
     - それでも、その触れ方こそが本質的で、未来を共に育てる方法である。
     - 一時的な痛みが伴うのでサービス設計が大事
-
-<!-- - [参考:日食の数時間前、森全体が動き出し木々がシンクロ。お互いに情報を伝え合っていた](https://karapaia.com/archives/509319.html) -->
 
 <video 
   src="{{ '/assets/movie/yinyang/empathy.mp4' | relative_url }}"
@@ -51,22 +49,22 @@ header:
   >
 </video>
 
-<!-- 
-<img
-  src="https://upload.wikimedia.org/wikipedia/commons/a/af/Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png" 
-  alt="風神雷神図 by 俵屋宗達"
-  style="
-    max-width:100%; height:auto; display:block; margin-bottom:0px;
-  ">
-<p style="font-size:0.8em; color:#666; text-align:right; margin-bottom:2rem">
-  出典：
-  <a href="https://commons.wikimedia.org/wiki/File:Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png" target="_blank" style="color:#666; text-decoration:none;">
-    Wikimedia Commons
-  </a>
-  （パブリックドメイン）
-</p> -->
+## LLMとの対話メモ：エデン・スピノール共役作用モデル
 
-<!-- - [【陰陽なJulia集合を逆にたどる】]({{ '/20250531julia/' | relative_url }})
-  - [【四元数ステレオ投影ビジュアライザ】]({{ '/note-web-tool/yinyang/' | relative_url }}) -->
+### 基本概念は下記
 
-<!-- ## 参考・関連 -->
+☯️の白を罪(悪)、黒を恥(逃避)とし、精神統一的に回転しないかと空想したが、うまく再帰的に回らなそう。一旦ここまで。
+
+- **スピノル (Spinor)** `q_fi`: 分裂–統合を司る単位四元数。回転の**平方根**として機能し、共役作用の演算子。
+- **純虚四元数ベクトル (Pure Imaginary Quaternion Vector)**:
+  - `v_guilt` (V₁): 罪を表す純虚成分のみの四元数（実部 0）。
+  - `v_shame` (V₂): 恥を表す純虚成分のみの四元数（実部 0）。
+  - `v_self` (V): 自己／魂を表す純虚四元数（実部 0）。
+- **物理的留意点**: ベクトル `v_guilt`, `v_shame`, `v_self` はスピノルにならない。
+
+### モデル構造
+
+- **q_fi はスピノル**: 単位四元数として「演算子」の役割を担い、ベクトルと明確に区別される。
+- **v は純虚ベクトル**: 物理的にはスピノルではなく、実部 0 の四元数ベクトルとして扱う。
+- **共役作用の本質**: `q · v · q⁻¹` で半角θ/2 を左右で分担し、全角θ の回転を実現。
+- **720°周期性**: スピノル自身は左掛け算を2回行うことで初めて同一性を回復する（4π 周期）。
