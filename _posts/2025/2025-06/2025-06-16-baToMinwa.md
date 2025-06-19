@@ -81,8 +81,8 @@ header:
 ## スピノルの共役作用:イザナギとイザナミ
 
 qVq⁻¹ の順番指定で真っ先に思い出した。
-昔、「まちづくり」の定義のために、国家のゼロイチが気になって読んだ日本書紀と古事記。合体して創生する神話のところ。  
-二重スリット実験のシマの失敗が、ちょうどダジャレでいーかなと。
+昔、「まちづくり」の定義のために、国家のゼロイチが気になって読んだ日本書紀と古事記。イザナ「キ」と「ミ」が合体して創生する神話のところ。全力の未完成。  
+二重スリット実験のシマの失敗も、ちょうどダジャレでいーかなと。
 
 ---
 
@@ -131,7 +131,7 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
       </span>
 - LLMに聞くと、
     - 二次元の複素回転 e<sup>iθ</sup> を、二次元にも三次元にも適用できる「回転を一般化」したもの。
-    - 四元数 \( q = w + xi + yj + zk \) において、xy 平面だけを考えるとき（つまり、四元数の w = z = 0）と、**オイラーの公式 e<sup>iθ</sup> = cosθ + i·sinθ と完全に一致する。**
+    - 四元数 \( q = w + xi + yj + zk \) において、xy 平面だけを考えるとき（つまり、四元数の w = z = 0）と、**オイラーの公式 e<sup>iθ</sup> = cosθ + i·sinθ は完全に一致する。**
       - <small>たとえば回転軸を x軸（n = (1, 0, 0)）に限定すると、<br>
       <span style="font-family: Cambria, 'Times New Roman', serif;">
           q = cos(θ/2) + sin(θ/2)(n ⋅ σ):<br>
@@ -352,3 +352,4 @@ LLMに投げてみた。「これは正しい？」> [ChatGPT o3の回答](https
   - [参考:【Thorlabs.com - 量子消しゴム(Quantum Eraser)実習キット】](https://www.thorlabs.co.jp/NewGroupPage9_PF.cfm?ObjectGroup_ID=6957&utm_source=chatgpt.com)
 - 量子
   - [参考:【阪大教授が解説する量子力学と量子コンピュータ（前編） - YouTube】](https://www.youtube.com/watch?v=B0ZZ2lV0TLs)
+  - [参考:【内在秩序と外在秩序 - Wikipedia】](https://ja.wikipedia.org/wiki/%E5%86%85%E5%9C%A8%E7%A7%A9%E5%BA%8F%E3%81%A8%E5%A4%96%E5%9C%A8%E7%A7%A9%E5%BA%8F)
