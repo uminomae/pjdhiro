@@ -129,7 +129,38 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
       <span style="font-family: Cambria, 'Times New Roman', serif;">
         q = cos(θ/2) + sin(θ/2)(n ⋅ σ)
       </span>
-    - 二次元の複素回転 e<sup>iθ</sup> を、二次元にも三次元にも適用できる「回転を一般化」したもの
+- LLMに聞くと、
+    - 二次元の複素回転 e<sup>iθ</sup> を、二次元にも三次元にも適用できる「回転を一般化」したもの。
+    - 四元数 \( q = w + xi + yj + zk \) において、xy 平面だけを考えるとき（つまり、四元数の w = z = 0）と、**オイラーの公式 e<sup>iθ</sup> = cosθ + i·sinθ と完全に一致する。**
+      - <small>たとえば回転軸を x軸（n = (1, 0, 0)）に限定すると、<br>
+      <span style="font-family: Cambria, 'Times New Roman', serif;">
+          q = cos(θ/2) + sin(θ/2)(n ⋅ σ):<br>
+      </span>
+        単位ベクトル <i>n</i>= 回転軸<br>
+        パウリ行列ベクトル <i>σ</i> = (σ₁, σ₂, σ₃) <br>
+        内積は σ₂, σ₃がゼロなので、<code>n ⋅ σ = σ₁</code><br>
+        <span style="font-family: Cambria, 'Times New Roman', serif;">
+        q = cos(θ/2) + sin(θ/2)·σ₁
+        </span>
+        <br>
+        この <code>σ₁</code> は行列だけれど、xy平面だけなので<code>i</code> をかけるのとほぼ同じ意味になる。
+        ※複素数 <code>i</code> が2次元の点を回すなら、<code>σ₁</code> は2つの直交する状態を回す。<br> 
+        だからこの式は、
+        <br>
+        <span style="font-family: Cambria, 'Times New Roman', serif;">
+        q = cos(θ/2) + i·sin(θ/2)
+        </span>
+        <br>
+        これはオイラーの公式 <code>e<sup>iθ</sup> = cosθ + i·sinθ</code> の平方根と同じ。<br>
+        <span style="font-family: Cambria, 'Times New Roman', serif;">
+        q = √e<sup>iθ</sup>
+        </span>  
+        つまり、スピノルは「回転の平方根」。
+        <br>
+        スピノルでは <code>qVq⁻¹</code> のかたちで左右から回転をかけるため、  
+        <code>θ/2</code> の回転が2回作用して、ベクトルは θ 回る。
+      </small>
+
 <div markdown="0">
   <figure style="
         /* float: right; */
