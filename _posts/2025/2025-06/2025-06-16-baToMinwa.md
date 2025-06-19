@@ -90,30 +90,7 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
 
 > その矛ほこをさしおろして下の世界をかき廻され、海水を音を立ててかき廻して引きあげられた時に、矛の先から滴したゝる海水が、積つて島となりました。
 
-<div markdown="0">
-  <figure style="
-      /* float: right; */
-      max-width: 100%;
-      margin: 0 0 1em 0em;  /* 下／左に余白 */
-      /* text-align: right; */
-  ">
-    <img 
-      src="{{'/assets/images/yinyang/uzu.png' | relative_url}}" 
-      alt="スピノルと渦のイメージ図" 
-      style="max-width: 100%; height: auto; border: 1px solid #ccc;"
-    >
-    <figcaption style="
-      font-size:0.5em; 
-      color:#666; 
-      text-align:left; 
-      margin: 0 0 0em 0em;
-    ">
-      <a href="https://commons.wikimedia.org/wiki/File:Naruto_Whirlpools_taken_4-21-2008.jpg">Hellbuny</a>, 
-      <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, ウィキメディア・コモンズ経由。<br>
-      この画像（uzu.png）は同ライセンス <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> のもとで提供されます。
-    </figcaption>
-  </figure>
-</div>
+[![image]({{ '/assets/images/yinyang/uzu.png' | relative_url }})]({{ '/assets/images/yinyang/uzu.png' | relative_url }})
 
 
 - スピノル共役作用とは、
