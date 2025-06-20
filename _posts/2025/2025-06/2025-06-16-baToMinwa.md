@@ -21,8 +21,10 @@ header:
 ---
 
 回転の平方根が気になる。パウリにトライ。彼の心理はユングのせいで世界にダダ漏れ。そんな親近感。  
-ユングといえば物語。まずは、最も古い神話イザナミ、と最古の文学かぐや姫。和風で。月っぽく。  
 <!-- more -->
+- [参考:【「量子物理学者パウリ」と「心理学者ユング」物質と意識を結びつける意外な研究｜ニフティニュース】](https://news.nifty.com/article/item/neta/12363-4081221/?fbclid=IwY2xjawLB4lhleHRuA2FlbQIxMABicmlkETEwZXpxZ2h1dzI0Tnhpam0zAR5JUMMhB7AFkOu0MggMszxtRvnYQsjfVVy8RScNrRXKrRRwGSzLFezXMH1GjA_aem_jt6_alxZ0MPgbXCIzIymzg)  
+
+ユングといえば物語。まずは、最も古い神話イザナミ、と最古の文学かぐや姫。和風で。月っぽく。  
 アクエリオンとかSAOとかでもいいけど古典大事。古典と基礎さえもらえれば、あとはアジャイルになんとかするだけ、と思うタイプ。
 
 <iframe
