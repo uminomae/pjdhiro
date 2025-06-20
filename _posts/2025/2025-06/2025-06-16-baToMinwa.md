@@ -100,6 +100,33 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
   - 回転の順序や符号が生成結果に影響を与える。
   - スピノルは回転の平方根として機能し、360°の回転を180°ずつ二段階に分割。
 
+<div markdown="0">
+  <figure style="
+        /* float: right; */
+        max-width: 60%;
+        margin: 0 0 0em 0em;  /* 下／左に余白 */
+        /* text-align: right; */
+    ">
+    <img src="https://64.media.tumblr.com/09afb7493f2ecbf733649b1e356fc340/acac94ed57a4196c-ab/s500x750/3c8acd46abe3f44c018d12ff6d8be5b336f3d24f.gif" 
+        alt="Spinor-like Möbius animation"
+        style="
+        max-width: 60%; 
+        height: auto; 
+        display: block; 
+        margin: 0em auto;">
+    <figcaption style="
+      font-size: 0.5em;
+      color: #666;
+      text-align: center;
+      margin-left: auto; 
+      margin-right: auto;
+    ">
+      出典：Tumblr（<a href="https://64.media.tumblr.com/09afb7493f2ecbf733649b1e356fc340/acac94ed57a4196c-ab/s500x750/3c8acd46abe3f44c018d12ff6d8be5b336f3d24f.gif" target="_blank">元画像リンク</a>）<br>
+      ライセンス不明のため引用表示のみ（著作権は投稿者に帰属）
+    </figcaption>
+  </figure>
+</div>
+
 - イメージは、3枚の紙の交差点で一度裏返り、720度でようやく自身に重なる波
   - 通常の移相回転 = e<sup>iθ</sup> 
     - 1枚の複素平面上を巡る
@@ -138,33 +165,6 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
         スピノルでは <code>qVq⁻¹</code> のかたちで左右から回転をかけるため、  
         <code>θ/2</code> の回転が2回作用して、ベクトルは θ 回る。
       </small>
-
-<div markdown="0">
-  <figure style="
-        /* float: right; */
-        max-width: 60%;
-        margin: 0 0 0em 0em;  /* 下／左に余白 */
-        /* text-align: right; */
-    ">
-    <img src="https://64.media.tumblr.com/09afb7493f2ecbf733649b1e356fc340/acac94ed57a4196c-ab/s500x750/3c8acd46abe3f44c018d12ff6d8be5b336f3d24f.gif" 
-        alt="Spinor-like Möbius animation"
-        style="
-        max-width: 60%; 
-        height: auto; 
-        display: block; 
-        margin: 0em auto;">
-    <figcaption style="
-      font-size: 0.5em;
-      color: #666;
-      text-align: center;
-      margin-left: auto; 
-      margin-right: auto;
-    ">
-      出典：Tumblr（<a href="https://64.media.tumblr.com/09afb7493f2ecbf733649b1e356fc340/acac94ed57a4196c-ab/s500x750/3c8acd46abe3f44c018d12ff6d8be5b336f3d24f.gif" target="_blank">元画像リンク</a>）<br>
-      ライセンス不明のため引用表示のみ（著作権は投稿者に帰属）
-    </figcaption>
-  </figure>
-</div>
 
 
 ---
