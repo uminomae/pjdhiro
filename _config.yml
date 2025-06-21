@@ -10,11 +10,21 @@ locale: ja-JP  # サイトのロケール（日本語）
 timezone: Asia/Tokyo  # タイムゾーンを日本時間に設定
 lang: ja  # HTML の lang 属性
 search: true # サイト内検索の有効化
+excerpt_separator: "<!-- more -->"
+# paginate: 10
+# paginate_path: "/page/:num/"
+pagination:
+  enabled: true
+  collection: posts
+  per_page: 10
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
 # ---------------------------------------------------
 # SEO
 # ---------------------------------------------------
 description: "プロジェクトデザインに関する知見を共有するブログ"
-keywords: "プロジェクト管理, 感情処理, 共感, 心理的安全性"
+keywords: "プロジェクト管理, 感情処理, 共感, 心理的安全性, アジャイル, PMBOK"
 # ---------------------------------------------------
 # テーマ設定
 # ---------------------------------------------------
@@ -54,6 +64,7 @@ twitter_username: pjdhiro
 # プラグイン設定
 # ---------------------------------------------------
 plugins:
+  - jekyll-paginate-v2
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -70,20 +81,20 @@ plugins:
 author:
   name   : "pjdhiro"
   avatar : "/assets/images/101631407.jpeg"
-  bio    : "感情処理についてまずはラフに。2027末までにできたら。Postは場に差し出す「私の構え」。「世界がどう見えているか？」の間主観的な自己紹介。"
+  bio    : "感情処理についてまずはラフに。2027末までにできたら。Postは「世界がどう見えているか？」の間主観的な自己紹介。"
   links:
     - label: "発散用@Blogspot"
       icon: "fas fa-fw fa-link"
       url: "https://pjdhiro.blogspot.com/"
-    - label: "pjdhiro" 
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/pjdhiro"
-    - label: "pjdhiro"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/pjdhiro"
-    - label: ".mdファイル "
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
+    # - label: "pjdhiro" 
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/pjdhiro"
+    # - label: "pjdhiro"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://x.com/pjdhiro"
+    # - label: ".mdファイル "
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
 # ---------------------------------------------------
 # ヘッダー、フッター設定
 # ---------------------------------------------------
@@ -124,6 +135,7 @@ defaults:
         nav3: ""
         nav4: ""
         nav5: posts-cat
+      pagination: true
       toc: true # 目次を表示
       toc_sticky: true # 固定目次を有効化
       show_date: true # 投稿日時の表示
@@ -143,7 +155,7 @@ defaults:
         nav5: pages-cat
       toc: true
       toc_sticky: true
-      pagination: false
+      # pagination: false
       breadcrumbs: true
       exclude_from_yearly: false
   - scope:
@@ -162,7 +174,7 @@ defaults:
         nav5: ""
       toc: true
       toc_sticky: true
-      pagination: false
+      # pagination: false
       breadcrumbs: true
       exclude_from_yearly: false
 

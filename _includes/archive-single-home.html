@@ -1,0 +1,65 @@
+{% comment %}
+_includes/archive-single.html
+post=post を渡して呼び出す想定
+header.teaser → teaser → site.teaser の順で拾う
+{% endcomment %}
+
+{%- if include.post.header.teaser -%}
+  {%- assign teaser = include.post.header.teaser -%}
+{%- elsif include.post.teaser -%}
+  {%- assign teaser = include.post.teaser -%}
+{%- elsif include.post.header.image -%}
+  {%- assign teaser = include.post.header.image -%}
+{%- elsif include.post.image -%}
+  {%- assign teaser = include.post.image -%}
+{%- else -%}
+  {%- assign teaser = site.teaser -%}
+{%- endif -%}
+
+{%- assign title = include.post.title | markdownify | strip_html | strip_newlines -%}
+{% capture ext %}{{ teaser | split:'.' | last | downcase }}{% endcapture %}
+
+<div class="{{ include.type }}__item">
+  <article class="archive__item">
+    {% if include.type == "grid" and teaser %}
+      <div
+        class="archive__item-teaser"
+        style="
+          position: relative;
+          width: 100%;
+          padding-top: 56.25%;           /* 16:9 */
+          background: url('{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | relative_url }}{% endif %}')
+                      center/cover no-repeat;
+          overflow: hidden;
+        "
+      >
+        {%- if ext == "mp4" or ext == "mov" or ext == "webm" or ext == "ogg" or ext == "m4v" -%}
+          <video
+            src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | relative_url }}{% endif %}"
+            autoplay muted loop playsinline
+            style="
+              position: absolute;
+              top: 50%; left: 50%;
+              width: auto; height: 100%;
+              min-width: 100%;
+              transform: translate(-50%, -50%);
+              object-fit: cover;
+            "
+          ></video>
+        {%- endif -%}
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title no_toc">
+      <a href="{{ include.post.url | relative_url }}">{{ title }}</a>
+    </h2>
+
+    {% include page__meta.html post=include.post type=include.type %}
+
+    {% if include.post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ include.post.excerpt | strip_html | truncate: 160 }}
+      </p>
+    {% endif %}
+  </article>
+</div>
