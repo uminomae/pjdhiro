@@ -172,15 +172,53 @@ sidebar:
 - 特定感情ごとのパターン
   - [参考:【人格 - Wikipedia】](https://ja.wikipedia.org/wiki/%E4%BA%BA%E6%A0%BC)
   - [参考:【防衛機制 - Wikipedia】](https://ja.wikipedia.org/wiki/%E9%98%B2%E8%A1%9B%E6%A9%9F%E5%88%B6)  
-   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Plutchik_Dyads.svg/langja-2560px-Plutchik_Dyads.svg.png" 
-    alt="感情の輪"
-    style="
-      width: 400px; 
-      height: auto; 
-      margin: 0px 0px 0px 0px;
-      ">
+
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Plutchik_Dyads.svg"
+  alt="プラチックの感情の輪：ダイアド図"
+  style="
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin-bottom:0;
+  ">
+<p style="
+    font-size:0.8em;
+    color:#666;
+    text-align:right;
+    margin-bottom:2rem;
+  ">
+  出典：
+  <a href="https://commons.wikimedia.org/wiki/File:Plutchik_Dyads.svg"
+     target="_blank"
+     style="color:#666; text-decoration:none;">
+    Wikimedia Commons
+  </a>
+  ／ 著作者：
+  <a href="https://commons.wikimedia.org/wiki/User:ChaoticBrain"
+     target="_blank"
+     style="color:#666; text-decoration:none;">
+    ChaoticBrain
+  </a>
+  ／ ライセンス：
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank"
+     style="color:#666; text-decoration:none;">
+    CC BY-SA 4.0
+  </a>
+  （変更なし）
+</p>
+
 - パウリな方向
   - 参考:【「量子物理学者パウリ」と「心理学者ユング」物質と意識を結びつける意外な研究｜ニフティニュース】 <https://news.nifty.com/article/item/neta/12363-4081221/>
-  - Reference:【Wolfgang Pauli - Wikipedia】 https://en.wikipedia.org/wiki/Wolfgang_Pauli?utm_source=chatgpt.com#Philosophy
+  - [参考:【Wolfgang Pauli - Wikipedia】](https://en.wikipedia.org/wiki/Wolfgang_Pauli)
     > In his discussions with Carl Jung, Pauli developed an ontological theory that has been dubbed the "Pauli–Jung Conjecture" and has been seen as a kind of dual-aspect theory. The theory holds that there is "a psychophysically neutral reality" and that mental and physical aspects are derivative of this reality.  
-  
+
+<iframe
+  width="1027" height="578" 
+  style="display:block; border:none;"
+  src="https://www.youtube.com/embed/S0vn6vDeYSI?autoplay=1&mute=1"
+  title="Left of Centre - A Julia Set Fractal Zoom"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
