@@ -48,8 +48,7 @@ export class UIControlsModule {
     // this.canvasModule.init();
     this._initFormDefaults();
 
-
-// これを実装しないといけないのではないか？
+    // 各種デフォルト状態を DOM に反映
     this.sync();
     // this._hasStarted = true;
     
@@ -57,6 +56,33 @@ export class UIControlsModule {
   }
 
   sync(){
+    const legendToggle = document.getElementById('chk-legend');
+    const legendDefault =
+      typeof Config.LEGEND_DEFAULT?.enabled === 'boolean'
+        ? Config.LEGEND_DEFAULT.enabled
+        : true;
+    if (legendToggle instanceof HTMLInputElement) {
+      legendToggle.checked = legendDefault;
+    }
+
+    const groundToggle = document.getElementById('toggle-ground-visibility');
+    if (groundToggle instanceof HTMLInputElement) {
+      groundToggle.checked = Config.GROUND_TEXTURE_VISIBLE;
+    }
+
+    this._resetNavbarState();
+  }
+
+  _resetNavbarState() {
+    const btnRun    = document.getElementById('btn-run');
+    const btnPause  = document.getElementById('btn-pause');
+    const btnResume = document.getElementById('btn-resume');
+    if (btnRun) btnRun.classList.remove('d-none');
+    if (btnPause) {
+      btnPause.classList.add('d-none');
+      btnPause.textContent = 'Pause';
+    }
+    if (btnResume) btnResume.classList.add('d-none');
   }
 
   _initFormDefaults() {
