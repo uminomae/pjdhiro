@@ -47,7 +47,7 @@ export class UIControlsModule {
     this.offcanvasModule.init();
     this.navbarModule.init();
     // this.canvasModule.init();
-    this._inintFormDefaults();
+    this._initFormDefaults();
 
 
 // これを実装しないといけないのではないか？
@@ -60,7 +60,7 @@ export class UIControlsModule {
   sync(){
   }
 
-  _inintFormDefaults() {
+  _initFormDefaults() {
     const mapping = [
       { id: 'input-re',   value: Config.FORM_DEFAULTS.re },
       { id: 'input-im',   value: Config.FORM_DEFAULTS.im },
