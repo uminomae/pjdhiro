@@ -1,0 +1,6 @@
+/* d3-utilities.css */
+
+/* Utility styles for status display */
+.status-stopped {
+  color: #ff6666 !important; /* show stopped/error status in red */
+}
