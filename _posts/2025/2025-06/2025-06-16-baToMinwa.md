@@ -351,6 +351,8 @@ LLMに投げてみた。「これは正しい？」> [ChatGPT o3の回答](https
 
 ## 参考・関連
 
+- 複素数
+  - [参考:【複素数を色々な方法で可視化 VISUALIUM - YouTube】](https://www.youtube.com/watch?v=xl3DViAbzvA)
 - 二重スリット実験
   - [参考:【単一フォトンによるヤングの干渉実験（浜松ホトニクス／1982年） - YouTube】](https://www.youtube.com/watch?v=ImknFucHS_c)
   - [参考:【『二重スリット実験』〜観測すると世界が決まる⁉知るとぞっとする世界でもっとも美しい実験】](https://www.yamanashibank.co.jp/fuji_note/culture/double_slit.html)
