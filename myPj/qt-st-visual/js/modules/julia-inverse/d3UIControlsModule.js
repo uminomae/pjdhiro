@@ -26,8 +26,7 @@ export class UIControlsModule {
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
-      rootSelector: '#offcanvasForm',
-      // rootSelector: '#offcanvasForm form',
+      rootSelector: '#offcanvasForm form',
       handlers:     getFormHandlers(() => resetModule(this.scene))
     });
     this.navbarModule = new FormModule({
