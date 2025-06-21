@@ -27,15 +27,44 @@ header:
 ユングといえば物語。まずは、最も古い神話イザナミ、と最古の文学かぐや姫。和風で。月っぽく。  
 アクエリオンとかSAOとかでもいいけど古典大事。古典と基礎さえもらえれば、あとはアジャイルになんとかするだけ、と思うタイプ。
 
-<iframe
-  width="1027" height="578" 
-  style="display:block; border:none;"
-  src="https://www.youtube.com/embed/S0vn6vDeYSI?autoplay=1&mute=1"
-  title="Left of Centre - A Julia Set Fractal Zoom"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>
-
+<div markdown="0">
+  <figure style="
+    max-width:100%;
+    margin:0 auto;
+    text-align:right; 
+    line-height: 0;
+    ">
+    <iframe
+      src="https://www.youtube.com/embed/S0vn6vDeYSI?autoplay=1&mute=1"
+      width="2560" height="1440"
+      style="display:block; border:none; margin:0;"
+      title="Spinors"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    >
+    </iframe>
+    <figcaption style="
+      display:block; width:100%; text-align:right;
+      font-size:0.7rem; 
+      color:#555;
+      margin:0;
+    ">
+      出典：
+      <a href="https://www.youtube.com/@DrawnFromTheEther" target="_blank" rel="noopener" style="color:#1a0dab; text-decoration:none;">
+        DrawnFromTheEther
+      </a>
+    </figcaption>
+    <noscript>
+      <div style="background:#f9f9f9; padding:1em; text-align:center; color:#333;">
+        埋め込み動画を再生するには JavaScript を有効にするか、
+        <a href="https://www.youtube.com/watch?v=S0vn6vDeYSI" target="_blank" rel="noopener
+        ">
+          こちら
+        </a>をクリックしてください。
+      </div>
+    </noscript>
+  </figure>
+</div>
 ## 背景・概要
 
 - 発散思考のために、精神を☯️陰陽マークイメージの回転体と仮定して三次元で扱おうと試みた。
@@ -129,7 +158,7 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
   </figure>
 </div>
 
-- イメージは、3枚の紙の交差点で一度裏返り、720度でようやく自身に重なる波
+- イメージは、3枚の平面で一度裏返り、720度でようやく自身に重なる波
   - 通常の移相回転 = e<sup>iθ</sup> 
     - 1枚の複素平面上を巡る
   - スピノルの位相回転 = 
@@ -139,19 +168,19 @@ qVq⁻¹ の順番指定で真っ先に思い出した。
 - LLMに聞くと、
     - 二次元の複素回転 e<sup>iθ</sup> を、二次元にも三次元にも適用できる「回転を一般化」したもの。
     - 四元数 \( q = w + xi + yj + zk \) において、xy 平面だけを考えるとき（つまり、四元数の w = z = 0）と、**オイラーの公式 e<sup>iθ</sup> = cosθ + i·sinθ は完全に一致する。**
-      - <small>たとえば回転軸を x軸（n = (1, 0, 0)）に限定すると、<br>
+      - <small>たとえば回転軸を z軸（n = (0, 0, 1)）に限定すると、<br>
       <span style="font-family: Cambria, 'Times New Roman', serif;">
           q = cos(θ/2) + sin(θ/2)(n ⋅ σ):<br>
       </span>
         単位ベクトル <i>n</i>= 回転軸<br>
         パウリ行列ベクトル <i>σ</i> = (σ₁, σ₂, σ₃) <br>
-        内積は σ₂, σ₃がゼロなので、<code>n ⋅ σ = σ₁</code><br>
+        内積は σ₁, σ₂がゼロなので、<code>n ⋅ σ = σ₃</code><br>
         <span style="font-family: Cambria, 'Times New Roman', serif;">
-        q = cos(θ/2) + sin(θ/2)·σ₁
+        q = cos(θ/2) + sin(θ/2)·σ₃
         </span>
         <br>
-        この <code>σ₁</code> は行列だけれど、xy平面だけなので<code>i</code> をかけるのとほぼ同じ意味になる。
-        ※複素数 <code>i</code> が2次元の点を回すなら、<code>σ₁</code> は2つの直交する状態を回す。<br> 
+        この <code>σ₃</code> は行列だけれど、xy平面だけなので<code>i</code> をかけるのとほぼ同じ意味になる。
+        ※複素数 <code>i</code> が2次元の点を回すなら、<code>σ₃</code> は2つの直交する状態を回す。<br> 
         だからこの式は、
         <br>
         <span style="font-family: Cambria, 'Times New Roman', serif;">
