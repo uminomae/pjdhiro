@@ -8,7 +8,7 @@ export function getSpeedHandlers(animController) {
       handler: e => {
       const v = parseFloat(e.target.value);
       if (!isNaN(v) && v > 0) {
-        animController.etSpeedMultiplier(v);
+        animController.setSpeedMultiplier(v);
       } else {
         e.target.value = '1';
         animController.setSpeedMultiplier(1);
