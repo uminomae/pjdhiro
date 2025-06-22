@@ -33,5 +33,5 @@ document.addEventListener('DOMContentLoaded', async () =>
 
 // test:
 // python3 -m http.server 8000
-// http://localhost:8000/qt-st-visual/?alg=qt-st
-// http://localhost:8000/qt-st-visual/?alg=julia-inverse
+// http://localhost:8000/myPj/qt-st-visual/?alg=qt-st
+// http://localhost:8000/myPj/qt-st-visual/?alg=julia-inverse
