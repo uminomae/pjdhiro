@@ -1,10 +1,11 @@
-// modules/julia-inverse/ui/syncers/formSync.js
+/*
+ * Helper for syncing form defaults. The current UI module performs
+ * this logic internally, so this standalone utility is no longer used.
+ */
 
+/*
 import { FORM_DEFAULTS, LEGEND_DEFAULT } from './d3-config.js';
 
-/**
- * Offcanvas フォームの初期値・チェックボックス状態をセット
- */
 export function syncFormDefaults() {
   const setVal = (sel, v) => {
     const el = document.querySelector(sel);
@@ -18,3 +19,4 @@ export function syncFormDefaults() {
   const chk = document.getElementById('chk-legend');
   if (chk instanceof HTMLInputElement) chk.checked = LEGEND_DEFAULT.enabled;
 }
+*/

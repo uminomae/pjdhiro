@@ -130,15 +130,19 @@ export function addGroundWithTexture(
  * getGroundTexture()
  * ・他から groundTexture.rotation を参照・更新したりできるよう
  */
+/*
 export function getGroundTexture() {
   return groundTexture;
 }
+*/
 
 /**
  * getGroundMesh()
  * ・もしメッシュ自体を操作したければ呼び出せる
  */
+/*
 export function getGroundMesh() {
   return groundMesh;
 }
+*/
 
