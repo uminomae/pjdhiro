@@ -3,7 +3,7 @@
 import { UIControlsModule }      from './d3UIControlsModule.js';
 import { LoopController }        from './LoopController.js';
 import { D3SceneModule }         from './D3SceneModule.js';
-
+import { resetFormDefaults }     from './d3-config.js';
 let _juliaMainModule = null;
 
 /**
@@ -21,6 +21,7 @@ export function startModule(context) {
  * 外部からリセットを呼び出すインターフェース
  */
 export function resetModule(context) {
+  resetFormDefaults();
   if (_juliaMainModule) {
     disposeModule();
     console.log('[JuliaMainModule] disposeModule() ');
