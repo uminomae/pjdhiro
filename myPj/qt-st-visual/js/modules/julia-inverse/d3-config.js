@@ -6,12 +6,19 @@
  *    ・入力フォームのデフォルト値をまとめる
  * ====================================================
  */
-export const FORM_DEFAULTS = {
+export const FORM_DEFAULTS_INITIAL = {
 	re:      -0.4,  // Re(c) の初期値
 	im:       0.6,  // Im(c) の初期値
 	N:       45,    // ポイント数の初期値
 	maxIter:  8     // 最大世代数の初期値
   };
+  // 実際に参照される値は書き換え可能なオブジェクトとしてエクスポート
+export const FORM_DEFAULTS = { ...FORM_DEFAULTS_INITIAL };
+
+// フォーム初期値をリセットしたい場合に利用するヘルパー
+export function resetFormDefaults() {
+  Object.assign(FORM_DEFAULTS, FORM_DEFAULTS_INITIAL);
+}
   
   /**
    * ====================================================
