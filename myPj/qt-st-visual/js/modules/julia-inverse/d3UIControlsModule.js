@@ -17,7 +17,7 @@ export class UIControlsModule {
    * @param {Function}       options.onReset
    * @param {Function}       options.onTopView
    */
-  constructor({ scene, camera, renderer, controls, animController, onTopView, context, sceneModule }) {
+  constructor({ scene, camera, renderer, controls, animController, onTopView, context, sceneModule, loopCtrl }) {
     this.scene         = scene;
     this.camera        = camera;
     this.renderer      = renderer;
@@ -26,12 +26,16 @@ export class UIControlsModule {
     this.onTopView     = onTopView;
     this.context      = context;
     this.sceneModule  = sceneModule;
+    this.loopCtrl   = loopCtrl;
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
       rootSelector: '#offcanvasForm form',
       handlers:     getFormHandlers(() => 
         {
+          this.loopCtrl.cancel();
+          // stop() で RAF をキャンセルし内部状態を初期化
+          this.loopCtrl.stop();
           this.sceneModule.dispose();
           this.sceneModule.init();
         })
@@ -66,7 +70,7 @@ export class UIControlsModule {
   }
 
   sync(){
-    this._parseFormDefaults();
+    // this._parseFormDefaults();
   }
 
   _initFormDefaults() {
