@@ -25,12 +25,6 @@ export function getFormHandlers(onReset) {
       selector: '#chk-legend',
       type:     'change',
       handler:  () => { toggleLegend(); onReset(); }
-    },
-    {
-      // 「設定完了」ボタン
-      selector: '#config-complete-btn',
-      type:     'click',
-      handler:  () => onReset()
     }
   ];
 }
