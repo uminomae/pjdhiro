@@ -18,6 +18,7 @@ export class D3SceneModule {
     this.controls   = controls;
     this.dom        = new DOMEventManager();
     this.groundMesh = null;
+    this.groundVisible = GROUND_TEXTURE_VISIBLE;
   }
 
   /** カメラを真上から原点へ向ける */
@@ -47,34 +48,41 @@ export class D3SceneModule {
     this.controls.update();
   }
 
-  // /** カメラを真上から原点へ向ける */
-  // toTopView(zoom = 1) {
-  //   this.camera.up.set(0, 0, 1);
-  //   const [, y] = CAMERA_INITIAL_POSITION;
-  //   const [tx, ty, tz] = CAMERA_TARGET;
-  //   this.camera.position.set(0, y*zoom, 0);
-  //   this.camera.lookAt(tx, ty, tz);
-
-  //   this.controls.screenSpacePanning = true;
-  //   this.controls.enableRotate = true;   
-  //   this.camera.rotation.z = 0;
-  //   this.controls.target.set(tx, ty, tz);
-  //   this.controls.update();
-  // }
-
+  
   init() {
-    // トグル用チェックボックス登録
     const cb = document.getElementById('toggle-ground-visibility');
-    if (cb instanceof HTMLInputElement) {
-      this.dom.on(cb, 'change', () => {
-        if (this.groundMesh) {
-          this.groundMesh.visible = cb.checked;
-        }
-      });
-    }
+    if (!(cb instanceof HTMLInputElement)) return;
+
+    // ← ② チェックボックスに保存値をセット
+    cb.checked = this.groundVisible;
+
+    // ← ③ change ハンドラで状態を更新
+    this.dom.on(cb, 'change', () => {
+      this.groundVisible = cb.checked;
+      if (this.groundMesh) {
+        this.groundMesh.visible = this.groundVisible;
+      }
+    });
+
     this.sync();
     console.log('[D3SceneModule] init() 完了');
   }
+
+
+  // init() {
+  //   // トグル用チェックボックス登録
+  //   const cb = document.getElementById('toggle-ground-visibility');
+  //   cb.checked = this.groundVisible;
+  //   if (cb instanceof HTMLInputElement) {
+  //     this.dom.on(cb, 'change', () => {
+  //       if (this.groundMesh) {
+  //         this.groundMesh.visible = cb.checked;
+  //       }
+  //     });
+  //   }
+  //   this.sync();
+  //   console.log('[D3SceneModule] init() 完了');
+  // }
 
   sync() {
     // カメラ位置
@@ -99,12 +107,14 @@ export class D3SceneModule {
         YIN_YANG_SYMBOL
       );
     }
-    this.groundMesh.visible = GROUND_TEXTURE_VISIBLE;
+    // this.groundMesh.visible = GROUND_TEXTURE_VISIBLE;
+    this.groundMesh.visible = this.groundVisible;
 
     // HTML 側チェック状態も合わせる
     const checkbox = document.getElementById('toggle-ground-visibility');
     if (checkbox instanceof HTMLInputElement) {
-      checkbox.checked = GROUND_TEXTURE_VISIBLE;
+      checkbox.checked = this.groundMesh.visible;
+      // checkbox.checked = GROUND_TEXTURE_VISIBLE;
     }
   }
 
