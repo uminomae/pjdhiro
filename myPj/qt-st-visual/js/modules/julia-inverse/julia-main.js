@@ -72,7 +72,8 @@ class JuliaMainModule {
       renderer:      this.context.renderer,
       controls:      this.context.controls,
       animController:this.loopCtrl,
-      onTopView:     () => this.sceneModule.toTopView(2)
+      onTopView:     () => this.sceneModule.toTopView(2),
+      sceneModule: this.sceneModule
     });
     
     console.log('[JuliaMainModule] sceneModule.init() start');
@@ -91,6 +92,17 @@ class JuliaMainModule {
     this.sceneModule.sync();
     this.uiModule.sync();
   }
+
+
+  // renderReset() {
+  //   // ① 既存オブジェクトを全部クリア（dispose など）
+  //   this.sceneModule.dispose();
+
+  //   // ② シーンを再構築
+  //   this.sceneModule.init();
+
+  //   // ③ 必要なら animate ループはそのまま動いているはず
+  // }
 
   /**
    * 破棄処理：
