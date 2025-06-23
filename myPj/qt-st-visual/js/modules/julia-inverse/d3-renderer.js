@@ -46,6 +46,7 @@ export function initThree() {
 
   // ─── 座標軸ヘルパー ───
   const axesHelper = new THREE.AxesHelper(SCENE_PARAMS.axesSize);
+  // axesHelper.rotation.y = - Math.PI / 2;
   scene.add(axesHelper);
 
   // ─── グリッドヘルパー ───

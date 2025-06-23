@@ -35,7 +35,7 @@ export function addHelpersAndLights(scene) {
   // (3) Axes Helper (X=赤, Y=緑, Z=青)
   // ───────────────────────────────────────────────
   const axesHelper = new THREE.AxesHelper(AXES_SIZE);
-  axesHelper.name = 'HelperAxes'; 
+  axesHelper.name = 'HelperAxes';
   scene.add(axesHelper);
 
   // ───────────────────────────────────────────────

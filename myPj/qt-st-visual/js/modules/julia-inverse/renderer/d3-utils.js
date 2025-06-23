@@ -55,8 +55,10 @@ export function createColoredPoints3D(
 
     // (A) 座標バッファにセット
     posArray[i * 3 + 0] = X;
-    posArray[i * 3 + 1] = Y;
-    posArray[i * 3 + 2] = Zvalue;
+    posArray[i * 3 + 1] = Zvalue;
+    posArray[i * 3 + 2] = Y;
+    // posArray[i * 3 + 1] = Y;
+    // posArray[i * 3 + 2] = Zvalue;
 
     // (B) 色を HSL で作る:
     //     0 ≤ intensity ≤ 1 とし、intensity = Zvalue / maxZ
