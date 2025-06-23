@@ -24,6 +24,7 @@ export function getFormHandlers(onReset) {
       selector: '#chk-legend',
       type:     'change',
       handler:  () => { toggleLegend(); onReset(); }
+
     },
     {
       // 設定完了ボタン
@@ -33,6 +34,7 @@ export function getFormHandlers(onReset) {
         updateDefaults();
         onReset();
       }
+
     }
   ];
 }
