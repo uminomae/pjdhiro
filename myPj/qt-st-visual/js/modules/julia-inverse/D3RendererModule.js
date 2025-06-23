@@ -1,3 +1,11 @@
+/*
+ * This file originally implemented an alternative renderer module.
+ * It is no longer referenced anywhere in the project, but is kept
+ * for historical purposes.  The entire implementation is commented
+ * out to avoid accidental use.
+ */
+
+/*
 import * as THREE from 'three';
 import { Complex } from './util/complex-number.js';
 import { generateCirclePoints } from './util/generate-circle.js';
@@ -192,3 +200,4 @@ export class D3RendererModule {
     console.log('[runInverseAnimation] FINISH');
   }
 }
+*/
