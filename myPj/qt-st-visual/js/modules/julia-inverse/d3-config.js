@@ -128,8 +128,9 @@ export const BG_COLOR_DARK    = '#000011';
 //   [x, y, z]の配列で指定。今は原点を見せたいので [0, 0, 0] に設定。
 export const CAMERA_TARGET = [0, 0, 0];
 // — カメラ初期設定 — 
-export const CAMERA_INITIAL_POSITION    = [-5, 4, 10];
+export const CAMERA_INITIAL_POSITION    = [0, 5, 10];
 export const CAMERA_AUTO_ROTATE_ENABLED = true;
+export const CAMERA_AUTO_ENABLED_ZOOM = true;
 export const CAMERA_AUTO_ROTATE_PERIOD  = 200; // 360°にかかる秒数
 
 // — 外部画像パス — 

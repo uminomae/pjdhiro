@@ -22,16 +22,45 @@ export class D3SceneModule {
 
   /** カメラを真上から原点へ向ける */
   toTopView(zoom = 1) {
-    this.camera.up.set(1, 0, 0);
-    const [, y] = CAMERA_INITIAL_POSITION;
+    // ① “上方向” を Z 軸正方向に
+    // this.camera.up.set(0, 0, 1);
+
+    // ② カメラを −Y 軸上に置く（Y軸プラス側ではなくマイナス側から見下ろす）
+    const [, baseY] = CAMERA_INITIAL_POSITION;
+    this.camera.position.set(0, baseY * zoom, 0);
+
+    // ③ 原点（または CAMERA_TARGET）を注視
     const [tx, ty, tz] = CAMERA_TARGET;
-    this.camera.position.set(0, y*zoom, 0);
     this.camera.lookAt(tx, ty, tz);
 
+    // ④ ロール（Z 回転）をクリア
     this.camera.rotation.z = 0;
+
+    // ⑤ OrbitControls の注視点をリセット
     this.controls.target.set(tx, ty, tz);
+
+    // ⑥ スクリーンスペースパンはオフに（必要ならお好みで）
+    this.controls.screenSpacePanning = true;
+    this.controls.enableRotate         = true;
+
+    // ⑦ 最後に必ず update()
     this.controls.update();
   }
+
+  // /** カメラを真上から原点へ向ける */
+  // toTopView(zoom = 1) {
+  //   this.camera.up.set(0, 0, 1);
+  //   const [, y] = CAMERA_INITIAL_POSITION;
+  //   const [tx, ty, tz] = CAMERA_TARGET;
+  //   this.camera.position.set(0, y*zoom, 0);
+  //   this.camera.lookAt(tx, ty, tz);
+
+  //   this.controls.screenSpacePanning = true;
+  //   this.controls.enableRotate = true;   
+  //   this.camera.rotation.z = 0;
+  //   this.controls.target.set(tx, ty, tz);
+  //   this.controls.update();
+  // }
 
   init() {
     // トグル用チェックボックス登録
@@ -54,6 +83,8 @@ export class D3SceneModule {
     this.camera.position.set(x,y,z);
     const [tx,ty,tz] = CAMERA_TARGET;
     this.camera.lookAt(tx,ty,tz);
+
+    this.camera.rotation.z = 0;
     this.controls.target.set(tx, ty, tz);
     this.controls.update();
 

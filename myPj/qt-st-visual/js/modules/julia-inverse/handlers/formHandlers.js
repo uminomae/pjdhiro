@@ -16,16 +16,16 @@ export function getFormHandlers(onReset) {
       handler:  e => {
         e.preventDefault();
         updateDefaults();
-        onReset();
+        // onReset();
       }
     },
-    {
-      // 凡例トグル
-      selector: '#chk-legend',
-      type:     'change',
-      handler:  () => { toggleLegend(); onReset(); }
+    // {
+    //   // 凡例トグル
+    //   selector: '#chk-legend',
+    //   type:     'change',
+    //   handler:  () => { toggleLegend(); onReset(); }
 
-    },
+    // },
     {
       // 入力値変更時にデフォルト値を更新
       selector: '#input-re',
