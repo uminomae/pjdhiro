@@ -25,7 +25,10 @@ export class UIControlsModule {
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
-      rootSelector: '#offcanvasForm',
+      // Offcanvas 内のフォーム要素に直接バインドする
+      // div.offcanvas では Bootstrap の処理と競合して
+      // イベントが正しく拾えない場合があるため
+      rootSelector: '#offcanvasForm form',
       handlers: [
                  ...getTopViewHandlers(camera, controls), 
                  ...getCameraHandlers({ controls, animController }),
