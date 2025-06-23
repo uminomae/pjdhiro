@@ -20,6 +20,16 @@ export class D3SceneModule {
     this.groundMesh = null;
   }
 
+  /** カメラを真上から原点へ向ける */
+  toTopView() {
+    const [, , z] = CAMERA_INITIAL_POSITION;
+    const [tx, ty, tz] = CAMERA_TARGET;
+    this.camera.position.set(0, 0, z);
+    this.camera.lookAt(tx, ty, tz);
+    this.controls.target.set(tx, ty, tz);
+    this.controls.update();
+  }
+
   init() {
     // トグル用チェックボックス登録
     const cb = document.getElementById('toggle-ground-visibility');
