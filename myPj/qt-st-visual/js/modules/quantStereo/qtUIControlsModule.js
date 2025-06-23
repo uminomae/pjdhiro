@@ -25,7 +25,7 @@ export class UIControlsModule {
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
-      rootSelector: '#offcanvasForm',
+      rootSelector: '#offcanvasForm form',
       handlers: [
                  ...getTopViewHandlers(camera, controls), 
                  ...getCameraHandlers({ controls, animController }),
