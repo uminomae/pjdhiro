@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', async () =>
     // ナビ・Offcanvas を読み込む
     await loadPartials(alg);
     console.log('[app] loadPartials() が完了');
-    // #canvas-container が本当に挿入されるまで待つ
+    // #canvas-container と Offcanvas の <form> が挿入されるまで待つ
     const waitForContainer = () => {
       const container = document.getElementById('canvas-container');
-      if (container) {
+      const offcanvasForm = document.querySelector('#offcanvasForm form');
+      if (container && offcanvasForm) {
         startMain(alg);
         console.log('[app] startMain() を呼び出し完了: alg=', alg);
       } else {
