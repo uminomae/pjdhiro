@@ -71,7 +71,8 @@ class JuliaMainModule {
       camera:        this.context.camera,
       renderer:      this.context.renderer,
       controls:      this.context.controls,
-      animController:this.loopCtrl
+      animController:this.loopCtrl,
+      onTopView:     () => this.sceneModule.toTopView()
     });
     
     console.log('[JuliaMainModule] sceneModule.init() start');
