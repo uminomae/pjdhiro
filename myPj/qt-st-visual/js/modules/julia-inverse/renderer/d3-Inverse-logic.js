@@ -1,11 +1,13 @@
-// js/3d/d3-Inverse-logic.js
+/*
+ * Deprecated helper functions for inverse generation.
+ * These utilities are no longer referenced in the current codebase
+ * but are preserved here as a reference.  The implementation is
+ * completely commented out.
+ */
+
+/*
 import { Complex } from '../util/complex-number.js';
 
-/**
- * computeInverseGeneration
- * ── 現在の世代 wPoints (Complex[]) の各点 w について (w - c) の
- *    2 通りの平方根を計算し、次世代の Complex[] を返します。
- */
 export function computeInverseGeneration(wPoints, c) {
   const nextGen = [];
   for (const w of wPoints) {
@@ -30,3 +32,4 @@ export function computeInverseGeneration(wPoints, c) {
   }
   return nextGen;
 }
+*/
