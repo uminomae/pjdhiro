@@ -65,6 +65,7 @@ export class UIControlsModule {
       { id: 'input-im',   value: Config.FORM_DEFAULTS.im },
       { id: 'input-n',    value: Config.FORM_DEFAULTS.N },
       { id: 'input-iter', value: Config.FORM_DEFAULTS.maxIter },
+      { id: 'input-interval', value: Config.DRAW_PARAMS.interval },
     ];
     mapping.forEach(({ id, value }) => {
       const el = document.getElementById(id);
