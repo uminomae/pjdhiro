@@ -22,7 +22,10 @@ export function startModule(context) {
  */
 export function resetModule(context) {
   if (_juliaMainModule) {
-    _juliaMainModule.reset();
+    disposeModule();
+    console.log('[JuliaMainModule] disposeModule() ');
+    // _juliaMainModule.reset();
+    startModule(context);
   } else {
     startModule(context);
   }
@@ -57,15 +60,15 @@ class JuliaMainModule {
    */
   init() {
     console.log('[JuliaMainModule] init() start');
-    console.log('[JuliaMainModule] D3SceneModule() start');
+    // console.log('[JuliaMainModule] D3SceneModule() start');
     this.sceneModule = new D3SceneModule(this.context);
-    console.log('[JuliaMainModule] LoopController() start');
+    // console.log('[JuliaMainModule] LoopController() start');
     this.loopCtrl = new LoopController(
       this.context.scene,
       this.context.camera,
       this.context.controls
     );
-    console.log('[JuliaMainModule] UIControlsModule() start');
+    // console.log('[JuliaMainModule] UIControlsModule() start');
     this.uiModule    = new UIControlsModule({
       scene:         this.context.scene,
       camera:        this.context.camera,
@@ -74,7 +77,8 @@ class JuliaMainModule {
       animController:this.loopCtrl,
       onTopView:     () => this.sceneModule.toTopView(2),
       context: this.context,
-      sceneModule: this.sceneModule
+      sceneModule: this.sceneModule,
+      loopCtrl: this.loopCtrl
     });
     
     console.log('[JuliaMainModule] sceneModule.init() start');
