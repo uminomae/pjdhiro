@@ -17,22 +17,29 @@ export class UIControlsModule {
    * @param {Function}       options.onReset
    * @param {Function}       options.onTopView
    */
-  constructor({ scene, camera, renderer, controls, animController, onTopView }) {
+  constructor({ scene, camera, renderer, controls, animController, onTopView, context, sceneModule }) {
     this.scene         = scene;
     this.camera        = camera;
     this.renderer      = renderer;
     this.controls      = controls;
     this.animController= animController;
     this.onTopView     = onTopView;
+    this.context      = context;
+    this.sceneModule  = sceneModule;
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
       rootSelector: '#offcanvasForm form',
-      handlers:     getFormHandlers(() => resetModule(this.scene))
+      handlers:     getFormHandlers(() => 
+        {
+          this.sceneModule.dispose();
+          this.sceneModule.init();
+        })
     });
     this.navbarModule = new FormModule({
       rootSelector: '#navbar',
-      handlers:     getRunHandlers(this.animController)
+      // handlers:     getRunHandlers(this.animController)
+      handlers:     getRunHandlers(this.animController, () => resetModule(this.context))
     });
     this.canvasModule = new FormModule({
       rootSelector: '#canvas-container',
