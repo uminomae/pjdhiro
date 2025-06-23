@@ -47,6 +47,7 @@ export const FORM_DEFAULTS = {
 	gridDivisions:   20,
 	gridColorMajor:  0x333333,
 	gridColorMinor:  0x222222,
+	// gridRotationX:   -Math.PI / 2,    // グリッドの X 軸回転角度
 	gridRotationX:   Math.PI / 2,    // グリッドの X 軸回転角度
 	containerId:     'canvas-container' // Canvas を埋め込む要素の ID
   };

@@ -22,6 +22,7 @@ export class D3SceneModule {
 
   /** カメラを真上から原点へ向ける */
   toTopView() {
+    // this.camera.up.set(0, 1, 0);
     const [, , z] = CAMERA_INITIAL_POSITION;
     const [tx, ty, tz] = CAMERA_TARGET;
     this.camera.position.set(0, 0, z);
