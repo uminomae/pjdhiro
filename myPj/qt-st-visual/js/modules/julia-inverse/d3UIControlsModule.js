@@ -17,12 +17,13 @@ export class UIControlsModule {
    * @param {Function}       options.onReset
    * @param {Function}       options.onTopView
    */
-  constructor({ scene, camera, renderer, controls, animController }) {
+  constructor({ scene, camera, renderer, controls, animController, onTopView }) {
     this.scene         = scene;
     this.camera        = camera;
     this.renderer      = renderer;
     this.controls      = controls;
     this.animController= animController;
+    this.onTopView     = onTopView;
 
     // Offcanvas／Navbar 用の FormModule
     this.offcanvasModule = new FormModule({
@@ -33,19 +34,21 @@ export class UIControlsModule {
       rootSelector: '#navbar',
       handlers:     getRunHandlers(this.animController)
     });
-    // this.canvasModule = new FormModule({
-    //   rootSelector: '#canvas-container',
-    //   handlers:     getCanvasHandlers(() => {
-    //     this.controls.resetToTopView();
-    //   })
-    // });
+    this.canvasModule = new FormModule({
+      rootSelector: '#canvas-container',
+      handlers:     getCanvasHandlers(() => {
+        if (typeof this.onTopView === 'function') {
+          this.onTopView();
+        }
+      })
+    });
 
   }
   /** 各 FormModule の init() を呼び出してバインド */
   init() {
     this.offcanvasModule.init();
     this.navbarModule.init();
-    // this.canvasModule.init();
+    this.canvasModule.init();
     this._initFormDefaults();
 
     this.sync();
@@ -94,7 +97,7 @@ export class UIControlsModule {
   dispose() {
     this.offcanvasModule.dispose();
     this.navbarModule.dispose();
-    // this.canvasModule.dispose();
+    this.canvasModule.dispose();
     console.log('[UIControlsModule] dispose() 完了');
   }
 }
