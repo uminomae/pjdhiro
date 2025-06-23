@@ -48,15 +48,15 @@ export class UIControlsModule {
     // this.canvasModule.init();
     this._initFormDefaults();
 
-
-// これを実装しないといけないのではないか？
     this.sync();
+
     // this._hasStarted = true;
-    
+
     console.log('[UIControlsModule] init() 完了');
   }
 
   sync(){
+    this._parseFormDefaults();
   }
 
   _initFormDefaults() {
@@ -70,6 +70,24 @@ export class UIControlsModule {
       const el = document.getElementById(id);
       if (el instanceof HTMLInputElement) el.value = String(value);
     });
+  }
+
+  _parseFormDefaults() {
+    const getNumber = (id, parse) => {
+      const el = document.getElementById(id);
+      if (!(el instanceof HTMLInputElement)) return null;
+      const v = parse(el.value);
+      return isNaN(v) ? null : v;
+    };
+    const re   = getNumber('input-re',   parseFloat);
+    const im   = getNumber('input-im',   parseFloat);
+    const n    = getNumber('input-n',    v => parseInt(v, 10));
+    const iter = getNumber('input-iter', v => parseInt(v, 10));
+
+    if (re   !== null) Config.FORM_DEFAULTS.re      = re;
+    if (im   !== null) Config.FORM_DEFAULTS.im      = im;
+    if (n    !== null) Config.FORM_DEFAULTS.N       = n;
+    if (iter !== null) Config.FORM_DEFAULTS.maxIter = iter;
   }
 
   /** 各 FormModule の dispose() を呼び出してアンバインド */
