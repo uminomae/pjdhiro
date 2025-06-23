@@ -27,6 +27,27 @@ export function getFormHandlers(onReset) {
 
     },
     {
+      // 入力値変更時にデフォルト値を更新
+      selector: '#input-re',
+      type:     'change',
+      handler:  updateDefaults
+    },
+    {
+      selector: '#input-im',
+      type:     'change',
+      handler:  updateDefaults
+    },
+    {
+      selector: '#input-n',
+      type:     'change',
+      handler:  updateDefaults
+    },
+    {
+      selector: '#input-iter',
+      type:     'change',
+      handler:  updateDefaults
+    },
+    {
       // 設定完了ボタン
       selector: '#config-complete-btn',
       type:     'click',
