@@ -22,11 +22,13 @@ export class D3SceneModule {
 
   /** カメラを真上から原点へ向ける */
   toTopView(zoom = 1) {
-    this.camera.up.set(0, 0, 1);
+    this.camera.up.set(1, 0, 0);
     const [, y] = CAMERA_INITIAL_POSITION;
     const [tx, ty, tz] = CAMERA_TARGET;
     this.camera.position.set(0, y*zoom, 0);
     this.camera.lookAt(tx, ty, tz);
+
+    this.camera.rotation.z = 0;
     this.controls.target.set(tx, ty, tz);
     this.controls.update();
   }
@@ -47,10 +49,12 @@ export class D3SceneModule {
 
   sync() {
     // カメラ位置
+    this.camera.up.set(0, 1, 0);
     const [x,y,z] = CAMERA_INITIAL_POSITION;
     this.camera.position.set(x,y,z);
     const [tx,ty,tz] = CAMERA_TARGET;
     this.camera.lookAt(tx,ty,tz);
+    this.controls.target.set(tx, ty, tz);
     this.controls.update();
 
     // 背景色＋ヘルパー
