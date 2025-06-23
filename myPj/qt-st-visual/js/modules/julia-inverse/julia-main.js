@@ -73,6 +73,7 @@ class JuliaMainModule {
       controls:      this.context.controls,
       animController:this.loopCtrl,
       onTopView:     () => this.sceneModule.toTopView(2),
+      context: this.context,
       sceneModule: this.sceneModule
     });
     

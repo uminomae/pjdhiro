@@ -4,7 +4,8 @@ import { Complex }                    from '../util/complex-number.js';
 import { DRAW_PARAMS }                from '../d3-config.js';
 import { resetModule }                from '../julia-main.js';
 
-export function getRunHandlers(loopCtrl) {
+export function getRunHandlers(loopCtrl, onReset) {
+// export function getRunHandlers(loopCtrl) {
   return [
     {
       selector: '#btn-run',
@@ -65,7 +66,10 @@ export function getRunHandlers(loopCtrl) {
         const btnPause  = document.getElementById('btn-pause');
         const btnResume = document.getElementById('btn-resume');
 
-        resetModule();
+        // resetModule();
+        if (typeof onReset === 'function') {
+          onReset();
+        }
         // リセット時は初期状態に戻す
         btnRun.classList.remove('d-none');
         btnPause.classList.add('d-none');
