@@ -2,6 +2,7 @@
 
 import * as THREE from 'three';
 import { getZ } from './d3-height-function.js';
+import { MAX_DISPLAY_POINTS } from '../d3-config.js';
 
 /**
  * createColoredPoints3D
@@ -34,21 +35,29 @@ export function createColoredPoints3D(
   size = 0.02,
   name = ''
 ) {
+  let pts = points;
+  if (points.length > MAX_DISPLAY_POINTS) {
+    const step = Math.ceil(points.length / MAX_DISPLAY_POINTS);
+    pts = points.filter((_, idx) => idx % step === 0);
+  }
   // ── 1) 各点について getZ を呼び、zValues 配列を作る ──
   // getZ() は「(Complex) → 数値」を返す関数（例: 複素数の絶対値など）
-  const zValues = points.map(pt => getZ(pt, { stage, iter }));
+  const zValues = pts.map(pt => getZ(pt, { stage, iter }));
 
   // ── 2) zValues の最大値を求める（最低でも 1e-6 を下限とする） ──
-  const maxZ = Math.max(...zValues, 1e-6);
+  // Math.max(...zValues) は配列が大きい場合に引数展開で
+  // "Maximum call stack size exceeded" を起こし得るため
+  // reduce で安全に最大値を計算する
+  const maxZ = zValues.reduce((acc, v) => (v > acc ? v : acc), 1e-6);
 
   // ── 3) BufferGeometry 用の TypedArray を準備 ──
   //    ・posArray: 座標バッファ (x, y, z) が 3 * points.length
   //    ・colArray: 色のバッファ   (r, g, b) が 3 * points.length
-  const posArray = new Float32Array(points.length * 3);
-  const colArray = new Float32Array(points.length * 3);
+  const posArray = new Float32Array(pts.length * 3);
+  const colArray = new Float32Array(pts.length * 3);
 
-  for (let i = 0; i < points.length; i++) {
-    const zPt    = points[i];      // Complex オブジェクト
+  for (let i = 0; i < pts.length; i++) {
+    const zPt    = pts[i];      // Complex オブジェクト
     const X      = zPt.re;         // 実部 → x 座標
     const Y      = zPt.im;         // 虚部 → y 座標
     const Zvalue = zValues[i];     // getZ で得た高さ
