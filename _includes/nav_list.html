@@ -3,7 +3,7 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
-    {% assign nav_source = site.lang | default: 'ja' %}
+    {% assign nav_source = page.lang | default: site.lang | default: 'ja' %}
     {% if nav_source == 'en' and site.data.en %}
       {% assign nav_data = site.data.en.navigation %}
     {% else %}
