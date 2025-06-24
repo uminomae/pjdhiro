@@ -177,7 +177,13 @@ defaults:
       # pagination: false
       breadcrumbs: true
       exclude_from_yearly: false
-
+  - scope:
+      path: "en"
+    values:
+      header:
+        nav: main-en
+      sidebar:
+        nav: docs-en
 # ---------------------------------------------------
 # カテゴリ・タグアーカイブの設定
 # ---------------------------------------------------

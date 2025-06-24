@@ -5,10 +5,20 @@ main:
     url: /posts/
   - title: "Pages"
     url: /pages-year/
+  # - title: "English"
+  #   url: /en/
+
+main-en:
+  - title: "Japanese"
+    url: /
 
 docs:
   - title: "プロジェクトデザインとは"
     url: /project-design/
+
+docs-en:
+  - title: "Japanese"
+    url: /
 
 cat-emotional-processing:
   - title: "感情処理"
