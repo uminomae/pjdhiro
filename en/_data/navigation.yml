@@ -5,49 +5,47 @@ main:
     url: /posts/
   - title: "Pages"
     url: /pages-year/
-  - title: "English"
-    url: /en/
 
 docs:
-  - title: "プロジェクトデザインとは"
+  - title: "What is project design?"
     url: /project-design/
 
 cat-emotional-processing:
-  - title: "感情処理"
+  - title: "Emotional processing"
     url: /emotional-processing/
     children:
-      - title: "瞑想"
+      - title: "Meditation"
         url: /meditation/
-      - title: "情動伝染"
+      - title: "Emotional contagion"
         url: /emotional-contagion/
-  - title: "作成中"
+  - title: "Under construction"
     children:
-      - title: "感情メタ認知"
+      - title: "Emotional metacognition"
         url: /emotional-metacognition/
-      - title: "心理的境界"
+      - title: "Personal boundaries"
         url: /personal-boundaries/
-      - title: "価値（認知・評価）"
+      - title: "Values (cognition and appraisal)"
         url: /value/
-      - title: "受容"
+      - title: "Acceptance"
         url: /acceptance/
 
 cat-design-topics:
   - title: "Design Topics"
     children:
-    - title: "対話"
-      url: /pages-categories/dialogue/
-    - title: "用語"
-      url: /pages-categories/word/
+      - title: "Dialogue"
+        url: /pages-categories/dialogue/
+      - title: "Words"
+        url: /pages-categories/word/
 
 cat-side-notes:
   - title: "Side Notes"
     children:
-    - title: "WEBツール"
-      url: /pages-categories/web-tools/
-    - title: "経済"
-      url: /pages-categories/economy/
-    - title: "サイト編集"
-      url: /pages-categories/dev/
+      - title: "Web tools"
+        url: /pages-categories/web-tools/
+      - title: "Economy"
+        url: /pages-categories/economy/
+      - title: "Site development"
+        url: /pages-categories/dev/
 
 cat-general:
   - title: "General"

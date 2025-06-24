@@ -16,6 +16,11 @@ task :serve do
   sh "bundle exec jekyll serve --watch --livereload"
 end
 
+desc "Build the English site"
+task "build:en" do
+  sh "bundle exec jekyll build --source en --config en/_config.yml --destination _site/en"
+end
+
 desc "Build and preview the site locally"
 task :go => [:build, :serve] do
 # task :go => [:clean, :build, :serve] do
