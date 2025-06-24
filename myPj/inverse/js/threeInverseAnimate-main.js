@@ -112,7 +112,9 @@ function createColoredPoints(points, baseColor, stage, iter) {
   // (1) 全点の Z 値を一旦配列に集める
   const zValues = points.map(z => getZ(z, { stage, iter }));
   // (2) maxZ を求める（0SS防止で最低値を 1e-6 に）
-  const maxZ = Math.max(...zValues, 1e-6);
+  // Math.max(...zValues) だと要素数が多い場合にスタックオーバーフロー
+  // を起こす可能性があるため reduce で計算する
+  const maxZ = zValues.reduce((acc, v) => (v > acc ? v : acc), 1e-6);
 
   // 頂点バッファ用の TypedArray
   const posArray = new Float32Array(points.length * 3);

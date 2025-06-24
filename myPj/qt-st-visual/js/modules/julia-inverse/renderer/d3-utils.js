@@ -39,7 +39,10 @@ export function createColoredPoints3D(
   const zValues = points.map(pt => getZ(pt, { stage, iter }));
 
   // ── 2) zValues の最大値を求める（最低でも 1e-6 を下限とする） ──
-  const maxZ = Math.max(...zValues, 1e-6);
+  // Math.max(...zValues) だと配列が大きい場合に引数展開で
+  // "Maximum call stack size exceeded" が発生することがあるため
+  // reduce を用いて最大値を求める
+  const maxZ = zValues.reduce((acc, v) => (v > acc ? v : acc), 1e-6);
 
   // ── 3) BufferGeometry 用の TypedArray を準備 ──
   //    ・posArray: 座標バッファ (x, y, z) が 3 * points.length
