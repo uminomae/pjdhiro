@@ -19,11 +19,14 @@ export const FORM_DEFAULTS = {
    *    ・点サイズ、補間ステップ数、世代間インターバルなど
    * ====================================================
    */
-  export const DRAW_PARAMS = {
-	pointSize: 0.02,  // 各ステップで使う Three.Points のサイズ
-	steps:     30,    // 補間アニメーション時の分割数
-	interval:  800    // 世代間インターバル (ms)
-  };
+export const DRAW_PARAMS = {
+      pointSize: 0.02,  // 各ステップで使う Three.Points のサイズ
+      steps:     30,    // 補間アニメーション時の分割数
+      interval:  800    // 世代間インターバル (ms)
+};
+
+// 描画時に保持する点の上限数
+export const MAX_DISPLAY_POINTS = 1000;
   
   /**
    * ====================================================
