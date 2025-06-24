@@ -161,7 +161,7 @@ defaults:
   - scope:
       path: "_pages"
       type: pages
-      categories: 
+      categories:
         - 感情処理
     values:
       layout: single
@@ -177,6 +177,10 @@ defaults:
       # pagination: false
       breadcrumbs: true
       exclude_from_yearly: false
+  - scope:
+      path: "en"
+    values:
+      lang: en
 
 # ---------------------------------------------------
 # カテゴリ・タグアーカイブの設定
