@@ -54,7 +54,14 @@ export function getFormHandlers(onReset) {
       handler:  () => {
         updateDefaults();
         onReset();
+        const btnRun    = document.getElementById('btn-run');
+        const btnPause  = document.getElementById('btn-pause');
+        const btnResume = document.getElementById('btn-resume');
+        if (btnRun)    btnRun.classList.remove('d-none');
+        if (btnPause)  btnPause.classList.add('d-none');
+        if (btnResume) btnResume.classList.add('d-none');
       }
+      
 
     }
   ];
