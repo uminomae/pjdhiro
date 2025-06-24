@@ -22,7 +22,7 @@ task "build:en" do
 end
 
 desc "Build and preview the site locally"
-task :go => [:build, :serve] do
+task :go => [:build,  "build:en", :serve] do
 # task :go => [:clean, :build, :serve] do
   puts "Site is being built and served..."
 end
