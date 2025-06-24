@@ -1,0 +1,211 @@
+# ---------------------------------------------------
+# サイト基本設定
+# ---------------------------------------------------
+baseurl: "/pjdhiro/en" # リポジトリ名
+url: "https://uminomae.github.io" # GitHub PagesのURL
+
+title: "Emotion Processing in Project Design" # サイトのタイトル
+email: # サイトに関する連絡先メールアドレス
+locale: en-US  # サイトのロケール（英語）
+timezone: Asia/Tokyo  # タイムゾーンを日本時間に設定
+lang: en  # HTML の lang 属性
+search: true # サイト内検索の有効化
+excerpt_separator: "<!-- more -->"
+# paginate: 10
+# paginate_path: "/page/:num/"
+pagination:
+  enabled: true
+  collection: posts
+  per_page: 10
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+# ---------------------------------------------------
+# SEO
+# ---------------------------------------------------
+description: "プロジェクトデザインに関する知見を共有するブログ"
+keywords: "プロジェクト管理, 感情処理, 共感, 心理的安全性, アジャイル, PMBOK"
+# ---------------------------------------------------
+# テーマ設定
+# ---------------------------------------------------
+remote_theme: mmistakes/minimal-mistakes # 使用するリモートテーマ
+minimal_mistakes_skin: default # Minimal Mistakes のスキン設定
+# ---------------------------------------------------
+# md設定
+# ---------------------------------------------------
+markdown: kramdown # Markdown 処理エンジン
+kramdown:
+  input: GFM
+  parse_block_html: true
+  auto_ids: true
+  toc_levels: 1..6  # 目次に含める見出しのレベルを指定
+# ---------------------------------------------------
+# 出力設定
+# ---------------------------------------------------
+permalink: /:categories/:title/
+breadcrumbs: true
+# ---------------------------------------------------
+# ファイル設定
+# ---------------------------------------------------
+include: # インクルードするファイルまたはフォルダ
+  - _pages 
+exclude: # 除外するフォルダ
+  - backup/
+  - theme/
+  - _posts/old/
+  - _posts/edit/
+  - minimal-mistakes-theme/
+# ---------------------------------------------------
+# SNS アカウント
+# ---------------------------------------------------
+twitter_username: pjdhiro
+# github_username: uminomae
+# ---------------------------------------------------
+# プラグイン設定
+# ---------------------------------------------------
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-picture-tag
+  - jekyll-seo-tag
+  - jekyll-assets
+  - jekyll-algolia
+# ---------------------------------------------------
+# 作者情報
+# ---------------------------------------------------
+author:
+  name   : "pjdhiro"
+  avatar : "/assets/images/101631407.jpeg"
+  bio    : "感情処理についてまずはラフに。2027末までにできたら。Postは「世界がどう見えているか？」の間主観的な自己紹介。"
+  links:
+    - label: "発散用@Blogspot"
+      icon: "fas fa-fw fa-link"
+      url: "https://pjdhiro.blogspot.com/"
+    # - label: "pjdhiro" 
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/pjdhiro"
+    # - label: "pjdhiro"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://x.com/pjdhiro"
+    # - label: ".mdファイル "
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
+# ---------------------------------------------------
+# ヘッダー、フッター設定
+# ---------------------------------------------------
+header:
+  nav: main  # データファイル _data/navigation.yml の main を参照
+footer:
+  links:
+    - label: "Blogspot"
+      icon: "fas fa-fw fa-link"
+      url: "https://pjdhiro.blogspot.com/"
+    - label: "Facebook"  # Facebookを追加
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/pjdhiro"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/pjdhiro"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/uminomae/pjdhiro/tree/public-pjdhiro/_pages/pd"
+# ---------------------------------------------------
+# デフォルト値設定
+# ---------------------------------------------------
+defaults:
+  # BLOG投稿 (_posts)
+  - scope:
+      path: "" # 全ての投稿に適用
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true # 読了時間を表示
+      comments: true # コメント機能の有効化
+      share: true # ソーシャル共有リンクの有効化
+      related: true # 関連記事の表示
+      sidebar:
+        nav: docs # _data/navigation.yml で定義されたサイドバーを使用
+        nav2: ""
+        nav3: ""
+        nav4: ""
+        nav5: posts-cat
+      pagination: true
+      toc: true # 目次を表示
+      toc_sticky: true # 固定目次を有効化
+      show_date: true # 投稿日時の表示
+      # breadcrumbs: true # パンくずリストを有効化
+  # 静的ページ (_pages)
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: docs
+        nav2: ""
+        nav3: ""
+        nav4: ""
+        nav5: pages-cat
+      toc: true
+      toc_sticky: true
+      # pagination: false
+      breadcrumbs: true
+      exclude_from_yearly: false
+  - scope:
+      path: "_pages"
+      type: pages
+      categories: 
+        - 感情処理
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: docs
+        nav2: cat-emotional-processing
+        nav3: ""
+        nav4: ""
+        nav5: ""
+      toc: true
+      toc_sticky: true
+      # pagination: false
+      breadcrumbs: true
+      exclude_from_yearly: false
+
+# ---------------------------------------------------
+# カテゴリ・タグアーカイブの設定
+# ---------------------------------------------------
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# ---------------------------------------------------
+# コレクション設定
+# ---------------------------------------------------
+collections:
+  posts:
+    output: true
+  pages:
+    output: true
+# ---------------------------------------------------
+# 共有リンクの設定
+# ---------------------------------------------------
+share:
+  twitter: true
+  facebook: true
+  linkedin: true
+# ---------------------------------------------------
+# Google アナリティクス設定
+# ---------------------------------------------------
+google_analytics: 
+  production: "G-WV09PB2PZT" # 本番環境の測定ID
+  development: "" # 開発環境では空に設定
+# ---------------------------------------------------
