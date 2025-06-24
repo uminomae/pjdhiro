@@ -12,9 +12,9 @@ sidebar:
   nav5: ""
 ---
 
-## [App]({{ '/myPj/qt-st-visual/' | relative_url }})
+## [App]({{ '/myPj/qt-st-visual/?alg=qt-st' | relative_url }})
 
-- [Appはこちら]({{ '/myPj/qt-st-visual/' | relative_url }})
+- [Appはこちら]({{ '/myPj/qt-st-visual/?alg=qt-st' | relative_url }})
 - 使い方
   - 自動で描画を開始します
   - 右上の「設定」ボタンでパラメータの変更できます。
