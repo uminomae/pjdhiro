@@ -40,6 +40,7 @@ export function createColoredPoints3D(
     const step = Math.ceil(points.length / MAX_DISPLAY_POINTS);
     pts = points.filter((_, idx) => idx % step === 0);
   }
+  console.log('[createColoredPoints3D] point count:', pts.length); 
   // ── 1) 各点について getZ を呼び、zValues 配列を作る ──
   // getZ() は「(Complex) → 数値」を返す関数（例: 複素数の絶対値など）
   const zValues = pts.map(pt => getZ(pt, { stage, iter }));
