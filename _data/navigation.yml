@@ -5,6 +5,8 @@ main:
     url: /posts/
   - title: "Pages"
     url: /pages-year/
+  - title: "English"
+    url: /en/
 
 docs:
   - title: "プロジェクトデザインとは"

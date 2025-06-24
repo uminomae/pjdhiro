@@ -62,7 +62,9 @@ permalink: /
   </div>
 </div>
 
-[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有します。  
+[English]({{ '/en/' | relative_url }})
+
+[プロジェクトデザイン]({{ '/project-design/' | relative_url }})に関する体験や知見を共有します。
 特に、[感情処理]({{ '/emotional-processing/' | relative_url }})の視点で整理していきます。
 
 ---
