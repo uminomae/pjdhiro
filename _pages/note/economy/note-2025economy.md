@@ -130,7 +130,7 @@ MBAを買って終わりでなく、買って始まる、にしたかった私�
   
 なので、国家の発達を天下餅のプロセスとして考えてみた。  
 [![image](../assets/images/humor/zukai/tenkamochi21.png)](../assets/images/humor/zukai/tenkamochi21.png)
-- [【日記：図解：天下餅〜従属と低ボラティリティの静かな覇権〜 - Emotion Processing in Project Design】](http://127.0.0.1:4000/pjdhiro/20250522Tenkamochi/)
+- [【日記：図解：天下餅〜従属と低ボラティリティの静かな覇権〜 - Emotion Processing in Project Design】]({{ '/20250522Tenkamochi/' | relative_url }})
 
 ---
 
