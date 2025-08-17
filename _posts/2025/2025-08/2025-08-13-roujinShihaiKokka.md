@@ -6,7 +6,9 @@ categories:
   - Reading list
   - Economy
 tags:
-  - 新自由主義
+  - ポスト新自由主義
+  - 移民
+  - 家族
 header:
   teaser: "https://m.media-amazon.com/images/I/71SyRJdB0XL._SY522_.jpg"   
 excerpt: "人口統計と家族類系の専門家。移民政策で犯しがちな過ちについて"  
