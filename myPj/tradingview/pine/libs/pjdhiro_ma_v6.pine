@@ -2,10 +2,11 @@
 library("pjdhiro_ma_v6")
 
 // =====================
-// 移動平均コア
+// 移動平均（SMA）
 // =====================
 
-// 単純移動平均（length は 1 以上に正規化）
+// Pineの引数 float は「series<float> も受けられる」ので OK。
+// length は 1 未満だとエラーの元。常に 1 以上に正規化してから使う。
 export sma(float src, int length) =>
     int ln = math.max(length, 1)
-    ta.sma(src, ln)
+    ta.sma(src, ln)    // ta.* は TradingView 組み込みのテクニカル群
