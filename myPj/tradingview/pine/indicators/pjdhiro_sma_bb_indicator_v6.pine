@@ -1,0 +1,45 @@
+//@version=6
+indicator("PJDHIRO — SMA(20/120/200) + BB(2σ) [Step1]", overlay=true)
+
+// ---- 将来: ライブラリ import（ライブラリを Add to version 後に使用） ----
+// import pjdhiro/pjdhiro_ma_v6/1 as ma
+// import pjdhiro/pjdhiro_bb_v6/1 as bb
+// ---------------------------------------------------------------------
+
+// ===== 入力（メイン＝入力と可視化） =====
+int   lenSma1 = input.int(20,  "SMA1", minval=1)
+int   lenSma2 = input.int(120, "SMA2", minval=1)
+int   lenSma3 = input.int(200, "SMA3", minval=1)
+int   lenBB   = input.int(20,  "BB Length", minval=1)
+float mult    = input.float(2.0, "BB σ", step=0.1)
+
+bool  showSMA1 = input.bool(true,  "Show SMA1")
+bool  showSMA2 = input.bool(true,  "Show SMA2")
+bool  showSMA3 = input.bool(true,  "Show SMA3")
+bool  showBB   = input.bool(true,  "Show BB")
+
+// ===== 計算（暫定：ta.*。ライブラリ化後は置換） =====
+float sma1    = ta.sma(close, lenSma1)
+float sma2    = ta.sma(close, lenSma2)
+float sma3    = ta.sma(close, lenSma3)
+float bbBasis = ta.sma(close, lenBB)
+float bbDev   = mult * ta.stdev(close, lenBB)
+float bbUp    = bbBasis + bbDev
+float bbDn    = bbBasis - bbDev
+
+// ===== 可視化（グローバル呼び出しのみ） =====
+plot(showSMA1 ? sma1 : na, "SMA1", color=color.new(color.teal,   0), linewidth=2)
+plot(showSMA2 ? sma2 : na, "SMA2", color=color.new(color.orange, 0), linewidth=2)
+plot(showSMA3 ? sma3 : na, "SMA3", color=color.new(color.purple, 0), linewidth=2)
+
+plot pBBU = plot(showBB ? bbUp    : na, "BB Upper", color=color.new(color.gray, 0))
+plot pBBB = plot(showBB ? bbBasis : na, "BB Basis", color=color.new(color.gray, 50))
+plot pBBD = plot(showBB ? bbDn    : na, "BB Lower", color=color.new(color.gray, 0))
+if showBB
+    fill(pBBU, pBBD, color=color.new(color.gray, 90), title="BB fill")
+
+// ---- ここから先は将来機能（コメント解除で試せる設計） ---------------------
+// // ゴールデン/デッドクロスのマーカー（ma.is_gc/is_dc に後で差し替え）
+// // plotshape(ta.crossover(sma1, sma2) ? close : na, title="GC", style=shape.triangleup,  location=location.belowbar, color=color.new(color.teal,  0), size=size.tiny)
+// // plotshape(ta.crossunder(sma1, sma2) ? close : na, title="DC", style=shape.triangledown,location=location.abovebar, color=color.new(color.red,   0), size=size.tiny)
+// -----------------------------------------------------------------------------
