@@ -1,0 +1,11 @@
+//@version=6
+library("pjdhiro_ma_v6")
+
+// =====================
+// 移動平均コア
+// =====================
+
+// 単純移動平均（length は 1 以上に正規化）
+export sma(float src, int length) =>
+    int ln = math.max(length, 1)
+    ta.sma(src, ln)

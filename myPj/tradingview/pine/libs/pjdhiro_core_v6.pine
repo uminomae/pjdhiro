@@ -1,0 +1,21 @@
+//@version=6
+library("pjdhiro_core_v6")
+
+// =====================
+// 通貨・pipsユーティリティ
+// =====================
+
+// pipサイズ（JPY=0.01, その他=0.0001）
+export pip() =>
+    float p = syminfo.currency == "JPY" ? 0.01 : 0.0001
+    p
+
+// pips → 価格
+export pips_to_price(float pips) =>
+    float v = pips * pip()
+    v
+
+// 価格差 → pips
+export price_to_pips(float priceDelta) =>
+    float v = priceDelta / pip()
+    v
