@@ -1,0 +1,26 @@
+//@version=6
+indicator("pjdhiro — SMA(3) v6", overlay=true)
+
+// ===== import（計算ロジックのみ） =====
+import pjdhiro_ma_v6 as ma
+
+// ===== 入力（可視化制御を含む） =====
+src        = input.source(close, "Source")
+int len1   = input.int(20,  "SMA1 Length", minval=1)
+int len2   = input.int(130, "SMA2 Length", minval=1)
+int len3   = input.int(200, "SMA3 Length", minval=1)
+bool show1 = input.bool(true,  "Show SMA1 (20)")
+bool show2 = input.bool(true,  "Show SMA2 (130)")
+bool show3 = input.bool(true,  "Show SMA3 (200)")
+
+// ===== 計算（ライブラリ呼び出しのみ） =====
+float sma1 = ma.sma(src, len1)
+float sma2 = ma.sma(src, len2)
+float sma3 = ma.sma(src, len3)
+
+// ===== 描画（グローバルで、表示ON/OFFはnaで制御） =====
+plot(show1 ? sma1 : na, "SMA1", color=color.new(color.teal,    0), linewidth=2)
+plot(show2 ? sma2 : na, "SMA2", color=color.new(color.orange,  0), linewidth=2)
+plot(show3 ? sma3 : na, "SMA3", color=color.new(color.fuchsia, 0), linewidth=2)
+
+// -------- ここから先は拡張用（
