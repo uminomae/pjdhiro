@@ -1,0 +1,4 @@
+{
+  "files.associations": { "*.pine": "pine" },
+  "keyboard.dispatch": "code"   // まずは code を試す。ダメなら "keyCode" に変えて再試行
+}
