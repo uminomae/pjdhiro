@@ -15,10 +15,12 @@ from pathlib import Path
 class PjdhiroMa:
     @staticmethod
     def sma(series: pd.Series, length: int) -> pd.Series:
+        """Return the simple moving average of ``series`` over ``length`` periods."""
         ln = max(int(length), 1)
         return series.rolling(window=ln, min_periods=ln).mean()
 
 def gen_random_walk(n=500, seed=42, start=100.0) -> pd.Series:
+    """Generate a random walk Series of length ``n`` starting at ``start``."""
     rng = np.random.default_rng(seed)
     steps = rng.normal(loc=0.0, scale=1.0, size=n)
     arr = np.cumsum(steps) + start
@@ -26,13 +28,34 @@ def gen_random_walk(n=500, seed=42, start=100.0) -> pd.Series:
     return pd.Series(arr, index=idx, name="close")
 
 def load_close_from_csv(path: Path, close_col="close") -> pd.Series:
+    """Load a close price Series from ``path`` expecting column ``close_col``."""
     df = pd.read_csv(path)
     if close_col not in df.columns:
         raise ValueError(f"CSVに {close_col} 列がありません。列名: {list(df.columns)}")
     s = pd.Series(df[close_col].values, name="close")
     return s
 
+def sma_conv(x: pd.Series, n: int) -> pd.Series:
+    """Compute SMA via convolution; used for cross-checking results."""
+    n = max(int(n), 1)
+    w = np.ones(n) / n
+    y = np.convolve(x.values, w, mode="valid")
+    out = pd.Series(np.r_[np.full(n-1, np.nan), y], index=x.index, name=f"sma{n}")
+    return out
+
+def assert_series_allclose(a: pd.Series, b: pd.Series, rtol=1e-12, atol=1e-12):
+    """Assert that two Series are elementwise equal within tolerances."""
+    # 同じ長さ・同じインデックス
+    assert a.index.equals(b.index), "indexが一致しません"
+    av = a.to_numpy()
+    bv = b.to_numpy()
+    mask = ~(np.isnan(av) | np.isnan(bv))
+    if not np.allclose(av[mask], bv[mask], rtol=rtol, atol=atol):
+        diff = np.max(np.abs(av[mask] - bv[mask]))
+        raise AssertionError(f"Seriesが許容誤差内で一致しません（max diff={diff}）")
+
 def main():
+    """Entry point for CLI: compute and plot three SMAs for a price series."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--csv", type=str, default="", help="Close列を含むCSV（無指定ならランダムウォーク）")
     ap.add_argument("--close-col", type=str, default="close", help="CSVの終値列名")
@@ -50,24 +73,7 @@ def main():
     sma2 = PjdhiroMa.sma(close, args.len2)
     sma3 = PjdhiroMa.sma(close, args.len3)
 
-     # --- 検証: 異なる実装（畳み込み）と一致するかをチェック（許容誤差） ---
-    def sma_conv(x: pd.Series, n: int) -> pd.Series:
-        n = max(int(n), 1)
-        w = np.ones(n) / n
-        y = np.convolve(x.values, w, mode="valid")
-        out = pd.Series(np.r_[np.full(n-1, np.nan), y], index=x.index, name=f"sma{n}")
-        return out
-
-    def assert_series_allclose(a: pd.Series, b: pd.Series, rtol=1e-12, atol=1e-12):
-        # 同じ長さ・同じインデックス
-        assert a.index.equals(b.index), "indexが一致しません"
-        av = a.to_numpy()
-        bv = b.to_numpy()
-        mask = ~(np.isnan(av) | np.isnan(bv))
-        if not np.allclose(av[mask], bv[mask], rtol=rtol, atol=atol):
-            diff = np.max(np.abs(av[mask] - bv[mask]))
-            raise AssertionError(f"Seriesが許容誤差内で一致しません（max diff={diff}）")
-
+    # --- 検証: 異なる実装（畳み込み）と一致するかをチェック（許容誤差） ---
     assert_series_allclose(sma1, sma_conv(close, args.len1))
     assert_series_allclose(sma2, sma_conv(close, args.len2))
     assert_series_allclose(sma3, sma_conv(close, args.len3))
