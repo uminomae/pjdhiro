@@ -1,26 +1,43 @@
 //@version=6
-indicator("pjdhiro — SMA(3) v6", overlay=true)
+indicator("pjdhiro — SMA(3) v6 (minimal I/O)", overlay=true)
+//自分用に使うだけなら Publish は不要。保存だけでOK
 
-// ===== import（計算ロジックのみ） =====
+// 計算ライブラリ（描画は持たない）
 import pjdhiro_ma_v6 as ma
 
-// ===== 入力（可視化制御を含む） =====
-src        = input.source(close, "Source")
-int len1   = input.int(20,  "SMA1 Length", minval=1)
-int len2   = input.int(130, "SMA2 Length", minval=1)
-int len3   = input.int(200, "SMA3 Length", minval=1)
-bool show1 = input.bool(true,  "Show SMA1 (20)")
-bool show2 = input.bool(true,  "Show SMA2 (130)")
-bool show3 = input.bool(true,  "Show SMA3 (200)")
+// ===== ユーザー入力：期間・色・線の種類（各SMA） =====
+// SMA1
+int   len1   = input.int(20,  "SMA1 Length", minval=1, inline="S1", group="SMA1")
+color col1   = input.color(color.orange, "Color", inline="S1", group="SMA1")
+string st1s  = input.string("Line", "Style", options=["Line","Step","Area","Histogram"], inline="S1", group="SMA1")
+// SMA2
+int   len2   = input.int(120, "SMA2 Length", minval=1, inline="S2", group="SMA2")
+color col2   = input.color(color.green, "Color", inline="S2", group="SMA2")
+string st2s  = input.string("Line", "Style", options=["Line","Step","Area","Histogram"], inline="S2", group="SMA2")
+// SMA3
+int   len3   = input.int(200, "SMA3 Length", minval=1, inline="S3", group="SMA3")
+//color col3   = input.color(color.green, "Color", inline="S3", group="SMA3")
+color col3   = input.color(color.red, "Color", inline="S3", group="SMA3")
+string st3s  = input.string("Line", "Style", options=["Line","Step","Area","Histogram"], inline="S3", group="SMA3")
 
-// ===== 計算（ライブラリ呼び出しのみ） =====
-float sma1 = ma.sma(src, len1)
-float sma2 = ma.sma(src, len2)
-float sma3 = ma.sma(src, len3)
+// ===== 計算（終値 close をソースに固定） =====
+float sma1 = ma.sma(close, len1)
+float sma2 = ma.sma(close, len2)
+float sma3 = ma.sma(close, len3)
 
-// ===== 描画（グローバルで、表示ON/OFFはnaで制御） =====
-plot(show1 ? sma1 : na, "SMA1", color=color.new(color.teal,    0), linewidth=2)
-plot(show2 ? sma2 : na, "SMA2", color=color.new(color.orange,  0), linewidth=2)
-plot(show3 ? sma3 : na, "SMA3", color=color.new(color.fuchsia, 0), linewidth=2)
+// ===== 線種（plot の style は“折れ線/ステップ/面/ヒストグラム”を選べる）=====
+// ※「点線・破線」は plot() ではコードから指定不可（TVのスタイル画面で手動設定のみ）
+plot(sma1, title="SMA1", color=col1, linewidth=2,
+     style = st1s == "Step" ? plot.style_stepline :
+             st1s == "Area" ? plot.style_area :
+             st1s == "Histogram" ? plot.style_histogram : plot.style_line)
 
-// -------- ここから先は拡張用（
+plot(sma2, title="SMA2", color=col2, linewidth=2,
+     style = st2s == "Step" ? plot.style_stepline :
+             st2s == "Area" ? plot.style_area :
+             st2s == "Histogram" ? plot.style_histogram : plot.style_line)
+
+plot(sma3, title="SMA3", color=col3, linewidth=2,
+     style = st3s == "Step" ? plot.style_stepline :
+             st3s == "Area" ? plot.style_area :
+             st3s == "Histogram" ? plot.style_histogram : plot.style_line)
