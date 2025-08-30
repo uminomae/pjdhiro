@@ -9,7 +9,7 @@
 // ============================================================================
 // ## header
 // ============================================================================
-indicator(title="pjdhiro — SMA(3)×5）", shorttitle="SMA(3)×5", overlay=true)
+indicator(title="pjdhiro — SMA 3×5）", shorttitle="SMA 3×5", overlay=true)
 
 // 計算ライブラリ（値を返す関数のみ）
 import uminomae/pjdhiro_ma_v6/2 as ma
