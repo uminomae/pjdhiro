@@ -9,11 +9,10 @@
 // ============================================================================
 // ## header
 // ============================================================================
-indicator(title="pjdhiro — SMA(3)×3 v6（A/B/C・排他的表示）", shorttitle="SMA(3)×3 v6（A/B/C）", overlay=true)
+indicator(title="pjdhiro — SMA(3)×5）", shorttitle="SMA(3)×5", overlay=true)
 
 // 計算ライブラリ（値を返す関数のみ）
-import uminomae/pjdhiro_ma_v6/1 as ma
-
+import uminomae/pjdhiro_ma_v6/2 as ma
 // ============================================================================
 // ## デフォルト値（コンパイル時定数＝const）
 // ============================================================================
@@ -83,61 +82,57 @@ const int   DEF_WIDTH_E3 = 3
 // ============================================================================
 
 // A
-int lengthA1 = input.int(DEF_LEN_A1, "期間1", minval=0, group="セットA", tooltip="セットAの短期SMAの期間")
-int lengthA2 = input.int(DEF_LEN_A2, "期間2", minval=0, group="セットA", tooltip="セットAの中期SMAの期間")
-int lengthA3 = input.int(DEF_LEN_A3, "期間3", minval=0, group="セットA", tooltip="セットAの長期SMAの期間")
-
+int lengthA1 = input.int(DEF_LEN_A1, "1", minval=0, group="セットA = デフォルト", inline="AL")
+int lengthA2 = input.int(DEF_LEN_A2, "2", minval=0, group="セットA = デフォルト", inline="AL")
+int lengthA3 = input.int(DEF_LEN_A3, "3", minval=0, group="セットA = デフォルト", inline="AL",tooltip="SMAの期間")
 // B
-int  lengthB1 = input.int(DEF_LEN_B1, "期間1", minval=0, group="セットB", tooltip="セットBの短期SMAの期間")
-int  lengthB2 = input.int(DEF_LEN_B2, "期間2", minval=0, group="セットB", tooltip="セットBの中期SMAの期間")
-int  lengthB3 = input.int(DEF_LEN_B3, "期間3", minval=0, group="セットB", tooltip="セットBの長期SMAの期間")
+int  lengthB1 = input.int(DEF_LEN_B1, "1", minval=0, group="セットB", inline="BL")
+int  lengthB2 = input.int(DEF_LEN_B2, "2", minval=0, group="セットB", inline="BL")
+int  lengthB3 = input.int(DEF_LEN_B3, "3", minval=0, group="セットB", inline="BL")
 bool b_1   = input.bool(false, "1分",   group="セットB — 表示する時間足", inline="BTF1")
 bool b_5   = input.bool(false, "5分",   group="セットB — 表示する時間足", inline="BTF1")
 bool b_15  = input.bool(false, "15分",  group="セットB — 表示する時間足", inline="BTF1")
-bool b_60  = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF2")
-bool b_240 = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF2")
-bool b_d   = input.bool(false, "日足",  group="セットB — 表示する時間足", inline="BTF2")
-bool b_w   = input.bool(false, "週足",  group="セットB — 表示する時間足", inline="BTF3")
-bool b_m   = input.bool(false, "月足",  group="セットB — 表示する時間足", inline="BTF3")
-
-// C
-int  lengthC1 = input.int(DEF_LEN_C1, "期間1", minval=0, group="セットC", tooltip="セットCの短期SMAの期間")
-int  lengthC2 = input.int(DEF_LEN_C2, "期間2", minval=0, group="セットC", tooltip="セットCの中期SMAの期間")
-int  lengthC3 = input.int(DEF_LEN_C3, "期間3", minval=0, group="セットC", tooltip="セットCの長期SMAの期間")
+bool b_60  = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_240 = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF1")
+bool b_d   = input.bool(false, "日足",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_w   = input.bool(false, "週足",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_m   = input.bool(false, "月足",  group="セットB — 表示する時間足", inline="BTF1")
+// C（横並び）
+int lengthC1 = input.int(DEF_LEN_C1, "1", minval=0, group="セットC", inline="CL")
+int lengthC2 = input.int(DEF_LEN_C2, "2", minval=0, group="セットC", inline="CL")
+int lengthC3 = input.int(DEF_LEN_C3, "3", minval=0, group="セットC", inline="CL")
 bool c_1   = input.bool(false, "1分",   group="セットC — 表示する時間足", inline="CTF1")
 bool c_5   = input.bool(false, "5分",   group="セットC — 表示する時間足", inline="CTF1")
 bool c_15  = input.bool(false, "15分",  group="セットC — 表示する時間足", inline="CTF1")
-bool c_60  = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF2")
-bool c_240 = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF2")
-bool c_d   = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF2")
-bool c_w   = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF3")
-bool c_m   = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF3")
-
-// D
-int  lengthD1 = input.int(DEF_LEN_D1, "期間1", minval=0, group="セットD")
-int  lengthD2 = input.int(DEF_LEN_D2, "期間2", minval=0, group="セットD")
-int  lengthD3 = input.int(DEF_LEN_D3, "期間3", minval=0, group="セットD")
+bool c_60  = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_240 = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF1")
+bool c_d   = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_w   = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_m   = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF1")
+// D（横並び）
+int lengthD1 = input.int(DEF_LEN_D1, "1", minval=0, group="セットD", inline="DL")
+int lengthD2 = input.int(DEF_LEN_D2, "2", minval=0, group="セットD", inline="DL")
+int lengthD3 = input.int(DEF_LEN_D3, "3", minval=0, group="セットD", inline="DL")
 bool d_1   = input.bool(false, "1分",   group="セットD — 表示する時間足", inline="DTF1")
 bool d_5   = input.bool(false, "5分",   group="セットD — 表示する時間足", inline="DTF1")
 bool d_15  = input.bool(false, "15分",  group="セットD — 表示する時間足", inline="DTF1")
-bool d_60  = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF2")
-bool d_240 = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF2")
-bool d_d   = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF2")
-bool d_w   = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF3")
-bool d_m   = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF3")
-
-// E（最優先）
-int  lengthE1 = input.int(DEF_LEN_E1, "期間1", minval=0, group="セットE")
-int  lengthE2 = input.int(DEF_LEN_E2, "期間2", minval=0, group="セットE")
-int  lengthE3 = input.int(DEF_LEN_E3, "期間3", minval=0, group="セットE")
+bool d_60  = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_240 = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF1")
+bool d_d   = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_w   = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_m   = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF1")
+// E（横並び）
+int lengthE1 = input.int(DEF_LEN_E1, "1", minval=0, group="セットE", inline="EL")
+int lengthE2 = input.int(DEF_LEN_E2, "2", minval=0, group="セットE", inline="EL")
+int lengthE3 = input.int(DEF_LEN_E3, "3", minval=0, group="セットE", inline="EL")
 bool e_1   = input.bool(false, "1分",   group="セットE — 表示する時間足", inline="ETF1")
 bool e_5   = input.bool(false, "5分",   group="セットE — 表示する時間足", inline="ETF1")
 bool e_15  = input.bool(false, "15分",  group="セットE — 表示する時間足", inline="ETF1")
-bool e_60  = input.bool(false, "60分",  group="セットE — 表示する時間足", inline="ETF2")
-bool e_240 = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF2")
-bool e_d   = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF2")
-bool e_w   = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF3")
-bool e_m   = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF3")
+bool e_60  = input.bool(false, "60分",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_240 = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF1")
+bool e_d   = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_w   = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_m   = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF1")
 
 // ============================================================================
 // ### 足の判定と表示条件（E→D→C→B→A）
