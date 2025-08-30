@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
-
-
 set -eu
 
 # ===== 好みのデフォルト（必要なら編集） =====
@@ -9,7 +7,7 @@ export TV_CSV="./tests/data/sample.csv"                # 例: ../data/sample.csv
 # export TV_LEN1=20
 # export TV_LEN2=130
 # export TV_LEN3=200
-# export TV_SHOW_SECONDS=1.0
+export TV_SHOW_SECONDS=2.0
 # =============================================
 
 
