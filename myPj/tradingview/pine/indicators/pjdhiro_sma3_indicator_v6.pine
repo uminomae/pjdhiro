@@ -1,43 +1,209 @@
 //@version=6
-indicator("pjdhiro — SMA(3) v6 (minimal I/O)", overlay=true)
-//自分用に使うだけなら Publish は不要。保存だけでOK
+// ============================================================================
+// ## このインジケーターについて
+// - 単純移動平均線（SMA）：過去の一定期間の終値を単純に合計して平均を出す最も基本的な移動平均線です
+// - 表示は E→D→C→B→A の優先度で排他的に1セットのみ描画
+// - 期間は0で未設定（非表示）。色/線幅/点線は Style タブで調整
+// ### 参考
+//  - 名前付きカラー: red, green, blue, aqua, fuchsia, orange, yellow, purple, teal, gray, maroon, olive, lime
+// ============================================================================
+// ## header
+// ============================================================================
+indicator(title="pjdhiro — SMA(3)×3 v6（A/B/C・排他的表示）", shorttitle="SMA(3)×3 v6（A/B/C）", overlay=true)
 
-// 計算ライブラリ（描画は持たない）
-import pjdhiro_ma_v6 as ma
+// 計算ライブラリ（値を返す関数のみ）
+import uminomae/pjdhiro_ma_v6/1 as ma
 
-// ===== ユーザー入力：期間・色・線の種類（各SMA） =====
-// SMA1
-int   len1   = input.int(20,  "SMA1 Length", minval=1, inline="S1", group="SMA1")
-color col1   = input.color(color.orange, "Color", inline="S1", group="SMA1")
-string st1s  = input.string("Line", "Style", options=["Line","Step","Area","Histogram"], inline="S1", group="SMA1")
-// SMA2
-int   len2   = input.int(120, "SMA2 Length", minval=1, inline="S2", group="SMA2")
-color col2   = input.color(color.green, "Color", inline="S2", group="SMA2")
-string st2s  = input.string("Line", "Style", options=["Line","Step","Area","Histogram"], inline="S2", group="SMA2")
-// SMA3
-int   len3   = input.int(200, "SMA3 Length", minval=1, inline="S3", group="SMA3")
-//color col3   = input.color(color.green, "Color", inline="S3", group="SMA3")
-color col3   = input.color(color.red, "Color", inline="S3", group="SMA3")
-string st3s  = input.string("Line", "Style", options=["Line","Step","Area","Histogram"], inline="S3", group="SMA3")
+// ============================================================================
+// ## デフォルト値（コンパイル時定数＝const）
+// ============================================================================
 
-// ===== 計算（終値 close をソースに固定） =====
-float sma1 = ma.sma(close, len1)
-float sma2 = ma.sma(close, len2)
-float sma3 = ma.sma(close, len3)
+// セットA
+const int   DEF_ALPHA_A  = 50
+const int   DEF_LEN_A1   = 0
+const int   DEF_LEN_A2   = 20
+const int   DEF_LEN_A3   = 200
+const color DEF_COL_A1   = color.new(color.aqua,   DEF_ALPHA_A)
+const color DEF_COL_A2   = color.new(color.blue,   DEF_ALPHA_A)
+const color DEF_COL_A3   = color.new(color.orange, DEF_ALPHA_A)
+const int   DEF_WIDTH_A1 = 1
+const int   DEF_WIDTH_A2 = 2
+const int   DEF_WIDTH_A3 = 3
 
-// ===== 線種（plot の style は“折れ線/ステップ/面/ヒストグラム”を選べる）=====
-// ※「点線・破線」は plot() ではコードから指定不可（TVのスタイル画面で手動設定のみ）
-plot(sma1, title="SMA1", color=col1, linewidth=2,
-     style = st1s == "Step" ? plot.style_stepline :
-             st1s == "Area" ? plot.style_area :
-             st1s == "Histogram" ? plot.style_histogram : plot.style_line)
+// セットB
+const int   DEF_ALPHA_B  = 50
+const int   DEF_LEN_B1   = 15
+const int   DEF_LEN_B2   = 60
+const int   DEF_LEN_B3   = 240
+const color DEF_COL_B1   = color.new(color.teal,   DEF_ALPHA_B)
+const color DEF_COL_B2   = color.new(color.blue,   DEF_ALPHA_B)
+const color DEF_COL_B3   = color.new(color.orange, DEF_ALPHA_B)
+const int   DEF_WIDTH_B1 = 1
+const int   DEF_WIDTH_B2 = 2
+const int   DEF_WIDTH_B3 = 3
 
-plot(sma2, title="SMA2", color=col2, linewidth=2,
-     style = st2s == "Step" ? plot.style_stepline :
-             st2s == "Area" ? plot.style_area :
-             st2s == "Histogram" ? plot.style_histogram : plot.style_line)
+// セットC
+const int   DEF_ALPHA_C  = 50
+const int   DEF_LEN_C1   = 5
+const int   DEF_LEN_C2   = 20
+const int   DEF_LEN_C3   = 240
+const color DEF_COL_C1   = color.new(color.fuchsia, DEF_ALPHA_C)
+const color DEF_COL_C2   = color.new(color.purple,  DEF_ALPHA_C)
+const color DEF_COL_C3   = color.new(color.gray,    DEF_ALPHA_C)
+const int   DEF_WIDTH_C1 = 1
+const int   DEF_WIDTH_C2 = 2
+const int   DEF_WIDTH_C3 = 3
 
-plot(sma3, title="SMA3", color=col3, linewidth=2,
-     style = st3s == "Step" ? plot.style_stepline :
-             st3s == "Area" ? plot.style_area :
-             st3s == "Histogram" ? plot.style_histogram : plot.style_line)
+// セットD
+const int   DEF_ALPHA_D  = 50
+const int   DEF_LEN_D1   = 13
+const int   DEF_LEN_D2   = 26
+const int   DEF_LEN_D3   = 52
+const color DEF_COL_D1   = color.new(color.green,  DEF_ALPHA_D)
+const color DEF_COL_D2   = color.new(color.olive,  DEF_ALPHA_D)
+const color DEF_COL_D3   = color.new(color.maroon, DEF_ALPHA_D)
+const int   DEF_WIDTH_D1 = 1
+const int   DEF_WIDTH_D2 = 2
+const int   DEF_WIDTH_D3 = 3
+
+// セットE
+const int   DEF_ALPHA_E  = 50
+const int   DEF_LEN_E1   = 12
+const int   DEF_LEN_E2   = 24
+const int   DEF_LEN_E3   = 60
+const color DEF_COL_E1   = color.new(color.yellow, DEF_ALPHA_E)
+const color DEF_COL_E2   = color.new(color.purple, DEF_ALPHA_E)
+const color DEF_COL_E3   = color.new(color.red,    DEF_ALPHA_E)
+const int   DEF_WIDTH_E1 = 1
+const int   DEF_WIDTH_E2 = 2
+const int   DEF_WIDTH_E3 = 3
+
+// ============================================================================
+// ## 入力（期間のみUIで変更。色/線幅/点線はStyleタブ）
+// ============================================================================
+
+// A
+int lengthA1 = input.int(DEF_LEN_A1, "期間1", minval=0, group="セットA", tooltip="セットAの短期SMAの期間")
+int lengthA2 = input.int(DEF_LEN_A2, "期間2", minval=0, group="セットA", tooltip="セットAの中期SMAの期間")
+int lengthA3 = input.int(DEF_LEN_A3, "期間3", minval=0, group="セットA", tooltip="セットAの長期SMAの期間")
+
+// B
+int  lengthB1 = input.int(DEF_LEN_B1, "期間1", minval=0, group="セットB", tooltip="セットBの短期SMAの期間")
+int  lengthB2 = input.int(DEF_LEN_B2, "期間2", minval=0, group="セットB", tooltip="セットBの中期SMAの期間")
+int  lengthB3 = input.int(DEF_LEN_B3, "期間3", minval=0, group="セットB", tooltip="セットBの長期SMAの期間")
+bool b_1   = input.bool(false, "1分",   group="セットB — 表示する時間足", inline="BTF1")
+bool b_5   = input.bool(false, "5分",   group="セットB — 表示する時間足", inline="BTF1")
+bool b_15  = input.bool(false, "15分",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_60  = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF2")
+bool b_240 = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF2")
+bool b_d   = input.bool(false, "日足",  group="セットB — 表示する時間足", inline="BTF2")
+bool b_w   = input.bool(false, "週足",  group="セットB — 表示する時間足", inline="BTF3")
+bool b_m   = input.bool(false, "月足",  group="セットB — 表示する時間足", inline="BTF3")
+
+// C
+int  lengthC1 = input.int(DEF_LEN_C1, "期間1", minval=0, group="セットC", tooltip="セットCの短期SMAの期間")
+int  lengthC2 = input.int(DEF_LEN_C2, "期間2", minval=0, group="セットC", tooltip="セットCの中期SMAの期間")
+int  lengthC3 = input.int(DEF_LEN_C3, "期間3", minval=0, group="セットC", tooltip="セットCの長期SMAの期間")
+bool c_1   = input.bool(false, "1分",   group="セットC — 表示する時間足", inline="CTF1")
+bool c_5   = input.bool(false, "5分",   group="セットC — 表示する時間足", inline="CTF1")
+bool c_15  = input.bool(false, "15分",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_60  = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF2")
+bool c_240 = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF2")
+bool c_d   = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF2")
+bool c_w   = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF3")
+bool c_m   = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF3")
+
+// D
+int  lengthD1 = input.int(DEF_LEN_D1, "期間1", minval=0, group="セットD")
+int  lengthD2 = input.int(DEF_LEN_D2, "期間2", minval=0, group="セットD")
+int  lengthD3 = input.int(DEF_LEN_D3, "期間3", minval=0, group="セットD")
+bool d_1   = input.bool(false, "1分",   group="セットD — 表示する時間足", inline="DTF1")
+bool d_5   = input.bool(false, "5分",   group="セットD — 表示する時間足", inline="DTF1")
+bool d_15  = input.bool(false, "15分",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_60  = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF2")
+bool d_240 = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF2")
+bool d_d   = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF2")
+bool d_w   = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF3")
+bool d_m   = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF3")
+
+// E（最優先）
+int  lengthE1 = input.int(DEF_LEN_E1, "期間1", minval=0, group="セットE")
+int  lengthE2 = input.int(DEF_LEN_E2, "期間2", minval=0, group="セットE")
+int  lengthE3 = input.int(DEF_LEN_E3, "期間3", minval=0, group="セットE")
+bool e_1   = input.bool(false, "1分",   group="セットE — 表示する時間足", inline="ETF1")
+bool e_5   = input.bool(false, "5分",   group="セットE — 表示する時間足", inline="ETF1")
+bool e_15  = input.bool(false, "15分",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_60  = input.bool(false, "60分",  group="セットE — 表示する時間足", inline="ETF2")
+bool e_240 = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF2")
+bool e_d   = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF2")
+bool e_w   = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF3")
+bool e_m   = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF3")
+
+// ============================================================================
+// ### 足の判定と表示条件（E→D→C→B→A）
+// ============================================================================
+bool is1   = timeframe.isminutes and timeframe.multiplier == 1
+bool is5   = timeframe.isminutes and timeframe.multiplier == 5
+bool is15  = timeframe.isminutes and timeframe.multiplier == 15
+bool is60  = timeframe.isminutes and timeframe.multiplier == 60
+bool is240 = timeframe.isminutes and timeframe.multiplier == 240
+bool isD   = timeframe.isdaily
+bool isW   = timeframe.isweekly
+bool isM   = timeframe.ismonthly
+
+bool condE = (e_1 and is1) or (e_5 and is5) or (e_15 and is15) or (e_60 and is60) or (e_240 and is240) or (e_d and isD) or (e_w and isW) or (e_m and isM)
+bool condD = (d_1 and is1) or (d_5 and is5) or (d_15 and is15) or (d_60 and is60) or (d_240 and is240) or (d_d and isD) or (d_w and isW) or (d_m and isM)
+bool condC = (c_1 and is1) or (c_5 and is5) or (c_15 and is15) or (c_60 and is60) or (c_240 and is240) or (c_d and isD) or (c_w and isW) or (c_m and isM)
+bool condB = (b_1 and is1) or (b_5 and is5) or (b_15 and is15) or (b_60 and is60) or (b_240 and is240) or (b_d and isD) or (b_w and isW) or (b_m and isM)
+
+bool showE = condE
+bool showD = not showE and condD
+bool showC = not showE and not showD and condC
+bool showB = not showE and not showD and not showC and condB
+bool showA = not showE and not showD and not showC and not showB
+
+// ============================================================================
+// ## 計算（終値ベース）
+// ============================================================================
+float smaA1 = ma.safe_sma(close, lengthA1)
+float smaA2 = ma.safe_sma(close, lengthA2)
+float smaA3 = ma.safe_sma(close, lengthA3)
+
+float smaB1 = ma.safe_sma(close, lengthB1)
+float smaB2 = ma.safe_sma(close, lengthB2)
+float smaB3 = ma.safe_sma(close, lengthB3)
+
+float smaC1 = ma.safe_sma(close, lengthC1)
+float smaC2 = ma.safe_sma(close, lengthC2)
+float smaC3 = ma.safe_sma(close, lengthC3)
+
+float smaD1 = ma.safe_sma(close, lengthD1)
+float smaD2 = ma.safe_sma(close, lengthD2)
+float smaD3 = ma.safe_sma(close, lengthD3)
+
+float smaE1 = ma.safe_sma(close, lengthE1)
+float smaE2 = ma.safe_sma(close, lengthE2)
+float smaE3 = ma.safe_sma(close, lengthE3)
+
+// ============================================================================
+// ## 描画（折れ線固定。Styleタブで見た目変更）
+// ============================================================================
+plot(showA ? smaA1 : na, title="A-1", color=DEF_COL_A1, linewidth=DEF_WIDTH_A1)
+plot(showA ? smaA2 : na, title="A-2", color=DEF_COL_A2, linewidth=DEF_WIDTH_A2)
+plot(showA ? smaA3 : na, title="A-3", color=DEF_COL_A3, linewidth=DEF_WIDTH_A3)
+
+plot(showB ? smaB1 : na, title="B-1", color=DEF_COL_B1, linewidth=DEF_WIDTH_B1)
+plot(showB ? smaB2 : na, title="B-2", color=DEF_COL_B2, linewidth=DEF_WIDTH_B2)
+plot(showB ? smaB3 : na, title="B-3", color=DEF_COL_B3, linewidth=DEF_WIDTH_B3)
+
+plot(showC ? smaC1 : na, title="C-1", color=DEF_COL_C1, linewidth=DEF_WIDTH_C1)
+plot(showC ? smaC2 : na, title="C-2", color=DEF_COL_C2, linewidth=DEF_WIDTH_C2)
+plot(showC ? smaC3 : na, title="C-3", color=DEF_COL_C3, linewidth=DEF_WIDTH_C3)
+
+plot(showD ? smaD1 : na, title="D-1", color=DEF_COL_D1, linewidth=DEF_WIDTH_D1)
+plot(showD ? smaD2 : na, title="D-2", color=DEF_COL_D2, linewidth=DEF_WIDTH_D2)
+plot(showD ? smaD3 : na, title="D-3", color=DEF_COL_D3, linewidth=DEF_WIDTH_D3)
+
+plot(showE ? smaE1 : na, title="E-1", color=DEF_COL_E1, linewidth=DEF_WIDTH_E1)
+plot(showE ? smaE2 : na, title="E-2", color=DEF_COL_E2, linewidth=DEF_WIDTH_E2)
+plot(showE ? smaE3 : na, title="E-3", color=DEF_COL_E3, linewidth=DEF_WIDTH_E3)
