@@ -1,20 +1,24 @@
 //@version=6
 // ============================================================================
 // ## このインジケーターについて
-// - 単純移動平均線（SMA）：過去の一定期間の終値を単純に合計して平均を出す最も基本的な移動平均線です
-// - 表示は E→D→C→B→A の優先度で排他的に1セットのみ描画
+// - 単純移動平均線(SMA)とボリンジャーバンドを出力します
+//  -　SMA：過去の一定期間の終値を単純に合計して平均を出す最も基本的な移動平均線です
+//    - 表示は E→D→C→B→A の優先度で排他的に1セットのみ描画
+//  - ボリンジャーバンド：チェックボックスがOFFの場合、計算処理をしない
 // - 期間は0で未設定（非表示）。色/線幅/点線は Style タブで調整
 // ### 参考
 //  - 名前付きカラー: red, green, blue, aqua, fuchsia, orange, yellow, purple, teal, gray, maroon, olive, lime
+//  - URL: https://www.tradingview.com/script/y6BTRb50-SMA3-5-BB-pjdhiro/
 // ============================================================================
 // ## header
 // ============================================================================
-indicator(title="pjdhiro — SMA3×5+BB）", shorttitle="SMA 3×5+BB", overlay=true)
+indicator(title="SMA3×5+BB - pjdhiro", shorttitle="SMA3×5+BB", overlay=true)
 
 // 計算ライブラリ（smaを返す関数）
 import uminomae/pjdhiro_ma_v6/2 as ma
 // 計算ライブラリ（Bollinger Bandsを返す関数）
 import uminomae/pjdhiro_bb_v6/1 as bb
+
 // ============================================================================
 // ## デフォルト値（コンパイル時定数＝const）
 // ============================================================================
@@ -30,133 +34,139 @@ const int   DEF_BASIS_W     = 1
 const color DEF_BB1_U_COL   = color.new(color.fuchsia,   DEF_BB_ALPHA_1)
 const color DEF_BB1_L_COL   = color.new(color.fuchsia,   DEF_BB_ALPHA_1)
 const int   DEF_BB1_W       = 1
-const color DEF_BB2_U_COL   = color.new(color.purple,   DEF_BB_ALPHA_2)
-const color DEF_BB2_L_COL   = color.new(color.purple,   DEF_BB_ALPHA_2)
+const color DEF_BB2_U_COL   = color.new(color.purple,    DEF_BB_ALPHA_2)
+const color DEF_BB2_L_COL   = color.new(color.purple,    DEF_BB_ALPHA_2)
 const int   DEF_BB2_W       = 1
 
 // ===　SMA 5 set===　
 // セットA
-const int   DEF_ALPHA_A  = 50
-const int   DEF_LEN_A1   = 0
-const int   DEF_LEN_A2   = 20
-const int   DEF_LEN_A3   = 200
-const color DEF_COL_A1   = color.new(color.aqua,   DEF_ALPHA_A)
-const color DEF_COL_A2   = color.new(color.blue,   DEF_ALPHA_A)
-const color DEF_COL_A3   = color.new(color.orange, DEF_ALPHA_A)
-const int   DEF_WIDTH_A1 = 1
-const int   DEF_WIDTH_A2 = 2
-const int   DEF_WIDTH_A3 = 3
+const int   DEF_SMA_ALPHA_A  = 50
+const int   DEF_SMA_LEN_A1   = 0
+const int   DEF_SMA_LEN_A2   = 20
+const int   DEF_SMA_LEN_A3   = 200
+const color DEF_SMA_COL_A1   = color.new(color.aqua,   DEF_SMA_ALPHA_A)
+const color DEF_SMA_COL_A2   = color.new(color.blue,   DEF_SMA_ALPHA_A)
+const color DEF_SMA_COL_A3   = color.new(color.orange, DEF_SMA_ALPHA_A)
+const int   DEF_SMA_WIDTH_A1 = 1
+const int   DEF_SMA_WIDTH_A2 = 2
+const int   DEF_SMA_WIDTH_A3 = 3
 
 // セットB
-const int   DEF_ALPHA_B  = 50
-const int   DEF_LEN_B1   = 15
-const int   DEF_LEN_B2   = 60
-const int   DEF_LEN_B3   = 240
-const color DEF_COL_B1   = color.new(color.teal,   DEF_ALPHA_B)
-const color DEF_COL_B2   = color.new(color.blue,   DEF_ALPHA_B)
-const color DEF_COL_B3   = color.new(color.orange, DEF_ALPHA_B)
-const int   DEF_WIDTH_B1 = 1
-const int   DEF_WIDTH_B2 = 2
-const int   DEF_WIDTH_B3 = 3
+const int   DEF_SMA_ALPHA_B  = 50
+const int   DEF_SMA_LEN_B1   = 15
+const int   DEF_SMA_LEN_B2   = 60
+const int   DEF_SMA_LEN_B3   = 240
+const color DEF_SMA_COL_B1   = color.new(color.teal,   DEF_SMA_ALPHA_B)
+const color DEF_SMA_COL_B2   = color.new(color.blue,   DEF_SMA_ALPHA_B)
+const color DEF_SMA_COL_B3   = color.new(color.orange, DEF_SMA_ALPHA_B)
+const int   DEF_SMA_WIDTH_B1 = 1
+const int   DEF_SMA_WIDTH_B2 = 2
+const int   DEF_SMA_WIDTH_B3 = 3
 
 // セットC
-const int   DEF_ALPHA_C  = 50
-const int   DEF_LEN_C1   = 5
-const int   DEF_LEN_C2   = 20
-const int   DEF_LEN_C3   = 240
-const color DEF_COL_C1   = color.new(color.fuchsia, DEF_ALPHA_C)
-const color DEF_COL_C2   = color.new(color.purple,  DEF_ALPHA_C)
-const color DEF_COL_C3   = color.new(color.gray,    DEF_ALPHA_C)
-const int   DEF_WIDTH_C1 = 1
-const int   DEF_WIDTH_C2 = 2
-const int   DEF_WIDTH_C3 = 3
+const int   DEF_SMA_ALPHA_C  = 50
+const int   DEF_SMA_LEN_C1   = 5
+const int   DEF_SMA_LEN_C2   = 20
+const int   DEF_SMA_LEN_C3   = 240
+const color DEF_SMA_COL_C1   = color.new(color.fuchsia, DEF_SMA_ALPHA_C)
+const color DEF_SMA_COL_C2   = color.new(color.purple,  DEF_SMA_ALPHA_C)
+const color DEF_SMA_COL_C3   = color.new(color.gray,    DEF_SMA_ALPHA_C)
+const int   DEF_SMA_WIDTH_C1 = 1
+const int   DEF_SMA_WIDTH_C2 = 2
+const int   DEF_SMA_WIDTH_C3 = 3
 
 // セットD
-const int   DEF_ALPHA_D  = 50
-const int   DEF_LEN_D1   = 13
-const int   DEF_LEN_D2   = 26
-const int   DEF_LEN_D3   = 52
-const color DEF_COL_D1   = color.new(color.green,  DEF_ALPHA_D)
-const color DEF_COL_D2   = color.new(color.olive,  DEF_ALPHA_D)
-const color DEF_COL_D3   = color.new(color.maroon, DEF_ALPHA_D)
-const int   DEF_WIDTH_D1 = 1
-const int   DEF_WIDTH_D2 = 2
-const int   DEF_WIDTH_D3 = 3
+const int   DEF_SMA_ALPHA_D  = 50
+const int   DEF_SMA_LEN_D1   = 13
+const int   DEF_SMA_LEN_D2   = 26
+const int   DEF_SMA_LEN_D3   = 52
+const color DEF_SMA_COL_D1   = color.new(color.green,  DEF_SMA_ALPHA_D)
+const color DEF_SMA_COL_D2   = color.new(color.olive,  DEF_SMA_ALPHA_D)
+const color DEF_SMA_COL_D3   = color.new(color.maroon, DEF_SMA_ALPHA_D)
+const int   DEF_SMA_WIDTH_D1 = 1
+const int   DEF_SMA_WIDTH_D2 = 2
+const int   DEF_SMA_WIDTH_D3 = 3
 
 // セットE
-const int   DEF_ALPHA_E  = 50
-const int   DEF_LEN_E1   = 12
-const int   DEF_LEN_E2   = 24
-const int   DEF_LEN_E3   = 60
-const color DEF_COL_E1   = color.new(color.yellow, DEF_ALPHA_E)
-const color DEF_COL_E2   = color.new(color.purple, DEF_ALPHA_E)
-const color DEF_COL_E3   = color.new(color.red,    DEF_ALPHA_E)
-const int   DEF_WIDTH_E1 = 1
-const int   DEF_WIDTH_E2 = 2
-const int   DEF_WIDTH_E3 = 3
+const int   DEF_SMA_ALPHA_E  = 50
+const int   DEF_SMA_LEN_E1   = 12
+const int   DEF_SMA_LEN_E2   = 24
+const int   DEF_SMA_LEN_E3   = 60
+const color DEF_SMA_COL_E1   = color.new(color.yellow, DEF_SMA_ALPHA_E)
+const color DEF_SMA_COL_E2   = color.new(color.purple, DEF_SMA_ALPHA_E)
+const color DEF_SMA_COL_E3   = color.new(color.red,    DEF_SMA_ALPHA_E)
+const int   DEF_SMA_WIDTH_E1 = 1
+const int   DEF_SMA_WIDTH_E2 = 2
+const int   DEF_SMA_WIDTH_E3 = 3
 
 // ============================================================================
 // ## 入力（期間のみUIで変更。色/線幅/点線はStyleタブ）
 // ============================================================================
+
 // ===　Bollinger Bands　===　
-int   bbLen   = input.int(DEF_BB_LEN, "BB Length",  minval=1)
+int  bbLen        = input.int(DEF_BB_LEN, "BB Length", minval=1)
 // --- 表示トグル ---
-bool showBBBasis = input.bool(true, "Show BB Basis")
-bool showBB1     = input.bool(true, "Show 1σ Bands")
-bool showBB2     = input.bool(true, "Show 2σ Bands")
+bool showBBBasis  = input.bool(true, "Show BB Basis")
+bool showBB1      = input.bool(true, "Show 1σ Bands")
+bool showBB2      = input.bool(true, "Show 2σ Bands")
+
 // ===　SMA 5 set===　
 // A
-int lengthA1 = input.int(DEF_LEN_A1, "1", minval=0, group="セットA = デフォルト", inline="AL")
-int lengthA2 = input.int(DEF_LEN_A2, "2", minval=0, group="セットA = デフォルト", inline="AL")
-int lengthA3 = input.int(DEF_LEN_A3, "3", minval=0, group="セットA = デフォルト", inline="AL",tooltip="SMAの期間")
+int SMA_lengthA1  = input.int(DEF_SMA_LEN_A1, "1", minval=0, group="セットA = デフォルト", inline="AL")
+int SMA_lengthA2  = input.int(DEF_SMA_LEN_A2, "2", minval=0, group="セットA = デフォルト", inline="AL")
+int SMA_lengthA3  = input.int(DEF_SMA_LEN_A3, "3", minval=0, group="セットA = デフォルト", inline="AL", tooltip="SMAの期間")
+
 // B
-int  lengthB1 = input.int(DEF_LEN_B1, "1", minval=0, group="セットB", inline="BL")
-int  lengthB2 = input.int(DEF_LEN_B2, "2", minval=0, group="セットB", inline="BL")
-int  lengthB3 = input.int(DEF_LEN_B3, "3", minval=0, group="セットB", inline="BL")
-bool b_1   = input.bool(false, "1分",   group="セットB — 表示する時間足", inline="BTF1")
-bool b_5   = input.bool(false, "5分",   group="セットB — 表示する時間足", inline="BTF1")
-bool b_15  = input.bool(false, "15分",  group="セットB — 表示する時間足", inline="BTF1")
-bool b_60  = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF1")
-bool b_240 = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF1")
-bool b_d   = input.bool(false, "日足",  group="セットB — 表示する時間足", inline="BTF1")
-bool b_w   = input.bool(false, "週足",  group="セットB — 表示する時間足", inline="BTF1")
-bool b_m   = input.bool(false, "月足",  group="セットB — 表示する時間足", inline="BTF1")
+int  SMA_lengthB1 = input.int(DEF_SMA_LEN_B1, "1", minval=0, group="セットB", inline="BL")
+int  SMA_lengthB2 = input.int(DEF_SMA_LEN_B2, "2", minval=0, group="セットB", inline="BL")
+int  SMA_lengthB3 = input.int(DEF_SMA_LEN_B3, "3", minval=0, group="セットB", inline="BL")
+bool SMA_b_1      = input.bool(false, "1分",   group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_5      = input.bool(false, "5分",   group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_15     = input.bool(false, "15分",  group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_60     = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_240    = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_d      = input.bool(false, "日足",  group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_w      = input.bool(false, "週足",  group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_m      = input.bool(false, "月足",  group="セットB — 表示する時間足", inline="BTF1")
+
 // C（横並び）
-int lengthC1 = input.int(DEF_LEN_C1, "1", minval=0, group="セットC", inline="CL")
-int lengthC2 = input.int(DEF_LEN_C2, "2", minval=0, group="セットC", inline="CL")
-int lengthC3 = input.int(DEF_LEN_C3, "3", minval=0, group="セットC", inline="CL")
-bool c_1   = input.bool(false, "1分",   group="セットC — 表示する時間足", inline="CTF1")
-bool c_5   = input.bool(false, "5分",   group="セットC — 表示する時間足", inline="CTF1")
-bool c_15  = input.bool(false, "15分",  group="セットC — 表示する時間足", inline="CTF1")
-bool c_60  = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF1")
-bool c_240 = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF1")
-bool c_d   = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF1")
-bool c_w   = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF1")
-bool c_m   = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF1")
+int  SMA_lengthC1 = input.int(DEF_SMA_LEN_C1, "1", minval=0, group="セットC", inline="CL")
+int  SMA_lengthC2 = input.int(DEF_SMA_LEN_C2, "2", minval=0, group="セットC", inline="CL")
+int  SMA_lengthC3 = input.int(DEF_SMA_LEN_C3, "3", minval=0, group="セットC", inline="CL")
+bool SMA_c_1      = input.bool(false, "1分",   group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_5      = input.bool(false, "5分",   group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_15     = input.bool(false, "15分",  group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_60     = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_240    = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_d      = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_w      = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_m      = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF1")
+
 // D（横並び）
-int lengthD1 = input.int(DEF_LEN_D1, "1", minval=0, group="セットD", inline="DL")
-int lengthD2 = input.int(DEF_LEN_D2, "2", minval=0, group="セットD", inline="DL")
-int lengthD3 = input.int(DEF_LEN_D3, "3", minval=0, group="セットD", inline="DL")
-bool d_1   = input.bool(false, "1分",   group="セットD — 表示する時間足", inline="DTF1")
-bool d_5   = input.bool(false, "5分",   group="セットD — 表示する時間足", inline="DTF1")
-bool d_15  = input.bool(false, "15分",  group="セットD — 表示する時間足", inline="DTF1")
-bool d_60  = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF1")
-bool d_240 = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF1")
-bool d_d   = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF1")
-bool d_w   = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF1")
-bool d_m   = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF1")
+int  SMA_lengthD1 = input.int(DEF_SMA_LEN_D1, "1", minval=0, group="セットD", inline="DL")
+int  SMA_lengthD2 = input.int(DEF_SMA_LEN_D2, "2", minval=0, group="セットD", inline="DL")
+int  SMA_lengthD3 = input.int(DEF_SMA_LEN_D3, "3", minval=0, group="セットD", inline="DL")
+bool SMA_d_1      = input.bool(false, "1分",   group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_5      = input.bool(false, "5分",   group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_15     = input.bool(false, "15分",  group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_60     = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_240    = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_d      = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_w      = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_m      = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF1")
+
 // E（横並び）
-int lengthE1 = input.int(DEF_LEN_E1, "1", minval=0, group="セットE", inline="EL")
-int lengthE2 = input.int(DEF_LEN_E2, "2", minval=0, group="セットE", inline="EL")
-int lengthE3 = input.int(DEF_LEN_E3, "3", minval=0, group="セットE", inline="EL")
-bool e_1   = input.bool(false, "1分",   group="セットE — 表示する時間足", inline="ETF1")
-bool e_5   = input.bool(false, "5分",   group="セットE — 表示する時間足", inline="ETF1")
-bool e_15  = input.bool(false, "15分",  group="セットE — 表示する時間足", inline="ETF1")
-bool e_60  = input.bool(false, "60分",  group="セットE — 表示する時間足", inline="ETF1")
-bool e_240 = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF1")
-bool e_d   = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF1")
-bool e_w   = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF1")
-bool e_m   = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF1")
+int  SMA_lengthE1 = input.int(DEF_SMA_LEN_E1, "1", minval=0, group="セットE", inline="EL")
+int  SMA_lengthE2 = input.int(DEF_SMA_LEN_E2, "2", minval=0, group="セットE", inline="EL")
+int  SMA_lengthE3 = input.int(DEF_SMA_LEN_E3, "3", minval=0, group="セットE", inline="EL")
+bool SMA_e_1      = input.bool(false, "1分",   group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_5      = input.bool(false, "5分",   group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_15     = input.bool(false, "15分",  group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_60     = input.bool(false, "60分",  group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_240    = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_d      = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_w      = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_m      = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF1")
 
 // ============================================================================
 // ### 足の判定と表示条件（E→D→C→B→A）
@@ -170,22 +180,70 @@ bool isD   = timeframe.isdaily
 bool isW   = timeframe.isweekly
 bool isM   = timeframe.ismonthly
 
-bool condE = (e_1 and is1) or (e_5 and is5) or (e_15 and is15) or (e_60 and is60) or (e_240 and is240) or (e_d and isD) or (e_w and isW) or (e_m and isM)
-bool condD = (d_1 and is1) or (d_5 and is5) or (d_15 and is15) or (d_60 and is60) or (d_240 and is240) or (d_d and isD) or (d_w and isW) or (d_m and isM)
-bool condC = (c_1 and is1) or (c_5 and is5) or (c_15 and is15) or (c_60 and is60) or (c_240 and is240) or (c_d and isD) or (c_w and isW) or (c_m and isM)
-bool condB = (b_1 and is1) or (b_5 and is5) or (b_15 and is15) or (b_60 and is60) or (b_240 and is240) or (b_d and isD) or (b_w and isW) or (b_m and isM)
+bool SMA_condE = (SMA_e_1 and is1) or (SMA_e_5 and is5) or (SMA_e_15 and is15) or (SMA_e_60 and is60) or (SMA_e_240 and is240) or (SMA_e_d and isD) or (SMA_e_w and isW) or (SMA_e_m and isM)
+bool SMA_condD = (SMA_d_1 and is1) or (SMA_d_5 and is5) or (SMA_d_15 and is15) or (SMA_d_60 and is60) or (SMA_d_240 and is240) or (SMA_d_d and isD) or (SMA_d_w and isW) or (SMA_d_m and isM)
+bool SMA_condC = (SMA_c_1 and is1) or (SMA_c_5 and is5) or (SMA_c_15 and is15) or (SMA_c_60 and is60) or (SMA_c_240 and is240) or (SMA_c_d and isD) or (SMA_c_w and isW) or (SMA_c_m and isM)
+bool SMA_condB = (SMA_b_1 and is1) or (SMA_b_5 and is5) or (SMA_b_15 and is15) or (SMA_b_60 and is60) or (SMA_b_240 and is240) or (SMA_b_d and isD) or (SMA_b_w and isW) or (SMA_b_m and isM)
 
-bool showE = condE
-bool showD = not showE and condD
-bool showC = not showE and not showD and condC
-bool showB = not showE and not showD and not showC and condB
-bool showA = not showE and not showD and not showC and not showB
+bool SMA_showE = SMA_condE
+bool SMA_showD = not SMA_showE and SMA_condD
+bool SMA_showC = not SMA_showE and not SMA_showD and SMA_condC
+bool SMA_showB = not SMA_showE and not SMA_showD and not SMA_showC and SMA_condB
+bool SMA_showA = not SMA_showE and not SMA_showD and not SMA_showC and not SMA_showB
+
+// === アクティブSMAの期間と色（ステータス行表示用） ===
+int   SMA_usedLen1 = (
+  SMA_showA ? SMA_lengthA1 :
+  SMA_showB ? SMA_lengthB1 :
+  SMA_showC ? SMA_lengthC1 :
+  SMA_showD ? SMA_lengthD1 : SMA_lengthE1
+  )
+
+int   SMA_usedLen2 = (
+  SMA_showA ? SMA_lengthA2 :
+  SMA_showB ? SMA_lengthB2 :
+  SMA_showC ? SMA_lengthC2 :
+  SMA_showD ? SMA_lengthD2 : SMA_lengthE2
+  )
+
+int   SMA_usedLen3 = (
+  SMA_showA ? SMA_lengthA3 :
+  SMA_showB ? SMA_lengthB3 :
+  SMA_showC ? SMA_lengthC3 :
+  SMA_showD ? SMA_lengthD3 : SMA_lengthE3
+  )
+
+color SMA_usedCol1 = (
+  SMA_showA ? DEF_SMA_COL_A1 :
+  SMA_showB ? DEF_SMA_COL_B1 :
+  SMA_showC ? DEF_SMA_COL_C1 :
+  SMA_showD ? DEF_SMA_COL_D1 : DEF_SMA_COL_E1
+  )
+
+color SMA_usedCol2 = (
+  SMA_showA ? DEF_SMA_COL_A2 :
+  SMA_showB ? DEF_SMA_COL_B2 :
+  SMA_showC ? DEF_SMA_COL_C2 :
+  SMA_showD ? DEF_SMA_COL_D2 : DEF_SMA_COL_E2
+  )
+
+color SMA_usedCol3 = (
+  SMA_showA ? DEF_SMA_COL_A3 :
+  SMA_showB ? DEF_SMA_COL_B3 :
+  SMA_showC ? DEF_SMA_COL_C3 :
+  SMA_showD ? DEF_SMA_COL_D3 : DEF_SMA_COL_E3
+  )
+
+// 0は未設定＝非表示
+float SMA_lenStatus1 = SMA_usedLen1 > 0 ? float(SMA_usedLen1) : na
+float SMA_lenStatus2 = SMA_usedLen2 > 0 ? float(SMA_usedLen2) : na
+float SMA_lenStatus3 = SMA_usedLen3 > 0 ? float(SMA_usedLen3) : na
 
 // ============================================================================
 // ## 計算（終値ベース）
 // ============================================================================
-// ===　Bollinger Bands　===　
 
+// ===　Bollinger Bands　===　
 // どれか表示するなら基準線が必要
 bool needBands = showBB1 or showBB2
 bool needBasis = showBBBasis or needBands
@@ -218,62 +276,66 @@ if needBasis
             bb2L := bbBasisRaw - bbDev * DEF_BB_MULT2
 
 // ===　SMA 5 set===　
+float smaA1 = ma.safe_sma(close, SMA_lengthA1)
+float smaA2 = ma.safe_sma(close, SMA_lengthA2)
+float smaA3 = ma.safe_sma(close, SMA_lengthA3)
 
-float smaA1 = ma.safe_sma(close, lengthA1)
-float smaA2 = ma.safe_sma(close, lengthA2)
-float smaA3 = ma.safe_sma(close, lengthA3)
+float smaB1 = ma.safe_sma(close, SMA_lengthB1)
+float smaB2 = ma.safe_sma(close, SMA_lengthB2)
+float smaB3 = ma.safe_sma(close, SMA_lengthB3)
 
-float smaB1 = ma.safe_sma(close, lengthB1)
-float smaB2 = ma.safe_sma(close, lengthB2)
-float smaB3 = ma.safe_sma(close, lengthB3)
+float smaC1 = ma.safe_sma(close, SMA_lengthC1)
+float smaC2 = ma.safe_sma(close, SMA_lengthC2)
+float smaC3 = ma.safe_sma(close, SMA_lengthC3)
 
-float smaC1 = ma.safe_sma(close, lengthC1)
-float smaC2 = ma.safe_sma(close, lengthC2)
-float smaC3 = ma.safe_sma(close, lengthC3)
+float smaD1 = ma.safe_sma(close, SMA_lengthD1)
+float smaD2 = ma.safe_sma(close, SMA_lengthD2)
+float smaD3 = ma.safe_sma(close, SMA_lengthD3)
 
-float smaD1 = ma.safe_sma(close, lengthD1)
-float smaD2 = ma.safe_sma(close, lengthD2)
-float smaD3 = ma.safe_sma(close, lengthD3)
-
-float smaE1 = ma.safe_sma(close, lengthE1)
-float smaE2 = ma.safe_sma(close, lengthE2)
-float smaE3 = ma.safe_sma(close, lengthE3)
+float smaE1 = ma.safe_sma(close, SMA_lengthE1)
+float smaE2 = ma.safe_sma(close, SMA_lengthE2)
+float smaE3 = ma.safe_sma(close, SMA_lengthE3)
 
 // ============================================================================
 // ## 描画（折れ線固定。Styleタブで見た目変更）
 // ============================================================================
+
+// ===　SMA（ステータス行：使用中セットの3期間だけを色付きで表示） ===
+plot(SMA_lenStatus1, title="SMA1",   color=SMA_usedCol1, display=display.status_line, precision=0)
+plot(SMA_lenStatus2, title="SMA2",  color=SMA_usedCol2, display=display.status_line, precision=0) // U+200A hair space
+plot(SMA_lenStatus3, title="SMA3", color=SMA_usedCol3, display=display.status_line, precision=0) // 2つ
+
+
 // ===　Bollinger Bands　===　
-// BB Basis（常時表示）
-plot(bbBasis, title="BB Basis", color=DEF_BASIS_COL, linewidth=DEF_BASIS_W)
-// BB 1σ（チェックで非表示にする場合はnaに置換）
+plot(bbBasis,  title="BB Basis",     color=DEF_BASIS_COL,  linewidth=DEF_BASIS_W,  display=display.pane + display.price_scale + display.data_window)
+
 float bb1UPlot = showBB1 ? bb1U : na
 float bb1LPlot = showBB1 ? bb1L : na
-plot(bb1UPlot, title="BB 1σ Upper", color=DEF_BB1_U_COL, linewidth=DEF_BB1_W)
-plot(bb1LPlot, title="BB 1σ Lower", color=DEF_BB1_L_COL, linewidth=DEF_BB1_W)
-// BB 2σ（チェックで非表示にする場合はnaに置換）
+plot(bb1UPlot, title="BB 1σ Upper",  color=DEF_BB1_U_COL,  linewidth=DEF_BB1_W,    display=display.pane + display.data_window)
+plot(bb1LPlot, title="BB 1σ Lower",  color=DEF_BB1_L_COL,  linewidth=DEF_BB1_W,    display=display.pane + display.data_window)
+
 float bb2UPlot = showBB2 ? bb2U : na
 float bb2LPlot = showBB2 ? bb2L : na
-plot(bb2UPlot, title="BB 2σ Upper", color=DEF_BB2_U_COL, linewidth=DEF_BB2_W)
-plot(bb2LPlot, title="BB 2σ Lower", color=DEF_BB2_L_COL, linewidth=DEF_BB2_W)
-
+plot(bb2UPlot, title="BB 2σ Upper",  color=DEF_BB2_U_COL,  linewidth=DEF_BB2_W,    display=display.pane + display.data_window)
+plot(bb2LPlot, title="BB 2σ Lower",  color=DEF_BB2_L_COL,  linewidth=DEF_BB2_W,    display=display.pane + display.data_window)
 
 // ===　SMA 5 set===　
-plot(showA ? smaA1 : na, title="A-1", color=DEF_COL_A1, linewidth=DEF_WIDTH_A1)
-plot(showA ? smaA2 : na, title="A-2", color=DEF_COL_A2, linewidth=DEF_WIDTH_A2)
-plot(showA ? smaA3 : na, title="A-3", color=DEF_COL_A3, linewidth=DEF_WIDTH_A3)
+plot(SMA_showA ? smaA1 : na, title="A-1", color=DEF_SMA_COL_A1, linewidth=DEF_SMA_WIDTH_A1, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showA ? smaA2 : na, title="A-2", color=DEF_SMA_COL_A2, linewidth=DEF_SMA_WIDTH_A2, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showA ? smaA3 : na, title="A-3", color=DEF_SMA_COL_A3, linewidth=DEF_SMA_WIDTH_A3, display=display.pane + display.price_scale + display.data_window)
 
-plot(showB ? smaB1 : na, title="B-1", color=DEF_COL_B1, linewidth=DEF_WIDTH_B1)
-plot(showB ? smaB2 : na, title="B-2", color=DEF_COL_B2, linewidth=DEF_WIDTH_B2)
-plot(showB ? smaB3 : na, title="B-3", color=DEF_COL_B3, linewidth=DEF_WIDTH_B3)
+plot(SMA_showB ? smaB1 : na, title="B-1", color=DEF_SMA_COL_B1, linewidth=DEF_SMA_WIDTH_B1, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showB ? smaB2 : na, title="B-2", color=DEF_SMA_COL_B2, linewidth=DEF_SMA_WIDTH_B2, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showB ? smaB3 : na, title="B-3", color=DEF_SMA_COL_B3, linewidth=DEF_SMA_WIDTH_B3, display=display.pane + display.price_scale + display.data_window)
 
-plot(showC ? smaC1 : na, title="C-1", color=DEF_COL_C1, linewidth=DEF_WIDTH_C1)
-plot(showC ? smaC2 : na, title="C-2", color=DEF_COL_C2, linewidth=DEF_WIDTH_C2)
-plot(showC ? smaC3 : na, title="C-3", color=DEF_COL_C3, linewidth=DEF_WIDTH_C3)
+plot(SMA_showC ? smaC1 : na, title="C-1", color=DEF_SMA_COL_C1, linewidth=DEF_SMA_WIDTH_C1, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showC ? smaC2 : na, title="C-2", color=DEF_SMA_COL_C2, linewidth=DEF_SMA_WIDTH_C2, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showC ? smaC3 : na, title="C-3", color=DEF_SMA_COL_C3, linewidth=DEF_SMA_WIDTH_C3, display=display.pane + display.price_scale + display.data_window)
 
-plot(showD ? smaD1 : na, title="D-1", color=DEF_COL_D1, linewidth=DEF_WIDTH_D1)
-plot(showD ? smaD2 : na, title="D-2", color=DEF_COL_D2, linewidth=DEF_WIDTH_D2)
-plot(showD ? smaD3 : na, title="D-3", color=DEF_COL_D3, linewidth=DEF_WIDTH_D3)
+plot(SMA_showD ? smaD1 : na, title="D-1", color=DEF_SMA_COL_D1, linewidth=DEF_SMA_WIDTH_D1, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showD ? smaD2 : na, title="D-2", color=DEF_SMA_COL_D2, linewidth=DEF_SMA_WIDTH_D2, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showD ? smaD3 : na, title="D-3", color=DEF_SMA_COL_D3, linewidth=DEF_SMA_WIDTH_D3, display=display.pane + display.price_scale + display.data_window)
 
-plot(showE ? smaE1 : na, title="E-1", color=DEF_COL_E1, linewidth=DEF_WIDTH_E1)
-plot(showE ? smaE2 : na, title="E-2", color=DEF_COL_E2, linewidth=DEF_WIDTH_E2)
-plot(showE ? smaE3 : na, title="E-3", color=DEF_COL_E3, linewidth=DEF_WIDTH_E3)
+plot(SMA_showE ? smaE1 : na, title="E-1", color=DEF_SMA_COL_E1, linewidth=DEF_SMA_WIDTH_E1, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showE ? smaE2 : na, title="E-2", color=DEF_SMA_COL_E2, linewidth=DEF_SMA_WIDTH_E2, display=display.pane + display.price_scale + display.data_window)
+plot(SMA_showE ? smaE3 : na, title="E-3", color=DEF_SMA_COL_E3, linewidth=DEF_SMA_WIDTH_E3, display=display.pane + display.price_scale + display.data_window)
