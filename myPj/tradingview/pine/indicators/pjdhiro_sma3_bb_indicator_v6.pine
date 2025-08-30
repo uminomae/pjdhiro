@@ -1,0 +1,279 @@
+//@version=6
+// ============================================================================
+// ## このインジケーターについて
+// - 単純移動平均線（SMA）：過去の一定期間の終値を単純に合計して平均を出す最も基本的な移動平均線です
+// - 表示は E→D→C→B→A の優先度で排他的に1セットのみ描画
+// - 期間は0で未設定（非表示）。色/線幅/点線は Style タブで調整
+// ### 参考
+//  - 名前付きカラー: red, green, blue, aqua, fuchsia, orange, yellow, purple, teal, gray, maroon, olive, lime
+// ============================================================================
+// ## header
+// ============================================================================
+indicator(title="pjdhiro — SMA3×5+BB）", shorttitle="SMA 3×5+BB", overlay=true)
+
+// 計算ライブラリ（smaを返す関数）
+import uminomae/pjdhiro_ma_v6/2 as ma
+// 計算ライブラリ（Bollinger Bandsを返す関数）
+import uminomae/pjdhiro_bb_v6/1 as bb
+// ============================================================================
+// ## デフォルト値（コンパイル時定数＝const）
+// ============================================================================
+
+// ===　Bollinger Bands　===　
+const int   DEF_BB_ALPHA_1  = 50
+const int   DEF_BB_ALPHA_2  = 50
+const int   DEF_BB_LEN      = 20
+const float DEF_BB_MULT1    = 1.0
+const float DEF_BB_MULT2    = 2.0
+const color DEF_BASIS_COL   = color.blue
+const int   DEF_BASIS_W     = 1
+const color DEF_BB1_U_COL   = color.new(color.fuchsia,   DEF_BB_ALPHA_1)
+const color DEF_BB1_L_COL   = color.new(color.fuchsia,   DEF_BB_ALPHA_1)
+const int   DEF_BB1_W       = 1
+const color DEF_BB2_U_COL   = color.new(color.purple,   DEF_BB_ALPHA_2)
+const color DEF_BB2_L_COL   = color.new(color.purple,   DEF_BB_ALPHA_2)
+const int   DEF_BB2_W       = 1
+
+// ===　SMA 5 set===　
+// セットA
+const int   DEF_ALPHA_A  = 50
+const int   DEF_LEN_A1   = 0
+const int   DEF_LEN_A2   = 20
+const int   DEF_LEN_A3   = 200
+const color DEF_COL_A1   = color.new(color.aqua,   DEF_ALPHA_A)
+const color DEF_COL_A2   = color.new(color.blue,   DEF_ALPHA_A)
+const color DEF_COL_A3   = color.new(color.orange, DEF_ALPHA_A)
+const int   DEF_WIDTH_A1 = 1
+const int   DEF_WIDTH_A2 = 2
+const int   DEF_WIDTH_A3 = 3
+
+// セットB
+const int   DEF_ALPHA_B  = 50
+const int   DEF_LEN_B1   = 15
+const int   DEF_LEN_B2   = 60
+const int   DEF_LEN_B3   = 240
+const color DEF_COL_B1   = color.new(color.teal,   DEF_ALPHA_B)
+const color DEF_COL_B2   = color.new(color.blue,   DEF_ALPHA_B)
+const color DEF_COL_B3   = color.new(color.orange, DEF_ALPHA_B)
+const int   DEF_WIDTH_B1 = 1
+const int   DEF_WIDTH_B2 = 2
+const int   DEF_WIDTH_B3 = 3
+
+// セットC
+const int   DEF_ALPHA_C  = 50
+const int   DEF_LEN_C1   = 5
+const int   DEF_LEN_C2   = 20
+const int   DEF_LEN_C3   = 240
+const color DEF_COL_C1   = color.new(color.fuchsia, DEF_ALPHA_C)
+const color DEF_COL_C2   = color.new(color.purple,  DEF_ALPHA_C)
+const color DEF_COL_C3   = color.new(color.gray,    DEF_ALPHA_C)
+const int   DEF_WIDTH_C1 = 1
+const int   DEF_WIDTH_C2 = 2
+const int   DEF_WIDTH_C3 = 3
+
+// セットD
+const int   DEF_ALPHA_D  = 50
+const int   DEF_LEN_D1   = 13
+const int   DEF_LEN_D2   = 26
+const int   DEF_LEN_D3   = 52
+const color DEF_COL_D1   = color.new(color.green,  DEF_ALPHA_D)
+const color DEF_COL_D2   = color.new(color.olive,  DEF_ALPHA_D)
+const color DEF_COL_D3   = color.new(color.maroon, DEF_ALPHA_D)
+const int   DEF_WIDTH_D1 = 1
+const int   DEF_WIDTH_D2 = 2
+const int   DEF_WIDTH_D3 = 3
+
+// セットE
+const int   DEF_ALPHA_E  = 50
+const int   DEF_LEN_E1   = 12
+const int   DEF_LEN_E2   = 24
+const int   DEF_LEN_E3   = 60
+const color DEF_COL_E1   = color.new(color.yellow, DEF_ALPHA_E)
+const color DEF_COL_E2   = color.new(color.purple, DEF_ALPHA_E)
+const color DEF_COL_E3   = color.new(color.red,    DEF_ALPHA_E)
+const int   DEF_WIDTH_E1 = 1
+const int   DEF_WIDTH_E2 = 2
+const int   DEF_WIDTH_E3 = 3
+
+// ============================================================================
+// ## 入力（期間のみUIで変更。色/線幅/点線はStyleタブ）
+// ============================================================================
+// ===　Bollinger Bands　===　
+int   bbLen   = input.int(DEF_BB_LEN, "BB Length",  minval=1)
+// --- 表示トグル ---
+bool showBBBasis = input.bool(true, "Show BB Basis")
+bool showBB1     = input.bool(true, "Show 1σ Bands")
+bool showBB2     = input.bool(true, "Show 2σ Bands")
+// ===　SMA 5 set===　
+// A
+int lengthA1 = input.int(DEF_LEN_A1, "1", minval=0, group="セットA = デフォルト", inline="AL")
+int lengthA2 = input.int(DEF_LEN_A2, "2", minval=0, group="セットA = デフォルト", inline="AL")
+int lengthA3 = input.int(DEF_LEN_A3, "3", minval=0, group="セットA = デフォルト", inline="AL",tooltip="SMAの期間")
+// B
+int  lengthB1 = input.int(DEF_LEN_B1, "1", minval=0, group="セットB", inline="BL")
+int  lengthB2 = input.int(DEF_LEN_B2, "2", minval=0, group="セットB", inline="BL")
+int  lengthB3 = input.int(DEF_LEN_B3, "3", minval=0, group="セットB", inline="BL")
+bool b_1   = input.bool(false, "1分",   group="セットB — 表示する時間足", inline="BTF1")
+bool b_5   = input.bool(false, "5分",   group="セットB — 表示する時間足", inline="BTF1")
+bool b_15  = input.bool(false, "15分",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_60  = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_240 = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF1")
+bool b_d   = input.bool(false, "日足",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_w   = input.bool(false, "週足",  group="セットB — 表示する時間足", inline="BTF1")
+bool b_m   = input.bool(false, "月足",  group="セットB — 表示する時間足", inline="BTF1")
+// C（横並び）
+int lengthC1 = input.int(DEF_LEN_C1, "1", minval=0, group="セットC", inline="CL")
+int lengthC2 = input.int(DEF_LEN_C2, "2", minval=0, group="セットC", inline="CL")
+int lengthC3 = input.int(DEF_LEN_C3, "3", minval=0, group="セットC", inline="CL")
+bool c_1   = input.bool(false, "1分",   group="セットC — 表示する時間足", inline="CTF1")
+bool c_5   = input.bool(false, "5分",   group="セットC — 表示する時間足", inline="CTF1")
+bool c_15  = input.bool(false, "15分",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_60  = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_240 = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF1")
+bool c_d   = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_w   = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF1")
+bool c_m   = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF1")
+// D（横並び）
+int lengthD1 = input.int(DEF_LEN_D1, "1", minval=0, group="セットD", inline="DL")
+int lengthD2 = input.int(DEF_LEN_D2, "2", minval=0, group="セットD", inline="DL")
+int lengthD3 = input.int(DEF_LEN_D3, "3", minval=0, group="セットD", inline="DL")
+bool d_1   = input.bool(false, "1分",   group="セットD — 表示する時間足", inline="DTF1")
+bool d_5   = input.bool(false, "5分",   group="セットD — 表示する時間足", inline="DTF1")
+bool d_15  = input.bool(false, "15分",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_60  = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_240 = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF1")
+bool d_d   = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_w   = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF1")
+bool d_m   = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF1")
+// E（横並び）
+int lengthE1 = input.int(DEF_LEN_E1, "1", minval=0, group="セットE", inline="EL")
+int lengthE2 = input.int(DEF_LEN_E2, "2", minval=0, group="セットE", inline="EL")
+int lengthE3 = input.int(DEF_LEN_E3, "3", minval=0, group="セットE", inline="EL")
+bool e_1   = input.bool(false, "1分",   group="セットE — 表示する時間足", inline="ETF1")
+bool e_5   = input.bool(false, "5分",   group="セットE — 表示する時間足", inline="ETF1")
+bool e_15  = input.bool(false, "15分",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_60  = input.bool(false, "60分",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_240 = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF1")
+bool e_d   = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_w   = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF1")
+bool e_m   = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF1")
+
+// ============================================================================
+// ### 足の判定と表示条件（E→D→C→B→A）
+// ============================================================================
+bool is1   = timeframe.isminutes and timeframe.multiplier == 1
+bool is5   = timeframe.isminutes and timeframe.multiplier == 5
+bool is15  = timeframe.isminutes and timeframe.multiplier == 15
+bool is60  = timeframe.isminutes and timeframe.multiplier == 60
+bool is240 = timeframe.isminutes and timeframe.multiplier == 240
+bool isD   = timeframe.isdaily
+bool isW   = timeframe.isweekly
+bool isM   = timeframe.ismonthly
+
+bool condE = (e_1 and is1) or (e_5 and is5) or (e_15 and is15) or (e_60 and is60) or (e_240 and is240) or (e_d and isD) or (e_w and isW) or (e_m and isM)
+bool condD = (d_1 and is1) or (d_5 and is5) or (d_15 and is15) or (d_60 and is60) or (d_240 and is240) or (d_d and isD) or (d_w and isW) or (d_m and isM)
+bool condC = (c_1 and is1) or (c_5 and is5) or (c_15 and is15) or (c_60 and is60) or (c_240 and is240) or (c_d and isD) or (c_w and isW) or (c_m and isM)
+bool condB = (b_1 and is1) or (b_5 and is5) or (b_15 and is15) or (b_60 and is60) or (b_240 and is240) or (b_d and isD) or (b_w and isW) or (b_m and isM)
+
+bool showE = condE
+bool showD = not showE and condD
+bool showC = not showE and not showD and condC
+bool showB = not showE and not showD and not showC and condB
+bool showA = not showE and not showD and not showC and not showB
+
+// ============================================================================
+// ## 計算（終値ベース）
+// ============================================================================
+// ===　Bollinger Bands　===　
+
+// どれか表示するなら基準線が必要
+bool needBands = showBB1 or showBB2
+bool needBasis = showBBBasis or needBands
+
+// 計算用の生値と、描画用の値を分ける
+float bbBasisRaw = na
+float bbBasis    = na
+float bbDev      = na
+float bb1U       = na
+float bb1L       = na
+float bb2U       = na
+float bb2L       = na
+
+if needBasis
+    // 基準線を一度だけ計算
+    bbBasisRaw := bb.basis(close, bbLen)
+
+    // 基準線の描画はトグルに従い、OFFなら na
+    if showBBBasis
+        bbBasis := bbBasisRaw
+
+    // バンドが必要なら偏差を計算して各バンドを算出
+    if needBands
+        bbDev := bb.dev(close, bbLen)
+        if showBB1
+            bb1U := bbBasisRaw + bbDev * DEF_BB_MULT1
+            bb1L := bbBasisRaw - bbDev * DEF_BB_MULT1
+        if showBB2
+            bb2U := bbBasisRaw + bbDev * DEF_BB_MULT2
+            bb2L := bbBasisRaw - bbDev * DEF_BB_MULT2
+
+// ===　SMA 5 set===　
+
+float smaA1 = ma.safe_sma(close, lengthA1)
+float smaA2 = ma.safe_sma(close, lengthA2)
+float smaA3 = ma.safe_sma(close, lengthA3)
+
+float smaB1 = ma.safe_sma(close, lengthB1)
+float smaB2 = ma.safe_sma(close, lengthB2)
+float smaB3 = ma.safe_sma(close, lengthB3)
+
+float smaC1 = ma.safe_sma(close, lengthC1)
+float smaC2 = ma.safe_sma(close, lengthC2)
+float smaC3 = ma.safe_sma(close, lengthC3)
+
+float smaD1 = ma.safe_sma(close, lengthD1)
+float smaD2 = ma.safe_sma(close, lengthD2)
+float smaD3 = ma.safe_sma(close, lengthD3)
+
+float smaE1 = ma.safe_sma(close, lengthE1)
+float smaE2 = ma.safe_sma(close, lengthE2)
+float smaE3 = ma.safe_sma(close, lengthE3)
+
+// ============================================================================
+// ## 描画（折れ線固定。Styleタブで見た目変更）
+// ============================================================================
+// ===　Bollinger Bands　===　
+// BB Basis（常時表示）
+plot(bbBasis, title="BB Basis", color=DEF_BASIS_COL, linewidth=DEF_BASIS_W)
+// BB 1σ（チェックで非表示にする場合はnaに置換）
+float bb1UPlot = showBB1 ? bb1U : na
+float bb1LPlot = showBB1 ? bb1L : na
+plot(bb1UPlot, title="BB 1σ Upper", color=DEF_BB1_U_COL, linewidth=DEF_BB1_W)
+plot(bb1LPlot, title="BB 1σ Lower", color=DEF_BB1_L_COL, linewidth=DEF_BB1_W)
+// BB 2σ（チェックで非表示にする場合はnaに置換）
+float bb2UPlot = showBB2 ? bb2U : na
+float bb2LPlot = showBB2 ? bb2L : na
+plot(bb2UPlot, title="BB 2σ Upper", color=DEF_BB2_U_COL, linewidth=DEF_BB2_W)
+plot(bb2LPlot, title="BB 2σ Lower", color=DEF_BB2_L_COL, linewidth=DEF_BB2_W)
+
+
+// ===　SMA 5 set===　
+plot(showA ? smaA1 : na, title="A-1", color=DEF_COL_A1, linewidth=DEF_WIDTH_A1)
+plot(showA ? smaA2 : na, title="A-2", color=DEF_COL_A2, linewidth=DEF_WIDTH_A2)
+plot(showA ? smaA3 : na, title="A-3", color=DEF_COL_A3, linewidth=DEF_WIDTH_A3)
+
+plot(showB ? smaB1 : na, title="B-1", color=DEF_COL_B1, linewidth=DEF_WIDTH_B1)
+plot(showB ? smaB2 : na, title="B-2", color=DEF_COL_B2, linewidth=DEF_WIDTH_B2)
+plot(showB ? smaB3 : na, title="B-3", color=DEF_COL_B3, linewidth=DEF_WIDTH_B3)
+
+plot(showC ? smaC1 : na, title="C-1", color=DEF_COL_C1, linewidth=DEF_WIDTH_C1)
+plot(showC ? smaC2 : na, title="C-2", color=DEF_COL_C2, linewidth=DEF_WIDTH_C2)
+plot(showC ? smaC3 : na, title="C-3", color=DEF_COL_C3, linewidth=DEF_WIDTH_C3)
+
+plot(showD ? smaD1 : na, title="D-1", color=DEF_COL_D1, linewidth=DEF_WIDTH_D1)
+plot(showD ? smaD2 : na, title="D-2", color=DEF_COL_D2, linewidth=DEF_WIDTH_D2)
+plot(showD ? smaD3 : na, title="D-3", color=DEF_COL_D3, linewidth=DEF_WIDTH_D3)
+
+plot(showE ? smaE1 : na, title="E-1", color=DEF_COL_E1, linewidth=DEF_WIDTH_E1)
+plot(showE ? smaE2 : na, title="E-2", color=DEF_COL_E2, linewidth=DEF_WIDTH_E2)
+plot(showE ? smaE3 : na, title="E-3", color=DEF_COL_E3, linewidth=DEF_WIDTH_E3)
