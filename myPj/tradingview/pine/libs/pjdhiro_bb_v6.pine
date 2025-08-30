@@ -1,0 +1,46 @@
+//@version=6
+library("pjdhiro_bb_v6")
+
+// ================================================
+// ボリンジャーバンド計算（値を返す関数のみ）
+// 基準線はSMA、偏差は標準偏差
+// ================================================
+
+// 基準線（SMA）
+export basis(float src, int length) =>
+    int len = math.max(length, 1)
+    ta.sma(src, len)
+
+// 標準偏差
+export dev(float src, int length) =>
+    int len = math.max(length, 1)
+    ta.stdev(src, len)
+
+// 便宜用：上限（basis + dev * mult）
+export upper_by_src(float src, int length, float mult) =>
+    float b = basis(src, length)
+    float d = dev(src, length)
+    b + d * mult
+
+// 便宜用：下限（basis - dev * mult）
+export lower_by_src(float src, int length, float mult) =>
+    float b = basis(src, length)
+    float d = dev(src, length)
+    b - d * mult
+
+// %b（必要になったときに使う）
+export percent_b(float src, int length, float mult) =>
+    float u = upper_by_src(src, length, mult)
+    float l = lower_by_src(src, length, mult)
+    float w = u - l
+    float v = w != 0.0 ? (src - l) / w : na
+    v
+
+// バンド幅（(Upper-Lower)/Basis）
+export bandwidth(float src, int length, float mult) =>
+    float b = basis(src, length)
+    float u = upper_by_src(src, length, mult)
+    float l = lower_by_src(src, length, mult)
+    float w = b != 0.0 ? (u - l) / b : na
+    w
+import uminomae/pjdhiro_bb_v6/1

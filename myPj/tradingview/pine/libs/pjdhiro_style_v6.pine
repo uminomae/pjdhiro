@@ -1,9 +1,0 @@
-//@version=6
-library("pjdhiro_style_v6")
-
-// "Line"/"Step"/"Area"/"Histogram" → plot.style_* へ変換
-export plot_style(string name) =>
-    name == "Step" ? plot.style_stepline :
-     name == "Area" ? plot.style_area :
-     name == "Histogram" ? plot.style_histogram :
-     plot.style_line
