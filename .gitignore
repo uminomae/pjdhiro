@@ -12,6 +12,9 @@ memo.md
 _posts/edit/memo.md
 myPj/inverse/js/Old
 myPj/tradingview/pine/.venv/
+.venv
 
 # git rm -r --cached backup
 # git rm -r --cached myPj/inverse/js/Old
+myPj/tradingview/pine/tests/data/res/
+myPj/tradingview/pine/tests/__pycache__/
