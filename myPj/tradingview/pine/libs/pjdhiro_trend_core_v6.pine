@@ -1,0 +1,79 @@
+//@version=6
+library("pjdhiro_trend_core_v6")
+
+// --- utils（値のみ） ---
+export pip() =>
+    syminfo.currency == "JPY" ? 0.01 : 0.0001
+
+export price_to_pips(float priceDelta) =>
+    priceDelta / pip()
+
+export pips_to_price(float pips) =>
+    pips * pip()
+
+export sma_val(float src, int length) =>
+    int len = math.max(length, 1)
+    ta.sma(src, len)
+
+// --- slope（MAの傾き：price/bar） ---
+export slope_on_ma(float src, int length, int lb) =>
+    int len = math.max(length, 1)
+    int l   = math.max(lb, 1)
+    float ma = ta.sma(src, len)
+    (ma - ma[l]) / l
+
+// --- pips per bar への変換 ---
+export slope_ppb_on_ma(float src, int length, int lb) =>
+    price_to_pips(slope_on_ma(src, length, lb))
+
+// --- ATR（pips換算） ---
+export atr_ppb(int lenAtr) =>
+    int la = math.max(lenAtr, 1)
+    price_to_pips(ta.atr(la))
+
+// --- トレンド判定（汎用MA） ---
+// modeId: 0=符号＋フラット帯（±epsPpb）, 1=ATR正規化（|slope/ATR|>theta）
+// 戻り: [isUp, isDown, isFlat, slopePpb, norm, maNow]
+export trend_flags_on_ma(float src, int length, int lb, int modeId, float epsPpb, int lenAtr, float thetaNorm) =>
+    float slopePpb = slope_ppb_on_ma(src, length, lb)
+    float atrPpb   = atr_ppb(lenAtr)
+    float norm     = atrPpb > 0.0 ? slopePpb / atrPpb : 0.0
+    float maNow    = sma_val(src, length)
+
+    bool isUp   = false
+    bool isDown = false
+    if modeId == 0
+        isUp   := slopePpb >  epsPpb
+        isDown := slopePpb < -epsPpb
+    else
+        isUp   := norm >  thetaNorm
+        isDown := norm < -thetaNorm
+
+    bool isFlat = not isUp and not isDown
+    [isUp, isDown, isFlat, slopePpb, norm, maNow]
+
+// --- SMA200専用ラッパ ---
+export trend_flags_sma200(float src, int lb, int modeId, float epsPpb, int lenAtr, float thetaNorm) =>
+    trend_flags_on_ma(src, 200, lb, modeId, epsPpb, lenAtr, thetaNorm)
+
+// --- ヒステリシス（未使用引数なし・純関数） ---
+// prevState ∈ {1,0,-1} / modeId: 0 or 1
+// 判定は slopePpb / norm と閾値・hyst のみで行う
+export next_trend_state(int prevState, float slopePpb, float norm, int modeId, float epsPpb, float thetaNorm, float hyst) =>
+    int s = prevState
+    if s == 1
+        if modeId == 0
+            s := slopePpb <=  epsPpb / hyst ? 0 : 1
+        else
+            s := norm     <=  thetaNorm / hyst ? 0 : 1
+    else if s == -1
+        if modeId == 0
+            s := slopePpb >= -epsPpb / hyst ? 0 : -1
+        else
+            s := norm     >= -thetaNorm / hyst ? 0 : -1
+    else
+        if modeId == 0
+            s := slopePpb >  epsPpb ? 1 : slopePpb < -epsPpb ? -1 : 0
+        else
+            s := norm     >  thetaNorm ? 1 : norm     < -thetaNorm ? -1 : 0
+    s

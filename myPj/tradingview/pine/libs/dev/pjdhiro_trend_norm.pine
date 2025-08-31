@@ -1,0 +1,61 @@
+//@version=6
+library("pjdhiro_trend_norm")
+
+// ================= ユーティリティ =================
+export pip() => (syminfo.currency == "JPY" ? 0.01 : 0.0001)
+export price_to_pips(float priceDelta) => (priceDelta / pip())
+
+// ================= 平滑化 =================
+export sma(float src, int length) =>
+    int ln = math.max(length, 1)
+    ta.sma(src, ln)
+
+// ================= 傾き（正規化違いで4種） =================
+export slope_pips_per_bar(float x, int lb) =>
+    int n = math.max(lb, 1)
+    float dx = x - x[n]
+    float s = dx / n / pip()
+    s
+
+export slope_pct_log_per_bar(float x, int lb) =>
+    int n = math.max(lb, 1)
+    float a = math.log(x)
+    float b = math.log(x[n])
+    float s = (a - b) / n
+    s
+
+export slope_atr_norm(float x, int lb, int atrLen) =>
+    int n = math.max(lb, 1)
+    int alen = math.max(atrLen, 1)
+    float atrv = ta.atr(alen)
+    float s = (x - x[n]) / (n * atrv)
+    s
+
+export slope_tscore(float x, int lb) =>
+    int n = math.max(lb, 3)
+    float r = ta.correlation(float(bar_index), x, n)
+    float denom = math.sqrt(1.0 - r * r)
+    float t = na(r) or denom == 0.0 ? na : (r * math.sqrt(n - 2.0)) / denom
+    t
+
+// ================= ボリンジャーバンド（SMA基準、±1σ/±2σ） =================
+export bb_sma_1_2(float src, int length) =>
+    int len = math.max(length, 1)
+    float basis = ta.sma(src, len)
+    float dev = ta.stdev(src, len)
+    float up1 = basis + dev
+    float dn1 = basis - dev
+    float up2 = basis + dev * 2.0
+    float dn2 = basis - dev * 2.0
+    [basis, up1, dn1, up2, dn2]
+
+// ================= レジーム補助 =================
+export tri_state(float v, float thrAbs) =>
+    float th = math.abs(thrAbs)
+    int s = na(v) ? 0 : (v > th ? 1 : (v < -th ? -1 : 0))
+    s
+
+export edge_pulse(int state) =>
+    int prev = nz(state[1], 0)
+    int p = state != prev ? state : 0
+    p
