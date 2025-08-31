@@ -1,0 +1,32 @@
+//@version=6
+indicator("pjdhiro — Trend×BB 色 v6 safe", overlay=true, shorttitle="Trend×BB 色 v6 safe")
+
+// あなたの環境の版番号に合わせてください（例：/5）
+import uminomae/pjdhiro_entry_core_v6/4 as core
+
+// --- const ---
+const color DEF_BUY_COLOR  = color.orange
+const color DEF_SELL_COLOR = color.white
+const int   DEF_LEN_TREND  = 200
+const int   DEF_LEN_BB     = 20
+
+// --- input ---
+int  lenTrend  = input.int(DEF_LEN_TREND, "SMA length (Trend)", minval=1)
+int  lenBB     = input.int(DEF_LEN_BB,    "BB length (BB)",     minval=1)
+bool useLinreg = input.bool(false, "Trend=linreg (off=diff)")
+int  lbLinreg  = input.int(200, "linreg length", minval=2)
+bool useWick   = input.bool(false, "BB touch by wick (off=close)")
+
+// --- calc（分岐ごとに別関数をコール：未使用引数なし） ---
+[enter_dc, buy_dc, sell_dc, l2_dc, u2_dc, mid_dc, isUp_dc, isDown_dc, isFlat_dc, slope_dc] = core.entry_flags_diff_close(close, lenTrend, lenBB)
+[enter_dw, buy_dw, sell_dw, l2_dw, u2_dw, mid_dw, isUp_dw, isDown_dw, isFlat_dw, slope_dw] = core.entry_flags_diff_wick(close, low, high, lenTrend, lenBB)
+[enter_lc, buy_lc, sell_lc, l2_lc, u2_lc, mid_lc, isUp_lc, isDown_lc, isFlat_lc, slope_lc] = core.entry_flags_linreg_close(close, lenTrend, lbLinreg, lenBB)
+[enter_lw, buy_lw, sell_lw, l2_lw, u2_lw, mid_lw, isUp_lw, isDown_lw, isFlat_lw, slope_lw] = core.entry_flags_linreg_wick(close, low, high, lenTrend, lbLinreg, lenBB)
+
+
+// 選択結果
+bool  buy   = useLinreg ? (useWick ? buy_lw  : buy_lc)  : (useWick ? buy_dw  : buy_dc)
+bool  sell  = useLinreg ? (useWick ? sell_lw : sell_lc) : (useWick ? sell_dw : sell_dc)
+
+// --- draw ---
+barcolor(buy ? DEF_BUY_COLOR : (sell ? DEF_SELL_COLOR : na))

@@ -1,0 +1,125 @@
+//@version=6
+library("pjdhiro_entry_core_v6")
+
+// --- const（安全既定） ---
+const int   DEF_LB_SLOPE     = 200         // 傾き測定窓（固定：コンパイル時定数のみ可）
+const float DEF_MIN_SLOPE_PB = 100.0       // 閾値（必要なら後でUI化）
+
+// --- pip（列挙オーバーライド＋安全フォールバック） ---
+export pip() =>
+    string t = syminfo.ticker
+    string c = syminfo.currency
+    float  p = na
+    // ここに対象銘柄を列挙して上書き（例）
+    // if t == "USDJPY"
+    //     p := 0.01
+    // else if t == "EURJPY"
+    //     p := 0.01
+    // else if t == "XAUUSD"
+    //     p := syminfo.mintick
+    if na(p)
+        p := syminfo.mintick
+        if p <= 0
+            p := (c == "JPY") ? 0.01 : 0.0001
+    p
+
+export price_to_pips(float priceDelta) =>
+    priceDelta / pip()
+
+export pips_to_price(float pips) =>
+    pips * pip()
+
+// --- 基本計算（ta.*優先） ---
+export sma(float src, int length) =>
+    ta.sma(src, math.max(length, 1))
+
+// 戻り: [lower2, upper2, basis]
+export bb2(float src, int length) =>
+    int   len = math.max(length, 1)
+    float mid = ta.sma(src, len)
+    float sd  = ta.stdev(src, len)
+    float up2 = mid + 2.0 * sd
+    float lo2 = mid - 2.0 * sd
+    [lo2, up2, mid]
+
+// --- トレンド（差分傾き） ---
+// 戻り: [isUp, isDown, isFlat, slopePb]
+export trend3_sma_slope_diff(float src, int length) =>
+    int   len      = math.max(length, 1)
+    float maNow    = ta.sma(src, len)
+    float maPrev   = ta.sma(src, len)[DEF_LB_SLOPE]
+    float diff     = maNow - maPrev
+    float slopePb  = price_to_pips(diff) / DEF_LB_SLOPE
+    bool  isUp     = slopePb >=  DEF_MIN_SLOPE_PB
+    bool  isDown   = slopePb <= -DEF_MIN_SLOPE_PB
+    bool  isFlat   = not isUp and not isDown
+    [isUp, isDown, isFlat, slopePb]
+
+// --- トレンド（linreg近似傾き） ---
+// 戻り: [isUp, isDown, isFlat, slopePb]
+export trend3_sma_slope_linreg(float src, int length, int lbLinreg) =>
+    int   len      = math.max(length, 1)
+    int   lb       = math.max(lbLinreg, 2)
+    float s        = ta.sma(src, len)
+    float y0       = ta.linreg(s, lb, 0)
+    float y1       = ta.linreg(s, lb, 1)
+    float slopePx  = y0 - y1
+    float slopePb  = price_to_pips(slopePx)
+    bool  isUp     = slopePb >=  DEF_MIN_SLOPE_PB
+    bool  isDown   = slopePb <= -DEF_MIN_SLOPE_PB
+    bool  isFlat   = not isUp and not isDown
+    [isUp, isDown, isFlat, slopePb]
+
+// --- BBタッチ（終値判定） ---
+// 戻り: [touchL, touchU, l2, u2, mid]
+export bb_touch_close(float close_, float srcBB, int lenBB) =>
+    [l2, u2, mid] = bb2(srcBB, lenBB)
+    bool touchL = close_ <= l2
+    bool touchU = close_ >= u2
+    [touchL, touchU, l2, u2, mid]
+
+// --- BBタッチ（ヒゲ判定） ---
+// 戻り: [touchL, touchU, l2, u2, mid]
+export bb_touch_wick(float low_, float high_, float srcBB, int lenBB) =>
+    [l2, u2, mid] = bb2(srcBB, lenBB)
+    bool touchL = low_  <= l2
+    bool touchU = high_ >= u2
+    [touchL, touchU, l2, u2, mid]
+
+// === 合成（分岐ごとに別関数：未使用引数を根絶） ===
+// 1) 差分×終値
+// 戻り: [enter, buy, sell, l2, u2, mid, isUp, isDown, isFlat, slopePb]
+export entry_flags_diff_close(float close_, int lenTrend, int lenBB) =>
+    [isUp, isDown, isFlat, slopePb] = trend3_sma_slope_diff(close_, lenTrend)
+    [tL, tU, l2, u2, mid]           = bb_touch_close(close_, close_, lenBB)
+    bool buy   = isUp   and tL
+    bool sell  = isDown and tU
+    bool enter = buy or sell
+    [enter, buy, sell, l2, u2, mid, isUp, isDown, isFlat, slopePb]
+
+// 2) 差分×ヒゲ
+export entry_flags_diff_wick(float close_, float low_, float high_, int lenTrend, int lenBB) =>
+    [isUp, isDown, isFlat, slopePb] = trend3_sma_slope_diff(close_, lenTrend)
+    [tL, tU, l2, u2, mid]           = bb_touch_wick(low_, high_, close_, lenBB)
+    bool buy   = isUp   and tL
+    bool sell  = isDown and tU
+    bool enter = buy or sell
+    [enter, buy, sell, l2, u2, mid, isUp, isDown, isFlat, slopePb]
+
+// 3) linreg×終値
+export entry_flags_linreg_close(float close_, int lenTrend, int lbLinreg, int lenBB) =>
+    [isUp, isDown, isFlat, slopePb] = trend3_sma_slope_linreg(close_, lenTrend, lbLinreg)
+    [tL, tU, l2, u2, mid]           = bb_touch_close(close_, close_, lenBB)
+    bool buy   = isUp   and tL
+    bool sell  = isDown and tU
+    bool enter = buy or sell
+    [enter, buy, sell, l2, u2, mid, isUp, isDown, isFlat, slopePb]
+
+// 4) linreg×ヒゲ
+export entry_flags_linreg_wick(float close_, float low_, float high_, int lenTrend, int lbLinreg, int lenBB) =>
+    [isUp, isDown, isFlat, slopePb] = trend3_sma_slope_linreg(close_, lenTrend, lbLinreg)
+    [tL, tU, l2, u2, mid]           = bb_touch_wick(low_, high_, close_, lenBB)
+    bool buy   = isUp   and tL
+    bool sell  = isDown and tU
+    bool enter = buy or sell
+    [enter, buy, sell, l2, u2, mid, isUp, isDown, isFlat, slopePb]
