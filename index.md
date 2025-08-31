@@ -70,10 +70,10 @@ permalink: /
 ## 2025: Insights
 
 - 最近は下記の事柄を考えてました。
-  - 経済関連：信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})
-  - 心理関連：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }})
-  - 哲学関連：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
-  - IT関連：[WEBツール]({{ '/pages-categories/web-tools/' | relative_url }})
+  - 経済：信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})
+  - 心理：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }})
+  - 哲学：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
+  - プログラミング：[Threejs]({{ '/pages-categories/web-tools/' | relative_url }}) , [Pine Script]({{ '/pages-categories/pine/' | relative_url }})
 
 <iframe
   src="{{ '/myPj/qt-st-visual/' | relative_url }}"
