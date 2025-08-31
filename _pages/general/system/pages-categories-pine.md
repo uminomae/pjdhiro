@@ -16,7 +16,7 @@ sidebar:
 ### indicator
 
 - [ - 移動平均線 3本5セット - SMA(3)×5set v6]({{ '/note-pine/sma5set/' | relative_url }})  
-  - 一つのインジケータで3本の移動平均線を描画できます
+  - 一つのインジケータで3本の移動平均線を描画します
 <!-- [![SMA(3)×5 v6]({{ '/assets/images/pages/note/pine/sma5set.png' | relative_url }})]({{ '/assets/images/pages/note/pine/sma5set.png' | relative_url }}) -->
 <a href="{{ '/assets/images/pages/note/pine/sma5set.png' | relative_url }}">
   <img src="{{ '/assets/images/pages/note/pine/sma5set.png' | relative_url }}" alt="SMA(3)×5 v6" width="480">
