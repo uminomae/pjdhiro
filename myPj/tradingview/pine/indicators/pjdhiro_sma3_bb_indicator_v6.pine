@@ -29,7 +29,7 @@ const int   DEF_BB_ALPHA_2  = 50
 const int   DEF_BB_LEN      = 20
 const float DEF_BB_MULT1    = 1.0
 const float DEF_BB_MULT2    = 2.0
-const color DEF_BASIS_COL   = color.blue
+const color DEF_BASIS_COL   = color.aqua
 const int   DEF_BASIS_W     = 1
 const color DEF_BB1_U_COL   = color.new(color.fuchsia,   DEF_BB_ALPHA_1)
 const color DEF_BB1_L_COL   = color.new(color.fuchsia,   DEF_BB_ALPHA_1)
@@ -44,7 +44,7 @@ const int   DEF_SMA_ALPHA_A  = 50
 const int   DEF_SMA_LEN_A1   = 0
 const int   DEF_SMA_LEN_A2   = 20
 const int   DEF_SMA_LEN_A3   = 200
-const color DEF_SMA_COL_A1   = color.new(color.aqua,   DEF_SMA_ALPHA_A)
+const color DEF_SMA_COL_A1   = color.new(color.teal,   DEF_SMA_ALPHA_A)
 const color DEF_SMA_COL_A2   = color.new(color.blue,   DEF_SMA_ALPHA_A)
 const color DEF_SMA_COL_A3   = color.new(color.orange, DEF_SMA_ALPHA_A)
 const int   DEF_SMA_WIDTH_A1 = 1
@@ -68,9 +68,9 @@ const int   DEF_SMA_ALPHA_C  = 50
 const int   DEF_SMA_LEN_C1   = 5
 const int   DEF_SMA_LEN_C2   = 20
 const int   DEF_SMA_LEN_C3   = 240
-const color DEF_SMA_COL_C1   = color.new(color.fuchsia, DEF_SMA_ALPHA_C)
-const color DEF_SMA_COL_C2   = color.new(color.purple,  DEF_SMA_ALPHA_C)
-const color DEF_SMA_COL_C3   = color.new(color.gray,    DEF_SMA_ALPHA_C)
+const color DEF_SMA_COL_C1   = color.new(color.teal, DEF_SMA_ALPHA_C)
+const color DEF_SMA_COL_C2   = color.new(color.blue,  DEF_SMA_ALPHA_C)
+const color DEF_SMA_COL_C3   = color.new(color.orange,    DEF_SMA_ALPHA_C)
 const int   DEF_SMA_WIDTH_C1 = 1
 const int   DEF_SMA_WIDTH_C2 = 2
 const int   DEF_SMA_WIDTH_C3 = 3
@@ -80,9 +80,9 @@ const int   DEF_SMA_ALPHA_D  = 50
 const int   DEF_SMA_LEN_D1   = 13
 const int   DEF_SMA_LEN_D2   = 26
 const int   DEF_SMA_LEN_D3   = 52
-const color DEF_SMA_COL_D1   = color.new(color.green,  DEF_SMA_ALPHA_D)
-const color DEF_SMA_COL_D2   = color.new(color.olive,  DEF_SMA_ALPHA_D)
-const color DEF_SMA_COL_D3   = color.new(color.maroon, DEF_SMA_ALPHA_D)
+const color DEF_SMA_COL_D1   = color.new(color.teal,  DEF_SMA_ALPHA_D)
+const color DEF_SMA_COL_D2   = color.new(color.blue,  DEF_SMA_ALPHA_D)
+const color DEF_SMA_COL_D3   = color.new(color.orange, DEF_SMA_ALPHA_D)
 const int   DEF_SMA_WIDTH_D1 = 1
 const int   DEF_SMA_WIDTH_D2 = 2
 const int   DEF_SMA_WIDTH_D3 = 3
@@ -92,9 +92,9 @@ const int   DEF_SMA_ALPHA_E  = 50
 const int   DEF_SMA_LEN_E1   = 12
 const int   DEF_SMA_LEN_E2   = 24
 const int   DEF_SMA_LEN_E3   = 60
-const color DEF_SMA_COL_E1   = color.new(color.yellow, DEF_SMA_ALPHA_E)
-const color DEF_SMA_COL_E2   = color.new(color.purple, DEF_SMA_ALPHA_E)
-const color DEF_SMA_COL_E3   = color.new(color.red,    DEF_SMA_ALPHA_E)
+const color DEF_SMA_COL_E1   = color.new(color.teal, DEF_SMA_ALPHA_E)
+const color DEF_SMA_COL_E2   = color.new(color.blue, DEF_SMA_ALPHA_E)
+const color DEF_SMA_COL_E3   = color.new(color.orange,    DEF_SMA_ALPHA_E)
 const int   DEF_SMA_WIDTH_E1 = 1
 const int   DEF_SMA_WIDTH_E2 = 2
 const int   DEF_SMA_WIDTH_E3 = 3
@@ -106,8 +106,8 @@ const int   DEF_SMA_WIDTH_E3 = 3
 // ===　Bollinger Bands　===　
 int  bbLen        = input.int(DEF_BB_LEN, "BB Length", minval=1)
 // --- 表示トグル ---
-bool showBBBasis  = input.bool(true, "Show BB Basis")
-bool showBB1      = input.bool(true, "Show 1σ Bands")
+bool showBBBasis  = input.bool(false, "Show BB Basis")
+bool showBB1      = input.bool(false, "Show 1σ Bands")
 bool showBB2      = input.bool(true, "Show 2σ Bands")
 
 // ===　SMA 5 set===　
@@ -120,8 +120,8 @@ int SMA_lengthA3  = input.int(DEF_SMA_LEN_A3, "3", minval=0, group="セットA =
 int  SMA_lengthB1 = input.int(DEF_SMA_LEN_B1, "1", minval=0, group="セットB", inline="BL")
 int  SMA_lengthB2 = input.int(DEF_SMA_LEN_B2, "2", minval=0, group="セットB", inline="BL")
 int  SMA_lengthB3 = input.int(DEF_SMA_LEN_B3, "3", minval=0, group="セットB", inline="BL")
-bool SMA_b_1      = input.bool(false, "1分",   group="セットB — 表示する時間足", inline="BTF1")
-bool SMA_b_5      = input.bool(false, "5分",   group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_1      = input.bool(true, "1分",   group="セットB — 表示する時間足", inline="BTF1")
+bool SMA_b_5      = input.bool(true, "5分",   group="セットB — 表示する時間足", inline="BTF1")
 bool SMA_b_15     = input.bool(false, "15分",  group="セットB — 表示する時間足", inline="BTF1")
 bool SMA_b_60     = input.bool(false, "60分",  group="セットB — 表示する時間足", inline="BTF1")
 bool SMA_b_240    = input.bool(false, "240分", group="セットB — 表示する時間足", inline="BTF1")
@@ -138,7 +138,7 @@ bool SMA_c_5      = input.bool(false, "5分",   group="セットC — 表示す�
 bool SMA_c_15     = input.bool(false, "15分",  group="セットC — 表示する時間足", inline="CTF1")
 bool SMA_c_60     = input.bool(false, "60分",  group="セットC — 表示する時間足", inline="CTF1")
 bool SMA_c_240    = input.bool(false, "240分", group="セットC — 表示する時間足", inline="CTF1")
-bool SMA_c_d      = input.bool(false, "日足",  group="セットC — 表示する時間足", inline="CTF1")
+bool SMA_c_d      = input.bool(true, "日足",  group="セットC — 表示する時間足", inline="CTF1")
 bool SMA_c_w      = input.bool(false, "週足",  group="セットC — 表示する時間足", inline="CTF1")
 bool SMA_c_m      = input.bool(false, "月足",  group="セットC — 表示する時間足", inline="CTF1")
 
@@ -152,7 +152,7 @@ bool SMA_d_15     = input.bool(false, "15分",  group="セットD — 表示す�
 bool SMA_d_60     = input.bool(false, "60分",  group="セットD — 表示する時間足", inline="DTF1")
 bool SMA_d_240    = input.bool(false, "240分", group="セットD — 表示する時間足", inline="DTF1")
 bool SMA_d_d      = input.bool(false, "日足",  group="セットD — 表示する時間足", inline="DTF1")
-bool SMA_d_w      = input.bool(false, "週足",  group="セットD — 表示する時間足", inline="DTF1")
+bool SMA_d_w      = input.bool(true, "週足",  group="セットD — 表示する時間足", inline="DTF1")
 bool SMA_d_m      = input.bool(false, "月足",  group="セットD — 表示する時間足", inline="DTF1")
 
 // E（横並び）
@@ -166,7 +166,7 @@ bool SMA_e_60     = input.bool(false, "60分",  group="セットE — 表示す�
 bool SMA_e_240    = input.bool(false, "240分", group="セットE — 表示する時間足", inline="ETF1")
 bool SMA_e_d      = input.bool(false, "日足",  group="セットE — 表示する時間足", inline="ETF1")
 bool SMA_e_w      = input.bool(false, "週足",  group="セットE — 表示する時間足", inline="ETF1")
-bool SMA_e_m      = input.bool(false, "月足",  group="セットE — 表示する時間足", inline="ETF1")
+bool SMA_e_m      = input.bool(true, "月足",  group="セットE — 表示する時間足", inline="ETF1")
 
 // ============================================================================
 // ### 足の判定と表示条件（E→D→C→B→A）
@@ -301,9 +301,9 @@ float smaE3 = ma.safe_sma(close, SMA_lengthE3)
 // ============================================================================
 
 // ===　SMA（ステータス行：使用中セットの3期間だけを色付きで表示） ===
-plot(SMA_lenStatus1, title="SMA1",   color=SMA_usedCol1, display=display.status_line, precision=0)
-plot(SMA_lenStatus2, title="SMA2",  color=SMA_usedCol2, display=display.status_line, precision=0) // U+200A hair space
-plot(SMA_lenStatus3, title="SMA3", color=SMA_usedCol3, display=display.status_line, precision=0) // 2つ
+plot(SMA_lenStatus1, title="Status: SMA1 length",   color=SMA_usedCol1, display=display.status_line, precision=0)
+plot(SMA_lenStatus2, title="Status: SMA2 length",  color=SMA_usedCol2, display=display.status_line, precision=0) // U+200A hair space
+plot(SMA_lenStatus3, title="Status: SMA3 length", color=SMA_usedCol3, display=display.status_line, precision=0) // 2つ
 
 
 // ===　Bollinger Bands　===　

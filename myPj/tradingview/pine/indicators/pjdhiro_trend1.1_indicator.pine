@@ -1,0 +1,60 @@
+//@version=6
+// myPj/tradingview/pine/indicators/pjdhiro_trend_indicator.pine
+indicator("【trend SMA200 1.1】 トレンド判定（SMA200・緩やか）", overlay=true, shorttitle="Trend 200")
+
+// --- import ---
+import uminomae/pjdhiro_trend_core_v6/3 as core
+import uminomae/pjdhiro_trend_mark/1 as mark
+
+// --- const（SMA200用・緩やか前提） ---
+const string VER            = " v6.sma200"
+const int    DEF_LB         = 21
+const int    DEF_LEN_ATR    = 200
+const float  DEF_EPS_PPB    = 2.0
+const float  DEF_THETA_NORM = 0.04
+const float  DEF_HYST       = 1.5
+const color  DEF_UP_COLOR   = color.teal
+const color  DEF_DOWN_COLOR = color.red
+const color  DEF_FLAT_COLOR = color.orange
+const color  DEF_SMA_COLOR  = color.orange
+const int    DEF_SMA_WIDTH  = 2
+
+// --- input（最小） ---
+int    lb          = input.int(DEF_LB,         "Slope lookback (bars)"+VER, minval=1)
+string modeStr     = input.string("ATR正規化",  "Threshold mode"+VER, options=["符号＋フラット帯","ATR正規化"])
+float  epsPpb      = input.float(DEF_EPS_PPB,  "±Flat帯 (pips/bar) [符号]",     minval=0.0)
+int    lenAtr      = input.int(DEF_LEN_ATR,    "ATR length [正規化]",           minval=1)
+float  thetaNorm   = input.float(DEF_THETA_NORM,"Min norm (slope/ATR) [正規化]", minval=0.0)
+bool   confirmedOn = input.bool(true,          "確定足のみで判定"+VER)
+float  hyst        = input.float(DEF_HYST,     "ヒステリシス係数 (戻り厳しめ)",  minval=1.0)
+
+// --- calc（libは純関数。状態はmain） ---
+int  modeId = modeStr == "符号＋フラット帯" ? 0 : 1
+[isUp, isDown, isFlat, slopeP, norm, maNow] = core.trend_flags_sma200(close, lb, modeId, epsPpb, lenAtr, thetaNorm)
+
+bool ok = confirmedOn ? barstate.isconfirmed : true
+
+var int state = 0
+int next = ok ? core.next_trend_state(state, slopeP, norm, modeId, epsPpb, thetaNorm, hyst) : state
+state := next
+
+bool flipped = mark.is_state_change(state) and ok
+[flagUp, flagDown] = mark.flip_flag_series(high, state, flipped)
+
+// --- draw（グローバルのみ） ---
+plot(core.sma_val(close, 200), title="SMA200", color=color.new(DEF_SMA_COLOR, 80), linewidth=DEF_SMA_WIDTH)
+barcolor(state == 1  ? DEF_UP_COLOR   : na)
+barcolor(state == -1 ? DEF_DOWN_COLOR : na)
+
+// --- 反転フラグ（バーの上にだけ出す。形は最小でlabelupを使用） ---
+plotshape(flagUp,   title="Flip UP",   style=shape.labelup,   location=location.bottom, size=size.tiny, color=color.new(DEF_UP_COLOR,   0), text="UP")
+plotshape(flagDown, title="Flip DOWN", style=shape.labelup,   location=location.bottom, size=size.tiny, color=color.new(DEF_DOWN_COLOR, 0), text="DOWN")
+
+// --- 状態文字（不要ならコメントアウト） ---
+plotchar(state==1  ? 1 : na, title="UP",   char='U', location=location.bottom,  color=DEF_UP_COLOR)
+plotchar(state==-1 ? 1 : na, title="DOWN", char='D', location=location.bottom,  color=DEF_DOWN_COLOR)
+plotchar(state==0  ? 1 : na, title="FLAT", char='F', location=location.bottom,  color=DEF_FLAT_COLOR)
+
+// --- debug（必要時のみON） ---
+// plot(slopeP, title="slope (pips/bar)")
+// plot(norm,   title="slope/ATR")
