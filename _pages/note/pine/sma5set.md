@@ -23,6 +23,6 @@ sidebar:
   - 期間は5セット登録できます
   - SMAは指定の時間足で登録したセットを描画します。  
 - Source code
-  - [【SMA3×5+BB - pjdhiro】](https://jp.tradingview.com/script/y6BTRb50-SMA3-5-BB-pjdhiro/)
+  - [【SMA3×5+BB】](https://jp.tradingview.com/script/y6BTRb50-SMA3-5-BB-pjdhiro/)
 
 [![SMA3×5+BB]({{ '/assets/images/pages/note/pine/sma5setBB.png' | relative_url }})]({{ '/assets/images/pages/note/pine/sma5setBB.png' | relative_url }})
