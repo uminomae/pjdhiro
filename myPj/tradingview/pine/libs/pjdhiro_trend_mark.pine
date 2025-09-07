@@ -1,0 +1,13 @@
+//@version=6
+library("pjdhiro_trend_mark")
+
+// --- 反転検出（1バー前と異なればtrue） ---
+export is_state_change(int state) =>
+    state != state[1]
+
+// --- 反転用フラグ位置（UP/DOWNのみ） ---
+// 第1引数にはバーの高値を渡すことを想定
+export flip_flag_series(float high_, int state, bool flipped) =>
+    float up   = flipped and state == 1  ? high_ : na
+    float down = flipped and state == -1 ? high_ : na
+    [up, down]
