@@ -9,6 +9,8 @@ date: 2025-01-14
 ---
 (随時更新中)
 
+[![感情処理](../assets/images/pages/pd/ep.png)](../assets/images/pages/pd/ep.png)
+
 ## はじめに
 
 感情処理とは、感情を受け止め、整理や消化する、繰り返しのプロセスです。
