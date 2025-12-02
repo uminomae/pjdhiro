@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
   gem "jekyll-paginate-v2"
+  gem "openssl", "~> 3.3.2"
 end
 
 gem "rake", "~> 13.2"
