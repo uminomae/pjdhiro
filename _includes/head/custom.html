@@ -1,0 +1,18 @@
+<style>
+  /* 長いURLや英数字の連続で横スクロールしないようにする */
+  .page__content,
+  .page__content p,
+  .page__content li,
+  .page__content a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* codeやpreも溢れやすいので保険 */
+  .page__content code,
+  .page__content pre {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+</style>
