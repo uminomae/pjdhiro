@@ -12,7 +12,7 @@ sidebar:
   nav5: ""
 ---
 
-## 創造の構造とプロセス Ver.1.2：スピノル的５段階
+## 創造の構造とプロセス：スピノル的５段階
 
 [![image]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})
 
@@ -20,6 +20,9 @@ sidebar:
   - 場 → 波 → 縁 → 渦 → 束
   - 海の波間の渦のような
   - ☯️マークのような
+
+
+[![image]({{ '/assets/images/blog/20251218/CreationTable11.png' | relative_url }})]({{ '/assets/images/blog/20251218/CreationTable11.png' | relative_url }})
 
 ---
 
@@ -46,7 +49,7 @@ Step 2 **波** Wave
 Step 3（仮） **縁** Relation  
 
 - 構造：境界、関係、Boundary、 Interface, 
-- プロセス：つながり、Coupling
+- プロセス：つながり、接続、Coupling
 - イメージ：☯️ のような
 - background concept：Connection
   
@@ -77,8 +80,6 @@ Step 5 **束** Bundle
 ---
 
 ### 様々な領域の類似概念：調査中
-
-[![image]({{ '/assets/images/blog/20251218/CreationTable11.png' | relative_url }})]({{ '/assets/images/blog/20251218/CreationTable11.png' | relative_url }})
 
 - 宗教/思想
   - 般若心経：色即是空 
