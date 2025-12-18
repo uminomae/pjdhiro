@@ -14,7 +14,7 @@ sidebar:
 
 ## 創造の構造とプロセス Ver.1.2：スピノル的５段階
 
-[![image]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})]({{ '/assets/images/blog/20251218/Creation12.jpgs' | relative_url }})
+[![image]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})
 
 - 「何かが生まれて、形になり、つながっていくまでの流れ」
   - 場 → 波 → 縁 → 渦 → 束
