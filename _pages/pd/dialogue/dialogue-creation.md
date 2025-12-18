@@ -16,10 +16,15 @@ sidebar:
 
 [![image]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})
 
+[ChatGPTによる図の解説はこちら](https://chatgpt.com/share/69445ca1-9ef0-800b-a8ba-45a916a476a8)
+
 - 「何かが生まれて、形になり、つながっていくまでの流れ」
   - 場 → 波 → 縁 → 渦 → 束
   - 海の波間の渦のような
   - ☯️マークのような
+
+
+---
 
 [![image]({{ '/assets/images/blog/20251218/CreationTable11.png' | relative_url }})]({{ '/assets/images/blog/20251218/CreationTable11.png' | relative_url }})
 
@@ -72,9 +77,6 @@ Step 5 **束** Bundle
 - 
 渦どうしが影響し合い、構造として残る集まり。ベクトルの近似線
 
----
-
-- [ChatGPTによる図の解説はこちら](https://chatgpt.com/share/69440906-8144-800b-a257-7cba0fa15cc6)
 
 ---
 
