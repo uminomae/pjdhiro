@@ -1,6 +1,6 @@
 ---
 permalink: /dialogueCreation/
-title: "対話：創造とは：私の場合"
+title: "対話：創造とは"
 date: 2025-12-18
 categories:
   - 対話
@@ -12,21 +12,65 @@ sidebar:
   nav5: ""
 ---
 
-## 創造の構造とプロセス：スピノル的５段階
+## 創造の構造とプロセス Ver.1.2：スピノル的５段階
 
-[![image]({{ '/assets/images/blog/20251218/Creation11.png' | relative_url }})]({{ '/assets/images/blog/20251218/Creation11.png' | relative_url }})
+[![image]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})]({{ '/assets/images/blog/20251218/Creation12.jpgs' | relative_url }})
 
 - 「何かが生まれて、形になり、つながっていくまでの流れ」
+  - 場 → 波 → 縁 → 渦 → 束
   - 海の波間の渦のような
   - ☯️マークのような
 
 ---
 
-1. 潜象：場：海のような
-2. 指向：分離、対立：波のような
-3. 接続：境界、関係、法則
-4. 実存：個、止揚、包摂：渦のような
-5. 統合：束、集合
+### 場の揺れが境界で回転し、方向として束ねられるプロセス
+
+Step 1 **場** Field  
+
+- 構造：無  
+- プロセス：漂う  
+- イメージ：海のような
+- background concept：Vacuum  
+
+まだ分かれていない、すべてが溶けている海のような状態。
+
+Step 2 **波** Wave  
+
+- 構造：ゆれ、対立  
+- プロセス：分離  
+- イメージ：波のような
+- background concept：Vector  
+
+場の中に差が生まれ、揺れとして立ち上がる。小さな回転に前後から押されて生じる向き。
+
+Step 3（仮） **縁** Relation  
+
+- 構造：境界、関係、Boundary、 Interface, 
+- プロセス：つながり、Coupling
+- イメージ：☯️ のような
+- background concept：Connection
+  
+境界で起きる出来事。 接し、影響し合い、関係や法則が生まれる場所。
+
+Step 4 **渦** Spinor  
+
+- 構造：個、立ち上がり  
+- プロセス：止揚、包摂、融合  
+- イメージ：🌀 のような
+- background concept：Spinor 
+
+ひとつの「まとまり」として立ち上がる。
+
+Step 5 **束** Bundle  
+
+- 構造：方向  
+- プロセス：集合  
+- イメージ：近似線
+- background concept：Direction 
+- 
+渦どうしが影響し合い、構造として残る集まり。ベクトルの近似線
+
+---
 
 - [ChatGPTによる図の解説はこちら](https://chatgpt.com/share/69440906-8144-800b-a257-7cba0fa15cc6)
 
