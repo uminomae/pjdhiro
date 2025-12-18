@@ -1,6 +1,6 @@
 ---
 permalink: /dialogueCreation/
-title: "対話：創造とは"
+title: "対話：創造とは：私の場合"
 date: 2025-12-18
 categories:
   - 対話
