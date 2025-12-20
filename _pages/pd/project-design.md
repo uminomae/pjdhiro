@@ -17,7 +17,7 @@ sidebar:
 このページは、プロジェクトデザインの概要を示すと同時に、サイト内の目次としても機能します。
 本サイトでは、特に、感情や心理面に重点を置いています。
 
-[![Project Design](../assets/images/pages/pd/PD_IG.png)](../assets/images/pages/pd/PD_IG.png)
+[![Project Design](../assets/images/pages/pd/PdIg5.png)](../assets/images/pages/pd/PdIg5.png)
 
 ### 定義
 
