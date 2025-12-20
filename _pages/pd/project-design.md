@@ -17,6 +17,8 @@ sidebar:
 このページは、プロジェクトデザインの概要を示すと同時に、サイト内の目次としても機能します。
 本サイトでは、特に、感情や心理面に重点を置いています。
 
+[![Project Design](../assets/images/pages/pd/PD_IG.png)](../assets/images/pages/pd/PD_IG.png)
+
 ### 定義
 
 * プロジェクトの構想・設計・実行  
@@ -31,8 +33,8 @@ sidebar:
 ### プロジェクトデザイン:概要
 
 [![Project Design Flowchart](../assets/images/PDFlow.jpg)](../assets/images/PDFlow.jpg)
-
 <!-- ![Project Design Flowchart](../assets/images/PDFlow.avif.jpg) -->
+
 
 * コミュニケーション  
   * 情報処理(論理、計算機科学など)
