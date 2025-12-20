@@ -79,7 +79,11 @@ sidebar:
   * [価値]({{ '/value/' | relative_url }})
   * [受容]({{ '/acceptance/' | relative_url }})
 
-#### 事業構想とは（仮説）：創造の５段階との統合：探索中
+---
+
+### 事業構想とは：探索中
+
+#### 創造の５段階との統合：
 
 [![image]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})
 
@@ -88,5 +92,6 @@ sidebar:
 - 定義：
   - 「事業構想」とは、**場（Field）を整え、そこに立ち上がる差異＝波（Wave）**を受け取り、**縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）**として社会に実装する営み。
 - 統合の趣旨:
-  - 土壌（生成）を理解しているから、設計図（方法論）が空回りしない。設計図（方法論）を持っているから、土壌（生成）が成果（束）まで届く。
+  - 事業構想を 「起きてること（Being）」と「やること（Doing）」 の二つの仕事として示す。
+
 
