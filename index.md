@@ -67,8 +67,6 @@ permalink: /
 
 ---
 
-<a class="twitter-timeline" href="https://twitter.com/pjdhiro?ref_src=twsrc%5Etfw">Tweets by pjdhiro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ## 2025: Insights
 
 - 最近は下記の事柄を考えてました。
