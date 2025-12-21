@@ -89,7 +89,7 @@ sidebar:
 
 [![image]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})
 
-[関連:【対話：創造とは】]({{ '/dialogueCreation/' | relative_url }})
+[創造の5段階について:【対話：創造とは】]({{ '/dialogueCreation/' | relative_url }})
 
 - 定義：
   - 「事業構想」とは、**場（Field）を整え、そこに立ち上がる差異＝波（Wave）**を受け取り、**縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）**として社会に実装する営み。
