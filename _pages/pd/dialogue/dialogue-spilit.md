@@ -33,7 +33,7 @@ excerpt: "このページは進化中です。"
 
 [![image]({{ 'assets/images/pages/dialogue/spilit/Dual-Aspect.png' | relative_url }})]({{ 'assets/images/pages/dialogue/spilit/Dual-Aspect.png' | relative_url }})
 
-[参考:【】](https://www.informationphilosopher.com/presentations/Milan/papers/Dual-aspect-Atmanspacher.pdf?utm_source=chatgpt.com)
+[参考:【論文PDF】](https://www.informationphilosopher.com/presentations/Milan/papers/Dual-aspect-Atmanspacher.pdf?utm_source=chatgpt.com)
 
 ---
 
