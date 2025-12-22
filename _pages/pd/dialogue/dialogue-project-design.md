@@ -11,8 +11,8 @@ sidebar:
   nav4: cat-side-notes
   nav5: ""
 header:
-  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/PdIg5.png
-  teaser: https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/PdIg5.png
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/PdIg5.png
+  teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/PdIg5.png
 
 ---
 
