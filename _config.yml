@@ -140,7 +140,7 @@ defaults:
       toc_sticky: true # 固定目次を有効化
       show_date: true # 投稿日時の表示
       # breadcrumbs: true # パンくずリストを有効化
-      image: /assets/images/101631407.jpg
+      image: https://uminomae.github.io/pjdhiro/assets/images/101631407.jpg
   # 静的ページ (_pages)
   - scope:
       path: "_pages"
