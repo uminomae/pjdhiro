@@ -11,8 +11,10 @@ sidebar:
   nav3: cat-design-topics
   nav4: cat-side-notes
   nav5: ""
-excerpt: "このページは進化中です。現在「束」。13年前の「渦」を束に変えてきました。"  
-image: https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/Creation12.jpg
+excerpt: "このページは進化中です。13年前の「渦」を束に変えてきました。"  
+header:
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/Creation12.jpg
+  teaser: https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/Creation12.jpg
 ---
 
 
