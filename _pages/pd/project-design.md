@@ -17,40 +17,49 @@ header:
   teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/PdIg5.png
 ---
 
+## プロジェクトデザインとは
+
+プロジェクトの構想・設計・実行に加え、それを実行・管理する方法そのものを構想・設計する営みです。  
+本ページは、その学問的射程と領域を明示し、以降の議論で“何を対象とし、何を対象外とするか”の境界条件（インターフェース）を固定します。
+プロジェクトの実務は、物質的条件への「環境適応」と、非物質的条件への「コミュニケーション」に大別できます。環境適応はPMBOK等で体系化されているため、本サイトではそれを前提知として、コミュニケーションを「情報処理」と「感情処理」に分け、とくに後者を中心に扱います。 
+
 {: .notice--info}
-このページは、プロジェクトデザインの概要を示すと同時に、サイト内の目次としても機能します。
-本サイトでは、特に、感情や心理面に重点を置いています。
+このページは、プロジェクトデザインの「射程・領域・用語（境界条件）」を固定する総論です。サイト内の目次としても機能します。
 
 [![Project Design](../assets/images/pages/pd/PdIg5.png)](../assets/images/pages/pd/PdIg5.png)
 
-## 定義
+## 定義(対象)
 
 * プロジェクトの構想・設計・実行  
 * プロジェクトの実行・管理方法の構想・設計  
 
-## 行動
+## 射程(適用範囲)
 
-1. 多様な価値観を受容れる
-1. バランスを達成する
-1. 状況に常に適応する
+営利・非営利事業、研究、人生を含む「目的を持った協働」全般
 
-## プロジェクトデザイン:概要
-
-[![Project Design Reigion](../assets/images/pages/pd/region3.jpg)](../assets/images/pages/pd/region3.jpg)
-
+## 領域
 
 * コミュニケーション  
   * 情報処理(論理、計算機科学など)
   * 感情処理(心理学など)
 * 環境適応(経営学など)
+  
+[![Project Design Reigion](../assets/images/pages/pd/region3.jpg)](../assets/images/pages/pd/region3.jpg)
+
 
 プロジェクトでは、非物質的な側面を重視する「コミュニケーション」と、物質的な側面を重視する「環境適応」を行います。プロジェクトデザインでは、これらを事前に構想・計画し、実行しながら適宜修正・管理する方法を検討します。
 
-### 私の方法：
+## Doing:方法論：やること
 
+### 行動原理
+
+1. 多様な価値観を受容れる
+1. バランスを達成する
+1. 状況に常に適応する
+  
 <!-- [![Project Design Flowchart](../assets/images/PDFlow.jpg)](../assets/images/PDFlow.jpg) -->
 
-#### 私の方法：環境適応
+### 環境適応
 
 <!-- {: .notice--info} -->
 「環境適応」については「PMBOK第7版」で詳しく説明されています。  
@@ -58,7 +67,7 @@ header:
 [参考:【PMBOK - Wikipedia】](https://ja.wikipedia.org/wiki/PMBOK)  
 [参考:【界隈がざわつくほど超進化したPMBOK第7版の解説【プロジェクトマネジメント】｜Miz Kushida】](https://note.com/miz_kushida/n/n103a7da460c5)
 
-#### 私の方法：コミュニケーション
+### コミュニケーション
 
 [![image]({{ '/assets/images/pages/pd/comFlow.png' | relative_url }})]({{ '/assets/images/pages/pd/comFlow.png' | relative_url }})
 
@@ -74,7 +83,7 @@ header:
 
 <!-- #### キーポイント -->
 
-##### [感情処理]({{ '/emotional-processing/' | relative_url }})
+#### [感情処理]({{ '/emotional-processing/' | relative_url }})
 
 * [瞑想]({{ '/meditation/' | relative_url }})
 * [情動伝染]({{ '/emotional-contagion/' | relative_url }})
@@ -85,15 +94,24 @@ header:
 
 ---
 
-## 事業構想とは：探索中
+## Being:構造：起きてること
 
-### 創造の５段階との統合：
-
-[![image]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})
+創造の構造とプロセス（何かが生まれて、形になり、つながっていくまでの流れ）には法則とも呼べる類似性があります。
 
 [創造の5段階について:【対話：創造とは】]({{ '/dialogueCreation/' | relative_url }})
 
+---
+
+## 創造の５段階との統合：
+
+- 統合の趣旨:
+  - 「起きてること（Being）はなにか」と「やること（Doing）はなにか」 の二つの仕事として示す。
+
+[![image]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})]({{ '/assets/images/pages/pd/PDand5model.jpg' | relative_url }})
+
+
 - 定義：
   - 「事業構想」とは、**場（Field）を整え、そこに立ち上がる差異＝波（Wave）**を受け取り、**縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）**として社会に実装する営み。
-- 統合の趣旨:
-  - 事業構想を 「起きてること（Being）はなにか」と「やること（Doing）はなにか」 の二つの仕事として示す。
+
+{: .notice--warning}
+本ページで固定した「射程・領域・Doing/Beingの二分」は、本サイトの基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。
