@@ -11,6 +11,10 @@ sidebar:
   nav3: cat-design-topics
   nav4: ""
   nav5: ""
+excerpt: ""  
+header:
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/PdIg5.png
+  teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/PdIg5.png
 ---
 
 {: .notice--info}
