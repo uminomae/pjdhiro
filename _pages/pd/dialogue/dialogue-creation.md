@@ -12,7 +12,7 @@ sidebar:
   nav4: cat-side-notes
   nav5: ""
 excerpt: "このページは進化中です。現在「束」。13年前の「渦」を束に変えてきました。"  
-image: /assets/images/blog/20251218/Creation12.jpg
+image: https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/Creation12.jpg
 ---
 
 
