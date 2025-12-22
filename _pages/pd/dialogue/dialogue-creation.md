@@ -4,6 +4,7 @@ title: "対話：創造とは"
 date: 2025-12-18
 categories:
   - 対話
+  - LOVE駆動開発
 sidebar:
   nav: docs
   nav2: ""
@@ -11,6 +12,7 @@ sidebar:
   nav4: cat-side-notes
   nav5: ""
 excerpt: "このページは進化中です。現在「束」。13年前の「渦」を束に変えてきました。"  
+image: /assets/images/blog/20251218/Creation12.jpg
 ---
 
 
