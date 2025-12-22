@@ -71,8 +71,8 @@ permalink: /
 
 - 最近は下記の事柄を考えてました。
   - 経済：信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})
-  - 心理：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }})
-  - 哲学：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }})
+  - 心理：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }}) 
+  - 哲学：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }}) → [創造とは]({{ '/dialogueCreation/' | relative_url }})
   - プログラミング：[Threejs]({{ '/pages-categories/web-tools/' | relative_url }}) , [Pine Script]({{ '/pages-categories/pine/' | relative_url }})
 
 <iframe
