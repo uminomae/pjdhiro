@@ -8,7 +8,18 @@ date: 2025-01-14
 ---
 (作成中)
 
-[参考:【感情的メタ認知の実践】](https://pjdhiro.blogspot.com/2023/09/practicing-emotional-metacognition.html)
+## 過去記事
+
+- [参考:【感情的メタ認知の実践】](https://pjdhiro.blogspot.com/2023/09/practicing-emotional-metacognition.html)
+
+## チャットボット
+
+### [【ChatGPT - 自我発達ステージ簡易スクリーナー（STAGES 6.5中心）：プロトタイプ】](https://chatgpt.com/g/g-694e5c2b7a388191acf32b7333600329-zi-wo-fa-da-sutesijian-yi-sukurina-stages-6-5zhong-xin?fbclid=IwY2xjawO7Z2NleHRuA2FlbQIxMABicmlkETFwNkp5SkpmMWgwdTFuTzhxc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqV_Nnx9ZksZPck9Pv9ya3lSIVS-h_eLjH20g405WItktUE0PFg7wl-ijMrk_aem_yWD7elsgBD_kOHgoi3COwA)
+  
+[![image]({{ '/assets/images/pages/pd/emotional-processing/screener.png' | relative_url }})]({{ '/assets/images/pages/pd/emotional-processing/screener.png' | relative_url }})
+[![image]({{ '/assets/images/pages/pd/emotional-processing/screener2.png' | relative_url }})]({{ '/assets/images/pages/pd/emotional-processing/screener2.png' | relative_url }})
+
+
 
 
 <!-- ## はじめに

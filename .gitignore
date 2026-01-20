@@ -16,6 +16,9 @@ myPj/tradingview/pine/.venv/
 
 myPJ/home-net/
 
+
+*/edit/
+
 # git rm -r --cached backup
 # git rm -r --cached myPj/inverse/js/Old
 myPj/tradingview/pine/tests/data/res/
