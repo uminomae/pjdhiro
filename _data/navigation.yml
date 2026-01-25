@@ -40,6 +40,8 @@ cat-design-topics:
 cat-side-notes:
   - title: "Side Notes"
     children:
+    - title: "AI"
+      url: /pages-categories/ai/
     - title: "経済"
       url: /pages-categories/economy/
     - title: "WEBツール"

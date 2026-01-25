@@ -24,7 +24,7 @@ sidebar:
 
 #### [【Trend SMA200】 トレンド判定（SMA200・緩やか）]({{ '/note-pine/trendSMA200/' | relative_url }})  
 
-- 主にXAUUSD15分足での使用を念頭に、トレンドの方向を判定し、上部に色付き文字で表示します。
+- 主にXAUUSD15分足での使用を念頭に、トレンドの方向を判定し、上部に色付き文字で表示します。  
 <!-- [![トレンド判定（SMA200・緩やか]({{ '/assets/images/pages/note/pine/trendSMA200.png' | relative_url }})]({{ '/assets/images/pages/note/pine/trendSMA200.png' | relative_url }}) -->
 <a href="{{ '/assets/images/pages/note/pine/trendSMA200.png' | relative_url }}">
   <img src="{{ '/assets/images/pages/note/pine/trendSMA200.png' | relative_url }}" alt="トレンド判定（SMA200・緩やか）" width="480">
