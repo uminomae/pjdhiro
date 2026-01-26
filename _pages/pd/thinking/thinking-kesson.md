@@ -20,13 +20,15 @@ header:
 
 [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
 
-
+- 思考フレーム：私のデザイン思考
+  - 私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
 <!-- - [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}) -->
-- 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
-- 主観的見方：神経現象学的・禅的な視点での止観・観照
-  - 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
-- 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
-- 入力：違和感、無意味感、無価値感
+- 内容：
+  - 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
+  - 主観的見方：神経現象学的・禅的な視点での止観・観照
+    - 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
+  - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
+  - 入力：違和感、無意味感、無価値感
 
 ---
 
