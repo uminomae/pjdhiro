@@ -67,6 +67,10 @@ permalink: /
 
 ---
 
+## 2026: Insights
+
+- プロジェクトデザイン：[欠損駆動思考]({{ '/thinking-kesson/' | relative_url }})
+
 ## 2025: Insights
 
 - 最近は下記の事柄を考えてました。
@@ -79,7 +83,7 @@ permalink: /
   src="{{ '/myPj/qt-st-visual/' | relative_url }}"
   style="
     border: none;
-    max-width:80%;
+    max-width:60%;
     width:1200px;
     aspect-ratio: 16 / 9;
     display:block;
