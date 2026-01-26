@@ -12,10 +12,10 @@ sidebar:
   nav5: ""
 excerpt: ""  
 header:
-  og_image: assets/images/pages/pd/thinking/spec.jpg
-  teaser: assets/images/pages/pd/thinking/spec.jpg
-  # og_image: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
-  # teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
+  # og_image: assets/images/pages/pd/thinking/spec.jpg
+  # teaser: assets/images/pages/pd/thinking/spec.jpg
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
+  teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
 ---
 
 ## 構造とプロセス（プロトタイプ）
