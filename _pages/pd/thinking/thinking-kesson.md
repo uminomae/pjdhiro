@@ -1,6 +1,6 @@
 ---
 permalink: /thinking-kesson/
-title: "欠損駆動思考"
+title: "欠損駆動思考 - Kesson-Driven Thinking"
 date: 2026-01-26
 categories:
   - 思考
@@ -18,23 +18,31 @@ header:
   # teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
 ---
 
-## 構造とプロセス（編集中）
+## 構造とプロセス（プロトタイプ）
 
 [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
 
-- 対象の捉え方:[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
-- 主観的見方：神経現象学的止観・観照
-- 入力：違和感、意味の無さ、無価値。
 
-### チャットボット（Chatbot）
+<!-- - [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}) -->
+- 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
+- 主観的見方：神経現象学的・禅的な視点での止観と観照
+- 入力：違和感、無意味感、無価値感
+
+---
+
+## チャットボット（Chatbot）
+
+<!-- [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }})](https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing) -->
+
+[![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}){: .img-card .img-80 }](https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing)
 
 - [Gem 【欠損駆動思考bot beta】](https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing)
   - [最新の開発版はこちら](https://gemini.google.com/gem/1a3x7sW4O66486Z8Srsug2P3ZbzcAY5Fz?usp=sharing)  
-  - 実装内容：「意味が無い」「価値がない」と感じる状況でデザインする際の「私の場合のやり方」です。  
-    - 入力：LLM(Gemini3)
+  - 実装内容：「意味が無い」「価値が無い」と感じる状況でデザインする際の「私のやり方」です。  
+    - 入力：LLM(Gem)
     - 出力：高校生向け、一般向け、専門家向けの３パターンの口調で出力します。
 
 ## 参考  
 
-- [参考:【デザイン思考 - Wikipedia】](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83)  
+- [【デザイン思考 - Wikipedia】](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83)  
 - [【Existentialism (Stanford Encyclopedia of Philosophy)】](https://plato.stanford.edu/entries/existentialism/?utm_source=chatgpt.com#Auth)  
