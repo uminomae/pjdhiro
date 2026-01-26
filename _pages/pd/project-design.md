@@ -59,8 +59,11 @@ header:
 1. 多様な価値観を受容れる
 1. バランスを達成する
 1. 状況に常に適応する
-  
-<!-- [![Project Design Flowchart](../assets/images/PDFlow.jpg)](../assets/images/PDFlow.jpg) -->
+
+### デザイン思考
+
+* [欠損駆動思考]({{ '/meditation/' | relative_url }})
+  * 「意味が無い」「価値が無い」と感じる場合に利用
 
 ### 環境適応
 
@@ -74,8 +77,6 @@ header:
 
 [![image]({{ '/assets/images/pages/pd/comFlow.png' | relative_url }})]({{ '/assets/images/pages/pd/comFlow.png' | relative_url }})
 
-<!-- [![Communication Flowchart](../assets/images/PDComFlow.jpg)](../assets/images/PDComFlow.jpg) -->
-
 コミュニケーションには大きく二つの側面があります。  
 
 1. 耳や目で捉える、言葉や情報の側面
@@ -83,8 +84,6 @@ header:
 
 言葉や記号を用いた情報の伝達や理解については情報科学を中心として論理・社会学などで詳しく扱われています。  
 このサイトではその解説を省き、「感情処理」に焦点を当てて説明します。
-
-<!-- #### キーポイント -->
 
 #### [感情処理]({{ '/emotional-processing/' | relative_url }})
 
@@ -100,14 +99,14 @@ header:
 ## Being：現象・構造：起きてること
 
 - 定義：
-  - **場（Field）を整え、そこに立ち上がる差異＝波（Wave）**を受け取り、**縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）**として社会に実装する営み。
+  - 場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。
 
 - 創造の構造とプロセス（何かが生まれて、形になり、つながっていくまでの流れ）には法則とも呼べる類似性があります。
   - [創造の5段階について:【対話：創造とは】]({{ '/dialogueCreation/' | relative_url }})
 
 ---
 
-## 今後の方向性：現象論と方法論の統合の試み：
+## 今後の方向性：現象論と方法論の統合の試み
 
 イメージ：
 

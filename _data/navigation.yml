@@ -9,6 +9,10 @@ main:
 docs:
   - title: "プロジェクトデザインとは"
     url: /project-design/
+  - title: "デザイン思考"
+    children:
+      - title: "欠損駆動思考"
+        url: /thinking-kesson/
 
 cat-emotional-processing:
   - title: "感情処理"
