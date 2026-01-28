@@ -1,0 +1,125 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage{textcomp} % for \textquotesingle
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[numbers]{natbib}
+
+\title{A Minimal Process Model of Affective Metacognition:\\
+Gating (Threat/Safety $\times$ Defense), Contemplative Control, and Externalized Other-Model Updating (AI Outsourcing)}
+\author{(anonymous draft)}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose a minimal process model of affective metacognition that bridges ``brain--mind--body'' dynamics with practical protocols for self-monitoring and AI-assisted cognition. The model combines (i) a gating mechanism driven by threat/safety appraisal (attachment) and defense processes, (ii) contemplative control that modulates prediction--error--salience via attention and interoception, and (iii) a label-as-hypothesis procedure: affect labels can down-regulate reactivity yet become harmful when reified. Finally, we treat intersubjectivity (shared reality) and AI outsourcing as the same class of externalized other-model updating, yielding testable trade-offs between cognitive relief and costs to memory, learning, and authorship/ownership.
+\end{abstract}
+
+\section{Introduction}
+Figure~\ref{fig:emometacog-v14} illustrates the proposed minimal process model and its operational protocol.
+
+Affective metacognition---monitoring and steering one\textquotesingle s emotional processes---often feels like a ``between'' space connecting brain, mind, and body. Existing literatures offer partial lenses: affect labeling reduces reactivity \citep{lieberman2007,torre2018}, attachment organizes safety vs.\ threat regulation strategies \citep{mikulincer2003,shaver2007}, mindfulness operationalizes attention and acceptance \citep{bishop2004,tang2015}, and predictive processing provides a unifying control language \citep{friston2010,seth2013}. Meanwhile, cognition is increasingly externalized to devices and LLMs; this resembles transactive memory and cognitive offloading \citep{wegner1991,risko2016,sparrow2011}, and may affect ownership of writing \citep{kosmyna2025}.
+
+We unify these into a minimal model with four claims (C1--C4 in the accompanying state file). The goal is not a comprehensive theory, but a compact scaffold that (a) maps to measurable constructs, (b) yields practical self-protocols, and (c) supports design decisions for AI outsourcing without over-identifying with ``tags.''
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{fig_emometacog_v1_4.jpg}
+  \caption{\textbf{Affective metacognition (v1.4):} a minimal process model integrating
+  (i) threat/safety-driven gating (attachment $\times$ defenses),
+  (ii) a prediction--error--salience loop modulated by contemplative observation (attention/interoception),
+  (iii) a minimal ``label-as-hypothesis'' procedure (withhold $\rightarrow$ check $\rightarrow$ re-evaluate),
+  and (iv) externalized other-model updating via social interaction and LLM outsourcing.}
+  \label{fig:emometacog-v14}
+\end{figure}
+
+\section{Related Work (Very Brief)}
+\textbf{Labeling and differentiation.} Affect labeling can attenuate limbic responses \citep{lieberman2007} and is framed as implicit emotion regulation \citep{torre2018}. Yet verbal analysis can degrade preference quality in some contexts \citep{wilson1991}, motivating boundary conditions and careful label use. Emotion differentiation relates to regulation outcomes \citep{barrett2001} and sits within broader process models of regulation \citep{gross1998}.
+
+\textbf{Threat/safety and defenses.} Attachment orientations are linked to hyperactivating vs.\ deactivating regulation strategies \citep{mikulincer2003,shaver2007}. Defense mechanisms admit hierarchical organization and measurement approaches \citep{vaillant1986,vaillant1992,digiuseppe2021}. Polyvagal theory provides a physiological lens on safety/threat states and behavioral repertoires \citep{porges2007}.
+
+\textbf{Predictive processing and contemplative control.} The free-energy principle frames perception/action as prediction error minimization \citep{friston2010}. Interoceptive inference connects bodily signals to felt emotion and selfhood \citep{seth2013}. Mindfulness is operationalized as attention regulation plus an accepting orientation \citep{bishop2004}, and has surveyed neural mechanisms \citep{tang2015}.
+
+\textbf{Externalization, others, and AI.} Shared reality describes motivation and mechanisms for aligning inner states \citep{echterhoff2018}. Transactive memory shows distributed encoding in close relationships \citep{wegner1991}, and the Internet can behave like an external memory system \citep{sparrow2011}. Cognitive offloading formalizes when and why we outsource cognition \citep{risko2016}. The extended mind argues that external resources can be constitutive of cognition \citep{clark1998}.
+
+\section{Model}
+\subsection{Core variables and notation}
+We define a minimal set of latent state variables (scalars; extensions are possible):
+\begin{itemize}
+  \item $T \in [0,1]$: threat activation (higher = more threatened).
+  \item $S = 1-T$: perceived safety (higher = safer).
+  \item $D$: dominant defense mode/level (e.g., mature $\rightarrow$ neurotic $\rightarrow$ immature).
+  \item $\varepsilon$: prediction error (including interoceptive prediction error).
+  \item $\sigma$: salience (attention weight) assigned to a channel/content.
+  \item $G \in [0,1]$: gate openness (access to exploration, labeling, reappraisal, flexible policy).
+\end{itemize}
+
+\subsection{Gating: threat/safety $\times$ defense}
+We model a gating function:
+\begin{equation}
+G = f(S, D) \quad \text{with } \frac{\partial G}{\partial S} > 0,
+\end{equation}
+and defense-dependent modulation (e.g., deactivation can keep $G$ low by narrowing channels; hyperactivation can keep $G$ noisy/high but unstable). Empirically, attachment insecurity correlates with deactivating vs.\ hyperactivating strategies \citep{mikulincer2003}. Physiologically, safety/threat states reconfigure available behaviors \citep{porges2007}. Defenses provide a clinical language and hierarchy that can be measured \citep{vaillant1986,digiuseppe2021}.
+
+\subsection{Contemplative control: prediction--error--salience loop}
+We assume salience allocation $\sigma$ shapes how prediction error $\varepsilon$ is amplified into felt urgency and subsequent policy selection. ``Contemplative control'' denotes deliberate regulation of $\sigma$ (attention) and interoceptive sampling, consistent with operational definitions of mindfulness \citep{bishop2004}. Predictive processing provides the control intuition: changing attention/precision alters the influence of prediction error \citep{friston2010,seth2013}.
+
+A minimal loop:
+\begin{align}
+\text{(Observe)} &\Rightarrow \varepsilon \\
+\text{(Set precision / salience)} &\Rightarrow \sigma \\
+\text{(Update / choose policy)} &\Rightarrow \pi
+\end{align}
+where mindfulness-like operations act primarily on $\sigma$ (and secondarily on the generative model that produces $\varepsilon$).
+
+\subsection{Label-as-hypothesis: a minimal safe procedure}
+Affect labels can reduce reactivity \citep{lieberman2007,torre2018}, but reification can freeze exploration or distort preferences \citep{wilson1991}. We propose a minimal procedure that treats labels as hypotheses:
+
+\begin{quote}
+\textbf{Minimal Label Procedure (MLP)}\\
+(1) \textit{Withhold}: pause; do not finalize identity-level tags.\\
+(2) \textit{Name}: propose 1--2 candidate labels as hypotheses.\\
+(3) \textit{Check}: verify against body/interoception and context; seek alternatives.\\
+(4) \textit{Re-evaluate}: rename or drop; keep uncertainty explicit.
+\end{quote}
+
+This aims to preserve the benefits of labeling while reducing fixation.
+
+\subsection{Externalized other-model updating: human and AI as one class}
+Let $O$ denote an ``other model'' used for calibration of beliefs/feelings (shared reality) \citep{echterhoff2018}. Interaction with another person or an LLM both instantiate an external update channel:
+\begin{equation}
+\theta_{t+1} = \theta_t + \eta \cdot U(\text{dialogue with } O),
+\end{equation}
+where $\theta$ are internal models (self, others, world). This channel overlaps with cognitive offloading and transactive memory: distributing storage/processing can reduce load \citep{risko2016,wegner1991}, but can shift what is remembered (``where'' over ``what'') \citep{sparrow2011}. Recent work suggests LLM interaction can influence perceived ownership of writing \citep{kosmyna2025}, making it essential to specify when outsourcing is beneficial vs.\ costly.
+
+\section{Applications}
+\textbf{Self-use (minimal).} Use MLP only when $G$ is sufficiently open; when $T$ is high, prioritize safety restoration (downshift) and basic observation rather than fine-grained labeling.
+
+\textbf{Clinical/developmental connection (optional layer).} Map recurring patterns of low $G$ to attachment and defense profiles, and track shifts in $D$ or $T$ across time using validated instruments \citep{digiuseppe2021}.
+
+\textbf{LLM outsourcing.} Treat prompts and chat history as externalized memory/other-model. Design safeguards:
+(i) keep ``authorial core'' notes internal,
+(ii) periodically restate goals in one\textquotesingle s own words,
+(iii) run MLP before committing to identity-laden labels suggested by the model.
+
+\section{Predictions (Testable)}
+\begin{itemize}
+  \item \textbf{P1 (Boundary condition):} labeling reduces immediate reactivity, but repeated identity-level labels increase fixation and reduce exploration, especially under high threat (low $S$).
+  \item \textbf{P2 (Gate dependence):} mindfulness/attention manipulations improve reappraisal mainly when $G$ is moderately open; under strong threat, effects are mediated by safety restoration.
+  \item \textbf{P3 (Outsourcing trade-off):} AI/offloading improves task performance under load but reduces later internal recall and may alter authorship/ownership judgments.
+\end{itemize}
+
+\section{Limitations}
+This is a minimal scaffold. It does not diagnose, and it abstracts complex constructs (attachment, defenses, predictive processing) into low-dimensional variables. Empirical work should specify measurement models and boundary conditions.
+
+\section{Conclusion}
+Affective metacognition can be made tractable by a compact control model: gating (threat/safety $\times$ defense), contemplative control (prediction--error--salience), and safe labeling (hypothesis procedure), extended to modern cognition via externalized other-model updating (human/AI).
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+\end{document}
