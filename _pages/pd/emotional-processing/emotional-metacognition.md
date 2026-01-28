@@ -8,6 +8,15 @@ date: 2025-01-14
 ---
 (作成中)
 
+[![私の感情的メタ認知 v1.4]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/fig_emometacog_v1_4.jpg' | relative_url }})]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/fig_emometacog_v1_4.jpg' | relative_url }})
+
+## OpenAI Prismで試しに出力してみた：注意：未検証です
+
+[![image]({{ 'assets/images/pd/emotional-processing/emotional-metacognition/main_ss.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/main.pdf' | relative_url }}) 
+
+- PDFは未検証です [【私の感情的メタ認知 Prism出力 beta】]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/main.pdf' | relative_url }})
+
+
 ## 過去記事
 
 - [参考:【感情的メタ認知の実践】](https://pjdhiro.blogspot.com/2023/09/practicing-emotional-metacognition.html)
