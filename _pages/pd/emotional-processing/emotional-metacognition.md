@@ -8,18 +8,25 @@ date: 2025-01-14
 ---
 (作成中)
 
-[![私の感情的メタ認知 v1.4]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/fig_emometacog_v1_4.jpg' | relative_url }})]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/fig_emometacog_v1_4.jpg' | relative_url }})
+[![私の感情メタ認知 v1.4]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/fig_emometacog_v1_4.jpg' | relative_url }})]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/fig_emometacog_v1_4.jpg' | relative_url }})
 
 ## OpenAI Prismで試しに出力してみた：注意：未検証です
 
 [![image]({{ 'assets/images/pd/emotional-processing/emotional-metacognition/main_ss.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/main.pdf' | relative_url }}) 
 
-- PDFは未検証です [【私の感情的メタ認知 Prism出力 beta】]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/main.pdf' | relative_url }})
+-  [PDFは未検証です]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/main.pdf' | relative_url }})
+  - このBotのテストとして生成してみました[【ChatGPT - 短文からPrismに貼れるLaTeXを作る汎用チャットボット】](https://chatgpt.com/g/g-6979ca4ef8148191b29515013af5647e-duan-wen-karaprismnitie-rerulatexwozuo-rufan-yong-tiyatutohotuto)
+
+
+[![image]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/student.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pd/emotional-processing/emotional-metacognition/student.jpg' | relative_url }}) 
+
+- [高校生向けの解説:GPT５.2](https://chatgpt.com/share/6979f759-b434-800b-9173-6081ece2dea4)
+
 
 
 ## 過去記事
 
-- [参考:【感情的メタ認知の実践】](https://pjdhiro.blogspot.com/2023/09/practicing-emotional-metacognition.html)
+- [参考:【感情メタ認知の実践】](https://pjdhiro.blogspot.com/2023/09/practicing-emotional-metacognition.html)
 
 ## チャットボット
 
