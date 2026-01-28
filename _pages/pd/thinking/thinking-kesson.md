@@ -3,7 +3,7 @@ permalink: /thinking-kesson/
 title: "欠損駆動思考 - Kesson-Driven Thinking"
 date: 2026-01-26
 categories:
-  - 思考
+  - デザイン思考
 sidebar:
   nav: docs
   nav2: cat-emotional-processing
@@ -33,8 +33,6 @@ header:
 ---
 
 ## チャットボット（Chatbot）
-
-<!-- [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }})](https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing) -->
 
 [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}){: .img-card .img-80 }](https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing)
 
