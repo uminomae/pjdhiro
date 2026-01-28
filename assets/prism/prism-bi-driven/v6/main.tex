@@ -1,0 +1,125 @@
+% !TEX program = lualatex
+% main_final.tex (v0.6) -- condensed + cleaned refs
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{luatexja}
+\usepackage[margin=25mm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\makeatletter
+\renewcommand{\fnum@figure}{図\thefigure}
+\makeatother
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{refs.bib}
+
+\title{美駆動思考支援：北極星（方位）と揺らぎの器（保持）の二機能フレームワーク\\
+\large Aesthetic-Conflict-Driven Thinking Support: A Two-Function Framework of North Star and Vessel}
+\author{pjdhiro}
+\date{v0.6}
+
+% --- Terms (minimal) ---
+\newcommand{\NorthStar}{北極星}
+\newcommand{\Vessel}{揺らぎの器}
+\newcommand{\Holding}{保持}
+\newcommand{\AestheticConflict}{美的葛藤}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本稿は、不確実な状況下で「思考が防衛（安心・正当化・説明の増殖）のために作動してしまう」現象を抑え、
+揺らぎを保持したまま創造的探索へ進むための、二機能思考支援フレームワークを提案する。
+核となる機能は、(i)\NorthStar{}：真理／未知の真理へ近づく\textbf{方向づけ（方位）}を返す（説明ではない）、
+(ii)\Vessel{}：\AestheticConflict{}（知りたい$\times$怖い）を消さずに同居させ、変換前段として保持する。
+臨床理論（Bionのthinking理論・container/contained、Meltzerの美的葛藤）を一次アンカーとして位置づけ、
+読者向けの暫定定義を先に提示し、厳密化は補足として分離する。
+本稿では、概念・運用手順・主張（C1--C4）を最小限に整形し、検証設計は今後の課題として整理する。
+\end{abstract}
+
+\section{はじめに}
+不確実性が高い局面では、思考が「探索」ではなく「防衛」のモードへ滑りやすい。
+本稿は、この滑り（説明＝安心、物語化＝正当化）を抑えつつ、\AestheticConflict{}を崩さずに前へ進むための
+支援機能を、\NorthStar{}と\Vessel{}の二つに分解して提案する。
+着想の契機は物語作品（アニメ『チ。』）だが、本稿は作品論ではなく、思考支援の概念設計として提示する。
+図\ref{fig:reactor}は、作品から抽出した最小のプロセス仮説（伝承→葛藤→保持→美的体験）を可視化したものである。
+
+\section{背景（一次アンカー）}
+\subsection{Bion: thinking と container/contained}
+Bionは、thoughts（思考内容）とthinking（思考作用）を区別し、考える／知ることが情動的経験として作動することを論じた。
+また、未消化経験が思考可能な形へ変換される過程（alpha function等）や、container/containedの枠組みは、
+「揺らぎが変換前段で保持されない場合に、防衛的排出へ偏る」という見立ての足場になる \cite{Bion1962XXXX,BionContainerXXXX}。
+
+\subsection{Meltzer: \AestheticConflict{}（知りたい$\times$怖い）}
+Meltzerは、美的体験を「未知（真実）に触れる際の好奇心と不確かさ（恐れ）の緊張」として扱い、
+この葛藤に持ちこたえることが心の進展や創造性と関係しうる、という視点を与える \cite{Meltzer1988,KyotoPaperXXXX}。
+
+\section{フレームワーク}
+\subsection{読者向け定義（前段）}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item \NorthStar{}：\textbf{「真理／未知の真理」へ近づく方向づけを、恐れと欲望の混合を崩さずに返す機能。}
+  \item \Vessel{}：\textbf{揺らぎを「思考可能な形（言葉・図・手順）」へ変換する前段として保持する機能。}さらに、\AestheticConflict{}の両極を消さずに同居させる保持機能。
+  \item \Holding{}：揺らぎを排出せず持ちこたえること。持ちこたえは創造へ、回避は防衛へ倒れうる。
+\end{itemize}
+
+\subsection{使い方（運用手順：最短版）}
+ここは、\NorthStar{}／\Vessel{}の\textbf{使い分け}と\textbf{手順}を、最短の形で示す。
+
+\paragraph{いつ何を使うか（分岐）}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item まず\Vessel{}：頭の中が理由説明で埋まる／今すぐ結論を出したい／誰かに送って安心したい、となったら\textbf{保持に入る}。
+  \item 次に\NorthStar{}：保持後、「では次に何を観測・試行するか」だけを\textbf{方位＋一手}で決める。
+\end{itemize}
+
+\paragraph{手順（3ステップ）}
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+  \item \Vessel{}（保持）：3分（短）/10分（標準）/30分（長）のいずれかを選び、保持中は\textbf{即時解釈・即時行動・即時共有}をしない。
+  \item 最小外部化（1単位）：保持終了時に、次のテンプレのいずれか\textbf{1つだけ}を書く。
+    \begin{itemize}[leftmargin=*,itemsep=1pt]
+      \item 1行テンプレ：\texttt{いまの揺らぎ：\underline{\hspace{30mm}}（知りたい：\underline{\hspace{18mm}}／怖い：\underline{\hspace{18mm}}）}
+      \item 1手順テンプレ：\texttt{次の観測：\underline{\hspace{30mm}}（場所/時間/対象）}
+    \end{itemize}
+  \item \NorthStar{}（出力）：次のテンプレで\textbf{1行}だけ返す（説明は禁止）。
+    \begin{itemize}[leftmargin=*,itemsep=1pt]
+      \item \texttt{[方位] \underline{\hspace{28mm}} -> [次の一手] \underline{\hspace{40mm}}}
+    \end{itemize}
+\end{enumerate}
+
+\subsection{出力仕様（禁止事項つき）}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item NS-O1 出力制約：返答は「方位（orientation）」＋「次の一手（1 step）」のみ。\textbf{理由説明・結論確定・安心の供給}をしない。
+  \item NS-O2 二極保持：返答内に「恐れ（avoidance）」と「欲望（approach）」の要素を最低1つずつ残す。
+  \item VS-O1 保持窓：保持中は\textbf{意味づけ・原因究明・結論化}を遅延させる。
+  \item VS-O2 排出禁止：保持中は\textbf{共有（同意獲得）・断定・衝動的処置}をしない。
+  \item VS-O3 最小外部化：外部化は\textbf{1行/1図/1手順のうち1つ}に限定する。
+\end{itemize}
+
+\subsection{概念図}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{img.jpg}
+  \caption{精神分析的「美」の生成炉（概念図）：伝承→葛藤→保持を経て、未消化情動が「思考が生まれる場所」としての美的体験へ接続する（プロセス仮説）。}
+  \label{fig:reactor}
+\end{figure}
+
+\section{主張（C1--C4）}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item[C1] thinking（思考作用）／knowing（知ること）は情動的経験として作動する（Bion）。 \cite{Bion1962XXXX,BionContainerXXXX}
+  \item[C2] 未消化経験は変換前段（保持・コンテインメント）を要し、保持されない場合は防衛的排出へ偏りうる（Bion）。 \cite{Bion1962XXXX,BionContainerXXXX}
+  \item[C3] 不確実さに耐えられないとき、解釈は安心・正当化のために増殖し、防衛として作動しうる（Bionのリンク攻撃等の系譜）。 \cite{BionContainerXXXX}
+  \item[C4] \AestheticConflict{}（知りたい$\times$怖い）にもちこたえることは、探索・創造・発達と関係しうる（Meltzer）。 \cite{Meltzer1988,KyotoPaperXXXX}
+\end{itemize}
+
+\section{今後の課題と方向性（最小）}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item 作用機序の同定：\NorthStar{}と\Vessel{}が「防衛化（説明の増殖）」をどの程度抑制するかを、行動指標（出力長、断定語、衝動的共有の有無等）で最小検証する。
+  \item 境界条件：急性ストレス／高リスク意思決定など、\Vessel{}が有害（遅延が危険）になり得る条件を明示する。
+  \item 既存概念との接続：Bion/Meltzer以外（holding, mentalizing, epistemic trust等）との整合・差分を、過剰な統合を避けつつ追記する。
+  \item 実装評価：チャットボット等の支援系に埋め込む場合、ユーザーが「安心」を要求する圧力に対して、方位＋一手へ留める設計（ガードレール）の検証が必要である。
+\end{itemize}
+
+\printbibliography
+
+\end{document}
