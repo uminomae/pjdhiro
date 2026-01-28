@@ -1,0 +1,73 @@
+version: "v1.4-paperproto-v0.1"
+title: "感情メタ認知の最小モデル：脅威/安全・防衛・観照・外部化（AI/他者）を統合する構造とプロセス"
+thesis: >
+  感情メタ認知を「(a) 脅威/安全（愛着）×防衛によるゲート開閉」と
+  「(b) 予測-誤差-焦点化を観照（注意/身体感覚）で操作する制御ループ」として最小化し、
+  ラベル（タグ）は効くが固定化すると危ないため“仮説として扱う最小手順”を組み込む。
+  さらに、間主観性（他者モデル更新）とAI外注を同一の“外部化された他者モデル更新”として扱い、
+  認知の外部化（オフローディング）に伴う利得とコスト（記憶・主体感・学習）を予測可能にする。
+keywords:
+  - affect labeling
+  - emotion differentiation
+  - attachment
+  - defense mechanisms
+  - mindfulness
+  - interoception
+  - predictive processing
+  - shared reality
+  - transactive memory
+  - cognitive offloading
+  - LLM outsourcing
+
+claims:
+  - id: "C1"
+    statement: "ラベル（タグづけ）は情動反応を下げたり調整を助けるが、固定化（同一化・物象化）すると探索を止めて逆効果になりうる。ゆえにラベルは“仮説”として扱う最小手順が必要。"
+    must_cite: ["lieberman2007", "torre2018"]
+    support: ["wilson1991", "barrett2001", "gross1998"]
+
+  - id: "C2"
+    statement: "脅威/安全（愛着）の評価と防衛機制は、注意・言語化・行動方針へのアクセスを“ゲート”として開閉する（安全→探索・統合、脅威→回避/闘争/凍結）。"
+    must_cite: ["mikulincer2003", "porges2007"]
+    support: ["shaver2007", "vaillant1986", "digiuseppe2021", "vaillant1992"]
+
+  - id: "C3"
+    statement: "予測‐誤差‐焦点化（サリエンス）を、観照（注意制御・身体感覚/内受容）で操作できる。これが再評価や行動選択（policy）の前段として働く。"
+    must_cite: ["friston2010", "seth2013"]
+    support: ["bishop2004", "tang2015", "gross1998"]
+
+  - id: "C4"
+    statement: "間主観性（他者モデル更新）とAI外注を、同一の“外部化された他者モデル更新”として扱える。利得（負荷低減・探索拡張）とコスト（記憶・主体感・学習の毀損）をトレードオフとして設計できる。"
+    must_cite: ["echterhoff2018", "risko2016"]
+    support: ["wegner1991", "sparrow2011", "clark1998", "kosmyna2025"]
+
+anchors:
+  - key: "lieberman2007"
+    role: "情動の言語ラベル化が反応（扁桃体など）を低減しうる神経証拠"
+  - key: "mikulincer2003"
+    role: "愛着不安/回避に対応する情動調整方略（過活性化/不活性化）"
+  - key: "porges2007"
+    role: "安全/脅威と自律神経状態（社会関与・防衛反応）の枠組み"
+  - key: "friston2010"
+    role: "予測処理（自由エネルギー原理）による統一記述の基盤"
+  - key: "seth2013"
+    role: "内受容推論としての感情・自己の枠組み"
+  - key: "risko2016"
+    role: "認知的オフローディングの総説とメタ認知的枠組み"
+  - key: "echterhoff2018"
+    role: "共有現実（shared reality）＝内的状態を共有する動機とメカニズム"
+open_questions:
+  - "ゲート（開閉）を、自己報告・生理指標・行動指標でどう推定するか？"
+  - "ラベル固定化のリスクを、どの条件（強度・反復・対人文脈）で増減と予測するか？"
+  - "LLM外注で“主体感/所有感”と“記憶保持/学習”がどう変化するかを、どの課題で測るか？"
+  - "止観・観照の操作変数（注意/内受容）を、どの介入（短時間プロトコル）で実装するか？"
+next_actions:
+  - "図(v1.4)の各ノードを、変数（状態・観測・行動）に対応づけて用語を固定"
+  - "C1の“最小手順”を、実験可能な操作（例：ラベル仮説→再評価→改名）に落とす"
+  - "C4を、AI条件/人間条件/自己内省条件の比較デザインに変換"
+  - "臨床・発達（成人発達）との接続は“応用節”に分離し、今回は最小モデルに集中"
+search_queries:
+  - "Plutchik wheel of emotions original publication citation"
+  - "Riso Hudson Enneagram academic reference"
+  - "adult development theory Kegan constructive-developmental citation"
+  - "affect labeling boundary conditions when harmful"
+  - "LLM cognitive offloading memory learning experiment"
