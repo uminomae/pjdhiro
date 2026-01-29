@@ -17,9 +17,9 @@ header:
 ---
 (作成中)
 
-## ポスト
+## 関連ポスト
 
-- [参考:【美駆動思考支援の探索：OpenAI Prismを使用してみた - Emotion Processing in Project Design】](https://uminomae.github.io/pjdhiro/20260187bi-driven/)
+- [【美駆動思考支援の探索：OpenAI Prismを使用してみた】]({{'/20260187bi-driven/'| relative_url }})
 
 
 ## 参考  
