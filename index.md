@@ -67,13 +67,13 @@ permalink: /
 
 ---
 
-## 2026: Insights
+## 最近は下記の事柄を考えてました  
 
-- プロジェクトデザイン：[欠損駆動思考]({{ '/thinking-kesson/' | relative_url }})
+- 2026: Insights
+  - プロジェクトデザイン：[欠損駆動思考]({{ '/thinking-kesson/' | relative_url }})
+  - 心理：[感情メタ認知]({{ '/emotional-metacognition/' | relative_url }})
 
-## 2025: Insights
-
-- 最近は下記の事柄を考えてました。
+- 2025: Insights
   - 経済：信頼と依存の視点で[トランプ関税]({{ '/note2025Economy/' | relative_url }})
   - 心理：[場と時代の違い]({{ '/dialogueBaJidai/' | relative_url }}) 
   - 哲学：[☯️陰陽マーク]({{ '/20250531julia/' | relative_url }}) → [創造とは]({{ '/dialogueCreation/' | relative_url }})
@@ -95,9 +95,8 @@ permalink: /
 
 ---
 
-## Post: An Intersubjective Glimpse of the World
+## [Post]({{ '/posts/' | relative_url }})(BLOG)は
 
-- [Post]({{ '/posts/' | relative_url }})(BLOG)は、
-  - 場に差し出す「私の構え」
-  - 「世界がどう見えているか？」の間主観的な自己紹介
-  - 心と身体の繋ぎ目の探索
+- 場に差し出す「私の構え」
+- 「世界がどう見えているか？」の間主観的な自己紹介
+- 心と身体の繋ぎ目の探索
