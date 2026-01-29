@@ -1,0 +1,90 @@
+% !TeX program = lualatex
+% === lualatex-ja-v1 (Prism safe profile) ===
+\PassOptionsToPackage{disable}{microtype} % microtype事故の予防
+
+\documentclass[11pt]{ltjsarticle}
+
+% ---------- Layout ----------
+\usepackage[margin=25mm]{geometry}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.2em}
+
+% ---------- Fonts ----------
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+
+% 和文フォントは「存在するものだけ」設定（環境差で落とさない）
+\IfFontExistsTF{HaranoAjiMincho}{\setmainjfont{HaranoAjiMincho}}{}
+\IfFontExistsTF{HaranoAjiGothic}{\setsansjfont{HaranoAjiGothic}}{}
+
+% 追加フォールバック（環境にあれば拾う）
+\IfFontExistsTF{Noto Serif CJK JP}{\setmainjfont{Noto Serif CJK JP}}{}
+\IfFontExistsTF{Noto Sans CJK JP}{\setsansjfont{Noto Sans CJK JP}}{}
+\IfFontExistsTF{IPAexMincho}{\setmainjfont{IPAexMincho}}{}
+\IfFontExistsTF{IPAexGothic}{\setsansjfont{IPAexGothic}}{}
+
+% ---------- Math / Graphics ----------
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+
+% ---------- Links ----------
+\usepackage{hyperref}
+\usepackage{bookmark}
+\hypersetup{
+  unicode=true,
+  pdfencoding=auto,
+  psdextra=true,
+  hidelinks
+}
+
+% ---------- Bibliography ----------
+% 標準は biber 推奨（Prism環境で不可なら backend=bibtex に切替し、STATE.yamlにも反映）
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear,maxbibnames=99]{biblatex}
+\addbibresource{refs.bib}
+
+% ---------- Paper Meta ----------
+\title{（仮）タイトル}
+\author{（著者名）}
+\date{\today}
+
+% ---------- Helpers ----------
+\newcommand{\Claim}[2]{\paragraph{#1}\mbox{}\\#2\par}
+\newcommand{\AnchorNote}[1]{\textit{（アンカー：#1）}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+（SNS短文から抽出した問題意識・方法・貢献を2〜4文で。refs.bibが空でも成立するように書く。）
+\end{abstract}
+
+\section{導入}
+（対象となる短文（SNS投稿）／問題設定／ねらい）
+
+\section{主張（最大7個）}
+% 必須citeを強制しない：refs.bib空でもコンパイル可能にする
+\Claim{C1}{（主張）\AnchorNote{確定したら citekey を入れる：例 Bion1962Learning}}
+\Claim{C2}{（主張）}
+\Claim{C3}{（主張）}
+% ... 最大7個まで
+
+\section{関連研究（隣接領域）}
+（学際ジャンプで見つかった隣接領域／差分／射程）
+
+\section{方法（対話プロトコルと探索手順）}
+（A→B→Cの手順、主張の絞り込み規則、探索クエリ方針）
+
+\section{議論}
+（弱い主張の扱い：落とす／言い換える／射程を狭める）
+
+\section{結論と今後の課題}
+（open questions／next actions の要約）
+
+\printbibliography
+\end{document}

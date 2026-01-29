@@ -1,0 +1,91 @@
+# (1) STATE.yaml
+version: 0.1
+profile: lualatex-ja-v1
+latex_engine: lualatex
+title: "創造・創発の五相スキーマ（場—波—縁—渦—束）と宇宙普遍構造仮説"
+thesis: >
+  創造／創発を「場→波→縁→渦→束」の五相として記述するスキーマを提示し、
+  対話・組織・物理的自己組織化にまたがる構造対応を足場に、物質から精神までの
+  類似生成構造（宇宙普遍）という研究仮説を定式化する。
+keywords:
+  - 創造性
+  - 創発
+  - 対話
+  - 診断フレーム
+  - Ba
+  - boundary objects
+  - dissipative structures
+  - pattern formation
+  - universality
+  - renormalization group
+  - self-organized criticality
+claims:
+  - id: C1
+    strength: page_claim
+    text: "創造／創発は「場→波→縁→渦→束」の5段階プロセスとして記述できる。"
+  - id: C2
+    strength: page_claim
+    text: "生成ロジックは「揺れ（差）の発生→境界での接続→まとまり（回転的統合）→方向性として束ね」を持つ。"
+  - id: C3
+    strength: page_claim
+    text: "五相スキーマは観測・診断の共通言語（地図）として、善悪化／正誤裁定から議論を切り離し前進を促す。"
+  - id: C4
+    strength: page_claim
+    text: "段階ごとに失敗モードがあり、例として波の硬直（『良い』の自滅）と縁の平坦化（意図せぬ侵略／同調）がある。"
+  - id: C5
+    strength: translation_bridge
+    text: "「場／縁」は組織・対話研究の語彙（Ba、boundary objects 等）へ翻訳でき、チーム創発の説明枠に接続できる。"
+  - id: C6
+    strength: extrapolation_hypothesis_physics
+    text: "五相は非平衡系の自己組織化・パターン形成・協調現象に見られる一般機構と構造対応しうる。"
+  - id: C7
+    strength: universality_hypothesis
+    text: "普遍性（universality）の考え方にならい、五相スキーマが物質→生命→社会→精神に跨る類似生成構造として現れるという研究仮説を提示する。"
+anchors:
+  C1:
+    - key: Uminomae2026DialogueCreation
+      why: "五相（場・波・縁・渦・束）の一次提示（提案モデルの原典）"
+  C2:
+    - key: Uminomae2026DialogueCreation
+      why: "生成ロジック（揺れ→境界→渦→束）の一次提示"
+  C3:
+    - key: Uminomae2026DialogueCreation
+      why: "共通言語／診断／善悪化回避という用途の一次提示"
+  C4:
+    - key: Uminomae2026DialogueCreation
+      why: "波・縁に関する失敗モードの一次提示"
+  C5:
+    - key: NonakaKonno1998Ba
+      why: "『場（Ba）』を組織論の基礎概念として定義"
+    - key: StarGriesemer1989Boundary
+      why: "境界での協働・翻訳を支える boundary objects の古典"
+  C6:
+    - key: Prigogine1977NobelLecture
+      why: "非平衡が秩序の源になりうる（散逸構造）"
+    - key: CrossHohenberg1993Pattern
+      why: "非平衡パターン形成の包括的レビュー"
+  C7:
+    - key: Wilson1971Kadanoff
+      why: "くりこみ群＝スケールを跨ぐ共通形式（普遍性）への入口"
+    - key: BakTangWiesenfeld1987SOC
+      why: "自己組織化が臨界点へ向かう一般性（SOC）の古典"
+open_questions:
+  - "五相それぞれを『観測可能な指標』へ落とす：対話ログ・ネットワーク・情報量・結合強度など。"
+  - "五相の遷移条件を最小モデル（動力学系）として書けるか。"
+  - "C4の失敗モードを反証可能な予測として定式化できるか。"
+  - "物理↔心理↔社会の対応づけを、比喩でなく『構造写像（対応表）』として提示できるか。"
+  - "『束』を単なる合意でなく、方向性（集合的ベクトル／秩序変数）として定義できるか。"
+next_actions:
+  - "五相の操作的定義（観測指標）を1ページで作る（Prism用 Appendix草案）。"
+  - "対話事例を3件収集し、五相ラベリングの一致率（簡易）を測る。"
+  - "関連研究の『段階モデル（創造性）』『場（Ba）』『境界物』を最小限で関連研究節に組み込む。"
+  - "普遍仮説（C7）を『予測の形』で最低2本書く（例：スケール変換で不変な量は何か）。"
+search_queries:
+  - "dialogue emergence stage model diagnostic framework"
+  - "\"Ba\" shared context knowledge creation Nonaka Konno 1998"
+  - "\"boundary objects\" translations Star Griesemer 1989"
+  - "dissipative structures fluctuations source of order Prigogine Nobel lecture 1977"
+  - "pattern formation outside of equilibrium Cross Hohenberg 1993 review"
+  - "universality renormalization group Kadanoff scaling Wilson 1971"
+  - "self-organized criticality Bak Tang Wiesenfeld 1987 1/f noise"
+  - "coupled oscillators synchronization phase transition Strogatz 2000 Kuramoto Crawford"

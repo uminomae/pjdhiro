@@ -1,0 +1,171 @@
+% !TEX program = lualatex
+
+% (4) main.tex  --- Prism貼り付け想定 / LuaLaTeX固定 / ltjsarticle固定
+\PassOptionsToPackage{disable}{microtype}
+
+% --- time counters (early; some packages may reference \hour/\minute) ---
+\newcount\hour
+\newcount\minute
+
+\documentclass[11pt]{ltjsarticle}
+
+% --- Japanese + fonts (TeX Live bundled HaranoAji) ---
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+\usepackage{fontspec}
+\setmainjfont{HaranoAjiMincho}
+\setsansjfont{HaranoAjiGothic}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+
+% --- layout ---
+\usepackage[margin=22mm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage{xurl}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+
+% --- time counters (force \hour/\minute to be count registers) ---
+\makeatletter
+\newcount\prism@hour
+\newcount\prism@minute
+\let\hour\prism@hour
+\let\minute\prism@minute
+\makeatother
+
+% --- bibliography (compile even if refs.bib is absent) ---
+\usepackage[
+  backend=biber,
+  style=authoryear,
+  giveninits=true,
+  maxcitenames=2,
+  maxbibnames=99,
+  url=true,
+  doi=true,
+  isbn=true
+]{biblatex}
+\IfFileExists{refs.bib}{\addbibresource{refs.bib}}{}
+
+% --- metadata ---
+\title{創造・創発の五相スキーマ（場—波—縁—渦—束）と宇宙普遍構造仮説}
+\author{pjdhiro}
+\date{2026-01-29}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本稿は、創造／創発を「場→波→縁→渦→束」の五相として記述するスキーマを提示する。
+このスキーマは、対話やプロジェクトで生じる混乱・対立・停滞を「誰が正しいか」ではなく
+「どの相で何が起きているか」という診断問題へ変換する共通言語として機能することを狙う。
+さらに、組織論の“場（Ba）”、boundary objects、非平衡自己組織化、普遍性（くりこみ群、SOC）
+といった既存語彙を足場に、五相が物質・生命・社会・精神に跨る類似生成構造として現れるという
+研究仮説（宇宙普遍）を定式化する。最後に、操作的定義と反証可能な予測の最小セットを提案する。
+\end{abstract}
+
+\section{導入}
+創造（創発）はしばしば「ひらめき」や「才能」の語りで説明されるが、その語りは
+観測・診断・設計（介入）に弱い。本稿は、創造を生成プロセスとして扱うための
+\emph{五相スキーマ}（場—波—縁—渦—束）を提案する。
+本稿の位置づけは「仮説提示」であり、強い実証ではなく、
+(1) 概念の分節、(2) 既存研究への翻訳、(3) 反証可能な問いの提示、を主目的とする。
+
+\section{関連研究（最小）}
+「場（shared context）」に基づく知識創造の議論（例：Ba）や
+境界をまたぐ協働を支える boundary objects の議論は、
+本稿の「場／縁」を学術語彙へ翻訳する足場となる\parencite{NonakaKonno1998Ba,StarGriesemer1989Boundary}。
+また、非平衡系で秩序が立ち上がる散逸構造\parencite{Prigogine1977NobelLecture}、
+非平衡パターン形成\parencite{CrossHohenberg1993Pattern}、
+普遍性（くりこみ群）\parencite{Wilson1971Kadanoff}、
+自己組織化臨界\parencite{BakTangWiesenfeld1987SOC}
+は、宇宙普遍仮説（C7）の論理的足場となる。
+
+\section{提案：五相スキーマ（定義）}
+五相を以下のように暫定定義する（本稿の中核仮説）。
+\begin{description}[leftmargin=2.2em,style=nextline]
+  \item[場] 未分化の背景。複数の可能性が共存し、まだ差が「形」になっていない状態。
+  \item[波] 差（揺れ）が顕在化する相。相反する揺れが同時に立つ。
+  \item[縁] 揺れが接続点（境界）を作り、相互作用（結合）が生まれる相。
+  \item[渦] 対立を否定せず保持しつつ、回転的に統合された「まとまり」が立つ相。
+  \item[束] 複数のまとまりが干渉し、方向性（集合的な近似線）として残る相。
+\end{description}
+
+\subsection{最小図式}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=10mm,
+  box/.style={draw, rounded corners, inner sep=4pt, align=center},
+  arrow/.style={-{Stealth[length=2mm]}}
+]
+\node[box] (ba) {場\\(field)};
+\node[box, right=of ba] (ha) {波\\(fluctuation)};
+\node[box, right=of ha] (en) {縁\\(coupling)};
+\node[box, right=of en] (uzu) {渦\\(coherent\\structure)};
+\node[box, right=of uzu] (taba) {束\\(direction)};
+\draw[arrow] (ba) -- (ha);
+\draw[arrow] (ha) -- (en);
+\draw[arrow] (en) -- (uzu);
+\draw[arrow] (uzu) -- (taba);
+\end{tikzpicture}
+\caption{五相スキーマ（概念図）}
+\end{figure}
+
+\section{診断：失敗モード（C4）}
+本スキーマは「良い／悪い」の道徳判断ではなく、
+生成の停滞を相の問題として扱うための診断語彙である。
+例として以下を挙げる（詳細は今後の事例分析で拡張する）。
+\begin{itemize}[leftmargin=1.6em]
+  \item \textbf{波の硬直}：揺れの片側を「悪」として排除し、「良い」だけを固定化すると、
+  過剰化・硬直が起き、結果として「良い」の自滅に向かう。
+  \item \textbf{縁の平坦化}：衝突（緊張）が弱すぎると関係強度が育たず、
+  均一で平坦な状態が続き、意図せぬ侵略／同調として現れる。
+\end{itemize}
+
+\section{翻訳：組織・対話への接続（C5）}
+「場」は共有コンテクストとしての Ba（physical/virtual/mental space）へ、
+「縁」は境界をまたぐ翻訳と協働を支える boundary objects へ翻訳できる
+\parencite{NonakaKonno1998Ba,StarGriesemer1989Boundary}。
+この翻訳により、五相を対話設計（場づくり、境界設計、統合プロセス）へ接続できる。
+
+\section{外挿：物理への構造対応（C6）}
+非平衡が秩序の源となるという見方（散逸構造）\parencite{Prigogine1977NobelLecture}や
+非平衡パターン形成\parencite{CrossHohenberg1993Pattern}は、
+「波（揺れ）」から「渦（秩序構造）」が立つ一般像を与える。
+また、結合が臨界値を超えると同期が立ち上がるモデルは、
+縁→渦（結合→まとまり）を直感的に例示する\parencite{Strogatz2000Kuramoto}。
+
+\section{宇宙普遍仮説（C7）：普遍性としての五相}
+くりこみ群の観点は、ミクロとマクロで詳細が異なっても
+スケール変換で不変な構造が現れうることを示す\parencite{Wilson1971Kadanoff}。
+さらに、自己組織化が臨界点へ向かう SOC は「自己組織化＋普遍性」を結びつける\parencite{BakTangWiesenfeld1987SOC}。
+これらを足場に、本稿は次を研究仮説として提示する：
+
+\begin{quote}
+\textbf{（H）} 五相スキーマ（場—波—縁—渦—束）は、物質→生命→社会→精神に跨って
+類似生成構造として現れる（宇宙普遍）。
+\end{quote}
+
+\subsection{最小の予測（反証可能性の入口）}
+今後の実証のため、最低限の予測形を2つ置く：
+\begin{enumerate}[leftmargin=1.6em]
+  \item \textbf{境界・結合の閾値仮説}：縁の相では、結合強度が閾値を下回ると渦（まとまり）が立ちにくい。
+  \item \textbf{硬直のコスト仮説}：波で揺れの片側を早期に排除すると、短期的安定と引き換えに
+  長期の適応性（束としての方向転換能力）が低下する。
+\end{enumerate}
+
+\section{限界と今後}
+本稿は仮説提示であり、(i) 操作的定義、(ii) 事例データ、(iii) 代替仮説との比較が未整備である。
+今後は、対話ログのラベリング、ネットワーク指標、情報量の推移などにより五相を観測可能にする。
+
+\section{結論}
+五相スキーマは、創造／創発を診断可能なプロセスとして扱うための「地図」である。
+既存語彙（Ba、boundary objects、自己組織化、普遍性）への翻訳を通じて、
+宇宙普遍仮説を研究プログラムとして提示した。
+
+\printbibliography
+\end{document}

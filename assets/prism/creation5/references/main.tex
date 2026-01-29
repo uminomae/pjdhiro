@@ -1,0 +1,148 @@
+% !TEX program = lualatex
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{luatexja}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{natbib}
+
+\title{創造の構造とプロセス：スピノル的5段階スパイラルの批判的再構成}
+\author{pjdhiro}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本稿は、ウェブ上で流通する未査読の「場→波→縁→渦→束」概念図（以下「原案」）を批判的に再構成する。
+5段階は、差異・対立（波）、境界での翻訳・結合（縁）、対立の保持による統合（渦）、方向づけられた集合としての定着（束）
+を明示する点で、古典的段階論を拡張しうる \citep{Wallas1926,StarGriesemer1989,Nonaka1994}。
+そこで本稿は、パラドックス理論 \citep{SmithLewis2011}、boundary objects \citep{StarGriesemer1989,Carlile2002}、
+組織知創造 \citep{Nonaka1994,NonakaKonno1998}、wicked problems \citep{RittelWebber1973,Buchanan1992}、
+概念メタファ理論 \citep{LakoffJohnson1980,Cornelissen2005} を統合し、
+(i) 段階の観測指標化、(ii) 失敗モードと介入設計（診断地図）、(iii) 数学物理メタファの``比喩の統治''ルールを提示する。
+\end{abstract}
+
+% ----------------------------
+% FIGURE: place the provided image next to this .tex as "fig_spinor5stage.png"
+% ----------------------------
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth,height=0.28\textheight,keepaspectratio]{fig_spinor5stage.jpg}
+\caption{Creation12（pjdhiro2025）：創造を「場→波→縁→渦→束」の5段階として描く概念図（本稿では批判的再構成の対象資料）。}
+\label{fig:original}
+\end{figure*}
+
+\section{Introduction：原案（批判対象）と本稿の立場}
+図\ref{fig:original}の原案は、創造の混乱を「誰が悪い」から切り離し、プロセスの相へ写像する強い直観を与える。
+一方で、(a) 各段階が何を指すか（観測可能な徴候）が曖昧、(b) 数学物理メタファの対応範囲が宣言されず、
+説明が過剰一般化へ滑りやすい、という弱点を持つ。
+本稿は、原案の説明力（対立・境界・定着）を保持しつつ、先行研究の枠組みに接続して
+「検証可能な概念モデル」に落とすことを目的とする。
+\footnote{原案の出典URLは \url{https://uminomae.github.io/pjdhiro/dialogueCreation/}。
+ただし本稿では参考文献（査読文献）としてではなく、批判的再構成の対象資料として扱う。}
+
+\section{Model：スピノル的5段階（操作化を意識した定義）}
+本稿の5段階は線形工程ではない。束が次の場を再構成し、波〜縁〜渦を反復するスパイラルとして扱う
+\citep{Nonaka1994}。
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llp{0.47\linewidth}@{}}
+\toprule
+段階 & キー概念 & 観測可能な徴候（例） \\
+\midrule
+場 (Field) & 共有コンテクスト & 目的語が揺れ、語彙が未固定。関係者が``漂う''。\\
+波 (Wave) & 差異・対立 & 対立軸（A/B）が立つ。善悪ラベル固定が起きる。\\
+縁 (Relation) & 境界・翻訳 & 共通図、用語集、試作などの``共有物''が現れる。\\
+渦 (Spinor) & 保持された統合 & AもBも保持した統合案（案・試作・原理）が立つ。\\
+束 (Bundle) & 方向・集合として定着 & 原理・規範・チェックリスト化し再利用される。\\
+\bottomrule
+\end{tabular}
+\caption{5段階の再定義（観測指標のたたき台）}
+\label{tab:operational}
+\end{table}
+
+\paragraph{波→渦（対立の保持）}
+波は差異・対立の立ち上がりであり、片側の``正しさ''を固定すると関係が硬直し創造が止まる。
+パラドックス理論は、矛盾する要求を排除せず、循環的応答として保持し続ける動学を提示する \citep{SmithLewis2011}。
+本稿は、この保持と統合が立ち上がる局面を「渦」として捉える。
+
+\paragraph{縁（境界での翻訳・結合）}
+境界では異なる実践が衝突し、翻訳・変換を経て``共有できる対象''が形成される。
+Star \& Griesemerはこれをboundary objectsとして示し \citep{StarGriesemer1989}、
+Carlileは新製品開発の境界で知が差異のまま障壁にも資源にもなることを理論化した \citep{Carlile2002}。
+原案の「縁」はこの機構を中核に据える点で強いが、何が共有物として成立したかを指標化する必要がある。
+
+\paragraph{束（方向づけられた集合としての定着）}
+束は単一成果物ではなく、複数の渦が影響し合い「方向をもつ集合」（実践・規範・設計原理）として残る段階である。
+この見立ては、知識が文脈に埋め込まれ変換されるという組織知創造の動学 \citep{Nonaka1994,NonakaKonno1998} と接続できる。
+
+\section{Positioning：既存研究との位置づけ}
+創造段階論としてはWallasが古典である \citep{Wallas1926}。
+本稿の差分は、(i) 境界（縁）を段階として明示し、(ii) 結果が集合（束）として定着・再起動するところまで含め、
+(iii) 失敗モード診断と比喩統治へ落とす点にある。
+
+\section{Diagnostic Map：失敗モード→介入}
+設計問題が本質的に不確定であるという議論（wicked problems）は、
+「診断地図で前へ進む」ことの正当化を与える \citep{RittelWebber1973,Buchanan1992}。
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}p{0.15\linewidth}p{0.35\linewidth}p{0.40\linewidth}@{}}
+\toprule
+段階 & 典型的失敗モード & 介入（例） \\
+\midrule
+波 & 善悪固定／片側の過剰正当化 & ``AもBも''の言語枠、両価の評価軸を導入 \\
+縁 & 共有物が育たず平坦化／衝突回避 & boundary object（共通図・試作・用語集）を設計 \\
+渦 & 統合案が抽象のまま／検証不能 & プロトタイプ化、統合案の反証可能条件を明示 \\
+束 & 再利用不能／属人化 & 原理・チェックリスト・ガイドライン化し共有 \\
+\bottomrule
+\end{tabular}
+\caption{失敗モードと介入の対応（プロトタイプ）}
+\label{tab:diagnostic}
+\end{table}
+
+\section{Metaphor Governance：比喩の統治（原案の弱点補強）}
+概念メタファは思考を強力に構造化するため \citep{LakoffJohnson1980}、
+メタファの扱いを誤ると比較モデルへの偏りや過剰一般化が起きうる \citep{Cornelissen2005}。
+そこで本稿は、原案の数学物理メタファに対し、最低限の統治ルールを課す。
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}p{0.26\linewidth}p{0.66\linewidth}@{}}
+\toprule
+統治項目 & ルール（本文で明示） \\
+\midrule
+対応表 & ``場/波/縁/渦/束''が、観測指標（表\ref{tab:operational}）のどれに対応するかを列挙 \\
+禁止事項 & 物理量・厳密同型の主張をしない（例：スピノルの数学的性質を説明根拠にしない） \\
+検証可能性 & 少なくともログ・成果物に基づくコーディングで反証可能にする \\
+\bottomrule
+\end{tabular}
+\caption{比喩の統治ルール（最小セット）}
+\label{tab:metagov}
+\end{table}
+
+\section{Evaluation Plan（最小の検証）}
+まずはケース研究でよい。対話ログ・成果物を収集し、表\ref{tab:operational}の指標で段階をコーディングして遷移を可視化する。
+縁では共有物（boundary objects）の出現をマーカーにできる \citep{StarGriesemer1989,Carlile2002}。
+介入（表\ref{tab:diagnostic}）の前後で、対立の固定が緩むか、共有物が育つか、束として再利用されるかを比較する。
+
+\section{Conclusion}
+原案は強い直観を与えるが、検証可能性と比喩境界の宣言が不足しやすい。
+本稿は、先行研究に接続して5段階を操作化し、診断地図と比喩の統治を加えることで、
+説明力を保ったまま誤解リスクを抑える概念モデルとして再構成した。
+
+\bibliographystyle{abbrvnat}
+\bibliography{refs}
+\end{document}
