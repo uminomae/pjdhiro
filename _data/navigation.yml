@@ -13,6 +13,8 @@ docs:
     children:
       - title: "欠損駆動思考"
         url: /thinking-kesson/
+      - title: "美駆動思考"
+        url: /thinking-bi/
 
 cat-emotional-processing:
   - title: "感情処理"
