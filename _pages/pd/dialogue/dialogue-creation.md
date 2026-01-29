@@ -22,7 +22,7 @@ header:
 
 [![image]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})]({{ '/assets/images/blog/20251218/Creation12.jpg' | relative_url }})
 
-[ChatGPTによる図の解説はこちら](https://chatgpt.com/share/69445ca1-9ef0-800b-a8ba-45a916a476a8)
+- [ChatGPTによる高校生向けの解説](https://chatgpt.com/share/69445ca1-9ef0-800b-a8ba-45a916a476a8)
 
 このページは進化中です。  
 パンドラの箱を開けたような13年前の「波」と、それを風神雷神になぞらえて捉え直した「渦」を、ここまで束ねてきた「私の場合」の記録です。  
@@ -62,7 +62,9 @@ header:
 
 ---
 
-### プロセス：場の揺れが境界で回転し、方向として束ねられる
+### プロセス：
+
+場の揺れが境界で回転し、方向として束ねられる
 
 #### Step 1 **場** Field  
 
@@ -108,6 +110,15 @@ header:
 - background concept：Direction 
  
 渦どうしが影響し合い、構造として残る集まり。ベクトルの近似線
+
+---
+
+### 高校生向けの解説
+
+[![image]({{ '/assets/prism/creation/student.png' | relative_url }})]({{ '/assets/prism/creation/student.png' | relative_url }})
+
+
+- [ChatGPTによる高校生向けの解説](https://chatgpt.com/share/69445ca1-9ef0-800b-a8ba-45a916a476a8)
 
 ---
 
@@ -160,6 +171,11 @@ header:
   - ゲーム理論：協力行動
     - 信頼とコミュニケーションによる解決
 
+## 今後の作業
+
+- 論述するとしたら：
+  - [批判：論文作成するならここから開始予定]({{ '/assets/prism/creation5/references/main.pdf' | relative_url }})
+  - [主張]({{ '/assets/prism/creation5/craim/main.pdf' | relative_url }})
 
 ## 背景
 

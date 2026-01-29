@@ -1,0 +1,86 @@
+version: 0.2
+title: "創造の構造とプロセス：スピノル的5段階スパイラルの批判的再構成"
+thesis: >
+  本稿は、ウェブ上で流通する未査読の「場→波→縁→渦→束」概念図（原案）を出発点に、
+  既存研究（創造段階論・パラドックス理論・境界研究・組織知・メタファ理論）に接続して
+  (i) 概念の操作化（観測指標化）、(ii) 失敗モードと介入設計、(iii) 数学物理メタファの統治ルール
+  を与えることで、原案の説明力を保ちながら誤解・過剰一般化リスクを抑えた概念モデルへ再構成する。
+keywords:
+  - creativity
+  - design process
+  - paradox
+  - boundary objects
+  - knowledge creation
+  - spiral model
+  - metaphor governance
+claims:
+  - id: C1
+    claim: >
+      5段階（場→波→縁→渦→束）は創造を段階遷移かつスパイラルとして記述する枠組みであり、
+      古典的段階論（例：Wallas）に比べて「境界（縁）」と「定着の集合性（束）」を明示している点が差分となる。
+    anchors: [Wallas1926, StarGriesemer1989, Nonaka1994]
+  - id: C2
+    claim: >
+      創造の駆動源は差異・対立（波）の立ち上がりであり、善悪化して片側固定すると破綻しやすい。
+      対立を保持したまま統合することで「まとまり（渦）」が生成する、という動学がパラドックス理論と整合する。
+    anchors: [SmithLewis2011]
+  - id: C3
+    claim: >
+      Step3「縁」は境界での翻訳・結合の場であり、共有可能な対象（boundary objects）や表象が形成されることで
+      次段階の統合（渦）に必要な結合強度が生まれる。
+    anchors: [StarGriesemer1989, Carlile2002]
+  - id: C4
+    claim: >
+      Step5「束」は複数の渦が相互作用して方向をもつ集合（実践・規範・設計原理・プロトコル等）として定着する段階であり、
+      束は次の「場」を再構成してスパイラルを駆動する。組織知創造の動学（Ba/知識創造）と接続できる。
+    anchors: [Nonaka1994, NonakaKonno1998]
+  - id: C5
+    claim: >
+      5段階は混乱を「誰が悪い」から切り離し「段階の問題」に写像する診断地図として機能し、
+      段階固有の失敗モードに応じた介入設計が可能になる。設計問題の不確定性（wicked problems）論がこれを支える。
+    anchors: [Buchanan1992, RittelWebber1973]
+  - id: C6
+    claim: >
+      原案のような数学物理メタファ（場・スピノル・束）は理解を促進する一方、対応関係の宣言がなければ誤解・過剰一般化を招く。
+      概念メタファ理論と組織理論の議論に基づき、対応表・禁止事項・検証可能性からなる“比喩の統治”ルールが必要である。
+    anchors: [LakoffJohnson1980, Cornelissen2005, Morgan1986]
+anchors:
+  - key: Wallas1926
+    why: "古典的創造段階論との比較軸（差分主張C1）。"
+  - key: SmithLewis2011
+    why: "対立の同時保持（パラドックス）を動的均衡として理論化（C2）。"
+  - key: StarGriesemer1989
+    why: "boundary objects原典（境界で共有可能物が成立：C3）。"
+  - key: Carlile2002
+    why: "境界での知の差異・変換・共有（NPD文脈）の理論化（C3）。"
+  - key: Nonaka1994
+    why: "知識創造の動学（スパイラル）を支えるアンカー（C4）。"
+  - key: NonakaKonno1998
+    why: "『場（Ba）』概念でStep1/スパイラルの接続点（C4）。"
+  - key: Buchanan1992
+    why: "診断地図・介入設計の正当化（設計＝統合的思考）（C5）。"
+  - key: RittelWebber1973
+    why: "wicked problems概念の原典（C5）。"
+  - key: LakoffJohnson1980
+    why: "概念メタファが思考を構造化する基礎理論（C6）。"
+  - key: Cornelissen2005
+    why: "組織理論におけるメタファの枠組みと限界（C6）。"
+  - key: Morgan1986
+    why: "複数メタファで組織を読む定番参照（C6）。"
+open_questions:
+  - "各段階（場/波/縁/渦/束）を対話ログや成果物からどう観測・コーディングするか？"
+  - "失敗モード（波=善悪固定、縁=平坦化…）は複数事例で再現するか？"
+  - "『束（定着）』を制度化・再利用・伝播のどの指標で測るか？"
+  - "比喩の対応表を、どこまで操作概念として検証可能に落とせるか？"
+next_actions:
+  - "観測指標（言語・行動・成果物）を定義し、簡易コーディング表を作成。"
+  - "2〜3件の事例で段階遷移を可視化し、失敗モード分類の妥当性を確認。"
+  - "失敗モード→介入の対応表を運用し、介入前後で対話/成果の変化を比較。"
+  - "比喩の統治（対応表・禁止事項・検証可能性）を本文に明記。"
+search_queries:
+  - "creativity stage models Wallas preparation incubation illumination verification comparison"
+  - "paradox theory dynamic equilibrium Smith Lewis 2011 creativity"
+  - "boundary objects Star Griesemer 1989 Carlile 2002 knowledge boundaries"
+  - "organizational knowledge creation Nonaka 1994 Nonaka Konno 1998 ba"
+  - "wicked problems Rittel Webber 1973 Buchanan 1992 design thinking"
+  - "metaphor organization theory Cornelissen 2005 Lakoff Johnson 1980"
