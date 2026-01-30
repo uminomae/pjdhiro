@@ -19,6 +19,7 @@ myPJ/home-net/
 
 */edit/
 edit/
+assets/claude
 
 # git rm -r --cached backup
 # git rm -r --cached myPj/inverse/js/Old
