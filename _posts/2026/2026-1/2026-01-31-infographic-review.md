@@ -79,3 +79,23 @@ excerpt: "AIを「思考のペア」として扱い、抽象概念を可視化�
 ## 今後の展望
 
 蓄積した思考モデル（IaaS概念や人間OS戦略など）をベースに、次は「創造とは」「欠損駆動」「AI協働環境構築」に進んでいく予定です。
+
+## 参考：
+
+### 生成したもの：抜粋
+
+
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/1.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/1.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/2.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/2.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/3.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/3.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/4.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/4.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/5.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/5.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/6.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/6.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/7.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/7.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/8.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/8.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/9.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/9.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/10.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/10.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/11.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/11.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/12.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/12.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/13.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/13.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-1/nanobanana12-1/14.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-1/nanobanana12-1/14.jpg' | relative_url }})
