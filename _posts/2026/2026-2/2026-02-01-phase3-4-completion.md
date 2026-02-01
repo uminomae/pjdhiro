@@ -27,24 +27,32 @@ excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論
   - $20のProではSonnet4.5ですぐに制限なった。
   - Sonnetで進めていたが、物理の論述が許し難いほどの致命的な誤りを吐いた。Opusでないとダメっぽい。
 
-## 二日目：
+<!-- ### 成果物
 
-- Maxプランに切り替え
+[![image]({{ '/assets/images/blog/2026-2/0201/ssClaude-github-environment-setup-guide.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0201/claude-github-environment-setup-guide.pdf' | relative_url }}) -->
+
+---
+
+## 二日目：意識モデル　精緻化
+
+- Max5倍プランにUPグレード
 - モードはOpus4.5メイン
 - 「創造とは」は後回し
   - 私の「欠損駆動（デザイン）思考」の主観的見方のとこを先に着手
     - 神経現象学的・禅的な視点での止観・観照
-- 出力全部読んだわけじゃないけど、5時間で制限使い切らなかった。
+- 5時間で制限使い切らなかった
   - [![image]({{ '/assets/images/blog/2026-2/0201/ssUsage.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0201/ssUsage.png' | relative_url }})
   - 1パートで論文参照2つ程度はあったと思うけど、そして、論が日記みたいなメモ書きから起こしてるにも関わらず。
 
-[![image]({{ '/assets/images/blog/2026-2/0201/ssP34.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0201/p34.pdf' | relative_url }})
-成果品PDF
+### 成果物
 
+[![image]({{ '/assets/images/blog/2026-2/0201/ssP34.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0201/p34.pdf' | relative_url }})
+
+[![image]({{ '/assets/images/blog/2026-2/0201/ig34.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0201/ig34.jpg' | relative_url }})
 
 ---
 
-## 以下、claude.aiによる本日の作業の報告です
+## 以下、claude.aiによる二日目の作業の報告です
 
 ---
 
