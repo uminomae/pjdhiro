@@ -12,8 +12,8 @@ tags:
   - Meltzer
   - Bowlby
 header:
-  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0201/ssP34.png
-  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0201/ssP34.png"
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0201/ssUsage.png
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0201/ssUsage.png"
 excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論を4層モデルで統合。「素朴体験論」としての方法論を確立し、~31,000トークンのPhase 4を完成。"
 ---
 
