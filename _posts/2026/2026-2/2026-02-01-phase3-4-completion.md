@@ -1,6 +1,6 @@
 ---
 permalink: /20260201phase3-4-completion/
-title: "Claude 環境構築後2日間の作業量：意識モデルについて"
+title: "Claude 環境構築初日26hの作業量：意識モデルについて"
 date: 2026-02-01 22:00:00 +0900
 categories:
   - Project
@@ -17,7 +17,7 @@ header:
 excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論を4層モデルで統合。「素朴体験論」としての方法論を確立し、~31,000トークンのPhase 4を完成。"
 ---
 
-## 初日：環境構築
+## 環境構築
 
 - Claude Code, aiをGithub設定
 
@@ -33,7 +33,7 @@ excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論
 
 ---
 
-## 二日目：意識モデル　精緻化
+## 意識モデル　精緻化
 
 - Max5倍プランにUPグレード
 - モードはOpus4.5メイン
