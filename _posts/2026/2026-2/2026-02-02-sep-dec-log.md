@@ -1,6 +1,6 @@
 ---
 permalink: /20260202sep-dec-log/
-title: "9月の悲痛／12月の楽観：評価されるスキルの変化"
+title: "9月の悲痛／12月の楽観：自己参照社会"
 date: 2026-02-02 00:00:00 +0900
 categories:
   - Log
@@ -61,7 +61,7 @@ AIで有名な方らしい。
 そのパラダイムシフトへの、私なりの回答を作ってました。  
 
 人間力とか、問いを生む力とか、判断力とか、意思力とか、たくさんのワードが並ぶと思いますが、それらを包括的に扱う「私のやり方」欠損駆動デザイン思考的なものをまとめられないかなと。  
-.mdでSkillsに登録できるように。  
+.mdでSkillsに登録できるように。自信ないけど。  
 - [【Claude 環境構築後2日間の作業量：意識モデルについて】](https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/)
 - [【欠損駆動思考】](https://uminomae.github.io/pjdhiro/thinking-kesson/)
 
