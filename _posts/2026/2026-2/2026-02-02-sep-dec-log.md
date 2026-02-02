@@ -17,7 +17,7 @@ header:
 excerpt: "9月と12月に別種類の不安を感じた。12月はおせっかい。天岩戸の終わりか。自己位置が5cm前に出た。主権が戻った。"
 ---
 
-(推敲中)
+(なにか湧くたびに追記中)
 
 [![image]({{ '/assets/images/blog/2026-2/0202/skill.jpg' | relative_url }})]({{ '/assets/images/blog/2026-2/0202/skill.jpg' | relative_url }})
 
@@ -59,7 +59,13 @@ AIで有名な方らしい。
 産業革命後のこの160年の常識が江戸時代に戻るような。私にとって主権回復な。  
 
 そのパラダイムシフトへの、私なりの回答を作ってました。  
-[【Claude 環境構築後2日間の作業量：意識モデルについて】](https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/)
+
+人間力とか、問いを生む力とか、判断力とか、意思力とか、たくさんのワードが並ぶと思いますが、それらを包括的に扱う「私のやり方」欠損駆動デザイン思考的なものをまとめられないかなと。  
+.mdでSkillsに登録できるように。  
+- [【Claude 環境構築後2日間の作業量：意識モデルについて】](https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/)
+- [【欠損駆動思考】](https://uminomae.github.io/pjdhiro/thinking-kesson/)
+
+12月からメタ認知、意識構造、コミュニケーションと呼ばれる間主観性のこと、創造とは、プロジェクトデザインとは、など、もろもろ優先してやってるのはそれ関連のことです。
 
 ## log
 
