@@ -52,7 +52,7 @@ excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論
 
 ---
 
-## 以下、claude.aiによる二日目の作業の報告です
+## 以下、claude.aiによる１日目の作業の報告です
 
 ---
 
