@@ -66,10 +66,10 @@ AIで有名な方らしい。
 
 人間力、問いの立て方、判断、意思、創造性…みたいに名前はいろいろ付くけど、私の中では「日々の運用の手順」として束として扱っていて。  
 それを「欠損駆動デザイン思考」っぽい形で、手順としてまとめ直せないかなと思っている。  
-PMBOK7でいう2.2.4.4.対人スキルの領域。  
+PMBOK7 2.2.4.4.対人スキルの領域。  
 .mdでSkillsに登録できるように。自信はまだないけど、いったん作ってみる。
-- [【Claude 環境構築後2日間の作業量：意識モデルについて】](https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/)
-- [【欠損駆動思考】](https://uminomae.github.io/pjdhiro/thinking-kesson/)
+- [【Claude 環境構した初日の作業量】](https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/)
+- [【欠損駆動思考について】](https://uminomae.github.io/pjdhiro/thinking-kesson/)
 
 12月からメタ認知、意識構造、コミュニケーションと呼ばれる間主観性のこと、創造とは、プロジェクトデザインとは、など、もろもろ優先してやってるのはそれ関連のことです。
 
