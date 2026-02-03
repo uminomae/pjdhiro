@@ -30,6 +30,9 @@ header:
   - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
   - 入力：違和感、無意味感、無価値感
 
+- AI協働出力
+  - 一般向け [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})
+
 ---
 
 ## チャットボット（Chatbot）
@@ -41,6 +44,10 @@ header:
   - 実装内容：「意味が無い」「価値が無い」と感じる状況でデザインする際の「私のやり方」です。  
     - 入力：LLM(Gem)
     - 出力：高校生向け、一般向け、専門家向けの３パターンの口調で出力します。
+
+## 現在のAI協働（開発・執筆環境）：
+
+- 【Claude.ai Skillsを試した最初の2.5日間の記録】 <https://uminomae.github.io/pjdhiro/20260203-project-management-report/>
 
 ## 参考  
 
