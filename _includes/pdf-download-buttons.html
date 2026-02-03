@@ -1,22 +1,23 @@
-<!--
+{% comment %}
   pdf-download-buttons.html
   ============================================================
   読者別PDFダウンロードボタン
 
   使い方: 任意の .md / .html ページに以下の1行を貼るだけ。
 
-    {% include pdf-download-buttons.html %}
+    {% raw %}{% include pdf-download-buttons.html %}{% endraw %}
 
   カスタマイズ例:
 
-    {% include pdf-download-buttons.html
+    {% raw %}{% include pdf-download-buttons.html
        label_general="Overview"
        label_designer="For Designers"
-       label_academic="Academic" %}
+       label_academic="Academic" %}{% endraw %}
   ============================================================
--->
+{% endcomment %}
 
-{% assign base = site.baseurl | append: "/assets/pdf/" %}
+
+{% assign base = "/assets/pdf/" | relative_url %}
 {% assign lg = include.label_general  | default: "一般向け PDF" %}
 {% assign ld = include.label_designer | default: "設計者向け PDF" %}
 {% assign la = include.label_academic | default: "学術版 PDF" %}
