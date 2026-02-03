@@ -67,11 +67,14 @@ AIで有名な方らしい。
 人間力、問いの立て方、判断、意思、創造性…みたいに名前はいろいろ付くけど、私の中では「日々の運用の手順」として束として扱っていて。  
 それを「欠損駆動デザイン思考」っぽい形で、手順としてまとめ直せないかなと。  
 PMBOK7 2.2.4.4.対人スキルの領域。  
-.mdでSkillsに登録できるように。自信ないけど、いったん作ってみる。
+.mdでSkillsに登録できるように。
 - [【Claude 環境構した初日の作業量】](https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/)
 - [【欠損駆動思考について】](https://uminomae.github.io/pjdhiro/thinking-kesson/)
 
-12月からメタ認知、意識構造、コミュニケーションと呼ばれる間主観性のこと、創造とは、プロジェクトデザインとは、など、もろもろ優先してやってるのはそれ関連のことです。
+12月からメタ認知、意識構造、コミュニケーションと呼ばれる間主観性のこと、創造とは、プロジェクトデザインとは、など、もろもろ優先してやってるのはそんな感じです。
+
+追記：3日やってみました。可能性を感じる結果となりました。
+[参考:【Claude.ai Skillsを試した最初の2.5日間の記録 - Emotion Processing in Project Design】](https://uminomae.github.io/pjdhiro/20260203-project-management-report/)
 
 ## log
 
