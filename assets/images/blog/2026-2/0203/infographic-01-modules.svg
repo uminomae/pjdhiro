@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <marker id="arrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8" opacity="0.6"/>
+    </marker>
+  </defs>
+  <rect width="800" height="480" rx="16" fill="url(#bg1)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#94a3b8" font-size="13" letter-spacing="3">PROJECT DESIGN THEORY</text>
+  <text x="400" y="72" text-anchor="middle" fill="#e2e8f0" font-size="24" font-weight="700">4モジュール × 4層 × 5段階</text>
+  
+  <!-- Grid labels -->
+  <text x="250" y="110" text-anchor="middle" fill="#94a3b8" font-size="13">体験ログ</text>
+  <text x="550" y="110" text-anchor="middle" fill="#94a3b8" font-size="13">モデル記述</text>
+  <text x="100" y="220" text-anchor="middle" fill="#94a3b8" font-size="13">主体</text>
+  <text x="100" y="360" text-anchor="middle" fill="#94a3b8" font-size="13">客体</text>
+  
+  <!-- Arrows between modules -->
+  <path d="M370,200 L440,200" stroke="#94a3b8" stroke-width="2" opacity="0.4" marker-end="url(#arrow1)"/>
+  <path d="M550,270 L550,310" stroke="#94a3b8" stroke-width="2" opacity="0.4" marker-end="url(#arrow1)"/>
+  <path d="M440,360 L370,360" stroke="#94a3b8" stroke-width="2" opacity="0.4" marker-end="url(#arrow1)"/>
+  <path d="M250,310 L250,270" stroke="#94a3b8" stroke-width="2" opacity="0.4" marker-end="url(#arrow1)"/>
+  
+  <!-- Center label -->
+  <text x="400" y="285" text-anchor="middle" fill="#f59e0b" font-size="12" font-family="monospace" opacity="0.8">循環</text>
+  
+  <!-- M1: 意識OS -->
+  <rect x="150" y="135" width="200" height="110" rx="14" fill="#1a2235" stroke="#3b82f6" stroke-width="2"/>
+  <text x="250" y="168" text-anchor="middle" fill="#3b82f6" font-size="15" font-weight="700" font-family="monospace">M1</text>
+  <text x="250" y="195" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700">意識OS</text>
+  <text x="250" y="220" text-anchor="middle" fill="#94a3b8" font-size="13">感じる・保持</text>
+  
+  <!-- M2: 創造プロセス -->
+  <rect x="450" y="135" width="200" height="110" rx="14" fill="#1a2235" stroke="#f59e0b" stroke-width="2"/>
+  <text x="550" y="168" text-anchor="middle" fill="#f59e0b" font-size="15" font-weight="700" font-family="monospace">M2</text>
+  <text x="550" y="195" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700">創造プロセス</text>
+  <text x="550" y="220" text-anchor="middle" fill="#94a3b8" font-size="13">変換する</text>
+  
+  <!-- M4: 世界観 -->
+  <rect x="150" y="305" width="200" height="110" rx="14" fill="#1a2235" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="250" y="338" text-anchor="middle" fill="#8b5cf6" font-size="15" font-weight="700" font-family="monospace">M4</text>
+  <text x="250" y="365" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700">世界観</text>
+  <text x="250" y="390" text-anchor="middle" fill="#94a3b8" font-size="13">評価文脈</text>
+  
+  <!-- M3: 事業構造 -->
+  <rect x="450" y="305" width="200" height="110" rx="14" fill="#1a2235" stroke="#10b981" stroke-width="2"/>
+  <text x="550" y="338" text-anchor="middle" fill="#10b981" font-size="15" font-weight="700" font-family="monospace">M3</text>
+  <text x="550" y="365" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700">事業構造</text>
+  <text x="550" y="390" text-anchor="middle" fill="#94a3b8" font-size="13">問い・検証設計</text>
+  
+  <!-- Phase status -->
+  <text x="250" y="455" text-anchor="middle" fill="#10b981" font-size="11" font-family="monospace">✓ Phase 3-4 完了</text>
+  <text x="550" y="455" text-anchor="middle" fill="#10b981" font-size="11" font-family="monospace">✓ Phase 2 完了</text>
+</svg>

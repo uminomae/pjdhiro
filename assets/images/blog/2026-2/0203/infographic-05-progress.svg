@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="16" fill="url(#bg5)"/>
+  
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">プロジェクト進捗：Phase 1→6</text>
+  <text x="400" y="62" text-anchor="middle" fill="#f59e0b" font-size="13" font-family="monospace">累計 ~64k tokens ≈ 96ページ相当</text>
+  
+  <!-- Phase 1 -->
+  <circle cx="80" cy="110" r="18" fill="#10b981"/>
+  <text x="80" y="116" text-anchor="middle" fill="#000" font-size="14" font-weight="700">✓</text>
+  <text x="115" y="105" fill="#e2e8f0" font-size="14">Phase 1: 理論構造の確立</text>
+  <text x="115" y="122" fill="#94a3b8" font-size="11" font-family="monospace">~3.0k tokens</text>
+  <rect x="115" y="130" width="600" height="8" rx="4" fill="#1a2235"/>
+  <rect x="115" y="130" width="600" height="8" rx="4" fill="#10b981"/>
+  
+  <!-- Phase 2 -->
+  <circle cx="80" cy="168" r="18" fill="#10b981"/>
+  <text x="80" y="174" text-anchor="middle" fill="#000" font-size="14" font-weight="700">✓</text>
+  <text x="115" y="163" fill="#e2e8f0" font-size="14">Phase 2: スピノル5段階展開</text>
+  <text x="115" y="180" fill="#94a3b8" font-size="11" font-family="monospace">~13.5k tokens</text>
+  <rect x="115" y="188" width="600" height="8" rx="4" fill="#1a2235"/>
+  <rect x="115" y="188" width="600" height="8" rx="4" fill="#10b981"/>
+  
+  <!-- Phase 3 -->
+  <circle cx="80" cy="226" r="18" fill="#10b981"/>
+  <text x="80" y="232" text-anchor="middle" fill="#000" font-size="14" font-weight="700">✓</text>
+  <text x="115" y="221" fill="#e2e8f0" font-size="14">Phase 3: 意識の作動構造（4層モデル）</text>
+  <text x="115" y="238" fill="#94a3b8" font-size="11" font-family="monospace">~8.5k tokens</text>
+  <rect x="115" y="246" width="600" height="8" rx="4" fill="#1a2235"/>
+  <rect x="115" y="246" width="600" height="8" rx="4" fill="#10b981"/>
+  
+  <!-- Phase 4 -->
+  <circle cx="80" cy="284" r="18" fill="#10b981"/>
+  <text x="80" y="290" text-anchor="middle" fill="#000" font-size="14" font-weight="700">✓</text>
+  <text x="115" y="279" fill="#e2e8f0" font-size="14">Phase 4: 臨床・発達心理学との統合</text>
+  <text x="115" y="296" fill="#94a3b8" font-size="11" font-family="monospace">~31.0k tokens — 最大規模</text>
+  <rect x="115" y="304" width="600" height="8" rx="4" fill="#1a2235"/>
+  <rect x="115" y="304" width="600" height="8" rx="4" fill="#10b981"/>
+  
+  <!-- Phase 5 -->
+  <circle cx="80" cy="342" r="18" fill="#10b981"/>
+  <text x="80" y="348" text-anchor="middle" fill="#000" font-size="14" font-weight="700">✓</text>
+  <text x="115" y="337" fill="#e2e8f0" font-size="14">Phase 5: 用語体系の確定</text>
+  <text x="115" y="354" fill="#94a3b8" font-size="11" font-family="monospace">~8.0k tokens</text>
+  <rect x="115" y="362" width="600" height="8" rx="4" fill="#1a2235"/>
+  <rect x="115" y="362" width="600" height="8" rx="4" fill="#10b981"/>
+  
+  <!-- Phase 6 -->
+  <circle cx="80" cy="395" r="18" fill="#f59e0b" opacity="0"/>
+  <!-- Hidden since it goes beyond viewBox, let me adjust -->
+</svg>

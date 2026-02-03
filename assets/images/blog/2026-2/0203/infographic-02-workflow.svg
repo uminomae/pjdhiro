@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#f59e0b" opacity="0.7"/>
+    </marker>
+  </defs>
+  <rect width="800" height="360" rx="16" fill="url(#bg2)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">ワークフロー：人間 × AI の協働パイプライン</text>
+  
+  <!-- Step 1: Claude.ai -->
+  <rect x="30" y="75" width="110" height="110" rx="14" fill="#1a2235" stroke="#3b82f680" stroke-width="1.5"/>
+  <text x="85" y="108" text-anchor="middle" font-size="28">🧠</text>
+  <text x="85" y="133" text-anchor="middle" fill="#3b82f6" font-size="13" font-weight="700" font-family="monospace">Claude.ai</text>
+  <text x="85" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">議論・執筆</text>
+  <text x="85" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">(Opus 4.5)</text>
+  
+  <!-- Arrow 1-2 -->
+  <path d="M150,130 L180,130" stroke="#f59e0b" stroke-width="2" opacity="0.6" marker-end="url(#arrow2)"/>
+  
+  <!-- Step 2: inbox/ -->
+  <rect x="190" y="75" width="110" height="110" rx="14" fill="#1a2235" stroke="#f59e0b80" stroke-width="1.5"/>
+  <text x="245" y="108" text-anchor="middle" font-size="28">📦</text>
+  <text x="245" y="133" text-anchor="middle" fill="#f59e0b" font-size="13" font-weight="700" font-family="monospace">inbox/</text>
+  <text x="245" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">ファイル群</text>
+  <text x="245" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">+ _instructions.md</text>
+  
+  <!-- Arrow 2-3 -->
+  <path d="M310,130 L340,130" stroke="#f59e0b" stroke-width="2" opacity="0.6" marker-end="url(#arrow2)"/>
+  
+  <!-- Step 3: User -->
+  <rect x="350" y="75" width="110" height="110" rx="14" fill="#1a2235" stroke="#10b98180" stroke-width="1.5"/>
+  <text x="405" y="108" text-anchor="middle" font-size="28">👤</text>
+  <text x="405" y="133" text-anchor="middle" fill="#10b981" font-size="13" font-weight="700" font-family="monospace">ユーザー</text>
+  <text x="405" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">ダウンロード</text>
+  <text x="405" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">inbox/に配置</text>
+  
+  <!-- Arrow 3-4 -->
+  <path d="M470,130 L500,130" stroke="#f59e0b" stroke-width="2" opacity="0.6" marker-end="url(#arrow2)"/>
+  
+  <!-- Step 4: Claude Code -->
+  <rect x="510" y="75" width="110" height="110" rx="14" fill="#1a2235" stroke="#8b5cf680" stroke-width="1.5"/>
+  <text x="565" y="108" text-anchor="middle" font-size="28">⚡</text>
+  <text x="565" y="133" text-anchor="middle" fill="#8b5cf6" font-size="13" font-weight="700" font-family="monospace">Claude Code</text>
+  <text x="565" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">/sync 実行</text>
+  <text x="565" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">git操作</text>
+  
+  <!-- Arrow 4-5 -->
+  <path d="M630,130 L660,130" stroke="#f59e0b" stroke-width="2" opacity="0.6" marker-end="url(#arrow2)"/>
+  
+  <!-- Step 5: GitHub -->
+  <rect x="670" y="75" width="110" height="110" rx="14" fill="#1a2235" stroke="#06b6d480" stroke-width="1.5"/>
+  <text x="725" y="108" text-anchor="middle" font-size="28">🐙</text>
+  <text x="725" y="133" text-anchor="middle" fill="#06b6d4" font-size="13" font-weight="700" font-family="monospace">GitHub</text>
+  <text x="725" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">正本</text>
+  <text x="725" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">(SSOT)</text>
+  
+  <!-- Principle box -->
+  <rect x="30" y="215" width="750" height="55" rx="10" fill="#f59e0b0a" stroke="#f59e0b30" stroke-width="1"/>
+  <rect x="30" y="215" width="4" height="55" rx="2" fill="#f59e0b"/>
+  <text x="55" y="237" fill="#f59e0b" font-size="13" font-weight="700">設計原則</text>
+  <text x="55" y="258" fill="#94a3b8" font-size="12">ユーザーに手動でgit操作させない。Claude.aiが指示書を書き、Claude Codeが実行する。</text>
+  
+  <!-- Role separation -->
+  <rect x="30" y="290" width="240" height="48" rx="8" fill="#3b82f610" stroke="#3b82f630" stroke-width="1"/>
+  <text x="150" y="310" text-anchor="middle" fill="#3b82f6" font-size="12" font-weight="700">🧠 Claude.ai = 思考・執筆</text>
+  <text x="150" y="328" text-anchor="middle" fill="#94a3b8" font-size="11">高品質な議論と文書生成</text>
+  
+  <rect x="290" y="290" width="230" height="48" rx="8" fill="#10b98110" stroke="#10b98130" stroke-width="1"/>
+  <text x="405" y="310" text-anchor="middle" fill="#10b981" font-size="12" font-weight="700">👤 人間 = 判断・品質管理</text>
+  <text x="405" y="328" text-anchor="middle" fill="#94a3b8" font-size="11">意思決定と最終承認</text>
+  
+  <rect x="540" y="290" width="240" height="48" rx="8" fill="#8b5cf610" stroke="#8b5cf630" stroke-width="1"/>
+  <text x="660" y="310" text-anchor="middle" fill="#8b5cf6" font-size="12" font-weight="700">⚡ Claude Code = 操作・実行</text>
+  <text x="660" y="328" text-anchor="middle" fill="#94a3b8" font-size="11">git操作とファイル配置</text>
+</svg>
