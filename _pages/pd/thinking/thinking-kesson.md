@@ -31,9 +31,12 @@ header:
   - 入力：違和感、無意味感、無価値感
 
 - AI協働出力
-  - 一般向け [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})
+  - 一般向け [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})  
 
+{::nomarkdown}
 {% include pdf-download-buttons.html %}
+{:/nomarkdown}
+
 
 ---
 
