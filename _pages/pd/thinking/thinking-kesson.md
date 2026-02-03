@@ -22,7 +22,6 @@ header:
 
 - 思考フレーム：私のデザイン思考
   - 私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
-<!-- - [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}) -->
 - 内容：
   - 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
   - 主観的見方：神経現象学的・禅的な視点での止観・観照
@@ -30,17 +29,34 @@ header:
   - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
   - 入力：違和感、無意味感、無価値感
 
-- AI協働出力
-  - 一般向け [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})  
+
+## AI協働（開発・執筆環境）
+
+現在、ClaudeOpus4.5(Skills)+Github（private）で作成中です。
+
+[![ワークフロー]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})  
+English
+[![ワークフロー]({{ '/assets/images/pages/pd/thinking/ssKessonWFen.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/ssKessonWFen.png' | relative_url }})  
+
+- 参考：【Claude.ai Skillsを試した最初の2.5日間の記録】 <https://uminomae.github.io/pjdhiro/20260203-project-management-report/>
+
+
+### 出力
+
+- 最新ver  
+  - ※ Claude Code：`❯ /publish-pdf` で自動生成
 
 {::nomarkdown}
 {% include pdf-download-buttons.html %}
 {:/nomarkdown}
 
+- 2026/2/3ver
+  - 一般向けPDF 
+  [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})  
 
 ---
 
-## チャットボット（Chatbot）
+## Gem：チャットボット（Chatbot）
 
 [![image]({{ '/assets/images/pages/pd/thinking/gem-kesson.png' | relative_url }}){: .img-card .img-80 }](https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing)
 
@@ -49,10 +65,6 @@ header:
   - 実装内容：「意味が無い」「価値が無い」と感じる状況でデザインする際の「私のやり方」です。  
     - 入力：LLM(Gem)
     - 出力：高校生向け、一般向け、専門家向けの３パターンの口調で出力します。
-
-## 現在のAI協働（開発・執筆環境）：
-
-- 【Claude.ai Skillsを試した最初の2.5日間の記録】 <https://uminomae.github.io/pjdhiro/20260203-project-management-report/>
 
 ## 参考  
 
