@@ -199,7 +199,7 @@ Claude.aiのProject Knowledgeにリポジトリの管理書類を同期し、Ski
 
 [![ワークフロー]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow.svg' | relative_url }})
 English
-[![ワークフロー En]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow-En.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow-En.svg' | relative_url }})
+[![ワークフロー En]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow-en.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow-en.svg' | relative_url }})
 
 ```
 Claude.ai → inbox/ にファイル群 + _instructions.md
