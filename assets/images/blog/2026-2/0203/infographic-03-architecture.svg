@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" rx="16" fill="url(#bg3)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">3層アーキテクチャ：知のリポジトリ設計</text>
+  
+  <!-- UI Layer -->
+  <rect x="80" y="70" width="640" height="90" rx="14" fill="#1a2235" stroke="#f59e0b40" stroke-width="1.5"/>
+  <text x="130" y="100" font-size="30">📄</text>
+  <text x="175" y="102" fill="#f59e0b" font-size="17" font-weight="700" font-family="monospace">UI層</text>
+  <text x="245" y="102" fill="#94a3b8" font-size="13">← 読者・媒体に最適化した出力</text>
+  <rect x="175" y="115" width="80" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="215" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">ブログ記事</text>
+  <rect x="265" y="115" width="80" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="305" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">学術論文</text>
+  <rect x="355" y="115" width="80" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="395" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">プレゼン</text>
+  <rect x="445" y="115" width="80" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="485" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">自己紹介</text>
+  
+  <!-- Arrow -->
+  <text x="400" y="178" text-anchor="middle" fill="#94a3b8" font-size="16">↑</text>
+  
+  <!-- Transform Layer -->
+  <rect x="80" y="190" width="640" height="90" rx="14" fill="#1a2235" stroke="#3b82f640" stroke-width="1.5"/>
+  <text x="130" y="220" font-size="30">🔧</text>
+  <text x="175" y="222" fill="#3b82f6" font-size="17" font-weight="700" font-family="monospace">変換層</text>
+  <text x="260" y="222" fill="#94a3b8" font-size="13">← 読者別ルール、組み立てガイド</text>
+  <rect x="175" y="237" width="110" height="26" rx="6" fill="#3b82f615"/>
+  <text x="230" y="255" text-anchor="middle" fill="#3b82f6cc" font-size="12">読者別ルール</text>
+  <rect x="295" y="237" width="130" height="26" rx="6" fill="#3b82f615"/>
+  <text x="360" y="255" text-anchor="middle" fill="#3b82f6cc" font-size="12">フォーマット変換</text>
+  <rect x="435" y="237" width="90" height="26" rx="6" fill="#3b82f615"/>
+  <text x="480" y="255" text-anchor="middle" fill="#3b82f6cc" font-size="12">表現選択</text>
+  
+  <!-- Arrow -->
+  <text x="400" y="298" text-anchor="middle" fill="#94a3b8" font-size="16">↑</text>
+  
+  <!-- DB Layer -->
+  <rect x="80" y="310" width="640" height="90" rx="14" fill="#1a2235" stroke="#10b98140" stroke-width="1.5"/>
+  <text x="130" y="340" font-size="30">💾</text>
+  <text x="175" y="342" fill="#10b981" font-size="17" font-weight="700" font-family="monospace">DB層</text>
+  <text x="240" y="342" fill="#94a3b8" font-size="13">← 論拠、表現、検討ログ、スキーマ</text>
+  <rect x="175" y="357" width="120" height="26" rx="6" fill="#10b98115"/>
+  <text x="235" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">論拠DB（42件）</text>
+  <rect x="305" y="357" width="130" height="26" rx="6" fill="#10b98115"/>
+  <text x="370" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">表現DB（E01-E10）</text>
+  <rect x="445" y="357" width="90" height="26" rx="6" fill="#10b98115"/>
+  <text x="490" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">検討ログ</text>
+  <rect x="545" y="357" width="80" height="26" rx="6" fill="#10b98115"/>
+  <text x="585" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">スキーマ</text>
+</svg>

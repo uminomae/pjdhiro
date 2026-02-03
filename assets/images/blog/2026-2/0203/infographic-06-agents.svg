@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="380" rx="16" fill="url(#bg6)"/>
+  
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">マルチエージェント構成：常時4 + 専門10</text>
+  
+  <!-- Standard agents label -->
+  <text x="56" y="78" fill="#f59e0b" font-size="11" font-family="monospace" letter-spacing="1">STANDARD — 常時稼働</text>
+  
+  <!-- Agent 1: 欠損検出 -->
+  <rect x="40" y="92" width="350" height="55" rx="10" fill="#1a2235" stroke="#ef444425" stroke-width="1"/>
+  <text x="62" y="126" fill="#ef4444" font-size="22">🔍</text>
+  <text x="96" y="114" fill="#ef4444" font-size="14" font-weight="700">欠損検出</text>
+  <text x="96" y="134" fill="#94a3b8" font-size="12">議論の欠落・矛盾を指摘</text>
+  
+  <!-- Agent 2: 概念精緻化 -->
+  <rect x="410" y="92" width="350" height="55" rx="10" fill="#1a2235" stroke="#f59e0b25" stroke-width="1"/>
+  <text x="432" y="126" fill="#f59e0b" font-size="22">✨</text>
+  <text x="466" y="114" fill="#f59e0b" font-size="14" font-weight="700">概念精緻化</text>
+  <text x="466" y="134" fill="#94a3b8" font-size="12">定義の明確化、言語化</text>
+  
+  <!-- Agent 3: 批評 -->
+  <rect x="40" y="157" width="350" height="55" rx="10" fill="#1a2235" stroke="#3b82f625" stroke-width="1"/>
+  <text x="62" y="191" fill="#3b82f6" font-size="22">⚖️</text>
+  <text x="96" y="179" fill="#3b82f6" font-size="14" font-weight="700">批評</text>
+  <text x="96" y="199" fill="#94a3b8" font-size="12">論理チェック、牽強付会検出</text>
+  
+  <!-- Agent 4: 統合 -->
+  <rect x="410" y="157" width="350" height="55" rx="10" fill="#1a2235" stroke="#8b5cf625" stroke-width="1"/>
+  <text x="432" y="191" fill="#8b5cf6" font-size="22">🔮</text>
+  <text x="466" y="179" fill="#8b5cf6" font-size="14" font-weight="700">統合</text>
+  <text x="466" y="199" fill="#94a3b8" font-size="12">収束判定、全体俯瞰</text>
+  
+  <!-- Specialist agents label -->
+  <text x="56" y="242" fill="#94a3b8" font-size="11" font-family="monospace" letter-spacing="1">SPECIALIST — 必要時に呼び出し</text>
+  
+  <!-- Specialist agent tags -->
+  <rect x="40" y="255" width="100" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="90" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🧠 神経科学</text>
+  
+  <rect x="150" y="255" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="190" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🔬 Bion</text>
+  
+  <rect x="240" y="255" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="280" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">👶 Klein</text>
+  
+  <rect x="330" y="255" width="95" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="377" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🎨 Meltzer</text>
+  
+  <rect x="435" y="255" width="95" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="482" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">👪 Bowlby</text>
+  
+  <rect x="540" y="255" width="100" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="590" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🎎 日本思想</text>
+  
+  <rect x="650" y="255" width="110" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="705" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">☯️ 東洋哲学</text>
+  
+  <rect x="40" y="295" width="100" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="90" y="315" text-anchor="middle" fill="#94a3b8" font-size="12">📜 西洋哲学</text>
+  
+  <rect x="150" y="295" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="190" y="315" text-anchor="middle" fill="#94a3b8" font-size="12">🔢 数学</text>
+  
+  <rect x="240" y="295" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="280" y="315" text-anchor="middle" fill="#94a3b8" font-size="12">⚛️ 物理</text>
+  
+  <!-- Note -->
+  <text x="400" y="360" text-anchor="middle" fill="#94a3b8" font-size="11">エージェントはメタ認知の支援者であり、決定者ではない</text>
+</svg>
