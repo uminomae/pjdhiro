@@ -1,7 +1,7 @@
 ---
 permalink: /20260203-project-management-report/
 title: "Claude.ai Skillsを試した最初の2.5日間の記録"
-date: 2026-02-03 12:20:00 +0900
+date: 2026-02-03 13:10:00 +0900
 categories:
   - Project-Design
 tags:
@@ -9,7 +9,7 @@ tags:
   - AI協働
   - ナレッジマネジメント
   - 欠損駆動思考
-  - Claude.ai
+  - Claude
 header:
   og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/2026-2/0203/ssGitLog.png
   teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/2026-2/0203/ssGitLog.png"
@@ -22,7 +22,7 @@ excerpt: ""
 [![Initial commit]({{ '/assets/images/blog/2026-2/0203/cr.jpg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/cr.jpg' | relative_url }})
 [![Initial commit]({{ '/assets/images/blog/2026-2/0203/kd.jpg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/kd.jpg' | relative_url }})
 
-### 現時点の成果品：読者層ごとの出力
+### 現時点の成果品：読者層ごとにclaudeに出力してもらいました
 
 ※まだコンテンツは完成してません。
 
@@ -31,8 +31,10 @@ excerpt: ""
 - デザイナー向け [![デザイナー向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-designer.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-designer.pdf' | relative_url }})
 - 学術向け [![学術向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-academic.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-academic.pdf' | relative_url }})
 
+---
 
-## ここからClaudeの出力です
+## 以下の記事はClaudeに記事を作ってもらいました。コピペです。
+
 ---
 
 <style>
