@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="380" rx="16" fill="url(#bg4)"/>
+  
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">品質管理ルーチン：6つのゲート</text>
+  <text x="400" y="62" text-anchor="middle" fill="#94a3b8" font-size="12">新しい概念・主張・分析のたびに全項目チェック</text>
+  
+  <!-- Theoretical quality (1-5) -->
+  <text x="56" y="96" fill="#f59e0b" font-size="11" font-family="monospace" letter-spacing="1">THEORY QUALITY</text>
+  
+  <!-- Check 1 -->
+  <rect x="40" y="110" width="350" height="52" rx="10" fill="#1a2235" stroke="#3b82f625" stroke-width="1"/>
+  <rect x="52" y="122" width="28" height="28" rx="7" fill="#3b82f615"/>
+  <text x="66" y="142" text-anchor="middle" fill="#3b82f6" font-size="14">🎯</text>
+  <text x="92" y="134" fill="#3b82f6" font-size="13" font-weight="700" font-family="monospace">#1 コア定義との整合性</text>
+  <text x="92" y="152" fill="#94a3b8" font-size="11">D1-D4と矛盾しないか</text>
+  
+  <!-- Check 2 -->
+  <rect x="40" y="170" width="350" height="52" rx="10" fill="#1a2235" stroke="#f59e0b25" stroke-width="1"/>
+  <rect x="52" y="182" width="28" height="28" rx="7" fill="#f59e0b15"/>
+  <text x="66" y="202" text-anchor="middle" fill="#f59e0b" font-size="14">📐</text>
+  <text x="92" y="194" fill="#f59e0b" font-size="13" font-weight="700" font-family="monospace">#2 5段階/4層との対応</text>
+  <text x="92" y="212" fill="#94a3b8" font-size="11">スペクトラム上の位置は明確か</text>
+  
+  <!-- Check 3 -->
+  <rect x="40" y="230" width="350" height="52" rx="10" fill="#1a2235" stroke="#10b98125" stroke-width="1"/>
+  <rect x="52" y="242" width="28" height="28" rx="7" fill="#10b98115"/>
+  <text x="66" y="262" text-anchor="middle" fill="#10b981" font-size="14">🏷️</text>
+  <text x="92" y="254" fill="#10b981" font-size="13" font-weight="700" font-family="monospace">#3 レイヤ分離 [P][M][S]</text>
+  <text x="92" y="272" fill="#94a3b8" font-size="11">事実 / 比喩 / 仮説を混同しない</text>
+  
+  <!-- Check 4 -->
+  <rect x="410" y="110" width="350" height="52" rx="10" fill="#1a2235" stroke="#8b5cf625" stroke-width="1"/>
+  <rect x="422" y="122" width="28" height="28" rx="7" fill="#8b5cf615"/>
+  <text x="436" y="142" text-anchor="middle" fill="#8b5cf6" font-size="14">🐘</text>
+  <text x="462" y="134" fill="#8b5cf6" font-size="13" font-weight="700" font-family="monospace">#4 群盲象チェック</text>
+  <text x="462" y="152" fill="#94a3b8" font-size="11">3領域以上から同一構造を記述可能か</text>
+  
+  <!-- Check 5 -->
+  <rect x="410" y="170" width="350" height="52" rx="10" fill="#1a2235" stroke="#ef444425" stroke-width="1"/>
+  <rect x="422" y="182" width="28" height="28" rx="7" fill="#ef444415"/>
+  <text x="436" y="202" text-anchor="middle" fill="#ef4444" font-size="14">⚠️</text>
+  <text x="462" y="194" fill="#ef4444" font-size="13" font-weight="700" font-family="monospace">#5 牽強付会チェック</text>
+  <text x="462" y="212" fill="#94a3b8" font-size="11">こじつけ・過剰適合の検出</text>
+  
+  <!-- Operational quality (6) -->
+  <text x="426" y="256" fill="#06b6d4" font-size="11" font-family="monospace" letter-spacing="1">OPERATIONAL QUALITY</text>
+  
+  <!-- Check 6 -->
+  <rect x="410" y="268" width="350" height="52" rx="10" fill="#1a2235" stroke="#06b6d435" stroke-width="1.5"/>
+  <rect x="422" y="280" width="28" height="28" rx="7" fill="#06b6d415"/>
+  <text x="436" y="300" text-anchor="middle" fill="#06b6d4" font-size="14">🔩</text>
+  <text x="462" y="292" fill="#06b6d4" font-size="13" font-weight="700" font-family="monospace">#6 運用整合性テスト（OPS）</text>
+  <text x="462" y="310" fill="#94a3b8" font-size="11">設計が運用制約と矛盾しないか（5項目）</text>
+  
+  <!-- Example box -->
+  <rect x="40" y="300" width="350" height="60" rx="10" fill="#8b5cf608" stroke="#8b5cf620" stroke-width="1"/>
+  <rect x="40" y="300" width="4" height="60" rx="2" fill="#8b5cf6"/>
+  <text x="56" y="320" fill="#8b5cf6" font-size="12" font-weight="700">群盲象チェックの例</text>
+  <text x="56" y="338" fill="#94a3b8" font-size="11">「美とは、欠損を保持することで生じる」</text>
+  <text x="56" y="352" fill="#94a3b8" font-size="10">→ Meltzer / 世阿弥 / Klein / 葉隠 で同一構造を確認</text>
+</svg>
