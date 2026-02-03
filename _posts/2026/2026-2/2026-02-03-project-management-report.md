@@ -16,6 +16,25 @@ header:
 excerpt: ""
 # classes: ai-generated-dark
 ---
+
+## 開始時点の状況：この画像から開始しました
+
+[![Initial commit]({{ '/assets/images/blog/2026-2/0203/cr.jpg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/cr.jpg' | relative_url }})
+[![Initial commit]({{ '/assets/images/blog/2026-2/0203/kd.jpg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/kd.jpg' | relative_url }})
+
+### 現時点の成果品：読者層ごとの出力
+
+※まだコンテンツは完成してません。
+
+- 一般向け [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})
+- 経営者向け [![経営者向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-executive.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-executive.pdf' | relative_url }})
+- デザイナー向け [![デザイナー向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-designer.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-designer.pdf' | relative_url }})
+- 学術向け [![学術向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-academic.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-academic.pdf' | relative_url }})
+
+
+## ここからClaudeの出力です
+---
+
 <style>
 /* ── Dark theme: .page__content only ── */
 .page__content {
@@ -133,6 +152,7 @@ excerpt: ""
 .toc a { color: #94a3b8; }
 .toc a:hover, .toc li.active a { color: #f59e0b; }
 </style>
+
 
 
 {: .notice--info}
