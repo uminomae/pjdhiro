@@ -97,3 +97,5 @@ PMBOK7 2.2.4.4.対人スキルの領域。
 ## 参考・関連
 
 [関連:【経済:まとめ:2025/4~トランプ関税関連】](https://uminomae.github.io/pjdhiro/note2025Economy/)
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Kw9Gy82Tgjlq211da3UeF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
