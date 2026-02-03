@@ -158,7 +158,7 @@ excerpt: ""
 
 
 {: .notice--info}
-本記事は、Claude.ai（Opus 4.5）がGitHubリポジトリの管理書類・成果物・検討ログを読み込み、生成した。筆者（人間）はプロンプトと最終確認を行った。記事そのものが、以下に記述する手法の出力の一つである。
+本記事は、Claude.ai（Opus 4.5）がGitHubリポジトリの管理書類・成果物・検討ログを読み込み、生成した。筆者（人間）はプロンプトと最終確認、英語画像の配置を行った。記事そのものが、以下に記述する手法の出力の一つである。
 
 {: .notice--info}
 筆者のAI利用歴について補足する。普段はChatGPTでチャットするのがメインで、GPTsやGemなどのbotは2025年12月から作るようになった。同月からNano Banana Proでインフォグラフィックを作ることがメインになった。Claude.aiへの課金は約1年ぶりで、Skillsを試してみたいと思い2026年1月31日に再開した。本記事のプロジェクトはその初日から始まっている。
@@ -183,6 +183,8 @@ Initial commit:
 プロジェクト名は「欠損駆動思考（Kesson-Driven Thinking）」。人間の意識が予測誤差をどのように「欠損」として体験し、それが創造や価値判断にどう結びつくかを記述する理論フレームワークだ。4つのモジュールで構成されている。
 
 [![4モジュール構造]({{ '/assets/images/blog/2026-2/0203/infographic-01-modules.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-01-modules.svg' | relative_url }})
+English
+[![4モジュール構造 En]({{ '/assets/images/blog/2026-2/0203/infographic-01-modules-en.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-01-modules-en.svg' | relative_url }})
 
 M1（意識OS）とM2（創造プロセス）は詳細化が完了した。現在はPhase 6（全体統合）にいる。
 
@@ -197,6 +199,8 @@ Claude.aiのProject Knowledgeにリポジトリの管理書類を同期し、Ski
 結果として、Claude.ai（Opus 4.5）が議論と執筆を担い、Claude Codeはgit操作に限定し、人間は品質管理と意思決定に集中する構成になった。
 
 [![ワークフロー]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow.svg' | relative_url }})
+English
+[![ワークフロー En]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow-En.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-02-workflow-En.svg' | relative_url }})
 
 ```
 Claude.ai → inbox/ にファイル群 + _instructions.md
@@ -217,6 +221,8 @@ GitHubリポジトリを唯一の正本としている。Claude.aiのProject Kno
 成果物を3層で管理している。
 
 [![3層アーキテクチャ]({{ '/assets/images/blog/2026-2/0203/infographic-03-architecture.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-03-architecture.svg' | relative_url }})
+English
+[![3層アーキテクチャ En]({{ '/assets/images/blog/2026-2/0203/infographic-03-architecture-en.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-03-architecture-en.svg' | relative_url }})
 
 DB層に論拠42件、一文表現10本、検討ログを格納している。変換層が読者と媒体に応じて選択し、UI層が最終出力する。
 
@@ -235,6 +241,9 @@ DB層に論拠42件、一文表現10本、検討ログを格納している。�
 Claude.aiのセッション内に、プロンプトでロールを指定する形で複数のエージェントを配置した。4つが常時稼働、10の専門エージェントを必要に応じて呼び出す。
 
 [![エージェント構成]({{ '/assets/images/blog/2026-2/0203/infographic-06-agents.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-06-agents.svg' | relative_url }})
+English
+[![エージェント構成 En]({{ '/assets/images/blog/2026-2/0203/infographic-06-agents-en.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-06-agents-en.svg' | relative_url }})
+
 
 エージェントをメタ認知の支援者として配置した。決定は人間が行う。
 
@@ -245,6 +254,8 @@ Claude.aiのセッション内に、プロンプトでロールを指定する�
 新しい概念や主張が生まれるたびに、6項目を通過させる。
 
 [![品質管理6項目]({{ '/assets/images/blog/2026-2/0203/infographic-04-quality.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-04-quality.svg' | relative_url }})
+English
+[![品質管理6項目 En]({{ '/assets/images/blog/2026-2/0203/infographic-04-quality-en.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-04-quality-en.svg' | relative_url }})
 
 #3のレイヤ分離は、すべての記述に[P][M][S]のいずれかを付与する仕組みだ。[P]は神経科学の実験的事実。[M]は着想を得た比喩・解釈。[S]は検証可能な仮説。
 
@@ -281,6 +292,8 @@ Claude.aiはセッションをまたぐと状態を失う。前回の決定事�
 | コミット | 30+ |
 
 [![進捗]({{ '/assets/images/blog/2026-2/0203/infographic-05-progress.svg' | relative_url }})]({{ '/assets/images/blog/2026-2/0203/infographic-05-progress.svg' | relative_url }})
+English
+[![進捗 En]({{ '/assets/images/blog/2026-2/0203/infographic-05-progress-en.svg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/infographic-05-progress-en.svg' | relative_url }})
 
 | Phase | 内容 | トークン |
 |-------|------|---------|
