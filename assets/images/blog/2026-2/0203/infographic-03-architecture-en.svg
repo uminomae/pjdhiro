@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" rx="16" fill="url(#bg3)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">3-Layer Architecture: Knowledge Repository Design</text>
+  
+  <!-- UI Layer -->
+  <rect x="80" y="70" width="640" height="90" rx="14" fill="#1a2235" stroke="#f59e0b40" stroke-width="1.5"/>
+  <text x="130" y="100" font-size="30">📄</text>
+  <text x="175" y="102" fill="#f59e0b" font-size="17" font-weight="700" font-family="monospace">UI Layer</text>
+  <text x="280" y="102" fill="#94a3b8" font-size="13">← Output optimized for audience &amp; medium</text>
+  <rect x="175" y="115" width="80" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="215" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">Blog Post</text>
+  <rect x="265" y="115" width="100" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="315" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">Academic Paper</text>
+  <rect x="375" y="115" width="100" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="425" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">Presentation</text>
+  <rect x="485" y="115" width="100" height="26" rx="6" fill="#f59e0b15"/>
+  <text x="535" y="133" text-anchor="middle" fill="#f59e0bcc" font-size="12">Self-Intro</text>
+  
+  <!-- Arrow -->
+  <text x="400" y="178" text-anchor="middle" fill="#94a3b8" font-size="16">↑</text>
+  
+  <!-- Transform Layer -->
+  <rect x="80" y="190" width="640" height="90" rx="14" fill="#1a2235" stroke="#3b82f640" stroke-width="1.5"/>
+  <text x="130" y="220" font-size="30">🔧</text>
+  <text x="175" y="222" fill="#3b82f6" font-size="17" font-weight="700" font-family="monospace">Transform</text>
+  <text x="290" y="222" fill="#94a3b8" font-size="13">← Audience rules, assembly guides</text>
+  <rect x="175" y="237" width="120" height="26" rx="6" fill="#3b82f615"/>
+  <text x="235" y="255" text-anchor="middle" fill="#3b82f6cc" font-size="12">Audience Rules</text>
+  <rect x="305" y="237" width="130" height="26" rx="6" fill="#3b82f615"/>
+  <text x="370" y="255" text-anchor="middle" fill="#3b82f6cc" font-size="12">Format Conversion</text>
+  <rect x="445" y="237" width="120" height="26" rx="6" fill="#3b82f615"/>
+  <text x="505" y="255" text-anchor="middle" fill="#3b82f6cc" font-size="12">Expression Select</text>
+  
+  <!-- Arrow -->
+  <text x="400" y="298" text-anchor="middle" fill="#94a3b8" font-size="16">↑</text>
+  
+  <!-- DB Layer -->
+  <rect x="80" y="310" width="640" height="90" rx="14" fill="#1a2235" stroke="#10b98140" stroke-width="1.5"/>
+  <text x="130" y="340" font-size="30">💾</text>
+  <text x="175" y="342" fill="#10b981" font-size="17" font-weight="700" font-family="monospace">DB Layer</text>
+  <text x="280" y="342" fill="#94a3b8" font-size="13">← Evidence, expressions, logs, schema</text>
+  <rect x="175" y="357" width="120" height="26" rx="6" fill="#10b98115"/>
+  <text x="235" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">Evidence (42)</text>
+  <rect x="305" y="357" width="150" height="26" rx="6" fill="#10b98115"/>
+  <text x="380" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">Expressions (E01-E10)</text>
+  <rect x="465" y="357" width="120" height="26" rx="6" fill="#10b98115"/>
+  <text x="525" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">Discussion Log</text>
+  <rect x="595" y="357" width="80" height="26" rx="6" fill="#10b98115"/>
+  <text x="635" y="375" text-anchor="middle" fill="#10b981cc" font-size="12">Schema</text>
+</svg>

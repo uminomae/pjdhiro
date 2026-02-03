@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="380" rx="16" fill="url(#bg6)"/>
+  
+  <text x="400" y="40" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">Multi-Agent Configuration: 4 Standard + 10 Specialist</text>
+  
+  <!-- Standard agents label -->
+  <text x="56" y="78" fill="#f59e0b" font-size="11" font-family="monospace" letter-spacing="1">STANDARD — ALWAYS ACTIVE</text>
+  
+  <!-- Agent 1: Deficit Detection -->
+  <rect x="40" y="92" width="350" height="55" rx="10" fill="#1a2235" stroke="#ef444425" stroke-width="1"/>
+  <text x="62" y="126" fill="#ef4444" font-size="22">🔍</text>
+  <text x="96" y="114" fill="#ef4444" font-size="14" font-weight="700">Deficit Detection</text>
+  <text x="96" y="134" fill="#94a3b8" font-size="12">Identify gaps &amp; contradictions</text>
+  
+  <!-- Agent 2: Concept Refinement -->
+  <rect x="410" y="92" width="350" height="55" rx="10" fill="#1a2235" stroke="#f59e0b25" stroke-width="1"/>
+  <text x="432" y="126" fill="#f59e0b" font-size="22">✨</text>
+  <text x="466" y="114" fill="#f59e0b" font-size="14" font-weight="700">Concept Refinement</text>
+  <text x="466" y="134" fill="#94a3b8" font-size="12">Clarify definitions, verbalize</text>
+  
+  <!-- Agent 3: Critique -->
+  <rect x="40" y="157" width="350" height="55" rx="10" fill="#1a2235" stroke="#3b82f625" stroke-width="1"/>
+  <text x="62" y="191" fill="#3b82f6" font-size="22">⚖️</text>
+  <text x="96" y="179" fill="#3b82f6" font-size="14" font-weight="700">Critique</text>
+  <text x="96" y="199" fill="#94a3b8" font-size="12">Logic check, overfitting detection</text>
+  
+  <!-- Agent 4: Integration -->
+  <rect x="410" y="157" width="350" height="55" rx="10" fill="#1a2235" stroke="#8b5cf625" stroke-width="1"/>
+  <text x="432" y="191" fill="#8b5cf6" font-size="22">🔮</text>
+  <text x="466" y="179" fill="#8b5cf6" font-size="14" font-weight="700">Integration</text>
+  <text x="466" y="199" fill="#94a3b8" font-size="12">Convergence judgment, overview</text>
+  
+  <!-- Specialist agents label -->
+  <text x="56" y="242" fill="#94a3b8" font-size="11" font-family="monospace" letter-spacing="1">SPECIALIST — ON DEMAND</text>
+  
+  <!-- Specialist agent tags -->
+  <rect x="40" y="255" width="110" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="95" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🧠 Neuroscience</text>
+  
+  <rect x="160" y="255" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="200" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🔬 Bion</text>
+  
+  <rect x="250" y="255" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="290" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">👶 Klein</text>
+  
+  <rect x="340" y="255" width="95" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="387" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🎨 Meltzer</text>
+  
+  <rect x="445" y="255" width="95" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="492" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">👪 Bowlby</text>
+  
+  <rect x="550" y="255" width="110" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="605" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">🎎 Japanese</text>
+  
+  <rect x="670" y="255" width="90" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="715" y="275" text-anchor="middle" fill="#94a3b8" font-size="12">☯️ Eastern</text>
+  
+  <rect x="40" y="295" width="100" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="90" y="315" text-anchor="middle" fill="#94a3b8" font-size="12">📜 Western</text>
+  
+  <rect x="150" y="295" width="80" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="190" y="315" text-anchor="middle" fill="#94a3b8" font-size="12">🔢 Math</text>
+  
+  <rect x="240" y="295" width="90" height="30" rx="6" fill="#1a2235" stroke="#2a3654" stroke-width="1"/>
+  <text x="285" y="315" text-anchor="middle" fill="#94a3b8" font-size="12">⚛️ Physics</text>
+  
+  <!-- Note -->
+  <text x="400" y="360" text-anchor="middle" fill="#94a3b8" font-size="11">Agents are metacognitive support — not decision-makers</text>
+</svg>
