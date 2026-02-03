@@ -11,8 +11,8 @@ tags:
   - 欠損駆動思考
   - Claude
 header:
-  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/2026-2/0203/ssGitLog.png
-  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/2026-2/0203/ssGitLog.png"
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203//ssGitLog.png
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog//2026-2/0203/ssGitLog.png"
 excerpt: ""
 # classes: ai-generated-dark
 ---
