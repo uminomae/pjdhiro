@@ -11,9 +11,9 @@ tags:
   - 欠損駆動思考
   - Claude
 header:
-  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203//teaser.png
-  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog//2026-2/0203/teaser.png"
-excerpt: ""
+  og_image: https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/teaser.png
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/teaser.png"
+excerpt: "本記事は、Claude.ai（Opus 4.5）がGitHubリポジトリの管理書類・成果物・検討ログを読み込み、生成した。筆者（人間）はプロンプトと最終確認、英語画像の配置を行った。記事そのものが、以下に記述する手法の出力の一つである。"
 # classes: ai-generated-dark
 ---
 
