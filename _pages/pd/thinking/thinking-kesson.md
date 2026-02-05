@@ -16,9 +16,12 @@ header:
   teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
 ---
 
+
 ## 構造とプロセス（プロトタイプ）
 
 [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
+
+[参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](698497c7-89c0-800b-bd32-04fdd195ad1b)
 
 - 思考フレーム：私のデザイン思考
   - 私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
@@ -29,17 +32,17 @@ header:
   - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
   - 入力：違和感、無意味感、無価値感
 
+## 研究・開発(執筆)環境：AI協働
 
-## AI協働（開発・執筆環境）
-
-現在、ClaudeOpus4.5(Skills)+Github（private）で作成中です。
+- LLM 
+  - Claude Opus4.5(Skills) +GitHub
+  - Codex GPT5.2High + GitHub
 
 [![ワークフロー]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})  
 English
 [![ワークフロー]({{ '/assets/images/pages/pd/thinking/ssKessonWFen.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/ssKessonWFen.png' | relative_url }})  
 
 - 参考：【Claude.ai Skillsを試した最初の2.5日間の記録】 <https://uminomae.github.io/pjdhiro/20260203-project-management-report/>
-
 
 ### 出力
 
@@ -65,6 +68,20 @@ English
   - 実装内容：「意味が無い」「価値が無い」と感じる状況でデザインする際の「私のやり方」です。  
     - 入力：LLM(Gem)
     - 出力：高校生向け、一般向け、専門家向けの３パターンの口調で出力します。
+
+## 学習・トレーニング方法
+
+- 初級：
+  - 止観：
+    - 目的：状態を「荒れさせずに」見分けられるようにする
+    - 止：呼吸瞑想（＝止＝安定化／観＝識別・洞察を同時に育てる）
+    - 観：心の指差し（プルチックの感情の輪を見ながら今の状態を選ぶ）
+- 中級：
+  - 非瞑想状態でも双運を保つ  
+  
+※迷ったらひたすら瞑想しておけばOKって感じです
+
+[参考:【止観 - Wikipedia】](https://ja.wikipedia.org/wiki/%E6%AD%A2%E8%A6%B3)
 
 ## 参考  
 
