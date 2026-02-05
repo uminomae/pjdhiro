@@ -21,7 +21,7 @@ header:
 
 [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
 
-[参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](698497c7-89c0-800b-bd32-04fdd195ad1b)
+[参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](https://chatgpt.com/share/698497c7-89c0-800b-bd32-04fdd195ad1b)
 
 - 思考フレーム：私のデザイン思考
   - 私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
