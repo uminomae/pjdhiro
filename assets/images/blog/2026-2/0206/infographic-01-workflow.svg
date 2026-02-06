@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520"
+     font-family="'Helvetica Neue', 'Noto Sans JP', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">ワークフロー: 再帰と並列の分離</text>
+  <text x="400" y="56" text-anchor="middle" fill="#94a3b8" font-size="11">2026-02-06 時点</text>
+
+  <!-- Human at center -->
+  <rect x="310" y="80" width="180" height="56" rx="8" fill="#1e293b" stroke="#dc2626" stroke-width="2"/>
+  <text x="400" y="104" text-anchor="middle" fill="#f87171" font-size="13" font-weight="700">👤 pjdhiro（人間）</text>
+  <text x="400" y="122" text-anchor="middle" fill="#94a3b8" font-size="10">判断・設計・品質管理</text>
+
+  <!-- LEFT: Recursive exploration -->
+  <rect x="30" y="170" width="340" height="310" rx="10" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="200" y="192" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600">再帰的探索（深い思考）</text>
+
+  <!-- Claude.ai box -->
+  <rect x="50" y="210" width="300" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="200" y="234" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="700">Claude.ai（対話）</text>
+  <text x="200" y="252" text-anchor="middle" fill="#94a3b8" font-size="10">理論構築・概念精緻化・議論</text>
+
+  <!-- DT App box -->
+  <rect x="50" y="286" width="300" height="60" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="200" y="310" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="700">DTアプリ（Claude + MCP）</text>
+  <text x="200" y="328" text-anchor="middle" fill="#94a3b8" font-size="10">GitHub直接読み書き・構造探索</text>
+
+  <!-- Arrow between Claude.ai and DT -->
+  <line x1="200" y1="270" x2="200" y2="286" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Claude Code (sub) -->
+  <rect x="80" y="365" width="240" height="48" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="200" y="386" text-anchor="middle" fill="#94a3b8" font-size="11">Claude Code（サブ: スマホ時等）</text>
+  <text x="200" y="401" text-anchor="middle" fill="#64748b" font-size="9">git操作フォールバック</text>
+
+  <!-- Recursive nature label -->
+  <text x="200" y="445" text-anchor="middle" fill="#93c5fd" font-size="10">対話 → 発見 → 新たな問い → 対話...</text>
+  <text x="200" y="460" text-anchor="middle" fill="#64748b" font-size="9">スタック保持が本質（TC-011）</text>
+
+  <!-- RIGHT: Parallel processing -->
+  <rect x="420" y="170" width="350" height="310" rx="10" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="595" y="192" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="600">並列処理（広い収集）</text>
+
+  <!-- Codex box -->
+  <rect x="440" y="210" width="310" height="60" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="595" y="234" text-anchor="middle" fill="#6ee7b7" font-size="13" font-weight="700">Codex（OpenAI）</text>
+  <text x="595" y="252" text-anchor="middle" fill="#94a3b8" font-size="10">Evidence Deep Dive・並列生成</text>
+
+  <!-- Pipeline steps -->
+  <rect x="450" y="290" width="140" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="312" text-anchor="middle" fill="#94a3b8" font-size="10">① ブリーフィング</text>
+
+  <rect x="600" y="290" width="140" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="670" y="312" text-anchor="middle" fill="#94a3b8" font-size="10">② 並列生成</text>
+
+  <rect x="450" y="340" width="140" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="362" text-anchor="middle" fill="#94a3b8" font-size="10">③ レビュー</text>
+
+  <rect x="600" y="340" width="140" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="670" y="362" text-anchor="middle" fill="#94a3b8" font-size="10">④ 確定</text>
+
+  <!-- Arrows between pipeline -->
+  <line x1="590" y1="308" x2="600" y2="308" stroke="#6ee7b7" stroke-width="1"/>
+  <line x1="670" y1="326" x2="670" y2="340" stroke="#6ee7b7" stroke-width="1"/>
+  <line x1="600" y1="358" x2="590" y2="358" stroke="#6ee7b7" stroke-width="1"/>
+
+  <!-- Parallel nature label -->
+  <text x="595" y="412" text-anchor="middle" fill="#6ee7b7" font-size="10">ブリーフィング → 6分野同時 → レビュー</text>
+  <text x="595" y="427" text-anchor="middle" fill="#64748b" font-size="9">末尾再帰。パイプライン化が有効</text>
+
+  <!-- GitHub at bottom -->
+  <rect x="280" y="476" width="240" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="400" y="499" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="600">GitHub（正本）</text>
+
+  <!-- Connecting lines to GitHub -->
+  <line x1="200" y1="413" x2="200" y2="480" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="480" x2="280" y2="494" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
+  <text x="170" y="450" fill="#a78bfa" font-size="9">MCP直接</text>
+
+  <line x1="595" y1="440" x2="595" y2="480" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <line x1="595" y1="480" x2="520" y2="494" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <text x="610" y="465" fill="#6ee7b7" font-size="9">inbox/経由</text>
+</svg>
