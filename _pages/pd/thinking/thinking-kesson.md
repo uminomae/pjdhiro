@@ -17,6 +17,39 @@ header:
 ---
 
 
+## なるべく短く説明すると
+
+### 「欠け」が好き
+
+予想と現実の間にズレがある。  
+ほとんどは脳が勝手に消してくれる。  
+でもたまに「しっくりこない」ものも。
+
+「欠損駆動思考」は、この「欠け」を捨てずに問いとして持ち続ける態度のこと。
+
+### 身体が先
+
+違和感は頭より先に体にくる。  
+ミゾオチが重い。眉間が熱い。身体反応リストに溜まっていく。  
+そのうち身体の感覚で気づく。  
+不安が悪いものでなくなるのもその頃じゃないかと。大切な現実。  
+
+恐さや大切さが何を問題にするか決める。  
+怖い時ほど問題を小さく切りたくなる。
+
+### ひとりだと待てない
+
+「保持」は問いを開いたまま持ち続けること。忍耐。支えがいる。  
+物理的に隣にいなくても、心の中に信頼できる誰かがいれば大丈夫っぽい。  
+亡くなった人でも、小さい頃の記憶でも。無意識のコピー。  
+信頼は流れるもの。  
+そういう場があるなら答えを急がずにいられる。  
+
+で、その先に出てくるものが創造じゃないかと。  
+才能じゃなくて態度だと思う。
+
+---
+
 ## 構造とプロセス（プロトタイプ）
 
 [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
@@ -32,6 +65,17 @@ header:
   - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
   - 入力：違和感、無意味感、無価値感
 
+### 出力
+
+- 最新ver  
+  <!-- - ※ Claude Code：`❯ /publish-pdf` で自動生成 -->
+
+![PDF]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }
+
+{::nomarkdown}
+{% include pdf-download-buttons.html %}
+{:/nomarkdown}
+
 ## 研究・開発(執筆)環境：AI協働
 
 - LLM  
@@ -42,20 +86,7 @@ header:
 English
 [![ワークフロー]({{ '/assets/images/pages/pd/thinking/ssKessonWFen.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/ssKessonWFen.png' | relative_url }})  
 
-- 参考：【Claude.ai Skillsを試した最初の2.5日間の記録】 <https://uminomae.github.io/pjdhiro/20260203-project-management-report/>
-
-### 出力
-
-- 最新ver  
-  - ※ Claude Code：`❯ /publish-pdf` で自動生成
-
-{::nomarkdown}
-{% include pdf-download-buttons.html %}
-{:/nomarkdown}
-
-- 2026/2/3ver
-  - 一般向けPDF 
-  [![一般向け]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0203/kesson-general.pdf' | relative_url }})  
+[参考：【Codex DT導入 - 再帰と並列で分けた6日間】]({{ '/20260206-llm-workflow-evolution/' | relative_url }})
 
 ---
 
