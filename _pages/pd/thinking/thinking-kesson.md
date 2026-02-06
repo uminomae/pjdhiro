@@ -35,8 +35,8 @@ header:
 ## 研究・開発(執筆)環境：AI協働
 
 - LLM  
-  - Claude Opus4.5(Skills) +GitHub(MCP)
-  - Codex GPT5.2High + GitHub
+  - Claude DesktopApp Opus4.6(Skills) +GitHub(MCP)
+  - Codex DesktopApp(MacOS) GPT5.2High + GitHub
 
 [![ワークフロー]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})  
 English
