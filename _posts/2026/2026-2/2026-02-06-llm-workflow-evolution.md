@@ -1,6 +1,6 @@
 ---
 permalink: /20260206-llm-workflow-evolution/
-title: "Codex DT導入。Claude Agent Teamは使わない選択 — 再帰と並列で分けた6日間"
+title: "探索は再帰、収集は並列 — LLM運用を分けた6日間"
 date: 2026-02-06 19:00:00 +0900
 categories:
   - Project-Design
