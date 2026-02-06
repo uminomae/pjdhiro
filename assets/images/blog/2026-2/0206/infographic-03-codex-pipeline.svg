@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380"
+     font-family="'Helvetica Neue', 'Noto Sans JP', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="380" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">Codex並列パイプライン — EV-LS Deep Dive実績</text>
+  <text x="400" y="56" text-anchor="middle" fill="#94a3b8" font-size="11">計画的タスクの並列化。末尾再帰（スタック不要）</text>
+
+  <!-- Pipeline: 4 stages -->
+  <!-- Stage 1 -->
+  <rect x="30" y="80" width="170" height="80" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="115" y="102" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="700">① ブリーフィング</text>
+  <text x="115" y="120" text-anchor="middle" fill="#94a3b8" font-size="9">Claude.aiが作成</text>
+  <text x="115" y="136" text-anchor="middle" fill="#94a3b8" font-size="9">語彙制約</text>
+  <text x="115" y="148" text-anchor="middle" fill="#94a3b8" font-size="9">パターン模倣 + UNCERTAIN弁</text>
+
+  <text x="210" y="120" fill="#6ee7b7" font-size="16">→</text>
+
+  <!-- Stage 2 -->
+  <rect x="225" y="80" width="170" height="80" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="310" y="102" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="700">② 並列生成</text>
+  <text x="310" y="120" text-anchor="middle" fill="#94a3b8" font-size="9">Codexが実行</text>
+  <text x="310" y="136" text-anchor="middle" fill="#94a3b8" font-size="9">6分野同時（EV-LS等）</text>
+  <text x="310" y="148" text-anchor="middle" fill="#94a3b8" font-size="9">inbox/deepdive/ に [DRAFT] 出力</text>
+
+  <text x="405" y="120" fill="#6ee7b7" font-size="16">→</text>
+
+  <!-- Stage 3 -->
+  <rect x="420" y="80" width="170" height="80" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="505" y="102" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="700">③ レビュー</text>
+  <text x="505" y="120" text-anchor="middle" fill="#94a3b8" font-size="9">Claude.ai品質チェック</text>
+  <text x="505" y="136" text-anchor="middle" fill="#94a3b8" font-size="9">領域境界・レイヤ分離・牽強付会</text>
+  <text x="505" y="148" text-anchor="middle" fill="#dc2626" font-size="9" font-weight="600">+ pjdhiro最終判断</text>
+
+  <text x="600" y="120" fill="#6ee7b7" font-size="16">→</text>
+
+  <!-- Stage 4 -->
+  <rect x="615" y="80" width="155" height="80" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="692" y="102" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700">④ 確定</text>
+  <text x="692" y="120" text-anchor="middle" fill="#94a3b8" font-size="9">[DRAFT] タグ除去</text>
+  <text x="692" y="136" text-anchor="middle" fill="#94a3b8" font-size="9">正式論拠として確定</text>
+  <text x="692" y="148" text-anchor="middle" fill="#94a3b8" font-size="9">base/evidence/ に反映</text>
+
+  <!-- Real example -->
+  <text x="400" y="195" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">実績: EV-LS 第2バッチ（4エントリ）</text>
+
+  <!-- 4 entries -->
+  <rect x="60" y="212" width="150" height="52" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1"/>
+  <text x="135" y="234" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="600">EV-LS-008 ✓</text>
+  <text x="135" y="252" text-anchor="middle" fill="#94a3b8" font-size="9">ミクログリア刈り込み</text>
+
+  <rect x="230" y="212" width="150" height="52" rx="6" fill="#0f172a" stroke="#dc2626" stroke-width="2"/>
+  <text x="305" y="234" text-anchor="middle" fill="#f87171" font-size="11" font-weight="600">EV-LS-009 ⚠️</text>
+  <text x="305" y="252" text-anchor="middle" fill="#f87171" font-size="9">境界違反検出→修正</text>
+
+  <rect x="400" y="212" width="150" height="52" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1"/>
+  <text x="475" y="234" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="600">EV-LS-010 ✓</text>
+  <text x="475" y="252" text-anchor="middle" fill="#94a3b8" font-size="9">ミエリン化</text>
+
+  <rect x="570" y="212" width="150" height="52" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1"/>
+  <text x="645" y="234" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="600">EV-LS-011 ✓</text>
+  <text x="645" y="252" text-anchor="middle" fill="#94a3b8" font-size="9">グリンパティック系</text>
+
+  <!-- Violation detail -->
+  <rect x="60" y="280" width="680" height="86" rx="8" fill="#111827" stroke="#dc2626" stroke-width="1"/>
+  <text x="400" y="302" text-anchor="middle" fill="#f87171" font-size="12" font-weight="600">⚠️ EV-LS-009 境界違反の詳細</text>
+  <text x="80" y="322" fill="#94a3b8" font-size="10">検出: 計算論的主張（EV-NS領域の内容）がEV-LS内に混入</text>
+  <text x="80" y="340" fill="#94a3b8" font-size="10">修正: D1/D2受容体のATPコスト（代謝的帰結）にフレーミング置換</text>
+  <text x="80" y="358" fill="#f59e0b" font-size="10">教訓: 境界違反検出率 25%（4件中1件）。ブリーフィングの制約は効くが、人間レビューは不可欠</text>
+</svg>

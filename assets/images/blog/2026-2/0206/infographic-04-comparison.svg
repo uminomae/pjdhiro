@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"
+     font-family="'Helvetica Neue', 'Noto Sans JP', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">数字で見る3日間 — 2/3 vs 2/6</text>
+  <text x="400" y="56" text-anchor="middle" fill="#94a3b8" font-size="11">プロジェクト指標の変化</text>
+
+  <!-- Table header -->
+  <rect x="40" y="72" width="280" height="32" rx="0" fill="#1a2235"/>
+  <rect x="320" y="72" width="200" height="32" rx="0" fill="#1a2235"/>
+  <rect x="520" y="72" width="240" height="32" rx="0" fill="#1a2235"/>
+  <text x="180" y="93" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="600">項目</text>
+  <text x="420" y="93" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">2/3 時点</text>
+  <text x="640" y="93" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="600">2/6 時点</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="104" width="280" height="32" fill="#111827"/>
+  <rect x="320" y="104" width="200" height="32" fill="#111827"/>
+  <rect x="520" y="104" width="240" height="32" fill="#111827"/>
+  <text x="55" y="125" fill="#e2e8f0" font-size="11">LLM構成</text>
+  <text x="420" y="125" text-anchor="middle" fill="#94a3b8" font-size="11">Claude.ai + Claude Code</text>
+  <text x="640" y="125" text-anchor="middle" fill="#6ee7b7" font-size="11">Claude.ai + DTアプリ + Codex + Code(サブ)</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="136" width="280" height="32" fill="#0f172a"/>
+  <rect x="320" y="136" width="200" height="32" fill="#0f172a"/>
+  <rect x="520" y="136" width="240" height="32" fill="#0f172a"/>
+  <text x="55" y="157" fill="#e2e8f0" font-size="11">GitHubアクセス方法</text>
+  <text x="420" y="157" text-anchor="middle" fill="#94a3b8" font-size="11">Claude Code（手動sync）</text>
+  <text x="640" y="157" text-anchor="middle" fill="#6ee7b7" font-size="11">MCP直接 + inbox/フォールバック</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="168" width="280" height="32" fill="#111827"/>
+  <rect x="320" y="168" width="200" height="32" fill="#111827"/>
+  <rect x="520" y="168" width="240" height="32" fill="#111827"/>
+  <text x="55" y="189" fill="#e2e8f0" font-size="11">仮想エージェント</text>
+  <text x="420" y="189" text-anchor="middle" fill="#94a3b8" font-size="11">常時4 + 専門10</text>
+  <text x="640" y="189" text-anchor="middle" fill="#6ee7b7" font-size="11">常時7 + 専門10（+ガード3種）</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="200" width="280" height="32" fill="#0f172a"/>
+  <rect x="320" y="200" width="200" height="32" fill="#0f172a"/>
+  <rect x="520" y="200" width="240" height="32" fill="#0f172a"/>
+  <text x="55" y="221" fill="#e2e8f0" font-size="11">品質チェック</text>
+  <text x="420" y="221" text-anchor="middle" fill="#94a3b8" font-size="11">6項目</text>
+  <text x="640" y="221" text-anchor="middle" fill="#6ee7b7" font-size="11">7項目 + TC-011〜013</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="232" width="280" height="32" fill="#111827"/>
+  <rect x="320" y="232" width="200" height="32" fill="#111827"/>
+  <rect x="520" y="232" width="240" height="32" fill="#111827"/>
+  <text x="55" y="253" fill="#e2e8f0" font-size="11">README.md</text>
+  <text x="420" y="253" text-anchor="middle" fill="#94a3b8" font-size="11">v1.2</text>
+  <text x="640" y="253" text-anchor="middle" fill="#6ee7b7" font-size="11">v3.4（Tier制・環境判定・ガード）</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="264" width="280" height="32" fill="#0f172a"/>
+  <rect x="320" y="264" width="200" height="32" fill="#0f172a"/>
+  <rect x="520" y="264" width="240" height="32" fill="#0f172a"/>
+  <text x="55" y="285" fill="#e2e8f0" font-size="11">論拠DB</text>
+  <text x="420" y="285" text-anchor="middle" fill="#94a3b8" font-size="11">6ドメイン / 42件</text>
+  <text x="640" y="285" text-anchor="middle" fill="#6ee7b7" font-size="11">7ドメイン / 53+件（+生命科学）</text>
+
+  <!-- Row 7 -->
+  <rect x="40" y="296" width="280" height="32" fill="#111827"/>
+  <rect x="320" y="296" width="200" height="32" fill="#111827"/>
+  <rect x="520" y="296" width="240" height="32" fill="#111827"/>
+  <text x="55" y="317" fill="#e2e8f0" font-size="11">pjdhiro発言集</text>
+  <text x="420" y="317" text-anchor="middle" fill="#94a3b8" font-size="11">—</text>
+  <text x="640" y="317" text-anchor="middle" fill="#6ee7b7" font-size="11">S01-S24（24件）</text>
+
+  <!-- Row 8 -->
+  <rect x="40" y="328" width="280" height="32" fill="#0f172a"/>
+  <rect x="320" y="328" width="200" height="32" fill="#0f172a"/>
+  <rect x="520" y="328" width="240" height="32" fill="#0f172a"/>
+  <text x="55" y="349" fill="#e2e8f0" font-size="11">イシュー</text>
+  <text x="420" y="349" text-anchor="middle" fill="#94a3b8" font-size="11">—</text>
+  <text x="640" y="349" text-anchor="middle" fill="#6ee7b7" font-size="11">42件（解決せず保持中）</text>
+
+  <!-- Row 9 -->
+  <rect x="40" y="360" width="280" height="32" fill="#111827"/>
+  <rect x="320" y="360" width="200" height="32" fill="#111827"/>
+  <rect x="520" y="360" width="240" height="32" fill="#111827"/>
+  <text x="55" y="381" fill="#e2e8f0" font-size="11">新規モデル</text>
+  <text x="420" y="381" text-anchor="middle" fill="#94a3b8" font-size="11">—</text>
+  <text x="640" y="381" text-anchor="middle" fill="#6ee7b7" font-size="11">BSPLモデル [S]仮説保持中</text>
+
+  <!-- Borders -->
+  <rect x="40" y="72" width="720" height="320" rx="0" fill="none" stroke="#2a3654" stroke-width="1"/>
+  <line x1="320" y1="72" x2="320" y2="392" stroke="#2a3654" stroke-width="1"/>
+  <line x1="520" y1="72" x2="520" y2="392" stroke="#2a3654" stroke-width="1"/>
+
+  <!-- Bottom insight -->
+  <rect x="40" y="416" width="720" height="68" rx="8" fill="#111827" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="440" text-anchor="middle" fill="#f59e0b" font-size="13" font-weight="600">変わらないこと</text>
+  <text x="400" y="460" text-anchor="middle" fill="#94a3b8" font-size="11">人間がやることは減っていない。道具は増えたが、判断と設計は人間が行う。</text>
+  <text x="400" y="476" text-anchor="middle" fill="#94a3b8" font-size="11">42件のイシューを解決せずに保持している。それがこのプロジェクトの品質管理の本質。</text>
+</svg>
