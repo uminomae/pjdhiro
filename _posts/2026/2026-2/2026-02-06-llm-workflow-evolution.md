@@ -1,7 +1,7 @@
 ---
 permalink: /20260206-llm-workflow-evolution/
-title: "Codex DTアプリ導入。Coceの自律型エージェントを使わない選択 — LLM運用を再帰と並列で分けた6日間"
-date: 2026-02-06 18:00:00 +0900
+title: "Codex DT導入。Claude Agent Teamは使わない選択 — 再帰と並列で分けた6日間"
+date: 2026-02-06 19:00:00 +0900
 categories:
   - Project-Design
 tags:
@@ -14,7 +14,7 @@ tags:
 header:
   og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0206/ss.png"
   teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0206/ss.png"
-excerpt: "Codexとデスクトップアプリを使ってみた。自律型エージェントは不採用。再帰と並列で運用を分けた3日間。"
+excerpt: "Codexデスクトップアプリを使ってみた。Claude もDTアプリ併用。ただ、Agent Teamはコンテキストの視点で不採用。再帰と並列で運用を分けた3日間。"
 ---
 
 ## この3日間
@@ -23,10 +23,12 @@ excerpt: "Codexとデスクトップアプリを使ってみた。自律型エ�
 
 - CodexとClaudeデスクトップアプリ（MCP経由でGitHub直接読み書き）を使ってみた
 - Claude Codeのサブエージェント間対話は使わないことにした。コンテキストを持てないから
-- 探索は再帰、収集は並列。この区別でLLMの運用を分けた（S11）
-- 信頼、美のモデル（BSPL）は足場として必要になりそう。まだ仮説保持
-- お金を感情やエネルギーとして読み換えると同じ構造が見える（S20）
-- 管理書類が増えすぎた。Tier分類で整理した
+  - コンテキストをどれだけ長く持てるか、常に改善したい。
+- 探索は再帰、収集は並列。この区別でLLMの運用を分けた
+- 信頼、美のモデルは足場として必要になりそう。まだ仮説保持。
+  - これまでのSNS投稿でインフォグラフィックでUP済みのやつ。
+- お金を感情やエネルギーとして読み換えると同じ構造が見える
+- 管理書類が増えすぎた。Tier分類で整理した。
 
 ---
 
