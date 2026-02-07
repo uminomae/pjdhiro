@@ -22,7 +22,7 @@ excerpt: "Codexデスクトップアプリを使ってみた。Claude もDTア�
 [前回レポート（2/3）]({{ '/20260203-project-management-report/' | relative_url }})からの差分。
 
 - CodexとClaudeデスクトップアプリ（MCP経由でGitHub直接読み書き）を使ってみた
-  - レビュー用。創造的な作業はやっぱ無理っぽい。
+  - Codexはレビュー用。創造的な作業はこれから評価。
 - Claude CodeのAgent team(サブエージェント間対話)は、まだ使わない。
   - 現状の使用量は週上限の33%/日、APIで5時間あたり$35くらい。
     - これ以上重い作業は予算オーバー
