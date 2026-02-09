@@ -17,10 +17,36 @@ header:
   teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
 ---
 
+<style>
+/* ── Dark theme: .page__content only ── */
+.page__content{background:#0a0e1a;color:#94a3b8;padding:2em 1.5em;border-radius:8px;font-family:'Noto Sans JP','Hiragino Sans',sans-serif;font-size:15px;line-height:1.9}
+.page__content p{color:#94a3b8}.page__content strong{color:#e2e8f0}
+.page__content a{color:#f59e0b}.page__content a:hover{color:#fbbf24}
+.page__content h1,.page__content h2,.page__content h3,.page__content h4{color:#e2e8f0;font-family:'Noto Serif JP',serif}
+.page__content h2{font-size:1.35em;margin-top:2.5em;padding-bottom:.3em;border-bottom:1px solid #2a3654}
+.page__content blockquote{background:#111827;border-left:3px solid #f59e0b;border-radius:8px;padding:16px 20px;margin:1.5em 0;color:#94a3b8;font-size:.9em;line-height:1.7}
+.page__content blockquote p{color:#94a3b8}
+.page__content .notice--info{background:#111827;border-left:3px solid #f59e0b;border-radius:8px;color:#94a3b8;padding:16px 20px}
+.page__content pre{background:#1a2235!important;border:1px solid #2a3654;border-radius:8px;padding:16px 20px;color:#94a3b8;font-size:13px;line-height:1.6}
+.page__content code{background:#1a2235;color:#f59e0b;padding:2px 6px;border-radius:4px;font-size:.88em}
+.page__content pre code{background:none;color:#94a3b8;padding:0}
+.page__content .highlight{background:#1a2235!important}
+.page__content table{width:100%;border-collapse:collapse;margin:1.5em 0}
+.page__content th{background:#1a2235;color:#e2e8f0;border:1px solid #2a3654;padding:10px 14px;font-size:.9em;font-weight:600;text-align:left}
+.page__content td{background:#111827;color:#94a3b8;border:1px solid #2a3654;padding:10px 14px;font-size:.9em}
+.page__content tr:hover td{background:#1a2235}
+.page__content img{border-radius:8px;border:1px solid #2a3654;margin:1em 0}
+.page__content hr{border:none;border-top:1px solid #2a3654;margin:2.5em 0}
+.page__content ul,.page__content ol,.page__content li{color:#94a3b8}
+.toc{background:#111827;border:1px solid #2a3654;border-radius:8px}
+.toc .nav__title{background:#1a2235;color:#e2e8f0}
+.toc a{color:#94a3b8}.toc a:hover,.toc li.active a{color:#f59e0b}
+</style>
+
 ## はじめに
 
-本ページは「AIとの協働」で作成しています。
-日々、ナレッジ探索により更新され、PDFなどの出力はAIによって自動的に出力されます。
+本ページは「AIとの協働」による知の探索と蓄積、それを基にした出力で構築されます。
+AIによって生成された成果物（PDF）は基本的にそのままUPしています。
 
 ## 定義：
 
