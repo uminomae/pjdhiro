@@ -146,9 +146,12 @@ AIによって生成された成果物（PDF）は基本的にそのままUPし�
 
 ## 研究・開発(執筆)環境：AI協働
 
-- LLM  
-  - Claude DesktopApp Opus4.6(Skills) +GitHub(MCP)
-  - Codex DesktopApp(MacOS) GPT5.2High + GitHub
+- ナレッジ管理 + プロジェクト管理 + 文書出力：
+  - Claude DesktopApp (+ Code) + GitHub(MCP)
+- ナレッジベースレビュー
+  - CahtGPT(or Codex DesktopApp) + GitHub
+- 画像出力
+  - Nano Banana & NotebookLM
 
 [![ワークフロー]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})]({{ '/assets/images/pages/pd/thinking/kessonWF.png' | relative_url }})  
 English
