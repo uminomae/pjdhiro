@@ -17,6 +17,11 @@ header:
   teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
 ---
 
+## はじめに
+
+本ページは「AIとの協働」で作成しています。
+日々、ナレッジ探索により更新され、PDFなどの出力はAIによって自動的に出力されます。
+
 ## 定義：
 
 私の場合のデザイン思考です。  
