@@ -60,6 +60,7 @@ header:
 
 [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
 
+
 [参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](https://chatgpt.com/share/698497c7-89c0-800b-bd32-04fdd195ad1b)
 
 ### 思考フレーム：私のデザイン思考
@@ -73,6 +74,8 @@ header:
 [![image]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }})
 
 #### 主観の構造：意識の4層モデル：神経現象学的・禅的な視点での止観・観照
+
+[![image]({{ '/assets/pdf/PD/thinking-kesson/ss.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/pdf/PD/thinking-kesson/Kesson_Driven_Thinking_Architecture.pdf' | relative_url }})
 
 - 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
 - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
