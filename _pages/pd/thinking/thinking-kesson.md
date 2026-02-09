@@ -3,6 +3,7 @@ permalink: /thinking-kesson/
 title: "欠損駆動思考 - Kesson-Driven Thinking"
 date: 2026-01-26
 categories:
+  - Love駆動開発
   - デザイン思考
 sidebar:
   nav: docs
@@ -10,7 +11,7 @@ sidebar:
   nav3: cat-design-topics
   nav4: ""
   nav5: ""
-excerpt: ""  
+excerpt: デザイン思考：私の場合：欠けを探す旅"  
 header:
   og_image: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
   teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
@@ -56,16 +57,27 @@ header:
 
 [参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](https://chatgpt.com/share/698497c7-89c0-800b-bd32-04fdd195ad1b)
 
-- 思考フレーム：私のデザイン思考
-  - 私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
-- 内容：
-  - 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
-  - 主観的見方：神経現象学的・禅的な視点での止観・観照
-    - 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
-  - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
-  - 入力：違和感、無意味感、無価値感
+### 思考フレーム：私のデザイン思考
 
-### 出力
+私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
+
+### 内容：
+
+#### 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
+
+[![image]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }})
+
+#### 主観の構造：意識の4層モデル：神経現象学的・禅的な視点での止観・観照
+
+- 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
+- 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
+- 入力：違和感、無意味感、無価値感
+
+[![image]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }})
+
+
+
+### 成果品：
 
 - 最新ver  
   <!-- - ※ Claude Code：`❯ /publish-pdf` で自動生成 -->
@@ -75,6 +87,23 @@ header:
 {::nomarkdown}
 {% include pdf-download-buttons.html %}
 {:/nomarkdown}
+
+
+## 私の学習・トレーニング方法
+
+- 初級：
+  - 止観：
+    - 目的：状態を「荒れさせずに」見分けられるようにする
+    - 止：呼吸瞑想（＝止＝安定化／観＝識別・洞察を同時に育てる）
+    - 観：心の指差し（プルチックの感情の輪を見ながら今の状態を選ぶ）
+- 中級：
+  - 非瞑想状態でも双運を保つ  
+  
+※迷ったらひたすら瞑想しておけばOKって感じです
+
+[参考:【止観 - Wikipedia】](https://ja.wikipedia.org/wiki/%E6%AD%A2%E8%A6%B3)
+
+---
 
 ## 研究・開発(執筆)環境：AI協働
 
@@ -99,20 +128,6 @@ English
   - 実装内容：「意味が無い」「価値が無い」と感じる状況でデザインする際の「私のやり方」です。  
     - 入力：LLM(Gem)
     - 出力：高校生向け、一般向け、専門家向けの３パターンの口調で出力します。
-
-## 学習・トレーニング方法
-
-- 初級：
-  - 止観：
-    - 目的：状態を「荒れさせずに」見分けられるようにする
-    - 止：呼吸瞑想（＝止＝安定化／観＝識別・洞察を同時に育てる）
-    - 観：心の指差し（プルチックの感情の輪を見ながら今の状態を選ぶ）
-- 中級：
-  - 非瞑想状態でも双運を保つ  
-  
-※迷ったらひたすら瞑想しておけばOKって感じです
-
-[参考:【止観 - Wikipedia】](https://ja.wikipedia.org/wiki/%E6%AD%A2%E8%A6%B3)
 
 ## 参考  
 

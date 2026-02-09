@@ -4,7 +4,7 @@ title: "対話：創造とは"
 date: 2025-12-18
 categories:
   - 対話
-  - LOVE駆動開発
+  - Love駆動開発
 sidebar:
   nav: docs
   nav2: ""
