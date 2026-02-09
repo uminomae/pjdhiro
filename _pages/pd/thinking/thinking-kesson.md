@@ -100,28 +100,31 @@ AIによって生成された成果物（PDF）は基本的にそのままUPし�
 
 ### 内容：
 
-#### 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
-
-[![image]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }})
-
-#### 主観の構造：意識の4層モデル：神経現象学的・禅的な視点での止観・観照
-
-[![image]({{ '/assets/pdf/PD/thinking-kesson/ss.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/pdf/PD/thinking-kesson/Kesson_Driven_Thinking_Architecture.pdf' | relative_url }})
-
+- 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
 - 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
 - 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
 - 入力：違和感、無意味感、無価値感
 
-[![image]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }})
+---
 
+- 創造とは
 
+[![image]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }})
+
+- 主観の構造：意識の4層モデル：
+
+[![image]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }})
 
 ### 成果品：
 
-- PDF 最新ver：Claude Opus4.6による自動出力  
+- スライド
+  
+[![image]({{ '/assets/pdf/PD/thinking-kesson/ss.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/pdf/PD/thinking-kesson/Kesson_Driven_Thinking_Architecture.pdf' | relative_url }})
+
+- 文書（PDF） 最新ver：Claude Opus4.6による自動出力  
   <!-- - ※ Claude Code：`❯ /publish-pdf` で自動生成 -->
 
-![PDF]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }
+<!-- ![PDF]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 } -->
 
 {::nomarkdown}
 {% include pdf-download-buttons.html %}
