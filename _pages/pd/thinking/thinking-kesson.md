@@ -89,8 +89,7 @@ AIによって生成された成果物（PDF）は基本的にそのままUPし�
 
 ## 構造とプロセス（プロトタイプ）
 
-[![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})
-
+<!-- [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }}) -->
 
 [参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](https://chatgpt.com/share/698497c7-89c0-800b-bd32-04fdd195ad1b)
 
@@ -98,7 +97,7 @@ AIによって生成された成果物（PDF）は基本的にそのままUPし�
 
 私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
 
-### 内容：
+### 特徴：
 
 - 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
 - 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
@@ -173,6 +172,13 @@ English
   - 実装内容：「意味が無い」「価値が無い」と感じる状況でデザインする際の「私のやり方」です。  
     - 入力：LLM(Gem)
     - 出力：高校生向け、一般向け、専門家向けの３パターンの口調で出力します。
+
+## 発散思考時メモ
+
+[![image]({{ '/assets/images/blog/2026-2/0206/BSPL.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/BSPL.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/ishiki-model13.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/ishiki-model13.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/ishiki-org.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/ishiki-org.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/mtCB1.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/mtCB1.jpg' | relative_url }})
 
 ## 参考  
 
