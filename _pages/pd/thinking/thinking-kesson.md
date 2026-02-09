@@ -17,6 +17,11 @@ header:
   teaser: https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg
 ---
 
+## 定義：
+
+私の場合のデザイン思考です。  
+捨てられる違和感を、問いとして抱え続ける思考。  
+答えより先に、欠けを保持し続けるための思考。欠損駆動思考とします。
 
 ## なるべく短く説明すると
 
@@ -79,7 +84,7 @@ header:
 
 ### 成果品：
 
-- 最新ver  
+- PDF 最新ver：Claude Opus4.6による自動出力  
   <!-- - ※ Claude Code：`❯ /publish-pdf` で自動生成 -->
 
 ![PDF]({{ '/assets/images/blog/2026-2/0203/ss-kesson-general.png' | relative_url }}){: .img-card .img-40 }
