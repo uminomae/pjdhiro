@@ -43,6 +43,14 @@ header:
 .toc a{color:#94a3b8}.toc a:hover,.toc li.active a{color:#f59e0b}
 </style>
 
+<div class="hero-wrapper" style="margin: -2em -1.5em 2em -1.5em;">
+  <iframe 
+    src="{{ '/assets/html/hero-complete.html' | relative_url }}" 
+    style="width:100%; aspect-ratio:16/10; border:none; border-radius:8px 8px 0 0;" 
+    loading="lazy">
+  </iframe>
+</div>
+
 ## はじめに
 
 本ページは「AIとの協働」による知の探索と蓄積、それを基にした出力で構築されます。
