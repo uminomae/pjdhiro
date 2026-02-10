@@ -54,13 +54,23 @@ header:
 ## はじめに
 
 本ページは「AIとの協働」による知の探索と蓄積、それを基にした出力で構築されます。
-AIによって生成された成果物（PDF）は基本的にそのままUPしています。
+基本的に、AIによって生成された成果物（PDF）はそのままUPしています。
 
-## 定義：
+## 定義：欠損駆動思考とは
 
-私の場合のデザイン思考です。  
-捨てられる違和感を、問いとして抱え続ける思考。  
-答えより先に、欠けを保持し続けるための思考。欠損駆動思考とします。
+私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
+
+- 捨てられる違和感を、問いとして抱え続ける思考。  
+- 答えより先に、欠けを保持し続けるための思考。
+
+
+### 特徴：
+
+- 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
+- 主観の構造：生存と愛（間主観性）の二つを核とした意識の構造とプロセス
+- 分析の視点：欠損（意味の無さ、価値の無さなど）
+- 入力値：違和感、無意味感、無価値感
+
 
 ## なるべく短く説明すると
 
@@ -93,32 +103,18 @@ AIによって生成された成果物（PDF）は基本的にそのままUPし�
 で、その先に出てくるものが創造じゃないかと。  
 才能じゃなくて態度だと思う。
 
+[参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](https://chatgpt.com/share/698497c7-89c0-800b-bd32-04fdd195ad1b)
+
 ---
 
 ## 構造とプロセス（プロトタイプ）
 
-<!-- [![image]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }})]({{ '/assets/images/pages/pd/thinking/spec.jpg' | relative_url }}) -->
-
-[参考：ChatGPT【欠損駆動思考 - 高校生向け解説依頼】](https://chatgpt.com/share/698497c7-89c0-800b-bd32-04fdd195ad1b)
-
-### 思考フレーム：私のデザイン思考
-
-私が構想・設計（デザイン）を行う過程で、「意味の無さ」を扱う際の認知的活動・思考フレームです。
-
-### 特徴：
-
-- 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
-- 主観の構造：生存と愛（間主観性）の二つを核とした意識の構造とプロセス
-- 分析の視点：欠損（意味の無さ、価値の無さなど）
-- 入力値：違和感、無意味感、無価値感
-
----
-
-- 創造の構造とプロセス
+[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
 
 [![image]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }})
 
-- 主観の構造：意識の4層モデル
+
+主観の構造：意識の4層モデル
 
 [![image]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }})
 
