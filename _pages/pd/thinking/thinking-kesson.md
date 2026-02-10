@@ -108,17 +108,17 @@ AIによって生成された成果物（PDF）は基本的にそのままUPし�
 ### 特徴：
 
 - 対象の捉え方：[創造の構造とプロセス]({{ '/dialogueCreation/' | relative_url }})
-- 生存と愛（間主観性）の二つを核とした意識の構造とプロセス
-- 分析・着想の視点：欠損（意味の無さ、価値の無さなど）
-- 入力：違和感、無意味感、無価値感
+- 主観の構造：生存と愛（間主観性）の二つを核とした意識の構造とプロセス
+- 分析の視点：欠損（意味の無さ、価値の無さなど）
+- 入力値：違和感、無意味感、無価値感
 
 ---
 
-- 創造とは
+- 創造の構造とプロセス
 
 [![image]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/creation5.jpg' | relative_url }})
 
-- 主観の構造：意識の4層モデル：
+- 主観の構造：意識の4層モデル
 
 [![image]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/pages/pd/thinking/Layer4m1-sns.png' | relative_url }})
 
@@ -183,10 +183,10 @@ English
 
 ## 発散思考時メモ
 
-[![image]({{ '/assets/images/blog/2026-2/0206/BSPL.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/BSPL.jpg' | relative_url }})
-[![image]({{ '/assets/images/blog/2026-2/0206/ishiki-model13.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/ishiki-model13.jpg' | relative_url }})
-[![image]({{ '/assets/images/blog/2026-2/0206/ishiki-org.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/ishiki-org.jpg' | relative_url }})
-[![image]({{ '/assets/images/blog/2026-2/0206/mtCB1.jpg' | relative_url }}){: .img-card .img-60 }]({{ '/assets/images/blog/2026-2/0206/mtCB1.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/BSPL.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0206/BSPL.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/ishiki-model13.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0206/ishiki-model13.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/ishiki-org.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0206/ishiki-org.jpg' | relative_url }})
+[![image]({{ '/assets/images/blog/2026-2/0206/mtCB1.jpg' | relative_url }}){: .img-card .img-40 }]({{ '/assets/images/blog/2026-2/0206/mtCB1.jpg' | relative_url }})
 
 ## 参考  
 

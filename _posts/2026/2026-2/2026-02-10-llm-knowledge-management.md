@@ -1,0 +1,152 @@
+---
+permalink: /20260210-llm-knowledge-management/
+title: "ナレッジ管理にSaaSを使っている方へ"
+date: 2026-02-10 10:00:00 +0900
+categories:
+  - Project-Design
+tags:
+  - プロジェクト管理
+  - AI協働
+  - ナレッジマネジメント
+  - LLM
+header:
+  og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0210/teaser.svg"
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0210/teaser.svg"
+excerpt: "Rui Ueyamaさんの反応を見て考えた。生存のための思考から、やっと解き放たれるのかもしれない。"
+---
+
+## pjdhiro冒頭まとめ
+
+<!-- ここはpjdhiroが書く部分 -->
+
+---
+
+## 以下の記事はClaudeに記事を作ってもらいました。コピペです。
+
+※Claudeの思い込みもあるので間違えてるところもありますが、そのまま掲載してます。
+
+---
+
+<style>
+/* ── Dark theme: .page__content only ── */
+.page__content{background:#0a0e1a;color:#94a3b8;padding:2em 1.5em;border-radius:8px;font-family:'Noto Sans JP','Hiragino Sans',sans-serif;font-size:15px;line-height:1.9}
+.page__content p{color:#94a3b8}.page__content strong{color:#e2e8f0}
+.page__content a{color:#f59e0b}.page__content a:hover{color:#fbbf24}
+.page__content h1,.page__content h2,.page__content h3,.page__content h4{color:#e2e8f0;font-family:'Noto Serif JP',serif}
+.page__content h2{font-size:1.35em;margin-top:2.5em;padding-bottom:.3em;border-bottom:1px solid #2a3654}
+.page__content blockquote{background:#111827;border-left:3px solid #f59e0b;border-radius:8px;padding:16px 20px;margin:1.5em 0;color:#94a3b8;font-size:.9em;line-height:1.7}
+.page__content blockquote p{color:#94a3b8}
+.page__content .notice--info{background:#111827;border-left:3px solid #f59e0b;border-radius:8px;color:#94a3b8;padding:16px 20px}
+.page__content pre{background:#1a2235!important;border:1px solid #2a3654;border-radius:8px;padding:16px 20px;color:#94a3b8;font-size:13px;line-height:1.6}
+.page__content code{background:#1a2235;color:#f59e0b;padding:2px 6px;border-radius:4px;font-size:.88em}
+.page__content pre code{background:none;color:#94a3b8;padding:0}
+.page__content .highlight{background:#1a2235!important}
+.page__content table{width:100%;border-collapse:collapse;margin:1.5em 0}
+.page__content th{background:#1a2235;color:#e2e8f0;border:1px solid #2a3654;padding:10px 14px;font-size:.9em;font-weight:600;text-align:left}
+.page__content td{background:#111827;color:#94a3b8;border:1px solid #2a3654;padding:10px 14px;font-size:.9em}
+.page__content tr:hover td{background:#1a2235}
+.page__content img{border-radius:8px;border:1px solid #2a3654;margin:1em 0}
+.page__content hr{border:none;border-top:1px solid #2a3654;margin:2.5em 0}
+.page__content ul,.page__content ol,.page__content li{color:#94a3b8}
+.toc{background:#111827;border:1px solid #2a3654;border-radius:8px}
+.toc .nav__title{background:#1a2235;color:#e2e8f0}
+.toc a{color:#94a3b8}
+.toc a:hover,.toc li.active a{color:#f59e0b}
+</style>
+
+{: .notice--info}
+本記事は、Rui Ueyamaさんのポストを引き金に、pjdhiroが観測したことをClaudeが記事として整形したもの。
+
+## 01. Rui Ueyamaさんの反応
+
+LLVMリンカ（lld）の設計者であり、高速リンカmoldの作者でもあるRui Ueyamaさんが、Xでこう書いていた。
+
+> Claudeで自動でCコンパイラが書けたというブログを見て、Anthropicに$100課金してClaude Codeを使い始めてみたんだけど、めちゃくちゃすごいね
+
+AnthropicがLLMでCコンパイラを書いたという発表を見て、Claude Codeを使い始めた。そして「めちゃくちゃすごい」と言っている。
+
+これを見て、少し考えた。
+
+## 02. 「楽になった」の意味
+
+推測だけど、Rui Ueyamaさんの仕事の本質は、コンパイラやリンカを「発明する」ことだと思う。
+
+高速化のアルゴリズム、アーキテクチャ設計、パフォーマンスの限界を押し広げる工夫。これは人間にしかできない、最後のアートな部分。
+
+一方で、コンパイラを「書く」こと自体には、形式的な部分がある。言語仕様に従って実装し、コード生成を行う。定義が明確で、検証可能な領域。
+
+LLMが「書いてくれる」のは、おそらく後者。だから「楽になった」のではないかと想像している。
+
+発明する人が、発明に集中できるようになった。そういうことなんじゃないかと。
+
+## 03. 私にも起きていること
+
+私はナレッジ管理に、心理領域を扱っている。
+
+言語化しづらい。ラベルより細かい。共有化しづらい。
+
+人間にとっては当たり前のこと。でも、機械にとっては難しい。定義が曖昧で、検証が難しく、形式化しにくい。Cコンパイラのように「仕様通りに実装すれば動く」という世界ではない。
+
+ところが、動いている。
+
+LLMがリポジトリにMCPで接続し、Markdownファイルを読み書きする。構造化し、整理し、提案する。私は「意図を伝える人」になった。
+
+## 04. フラットファイルDB
+
+GitHubは、本質的にはテキストファイルのバージョン管理。
+
+WordやExcelをハードディスクに保存するように、Markdownファイルを保存していける。GitHubというより、UNIXがそういう管理。人間にとっては自然なこと。
+
+私はGitHub Pagesでブログを投稿してきた。ナレッジを公開するために。プログラミング言語のファイルと、日本語の文章と、同じ仕組みで管理してきた。
+
+Windowsのフォルダ管理では不便だった人は多いはず。だからSaaSでナレッジ管理したり、Wikiで手順書いたりしてきた。
+
+でも本質は、フラットファイルDB。特殊なことではない。
+
+## 05. LLMがApp Serverになる
+
+ここにClaudeがMCPで接続する。
+
+SaaSは便利なパッケージ。でも構成部品は見えない。細かいところをカスタマイズしたくなるとき、コストが高かった。
+
+LLMがMCPでファイルにアクセスすると、構造が見えてくる気がする。
+
+- データ = Gitリポジトリ（フラットファイルDB）
+- 推論・編集・構造化 = LLM
+- 公開 = 静的サイトジェネレータ
+
+SaaSの重要な価値だったユーザーインターフェースが、LLMに取られる。LLMがフロントエンドからフルスタック的に振る舞う。フレームワークが邪魔になっていく。
+
+## 06. SaaS株の暴落
+
+これは私の観測だけではないらしい。
+
+2026年1月29日、ソフトウェア株はCovid以来最悪の日を記録した。ServiceNowは9四半期連続で決算を上回ったにもかかわらず、11%下落。Microsoftは1日で時価総額3600億ドルを失った。iShares Expanded Tech Software ETFは年初来25%下落している。
+
+[SaaStrのJason Lemkin](https://www.saastr.com/the-2026-saas-crash-its-not-what-you-think/)は「SaaS crash」と呼んでいる。[CNBCの報道](https://www.cnbc.com/2026/02/06/ai-anthropic-tools-saas-software-stocks-selloff.html)によれば、「SaaSpocalypse」という言葉も出ている。
+
+背景にあるのは「シートベースの収益モデルの崩壊」。AIエージェントが50人の仕事をするなら、50人分のライセンスは要らなくなる。
+
+今年のトレンドである自律、マルチエージェント、サブエージェント間対話。McKinseyは「agentic organization」という概念を提唱し、89%の組織がまだ産業時代のモデルに留まっていると指摘している。
+
+## 07. 分断が溶ける
+
+LLMによって、「エンジニアか非エンジニアか」という区分が、私の中で意味を失い始めている。
+
+理系か文系か。技術者か事務職か。そういう区分に、私はずっと縛られてきた気がする。
+
+でも、形式的な部分をLLMが引き受けてくれるなら、その縛りから少し自由になれる。
+
+## 08. 解き放たれる
+
+明治維新以降の160年は言い過ぎかもしれない。でも、私や私の周りでは、何かが変わり始めているので、皆さんにも起きているんじゃないかと思う。
+
+生存のために思考に費やす時間が減ると、別のことに使える。
+
+魂や人間関係や愛といったもの。私はそこに時間を使えるようになってきた気がする。
+
+よかったよね。
+
+---
+
+*Generated by Claude.ai (Opus 4.5) from repository contents. 2026-02-10*
