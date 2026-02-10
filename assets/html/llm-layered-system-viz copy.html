@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM as App Server - Knowledge System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0e1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        #container { width: 100%; max-width: 1200px; height: 400px; background: #0a0e1a; border-radius: 14px; overflow: hidden; }
+        .note { font-family: ui-sans-serif, system-ui; color: #94a3b8; padding: 10px 12px; font-size: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script>
+(function() {
+    const mount = document.getElementById('container');
+    const COLORS = {
+        bg: 0x0a0e1a,
+        amber: 0xf59e0b,
+        cyan: 0x22d3ee,
+        violet: 0xa78bfa,
+        slate: 0x94a3b8,
+    };
+
+    const HEIGHT = 400;
+    const width0 = mount.clientWidth || 900;
+
+    // Scene / Renderer
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(COLORS.bg);
+    scene.fog = new THREE.Fog(COLORS.bg, 8, 30);
+
+    const renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: false,
+        powerPreference: "high-performance",
+    });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(width0, HEIGHT);
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    mount.appendChild(renderer.domElement);
+
+    // Camera
+    const camera = new THREE.PerspectiveCamera(45, width0 / HEIGHT, 0.1, 80);
+    camera.position.set(0.2, 2.0, 13.2);
+
+    // Lights
+    scene.add(new THREE.AmbientLight(0xffffff, 0.18));
+    const key = new THREE.DirectionalLight(0xffffff, 0.45);
+    key.position.set(6, 8, 7);
+    scene.add(key);
+    const sysLight = new THREE.PointLight(COLORS.cyan, 1.0, 28, 2);
+    sysLight.position.set(0, 1.2, 0);
+    scene.add(sysLight);
+    const procLight = new THREE.PointLight(COLORS.violet, 0.6, 20, 2);
+    procLight.position.set(-4, 2.8, 6);
+    scene.add(procLight);
+
+    // Utils
+    const clamp01 = (v) => Math.max(0, Math.min(1, v));
+    const smoothstep = (a, b, x) => {
+        const t = clamp01((x - a) / (b - a));
+        return t * t * (3 - 2 * t);
+    };
+    const easeInOut = (t) => t * t * (3 - 2 * t);
+    const rand = (a, b) => a + Math.random() * (b - a);
+
+    // ============================================================
+    // 1) Floor: Evanescent wave + interference patterns
+    // ============================================================
+    const floorGeo = new THREE.PlaneGeometry(40, 40, 1, 1);
+    floorGeo.rotateX(-Math.PI / 2);
+
+    const floorMat = new THREE.ShaderMaterial({
+        transparent: true,
+        depthWrite: true,
+        uniforms: {
+            uTime: { value: 0 },
+            uCyan: { value: new THREE.Color(COLORS.cyan) },
+            uAmber: { value: new THREE.Color(COLORS.amber) },
+        },
+        vertexShader: `
+            varying vec3 vPos;
+            void main(){
+                vPos = position;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+        fragmentShader: `
+            uniform float uTime;
+            uniform vec3 uCyan;
+            uniform vec3 uAmber;
+            varying vec3 vPos;
+
+            float wave(vec2 p, float t, float k){
+                float r = length(p);
+                return sin(k*r - t) / (1.0 + r*0.35);
+            }
+
+            void main(){
+                vec2 p = vPos.xz * 0.28;
+                float t = uTime * 1.2;
+
+                float w1 = wave(p + vec2(0.8, -0.2), t, 6.0);
+                float w2 = wave(p + vec2(-0.6, 0.4), t*0.92, 5.2);
+                float inter = (w1 + w2) * 0.5;
+
+                float r = length(p);
+                float env = exp(-r*0.9);
+
+                float lines = abs(sin((p.x + inter*0.15) * 10.0)) * 0.45
+                            + abs(sin((p.y - inter*0.12) * 10.0)) * 0.45;
+
+                float field = 0.55*inter*env + 0.10*lines*env;
+
+                vec3 col = uCyan * (0.22 + 0.55*abs(field)) + uAmber * (0.05 + 0.12*max(field, 0.0));
+                float alpha = 0.14 + 0.18 * env + 0.08 * smoothstep(0.15, 0.6, abs(field));
+                gl_FragColor = vec4(col, alpha);
+            }
+        `,
+    });
+
+    const floor = new THREE.Mesh(floorGeo, floorMat);
+    floor.position.y = -2.2;
+    scene.add(floor);
+
+    // ============================================================
+    // 2) Central SYSTEM: Layered planes (Transformer layers)
+    // ============================================================
+    const systemGroup = new THREE.Group();
+    scene.add(systemGroup);
+
+    const LAYERS = 7;
+    const layerW = 5.2;
+    const layerH = 2.8;
+    const layerGap = 0.22;
+
+    const layerMat = new THREE.ShaderMaterial({
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        uniforms: {
+            uTime: { value: 0 },
+            uCyan: { value: new THREE.Color(COLORS.cyan) },
+            uViolet: { value: new THREE.Color(COLORS.violet) },
+        },
+        vertexShader: `
+            varying vec2 vUv;
+            void main(){
+                vUv = uv;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+        fragmentShader: `
+            uniform float uTime;
+            uniform vec3 uCyan;
+            uniform vec3 uViolet;
+            varying vec2 vUv;
+
+            float grid(vec2 uv, float s){
+                vec2 g = abs(fract(uv*s - 0.5) - 0.5) / fwidth(uv*s);
+                float line = 1.0 - min(min(g.x, g.y), 1.0);
+                return line;
+            }
+
+            void main(){
+                vec2 uv = vUv;
+                float g1 = grid(uv, 18.0);
+                float g2 = grid(uv + vec2(0.02, 0.01), 6.0) * 0.45;
+                float scan = smoothstep(0.02, 0.0, abs(uv.y - fract(uTime*0.22)));
+                float diag = 0.5 + 0.5*sin((uv.x*10.0 - uv.y*8.0) + uTime*0.6);
+                float intensity = 0.10*g1 + 0.08*g2 + 0.10*scan + 0.05*diag*g2;
+                vec3 col = mix(uCyan, uViolet, 0.35*scan + 0.15*diag);
+                float alpha = intensity;
+                gl_FragColor = vec4(col, alpha);
+            }
+        `,
+    });
+
+    const layerGeo = new THREE.PlaneGeometry(layerW, layerH, 1, 1);
+    const layers = [];
+    for (let i = 0; i < LAYERS; i++) {
+        const m = new THREE.Mesh(layerGeo, layerMat.clone());
+        m.position.set(0, 0.6 + (i - (LAYERS - 1) / 2) * layerGap, 0);
+        m.rotation.y = 0.08;
+        m.userData = { i, phase: rand(0, Math.PI * 2) };
+        systemGroup.add(m);
+        layers.push(m);
+    }
+
+    // Frame around layers
+    const frameGeo = new THREE.BoxGeometry(layerW + 0.35, layerH + 0.35, 0.7);
+    const frameMat = new THREE.MeshBasicMaterial({
+        color: COLORS.cyan,
+        transparent: true,
+        opacity: 0.08,
+        wireframe: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+    });
+    const frame = new THREE.Mesh(frameGeo, frameMat);
+    frame.position.set(0, 0.6, 0);
+    systemGroup.add(frame);
+
+    // Index nucleus (points)
+    const nucleusCount = 240;
+    const nucGeo = new THREE.BufferGeometry();
+    const nucPos = new Float32Array(nucleusCount * 3);
+    const nucSeed = new Float32Array(nucleusCount);
+
+    for (let i = 0; i < nucleusCount; i++) {
+        const gx = (Math.floor(rand(0, 8)) - 3.5) * 0.18;
+        const gy = (Math.floor(rand(0, 6)) - 2.5) * 0.18;
+        const gz = (Math.floor(rand(0, 4)) - 1.5) * 0.18;
+        nucPos[i * 3 + 0] = gx + rand(-0.03, 0.03);
+        nucPos[i * 3 + 1] = 0.6 + gy + rand(-0.03, 0.03);
+        nucPos[i * 3 + 2] = gz + rand(-0.03, 0.03);
+        nucSeed[i] = Math.random();
+    }
+    nucGeo.setAttribute("position", new THREE.BufferAttribute(nucPos, 3));
+    nucGeo.setAttribute("aSeed", new THREE.BufferAttribute(nucSeed, 1));
+
+    const nucMat = new THREE.ShaderMaterial({
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        uniforms: {
+            uTime: { value: 0 },
+            uCyan: { value: new THREE.Color(COLORS.cyan) },
+            uAmber: { value: new THREE.Color(COLORS.amber) },
+        },
+        vertexShader: `
+            uniform float uTime;
+            attribute float aSeed;
+            varying float vA;
+
+            void main(){
+                vec3 p = position;
+                float flick = 0.55 + 0.45*sin(uTime*1.8 + aSeed*6.283);
+                vA = flick;
+
+                vec4 mv = modelViewMatrix * vec4(p, 1.0);
+                float dist = length(mv.xyz);
+                gl_PointSize = (2.2 + 2.0*flick) * (260.0 / max(dist, 1.0));
+                gl_Position = projectionMatrix * mv;
+            }
+        `,
+        fragmentShader: `
+            uniform vec3 uCyan;
+            uniform vec3 uAmber;
+            varying float vA;
+
+            void main(){
+                vec2 uv = gl_PointCoord.xy - 0.5;
+                float d = dot(uv, uv);
+                float a = smoothstep(0.25, 0.0, d) * (0.22 + 0.25*vA);
+                vec3 col = mix(uCyan, uAmber, 0.25*vA);
+                gl_FragColor = vec4(col, a);
+            }
+        `,
+    });
+
+    const nucleus = new THREE.Points(nucGeo, nucMat);
+    scene.add(nucleus);
+
+    // ============================================================
+    // 3) File nodes
+    // ============================================================
+    const fileGroup = new THREE.Group();
+    scene.add(fileGroup);
+
+    const FILES = 12;
+    const fileGeo = new THREE.OctahedronGeometry(0.16, 0);
+    const fileMatBase = new THREE.MeshStandardMaterial({
+        color: COLORS.slate,
+        emissive: COLORS.cyan,
+        emissiveIntensity: 0.08,
+        roughness: 0.8,
+        metalness: 0.05,
+    });
+
+    const files = [];
+    for (let i = 0; i < FILES; i++) {
+        const m = new THREE.Mesh(fileGeo, fileMatBase.clone());
+        const ang = (i / FILES) * Math.PI * 2 + rand(-0.1, 0.1);
+        const r = rand(4.2, 6.2);
+        m.position.set(Math.cos(ang) * r, rand(-0.8, 1.6), rand(-5.2, 2.6));
+        m.userData = { base: m.position.clone(), phase: rand(0, Math.PI * 2), drift: rand(0.12, 0.28) };
+        fileGroup.add(m);
+        files.push(m);
+    }
+
+    // ============================================================
+    // 4) Data paths + impulses
+    // ============================================================
+    const pathGroup = new THREE.Group();
+    scene.add(pathGroup);
+
+    const tubeMatBody = new THREE.MeshStandardMaterial({
+        color: COLORS.cyan,
+        emissive: COLORS.cyan,
+        emissiveIntensity: 0.04,
+        roughness: 0.9,
+        transparent: true,
+        opacity: 0.18,
+    });
+    const tubeMatGlow = new THREE.MeshBasicMaterial({
+        color: COLORS.amber,
+        transparent: true,
+        opacity: 0.05,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+    });
+
+    const makeCurve = (from, to) => {
+        const mid = from.clone().lerp(to, 0.55);
+        mid.y += rand(0.2, 0.8);
+        mid.x += rand(-0.6, 0.6);
+        mid.z += rand(-0.4, 0.4);
+        const c1 = from.clone().lerp(mid, 0.6);
+        c1.y += rand(0.15, 0.45);
+        const c2 = mid.clone().lerp(to, 0.6);
+        c2.y += rand(0.05, 0.35);
+        return new THREE.CatmullRomCurve3([from.clone(), c1, mid, c2, to.clone()], false, "catmullrom", 0.5);
+    };
+
+    const paths = [];
+    for (let i = 0; i < FILES; i++) {
+        const from = files[i].position.clone();
+        const to = new THREE.Vector3(rand(-1.0, 1.0), 0.6 + rand(-0.6, 0.6), rand(-0.3, 0.3));
+        const curve = makeCurve(from, to);
+        const tubeGeo = new THREE.TubeGeometry(curve, 70, 0.02, 6, false);
+        const tube = new THREE.Mesh(tubeGeo, tubeMatBody);
+        const glow = new THREE.Mesh(tubeGeo, tubeMatGlow);
+        pathGroup.add(tube, glow);
+        paths.push({ points: curve.getSpacedPoints(150) });
+    }
+
+    // Impulses
+    const IMP_PER_PATH = 7;
+    const TOTAL_IMP = FILES * IMP_PER_PATH;
+    const impGeo = new THREE.SphereGeometry(0.05, 10, 10);
+    const impMat = new THREE.MeshBasicMaterial({
+        color: COLORS.amber,
+        transparent: true,
+        opacity: 0.9,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+    });
+    const impulses = new THREE.InstancedMesh(impGeo, impMat, TOTAL_IMP);
+    impulses.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+    scene.add(impulses);
+
+    const impData = [];
+    let inst = 0;
+    for (let p = 0; p < FILES; p++) {
+        for (let j = 0; j < IMP_PER_PATH; j++) {
+            impData.push({
+                instIndex: inst++,
+                pathIndex: p,
+                phase: rand(0, 1),
+                speed: rand(0.12, 0.22),
+                batch: rand(0.4, 1.0),
+            });
+        }
+    }
+    const tmpObj = new THREE.Object3D();
+
+    // ============================================================
+    // 5) Quantum tunneling particles
+    // ============================================================
+    const TUNNEL_COUNT = 800;
+    const tunGeo = new THREE.BufferGeometry();
+    const tunPos = new Float32Array(TUNNEL_COUNT * 3);
+    const tunSeed = new Float32Array(TUNNEL_COUNT);
+
+    for (let i = 0; i < TUNNEL_COUNT; i++) {
+        tunPos[i * 3 + 0] = rand(-12, 12);
+        tunPos[i * 3 + 1] = rand(-2, 7);
+        tunPos[i * 3 + 2] = rand(-18, 7);
+        tunSeed[i] = Math.random();
+    }
+    tunGeo.setAttribute("position", new THREE.BufferAttribute(tunPos, 3));
+    tunGeo.setAttribute("aSeed", new THREE.BufferAttribute(tunSeed, 1));
+
+    const tunMat = new THREE.ShaderMaterial({
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        uniforms: {
+            uTime: { value: 0 },
+            uCyan: { value: new THREE.Color(COLORS.cyan) },
+            uViolet: { value: new THREE.Color(COLORS.violet) },
+        },
+        vertexShader: `
+            uniform float uTime;
+            attribute float aSeed;
+            varying float vA;
+            varying float vMix;
+
+            float hash(float n){ return fract(sin(n)*43758.5453); }
+
+            void main(){
+                vec3 p = position;
+                float t = uTime*0.55 + aSeed*12.0;
+                float blink = step(0.92, fract(sin(t)*43758.5453));
+                float soft = 0.45 + 0.55*sin(uTime*1.1 + aSeed*6.283);
+                vA = blink * soft;
+                vMix = hash(aSeed*19.1);
+
+                vec4 mv = modelViewMatrix * vec4(p, 1.0);
+                float dist = length(mv.xyz);
+                gl_PointSize = (1.6 + 2.0*vA) * (280.0 / max(dist, 1.0));
+                gl_Position = projectionMatrix * mv;
+            }
+        `,
+        fragmentShader: `
+            uniform vec3 uCyan;
+            uniform vec3 uViolet;
+            varying float vA;
+            varying float vMix;
+
+            void main(){
+                vec2 uv = gl_PointCoord.xy - 0.5;
+                float d = dot(uv, uv);
+                float a = smoothstep(0.25, 0.0, d) * 0.22 * vA;
+                vec3 col = mix(uCyan, uViolet, vMix);
+                gl_FragColor = vec4(col, a);
+            }
+        `,
+    });
+
+    const tunnel = new THREE.Points(tunGeo, tunMat);
+    scene.add(tunnel);
+
+    // ============================================================
+    // Mouse + Animation
+    // ============================================================
+    const mouse = { x: 0, y: 0 };
+    const baseCam = camera.position.clone();
+    const targetCam = camera.position.clone();
+
+    renderer.domElement.addEventListener("mousemove", (e) => {
+        const rect = renderer.domElement.getBoundingClientRect();
+        mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = ((e.clientY - rect.top) / rect.height) * 2 - 1;
+    });
+
+    window.addEventListener("resize", () => {
+        const w = mount.clientWidth || width0;
+        renderer.setSize(w, HEIGHT);
+        camera.aspect = w / HEIGHT;
+        camera.updateProjectionMatrix();
+    });
+
+    const clock = new THREE.Clock();
+
+    function animate() {
+        requestAnimationFrame(animate);
+        const t = clock.getElapsedTime();
+
+        floorMat.uniforms.uTime.value = t;
+
+        systemGroup.rotation.y = 0.12 * Math.sin(t * 0.35) + t * 0.06;
+        systemGroup.rotation.x = 0.03 * Math.sin(t * 0.27);
+
+        for (let i = 0; i < layers.length; i++) {
+            layers[i].material.uniforms.uTime.value = t + i * 0.35;
+            layers[i].position.x = 0.03 * Math.sin(t * 0.45 + layers[i].userData.phase);
+        }
+
+        frameMat.opacity = 0.06 + 0.03 * (0.5 + 0.5 * Math.sin(t * 0.8));
+        nucMat.uniforms.uTime.value = t;
+
+        for (let i = 0; i < files.length; i++) {
+            const f = files[i];
+            const { base, phase, drift } = f.userData;
+            f.position.set(
+                base.x + drift * 0.18 * Math.sin(t * 0.35 + phase),
+                base.y + drift * 0.12 * Math.sin(t * 0.42 + phase * 1.3),
+                base.z + drift * 0.15 * Math.sin(t * 0.28 + phase * 0.8)
+            );
+            f.rotation.y += 0.002;
+            f.rotation.x += 0.0015;
+        }
+
+        for (let k = 0; k < impData.length; k++) {
+            const d = impData[k];
+            const pts = paths[d.pathIndex].points;
+            const cyc = (t * d.speed + d.phase) % 1;
+            const gate = smoothstep(0.02, 0.18, cyc) * (1.0 - smoothstep(0.78, 0.98, cyc));
+            const tt = easeInOut(clamp01((cyc * (1.0 + 0.25 * d.batch)) % 1)) * gate;
+            const idx = Math.floor(tt * (pts.length - 1));
+            const p = pts[idx];
+            const jitter = 0.025 * Math.sin(t * 6.0 + d.phase * 10.0);
+            tmpObj.position.set(p.x + jitter * 0.22, p.y + jitter * 0.15, p.z);
+            const head = smoothstep(0.04, 0.14, cyc) * (1.0 - smoothstep(0.55, 0.82, cyc));
+            tmpObj.scale.setScalar(0.75 + 0.9 * head);
+            tmpObj.updateMatrix();
+            impulses.setMatrixAt(d.instIndex, tmpObj.matrix);
+        }
+        impulses.instanceMatrix.needsUpdate = true;
+
+        tunMat.uniforms.uTime.value = t;
+
+        targetCam.set(baseCam.x + mouse.x * 0.55, baseCam.y - mouse.y * 0.30, baseCam.z);
+        camera.position.lerp(targetCam, 0.06);
+        camera.lookAt(0, 0.6, 0);
+
+        renderer.render(scene, camera);
+    }
+    animate();
+})();
+    </script>
+</body>
+</html>
