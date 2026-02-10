@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630"
+     font-family="'Helvetica Neue', 'Noto Sans JP', sans-serif">
+  <defs>
+    <linearGradient id="bgTeaser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgTeaser)"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="180" text-anchor="middle" fill="#f8fafc" font-size="48" font-weight="700">ナレッジ管理に</text>
+  <text x="600" y="250" text-anchor="middle" fill="#f8fafc" font-size="48" font-weight="700">SaaSを使っている方へ</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="330" text-anchor="middle" fill="#f59e0b" font-size="28" font-weight="600">App Server を LLM に置き換えた先</text>
+  
+  <!-- Visual Elements -->
+  <!-- Left: Traditional -->
+  <rect x="200" y="400" width="180" height="80" fill="#7c3aed" rx="10" stroke="#a78bfa" stroke-width="2"/>
+  <text x="290" y="435" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="600">App Server</text>
+  <text x="290" y="460" text-anchor="middle" fill="#e2e8f0" font-size="12">固定ロジック</text>
+  
+  <!-- Arrow -->
+  <polygon points="420,440 480,440 480,420 520,450 480,480 480,460 420,460" fill="#f59e0b"/>
+  
+  <!-- Right: LLM -->
+  <rect x="560" y="400" width="180" height="80" fill="#22c55e" rx="10" stroke="#6ee7b7" stroke-width="2"/>
+  <text x="650" y="435" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="600">LLM</text>
+  <text x="650" y="460" text-anchor="middle" fill="#e2e8f0" font-size="12">自律的推論</text>
+  
+  <!-- Status Badge -->
+  <rect x="820" y="410" width="160" height="60" fill="#1e293b" rx="8" stroke="#22c55e" stroke-width="2"/>
+  <text x="900" y="435" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="600">ホビーユースでは</text>
+  <text x="900" y="455" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="700">既に動いている</text>
+  
+  <!-- Footer -->
+  <text x="600" y="580" text-anchor="middle" fill="#94a3b8" font-size="16">pjdhiro.github.io</text>
+</svg>
