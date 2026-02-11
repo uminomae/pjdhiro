@@ -121,7 +121,7 @@ SaaSの重要な価値だったユーザーインターフェースが、LLMに�
 
 [SaaStrのJason Lemkin](https://www.saastr.com/the-2026-saas-crash-its-not-what-you-think/)は「SaaS crash」と呼んでいる。[CNBCの報道](https://www.cnbc.com/2026/02/06/ai-anthropic-tools-saas-software-stocks-selloff.html)によれば、「SaaSpocalypse」という言葉も出ている。
 
-SaaS株が暴落してるらしい。「シートベースの収益モデルの崩壊」とか言われてる。AIエージェントが50人の仕事をするなら、50人分のライセンスは要らなくなる。そういう話。
+「シートベースの収益モデルの崩壊」とか言われてる。AIエージェントが50人の仕事をするなら、50人分のライセンスは要らなくなる。そういう話。
 
 ## 06. 分断が溶ける
 
