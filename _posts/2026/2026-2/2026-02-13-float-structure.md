@@ -56,7 +56,7 @@ excerpt: "2週間やってみて、自分の用途では構造が見えてきた
 - GitHubという「場」にMarkdownファイルがあって、LLMがそれを読み書きする。
 - テスト文みたいになっていく。
 
-## ヘッドレスCMSっぽい
+## 相手によって伝達を変えられるのは楽：ヘッドレスCMSっぽい
 
 [![インフォグラフィック]({{ '/assets/images/blog/2026-2/0213/image.png' | relative_url }})]({{ '/assets/images/blog/2026-2/0213/image.png' | relative_url }})
 
