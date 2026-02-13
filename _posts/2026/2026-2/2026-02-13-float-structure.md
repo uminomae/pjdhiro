@@ -60,21 +60,8 @@ excerpt: "2週間やってみて、自分の用途では構造が見えてきた
 
 [![インフォグラフィック]({{ '/assets/images/blog/2026-2/0213/image.png' | relative_url }})]({{ '/assets/images/blog/2026-2/0213/image.png' | relative_url }})
 
-- GitHubをデータベースにして、必要なときに必要な形に変換する。
-  - 伝達対象向けに発信できるのはめっちゃ楽。全方位に伝達する方がむずい。
-    - ブログ記事を出したいとき、Jekyllが静的HTMLにする。
-    - PDFにしたいとき、Claudeが読者層に合わせてレイアウトを組む。
-      - 例：一般向けと専門家向け
-    - 3D体験空間にしたいとき、jsでパースする。
 
-## 制約条件：でも、オーナー＋LLMで十分な時代
-
-- 読み取り専用発信
-- 運用者が1人
-- でも、APIもDBも解決する人出てきてくれると他力本願の楽観。
-  - 参考:【Hello Entire World · Entire】 <https://entire.io/blog/hello-entire-world/>
-
-## 構成を並べてみた。
+### 構成を並べてみた。
 
 | 要素 | WordPress | Note | 私の構成 |
 |------|-----------|------|-----------|
@@ -83,3 +70,17 @@ excerpt: "2週間やってみて、自分の用途では構造が見えてきた
 | App | PHP | 内蔵 | — |
 | Web | Nginx / Apache | note.com | GitHub Pages |
 
+
+- GitHubをデータベースにして、必要なときに必要な形に変換する。
+  - 伝達対象向けに発信できるのはめっちゃ楽。全方位に伝達する方がむずい。
+    - ブログ記事を出したいとき、Jekyllが静的HTMLにする。
+    - PDFにしたいとき、Claudeが読者層に合わせてレイアウトを組む。
+      - 例：一般向けと専門家向け
+    - 3D体験空間にしたいとき、jsでパースする。
+
+## 制約条件：でも、オーナー＋LLMで十分な時間帯も
+
+- 読み取り専用発信に限る
+- 運用者が複数だと困る
+- とはいえ、そのうち、APIもDBも解決する人出てきてくれると他力本願の楽観。Wordpressの進化のような。
+  - 参考:【Hello Entire World · Entire】 <https://entire.io/blog/hello-entire-world/>
