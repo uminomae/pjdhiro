@@ -17,6 +17,9 @@ header:
 excerpt: "2週間やってみて、自分の用途では構造が見えてきた。WordPress的な多機能とNote的な手軽さ、両方取れてるように見える。動的サーバーが要らなくなった理由のほうが面白い。"
 ---
 
+{: .notice--info}
+[2/3レポート]({{ '/20260203-project-management-report/' | relative_url }})、[2/6レポート]({{ '/20260206-llm-workflow-evolution/' | relative_url }})、[2/10レポート]({{ '/20260210-llm-knowledge-management/' | relative_url }})の続き。
+
 {::nomarkdown}
 <video 
   src="{{ '/assets/movie/pd/kesson/kesson-space.mp4' | relative_url }}" 
@@ -31,9 +34,7 @@ excerpt: "2週間やってみて、自分の用途では構造が見えてきた
 
 [3Dサイトはこちら >>【欠損駆動思考 - Kesson Space】](https://uminomae.github.io/kesson-space/?lang=en)
 
-{: .notice--info}
-[2/3レポート]({{ '/20260203-project-management-report/' | relative_url }})、[2/6レポート]({{ '/20260206-llm-workflow-evolution/' | relative_url }})、[2/10レポート]({{ '/20260210-llm-knowledge-management/' | relative_url }})の続き。
-
+---
 
 ## GitHubは多数の人に伝えたい重要な情報を入れるとこ：それは変わらない
 
