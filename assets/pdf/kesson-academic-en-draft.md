@@ -3,9 +3,10 @@ title: "Kesson-Driven Thinking — An Exploratory Description of Prediction Erro
 audience: "academic"
 lang: "en"
 generated: "2026-02-09T00:00:00+09:00"
+generator_model: "claude-opus-4-6"
+generator_script: "generate-drafts v2.5"
 reader_rules_version: "reader-rules-academic v1.0"
-base_commit: "6c837a1"
-status: "auto-generated draft（手で編集しないこと）"
+base_commit: "6fa2193"
 ---
 
 # Kesson-Driven Thinking — An Exploratory Description of Prediction Error Retention

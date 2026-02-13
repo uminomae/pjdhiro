@@ -3,9 +3,10 @@ title: "欠損駆動思考——予測誤差の保持に関する探索的記述
 audience: "academic"
 lang: "ja"
 generated: "2026-02-09T00:00:00+09:00"
+generator_model: "claude-opus-4-6"
+generator_script: "generate-drafts v2.5"
 reader_rules_version: "reader-rules-academic v1.0"
-base_commit: "6c837a1"
-status: "auto-generated draft（手で編集しないこと）"
+base_commit: "6fa2193"
 ---
 
 # 欠損駆動思考——予測誤差の保持に関する探索的記述
