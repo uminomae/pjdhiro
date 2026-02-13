@@ -32,7 +32,7 @@ excerpt: "2週間やってみて、自分の用途では構造が見えてきた
 </video>
 {:/nomarkdown}
 
-[3Dサイトはこちら >>【欠損駆動思考 - Kesson Space】](https://uminomae.github.io/kesson-space/?lang=en)
+[3Dサイトはこちら >>【欠損駆動思考 - Kesson Space】](https://uminomae.github.io/kesson-space/)
 
 ---
 
