@@ -8,7 +8,6 @@ tags:
   - プロジェクト管理
   - AI協働
   - ナレッジマネジメント
-  - 欠損駆動思考
   - Claude
   - Codex
 header:
