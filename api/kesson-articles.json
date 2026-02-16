@@ -1,0 +1,384 @@
+[
+  {
+    "title": "日記：Claude+GitHubを2週間：ナレッジ管理",
+    "date": "2026-02-13",
+    "url": "https://uminomae.github.io/pjdhiro/20260213-float-structure/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0213/teaser.png",
+    "excerpt": "2週間やってみて、自分の用途では構造が見えてきた。WordPress的な多機能とNote的な手軽さ、両方取れてるように見える。動的サーバーが要らなくなった理由のほうが面白い。"
+  },
+  {
+    "title": "ナレッジ管理にSaaSを使っている方へ",
+    "date": "2026-02-10",
+    "url": "https://uminomae.github.io/pjdhiro/20260210-llm-knowledge-management/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0210/teaser.svg",
+    "excerpt": "トレンドで見かけた投稿から考えた。生存のための思考から、やっと解き放たれるのかもしれない。"
+  },
+  {
+    "title": "探索は再帰、収集は並列 — LLM運用を分けた6日間",
+    "date": "2026-02-06",
+    "url": "https://uminomae.github.io/pjdhiro/20260206-llm-workflow-evolution/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0206/ss.png",
+    "excerpt": "Codexデスクトップアプリを使ってみた。Claude もDTアプリ併用。ただ、Agent Teamはコンテキストの視点で不採用。再帰と並列で運用を分けた3日間。"
+  },
+  {
+    "title": "Claude.ai Skillsを試した最初の2.5日間の記録",
+    "date": "2026-02-03",
+    "url": "https://uminomae.github.io/pjdhiro/20260203-project-management-report/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0203/teaser.png",
+    "excerpt": "本記事は、Claude.ai（Opus 4.5）がGitHubリポジトリの管理書類・成果物・検討ログを読み込み、生成した。筆者（人間）はプロンプトと最終確認、英語画像の配置を行った。記事そのものが、以下に記述する手法の出力の一つである。"
+  },
+  {
+    "title": "Claude 2日目 50h時点：創造と意識モデル",
+    "date": "2026-02-02",
+    "url": "https://uminomae.github.io/pjdhiro/20260202phase6/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0202/ss.png"
+  },
+  {
+    "title": "9月の悲痛／12月の楽観：自己参照が強まる社会",
+    "date": "2026-02-02",
+    "url": "https://uminomae.github.io/pjdhiro/20260202sep-dec-log/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0202/skill.jpg",
+    "excerpt": "9月と12月に別種類の不安を感じた。12月はおせっかい。天岩戸の終わりか。自己位置が5cm前に出た。主権が戻った。"
+  },
+  {
+    "title": "Claude 環境構築初日26hの作業量：意識モデルについて",
+    "date": "2026-02-01",
+    "url": "https://uminomae.github.io/pjdhiro/20260201phase3-4-completion/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-2/0201/ssUsage.png",
+    "excerpt": "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論を4層モデルで統合。「素朴体験論」としての方法論を確立し、~31,000トークンのPhase 4を完成。"
+  },
+  {
+    "title": "インフォグラフィック生成を通じた思考プロセスの変遷（12月-1月振り返り）",
+    "date": "2026-01-31",
+    "url": "https://uminomae.github.io/pjdhiro/20260131infographic-review/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-1/12-1reviewImage.png",
+    "excerpt": "AIを「思考のペア」として扱い、抽象概念を可視化するプロセスを通じた、12月から1月までの活動と思考の変遷レポート。"
+  },
+  {
+    "title": "自分でGPTs（カスタムGPT・チャットボット）を作る方法",
+    "date": "2026-01-30",
+    "url": "https://uminomae.github.io/pjdhiro/20260130prism/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-1/prism/ss2.png",
+    "excerpt": "OpneAI GPTsの設定方法の解説ページです。"
+  },
+  {
+    "title": "美駆動思考支援の探索：OpenAI Prismを使用してみた",
+    "date": "2026-01-28",
+    "url": "https://uminomae.github.io/pjdhiro/20260187bi-driven/",
+    "type": "post",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-1/img.jpg",
+    "excerpt": "アニメ『チ。―地球の運動について―』の視聴を通じて得た着想を、「思考支援フレームワーク」へと落とし込むプロセスを整理したものです。"
+  },
+  {
+    "title": "美駆動思考（探索中） - Bi-Driven Thinking",
+    "date": "2026-01-28",
+    "url": "https://uminomae.github.io/pjdhiro/thinking-bi/",
+    "type": "page",
+    "teaser": "https://uminomae.github.io/pjdhiro//assets/images/blog/2026-1/img.jpg"
+  },
+  {
+    "title": "欠損駆動思考 - Kesson-Driven Thinking",
+    "date": "2026-01-26",
+    "url": "https://uminomae.github.io/pjdhiro/thinking-kesson/",
+    "type": "page",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/pages/pd/thinking/spec.jpg",
+    "excerpt": "デザイン思考：私の場合：欠けを探す旅"
+  },
+  {
+    "title": "対話：精神とは",
+    "date": "2025-12-21",
+    "url": "https://uminomae.github.io/pjdhiro/dialogueSpilit/",
+    "type": "page",
+    "excerpt": "このページは進化中です。"
+  },
+  {
+    "title": "対話：創造とは",
+    "date": "2025-12-18",
+    "url": "https://uminomae.github.io/pjdhiro/dialogueCreation/",
+    "type": "page",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/blog/20251218/Creation12.jpg",
+    "excerpt": "このページは進化中です。13年前の「渦」を束に変えてきました。"
+  },
+  {
+    "title": "TradingView:indicator:トレンド判定(移動平均線・期間200)",
+    "date": "2025-08-31",
+    "url": "https://uminomae.github.io/pjdhiro/note-pine/trendSMA200/",
+    "type": "page"
+  },
+  {
+    "title": "TradingView:indicator:SMA3×5+BB:移動平均線3本(期間5セット)＆ボリンジャーバンド",
+    "date": "2025-08-30",
+    "url": "https://uminomae.github.io/pjdhiro/note-pine/sma5set/",
+    "type": "page"
+  },
+  {
+    "title": "読書log：老人支配国家 エマニュエル・トッド",
+    "date": "2025-08-13",
+    "url": "https://uminomae.github.io/pjdhiro/20250814roujinShihaiKokka/",
+    "type": "post",
+    "teaser": "https://m.media-amazon.com/images/I/71SyRJdB0XL._SY522_.jpg",
+    "excerpt": "人口統計と家族類系の専門家。移民政策で犯しがちな過ちについて"
+  },
+  {
+    "title": "移民について:2025/8~",
+    "date": "2025-08-13",
+    "url": "https://uminomae.github.io/pjdhiro/note2025Imin/",
+    "type": "page"
+  },
+  {
+    "title": "スピノル場の理解のために民話をあててみる",
+    "date": "2025-06-17",
+    "url": "https://uminomae.github.io/pjdhiro/20250616baToMinwa/",
+    "type": "post",
+    "teaser": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Clifford-torus.gif"
+  },
+  {
+    "title": "発散のタネ・ネタ：draft「√共感マーケティング理論（Square Root Empathy Design）」",
+    "date": "2025-06-15",
+    "url": "https://uminomae.github.io/pjdhiro/20250612sqrtEmpathy/",
+    "type": "post",
+    "teaser": "/assets/movie/yinyang/empathy.mp4"
+  },
+  {
+    "title": "対話：「森の木」 Wood Wide Webと陰陽なフラクタルの青山常運歩",
+    "date": "2025-06-12",
+    "url": "https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/",
+    "type": "post",
+    "teaser": "https://upload.wikimedia.org/wikipedia/commons/a/af/Wind-God-Fujin-and-Thunder-God-Raijin-by-Tawaraya-Sotatsu.png"
+  },
+  {
+    "title": "四元数ステレオ投影ビジュアライザ",
+    "date": "2025-06-11",
+    "url": "https://uminomae.github.io/pjdhiro/note-web-tool/yinyang/",
+    "type": "page"
+  },
+  {
+    "title": "陰陽なJulia集合を逆にたどる",
+    "date": "2025-05-31",
+    "url": "https://uminomae.github.io/pjdhiro/20250531julia/",
+    "type": "post",
+    "teaser": "/assets/movie/2D-Julia-set.mp4",
+    "excerpt": "最近、時代のエネルギーを「粒がリズミカルに重なり合い、統合する」ようなイメージで思考していた。"
+  },
+  {
+    "title": "Link:最近見たサイト",
+    "date": "2025-05-27",
+    "url": "https://uminomae.github.io/pjdhiro/20250527link/",
+    "type": "post",
+    "teaser": "/assets/images/favicon/android-chrome-192x192.png"
+  },
+  {
+    "title": "対話：まとめ：場と時代の違いを考えた",
+    "date": "2025-05-26",
+    "url": "https://uminomae.github.io/pjdhiro/dialogueBaJidai/",
+    "type": "page"
+  },
+  {
+    "title": "対話: 2025",
+    "date": "2025-05-26",
+    "url": "https://uminomae.github.io/pjdhiro/dialogue2025/",
+    "type": "page"
+  },
+  {
+    "title": "日記：(発散中)「時代」とは？：時間結晶の量子電池から発散",
+    "date": "2025-05-25",
+    "url": "https://uminomae.github.io/pjdhiro/20250525Jidainodenchi/",
+    "type": "post"
+  },
+  {
+    "title": "サイドバーの編集",
+    "date": "2025-05-25",
+    "url": "https://uminomae.github.io/pjdhiro/note-dev-sidebar/",
+    "type": "page"
+  },
+  {
+    "title": "経済:まとめ:2025/4~トランプ関税関連",
+    "date": "2025-05-25",
+    "url": "https://uminomae.github.io/pjdhiro/note2025Economy/",
+    "type": "page"
+  },
+  {
+    "title": "日記：質問：ChatGPTは「o4-miniと雑談してプロンプトを作ってもらい、それをo3と4.5に同時に投げて吟味する。」という使い方で良い？",
+    "date": "2025-05-24",
+    "url": "https://uminomae.github.io/pjdhiro/20250524LLM/",
+    "type": "post"
+  },
+  {
+    "title": "日記：図解：天下餅〜従属と低ボラティリティの静かな覇権〜",
+    "date": "2025-05-22",
+    "url": "https://uminomae.github.io/pjdhiro/20250522Tenkamochi/",
+    "type": "post"
+  },
+  {
+    "title": "日記：国家の連結会計と国富、陰徳的「静かな覇権」",
+    "date": "2025-05-14",
+    "url": "https://uminomae.github.io/pjdhiro/20250519KokkaRenketsu/",
+    "type": "post"
+  },
+  {
+    "title": "対話：分かちがたい宇宙を分けてマージ：中心の無と盆踊り",
+    "date": "2025-05-14",
+    "url": "https://uminomae.github.io/pjdhiro/2025-05-14-dimension/",
+    "type": "post"
+  },
+  {
+    "title": "発散：創造の「構え」-As is/To beフレームワーク-",
+    "date": "2025-05-14",
+    "url": "https://uminomae.github.io/pjdhiro/20250517AsistobeEuler/",
+    "type": "post"
+  },
+  {
+    "title": "日記：軸という「間」の結晶：日本債40年債のスプレッド差の日、無リスク資産の分母",
+    "date": "2025-05-13",
+    "url": "https://uminomae.github.io/pjdhiro/20250513-40y/",
+    "type": "post"
+  },
+  {
+    "title": "視聴log：レイ・ダリオ 「変わりゆく世界秩序」 YouTube",
+    "date": "2025-05-11",
+    "url": "https://uminomae.github.io/pjdhiro/20250511ChangingWorldOrder/",
+    "type": "post"
+  },
+  {
+    "title": "対話: 野性の思考について",
+    "date": "2025-05-07",
+    "url": "https://uminomae.github.io/pjdhiro/dialogue-yaseinosikou/",
+    "type": "post"
+  },
+  {
+    "title": "読書log： ジョセフ・ナイ『ソフトパワー』：と、日米のパワーの現状",
+    "date": "2025-05-05",
+    "url": "https://uminomae.github.io/pjdhiro/20250505softpower/",
+    "type": "post"
+  },
+  {
+    "title": "読書log：ジョセフ・ナイ『ソフトパワー』序文 Preface で印象に残ったこと",
+    "date": "2025-05-05",
+    "url": "https://uminomae.github.io/pjdhiro/20250505softpowerPre/",
+    "type": "post"
+  },
+  {
+    "title": "読書log：ジョセフ・ナイ『ソフトパワー』 第1章 で印象に残ったこと",
+    "date": "2025-05-05",
+    "url": "https://uminomae.github.io/pjdhiro/20250505softpower-c1/",
+    "type": "post"
+  },
+  {
+    "title": "日記：人生の60/40ポートフォリオ",
+    "date": "2025-04-29",
+    "url": "https://uminomae.github.io/pjdhiro/20250429AlternativeInvestment/",
+    "type": "post"
+  },
+  {
+    "title": "読書log：『アジア・ファースト 新・アメリカの軍事戦略』読書中のメモ",
+    "date": "2025-04-28",
+    "url": "https://uminomae.github.io/pjdhiro/20250428asia-first/",
+    "type": "post"
+  },
+  {
+    "title": "読書log：齋藤 ジン「世界秩序が変わるとき」読書中のメモ",
+    "date": "2025-04-26",
+    "url": "https://uminomae.github.io/pjdhiro/20250425reading-list-jin-saito/",
+    "type": "post"
+  },
+  {
+    "title": "日記：金利の体感ログ：関税90日延期の数時間前",
+    "date": "2025-04-11",
+    "url": "https://uminomae.github.io/pjdhiro/20250411log/",
+    "type": "post"
+  },
+  {
+    "title": "Project designとは",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/project-design/",
+    "type": "page",
+    "teaser": "https://uminomae.github.io/pjdhiro/assets/images/pages/pd/PdIg5.png"
+  },
+  {
+    "title": "感情メタ認知",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/emotional-metacognition/",
+    "type": "page"
+  },
+  {
+    "title": "受容",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/acceptance/",
+    "type": "page"
+  },
+  {
+    "title": "感情処理",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/emotional-processing/",
+    "type": "page"
+  },
+  {
+    "title": "情動伝染",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/emotional-contagion/",
+    "type": "page"
+  },
+  {
+    "title": "心理的境界",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/personal-boundaries/",
+    "type": "page"
+  },
+  {
+    "title": "価値",
+    "date": "2025-01-14",
+    "url": "https://uminomae.github.io/pjdhiro/value/",
+    "type": "page"
+  },
+  {
+    "title": "瞑想",
+    "date": "2025-01-12",
+    "url": "https://uminomae.github.io/pjdhiro/meditation/",
+    "type": "page"
+  },
+  {
+    "title": "About site",
+    "date": "2025-01-11",
+    "url": "https://uminomae.github.io/pjdhiro/about/",
+    "type": "page"
+  },
+  {
+    "title": "用語: Project",
+    "date": "2024-12-31",
+    "url": "https://uminomae.github.io/pjdhiro/word-project/",
+    "type": "page"
+  },
+  {
+    "title": "用語: その他",
+    "date": "2024-12-31",
+    "url": "https://uminomae.github.io/pjdhiro/word-other/",
+    "type": "page"
+  },
+  {
+    "title": "対話: プロジェクトデザイン",
+    "date": "2024-12-31",
+    "url": "https://uminomae.github.io/pjdhiro/dialogue-project-design/",
+    "type": "page"
+  },
+  {
+    "title": "対話: 受容について",
+    "date": "2024-12-31",
+    "url": "https://uminomae.github.io/pjdhiro/dialogue-acceptance/",
+    "type": "page"
+  },
+  {
+    "title": "対話: 概念を共有するには？",
+    "date": "2024-12-31",
+    "url": "https://uminomae.github.io/pjdhiro/dialogue-sharing-concepts/",
+    "type": "page"
+  }
+]
