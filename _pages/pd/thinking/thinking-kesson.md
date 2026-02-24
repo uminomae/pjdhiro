@@ -3,6 +3,7 @@ permalink: /thinking-kesson/
 title: "欠損駆動思考 - Kesson-Driven Thinking"
 date: 2026-01-26
 categories:
+  - 創造
   - Love駆動開発
   - デザイン思考
 sidebar:
@@ -50,6 +51,8 @@ header:
     loading="lazy">
   </iframe>
 </div>
+
+[Threeサイトはこちら】](https://uminomae.github.io/kesson-space/)
 
 ## はじめに
 
