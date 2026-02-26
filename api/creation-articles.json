@@ -1,0 +1,62 @@
+---
+layout: null
+permalink: /api/creation-articles.json
+sitemap: false
+---
+
+{% assign TAG_TARGET  = "創造" %}
+{% assign CAT_CREATION = "創造" %}
+{% assign EMPTY_ARR    = "" | split: "" %}
+
+{%- assign items = "" | split: "" -%}
+
+{%- for doc in site.posts -%}
+  {%- assign tags = doc.tags | default: EMPTY_ARR -%}
+  {%- assign cats = doc.categories | default: EMPTY_ARR -%}
+  {%- if tags contains TAG_TARGET or cats contains CAT_CREATION -%}
+    {%- assign items = items | push: doc -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- for doc in site.pages -%}
+  {%- assign tags = doc.tags | default: EMPTY_ARR -%}
+  {%- assign cats = doc.categories | default: EMPTY_ARR -%}
+  {%- if tags contains TAG_TARGET or cats contains CAT_CREATION -%}
+    {%- assign items = items | push: doc -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign items = items | sort: "date", "last" | reverse -%}
+
+[
+{%- for doc in items -%}
+  {%- if doc.collection == "posts" -%}
+    {%- assign dtype = "post" -%}
+  {%- else -%}
+    {%- assign dtype = "page" -%}
+  {%- endif -%}
+
+  {%- assign raw_excerpt = doc.excerpt | default: doc.content | default: "" -%}
+  {%- assign excerpt = raw_excerpt | strip_html | normalize_whitespace | strip | truncate: 200, "..." -%}
+
+  {%- assign teaser = doc.header.teaser -%}
+  {%- if teaser and teaser contains '://' -%}
+    {%- assign teaser_url = teaser -%}
+  {%- elsif teaser -%}
+    {%- assign teaser_url = teaser | absolute_url -%}
+  {%- else -%}
+    {%- assign teaser_url = nil -%}
+  {%- endif -%}
+
+  {
+    "type": {{ dtype | jsonify }},
+    "title": {{ doc.title | default: "" | jsonify }},
+    "url": {{ doc.url | absolute_url | jsonify }},
+    "date": {{ doc.date | date_to_xmlschema | jsonify }},
+    "excerpt": {{ excerpt | jsonify }},
+    "tags": {{ doc.tags | default: EMPTY_ARR | jsonify }},
+    "categories": {{ doc.categories | default: EMPTY_ARR | jsonify }},
+    "teaser": {{ teaser_url | jsonify }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]
