@@ -7,7 +7,6 @@ categories:
 tags:
   - プロジェクト管理
   - AI協働
-  - 欠損駆動思考
   - Claude
   - フリーズ対策
   - transform層
