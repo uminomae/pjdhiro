@@ -4,6 +4,7 @@ title: "欠損駆動思考 - Kesson-Driven Thinking"
 date: 2026-01-26
 categories:
   - 創造
+  - 欠損駆動思考
   - Love駆動開発
   - デザイン思考
 sidebar:

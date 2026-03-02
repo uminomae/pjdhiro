@@ -5,6 +5,7 @@ date: 2025-12-18
 categories:
   - 対話
   - 創造
+  - 欠損駆動思考
   - Love駆動開発
 sidebar:
   nav: docs
