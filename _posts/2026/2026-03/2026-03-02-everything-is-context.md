@@ -9,8 +9,8 @@ categories:
 tags:
   - コンテキストエンジニアリング
 header:
-  og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-3/0302/0302.png"
-  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-3/0302/0302.png"
+  og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-03/0302/0302.png"
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-03/0302/0302.png"
 excerpt: "arXiv論文「Everything is Context」を読んだ。Unixの「すべてはファイル」をLLMのコンテキスト管理に持ち込んだ提案。ほぼ同意。ただし一点、論文のパイプラインにない操作がある。"
 toc: true
 toc_sticky: true
