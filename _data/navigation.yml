@@ -9,6 +9,8 @@ main:
 docs:
   - title: "プロジェクトデザインとは"
     url: /project-design/
+  - title: "創造とは"
+    url: /creation/
   - title: "デザイン思考"
     children:
       - title: "欠損駆動思考"
