@@ -2,10 +2,10 @@
 id: issue62-domain-index-ja-v1
 title: "Issue #62 学術分冊PDFインデックス"
 lang: ja
-version: 1.0
-date: 2026-03-03
+version: 1.1
+date: 2026-03-04
 generator_model: GPT-5 Codex (OpenAI)
-generated_at: 2026-03-03
+generated_at: 2026-03-04
 ---
 
 # Issue #62 学術分冊PDFインデックス
@@ -18,6 +18,14 @@ generated_at: 2026-03-03
 - 分冊は**学術版のみ**を対象とします。
 - 学術分冊PDFは `creation-space/assets/reports/issue62/domains/` に配置します。
 
+## 変換層の標準文書（新設）
+
+| 文書 | 用途 |
+|---|---|
+| `transform/creation/publish/domains/issue62-domain-template-academic-ja.md` | 各領域分冊の省略なしテンプレート |
+| `transform/creation/publish/issue62-research-bridge-ja.md` | 研究結果を上位プロジェクトへ接続するメタ台帳 |
+| `transform/creation/publish/issue62-status-ja.md` | 横断ハブ（進捗・運用方針） |
+
 ## 重点5分野（優先作成）
 
 | 分野 | 想定ファイル名 | 主参照 |
@@ -26,11 +34,12 @@ generated_at: 2026-03-03
 | 東洋思想 | `creation-issue62-domain-d13-east-thought-academic-ja.pdf` | `DR-D13-philosophy.md`（東洋思想抽出） |
 | 心理学（ビオン） | `creation-issue62-domain-d14-psychology-bion-academic-ja.pdf` | `DR-D14-psychology.md` + 臨床系参照 |
 | 経営学（タックマン・チーム発達） | `creation-issue62-domain-d22-business-management-academic-ja.pdf` | `DR-D22-business-management.md` |
-| 物理学（QFT） | `creation-issue62-domain-d02-qft-academic-ja.pdf` | `DR-D02-physics.md` |
+| 物理学（QFT） | `creation-issue62-domain-d02-physics-academic-ja.pdf` | `DR-D02-physics.md` |
 
 ## 作成済み（JA）
 
 - `issue62-domain-d22-business-management-academic-ja.md`
+- `issue62-domain-d02-physics-academic-ja.md`
 - `creation-issue62-domain-d22-business-management-academic-ja.pdf`
 
 ## 全領域（D01-D30）テンプレ
