@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-04",
+  "namespace": "kesson",
+  "guides": [
+    {
+      "id": "general",
+      "title_ja": "一般向け",
+      "title_en": "General",
+      "md": {
+        "ja": "md/guides/kesson-general-draft.md",
+        "en": "md/guides/kesson-general-en-draft.md"
+      },
+      "pdf": {
+        "ja": "pdf/guides/kesson-general.pdf",
+        "en": "pdf/guides/kesson-general-en.pdf"
+      }
+    },
+    {
+      "id": "designer",
+      "title_ja": "設計者向け",
+      "title_en": "Designer",
+      "md": {
+        "ja": "md/guides/kesson-designer-draft.md",
+        "en": "md/guides/kesson-designer-en-draft.md"
+      },
+      "pdf": {
+        "ja": "pdf/guides/kesson-designer.pdf",
+        "en": "pdf/guides/kesson-designer-en.pdf"
+      }
+    },
+    {
+      "id": "academic",
+      "title_ja": "専門家向け",
+      "title_en": "Academic",
+      "md": {
+        "ja": "md/guides/kesson-academic-draft.md",
+        "en": "md/guides/kesson-academic-en-draft.md"
+      },
+      "pdf": {
+        "ja": "pdf/guides/kesson-academic.pdf",
+        "en": "pdf/guides/kesson-academic-en.pdf"
+      }
+    }
+  ]
+}
