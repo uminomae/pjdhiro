@@ -4,8 +4,8 @@
   "issue": 62,
   "status": {
     "md": {
-      "ja": "md/issue62/issue62-status-ja.md",
-      "en": "md/issue62/issue62-status-ja.md"
+      "ja": "issue62/issue62-status-ja.md",
+      "en": "issue62/issue62-status-ja.md"
     },
     "pdf": {
       "ja": "pdf/issue62/creation-issue62-status-ja.pdf",
@@ -14,8 +14,8 @@
   },
   "domain_index": {
     "md": {
-      "ja": "md/issue62/issue62-domain-index-ja.md",
-      "en": "md/issue62/issue62-domain-index-ja.md"
+      "ja": "issue62/issue62-domain-index-ja.md",
+      "en": "issue62/issue62-domain-index-ja.md"
     },
     "pdf": {
       "ja": "pdf/issue62/creation-issue62-domain-index-ja.pdf",

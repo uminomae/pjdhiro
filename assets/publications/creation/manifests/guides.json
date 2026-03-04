@@ -8,8 +8,8 @@
       "title_ja": "一般向け",
       "title_en": "General",
       "md": {
-        "ja": "md/guides/creation-general-draft.md",
-        "en": "md/guides/creation-general-draft.md"
+        "ja": "guides/creation-general-draft.md",
+        "en": "guides/creation-general-draft.md"
       },
       "pdf": {
         "ja": "pdf/guides/creation-general.pdf",
@@ -21,8 +21,8 @@
       "title_ja": "設計者向け",
       "title_en": "Designer",
       "md": {
-        "ja": "md/guides/creation-designer-draft.md",
-        "en": "md/guides/creation-designer-draft.md"
+        "ja": "guides/creation-designer-draft.md",
+        "en": "guides/creation-designer-draft.md"
       },
       "pdf": {
         "ja": "pdf/guides/creation-designer.pdf",
@@ -34,8 +34,8 @@
       "title_ja": "専門家向け",
       "title_en": "Academic",
       "md": {
-        "ja": "md/guides/creation-academic-draft.md",
-        "en": "md/guides/creation-academic-draft.md"
+        "ja": "guides/creation-academic-draft.md",
+        "en": "guides/creation-academic-draft.md"
       },
       "pdf": {
         "ja": "pdf/guides/creation-academic.pdf",
