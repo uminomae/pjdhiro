@@ -29,7 +29,7 @@
       "name_ja": "経営学",
       "slug": "business-management",
       "status": "published",
-      "md": "md/issue62/domains/issue62-domain-d22-business-management-academic-ja.md",
+      "md": "issue62/domains/issue62-domain-d22-business-management-academic-ja.md",
       "pdf": "pdf/issue62/domains/creation-issue62-domain-d22-business-management-academic-ja.pdf"
     },
     { "id": "D23", "name_ja": "発達心理", "slug": "developmental-psychology", "status": "planned" },
