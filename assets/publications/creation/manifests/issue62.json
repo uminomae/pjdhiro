@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "generated_at": "2026-03-04",
   "issue": 62,
   "status": {
@@ -21,6 +21,12 @@
       "ja": "pdf/issue62/creation-issue62-domain-index-ja.pdf",
       "en": "pdf/issue62/creation-issue62-domain-index-ja.pdf"
     }
+  },
+  "progress_summary": {
+    "quick_scan": 9,
+    "structure_exploration": 10,
+    "analysis_complete": 11,
+    "total": 30
   },
   "domains_manifest": "manifests/issue62-domains.json"
 }
