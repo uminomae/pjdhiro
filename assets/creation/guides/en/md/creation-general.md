@@ -1,78 +1,91 @@
 ---
 id: creation-general-en-v2
-title: "The Five Stages of Creation"
-subtitle: "A structural model of creative process"
+title: "The Structure of Creation — Five Stages"
+subtitle: "From Field to Bundle"
 tags: [M2, creation, five-stages, general]
 audience: general
 lang: en
 version: 2.0
 date: 2026-03-05
 source: base/text/m2-creation-process/creation-source.md v1.1
-rules: transform/creation/reader-rules/reader-rules-creation-general.md v2.0
+rules: transform/creation/reader-rules/reader-rules-creation-general.md v2.1
+generator_model: claude-opus-4-6
 ---
 
 # What This Is
 
-This document describes a structural model of creation. The model proposes that creative processes move through five stages: Field, Wave, Relation, Vortex, and Bundle.
+This document describes a model of the structure common to creation.
 
-The hypothesis is broad. This model applies not only to human creativity—making art, designing products, writing—but potentially to all generative processes, from physical to mental, from quantum to cosmic. This is a hypothesis, not a proven claim. But it is the scope we are working with.
+If we think of creation as "the ability to come up with good ideas," we end up talking about something we cannot observe. Here, we take a different perspective. We describe creation as a transformation from one state to another. This transformation has five stages: Field, Wave, Relation, Vortex, and Bundle.
 
-The model was developed through cross-domain investigation of 30 academic fields. What follows is a summary of the structure, what it describes, and what remains unresolved.
-
----
+These five stages are not a set of instructions for "how to succeed." They are a structure for seeing "what is happening right now." When you are trying to make something and find yourself stuck, this model helps you distinguish whether something is broken or whether you are simply standing at a particular stage.
 
 # The Five Stages
 
-Creation moves through five stages. Each stage has a distinct structure and produces something specific.
+## Field — Nothing Has Arisen
 
-**Field.** Nothing is differentiated yet. There is no direction, no structure, no form. Something is stirring, but it has no name. A designer sitting before a blank screen, a researcher sensing that something in the data does not add up—this is Field. The defining characteristic is undifferentiated potential.
+Field is a state of nothing. Not even unease. No direction, no structure, not even the faintest sense that "something is off." It can be described as zero, as void.
 
-**Wave.** Multiple directions emerge and begin to diverge. Should we prioritize the user or the technology? Ship fast or build slowly? The experience is oscillation. This is not a problem to fix. Oscillation generates the differences that later stages will work with.
+From this "nothing," something will eventually emerge. The first faint stirring — a vague sense of "something is on my mind" — marks the beginning of the transition to the next stage (Wave). Field is before that. Complete stillness.
 
-**Relation.** Contradictions become unavoidable. Choosing A sacrifices B, but choosing B does not resolve A. This stage is where most people stop. The discomfort is structural: contradictions are at their maximum, and no resolution is visible. The impulse is to escape—decide quickly, start over, or compromise. But staying in this stage, without resolving prematurely, determines the quality of what comes next. This requires support: not necessarily a person physically present, but an internalized sense of safety.
+## Wave — Multiple Directions Emerge
 
-**Vortex.** From within the contradiction, a new coherence emerges. "So that's what it is." The form becomes visible. A prototype works. A draft comes together. This cannot be forced. It arises from having stayed in Relation long enough for the contradictions to reorganize.
+From within the unease, opposing directions begin to emerge. "Maybe this way." "Or maybe that way." An oscillation arises.
 
-**Bundle.** Direction solidifies. The result stabilizes into a reusable structure. What is commonly called "completion." But the cycle does not end here. Bundle becomes the premise for the next Field—the next stirring of "something is not right."
+At the Wave stage, multiple directions exist simultaneously. The temptation is to settle on one quickly, but the role of this stage is to maintain the opposition. You carry the information contained in the tension forward to the next stage.
 
----
+## Relation — Contradictions Coexist
 
-# Why People Get Stuck
+The oppositions born in the Wave stage can no longer be resolved by simple either/or choices. Contradictory elements exist simultaneously, refusing to converge in either direction. Relationships multiply. Complexity reaches its peak.
 
-The most common place to get stuck is Relation.
+Relation is the most uncomfortable place in the five stages. It demands that you remain while holding contradictions. If you flee from this discomfort — by deciding quickly or starting over from scratch — the quality of what emerges in the next stage suffers.
 
-Relation is where contradictions are strongest and no resolution is in sight. It is uncomfortable by design. Three common escape patterns occur here:
+Remaining in contradiction. Not resolving it immediately, but weaving relationships within it. This is the essence of the Relation stage.
 
-Premature closure—choosing one side to end the discomfort. Restart—abandoning the work and beginning again. Compromise—settling for something that satisfies neither direction.
+## Vortex — A New Coherence Emerges
 
-Each of these avoids the structural function of Relation: holding contradictions without resolving them, so that Vortex can emerge with sufficient complexity.
+From the contradictions held in the Relation stage, a new coherence spontaneously arises. Elements that were in opposition become integrated at a higher dimension. A structure that was previously invisible appears in an explicable form.
 
-Staying in Relation is not a matter of willpower. Research across multiple domains—psychoanalysis (Bion's negative capability), complexity science (metastable states), organizational theory (psychological safety)—converges on one finding: the capacity to stay with unresolved contradiction depends on a sense of containment. A relationship, a memory, an internalized trust that the discomfort is survivable.
+What matters at the Vortex stage is not to over-protect the emerging form. The Vortex is not yet a settled structure. Articulating the conditions under which this coherence holds — where it is valid and where it is not — supports the transition to the next stage.
 
----
+## Bundle — Stabilized as Structure
+
+The coherence that arose in the Vortex stabilizes as a reusable structure. Direction is established, and a form that can be applied in other contexts remains.
+
+The Bundle is not an endpoint. A stabilized structure becomes the starting point for the next unease. Returning from Bundle to Field — taking the completed structure as a given and letting a new "something is off" drift — is what sustains creation.
+
+The five stages are not linear but cyclical.
+
+If anything in this explanation so far feels off, that may be an important perspective related to the scope of this model. Holding that sense of unease while reading on, or pausing here, are both meaningful choices.
+
+# Why We Get Stuck in the Middle
+
+Of the five stages, the one where most people get stuck is the Relation stage.
+
+The reason is clear. At Relation, contradiction reaches its maximum. Choosing one side of the opposition would bring relief, but that means returning to the Wave stage. Starting over returns you to the Field, but the information accumulated so far is lost.
+
+Remaining in contradiction is uncomfortable. But this discomfort has structural significance. While you remain at Relation, new relationships are being woven between the opposing elements. This accumulation of relationships creates the conditions for the Vortex — the spontaneous emergence of new coherence.
+
+Being stuck in the middle is not a malfunction. It means you are standing at a particular stage.
 
 # What This Is Useful For
 
-The primary utility is diagnostic. When work stops, knowing which stage you are in changes the response.
+What this model provides is a way to know "where you are right now."
 
-If you are in Field, the appropriate action is to stay with the undifferentiated feeling, not to define it prematurely. If you are in Wave, the action is to preserve the differences, not to resolve them. If you are in Relation, the action is to stay, not to escape. If you are in Vortex, the action is to articulate the emerging form, not to over-protect it. If you are in Bundle, the action is to let the result generate the next Field, not to freeze it.
+When you are trying to make something and hit a wall, it is tempting to think "I lack talent" or "I don't have enough ideas." But from the perspective of the five stages, most blockages mean you are at the Relation stage. What you need is not talent or ideas, but time to remain in contradiction.
 
-The model does not tell you how to be creative. It describes where you are in a process that has structural stages.
+The five stages also help you judge "what to do now." At Field, don't rush to define. At Wave, maintain the opposition. At Relation, don't flee — weave relationships. At Vortex, articulate the conditions of the form. At Bundle, open yourself to the next unease.
 
----
+The appropriate action differs by stage.
 
 # Evidence and Limitations
 
-This model was investigated across 30 academic domains, including creativity research, neuroscience, psychoanalysis, complexity science, organizational theory, mathematics, philosophy, and others. Each domain was evaluated for structural correspondence with the five stages.
+This five-stage structure has been investigated across 30 academic domains. In fields as diverse as complexity science, neuroscience, architecture, music, organizational theory, and anthropology, similar stage structures have been repeatedly observed. In particular, the finding that a stage where contradictions coexist (corresponding to Relation) determines the quality of creation has been consistent across many domains.
 
-**What is established:** The five-stage structure has confirmed correspondences in multiple domains. The stages themselves—undifferentiated potential, divergence, boundary/contradiction, emergence, and stabilization—appear repeatedly under different labels.
+However, the following points remain at the hypothesis stage.
 
-**What is a hypothesis:** The claim that all these correspondences point to the same underlying structure is a hypothesis. The scope of the model—from quantum to cosmic—is a hypothesis. The specific role of Relation as the discriminating stage is strongly supported by evidence but has not been independently verified.
+Whether the order of the five stages is universal has not been confirmed. Cycling, reversal, and overlap between stages are all considered possible. The extent to which individual differences, cultural differences, and domain differences affect the structure requires further investigation.
 
-**What remains unresolved:** Whether the five stages are necessary and sufficient, or whether additional stages exist. Whether the model applies uniformly across all scales. The precise mechanism by which Vortex emerges from Relation.
+The findings suggest that this structure may correspond not only to human creative processes but also to broader phenomena such as self-organization and individuation. This breadth of scope is still under investigation and discussion.
 
-These are open questions, not failures. They define where the investigation continues.
-
----
-
-*Generated from base/text/m2-creation-process/creation-source.md v1.1 following reader-rules-creation-general.md v2.0. 2026-03-05*
+There are things that are confirmed, things that are promising but still under verification, and things that remain hypotheses. In this document, we have distinguished the temperature of each claim. Rather than hiding what is not yet confirmed, we believe that disclosing the current state of evidence is the honest way to present this model.

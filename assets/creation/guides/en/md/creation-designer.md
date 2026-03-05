@@ -1,100 +1,93 @@
 ---
 id: creation-designer-en-v2
-title: "The Five Stages of Creation — A Map for Design Teams"
-subtitle: "Project Design Theory — M2 Creation Process"
+title: "What Lies Between Divergence and Convergence — Five Stages of the Creative Process"
+subtitle: "A Map for Seeing Your Team's Creation Structurally"
 tags: [M2, creation, five-stages, designer]
 audience: designer
 lang: en
 version: 2.0
 date: 2026-03-05
 source: base/text/m2-creation-process/creation-source.md v1.1
-rules: transform/creation/reader-rules/reader-rules-creation-designer.md v2.0
+rules: transform/creation/reader-rules/reader-rules-creation-designer.md v1.0
+generator_model: claude-opus-4-6
 ---
 
-# What This Is
+# The Unnamed Place Between Divergence and Convergence
 
-This document describes a structural model of creation, written for people who design and build things in teams. It proposes five stages—Field, Wave, Relation, Vortex, Bundle—and focuses on what happens between divergence and convergence: the stage that has no name in most design frameworks.
+As a designer or PM, you have likely cycled through divergence and convergence many times. Double Diamond, sprints, iterations. Expand, then narrow. Within that rhythm, was there ever a time that was neither?
 
-The model was developed through investigation across 30 academic domains. Everything here is a hypothesis. The purpose is diagnostic: to help you identify where your team is in a creative process and what the appropriate next action is.
+Not the expanding phase. Not the narrowing phase. Contradictory things existing simultaneously, where choosing either means losing something. Your hands stop in that discomfort.
 
----
+This document starts from the hypothesis that this "unnamed place" has a structure. It does not claim correctness. It presents a map for seeing your team's creative process.
 
-# The Five Stages in Practice
+# Where Are You in the Five Stages?
 
-| Stage | Name | What It Looks Like in a Project | Observable Signs |
-|-------|------|-------------------------------|-----------------|
-| 1 | Field | No clear direction yet. Possibilities are floating. | "I feel like there's something here." "We don't know what we're building yet." |
-| 2 | Wave | Opposing directions emerge. User vs. technology, ship fast vs. build right. | "Should we go this way or that way?" Active debate. |
-| 3 | Relation | Contradictions are at maximum. Neither side can be simply dropped. | "Both feel right." "We can't decide" persists. |
-| 4 | Vortex | Coherence emerges. A prototype works. | "Oh, so that's what it is." An explainable form appears. |
-| 5 | Bundle | Deliverable. Reusable patterns and knowledge remain. | Release, documentation, retrospective articulation. |
+Divergence and convergence describe two stages. But when you look at what actually happens, five stages can be distinguished.
 
-The divergent/convergent binary maps roughly as: Field → Wave → Relation ≈ divergent side; Vortex → Bundle ≈ convergent side. The limitation of this binary is that Relation disappears within it. Relation is neither generating new options (divergent) nor narrowing them (convergent). It is the stage where contradictions become relations—where the structural quality of the outcome is determined.
+## Field — Nothing Has Arisen
 
----
+Before a project begins. Nothing exists yet. Not even "What should we build?" is visible, nor is there any sense that "something is off." Zero, void. When the first stirring — "something is on my mind" — arises from this stillness, the transition to Wave has already begun. The pitfall is being unable to endure this stillness and rushing to define scope.
 
-# Relation: Where Teams Get Stuck
+## Wave — Opposing Axes Emerge
 
-Relation is the most uncomfortable stage. Contradictions do not resolve. Uncertainty is high. Team tension increases.
+Directions emerge from the unease. User needs versus technical constraints. Short-term wins versus long-term vision. Competing stakeholder expectations. Multiple axes of opposition arise simultaneously.
 
-Two signals fire simultaneously:
+The divergence phase is close to this stage, but the key point at Wave is not "expanding" but "maintaining the opposition." The temptation is to settle on one direction quickly, but you carry the information within the tension forward.
 
-**"We need to decide now."** Sprint pressure, deadlines, stakeholder expectations. The body tenses. This is a normal response—uncertainty is a threat signal, and the brain moves to eliminate it quickly.
+## Relation — Contradiction Reaches Its Peak
 
-**"I want to stay with this contradiction a little longer."** This signal is quieter. It gets drowned out by the first one. But whether you can notice this smaller signal determines the quality of what comes next.
+The oppositions born at Wave can no longer be resolved by choosing A or B. You cannot discard either A or B. Then C and D appear as well. Contradictory elements coexist, and complexity reaches its maximum.
 
-If the first signal wins and you decide quickly, Vortex still occurs—but it is shallow. You get a prototype that works, but something is missing. The contradiction was not held long enough to reorganize into genuine coherence.
+This is the "unnamed place between divergence and convergence."
 
-Staying in Relation means holding the contradiction without rushing to resolution. This is what we call "Withhold"—not solving, not answering, continuing to hold the unresolved state a little longer.
+What happens to the team here: "Let's just decide" — that voice rises. The F-axis — deadline pressure, sprint pressure, the signal to get something tangible quickly — works most strongly at this place. If the team yields to that signal and cuts away one side to resolve the contradiction, the quality of what emerges next decreases.
 
-**You cannot stay alone.** Tolerating uncertainty requires a sense of containment. In a team: the ability to say "it's okay that we haven't decided yet." In an individual: an internalized memory of someone who communicated safety. Research converges on this across domains—Bion's containment in psychoanalysis, Bowlby's secure base in attachment theory, Edmondson's psychological safety in organizational research. The finding is consistent: the capacity to hold unresolved contradiction depends on relational support.
+Remaining at Relation means weaving relationships while holding contradictions. Not rushing to conclusions, but finding new connections between opposing elements. This is the structural meaning of "not rushing to a conclusion."
 
----
+However, remaining at Relation requires a condition. The team needs a relationship where it feels safe that "not having an answer yet is okay." Without that sense of being held — psychological safety — the team cannot endure the discomfort of contradiction.
 
-# Connection to Deficiency-Driven Thinking
+## Vortex — The Prototype Emerges
 
-The five stages describe the journey of a held question becoming structure.
+From the contradictions held at Relation, a new coherence spontaneously arises. The moment when "Ah, so that's what it is" takes form. Elements that were in opposition become integrated at a higher dimension.
 
-Deficiency-driven thinking is the practice of holding prediction errors—the brain's signal that something does not match expectations—as questions rather than immediately resolving them.
+Something recognizable as a prototype appears, but it is not yet a settled structure. What matters at this stage is not to over-protect the form. Articulating the conditions under which the Vortex holds — where it is valid and where it breaks down — supports the transition to the next stage.
 
-The five stages map this process:
+## Bundle — Reusable Patterns Remain
 
-**Field**: The held question drifts in undifferentiated form. **Wave**: The question splits into competing signals—"resolve quickly" vs. "stay with the discomfort." **Relation**: Multiple evaluations intersect. Contradiction is at maximum. This is the peak of Withhold. **Vortex**: The question reorganizes into a new structure. **Bundle**: The result stabilizes as reusable knowledge.
+The coherence that arose in the Vortex stabilizes as a deliverable. Reusable patterns and insights remain within the team.
 
-Relation is the steepest pass on this journey. Whether you cross it or bypass it determines the quality of what emerges.
+The Bundle is not an endpoint. A stabilized structure becomes the starting point for the next unease. The moment you think "this direction is settled," a new "something is off" begins to drift. The return from Bundle to Field sustains creation.
 
----
+If these five stages do not match your team's experience so far, that is natural. This map is one way of seeing, and your team's reality may show a different structure.
 
-# Reading Your Team's Process
+# The Art of Not Fleeing at Relation
 
-The five stages occur within individuals and within teams. Looking at your team's creative process structurally means asking: **where are we in the five stages right now?**
+Of the five stages, the one where teams struggle most is Relation.
 
-Are you still in Wave—opposing directions haven't fully emerged yet—but pushing to move into Relation prematurely? Are you in Relation but escaping the discomfort by rushing to Vortex? Have you reached Bundle but resisting the return to Field?
+Contradiction is at its peak, and everyone feels the discomfort. "Let's just decide" sounds rational. But it means discarding the information contained in the opposition.
 
-The Bundle → Field return is particularly difficult for teams. Letting go of a completed thing and returning to "nothing yet" has high psychological cost. But a team that cannot release Bundle cannot enter the next cycle of creation.
+Let us look at remaining at Relation from two perspectives.
 
-The difference between teams that hold Relation and teams that bypass it is not visible in the short term. Both ship deliverables. Over time, the quality diverges. The difference between "we shaped it quickly" and "we held the contradiction and then shaped it" is noticeable to the people who use what you build.
+**The individual perspective**: When you encounter a gap between expectation and reality — that "this isn't it" feeling — instead of immediately correcting it, you hold that gap as a question. You do not rush to a conclusion. You remain in contradiction. This is called "Withhold."
 
----
+**The team perspective**: For individuals to Withhold, the team needs a relationship that can receive it. A relationship that does not blame "not having an answer." The quality of this relationship determines how long the team can remain at Relation, which in turn determines the quality of the Vortex.
 
-# Evidence and Limitations
+Questions held through Withhold are transformed into structure through the five stages. This is where Kesson-Driven Thinking connects.
 
-This model was investigated across 30 academic domains. What is established: the five-stage structure has confirmed correspondences in multiple fields, and Relation is consistently the least-described stage in existing models. What remains a hypothesis: the specific mechanism by which Vortex emerges from Relation, and whether the model applies uniformly across all team configurations.
+# Seeing Your Team's Creative Process
 
-The scope of this model extends beyond human project work. The hypothesis is that these five stages describe generative processes at all scales—physical, biological, psychological. This is the broadest claim and the least proven. For practical use in teams, the relevant finding is narrower: staying with unresolved contradiction, in a supportive context, produces higher-quality outcomes than premature resolution.
+The five stages manifest in both individuals and teams with the same structure.
 
----
+The "Field to Bundle" happening within an individual and the "Field to Bundle" of the team are nested. When one person is at Relation, the team as a whole might be at Wave. Or the team might be at Relation while the PM is pushing toward Bundle.
 
-# For Further Reading
+Asking "Where are we as a team in the five stages?" is how this map is used.
 
-| Author | Connection |
-|--------|-----------|
-| Donald Schön | MIT urban planning researcher. Described designers "thinking by drawing" as "reflection-in-action." Field → Wave → Relation is the structure of reflective practice. |
-| Csikszentmihalyi | Flow researcher. Flow can occur at any stage transition—it is a quality of progression, not a stage. |
-| Wilfred Bion | Psychoanalyst. Described "negative capability"—staying with uncertainty without premature resolution. Structurally parallel to Relation. |
-| Karl Weick | Organizational theorist. The Mann Gulch fire: firefighters who could not drop their tools. A failure of the Bundle → Field return. |
-| Amy Edmondson | Organizational psychologist. Psychological safety as the condition for teams to hold uncertainty. The team-level equivalent of containment. |
+The hardest part is the return from Bundle to Field. Letting go of what has been made. Opening to the next unease while taking "what was decided" as a given. The difference between teams that hold and teams that do not becomes significant over time.
 
----
+# To Close
 
-*Generated from base/text/m2-creation-process/creation-source.md v1.1 following reader-rules-creation-designer.md v2.0. 2026-03-05*
+The last time your team said "let's just decide" — which stage was that?
+
+If you were at Relation, that "let's just decide" may have been a retreat from the discomfort of contradiction.
+
+These five stages are not an answer. They are one map for gaining perspective on your team's creative process. If even one current position on the map became visible, that is enough.
