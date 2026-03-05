@@ -13,7 +13,7 @@
       },
       "pdf": {
         "ja": "guides/ja/pdf/creation-general.pdf",
-        "en": null
+        "en": "guides/en/pdf/creation-general.pdf"
       }
     },
     {
@@ -26,7 +26,7 @@
       },
       "pdf": {
         "ja": "guides/ja/pdf/creation-designer.pdf",
-        "en": null
+        "en": "guides/en/pdf/creation-designer.pdf"
       }
     },
     {
@@ -39,7 +39,7 @@
       },
       "pdf": {
         "ja": "guides/ja/pdf/creation-academic.pdf",
-        "en": null
+        "en": "guides/en/pdf/creation-academic.pdf"
       }
     }
   ]
