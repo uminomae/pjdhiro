@@ -1,195 +1,187 @@
 ---
 id: creation-academic-en-v2
-title: "Do Different Labels Point to the Same Structure? A Cross-Domain Analysis of Five-Stage Creation"
-subtitle: "Project Design Theory — M2 Creation Process"
-tags: [M2, creation, five-stages, academic]
+title: "Structural Comparison of the Five-Stage Model of Creation and Prior Theories"
+subtitle: "Do Different Labels Point to the Same Thing?"
+tags: [M2, creation, five-stages, academic, structural-comparison]
 audience: academic
 lang: en
 version: 2.0
 date: 2026-03-05
 source: base/text/m2-creation-process/creation-source.md v1.1
 rules: transform/creation/reader-rules/reader-rules-creation-academic.md v2.0
+generator_model: claude-opus-4-6
 ---
 
 # 1. Framing the Question
 
-Wallas (1926) describes four stages: Preparation, Incubation, Illumination, Verification. Guilford (1950, 1967) proposes a divergent/convergent binary. Nonaka and Takeuchi (1995) model organizational knowledge creation through SECI. Bion (1970) describes the analyst's capacity to remain in uncertainty. Complexity science describes metastable states at phase boundaries.
+Creativity research, cognitive science, organizational theory, psychoanalysis, complexity science — these domains have used different labels and described creative processes at different scales. Wallas's four stages, Guilford's divergent/convergent thinking, Bion's negative capability, Prigogine's dissipative structures, Nonaka's SECI model. Are these describing different things, or are they pointing to different facets of the same structure?
 
-These are different labels, from different disciplines, describing different phenomena at different scales. The question this document investigates is: **are some of these labels pointing to the same underlying structure? And if so, what does each label reveal that the others do not?**
+This paper presents the five-stage model (Field → Wave → Relation → Vortex → Bundle) as an analytical framework, and reports the results of an investigation spanning 30 academic domains. The analysis has three objectives:
 
-This is not an argument that existing models are insufficient. It is an analysis of whether a five-stage structural pattern—Field, Wave, Relation, Vortex, Bundle—can serve as a coordinate system for comparing what these different labels describe, and for identifying what none of them describe.
+1. To examine whether prior theories and the five-stage model point to the same structure
+2. To identify what is not expressed by existing labels — structures that prior theories may have overlooked
+3. To examine what the five-stage model itself may have overlooked
 
-The hypothesis extends beyond human creativity. The five stages are proposed to describe generative processes across all scales—from quantum to cosmic, physical to mental. This scope is a hypothesis, not a proven claim. The distinctions between physical, biological, and psychological individuation are treated as labels on a spectrum, not as fundamental categories (S55).
+This is an exercise in what we term "finger-pointing-at-the-moon" description. The five-stage model and prior theories are each fingers pointing at the moon. The goal is not to judge which finger is better, but to analyze whether they point at the same moon.
 
-Everything in this document is at the stage of hypothesis. The evidence base comes from systematic investigation across 30 academic domains. What follows is an honest report of what was found, what remains uncertain, and what is unresolved.
+# 2. Method
 
----
+## 2.1 Study Design
 
-# 2. Method of Analysis
+Thirty academic domains were selected, with ten theories or concepts chosen from each domain. Selection criteria were: inclusion of stage-based or structural descriptions of creative processes, and established influence within the domain.
 
-Each domain was evaluated for structural correspondence with the five stages using a standardized protocol:
+## 2.2 Evaluation Method
 
-- **10 representative theories per domain**, selected for diversity of approach
-- **Four-face analysis** for each correspondence: Similarity (where labels overlap), Distinctiveness (what the five-stage model adds), Learning (what the existing theory teaches), Context (under what conditions the correspondence holds or breaks)
-- **Scoring on 8 dimensions** (E-1 through E-8), including structural similarity, discriminative power, and scale sensitivity
-- **Quality checks** (CHK-A through CHK-D) to guard against non-duality violations, forced alignment, and fractal scale conflation
+For each theory, structural correspondence with the five-stage model was evaluated across eight dimensions (E-1 through E-8). Evaluations were structured using four-facet description:
 
-The method does not determine which model is correct. It maps where different labels point to the same phenomenon and where they diverge.
+| Facet | Content |
+|-------|---------|
+| Similarity | Elements believed to point to the same structure as the five-stage model |
+| Uniqueness | Structures present in one but absent in the other |
+| Learning | Insights from prior theories that should be incorporated |
+| Context | The original context of each theory, not translated into this model's terminology |
 
----
+Quality checks included non-duality checks (preventing facile identification), fractal checks (preventing scale conflation), and blind-men-and-elephant checks (confirmation across three or more domains).
 
-# 3. The Five Stages: Definitions
+## 2.3 Methodological Limitations
 
-| Stage | Name | Structure | Process | What Emerges |
-|-------|------|-----------|---------|-------------|
-| 1 | Field | Undifferentiated | Drifting | Matrix of possibility |
-| 2 | Wave | Oscillation / Opposition | Separation | Difference, directionality |
-| 3 | Relation | Boundary / Relation | Connection | Rules, constraints, connections |
-| 4 | Vortex | Individual / Emergence | Inclusion / Fusion | Coherence (prototype) |
+This analysis has the following limitations. First, evaluators were AI systems (multiple models providing multi-perspective evaluation) and the author; expert review within each domain has not been conducted. Second, correspondence judgments are qualitative, and no statistical verification has been performed. Third, the selection of 30 domains itself may contain author bias.
+
+These limitations indicate that this analysis is at the hypothesis-generation phase. Hypothesis testing is a task for the future and falls outside the scope of this paper.
+
+# 3. Definition of the Five-Stage Model
+
+The five-stage model describes creation not as "the ability to produce good ideas" but as a continuous transformation from one state to another.
+
+| Stage | Name | Structure | Process | What Is Generated |
+|-------|------|-----------|---------|-------------------|
+| 1 | Field | Zero / Void | Stillness | Matrix of possibility |
+| 2 | Wave | Oscillation / Opposition | Separation | Differences, directions |
+| 3 | Relation | Boundary / Relationship | Connection | Rules, constraints, links |
+| 4 | Vortex | Individuation / Emergence | Integration | Coherence (prototype) |
 | 5 | Bundle | Direction | Aggregation | Structured outcome |
 
-The five stages cycle. Bundle returns to Field—the completed structure becomes the premise for the next stirring of undifferentiated potential. This cyclical character distinguishes the model from linear stage theories.
+The five stages are cyclical, not linear. The return from Bundle to Field — taking the generated structure as a given and letting the next unease drift — sustains creation.
 
-The divergence/convergence binary maps roughly as: Field → Wave → Relation ≈ divergent; Vortex → Bundle ≈ convergent. The limitation of this binary is that Relation disappears within it. Relation is neither divergent (generating new options) nor convergent (narrowing options). It is where contradictions become relations—a qualitatively distinct structural moment.
+A note on scope: while the five-stage model is presented here as a model of "the creative process," the investigation revealed structural correspondences with broader phenomena including self-organization, individuation, and phase transitions. The distinction between physical, biological, and psychological individuation may be no more than labels on a spectrum. This breadth of scope is examined further in §6.
 
----
+The connection to Kesson-Driven Thinking is as follows. Field is a state of zero, of void. Not even unease has arisen. The first faint stirring marks the beginning of the transition to Wave. Withhold — the function of not processing reflexively but holding errors as questions — operates from Wave onward. At Wave, F-O evaluation (survival axis / attachment axis) gives rise to opposition. At Relation, multiple evaluations intersect. At Vortex, a new structure emerges as errors are reintegrated. At Bundle, reusable knowledge stabilizes.
 
-# 4. Cross-Domain Structural Comparison
+# 4. Structural Comparison with Prior Research
 
-## 4.1 Creativity Research
+## 4.1 Wallas's Four-Stage Model
 
-**Wallas (1926): Four stages**
+Wallas's preparation → incubation → illumination → verification remains the most influential stage model in creativity research.
 
-| Five Stages | Wallas | Analysis |
-|------------|--------|----------|
-| Field | (Pre-preparation) | **Similarity**: Both describe a precondition for creative work. **Distinctiveness**: Wallas begins at Preparation; Field describes the undifferentiated state before preparation begins. **Context**: Wallas's method (introspective report, 1920s) may not have had tools to observe this pre-stage. |
-| Wave | Preparation | **Similarity**: Information gathering and problem framing correspond to oscillation between directions. **Learning**: Wallas emphasizes the active, intentional character of preparation—a corrective to treating Wave as purely passive. |
-| Relation | Between Incubation and Illumination | **Distinctiveness**: This is where the five-stage model proposes the most specific structural claim. Wallas describes Incubation as a period of non-conscious processing and Illumination as sudden insight. What happens between them—the stage where contradictions are at maximum and no resolution is available—is not described in detail. **Context**: This gap may reflect methodological constraints rather than theoretical oversight. |
-| Vortex | Illumination | **Similarity**: Both describe the emergence of coherence. **Learning**: Wallas's emphasis on the sudden, non-volitional character of Illumination is a useful constraint. Vortex should not be described as something one "does." |
-| Bundle | Verification | **Similarity**: Structuring and confirming the result. |
+| Facet | Analysis |
+|-------|----------|
+| Similarity | Incubation corresponds to Field–Wave, illumination to Relation–Vortex, and verification to Bundle. The basic structure of alternation between conscious work and unconscious processing is shared |
+| Uniqueness | The five-stage model includes "Relation" as an explicit stage. In Wallas's description, the transition between incubation and illumination — the state where contradiction peaks and refuses to converge — is not structurally described |
+| Learning | The importance of Wallas's "preparation" stage. The five-stage model's "Field" subsumes preparation, but the process of intentional knowledge acquisition remains implicit |
+| Context | Wallas's model is based on introspective reports and primarily describes individual thought processes. Social processes are outside its scope |
 
-**Guilford (1950, 1967): Divergent/Convergent**
+Whether Wallas's description contains an explicit stage corresponding to Relation: structural similarity is observable in late incubation, but it is not described as an independent stage.
 
-The divergent/convergent binary aligns with the five stages at the extremes (Wave ≈ divergent, Bundle ≈ convergent) but loses resolution in the middle. Relation is neither divergent nor convergent. Whether this represents a genuinely distinct structural stage or a phase within divergence remains an open question.
+## 4.2 Guilford's Divergent/Convergent Thinking
 
-**Csikszentmihalyi (1990): Flow**
+| Facet | Analysis |
+|-------|----------|
+| Similarity | Divergence corresponds to the first half of Field–Wave–Relation; convergence corresponds to Vortex–Bundle. The basic distinction of thinking direction is shared |
+| Uniqueness | The dichotomy erases Relation. The stage where contradiction peaks — a state that is neither divergent nor convergent — has no name |
+| Learning | Measurement methods for divergent thinking (fluency, flexibility, originality) are useful as operational definitions of the Wave stage |
+| Context | Guilford's model is a framework for individual-difference research based on factor analysis, not primarily intended as a stage description of process |
 
-Flow describes a quality of engagement, not a stage. In the five-stage framework, flow may occur at any stage transition—it is an indicator that transition is proceeding smoothly, not a stage in itself. This reframing is a hypothesis requiring verification against Csikszentmihalyi's own framework.
+This analysis illustrates both why the divergent/convergent dichotomy has been widely adopted (operationally definable, easily measured) and its cost (the invisibility of Relation).
 
-## 4.2 Psychoanalysis
+## 4.3 SECI Model (Nonaka & Takeuchi)
 
-**Bion (1970): Negative Capability**
+| Facet | Analysis |
+|-------|----------|
+| Similarity | Socialization corresponds to Field, externalization to Wave–Relation, combination to Vortex, and internalization to Bundle. The basic structure of transformation between tacit and explicit knowledge is similar |
+| Uniqueness | SECI's "Ba" is a social context (shared space), whereas the five-stage model's "Field" is an intra-individual undifferentiated state. The nominal similarity must not be mistaken for structural identity |
+| Learning | SECI's description as an organizational knowledge-creation process. The five-stage model originates from intra-individual process and requires connection to SECI's social dimension |
+| Context | SECI is an organizational theory / management framework describing organizational knowledge transformation, not individual cognitive process |
 
-Bion's concept—the capacity to remain in uncertainty without reaching for premature resolution—is structurally parallel to what the five-stage model describes as "staying in Relation." Both identify the same functional requirement: tolerating unresolved contradiction as a precondition for deeper reorganization.
+## 4.4 Flow Experience (Csikszentmihalyi)
 
-**Similarity**: The structural parallel is strong. Both describe staying with uncertainty as generative rather than merely uncomfortable.
+| Facet | Analysis |
+|-------|----------|
+| Similarity | The "challenge–skill balance" in flow experience is structurally similar to the holding of contradiction at the Relation stage |
+| Uniqueness | Flow is not a stage but is more appropriately understood as a quality of progression that can occur during any transition between stages. Flow describes not "which stage you are at" but "how the transition between stages is proceeding" |
+| Learning | Conditions for optimal experience (clear goals, immediate feedback, challenge/skill balance) are informative as conditions for smooth transitions between the five stages |
+| Context | Csikszentmihalyi's research is a phenomenological description of subjective experience, not a structural model |
 
-**Learning**: Bion's clinical context specifies a crucial condition: containment. The analyst provides a container for the patient's unprocessed experience. This maps onto the five-stage model's claim that staying in Relation requires a supportive relationship (internalized or actual).
+## 4.5 Bion's Negative Capability
 
-**Context**: Bion's description operates in the intersubjective field of analyst-patient relations. Applying it to individual cognitive process adds an interpretive layer that requires clinical verification.
+| Facet | Analysis |
+|-------|----------|
+| Similarity | Negative capability — the capacity to remain in a state without answers — structurally overlaps with the core of the Relation stage. The insight that remaining in uncertainty is a condition for creation is isomorphic with the discipline of Relation |
+| Uniqueness | The five-stage model positions negative capability not as a standalone capacity but as a structural requirement at a specific stage (Relation). That is, it provides a structural answer to "why remaining is necessary" |
+| Learning | Bion's container/contained concept is useful as an auxiliary concept describing the conditions for remaining at Relation — the quality of relationships that can hold contradiction |
+| Context | Bion's descriptions are situated in the clinical context of psychoanalysis, and their application to individual cognitive processes requires interpretation |
 
-**Klein: PS↔D Position**
+## 4.6 Complexity Science (Dissipative Structures, Self-Organization)
 
-The movement from paranoid-schizoid position (splitting, Wave) to depressive position (whole-object recognition, Vortex) passes through a threshold that may correspond to Relation. The PS→D threshold is where contradictions—previously managed through splitting—must be held together.
-
-**Winnicott: Capacity to Be Alone**
-
-"The capacity to be alone in the presence of the other" may be a precise description of the relational condition for staying in Relation. One holds contradictions alone, but within a relational field that provides containment.
-
-## 4.3 Organizational Theory
-
-**Nonaka and Takeuchi (1995): SECI and Ba**
-
-Nonaka's "Ba" and the five-stage "Field" share the function of providing a precondition for generative process. They differ in scale: Ba is a socially designed environment; Field is an individual's undifferentiated internal state. These are different labels at different scales, possibly pointing to the same structural function.
-
-**Learning**: SECI's emphasis on socialization (tacit-to-tacit transfer) highlights a dimension the five-stage model currently treats as future work (M3, team-level extension).
-
-**Weick (1993): Sensemaking**
-
-Sensemaking collapse (as in the Mann Gulch disaster) may describe what happens when Relation fails—when the capacity to hold contradictions breaks down under extreme conditions. This is a hypothesis, but the structural alignment is suggestive.
-
-## 4.4 Philosophy
-
-**Nishida (1911): Pure Experience**
-
-Nishida's "pure experience"—experience prior to subject-object differentiation—describes the Field→Wave boundary. The process by which pure experience differentiates into subject and object is structurally similar to the emergence of Wave from Field.
-
-**Context**: Nishida's description is pre-cognitive-science philosophical writing. The correspondence is structural, not causal.
-
-## 4.5 Mathematics and Physics
-
-**Spinor transformation structure**
-
-The spinor property—requiring 720° rotation to return to initial state, rather than 360°—provides a mathematical intuition for the Relation stage. Simple opposition (180°) does not return to coherence; the full cycle through Relation (beyond 360°) is required for integration.
-
-**Context**: This is not a mathematically rigorous correspondence. It is used as an intuitive mirror for the transformation structure Wave → Relation → Vortex. Whether it has structural grounding beyond analogy is an open question.
-
----
+| Facet | Analysis |
+|-------|----------|
+| Similarity | Strong structural correspondence was confirmed between the formation process of dissipative structures — systems far from equilibrium generating new order through fluctuation — and the five stages. Field corresponds to equilibrium, Wave to amplification of fluctuation, Relation to the metastable state near the critical point, Vortex to spontaneous formation of new order, and Bundle to stable structure |
+| Uniqueness | Physical descriptions of self-organization lack a volitional element of "remaining at Relation." The five-stage model introduces Withhold — a volitional function of holding — at this stage |
+| Learning | Quantitative findings on behavior near critical points are useful as auxiliary lines for understanding the characteristics of the Relation stage |
+| Context | These are descriptions of physicochemical phenomena. The correspondence with human creative processes is at the stage of structural similarity. Whether this correspondence represents structural identity or superficial similarity remains an open question |
 
 # 5. Cross-Domain Findings
 
-Across 30 domains, several patterns emerge:
+The investigation across 30 domains revealed the following cross-domain patterns.
 
-**Relation is the discriminating stage.** Most existing models describe something corresponding to Field, Wave, Vortex, and Bundle. What differentiates the five-stage model is the explicit description of Relation—the stage where contradictions are maximal and no resolution is available. This stage is present but under-described in most frameworks. It appears under labels such as: Incubation (Wallas), negative capability (Bion), metastable state (complexity science), PS↔D threshold (Klein), edge of chaos (Kauffman), liminality (Turner).
+## 5.1 Ubiquity of a Stage Corresponding to Relation
 
-**"Boundaries are thick."** Across complexity science, architecture, anthropology, and chemistry, a consistent finding is that boundaries—the zones between phases, states, or categories—are not lines but regions with their own structure and dynamics. This supports the claim that Relation is a stage, not a transition point.
+The most striking finding is that "a state where contradiction peaks and refuses to converge" has been independently described in many domains. Bion's negative capability, the critical point in complexity science, Turner's liminality in anthropology, Ando's in-between in architecture — these likely point to the same structure under different labels.
 
-**Containment enables Relation.** Across psychoanalysis (Bion's container), developmental psychology (Bowlby's secure base), organizational theory (Edmondson's psychological safety), and education (Vygotsky's zone of proximal development), a supportive relational context is a precondition for staying with unresolved contradiction.
+Meanwhile, existing stage models rarely describe this stage explicitly. Wallas's four stages, Guilford's divergent/convergent thinking, the Double Diamond of design thinking — none independently name a stage corresponding to Relation. This is likely because Relation is a stage that is difficult to measure and operationalize.
 
-**The same structure appears under different labels.** This does not prove that all these phenomena are "the same thing." It raises the question of whether a common structural pattern underlies them—a question that requires further investigation, not a conclusion.
+## 5.2 "Boundaries Are Thick"
 
----
+Across multiple domains, findings confirmed that boundary regions in creative processes are not mere transition points but "thick" regions with their own structure. The critical region of phase transitions in complexity science, the thickness of walls in architecture (where the boundary becomes a place), the liminal phase of rites of passage in anthropology — all suggest that the boundary itself is a site of creation.
 
-# 6. State of Evidence and Unresolved Questions
+## 5.3 Universality of Cyclical Structure
 
-## What is established
+The return from Bundle to Field — where a stable structure becomes the starting point of the next instability — is observed at different scales: feedback loops in complexity science, the knowledge spiral in SECI, and development-and-reorganization in biology. Linear stage models (Wallas) have structural difficulty describing this cycling.
 
-- The five-stage structure has confirmed correspondences across multiple domains
-- Relation is consistently the least-described stage in existing models
-- The requirement for containment/support at the Relation stage is independently confirmed across domains
+# 6. Status of Evidence and Open Questions
 
-## What is a hypothesis
+## 6.1 What Is Confirmed
 
-- That all these correspondences reflect a single underlying structure
-- That the model applies across all scales (quantum to cosmic)
-- That Relation is a structurally independent stage rather than a phase within existing stages
+The structural definition of the five stages and the basic characterization of each stage are confirmed. The finding that structural correspondence was confirmed across the majority of the 30 domains can be reported as fact.
 
-## What is unresolved
+## 6.2 Promising but Under Verification
 
-| Question | Temperature |
-|----------|------------|
-| Is Relation a genuinely independent stage, or a phase within Incubation? | Hypothesis—strong evidence but not independently verified |
-| Does the five-stage cycle apply uniformly across scales? | Hypothesis |
-| What is the mechanism by which Vortex emerges from Relation? | Unresolved |
-| How does the model extend to team-level processes (M3)? | Unresolved |
-| Does the spinor correspondence have structural grounding beyond analogy? | Unresolved |
-| What is the relationship between Withhold and predictive error minimization (Friston, 2010)? | Unresolved (held as ISS-43) |
+The finding that Relation has the highest discriminative power for structural similarity has been consistently confirmed across multiple domains and is considered a promising hypothesis. The pattern that "boundaries are thick" is similarly supported.
 
-These questions are intentionally held open. The simultaneous resolution of all holding points would signal theoretical completion. Their persistence signals that investigation continues.
+## 6.3 Open Questions
 
----
+The following are declared as holding points.
 
-# 7. References
+**The scale problem**: There appear to be scale differences between physical critical phenomena and human creative processes. Whether this correspondence represents structural identity or superficial similarity has not been resolved in this analysis. Verifying the scope of the five-stage model — the hypothesis that it describes "creation of existence itself" — is the most important task ahead.
 
-The following are referenced as structural comparison points, not as evidence supporting the five-stage model.
+**Operational definition of Withhold**: The description "holding contradiction and not processing reflexively" is not yet sufficient as an operational definition. Quantitative descriptions of the conditions under which holding is possible and the conditions under which it breaks down are needed.
 
-- Bion, W. R. (1970). *Attention and interpretation*. Tavistock Publications.
-- Bowlby, J. (1969). *Attachment and loss: Vol. 1. Attachment*. Basic Books.
-- Csikszentmihalyi, M. (1990). *Flow: The psychology of optimal experience*. Harper & Row.
-- Edmondson, A. (1999). Psychological safety and learning behavior in work teams. *Administrative Science Quarterly*, 44(2), 350–383.
-- Friston, K. (2010). The free-energy principle: A unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127–138.
+**Connection to the social dimension**: The five-stage model originates from intra-individual process, but integration with the social dimensions described by organizational theory (SECI) and social psychology remains incomplete. The nested structure of individual "Field to Bundle" and team "Field to Bundle" remains at the level of theoretical description.
+
+**Blind spots in the five-stage model itself**: Because this analysis uses the five-stage model as its framework, it has a methodological limitation in detecting structures that the five-stage model itself overlooks. This limitation is partially addressed by analyzing the "Uniqueness" facet of prior theories (what is present in prior theories but absent in the five-stage model), though this is not sufficient.
+
+## 6.4 Disclosure of Temperature
+
+The results of this analysis report that structural correspondence between prior theories across different domains and the five-stage model has been widely confirmed. Concluding that this correspondence means "they point to the same structure" requires expert verification within individual domains, introduction of quantitative analytical methods, and refinement of the operational definitions of the five-stage model itself.
+
+Rather than hiding what is not yet confirmed, disclosing the state of evidence as it stands is the honest form of reporting for this analysis.
+
+# References
+
+- Wallas, G. (1926). *The Art of Thought*. Harcourt Brace.
 - Guilford, J. P. (1950). Creativity. *American Psychologist*, 5(9), 444–454.
-- Kauffman, S. A. (1993). *The origins of order*. Oxford University Press.
-- Klein, M. (1946). Notes on some schizoid mechanisms. *International Journal of Psycho-Analysis*, 27, 99–110.
-- Meltzer, D. (1988). *The apprehension of beauty*. Clunie Press.
-- Nishida, K. (1911). *善の研究* [An inquiry into the good]. Yale University Press (1990 trans.).
-- Nonaka, I., & Takeuchi, H. (1995). *The knowledge-creating company*. Oxford University Press.
-- Turner, V. (1969). *The ritual process*. Aldine.
-- Vygotsky, L. S. (1978). *Mind in society*. Harvard University Press.
-- Wallas, G. (1926). *The art of thought*. Jonathan Cape.
-- Weick, K. E. (1993). The collapse of sensemaking in organizations. *Administrative Science Quarterly*, 38(4), 628–652.
-- Winnicott, D. W. (1958). The capacity to be alone. *International Journal of Psycho-Analysis*, 39, 416–420.
-
----
-
-*Generated from base/text/m2-creation-process/creation-source.md v1.1 following reader-rules-creation-academic.md v2.0. 2026-03-05*
+- Csikszentmihalyi, M. (1990). *Flow: The Psychology of Optimal Experience*. Harper & Row.
+- Bion, W. R. (1970). *Attention and Interpretation*. Tavistock.
+- Nonaka, I., & Takeuchi, H. (1995). *The Knowledge-Creating Company*. Oxford University Press.
+- Prigogine, I., & Stengers, I. (1984). *Order Out of Chaos*. Bantam Books.
+- Turner, V. (1969). *The Ritual Process*. Aldine.
+- Weick, K. E. (1995). *Sensemaking in Organizations*. Sage.
