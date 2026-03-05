@@ -1,7 +1,7 @@
 {
-  "version": "1.0",
-  "generated_at": "2026-03-03",
-  "issue": 62,
+  "version": "2.0",
+  "generated_at": "2026-03-05",
+  "namespace": "domains",
   "reports": [
     { "id": "D01", "name_ja": "数学", "slug": "mathematics", "status": "planned" },
     { "id": "D02", "name_ja": "物理学", "slug": "physics", "status": "planned" },
@@ -29,8 +29,14 @@
       "name_ja": "経営学",
       "slug": "business-management",
       "status": "published",
-      "md": "./domains/issue62-domain-d22-business-management-academic-ja.md",
-      "pdf": "./domains/creation-issue62-domain-d22-business-management-academic-ja.pdf"
+      "md": {
+        "ja": "domains/ja/md/domain-d22-business-management-academic.md",
+        "en": "domains/en/md/domain-d22-business-management-academic.md"
+      },
+      "pdf": {
+        "ja": "domains/ja/pdf/domain-d22-business-management-academic.pdf",
+        "en": null
+      }
     },
     { "id": "D23", "name_ja": "発達心理", "slug": "developmental-psychology", "status": "planned" },
     { "id": "D24", "name_ja": "宗教学", "slug": "religious-studies", "status": "planned" },
