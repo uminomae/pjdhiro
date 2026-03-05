@@ -1,25 +1,25 @@
 {
-  "version": "2.0",
-  "generated_at": "2026-03-04",
-  "issue": 62,
+  "version": "3.0",
+  "generated_at": "2026-03-05",
+  "namespace": "survey",
   "status": {
     "md": {
-      "ja": "issue62/issue62-status-ja.md",
-      "en": "issue62/issue62-status-ja.md"
+      "ja": "survey/ja/md/survey-status.md",
+      "en": null
     },
     "pdf": {
-      "ja": "pdf/issue62/creation-issue62-status-ja.pdf",
-      "en": "pdf/issue62/creation-issue62-status-ja.pdf"
+      "ja": "survey/ja/pdf/survey-status.pdf",
+      "en": null
     }
   },
   "domain_index": {
     "md": {
-      "ja": "issue62/issue62-domain-index-ja.md",
-      "en": "issue62/issue62-domain-index-ja.md"
+      "ja": "survey/ja/md/survey-domain-index.md",
+      "en": null
     },
     "pdf": {
-      "ja": "pdf/issue62/creation-issue62-domain-index-ja.pdf",
-      "en": "pdf/issue62/creation-issue62-domain-index-ja.pdf"
+      "ja": "survey/ja/pdf/survey-domain-index.pdf",
+      "en": null
     }
   },
   "progress_summary": {
@@ -28,5 +28,5 @@
     "analysis_complete": 11,
     "total": 30
   },
-  "domains_manifest": "manifests/issue62-domains.json"
+  "domains_manifest": "manifests/domains.json"
 }
