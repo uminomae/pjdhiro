@@ -1,12 +1,3 @@
----
-title: "Seeing Beneath the Label — Kesson-Driven Thinking for Designers"
-audience: "designer"
-lang: "en"
-generated: "2026-03-06T18:20:00+09:00"
-generator_model: "claude-sonnet-4-6"
-reader_rules_version: "reader-rules-kesson-designer v2.0"
----
-
 ## Entrance — The Ceiling of Methodology
 
 This text is for people who have worked with design thinking for years and still feel that something is missing.
