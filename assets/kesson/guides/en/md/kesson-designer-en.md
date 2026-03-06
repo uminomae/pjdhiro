@@ -1,108 +1,134 @@
-# Seeing Beneath the Label — Kesson-Driven Thinking for Designers
+---
+title: "Seeing Beneath the Label — Kesson-Driven Thinking for Designers"
+audience: "designer"
+lang: "en"
+generated: "2026-03-06T18:20:00+09:00"
+generator_model: "claude-sonnet-4-6"
+reader_rules_version: "reader-rules-kesson-designer v2.0"
+---
 
-If you have spent years practicing design thinking and still feel something is missing, this piece may be for you.
+## Entrance — The Ceiling of Methodology
 
-Empathy, intuition, iteration -- you know these words in your bones. You have shipped work with them, taught teams through them. And yet, somewhere, there is a ceiling. If that resonates, what follows is a set of observations I wrote while sorting out my own body signals. This is not a proposal for how anyone should think. These are notes I made for myself, with some explanation added, that happened to overlap with what a few other practitioners were feeling. If it does not land, that is perfectly fine.
+This text is for people who have worked with design thinking for years and still feel that something is missing.
+
+You filled in the empathy map. You made the persona. You drew the journey map. You iterated the prototype. You followed the process. And yet there are moments when you look at what was made and think, "This is not it." It does not feel like a problem of method. But it is also hard to put into words what exactly is missing.
+
+If that feeling sounds familiar, this piece was written for people whose observations happen to overlap with mine.
+
+Kesson-Driven Thinking is a framework that one inquirer, pjdhiro, built in order to sort out his own bodily signals. The definitions written here are provisional, and the structural correspondences with prior research are interpretive hypotheses. I am not claiming that this is a tool for solving the problems of the design industry.
+
+I only want to use the professional experience of designers as an entrance and look together at the structure beneath the label.
+
+## Act 1: Decomposing Empathy
+
+### What happens when we say, "I empathized"?
+
+During a user interview, there are moments when, while listening, you feel, "There is something here." In your notes you write "empathy." But have you ever decomposed what that empathy is made of?
+
+Let us observe what is happening inside the body at that moment.
+
+First, the answer you expected and the other person's actual response are misaligned. You thought, "They will probably use it this way," but they use it differently. The body detects that mismatch. In Kesson-Driven Thinking, the experience of a gap between expectation and reality as "something is missing" is called **Kesson**.
+
+The moment we write "I empathized," the detection of that gap gets folded into the label. "Empathy" is a convenient label, but it can hide the structure underneath it: what exactly was misaligned, and how did that mismatch arrive in the body?
+
+Psychoanalyst Melanie Klein, while observing children playing with blocks, saw a structure in which another person's feelings enter one's own mind. In the sense of decomposing the structure hidden under the label "empathy," Klein's observation and Kesson-Driven Thinking seem to point in a similar direction.
+
+### The F-O Axis — Two signals
+
+When a Kesson is detected, two signals run through the body at the same time. In Kesson-Driven Thinking, these are called the **F-axis** and the **O-axis**.
+
+The **F-axis** is the bodily agitation that says, "We have to produce an answer quickly." There is a deadline. The sprint is ending. The team is waiting for an answer. This signal is strong, fast, and charged with urgency.
+
+The **O-axis** is the pull that says, "I want to hold this question a little longer." It feels as if something not yet visible is still there. It feels as if something important is hidden inside this user's different way of using the thing. This signal is weaker, slower, and harder to put into words.
+
+The F-axis is not evil and the O-axis is not good. Without the F-axis, a project does not move. Without the O-axis, nothing genuinely new appears. Both signals are necessary. The problem is that the signal of the F-axis tends to structurally swallow the signal of the O-axis.
+
+### Withhold — Not solving it immediately
+
+Sometimes we remain with the pull of the O-axis. "I want to stay with this user a little longer." The gap is not resolved, but held.
+
+Kesson-Driven Thinking calls this function of holding **Withhold**.
+
+Withhold is not endurance. It is not the act of ignoring the signal of the F-axis. It is the state of feeling the pressure of the F-axis while still responding to the pull of the O-axis. The mismatch is held as a question, and one waits for its meaning to update.
+
+Donald Schon, who studied the thinking of designers and architects at MIT, described a similar structure with the phrase **reflection-in-action**. One keeps moving while also pausing. One responds to the material, receives an unexpected answer, and revises the next action. Schon and Withhold seem to point in a similar direction, but Withhold places special emphasis on not rushing immediately toward the next move.
 
 ---
 
-## Act 1: Decomposing Intuition
-
-### Two signals inside "gut feeling"
-
-Most designers trust intuition. You look at a prototype and something says "not this." In the middle of a usability session, something snags your attention before the data confirms it.
-
-I tried to sit with that snagging sensation and look at what was actually running underneath it. What I noticed -- in my own body, at least -- were two distinguishable signals.
-
-One is a **signal that something has been overlooked -- the body tightens**. The stomach clenches. The shoulders rise. I have been calling this the F-axis (F-axis, short for Fear/Fight). It is the part of the signal that asks: "Is this safe? Will we make it? What am I missing?" It sits close to survival.
-
-The other is a **pull toward staying with something or someone a little longer**. The chest opens. There is a quiet gravity -- curiosity, not urgency. I call this the O-axis (O-axis, short for Others/Attachment). It is the part that says: "I want to understand this more. I want to stay in this relationship a bit longer."
-
-These two run simultaneously inside the same moment you label "intuition." Under a single word, at least two signal lines are operating. That is what I observed.
-
-This is not peculiar to designers. An infant reading a caregiver's face is running the same dual check -- "Am I safe?" and "Do I want more of this person?" -- at the same time. It appears to be a basic function of the human species.
-
-If none of this matches your experience so far, that is healthy. This framework is something I reach for only when it is useful. It is not a lens you need.
-
-> Donald Schon studied architects and designers at MIT, documenting what he called "knowing-in-action" -- the body responding before language catches up. What he described may have been F-axis and O-axis signals running together, undifferentiated, inside a single professional reflex.
+Everything I have written so far comes from observation. Some parts feel relatively solid to me, and some parts are still hypotheses. I want to keep that distinction visible in the next part as well.
 
 ---
 
-## Act 2: The Anatomy of Empathy
+## Act 2: Why We Cannot Wait
 
-### Five mechanisms hiding inside one word
+### Pressure on the F-axis — The time structure of organizations
 
-Empathy may be the most important word in a designer's vocabulary. But when someone says "empathize with the user," what actually happens inside the body?
+The everyday life of designers is full of pressure on the F-axis.
 
-In my observation, at least five distinct mechanisms are bundled under the label "empathy."
+Sprint deadlines. Client presentations. The question, "So what are we going to do?" Teams ask for output. The time structure of the organization itself says, "Produce an answer quickly."
 
-| # | Mechanism | What happens in the body | F-O axis |
-|---|-----------|--------------------------|----------|
-| 1 | Emotional contagion | The other person's feeling enters you. Your chest tightens in front of someone who is crying. | O-axis |
-| 2 | Somatic resonance | Your body mirrors the other person's physical state. Your shoulders stiffen near someone who is tense. | F + O |
-| 3 | Cognitive empathy | You infer what the other person is probably feeling. "She seems frustrated." | F-axis leaning |
-| 4 | Holding (taking-in) | You temporarily carry the other person's emotion inside yourself. You provide a space that can receive it. | O-axis |
-| 5 | Responding while keeping the self-other boundary | You feel the other person's pain while maintaining your own center. | F + O integrated |
+This does not mean the organization is bad. The F-axis is a necessary signal for survival. Inquiry without deadlines often never takes shape.
 
-What design schools teach as "empathy" is mostly mechanism 3 -- cognitive empathy. Building personas, drawing journey maps, conducting interviews from the user's perspective: these are techniques for mechanism 3.
+The problem is that the signal of the O-axis is easily crushed by structure. In user research, you may feel that "something is catching." But the next workshop is already waiting. That snagging sensation is labeled "needs review" and never reopened.
 
-Mechanism 3 matters. But there are places it cannot reach on its own.
+A designer's "I want to wait a little longer" is often an early warning signal. A problem that is not yet visible on the surface of the product has already reached the designer's body as a mismatch. The pressure of the F-axis erases that warning.
 
-When a test participant feels something they cannot put into words. When a teammate says "I'm fine" but their body is telling a different story. What your body picks up in those moments may be mechanisms 1, 2, or 4 -- signals that cognitive empathy alone does not cover.
+### The F-O axis is a diagnostic tool
 
-This, too, is not unique to designers. Clinical psychologists navigate all five mechanisms daily. A mother responding to an infant's cry is running mechanisms 1 through 5 at once. It seems to be basic equipment that comes with being human.
+The F-O axis is a tool for observing which signal is stronger. It is not a prescription.
 
-> In 1940s London, Melanie Klein watched children playing with building blocks and identified mechanism 4 -- the movement of taking in another person's emotion. Decades later, Evan Thompson, a cognitive scientist who is also a meditation practitioner, described the experiential difference between mechanism 3 and mechanism 5. Different eras, different people, pointing in what looks to me like the same direction.
+In your current team, which signal is dominant? At what stage of the project is the O-axis being crushed? If "let us get to the answer quickly" has become the default mode, that may be a sign of F-axis dominance.
 
----
+But this does not become a simple story of "we just need more O-axis." The balance between the two changes with the situation. Early in a project, more room for the O-axis may be needed. Right before release, tighter F-axis focus may be necessary. The F-O axis is a tool for seeing where you are now, not for dictating where you should go.
 
-## Act 3: Why We Cannot Wait
+Karl Weick, in organizational theory, analyzed the Mann Gulch fire, where firefighters could not let go of their tools. In a crisis, when the pressure of the F-axis reaches its limit, how difficult is it to release familiar tools, or familiar methods, and respond differently? Weick's description and the collapse of Withhold under F-axis dominance seem to point in the same direction.
 
-### The time structure of organizations
+## Act 3: You Cannot Wait Alone
 
-The F-axis and O-axis are not only running inside individuals. They seem to run inside organizations as well.
+### The relational basis that supports Withhold
 
-Sprint deadlines. KPI reviews. Stakeholder reports. These are F-axis signals at the organizational level. "Will we ship on time? Are the numbers there?" -- survival-adjacent questions dominate the time structure of most teams.
+Withhold is not a matter of individual willpower.
 
-Inside that structure, O-axis signals -- "I want to sit with this user's voice a little longer," "I want the team to hold this discomfort before we move on" -- are frequently crushed.
+Even if you feel, "I want to hold this question a little longer," Withhold is crushed if the atmosphere of the team says, "Why is there still no answer?" On the other hand, if there is a relationship in which you can say, "I still do not know, but something is catching," Withhold can continue.
 
-Holding a question without rushing to an answer. Keeping the gap between expectation and reality open instead of immediately closing it. I call this function Withhold. Under an F-axis-dominated time structure, Withhold becomes structurally difficult.
+Kesson-Driven Thinking calls the relational basis that supports Withhold **Container**.
 
-The damage is not immediately visible. But in organizations where Withhold cannot function, something erodes gradually. Prototype quality drifts downward by fractions. Team dialogue grows shallow. Someone senses "something is off," but the next sprint begins before the feeling is articulated.
+### The structure of Container
 
-A designer's "I want to wait a little longer" may actually be an early-warning signal for the organization.
+Container overlaps with what many people call psychological safety, but it is a somewhat wider structure.
 
-In Japanese craft traditions, there is a concept called *hisureba hana* (literally "if you conceal it, it becomes a flower") from the Noh theater master Zeami -- the idea that something held back, not yet expressed, can mature into its fullest form. The pressure to ship, to show, to prove, works against this kind of patient holding. Withhold is not passivity; it is an active function that requires structural support.
+| Type of Container | Example in a designer's context |
+|-------------------|---------------------------------|
+| External, physical relationship | Trust with teammates, mentors, or managers |
+| Internalized relationship | The memory of a senior colleague you once worked with, the voice of someone who said, "It is okay to think a little longer" |
+| Symbolic relationship | Team culture, the etiquette of design review, organizational values |
 
-> Karl Weick documented the Mann Gulch wildfire of 1949. As flames closed in, firefighters could not let go of their heavy tools. Dropping the tools -- suspending the F-axis processing -- and generating a new course of action appear to be the same structural challenge. Clayton Christensen's innovator's dilemma may also be a description of organizations failing at Withhold: the inability to hold the discomfort of an unproven direction long enough for it to develop.
+It is not only the support of the colleague sitting next to you. The attitude of a late mentor, the words left by a designer you respect: as long as they remain alive inside you, they can function as Container.
 
----
+What matters is that Container is not merely "helpful to have." It is a condition for Withhold to come into being. Without Container, it is nearly impossible to withstand the pressure of the F-axis alone. "You cannot wait alone" is not a confession of weakness. It is a structural description.
 
-## Body Signals and a Return Question
+### Container inside a team
 
-Everything above is my observation. There is no guarantee that any of it is correct.
+Is there an atmosphere in the team where someone can say, "I still do not know"? Is there anyone who can receive another person's snagging sensation by saying, "Tell me a little more about that"? Has design review become a place for sharing mismatches, rather than merely evaluating deliverables?
 
-There is more I do not know than what I do. Are there really five mechanisms of empathy, or more? Do the F-axis and O-axis subdivide further? How can Withhold be structurally supported inside an organization rather than depending on individual willpower? All of these remain open.
+| Question | What to observe |
+|----------|-----------------|
+| Is there an atmosphere where people can say, "I still do not know"? | Whether the basis for Withhold exists |
+| Has "produce the answer quickly" become the default? | A sign of F-axis dominance |
+| Is there someone who can receive another person's snagging sensation? | The presence of Container |
 
-If there is one thing to take away, it might be this: try sorting the two signals inside your body. "Is this fear, or is it something closer to connection?"
+These are clues for observing whether Container exists. In a team that has Container, a designer's Withhold is less likely to be crushed. As a result, it becomes easier to see the structure beneath the label.
 
-Here is a question worth sitting with -- not one that needs answering out loud: Where in all of this did you feel "that does not apply to my work"? That specific point of mismatch may be information unique to your practice.
+## Exit
 
-Kesson-driven thinking is not an answer. It is a provisional tool I use to keep from losing track of the small dissonances in my own day. If it does not fit, set it aside. No reply or feedback is needed. Take what is useful and let the rest go.
+Where in your team was the O-axis crushed most recently?
 
-This reading is complete in itself. No response needed.
+A moment when the voice saying, "Something is catching," was swallowed by the question, "So what are we going to do?" Or a moment when you yourself followed the pressure of the F-axis and let that snagging sensation pass.
 
----
+The structural description of Kesson-Driven Thinking comes from my own inquiry. What remains is to see what happens when you test it inside your own team.
 
-## Further Reading
-
-- **Donald Schon** -- *The Reflective Practitioner* (1983). The original documentation of "knowing-in-action."
-- **Melanie Klein** -- *Envy and Gratitude* (1957). Where projective identification -- mechanism 4 -- was first described.
-- **Evan Thompson** -- *Mind in Life* (2007). A bridge between cognitive science and phenomenology, with lived accounts of the distinction between cognitive empathy and compassion.
-- **Robert Kegan** -- *In Over Our Heads* (1994). The feeling of "not enough" as a sign that a developmental shift is underway.
-- **Karl Weick** -- *The Collapse of Sensemaking in Organizations* (1993). The Mann Gulch disaster and what it reveals about holding and letting go under pressure.
-- **Clayton Christensen** -- *The Innovator's Dilemma* (1997). A structural account of why organizations cannot hold discomfort long enough to let the new thing grow.
-
----
-
-*These are the current coordinates of one inquirer. A bundle of hypotheses, offered as a reading.*
+| Temperature | Content |
+|-------------|---------|
+| What seems relatively solid | Under the label "empathy," there is both the detection of mismatch and the operation of F-axis and O-axis signals. Withhold takes place inside relationships. |
+| What seems promising but is still under examination | The hypothesis that the F-O axis lets us observe which signal is dominant at a given moment. Structural correspondences with prior work by Schon, Klein, and Weick. |
+| What remains unclear | The full relation between organizational time structure and Withhold. The concrete conditions under which Container is built at the team level. |
