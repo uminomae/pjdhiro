@@ -1,3 +1,17 @@
+---
+id: creation-academic-v2
+title: "創造の5段階モデルと先行理論の構造比較"
+subtitle: "異なるラベルは同じものを指しているか"
+tags: [M2, creation, five-stages, academic, structural-comparison]
+audience: academic
+lang: ja
+version: 2.0
+date: 2026-03-05
+source: base/text/m2-creation-process/creation-source.md v1.1
+rules: transform/creation/reader-rules/reader-rules-creation-academic.md v2.0
+generator_model: claude-opus-4-6
+---
+
 # 1. 問いの設定
 
 創造性研究、認知科学、組織論、精神分析、複雑系科学——これらの領域は、創造的プロセスに関して異なるラベルを使い、異なるスケールで記述を行ってきた。Wallasの4段階、Guilfordの発散/収束、Bionのnegative capability、Prigogineの散逸構造、野中のSECIモデル。これらは異なるものを記述しているのか、それとも同じ構造の異なる面を指しているのか。
