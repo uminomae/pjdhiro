@@ -1,4 +1,11 @@
-# 欠損駆動思考——引っかかりを捨てずに持ち続ける構え
+---
+title: "欠損駆動思考——引っかかりを捨てずに持ち続ける構え"
+audience: "general"
+lang: "ja"
+generated: "2026-03-06T14:00:00+09:00"
+generator_model: "claude-opus-4-6"
+reader_rules_version: "reader-rules-kesson-general v2.0"
+---
 
 ## 1. これは何か
 
