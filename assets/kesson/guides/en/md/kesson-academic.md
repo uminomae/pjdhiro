@@ -1,12 +1,3 @@
----
-title: "Kesson-Driven Thinking — Academic Edition"
-audience: "academic"
-lang: "en"
-generated: "2026-03-06T21:00:00+09:00"
-generator_model: "claude-opus-4-6"
-reader_rules_version: "reader-rules-kesson-academic v2.0"
----
-
 ## 1. Framing the Question
 
 This paper is an exploratory description that defines the core structure of Kesson-Driven Thinking and analyzes its structural correspondences with concepts described from different angles across multiple academic disciplines.
