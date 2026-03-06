@@ -1,16 +1,3 @@
----
-id: domain-D14-psychology
-title: "心理学・認知科学"
-domain_id: D14
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D14-psychology.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 心理学・認知科学——「認知が転換するとき何が起きているか」
 
 ## 1. この領域の調査の目的

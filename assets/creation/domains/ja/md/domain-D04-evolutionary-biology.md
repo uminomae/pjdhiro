@@ -1,16 +1,3 @@
----
-id: domain-D04-evolutionary-biology
-title: "進化生物学"
-domain_id: D04
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D04-evolutionary-biology.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 進化生物学——誤差から新規性が生まれる
 
 ## 1. この領域の調査の目的

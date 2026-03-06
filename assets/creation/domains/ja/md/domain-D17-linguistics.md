@@ -1,16 +1,3 @@
----
-id: domain-D17-linguistics
-title: "言語学"
-domain_id: D17
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D17-linguistics.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 言語学——「伝えきれないこと」が構造を生む
 
 ## 1. この領域の調査の目的

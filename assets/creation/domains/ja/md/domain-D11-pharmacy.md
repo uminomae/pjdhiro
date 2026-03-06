@@ -1,16 +1,3 @@
----
-id: domain-D11-pharmacy
-title: "薬学"
-domain_id: D11
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D11-pharmacy.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 薬学——「縁のスペクトラム」が一領域内で揃う
 
 ## 1. この領域の調査の目的

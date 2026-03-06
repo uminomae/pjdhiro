@@ -1,15 +1,3 @@
----
-id: survey-domain-index
-title: "全分野構造類似探索: 領域索引"
-lang: ja
-audience: survey
-version: 1.0
-date: 2026-03-05
-source: base/evidence/review/plan-step7-fieldwork.md
-rules: reader-rules-creation-survey.md v1.0, reader-rules-creation.md v1.4
-generator_model: claude-opus-4-6
----
-
 # 全分野構造類似探索: 領域索引
 
 ## この索引について

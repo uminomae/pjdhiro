@@ -1,19 +1,3 @@
----
-id: commentary-domain-d22-business-management-academic-en-v2
-title: "Domain Commentary D22: Business & Management"
-subtitle: "Cross-domain structural analysis: Five-stage model and management theories"
-lang: en
-version: 2.0
-date: 2026-03-05
-domain_id: D22
-domain: business-management
-audience: academic
-source_material:
-  - base/evidence/evidence-D22-business-management.md
-  - base/evidence/iss62-sources/DR-D22-business-management.md
-rules: transform/creation/reader-rules/reader-rules-creation-academic.md v2.0
----
-
 # Domain Commentary D22: Business & Management
 
 ## 0. How to Read This

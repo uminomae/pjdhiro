@@ -1,16 +1,3 @@
----
-id: domain-D05-earth-science
-title: "地球科学"
-domain_id: D05
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D05-earth-science.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 地球科学——意識なき創造の46億年
 
 ## 1. この領域の調査の目的

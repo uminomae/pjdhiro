@@ -1,17 +1,3 @@
----
-id: creation-designer-v2
-title: "発散と収束の間にあるもの——創造プロセスの5段階"
-subtitle: "チームの創造を構造的に見るための地図"
-tags: [M2, creation, five-stages, designer]
-audience: designer
-lang: ja
-version: 2.0
-date: 2026-03-05
-source: base/text/m2-creation-process/creation-source.md v1.1
-rules: transform/creation/reader-rules/reader-rules-creation-designer.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 発散と収束の間の、名前のない場所
 
 デザイナーやPMとして、発散と収束を繰り返してきた方は多いと思います。ダブルダイヤモンド、スプリント、イテレーション。広げて、絞る。その繰り返しの中に、どちらでもない時間がなかったでしょうか。

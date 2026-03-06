@@ -1,16 +1,3 @@
----
-id: domain-D25-anthropology
-title: "人類学・民族学"
-domain_id: D25
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D25-anthropology.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 ## 1. この領域の調査の目的
 
 本調査は、人類学・民族学の諸理論が記述する「社会的変容・境界・分類」のプロセスと、5段階モデル（場・波・縁・渦・束）との間に構造的な対応があるかを検証するものである。

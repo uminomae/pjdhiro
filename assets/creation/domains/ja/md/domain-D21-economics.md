@@ -1,16 +1,3 @@
----
-id: domain-D21-economics
-title: "経済学"
-domain_id: D21
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D21-economics.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 ## 1. この領域の調査の目的
 
 本調査は、経済学の諸理論が記述する「経済現象の生成プロセス」と、5段階モデル（場・波・縁・渦・束）との間に構造的な対応があるかを検証するものである。

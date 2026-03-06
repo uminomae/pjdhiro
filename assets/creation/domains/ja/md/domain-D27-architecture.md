@@ -1,16 +1,3 @@
----
-id: domain-D27-architecture
-title: "建築・空間デザイン"
-domain_id: D27
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D27-architecture.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 建築・空間デザイン――境界を「設計する」学問が語る創造の5段階
 
 ## 1. 領域が見ている風景
