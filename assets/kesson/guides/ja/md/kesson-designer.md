@@ -1,12 +1,3 @@
----
-title: "ラベルの下にあるもの——デザイナーのための欠損駆動思考"
-audience: "designer"
-lang: "ja"
-generated: "2026-03-06T16:00:00+09:00"
-generator_model: "claude-opus-4-6"
-reader_rules_version: "reader-rules-kesson-designer v2.0"
----
-
 ## 入口——方法論の天井
 
 デザイン思考を何年もやってきて、なのに何かが足りないと感じている方へ。
