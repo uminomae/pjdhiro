@@ -17,7 +17,8 @@
 {% endcomment %}
 
 
-{% assign base = "/assets/pdf/" | relative_url %}
+{% assign base_ja = "/assets/kesson/guides/ja/pdf/" | relative_url %}
+{% assign base_en = "/assets/kesson/guides/en/pdf/" | relative_url %}
 {% assign lg = include.label_general  | default: "一般向け PDF" %}
 {% assign ld = include.label_designer | default: "設計者向け PDF" %}
 {% assign la = include.label_academic | default: "学術版 PDF" %}
@@ -29,7 +30,7 @@
   margin: 1.5rem 0;
 ">
 
-  <a href="{{ base }}kesson-general.pdf"
+  <a href="{{ base_ja }}kesson-general.pdf"
      style="
        display: inline-flex; align-items: center; gap: 0.4rem;
        padding: 0.6rem 1.2rem;
@@ -52,7 +53,7 @@
     {{ lg }}
   </a>
 
-  <a href="{{ base }}kesson-designer.pdf"
+  <a href="{{ base_ja }}kesson-designer.pdf"
      style="
        display: inline-flex; align-items: center; gap: 0.4rem;
        padding: 0.6rem 1.2rem;
@@ -75,7 +76,7 @@
     {{ ld }}
   </a>
 
-  <a href="{{ base }}kesson-academic.pdf"
+  <a href="{{ base_ja }}kesson-academic.pdf"
      style="
        display: inline-flex; align-items: center; gap: 0.4rem;
        padding: 0.6rem 1.2rem;
