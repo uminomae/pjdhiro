@@ -1,14 +1,3 @@
----
-title: "ラベルの下を見る——デザイナーのための欠損駆動思考"
-audience: "designer"
-lang: "ja"
-generated: "2026-02-13T11:02:23+09:00"
-generator_model: "claude-opus-4-6"
-generator_script: "generate-drafts v2.5"
-reader_rules_version: "reader-rules-designer v2.1"
-base_commit: "6fa2193"
----
-
 # ラベルの下を見る——デザイナーのための欠損駆動思考
 
 デザイン思考を何年もやってきて、なのに何かが足りないと感じている方へ。
