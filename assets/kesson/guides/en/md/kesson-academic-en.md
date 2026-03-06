@@ -242,17 +242,6 @@ Whether the F-O axis structurally corresponds to these descriptions remains at t
 
 5. **"Error retention" and time**: Withhold is described on a time scale of "seconds to cyclical," but the validity of this time scale has not been verified. Wallas's incubation (hours to days), Bion's negative capability (the time scale of the analytic session), mindfulness meditation's attention retention (seconds to minutes) — whether these differences in time scale signify structural differences is unresolved.
 
-### 6.5 Guide to Individual Domain Reports
-
-For details on the individual domains discussed in this paper, please refer to the separately published domain reports. At least the following four domains have corresponding reports:
-
-- [Physics (D02)](https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/creation/domains/ja/md/domain-D02-physics.md)
-- [Business Management (D22)](https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/creation/domains/ja/md/domain-D22-business-management.md)
-- [Developmental Psychology (D23)](https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/creation/domains/ja/md/domain-D23-developmental-psychology.md)
-- [Traditional Knowledge (D30)](https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/creation/domains/ja/md/domain-D30-traditional-knowledge.md)
-
-All 30 domains can be browsed at [creation-space](https://uminomae.github.io/creation-space/). This paper is a cross-cutting synthesis of the observations accumulated there and does not replace the context of each individual report.
-
 ## 7. References
 
 **Note**: The following works are cited not as "evidence" for Kesson-Driven Thinking but as "scaffolding" for structural comparison. Each work carries its own theoretical context, and interpretation is involved in translating it into the framework of this paper.
