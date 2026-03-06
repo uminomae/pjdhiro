@@ -1,1 +1,0 @@
-../kesson/guides/en/md/kesson-designer-draft.md
