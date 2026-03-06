@@ -1,3 +1,17 @@
+---
+id: creation-general-v2
+title: "創造の構造——5つの段階"
+subtitle: "場から束へ"
+tags: [M2, creation, five-stages, general]
+audience: general
+lang: ja
+version: 2.0
+date: 2026-03-05
+source: base/text/m2-creation-process/creation-source.md v1.1
+rules: transform/creation/reader-rules/reader-rules-creation-general.md v2.1
+generator_model: claude-opus-4-6
+---
+
 # これは何か
 
 この文書は、創造に共通する構造を記述したモデルの説明です。

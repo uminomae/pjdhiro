@@ -1,3 +1,17 @@
+---
+id: creation-academic-en-v2
+title: "Structural Comparison of the Five-Stage Model of Creation and Prior Theories"
+subtitle: "Do Different Labels Point to the Same Thing?"
+tags: [M2, creation, five-stages, academic, structural-comparison]
+audience: academic
+lang: en
+version: 2.0
+date: 2026-03-05
+source: base/text/m2-creation-process/creation-source.md v1.1
+rules: transform/creation/reader-rules/reader-rules-creation-academic.md v2.0
+generator_model: claude-opus-4-6
+---
+
 # 1. Framing the Question
 
 Creativity research, cognitive science, organizational theory, psychoanalysis, complexity science — these domains have used different labels and described creative processes at different scales. Wallas's four stages, Guilford's divergent/convergent thinking, Bion's negative capability, Prigogine's dissipative structures, Nonaka's SECI model. Are these describing different things, or are they pointing to different facets of the same structure?

@@ -1,3 +1,17 @@
+---
+id: creation-designer-en-v2
+title: "What Lies Between Divergence and Convergence — Five Stages of the Creative Process"
+subtitle: "A Map for Seeing Your Team's Creation Structurally"
+tags: [M2, creation, five-stages, designer]
+audience: designer
+lang: en
+version: 2.0
+date: 2026-03-05
+source: base/text/m2-creation-process/creation-source.md v1.1
+rules: transform/creation/reader-rules/reader-rules-creation-designer.md v1.0
+generator_model: claude-opus-4-6
+---
+
 # The Unnamed Place Between Divergence and Convergence
 
 As a designer or PM, you have likely cycled through divergence and convergence many times. Double Diamond, sprints, iterations. Expand, then narrow. Within that rhythm, was there ever a time that was neither?
