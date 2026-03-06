@@ -1,16 +1,3 @@
----
-id: domain-D19-literary-studies
-title: "文学・文芸学"
-domain_id: D19
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D19-literary-studies.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 文学・文芸学——「欠けていること」が物語を動かす
 
 ## 1. この領域の調査の目的

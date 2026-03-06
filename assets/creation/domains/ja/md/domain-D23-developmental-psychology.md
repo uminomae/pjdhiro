@@ -1,16 +1,3 @@
----
-id: domain-D23-developmental-psychology
-title: "発達心理学"
-domain_id: D23
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D23-developmental-psychology.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 ## 1. この領域の調査の目的
 
 本調査は、発達心理学の諸理論が記述する「発達のプロセス」と、5段階モデル（場・波・縁・渦・束）との間に構造的な対応があるかを検証するものである。

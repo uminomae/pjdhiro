@@ -1,16 +1,3 @@
----
-id: domain-D08-neuroscience
-title: "神経科学"
-domain_id: D08
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D08-neuroscience.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 神経科学——予測する脳、欠損を感じる身体
 
 ## 1. この領域の調査の目的

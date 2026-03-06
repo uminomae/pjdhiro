@@ -1,16 +1,3 @@
----
-id: domain-D09-life-sciences
-title: "生命科学"
-domain_id: D09
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D09-life-sciences.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 生命科学——代謝が支える創造、身体が記録する構造
 
 ## 1. この領域の調査の目的

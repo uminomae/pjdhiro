@@ -1,16 +1,3 @@
----
-id: domain-D20-law-politics
-title: "法学・政治学"
-domain_id: D20
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D20-law-politics.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 法学・政治学——「手続を設計する」ことが秩序を生む
 
 ## 1. この領域の調査の目的

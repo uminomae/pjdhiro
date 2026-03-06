@@ -1,16 +1,3 @@
----
-id: domain-D15-aesthetics
-title: "美学"
-domain_id: D15
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D15-aesthetics.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 美学——「保持が美を生む」という逆説
 
 ## 1. この領域の調査の目的

@@ -1,16 +1,3 @@
----
-id: domain-D07-engineering
-title: "工学・情報科学"
-domain_id: D07
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D07-engineering.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 工学・情報科学——誤差を設計原理にする
 
 ## 1. この領域の調査の目的

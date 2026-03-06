@@ -1,16 +1,3 @@
----
-id: domain-D28-performing-arts
-title: "舞台芸術・パフォーマンス"
-domain_id: D28
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D28-performing-arts.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 舞台芸術・パフォーマンス――身体が知っている創造の構造
 
 ## 1. 領域が見ている風景

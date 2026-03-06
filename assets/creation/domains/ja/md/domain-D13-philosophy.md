@@ -1,16 +1,3 @@
----
-id: domain-D13-philosophy
-title: "哲学"
-domain_id: D13
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D13-philosophy.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 哲学——「存在の生成」を問い続けてきた領域
 
 ## 1. この領域の調査の目的
