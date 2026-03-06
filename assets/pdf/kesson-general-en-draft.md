@@ -1,1 +1,1 @@
-../kesson/guides/en/md/kesson-general-en-draft.md
+../kesson/guides/en/md/kesson-general-draft.md
