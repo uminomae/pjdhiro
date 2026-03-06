@@ -1,16 +1,3 @@
----
-id: domain-D06-astronomy
-title: "天文学・宇宙物理学"
-domain_id: D06
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D06-astronomy.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 天文学・宇宙物理学——螺旋する元素の創造
 
 ## 1. この領域の調査の目的

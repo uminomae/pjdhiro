@@ -1,16 +1,3 @@
----
-id: domain-D10-clinical-medicine
-title: "臨床医学・免疫学"
-domain_id: D10
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D10-clinical-medicine.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 臨床医学・免疫学——誤差を制度化した生命の知恵
 
 ## 1. この領域の調査の目的

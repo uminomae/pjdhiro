@@ -1,16 +1,3 @@
----
-id: domain-D12-agriculture
-title: "農学・生態学"
-domain_id: D12
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D12-agriculture.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 農学・生態学——3つの「縁」が一領域に揃う
 
 ## 1. この領域の調査の目的

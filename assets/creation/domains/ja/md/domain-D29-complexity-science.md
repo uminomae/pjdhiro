@@ -1,16 +1,3 @@
----
-id: domain-D29-complexity-science
-title: "複雑系科学"
-domain_id: D29
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D29-complexity-science.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 複雑系科学――「際」の学問が映し出す創造の構造
 
 ## 1. 領域が見ている風景

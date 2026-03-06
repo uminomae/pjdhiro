@@ -1,15 +1,3 @@
----
-id: survey-status
-title: "全分野構造類似探索: 調査概要"
-lang: ja
-audience: survey
-version: 1.0
-date: 2026-03-05
-source: base/evidence/review/p1-cross-domain-insights.md, base/evidence/PROJECT.md
-rules: reader-rules-creation-survey.md v1.0, reader-rules-creation.md v1.4
-generator_model: claude-opus-4-6
----
-
 # 全分野構造類似探索: 調査概要
 
 ## 1. 調査の目的

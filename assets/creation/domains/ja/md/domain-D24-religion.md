@@ -1,16 +1,3 @@
----
-id: domain-D24-religion
-title: "宗教学・神秘主義"
-domain_id: D24
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D24-religion.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 ## 1. この領域の調査の目的
 
 本調査は、宗教学・神秘主義の諸伝統が記述する「変容のプロセス」と、5段階モデル（場・波・縁・渦・束）との間に構造的な対応があるかを検証するものである。

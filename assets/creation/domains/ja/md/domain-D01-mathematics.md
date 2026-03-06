@@ -1,16 +1,3 @@
----
-id: domain-D01-mathematics
-title: "数学"
-domain_id: D01
-audience: report
-lang: ja
-version: 1.0
-date: 2026-03-05
-source: base/evidence/evidence-D01-mathematics.md
-rules: reader-rules-creation-report.md v1.3, reader-rules-creation.md v1.0
-generator_model: claude-opus-4-6
----
-
 # 数学——構造そのものが語る創造の文法
 
 ## 1. この領域の調査の目的
