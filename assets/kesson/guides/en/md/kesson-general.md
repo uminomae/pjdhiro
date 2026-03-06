@@ -1,14 +1,3 @@
----
-title: "On Waiting"
-audience: "general"
-lang: "en"
-generated: "2026-02-13T11:02:23+09:00"
-generator_model: "claude-opus-4-6"
-generator_script: "generate-drafts v2.5"
-reader_rules_version: "reader-rules-general v1.0"
-base_commit: "6fa2193"
----
-
 # On Waiting
 
 When something goes wrong, there is often a leftover feeling. A quiet discomfort that lingers after the event itself has passed.

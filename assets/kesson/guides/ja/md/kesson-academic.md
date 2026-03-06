@@ -1,12 +1,3 @@
----
-title: "欠損駆動思考 — 学術版"
-audience: "academic"
-lang: "ja"
-generated: "2026-03-06T18:20:00+09:00"
-generator_model: "claude-opus-4-6"
-reader_rules_version: "reader-rules-kesson-academic v2.0"
----
-
 ## 1. 問いの設定
 
 本論は、欠損駆動思考（Kesson-Driven Thinking）の中核構造を定義し、複数の学術領域が異なる角度から記述してきたものとの構造的対応を分析する探索的記述である。
