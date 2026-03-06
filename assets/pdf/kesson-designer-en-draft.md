@@ -1,1 +1,1 @@
-../kesson/guides/en/md/kesson-designer-en-draft.md
+../kesson/guides/en/md/kesson-designer-draft.md

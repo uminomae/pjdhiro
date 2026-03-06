@@ -1,1 +1,1 @@
-../kesson/guides/en/md/kesson-academic-en-draft.md
+../kesson/guides/en/md/kesson-academic-draft.md
