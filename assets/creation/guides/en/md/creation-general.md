@@ -1,3 +1,17 @@
+---
+id: creation-general-en-v2
+title: "The Structure of Creation — Five Stages"
+subtitle: "From Field to Bundle"
+tags: [M2, creation, five-stages, general]
+audience: general
+lang: en
+version: 2.0
+date: 2026-03-05
+source: base/text/m2-creation-process/creation-source.md v1.1
+rules: transform/creation/reader-rules/reader-rules-creation-general.md v2.1
+generator_model: claude-opus-4-6
+---
+
 # What This Is
 
 This document describes a model of the structure common to creation.
