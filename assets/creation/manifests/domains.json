@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "generated_at": "2026-03-07T18:00:00+09:00",
+  "generated_at": "2026-03-08T08:49:03+09:00",
   "namespace": "domains",
   "reports": [
     {
@@ -365,7 +365,7 @@
       "name_ja": "経営学",
       "slug": "business-management",
       "status": "published",
-      "progress_level": "claude_gpt_reviewed",
+      "progress_level": "codex_parallel_deepdive",
       "md": {
         "ja": "domains/ja/md/domain-D22-business-management.md",
         "en": "domains/en/md/domain-D22-business-management.md"
@@ -374,8 +374,8 @@
         "ja": "domains/ja/pdf/domain-D22-business-management.pdf",
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
       },
-      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
+      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)"
     },
     {
       "id": "D23",
