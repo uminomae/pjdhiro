@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "generated_at": "2026-03-06T09:00:00+09:00",
+  "generated_at": "2026-03-07T12:00:00+09:00",
   "namespace": "domains",
   "reports": [
     {
@@ -8,7 +8,7 @@
       "name_ja": "数学",
       "slug": "mathematics",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D01-mathematics.md",
         "en": "domains/en/md/domain-D01-mathematics.md"
@@ -16,14 +16,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D01-mathematics.pdf",
         "en": "domains/en/pdf/domain-D01-mathematics.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D02",
       "name_ja": "物理学",
       "slug": "physics",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D02-physics.md",
         "en": "domains/en/md/domain-D02-physics.md"
@@ -31,14 +33,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D02-physics.pdf",
         "en": "domains/en/pdf/domain-D02-physics.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D03",
       "name_ja": "化学",
       "slug": "chemistry",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D03-chemistry.md",
         "en": "domains/en/md/domain-D03-chemistry.md"
@@ -46,14 +50,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D03-chemistry.pdf",
         "en": "domains/en/pdf/domain-D03-chemistry.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D04",
       "name_ja": "進化生物学",
       "slug": "evolutionary-biology",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D04-evolutionary-biology.md",
         "en": "domains/en/md/domain-D04-evolutionary-biology.md"
@@ -61,14 +67,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D04-evolutionary-biology.pdf",
         "en": "domains/en/pdf/domain-D04-evolutionary-biology.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D05",
       "name_ja": "地球科学",
       "slug": "earth-science",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D05-earth-science.md",
         "en": "domains/en/md/domain-D05-earth-science.md"
@@ -76,14 +84,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D05-earth-science.pdf",
         "en": "domains/en/pdf/domain-D05-earth-science.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D06",
       "name_ja": "天文学",
       "slug": "astronomy",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D06-astronomy.md",
         "en": "domains/en/md/domain-D06-astronomy.md"
@@ -91,14 +101,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D06-astronomy.pdf",
         "en": "domains/en/pdf/domain-D06-astronomy.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D07",
       "name_ja": "工学情報",
       "slug": "engineering",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D07-engineering.md",
         "en": "domains/en/md/domain-D07-engineering.md"
@@ -106,14 +118,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D07-engineering.pdf",
         "en": "domains/en/pdf/domain-D07-engineering.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D08",
       "name_ja": "神経科学",
       "slug": "neuroscience",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D08-neuroscience.md",
         "en": "domains/en/md/domain-D08-neuroscience.md"
@@ -121,14 +135,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D08-neuroscience.pdf",
         "en": "domains/en/pdf/domain-D08-neuroscience.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D09",
       "name_ja": "生命科学",
       "slug": "life-sciences",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D09-life-sciences.md",
         "en": "domains/en/md/domain-D09-life-sciences.md"
@@ -136,14 +152,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D09-life-sciences.pdf",
         "en": "domains/en/pdf/domain-D09-life-sciences.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D10",
       "name_ja": "臨床免疫",
       "slug": "clinical-medicine",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D10-clinical-medicine.md",
         "en": "domains/en/md/domain-D10-clinical-medicine.md"
@@ -151,14 +169,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D10-clinical-medicine.pdf",
         "en": "domains/en/pdf/domain-D10-clinical-medicine.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D11",
       "name_ja": "薬学",
       "slug": "pharmacy",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D11-pharmacy.md",
         "en": "domains/en/md/domain-D11-pharmacy.md"
@@ -166,14 +186,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D11-pharmacy.pdf",
         "en": "domains/en/pdf/domain-D11-pharmacy.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D12",
       "name_ja": "農学生態",
       "slug": "agriculture",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_screened",
       "md": {
         "ja": "domains/ja/md/domain-D12-agriculture.md",
         "en": "domains/en/md/domain-D12-agriculture.md"
@@ -181,14 +203,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D12-agriculture.pdf",
         "en": "domains/en/pdf/domain-D12-agriculture.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed."
     },
     {
       "id": "D13",
       "name_ja": "哲学",
       "slug": "philosophy",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_screened",
       "md": {
         "ja": "domains/ja/md/domain-D13-philosophy.md",
         "en": "domains/en/md/domain-D13-philosophy.md"
@@ -196,14 +220,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D13-philosophy.pdf",
         "en": "domains/en/pdf/domain-D13-philosophy.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed."
     },
     {
       "id": "D14",
       "name_ja": "心理学",
       "slug": "psychology",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_screened",
       "md": {
         "ja": "domains/ja/md/domain-D14-psychology.md",
         "en": "domains/en/md/domain-D14-psychology.md"
@@ -211,14 +237,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D14-psychology.pdf",
         "en": "domains/en/pdf/domain-D14-psychology.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed."
     },
     {
       "id": "D15",
       "name_ja": "美学",
       "slug": "aesthetics",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D15-aesthetics.md",
         "en": "domains/en/md/domain-D15-aesthetics.md"
@@ -226,14 +254,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D15-aesthetics.pdf",
         "en": "domains/en/pdf/domain-D15-aesthetics.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D16",
       "name_ja": "歴史学",
       "slug": "history",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D16-history.md",
         "en": "domains/en/md/domain-D16-history.md"
@@ -241,14 +271,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D16-history.pdf",
         "en": "domains/en/pdf/domain-D16-history.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D17",
       "name_ja": "言語学",
       "slug": "linguistics",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D17-linguistics.md",
         "en": "domains/en/md/domain-D17-linguistics.md"
@@ -256,14 +288,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D17-linguistics.pdf",
         "en": "domains/en/pdf/domain-D17-linguistics.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D18",
       "name_ja": "社会学",
       "slug": "sociology",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D18-sociology.md",
         "en": "domains/en/md/domain-D18-sociology.md"
@@ -271,14 +305,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D18-sociology.pdf",
         "en": "domains/en/pdf/domain-D18-sociology.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D19",
       "name_ja": "文芸学",
       "slug": "literary-studies",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D19-literary-studies.md",
         "en": "domains/en/md/domain-D19-literary-studies.md"
@@ -286,14 +322,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D19-literary-studies.pdf",
         "en": "domains/en/pdf/domain-D19-literary-studies.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D20",
       "name_ja": "法政治",
       "slug": "law-politics",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D20-law-politics.md",
         "en": "domains/en/md/domain-D20-law-politics.md"
@@ -301,14 +339,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D20-law-politics.pdf",
         "en": "domains/en/pdf/domain-D20-law-politics.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D21",
       "name_ja": "経済学",
       "slug": "economics",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_screened",
       "md": {
         "ja": "domains/ja/md/domain-D21-economics.md",
         "en": "domains/en/md/domain-D21-economics.md"
@@ -316,14 +356,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D21-economics.pdf",
         "en": "domains/en/pdf/domain-D21-economics.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed."
     },
     {
       "id": "D22",
       "name_ja": "経営学",
       "slug": "business-management",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "claude_screened",
       "md": {
         "ja": "domains/ja/md/domain-D22-business-management.md",
         "en": "domains/en/md/domain-D22-business-management.md"
@@ -331,14 +373,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D22-business-management.pdf",
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
-      }
+      },
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed."
     },
     {
       "id": "D23",
       "name_ja": "発達心理",
       "slug": "developmental-psychology",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D23-developmental-psychology.md",
         "en": "domains/en/md/domain-D23-developmental-psychology.md"
@@ -346,14 +390,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D23-developmental-psychology.pdf",
         "en": "domains/en/pdf/domain-D23-developmental-psychology.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D24",
       "name_ja": "宗教学",
       "slug": "religion",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D24-religion.md",
         "en": "domains/en/md/domain-D24-religion.md"
@@ -361,14 +407,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D24-religion.pdf",
         "en": "domains/en/pdf/domain-D24-religion.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D25",
       "name_ja": "人類学",
       "slug": "anthropology",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D25-anthropology.md",
         "en": "domains/en/md/domain-D25-anthropology.md"
@@ -376,14 +424,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D25-anthropology.pdf",
         "en": "domains/en/pdf/domain-D25-anthropology.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D26",
       "name_ja": "音楽学",
       "slug": "musicology",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D26-musicology.md",
         "en": "domains/en/md/domain-D26-musicology.md"
@@ -391,14 +441,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D26-musicology.pdf",
         "en": "domains/en/pdf/domain-D26-musicology.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D27",
       "name_ja": "建築",
       "slug": "architecture",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D27-architecture.md",
         "en": "domains/en/md/domain-D27-architecture.md"
@@ -406,14 +458,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D27-architecture.pdf",
         "en": "domains/en/pdf/domain-D27-architecture.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D28",
       "name_ja": "舞台芸術",
       "slug": "performing-arts",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D28-performing-arts.md",
         "en": "domains/en/md/domain-D28-performing-arts.md"
@@ -421,14 +475,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D28-performing-arts.pdf",
         "en": "domains/en/pdf/domain-D28-performing-arts.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D29",
       "name_ja": "複雑系",
       "slug": "complexity-science",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D29-complexity-science.md",
         "en": "domains/en/md/domain-D29-complexity-science.md"
@@ -436,14 +492,16 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D29-complexity-science.pdf",
         "en": "domains/en/pdf/domain-D29-complexity-science.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     },
     {
       "id": "D30",
       "name_ja": "伝統知",
       "slug": "traditional-knowledge",
       "status": "published",
-      "progress_level": "structure_exploration",
+      "progress_level": "not_surveyed",
       "md": {
         "ja": "domains/ja/md/domain-D30-traditional-knowledge.md",
         "en": "domains/en/md/domain-D30-traditional-knowledge.md"
@@ -451,7 +509,9 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D30-traditional-knowledge.pdf",
         "en": "domains/en/pdf/domain-D30-traditional-knowledge.pdf"
-      }
+      },
+      "label_description_ja": "Claude・GPTによる調査未実施。",
+      "label_description_en": "No AI-assisted survey conducted yet."
     }
   ]
 }
