@@ -8,7 +8,7 @@
       "name_ja": "数学",
       "slug": "mathematics",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D01-mathematics.md",
         "en": "domains/en/md/domain-D01-mathematics.md"
@@ -17,15 +17,15 @@
         "ja": "domains/ja/pdf/domain-D01-mathematics.pdf",
         "en": "domains/en/pdf/domain-D01-mathematics.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D02",
       "name_ja": "物理学",
       "slug": "physics",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D02-physics.md",
         "en": "domains/en/md/domain-D02-physics.md"
@@ -34,15 +34,15 @@
         "ja": "domains/ja/pdf/domain-D02-physics.pdf",
         "en": "domains/en/pdf/domain-D02-physics.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D03",
       "name_ja": "化学",
       "slug": "chemistry",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D03-chemistry.md",
         "en": "domains/en/md/domain-D03-chemistry.md"
@@ -51,8 +51,8 @@
         "ja": "domains/ja/pdf/domain-D03-chemistry.pdf",
         "en": "domains/en/pdf/domain-D03-chemistry.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D04",
@@ -93,7 +93,7 @@
       "name_ja": "天文学",
       "slug": "astronomy",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D06-astronomy.md",
         "en": "domains/en/md/domain-D06-astronomy.md"
@@ -102,15 +102,15 @@
         "ja": "domains/ja/pdf/domain-D06-astronomy.pdf",
         "en": "domains/en/pdf/domain-D06-astronomy.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D07",
       "name_ja": "工学情報",
       "slug": "engineering",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D07-engineering.md",
         "en": "domains/en/md/domain-D07-engineering.md"
@@ -119,8 +119,8 @@
         "ja": "domains/ja/pdf/domain-D07-engineering.pdf",
         "en": "domains/en/pdf/domain-D07-engineering.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D08",
@@ -195,7 +195,7 @@
       "name_ja": "農学生態",
       "slug": "agriculture",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D12-agriculture.md",
         "en": "domains/en/md/domain-D12-agriculture.md"
@@ -204,8 +204,8 @@
         "ja": "domains/ja/pdf/domain-D12-agriculture.pdf",
         "en": "domains/en/pdf/domain-D12-agriculture.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D13",
@@ -246,7 +246,7 @@
       "name_ja": "美学",
       "slug": "aesthetics",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D15-aesthetics.md",
         "en": "domains/en/md/domain-D15-aesthetics.md"
@@ -255,15 +255,15 @@
         "ja": "domains/ja/pdf/domain-D15-aesthetics.pdf",
         "en": "domains/en/pdf/domain-D15-aesthetics.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D16",
       "name_ja": "歴史学",
       "slug": "history",
       "status": "published",
-      "progress_level": "human_reviewed",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D16-history.md",
         "en": "domains/en/md/domain-D16-history.md"
@@ -272,8 +272,8 @@
         "ja": "domains/ja/pdf/domain-D16-history.pdf",
         "en": "domains/en/pdf/domain-D16-history.pdf"
       },
-      "label_description_ja": "Claude初期抽出 + ChatGPT独立レビュー突き合わせ完了。人間（pjdhiro）による最終レビュー実施済み。",
-      "label_description_en": "Claude screening + ChatGPT independent review cross-checked. Final human review completed."
+      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
     },
     {
       "id": "D17",
