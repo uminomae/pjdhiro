@@ -56,6 +56,18 @@ Through the survey of 30 domains, several findings recurred across disciplinary 
 
 **"Boundaries are zones" in architecture** — this finding was independently confirmed from fiber scale to urban scale. Alexander (thick outlines), van Eyck (in-between), the Japanese engawa, and Lynch (urban edge) all describe boundaries not as lines but as regions with width. Through mutual complementation with liminality in anthropology (transitional periods are zones), this finding holds the strongest cross-domain support among the 30 domains.
 
+## About Survey Labels
+
+Each domain is assigned a label indicating the status of the survey conducted.
+Labels describe facts about who did what and how — not evaluations or rankings.
+
+| Label | What was done |
+|---|---|
+| Not yet surveyed | No AI-assisted survey conducted |
+| Claude-screened | Candidate theories (~10) identified via single-turn dialogue with Claude (claude-opus-4.5/4.6) |
+| Claude + GPT reviewed | Above, plus cross-checking with independent ChatGPT Deep Research review |
+| Human-reviewed | Above, plus final review by a human researcher |
+
 ## 5. Survey Depth
 
 We are proceeding with the policy of surveying all 30 domains to the same depth. However, progress varies across domains. Eleven domains (Mathematics, Physics, Chemistry, Evolutionary Biology, Earth Science, Astronomy, Engineering, Neuroscience, Life Sciences, Clinical Medicine, Pharmacy) are finalized versions with independent review completed. The remaining domains have completed analysis and are in the process of cross-referencing with independent reviews.
