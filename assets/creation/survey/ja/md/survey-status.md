@@ -66,7 +66,7 @@ generator_model: claude-opus-4-6
 
 30領域それぞれについて、選定した理論の分析、5段階との対応、独自の知見をまとめたドメインレポートを作成している。特定の領域に関心がある方は、そちらを参照いただきたい。
 
-全領域の索引と概要は [全分野構造類似探索: 領域索引](survey-domain-index.md) を参照。
+全領域の索引と概要は [全分野構造類似探索: 領域索引](https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/creation/survey/ja/md/survey-domain-index.md) を参照。
 
 ## 7. まとめ
 
