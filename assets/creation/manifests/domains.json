@@ -396,8 +396,8 @@
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
       },
       "label_description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
-      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)",
-      "generator_model": "claude:claude-opus-4-6+gpt:deep-research+codex:codex-5.4x-high"
+      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (gpt-5.4 xhigh)",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research+codex:gpt-5.4 xhigh"
     },
     {
       "id": "D23",
