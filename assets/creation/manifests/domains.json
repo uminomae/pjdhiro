@@ -18,7 +18,8 @@
         "en": "domains/en/pdf/domain-D01-mathematics.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D02",
@@ -35,7 +36,8 @@
         "en": "domains/en/pdf/domain-D02-physics.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D03",
@@ -52,7 +54,8 @@
         "en": "domains/en/pdf/domain-D03-chemistry.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D04",
@@ -69,7 +72,8 @@
         "en": "domains/en/pdf/domain-D04-evolutionary-biology.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D05",
@@ -86,7 +90,8 @@
         "en": "domains/en/pdf/domain-D05-earth-science.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D06",
@@ -103,7 +108,8 @@
         "en": "domains/en/pdf/domain-D06-astronomy.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D07",
@@ -120,7 +126,8 @@
         "en": "domains/en/pdf/domain-D07-engineering.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D08",
@@ -137,7 +144,8 @@
         "en": "domains/en/pdf/domain-D08-neuroscience.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D09",
@@ -154,7 +162,8 @@
         "en": "domains/en/pdf/domain-D09-life-sciences.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D10",
@@ -171,7 +180,8 @@
         "en": "domains/en/pdf/domain-D10-clinical-medicine.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D11",
@@ -188,7 +198,8 @@
         "en": "domains/en/pdf/domain-D11-pharmacy.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D12",
@@ -205,7 +216,8 @@
         "en": "domains/en/pdf/domain-D12-agriculture.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D13",
@@ -222,7 +234,8 @@
         "en": "domains/en/pdf/domain-D13-philosophy.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D14",
@@ -239,7 +252,8 @@
         "en": "domains/en/pdf/domain-D14-psychology.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D15",
@@ -256,7 +270,8 @@
         "en": "domains/en/pdf/domain-D15-aesthetics.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D16",
@@ -273,7 +288,8 @@
         "en": "domains/en/pdf/domain-D16-history.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D17",
@@ -290,7 +306,8 @@
         "en": "domains/en/pdf/domain-D17-linguistics.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D18",
@@ -307,7 +324,8 @@
         "en": "domains/en/pdf/domain-D18-sociology.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D19",
@@ -324,7 +342,8 @@
         "en": "domains/en/pdf/domain-D19-literary-studies.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D20",
@@ -341,7 +360,8 @@
         "en": "domains/en/pdf/domain-D20-law-politics.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D21",
@@ -358,7 +378,8 @@
         "en": "domains/en/pdf/domain-D21-economics.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D22",
@@ -375,7 +396,8 @@
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
       },
       "label_description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
-      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)"
+      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research+codex:codex-5.4x-high"
     },
     {
       "id": "D23",
@@ -392,7 +414,8 @@
         "en": "domains/en/pdf/domain-D23-developmental-psychology.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed.",
+      "generator_model": "claude:claude-opus-4-6"
     },
     {
       "id": "D24",
@@ -409,7 +432,8 @@
         "en": "domains/en/pdf/domain-D24-religion.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D25",
@@ -426,7 +450,8 @@
         "en": "domains/en/pdf/domain-D25-anthropology.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D26",
@@ -443,7 +468,8 @@
         "en": "domains/en/pdf/domain-D26-musicology.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D27",
@@ -460,7 +486,8 @@
         "en": "domains/en/pdf/domain-D27-architecture.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D28",
@@ -477,7 +504,8 @@
         "en": "domains/en/pdf/domain-D28-performing-arts.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D29",
@@ -494,7 +522,8 @@
         "en": "domains/en/pdf/domain-D29-complexity-science.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     },
     {
       "id": "D30",
@@ -511,7 +540,8 @@
         "en": "domains/en/pdf/domain-D30-traditional-knowledge.pdf"
       },
       "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT (Deep Research) による独立レビューとの突き合わせ完了。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review."
+      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. Cross-checked with independent ChatGPT Deep Research review.",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research"
     }
   ]
 }
