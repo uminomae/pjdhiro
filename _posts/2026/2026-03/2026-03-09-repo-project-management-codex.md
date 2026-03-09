@@ -1,7 +1,7 @@
 ---
 permalink: /20260309-repo-project-management/
 title: "AIとリポジトリを運営するということ——欠損駆動思考プロジェクトの管理手法"
-date: 2026-03-09 12:00:00 +0900
+date: 2027-03-09 12:00:00 +0900
 categories:
   - LLM
   - AI協働
@@ -11,6 +11,9 @@ tags:
   - Claude
   - コンテキストエンジニアリング
   - AI協働
+header:
+  og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-03/0309/image.png"
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-03/0309/image.png"
 excerpt: "人間ひとりとAI複数体で理論研究リポジトリを3ヶ月運営してわかったこと。セッション分断、記憶喪失、忖度——AIの弱点をそのまま管理構造に変換した、ちょっと変わったプロジェクト管理の記録。"
 toc: true
 toc_sticky: true
