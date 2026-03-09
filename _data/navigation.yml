@@ -11,10 +11,15 @@ docs:
     url: /project-design/
   - title: "創造とは"
     url: /dialogueCreation/
+    children:
+      - title: "創造とは｜Three.js"
+        url: https://uminomae.github.io/creation-space/
   - title: "デザイン思考"
     children:
       - title: "欠損駆動思考"
         url: /thinking-kesson/
+      - title: "欠損駆動思考｜Three.js"
+        url: https://uminomae.github.io/kesson-space/
       - title: "美駆動思考"
         url: /thinking-bi/
 
