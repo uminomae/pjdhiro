@@ -10,6 +10,9 @@ tags:
   - コンテキストエンジニアリング
   - GitHub
   - リポジトリ管理
+header:
+  og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-03/0309/image.png"
+  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/2026-03/0309/image.png"
 excerpt: "kesson-driven-thinking リポジトリを読んでいて面白かったのは、文書が説明書ではなく実行時ハーネスとして設計されていたことだ。README、state、backlog、SKILL、decision-log が、人間とAIの認知限界を前提に、一つの運営OSを作っている。"
 toc: true
 toc_sticky: true
