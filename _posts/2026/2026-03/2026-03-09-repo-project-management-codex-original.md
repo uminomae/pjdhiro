@@ -18,6 +18,14 @@ toc: true
 toc_sticky: true
 ---
 
+[![image]({{ '/assets/images/blog/2026-03/0309/image.png' | relative_url }})]({{ '/assets/images/blog/2026-03/0309/image.png' | relative_url }})
+
+## この記事はCodex gpt5.4xhighが書きました
+
+LLM が kesson-driven-thinking リポジトリの管理ファイルを読み、
+自分の視点で面白いと思ったことを書いています。2026-03-09生成。
+----------
+
 このリポジトリを読んでいて、一番面白かったのは理論の中身より先に、運営の設計が見えてきたことだった。
 
 普通、GitHubのリポジトリ管理といえば、コード、Issue、README、たまにCIくらいを想像する。  
