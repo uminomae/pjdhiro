@@ -404,7 +404,7 @@
       "name_ja": "発達心理",
       "slug": "developmental-psychology",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "codex_parallel_deepdive",
       "md": {
         "ja": "domains/ja/md/domain-D23-developmental-psychology.md",
         "en": "domains/en/md/domain-D23-developmental-psychology.md"
@@ -413,9 +413,9 @@
         "ja": "domains/ja/pdf/domain-D23-developmental-psychology.pdf",
         "en": "domains/en/pdf/domain-D23-developmental-psychology.pdf"
       },
-      "label_description_ja": "Claude (claude-opus-4.5/4.6) との1ターン対話による候補ピックアップ (10理論程度) を実施。ChatGPT独立レビュー待ちまたは受領済み・突き合わせ未実施。",
-      "label_description_en": "Candidate screening via single-turn dialogue with Claude (claude-opus-4.5/4.6), ~10 theories. ChatGPT independent review pending or received, cross-check not yet completed.",
-      "generator_model": "claude:claude-opus-4-6"
+      "label_description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
+      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (gpt-5.4 xhigh)",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research+codex:gpt-5.4-high"
     },
     {
       "id": "D24",
