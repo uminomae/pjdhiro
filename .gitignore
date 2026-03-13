@@ -25,3 +25,6 @@ assets/claude
 # git rm -r --cached myPj/inverse/js/Old
 myPj/tradingview/pine/tests/data/res/
 myPj/tradingview/pine/tests/__pycache__/
+
+# Cache
+.cache/
