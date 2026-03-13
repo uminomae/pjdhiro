@@ -6,7 +6,7 @@
 - **Why**: レポート生成時に LLM が定義を再発明しないよう、参照すべき正本を一箇所に置くためです。
 - **Who**: レポートを生成する CLI と、reader-rules から参照されます。
 - **When**: レポート生成時に §3（モデルの概要）を書くとき、このディレクトリの定義から要約します。
-- **Where**: creation-space/kb/schema/
+- **Where**: pjdhiro/assets/creation/kb/schema/
 - **How**: reader-rules が「kb/schema/five-stages.md を参照して要約せよ」と指定します。
 
 ## 移行状態
