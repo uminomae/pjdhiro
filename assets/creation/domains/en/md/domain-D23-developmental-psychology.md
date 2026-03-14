@@ -1,4 +1,4 @@
-# Research Report on the Structural Correspondence Between the Five-Stage Model and Developmental Psychology
+# Developmental Psychology
 
 ## 1. Purpose and Question
 
