@@ -19,7 +19,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D02",
@@ -37,7 +37,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D03",
@@ -55,7 +55,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D04",
@@ -73,7 +73,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D05",
@@ -91,7 +91,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D06",
@@ -109,7 +109,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D07",
@@ -127,7 +127,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D08",
@@ -145,7 +145,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D09",
@@ -163,7 +163,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D10",
@@ -181,7 +181,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D11",
@@ -199,7 +199,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D12",
@@ -217,14 +217,14 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D13",
       "name_ja": "哲学",
       "slug": "philosophy",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D13-philosophy.md",
         "en": "domains/en/md/domain-D13-philosophy.md"
@@ -233,9 +233,9 @@
         "ja": "domains/ja/pdf/domain-D13-philosophy.pdf",
         "en": "domains/en/pdf/domain-D13-philosophy.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D14",
@@ -253,7 +253,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D15",
@@ -271,7 +271,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D16",
@@ -289,7 +289,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D17",
@@ -307,7 +307,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D18",
@@ -325,7 +325,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D19",
@@ -343,7 +343,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D20",
@@ -361,7 +361,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D21",
@@ -379,7 +379,7 @@
       },
       "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
       "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
-      "generator_model": "unknown"
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D22",
@@ -396,8 +396,8 @@
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
       },
       "label_description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
-      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)",
-      "generator_model": "codex:codex-5.4x-high"
+      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research+codex:gpt-5.4 xhigh"
     },
     {
       "id": "D23",
@@ -414,15 +414,15 @@
         "en": "domains/en/pdf/domain-D23-developmental-psychology.pdf"
       },
       "label_description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
-      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)",
-      "generator_model": "codex:codex-5.4-high"
+      "label_description_en": "Parallel multi-agent deep exploration via Codex CLI",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research+codex:gpt-5.4 xhigh"
     },
     {
       "id": "D24",
       "name_ja": "宗教学",
       "slug": "religion",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D24-religion.md",
         "en": "domains/en/md/domain-D24-religion.md"
@@ -431,16 +431,16 @@
         "ja": "domains/ja/pdf/domain-D24-religion.pdf",
         "en": "domains/en/pdf/domain-D24-religion.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D25",
       "name_ja": "人類学",
       "slug": "anthropology",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D25-anthropology.md",
         "en": "domains/en/md/domain-D25-anthropology.md"
@@ -449,16 +449,16 @@
         "ja": "domains/ja/pdf/domain-D25-anthropology.pdf",
         "en": "domains/en/pdf/domain-D25-anthropology.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D26",
       "name_ja": "音楽学",
       "slug": "musicology",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D26-musicology.md",
         "en": "domains/en/md/domain-D26-musicology.md"
@@ -467,16 +467,16 @@
         "ja": "domains/ja/pdf/domain-D26-musicology.pdf",
         "en": "domains/en/pdf/domain-D26-musicology.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D27",
       "name_ja": "建築",
       "slug": "architecture",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D27-architecture.md",
         "en": "domains/en/md/domain-D27-architecture.md"
@@ -485,16 +485,16 @@
         "ja": "domains/ja/pdf/domain-D27-architecture.pdf",
         "en": "domains/en/pdf/domain-D27-architecture.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D28",
       "name_ja": "舞台芸術",
       "slug": "performing-arts",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D28-performing-arts.md",
         "en": "domains/en/md/domain-D28-performing-arts.md"
@@ -503,16 +503,16 @@
         "ja": "domains/ja/pdf/domain-D28-performing-arts.pdf",
         "en": "domains/en/pdf/domain-D28-performing-arts.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D29",
       "name_ja": "複雑系",
       "slug": "complexity-science",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D29-complexity-science.md",
         "en": "domains/en/md/domain-D29-complexity-science.md"
@@ -521,16 +521,16 @@
         "ja": "domains/ja/pdf/domain-D29-complexity-science.pdf",
         "en": "domains/en/pdf/domain-D29-complexity-science.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     },
     {
       "id": "D30",
       "name_ja": "伝統知",
       "slug": "traditional-knowledge",
       "status": "published",
-      "progress_level": "claude_screened",
+      "progress_level": "claude_gpt_reviewed",
       "md": {
         "ja": "domains/ja/md/domain-D30-traditional-knowledge.md",
         "en": "domains/en/md/domain-D30-traditional-knowledge.md"
@@ -539,9 +539,9 @@
         "ja": "domains/ja/pdf/domain-D30-traditional-knowledge.pdf",
         "en": "domains/en/pdf/domain-D30-traditional-knowledge.pdf"
       },
-      "label_description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
-      "label_description_en": "Candidate theories extracted via single-session Claude dialogue",
-      "generator_model": "unknown"
+      "label_description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "label_description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "generator_model": "claude:claude-opus-4-5+gpt:deep-research"
     }
   ]
 }
