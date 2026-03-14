@@ -1,4 +1,6 @@
-# What This Is
+# The Structure of Creation — Five Stages
+
+## What This Is
 
 This document describes a model of the structure common to creation.
 
