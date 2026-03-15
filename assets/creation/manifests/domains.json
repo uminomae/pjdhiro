@@ -1,7 +1,63 @@
 {
   "version": "3.0",
-  "generated_at": "2026-03-15T10:41:35.501Z",
+  "generated_at": "2026-03-15T10:44:36.114Z",
   "namespace": "domains",
+  "progress_taxonomy": [
+    {
+      "id": "not_surveyed",
+      "label_ja": "調査前",
+      "label_en": "Not yet surveyed",
+      "description_ja": "Claude・GPTによる調査未実施",
+      "description_en": "No AI-assisted survey conducted yet",
+      "order": 10,
+      "tone": "secondary"
+    },
+    {
+      "id": "claude_screened",
+      "label_ja": "Claude初期抽出済",
+      "label_en": "Claude-screened",
+      "description_ja": "Claudeとの対話（1セッション）で候補理論を抽出した",
+      "description_en": "Candidate theories extracted via single-session Claude dialogue",
+      "order": 20,
+      "tone": "warning"
+    },
+    {
+      "id": "claude_gpt_reviewed",
+      "label_ja": "Claude＋GPT照合済",
+      "label_en": "Claude + GPT reviewed",
+      "description_ja": "Claude抽出後、ChatGPTによる独立レビューと突き合わせを実施した",
+      "description_en": "Claude screening followed by independent ChatGPT review cross-check",
+      "order": 30,
+      "tone": "primary"
+    },
+    {
+      "id": "api_deepdive",
+      "label_ja": "Claude Agentによる深掘り済",
+      "label_en": "Claude Agent deepdive",
+      "description_ja": "Claude Code Agentによる逐次多ラウンド深掘り探索を実施した",
+      "description_en": "Multi-round sequential deep exploration via Claude Code Agent",
+      "order": 35,
+      "tone": "primary"
+    },
+    {
+      "id": "codex_parallel_deepdive",
+      "label_ja": "Codex並列深掘り済",
+      "label_en": "Codex parallel deepdive",
+      "description_ja": "Codex CLIマルチエージェント（並列）による深掘り探索を実施した",
+      "description_en": "Parallel multi-agent deep exploration via Codex CLI (codex 5.4x high)",
+      "order": 36,
+      "tone": "primary"
+    },
+    {
+      "id": "human_reviewed",
+      "label_ja": "人間レビュー済",
+      "label_en": "Human-reviewed",
+      "description_ja": "Claude＋GPT照合に加え、著者による最終確認を実施した",
+      "description_en": "Claude + GPT review plus author final confirmation",
+      "order": 40,
+      "tone": "success"
+    }
+  ],
   "reports": [
     {
       "id": "D01",
