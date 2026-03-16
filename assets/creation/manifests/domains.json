@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "generated_at": "2026-03-16T07:40:59.345Z",
+  "generated_at": "2026-03-16T12:39:13.154Z",
   "namespace": "domains",
   "progress_taxonomy": [
     {
@@ -65,6 +65,7 @@
       "slug": "mathematics",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D01-mathematics.md",
         "en": "domains/en/md/domain-D01-mathematics.md"
@@ -83,6 +84,7 @@
       "slug": "physics",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-04",
       "md": {
         "ja": "domains/ja/md/domain-D02-physics.md",
         "en": "domains/en/md/domain-D02-physics.md"
@@ -101,6 +103,7 @@
       "slug": "chemistry",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D03-chemistry.md",
         "en": "domains/en/md/domain-D03-chemistry.md"
@@ -119,6 +122,7 @@
       "slug": "evolutionary-biology",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D04-evolutionary-biology.md",
         "en": "domains/en/md/domain-D04-evolutionary-biology.md"
@@ -137,6 +141,7 @@
       "slug": "earth-science",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D05-earth-science.md",
         "en": "domains/en/md/domain-D05-earth-science.md"
@@ -155,6 +160,7 @@
       "slug": "astronomy",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D06-astronomy.md",
         "en": "domains/en/md/domain-D06-astronomy.md"
@@ -173,6 +179,7 @@
       "slug": "engineering",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D07-engineering.md",
         "en": "domains/en/md/domain-D07-engineering.md"
@@ -191,6 +198,7 @@
       "slug": "neuroscience",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D08-neuroscience.md",
         "en": "domains/en/md/domain-D08-neuroscience.md"
@@ -209,6 +217,7 @@
       "slug": "life-sciences",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D09-life-sciences.md",
         "en": "domains/en/md/domain-D09-life-sciences.md"
@@ -227,6 +236,7 @@
       "slug": "clinical-medicine",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D10-clinical-medicine.md",
         "en": "domains/en/md/domain-D10-clinical-medicine.md"
@@ -245,6 +255,7 @@
       "slug": "pharmacy",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D11-pharmacy.md",
         "en": "domains/en/md/domain-D11-pharmacy.md"
@@ -263,6 +274,7 @@
       "slug": "agriculture",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D12-agriculture.md",
         "en": "domains/en/md/domain-D12-agriculture.md"
@@ -281,6 +293,7 @@
       "slug": "philosophy",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D13-philosophy.md",
         "en": "domains/en/md/domain-D13-philosophy.md"
@@ -299,6 +312,7 @@
       "slug": "psychology",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D14-psychology.md",
         "en": "domains/en/md/domain-D14-psychology.md"
@@ -317,6 +331,7 @@
       "slug": "aesthetics",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D15-aesthetics.md",
         "en": "domains/en/md/domain-D15-aesthetics.md"
@@ -335,6 +350,7 @@
       "slug": "history",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D16-history.md",
         "en": "domains/en/md/domain-D16-history.md"
@@ -353,6 +369,7 @@
       "slug": "linguistics",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D17-linguistics.md",
         "en": "domains/en/md/domain-D17-linguistics.md"
@@ -371,6 +388,7 @@
       "slug": "sociology",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D18-sociology.md",
         "en": "domains/en/md/domain-D18-sociology.md"
@@ -389,6 +407,7 @@
       "slug": "literary-studies",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D19-literary-studies.md",
         "en": "domains/en/md/domain-D19-literary-studies.md"
@@ -407,6 +426,7 @@
       "slug": "law-politics",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D20-law-politics.md",
         "en": "domains/en/md/domain-D20-law-politics.md"
@@ -425,6 +445,7 @@
       "slug": "economics",
       "status": "published",
       "progress_level": "claude_gpt_reviewed",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D21-economics.md",
         "en": "domains/en/md/domain-D21-economics.md"
@@ -443,6 +464,7 @@
       "slug": "business-management",
       "status": "published",
       "progress_level": "codex_parallel_deepdive",
+      "generated": "2026-03-04",
       "md": {
         "ja": "domains/ja/md/domain-D22-business-management.md",
         "en": "domains/en/md/domain-D22-business-management.md"
@@ -461,6 +483,7 @@
       "slug": "developmental-psychology",
       "status": "published",
       "progress_level": "codex_parallel_deepdive",
+      "generated": "2026-03-10",
       "md": {
         "ja": "domains/ja/md/domain-D23-developmental-psychology.md",
         "en": "domains/en/md/domain-D23-developmental-psychology.md"
@@ -479,6 +502,7 @@
       "slug": "religion",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D24-religion.md",
         "en": "domains/en/md/domain-D24-religion.md"
@@ -497,6 +521,7 @@
       "slug": "anthropology",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D25-anthropology.md",
         "en": "domains/en/md/domain-D25-anthropology.md"
@@ -515,6 +540,7 @@
       "slug": "musicology",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D26-musicology.md",
         "en": "domains/en/md/domain-D26-musicology.md"
@@ -533,6 +559,7 @@
       "slug": "architecture",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D27-architecture.md",
         "en": "domains/en/md/domain-D27-architecture.md"
@@ -551,6 +578,7 @@
       "slug": "performing-arts",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D28-performing-arts.md",
         "en": "domains/en/md/domain-D28-performing-arts.md"
@@ -569,6 +597,7 @@
       "slug": "complexity-science",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D29-complexity-science.md",
         "en": "domains/en/md/domain-D29-complexity-science.md"
@@ -587,6 +616,7 @@
       "slug": "traditional-knowledge",
       "status": "published",
       "progress_level": "claude_screened",
+      "generated": "2026-03-16",
       "md": {
         "ja": "domains/ja/md/domain-D30-traditional-knowledge.md",
         "en": "domains/en/md/domain-D30-traditional-knowledge.md"
