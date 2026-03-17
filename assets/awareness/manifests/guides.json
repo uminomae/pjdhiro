@@ -1,0 +1,46 @@
+{
+  "version": "0.1",
+  "generated_at": "2026-03-18",
+  "namespace": "awareness",
+  "guides": [
+    {
+      "id": "general",
+      "title_ja": "一般向け",
+      "title_en": "General",
+      "md": {
+        "ja": "guides/ja/md/awareness-general.md",
+        "en": null
+      },
+      "pdf": {
+        "ja": "guides/ja/pdf/awareness-general.pdf",
+        "en": null
+      }
+    },
+    {
+      "id": "designer",
+      "title_ja": "設計者向け",
+      "title_en": "Designer",
+      "md": {
+        "ja": "guides/ja/md/awareness-designer.md",
+        "en": null
+      },
+      "pdf": {
+        "ja": "guides/ja/pdf/awareness-designer.pdf",
+        "en": null
+      }
+    },
+    {
+      "id": "academic",
+      "title_ja": "専門家向け",
+      "title_en": "Academic",
+      "md": {
+        "ja": "guides/ja/md/awareness-academic.md",
+        "en": null
+      },
+      "pdf": {
+        "ja": "guides/ja/pdf/awareness-academic.pdf",
+        "en": null
+      }
+    }
+  ]
+}
