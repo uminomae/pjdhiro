@@ -1,8 +1,3 @@
----
-generated: "2026-03-18"
-generator_model: "claude-opus-4-6"
----
-
 # 天文学・宇宙物理学
 
 > **立ち位置明示**
