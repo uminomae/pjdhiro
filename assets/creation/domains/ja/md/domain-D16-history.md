@@ -1,8 +1,3 @@
----
-generated: "2026-03-18"
-generator_model: "claude-opus-4-6"
----
-
 # 歴史学
 
 > **立ち位置明示**
