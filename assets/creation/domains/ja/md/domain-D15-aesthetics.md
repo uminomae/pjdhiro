@@ -1,3 +1,8 @@
+---
+generated: "2026-03-18"
+generator_model: "claude-opus-4-6"
+---
+
 
 # 美学における5段階モデルの構造対応に関する調査報告
 

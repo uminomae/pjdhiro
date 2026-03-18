@@ -1,3 +1,8 @@
+---
+generated: "2026-03-18"
+generator_model: "claude-opus-4-6"
+---
+
 # 経済学
 
 > **立ち位置明示**
