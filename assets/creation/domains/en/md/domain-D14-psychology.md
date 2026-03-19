@@ -1,16 +1,3 @@
----
-id: domain-D14-psychology-en
-title: "Psychology and Cognitive Science"
-domain_id: D14
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D14-psychology.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Psychology and Cognitive Science: What Happens When Cognition Shifts
 
 ## 1. Purpose and Question of the Investigation

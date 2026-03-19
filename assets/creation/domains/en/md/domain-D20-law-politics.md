@@ -1,16 +1,3 @@
----
-id: domain-D20-law-politics-en
-title: "Law and Political Science"
-domain_id: D20
-audience: report
-lang: en
-version: 2.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D20-law-politics.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Law and Political Science
 
 ## 1. Purpose and Question of the Investigation

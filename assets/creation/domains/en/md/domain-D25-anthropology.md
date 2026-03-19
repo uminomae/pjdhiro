@@ -1,16 +1,3 @@
----
-id: domain-D25-anthropology-en
-title: "Anthropology"
-domain_id: D25
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D25-anthropology.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Boundary Processes and the Five-Stage Model in Anthropology and Ethnology
 
 ## 1. Purpose and Question of the Investigation

@@ -1,16 +1,3 @@
----
-id: domain-D13-philosophy-en
-title: "Philosophy"
-domain_id: D13
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D13-philosophy.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Philosophy: An Investigation of Structural Similarity with the Five-Stage Model
 
 ## 1. Purpose and Question of the Investigation

@@ -1,16 +1,3 @@
----
-id: domain-D02-physics-en
-title: "Physics"
-domain_id: D02
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D02-physics.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Structural Correspondence Between Order Formation in Physics and the Five-Stage Model
 
 ## 1. Purpose and Question of the Investigation

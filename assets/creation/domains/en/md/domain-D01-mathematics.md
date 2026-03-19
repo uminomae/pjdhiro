@@ -1,16 +1,3 @@
----
-id: domain-D01-mathematics-en
-title: "Mathematics"
-domain_id: D01
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D01-mathematics.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Mathematics: Structure Condenses at Boundaries and Criticality
 
 ## 1. Purpose and Question of the Investigation

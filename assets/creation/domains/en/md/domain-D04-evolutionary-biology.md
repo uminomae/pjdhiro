@@ -1,16 +1,3 @@
----
-id: domain-D04-evolutionary-biology-en
-title: "Evolutionary Biology"
-domain_id: D04
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D04-evolutionary-biology.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Evolutionary Biology: Novelty Emerges from Error
 
 ## 1. Purpose of the Investigation in This Domain

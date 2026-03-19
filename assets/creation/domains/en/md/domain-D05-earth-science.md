@@ -1,16 +1,3 @@
----
-id: domain-D05-earth-science-en
-title: "Earth Science"
-domain_id: D05
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D05-earth-science.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Earth Science: 4.6 Billion Years of Creation Without Consciousness
 
 ## 1. Purpose of the Investigation in This Domain
