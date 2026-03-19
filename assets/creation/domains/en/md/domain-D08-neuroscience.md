@@ -1,16 +1,3 @@
----
-id: domain-D08-neuroscience-en
-title: "Neuroscience"
-domain_id: D08
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D08-neuroscience.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Neuroscience: The Predictive Brain and the Body That Feels Lack
 
 ## 1. Purpose of the Investigation

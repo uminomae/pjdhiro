@@ -1,16 +1,3 @@
----
-id: domain-D06-astronomy-en
-title: "Astronomy"
-domain_id: D06
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D06-astronomy.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Astronomy and Astrophysics: The Spiral of Unconscious Creation
 
 ## 1. Purpose and Question of the Investigation

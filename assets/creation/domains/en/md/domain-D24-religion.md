@@ -1,16 +1,3 @@
----
-id: domain-D24-religion-en
-title: "Religion"
-domain_id: D24
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D24-religion.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Religion
 
 ## 1. Purpose and Questions of the Investigation

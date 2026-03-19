@@ -1,16 +1,3 @@
----
-id: domain-D19-literary-studies-en
-title: "Literary Studies"
-domain_id: D19
-audience: report
-lang: en
-version: 2.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D19-literary-studies.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Literary Studies: Narrative Structure and the Five Stages of Creation
 
 ## 1. Purpose and Question of the Investigation

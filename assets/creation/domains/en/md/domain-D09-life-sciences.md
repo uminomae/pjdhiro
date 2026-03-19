@@ -1,16 +1,3 @@
----
-id: domain-D09-life-sciences-en
-title: "Life Sciences"
-domain_id: D09
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D09-life-sciences.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body
 
 ## 1. Purpose of the Investigation in This Domain

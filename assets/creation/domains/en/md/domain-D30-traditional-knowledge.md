@@ -1,16 +1,3 @@
----
-id: domain-D30-traditional-knowledge-en
-title: "Traditional Knowledge"
-domain_id: D30
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D30-traditional-knowledge.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Traditional Knowledge
 
 ## 1. Purpose and Question of the Investigation
