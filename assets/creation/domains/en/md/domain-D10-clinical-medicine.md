@@ -1,16 +1,3 @@
----
-id: domain-D10-clinical-medicine-en
-title: "Clinical Medicine"
-domain_id: D10
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D10-clinical-medicine.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error
 
 ## 1. Purpose and Questions of the Investigation

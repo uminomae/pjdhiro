@@ -1,16 +1,3 @@
----
-id: domain-D15-aesthetics-en
-title: "Aesthetics"
-domain_id: D15
-audience: report
-lang: en
-version: 2.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D15-aesthetics.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Aesthetics
 
 ## 1. Purpose and Question of the Investigation

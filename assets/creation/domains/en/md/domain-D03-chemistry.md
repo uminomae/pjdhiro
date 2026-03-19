@@ -1,16 +1,3 @@
----
-id: domain-D03-chemistry-en
-title: "Chemistry"
-domain_id: D03
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D03-chemistry.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model
 
 ## 1. Purpose and Question of the Investigation

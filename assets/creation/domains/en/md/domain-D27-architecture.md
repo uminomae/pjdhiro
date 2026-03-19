@@ -1,16 +1,3 @@
----
-id: domain-D27-architecture-en
-title: "Architecture"
-domain_id: D27
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D27-architecture.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model
 
 ## 1. Purpose and Question of the Investigation

@@ -1,16 +1,3 @@
----
-id: domain-D18-sociology-en
-title: "Sociology"
-domain_id: D18
-audience: report
-lang: en
-version: 3.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D18-sociology.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Sociology: Weak Ties Generate Structure
 
 ## 1. Purpose and Question of the Investigation

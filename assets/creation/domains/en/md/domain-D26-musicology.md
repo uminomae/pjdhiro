@@ -1,16 +1,3 @@
----
-id: domain-D26-musicology-en
-title: "Musicology"
-domain_id: D26
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D26-musicology.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Musicology
 
 ## 1. Purpose and Questions of the Investigation

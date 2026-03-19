@@ -1,16 +1,3 @@
----
-id: domain-D28-performing-arts-en
-title: "Performing Arts"
-domain_id: D28
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D28-performing-arts.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model
 
 ## 1. Purpose and Questions of the Investigation

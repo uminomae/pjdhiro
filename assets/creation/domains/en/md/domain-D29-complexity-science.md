@@ -1,16 +1,3 @@
----
-id: domain-D29-complexity-science-en
-title: "Complexity Science"
-domain_id: D29
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D29-complexity-science.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science
 
 ## 1. Purpose and Questions of the Investigation

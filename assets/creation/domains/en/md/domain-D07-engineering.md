@@ -1,16 +1,3 @@
----
-id: domain-D07-engineering-en
-title: "Engineering"
-domain_id: D07
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D07-engineering.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science
 
 ## 1. Purpose and Question of the Investigation

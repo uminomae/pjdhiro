@@ -1,16 +1,3 @@
----
-id: domain-D12-agriculture-en
-title: "Agriculture"
-domain_id: D12
-audience: report
-lang: en
-version: 1.0
-date: 2026-03-06
-source: build/creation/domains/ja/md/domain-D12-agriculture.md
-rules: reader-rules-creation-report.md v1.7
-generator_model: claude-opus-4-6
----
-
 # Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge
 
 ## 1. Purpose of the Investigation in This Domain
