@@ -3,10 +3,11 @@ id: survey-status
 title: "Cross-Domain Structural Similarity Survey: Overview"
 lang: en
 audience: survey
-version: 1.0
-date: 2026-03-05
-source: base/evidence/review/p1-cross-domain-insights.md, base/evidence/PROJECT.md
-rules: reader-rules-creation-survey.md v1.0, reader-rules-creation.md v1.4
+version: 2.0
+date: 2026-03-19
+generated: 2026-03-19
+source: evidence/review/p1-cross-domain-insights.md, evidence/PROJECT.md, evidence/investigation/
+rules: reader-rules-creation-survey.md v1.0, reader-rules-creation.md v1.5
 generator_model: claude-opus-4-6
 ---
 

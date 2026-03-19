@@ -5,6 +5,7 @@ lang: ja
 audience: survey
 version: 2.0
 date: 2026-03-19
+generated: 2026-03-19
 source: evidence/review/p1-cross-domain-insights.md, evidence/PROJECT.md, evidence/investigation/
 rules: reader-rules-creation-survey.md v1.0, reader-rules-creation.md v1.5
 generator_model: claude-opus-4-6
