@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-19T12:00:00.000Z",
+  "namespace": "phase8-themes",
+  "themes": [
+    {
+      "id": "T1",
+      "slug": "edge-typology",
+      "name_ja": "縁の類型学と統一分類",
+      "name_en": "Edge Typology and Unified Classification",
+      "description_ja": "28/30ドメインが「縁」の多型性を主題化。全30領域での縁の記述を統一分類として整理。",
+      "description_en": "28 of 30 domains thematize the polymorphism of 'edge'. A unified classification across all 30 domains.",
+      "domain_count": 26,
+      "priority": "highest",
+      "md": {
+        "ja": "phase8-themes/ja/md/theme-edge-typology.md"
+      },
+      "generator_model": "claude-opus-4-6",
+      "generated": "2026-03-19"
+    },
+    {
+      "id": "T5",
+      "slug": "recirculation",
+      "name_ja": "再循環メカニズム（束→場の還流）",
+      "name_en": "Recirculation Mechanism (Bundle-to-Field Reflux)",
+      "description_ja": "束が場に還流する再循環構造を19ドメインにわたって検証。SOC・進化・哲学など多系統から帰還パスを同定。",
+      "description_en": "Verification of recirculation structures where bundles reflux back to fields across 19 domains.",
+      "domain_count": 19,
+      "priority": "high",
+      "md": {
+        "ja": "phase8-themes/ja/md/theme-recirculation.md"
+      },
+      "generator_model": "claude-opus-4-6",
+      "generated": "2026-03-19"
+    },
+    {
+      "id": "T6",
+      "slug": "field-layers",
+      "name_ja": "場の多層性（原初的/循環的/存在論的）",
+      "name_en": "Field Multi-Layering (Primordial / Circulatory / Ontological)",
+      "description_ja": "場の三層構造（原初的・循環的・存在論的）を18ドメインで確認。場は単一でなく多層的に機能する。",
+      "description_en": "Three-layered field structure confirmed across 18 domains.",
+      "domain_count": 18,
+      "priority": "high",
+      "md": {
+        "ja": "phase8-themes/ja/md/theme-field-layers.md"
+      },
+      "generator_model": "claude-opus-4-6",
+      "generated": "2026-03-19"
+    },
+    {
+      "id": "T7T9",
+      "slug": "blind-spots",
+      "name_ja": "盲点と反例 — 秩序解体・5段階が記述できないもの",
+      "name_en": "Blind Spots and Counterexamples",
+      "description_ja": "5段階モデルが記述できない現象や反例を13+11ドメインから抽出。モデルの適用限界を明示。",
+      "description_en": "Phenomena and counterexamples the five-stage model cannot describe, extracted from 24 domains.",
+      "domain_count": 24,
+      "priority": "medium-required",
+      "md": {
+        "ja": "phase8-themes/ja/md/theme-blind-spots.md"
+      },
+      "generator_model": "claude-opus-4-6",
+      "generated": "2026-03-19"
+    },
+    {
+      "id": "T2",
+      "slug": "threshold",
+      "name_ja": "閾値構造と縁→渦遷移の条件",
+      "name_en": "Threshold Structure and Edge-to-Vortex Transition",
+      "description_ja": "縁から渦への遷移を支配する閾値条件を11ドメインで分析。相転移・臨界・活性化エネルギーなど。",
+      "description_en": "Analysis of threshold conditions governing edge-to-vortex transitions across 11 domains.",
+      "domain_count": 11,
+      "priority": "medium",
+      "md": {
+        "ja": "phase8-themes/ja/md/theme-threshold.md"
+      },
+      "generator_model": "claude-opus-4-6",
+      "generated": "2026-03-19"
+    }
+  ]
+}
