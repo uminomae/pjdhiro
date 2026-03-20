@@ -57,19 +57,6 @@
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/four-layers.md"
       }
-    },
-    {
-      "id": "A05",
-      "name_ja": "Concept Notes",
-      "name_en": "Concept Notes",
-      "slug": "concept-notes",
-      "progress_level": "report_ready",
-      "progress_note": "公開本文あり",
-      "summary_ja": "主軸の説明だけでは扱いきれない論点を保持する補助層の報告。",
-      "summary_en": "A report explaining how the concept notes set supports the main reports.",
-      "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/concept-notes.md"
-      }
     }
   ]
 }
