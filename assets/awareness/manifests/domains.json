@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "generated_at": "2026-03-20",
+  "generated_at": "2026-03-21",
   "namespace": "awareness",
   "progress_taxonomy": [
     {
@@ -42,7 +42,8 @@
       "summary_ja": "経験の向きを生存と信頼の二軸から捉えるための報告。",
       "summary_en": "A report on the two-axis model of survival and intersubjectivity.",
       "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/survival-trust-axis.md"
+        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/survival-trust-axis.md",
+        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/en/md/survival-trust-axis.md"
       }
     },
     {
@@ -55,7 +56,8 @@
       "summary_ja": "意識を身体状態から見直しの余地までの流れとして捉える報告。",
       "summary_en": "A report on awareness as a processing chain from bodily state to response margin.",
       "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/four-layers.md"
+        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/four-layers.md",
+        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/en/md/four-layers.md"
       }
     }
   ]
