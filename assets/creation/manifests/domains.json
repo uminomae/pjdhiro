@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "generated_at": "2026-03-20",
   "namespace": "creation",
   "total": 30,
@@ -15,7 +15,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D01-mathematics.pdf",
         "en": "domains/en/pdf/domain-D01-mathematics.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D01-mathematics.png"
     },
     {
       "id": "D02",
@@ -28,7 +29,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D02-physics.pdf",
         "en": "domains/en/pdf/domain-D02-physics.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D02-physics.png"
     },
     {
       "id": "D03",
@@ -41,7 +43,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D03-chemistry.pdf",
         "en": "domains/en/pdf/domain-D03-chemistry.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D03-chemistry.png"
     },
     {
       "id": "D04",
@@ -54,7 +57,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D04-evolutionary-biology.pdf",
         "en": "domains/en/pdf/domain-D04-evolutionary-biology.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D04-evolutionary-biology.png"
     },
     {
       "id": "D05",
@@ -67,7 +71,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D05-earth-science.pdf",
         "en": "domains/en/pdf/domain-D05-earth-science.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D05-earth-science.png"
     },
     {
       "id": "D06",
@@ -80,7 +85,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D06-astronomy.pdf",
         "en": "domains/en/pdf/domain-D06-astronomy.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D06-astronomy.png"
     },
     {
       "id": "D07",
@@ -93,7 +99,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D07-engineering.pdf",
         "en": "domains/en/pdf/domain-D07-engineering.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D07-engineering.png"
     },
     {
       "id": "D08",
@@ -106,7 +113,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D08-neuroscience.pdf",
         "en": "domains/en/pdf/domain-D08-neuroscience.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D08-neuroscience.png"
     },
     {
       "id": "D09",
@@ -119,7 +127,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D09-life-sciences.pdf",
         "en": "domains/en/pdf/domain-D09-life-sciences.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D09-life-sciences.png"
     },
     {
       "id": "D10",
@@ -132,7 +141,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D10-clinical-medicine.pdf",
         "en": "domains/en/pdf/domain-D10-clinical-medicine.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D10-clinical-medicine.png"
     },
     {
       "id": "D11",
@@ -145,7 +155,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D11-pharmacy.pdf",
         "en": "domains/en/pdf/domain-D11-pharmacy.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D11-pharmacy.png"
     },
     {
       "id": "D12",
@@ -158,7 +169,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D12-agriculture.pdf",
         "en": "domains/en/pdf/domain-D12-agriculture.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D12-agriculture.png"
     },
     {
       "id": "D13",
@@ -171,7 +183,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D13-philosophy.pdf",
         "en": "domains/en/pdf/domain-D13-philosophy.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D13-philosophy.png"
     },
     {
       "id": "D14",
@@ -184,7 +197,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D14-psychology.pdf",
         "en": "domains/en/pdf/domain-D14-psychology.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D14-psychology.png"
     },
     {
       "id": "D15",
@@ -197,7 +211,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D15-aesthetics.pdf",
         "en": "domains/en/pdf/domain-D15-aesthetics.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D15-aesthetics.png"
     },
     {
       "id": "D16",
@@ -210,7 +225,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D16-history.pdf",
         "en": "domains/en/pdf/domain-D16-history.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D16-history.png"
     },
     {
       "id": "D17",
@@ -223,7 +239,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D17-linguistics.pdf",
         "en": "domains/en/pdf/domain-D17-linguistics.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D17-linguistics.png"
     },
     {
       "id": "D18",
@@ -236,7 +253,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D18-sociology.pdf",
         "en": "domains/en/pdf/domain-D18-sociology.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D18-sociology.png"
     },
     {
       "id": "D19",
@@ -249,7 +267,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D19-literary-studies.pdf",
         "en": "domains/en/pdf/domain-D19-literary-studies.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D19-literary-studies.png"
     },
     {
       "id": "D20",
@@ -262,7 +281,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D20-law-politics.pdf",
         "en": "domains/en/pdf/domain-D20-law-politics.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D20-law-politics.png"
     },
     {
       "id": "D21",
@@ -275,7 +295,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D21-economics.pdf",
         "en": "domains/en/pdf/domain-D21-economics.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D21-economics.png"
     },
     {
       "id": "D22",
@@ -288,7 +309,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D22-business-management.pdf",
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D22-business-management.png"
     },
     {
       "id": "D23",
@@ -301,7 +323,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D23-developmental-psychology.pdf",
         "en": "domains/en/pdf/domain-D23-developmental-psychology.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D23-developmental-psychology.png"
     },
     {
       "id": "D24",
@@ -314,7 +337,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D24-religion.pdf",
         "en": "domains/en/pdf/domain-D24-religion.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D24-religion.png"
     },
     {
       "id": "D25",
@@ -327,7 +351,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D25-anthropology.pdf",
         "en": "domains/en/pdf/domain-D25-anthropology.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D25-anthropology.png"
     },
     {
       "id": "D26",
@@ -340,7 +365,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D26-musicology.pdf",
         "en": "domains/en/pdf/domain-D26-musicology.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D26-musicology.png"
     },
     {
       "id": "D27",
@@ -353,7 +379,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D27-architecture.pdf",
         "en": "domains/en/pdf/domain-D27-architecture.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D27-architecture.png"
     },
     {
       "id": "D28",
@@ -366,7 +393,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D28-performing-arts.pdf",
         "en": "domains/en/pdf/domain-D28-performing-arts.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D28-performing-arts.png"
     },
     {
       "id": "D29",
@@ -379,7 +407,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D29-complexity-science.pdf",
         "en": "domains/en/pdf/domain-D29-complexity-science.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D29-complexity-science.png"
     },
     {
       "id": "D30",
@@ -392,7 +421,8 @@
       "pdf": {
         "ja": "domains/ja/pdf/domain-D30-traditional-knowledge.pdf",
         "en": "domains/en/pdf/domain-D30-traditional-knowledge.pdf"
-      }
+      },
+      "thumbnail": "domains/img/domain-D30-traditional-knowledge.png"
     }
   ]
 }
