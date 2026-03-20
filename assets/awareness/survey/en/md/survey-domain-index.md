@@ -1,0 +1,44 @@
+---
+id: survey-domain-index
+title: "Awareness Model Exploration: Survey Index"
+lang: en
+audience: survey
+version: 0.2
+date: 2026-03-21
+---
+
+# Awareness Model Exploration: Survey Index
+
+## About This Index
+
+This index organizes the public materials by reading purpose.
+Use it as an entry point based on the kind of question you want to pursue first.
+
+## 1. If You Want the Overall Picture First
+
+- general guide
+
+## 2. If You Want to See Links to Observation and Support
+
+- designer guide
+
+## 3. If You Want the Analytical and Comparative Frame
+
+- academic guide
+
+## 4. If You Want the Current Research Status
+
+- survey overview
+
+## 5. Component Reports
+
+Detailed component reports are available through the REPORTS section in awareness-space itself.
+The current focus is on the following two reports:
+
+- survival-trust axis
+- four-layer model
+
+## 6. What Matters Most Right Now
+
+The center of gravity of this project is the exploration of the awareness model itself.
+In particular, it asks how insights from neurophenomenology and psychology can be integrated, and whether the hypothesis that places survival and intersubjectivity at the core is defensible.
