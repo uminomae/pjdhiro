@@ -23,6 +23,10 @@
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-edge-typology.pdf"
+      },
+      "summary_pdf": {
+        "ja": "phase8-themes/ja/pdf/summary-edge-typology.pdf",
+        "en": "phase8-themes/en/pdf/summary-edge-typology.pdf"
       }
     },
     {
@@ -45,6 +49,10 @@
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-recirculation.pdf"
+      },
+      "summary_pdf": {
+        "ja": "phase8-themes/ja/pdf/summary-recirculation.pdf",
+        "en": "phase8-themes/en/pdf/summary-recirculation.pdf"
       }
     },
     {
@@ -67,6 +75,10 @@
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-field-layers.pdf"
+      },
+      "summary_pdf": {
+        "ja": "phase8-themes/ja/pdf/summary-field-layers.pdf",
+        "en": "phase8-themes/en/pdf/summary-field-layers.pdf"
       }
     },
     {
@@ -89,6 +101,10 @@
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-blind-spots.pdf"
+      },
+      "summary_pdf": {
+        "ja": "phase8-themes/ja/pdf/summary-blind-spots.pdf",
+        "en": "phase8-themes/en/pdf/summary-blind-spots.pdf"
       }
     },
     {
@@ -111,6 +127,10 @@
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-threshold.pdf"
+      },
+      "summary_pdf": {
+        "ja": "phase8-themes/ja/pdf/summary-threshold.pdf",
+        "en": "phase8-themes/en/pdf/summary-threshold.pdf"
       }
     }
   ]
