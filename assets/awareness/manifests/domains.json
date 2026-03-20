@@ -59,19 +59,6 @@
       }
     },
     {
-      "id": "A03",
-      "name_ja": "M1 consciousness OS",
-      "name_en": "M1 Consciousness OS",
-      "slug": "m1-consciousness-os",
-      "progress_level": "report_ready",
-      "progress_note": "公開本文あり",
-      "summary_ja": "現在の意識モデルを支える基盤文章群の位置づけを説明する報告。",
-      "summary_en": "A report on the source text bundle behind the current four-layer model.",
-      "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/m1-consciousness-os.md"
-      }
-    },
-    {
       "id": "A05",
       "name_ja": "Concept Notes",
       "name_en": "Concept Notes",
