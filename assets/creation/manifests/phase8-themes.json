@@ -20,7 +20,10 @@
         "en": "phase8-themes/en/md/summary-edge-typology.md"
       },
       "generator_model": "claude-opus-4-6",
-      "generated": "2026-03-19"
+      "generated": "2026-03-19",
+      "pdf": {
+        "ja": "phase8-themes/ja/pdf/theme-edge-typology.pdf"
+      }
     },
     {
       "id": "T5",
@@ -39,7 +42,10 @@
         "en": "phase8-themes/en/md/summary-recirculation.md"
       },
       "generator_model": "claude-opus-4-6",
-      "generated": "2026-03-19"
+      "generated": "2026-03-19",
+      "pdf": {
+        "ja": "phase8-themes/ja/pdf/theme-recirculation.pdf"
+      }
     },
     {
       "id": "T6",
@@ -58,7 +64,10 @@
         "en": "phase8-themes/en/md/summary-field-layers.md"
       },
       "generator_model": "claude-opus-4-6",
-      "generated": "2026-03-19"
+      "generated": "2026-03-19",
+      "pdf": {
+        "ja": "phase8-themes/ja/pdf/theme-field-layers.pdf"
+      }
     },
     {
       "id": "T7T9",
@@ -77,7 +86,10 @@
         "en": "phase8-themes/en/md/summary-blind-spots.md"
       },
       "generator_model": "claude-opus-4-6",
-      "generated": "2026-03-19"
+      "generated": "2026-03-19",
+      "pdf": {
+        "ja": "phase8-themes/ja/pdf/theme-blind-spots.pdf"
+      }
     },
     {
       "id": "T2",
@@ -96,7 +108,10 @@
         "en": "phase8-themes/en/md/summary-threshold.md"
       },
       "generator_model": "claude-opus-4-6",
-      "generated": "2026-03-19"
+      "generated": "2026-03-19",
+      "pdf": {
+        "ja": "phase8-themes/ja/pdf/theme-threshold.pdf"
+      }
     }
   ]
 }
