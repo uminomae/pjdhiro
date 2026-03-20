@@ -36,11 +36,10 @@ date: 2026-03-20
 
 構成要素ごとの詳しい報告は、
 awareness-space 本体の REPORTS セクションで公開しています。
-現在の中心は次の 4 つです。
+現在の中心は次の 3 つです。
 
 - 生存-信頼軸
 - 4 層モデル
-- M1 consciousness OS
 - Concept Notes
 
 ## 6. いま押さえておきたいこと
