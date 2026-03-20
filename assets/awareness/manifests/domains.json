@@ -23,10 +23,10 @@
     },
     {
       "id": "report_ready",
-      "label_ja": "公開ドラフト",
-      "label_en": "Draft available",
-      "description_ja": "読者向け本文を読める",
-      "description_en": "A reader-facing report is available",
+      "label_ja": "公開中",
+      "label_en": "Published",
+      "description_ja": "読者向け report と PDF を参照できる",
+      "description_en": "A reader-facing report and PDF are available",
       "order": 30,
       "tone": "success"
     }
