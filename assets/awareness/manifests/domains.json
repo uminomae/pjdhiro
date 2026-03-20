@@ -25,8 +25,8 @@
       "id": "report_ready",
       "label_ja": "公開中",
       "label_en": "Published",
-      "description_ja": "読者向け report と PDF を参照できる",
-      "description_en": "A reader-facing report and PDF are available",
+      "description_ja": "読者向け report を参照できる",
+      "description_en": "A reader-facing report is available",
       "order": 30,
       "tone": "success"
     }
@@ -43,9 +43,6 @@
       "summary_en": "A report on the two-axis model of survival and intersubjectivity.",
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/survival-trust-axis.md"
-      },
-      "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/survival-trust-axis.pdf"
       }
     },
     {
@@ -59,9 +56,6 @@
       "summary_en": "A report on awareness as a processing chain from bodily state to response margin.",
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/four-layers.md"
-      },
-      "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/four-layers.pdf"
       }
     },
     {
@@ -75,9 +69,6 @@
       "summary_en": "A report on the source text bundle behind the current four-layer model.",
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/m1-consciousness-os.md"
-      },
-      "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/m1-consciousness-os.pdf"
       }
     },
     {
@@ -91,9 +82,6 @@
       "summary_en": "A report explaining how the concept notes set supports the main reports.",
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/concept-notes.md"
-      },
-      "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/concept-notes.pdf"
       }
     }
   ]
