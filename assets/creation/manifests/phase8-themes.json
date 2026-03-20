@@ -15,6 +15,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-edge-typology.md"
       },
+      "summary_md": {
+        "ja": "phase8-themes/ja/md/summary-edge-typology.md",
+        "en": "phase8-themes/en/md/summary-edge-typology.md"
+      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19"
     },
@@ -29,6 +33,10 @@
       "priority": "high",
       "md": {
         "ja": "phase8-themes/ja/md/theme-recirculation.md"
+      },
+      "summary_md": {
+        "ja": "phase8-themes/ja/md/summary-recirculation.md",
+        "en": "phase8-themes/en/md/summary-recirculation.md"
       },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19"
@@ -45,6 +53,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-field-layers.md"
       },
+      "summary_md": {
+        "ja": "phase8-themes/ja/md/summary-field-layers.md",
+        "en": "phase8-themes/en/md/summary-field-layers.md"
+      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19"
     },
@@ -60,6 +72,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-blind-spots.md"
       },
+      "summary_md": {
+        "ja": "phase8-themes/ja/md/summary-blind-spots.md",
+        "en": "phase8-themes/en/md/summary-blind-spots.md"
+      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19"
     },
@@ -74,6 +90,10 @@
       "priority": "medium",
       "md": {
         "ja": "phase8-themes/ja/md/theme-threshold.md"
+      },
+      "summary_md": {
+        "ja": "phase8-themes/ja/md/summary-threshold.md",
+        "en": "phase8-themes/en/md/summary-threshold.md"
       },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19"
