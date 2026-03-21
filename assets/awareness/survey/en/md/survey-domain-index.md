@@ -4,6 +4,8 @@ title: "Awareness Model Exploration: Survey Index"
 lang: en
 audience: survey
 version: 0.2
+generated: 2026-03-21
+generator_model: codex:gpt-5
 date: 2026-03-21
 ---
 
