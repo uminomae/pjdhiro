@@ -1,0 +1,12 @@
+{
+  "title_ja": "Intent2",
+  "title_en": "Intent2",
+  "comment_ja": "Intent2 をテーマにした追加画像です。画像カードとして自動取り込みしています。",
+  "comment_en": "An additional image card centered on Intent2. It was imported automatically into the image-card collection.",
+  "alt_ja": "Intent2",
+  "alt_en": "Intent2",
+  "source_url": "",
+  "generated": "2026-03-21",
+  "generator_model": "codex:auto-ingest",
+  "sort_order": 9007199254740991
+}
