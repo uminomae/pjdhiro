@@ -1,12 +1,15 @@
 {
   "version": "1.1",
-  "generated_at": "2026-03-20",
+  "generated_at": "2026-03-21",
   "namespace": "creation",
   "total": 30,
   "domains": [
     {
       "id": "D01",
       "name": "mathematics",
+      "name_ja": "数学",
+      "name_en": "Mathematics",
+      "progress_level": "cross_explored",
       "file_base": "domain-D01-mathematics",
       "md": {
         "ja": "domains/ja/md/domain-D01-mathematics.md",
@@ -21,6 +24,9 @@
     {
       "id": "D02",
       "name": "physics",
+      "name_ja": "物理学",
+      "name_en": "Physics",
+      "progress_level": "cross_explored",
       "file_base": "domain-D02-physics",
       "md": {
         "ja": "domains/ja/md/domain-D02-physics.md",
@@ -35,6 +41,9 @@
     {
       "id": "D03",
       "name": "chemistry",
+      "name_ja": "化学",
+      "name_en": "Chemistry",
+      "progress_level": "cross_explored",
       "file_base": "domain-D03-chemistry",
       "md": {
         "ja": "domains/ja/md/domain-D03-chemistry.md",
@@ -49,6 +58,9 @@
     {
       "id": "D04",
       "name": "evolutionary-biology",
+      "name_ja": "進化生物学",
+      "name_en": "Evolutionary Biology",
+      "progress_level": "cross_explored",
       "file_base": "domain-D04-evolutionary-biology",
       "md": {
         "ja": "domains/ja/md/domain-D04-evolutionary-biology.md",
@@ -63,6 +75,9 @@
     {
       "id": "D05",
       "name": "earth-science",
+      "name_ja": "地球科学",
+      "name_en": "Earth Science",
+      "progress_level": "cross_explored",
       "file_base": "domain-D05-earth-science",
       "md": {
         "ja": "domains/ja/md/domain-D05-earth-science.md",
@@ -77,6 +92,9 @@
     {
       "id": "D06",
       "name": "astronomy",
+      "name_ja": "天文学・宇宙物理学",
+      "name_en": "Astronomy",
+      "progress_level": "cross_explored",
       "file_base": "domain-D06-astronomy",
       "md": {
         "ja": "domains/ja/md/domain-D06-astronomy.md",
@@ -91,6 +109,9 @@
     {
       "id": "D07",
       "name": "engineering",
+      "name_ja": "工学・情報科学",
+      "name_en": "Engineering",
+      "progress_level": "cross_explored",
       "file_base": "domain-D07-engineering",
       "md": {
         "ja": "domains/ja/md/domain-D07-engineering.md",
@@ -105,6 +126,9 @@
     {
       "id": "D08",
       "name": "neuroscience",
+      "name_ja": "神経科学",
+      "name_en": "Neuroscience",
+      "progress_level": "cross_explored",
       "file_base": "domain-D08-neuroscience",
       "md": {
         "ja": "domains/ja/md/domain-D08-neuroscience.md",
@@ -119,6 +143,9 @@
     {
       "id": "D09",
       "name": "life-sciences",
+      "name_ja": "生命科学",
+      "name_en": "Life Sciences",
+      "progress_level": "cross_explored",
       "file_base": "domain-D09-life-sciences",
       "md": {
         "ja": "domains/ja/md/domain-D09-life-sciences.md",
@@ -133,6 +160,9 @@
     {
       "id": "D10",
       "name": "clinical-medicine",
+      "name_ja": "臨床医学・免疫学",
+      "name_en": "Clinical Medicine",
+      "progress_level": "cross_explored",
       "file_base": "domain-D10-clinical-medicine",
       "md": {
         "ja": "domains/ja/md/domain-D10-clinical-medicine.md",
@@ -147,6 +177,9 @@
     {
       "id": "D11",
       "name": "pharmacy",
+      "name_ja": "薬学",
+      "name_en": "Pharmacy",
+      "progress_level": "cross_explored",
       "file_base": "domain-D11-pharmacy",
       "md": {
         "ja": "domains/ja/md/domain-D11-pharmacy.md",
@@ -161,6 +194,9 @@
     {
       "id": "D12",
       "name": "agriculture",
+      "name_ja": "農学・生態学",
+      "name_en": "Agriculture",
+      "progress_level": "cross_explored",
       "file_base": "domain-D12-agriculture",
       "md": {
         "ja": "domains/ja/md/domain-D12-agriculture.md",
@@ -175,6 +211,9 @@
     {
       "id": "D13",
       "name": "philosophy",
+      "name_ja": "哲学",
+      "name_en": "Philosophy",
+      "progress_level": "cross_explored",
       "file_base": "domain-D13-philosophy",
       "md": {
         "ja": "domains/ja/md/domain-D13-philosophy.md",
@@ -189,6 +228,9 @@
     {
       "id": "D14",
       "name": "psychology",
+      "name_ja": "心理学・認知科学",
+      "name_en": "Psychology",
+      "progress_level": "cross_explored",
       "file_base": "domain-D14-psychology",
       "md": {
         "ja": "domains/ja/md/domain-D14-psychology.md",
@@ -203,6 +245,9 @@
     {
       "id": "D15",
       "name": "aesthetics",
+      "name_ja": "美学",
+      "name_en": "Aesthetics",
+      "progress_level": "cross_explored",
       "file_base": "domain-D15-aesthetics",
       "md": {
         "ja": "domains/ja/md/domain-D15-aesthetics.md",
@@ -217,6 +262,9 @@
     {
       "id": "D16",
       "name": "history",
+      "name_ja": "歴史学",
+      "name_en": "History",
+      "progress_level": "cross_explored",
       "file_base": "domain-D16-history",
       "md": {
         "ja": "domains/ja/md/domain-D16-history.md",
@@ -231,6 +279,9 @@
     {
       "id": "D17",
       "name": "linguistics",
+      "name_ja": "言語学",
+      "name_en": "Linguistics",
+      "progress_level": "cross_explored",
       "file_base": "domain-D17-linguistics",
       "md": {
         "ja": "domains/ja/md/domain-D17-linguistics.md",
@@ -245,6 +296,9 @@
     {
       "id": "D18",
       "name": "sociology",
+      "name_ja": "社会学",
+      "name_en": "Sociology",
+      "progress_level": "cross_explored",
       "file_base": "domain-D18-sociology",
       "md": {
         "ja": "domains/ja/md/domain-D18-sociology.md",
@@ -259,6 +313,9 @@
     {
       "id": "D19",
       "name": "literary-studies",
+      "name_ja": "文学・文芸学",
+      "name_en": "Literary Studies",
+      "progress_level": "cross_explored",
       "file_base": "domain-D19-literary-studies",
       "md": {
         "ja": "domains/ja/md/domain-D19-literary-studies.md",
@@ -273,6 +330,9 @@
     {
       "id": "D20",
       "name": "law-politics",
+      "name_ja": "法学・政治学",
+      "name_en": "Law & Politics",
+      "progress_level": "cross_explored",
       "file_base": "domain-D20-law-politics",
       "md": {
         "ja": "domains/ja/md/domain-D20-law-politics.md",
@@ -287,6 +347,9 @@
     {
       "id": "D21",
       "name": "economics",
+      "name_ja": "経済学",
+      "name_en": "Economics",
+      "progress_level": "cross_explored",
       "file_base": "domain-D21-economics",
       "md": {
         "ja": "domains/ja/md/domain-D21-economics.md",
@@ -301,6 +364,9 @@
     {
       "id": "D22",
       "name": "business-management",
+      "name_ja": "経営学",
+      "name_en": "Business Management",
+      "progress_level": "cross_explored",
       "file_base": "domain-D22-business-management",
       "md": {
         "ja": "domains/ja/md/domain-D22-business-management.md",
@@ -315,6 +381,9 @@
     {
       "id": "D23",
       "name": "developmental-psychology",
+      "name_ja": "発達心理学",
+      "name_en": "Developmental Psychology",
+      "progress_level": "cross_explored",
       "file_base": "domain-D23-developmental-psychology",
       "md": {
         "ja": "domains/ja/md/domain-D23-developmental-psychology.md",
@@ -329,6 +398,9 @@
     {
       "id": "D24",
       "name": "religion",
+      "name_ja": "宗教学",
+      "name_en": "Religion",
+      "progress_level": "cross_explored",
       "file_base": "domain-D24-religion",
       "md": {
         "ja": "domains/ja/md/domain-D24-religion.md",
@@ -343,6 +415,9 @@
     {
       "id": "D25",
       "name": "anthropology",
+      "name_ja": "人類学",
+      "name_en": "Anthropology",
+      "progress_level": "cross_explored",
       "file_base": "domain-D25-anthropology",
       "md": {
         "ja": "domains/ja/md/domain-D25-anthropology.md",
@@ -357,6 +432,9 @@
     {
       "id": "D26",
       "name": "musicology",
+      "name_ja": "音楽学",
+      "name_en": "Musicology",
+      "progress_level": "cross_explored",
       "file_base": "domain-D26-musicology",
       "md": {
         "ja": "domains/ja/md/domain-D26-musicology.md",
@@ -371,6 +449,9 @@
     {
       "id": "D27",
       "name": "architecture",
+      "name_ja": "建築・デザイン学",
+      "name_en": "Architecture",
+      "progress_level": "cross_explored",
       "file_base": "domain-D27-architecture",
       "md": {
         "ja": "domains/ja/md/domain-D27-architecture.md",
@@ -385,6 +466,9 @@
     {
       "id": "D28",
       "name": "performing-arts",
+      "name_ja": "舞台芸術",
+      "name_en": "Performing Arts",
+      "progress_level": "cross_explored",
       "file_base": "domain-D28-performing-arts",
       "md": {
         "ja": "domains/ja/md/domain-D28-performing-arts.md",
@@ -399,6 +483,9 @@
     {
       "id": "D29",
       "name": "complexity-science",
+      "name_ja": "複雑系科学",
+      "name_en": "Complexity Science",
+      "progress_level": "cross_explored",
       "file_base": "domain-D29-complexity-science",
       "md": {
         "ja": "domains/ja/md/domain-D29-complexity-science.md",
@@ -413,6 +500,9 @@
     {
       "id": "D30",
       "name": "traditional-knowledge",
+      "name_ja": "伝統知・技芸",
+      "name_en": "Traditional Knowledge",
+      "progress_level": "cross_explored",
       "file_base": "domain-D30-traditional-knowledge",
       "md": {
         "ja": "domains/ja/md/domain-D30-traditional-knowledge.md",
