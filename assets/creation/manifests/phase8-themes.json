@@ -30,7 +30,8 @@
       },
       "svg": "img/svg/theme-edge-typology.svg",
       "presentation_md": {
-        "ja": "phase8-themes/ja/presentations/md/theme-edge-typology-presentation-ja.md"
+        "ja": "phase8-themes/ja/presentations/md/theme-edge-typology-presentation-ja.md",
+        "en": "phase8-themes/en/presentations/md/theme-edge-typology-presentation-en.md"
       }
     },
     {
@@ -60,7 +61,8 @@
       },
       "svg": "img/svg/theme-recirculation.svg",
       "presentation_md": {
-        "ja": "phase8-themes/ja/presentations/md/theme-recirculation-presentation-ja.md"
+        "ja": "phase8-themes/ja/presentations/md/theme-recirculation-presentation-ja.md",
+        "en": "phase8-themes/en/presentations/md/theme-recirculation-presentation-en.md"
       }
     },
     {
@@ -90,7 +92,8 @@
       },
       "svg": "img/svg/theme-field-layers.svg",
       "presentation_md": {
-        "ja": "phase8-themes/ja/presentations/md/theme-field-layers-presentation-ja.md"
+        "ja": "phase8-themes/ja/presentations/md/theme-field-layers-presentation-ja.md",
+        "en": "phase8-themes/en/presentations/md/theme-field-layers-presentation-en.md"
       }
     },
     {
@@ -120,7 +123,8 @@
       },
       "svg": "img/svg/theme-blind-spots.svg",
       "presentation_md": {
-        "ja": "phase8-themes/ja/presentations/md/theme-blind-spots-presentation-ja.md"
+        "ja": "phase8-themes/ja/presentations/md/theme-blind-spots-presentation-ja.md",
+        "en": "phase8-themes/en/presentations/md/theme-blind-spots-presentation-en.md"
       }
     },
     {
@@ -150,12 +154,14 @@
       },
       "svg": "img/svg/theme-threshold.svg",
       "presentation_md": {
-        "ja": "phase8-themes/ja/presentations/md/theme-threshold-presentation-ja.md"
+        "ja": "phase8-themes/ja/presentations/md/theme-threshold-presentation-ja.md",
+        "en": "phase8-themes/en/presentations/md/theme-threshold-presentation-en.md"
       }
     }
   ],
   "conclusion_svg": "img/svg/theme-conclusion-summary.svg",
   "conclusion_presentation_md": {
-    "ja": "phase8-themes/ja/presentations/md/conclusion-presentation-ja.md"
+    "ja": "phase8-themes/ja/presentations/md/conclusion-presentation-ja.md",
+    "en": "phase8-themes/en/presentations/md/conclusion-presentation-en.md"
   }
 }
