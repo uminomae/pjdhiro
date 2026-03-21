@@ -2,6 +2,8 @@
 title: "意識とは何か — 生存と間主観性を手がかりに"
 lang: ja
 version: 0.5
+generated: 2026-03-21
+generator_model: codex:gpt-5
 date: 2026-03-21
 ---
 

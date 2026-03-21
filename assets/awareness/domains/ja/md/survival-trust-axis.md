@@ -2,6 +2,8 @@
 title: "生存-信頼軸"
 lang: ja
 version: 0.3
+generated: 2026-03-20
+generator_model: codex:gpt-5
 date: 2026-03-20
 ---
 

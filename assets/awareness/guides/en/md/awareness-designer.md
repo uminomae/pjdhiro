@@ -2,6 +2,8 @@
 title: "Using the Awareness Model as an Observation Tool"
 lang: en
 version: 0.5
+generated: 2026-03-21
+generator_model: codex:gpt-5
 date: 2026-03-21
 ---
 
