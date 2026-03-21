@@ -28,7 +28,10 @@
         "ja": "phase8-themes/ja/pdf/summary-edge-typology.pdf",
         "en": "phase8-themes/en/pdf/summary-edge-typology.pdf"
       },
-      "svg": "img/svg/theme-edge-typology.svg"
+      "svg": "img/svg/theme-edge-typology.svg",
+      "presentation_md": {
+        "ja": "phase8-themes/ja/presentations/md/theme-edge-typology-presentation-ja.md"
+      }
     },
     {
       "id": "T5",
@@ -55,7 +58,10 @@
         "ja": "phase8-themes/ja/pdf/summary-recirculation.pdf",
         "en": "phase8-themes/en/pdf/summary-recirculation.pdf"
       },
-      "svg": "img/svg/theme-recirculation.svg"
+      "svg": "img/svg/theme-recirculation.svg",
+      "presentation_md": {
+        "ja": "phase8-themes/ja/presentations/md/theme-recirculation-presentation-ja.md"
+      }
     },
     {
       "id": "T6",
@@ -82,7 +88,10 @@
         "ja": "phase8-themes/ja/pdf/summary-field-layers.pdf",
         "en": "phase8-themes/en/pdf/summary-field-layers.pdf"
       },
-      "svg": "img/svg/theme-field-layers.svg"
+      "svg": "img/svg/theme-field-layers.svg",
+      "presentation_md": {
+        "ja": "phase8-themes/ja/presentations/md/theme-field-layers-presentation-ja.md"
+      }
     },
     {
       "id": "T7T9",
@@ -109,7 +118,10 @@
         "ja": "phase8-themes/ja/pdf/summary-blind-spots.pdf",
         "en": "phase8-themes/en/pdf/summary-blind-spots.pdf"
       },
-      "svg": "img/svg/theme-blind-spots.svg"
+      "svg": "img/svg/theme-blind-spots.svg",
+      "presentation_md": {
+        "ja": "phase8-themes/ja/presentations/md/theme-blind-spots-presentation-ja.md"
+      }
     },
     {
       "id": "T2",
@@ -136,8 +148,14 @@
         "ja": "phase8-themes/ja/pdf/summary-threshold.pdf",
         "en": "phase8-themes/en/pdf/summary-threshold.pdf"
       },
-      "svg": "img/svg/theme-threshold.svg"
+      "svg": "img/svg/theme-threshold.svg",
+      "presentation_md": {
+        "ja": "phase8-themes/ja/presentations/md/theme-threshold-presentation-ja.md"
+      }
     }
   ],
-  "conclusion_svg": "img/svg/theme-conclusion-summary.svg"
+  "conclusion_svg": "img/svg/theme-conclusion-summary.svg",
+  "conclusion_presentation_md": {
+    "ja": "phase8-themes/ja/presentations/md/conclusion-presentation-ja.md"
+  }
 }
