@@ -2,6 +2,8 @@
 title: "意識モデルを観察の道具として使う"
 lang: ja
 version: 0.5
+generated: 2026-03-21
+generator_model: codex:gpt-5
 date: 2026-03-21
 ---
 

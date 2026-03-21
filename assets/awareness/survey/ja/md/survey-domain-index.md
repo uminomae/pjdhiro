@@ -4,6 +4,8 @@ title: "意識モデル探索: 調査索引"
 lang: ja
 audience: survey
 version: 0.2
+generated: 2026-03-20
+generator_model: codex:gpt-5
 date: 2026-03-20
 ---
 
