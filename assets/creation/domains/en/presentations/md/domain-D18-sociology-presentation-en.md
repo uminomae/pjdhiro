@@ -1,6 +1,6 @@
 ---
-title: "社会学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Sociology - Structural Correspondence with the Five-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,99 +8,99 @@ source: "domain-D18-sociology-academic-ja.md"
 type: presentation
 ---
 
-## 社会学
+## Sociology
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 社会学の主要理論 11件
-- **調査の問い**: 社会学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 8件、部分的な対応 2件、条件付きの対応 1件
+Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Scope**: 11 major theories in sociology
+- **Research question**: Do theories in sociology structurally correspond to the five-stage model?
+- **Results**: Strong correspondence 8, Partial correspondence 2, Conditional correspondence 1
 
 ---
 
-## 構造対応の全体像
+## Overview of the Five-Stage Model
 
-| # | 理論/概念 | 提唱者 | 対応段階 | 判定 |
+| Stage | Definition |
+|-------|-----------|
+| Ba (Field) | An undifferentiated state. Initial conditions where neither direction nor structure has yet been determined |
+| Nami (Wave) | A stage of exploration where multiple directions diverge and compete |
+| En (Edge) | A state of tension where opposing elements coexist without converging to either side. A place where elements meet at boundaries, influence each other, and relationships emerge |
+| Uzu (Vortex) | A stage where new coherence (order) spontaneously arises from within tension |
+| Taba (Bundle) | A stage where form is established and stabilizes as a reusable structure |
+
+---
+
+## Overall Structural Correspondence
+
+| # | Theory/Concept | Proponent | Corresponding Stages | Assessment |
 |---|----------|--------|---------|------|
-| 1 | 社会システム論 | Luhmann (1984) | 場→波→縁→渦→束（抽象的） | 条件付きの対応 |
-| 2 | 構造化理論 | Giddens (1984) | 場→波→縁→渦→束→場循環 | 強い構造対応 |
-| 3 | イノベーションの普及 | Rogers (1962/2003) | 場→波→縁→渦→束 | 強い構造対応 |
-| 4 | 制度的同型化 | DiMaggio & Powell (1983) | 場→波→縁→渦→束 | 強い構造対応 |
-| 5 | 現実の社会的構成 | Berger & Luckmann (1966) | 場→波→縁→渦→束→場循環 | 部分的な対応 |
-| 6 | 社会運動の動員過程 | McCarthy & Zald / Tarrow | 場→波→縁→渦→束→場循環 | 強い構造対応 |
-| 7 | 弱い紐帯の強さ | Granovetter (1973) | 縁に特化 | 強い構造対応 |
-| 8 | 場・資本・ハビトゥス | Bourdieu (1979) | 場→波→縁-渦→束→場循環 | 部分的な対応 |
-| 9 | 社会的事実・連帯・アノミー | Durkheim (1893) | 場→波→縁→渦→束 | 強い構造対応 |
-| 10 | 相互作用儀礼連鎖 | Collins (2004) | 場→波→縁→渦→束→場循環 | 強い構造対応 |
-| 11 | 正統性の3類型 | Weber (1922) | 場→波→縁→渦→束 | 強い構造対応 |
+| 1 | Social systems theory | Luhmann (1984) | Ba→Nami→En→Uzu→Taba (abstract) | Conditional correspondence |
+| 2 | Structuration theory | Giddens (1984) | Ba→Nami→En→Uzu→Taba→Ba cycle | Strong structural correspondence |
+| 3 | Diffusion of innovations | Rogers (1962/2003) | Ba→Nami→En→Uzu→Taba | Strong structural correspondence |
+| 4 | Institutional isomorphism | DiMaggio & Powell (1983) | Ba→Nami→En→Uzu→Taba | Strong structural correspondence |
+| 5 | The social construction of reality | Berger & Luckmann (1966) | Ba→Nami→En→Uzu→Taba→Ba cycle | Partial correspondence |
+| 6 | Social movement mobilization process | McCarthy & Zald / Tarrow | Ba→Nami→En→Uzu→Taba→Ba cycle | Strong structural correspondence |
+| 7 | The strength of weak ties | Granovetter (1973) | Specialized in En | Strong structural correspondence |
+| 8 | Field, capital, habitus | Bourdieu (1979) | Ba→Nami→En-Uzu→Taba→Ba cycle | Partial correspondence |
+| 9 | Social facts, solidarity, anomie | Durkheim (1893) | Ba→Nami→En→Uzu→Taba | Strong structural correspondence |
+| 10 | Interaction ritual chains | Collins (2004) | Ba→Nami→En→Uzu→Taba→Ba cycle | Strong structural correspondence |
+| 11 | Three types of legitimate authority | Weber (1922) | Ba→Nami→En→Uzu→Taba | Strong structural correspondence |
 
 ---
 
-## 主要エントリ 1: 構造化理論（Giddens）
+## Key Entry 1: Structuration Theory (Giddens)
 
-- Anthony Giddensは、社会学の中心的論争であった「構造と行為のどちらが先か」という問いに対し、「構造の二重性」という概念で応答しました。構造は行為を制約すると同時に可能にするものであり、行為の外部にあるのではなく、行為の中で絶えず再生産されるという主張です。
-- **事実として**: Giddens (1984) *The Constitution of Society* は、「構造の二重性」（duality of structure）を中核概念として提示しています。構造は「規則と資源」から成り、規則は意味の解釈図式と行為の正当化規範に、資源は物質的な配分資源と人的な権威資源に分けられます。行為者は自らの行為と他者の行為を絶えず「再帰的にモニタリング」しながら、行為の条件と帰結についての実践的知識を用いて行動します。
-- **読み取りとして**: ここでは、構造と行為が相互に規定し合う循環的な再帰性を構造的特徴として読み取ります。類似の水準は構造であり、「行為が構造を再生産し、構造が行為を制約する」という双方向の規定関係そのものに着目します。
-- **解釈として**: 潜在的な規則と資源の集合が行為の条件を構成する局面は場に対応します。行為場面で解釈の差異や葛藤が生じる局面は波です。相互行為の中で規則が運用され、関係が編まれていく局面が縁にあたります。反復的な実践が制度的パターンとして立ち上がる局面が渦であり、再生産された制度が次の行為条件を方向づける局面が束です。そして束が次の場を構成するという循環が、この理論の中心命題そのものです。Giddensは「構造は制約であると同時に可能条件である」と述べており、束が次の創造を制限するだけでなく可能にするという両面性を明示的に記述しています。
-
----
-
-## 主要エントリ 2: 制度的同型化と組織フィールド（DiMaggio & Powell）
-
-- DiMaggioとPowellは、組織がなぜ時間の経過とともに互いに似てくるのかという問いに取り組みました。市場競争ではなく、制度的な圧力が組織を同質化させるという主張は、組織研究に大きな影響を与えています。
-- **事実として**: DiMaggio & Powell (1983) は、組織の同型化（isomorphism）を引き起こす3つのメカニズムを特定しています。第一に強制的同型化（法規制や政治的圧力）、第二に模倣的同型化（不確実性の中で成功モデルを模倣する）、第三に規範的同型化（専門職の教育訓練を通じた均質化）です。また「組織フィールド」を、供給者・消費者・規制機関・同種組織が形成する「制度的生活の認知された領域」と定義し、このフィールドの「構造化」（structuration）が、相互作用の増加、支配・連合構造の出現、情報負荷の増加、相互認知の発達という4要素から成ると記述しています。
-- **読み取りとして**: ここでは、組織フィールドの構造化プロセスの具体的な部品列挙を構造的特徴として読み取ります。類似の水準はプロセスであり、未構造化の組織集合が制度的圧力を受けて構造化されていく順序に着目します。
-- **解釈として**: 多様な組織が相互連関なく併存している状態が場です。正統性への圧力、不確実性、専門職規範が組織の在り方を揺さぶるのが波にあたります。フィールドの構造化、すなわち相互作用の増加・連合構造の出現・情報の循環・相互認知の発達が縁です。この4要素の記述は、本調査で確認された中で最も具体的な「縁」の記述の一つです。3つのメカニズムが相乗して「正しい組織の型」が可視化されるのが渦であり、同型化した慣行と基準が採用・評価・訓練を通じて再生産されるのが束です。
-- ただし、この理論の焦点は「創造」ではなく「同質化」です。多様性から同質性へ向かうプロセスは、5段階が通常記述する「未分化から分化・構造化へ」とは方向が異なります。制度的同型化は「創造の逆プロセス」として読むこともでき、束が多様性を制約する具体的メカニズムを示す点で独自の価値があります。
+- Anthony Giddens responded to the central debate in sociology — "which comes first, structure or agency?" — with the concept of the "duality of structure." His claim is that structure both constrains and enables action, and that rather than existing outside action, it is continuously reproduced within action.
+- **As fact**: Giddens (1984) *The Constitution of Society* presents the "duality of structure" as its core concept. Structure consists of "rules and resources," with rules divided into interpretive schemes for meaning and norms for legitimation of action, and resources divided into material allocative resources and human authoritative resources. Actors act using practical knowledge about the conditions and consequences of their own actions and others' actions, while continuously "reflexively monitoring" their own actions and those of others.
+- **As reading**: Here we read as structural feature the cyclical recursion in which structure and agency mutually determine each other. The level of similarity is structure, and we focus on the very bidirectional determining relationship of "action reproduces structure, structure constrains action."
+- **As interpretation**: The phase in which the set of latent rules and resources constitutes the conditions of action corresponds to Ba. The phase in which differences in interpretation and conflicts arise in action situations corresponds to Nami. The phase in which rules are operated in mutual interaction and relationships are woven together corresponds to En. The phase in which repeated practices arise as institutional patterns corresponds to Uzu; and the phase in which reproduced institutions orient the next action conditions corresponds to Taba. The cycle in which Taba constitutes the next Ba is the central proposition of this theory itself. Giddens states that "structure is both constraining and enabling," explicitly describing the dual aspect that Taba not only restricts but also makes possible the next creation.
 
 ---
 
-## 主要エントリ 3: 弱い紐帯の強さ（Granovetter）
+## Key Entry 2: Institutional Isomorphism and Organizational Fields (DiMaggio & Powell)
 
-- Mark Granovetterは、社会ネットワークにおける「弱い紐帯」が、新しい情報の伝達において「強い紐帯」よりも効果的であるという、直感に反する発見を示しました。
-- **事実として**: Granovetter (1973) は、求職行動の調査から、親しい友人（強い紐帯）よりも、たまにしか会わない知人（弱い紐帯）を通じて仕事を見つけた人が多いことを発見しました。強い紐帯で結ばれた人々は同じ情報を共有しがちですが、弱い紐帯は異なるクラスター間を「橋渡し」（bridge）します。また Granovetter (1985) は、経済行為は社会関係のネットワークに「埋め込まれて」（embedded）おり、純粋に合理的でも純粋に規範的でもないと主張しました。
-- **読み取りとして**: ここでは、異なる集団を接続する橋渡し構造を構造的特徴として読み取ります。類似の水準は構造であり、ネットワーク上で異質な情報が流通する経路の配置に着目します。
-- **解釈として**: 弱い紐帯は、5段階モデルの縁の最も純粋な社会学的定式化です。異なるクラスター（それぞれが場を形成している集団）の間を接続する「橋」として機能し、新しい情報や資源がこの橋を渡って流れることで、既存の秩序には含まれていなかった可能性が開かれます。「弱い関係ほど役に立つ」という逆説は、縁が強固な結合ではなく、異質なものが接触する界面であることを示しています。
-
----
-
-## 横断的パターン
-
-- 社会学を横断して見たとき、4つのパターンが繰り返し現れます
-- **第一に、「縁」の型の多様性です
-- **第二に、束から場への循環です
-- **第三に、ミクロからマクロまでのスケールの連続性です
+- DiMaggio and Powell took up the question of why organizations become increasingly similar to one another over time. Their claim that institutional pressures rather than market competition homogenize organizations has had a major influence on organizational research.
+- **As fact**: DiMaggio & Powell (1983) identified three mechanisms that cause organizational isomorphism: coercive isomorphism (legal regulations and political pressure); mimetic isomorphism (mimicking successful models amid uncertainty); and normative isomorphism (homogenization through professional education and training). They also defined the "organizational field" as "a recognized area of institutional life" formed by suppliers, consumers, regulatory agencies, and similar organizations, and described the "structuration" of this field as consisting of four elements: increased mutual interaction, emergence of dominant and coalition structures, increased information load, and development of mutual awareness.
+- **As reading**: Here we read as structural feature the concrete enumeration of components of the organizational field structuration process. The level of similarity is process, and we focus on the sequence in which an unstructured organizational aggregate becomes structured under institutional pressure.
+- **As interpretation**: The state in which diverse organizations coexist without mutual interconnection corresponds to Ba. The agitation of organizations by pressures of legitimacy, uncertainty, and professional norms corresponds to Nami. The structuration of the field — increased mutual interaction, emergence of coalition structures, circulation of information, development of mutual awareness — corresponds to En. This description of four elements is one of the most concrete descriptions of "En" confirmed in this survey. The phase in which the "correct organizational type" is made visible through the synergy of three mechanisms corresponds to Uzu; and the reproduction of isomorphized practices and standards through hiring, evaluation, and training corresponds to Taba.
+- However, the focus of this theory is "homogenization" rather than "creation." The process from diversity toward homogeneity differs in direction from the "from undifferentiated to differentiated and structured" that the five stages typically describe. Institutional isomorphism can also be read as an "anti-creative process," and has its own value in showing the concrete mechanisms by which Taba constrains diversity.
 
 ---
 
-## 未解決の問い
+## Key Entry 3: The Strength of Weak Ties (Granovetter)
 
-- Bourdieuの「場」（champ、構造化された競争空間）と5段階モデルの「場」（未分化な可能性空間）は同名でありながら異なる概念です。この概念的差異を整理しないまま「場」を使い続けると、混乱が生じます。5段階の場の定義を、既に何らかの前構造を含む場として拡張する必要があるのか、それとも厳密に未分化な状態として維持すべきかは、まだ決着していません。
-- Berger & Luckmannの3つの契機の「同時並行性」と、5段階モデルの「位相的順序」の関係は未整理です。5段階を変容の位相として読めば対応可能ですが、厳密な時間順として読むと理論の要点（弁証法的循環）を損ないます。この読み替えがどこまで正当かは、さらなる検討が必要です。
-- Collinsの「情動エネルギー」が束のミクロ版だとするなら、束は制度や規範だけでなく、身体的・情動的な水準でも蓄積されることになります。束の定義をどこまで広げるかは、他の領域（神経科学、心理学）との突き合わせが必要です。
-- DiMaggio & Powellの制度的同型化は「多様性から同質性へ」向かうプロセスであり、5段階モデルが通常記述する「未分化から分化・構造化へ」とは方向が異なります。5段階モデルの射程に「反創造」のメカニズムを含めるべきかどうかは、理論的に重要な問いとして残ります。
+- Mark Granovetter demonstrated the counterintuitive finding that "weak ties" in social networks are more effective than "strong ties" in transmitting new information.
+- **As fact**: Granovetter (1973) found, from a study of job-seeking behavior, that more people found jobs through acquaintances they rarely met (weak ties) rather than close friends (strong ties). People connected by strong ties tend to share the same information, but weak ties "bridge" different clusters. Granovetter (1985) also argued that economic action is "embedded" in networks of social relations and is neither purely rational nor purely normative.
+- **As reading**: Here we read as structural feature the bridging structure that connects different groups. The level of similarity is structure, and we focus on the arrangement of pathways through which heterogeneous information circulates on the network.
+- **As interpretation**: Weak ties are the most pure sociological formulation of En in the five-stage model. Functioning as a "bridge" connecting different clusters (groups each forming a Ba), new information and resources cross this bridge and flow, opening possibilities that were not contained in existing order. The paradox that "weaker relationships are more useful" shows that En is not strong binding but an interface where heterogeneous elements come into contact.
 
 ---
 
-## 結論
+## Cross-Cutting Patterns
 
-- 本調査では、社会学は5段階モデルとの構造類似が全体として強い領域であることが確認されました
-- 社会学が5段階モデルに対して示す最大の貢献は、「縁」の具体化の豊かさです
-- 第二の貢献は、束から場への循環が複数の理論で独立に記述されていることです
-- 第三の貢献は、ミクロからマクロまでの複数スケールで同型のプロセスが確認されたことです
+- Looking across sociology, four patterns repeatedly appear
+- **First, the diversity of types of "En"**
+- **Second, the cycle from Taba back to Ba**
+- **Third, the continuity of scale from micro to macro**
+
+---
+
+## Unresolved Questions
+
+- Bourdieu's "field" (champ, a structured space of competition) and the five-stage model's "Ba" (undifferentiated space of possibility) are the same name but different concepts. Continuing to use "Ba" without clarifying this conceptual difference will cause confusion. Whether the definition of Ba in the five stages needs to be expanded to Ba that already contains some pre-structure, or whether it should be maintained strictly as an undifferentiated state, has not yet been settled.
+- The relationship between the "simultaneity" of Berger & Luckmann's three moments and the "phasic order" of the five-stage model is unresolved. If the five stages are read as phases of transformation, correspondence is possible, but read strictly as temporal order it damages the main point of the theory (dialectical circulation). How far this re-reading is legitimate requires further examination.
+- If Collins' "emotional energy" is a micro version of Taba, then Taba would accumulate not only at the institutional and normative level but also at the bodily and emotional level. How far to extend the definition of Taba requires cross-reference with other domains (neuroscience, psychology).
+- DiMaggio & Powell's institutional isomorphism is a process moving "from diversity toward homogeneity," differing in direction from the "from undifferentiated to differentiated and structured" that the five-stage model typically describes. Whether the scope of the five-stage model should include the mechanism of "anti-creation" remains as a theoretically important question.
+
+---
+
+## Conclusion
+
+- This survey confirmed that sociology is a domain with strong overall structural similarity to the five-stage model
+- The greatest contribution that sociology shows to the five-stage model is the richness of concretization of "En"
+- The second contribution is that the cycle from Taba to Ba is independently described in multiple theories
+- The third contribution is that isomorphic processes have been confirmed at multiple scales from micro to macro

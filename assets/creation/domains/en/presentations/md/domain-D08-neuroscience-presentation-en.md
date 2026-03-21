@@ -1,6 +1,6 @@
 ---
-title: "神経科学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Neuroscience - Structural Correspondence with the 5-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-20"
 generator_model: "claude:claude-opus-4-6"
@@ -8,140 +8,140 @@ source: "domain-D08-neuroscience-academic-ja.md"
 type: presentation
 ---
 
-## 神経科学
+## Neuroscience
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 神経科学の主要理論 11件
-- **調査の問い**: 神経科学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 10件、条件付きの対応 1件
-- **温度帯**: 確定に近い知見 約6割、有力な知見 約3割、仮説段階 約1割
-- 全30領域の中でも最も密な構造対応が確認された領域の一つです
+Survey of structural correspondence with the 5-stage model (Field · Wave · Edge · Vortex · Bundle)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Scope**: 11 major theories in neuroscience
+- **Research question**: Do neuroscientific theories correspond structurally to the 5-stage model?
+- **Results**: Strong correspondence in 10 cases, conditional correspondence in 1 case
+- **Temperature distribution**: Approximately 60% near-confirmed findings, 30% well-supported findings, 10% at hypothesis stage
+- This domain showed one of the densest structural correspondences among all 30 domains surveyed
 
 ---
 
-## 構造対応の全体像
+## Overview of the 5-Stage Model
 
-| # | 理論/概念 | 主要な研究者 | 対応段階 | 判定 |
-|---|----------|------------|---------|------|
-| 1 | 予測符号化・自由エネルギー原理 | Friston, Clark, Rao & Ballard | 場・波・縁・渦・束 | 強い対応 |
-| 2 | 内受容感覚と内受容的推論 | Craig, Seth, Barrett | 場・波・縁・渦・束 | 強い対応 |
-| 3 | 情動の構成理論 | Barrett, Damasio, LeDoux | 場・波・渦・束 | 強い対応 |
-| 4 | 実行機能と認知制御 | Miller & Cohen, Botvinick, Aron | 波・縁・渦・束 | 強い対応 |
-| 5 | 意識とグローバルワークスペース | Dehaene, Tononi, Seth | 横断的（閾値条件） | 強い対応 |
-| 6 | 睡眠・夢と予測-誤差ループ | Hobson, Nir & Tononi, Domhoff | 場・波・渦 | 強い対応 |
-| 7 | ポリヴェーガル理論 | Porges | 場・波・縁・渦・束 | 強い対応 |
-| 8 | 身体化された認知・エナクティヴィズム | Varela, Thompson, Maturana | 全段階横断 | 強い対応 |
-| 9 | シナプス可塑性・STDP | Bliss & Lomo, Markram, Bi & Poo | 場・波・縁・渦・束 | 強い対応 |
-| 10 | 神経振動とコヒーレンス | Fries, Canolty | 場・波・縁・渦・束 | 強い対応 |
-| 11 | 神経雪崩とクリティカリティ | Beggs & Plenz | 場・波・縁・渦・束 | 条件付きの対応 |
+| Stage | Definition |
+|-------|------------|
+| Field (ba) | Undifferentiated state. Initial condition in which neither direction nor structure has yet been determined |
+| Wave (nami) | Exploration stage in which multiple directions diverge and compete |
+| Edge (en) | Tension state in which opposing elements coexist without converging on either side. The place where things meet at a boundary, influence each other, and relationships are formed |
+| Vortex (uzu) | Stage in which new coherence (order) spontaneously emerges from tension |
+| Bundle (taba) | Stage in which form is fixed and stabilized as a reusable structure |
 
 ---
 
-## 主要エントリ 1: 予測符号化と自由エネルギー原理
+## Overview of Structural Correspondences
 
-- **概要**: 脳は感覚入力を受動的に待つのではなく、次に来る入力を絶えず予測しています。上位層が予測を送り、下位層が予測誤差を返す双方向処理です（Rao & Ballard 1999, Friston 2010）
-- **構造対応**: 全5段階に対応
-  - 既存の予測モデル全体が**場**
-  - 予測と感覚入力の不一致が**波**
-  - 精度（precision）によるどの誤差を拾うかの選別が**縁**
-  - 既存モデルの組み替えが**渦**
-  - 新しい予測モデルの安定化が**束**
-- **注目点**: 精度を縁と読むことには議論の余地があります。精度は制御パラメータとしての性格が強く、「境界で接し影響し合う」という縁の記述とは距離がある点に注意が必要です
-
----
-
-## 主要エントリ 2: シナプス可塑性とSTDP
-
-- **概要**: シナプス前後のニューロンの発火タイミングの差（数十ミリ秒）が、結合の増強・減弱を決めるメカニズムです（Markram et al. 1997, Bi & Poo 1998）
-- **構造対応**: 全5段階に対応
-  - 既存の結合分布が**場**
-  - スパイク列という時間的事象が**波**
-  - 前後の発火の相対タイミングが**縁**（関係量が方向を決定）
-  - 反復による自己強化ループが**渦**
-  - 学習の痕跡としての安定した結合パターンが**束**
-- **注目点**: このプロセスは意識を伴いません。時間差という物理量だけで構造変化の方向を決めており、5段階の構造が意識を前提としない水準でも作動しうることを示す重要な事例です
+| # | Theory / Concept | Key Researchers | Corresponding Stages | Judgment |
+|---|-----------------|-----------------|---------------------|----------|
+| 1 | Predictive coding / Free energy principle | Friston, Clark, Rao & Ballard | Field · Wave · Edge · Vortex · Bundle | Strong |
+| 2 | Interoception and interoceptive inference | Craig, Seth, Barrett | Field · Wave · Edge · Vortex · Bundle | Strong |
+| 3 | Constructed emotion theory | Barrett, Damasio, LeDoux | Field · Wave · Vortex · Bundle | Strong |
+| 4 | Executive function and cognitive control | Miller & Cohen, Botvinick, Aron | Wave · Edge · Vortex · Bundle | Strong |
+| 5 | Consciousness and global workspace | Dehaene, Tononi, Seth | Cross-cutting (threshold condition) | Strong |
+| 6 | Sleep, dreams, and the prediction-error loop | Hobson, Nir & Tononi, Domhoff | Field · Wave · Vortex | Strong |
+| 7 | Polyvagal theory | Porges | Field · Wave · Edge · Vortex · Bundle | Strong |
+| 8 | Embodied cognition / Enactivism | Varela, Thompson, Maturana | All stages (cross-cutting) | Strong |
+| 9 | Synaptic plasticity / STDP | Bliss & Lomo, Markram, Bi & Poo | Field · Wave · Edge · Vortex · Bundle | Strong |
+| 10 | Neural oscillations and coherence | Fries, Canolty | Field · Wave · Edge · Vortex · Bundle | Strong |
+| 11 | Neural avalanches and criticality | Beggs & Plenz | Field · Wave · Edge · Vortex · Bundle | Conditional |
 
 ---
 
-## 主要エントリ 3: ポリヴェーガル理論
+## Key Entry 1: Predictive Coding and the Free Energy Principle
 
-- **概要**: 自律神経系は三つの階層的システム（背側迷走神経系・交感神経系・腹側迷走神経系）から成り、それぞれが異なる行動戦略を支えるという理論です（Porges 2011）
-- **構造対応**: 全5段階に対応
-  - 腹側迷走神経系の活性化による安全な関係場が**場**
-  - 交感神経系の活性化・身体の覚醒が**波**
-  - 他者との境界での自律神経系レベルの調整が**縁**
-  - 二者の自律神経系の同期・共調整が**渦**
-  - 安全基盤としての関係性の確立が**束**
-- **注目点**: 縁が他者との身体的な境界面で作動することを示しています。自律神経系という生理学的メカニズムを通じて、身体と身体の間で起きている出来事として記述されます
-
----
-
-## 主要エントリ 4: 身体化された認知とエナクティヴィズム
-
-- **概要**: 認知は脳だけの産物ではなく、脳・身体・環境の相互作用から生じるという理論的枠組みです（Varela, Thompson & Rosch 1991）。オートポイエーシスは、生命が自己を生成し維持する組織化パターンを指します
-- **構造対応**: 全段階に横断的に対応
-  - 身体と環境の結合系が**場**
-  - センサリモーター的な探索が**波**
-  - オートポイエーシスの「膜」（身体と環境の境界面）が**縁**
-  - 行為を通じた意味の生成が**渦**
-  - 習慣やスキルとしての安定化が**束**
-- **注目点**: 細胞膜から身体、身体から環境へと、「境界で接し影響し合う」構造が異なるスケールで繰り返されます。5段階モデルがスケールに依存しない構造記述である可能性を裏づけます
+- **Summary**: The brain does not passively wait for sensory input; it continuously predicts what input will arrive next. Higher layers send predictions downward, while lower layers return prediction errors — a bidirectional process (Rao & Ballard 1999, Friston 2010)
+- **Structural correspondence**: All 5 stages
+  - The existing predictive model as a whole corresponds to the **Field**
+  - The mismatch between predictions and sensory input corresponds to the **Wave**
+  - The precision-weighted filtering of which errors to register corresponds to the **Edge**
+  - Revision of the existing model corresponds to the **Vortex**
+  - Stabilization of the new predictive model corresponds to the **Bundle**
+- **Note**: Reading precision as Edge remains open to debate. Precision functions primarily as a control parameter, and there is some distance between that characterization and the Edge description of "meeting at a boundary and mutually influencing each other"
 
 ---
 
-## 構造対応の詳細
+## Key Entry 2: Synaptic Plasticity and STDP
 
-| 段階 | この領域での対応 | 代表的な理論/概念 |
-|------|----------------|-----------------|
-| 場 | 既存の予測モデル、安全な関係場、背景リズム、結合分布 | 予測符号化、ポリヴェーガル理論、CTC、STDP |
-| 波 | 予測誤差の発生、覚醒・探索、スパイク列、振動 | 予測符号化、ポリヴェーガル理論、STDP、CTC |
-| 縁 | 精度による選別、時間差による方向決定、位相同期、他者との自律神経的調整 | 予測符号化、STDP、CTC、ポリヴェーガル理論 |
-| 渦 | モデルの組み替え、自己強化ループ、位相ロック引き込み、共調整 | 予測符号化、STDP、CTC、ポリヴェーガル理論 |
-| 束 | 新しい予測モデル、安定した結合パターン、関係性の確立 | 予測符号化、STDP、ポリヴェーガル理論 |
-
----
-
-## 横断的パターン
-
-- **「関係が方向を決める」構造**: STDPでは発火の時間差、CTCでは位相同期、ポリヴェーガル理論では自律神経的同調が、それぞれ異なる物理量を用いながら構造変化の方向を選別しています。縁は特定のメカニズムではなく「関係による選別」という構造的特徴です
-- **スケール不変性**: 「差異の検出、関係の形成、構造の変化」というパターンが、シナプス（ミリ秒）から対人関係（年）まで同型的に繰り返されます
-- **意識との関係**: STDPは意識なしに構造変化を実行します。5段階の構造は意識の有無にかかわらず作動しており、意識はプロセスの前提条件ではなく一部として位置づけられます
-- **場の前提条件**: 場は空白の出発点ではなく、変化を受け止めるための条件が整った状態です。安全（ポリヴェーガル理論）や臨界近傍（神経雪崩）がその条件にあたります
+- **Summary**: The difference in firing timing (tens of milliseconds) between pre- and postsynaptic neurons determines whether synaptic connections are potentiated or depressed (Markram et al. 1997, Bi & Poo 1998)
+- **Structural correspondence**: All 5 stages
+  - The existing distribution of synaptic connections corresponds to the **Field**
+  - The spike train as a temporal event corresponds to the **Wave**
+  - The relative timing of pre- and postsynaptic firing corresponds to the **Edge** (a relational quantity that determines direction)
+  - The self-reinforcing loop through repetition corresponds to the **Vortex**
+  - The stable connection pattern as a trace of learning corresponds to the **Bundle**
+- **Note**: This process occurs without consciousness. Structural change is directed solely by a physical quantity — the time difference — making this an important case demonstrating that the 5-stage structure can operate even at levels that do not presuppose consciousness
 
 ---
 
-## 未解決の問い
+## Key Entry 3: Polyvagal Theory
 
-- 縁の複数の実装（時間差、位相同期、社会的関与）に共通する構造的特徴をどう定式化するか
-- 精度（precision）を縁と読むことの妥当性。制御パラメータとしての性格と縁の記述との距離
-- 神経雪崩とクリティカリティの、複雑系科学（SOC）との独立性の確定
-- ポリヴェーガル理論の神経解剖学的詳細への批判（Grossman & Taylor 2007等）の取り込み
-- 意識を伴わない水準と伴う水準での5段階構造の同型性は、有力だがまだ仮説段階
+- **Summary**: The autonomic nervous system comprises three hierarchical systems (dorsal vagal system, sympathetic nervous system, ventral vagal system), each supporting different behavioral strategies (Porges 2011)
+- **Structural correspondence**: All 5 stages
+  - The safe relational field established by activation of the ventral vagal system corresponds to the **Field**
+  - Sympathetic activation and bodily arousal correspond to the **Wave**
+  - Autonomic regulation at the boundary with another person corresponds to the **Edge**
+  - Synchrony and co-regulation between the autonomic nervous systems of two individuals corresponds to the **Vortex**
+  - The establishment of a relationship as a secure base corresponds to the **Bundle**
+- **Note**: This demonstrates that the Edge operates at the bodily boundary with another person. The events described take place between bodies, mediated by the physiological mechanism of the autonomic nervous system
 
 ---
 
-## 結論
+## Key Entry 4: Embodied Cognition and Enactivism
 
-- 神経科学は5段階モデルとの構造対応が全30領域中で最も密な領域の一つです。11件中10件で強い対応が確認されました
-- **最も注目すべき知見**:
-  1. 「関係が方向を決める」構造が、シナプスから対人関係まで異なるスケールで繰り返し現れます
-  2. 5段階の構造は意識を前提としません。シナプス可塑性は意識なしに構造変化を実行します
-  3. 場は空白の出発点ではなく、変化を受け止めるための条件が整った状態です
-- **温度開示**: 確定に近い知見（予測符号化、シナプス可塑性等）が約6割、有力だが検証途上の知見（CTCの因果関係、ポリヴェーガルの詳細等）が約3割、仮説段階が約1割に分布しています
+- **Summary**: Cognition is not the product of the brain alone; it arises from the interaction of brain, body, and environment (Varela, Thompson & Rosch 1991). Autopoiesis refers to the organizational pattern by which life generates and maintains itself
+- **Structural correspondence**: Cross-cutting across all stages
+  - The coupled system of body and environment corresponds to the **Field**
+  - Sensorimotor exploration corresponds to the **Wave**
+  - The autopoietic "membrane" (the boundary between body and environment) corresponds to the **Edge**
+  - The generation of meaning through action corresponds to the **Vortex**
+  - Stabilization as habit or skill corresponds to the **Bundle**
+- **Note**: The structure of "meeting at a boundary and mutually influencing each other" repeats isomorphically at different scales — from the cell membrane to the body, from the body to the environment. This supports the possibility that the 5-stage model is a scale-independent structural description
+
+---
+
+## Structural Correspondence in Detail
+
+| Stage | Correspondence in This Domain | Representative Theories / Concepts |
+|-------|-------------------------------|-------------------------------------|
+| Field | Existing predictive model, safe relational field, background rhythm, connection distribution | Predictive coding, Polyvagal theory, CTC, STDP |
+| Wave | Generation of prediction error, arousal and exploration, spike trains, oscillations | Predictive coding, Polyvagal theory, STDP, CTC |
+| Edge | Precision-weighted filtering, direction determined by time difference, phase synchrony, autonomic co-regulation with others | Predictive coding, STDP, CTC, Polyvagal theory |
+| Vortex | Model revision, self-reinforcing loop, phase-locking entrainment, co-regulation | Predictive coding, STDP, CTC, Polyvagal theory |
+| Bundle | New predictive model, stable connection pattern, establishment of relationship | Predictive coding, STDP, Polyvagal theory |
+
+---
+
+## Cross-Cutting Patterns
+
+- **"Relationship determines direction" structure**: In STDP, the time difference in firing; in CTC, phase synchrony; in polyvagal theory, autonomic entrainment — each uses a different physical quantity to select the direction of structural change. The Edge is not a specific mechanism but a structural feature: "selection through relationship"
+- **Scale invariance**: The pattern of "detection of difference, formation of relationship, structural change" repeats isomorphically from the synapse (milliseconds) to interpersonal relationships (years)
+- **Relationship to consciousness**: STDP executes structural change without consciousness. The 5-stage structure operates regardless of whether consciousness is present; consciousness is positioned as part of the process, not as a prerequisite
+- **Field as precondition**: The Field is not a blank starting point but a state in which the conditions for receiving change are in place. Safety (polyvagal theory) and proximity to criticality (neural avalanches) correspond to those conditions
+
+---
+
+## Open Questions
+
+- How to formally characterize the structural feature common to multiple implementations of the Edge (time difference, phase synchrony, social engagement)
+- The validity of reading precision as Edge — the tension between its character as a control parameter and the Edge description
+- Establishing the independence of neural avalanches and criticality from complexity science (SOC)
+- Integrating criticisms of the neuroanatomical details of polyvagal theory (e.g., Grossman & Taylor 2007)
+- The isomorphism of the 5-stage structure across levels with and without consciousness is well-supported but still at the hypothesis stage
+
+---
+
+## Conclusion
+
+- Neuroscience is one of the domains with the densest structural correspondence to the 5-stage model among all 30 domains. Strong correspondence was confirmed in 10 out of 11 cases
+- **Most noteworthy findings**:
+  1. The "relationship determines direction" structure appears repeatedly across different scales — from the synapse to interpersonal relationships
+  2. The 5-stage structure does not presuppose consciousness. Synaptic plasticity executes structural change without consciousness
+  3. The Field is not a blank starting point but a state in which the conditions for receiving change are in place
+- **Temperature disclosure**: Near-confirmed findings (predictive coding, synaptic plasticity, etc.) account for approximately 60%; well-supported but still-being-verified findings (causal relationships in CTC, details of polyvagal theory, etc.) for approximately 30%; hypothesis-stage findings for approximately 10%

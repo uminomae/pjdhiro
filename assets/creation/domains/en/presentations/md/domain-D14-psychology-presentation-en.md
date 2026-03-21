@@ -1,6 +1,6 @@
 ---
-title: "心理学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Psychology - Structural Correspondence with the Five-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,89 +8,89 @@ source: "domain-D14-psychology-academic-ja.md"
 type: presentation
 ---
 
-## 心理学
+## Psychology
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 心理学の主要理論 10件
-- **調査の問い**: 心理学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 条件付きの対応 1件
+Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Scope**: 10 major theories in psychology
+- **Research question**: Do theories in psychology structurally correspond to the five-stage model?
+- **Results**: Conditional correspondence 1
 
 ---
 
-## 構造対応の全体像
+## Overview of the Five-Stage Model
 
-| 温度 | 理論群 | 位置づけ |
+| Stage | Definition |
+|-------|-----------|
+| Ba (Field) | An undifferentiated state. Initial conditions where neither direction nor structure has yet been determined |
+| Nami (Wave) | A stage of exploration where multiple directions diverge and compete |
+| En (Edge) | A state of tension where opposing elements coexist without converging to either side. A place where elements meet at boundaries, influence each other, and relationships emerge |
+| Uzu (Vortex) | A stage where new coherence (order) spontaneously arises from within tension |
+| Taba (Bundle) | A stage where form is established and stabilizes as a reusable structure |
+
+---
+
+## Overall Structural Correspondence
+
+| Temperature | Theory group | Assessment |
 |---|---|---|
-| 確定に近い | 洞察問題解決、ベイズ脳仮説、スキーマ理論、注意のバイアス競合、認知的柔軟性 | 5段階全体に高い対応があり、縁の構造が具体的に記述されています |
-| 有力 | 認知的不協和、フロー体験、概念メタファー | 対応はあるものの、一部の段階で圧縮や自動性が残ります |
-| 条件つき | 4E認知、アフォーダンス | メタ理論的な枠組みであり、特定のプロセスより場の性質を記述します |
+| Near-definitive | Insight problem solving, Bayesian brain hypothesis, schema theory, bias competition in attention, cognitive flexibility | High correspondence across all five stages, with concrete descriptions of the structure of En |
+| Probable | Cognitive dissonance, flow experience, conceptual metaphor | Correspondence exists, but some compression or automaticity remains at certain stages |
+| Conditional | 4E cognition, affordance | As metatheoretical frameworks, they describe the nature of Ba rather than specific processes |
 
 ---
 
-## 主要エントリ 1: 洞察問題解決（Ohlsson; Knoblich）
+## Key Entry 1: Insight Problem Solving (Ohlsson; Knoblich)
 
-- 洞察問題解決は、インパス（行き詰まり）から突然の解決への転換を記述する理論です。Ohlsson（1992）は、問題解決者が初期表象（問題の最初の捉え方）の制約に囚われてインパスに陥り、制約緩和や再符号化を通じて表象が変化することで解が出現するモデルを提案しました。Knoblich ら（1999, 2001）は、マッチ棒課題を用いた実験で、課題の難易度が「緩和すべき制約の深さ」と「分解すべきチャンクの強さ」に依存することを示しました。
-- **事実として**: Knoblich ら（2001, N=24）は、眼球運動の追跡により、解決者の注意が「値」から「演算子」へ移行する時点が表象変化に対応することを確認しました。また、Hattori ら（2013, N=509）は、閾下ヒント（意識されないレベルのヒント）が解決率を向上させることを示し、意識を伴わない制約緩和の存在を実証しました。
-- **読み取りとして**: ここでは、初期表象による行き詰まりから制約の解除を経て新たな表象が成立するという、認知構造の質的転換プロセスを読み取ります。類似の水準はプロセスです。特に、「どの制約を解くか」という選択が認知の再編を方向づける点に着目します。
-- **解釈として**: インパスは波（予測と現実の誤差が蓄積し、既存の枠組みでは処理できない状態）に対応します。制約緩和は縁（新たな関係の発見――「どの制約を外すか」の選択が新しい結びつきを可能にする）に対応します。そして表象変化とAha体験は渦（新しいまとまりの自発的な成立）に対応します。初期表象が場、更新された表象の定着が束です。この5段階への対応は、10理論の中で最も構造的に鮮明です。
-- さらに、この理論には独自の寄与があります。他の理論が「何と出会ったか」で縁を記述するのに対し、洞察研究は「何が外れたか（制約緩和）」で縁を記述します。縁には「結合」の側面だけでなく「解除」の側面もあることを、この理論は最も明確に示しています。また、眼球運動という客観指標で「関係がいつ結ばれたか」の時刻同定が可能である点は、認知プロセスの実証研究として稀有です。
-
----
-
-## 主要エントリ 2: ベイズ脳仮説 / 予測処理（Clark; Friston）
-
-- ベイズ脳仮説は、脳が常時世界モデルから予測を生成し、感覚入力との不一致（予測誤差）を最小化する方向にモデルを更新し続けるという理論です。Helmholtz（1867）の「無意識的推論」に遡り、Rao & Ballard（1999）で予測符号化として定式化され、Clark（2013, 2016）によって認知科学全体の統合的枠組みとして提示されました。
-- **事実として**: Clark（2013）は、脳が階層的な生成モデルを維持し、各層で予測と入力の照合を繰り返すと論じました。Friston（2010）は、予測誤差の処理に二つの経路があることを指摘しました。一つはモデル自体を更新する経路（知覚的推論）、もう一つは行動によって環境を変える経路（能動的推論）です。さらに、予測誤差への重み付け（precision weighting）が注意の計算論的実装であるとされています（Feldman & Friston, 2010）。
-- **読み取りとして**: ここでは、予測誤差の発生から重み付けを経てモデルが更新・安定化するプロセス全体を読み取ります。類似の水準は構造です。特に、precision weighting――「どの誤差に重みを置くか」という選択メカニズム――が、単なる誤差処理ではなく関係の結び方を方向づけている点に着目します。
-- **解釈として**: 生成モデル（世界の内部表象）が場、予測誤差の発生が波、precision weighting（どの誤差に注目するかの選択）が縁、モデル更新または能動的推論による新たな予測構造の安定化が渦、更新された世界モデルの定着が束に対応します。この理論は、5段階の各局面を計算論的な語彙で再記述できる可能性を示しています。
+- Insight problem solving is a theory that describes the transition from impasse (being stuck) to sudden solution. Ohlsson (1992) proposed a model in which problem solvers fall into an impasse because they are constrained by their initial representation (the initial way of grasping the problem), and a solution emerges when the representation changes through constraint relaxation or re-encoding. Knoblich et al. (1999, 2001) demonstrated with matchstick problems that task difficulty depends on "the depth of constraints to be relaxed" and "the strength of chunks to be decomposed."
+- **As fact**: Knoblich et al. (2001, N=24) confirmed, through eye movement tracking, that the moment when the solver's attention shifts from "value" to "operator" corresponds to representational change. Additionally, Hattori et al. (2013, N=509) showed that subliminal hints (hints at a level below conscious awareness) improve solution rates, demonstrating the existence of constraint relaxation without awareness.
+- **As reading**: Here we read the process of qualitative transformation of cognitive structure in which, after being stuck through initial representation, a new representation is established through release of constraints. The level of similarity is process. In particular, we focus on the point that the selection of "which constraint to release" directs the reorganization of cognition.
+- **As interpretation**: Impasse corresponds to Nami (a state in which prediction-reality discrepancy accumulates and cannot be processed within existing frameworks). Constraint relaxation corresponds to En (discovery of a new relationship — the selection of "which constraint to remove" enables new connections). Representational change and the Aha experience correspond to Uzu (spontaneous establishment of a new coherence). The initial representation is Ba, and consolidation of the updated representation is Taba. This correspondence with the five stages is the most structurally vivid among the 10 theories.
+- Furthermore, this theory has a distinctive contribution. While other theories describe En in terms of "what was encountered," insight research describes En in terms of "what was released (constraint relaxation)." This theory most clearly demonstrates that En has not only the aspect of "binding" but also the aspect of "releasing." Also notable is that, using eye movements as an objective measure, it is possible to identify the timing of "when the relationship was formed" — a rare achievement in empirical research on cognitive processes.
 
 ---
 
-## 主要エントリ 3: スキーマ理論（Bartlett; Piaget; Neisser）
+## Key Entry 2: Bayesian Brain Hypothesis / Predictive Processing (Clark; Friston)
 
-- スキーマ理論は、過去の経験から抽出された知識の組織化構造（スキーマ）が、新しい経験の解釈を導くという理論です。Bartlett（1932）がスキーマ概念を記憶研究に導入し、Piaget（1952）が同化（新情報を既存スキーマに取り込む）と調節（スキーマ自体を変形する）の二つの処理様式を定式化しました。Neisser（1976）は、スキーマが探索を方向づけ、環境からの情報がスキーマを修正する知覚サイクルを記述しました。
-- **事実として**: Piagetの枠組みでは、新しい情報に出会ったとき、それを既存の知識構造にそのまま取り込む処理（同化）と、知識構造自体を作り替える処理（調節）が区別されます。どちらの処理が選ばれるかは、既存スキーマと新情報の不一致の程度に依存します。
-- **読み取りとして**: ここでは、既存の知識構造と新情報の不一致に対して二つの処理経路が分岐し、調節によってスキーマが再構成されるプロセスを読み取ります。類似の水準は構造です。特に、同化と調節の「どちらで処理するか」という分岐点が、関係の結び方を決定している点に着目します。
-- **解釈として**: 既存スキーマ（世界モデル）が場、スキーマと新情報の不一致（不均衡）が波、同化/調節の選択分岐（どちらで処理するかの決定）が縁、調節によるスキーマ再構成が渦、更新されたスキーマの定着が束に対応します。この理論は、縁を「関係の結び方の分岐」として記述しており、ベイズ脳仮説の予測誤差処理と認知レベルで対応しています。
-
----
-
-## 横断的パターン
-
-- 心理学を横断して最も際立つのは、**縁の多様な実装**です
-- **制約の解除**: 洞察研究は「どの制約を外すか」という解除の側面で縁を記述します
-- **重みの配分**: ベイズ脳仮説は「どの誤差に重みを置くか」という選択で縁を記述します
-- **処理経路の分岐**: スキーマ理論は「同化か調節か」という処理様式の分岐で縁を記述します
+- The Bayesian brain hypothesis is the theory that the brain constantly generates predictions from a world model and continuously updates the model in the direction of minimizing discrepancy (prediction error) with sensory input. Tracing back to Helmholtz's (1867) "unconscious inference," it was formulated as predictive coding by Rao & Ballard (1999) and presented by Clark (2013, 2016) as an integrative framework for cognitive science as a whole.
+- **As fact**: Clark (2013) argued that the brain maintains a hierarchical generative model and repeatedly compares predictions with input at each level. Friston (2010) pointed out two pathways for processing prediction errors: one that updates the model itself (perceptual inference), and one that changes the environment through action (active inference). Furthermore, the weighting of prediction errors (precision weighting) is said to be the computational implementation of attention (Feldman & Friston, 2010).
+- **As reading**: Here we read the entire process in which, from the generation of prediction error through weighting, the model is updated and stabilized. The level of similarity is structure. In particular, we focus on precision weighting — the selection mechanism of "which error to weight" — as something that not merely processes errors but directs the way relationships are formed.
+- **As interpretation**: The generative model (internal representation of the world) corresponds to Ba; the generation of prediction errors corresponds to Nami; precision weighting (the selection of which error to attend to) corresponds to En; the stabilization of a new predictive structure through model update or active inference corresponds to Uzu; and the consolidation of the updated world model corresponds to Taba. This theory demonstrates the possibility of re-describing each phase of the five stages in the vocabulary of computational theory.
 
 ---
 
-## 未解決の問い
+## Key Entry 3: Schema Theory (Bartlett; Piaget; Neisser)
 
-- 縁の多様な実装（制約解除、精度重み付け、同化/調節分岐、競合解決、セット切替、方略選択）は、共通する構造的特徴を持つのか、それとも「縁」というラベルが過剰に一般化されているのかは、まだ結論が出ていません。
-- Gibsonの直接知覚論（表象なし）と、洞察やスキーマ理論（表象変化が中核）の対立は、縁のメカニズムに「表象」が必要かどうかという根本的な問いに関わります。この対立はこの領域内で解決されていません。
-- 概念メタファー理論が提起する自己参照性の問い――5段階モデルの語彙自体がイメージスキーマに依存しているとすれば、5段階は世界の構造を記述しているのか、身体メタファーによる理解の構造を記述しているのか――は、本調査の射程を超える問いとして保留されます。
-- フロー体験における「縁」（フィードバックループ）が比較的自動的であり未決定性が低い点は、縁の定義要件として未決定性がどこまで必要かという問いに関わります。
+- Schema theory is the theory that knowledge organizational structures (schemas) extracted from past experience guide the interpretation of new experiences. Bartlett (1932) introduced the schema concept into memory research, Piaget (1952) formulated two processing modes — assimilation (incorporating new information into existing schemas) and accommodation (transforming the schemas themselves) — and Neisser (1976) described a perceptual cycle in which schemas direct exploration and information from the environment modifies schemas.
+- **As fact**: In Piaget's framework, when new information is encountered, a distinction is made between processing that incorporates it directly into existing knowledge structures (assimilation) and processing that reworks the knowledge structure itself (accommodation). Which processing is selected depends on the degree of discrepancy between existing schemas and new information.
+- **As reading**: Here we read the process in which two processing pathways branch in response to discrepancy between existing knowledge structures and new information, and schemas are reconstructed through accommodation. The level of similarity is structure. In particular, we focus on the branching point of "which way to process — assimilation or accommodation" as determining the way relationships are formed.
+- **As interpretation**: The existing schema (world model) corresponds to Ba; the discrepancy (disequilibrium) between schema and new information corresponds to Nami; the selection branching between assimilation/accommodation (the decision of which way to process) corresponds to En; schema reconstruction through accommodation corresponds to Uzu; and consolidation of the updated schema corresponds to Taba. This theory describes En as "the branching of the way relationships are formed," which corresponds at the cognitive level to the prediction error processing of the Bayesian brain hypothesis.
 
 ---
 
-## 結論
+## Cross-Cutting Patterns
 
-- 本調査では、心理学・認知科学は5段階モデルとの構造類似が全体として強い領域であることが確認されました
-- 確定に近い対応を示したのは、洞察問題解決、ベイズ脳仮説、スキーマ理論、注意のバイアス競合モデル、認知的柔軟性の5理論です
+- The most striking pattern across psychology is the **diverse implementations of En**
+- **Constraint release**: Insight research describes En from the aspect of release — "which constraint to remove"
+- **Distribution of weight**: The Bayesian brain hypothesis describes En through selection — "which error to weight"
+- **Branching of processing pathway**: Schema theory describes En through the branching of processing modes — "assimilation or accommodation"
+
+---
+
+## Unresolved Questions
+
+- Whether the diverse implementations of En (constraint release, precision weighting, assimilation/accommodation branching, competition resolution, set switching, strategy selection) share common structural features, or whether the label "En" is being overgeneralized, remains without conclusion.
+- Gibson's direct perception theory (no representations) and the conflict with insight and schema theory (representational change as core) relates to the fundamental question of whether "representation" is necessary for the mechanism of En. This opposition has not been resolved within this domain.
+- The self-referential question raised by conceptual metaphor theory — if the vocabulary of the five-stage model itself depends on image schemas, does the five-stage model describe the structure of the world, or the structure of understanding via bodily metaphor? — is held in reserve as a question exceeding the scope of this survey.
+- The point that En in flow experience (the feedback loop) is relatively automatic and low in indeterminacy relates to the question of how much indeterminacy is required as a definitional condition of En.
+
+---
+
+## Conclusion
+
+- This survey confirmed that psychology and cognitive science is a domain with strong structural similarity to the five-stage model overall
+- The five theories showing near-definitive correspondence were: insight problem solving, the Bayesian brain hypothesis, schema theory, the bias competition model of attention, and cognitive flexibility

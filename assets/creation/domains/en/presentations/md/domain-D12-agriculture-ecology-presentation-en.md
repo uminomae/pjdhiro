@@ -1,6 +1,6 @@
 ---
-title: "農学生態 - 5段階モデルとの構造対応"
-lang: ja
+title: "Agriculture and Ecology - Structural Correspondence with the Five-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,97 +8,97 @@ source: "domain-D12-agriculture-ecology-academic-ja.md"
 type: presentation
 ---
 
-## 農学生態
+## Agriculture and Ecology
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 農学生態の主要理論 10件
-- **調査の問い**: 農学生態の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 9件、部分的な対応 1件
+Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Scope**: 10 major theories in agriculture and ecology
+- **Research question**: Do theories in agriculture and ecology structurally correspond to the five-stage model?
+- **Results**: Strong correspondence 9, Partial correspondence 1
 
 ---
 
-## 構造対応の全体像
+## Overview of the Five-Stage Model
 
-| # | 理論/概念 | 提唱者 | 主な対応段階 | 判定 |
+| Stage | Definition |
+|-------|-----------|
+| Ba (Field) | An undifferentiated state. Initial conditions where neither direction nor structure has yet been determined |
+| Nami (Wave) | A stage of exploration where multiple directions diverge and compete |
+| En (Edge) | A state of tension where opposing elements coexist without converging to either side. A place where elements meet at boundaries, influence each other, and relationships emerge |
+| Uzu (Vortex) | A stage where new coherence (order) spontaneously arises from within tension |
+| Taba (Bundle) | A stage where form is established and stabilizes as a reusable structure |
+
+---
+
+## Overall Structural Correspondence
+
+| # | Theory/Concept | Proponent | Primary Corresponding Stages | Assessment |
 |---|----------|--------|------------|------|
-| 1 | 生態遷移 | Clements (1916), Connell & Slatyer (1977), Holling (1973) | 全5段階 | 強い対応 |
-| 2 | 農地窒素循環 | Robertson & Vitousek (2009) | 全5段階 | 強い対応 |
-| 3 | 総合的病害虫管理（IPM）と経済閾値 | Stern et al. (1959), Pedigo et al. (1986) | 縁→渦→束 | 強い対応 |
-| 4 | レジームシフト／複数安定状態 | Scheffer et al. (2001), Scheffer & Carpenter (2003) | 縁（閾値）が核 | 強い対応 |
-| 5 | 生態学的境界理論（エコトーン） | Cadenasso et al. (2003) | 縁が理論中心 | 強い対応 |
-| 6 | 景観コネクティビティとパーコレーション閾値 | With & Crist (1995), Taylor et al. (1993) | 縁（閾値+接続） | 強い対応 |
-| 7 | 乾燥地植生の自己組織化パターン | Klausmeier (1999), Rietkerk et al. (2002) | 渦（自己組織化）が核 | 強い対応 |
-| 8 | 植物–土壌フィードバック | Bever (1994; 1997), Klironomos (2002) | 縁→渦→束 | 強い対応 |
-| 9 | 生態系エンジニアリング | Jones et al. (1994; 1997) | 縁（構築される境界） | 部分的な対応 |
-| 10 | 状態–遷移モデル（STMs） | Westoby et al. (1989), Briske et al. (2003) | 縁（閾値の制度化） | 強い対応 |
+| 1 | Ecological succession | Clements (1916), Connell & Slatyer (1977), Holling (1973) | All 5 stages | Strong correspondence |
+| 2 | Agricultural nitrogen cycle | Robertson & Vitousek (2009) | All 5 stages | Strong correspondence |
+| 3 | Integrated Pest Management (IPM) and economic thresholds | Stern et al. (1959), Pedigo et al. (1986) | En→Uzu→Taba | Strong correspondence |
+| 4 | Regime shifts / multiple stable states | Scheffer et al. (2001), Scheffer & Carpenter (2003) | En (threshold) as core | Strong correspondence |
+| 5 | Ecological boundary theory (ecotone) | Cadenasso et al. (2003) | En as theoretical center | Strong correspondence |
+| 6 | Landscape connectivity and percolation thresholds | With & Crist (1995), Taylor et al. (1993) | En (threshold + connection) | Strong correspondence |
+| 7 | Self-organizing vegetation patterns in drylands | Klausmeier (1999), Rietkerk et al. (2002) | Uzu (self-organization) as core | Strong correspondence |
+| 8 | Plant-soil feedback | Bever (1994; 1997), Klironomos (2002) | En→Uzu→Taba | Strong correspondence |
+| 9 | Ecosystem engineering | Jones et al. (1994; 1997) | En (constructed boundary) | Partial correspondence |
+| 10 | State-and-transition models (STMs) | Westoby et al. (1989), Briske et al. (2003) | En (institutionalization of thresholds) | Strong correspondence |
 
 ---
 
-## 主要エントリ 1: 生態遷移（Clements, Connell & Slatyer, Holling）
+## Key Entry 1: Ecological Succession (Clements, Connell & Slatyer, Holling)
 
-- 生態遷移とは、撹乱を受けた生態系が時間の経過とともに種構成や群集構造を変えていく過程です。Clements（1916）は植物群集の遷移を古典的に定式化し、その後Connell & Slatyer（1977）が促進・耐性・阻害という三つのメカニズムを提示しました。Holling（1973）はレジリエンス（撹乱からの回復能力）の概念を導入し、遷移の定量的な枠組みを補強しています。
-- **事実として**: 撹乱後の生態系では、まず先駆種が裸地に侵入し、種間競争を経て群集構造が複雑化し、やがて極相と呼ばれる相対的に安定した状態に至ります。この過程はConnell & Slatyer（1977）によって、先駆種が後続種の定着を助ける「促進」、先駆種がいてもいなくても後続種が定着する「耐性」、先駆種が後続種の定着を妨げる「阻害」の三メカニズムに整理されました。長期観測データにより、段階的な種構成の変化が実証的に記録されています。
-- **読み取りとして**: ここでは、撹乱後の裸地から極相群集に至る過程に、複数の異なるメカニズムが段階的に作用する構造を読み取ります。類似の水準はプロセスです。特に、「撹乱→先駆種侵入→種間相互作用→群集形成→安定化」という順序構造に着目します。Connell & Slatyerの三メカニズムは、遷移の中間段階（種間相互作用の局面）が単一の仕組みではなく複数のモードを持つことを示しており、この多様性が構造的に重要です。
-- **解釈として**: 撹乱後の裸地は場（初期条件の未分化な状態）に対応します。先駆種の侵入と資源競争で差異が拡大する局面は波です。促進・競争・捕食といった種間相互作用が群集構造を媒介する局面は縁であり、ここでは複数の遷移メカニズムが共存します。優占種群が安定した群集パターンを形成する局面は渦、極相群集として生態系が安定化する局面は束です。さらに、撹乱による束から場への回帰が自然に観察される点は、5段階の循環性を具体的に示しています。
-
----
-
-## 主要エントリ 2: レジームシフト／複数安定状態（Scheffer, Carpenter）
-
-- レジームシフトとは、生態系がある安定状態から別の安定状態へ、閾値を境に急激に移行する現象です。Scheffer et al.（2001）はこの現象を理論的に統合し、Scheffer & Carpenter（2003）はヒステリシス（非可逆性）の重要性を明らかにしました。
-- **事実として**: 生態系は環境条件の変化に対して常に連続的に応答するわけではありません。栄養塩負荷が徐々に増加する湖沼では、ある閾値（tipping point）を超えると透明な水から濁った水へ急激に転換し、元の条件に戻しても容易には回復しません。Carpenter & Brock（2006）は、閾値接近に伴う統計的兆候（分散の上昇、自己相関の増大）を「早期警告シグナル」として提案しています。
-- **読み取りとして**: ここでは、系が連続的な変化の途中で閾値を境に非連続的に急変する構造を読み取ります。類似の水準は構造です。単なる変化の速さの違いではなく、閾値の前後で系の質的な性格が切り替わるという配置関係に着目します。加えて、ヒステリシスという「閾値を越えると戻れない」性質は、この構造に方向性と非可逆性を与えています。
-- **解釈として**: 外部条件（栄養塩負荷や気候）が系の状態を規定する局面は場です。条件変動や撹乱が系を揺さぶり不安定化を誘発する局面は波です。閾値（tipping point）で挙動が非連続に急変する分岐点は縁であり、この理論では縁が中心変数として最も明確に機能します。各安定状態を維持する自己強化フィードバック（たとえば透明水を維持する水草と濁水を維持する植物プランクトンの対峙）は渦です。新たな安定状態への収束は束です。
-- レジームシフトが5段階との対応で特に重要なのは、閾値の位置が事前に確定困難であるという点です。「どこで急変するかは事後的にしかわからない」という未決定性は、5段階の縁が持つ本質的な不確実性を生態学的に裏付けています。
+- Ecological succession is the process by which an ecosystem that has been disturbed changes in species composition and community structure over time. Clements (1916) classically formalized succession in plant communities, after which Connell & Slatyer (1977) proposed three mechanisms: facilitation, tolerance, and inhibition. Holling (1973) introduced the concept of resilience (the capacity to recover from disturbance) and supplemented the quantitative framework of succession.
+- **As fact**: In a disturbed ecosystem, pioneer species first invade bare ground, species composition becomes more complex through interspecific competition, and eventually a relatively stable state called the climax community is reached. This process was organized by Connell & Slatyer (1977) into three mechanisms: "facilitation," in which pioneer species help establish later species; "tolerance," in which later species establish regardless of whether pioneer species are present; and "inhibition," in which pioneer species prevent the establishment of later species. Stepwise changes in species composition have been empirically documented through long-term observational data.
+- **As reading**: Here we read a structure in which multiple different mechanisms operate in stages through the process from disturbed bare ground to climax community. The level of similarity is process. In particular, we focus on the sequential structure of "disturbance → pioneer species invasion → interspecific interaction → community formation → stabilization." Connell & Slatyer's three mechanisms show that the intermediate stage (the phase of interspecific interaction) has multiple modes rather than a single mechanism, and this diversity is structurally important.
+- **As interpretation**: Bare ground after disturbance corresponds to Ba (the undifferentiated state of initial conditions). The phase in which pioneer species invade and differences expand through resource competition corresponds to Nami. The phase in which interspecific interactions such as facilitation, competition, and predation mediate community structure corresponds to En, where multiple succession mechanisms coexist. The phase in which dominant species form stable community patterns corresponds to Uzu, and the phase in which the ecosystem stabilizes as a climax community corresponds to Taba. Furthermore, the natural observation of regression from Taba to Ba through disturbance concretely demonstrates the cyclical nature of the five stages.
 
 ---
 
-## 主要エントリ 3: 総合的病害虫管理（IPM）と経済閾値（Stern, Pedigo）
+## Key Entry 2: Regime Shifts / Multiple Stable States (Scheffer, Carpenter)
 
-- 総合的病害虫管理（Integrated Pest Management: IPM）とは、害虫の密度、天敵の動態、作物の経済的被害を統合して、介入のタイミングを判断する意思決定モデルです。Stern et al.（1959）が経済的被害水準（Economic Injury Level: EIL）の概念を提唱し、Pedigo et al.（1986）が経済閾値（Economic Threshold: ET）として介入判断の枠組みを精緻化しました。
-- **事実として**: EILとは、害虫による経済的損失と防除コストが釣り合う害虫密度のことです。ETは、EILに到達する前に防除措置を開始すべき判断水準です。農業者はモニタリングによって害虫密度を把握し、ETを超えた場合にのみ介入します。この枠組みは各国の農業政策に組み込まれ、制度化されています。
-- **読み取りとして**: ここでは、モニタリングから閾値判定、介入、再評価に至る循環的な管理サイクルの中に、形式的に定義された分岐点が組み込まれている構造を読み取ります。類似の水準はプロセスであり、特に「閾値に基づくGo/No-Go判定」という意思決定の構造に着目します。レジームシフト（5.2節）の閾値が系に内在する自然な分岐点であるのに対し、IPMの閾値は人間が経済的合理性に基づいて設定した分岐点であるという対比が重要です。
-- **解釈として**: 圃場内の害虫・天敵の初期分布と経済条件は場です。環境条件の変化で害虫個体群が増減し、被害閾値との差が顕在化する局面は波です。EIL/ETによるGo/No-Go判定は縁であり、ここでは意思決定の分岐点として縁が形式的に制度化されています。生物的・化学的・耕種的防除を統合した管理戦略の運用は渦であり、介入結果を踏まえた次の判定へのフィードバックが循環します。地域標準的なIPMプロトコルとしての制度化は束です。
-
----
-
-## 横断的パターン
-
-- 農学・生態学を横断して繰り返し現れるパターンを三つ報告します
-- **第一に、縁の三つの型が領域内に揃います
-- **第二に、「設計される縁」と「発見される縁」の対比が浮かび上がります
-- **第三に、全10理論で渦（フィードバック）が明示されています
+- A regime shift is a phenomenon in which an ecosystem rapidly transitions from one stable state to another across a threshold. Scheffer et al. (2001) theoretically integrated this phenomenon, and Scheffer & Carpenter (2003) clarified the importance of hysteresis (irreversibility).
+- **As fact**: Ecosystems do not always respond continuously to changes in environmental conditions. In lakes where nutrient loading gradually increases, once a certain threshold (tipping point) is exceeded, the water rapidly transitions from clear to turbid, and it does not easily recover even when conditions are returned to their original state. Carpenter & Brock (2006) proposed statistical signs accompanying threshold approach (increased variance, increased autocorrelation) as "early warning signals."
+- **As reading**: Here we read the structure in which a system undergoing continuous change undergoes a discontinuous sudden shift at a threshold. The level of similarity is structure. Rather than merely a difference in the speed of change, we focus on the placement relationship in which the qualitative character of the system switches before and after the threshold. Additionally, hysteresis — the property of "once the threshold is crossed, there is no going back" — gives this structure direction and irreversibility.
+- **As interpretation**: The phase in which external conditions (nutrient loading or climate) determine the state of the system corresponds to Ba. The phase in which condition fluctuations or disturbances destabilize the system corresponds to Nami. The branching point where behavior changes discontinuously at the threshold (tipping point) corresponds to En, and in this theory En functions most clearly as the central variable. The self-reinforcing feedback that maintains each stable state (for example, the opposition of aquatic plants maintaining clear water and phytoplankton maintaining turbid water) corresponds to Uzu. Convergence to a new stable state corresponds to Taba.
+- What makes regime shifts particularly important in terms of correspondence with the five stages is that the position of the threshold is difficult to determine in advance. The indeterminacy of "where the sudden change will occur can only be known after the fact" ecologically supports the essential uncertainty of En in the five stages.
 
 ---
 
-## 未解決の問い
+## Key Entry 3: Integrated Pest Management (IPM) and Economic Thresholds (Stern, Pedigo)
 
-- 閾値型の縁（分岐点）と境界型の縁（界面）と関係型の縁（ネットワーク）は、5段階モデルの中で同一の「縁」として統合できるのか、それとも異なる段階として分けるべきなのかは、まだ決着していません。
-- 「人間が設計する閾値」（IPM、STMs）と「系に内在する閾値」（レジームシフト、パーコレーション）を同じ「縁」として扱うことが妥当かどうかについては、対立する見方があり得ます。設計された閾値は縁の模倣なのか、それとも縁の実装なのかという問いです。
-- レジームシフトの「閾値の位置は事前に確定困難」という性質と、IPMの「閾値は経済的合理性に基づいて定義される」という性質の間にある緊張は、5段階モデルの縁が持つ不確実性の本質に関わります。
-- 生態系エンジニアリングの「縁は所与でなく構築される」という視点を5段階にどう組み込むかは、モデルの静的理解に対する重要な補正として検討が必要です。
+- Integrated Pest Management (IPM) is a decision-making model that integrates pest density, natural enemy dynamics, and the economic damage to crops to determine the timing of intervention. Stern et al. (1959) proposed the concept of the Economic Injury Level (EIL), and Pedigo et al. (1986) refined the framework of intervention decision-making as the Economic Threshold (ET).
+- **As fact**: The EIL is the pest density at which economic losses from pests and control costs balance. The ET is the decision level at which control measures should be initiated before the EIL is reached. Farmers monitor pest density and intervene only when the ET is exceeded. This framework has been incorporated into agricultural policy in various countries and institutionalized.
+- **As reading**: Here we read a structure in which a formally defined branching point is incorporated into a cyclical management cycle running from monitoring through threshold judgment, intervention, and re-evaluation. The level of similarity is process, and we particularly focus on the decision-making structure of a "Go/No-Go judgment based on thresholds." In contrast to the regime shift threshold, which is a natural branching point inherent in the system, the IPM threshold is a branching point that humans have set based on economic rationality; this contrast is important.
+- **As interpretation**: The initial distribution of pests and natural enemies in the field and the economic conditions correspond to Ba. The phase in which pest populations increase or decrease due to environmental changes and the difference from the damage threshold becomes apparent corresponds to Nami. The EIL/ET Go/No-Go judgment corresponds to En, where the decision branching point is formally institutionalized as En. The management strategy integrating biological, chemical, and cultural control corresponds to Uzu, with feedback cycling to the next judgment based on intervention results. Institutionalization as a regionally standard IPM protocol corresponds to Taba.
 
 ---
 
-## 結論
+## Cross-Cutting Patterns
 
-- 本調査では、農学・生態学は5段階モデルとの構造対応が全体として強い領域であると確認されました
-- 確定的に近いのは、生態遷移、レジームシフト、パーコレーション閾値、乾燥地植生の自己組織化パターンです
-- この領域から得られる最大の示唆は、5段階モデルの「縁」が単一の概念ではなく、少なくとも三つの型（閾値・境界・関係）で実現されるということです
+- Three patterns that repeatedly appear across agriculture and ecology are reported here
+- **First, three types of En are present within the domain**
+- **Second, a contrast between "designed En" and "discovered En" emerges**
+- **Third, Uzu (feedback) is explicitly present in all 10 theories**
+
+---
+
+## Unresolved Questions
+
+- Whether threshold-type En (branching point), boundary-type En (interface), and relational En (network) can be integrated as the same "En" within the five-stage model, or should be separated as different stages, has not yet been resolved.
+- Whether it is appropriate to treat "thresholds designed by humans" (IPM, STMs) and "thresholds inherent in the system" (regime shifts, percolation) as the same "En" is subject to opposing views. The question is whether a designed threshold is an imitation of En or an implementation of En.
+- The tension between the nature of regime shifts — "the position of the threshold is difficult to determine in advance" — and IPM — "thresholds are defined based on economic rationality" — relates to the essential nature of the uncertainty that En in the five-stage model possesses.
+- How to incorporate ecosystem engineering's perspective that "En is not given but constructed" into the five stages requires examination as an important correction to the static understanding of the model.
+
+---
+
+## Conclusion
+
+- This survey confirmed that agriculture and ecology is a domain with strong structural correspondence to the five-stage model overall
+- Near-definitive are ecological succession, regime shifts, percolation thresholds, and self-organizing vegetation patterns in drylands
+- The greatest insight gained from this domain is that the "En" of the five-stage model is not a single concept but is realized in at least three types (threshold, boundary, relational)
