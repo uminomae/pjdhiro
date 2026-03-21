@@ -1,6 +1,6 @@
 ---
-title: "宗教学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Religious Studies - Structural Correspondence with the 5-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,89 +8,89 @@ source: "domain-D24-religious-studies-academic-ja.md"
 type: presentation
 ---
 
-## 宗教学
+## Religious Studies
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 宗教学の主要理論 10件
-- **調査の問い**: 宗教学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 1件、部分的な対応 1件、条件付きの対応 2件
+Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Survey target**: 10 major theories in religious studies
+- **Research question**: Do the various theories of religious studies correspond structurally to the 5-stage model?
+- **Results**: Strong correspondence in 1 case, partial correspondence in 1 case, conditional correspondence in 2 cases
 
 ---
 
-## 構造対応の全体像
+## Overview of the 5-Stage Model
 
-| 温度 | 理論群 | 位置づけ |
-|---|---|---|
-| 強い対応 | ランボーの回心7段階、エリアーデの聖と俗、十牛図、菩薩十地・五道、ファナー/バカー、マカーマート | 5段階の全体構造との対応が明瞭です |
-| 部分的な対応 | テレサの七つの住まい、ターナーのリミナリティ、錬金術マグヌム・オプス | 全体構造の対応はあるが、前半または後半で圧縮や解釈上の飛躍が残ります |
-| 条件付きの対応 | ジェイムズの宗教的経験 | 段階モデルを提示していないため、構造対応は分析者による構成的読みに依存します |
-
----
-
-## 主要エントリ 1: ランボーの回心7段階モデル（Lewis R. Rambo）
-
-- ランボーは、宗教的回心を7段階の統合モデルとして記述しました。文脈（context）、危機（crisis）、探究（quest）、出会い（encounter）、相互作用（interaction）、献身（commitment）、帰結（consequences）の7段階です。1993年の著書 *Understanding Religious Conversion* で提示されたこのモデルは、回心を心理学・社会学・神学の複数の視点から統合的に捉えたもので、段階は順行固定ではなく相互作用的であると明記されています。
-- **事実として**: ランボーは回心プロセスを「動的な力場（dynamic force field）」の中で起こる現象として位置づけています。クルト・レヴィンの場理論の影響を受けた概念枠であり、個人の内的動機、社会的ネットワーク、文化的コンテキストが「力場」を構成します。7段階は「環境→攪乱→探索→接触→関係編成→収束→定着」という全体構造を持ちます。
-- **読み取りとして**: ここでは、変容の全体過程が「環境（前提条件）→攪乱（既存秩序の揺らぎ）→境界での関係編成→新たな秩序への収束→持続的定着」として読み取れることに注目します。類似の水準はプロセスです。特に「動的力場」概念が変容の前提条件として明示的に記述されている点、および「出会い」と「相互作用」が関係の成立と編み替えの過程として分節されている点に着目します。
-- **解釈として**: 7段階の全体構造は5段階と高い対応を示します。「文脈」は回心が生起する「動的力場」として「場」に対応します。「危機＋探究」は既存の意味秩序が揺らぎ差異が立ち上がる局面であり「波」に対応します。「出会い＋相互作用」は体現者との境界接触と関係編成であり「縁」に対応します。「献身」は誓約による収束であり「渦」に、「帰結」は変容の持続的定着であり「束」に対応します。ランボー自身が回心を「動的力場の中で起こるプロセス」と位置づけていることは、「場」との対応が表面的な命名の一致ではなく構造的であることを示しています。
-- なお、7段階から5段階への圧縮では「探究（quest）」の位置が揺れやすいという問題があります。波に含めるか縁の前半として扱うかで読みが変わります。「探究」は波と縁の間にある能動的探索の段階であり、5段階が暗黙に含んでいる「差異が立った後、関係が成立するまでの間」を明示化しているとも読めます。
+| Stage | Definition |
+|-------|------------|
+| Ba (Field) | An undifferentiated state. The initial condition in which no direction or structure has yet been established |
+| Wave | The exploratory stage in which multiple directions diverge and compete |
+| En (Edge) | A state of tension in which opposing elements coexist without converging on either side. The place where they meet at the boundary, influence each other, and relationships emerge |
+| Uzu (Vortex) | The stage in which a new coherence (order) arises spontaneously from within the tension |
+| Taba (Bundle) | The stage in which the form is fixed and stabilizes as a reusable structure |
 
 ---
 
-## 主要エントリ 2: ターナーのリミナリティと構造/反構造（Victor Turner）
+## Overview of Structural Correspondences
 
-- ターナーは、人類学者ファン・ヘネップが提示した通過儀礼の三段階（分離-境界-統合）を拡張し、境界期（liminality）を「betwixt and between（あちらでもこちらでもない）」として独自に概念化しました。1969年の著書 *The Ritual Process* で提示されたこの理論は、コムニタス（communitas）――社会的構造の外部に位置する非構造的な共同性――の概念とともに、宗教人類学の基礎理論となっています。
-- **事実として**: ターナーは構造（structure）→反構造（anti-structure, communitas）→再構造化（re-structuration）の弁証法的循環を提示しました。リミナリティの参加者は既存の社会的分類が停止された状態に置かれ、通常の身分・役割を剥奪されます。コムニタスには三つの類型があります。自発的コムニタス（spontaneous communitas）は構造によって媒介されない直接的な人間同士の出会いであり、規範的コムニタス、イデオロギー的コムニタスへと制度化されていきます。
-- **読み取りとして**: ここでは、旧い秩序が停止され新たな関係質が出現する「際（きわ）」の構造を読み取ります。類似の水準は構造であり、特に「既存の構造的区分が一時的に解除され、その解除の中から新たな関係が編まれる」という配置関係に注目します。ターナーがリミナリティ/コムニタスそのものに聖的・創造的価値を見出している点は、境界状態が単なる通過点ではなく、それ自体が社会の根源的エネルギーの源泉だという主張として読めます。
-- **解釈として**: 分離→境界期→統合の三段階は、5段階の「波（揺れ・分離）→縁（境界・関係）→渦（立ち上がり・統合）」と構造的に対応します。リミナリティの「あちらでもこちらでもない」状態は「縁」の強い実現です。さらに、構造→反構造→再構造化の弁証法的循環は、5段階の「束→場」循環に接続しうるものです。ただし、3段階から5段階への写像では「場」と「束」の対応が解釈に依存します。儀礼以前の社会構造を「場」とするか「束」とするかは、循環モデルとして読むことで解消可能ですが、この点は留意が必要です。
-
----
-
-## 主要エントリ 3: アビラのテレサ『霊魂の城』七つの住まい
-
-- テレサ（1515-1582）は、人間の内面を城に喩え、七つの住まい（moradas）を通じた霊的進行を記述しました。1577年に執筆された *El Castillo Interior*（霊魂の城）は、キリスト教神秘主義の古典的著作であり、十字架のヨハネの『暗夜』と並ぶスペイン神秘主義の双璧です。
-- **事実として**: 第一の住まいは魂の尊厳の認識から始まり、「城に入る門は祈りである」と明記されています。第二から第三の住まいは忍耐と闘争の段階であり、修行の継続を妨げる力との対峙が続きます。第四の住まいで決定的な転換が起きます。テレサはここで「慰め（contentos）」と「霊的味わい（gustos）」を明確に区別しました。前者は人間の努力によって得られるもの、後者は神から与えられるものです。収心の祈り（oración de recogimiento）が始まるこの段階が、「能動的祈り」から「受動的祈り」への転換点です。第五から第六の住まいでは神との一致の祈り、恍惚（éxtasis）、忘我が生じ、第六の住まいでは試練が最も激しくなります。第七の住まいでは霊的結婚（matrimonio espiritual）に至り、テレサはマルタとマリアが共にある必要――観想と行為の統合――を述べています。恍惚が消え、安定した平和の中での日常的行為が営まれるようになります。
-- **読み取りとして**: ここでは、第四の住まいにおける「能動から受動への質的転換」を、変容プロセスの構造的な転換点として読み取ります。類似の水準はプロセスであり、特に「主体の努力の限界を超えた先で、異なる質のものが与えられる」という転換の順序に注目します。また、第七の住まいにおける観想と行為の統合を、変容が日常に定着する構造として読み取ります。
-- **解釈として**: 七つの住まいの全体構造は5段階と対応します。第一の住まい（場への入場）→第二から三の住まい（試練と闘争＝波）→第四の住まい（祈りの質的転換＝縁）→第五から六の住まい（神秘的合一＝渦）→第七の住まい（霊的結婚＝束）。最も強い対応は第七の住まいと「束」の間にあります。マルタとマリアの統合――観想的生活と行為的生活が一つになること――は、「渦どうしが影響し合い構造として残る集まり」としての「束」を、精神的な領域で明瞭に実現しています。ただし、7段階から5段階への圧縮では、テレサが精緻に区別したcontentos/gustosの質的差異が5段階の抽象語に覆い隠される危険があります。この情報の喪失は方法論的な留意点です。
+| Confidence | Theory group | Positioning |
+|------------|-------------|-------------|
+| Strong correspondence | Rambo's 7-stage conversion model, Eliade's sacred and profane, Oxherding Pictures, Bodhisattva ten stages / five paths, Fana/Baqa, Maqamat | The correspondence with the overall 5-stage structure is clear |
+| Partial correspondence | Teresa of Avila's seven mansions, Turner's liminality, Alchemical Magnum Opus | The overall structural correspondence exists, but compression or interpretive leaps remain in the first or second half |
+| Conditional correspondence | James's religious experience | The theory does not present a stage model, so structural correspondence depends on a constructive reading by the analyst |
 
 ---
 
-## 横断的パターン
+## Key Entry 1: Rambo's 7-Stage Conversion Model (Lewis R. Rambo)
 
-- 宗教学・神秘主義を横断して最も繰り返し現れるパターンは、「縁」における努力と恩寵の交錯です
-- 第二に、「束」の二つの型が確認されます
-- 第三に、段階数の多様性そのものが重要な知見です
-
----
-
-## 未解決の問い
-
-- **「縁」における努力と恩寵の関係**: テレサ、スーフィ、仏教で共通に見られる「努力で到達するもの/恩寵として与えられるもの」の区別は、5段階の「縁」にどう反映されるべきでしょうか。「縁」は能動的プロセスか受動的プロセスか――おそらく両方ですが、その統合の仕方は未解決です。
-- **「空」の位置づけ**: 十牛図の「人牛俱忘」とファナーと加行道から見道への転換は、渦に至る過程に「完全な解除」の段階を含んでいます。5段階ではこの「空」は明示されていません。束→場循環の中間に位置するのか、渦の極限なのか、あるいは5段階の外にある別の次元なのかは、対立する解釈が残る問いです。
-- **段階数圧縮の正当性**: 7→5、10→5、100→5の圧縮は構造的に許容されますが、各段階固有の質的差異――テレサの contentos/gustos、加行道の四加行、マカーマートの個別マカーム――が失われます。この情報喪失がどの程度許容可能かは方法論上の課題です。
-- **エリアーデの方法論的批判との自己参照性**: 5段階モデルが宗教的修行階梯との「構造類似」を指摘する方法は、エリアーデの比較宗教学の方法と構造的に同型です。エリアーデが受けてきた「恣意的比較」批判は、5段階モデルにも適用されうるものであり、この自己参照的な緊張は認識しておく必要があります。
+- Rambo described religious conversion as an integrated 7-stage model: context, crisis, quest, encounter, interaction, commitment, and consequences. Presented in his 1993 book *Understanding Religious Conversion*, this model integrates conversion from multiple perspectives — psychological, sociological, and theological — and explicitly states that the stages are interactive rather than sequentially fixed.
+- **As a matter of fact**: Rambo positioned the conversion process as a phenomenon occurring within a "dynamic force field," a conceptual framework influenced by Kurt Lewin's field theory, in which individual inner motivation, social networks, and cultural context constitute the "force field." The 7 stages have the overall structure of "environment → disruption → quest → contact → relational reorganization → convergence → consolidation."
+- **As an interpretation of structure**: Here we attend to the fact that the overall process of transformation can be read as "environment (preconditions) → disruption (turbulence in existing order) → relational reorganization at the boundary → convergence toward a new order → sustained consolidation." The level of similarity is process. Particular attention is given to the point that the concept of "dynamic force field" is explicitly described as the precondition for transformation, and that "encounter" and "interaction" are articulated as the process of establishing and reweaving relationships.
+- **As an interpretive reading**: The overall 7-stage structure shows high correspondence with the 5 stages. "Context" corresponds to Ba as the "dynamic force field" in which conversion occurs. "Crisis + Quest" is the phase in which existing meaning order is shaken and differences emerge, corresponding to Wave. "Encounter + Interaction" is boundary contact with embodied others and relational reorganization, corresponding to En. "Commitment" is convergence through pledge, corresponding to Uzu, and "Consequences" is the sustained consolidation of transformation, corresponding to Taba. The fact that Rambo himself positions conversion as "a process occurring within a dynamic force field" shows that the correspondence with Ba is structural rather than a superficial naming coincidence.
+- It should be noted that in compressing 7 stages to 5, the position of "Quest" is prone to wobble. Whether it is included in Wave or treated as the first half of En changes the reading. "Quest" is the stage of active searching between Wave and En, and can also be read as making explicit what the 5 stages implicitly contain: "the interval between when difference has arisen and when relationship has been established."
 
 ---
 
-## 結論
+## Key Entry 2: Turner's Liminality and Structure/Anti-Structure (Victor Turner)
 
-- 本調査では、宗教学・神秘主義は5段階モデルとの構造類似が全体として高い領域であると確認されました
-- 構造対応が特に強いのは、ランボーの回心7段階（「動的力場」概念が場と構造的に対応）、菩薩十地・五道（加行道が縁の内部構造を精緻に記述）、十牛図（入鄽垂手が束→場循環を図像的に表現）、エリアーデの永劫回帰（束→場循環の文明規模の記述）です
-- 本調査の知見は、「縁」における努力と恩寵の交錯パターン、「束」の持続型/循環型の二面性については有力な温度帯にあると考えられます
+- Turner extended the three phases of rites of passage (separation-threshold-incorporation) proposed by anthropologist van Gennep, and uniquely conceptualized the threshold period (liminality) as "betwixt and between." Presented in his 1969 book *The Ritual Process*, this theory, together with the concept of communitas — the non-structural communality located outside social structure — has become a foundational theory in the anthropology of religion.
+- **As a matter of fact**: Turner presented a dialectical cycle of structure → anti-structure (communitas) → re-structuration. Participants in liminality are placed in a state where existing social classifications are suspended and normal status and roles are stripped away. There are three types of communitas: spontaneous communitas — a direct encounter between people unmediated by structure; normative communitas; and ideological communitas, which becomes progressively institutionalized.
+- **As an interpretation of structure**: Here we read the structure of the "threshold" (kiwa) at which old order is suspended and new relational qualities emerge. The level of similarity is structure, with particular attention to the relational arrangement in which "existing structural distinctions are temporarily lifted, and new relationships are woven within that lifting." The fact that Turner finds sacred and creative value in liminality/communitas itself can be read as the claim that the boundary state is not merely a passage but is itself the source of society's fundamental energy.
+- **As an interpretive reading**: The three phases of separation → threshold → incorporation correspond structurally to the 5-stage "Wave (turbulence, separation) → En (threshold, relationship) → Uzu (arising, incorporation)." The "betwixt and between" state of liminality is a strong realization of En. Furthermore, the dialectical cycle of structure → anti-structure → re-structuration can be connected to the 5-stage Taba → Ba cycle. However, in mapping 3 stages onto 5, the correspondence of "Ba" and "Taba" depends on interpretation. Whether the social structure prior to the ritual is taken as "Ba" or "Taba" can be resolved by reading it as a cyclic model, but this point requires attention.
+
+---
+
+## Key Entry 3: Teresa of Avila's *Interior Castle* — Seven Mansions
+
+- Teresa (1515-1582) used the metaphor of a castle to describe the interior of the human being, and described spiritual progression through seven mansions (moradas). Written in 1577, *El Castillo Interior* (Interior Castle) is a classic work of Christian mysticism, paired with John of the Cross's *Dark Night* as the twin pillars of Spanish mysticism.
+- **As a matter of fact**: The first mansion begins with recognition of the soul's dignity, and it is explicitly stated that "the gate to enter the castle is prayer." The second through third mansions are stages of patience and struggle, continuing the confrontation with forces that obstruct the continuation of practice. A decisive turning point occurs in the fourth mansion. Teresa here made a clear distinction between "consolations (contentos)" and "spiritual delights (gustos)." The former are obtained through human effort; the latter are given by God. This stage, where the prayer of recollection (oración de recogimiento) begins, is the turning point from "active prayer" to "passive prayer." In the fifth through sixth mansions, prayer of union with God, ecstasy (éxtasis), and rapture occur, and trials are most intense in the sixth mansion. In the seventh mansion, spiritual marriage (matrimonio espiritual) is reached, and Teresa speaks of the necessity that Martha and Mary be together — the integration of contemplation and action. Ecstasy disappears, and ordinary acts are conducted in stable peace.
+- **As an interpretation of structure**: Here we read the "qualitative shift from active to passive" in the fourth mansion as a structural turning point in the transformation process. The level of similarity is process, with particular attention to the order of the shift in which "something of a different quality is given beyond the limit of the subject's effort." We also read the integration of contemplation and action in the seventh mansion as the structure in which transformation becomes consolidated into daily life.
+- **As an interpretive reading**: The overall structure of the seven mansions corresponds to the 5 stages. The first mansion (entry into Ba) → the second through third mansions (trials and struggle = Wave) → the fourth mansion (qualitative shift in prayer = En) → the fifth through sixth mansions (mystical union = Uzu) → the seventh mansion (spiritual marriage = Taba). The strongest correspondence is between the seventh mansion and Taba. The integration of Martha and Mary — contemplative life and active life becoming one — clearly realizes Taba as "a gathering where vortices influence each other and remain as structure," in the spiritual domain. However, in compressing 7 stages to 5, there is a danger that the qualitative difference between contentos/gustos that Teresa painstakingly distinguished is concealed under the abstract language of the 5 stages. This loss of information is a methodological point of caution.
+
+---
+
+## Cross-Cutting Patterns
+
+- The pattern that recurs most frequently across religious studies and mysticism is the intertwining of effort and grace in En
+- Second, two types of Taba are confirmed
+- Third, the diversity of stage counts itself is an important finding
+
+---
+
+## Unresolved Questions
+
+- **The relationship between effort and grace in En**: The distinction between "what is reached by effort / what is given as grace" seen commonly in Teresa, Sufism, and Buddhism — how should this be reflected in En of the 5 stages? Whether En is an active or passive process — probably both — but how to integrate them remains unresolved.
+- **The positioning of "emptiness"**: The "forgetting of both person and ox" in the Oxherding Pictures, Fana, and the transition from the path of preparation to the path of seeing all contain a stage of "complete dissolution" in the process leading to Uzu. This "emptiness" is not explicitly present in the 5 stages. Whether it is located between Taba and Ba in the cycle, or is the extreme of Uzu, or is a different dimension outside the 5 stages, is a question with conflicting interpretations remaining.
+- **The legitimacy of compressing stage counts**: Compression from 7→5, 10→5, 100→5 is structurally permissible, but the qualitative differences unique to each stage — Teresa's contentos/gustos, the four preparations of the path of preparation, individual maqams in Maqamat — are lost. How much this loss of information is permissible is a methodological challenge.
+- **Self-referentiality with Eliade's methodological critique**: The method of the 5-stage model pointing to "structural similarities" with religious practice hierarchies is structurally isomorphic with the method of Eliade's comparative religion. The critique of "arbitrary comparison" that Eliade has faced is applicable to the 5-stage model as well, and this self-referential tension needs to be recognized.
+
+---
+
+## Conclusion
+
+- This survey confirmed that religious studies and mysticism is a domain with overall high structural similarity to the 5-stage model
+- The structural correspondence is particularly strong in: Rambo's 7-stage conversion model (the "dynamic force field" concept corresponds structurally to Ba), Bodhisattva ten stages/five paths (the path of preparation describes the internal structure of En in detail), the Oxherding Pictures (the "entering the world with helping hands" pictorially expresses the Taba → Ba cycle), and Eliade's eternal return (a civilization-scale description of the Taba → Ba cycle)
+- The findings of this survey are considered to be in the compelling confidence band regarding the intertwining pattern of effort and grace in En, and the dual nature of Taba as persistent/cyclic

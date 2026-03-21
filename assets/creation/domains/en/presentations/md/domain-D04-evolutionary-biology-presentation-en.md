@@ -1,6 +1,6 @@
 ---
-title: "進化生物学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Evolutionary Biology - Structural Correspondence with the 5-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,89 +8,89 @@ source: "domain-D04-evolutionary-biology-academic-ja.md"
 type: presentation
 ---
 
-## 進化生物学
+## Evolutionary Biology
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 進化生物学の主要理論 10件
-- **調査の問い**: 進化生物学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 条件付きの対応 1件
+A structural correspondence study with the 5-Stage Model (Field · Wave · Edge · Vortex · Bundle)
 
 ---
 
-## 5段階モデルの概要
+## Overview of the Study
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Scope**: 10 major theories in evolutionary biology
+- **Research question**: Do evolutionary biology theories correspond structurally with the 5-Stage Model?
+- **Results**: Conditional correspondence in 1 case
 
 ---
 
-## 構造対応の全体像
+## Overview of the 5-Stage Model
 
-| 温度 | 理論群 | 位置づけ |
+| Stage | Definition |
+|-------|-----------|
+| Field (ba) | Undifferentiated state. The initial condition in which neither direction nor structure has yet been determined |
+| Wave (nami) | The stage of exploration in which multiple directions diverge and compete |
+| Edge (en) | A state of tension in which opposing elements coexist without converging on either side. The place where they meet at a boundary, influence each other, and relationships emerge |
+| Vortex (uzu) | The stage in which new coherence (order) spontaneously arises from within the tension |
+| Bundle (taba) | The stage in which form is fixed and stabilizes as a reusable structure |
+
+---
+
+## Overview of Structural Correspondences
+
+| Confidence | Theory Group | Positioning |
 |---|---|---|
-| 確定に近い | 自然選択+中立説、発生可塑性・遺伝的収容、ハイブリッドゾーン、内共生 | 5段階全体に対して具体的な対応が確認されます |
-| 有力 | 断続平衡説、拡張進化的総合説（EES）、共進化とRed Queen仮説、水平遺伝子移動 | 対応はありますが、特定の段階に議論の焦点があります |
-| 条件つき | ニッチ構築、適応放散 | 対応は確認されますが、5段階全体の生成過程というよりは特定の構造パターン（循環性や空白からの創造）に対応が集中します |
+| Near-certain | Natural selection + neutral theory, developmental plasticity and genetic accommodation, hybrid zones, endosymbiosis | Concrete correspondences are confirmed across all 5 stages |
+| Promising | Punctuated equilibrium, Extended Evolutionary Synthesis (EES), coevolution and Red Queen hypothesis, horizontal gene transfer | Correspondence exists, but the focus of debate is concentrated on particular stages |
+| Conditional | Niche construction, adaptive radiation | Correspondence is confirmed, but it is concentrated on specific structural patterns (circularity or creation from a blank slate) rather than the generative process of all 5 stages |
 
 ---
 
-## 主要エントリ 1: 自然選択と中立説（Darwin / Fisher / Kimura / Ohta）
+## Key Entry 1: Natural Selection and Neutral Theory (Darwin / Fisher / Kimura / Ohta)
 
-- 自然選択は、変異・遺伝・適応度差の三条件が揃ったときに作動するメカニズムです。Darwinが1859年に提唱し、1930〜50年代の現代総合説でMendel遺伝学と統合されました。木村資生の中立説（1968年）は、分子レベルの進化変化の多くは自然選択ではなく遺伝的浮動によるとする理論です。太田朋子のほぼ中立説（1973年）はこれをさらに精緻化し、弱い選択効果（|N_e s| が1程度以下の変異）は集団サイズに依存して中立的に振る舞うことを示しました。
-- **事実として**: 突然変異はDNA複製・修復・組換えなどの過程で生じます。新生変異の多くは中立から弱有害であり、強い有害変異は浄化選択で除去されます。有益変異は相対的に稀ですが、条件次第で選択により集団に固定されることがあります。遺伝子重複は新機能進化の素材になりえますが、多くは失活・欠失します。保存される場合も、新機能化（neofunctionalization）だけでなくサブ機能化（subfunctionalization）など複数のメカニズムが提案されています。
-- **読み取りとして**: ここでは、変異の供給から選択・浮動を経て固定に至る段階的なプロセスを読み取ります。類似の水準はプロセスです。特に、変異が棄却されずに保持され、後に新しい機能の素材となるという順序構造に注目します。中立的な遺伝子重複が後に新機能化するパターンは、「棄却されなかった変異が創造の素材になる」という構造を分子レベルで実証しています。
-- **解釈として**: 遺伝的・表現型的多様性のプールが場に対応します。環境圧によって適応度差が顕在化する局面が波です。この理論では縁の対応は背景的であり、交配・競争・共生などの個体間相互作用がそれにあたります。適応形質を持つ系統の拡大が渦、形質分布や種特性としての定着が束に対応します。この理論は5段階の基盤構造——変異の供給（場）から定着（束）への流れ——を最もデータが厚い形で示す理論です。
-
----
-
-## 主要エントリ 2: 断続平衡説（Eldredge & Gould）
-
-- Eldredge と Gould が1972年に提唱した理論です。形態進化は長い停滞期（stasis）と短い急速変化の組み合わせで進む、という主張を化石記録から導きました。従来の漸進主義——進化は緩やかで連続的に進む——に対して、「化石記録の不連続は記録の不完全さではなく、進化の実態を正しく映している」という認識論的反転を提起した点が重要です。
-- **事実として**: 化石記録において、多くの系統で長い形態的停滞（10万〜1000万年規模）と短い急速変化（1000〜10万年規模）のパターンが文書化されています。停滞は安定化選択や発生的制約による方向性のない変動で維持されます。急速変化は周辺の隔離集団での異所的種分化として説明されます。ただし、すべての系統でこのパターンが普遍的かどうかは議論が続いており、漸進的なパターンも存在することから「スペクトル」として扱う見解もあります。
-- **読み取りとして**: ここでは、安定と急変のリズム構造、および「中心ではなく周辺で新しいものが生まれる」という空間的パターンを読み取ります。類似の水準はプロセスであり、特に停滞→急変という時間的リズムと、周辺隔離集団という空間的境界性に注目します。
-- **解釈として**: 形態停滞期の基盤集団が場です。環境変動や地理的隔離によって変化圧が上昇する局面が波です。周辺隔離集団と母集団の地理的・遺伝的境界——種分化が起こる場所——が縁に対応します。新形態の急速な成立（地質学的には「瞬間」にあたる1000〜10万年）が渦、新種としての安定が束です。束がそのまま次の停滞期の場に回帰する点が、この理論の構造的特徴です。
+- Natural selection is a mechanism that operates when three conditions — variation, heredity, and fitness differences — are all present. Proposed by Darwin in 1859 and integrated with Mendelian genetics in the Modern Synthesis of the 1930s–50s. Motoo Kimura's neutral theory (1968) holds that most evolutionary change at the molecular level is due not to natural selection but to genetic drift. Tomoko Ohta's nearly neutral theory (1973) refined this further, showing that weakly selected mutations (|N_e s| on the order of 1 or less) behave neutrally depending on population size.
+- **As fact**: Mutations arise during processes such as DNA replication, repair, and recombination. Most new mutations are neutral to weakly deleterious, and strongly deleterious mutations are removed by purifying selection. Beneficial mutations are relatively rare but can become fixed in a population through selection, depending on conditions. Gene duplication can serve as raw material for the evolution of new functions, but most duplicates are inactivated or deleted. Even when preserved, multiple mechanisms are proposed — not only neofunctionalization but also subfunctionalization.
+- **As reading**: Here we read the stepwise process from the supply of variation through selection and drift to fixation. The level of analogy is process. We attend in particular to the sequential structure in which variation is retained rather than discarded and later becomes raw material for new function. The pattern in which a neutrally duplicated gene later undergoes neofunctionalization demonstrates at the molecular level the structure in which "variation that was not discarded becomes the material for creation."
+- **As interpretation**: A pool of genetic and phenotypic diversity corresponds to Field. The phase in which fitness differences become manifest under environmental pressure corresponds to Wave. In this theory, Edge is background in nature — interactions between individuals such as mating, competition, and symbiosis correspond to it. The expansion of lineages with adaptive traits corresponds to Vortex, and the establishment of trait distributions or species characteristics corresponds to Bundle. This theory presents the foundational structure of all 5 stages — the flow from supply of variation (Field) to fixation (Bundle) — with the thickest supporting data.
 
 ---
 
-## 主要エントリ 3: 発生可塑性と遺伝的収容（West-Eberhard / Waddington）
+## Key Entry 2: Punctuated Equilibrium (Eldredge & Gould)
 
-- 発生可塑性とは、同一の遺伝子型が環境条件に応じて複数の表現型を産み出す性質です。West-Eberhard（2003年）が体系化し、Waddingtonの遺伝的同化実験（1953年）がその先駆として知られます。遺伝的同化とは、環境によって誘導された形質が、選択を経て遺伝的に安定化する現象です。さらに広い概念として遺伝的収容があります。
-- **事実として**: 表現型可塑性では、遺伝子型と環境の相互作用（G×E）によって、同一の遺伝子型から異なる表現型が産出されます。Waddingtonの1953年の実験では、熱ショックで誘導した表現型が、選択を繰り返すことで熱ショックなしでも発現するようになりました。また、deep homologyの研究は、Pax6やHoxなど共通の発生遺伝子セットから多様な構造が独立に生成可能であることを示しています。
-- **読み取りとして**: ここでは、環境が発生の境界条件として表現型を切り替える閾値構造を読み取ります。類似の水準はメカニズムです。特に、G×E相互作用という遺伝子型と環境の界面に注目し、この界面が「どの変異が可視化されるか」を環境側から偏らせる構造を捉えます。
-- **解釈として**: 発生システムの可能空間——可塑的応答のレパートリー——が場に対応します。deep homologyはこの場の深層構造です。環境刺激による可塑的応答の誘導が波、G×E相互作用の界面——環境が発生の境界条件となり、閾値を越えると別の表現型が発現する——が縁です。新規表現型の発現と集団内での広がりが渦、遺伝的収容による固定化が束に対応します。可塑性から固定への移行という段階性が、5段階に直接的に対応する構造です。
-
----
-
-## 横断的パターン
-
-- 進化生物学を横断して最も顕著なパターンは、「縁」の機能多様性です
-- **維持される縁**: ハイブリッドゾーンでは、cline width で測定される厚みを保ちながら境界が安定的に存続します
-- **駆動する縁**: Red Queen仮説では、種間境界が選択圧を生成し続ける動的な装置として機能します
-- **融合する縁**: 内共生では、境界（細胞膜）が消失することによって新しい階層が創発します
+- A theory proposed by Eldredge and Gould in 1972. Drawing from the fossil record, they argued that morphological evolution proceeds as a combination of long periods of stasis and brief episodes of rapid change. What was important was an epistemological reversal against traditional gradualism — the view that evolution proceeds slowly and continuously — arguing that "the discontinuities in the fossil record reflect the actuality of evolution rather than imperfections in the record."
+- **As fact**: In the fossil record, patterns of long morphological stasis (on the scale of 100,000 to 10 million years) and rapid change (on the scale of 1,000 to 100,000 years) have been documented in many lineages. Stasis is maintained by stabilizing selection and undirected variation under developmental constraints. Rapid change is explained as allopatric speciation in peripheral isolated populations. However, whether this pattern is universal across all lineages continues to be debated, and because gradual patterns also exist, some view it as a "spectrum."
+- **As reading**: Here we read the rhythmic structure of stability and sudden change, and the spatial pattern that "new things are born not at the center but at the periphery." The level of analogy is process, and we attend particularly to the temporal rhythm of stasis → rapid change and to the spatial boundary nature of peripheral isolated populations.
+- **As interpretation**: The base population during periods of morphological stasis corresponds to Field. The phase in which the pressure for change increases due to environmental fluctuation or geographic isolation corresponds to Wave. The geographic and genetic boundary between the peripheral isolated population and the parent population — the place where speciation occurs — corresponds to Edge. The rapid establishment of new morphology (1,000–100,000 years, a "geological instant") corresponds to Vortex, and stabilization as a new species to Bundle. A structural feature of this theory is that Bundle loops back to become the Field of the next stasis period.
 
 ---
 
-## 未解決の問い
+## Key Entry 3: Developmental Plasticity and Genetic Accommodation (West-Eberhard / Waddington)
 
-- 「縁」の四パターン（維持・駆動・融合・生成）は、進化生物学に固有の多様性なのか、それとも他の領域でも同様に確認されるのかは、横断的な検証が必要です。
-- 場に「種類」があるという知見——共同体的場と個体化した場の区別——を5段階モデルにどう反映するかは、未整理です。場が単なる「未分化な初期条件」を超えて質的な多様性を持つならば、モデルの前半部分を拡張する必要が生じます。
-- Red Queen仮説が示す「束が安定しない」パターンをどう扱うかは開かれた問いです。束を「暫定的安定」として定義し直すのか、それとも束に至らない循環を別のカテゴリとして扱うのかの判断が必要です。
-- 進化生物学における構造対応を論じる際、自然選択に意図がないという基本的事実と、5段階モデルの各局面を「プロセス」として記述することの間にある緊張は、常に意識しておくべき方法論的課題です。
+- Developmental plasticity is the property by which the same genotype produces multiple phenotypes depending on environmental conditions. West-Eberhard (2003) systematized this concept, and Waddington's genetic assimilation experiments (1953) are known as its precursor. Genetic assimilation is the phenomenon in which an environmentally induced trait becomes genetically stabilized through selection. The broader concept is genetic accommodation.
+- **As fact**: In phenotypic plasticity, different phenotypes are produced from the same genotype through genotype-by-environment interaction (G×E). In Waddington's 1953 experiments, a phenotype induced by heat shock came to be expressed without heat shock after repeated selection. Furthermore, research on deep homology shows that diverse structures can be independently generated from a shared set of developmental genes such as Pax6 and Hox.
+- **As reading**: Here we read the threshold structure in which environment, acting as a boundary condition on development, switches phenotypes. The level of analogy is mechanism. We attend in particular to the G×E interface — the interface between genotype and environment — and capture the structure in which this interface biases "which mutations become visible" from the environmental side.
+- **As interpretation**: The space of possibility for the developmental system — the repertoire of plastic responses — corresponds to Field. Deep homology is the deep structure of this Field. The induction of plastic responses by environmental stimulation corresponds to Wave; the G×E interface — in which environment acts as a boundary condition on development, and exceeding a threshold causes a different phenotype to be expressed — corresponds to Edge. The expression of novel phenotypes and their spread within the population corresponds to Vortex, and fixation through genetic accommodation to Bundle. The staged progression from plasticity to fixation is a structure that directly corresponds to the 5 stages.
 
 ---
 
-## 結論
+## Cross-Cutting Patterns
 
-- 本調査では、進化生物学は5段階モデルとの構造類似が全体として強い領域であることが確認されました
-- 確定的に近いのは、自然選択+中立説（変異→選択→固定の基盤構造）、発生可塑性と遺伝的収容（G×Eの閾値構造と段階的固定化）、ハイブリッドゾーン（縁の定量化と二つの帰結）、内共生（境界消失による階層創発）です
-- 進化生物学から得られる最大の示唆は、「縁」が単一の機能ではなく少なくとも四つのパターンを示すこと、そして「束」が次の「場」の前提を書き換える循環構造が理論の中核に位置することです
+- The most prominent cross-cutting pattern in evolutionary biology is the functional diversity of "Edge"
+- **Maintained Edge**: In hybrid zones, the boundary persists stably while maintaining a thickness measurable by cline width
+- **Driving Edge**: In the Red Queen hypothesis, the inter-species boundary functions as a dynamic device that continuously generates selection pressure
+- **Fusing Edge**: In endosymbiosis, a new hierarchy emerges precisely through the disappearance of the boundary (cell membrane)
+
+---
+
+## Open Questions
+
+- Whether the four patterns of "Edge" (maintained, driving, fusing, generating) are distinctive to evolutionary biology or are similarly confirmed in other domains requires cross-domain verification.
+- How to reflect in the 5-Stage Model the finding that Field has "types" — a distinction between communal Fields and individuated Fields — remains unresolved. If Field possesses qualitative diversity beyond a mere "undifferentiated initial condition," the need arises to expand the first half of the model.
+- How to handle the pattern shown by the Red Queen hypothesis — where "Bundle does not stabilize" — is an open question. A decision is needed on whether to redefine Bundle as "provisional stability," or to treat cycles that do not reach Bundle as a separate category.
+- When discussing structural correspondences in evolutionary biology, the methodological tension between the basic fact that natural selection has no intention and describing each phase of the 5-Stage Model as a "process" should always be kept in mind.
+
+---
+
+## Conclusion
+
+- This study confirms that evolutionary biology is overall a domain in which structural similarity with the 5-Stage Model is strong
+- Near-certain are: natural selection + neutral theory (the foundational structure of variation → selection → fixation), developmental plasticity and genetic accommodation (the threshold structure of G×E and staged fixation), hybrid zones (quantification of Edge and its two possible outcomes), and endosymbiosis (hierarchical emergence through disappearance of boundary)
+- The greatest insight from evolutionary biology is that "Edge" exhibits not a single function but at least four patterns, and that the cyclic structure in which "Bundle" rewrites the premises of the next "Field" occupies a central position in the theories

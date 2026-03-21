@@ -1,6 +1,6 @@
 ---
-title: "伝統知 - 5段階モデルとの構造対応"
-lang: ja
+title: "Traditional Knowledge - Structural Correspondence with the 5-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,96 +8,96 @@ source: "domain-D30-traditional-knowledge-academic-ja.md"
 type: presentation
 ---
 
-## 伝統知
+## Traditional Knowledge
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 伝統知の主要理論 10件
-- **調査の問い**: 伝統知の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 4件、部分的な対応 5件、条件付きの対応 1件
+Survey of Structural Correspondence with the 5-Stage Model (Ba / Nami / En / Uzu / Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
+- **Subject**: 10 major theories of traditional knowledge
+- **Research question**: Do the various theories of traditional knowledge correspond structurally to the 5-stage model?
+- **Findings**: 4 cases of strong correspondence, 5 cases of partial correspondence, 1 case of conditional correspondence
+
+---
+
+## Overview of the 5-Stage Model
+
+| Stage | Definition |
 |------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+| Ba (Field) | An undifferentiated state. Initial conditions in which no direction or structure has yet been established |
+| Nami (Wave) | A stage of exploration in which multiple directions diverge and compete |
+| En (Edge) | A state of tension in which opposing elements coexist without converging on either side. The place where boundaries touch, mutual influence occurs, and relationships emerge |
+| Uzu (Vortex) | The stage in which a new coherence (order) spontaneously arises from within the tension |
+| Taba (Bundle) | The stage in which form is confirmed and stabilizes as a reusable structure |
 
 ---
 
-## 構造対応の全体像
+## Overview of Structural Correspondence
 
-| # | 理論/概念 | 提唱者 | 対応段階 | 判定 |
+| # | Theory/Concept | Proponent | Corresponding Stages | Assessment |
 |---|----------|--------|---------|------|
-| 1 | 伝統的生態学的知識（TEK） | Berkes, Colding & Folke | 場・波・縁・渦・束 | 強い対応 |
-| 2 | 正統的周辺参加（LPP） | Lave & Wenger | 場・波・縁・渦・束 | 部分的な対応 |
-| 3 | 一座建立 | 世阿弥、山上宗二 | 場・波・縁・渦・束 | 強い対応 |
-| 4 | 守破離 | 芸道伝統 | 波・縁・渦・束 | 部分的な対応 |
-| 5 | 杜氏の技能伝承（獺祭事例） | 旭酒造事例 | 場・波・縁・渦・束 | 強い対応 |
-| 6 | 口承伝統 | Ong, Vansina | 場・波・縁・渦・束 | 部分的な対応 |
-| 7 | メーティス（実践的知恵） | Scott, Sillitoe | 場・波・縁・渦・束 | 部分的な対応 |
-| 8 | わざの知・職人技能 | 生田久美子、Sennett | 場・波・縁・渦・束 | 部分的な対応 |
-| 9 | 里山ランドスケープ | Takeuchi et al., SATOYAMA Initiative | 場・波・縁・渦・束 | 強い対応 |
-| 10 | 民俗芸能の伝承 | 本田安次 | 場・波・縁・渦・束 | 条件付きの対応 |
+| 1 | Traditional Ecological Knowledge (TEK) | Berkes, Colding & Folke | Ba・Nami・En・Uzu・Taba | Strong correspondence |
+| 2 | Legitimate Peripheral Participation (LPP) | Lave & Wenger | Ba・Nami・En・Uzu・Taba | Partial correspondence |
+| 3 | Ichiza-Konryuu (One-sitting establishment) | Zeami, Yamanoue Soji | Ba・Nami・En・Uzu・Taba | Strong correspondence |
+| 4 | Shu-Ha-Ri | Arts transmission tradition | Nami・En・Uzu・Taba | Partial correspondence |
+| 5 | Toji Skill Transmission (Dassai case) | Asahi Shuzo case | Ba・Nami・En・Uzu・Taba | Strong correspondence |
+| 6 | Oral Tradition | Ong, Vansina | Ba・Nami・En・Uzu・Taba | Partial correspondence |
+| 7 | Metis (Practical Wisdom) | Scott, Sillitoe | Ba・Nami・En・Uzu・Taba | Partial correspondence |
+| 8 | Waza-no-chi / Artisanal Skill | Ikuta Kumiko, Sennett | Ba・Nami・En・Uzu・Taba | Partial correspondence |
+| 9 | Satoyama Landscape | Takeuchi et al., SATOYAMA Initiative | Ba・Nami・En・Uzu・Taba | Strong correspondence |
+| 10 | Transmission of Folk Performing Arts | Honda Yasuji | Ba・Nami・En・Uzu・Taba | Conditional correspondence |
 
 ---
 
-## 主要エントリ 1: 伝統的生態学的知識（TEK）（Berkes, Colding & Folke, 2000）
+## Major Entry 1: Traditional Ecological Knowledge (TEK) (Berkes, Colding & Folke, 2000)
 
-- TEKとは、世代を超えて文化的に伝達され、適応的プロセスの中で進化する知識・実践・信念の累積体です。Berkes, Colding & Folke（2000）はこれを「knowledge-practice-belief complex」と定義し、複数種管理、資源ローテーション、遷移管理、景観パッチ性管理を含む適応的管理実践を記述しました。Huntington（2000）は、TEKが口承中心で記録化しにくいという実務上の障壁を指摘しています。
-- **事実として**: Berkes らの記述によれば、TEKは観察、解釈、応答、制度化、環境フィードバックによる更新というサイクルで構成されます。知識は権利・領土・コスモロジーと不可分であり、単なる技術知ではなく、存在論的な厚みを持つ体系です。
-- **読み取りとして**: ここでは、TEKの適応的管理サイクルの中に、段階的な知の生成構造を読み取ります。類似の水準はプロセスです。特に、観察から解釈へ、解釈から応答へという移行の中に、関係的な知の編成と実践のまとまりの形成が含まれている点に着目します。
-- **解釈として**: TEKの適応的管理サイクルは5段階と構造的に対応します。生活実践が埋め込まれた社会-生態系が場を構成し、資源変動や異常気象といった環境パルスが波として差異を顕在化させます。経験者による兆候の比較と因果連関の編成が縁として成立し、採取規則の変更や禁忌・輪番制・パッチ管理が渦として応答実践のまとまりを形成します。そして、制度・規範・世界観への沈殿と世代間伝達が束として機能します。特筆すべきは、束が環境フィードバックに応じて動的に更新される点であり、束を固定的な到達点ではなく循環的に更新される構造として理解する必要性を示しています。
-
----
-
-## 主要エントリ 2: 一座建立（世阿弥『風姿花伝』、山上宗二『山上宗二記』）
-
-- 一座建立とは、能楽や茶道における「座が立つ」ことを指す概念です。世阿弥は『風姿花伝』で「衆人愛敬」をもって「一座建立の寿福」とし、一座の成立を芸能の中核概念として位置づけました。『山上宗二記』には、露地へ入ってから出るまでを「一期に一度」の会として扱う趣旨が記されています。近年の実証的研究では、亭主と未経験者の間でも「場の共創」が成立し、それが一座建立に相当すると整理されています。
-- **事実として**: 一座建立は、個人の技能でも知識でもなく、主客の関係性の中から創発する集合的経験です。茶事においては、露地・茶室・道具・設えが前提空間を構成し、席入りによって非日常的な空間が生まれ、主客の所作・沈黙・最小限の言語を媒介とした交流の中から「この座が成立した」という一体感が生じます。
-- **読み取りとして**: ここでは、一座建立の過程に、集団的な創発の段階的構造を読み取ります。類似の水準は構造であり、特に「関係的交流から集合的一体感への創発」という配置に注目します。座の成立は個人の意図や計画によって制御されるものではなく、参加者間の相互作用から自発的に立ち上がるものとして記述されています。
-- **解釈として**: この過程は5段階に対応します。露地・茶室・道具・設えが場としての前提空間を構成し、席入りによる非日常性と作法の不確実性が波としての緊張を生みます。主客の所作・沈黙・道具の意味づけを媒介とした交流が縁として関係を編み、「この座が成立した」という一体感が渦として創発します。そしてその経験が一会としての記憶化・規範化を通じて束となり、次の場の構造へと残ります。この過程で特に際立つのは、縁から渦への移行が「関係的交流から集合的一体感への創発」として極めて鮮明に現れる点です。
+- TEK is a cumulative body of knowledge, practices, and beliefs that is culturally transmitted across generations and evolves through adaptive processes. Berkes, Colding & Folke (2000) defined it as a "knowledge-practice-belief complex" and described adaptive management practices including multi-species management, resource rotation, succession management, and landscape patch management. Huntington (2000) pointed to the practical barrier that TEK is orally centered and difficult to document.
+- **As fact**: According to the description by Berkes et al., TEK is composed of a cycle of observation, interpretation, response, institutionalization, and updating through environmental feedback. Knowledge is inseparable from rights, territory, and cosmology; it is a system with ontological depth, not merely technical knowledge.
+- **As reading**: Here we read in the adaptive management cycle of TEK a staged structure of knowledge generation. The level of analogy is process. In particular, we pay attention to the fact that the transitions from observation to interpretation, and from interpretation to response, involve the formation of relational knowledge organization and the formation of coherent practical wholes.
+- **As interpretation**: The adaptive management cycle of TEK corresponds structurally to the 5 stages. The socio-ecological system in which life practices are embedded constitutes Ba; environmental pulses such as resource variation and abnormal weather make differences manifest as Nami; the comparison of signs by experienced practitioners and the compilation of causal linkages constitute En; changes in harvesting rules and the formation of coherent response practices through taboos, rotation systems, and patch management form Uzu; and the sedimentation into institutions, norms, and worldviews and intergenerational transmission function as Taba. Of particular note is that Taba is dynamically updated in response to environmental feedback, demonstrating the need to understand Taba not as a fixed endpoint but as a cyclically updated structure.
 
 ---
 
-## 主要エントリ 3: 里山ランドスケープ（Takeuchi et al., SATOYAMA Initiative）
+## Major Entry 2: Ichiza-Konryuu (Zeami's Fushikaden; Yamanoue Soji-ki)
 
-- 里山とは、日本における人間の集落（里）と山林（山）の接続帯で形成される社会-生態学的生産景観です。Takeuchi らが景観生態学の文脈で体系化し、2010年のCBD COP10（名古屋）でSATOYAMA Initiativeとして国際的枠組みに組み込まれました。里山景観はモザイク状の土地利用（水田・雑木林・草地・溜池など）から構成され、撹乱（刈り取り・火入れ・伐採など）による遷移の管理が生物多様性を維持する機構として記述されます。
-- **事実として**: 里山の語義そのものが「里」と「山」の境界を指します。この接続帯では、人為的な撹乱管理がモザイク的な景観を維持しており、管理放棄（撹乱の欠如）は遷移の進行を招き、景観の多様性が失われることが確認されています。
-- **読み取りとして**: ここでは、里山の景観管理構造の中に、境界の維持と撹乱を通じた秩序の生成メカニズムを読み取ります。類似の水準は構造であり、「里と山の接続帯」という空間的配置そのものが、複数要素の相互作用を生む場として機能している点に着目します。
-- **解釈として**: 里山は5段階との対応が際立って明瞭な事例です。人と自然が絡む社会-生態系が場を構成し、季節変動や人為的撹乱（火入れ・伐採・刈り取りなど）が波として差異を生みます。里と山の接続帯で複数要素が相互作用することが縁として機能し、維持された景観モザイク（水田・雑木林・草地・溜池の共存）が渦としてのまとまりを形成します。管理制度・生態暦・入会権が束として世代を超えて伝達されます。里山が示す重要な洞察は、「管理された撹乱」が秩序の条件であるという点です。波が停止する（撹乱が失われる）と、渦としてのモザイク性も失われます。
-
----
-
-## 横断的パターン
-
-- 伝統知・技芸の領域を横断して、三つの構造的パターンが繰り返し現れます
-- **第一に、反復の中にある生成です
-- **第二に、束の動態性です
-- **第三に、縁の関係性です
+- Ichiza-konryuu is a concept referring to the "establishment of the za (assembly/sitting)" in Noh theater and the tea ceremony. In the Fushikaden, Zeami positioned the establishment of the ichiza (assembly) as a core concept of the performing arts, equating "shujin aikyo" (collective empathy of the audience) with "ichiza-konryuu no jufuku" (the good fortune of the established assembly). The Yamanoue Soji-ki records the intent to treat the encounter from entering the roji path to leaving it as a once-in-a-lifetime meeting. Recent empirical research has shown that "co-creation of the field" is established even between a host and an inexperienced guest, and that this is equivalent to ichiza-konryuu.
+- **As fact**: Ichiza-konryuu is not an individual's skill or knowledge, but a collective experience that emerges from within the relationship between host and guest. In a tea ceremony, the roji path, the tearoom, the implements, and the arrangement constitute a prerequisite space; through the entry into the room, a non-everyday space is created; and from the exchange mediated by the host and guest's movements, silences, and minimal language, a sense of unity — "this assembly has been established" — arises.
+- **As reading**: Here we read in the process of ichiza-konryuu a staged structure of collective emergence. The level of analogy is structure, with particular attention to the arrangement of "emergence from relational exchange to collective unity." The establishment of the za is described not as something controlled by the intentions or plans of individuals but as something that spontaneously arises from the interactions among participants.
+- **As interpretation**: This process corresponds to the 5 stages. The roji path, tearoom, implements, and arrangement constitute the prerequisite space as Ba; the non-everydayness and uncertainty of etiquette through entering the room generate tension as Nami; the exchange mediated by the host and guest's movements, silences, and the significance of implements weaves relationships as En; the sense of unity that "this assembly has been established" emerges as Uzu; and that experience becomes Taba through its memorization as a one-time meeting and its normalization, remaining as the structure for the next occasion. What is especially prominent in this process is that the transition from En to Uzu appears with particular clarity as "the emergence from relational exchange to collective unity."
 
 ---
 
-## 未解決の問い
+## Major Entry 3: Satoyama Landscape (Takeuchi et al., SATOYAMA Initiative)
 
-- 守破離の語源帰属は学術的に議論があります。世阿弥に直接帰属するかどうかの用語史的精査が未完了であり、原典の校訂が必要です。
-- TEKの参照に関して、本調査は構造類似の指摘であり知識内容の抽出・転用ではありませんが、FPIC（自由意思による事前の情報に基づく同意）原則への配慮として、公開時に参照範囲と目的を明示する必要があります。
-- 5段階モデルは「場→波→縁→渦→束」という順序構造を持ちますが、伝統知における創造は本質的に循環的・反復的です。束から場への回帰の循環性を5段階の記述にどう組み込むかは未解決の理論的課題です。
-- メーティス（Scott）とTEKは概念的に重複する部分が大きく、いずれも地域固有の実践知を扱います。本調査では国家との対比（Scott）と環境管理（Berkes）という異なる焦点で区別しましたが、両者を統合可能な枠組みがあるかどうかは検討の余地があります。
+- Satoyama refers to a socio-ecological production landscape formed in the connecting zone between human settlements (sato) and woodland/mountains (yama) in Japan. Takeuchi et al. systematized it in the context of landscape ecology, and it was incorporated into an international framework as the SATOYAMA Initiative at CBD COP10 (Nagoya) in 2010. The satoyama landscape is composed of a mosaic of land uses (paddy fields, secondary forests, grasslands, irrigation ponds, etc.), and management of succession through disturbance (mowing, burning, logging, etc.) is described as a mechanism that maintains biodiversity.
+- **As fact**: The etymology of satoyama itself refers to the boundary between "sato" and "yama." In this connecting zone, human disturbance management maintains a mosaic landscape, and it has been confirmed that the cessation of management (absence of disturbance) leads to the progression of succession and the loss of landscape diversity.
+- **As reading**: Here we read in the landscape management structure of satoyama a mechanism for generating order through the maintenance of boundaries and disturbance. The level of analogy is structure, with attention to the fact that the spatial arrangement of the "connecting zone between sato and yama" itself functions as a space in which multiple elements interact.
+- **As interpretation**: Satoyama is a case in which correspondence with the 5 stages is outstandingly clear. The socio-ecological system involving humans and nature constitutes Ba; seasonal variation and human disturbances (burning, logging, mowing, etc.) generate difference as Nami; the interaction of multiple elements in the connecting zone between sato and yama functions as En; the maintained landscape mosaic (coexistence of paddy fields, secondary forests, grasslands, and irrigation ponds) forms coherence as Uzu; and management institutions, ecological calendars, and common-use rights are transmitted across generations as Taba. The important insight shown by satoyama is that "managed disturbance" is a condition of order. When Nami stops (disturbance is lost), the mosaic quality of Uzu is also lost.
 
 ---
 
-## 結論
+## Cross-Domain Patterns
 
-- 本調査では、伝統知・技芸は5段階モデルとの構造類似が全体として強い領域であると確認されました
-- この領域から得られる最大の示唆は、伝統知における創造が「反復の中にある生成」として現れるという点です
-- 本調査の知見は有力から仮説の温度帯に分布しています
+- Three structural patterns recur across the domain of traditional knowledge and arts
+- **First, generation within repetition**
+- **Second, the dynamism of Taba**
+- **Third, the relationality of En**
+
+---
+
+## Unresolved Questions
+
+- The attribution of the etymology of Shu-Ha-Ri is academically debated. The philological investigation of whether it can be directly attributed to Zeami is incomplete, and collation of primary texts is needed.
+- Regarding the reference to TEK, this survey is a structural analogy and not an extraction or transfer of knowledge content, but out of consideration for the FPIC (Free, Prior and Informed Consent) principle, it is necessary to explicitly state the scope and purpose of reference at the time of publication.
+- The 5-stage model has a sequential structure of "Ba→Nami→En→Uzu→Taba," but creation in traditional knowledge is essentially cyclic and iterative. How to incorporate the cyclic nature of the return from Taba to Ba into the description of the 5 stages is an unresolved theoretical challenge.
+- Metis (Scott) and TEK have considerable conceptual overlap; both deal with locally specific practical knowledge. This survey distinguished them by different focal points — contrast with the state (Scott) and environmental management (Berkes) — but whether there is a framework capable of integrating the two remains open to examination.
+
+---
+
+## Conclusion
+
+- This survey confirmed that traditional knowledge and arts is, as a whole, a domain for which structural analogy with the 5-stage model is strong
+- The greatest insight gained from this domain is that creation in traditional knowledge appears as "generation within repetition"
+- The findings of this survey are distributed across the confidence range from probable to hypothesis
