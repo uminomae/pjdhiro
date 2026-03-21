@@ -1,5 +1,5 @@
 ---
-title: "Clinical Immunology - Structural Correspondence with the Five-Stage Model"
+title: "Clinical Immunology - Structural Correspondence with the 5-Stage Model"
 lang: en
 version: "1.0"
 date: "2026-03-21"
@@ -10,97 +10,97 @@ type: presentation
 
 ## Clinical Immunology
 
-Structural correspondence survey with the five-stage model (Field · Wave · Edge · Vortex · Bundle)
+Survey of structural correspondence with the 5-stage model (Field · Wave · Edge · Vortex · Bundle)
 
 ---
 
 ## Survey Overview
 
-- **Survey targets**: 10 major theories in clinical immunology
-- **Research question**: Do the theories of clinical immunology correspond structurally to the five-stage model?
+- **Scope**: 10 major theories in clinical immunology
+- **Research question**: Do clinical-immunology theories correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 8 cases, partial correspondence in 2 cases
 
 ---
 
-## Overview of the Five-Stage Model
+## Overview of the 5-Stage Model
 
 | Stage | Definition |
-|-------|-----------|
-| Field (ba) | An undifferentiated state. The initial condition in which no direction or structure has yet been established |
-| Wave (nami) | The stage of exploration in which multiple directions diverge and compete |
-| Edge (en) | A state of tension in which opposing elements coexist without converging toward either side. The place where elements meet at a boundary, influence each other, and relationships emerge |
-| Vortex (uzu) | The stage in which a new coherence (order) arises spontaneously from within the tension |
-| Bundle (taba) | The stage in which form is established and stabilizes as a reusable structure |
+|-------|------------|
+| Field (ba) | Undifferentiated state. Initial condition in which neither direction nor structure has yet been determined |
+| Wave (nami) | Exploration stage in which multiple directions diverge and compete |
+| Edge (en) | Tension state in which opposing elements coexist without converging on either side. The place where things meet at a boundary, influence each other, and relationships are formed |
+| Vortex (uzu) | Stage in which new coherence (order) spontaneously emerges from tension |
+| Bundle (taba) | Stage in which form is fixed and stabilized as a reusable structure |
 
 ---
 
 ## Overview of Structural Correspondences
 
 | # | Theory / Process | Proponents | Corresponding Stages | Judgment |
-|---|-----------------|------------|----------------------|----------|
-| 1 | Clonal selection theory | Burnet (1957), Tonegawa (1983) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 2 | Cancer immunoediting 3E | Dunn, Schreiber, Old (2002-2004) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 3 | Active resolution of inflammation | Serhan (2000s–) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 4 | Wound healing process | Guo & DiPietro (2010), Landén et al. (2016) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 5 | Immune dynamics in sepsis | Bone (1996), Hotchkiss et al. (2013) | Field→Wave→Edge→Vortex→Bundle | Partial correspondence |
-| 6 | Fracture repair process | Einhorn & Gerstenfeld (2015) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 7 | Allergen immunotherapy | Akdis & Akdis (2014) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 8 | Transplant immunology and tolerance induction | Medawar (1944), Kawai et al. (2008) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
-| 9 | Autoimmune disease pathogenesis | Rose & Bona (1993), Rosenblum et al. (2015) | Field→Wave→Edge→Vortex→Bundle | Partial correspondence |
-| 10 | Germinal center reaction and affinity maturation | MacLennan (1994), Victora & Nussenzweig (2012) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+|---|-----------------|------------|---------------------|----------|
+| 1 | Clonal selection theory | Burnet (1957), Tonegawa (1983) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 2 | Cancer immunoediting 3E | Dunn, Schreiber, Old (2002–2004) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 3 | Active resolution of inflammation | Serhan (2000s–) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 4 | Wound healing process | Guo & DiPietro (2010), Landén et al. (2016) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 5 | Immune dynamics in sepsis | Bone (1996), Hotchkiss et al. (2013) | Field → Wave → Edge → Vortex → Bundle | Partial |
+| 6 | Fracture repair process | Einhorn & Gerstenfeld (2015) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 7 | Allergen immunotherapy | Akdis & Akdis (2014) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 8 | Transplant immunity and tolerance induction | Medawar (1944), Kawai et al. (2008) | Field → Wave → Edge → Vortex → Bundle | Strong |
+| 9 | Pathogenesis of autoimmune disease | Rose & Bona (1993), Rosenblum et al. (2015) | Field → Wave → Edge → Vortex → Bundle | Partial |
+| 10 | Germinal center reaction and affinity maturation | MacLennan (1994), Victora & Nussenzweig (2012) | Field → Wave → Edge → Vortex → Bundle | Strong |
 
 ---
 
 ## Key Entry 1: Adaptive Immune Response by Clonal Selection Theory (Burnet, Tonegawa)
 
-- Clonal selection theory is the core principle of adaptive immunity. Within the body, lymphocytes bearing over 10^11 diverse antigen receptors are generated through gene recombination (V(D)J recombination), and only the clones that match an antigen selectively proliferate to form effector cells and memory cells. Burnet (1957) proposed the principle; Tonegawa (1983) elucidated the molecular mechanism.
-- **As established fact**: V(D)J recombination generates enormous receptor diversity by intentionally cutting and rejoining lymphocyte genes. When an antigen invades, the clone bearing a receptor that matches that antigen is activated and proliferates and differentiates to form an effector response. After the response, some clones are maintained as memory cells for long periods, displaying a faster and stronger response upon secondary infection (Murphy & Weaver, 2016).
-- **As a reading**: Here we read a mechanism that might be called "institutionalized error production." The immune system plans DNA cuts and generates large numbers of random combinations, thereby pre-preparing a "latent space capable of responding to whatever comes." The level of analogy is mechanism, with particular attention to the causal sequence of "pre-generation of random diversity → selection by environment → amplification → fixation."
-- **As interpretation**: The receptor repertoire generated by V(D)J recombination — as a latent space not yet responsive to anything — corresponds to the Field. The process in which the reactivity of specific clones becomes manifest through antigen invasion is the Wave. The process in which antigen-presenting cells (dendritic cells and macrophages) make physical contact with T cells and B cells via MHC-peptide complexes and mutually exchange signals corresponds to the Edge. The process in which clones proliferate and differentiate as a result of this contact is the Vortex, and the state in which memory cells are maintained long-term is the Bundle.
-- What makes this correspondence noteworthy is that the immune system institutionalizes what is ordinarily a harmful operation — intentional DNA cutting — as "planned error production." Diversity is not a product of chance but is institutionally produced, and only what fits the environment is selected from among it.
+- Clonal selection theory is the central principle of adaptive immunity. Through genetic recombination (V(D)J recombination), lymphocytes with up to 10¹¹ diverse antigen receptors are generated within the body; only the clones that match an antigen are selectively expanded to form effector and memory cells. Burnet (1957) proposed the principle, and Tonegawa (1983) elucidated the molecular mechanism.
+- **As fact**: V(D)J recombination is a mechanism that deliberately cleaves and rejoins lymphocyte genes to generate enormous receptor diversity. When an antigen enters, clones bearing receptors that match it are activated and expand/differentiate to form an effector response. After the response, some clones are maintained long-term as memory cells and display a faster, stronger response upon secondary infection (Murphy & Weaver, 2016).
+- **As reading**: Here, we read a mechanism that might be called "institutionalized error production." The immune system deliberately cleaves DNA and mass-produces random combinations in order to prepare in advance a "latent space capable of responding to anything that arrives." The level of similarity is mechanism, with particular attention to the causal sequence: random pre-generation of diversity → selection by the environment → amplification → fixation.
+- **As interpretation**: The receptor repertoire generated by V(D)J recombination — a latent space that has not yet responded to anything — corresponds to the **Field**. The process by which specific clones become reactive upon antigen entry corresponds to the **Wave**. The process in which antigen-presenting cells (dendritic cells and macrophages) and T/B cells physically contact each other via MHC-peptide complexes and exchange signals corresponds to the **Edge**. The proliferation and differentiation of clones as a result of that contact corresponds to the **Vortex**. The state of long-term maintenance as memory cells corresponds to the **Bundle**.
+- What makes this correspondence noteworthy is that the immune system institutionalizes, as "planned error production," the deliberately harmful operation of cleaving DNA. Diversity is not the product of chance but of institutional production, and only what proves adaptive to the environment is selected.
 
 ---
 
 ## Key Entry 2: Cancer Immunoediting 3E (Dunn, Schreiber, Old)
 
-- Cancer immunoediting is a model describing the long-term co-evolution of the immune system and tumors. Dunn, Old, and Schreiber (2004) proposed three phases: a stage in which the immune system eliminates tumors (Elimination), a stage in which tumors change and coexist under immune pressure (Equilibrium), and a stage in which clones that have escaped immunity grow (Escape).
-- **As established fact**: The immune system has the ability to recognize and eliminate tumor cells, but simultaneously, tumor cells are selected under immune pressure and clones that evade immune recognition emerge. The Equilibrium phase can extend over years, during which subclinical cancer exists continuously. The clinical success of immune checkpoint inhibitor therapy (e.g., PD-1/PD-L1 inhibitors) supports the validity of this model (Sharma & Allison, 2015).
-- **As a reading**: Here we read a structure in which two different agents (immune system and tumor) exert mutual selective pressure on each other over a long period, and a state of coexistence in which neither side reaches a conclusion persists. The level of analogy is process, with attention to the temporal progression of "long-term coexistence of opposing forces → disruption of equilibrium through the escape of one side."
-- **As interpretation**: The coexistence of intratumoral genetic diversity and immune surveillance corresponds to the Field. The process in which the immune system recognizes neoantigens (tumor-specific mutant proteins) and differences among tumor cells become manifest corresponds to the Wave. The interaction between T cells and tumor cells, the relationship between NK cells and MHC molecules, and the antagonism between PD-1/PD-L1-mediated suppression and activation constitute the Edge. In particular, the Equilibrium phase warrants attention as a "prolonged persistence of the Edge" — settled in neither elimination nor escape. The selective proliferation of immune-escaping clones is the Vortex, and fixation as a progressed tumor, or elimination/remission through immunotherapy, is the Bundle.
-- What is important in this finding is that the Vortex is not necessarily "constructive." The rise of immune-escaping clones is a creation that is harmful to the living body, suggesting that what the five stages describe is not "good creation" but "creation itself" — that is, the five stages are value-neutral.
+- Cancer immunoediting is a model describing the long-term co-evolution of the immune system and tumors. Dunn, Old, and Schreiber (2004) proposed three phases: Elimination, in which the immune system eliminates tumor cells; Equilibrium, in which tumor cells change under immune pressure while coexisting; and Escape, in which clones that have evaded immunity grow out.
+- **As fact**: The immune system has the ability to recognize and eliminate tumor cells, but simultaneously, under immune pressure, tumor cells are selected and clones that evade immune recognition emerge. The Equilibrium phase can last years, persisting clinically as latent cancer. The clinical success of immune checkpoint inhibitor therapy (e.g., PD-1/PD-L1 inhibitors) supports the validity of this model (Sharma & Allison, 2015).
+- **As reading**: Here, we read a structure in which two different agents (the immune system and the tumor) exert mutual selective pressure over a long period, and a coexistent state in which neither gains a decisive upper hand persists. The level of similarity is process, with attention to the temporal unfolding: "long-term coexistence of opposing forces → disruption of equilibrium through escape by one side."
+- **As interpretation**: The coexistence of intratumoral genetic diversity and immune surveillance corresponds to the **Field**. The process in which the immune system recognizes neoantigens (tumor-specific mutant proteins) and differences among tumor cells become manifest corresponds to the **Wave**. The interaction between T cells and tumor cells, the relationship between NK cells and MHC molecules, and the antagonism between suppression and activation mediated by PD-1/PD-L1 correspond to the **Edge**. The Equilibrium phase in particular is notable as a "prolonged Edge" — settled neither into elimination nor into escape. The selective expansion of immune-escape clones corresponds to the **Vortex**. Fixation as a progressed tumor, or elimination/remission through immunotherapy, corresponds to the **Bundle**.
+- The important insight here is that the Vortex is not necessarily "constructive." The emergence of immune-escape clones is a creation harmful to the organism, suggesting that what the 5 stages describe is not "good creation" but "creation as such" — that is, the 5 stages are value-neutral.
 
 ---
 
 ## Key Entry 3: Wound Healing Process (Guo & DiPietro, Landén et al.)
 
-- Wound healing is a series of processes by which tissue is repaired through stages of hemostasis, inflammation, cell proliferation, and remodeling. The transition between each stage is controlled at the molecular level, and in particular it is known that the phenotypic switching of macrophages drives transitions between stages.
-- **As established fact**: When damage occurs, hemostasis by platelets and fibrin clot formation first occur, releasing growth factors such as PDGF and TGF-β. Subsequently neutrophils and macrophages infiltrate and an inflammatory response unfolds. Macrophages switch phenotype from pro-inflammatory (M1 type) to pro-repair (M2 type), and this switch promotes fibroblast activation, angiogenesis, and re-epithelialization (Landén et al., 2016). In the final stage, remodeling through collagen rearrangement and cross-linking progresses and tissue structure stabilizes. Note that the M1/M2 dichotomy represents both ends of a continuous spectrum, and it has been pointed out that actual macrophage phenotypes can take more diverse mixed states (Murray et al., 2014).
-- **As a reading**: Here we read the structure in which the same cell (macrophage) switches between diametrically opposite roles — pro-inflammatory and pro-repair — depending on the microenvironment, and this switching drives transitions to the next stage. The level of analogy is process, with attention to the "temporal sequentiality of stages" and the causal structure of "agent role switching driving stage transitions."
-- **As interpretation**: The hemostatic clot formed in the wound bed (a reservoir of fibrin and growth factors) is the Field. The inflammatory cell infiltration arriving at different times — from neutrophils to macrophages — constitutes the Wave. The multiple interactions centering on macrophage phenotypic switching from M1 to M2 type — involving fibroblasts and endothelial cells — constitute the Edge. The process in which granulation tissue formation, angiogenesis, and re-epithelialization are amplified by positive feedback is the Vortex, and structural stabilization through collagen rearrangement, cross-linking, and wound contraction is the Bundle.
-- The most important insight that wound healing provides is that the Edge is not merely a "relationship" but a "site of qualitative transformation." The fact that the same macrophage changes from the side that destroys to the side that heals depending on the environment concretely shows that the essence of the Edge lies in the dynamics of relationship. Furthermore, the clinical picture in which failure of the M1→M2 switch leads to chronic wounds (such as diabetic ulcers) is a real example of a failure mode in which transformation failure at the Edge blocks the transition to the Vortex.
+- Wound healing is a sequential process through which tissue is repaired via hemostasis, inflammation, cellular proliferation, and remodeling. Transitions between stages are regulated at the molecular level; in particular, the phenotypic switching of macrophages is known to drive transitions between stages.
+- **As fact**: Upon injury, platelet-mediated hemostasis and fibrin clot formation occur first, releasing growth factors such as PDGF and TGF-β. Neutrophils and macrophages then infiltrate and the inflammatory response unfolds. Macrophages switch phenotype from pro-inflammatory (M1) to pro-repair (M2), and this switch promotes fibroblast activation, angiogenesis, and re-epithelialization (Landén et al., 2016). In the final stage, remodeling progresses through collagen reorganization and cross-linking, stabilizing tissue structure. Note that the M1/M2 dichotomy represents a model for the two ends of a continuous spectrum, and actual macrophage phenotypes can adopt more diverse mixed states (Murray et al., 2014).
+- **As reading**: Here, we read a structure in which the same cell type (macrophage), in response to its microenvironment, switches between diametrically opposed roles — pro-inflammatory and pro-repair — and this switching drives the transition to the next stage. The level of similarity is process, with attention to the "temporal ordering of stages" and the causal structure in which "the role-switching of a single agent drives stage transitions."
+- **As interpretation**: The hemostatic clot forming in the wound bed (a reservoir of fibrin and growth factors) corresponds to the **Field**. The time-staggered infiltration of inflammatory cells — from neutrophils to macrophages — corresponds to the **Wave**. The multiplex interactions among macrophages (centered on the M1-to-M2 phenotypic switch), fibroblasts, and endothelial cells correspond to the **Edge**. The amplification of granulation tissue formation, angiogenesis, and re-epithelialization through positive feedback corresponds to the **Vortex**. Structural stabilization through collagen reorganization, cross-linking, and wound contraction corresponds to the **Bundle**.
+- The most important insight that wound healing offers is that the Edge is not merely "relationship" but a "site of qualitative transformation." The fact that the same macrophage switches from a destructive role to a healing role depending on its environment concretely demonstrates that the essence of the Edge lies in the dynamics of relationship. Moreover, the clinical picture in which failure of the M1-to-M2 switch leads to chronic wounds (e.g., diabetic ulcers) is a concrete example of the failure mode in which a failed transition at the Edge blocks progress toward the Vortex.
 
 ---
 
 ## Cross-Cutting Patterns
 
-- The most striking pattern across clinical medicine is the "observability of the Edge"
-- Second, the "systematicity of failure modes" emerges
-- Third, as a "variation on tissue repair," a pattern common to wound healing and fracture repair of "damage → inflammation → repair → stabilization" is confirmed
-- Fourth, the "plasticity of the Bundle" is confirmed in multiple processes
+- The most striking cross-cutting feature of clinical medicine is the "observability of the Edge"
+- Second, a "systematicity of failure modes" emerges
+- Third, a "variation on tissue repair" — a shared pattern of "injury → inflammation → repair → stabilization" common to wound healing and fracture repair — is confirmed
+- Fourth, "plasticity of the Bundle" is confirmed across multiple processes
 
 ---
 
 ## Open Questions
 
-- The "Edge" in immunology is used at different levels: physical contact between cells (antigen presentation), the self/non-self recognition boundary, and the branch point of therapeutic intervention. Whether treating these as the same "Edge" is valid, or whether sub-classification is needed, requires future clarification.
-- The SIRS/CARS model of sepsis has received criticism for "oversimplification," and it has been found that SIRS and CARS in fact proceed simultaneously in parallel from early stages. When mapping this model onto the five stages, how to describe this simultaneously parallel dynamics rather than a sequential model is a challenge.
-- Applying the five stages to pathological processes (cancer immune escape, autoimmunity, sepsis) means extending the descriptive scope of the model from "normal creation" to "structural change in general." The validity and limits of this extension require comparison with findings from other domains.
-- Clonal selection theory and the germinal center reaction can be read as a nested structure at macro and micro scales, but whether this "same structure repeating at different scales" is a property unique to the five stages or a reflection of general self-organization phenomena requires verification.
+- In the immune system, "Edge" is used at different levels: physical cell-to-cell contact (antigen presentation), the self/non-self recognition boundary, and the branch point of therapeutic intervention. Whether it is appropriate to treat all of these as the same "Edge," or whether sub-classification is needed, requires further clarification.
+- The SIRS/CARS model of sepsis has been criticized as "overly simplified"; it is now known that SIRS and CARS actually progress simultaneously from early on. When mapping this model onto the 5 stages, how to describe a concurrent rather than sequential dynamic is a remaining challenge.
+- Applying the 5 stages to pathological processes (cancer immune escape, autoimmunity, sepsis) implies extending the model's descriptive scope from "normal creation" to "structural change in general." The validity and limits of this extension require cross-referencing with findings from other domains.
+- Clonal selection theory and the germinal center reaction can be read as a nested structure at macro and micro scales, but whether this "repetition of the same structure at different scales" is a property specific to the 5 stages or a reflection of a more general self-organizing phenomenon requires verification.
 
 ---
 
 ## Conclusion
 
-- This survey confirmed that clinical medicine and immunology is overall a domain with strong structural correspondence to the five-stage model
-- Three findings are particularly important
-- On the other hand, immunological findings are concentrated at the molecular and cellular scale, and careful consideration is needed as to whether the five-stage correspondence is particularly suited to this scale or whether equivalent correspondence can be obtained at other scales
+- This survey confirmed that clinical medicine and immunology, as a whole, form a domain with strong structural correspondence to the 5-stage model
+- Three particularly important findings stand out
+- At the same time, immunological findings are concentrated at the molecular and cellular scale; whether the 5-stage correspondence is particularly suited to this scale, or whether equivalent correspondence can be obtained at other scales as well, requires careful examination
