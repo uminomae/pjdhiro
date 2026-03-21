@@ -1,6 +1,6 @@
 ---
-title: "言語学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Linguistics - Structural Correspondence with the Five-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,96 +8,96 @@ source: "domain-D17-linguistics-academic-ja.md"
 type: presentation
 ---
 
-## 言語学
+## Linguistics
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 言語学の主要理論 10件
-- **調査の問い**: 言語学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 6件、部分的な対応 2件、条件付きの対応 2件
+Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Scope**: 10 major theories in linguistics
+- **Research question**: Do theories in linguistics structurally correspond to the five-stage model?
+- **Results**: Strong correspondence 6, Partial correspondence 2, Conditional correspondence 2
 
 ---
 
-## 構造対応の全体像
+## Overview of the Five-Stage Model
 
-| # | 理論/概念 | 提唱者 | 主な対応段階 | 判定 |
+| Stage | Definition |
+|-------|-----------|
+| Ba (Field) | An undifferentiated state. Initial conditions where neither direction nor structure has yet been determined |
+| Nami (Wave) | A stage of exploration where multiple directions diverge and compete |
+| En (Edge) | A state of tension where opposing elements coexist without converging to either side. A place where elements meet at boundaries, influence each other, and relationships emerge |
+| Uzu (Vortex) | A stage where new coherence (order) spontaneously arises from within tension |
+| Taba (Bundle) | A stage where form is established and stabilizes as a reusable structure |
+
+---
+
+## Overall Structural Correspondence
+
+| # | Theory/Concept | Proponent | Primary Corresponding Stages | Assessment |
 |---|----------|--------|------------|------|
-| 1 | 文法化 | Hopper & Traugott (2003) | 場→波→縁→渦→束 | 強い対応 |
-| 2 | 音変化の拡散モデル | Labov (1994, 2001) | 場→波→縁→渦→束 | 強い対応 |
-| 3 | クレオール形成 | Thomason & Kaufman (1988) | 場→波→縁→渦→束 | 条件付きの対応 |
-| 4 | 臨界期仮説 | Lenneberg (1967) | 場→波→縁→渦→束 | 部分的な対応 |
-| 5 | ニカラグア手話 | Senghas et al. (2004) | 場→波→縁→渦→束 | 強い対応 |
-| 6 | 構文の創発 | Tomasello (2003), Goldberg (1995) | 場→波→縁→渦→束 | 強い対応 |
-| 7 | 語用論的推論と意味変化 | Grice (1975), Sperber & Wilson (1986) | 波→縁→渦 | 部分的な対応 |
-| 8 | 言語相対性 | Slobin (1996), Boroditsky (2001) | 束→場 | 条件付きの対応 |
-| 9 | 最適性理論 | Prince & Smolensky (1993/2004) | 場→波→縁→渦→束 | 強い対応 |
-| 10 | 反復的学習モデル | Kirby et al. (2014) | 場→波→縁→渦→束 | 強い対応 |
+| 1 | Grammaticalization | Hopper & Traugott (2003) | Ba→Nami→En→Uzu→Taba | Strong correspondence |
+| 2 | Diffusion model of sound change | Labov (1994, 2001) | Ba→Nami→En→Uzu→Taba | Strong correspondence |
+| 3 | Creole formation | Thomason & Kaufman (1988) | Ba→Nami→En→Uzu→Taba | Conditional correspondence |
+| 4 | Critical period hypothesis | Lenneberg (1967) | Ba→Nami→En→Uzu→Taba | Partial correspondence |
+| 5 | Nicaraguan Sign Language | Senghas et al. (2004) | Ba→Nami→En→Uzu→Taba | Strong correspondence |
+| 6 | Emergence of constructions | Tomasello (2003), Goldberg (1995) | Ba→Nami→En→Uzu→Taba | Strong correspondence |
+| 7 | Pragmatic inference and semantic change | Grice (1975), Sperber & Wilson (1986) | Nami→En→Uzu | Partial correspondence |
+| 8 | Linguistic relativity | Slobin (1996), Boroditsky (2001) | Taba→Ba | Conditional correspondence |
+| 9 | Optimality Theory | Prince & Smolensky (1993/2004) | Ba→Nami→En→Uzu→Taba | Strong correspondence |
+| 10 | Iterated learning model | Kirby et al. (2014) | Ba→Nami→En→Uzu→Taba | Strong correspondence |
 
 ---
 
-## 主要エントリ 1: ニカラグア手話の出現と体系化（Senghas et al., 2004）
+## Key Entry 1: The Emergence and Systematization of Nicaraguan Sign Language (Senghas et al., 2004)
 
-- ニカラグア手話（NSL）は、1970年代後半にニカラグアのろう学校で新たに出現した手話言語です。言語モデルのない状態から、子どもたちの相互作用を通じて文法体系が自発的に形成されたことで知られています。Senghas et al.（2004, *Science*）は、入学年代の異なるコホートを比較することで、文法構造が世代を追うごとに複雑化していく過程を実時間で観察しました。
-- **事実として**: 最初の世代の子どもたちは統一されていない個人的な表現手段（ホームサイン）を持ち寄りました。Senghas et al.（2004）の分析によると、後続の世代は出来事を基本要素へ分解し、階層的に組み立てる能力を示しました。空間変調は「誰」と「どこ」の二つの機能を分化させ（Senghas, 2011）、時間表現も複数コホートの比較で創出と収束の過程が確認されています（Kocab et al., 2016）。
-- **読み取りとして**: ここでは、言語構造がゼロから世代間の伝達を通じて自発的に組織化されるプロセスを読み取ります。類似の水準はプロセスです。個々の話者が「文法を作ろう」と意図したわけではないにもかかわらず、離散性、組合せ性、階層性という文法の核心的特徴が世代交代の中で創発しています。特に注目すべきは、コホート比較によって段階間の遷移が社会的な時間軸上で可視化されている点です。
-- **解釈として**: 統一されていない表現資源の共存が場、初期の変異と競合が波、機能分化と装置の割り当てが縁、離散性と組合せ性を伴う体系の成立が渦、世代間伝播と共同体内の収束によって残る規範が束に対応します。NSLは、5段階の全プロセスを実時間で観察できる最も直接的な事例の一つです。個々の話者の意図によらず文法が創発するという事実は、5段階モデルにおける渦が「自発的な秩序形成」であることの具体的な裏づけになっています。
-
----
-
-## 主要エントリ 2: 文法化の連鎖（Hopper & Traugott, 2003）
-
-- 文法化とは、語彙項目が文法機能へ移行する不可逆的な過程です。たとえば、英語の "going to" は元来「〜へ行く」という移動の意味でしたが、やがて未来を表す文法標識 "gonna" へと変化しました。Hopper & Traugott（2003）は、この過程が内容語→文法語→接辞→ゼロという一方向的な変化（cline）として記述できることを示しました。
-- **事実として**: 文法化は通言語的に同型の経路が観察されます。身体部位を表す語が空間前置詞になり、さらに時間表現になるという経路は、系統的に無関係な言語でも繰り返し確認されています（Heine et al., 1991）。この変化の駆動力は語用論的推論、すなわち会話の含意が繰り返されて慣習化することにあります（Traugott, 1989）。
-- **読み取りとして**: ここでは、語彙が文法へと不可逆的に移行する連鎖構造を読み取ります。類似の水準は構造です。注目すべきは、変化が一方向的である点と、系統的に無関係な言語で同型の経路が観察される点です。前者は段階間の遷移に方向性があることを、後者は特定言語に固有でない構造的パターンが存在することを示唆しています。
-- **解釈として**: 語彙項目が文法化以前に持つ多義性が場、語用論的推論によって新たな用法が生まれ競合する段階が波、旧用法と新用法が共存して機能が再分析される局面が縁、文法機能として一つのまとまりが確立する段階が渦、文法体系の一部として定着し後続の変化の基盤になる段階が束に対応します。通言語的に同型経路が観察される点は、5段階の構造が特定の領域に固有でないという仮説と整合します。
+- Nicaraguan Sign Language (NSL) is a sign language that newly emerged in the late 1970s in a school for the deaf in Nicaragua. It is known for the fact that a grammatical system formed spontaneously through the interactions of children in the absence of a language model. Senghas et al. (2004, *Science*) observed in real time the process by which grammatical structure became increasingly complex with successive generations, by comparing cohorts of different enrollment years.
+- **As fact**: The first generation of children brought together their own uncoordinated individual means of expression (home signs). According to the analysis by Senghas et al. (2004), subsequent generations showed the ability to decompose events into basic elements and reconstruct them hierarchically. Spatial modulation differentiated into the two functions of "who" and "where" (Senghas, 2011), and the process of creation and convergence in temporal expression has also been confirmed through multi-cohort comparison (Kocab et al., 2016).
+- **As reading**: Here we read the process by which linguistic structure is spontaneously organized through intergenerational transmission from zero. The level of similarity is process. Despite the fact that individual speakers did not intend to "create grammar," the core grammatical features of discreteness, combinatoriality, and hierarchy emerged through generational turnover. Particularly noteworthy is that transitions between stages are made visible on a social timeline through cohort comparison.
+- **As interpretation**: The coexistence of uncoordinated expressive resources corresponds to Ba; initial variation and competition corresponds to Nami; functional differentiation and the assignment of devices corresponds to En; the establishment of a system with discreteness and combinatoriality corresponds to Uzu; and the norms that remain through intergenerational propagation and convergence within the community correspond to Taba. NSL is one of the most direct cases in which the entire process of the five stages can be observed in real time. The fact that grammar emerges without the intention of individual speakers constitutes concrete support for the claim that Uzu in the five-stage model is "spontaneous order formation."
 
 ---
 
-## 主要エントリ 3: 構文の創発——用法基盤モデル（Tomasello, 2003; Goldberg, 1995）
+## Key Entry 2: The Chain of Grammaticalization (Hopper & Traugott, 2003)
 
-- 用法基盤モデル（usage-based approach）は、言語構造が個別の使用事例から創発するという理論です。言語領域に固有の生得的知識を仮定せず、統計的学習、チャンク化、カテゴリ化、類推という一般的な認知能力から構造が導出されると考えます。Tomasello（2003）は子どもの構文発達を、Goldberg（1995）は構文（construction）を形式と意味の対として独立に意味を担う単位として分析しました。
-- **事実として**: 子どもは構文を最初、特定の語彙に結びついた形で産出します。たとえば "put" を含む文だけで位置変化を表し、他の動詞には同じ構文を適用しません。反復と一般化を経て、やがて生産的な使用に至ります（Tomasello, 2003）。Bybee & Beckner（2010）は、使用頻度がパターン形成を駆動し、頻度の高い組み合わせがチャンクとして記憶され、チャンクがカテゴリへと一般化されることを示しました。
-- **読み取りとして**: ここでは、具体的な使用事例の蓄積から抽象的な構文パターンが段階的に創発するプロセスを読み取ります。類似の水準はメカニズムです。頻度の偏りがチャンク化を駆動し、チャンク化がカテゴリ化を駆動するという因果の連鎖が、段階間の遷移のメカニズムを具体的に示しています。
-- **解釈として**: 具体的な使用事例の蓄積が場、使用頻度の偏りや分布の勾配が波、チャンク化・カテゴリ化・類推による関係づけが縁、構文（形式と意味の対）の成立が渦、構文ネットワークとしての一般化と生産性の獲得が束に対応します。この理論は、言語固有の生得知識を仮定しない点で、5段階の構造が言語に限定されないという見方と整合します。
-
----
-
-## 横断的パターン
-
-- 言語学を横断して最も際立つのは、**縁の実装の多様性**です
-- 第二に、**言語変化の多くが意図なき創造である**という点が、複数の理論に共通しています
-- 第三に、**スケール間の同型性**が顕著です
-- 第四に、**場の形成メカニズムが一様ではない**ことが明らかになっています
+- Grammaticalization is the irreversible process by which lexical items shift to grammatical functions. For example, English "going to" originally meant movement in the sense of "going toward ~," but eventually changed to the future-tense grammatical marker "gonna." Hopper & Traugott (2003) showed that this process can be described as a unidirectional change (cline) from content word → grammatical word → affix → zero.
+- **As fact**: Grammaticalization exhibits cross-linguistically isomorphic pathways. The pathway by which words denoting body parts become spatial prepositions and then temporal expressions has been repeatedly confirmed even in languages that are genealogically unrelated (Heine et al., 1991). The driving force of this change lies in pragmatic inference — conversational implicatures that are repeated and become conventionalized (Traugott, 1989).
+- **As reading**: Here we read the chain structure in which lexical items irreversibly shift to grammar. The level of similarity is structure. Noteworthy are the points that the change is unidirectional and that isomorphic pathways are observed in genealogically unrelated languages. The former suggests that there is direction to transitions between stages; the latter suggests the existence of structural patterns not specific to any particular language.
+- **As interpretation**: The polysemy that a lexical item has before grammaticalization corresponds to Ba; the stage in which new usages arise and compete through pragmatic inference corresponds to Nami; the phase in which old and new usages coexist and functions are re-analyzed corresponds to En; the stage in which a coherence is established as a grammatical function corresponds to Uzu; and the stage in which it is consolidated as part of the grammatical system and becomes the foundation for subsequent changes corresponds to Taba. The observation of cross-linguistically isomorphic pathways is consistent with the hypothesis that the structure of the five stages is not specific to any particular domain.
 
 ---
 
-## 未解決の問い
+## Key Entry 3: The Emergence of Constructions — Usage-Based Model (Tomasello, 2003; Goldberg, 1995)
 
-- 文法化（歴史変化）と構文の創発（個人獲得）が同一のメカニズムの異スケール版であるかどうかは、まだ結論が出ていません。両者が共有するのは構造なのか、ラベルの類似にとどまるのかの検証が必要です。
-- ニカラグア手話における文法の創発は、「意図なき協働」として捉えるべきか、「暗黙の選択圧」として捉えるべきかが分かれます。この区別は、渦の性格——完全に自発的な秩序形成なのか、環境圧による方向づけを含むのか——に関わる問いです。
-- 言語相対性の知見（言語体系が認知の枠組みを制約する）は、束から場への影響関係を記述する唯一の理論群ですが、それ自体がプロセスの理論ではなく状態の制約関係の記述です。5段階モデルの「束→場回帰」が螺旋的であるという仮説との関係は、さらなる整理が必要です。
-- クレオール形成（条件付きの対応）において、事例間の多様性（権力関係、人口比、入力言語の構造的距離）と構造的共通パターンをどこまで分離できるかは、依然として課題です。
+- The usage-based approach is the theory that linguistic structure emerges from individual instances of use. Rather than assuming innate knowledge specific to the linguistic domain, structure is derived from general cognitive abilities: statistical learning, chunking, categorization, and analogy. Tomasello (2003) analyzed children's syntactic development, and Goldberg (1995) analyzed constructions as units that independently carry meaning as form-meaning pairings.
+- **As fact**: Children initially produce constructions in forms tied to specific vocabulary. For example, they express change of location only in sentences containing "put," and do not apply the same construction to other verbs. Through repetition and generalization, they eventually arrive at productive use (Tomasello, 2003). Bybee & Beckner (2010) showed that frequency of use drives pattern formation, that frequent combinations are stored as chunks, and that chunks are generalized into categories.
+- **As reading**: Here we read the process in which abstract construction patterns gradually emerge from the accumulation of concrete instances of use. The level of similarity is mechanism. The causal chain in which frequency bias drives chunking, and chunking drives categorization, concretely shows the mechanisms of transitions between stages.
+- **As interpretation**: The accumulation of concrete instances of use corresponds to Ba; frequency bias and distributional gradients correspond to Nami; relational mapping through chunking, categorization, and analogy corresponds to En; the establishment of a construction (a form-meaning pairing) corresponds to Uzu; and the acquisition of generalization and productivity as a construction network corresponds to Taba. This theory, in not assuming linguistic-domain-specific innate knowledge, is consistent with the view that the structure of the five stages is not limited to language.
 
 ---
 
-## 結論
+## Cross-Cutting Patterns
 
-- 本調査では、言語学は5段階モデルとの構造類似が全体として強い領域であると確認されました
-- 特に、ニカラグア手話の出現と体系化、反復的学習モデル、構文の創発は、5段階の全プロセスを具体的に照らす理論です
-- 言語学からの最大の貢献は二つあります
+- The most striking pattern across linguistics is the **diversity of implementations of En**
+- Second, the point that **many language changes are unintended creations** is common across multiple theories
+- Third, **isomorphism across scales** is prominent
+- Fourth, it has become clear that **the mechanism of Ba formation is not uniform**
+
+---
+
+## Unresolved Questions
+
+- Whether grammaticalization (historical change) and the emergence of constructions (individual acquisition) are different-scale versions of the same mechanism remains without conclusion. It is necessary to verify whether what the two share is structure or merely label similarity.
+- Whether the emergence of grammar in Nicaraguan Sign Language should be understood as "unintended collaboration" or "implicit selection pressure" is divided. This distinction relates to the question of the nature of Uzu — whether it is completely spontaneous order formation or includes direction by environmental pressure.
+- The findings of linguistic relativity (linguistic systems constrain cognitive frameworks) are the only group of theories describing the influence relationship from Taba back to Ba, but they are themselves not theories of process but descriptions of state constraint relationships. The relationship with the hypothesis that the "Taba→Ba return" in the five-stage model is spiral requires further clarification.
+- In creole formation (conditional correspondence), the extent to which diversity across cases (power relations, population ratios, structural distance of input languages) and structural common patterns can be separated remains a challenge.
+
+---
+
+## Conclusion
+
+- This survey confirmed that linguistics is a domain with strong overall structural similarity to the five-stage model
+- In particular, the emergence and systematization of Nicaraguan Sign Language, the iterated learning model, and the emergence of constructions are theories that concretely illuminate the entire process of the five stages
+- The greatest contributions from linguistics are two

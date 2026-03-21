@@ -1,6 +1,6 @@
 ---
-title: "工学情報 - 5段階モデルとの構造対応"
-lang: ja
+title: "Engineering & Information Science - Structural Correspondence with the Five-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,92 +8,92 @@ source: "domain-D07-engineering-academic-ja.md"
 type: presentation
 ---
 
-## 工学情報
+## Engineering & Information Science
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 工学情報の主要理論
-- **調査の問い**: 工学情報の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 部分的な対応 1件、条件付きの対応 1件
+Structural correspondence survey with the five-stage model (Field · Wave · Edge · Vortex · Bundle)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Survey targets**: Major theories in engineering and information science
+- **Research question**: Do the theories of engineering and information science correspond structurally to the five-stage model?
+- **Results**: Partial correspondence in 1 case, conditional correspondence in 1 case
 
 ---
 
-## 構造対応の全体像
+## Overview of the Five-Stage Model
 
-| 温度 | 理論・技術 | 位置づけ |
-|---|---|---|
-| 確定に近い | フィードバック制御、深層学習（誤差逆伝播）、強化学習 | 誤差駆動のフィードバックループが5段階全体に明瞭に対応します |
-| 有力 | TCP輻輳制御、進化的計算（遺伝的アルゴリズム）、PDCA改善サイクル | 対応は明確ですが、縁の性格や設計者バイアスの留保が残ります |
-| 条件つき | 情報理論、圧縮センシング、暗号プロトコル、ソフトウェアリファクタリング | 部分的な対応はあるものの、渦が弱い、または束の性格が特殊です |
-
----
-
-## 主要エントリ 1: フィードバック制御系（Wiener, Kalman）
-
-- フィードバック制御は、システムの出力を観測し、目標値との差分（誤差信号）を入力側に帰還させて修正する閉ループ構造です。Wiener（1948）のサイバネティクスで体系化され、Maxwell（1868）の調速機安定性解析にまで遡ります。PID制御は産業制御の90%以上で使われており（Astrom & Hagglund 2006）、比例・積分・微分の三成分で修正量を決定します。Kalman フィルタ（1960）はノイズを含む観測から状態の最適推定を行う再帰的ベイズ推定です。
-- **事実として**: フィードバック制御は、誤差信号 e(t) = r(t) - y(t) を中心に構成されます。目標値 r(t) とシステム出力 y(t) の差分が制御器に入力され、制御器がアクチュエータを通じてシステムを修正します。Nyquist 安定判別（1932）と Bode 線図は、この帰還ループが安定に収束する条件を定量化しました。位相余裕とゲイン余裕が安定性の指標となります。PID制御の積分項は過去の誤差蓄積を保持して定常偏差を解消し、微分項は誤差の変化率を検出して先行的な補正を行います。
-- **読み取りとして**: ここでは、目標と現実の差分が閉ループを通じて系全体を駆動する構造を読み取ります。類似の水準は**構造**です。注目するのは、要素間の配置関係——センサ、コントローラ、アクチュエータ、プラントが閉じた環を形成し、誤差信号がこの環を循環することで自己修正が成立する配置——です。個々の要素の物理的性質ではなく、「閉じた環の中で誤差が帰還する」という配置そのものが5段階との対応を支えています。
-- **解釈として**: 制御対象のモデルと設計仕様が場に対応します。誤差信号 e(t) の発生が波であり、外乱や目標値の変更がこの波を生みます。センサ・コントローラ・アクチュエータの接続点——情報（測定値）と物質（制御入力）が結合する界面——が縁です。この接続点では、外乱やモデル不確かさにより出力が確定せず、制御ループが閉じることで渦（自己維持的な反復修正）へ接続します。PID制御の反復的な誤差補正が渦であり、規定性能への収束——オーバーシュート、整定時間、定常偏差として定量化された安定パターン——が束です。
-- 制御理論が提供する重要な知見は「安定性条件」です。フィードバックは万能ではなく、不適切な帰還は発振（不安定化）を引き起こします。位相余裕とゲイン余裕は、帰還の量に適切な閾値が存在することの数学的な証明です。
+| Stage | Definition |
+|-------|-----------|
+| Field (ba) | An undifferentiated state. The initial condition in which no direction or structure has yet been established |
+| Wave (nami) | The stage of exploration in which multiple directions diverge and compete |
+| Edge (en) | A state of tension in which opposing elements coexist without converging toward either side. The place where elements meet at a boundary, influence each other, and relationships emerge |
+| Vortex (uzu) | The stage in which a new coherence (order) arises spontaneously from within the tension |
+| Bundle (taba) | The stage in which form is established and stabilizes as a reusable structure |
 
 ---
 
-## 主要エントリ 2: 深層学習——誤差逆伝播と勾配降下（Rumelhart, Hinton & Williams）
+## Overview of Structural Correspondences
 
-- 深層学習は、多層のニューラルネットワークに対して、出力の誤差を減少させるための結合重みの反復調整を行う技術です。誤差逆伝播（backpropagation）は、逆モード自動微分として Linnainmaa（1970）が定式化し、ニューラルネットワークへの適用は Werbos（1974）が先行しました。Rumelhart, Hinton & Williams（1986）が Nature 誌での実験的実証によって広く普及させました。AlexNet（2012）、Transformer（Vaswani et al. 2017）、ResNet（He et al. 2016）の残差接続が深層化を可能にしています。
-- **事実として**: 誤差逆伝播は、出力層の損失関数の値から各層への勾配を連鎖律で効率的に計算し、確率的勾配降下（SGD）やその変種（Adam 等）で重みを更新します。損失地形の研究によれば、高次元の損失関数では鞍点が支配的であり、局所最適は稀です（Dauphin et al. 2014）。バッチ正規化（Ioffe & Szegedy 2015）は学習を安定化させます。
-- **読み取りとして**: ここでは、出力の誤差が全層に逆伝播することで内部表現が自発的に形成される構造を読み取ります。類似の水準は**プロセス**であり、特に「誤差が全層を通過し、入力に近い層の表現まで変容させる順序」に着目します。制御理論（5.1節）が外界のプラントを操作するのに対し、深層学習はモデル内部の表現を変える点が異なります。
-- **解釈として**: ネットワーク構造（アーキテクチャ）と重み空間の初期化が場です。損失関数——教師信号とモデル出力の差——が波を生みます。損失関数は単なる数値ではなく、入力データ、ネットワーク出力、教師信号、損失計算を結合する関係の界面であり、これが縁に対応します。損失地形上の現在位置から最終的にどの解に到達するかは不確定であり、SGD の反復更新が渦として系を駆動します。ミニバッチの確率性が探索を助け、学習率のスケジューリングが収束を制御します。学習済みの内部表現——タスク性能として定量化された特徴量と内部モデル——が束です。
-- 損失地形が高次元で複数の良い解を持つことは、5段階において「同じ場から異なる束が生まれうる」ことの計算科学的な確認です。
-
----
-
-## 主要エントリ 3: 強化学習——報酬信号と探索-活用（Sutton & Barto）
-
-- 強化学習は、エージェントが環境と相互作用しながら、報酬信号を最大化する方策を学習する枠組みです。マルコフ決定過程（MDP）が数学的基盤であり、Sutton & Barto（2018）の教科書が標準的な参照文献です。TD学習（temporal difference learning, Sutton 1988）は、予測誤差（TD error: delta = r + gamma V(s') - V(s)）を学習信号として用います。この TD error は、神経科学におけるドーパミンの報酬予測誤差仮説（Schultz et al. 1997）と接続しており、工学と神経科学をつなぐ重要な橋渡しとなっています。
-- **事実として**: 強化学習の中核にあるのは、探索-活用ジレンマ（exploration-exploitation tradeoff）です。既知の高報酬行動を活用するか、未知の可能性を探索するかの分岐であり、epsilon-greedy、UCB、Thompson sampling が代表的な戦略です。AlphaGo/AlphaZero（Silver et al. 2016, 2017）は深層強化学習の成功事例であり、RLHF（人間フィードバックからの強化学習）が大規模言語モデルのアラインメントに使われています。
-- **読み取りとして**: ここでは、報酬予測誤差が方策の改善を駆動する帰還構造と、探索-活用の分岐構造を読み取ります。類似の水準は**メカニズム**です。制御理論（5.1節）や深層学習（5.2節）では「どこに誤差があるか」は損失関数や目標値として与えられますが、強化学習では「どこに誤差があるか自体が分からない」という点が異なります。未探索領域の価値は不確定であり、探索しなければ新しい報酬源は見つかりません。
-- **解釈として**: 環境（MDP）とエージェントの初期方策が場です。報酬信号と TD error——予測値と実現値の差——が波として系を駆動します。探索-活用の分岐点が縁に対応します。ここでは、状態・行動・報酬・価値推定の多要素が結合し、環境の確率的性質と不完全知識により最適行動が確定しません。方策改善ループ（TD error に基づく価値関数と方策の反復更新）が渦であり、学習済み方策——最適に近い行動規則——が束です。
-- 探索-活用ジレンマは、5段階の「縁」が持つ未決定性を工学的に最も鮮明に表現しています。既知の活用だけでは局所最適に陥り、探索なしには新しい構造に到達できません。
+| Confidence | Theory / Technology | Assessment |
+|------------|---------------------|------------|
+| Near-definitive | Feedback control, deep learning (backpropagation), reinforcement learning | Error-driven feedback loops correspond clearly to all five stages |
+| Probable | TCP congestion control, evolutionary computation (genetic algorithms), PDCA improvement cycle | Correspondence is clear, but reservations remain regarding the character of the Edge and designer bias |
+| Conditional | Information theory, compressed sensing, cryptographic protocols, software refactoring | Partial correspondence exists, but the Vortex is weak or the character of the Bundle is special |
 
 ---
 
-## 横断的パターン
+## Key Entry 1: Feedback Control Systems (Wiener, Kalman)
 
-- 工学・情報科学の10の理論・技術を横断して、四つの構造パターンが繰り返し確認されました
-- **第一に、「誤差の精密な定量化」が工学に固有の貢献です
-- **第二に、「渦の二つの型」が見えてきます
-- **第三に、「設計された創造」と「自然の創造」の対照が明確です
-
----
-
-## 未解決の問い
-
-- **設計者バイアス問題**: 工学の構造類似は「設計者が5段階を参照した結果」なのか、「独立に同じ構造に到達した結果」なのかの区別が体系化されていません。PID制御は歴史的に5段階モデルとは無関係に発展しましたが、遺伝的アルゴリズムは自然選択を明示的に参照して設計されています。この区別は、構造類似の証拠としての重みづけに影響します。
-- **渦の不在**: 情報理論（Shannon 容量）と圧縮センシングの一部（閉形式解がある場合）では、反復的な渦が弱いか不在です。非反復的な系にも5段階は成立するのか、それとも渦を欠く場合は部分的な対応にとどまるのかは整理が必要です。
-- **束の先在性**: 情報理論では束（通信路容量）が場の定義と同時に確定します。通常の5段階は場から束へ順に進行しますが、束が先に存在する系をどう位置づけるかは、5段階モデルの順序仮説を再考する契機となります。
-- **安全性という束の次元**: 暗号プロトコルは「安全性」という、情報理論の「効率」とは異なる次元の束を導入しています。5段階の束が複数の評価軸を持ちうるとすれば、束の定義そのものを拡張する必要があるかもしれません。
+- Feedback control is a closed-loop structure in which the output of a system is observed, and the deviation (error signal) from the target value is fed back to the input side for correction. Systematized by Wiener (1948) in cybernetics, it traces back to Maxwell's (1868) stability analysis of the governor. PID control is used in over 90% of industrial control applications (Astrom & Hagglund 2006), determining the correction amount through three components: proportional, integral, and derivative. The Kalman filter (1960) is a recursive Bayesian estimator that makes optimal state estimates from noisy observations.
+- **As established fact**: Feedback control is organized around the error signal e(t) = r(t) - y(t). The difference between the target value r(t) and the system output y(t) is fed to the controller, which corrects the system through an actuator. The Nyquist stability criterion (1932) and Bode diagrams quantify the conditions under which this feedback loop converges stably. Phase margin and gain margin serve as stability indicators. The integral term of PID control retains accumulated past error to eliminate steady-state offset, and the derivative term detects the rate of change of error to apply anticipatory correction.
+- **As a reading**: Here we read a structure in which the difference between target and reality drives the entire system through a closed loop. The level of analogy is **structure**. What we focus on is the arrangement of elements — sensor, controller, actuator, and plant forming a closed loop, with the error signal circulating through this loop to achieve self-correction. It is not the physical properties of individual elements, but the arrangement itself — "error fed back within a closed loop" — that supports the correspondence with the five stages.
+- **As interpretation**: The model of the controlled object and the design specification correspond to the Field. The generation of the error signal e(t) is the Wave; disturbances and target value changes produce this wave. The connection points among sensor, controller, and actuator — the interface where information (measurement) and matter (control input) are coupled — are the Edge. At these connection points, output is not determined due to disturbances and model uncertainty, and the control loop closes to connect to the Vortex (self-sustaining iterative correction). The iterative error correction of PID control is the Vortex, and convergence to specified performance — a stable pattern quantified as overshoot, settling time, and steady-state error — is the Bundle.
+- An important insight that control theory provides is the concept of "stability conditions." Feedback is not omnipotent; improper feedback causes oscillation (destabilization). Phase margin and gain margin are mathematical proofs that appropriate thresholds exist for the amount of feedback.
 
 ---
 
-## 結論
+## Key Entry 2: Deep Learning — Backpropagation and Gradient Descent (Rumelhart, Hinton & Williams)
 
-- 本調査では、工学・情報科学は5段階モデルとの構造類似が全体として有力な領域であると確認されました
-- 確定的に近い対応が見られるのは、フィードバック制御、深層学習、強化学習です
-- 工学の調査結果が理論にとって持つ最大の意味は二つあります
+- Deep learning is a technique that iteratively adjusts the connection weights of multi-layer neural networks to reduce output error. Backpropagation was formulated as reverse-mode automatic differentiation by Linnainmaa (1970); application to neural networks was pioneered by Werbos (1974). Rumelhart, Hinton & Williams (1986) popularized it through experimental demonstrations in Nature. AlexNet (2012), Transformer (Vaswani et al. 2017), and the residual connections of ResNet (He et al. 2016) have enabled deep architectures.
+- **As established fact**: Backpropagation efficiently computes gradients for each layer from the value of the output-layer loss function using the chain rule, and updates weights using stochastic gradient descent (SGD) or its variants (e.g., Adam). Research on loss landscapes shows that saddle points dominate in high-dimensional loss functions and local optima are rare (Dauphin et al. 2014). Batch normalization (Ioffe & Szegedy 2015) stabilizes training.
+- **As a reading**: Here we read a structure in which output errors propagate back through all layers and internal representations are spontaneously formed. The level of analogy is **process**, with particular attention to the sequence "error passes through all layers, transforming representations even in layers close to the input." Whereas control theory (Section 5.1) manipulates a plant in the external world, deep learning transforms representations within the model — a key difference.
+- **As interpretation**: The network structure (architecture) and weight space initialization constitute the Field. The loss function — the difference between the teaching signal and the model output — generates the Wave. The loss function is not merely a number but is the interface of a relationship that couples input data, network output, teaching signal, and loss computation; this corresponds to the Edge. Which solution is ultimately reached from the current position on the loss landscape is uncertain, and the iterative updates of SGD drive the system as the Vortex. The stochasticity of mini-batches aids exploration, and learning rate scheduling controls convergence. The learned internal representations — features and internal model quantified as task performance — constitute the Bundle.
+- The fact that a high-dimensional loss landscape has multiple good solutions is a computational confirmation that "different Bundles can emerge from the same Field" in the five-stage model.
+
+---
+
+## Key Entry 3: Reinforcement Learning — Reward Signals and Exploration-Exploitation (Sutton & Barto)
+
+- Reinforcement learning is a framework in which an agent interacts with an environment and learns a policy that maximizes a reward signal. The Markov decision process (MDP) is the mathematical foundation, and the textbook by Sutton & Barto (2018) is the standard reference. TD learning (temporal difference learning, Sutton 1988) uses prediction error (TD error: delta = r + gamma V(s') - V(s)) as the learning signal. This TD error connects to the reward prediction error hypothesis of dopamine in neuroscience (Schultz et al. 1997), serving as an important bridge between engineering and neuroscience.
+- **As established fact**: At the core of reinforcement learning is the exploration-exploitation tradeoff. This is the choice between exploiting known high-reward actions or exploring unknown possibilities; epsilon-greedy, UCB, and Thompson sampling are representative strategies. AlphaGo/AlphaZero (Silver et al. 2016, 2017) are success cases of deep reinforcement learning, and RLHF (reinforcement learning from human feedback) is used for alignment of large language models.
+- **As a reading**: Here we read a feedback structure in which reward prediction error drives policy improvement, and the branching structure of exploration-exploitation. The level of analogy is **mechanism**. In control theory (Section 5.1) and deep learning (Section 5.2), "where the error is" is given as a loss function or target value, but in reinforcement learning "where the error is itself is unknown" — a key difference. The value of unexplored areas is uncertain; without exploration, new reward sources cannot be found.
+- **As interpretation**: The environment (MDP) and the agent's initial policy constitute the Field. The reward signal and TD error — the difference between predicted and realized values — drive the system as the Wave. The exploration-exploitation branch point corresponds to the Edge. Here, state, action, reward, and value estimates are coupled, and the optimal action is not determined due to the probabilistic nature of the environment and incomplete knowledge. The policy improvement loop (iterative updating of value function and policy based on TD error) is the Vortex, and the learned policy — action rules approximating the optimum — is the Bundle.
+- The exploration-exploitation dilemma expresses most clearly in engineering the undecidedness that characterizes the Edge of the five stages. Relying only on known exploitation leads to local optima; without exploration, new structures cannot be reached.
+
+---
+
+## Cross-Cutting Patterns
+
+- Four structural patterns were confirmed repeatedly across 10 theories and technologies in engineering and information science
+- **First, "precise quantification of error" is the distinctive contribution of engineering**
+- **Second, "two types of Vortex" become visible**
+- **Third, the contrast between "designed creation" and "natural creation" is clear**
+
+---
+
+## Open Questions
+
+- **The designer bias problem**: Whether the structural analogies in engineering are "the result of designers referencing the five stages" or "the result of independently arriving at the same structure" has not been systematized. PID control developed historically independently of the five-stage model, whereas genetic algorithms were explicitly designed with reference to natural selection. This distinction affects the weighting of structural analogy as evidence.
+- **Absence of the Vortex**: In information theory (Shannon capacity) and parts of compressed sensing (when closed-form solutions exist), the iterative Vortex is weak or absent. Whether the five stages hold in non-iterative systems, or whether cases lacking a Vortex remain only partial correspondences, requires clarification.
+- **Prior existence of the Bundle**: In information theory, the Bundle (channel capacity) is determined simultaneously with the definition of the Field. Ordinarily the five stages proceed sequentially from Field to Bundle, but how to situate systems where the Bundle exists first is an occasion to reconsider the ordering hypothesis of the five-stage model.
+- **The dimension of safety as a Bundle**: Cryptographic protocols introduce a Bundle of a different dimension — "security" — distinct from the "efficiency" that information theory optimizes. If the Bundle of the five stages can have multiple evaluation axes, it may be necessary to extend the very definition of the Bundle.
+
+---
+
+## Conclusion
+
+- This survey confirmed that engineering and information science is overall a domain with probable structural analogy to the five-stage model
+- Near-definitive correspondence is found in feedback control, deep learning, and reinforcement learning
+- The most significant meanings of the engineering survey results for the theory are two

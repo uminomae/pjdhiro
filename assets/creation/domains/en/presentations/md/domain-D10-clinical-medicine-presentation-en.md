@@ -1,6 +1,6 @@
 ---
-title: "臨床免疫 - 5段階モデルとの構造対応"
-lang: ja
+title: "Clinical Immunology - Structural Correspondence with the Five-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,99 +8,99 @@ source: "domain-D10-clinical-medicine-academic-ja.md"
 type: presentation
 ---
 
-## 臨床免疫
+## Clinical Immunology
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 臨床免疫の主要理論 10件
-- **調査の問い**: 臨床免疫の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 8件、部分的な対応 2件
+Structural correspondence survey with the five-stage model (Field · Wave · Edge · Vortex · Bundle)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Survey targets**: 10 major theories in clinical immunology
+- **Research question**: Do the theories of clinical immunology correspond structurally to the five-stage model?
+- **Results**: Strong correspondence in 8 cases, partial correspondence in 2 cases
 
 ---
 
-## 構造対応の全体像
+## Overview of the Five-Stage Model
 
-| # | 理論/プロセス | 提唱者 | 対応段階 | 判定 |
-|---|-------------|--------|---------|------|
-| 1 | クローン選択説 | Burnet (1957), Tonegawa (1983) | 場→波→縁→渦→束 | 強い対応 |
-| 2 | がん免疫編集 3E | Dunn, Schreiber, Old (2002-2004) | 場→波→縁→渦→束 | 強い対応 |
-| 3 | 炎症の能動的収束 | Serhan (2000s〜) | 場→波→縁→渦→束 | 強い対応 |
-| 4 | 創傷治癒プロセス | Guo & DiPietro (2010), Landén et al. (2016) | 場→波→縁→渦→束 | 強い対応 |
-| 5 | 敗血症の免疫動態 | Bone (1996), Hotchkiss et al. (2013) | 場→波→縁→渦→束 | 部分的な対応 |
-| 6 | 骨折修復プロセス | Einhorn & Gerstenfeld (2015) | 場→波→縁→渦→束 | 強い対応 |
-| 7 | アレルゲン免疫療法 | Akdis & Akdis (2014) | 場→波→縁→渦→束 | 強い対応 |
-| 8 | 移植免疫と寛容誘導 | Medawar (1944), Kawai et al. (2008) | 場→波→縁→渦→束 | 強い対応 |
-| 9 | 自己免疫疾患の発症 | Rose & Bona (1993), Rosenblum et al. (2015) | 場→波→縁→渦→束 | 部分的な対応 |
-| 10 | 胚中心反応と親和性成熟 | MacLennan (1994), Victora & Nussenzweig (2012) | 場→波→縁→渦→束 | 強い対応 |
+| Stage | Definition |
+|-------|-----------|
+| Field (ba) | An undifferentiated state. The initial condition in which no direction or structure has yet been established |
+| Wave (nami) | The stage of exploration in which multiple directions diverge and compete |
+| Edge (en) | A state of tension in which opposing elements coexist without converging toward either side. The place where elements meet at a boundary, influence each other, and relationships emerge |
+| Vortex (uzu) | The stage in which a new coherence (order) arises spontaneously from within the tension |
+| Bundle (taba) | The stage in which form is established and stabilizes as a reusable structure |
 
 ---
 
-## 主要エントリ 1: クローン選択説による適応免疫応答（Burnet, Tonegawa）
+## Overview of Structural Correspondences
 
-- クローン選択説は、適応免疫の中核原理です。体内には遺伝子の組換え（V(D)J組換え）によって10の11乗にのぼる多様な抗原受容体を持つリンパ球が生成されており、抗原に適合するクローンだけが選択的に増殖してエフェクター細胞や記憶細胞を形成します。Burnet（1957）が原理を提唱し、Tonegawa（1983）が分子機構を解明しました。
-- **事実として**: V(D)J組換えは、リンパ球の遺伝子を意図的に切断・再結合することで、膨大な受容体多様性を生成する仕組みです。抗原が侵入すると、その抗原に適合する受容体を持つクローンが活性化され、増殖・分化してエフェクター応答を形成します。応答後、一部のクローンはメモリー細胞として長期間維持され、二次感染時にはより速く、より強い応答を示します（Murphy & Weaver, 2016）。
-- **読み取りとして**: ここでは、「制度的な誤差生産」とでも呼ぶべき仕組みを読み取ります。免疫系はDNAを計画的に切断し、ランダムな組合せを大量に生み出すことで「何が来ても対応できる潜在空間」を事前に用意しています。類似の水準はメカニズムであり、特に「ランダムな多様性の事前生成→環境による選択→増幅→固定」という一連の因果構造に着目します。
-- **解釈として**: V(D)J組換えで生成された受容体レパトアは、まだ何にも応答していない潜在空間として場に対応します。抗原の侵入によって特定のクローンの反応性が顕在化する過程が波です。抗原提示細胞（樹状細胞やマクロファージ）とT細胞・B細胞がMHC-ペプチド複合体を介して物理的に接触し、相互にシグナルを交換する過程が縁にあたります。この接触の結果としてクローンが増殖・分化する過程が渦であり、メモリー細胞として長期に維持される状態が束です。
-- この対応が注目に値するのは、免疫系がDNAを意図的に切断するという、通常は有害な操作を「計画的な誤差生産」として制度化している点です。多様性は偶然の産物ではなく、制度的に生産されたものであり、その中から環境に適合するものだけが選択されます。
-
----
-
-## 主要エントリ 2: がん免疫編集 3E（Dunn, Schreiber, Old）
-
-- がん免疫編集は、免疫系と腫瘍の長期的な共進化を記述するモデルです。Dunn, Old, Schreiber（2004）は、免疫系が腫瘍を排除する段階（Elimination）、免疫圧下で腫瘍が変化しながら共存する段階（Equilibrium）、免疫から逃避したクローンが成長する段階（Escape）という三つの局面を提唱しました。
-- **事実として**: 免疫系は腫瘍細胞を認識し排除する能力を持ちますが、同時に、免疫圧のもとで腫瘍細胞が選択され、免疫認識を回避するクローンが出現します。Equilibrium期は年単位に及ぶことがあり、臨床的には潜在的ながんとして存在し続けます。免疫チェックポイント阻害療法（PD-1/PD-L1阻害薬など）の臨床的成功は、このモデルの妥当性を裏づけています（Sharma & Allison, 2015）。
-- **読み取りとして**: ここでは、二つの異なる主体（免疫系と腫瘍）が長期間にわたって相互に選択圧を及ぼし合い、どちらにも決着しない共存状態が持続するという構造を読み取ります。類似の水準はプロセスであり、「対立する力の長期的共存→一方の逃避による均衡の破れ」という時間的展開に着目します。
-- **解釈として**: 腫瘍内の遺伝的多様性と免疫監視機構の共存状態が場です。免疫系がネオアンチゲン（腫瘍特異的な変異タンパク質）を認識し、腫瘍細胞間の差異が顕在化する過程が波にあたります。T細胞と腫瘍細胞の相互作用、NK細胞とMHC分子の関係、PD-1/PD-L1を介した抑制と活性化の拮抗が縁です。特にEquilibrium期は、排除にも逃避にも確定しない「縁の長期持続」として注目されます。免疫逃避クローンの選択的増殖が渦であり、進展腫瘍としての固定、あるいは免疫療法による排除・寛解が束です。
-- この知見で重要なのは、渦が必ずしも「建設的」ではないという点です。免疫逃避クローンの立ち上がりは生体にとって有害な創造であり、5段階が記述するのは「良い創造」ではなく「創造そのもの」であること——つまり5段階は価値中立であること——を示唆しています。
+| # | Theory / Process | Proponents | Corresponding Stages | Judgment |
+|---|-----------------|------------|----------------------|----------|
+| 1 | Clonal selection theory | Burnet (1957), Tonegawa (1983) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 2 | Cancer immunoediting 3E | Dunn, Schreiber, Old (2002-2004) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 3 | Active resolution of inflammation | Serhan (2000s–) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 4 | Wound healing process | Guo & DiPietro (2010), Landén et al. (2016) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 5 | Immune dynamics in sepsis | Bone (1996), Hotchkiss et al. (2013) | Field→Wave→Edge→Vortex→Bundle | Partial correspondence |
+| 6 | Fracture repair process | Einhorn & Gerstenfeld (2015) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 7 | Allergen immunotherapy | Akdis & Akdis (2014) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 8 | Transplant immunology and tolerance induction | Medawar (1944), Kawai et al. (2008) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
+| 9 | Autoimmune disease pathogenesis | Rose & Bona (1993), Rosenblum et al. (2015) | Field→Wave→Edge→Vortex→Bundle | Partial correspondence |
+| 10 | Germinal center reaction and affinity maturation | MacLennan (1994), Victora & Nussenzweig (2012) | Field→Wave→Edge→Vortex→Bundle | Strong correspondence |
 
 ---
 
-## 主要エントリ 3: 創傷治癒プロセス（Guo & DiPietro, Landén et al.）
+## Key Entry 1: Adaptive Immune Response by Clonal Selection Theory (Burnet, Tonegawa)
 
-- 創傷治癒は、止血、炎症、細胞増殖、リモデリングという段階を経て組織が修復される一連のプロセスです。各段階の移行は分子レベルで制御されており、特にマクロファージの表現型転換が段階間の移行を駆動することが知られています。
-- **事実として**: 損傷が起きると、まず血小板による止血とフィブリン血栓の形成が起こり、PDGFやTGF-βなどの増殖因子が放出されます。続いて好中球やマクロファージが浸潤し、炎症反応が展開されます。マクロファージは炎症促進型（M1型）から修復促進型（M2型）へ表現型を転換し、この転換が線維芽細胞の活性化、血管新生、再上皮化を促進します（Landén et al., 2016）。最終段階では、コラーゲンの再配列と架橋によるリモデリングが進み、組織構造が安定化します。なお、M1/M2の二分法は連続的なスペクトラムの両端を代表するモデルであり、実際のマクロファージ表現型はより多様な混合状態をとりうることが指摘されています（Murray et al., 2014）。
-- **読み取りとして**: ここでは、同一の細胞（マクロファージ）が微小環境に応じて炎症促進と修復促進という正反対の役割を切り替え、この切り替えが次の段階への移行を駆動するという構造を読み取ります。類似の水準はプロセスであり、「段階の時間的順序性」と「行為者の役割転換が段階移行を駆動する」という因果構造に着目します。
-- **解釈として**: 創傷床に形成される止血血栓（フィブリンと増殖因子のリザーバー）が場です。好中球からマクロファージへと時間差で到来する炎症細胞の浸潤が波にあたります。M1型からM2型へのマクロファージ表現型転換を軸とした、線維芽細胞・内皮細胞との多重的な相互作用が縁です。肉芽形成、血管新生、再上皮化が正のフィードバックで増幅される過程が渦であり、コラーゲンの再配列・架橋・創収縮による構造安定化が束です。
-- 創傷治癒が示す最も重要な知見は、縁が単なる「関係」ではなく「質的転換の場」であるという点です。同じマクロファージが環境によって壊す側から治す側に変わるという事実は、縁の本質が関係のダイナミクスにあることを具体的に示しています。また、M1→M2転換が失敗した場合に慢性創傷（糖尿病性潰瘍など）に至るという臨床像は、縁での転換失敗が渦への移行を阻害する失敗モードの実例です。
-
----
-
-## 横断的パターン
-
-- 臨床医学を横断して最も際立つのは、「縁の観察可能性」です
-- 第二に、「失敗モードの体系性」が浮かび上がります
-- 第三に、「組織修復の変奏」として、創傷治癒と骨折修復に共通する「損傷→炎症→修復→安定化」のパターンが確認されます
-- 第四に、「束の可塑性」が複数のプロセスで確認されます
+- Clonal selection theory is the core principle of adaptive immunity. Within the body, lymphocytes bearing over 10^11 diverse antigen receptors are generated through gene recombination (V(D)J recombination), and only the clones that match an antigen selectively proliferate to form effector cells and memory cells. Burnet (1957) proposed the principle; Tonegawa (1983) elucidated the molecular mechanism.
+- **As established fact**: V(D)J recombination generates enormous receptor diversity by intentionally cutting and rejoining lymphocyte genes. When an antigen invades, the clone bearing a receptor that matches that antigen is activated and proliferates and differentiates to form an effector response. After the response, some clones are maintained as memory cells for long periods, displaying a faster and stronger response upon secondary infection (Murphy & Weaver, 2016).
+- **As a reading**: Here we read a mechanism that might be called "institutionalized error production." The immune system plans DNA cuts and generates large numbers of random combinations, thereby pre-preparing a "latent space capable of responding to whatever comes." The level of analogy is mechanism, with particular attention to the causal sequence of "pre-generation of random diversity → selection by environment → amplification → fixation."
+- **As interpretation**: The receptor repertoire generated by V(D)J recombination — as a latent space not yet responsive to anything — corresponds to the Field. The process in which the reactivity of specific clones becomes manifest through antigen invasion is the Wave. The process in which antigen-presenting cells (dendritic cells and macrophages) make physical contact with T cells and B cells via MHC-peptide complexes and mutually exchange signals corresponds to the Edge. The process in which clones proliferate and differentiate as a result of this contact is the Vortex, and the state in which memory cells are maintained long-term is the Bundle.
+- What makes this correspondence noteworthy is that the immune system institutionalizes what is ordinarily a harmful operation — intentional DNA cutting — as "planned error production." Diversity is not a product of chance but is institutionally produced, and only what fits the environment is selected from among it.
 
 ---
 
-## 未解決の問い
+## Key Entry 2: Cancer Immunoediting 3E (Dunn, Schreiber, Old)
 
-- 免疫系における「縁」は、細胞間の物理的接触（抗原提示）、自己/非自己の識別境界、治療的介入の分岐点など、異なる水準で使われています。これらを同じ「縁」として扱うことが妥当か、下位分類が必要かは、今後の整理が必要です。
-- 敗血症のSIRS/CARSモデルは「過度に単純化」との批判を受けており、実際にはSIRSとCARSが早期から同時並行的に進行することが判明しています。このモデルを5段階に対応づける場合、逐次モデルではなく同時並行的な動態をどのように記述するかが課題です。
-- 病的なプロセス（がん免疫逃避、自己免疫、敗血症）への5段階の適用は、モデルの記述範囲を「正常な創造」から「構造変化一般」に拡張することを意味します。この拡張の妥当性と限界は、他領域の知見との照合が必要です。
-- クローン選択説と胚中心反応は、マクロスケールとマイクロスケールの入れ子構造として読めますが、この「同じ構造が異なるスケールで反復する」ことが5段階に固有の性質なのか、一般的な自己組織化現象の反映なのかは検証が必要です。
+- Cancer immunoediting is a model describing the long-term co-evolution of the immune system and tumors. Dunn, Old, and Schreiber (2004) proposed three phases: a stage in which the immune system eliminates tumors (Elimination), a stage in which tumors change and coexist under immune pressure (Equilibrium), and a stage in which clones that have escaped immunity grow (Escape).
+- **As established fact**: The immune system has the ability to recognize and eliminate tumor cells, but simultaneously, tumor cells are selected under immune pressure and clones that evade immune recognition emerge. The Equilibrium phase can extend over years, during which subclinical cancer exists continuously. The clinical success of immune checkpoint inhibitor therapy (e.g., PD-1/PD-L1 inhibitors) supports the validity of this model (Sharma & Allison, 2015).
+- **As a reading**: Here we read a structure in which two different agents (immune system and tumor) exert mutual selective pressure on each other over a long period, and a state of coexistence in which neither side reaches a conclusion persists. The level of analogy is process, with attention to the temporal progression of "long-term coexistence of opposing forces → disruption of equilibrium through the escape of one side."
+- **As interpretation**: The coexistence of intratumoral genetic diversity and immune surveillance corresponds to the Field. The process in which the immune system recognizes neoantigens (tumor-specific mutant proteins) and differences among tumor cells become manifest corresponds to the Wave. The interaction between T cells and tumor cells, the relationship between NK cells and MHC molecules, and the antagonism between PD-1/PD-L1-mediated suppression and activation constitute the Edge. In particular, the Equilibrium phase warrants attention as a "prolonged persistence of the Edge" — settled in neither elimination nor escape. The selective proliferation of immune-escaping clones is the Vortex, and fixation as a progressed tumor, or elimination/remission through immunotherapy, is the Bundle.
+- What is important in this finding is that the Vortex is not necessarily "constructive." The rise of immune-escaping clones is a creation that is harmful to the living body, suggesting that what the five stages describe is not "good creation" but "creation itself" — that is, the five stages are value-neutral.
 
 ---
 
-## 結論
+## Key Entry 3: Wound Healing Process (Guo & DiPietro, Landén et al.)
 
-- 本調査では、臨床医学・免疫学は5段階モデルとの構造対応が全体として強い領域であることが確認されました
-- 特に重要な知見は三つです
-- 一方で、免疫学の知見は分子・細胞スケールに集中しており、5段階の対応がこのスケールに特に適合しやすいのか、他のスケールでも同等の対応が得られるのかについては、慎重な検討が必要です
+- Wound healing is a series of processes by which tissue is repaired through stages of hemostasis, inflammation, cell proliferation, and remodeling. The transition between each stage is controlled at the molecular level, and in particular it is known that the phenotypic switching of macrophages drives transitions between stages.
+- **As established fact**: When damage occurs, hemostasis by platelets and fibrin clot formation first occur, releasing growth factors such as PDGF and TGF-β. Subsequently neutrophils and macrophages infiltrate and an inflammatory response unfolds. Macrophages switch phenotype from pro-inflammatory (M1 type) to pro-repair (M2 type), and this switch promotes fibroblast activation, angiogenesis, and re-epithelialization (Landén et al., 2016). In the final stage, remodeling through collagen rearrangement and cross-linking progresses and tissue structure stabilizes. Note that the M1/M2 dichotomy represents both ends of a continuous spectrum, and it has been pointed out that actual macrophage phenotypes can take more diverse mixed states (Murray et al., 2014).
+- **As a reading**: Here we read the structure in which the same cell (macrophage) switches between diametrically opposite roles — pro-inflammatory and pro-repair — depending on the microenvironment, and this switching drives transitions to the next stage. The level of analogy is process, with attention to the "temporal sequentiality of stages" and the causal structure of "agent role switching driving stage transitions."
+- **As interpretation**: The hemostatic clot formed in the wound bed (a reservoir of fibrin and growth factors) is the Field. The inflammatory cell infiltration arriving at different times — from neutrophils to macrophages — constitutes the Wave. The multiple interactions centering on macrophage phenotypic switching from M1 to M2 type — involving fibroblasts and endothelial cells — constitute the Edge. The process in which granulation tissue formation, angiogenesis, and re-epithelialization are amplified by positive feedback is the Vortex, and structural stabilization through collagen rearrangement, cross-linking, and wound contraction is the Bundle.
+- The most important insight that wound healing provides is that the Edge is not merely a "relationship" but a "site of qualitative transformation." The fact that the same macrophage changes from the side that destroys to the side that heals depending on the environment concretely shows that the essence of the Edge lies in the dynamics of relationship. Furthermore, the clinical picture in which failure of the M1→M2 switch leads to chronic wounds (such as diabetic ulcers) is a real example of a failure mode in which transformation failure at the Edge blocks the transition to the Vortex.
+
+---
+
+## Cross-Cutting Patterns
+
+- The most striking pattern across clinical medicine is the "observability of the Edge"
+- Second, the "systematicity of failure modes" emerges
+- Third, as a "variation on tissue repair," a pattern common to wound healing and fracture repair of "damage → inflammation → repair → stabilization" is confirmed
+- Fourth, the "plasticity of the Bundle" is confirmed in multiple processes
+
+---
+
+## Open Questions
+
+- The "Edge" in immunology is used at different levels: physical contact between cells (antigen presentation), the self/non-self recognition boundary, and the branch point of therapeutic intervention. Whether treating these as the same "Edge" is valid, or whether sub-classification is needed, requires future clarification.
+- The SIRS/CARS model of sepsis has received criticism for "oversimplification," and it has been found that SIRS and CARS in fact proceed simultaneously in parallel from early stages. When mapping this model onto the five stages, how to describe this simultaneously parallel dynamics rather than a sequential model is a challenge.
+- Applying the five stages to pathological processes (cancer immune escape, autoimmunity, sepsis) means extending the descriptive scope of the model from "normal creation" to "structural change in general." The validity and limits of this extension require comparison with findings from other domains.
+- Clonal selection theory and the germinal center reaction can be read as a nested structure at macro and micro scales, but whether this "same structure repeating at different scales" is a property unique to the five stages or a reflection of general self-organization phenomena requires verification.
+
+---
+
+## Conclusion
+
+- This survey confirmed that clinical medicine and immunology is overall a domain with strong structural correspondence to the five-stage model
+- Three findings are particularly important
+- On the other hand, immunological findings are concentrated at the molecular and cellular scale, and careful consideration is needed as to whether the five-stage correspondence is particularly suited to this scale or whether equivalent correspondence can be obtained at other scales

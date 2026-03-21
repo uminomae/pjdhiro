@@ -1,6 +1,6 @@
 ---
-title: "音楽学 - 5段階モデルとの構造対応"
-lang: ja
+title: "Musicology - Structural Correspondence with the 5-Stage Model"
+lang: en
 version: "1.0"
 date: "2026-03-21"
 generator_model: "claude:claude-opus-4-6"
@@ -8,88 +8,88 @@ source: "domain-D26-musicology-academic-ja.md"
 type: presentation
 ---
 
-## 音楽学
+## Musicology
 
-5段階モデル（場・波・縁・渦・束）との構造対応調査
-
----
-
-## 調査の概要
-
-- **調査対象**: 音楽学の主要理論 7件
-- **調査の問い**: 音楽学の諸理論は、5段階モデルと構造的に対応するか
-- **判定結果**: 強い対応 1件、部分的な対応 1件、条件付きの対応 2件
+Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / Taba)
 
 ---
 
-## 5段階モデルの概要
+## Survey Overview
 
-| 段階 | 定義 |
-|------|------|
-| 場（ば） | 未分化の状態。方向も構造もまだ定まっていない初期条件 |
-| 波（なみ） | 複数の方向性が発散・競合する探索の段階 |
-| 縁（えん） | 対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所 |
-| 渦（うず） | 緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階 |
-| 束（たば） | 形が確定し、再利用可能な構造として安定する段階 |
+- **Survey target**: 7 major theories in musicology
+- **Research question**: Do the various theories of musicology correspond structurally to the 5-stage model?
+- **Results**: Strong correspondence in 1 case, partial correspondence in 1 case, conditional correspondence in 2 cases
 
 ---
 
-## 構造対応の全体像
+## Overview of the 5-Stage Model
 
-| 温度 | 理論群 | 位置づけ |
-|---|---|---|
-| 確定に近い | Meyer期待理論、Huron ITPRA理論 | 「期待→偏差→再評価」のプロセスが5段階の全段と高い精度で対応します |
-| 有力 | Pressing即興モデル、ソナタ形式、グルーヴ理論、聴覚景分析（Bregman）、歌の普遍性研究（NHS） | 対応はありますが、記述水準の違い（情報処理 vs 存在生成）や、メタレベルとの区別が必要です |
-| 条件つき | Lerdahl TPS、ラーガの段階構造、Clarkeの生態学的音楽知覚 | 部分的な対応はありますが、分析モデルとしての性質、文献根拠の限定性、段階モデルへの理論的批判といった留保があります |
-
----
-
-## 主要エントリ 1: 音楽的期待と情動の生成（Meyer）
-
-- Meyer（1956）は、音楽的意味が期待の生成・阻害・遅延・解決から生じるとする理論を提唱しました。聴取者は特定のスタイル体系の中で音楽的傾向（tendency）を学習しており、その傾向が阻害されたり遅延されたりすると、サスペンスが生まれ、代替的な継続可能性が立ち上がります。予期外の出来事の後、聴取者は信念体系の中へ急速に適合させようとします。この理論は、音楽的情動の生成メカニズムを「期待→阻害→代替可能性→解決→信念統合」という5段階のプロセスとして記述しています。
-- **事実として**: Meyerは、音楽的意味と情動が、特定のスタイル体系内で学習された期待（tendency）の生成・阻害・遅延・解決から生じることを論じました。傾向の阻害がサスペンスを生み、代替的な継続可能性（alternative continuations）が並立する場面で情動的緊張が最大化します。期待違反と生理反応（皮膚電気反応・心拍等）の対応は、後続の実験研究（Egermann et al., 2013）でも確認されています。
-- **読み取りとして**: ここでは、複数の継続可能性が競合しながらどれが実現するか未確定である状態を、構造的特徴として読み取ります。類似の水準はプロセスです。特に「代替的継続可能性の並立と重みづけ」という構造に着目します。期待が立ち上がること、その期待が阻害されること、複数の可能性が共存すること、帰結が到来すること、そして信念体系へ統合されることという一連の時間的展開が、プロセスとして5段階と対応しています。
-- **解釈として**: 文化的傾向（スタイル体系）の作動は場に対応します。期待の立ち上がりと阻害は波に対応します。代替的継続可能性が並立し重みづけされる局面は、対立する要素が共存しどちらにも収束しない緊張状態としての縁に対応します。到来した帰結の再評価は渦に、信念体系への統合は束に対応します。この対応は全段にわたって高い精度で成立しており、音楽学における5段階の中核的な接続点です。
+| Stage | Definition |
+|-------|------------|
+| Ba (Field) | An undifferentiated state. The initial condition in which no direction or structure has yet been established |
+| Wave | The exploratory stage in which multiple directions diverge and compete |
+| En (Edge) | A state of tension in which opposing elements coexist without converging on either side. The place where they meet at the boundary, influence each other, and relationships emerge |
+| Uzu (Vortex) | The stage in which a new coherence (order) arises spontaneously from within the tension |
+| Taba (Bundle) | The stage in which the form is fixed and stabilizes as a reusable structure |
 
 ---
 
-## 主要エントリ 2: ITPRA理論（Huron）
+## Overview of Structural Correspondences
 
-- Huron（2006）は、Meyerの期待-情動理論を進化心理学と計算論的神経科学の枠組みで再構成しました。音楽的期待に対して、5つの機能的に独立した応答系が時間順に作動するとされます。Imagination（事前の想像的予行）、Tension（事前の身体的準備）、Prediction（結果時点での予測正確性の報酬）、Reaction（結果時点での自動的反応）、Appraisal（事後の意識的評価）の5つです。
-- **事実として**: Huronは、予測応答（Prediction response）が予測の正確さに対して正の情動を生む独立したメカニズムであること、またTension応答の負の情動が解決時に正の情動に転じる「対照的情動価（contrastive valence）」の構造を論じています。これにより、「不安の後の安堵」がなぜ快いのかという問いに対して、進化論的な説明が与えられます。
-- **読み取りとして**: ここでは、5つの応答系が時間的に展開する順序構造を読み取ります。類似の水準は構造であり、単にラベルが似ているということではなく、各応答系の機能的内容と5段階の各段階の定義が個別に対応しています。特にPrediction応答は、予測と現実が出会う境界時点そのものであり、可能性空間が閉じる瞬間を計算論的に記述しています。
-- **解釈として**: Imaginationは未来の可能性空間を漂う想像的予行として場に対応します。Tensionは身体的準備としての覚醒・対立の生成として波に対応します。Predictionは予測と現実が出会う境界時点として縁に対応します。Reactionは自動的応答の結晶化として渦に対応します。Appraisalは意識的再評価と信念体系への統合として束に対応します。ITPRA理論は、Meyerが問うた「なぜ音楽が感動を生むか」に対して、「どのように期待応答系が作動するか」を答えるものであり、同じ現象の異なる記述水準からの照射です。
-
----
-
-## 主要エントリ 3: 即興の情報処理サイクル（Pressing）
-
-- Pressing（1988）は、即興を「事象生成→感覚モニタリング→認知表象→評価→次行為計画→次行為→フィードバック」の7ステップ循環として記述しました。即興研究と認知科学の交差点に位置する理論であり、即興と固定演奏の差異は、表象評価と次行為設計の段階で最大になるとされます。
-- **事実として**: Pressingのモデルでは、即興における誤差は修正対象ではなく、次の創造の入力になります。また、即興の巧みさはスキーマの豊かさ（蓄積された音楽的パターンの層の厚み）に依存することが示唆されています。この循環構造は、ミリ秒（運動制御）から秒（フレーズ構成）、さらに年（スタイル形成）まで、複数のスケールで同時に作動します。
-- **読み取りとして**: ここでは、循環的なフィードバック構造の中で「認知表象と評価」が質的転換点として機能する構造を読み取ります。類似の水準はプロセスです。7ステップの循環が単なる反復ではなく、各サイクルで新たな音楽的文脈が生成される点に着目します。
-- **解釈として**: 行為前の連続的な背景（音楽的文脈やスタイル知識）は場に対応します。感覚モニタリングによる差分検出は波に対応します。認知表象と評価、すなわち音を音楽にする境界は縁に対応します。次行為系列の設計と発火は渦に対応します。そして循環反復による学習やスタイル形成は束に対応し、その束が次の場を規定する循環構造を持っています。ただし、Pressingのモデルは情報処理的記述であり、存在生成的な記述とは水準が異なることに留意が必要です。
+| Confidence | Theory group | Positioning |
+|------------|-------------|-------------|
+| Near-established | Meyer's expectation theory, Huron's ITPRA theory | The process of "expectation→deviation→re-evaluation" corresponds with high precision to all 5 stages |
+| Compelling | Pressing's improvisation model, Sonata form, Groove theory, Auditory scene analysis (Bregman), Universality of song research (NHS) | Correspondence exists, but differences in level of description (information processing vs. ontological generation) and distinction from the meta-level are needed |
+| Conditional | Lerdahl TPS, Raga's stage structure, Clarke's ecological music perception | Partial correspondence exists, but with caveats regarding the analytical model character, limited textual basis, and theoretical critique of stage models |
 
 ---
 
-## 横断的パターン
+## Key Entry 1: Musical Expectation and Emotion Generation (Meyer)
 
-- 音楽学を横断して、以下の構造的パターンが繰り返し現れます
-- **第一に、「期待→偏差→再評価」の再帰的構造です
-- **第二に、「縁」の多層的記述です
-- **第三に、「束→場」の循環構造です
-
----
-
-## 未解決の問い
-
-- Meyerの期待理論と予測符号化の関係は、まだ十分に整理されていません。Meyer（1956）の「傾向（tendency）」は計算論的な「予測（prediction）」と同一の概念なのか、それとも別の概念なのかは、音楽心理学と認知科学の双方にまたがる未解決の問いです。
-- ソナタ形式における「対立を設計する主体」と「形式が自律的に展開する」の関係をどう記述するかは、作曲と形式の非二元的な関係に関わる理論的問題です。
-- Lerdahl TPSのような分析モデルと、Pressingの即興モデルのような生成的記述の間に、どこで線を引くべきかは未解決です。「分析」と「生成」はスペクトラム上に位置するのかもしれませんし、線を引くこと自体が誤りである可能性もあります。
-- ラーガのジョールからジャーラーへの移行領域は「縁」に対応するのか、それとも「波の増幅」に近いのかは、非西洋音楽における段階構造の解釈に関わる問いです。
+- Meyer (1956) proposed a theory in which musical meaning arises from the generation, inhibition, delay, and resolution of expectations. Listeners learn musical tendencies within a specific style system, and when those tendencies are inhibited or delayed, suspense is created and alternative continuations arise. After unexpected events, listeners rapidly try to assimilate them into their belief system. This theory describes the mechanism of musical emotion generation as a 5-stage process of "expectation → inhibition → alternative possibility → resolution → belief integration."
+- **As a matter of fact**: Meyer argued that musical meaning and emotion arise from the generation, inhibition, delay, and resolution of expectations (tendencies) learned within a specific style system. When a tendency is inhibited, suspense is produced, and emotional tension is maximized in the scene where alternative continuations stand in parallel. The correspondence between expectation violation and physiological responses (galvanic skin response, heart rate, etc.) has also been confirmed in subsequent experimental research (Egermann et al., 2013).
+- **As an interpretation of structure**: Here we read as a structural feature the state in which multiple continuations compete while it remains undetermined which will be realized. The level of similarity is process. Particular attention is given to the structure of "the parallelism and weighting of alternative continuations." The temporal unfolding — expectation arising, expectation being inhibited, multiple possibilities coexisting, outcome arriving, and integration into the belief system — corresponds to the 5 stages as a process.
+- **As an interpretive reading**: The operation of cultural tendencies (style system) corresponds to Ba. The arising of expectation and its inhibition correspond to Wave. The phase in which alternative continuations stand in parallel and are weighted corresponds to En as a state of tension in which opposing elements coexist without converging on either side. Re-evaluation of the arriving outcome corresponds to Uzu, and integration into the belief system corresponds to Taba. This correspondence holds with high precision across all stages, making it the core connection point of the 5 stages in musicology.
 
 ---
 
-## 結論
+## Key Entry 2: ITPRA Theory (Huron)
 
-- 本調査では、音楽学は5段階モデルとの構造類似が全体として強い領域であることが確認されました
-- 特に重要な知見は三つあります
+- Huron (2006) reconstructed Meyer's expectation-emotion theory within the framework of evolutionary psychology and computational neuroscience. Five functionally independent response systems are said to operate in temporal order in response to musical expectation: Imagination (anticipatory imaginative rehearsal), Tension (anticipatory physical preparation), Prediction (reward for prediction accuracy at the moment of outcome), Reaction (automatic response at the moment of outcome), and Appraisal (post-hoc conscious evaluation).
+- **As a matter of fact**: Huron discusses that the Prediction response is an independent mechanism that generates positive emotion in response to prediction accuracy, and the structure of "contrastive valence," in which the negative emotion of the Tension response converts to positive emotion at resolution. This provides an evolutionary explanation for why "relief after anxiety" is pleasurable.
+- **As an interpretation of structure**: Here we read the sequential structure in which 5 response systems unfold temporally. The level of similarity is structure, and it is not merely that labels are similar, but that the functional content of each response system and the definition of each stage of the 5 stages correspond individually. In particular, the Prediction response describes computationally the very moment when the space of possibilities closes — the boundary moment when prediction and reality meet.
+- **As an interpretive reading**: Imagination corresponds to Ba as imaginative rehearsal drifting in the future space of possibilities. Tension corresponds to Wave as arousal/generation of opposition through physical preparation. Prediction corresponds to En as the boundary moment when prediction and reality meet. Reaction corresponds to Uzu as the crystallization of automatic response. Appraisal corresponds to Taba as conscious re-evaluation and integration into the belief system. ITPRA theory answers "how do expectation response systems operate" to the question "why does music generate emotion" that Meyer asked, providing illumination from different levels of description of the same phenomenon.
+
+---
+
+## Key Entry 3: Information Processing Cycle of Improvisation (Pressing)
+
+- Pressing (1988) described improvisation as a 7-step cycle of "event generation → sensory monitoring → cognitive representation → evaluation → next action planning → next action → feedback." A theory at the intersection of improvisation research and cognitive science, it is suggested that the difference between improvisation and fixed performance is greatest at the stages of representational evaluation and next-action design.
+- **As a matter of fact**: In Pressing's model, errors in improvisation are not targets for correction but become inputs for the next creation. It is also suggested that improvisational skill depends on the richness of schemas (the thickness of accumulated layers of musical patterns). This cyclic structure operates simultaneously across multiple scales: milliseconds (motor control), seconds (phrase construction), and years (style formation).
+- **As an interpretation of structure**: Here we read the structure in which "cognitive representation and evaluation" function as a qualitative turning point within a cyclic feedback structure. The level of similarity is process. Attention is given to the point that the 7-step cycle is not mere repetition but that a new musical context is generated with each cycle.
+- **As an interpretive reading**: The continuous background prior to action (musical context and style knowledge) corresponds to Ba. Difference detection through sensory monitoring corresponds to Wave. Cognitive representation and evaluation — the boundary where sound becomes music — correspond to En. The design and firing of the next action sequence correspond to Uzu. And the accumulation of cyclic repetition and the formation of style correspond to Taba, with the cyclic structure in which that Taba defines the next Ba. It should be noted, however, that Pressing's model is an information-processing description, which is at a different level from an ontological-generative description.
+
+---
+
+## Cross-Cutting Patterns
+
+- The following structural patterns recur across musicology
+- **First, the recursive structure of "expectation → deviation → re-evaluation"
+- **Second, the multilayered description of En
+- **Third, the cyclic structure of Taba → Ba
+
+---
+
+## Unresolved Questions
+
+- The relationship between Meyer's expectation theory and predictive coding has not yet been sufficiently sorted out. Whether Meyer's (1956) "tendency" is identical to the computational "prediction" or is a different concept is an unresolved question spanning both music psychology and cognitive science.
+- How to describe the relationship between "the subject designing opposition" and "form developing autonomously" in sonata form is a theoretical problem relating to the non-dual relationship between composition and form.
+- Where to draw the line between analytical models like Lerdahl TPS and generative descriptions like Pressing's improvisation model remains unresolved. "Analysis" and "generation" may be located on a spectrum, or it may be an error to draw the line at all.
+- Whether the transitional zone from jor to jhala in raga corresponds to En or is closer to "amplification of Wave" is a question relating to the interpretation of stage structures in non-Western music.
+
+---
+
+## Conclusion
+
+- This survey confirmed that musicology is a domain with overall strong structural similarity to the 5-stage model
+- There are three particularly important findings
