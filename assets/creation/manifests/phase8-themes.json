@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-19T12:00:00.000Z",
+  "generated_at": "2026-03-21T00:00:00.000Z",
   "namespace": "phase8-themes",
   "themes": [
     {
@@ -27,7 +27,8 @@
       "summary_pdf": {
         "ja": "phase8-themes/ja/pdf/summary-edge-typology.pdf",
         "en": "phase8-themes/en/pdf/summary-edge-typology.pdf"
-      }
+      },
+      "svg": "img/svg/theme-edge-typology.svg"
     },
     {
       "id": "T5",
@@ -53,7 +54,8 @@
       "summary_pdf": {
         "ja": "phase8-themes/ja/pdf/summary-recirculation.pdf",
         "en": "phase8-themes/en/pdf/summary-recirculation.pdf"
-      }
+      },
+      "svg": "img/svg/theme-recirculation.svg"
     },
     {
       "id": "T6",
@@ -79,7 +81,8 @@
       "summary_pdf": {
         "ja": "phase8-themes/ja/pdf/summary-field-layers.pdf",
         "en": "phase8-themes/en/pdf/summary-field-layers.pdf"
-      }
+      },
+      "svg": "img/svg/theme-field-layers.svg"
     },
     {
       "id": "T7T9",
@@ -105,7 +108,8 @@
       "summary_pdf": {
         "ja": "phase8-themes/ja/pdf/summary-blind-spots.pdf",
         "en": "phase8-themes/en/pdf/summary-blind-spots.pdf"
-      }
+      },
+      "svg": "img/svg/theme-blind-spots.svg"
     },
     {
       "id": "T2",
@@ -131,7 +135,9 @@
       "summary_pdf": {
         "ja": "phase8-themes/ja/pdf/summary-threshold.pdf",
         "en": "phase8-themes/en/pdf/summary-threshold.pdf"
-      }
+      },
+      "svg": "img/svg/theme-threshold.svg"
     }
-  ]
+  ],
+  "conclusion_svg": "img/svg/theme-conclusion-summary.svg"
 }
