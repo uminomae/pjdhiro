@@ -1,5 +1,5 @@
 ---
-title: "Evolutionary Biology - Structural Correspondence with the 5-Stage Model"
+title: "Evolutionary Biology - Structural Correspondence with the Five-Stage Model"
 lang: en
 version: "1.0"
 date: "2026-03-21"
@@ -10,87 +10,87 @@ type: presentation
 
 ## Evolutionary Biology
 
-A structural correspondence study with the 5-Stage Model (Field · Wave · Edge · Vortex · Bundle)
+Structural correspondence survey with the five-stage model (Field / Wave / Edge / Vortex / Bundle)
 
 ---
 
-## Overview of the Study
+## Survey Overview
 
-- **Scope**: 10 major theories in evolutionary biology
-- **Research question**: Do evolutionary biology theories correspond structurally with the 5-Stage Model?
-- **Results**: Conditional correspondence in 1 case
+- **Survey scope**: 10 major theories in evolutionary biology
+- **Research question**: Do the various theories of evolutionary biology correspond structurally to the five-stage model?
+- **Findings**: Conditional correspondence: 1 case
 
 ---
 
-## Overview of the 5-Stage Model
+## Overview of the Five-Stage Model
 
 | Stage | Definition |
 |-------|-----------|
-| Field (ba) | Undifferentiated state. The initial condition in which neither direction nor structure has yet been determined |
-| Wave (nami) | The stage of exploration in which multiple directions diverge and compete |
-| Edge (en) | A state of tension in which opposing elements coexist without converging on either side. The place where they meet at a boundary, influence each other, and relationships emerge |
-| Vortex (uzu) | The stage in which new coherence (order) spontaneously arises from within the tension |
-| Bundle (taba) | The stage in which form is fixed and stabilizes as a reusable structure |
+| Field (ba) | Undifferentiated state. Initial conditions with no direction or structure yet determined |
+| Wave (nami) | Exploratory stage where multiple directions diverge and compete |
+| Edge (en) | Tension state where opposing elements coexist without converging to either side. A place where boundaries are touched, mutual influence occurs, and relationships emerge |
+| Vortex (uzu) | Stage where new coherence (order) spontaneously arises from within tension |
+| Bundle (taba) | Stage where form is fixed and stabilized as a reusable structure |
 
 ---
 
-## Overview of Structural Correspondences
+## Overall Picture of Structural Correspondences
 
-| Confidence | Theory Group | Positioning |
+| Temperature | Theory Group | Positioning |
 |---|---|---|
-| Near-certain | Natural selection + neutral theory, developmental plasticity and genetic accommodation, hybrid zones, endosymbiosis | Concrete correspondences are confirmed across all 5 stages |
-| Promising | Punctuated equilibrium, Extended Evolutionary Synthesis (EES), coevolution and Red Queen hypothesis, horizontal gene transfer | Correspondence exists, but the focus of debate is concentrated on particular stages |
-| Conditional | Niche construction, adaptive radiation | Correspondence is confirmed, but it is concentrated on specific structural patterns (circularity or creation from a blank slate) rather than the generative process of all 5 stages |
+| Near-certain | Natural selection + neutral theory, Developmental plasticity & genetic accommodation, Hybrid zones, Endosymbiosis | Concrete correspondences confirmed across all five stages |
+| Probable | Punctuated equilibrium, Extended Evolutionary Synthesis (EES), Coevolution and Red Queen hypothesis, Horizontal gene transfer | Correspondences exist, but the focus of discussion is on specific stages |
+| Conditional | Niche construction, Adaptive radiation | Correspondences are confirmed, but the mapping concentrates on specific structural patterns (cyclicity or creation from vacancy) rather than the generative process across all five stages |
 
 ---
 
-## Key Entry 1: Natural Selection and Neutral Theory (Darwin / Fisher / Kimura / Ohta)
+## Major Entry 1: Natural Selection and Neutral Theory (Darwin / Fisher / Kimura / Ohta)
 
-- Natural selection is a mechanism that operates when three conditions — variation, heredity, and fitness differences — are all present. Proposed by Darwin in 1859 and integrated with Mendelian genetics in the Modern Synthesis of the 1930s–50s. Motoo Kimura's neutral theory (1968) holds that most evolutionary change at the molecular level is due not to natural selection but to genetic drift. Tomoko Ohta's nearly neutral theory (1973) refined this further, showing that weakly selected mutations (|N_e s| on the order of 1 or less) behave neutrally depending on population size.
-- **As fact**: Mutations arise during processes such as DNA replication, repair, and recombination. Most new mutations are neutral to weakly deleterious, and strongly deleterious mutations are removed by purifying selection. Beneficial mutations are relatively rare but can become fixed in a population through selection, depending on conditions. Gene duplication can serve as raw material for the evolution of new functions, but most duplicates are inactivated or deleted. Even when preserved, multiple mechanisms are proposed — not only neofunctionalization but also subfunctionalization.
-- **As reading**: Here we read the stepwise process from the supply of variation through selection and drift to fixation. The level of analogy is process. We attend in particular to the sequential structure in which variation is retained rather than discarded and later becomes raw material for new function. The pattern in which a neutrally duplicated gene later undergoes neofunctionalization demonstrates at the molecular level the structure in which "variation that was not discarded becomes the material for creation."
-- **As interpretation**: A pool of genetic and phenotypic diversity corresponds to Field. The phase in which fitness differences become manifest under environmental pressure corresponds to Wave. In this theory, Edge is background in nature — interactions between individuals such as mating, competition, and symbiosis correspond to it. The expansion of lineages with adaptive traits corresponds to Vortex, and the establishment of trait distributions or species characteristics corresponds to Bundle. This theory presents the foundational structure of all 5 stages — the flow from supply of variation (Field) to fixation (Bundle) — with the thickest supporting data.
-
----
-
-## Key Entry 2: Punctuated Equilibrium (Eldredge & Gould)
-
-- A theory proposed by Eldredge and Gould in 1972. Drawing from the fossil record, they argued that morphological evolution proceeds as a combination of long periods of stasis and brief episodes of rapid change. What was important was an epistemological reversal against traditional gradualism — the view that evolution proceeds slowly and continuously — arguing that "the discontinuities in the fossil record reflect the actuality of evolution rather than imperfections in the record."
-- **As fact**: In the fossil record, patterns of long morphological stasis (on the scale of 100,000 to 10 million years) and rapid change (on the scale of 1,000 to 100,000 years) have been documented in many lineages. Stasis is maintained by stabilizing selection and undirected variation under developmental constraints. Rapid change is explained as allopatric speciation in peripheral isolated populations. However, whether this pattern is universal across all lineages continues to be debated, and because gradual patterns also exist, some view it as a "spectrum."
-- **As reading**: Here we read the rhythmic structure of stability and sudden change, and the spatial pattern that "new things are born not at the center but at the periphery." The level of analogy is process, and we attend particularly to the temporal rhythm of stasis → rapid change and to the spatial boundary nature of peripheral isolated populations.
-- **As interpretation**: The base population during periods of morphological stasis corresponds to Field. The phase in which the pressure for change increases due to environmental fluctuation or geographic isolation corresponds to Wave. The geographic and genetic boundary between the peripheral isolated population and the parent population — the place where speciation occurs — corresponds to Edge. The rapid establishment of new morphology (1,000–100,000 years, a "geological instant") corresponds to Vortex, and stabilization as a new species to Bundle. A structural feature of this theory is that Bundle loops back to become the Field of the next stasis period.
+- Natural selection is a mechanism that operates when three conditions—variation, inheritance, and fitness differences—are met. Darwin proposed it in 1859, and it was integrated with Mendelian genetics in the Modern Synthesis of the 1930s–50s. Motoo Kimura's neutral theory (1968) holds that most evolutionary changes at the molecular level are due to genetic drift rather than natural selection. Tomoko Ohta's nearly neutral theory (1973) refined this further, showing that mutations with weak selective effects (|Nₑs| roughly ≤ 1) behave neutrally depending on population size.
+- **As fact**: Mutations arise during processes such as DNA replication, repair, and recombination. Most new mutations are neutral to mildly deleterious; strongly deleterious mutations are removed by purifying selection. Beneficial mutations are relatively rare but may in some conditions be fixed in a population through selection. Gene duplication can provide raw material for the evolution of new functions, but most copies become inactivated or deleted. Even when preserved, multiple mechanisms have been proposed—not only neofunctionalization but also subfunctionalization and others.
+- **As reading**: Here we read a stepwise process from the supply of variation through selection and drift to fixation. The level of analogy is process. Particular attention is given to the sequential structure in which a mutation is retained rather than discarded, and later becomes raw material for a new function. The pattern in which neutral gene duplication subsequently undergoes neofunctionalization demonstrates at the molecular level the structure of "a mutation that was not discarded becomes the raw material for creation."
+- **As interpretation**: The pool of genetic and phenotypic diversity corresponds to Field. The phase in which fitness differences become manifest through environmental pressure corresponds to Wave. In this theory, the correspondence of Edge is background in nature—individual-level interactions such as mating, competition, and symbiosis serve that role. The expansion of lineages bearing adaptive traits corresponds to Vortex, and the stabilization as a trait distribution or species characteristic to Bundle. This theory shows the foundational structure of the five stages—the flow from supply of variation (Field) to fixation (Bundle)—with the largest body of data.
 
 ---
 
-## Key Entry 3: Developmental Plasticity and Genetic Accommodation (West-Eberhard / Waddington)
+## Major Entry 2: Punctuated Equilibrium (Eldredge & Gould)
 
-- Developmental plasticity is the property by which the same genotype produces multiple phenotypes depending on environmental conditions. West-Eberhard (2003) systematized this concept, and Waddington's genetic assimilation experiments (1953) are known as its precursor. Genetic assimilation is the phenomenon in which an environmentally induced trait becomes genetically stabilized through selection. The broader concept is genetic accommodation.
-- **As fact**: In phenotypic plasticity, different phenotypes are produced from the same genotype through genotype-by-environment interaction (G×E). In Waddington's 1953 experiments, a phenotype induced by heat shock came to be expressed without heat shock after repeated selection. Furthermore, research on deep homology shows that diverse structures can be independently generated from a shared set of developmental genes such as Pax6 and Hox.
-- **As reading**: Here we read the threshold structure in which environment, acting as a boundary condition on development, switches phenotypes. The level of analogy is mechanism. We attend in particular to the G×E interface — the interface between genotype and environment — and capture the structure in which this interface biases "which mutations become visible" from the environmental side.
-- **As interpretation**: The space of possibility for the developmental system — the repertoire of plastic responses — corresponds to Field. Deep homology is the deep structure of this Field. The induction of plastic responses by environmental stimulation corresponds to Wave; the G×E interface — in which environment acts as a boundary condition on development, and exceeding a threshold causes a different phenotype to be expressed — corresponds to Edge. The expression of novel phenotypes and their spread within the population corresponds to Vortex, and fixation through genetic accommodation to Bundle. The staged progression from plasticity to fixation is a structure that directly corresponds to the 5 stages.
+- A theory proposed by Eldredge and Gould in 1972. Drawing on the fossil record, they argued that morphological evolution proceeds through a combination of long periods of stasis and brief periods of rapid change. What is important is the epistemological reversal they proposed against gradualism—the prevailing view that evolution proceeds slowly and continuously: "the discontinuities in the fossil record accurately reflect the reality of evolution rather than being artefacts of an incomplete record."
+- **As fact**: In the fossil record, long morphological stasis (on the scale of 100,000–10,000,000 years) combined with brief rapid change (on the scale of 1,000–100,000 years) has been documented in many lineages. Stasis is maintained by stabilizing selection or undirected variation under developmental constraints. Rapid change is explained as allopatric speciation in peripheral isolated populations. However, whether this pattern is universal across all lineages remains debated, and since gradual patterns also exist, some views treat the distribution as a "spectrum."
+- **As reading**: Here we read the rhythmic structure of stability and sudden change, and the spatial pattern of "new things arising at the periphery rather than the center." The level of analogy is process, with particular attention to the temporal rhythm of stasis → rapid change and the spatial peripherality of the isolated peripheral population.
+- **As interpretation**: The base population during a period of morphological stasis corresponds to Field. The phase in which change pressure rises through environmental fluctuation or geographic isolation corresponds to Wave. The geographic and genetic boundary between the peripheral isolated population and the source population—the place where speciation occurs—corresponds to Edge. The rapid establishment of a new morphology (geologically a "moment" of 1,000–100,000 years) corresponds to Vortex, and stabilization as a new species to Bundle. The structural feature of this theory is that Bundle returns directly to the Field of the next period of stasis.
+
+---
+
+## Major Entry 3: Developmental Plasticity and Genetic Accommodation (West-Eberhard / Waddington)
+
+- Developmental plasticity is the property of a single genotype to produce multiple phenotypes depending on environmental conditions. West-Eberhard (2003) systematized it, and Waddington's genetic assimilation experiments (1953) are known as a precursor. Genetic assimilation is the phenomenon in which a trait induced by the environment becomes genetically stabilized through selection. Genetic accommodation is a broader concept.
+- **As fact**: In phenotypic plasticity, different phenotypes are produced from the same genotype through gene-environment interaction (G×E). In Waddington's 1953 experiment, a phenotype induced by heat shock came to be expressed without heat shock after repeated rounds of selection. Furthermore, research on deep homology demonstrates that diverse structures can be generated independently from a shared set of developmental genes such as Pax6 and Hox.
+- **As reading**: Here we read a threshold structure in which the environment switches phenotypes as a boundary condition for development. The level of analogy is mechanism. Particular attention is given to the interface of G×E interaction—the genotype-environment boundary—and to the structure by which this interface biases "which mutations become visible" from the environmental side.
+- **As interpretation**: The possibility space of the developmental system—the repertoire of plastic responses—corresponds to Field. Deep homology is the deep structure of this field. The induction of plastic responses by environmental stimuli corresponds to Wave; the G×E interaction interface—where the environment becomes a boundary condition for development and a different phenotype is expressed when a threshold is crossed—to Edge. The expression of a novel phenotype and its spread through the population corresponds to Vortex, and fixation through genetic accommodation to Bundle. The staged progression from plasticity to fixation is a structure that corresponds directly to the five stages.
 
 ---
 
 ## Cross-Cutting Patterns
 
-- The most prominent cross-cutting pattern in evolutionary biology is the functional diversity of "Edge"
-- **Maintained Edge**: In hybrid zones, the boundary persists stably while maintaining a thickness measurable by cline width
-- **Driving Edge**: In the Red Queen hypothesis, the inter-species boundary functions as a dynamic device that continuously generates selection pressure
-- **Fusing Edge**: In endosymbiosis, a new hierarchy emerges precisely through the disappearance of the boundary (cell membrane)
+- The most conspicuous cross-cutting pattern in evolutionary biology is the functional diversity of "Edge"
+- **Maintained Edge**: In hybrid zones, the boundary persists stably while retaining thickness measured by cline width
+- **Driving Edge**: In the Red Queen hypothesis, the inter-species boundary functions as a dynamic device that continuously generates selective pressure
+- **Fusing Edge**: In endosymbiosis, a new hierarchy emerges through the disappearance of the boundary (cell membrane)
 
 ---
 
-## Open Questions
+## Unresolved Questions
 
-- Whether the four patterns of "Edge" (maintained, driving, fusing, generating) are distinctive to evolutionary biology or are similarly confirmed in other domains requires cross-domain verification.
-- How to reflect in the 5-Stage Model the finding that Field has "types" — a distinction between communal Fields and individuated Fields — remains unresolved. If Field possesses qualitative diversity beyond a mere "undifferentiated initial condition," the need arises to expand the first half of the model.
-- How to handle the pattern shown by the Red Queen hypothesis — where "Bundle does not stabilize" — is an open question. A decision is needed on whether to redefine Bundle as "provisional stability," or to treat cycles that do not reach Bundle as a separate category.
-- When discussing structural correspondences in evolutionary biology, the methodological tension between the basic fact that natural selection has no intention and describing each phase of the 5-Stage Model as a "process" should always be kept in mind.
+- Whether the four patterns of "Edge" (maintained, driving, fusing, generating) are diversity specific to evolutionary biology or are equally confirmed in other domains requires cross-domain verification.
+- How to reflect in the five-stage model the finding that Field has "types"—the distinction between communal field and individuated field—is unsettled. If Field has qualitative diversity beyond mere "undifferentiated initial conditions," it becomes necessary to expand the first half of the model.
+- How to handle the pattern shown by the Red Queen hypothesis—"Bundle does not stabilize"—is an open question. A decision is needed as to whether to redefine Bundle as "provisional stability" or to treat the cycle that does not reach Bundle as a separate category.
+- When discussing structural correspondences in evolutionary biology, the methodological tension between the basic fact that natural selection has no intention and describing each phase of the five-stage model as a "process" is something that should always be kept in mind.
 
 ---
 
 ## Conclusion
 
-- This study confirms that evolutionary biology is overall a domain in which structural similarity with the 5-Stage Model is strong
-- Near-certain are: natural selection + neutral theory (the foundational structure of variation → selection → fixation), developmental plasticity and genetic accommodation (the threshold structure of G×E and staged fixation), hybrid zones (quantification of Edge and its two possible outcomes), and endosymbiosis (hierarchical emergence through disappearance of boundary)
-- The greatest insight from evolutionary biology is that "Edge" exhibits not a single function but at least four patterns, and that the cyclic structure in which "Bundle" rewrites the premises of the next "Field" occupies a central position in the theories
+- This survey confirmed that evolutionary biology is a domain with overall strong structural similarity to the five-stage model
+- Near-certain are: natural selection + neutral theory (the foundational structure of variation → selection → fixation), developmental plasticity and genetic accommodation (the threshold structure of G×E and staged fixation), hybrid zones (quantification of Edge and two possible outcomes), and endosymbiosis (hierarchical emergence through boundary disappearance)
+- The greatest insight gained from evolutionary biology is that "Edge" exhibits not a single function but at least four patterns, and that the circular structure in which "Bundle" rewrites the preconditions of the next "Field" lies at the core of the theories
