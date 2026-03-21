@@ -1,0 +1,12 @@
+{
+  "title_ja": "意",
+  "title_en": "Intent",
+  "comment_ja": "意 を追加画像として自動取り込みした初期カードです。解釈コメントは自動生成の初期文なので、必要に応じて後で調整してください。",
+  "comment_en": "This is an initial card created automatically when Intent was added to the image directory. The interpretation comment is a provisional auto-generated note and can be refined later if needed.",
+  "alt_ja": "意を示す画像",
+  "alt_en": "Image representing intent",
+  "source_url": "",
+  "generated": "2026-03-21",
+  "generator_model": "codex:auto-ingest",
+  "sort_order": 9007199254740991
+}
