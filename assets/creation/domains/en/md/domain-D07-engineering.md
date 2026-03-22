@@ -1,5 +1,7 @@
 # Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science
 
+![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — Structural correspondence diagram](../../../img/svg/domains/en/domain-D07-engineering.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report was prepared to answer the following question.

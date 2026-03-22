@@ -1,5 +1,7 @@
 # Boundary Processes and the Five-Stage Model in Anthropology and Ethnology
 
+![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — Structural correspondence diagram](../../../img/svg/domains/en/domain-D25-anthropology.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report was prepared to answer the following question:

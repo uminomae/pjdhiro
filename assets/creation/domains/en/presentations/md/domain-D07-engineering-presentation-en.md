@@ -22,6 +22,12 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 
 ---
 
+## Structural Correspondence Diagram
+
+![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D07-engineering.svg)
+
+---
+
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |

@@ -1,5 +1,7 @@
 # Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body
 
+![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — Structural correspondence diagram](../../../img/svg/domains/en/domain-D09-life-sciences.svg)
+
 ## 1. Purpose of the Investigation in This Domain
 
 This report presents the results of an investigation into whether structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, can be found in the life sciences, including biochemistry, metabolism, cell biology, developmental biology, and immunology.

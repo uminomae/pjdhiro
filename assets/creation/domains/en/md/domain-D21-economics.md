@@ -1,5 +1,7 @@
 # Economics
 
+![Economics — Structural correspondence diagram](../../../img/svg/domains/en/domain-D21-economics.svg)
+
 ## 1. Purpose and Research Question
 
 This report was prepared to answer the following question.

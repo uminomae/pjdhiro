@@ -25,7 +25,7 @@ Five structural themes emerged independently, directing the model's update.
 | T2 | Threshold Structure and Edge-to-Vortex Transition | 11/30 |
 | T7+T9 | Blind Spots and Counterexamples | 24/30 |
 
-\![Phase 8 Five-Theme Integrated Structure Diagram](../../../../img/svg/theme-conclusion-summary.svg)
+![Phase 8 Five-Theme Integrated Structure Diagram](../../../../img/svg/themes/en/theme-conclusion-summary.svg)
 
 ---
 

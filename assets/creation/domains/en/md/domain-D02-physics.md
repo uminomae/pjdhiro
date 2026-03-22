@@ -1,5 +1,7 @@
 # Structural Correspondence Between Order Formation in Physics and the Five-Stage Model
 
+![Structural Correspondence Between Order Formation in Physics and the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D02-physics.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report was prepared to answer the following question.

@@ -9,4 +9,4 @@
 
 「帯域としての縁」（T1の知見）と「閾値としての遷移」は緊張関係にある。帯域は幅を持ち閾値は点を指す。触媒（閾値を下げる）とWithhold（閾値を上げる）の対称性は、「縁に留まる」と「渦に入る」の制御メカニズムとして理論化できる可能性がある。
 
-![Phase 8 5テーマ統合構造図](../../../img/svg/theme-conclusion-summary.svg)
+![Phase 8 5テーマ統合構造図](../../../img/svg/themes/ja/theme-threshold.svg)

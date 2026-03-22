@@ -1,5 +1,7 @@
 # Business Management
 
+![Business Management — Structural correspondence diagram](../../../img/svg/domains/en/domain-D22-business-management.svg)
+
 ## 1. Purpose of the Investigation
 
 This report asks one question.

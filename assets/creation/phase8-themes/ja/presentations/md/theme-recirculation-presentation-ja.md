@@ -23,7 +23,7 @@ slides: 10
 | 間接的該当 | **6** ドメイン |
 | 循環否定の証拠 | **0** |
 
-![T5 再循環メカニズム 横断的パターン図](../../../../img/svg/theme-recirculation.svg)
+![T5 再循環メカニズム 横断的パターン図](../../../../img/svg/themes/ja/theme-recirculation.svg)
 
 ---
 
