@@ -15,18 +15,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-edge-typology.md"
       },
-      "summary_md": {
-        "ja": "phase8-themes/ja/md/summary-edge-typology.md",
-        "en": "phase8-themes/en/md/summary-edge-typology.md"
-      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-edge-typology.pdf"
-      },
-      "summary_pdf": {
-        "ja": "phase8-themes/ja/pdf/summary-edge-typology.pdf",
-        "en": "phase8-themes/en/pdf/summary-edge-typology.pdf"
       },
       "svg": "img/svg/theme-edge-typology.svg",
       "presentation_md": {
@@ -46,18 +38,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-recirculation.md"
       },
-      "summary_md": {
-        "ja": "phase8-themes/ja/md/summary-recirculation.md",
-        "en": "phase8-themes/en/md/summary-recirculation.md"
-      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-recirculation.pdf"
-      },
-      "summary_pdf": {
-        "ja": "phase8-themes/ja/pdf/summary-recirculation.pdf",
-        "en": "phase8-themes/en/pdf/summary-recirculation.pdf"
       },
       "svg": "img/svg/theme-recirculation.svg",
       "presentation_md": {
@@ -77,18 +61,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-field-layers.md"
       },
-      "summary_md": {
-        "ja": "phase8-themes/ja/md/summary-field-layers.md",
-        "en": "phase8-themes/en/md/summary-field-layers.md"
-      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-field-layers.pdf"
-      },
-      "summary_pdf": {
-        "ja": "phase8-themes/ja/pdf/summary-field-layers.pdf",
-        "en": "phase8-themes/en/pdf/summary-field-layers.pdf"
       },
       "svg": "img/svg/theme-field-layers.svg",
       "presentation_md": {
@@ -108,18 +84,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-blind-spots.md"
       },
-      "summary_md": {
-        "ja": "phase8-themes/ja/md/summary-blind-spots.md",
-        "en": "phase8-themes/en/md/summary-blind-spots.md"
-      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-blind-spots.pdf"
-      },
-      "summary_pdf": {
-        "ja": "phase8-themes/ja/pdf/summary-blind-spots.pdf",
-        "en": "phase8-themes/en/pdf/summary-blind-spots.pdf"
       },
       "svg": "img/svg/theme-blind-spots.svg",
       "presentation_md": {
@@ -139,18 +107,10 @@
       "md": {
         "ja": "phase8-themes/ja/md/theme-threshold.md"
       },
-      "summary_md": {
-        "ja": "phase8-themes/ja/md/summary-threshold.md",
-        "en": "phase8-themes/en/md/summary-threshold.md"
-      },
       "generator_model": "claude-opus-4-6",
       "generated": "2026-03-19",
       "pdf": {
         "ja": "phase8-themes/ja/pdf/theme-threshold.pdf"
-      },
-      "summary_pdf": {
-        "ja": "phase8-themes/ja/pdf/summary-threshold.pdf",
-        "en": "phase8-themes/en/pdf/summary-threshold.pdf"
       },
       "svg": "img/svg/theme-threshold.svg",
       "presentation_md": {
