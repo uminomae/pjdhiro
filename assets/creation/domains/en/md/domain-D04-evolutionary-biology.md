@@ -1,5 +1,7 @@
 # Evolutionary Biology: Novelty Emerges from Error
 
+![Evolutionary Biology: Novelty Emerges from Error — Structural correspondence diagram](../../../img/svg/domains/en/domain-D04-evolutionary-biology.svg)
+
 ## 1. Purpose of the Investigation in This Domain
 
 This report presents the results of an investigation into whether evolutionary biology exhibits structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle.

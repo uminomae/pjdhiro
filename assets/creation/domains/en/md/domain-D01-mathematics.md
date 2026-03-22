@@ -1,5 +1,7 @@
 # Mathematics: Structure Condenses at Boundaries and Criticality
 
+![Mathematics: Structure Condenses at Boundaries and Criticality — Structural correspondence diagram](../../../img/svg/domains/en/domain-D01-mathematics.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report summarizes the results of an investigation into whether a range of mathematical theories structurally correspond to the five-stage model, consisting of Field (場), Wave (波), Edge (縁), Vortex (渦), and Bundle (束).

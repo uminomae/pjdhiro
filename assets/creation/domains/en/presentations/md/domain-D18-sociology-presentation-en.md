@@ -22,6 +22,12 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ---
 
+## Structural Correspondence Diagram
+
+![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D18-sociology.svg)
+
+---
+
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |

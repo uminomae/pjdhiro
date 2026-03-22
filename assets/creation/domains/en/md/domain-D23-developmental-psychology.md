@@ -1,5 +1,7 @@
 # Developmental Psychology
 
+![Developmental Psychology — Structural correspondence diagram](../../../img/svg/domains/en/domain-D23-developmental-psychology.svg)
+
 ## 1. Purpose and Question
 
 This report examines whether major theories in developmental psychology structurally correspond to the five-stage model of Field, Wave, Relation, Vortex, and Bundle. The question is not which theory is superior, nor whether every theory can be merged into one system. The question is narrower: do these theories describe change as a sequence in which an undifferentiated state gives way to difference, difference is reorganized through relations, a coherent structure emerges, and that structure is then retained?

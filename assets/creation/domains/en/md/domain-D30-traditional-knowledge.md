@@ -1,5 +1,7 @@
 # Traditional Knowledge
 
+![Traditional Knowledge — Structural correspondence diagram](../../../img/svg/domains/en/domain-D30-traditional-knowledge.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report was prepared to answer the following question:

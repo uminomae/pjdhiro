@@ -1,5 +1,7 @@
 # Philosophy: An Investigation of Structural Similarity with the Five-Stage Model
 
+![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D13-philosophy.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report is written to answer a single question.

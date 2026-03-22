@@ -1,5 +1,7 @@
 # Musicology
 
+![Musicology — Structural correspondence diagram](../../../img/svg/domains/en/domain-D26-musicology.svg)
+
 ## 1. Purpose and Questions of the Investigation
 
 This report was prepared to answer the following question:

@@ -1,5 +1,7 @@
 # Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge
 
+![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — Structural correspondence diagram](../../../img/svg/domains/en/domain-D12-agriculture.svg)
+
 ## 1. Purpose of the Investigation in This Domain
 
 This report presents the results of an investigation into the structural correspondences between the major theoretical and practical frameworks of agriculture and ecology and the five-stage model of creation, namely Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束).

@@ -7,7 +7,7 @@
 
 ---
 
-![T7+T9 盲点と反例 横断的パターン図](../../../img/svg/theme-blind-spots.svg)
+![T7+T9 盲点と反例 横断的パターン図](../../../img/svg/themes/ja/theme-blind-spots.svg)
 
 
 ## §A: テーマを支持する領域とパターン

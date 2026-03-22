@@ -1,5 +1,7 @@
 # Astronomy and Astrophysics: The Spiral of Unconscious Creation
 
+![Astronomy and Astrophysics: The Spiral of Unconscious Creation — Structural correspondence diagram](../../../img/svg/domains/en/domain-D06-astronomy.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report presents the results of an investigation into whether theories in astronomy and astrophysics correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束)).

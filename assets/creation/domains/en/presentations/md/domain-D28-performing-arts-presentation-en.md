@@ -22,6 +22,12 @@ Survey of Structural Correspondence with the 5-Stage Model (Ba / Nami / En / Uzu
 
 ---
 
+## Structural Correspondence Diagram
+
+![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D28-performing-arts.svg)
+
+---
+
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |

@@ -1,5 +1,7 @@
 # Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model
 
+![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D03-chemistry.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report summarizes an investigation into whether major theories of order formation in chemistry correspond structurally to the five-stage model (Field -> Wave -> Edge -> Vortex -> Bundle).

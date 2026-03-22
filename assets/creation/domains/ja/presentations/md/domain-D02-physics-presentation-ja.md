@@ -23,6 +23,12 @@ type: presentation
 
 ---
 
+## 構造対応図
+
+![構造対応図](../../../../img/svg/domains/ja/domain-D02-physics.svg)
+
+---
+
 ## 5段階モデルの概要
 
 | 段階 | 定義 |
