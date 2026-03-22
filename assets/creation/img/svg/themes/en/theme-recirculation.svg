@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowRC" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  
+  <rect width="800" height="600" fill="#FAFAF8" rx="8" />
+  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#E0DDD8" stroke-width="1" rx="8" />
+
+  
+  <text x="400" y="45" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" fill="#2C2C2C" font-weight="bold">T5 Recirculation Mechanism — Cross-Cross Pattern Diagram</text>
+  <text x="400" y="68" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#666666">Flux→Field reflux (19/30 area explicitly mentioned)</text>
+
+  
+  <ellipse cx="400" cy="250" rx="95" ry="48" fill="#5B8B6A" opacity="0.12" stroke="#5B8B6A" stroke-width="2.5" />
+  <text x="400" y="240" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#5B8B6A" font-weight="bold">Bundle → field spiral reflux</text>
+  <text x="400" y="260" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#5B8B6A">The bundle is not the end point but the seed of the next field</text>
+
+  
+
+  
+  <rect x="320" y="90" width="160" height="45" rx="8" fill="#C45B4D" opacity="0.12" stroke="#C45B4D" stroke-width="1.5" />
+  <text x="400" y="112" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#C45B4D" font-weight="bold">Natural collapse type</text>
+  <text x="400" y="128" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="10" fill="#666666">The bundle collapses from within</text>
+  <line x1="400" y1="135" x2="400" y2="202" stroke="#C45B4D" stroke-width="1.5" />
+
+  <circle cx="305" cy="108" r="16" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="1" />
+  <text x="305" y="112" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D16</text>
+  <text x="260" y="112" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">self-destruction</text>
+  <line x1="305" y1="124" x2="320" y2="108" stroke="#C45B4D" stroke-width="1" stroke-dasharray="3,2" />
+
+  <circle cx="495" cy="108" r="16" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="1" />
+  <text x="495" y="112" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D21</text>
+  <text x="540" y="112" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Minsky</text>
+  <line x1="495" y1="124" x2="480" y2="108" stroke="#C45B4D" stroke-width="1" stroke-dasharray="3,2" />
+
+  
+  <rect x="590" y="150" width="160" height="45" rx="8" fill="#5B8B6A" opacity="0.12" stroke="#5B8B6A" stroke-width="1.5" />
+  <text x="670" y="172" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#5B8B6A" font-weight="bold">Active update type</text>
+  <text x="670" y="188" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="10" fill="#666666">Reconfigured through interaction with the environment</text>
+  <line x1="590" y1="175" x2="495" y2="238" stroke="#5B8B6A" stroke-width="1.5" />
+
+  <circle cx="720" cy="210" r="16" fill="#5B8B6A" opacity="0.15" stroke="#5B8B6A" stroke-width="1" />
+  <text x="720" y="214" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D04</text>
+  <text x="720" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">niche building</text>
+
+  <circle cx="720" cy="140" r="16" fill="#5B8B6A" opacity="0.15" stroke="#5B8B6A" stroke-width="1" />
+  <text x="720" y="144" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D30</text>
+  <text x="720" y="165" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">TEK update</text>
+
+  
+  <rect x="560" y="310" width="170" height="45" rx="8" fill="#D4A857" opacity="0.12" stroke="#D4A857" stroke-width="1.5" />
+  <text x="645" y="332" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#D4A857" font-weight="bold">dramatic transformation type</text>
+  <text x="645" y="348" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="10" fill="#666666">Decisively changes all subsequent events</text>
+  <line x1="560" y1="330" x2="490" y2="275" stroke="#D4A857" stroke-width="1.5" />
+
+  <circle cx="700" cy="370" r="16" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="1" />
+  <text x="700" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D04</text>
+  <text x="700" y="395" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Endosymbiosis</text>
+
+  <circle cx="620" cy="370" r="16" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="1" />
+  <text x="620" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D06</text>
+  <text x="620" y="395" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">supernova</text>
+
+  
+  <rect x="70" y="310" width="170" height="45" rx="8" fill="#5B8DB8" opacity="0.12" stroke="#5B8DB8" stroke-width="1.5" />
+  <text x="155" y="332" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#5B8DB8" font-weight="bold">institutional circulation type</text>
+  <text x="155" y="348" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="10" fill="#666666">Circulation is designed as a system</text>
+  <line x1="240" y1="330" x2="310" y2="275" stroke="#5B8DB8" stroke-width="1.5" />
+
+  <circle cx="100" cy="370" r="16" fill="#5B8DB8" opacity="0.15" stroke="#5B8DB8" stroke-width="1" />
+  <text x="100" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D11</text>
+  <text x="100" y="395" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Pharmacy</text>
+
+  <circle cx="180" cy="370" r="16" fill="#5B8DB8" opacity="0.15" stroke="#5B8DB8" stroke-width="1" />
+  <text x="180" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D30</text>
+  <text x="180" y="395" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">folk performing arts</text>
+
+  
+  <rect x="50" y="150" width="170" height="45" rx="8" fill="#8B8682" opacity="0.12" stroke="#8B8682" stroke-width="1.5" />
+  <text x="135" y="172" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#8B8682" font-weight="bold">endogenous cyclic type</text>
+  <text x="135" y="188" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="10" fill="#666666">Cycles are built into the theory</text>
+  <line x1="220" y1="175" x2="305" y2="238" stroke="#8B8682" stroke-width="1.5" />
+
+  <circle cx="80" cy="210" r="16" fill="#8B8682" opacity="0.15" stroke="#8B8682" stroke-width="1" />
+  <text x="80" y="214" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D29</text>
+  <text x="80" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">SOC</text>
+
+  <circle cx="80" cy="140" r="16" fill="#8B8682" opacity="0.15" stroke="#8B8682" stroke-width="1" />
+  <text x="80" y="144" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D03</text>
+  <text x="80" y="165" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">catalyst cycle</text>
+
+  
+  <rect x="250" y="390" width="300" height="30" rx="6" fill="#D4A857" opacity="0.1" stroke="#D4A857" stroke-width="1" />
+  <text x="400" y="410" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#D4A857">D13 Philosophy: Five systems of driving force (Simondon/Whitehead/Peirce/Gadamer/Adorno)</text>
+
+  
+  <rect x="40" y="440" width="720" height="130" rx="8" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="60" y="465" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#2C2C2C" font-weight="bold">convergence point</text>
+  <text x="60" y="487" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">1. “A bundle is not an end point but a field seed for the next cycle” (converges in the 15+ region, crosses all categories) [P]</text>
+  <text x="60" y="505" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">2. Circulation is an irreversible spiral (12+ region) [P] — “Spiral” is more structurally accurate than “circle”</text>
+  <text x="60" y="523" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">3. The driving force comes from “bundle imperfection” (8+ region) [M] — The driving force is the inability to achieve complete stability</text>
+  <text x="60" y="541" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">4. There are 5 qualitatively different modes (6+ regions) in bundle → field circulation [P]</text>
+  <text x="60" y="559" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">Branching: Is the cycle universal or condition-dependent? (D06 one-way mode, D07 closed form solution = no cycle required)</text>
+</svg>

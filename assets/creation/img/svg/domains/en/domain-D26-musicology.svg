@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrow26" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
+    </marker>
+  </defs>
+
+  
+  <rect width="800" height="600" fill="#FAFAF8" rx="8" />
+  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#E0DDD8" stroke-width="1" rx="8" />
+
+  
+  <text x="400" y="52" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" fill="#2C2C2C" font-weight="bold">D26 Musicology — Structural correspondence diagram with the 5-stage model</text>
+
+  
+  
+  <rect x="45" y="90" width="130" height="60" rx="10" fill="#8B8682" opacity="0.15" stroke="#8B8682" stroke-width="2" />
+  <text x="110" y="118" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" fill="#8B8682" font-weight="bold">Field</text>
+  <text x="110" y="138" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#8B8682">Field</text>
+
+  
+  <rect x="195" y="90" width="130" height="60" rx="10" fill="#5B8DB8" opacity="0.15" stroke="#5B8DB8" stroke-width="2" />
+  <text x="260" y="118" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" fill="#5B8DB8" font-weight="bold">Wave</text>
+  <text x="260" y="138" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#5B8DB8">Wave</text>
+
+  
+  <rect x="345" y="90" width="130" height="60" rx="10" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="2" />
+  <text x="410" y="118" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" fill="#D4A857" font-weight="bold">Edge</text>
+  <text x="410" y="138" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#D4A857">Edge</text>
+
+  
+  <rect x="495" y="90" width="130" height="60" rx="10" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="2" />
+  <text x="560" y="118" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" fill="#C45B4D" font-weight="bold">Vortex</text>
+  <text x="560" y="138" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#C45B4D">Vortex</text>
+
+  
+  <rect x="645" y="90" width="130" height="60" rx="10" fill="#5B8B6A" opacity="0.15" stroke="#5B8B6A" stroke-width="2" />
+  <text x="710" y="118" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" fill="#5B8B6A" font-weight="bold">Bundle</text>
+  <text x="710" y="138" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#5B8B6A">Bundle</text>
+
+  
+  <line x1="175" y1="120" x2="195" y2="120" stroke="#666666" stroke-width="2" marker-end="url(#arrow26)" />
+  <line x1="325" y1="120" x2="345" y2="120" stroke="#666666" stroke-width="2" marker-end="url(#arrow26)" />
+  <line x1="475" y1="120" x2="495" y2="120" stroke="#666666" stroke-width="2" marker-end="url(#arrow26)" />
+  <line x1="625" y1="120" x2="645" y2="120" stroke="#666666" stroke-width="2" marker-end="url(#arrow26)" />
+
+  
+  
+  <line x1="110" y1="150" x2="110" y2="175" stroke="#8B8682" stroke-width="2" />
+  <rect x="40" y="175" width="140" height="110" rx="6" fill="#FAFAF8" stroke="#8B8682" stroke-width="1.5" />
+  <text x="110" y="195" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Audience expectations system</text>
+  <text x="110" y="215" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">acoustic environment</text>
+  <text x="110" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">style norms</text>
+  <text x="110" y="260" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#666666">(Meyer/Huron)</text>
+
+  
+  <line x1="260" y1="150" x2="260" y2="175" stroke="#5B8DB8" stroke-width="2" />
+  <rect x="190" y="175" width="140" height="110" rx="6" fill="#FAFAF8" stroke="#5B8DB8" stroke-width="1.5" />
+  <text x="260" y="195" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Anticipation inhibition/delay</text>
+  <text x="260" y="215" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Modulation/deviation</text>
+  <text x="260" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">deviation of rhythm</text>
+  <text x="260" y="260" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#666666">(Pressing/Witek)</text>
+
+  
+  <line x1="410" y1="150" x2="410" y2="175" stroke="#D4A857" stroke-width="2" />
+  <rect x="340" y="175" width="140" height="110" rx="6" fill="#FAFAF8" stroke="#D4A857" stroke-width="2" />
+  <text x="410" y="195" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">suspense</text>
+  <text x="410" y="215" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Groove inverted U shape</text>
+  <text x="410" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Juxtaposition of predicted responses</text>
+  <text x="410" y="260" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#666666">(Meyer/Huron)</text>
+
+  
+  <line x1="560" y1="150" x2="560" y2="175" stroke="#C45B4D" stroke-width="2" />
+  <rect x="490" y="175" width="140" height="110" rx="6" fill="#FAFAF8" stroke="#C45B4D" stroke-width="1.5" />
+  <text x="560" y="195" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">moment of resolution</text>
+  <text x="560" y="215" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">impromptu convergence</text>
+  <text x="560" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">auditory integration</text>
+  <text x="560" y="260" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#666666">(Bregman/Pressing)</text>
+
+  
+  <line x1="710" y1="150" x2="710" y2="175" stroke="#5B8B6A" stroke-width="2" />
+  <rect x="640" y="175" width="140" height="110" rx="6" fill="#FAFAF8" stroke="#5B8B6A" stroke-width="1.5" />
+  <text x="710" y="195" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Establishment of style and format</text>
+  <text x="710" y="215" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Raga system</text>
+  <text x="710" y="235" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">cultural heritage</text>
+  <text x="710" y="260" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#666666">(NHS/Savage)</text>
+
+  
+  <rect x="40" y="310" width="720" height="110" rx="8" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="60" y="335" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#2C2C2C" font-weight="bold">Strength of response</text>
+
+  <line x1="60" y1="355" x2="100" y2="355" stroke="#2C2C2C" stroke-width="2" />
+  <text x="110" y="360" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Strong correspondence (solid)</text>
+
+  <line x1="280" y1="355" x2="320" y2="355" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="6,3" />
+  <text x="330" y="360" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Partial correspondence (dashed)</text>
+
+  <line x1="510" y1="355" x2="550" y2="355" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,3" />
+  <text x="560" y="360" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#666666">Weak correspondence (dotted)</text>
+
+  <text x="60" y="390" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Close to definite: Meyer expectation theory, Huron ITPRA theory</text>
+  <text x="60" y="408" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Prominent: Pressing improvisation model, sonata form, groove theory, auditory landscape analysis, research on the universality of songs</text>
+
+  
+  <rect x="40" y="440" width="720" height="130" rx="8" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="60" y="465" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#2C2C2C" font-weight="bold">Overall evaluation summary</text>
+  <text x="60" y="490" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Seven out of ten theories have strong structural correspondence, and three have conditional correspondence. Theory without correspondence is zero.</text>
+  <text x="60" y="510" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">“Edges” are identified at multiple levels: suspense, zones of optimal deviation, modulation of development, and perceptual bistability.</text>
+  <text x="60" y="530" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Its unique strength is that "expectation → deviation → re-evaluation" appears recursively from milliseconds to centuries.</text>
+  <text x="60" y="550" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Edge typology: Possibility space type (temporal artistic preservation of prediction errors, physical entrainment).</text>
+</svg>

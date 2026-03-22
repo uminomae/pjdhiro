@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowTH" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  
+  <rect width="800" height="600" fill="#FAFAF8" rx="8" />
+  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#E0DDD8" stroke-width="1" rx="8" />
+
+  
+  <text x="400" y="45" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" fill="#2C2C2C" font-weight="bold">T2 threshold structure and edge → vortex transition — cross-sectional pattern diagram</text>
+  <text x="400" y="68" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#666666">Conditions for edge → vortex transition (11 domains are directly thematized, 10 describe vortex non-reach)</text>
+
+  
+  <rect x="290" y="195" width="90" height="70" rx="10" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="2" />
+  <text x="335" y="228" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#D4A857" font-weight="bold">Edge</text>
+  <text x="335" y="248" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#D4A857">Edge</text>
+
+  
+  <rect x="395" y="200" width="10" height="60" rx="2" fill="#C45B4D" opacity="0.5" />
+  <text x="400" y="185" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#C45B4D" font-weight="bold">threshold</text>
+
+  <rect x="420" y="195" width="90" height="70" rx="10" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="2" />
+  <text x="465" y="228" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#C45B4D" font-weight="bold">Vortex</text>
+  <text x="465" y="248" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#C45B4D">Vortex</text>
+
+  
+  <line x1="380" y1="230" x2="415" y2="230" stroke="#C45B4D" stroke-width="2.5" marker-end="url(#arrowTH)" />
+
+  
+  <rect x="50" y="90" width="200" height="55" rx="8" fill="#C45B4D" opacity="0.1" stroke="#C45B4D" stroke-width="1.5" />
+  <text x="150" y="112" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#C45B4D" font-weight="bold">Threshold rather than continuous [P]</text>
+  <text x="150" y="132" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">The most solid physicochemical knowledge</text>
+  <line x1="250" y1="118" x2="300" y2="200" stroke="#C45B4D" stroke-width="1.5" />
+
+  
+  <circle cx="70" cy="170" r="16" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="1" />
+  <text x="70" y="174" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D02</text>
+  <text x="70" y="197" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">phase transition</text>
+
+  <circle cx="130" cy="170" r="16" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="1" />
+  <text x="130" y="174" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D03</text>
+  <text x="130" y="197" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">activation E</text>
+
+  <circle cx="190" cy="170" r="16" fill="#C45B4D" opacity="0.15" stroke="#C45B4D" stroke-width="1" />
+  <text x="190" y="174" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D05</text>
+  <text x="190" y="197" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">tipping pt</text>
+
+  
+  <rect x="560" y="90" width="190" height="55" rx="8" fill="#D4A857" opacity="0.1" stroke="#D4A857" stroke-width="1.5" />
+  <text x="655" y="112" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#D4A857" font-weight="bold">The transition is irreversible [P]</text>
+  <text x="655" y="132" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">Cannot return to the edge (the system circulates)</text>
+  <line x1="560" y1="118" x2="510" y2="200" stroke="#D4A857" stroke-width="1.5" />
+
+  <circle cx="600" cy="170" r="16" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="1" />
+  <text x="600" y="174" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D04</text>
+  <text x="600" y="197" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">speciation</text>
+
+  <circle cx="660" cy="170" r="16" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="1" />
+  <text x="660" y="174" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D06</text>
+  <text x="660" y="197" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">gravity collapse</text>
+
+  <circle cx="720" cy="170" r="16" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="1" />
+  <text x="720" y="174" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D29</text>
+  <text x="720" y="197" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">SOC</text>
+
+  
+  <rect x="50" y="290" width="200" height="55" rx="8" fill="#5B8B6A" opacity="0.1" stroke="#5B8B6A" stroke-width="1.5" />
+  <text x="150" y="312" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#5B8B6A" font-weight="bold">Threshold is controllable [M]</text>
+  <text x="150" y="332" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">There is an operation to raise/lower</text>
+  <line x1="250" y1="310" x2="310" y2="260" stroke="#5B8B6A" stroke-width="1.5" />
+
+  <circle cx="70" cy="370" r="16" fill="#5B8B6A" opacity="0.15" stroke="#5B8B6A" stroke-width="1" />
+  <text x="70" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D03</text>
+  <text x="70" y="397" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Catalyst = threshold lowering</text>
+
+  <circle cx="150" cy="370" r="16" fill="#5B8B6A" opacity="0.15" stroke="#5B8B6A" stroke-width="1" />
+  <text x="150" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D27</text>
+  <text x="150" y="397" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">threshold space</text>
+
+  <circle cx="230" cy="370" r="16" fill="#5B8B6A" opacity="0.15" stroke="#5B8B6A" stroke-width="1" />
+  <text x="230" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D3</text>
+  <text x="230" y="397" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Holding = threshold increase</text>
+
+  
+  <rect x="560" y="290" width="190" height="55" rx="8" fill="#8B8682" opacity="0.1" stroke="#8B8682" stroke-width="1.5" />
+  <text x="655" y="312" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#8B8682" font-weight="bold">Vortex unreachable path [P]</text>
+  <text x="655" y="332" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">stop at the edge/return to the place</text>
+  <line x1="560" y1="310" x2="510" y2="260" stroke="#8B8682" stroke-width="1.5" />
+
+  <circle cx="580" cy="370" r="16" fill="#8B8682" opacity="0.15" stroke="#8B8682" stroke-width="1" />
+  <text x="580" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D07</text>
+  <text x="580" y="397" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">stability control</text>
+
+  <circle cx="650" cy="370" r="16" fill="#8B8682" opacity="0.15" stroke="#8B8682" stroke-width="1" />
+  <text x="650" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D14</text>
+  <text x="650" y="397" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Fixation</text>
+
+  <circle cx="720" cy="370" r="16" fill="#8B8682" opacity="0.15" stroke="#8B8682" stroke-width="1" />
+  <text x="720" y="374" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#2C2C2C" font-weight="bold">D25</text>
+  <text x="720" y="397" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">schism</text>
+
+  
+  <rect x="285" y="290" width="230" height="40" rx="6" fill="#D4A857" opacity="0.08" stroke="#D4A857" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="400" y="315" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#D4A857">Catalyst = Threshold Lowering / D3 Holding = Threshold Raising (Symmetry)</text>
+
+  
+  <rect x="40" y="440" width="720" height="130" rx="8" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="60" y="465" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#2C2C2C" font-weight="bold">Convergence points and retention issues</text>
+  <text x="60" y="487" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">1. The edge → vortex transition is not continuous but a threshold [P] | 2. The transition beyond the threshold is irreversible [P]</text>
+  <text x="60" y="505" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">3. Threshold may be controllable [M] | 4. There is a path that does not lead to a vortex [P]</text>
+  <text x="60" y="527" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#666666">Branch 1: Is the threshold quantitative or qualitative? (D02 Physics vs. D24 Religion vs. D14 Psychology)</text>
+  <text x="60" y="545" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#666666">Branch 2: Integration of “band” and “threshold” — Is there a threshold within the band or at the edge?</text>
+  <text x="60" y="563" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#666666">Branch 3: Are vortices necessarily creative? Minsky (D21)'s trust collapse is a destructive vortex</text>
+</svg>

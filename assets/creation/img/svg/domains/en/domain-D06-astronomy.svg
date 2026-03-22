@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowD06" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
+    </marker>
+    <filter id="shadowD06" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  
+  <rect width="800" height="600" fill="#FAFAF8" />
+  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#E0DDD8" stroke-width="1" rx="4" />
+
+  
+  <text x="400" y="52" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" font-weight="bold" fill="#2C2C2C">Astronomy - Structure correspondence diagram with 5-stage model</text>
+  <text x="400" y="76" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#666666">D06: Strong response in 9 out of 10 cases, partial response in 1 case</text>
+
+  
+  
+  <rect x="40" y="110" width="120" height="70" rx="8" fill="#8B8682" filter="url(#shadowD06)" opacity="0.9" />
+  <text x="100" y="140" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Field</text>
+  <text x="100" y="162" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#FAFAF8">Field</text>
+
+  
+  <rect x="190" y="110" width="120" height="70" rx="8" fill="#5B8DB8" filter="url(#shadowD06)" opacity="0.9" />
+  <text x="250" y="140" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Wave</text>
+  <text x="250" y="162" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#FAFAF8">Wave</text>
+
+  
+  <rect x="340" y="110" width="120" height="70" rx="8" fill="#D4A857" filter="url(#shadowD06)" opacity="0.9" />
+  <text x="400" y="140" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Edge</text>
+  <text x="400" y="162" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#FAFAF8">Edge</text>
+
+  
+  <rect x="490" y="110" width="120" height="70" rx="8" fill="#C45B4D" filter="url(#shadowD06)" opacity="0.9" />
+  <text x="550" y="140" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Vortex</text>
+  <text x="550" y="162" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#FAFAF8">Vortex</text>
+
+  
+  <rect x="640" y="110" width="120" height="70" rx="8" fill="#5B8B6A" filter="url(#shadowD06)" opacity="0.9" />
+  <text x="700" y="140" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Bundle</text>
+  <text x="700" y="162" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11" fill="#FAFAF8">Bundle</text>
+
+  
+  <line x1="160" y1="145" x2="188" y2="145" stroke="#666666" stroke-width="2" marker-end="url(#arrowD06)" />
+  <line x1="310" y1="145" x2="338" y2="145" stroke="#666666" stroke-width="2" marker-end="url(#arrowD06)" />
+  <line x1="460" y1="145" x2="488" y2="145" stroke="#666666" stroke-width="2" marker-end="url(#arrowD06)" />
+  <line x1="610" y1="145" x2="638" y2="145" stroke="#666666" stroke-width="2" marker-end="url(#arrowD06)" />
+
+  
+  
+  <line x1="100" y1="180" x2="100" y2="200" stroke="#8B8682" stroke-width="2" />
+  <text x="100" y="218" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">molecular cloud</text>
+  <text x="100" y="238" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">initial density fluctuation</text>
+  <text x="100" y="258" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">differential rotating disc</text>
+
+  
+  <line x1="250" y1="180" x2="250" y2="200" stroke="#5B8DB8" stroke-width="2" />
+  <text x="250" y="218" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Growth of gravitational instability</text>
+  <text x="250" y="238" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Amplification of density fluctuations</text>
+  <text x="250" y="258" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">threshold mechanism</text>
+
+  
+  <line x1="400" y1="180" x2="400" y2="200" stroke="#D4A857" stroke-width="2" />
+  <text x="400" y="218" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">shock wave front</text>
+  <text x="400" y="238" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">snow line</text>
+  <text x="400" y="258" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">the moment of union</text>
+
+  
+  <line x1="550" y1="180" x2="550" y2="200" stroke="#C45B4D" stroke-width="2" />
+  <text x="550" y="218" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">MRIturbulence</text>
+  <text x="550" y="238" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Dynamo action</text>
+  <text x="550" y="258" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">streaming instability</text>
+
+  
+  <line x1="700" y1="180" x2="700" y2="200" stroke="#5B8B6A" stroke-width="2" />
+  <text x="700" y="218" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">HR diagram evolution path</text>
+  <text x="700" y="238" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Hubble classification</text>
+  <text x="700" y="258" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">orbital resonance</text>
+
+  
+  <text x="400" y="310" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" font-weight="bold" fill="#2C2C2C">Correspondence strength of representative theory</text>
+
+  
+  
+  <rect x="60" y="325" width="680" height="32" rx="4" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="75" y="346" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Star formation and stellar evolution</text>
+  <line x1="280" y1="341" x2="720" y2="341" stroke="#2C2C2C" stroke-width="2" />
+  <text x="735" y="346" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">strength</text>
+
+  
+  <rect x="60" y="362" width="680" height="32" rx="4" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="75" y="383" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Hierarchical formation of galaxies</text>
+  <line x1="280" y1="378" x2="720" y2="378" stroke="#2C2C2C" stroke-width="2" />
+  <text x="735" y="383" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">strength</text>
+
+  
+  <rect x="60" y="399" width="680" height="32" rx="4" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="75" y="420" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Accretion disk and jet formation</text>
+  <line x1="280" y1="415" x2="720" y2="415" stroke="#2C2C2C" stroke-width="2" />
+  <text x="735" y="420" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">strength</text>
+
+  
+  <rect x="60" y="436" width="680" height="32" rx="4" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="75" y="457" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">planetary system formation</text>
+  <line x1="280" y1="452" x2="720" y2="452" stroke="#2C2C2C" stroke-width="2" />
+  <text x="735" y="457" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">strength</text>
+
+  
+  <rect x="60" y="473" width="680" height="32" rx="4" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="75" y="494" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Dynamical evolution of globular clusters</text>
+  <line x1="280" y1="489" x2="720" y2="489" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="8,4" />
+  <text x="735" y="494" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">portion</text>
+
+  
+  <line x1="60" y1="530" x2="100" y2="530" stroke="#2C2C2C" stroke-width="2" />
+  <text x="108" y="534" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">strong response</text>
+  <line x1="200" y1="530" x2="240" y2="530" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="8,4" />
+  <text x="248" y="534" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">Partial response</text>
+  <line x1="360" y1="530" x2="400" y2="530" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,4" />
+  <text x="408" y="534" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">weak response</text>
+
+  
+  <rect x="40" y="550" width="720" height="40" rx="6" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="400" y="570" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="13" fill="#2C2C2C">Overall evaluation: The universality of the threshold mechanism, the diversity and multilayered nature of the edges, and the spontaneity of the vortices are repeatedly confirmed at all scales.</text>
+  <text x="400" y="585" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">Regions where similar structural correspondence has been confirmed over a spatial scale of more than 20 orders of magnitude</text>
+</svg>
