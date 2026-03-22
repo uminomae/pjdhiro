@@ -1,12 +1,14 @@
 {
-  "title_ja": "Intent Gorilla",
-  "title_en": "Intent Gorilla",
-  "comment_ja": "Intent Gorilla をテーマにした追加画像です。画像カードとして自動取り込みしています。",
-  "comment_en": "An additional image card centered on Intent Gorilla. It was imported automatically into the image-card collection.",
-  "alt_ja": "Intent Gorilla",
-  "alt_en": "Intent Gorilla",
+  "title_ja": "衝動から検証へ",
+  "title_en": "From Impulse to Verification",
+  "comment_ja": "対象に飛びつく衝動が、検索・反証・構築を経て検証へ組み替わっていく流れを示す図。",
+  "comment_en": "A diagram showing how the impulse to seize an object is reworked into verification through search, counterargument, and construction.",
+  "alt_ja": "ゴリラとバナナ、投稿アイコン、検索バー、AI などの語を矢印でつないだ多層図",
+  "alt_en": "A layered diagram linking a gorilla, a banana, a post icon, a search bar, and AI-related terms with arrows",
   "source_url": "",
-  "generated": "2026-03-21",
-  "generator_model": "codex:auto-ingest",
+  "generated": "2026-03-22",
+  "generator_model": "codex:gpt-5",
+  "review_status": "ready",
+  "review_notes": "",
   "sort_order": 9007199254740991
 }
