@@ -4,7 +4,7 @@ type: presentation
 lang: en
 generated_at: "2026-03-20"
 generator_model: claude-opus-4-6
-slides: 14
+slides: 15
 ---
 
 ## Cross-Domain Analysis of 30 Fields
@@ -12,6 +12,12 @@ slides: 14
 ### Integrated Findings from Structural Similarity Exploration
 
 We report the major findings from structural similarity exploration (Phases 1-8) spanning 30 academic fields, from mathematics to traditional knowledge.
+
+---
+
+## Phase 8 Five-Theme Integrated Structure Diagram
+
+![Phase 8 Five-Theme Integrated Structure Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-conclusion-summary.svg)
 
 ---
 

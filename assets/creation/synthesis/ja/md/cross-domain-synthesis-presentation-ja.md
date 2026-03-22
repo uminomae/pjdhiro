@@ -4,7 +4,7 @@ type: presentation
 lang: ja
 generated_at: "2026-03-20"
 generator_model: claude-opus-4-6
-slides: 14
+slides: 15
 ---
 
 ## 30領域横断分析
@@ -12,6 +12,12 @@ slides: 14
 ### 構造類似探索の統合的知見
 
 数学から伝統知まで、30の学術領域を横断した構造類似探索（Phase 1-8）の主要な発見を報告する。
+
+---
+
+## Phase 8 5テーマ統合構造図
+
+![Phase 8 5テーマ統合構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-conclusion-summary.svg)
 
 ---
 
