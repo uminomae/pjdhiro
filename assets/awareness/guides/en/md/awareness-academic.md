@@ -1,10 +1,10 @@
 ---
 title: "Awareness Model in Dialogue with Neurophenomenology and Psychology"
 lang: en
-version: 0.5
-generated: 2026-03-21
+version: 0.6
+generated: 2026-03-23
 generator_model: codex:gpt-5
-date: 2026-03-21
+date: 2026-03-23
 ---
 
 # Awareness Model in Dialogue with Neurophenomenology and Psychology
@@ -41,10 +41,10 @@ At the same time, the model treats awareness as a four-layer process.
 ## Research Basis and Reference Fields
 
 From neurophenomenology, the project takes the question of how first-person experience can be described in workable units.
-That includes bodily state, salience, orientation, and the pre-response margin.
+That currently includes embodiment, foregrounding of discrepancy, first-person descriptive units, and prereflective awareness.
 
 From psychology, the project takes the question of how far the survival-trust hypothesis can be tested, especially on the relational side.
-Developmental psychology, attachment theory, trust research, intersubjectivity, and social cognition are therefore treated as major reference areas.
+Developmental psychology, attachment theory, internal working models, trust research, intersubjectivity, and repairability are therefore treated as major reference areas.
 
 Earlier source bundles are treated as historical material rather than as present-day canonical texts.
 The current public frame is organized around the survival-trust axis and the four-layer model.
@@ -70,7 +70,8 @@ The main open questions are:
 - How rigorously can the boundary between survival-oriented and trust-oriented problems be defined?
 - Is the four-layer model sufficient as a minimal descriptive framework for awareness?
 - How neutral can Layer 1 discrepancy be described?
-- Should response flexibility be treated as an independent function?
+- How should neurophenomenological clusters be returned to the four-layer model?
+- How should developmental-psychological clusters be returned to the trust axis?
 - To what extent can neurophenomenology and developmental psychology be integrated into one structure?
 - Where should observability be located?
 
