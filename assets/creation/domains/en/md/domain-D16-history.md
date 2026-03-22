@@ -1,5 +1,7 @@
 # History
 
+![History — Structural correspondence diagram](../../../img/svg/domains/en/domain-D16-history.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report was prepared to answer the following question.

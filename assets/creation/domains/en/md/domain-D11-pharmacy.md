@@ -1,5 +1,7 @@
 # Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter
 
+![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — Structural correspondence diagram](../../../img/svg/domains/en/domain-D11-pharmacy.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report presents the results of an investigation into the structural correspondence between the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, and major theories and practical systems in pharmacy.

@@ -1,5 +1,7 @@
 # Psychology and Cognitive Science: What Happens When Cognition Shifts
 
+![Psychology and Cognitive Science: What Happens When Cognition Shifts — Structural correspondence diagram](../../../img/svg/domains/en/domain-D14-psychology.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report presents the results of an investigation into the following question, using major theoretical systems in psychology and cognitive science.

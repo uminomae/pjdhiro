@@ -1,5 +1,7 @@
 # Earth Science: 4.6 Billion Years of Creation Without Consciousness
 
+![Earth Science: 4.6 Billion Years of Creation Without Consciousness — Structural correspondence diagram](../../../img/svg/domains/en/domain-D05-earth-science.svg)
+
 ## 1. Purpose of the Investigation in This Domain
 
 This report presents the results of an investigation into whether structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, can be found in earth science.

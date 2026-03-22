@@ -22,6 +22,12 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ---
 
+## Structural Correspondence Diagram
+
+![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D24-religion.svg)
+
+---
+
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |

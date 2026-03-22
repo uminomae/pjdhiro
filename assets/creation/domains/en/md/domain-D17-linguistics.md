@@ -1,5 +1,7 @@
 # Linguistics: The Five-Stage Structure Seen in Language Change and Emergence
 
+![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — Structural correspondence diagram](../../../img/svg/domains/en/domain-D17-linguistics.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report presents the results of an investigation into the following question, using major theories in linguistics.

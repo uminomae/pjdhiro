@@ -1,5 +1,7 @@
 # Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error
 
+![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — Structural correspondence diagram](../../../img/svg/domains/en/domain-D10-clinical-medicine.svg)
+
 ## 1. Purpose and Questions of the Investigation
 
 This report presents the results of an investigation into whether theories in clinical medicine and immunology correspond structurally to the five-stage model of creation: Field (場), Wave (波), Edge (縁), Vortex (渦), and Bundle (束).

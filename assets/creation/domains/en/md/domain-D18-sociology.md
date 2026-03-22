@@ -1,5 +1,7 @@
 # Sociology: Weak Ties Generate Structure
 
+![Sociology: Weak Ties Generate Structure — Structural correspondence diagram](../../../img/svg/domains/en/domain-D18-sociology.svg)
+
 ## 1. Purpose and Question of the Investigation
 
 This report presents the results of an investigation into the following question, using major theories in sociology.

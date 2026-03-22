@@ -1,5 +1,7 @@
 # Neuroscience: The Predictive Brain and the Body That Feels Lack
 
+![Neuroscience: The Predictive Brain and the Body That Feels Lack — Structural correspondence diagram](../../../img/svg/domains/en/domain-D08-neuroscience.svg)
+
 ## 1. Purpose of the Investigation
 
 This report presents the results of an investigation into whether neuroscience shows structural correspondence with the five-stage model of creation, Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束), and with four associated definitions concerning prediction error, subjective lack, the retention of unresolved discrepancy, and the construction of emotion.
