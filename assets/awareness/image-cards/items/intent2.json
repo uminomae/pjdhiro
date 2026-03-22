@@ -1,12 +1,14 @@
 {
-  "title_ja": "Intent2",
-  "title_en": "Intent2",
-  "comment_ja": "Intent2 をテーマにした追加画像です。画像カードとして自動取り込みしています。",
-  "comment_en": "An additional image card centered on Intent2. It was imported automatically into the image-card collection.",
-  "alt_ja": "Intent2",
-  "alt_en": "Intent2",
+  "title_ja": "時間制約の中の意図",
+  "title_en": "Intent Under Time Constraints",
+  "comment_ja": "意図が一瞬の反応ではなく、時間幅や限界条件の中で処理される信号であることを示す図。",
+  "comment_en": "A diagram showing intent as a signal processed under time windows and limiting conditions rather than as an instantaneous reaction.",
+  "alt_ja": "内容信号・限界・時間・ms などの語と矢印が重なった複雑な処理図",
+  "alt_en": "A dense processing diagram with arrows and terms such as content signal, limit, time, and ms",
   "source_url": "",
-  "generated": "2026-03-21",
-  "generator_model": "codex:auto-ingest",
+  "generated": "2026-03-22",
+  "generator_model": "codex:gpt-5",
+  "review_status": "ready",
+  "review_notes": "",
   "sort_order": 9007199254740991
 }

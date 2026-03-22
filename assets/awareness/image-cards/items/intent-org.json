@@ -1,12 +1,14 @@
 {
-  "title_ja": "Intent Org",
-  "title_en": "Intent Org",
-  "comment_ja": "Intent Org をテーマにした追加画像です。画像カードとして自動取り込みしています。",
-  "comment_en": "An additional image card centered on Intent Org. It was imported automatically into the image-card collection.",
-  "alt_ja": "Intent Org",
-  "alt_en": "Intent Org",
+  "title_ja": "意図の組織化",
+  "title_en": "Organizing Intent",
+  "comment_ja": "個人の判断が検査、要件定義、要員配置へ受け渡され、組織の手順として処理される流れを示す図。",
+  "comment_en": "A diagram showing how an individual judgment is handed off into inspection, requirements definition, and staffing as an organizational process.",
+  "alt_ja": "人物アイコンと工程矢印、検査・要件定義・要員・P1/P2 などのラベルを含む組織フロー図",
+  "alt_en": "An organizational flow diagram with person icons, process arrows, and labels such as inspection, requirements definition, staffing, and P1/P2",
   "source_url": "",
-  "generated": "2026-03-21",
-  "generator_model": "codex:auto-ingest",
+  "generated": "2026-03-22",
+  "generator_model": "codex:gpt-5",
+  "review_status": "ready",
+  "review_notes": "",
   "sort_order": 9007199254740991
 }
