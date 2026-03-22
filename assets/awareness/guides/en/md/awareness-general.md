@@ -1,10 +1,10 @@
 ---
 title: "What Is Awareness? - Survival and Intersubjectivity"
 lang: en
-version: 0.5
-generated: 2026-03-21
+version: 0.6
+generated: 2026-03-23
 generator_model: codex:gpt-5
-date: 2026-03-21
+date: 2026-03-23
 ---
 
 # What Is Awareness? - Survival and Intersubjectivity
@@ -43,7 +43,9 @@ This framework is not presented as intuition alone.
 The main reference fields are neurophenomenology and psychology.
 
 From neurophenomenology, the project asks how first-person experience can be described in workable units.
+At the moment, the main clusters are embodiment, foregrounding of discrepancy, first-person descriptive units, and prereflective awareness.
 From psychology, it asks how attachment, development, trust, and intersubjectivity can help test the relational side of the model.
+The main clusters here are attachment and safe base, internal working models, trust and intersubjectivity, and repairability with relational adjustment.
 
 Earlier source bundles are treated as historical material rather than as current canonical texts.
 The current public explanation is organized around the survival-trust axis and the four-layer model.
@@ -71,7 +73,8 @@ The main open questions are:
 
 - How clearly can survival-oriented and relationship-oriented problems be separated?
 - Is the four-layer model sufficient as a minimal description of awareness?
-- How far can response flexibility be described as a stable structural feature?
+- How should the neurophenomenological clusters be returned to the four-layer model?
+- How should the developmental-psychological clusters be returned to the trust axis?
 - At what point should neurophenomenology and psychology be connected?
 - How far can these hypotheses be translated into observable terms?
 

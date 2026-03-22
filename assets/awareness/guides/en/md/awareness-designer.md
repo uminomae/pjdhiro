@@ -1,10 +1,10 @@
 ---
 title: "Using the Awareness Model as an Observation Tool"
 lang: en
-version: 0.5
-generated: 2026-03-21
+version: 0.6
+generated: 2026-03-23
 generator_model: codex:gpt-5
-date: 2026-03-21
+date: 2026-03-23
 ---
 
 # Using the Awareness Model as an Observation Tool
@@ -44,7 +44,9 @@ This model is not derived from field intuition alone.
 Its main reference fields are neurophenomenology and psychology.
 
 From neurophenomenology, the project borrows questions about how first-person experience can be described.
+At the moment, that means embodiment, foregrounding of discrepancy, first-person descriptive units, and prereflective awareness.
 From psychology, it draws on attachment, development, trust, and intersubjectivity to examine the relational side of response.
+More specifically, it is organizing attachment and safe base, internal working models, trust and intersubjectivity, and repairability as the main relational bundles.
 
 ## Current View
 
@@ -76,7 +78,8 @@ The main open questions are:
 
 - How clearly can survival-oriented and relationship-oriented problems be separated?
 - How should neurophenomenology and psychology divide explanatory roles?
-- How far can response flexibility be treated as a stable structural feature?
+- How far can bodily strain and discrepancy salience be distinguished in observation?
+- How far can relational safety and repairability be treated as observational guides?
 - How can this observational framework be made more testable?
 
 The model may already be useful in practice, but that does not mean it has become a finalized method.
