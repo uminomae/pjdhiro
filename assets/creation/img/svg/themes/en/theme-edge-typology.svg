@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowET" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  
+  <rect width="800" height="600" fill="#FAFAF8" rx="8" />
+  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#E0DDD8" stroke-width="1" rx="8" />
+
+  
+  <text x="400" y="45" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" fill="#2C2C2C" font-weight="bold">T1 rim typology and unified classification — cross-sectional pattern diagram</text>
+  <text x="400" y="68" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#666666">28/30 domain focuses on “edge” polymorphism</text>
+
+  
+  <ellipse cx="400" cy="270" rx="100" ry="50" fill="#D4A857" opacity="0.15" stroke="#D4A857" stroke-width="2.5" />
+  <text x="400" y="263" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" fill="#D4A857" font-weight="bold">Unified classification of edges</text>
+  <text x="400" y="283" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#D4A857">Band/direction selection/antagonistic/implementation independent</text>
+
+  
+  <rect x="330" y="90" width="140" height="50" rx="8" fill="#D4A857" opacity="0.12" stroke="#D4A857" stroke-width="2" />
+  <text x="400" y="112" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#D4A857" font-weight="bold">is the band</text>
+  <text x="400" y="130" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">(Not a line) [P]</text>
+  <line x1="400" y1="140" x2="400" y2="220" stroke="#D4A857" stroke-width="2" />
+
+  
+  <circle cx="250" cy="100" r="18" fill="#D4A857" opacity="0.2" stroke="#D4A857" stroke-width="1" />
+  <text x="250" y="104" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D27</text>
+  <text x="250" y="130" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">threshold space</text>
+  <line x1="268" y1="100" x2="330" y2="110" stroke="#D4A857" stroke-width="1" stroke-dasharray="4,2" />
+
+  <circle cx="540" cy="100" r="18" fill="#D4A857" opacity="0.2" stroke="#D4A857" stroke-width="1" />
+  <text x="540" y="104" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D25</text>
+  <text x="540" y="130" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">liminality</text>
+  <line x1="522" y1="100" x2="470" y2="110" stroke="#D4A857" stroke-width="1" stroke-dasharray="4,2" />
+
+  
+  <rect x="55" y="230" width="140" height="50" rx="8" fill="#5B8DB8" opacity="0.12" stroke="#5B8DB8" stroke-width="2" />
+  <text x="125" y="252" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#5B8DB8" font-weight="bold">Place for direction selection</text>
+  <text x="125" y="270" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">(determine the outcome) [P]</text>
+  <line x1="195" y1="255" x2="300" y2="265" stroke="#5B8DB8" stroke-width="2" />
+
+  <circle cx="75" cy="175" r="18" fill="#5B8DB8" opacity="0.2" stroke="#5B8DB8" stroke-width="1" />
+  <text x="75" y="179" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D04</text>
+  <text x="75" y="204" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">speciation</text>
+  <line x1="90" y1="188" x2="110" y2="230" stroke="#5B8DB8" stroke-width="1" stroke-dasharray="4,2" />
+
+  <circle cx="155" cy="175" r="18" fill="#5B8DB8" opacity="0.2" stroke="#5B8DB8" stroke-width="1" />
+  <text x="155" y="179" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D08</text>
+  <text x="155" y="204" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">STDP time window</text>
+  <line x1="155" y1="193" x2="140" y2="230" stroke="#5B8DB8" stroke-width="1" stroke-dasharray="4,2" />
+
+  
+  <rect x="610" y="230" width="140" height="50" rx="8" fill="#C45B4D" opacity="0.12" stroke="#C45B4D" stroke-width="2" />
+  <text x="680" y="252" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#C45B4D" font-weight="bold">born from antagonism</text>
+  <text x="680" y="270" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">(contact of conflict) [P]</text>
+  <line x1="610" y1="260" x2="500" y2="268" stroke="#C45B4D" stroke-width="2" />
+
+  <circle cx="650" cy="175" r="18" fill="#C45B4D" opacity="0.2" stroke="#C45B4D" stroke-width="1" />
+  <text x="650" y="179" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D29</text>
+  <text x="650" y="204" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">Evenly matched at 7/10</text>
+  <line x1="660" y1="193" x2="670" y2="230" stroke="#C45B4D" stroke-width="1" stroke-dasharray="4,2" />
+
+  <circle cx="730" cy="175" r="18" fill="#C45B4D" opacity="0.2" stroke="#C45B4D" stroke-width="1" />
+  <text x="730" y="179" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D05</text>
+  <text x="730" y="204" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">plate boundary</text>
+  <line x1="720" y1="190" x2="700" y2="230" stroke="#C45B4D" stroke-width="1" stroke-dasharray="4,2" />
+
+  
+  <rect x="330" y="350" width="140" height="50" rx="8" fill="#5B8B6A" opacity="0.12" stroke="#5B8B6A" stroke-width="2" />
+  <text x="400" y="372" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#5B8B6A" font-weight="bold">implementation independent</text>
+  <text x="400" y="390" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">(Selection by relationship) [M]</text>
+  <line x1="400" y1="320" x2="400" y2="350" stroke="#5B8B6A" stroke-width="2" />
+
+  <circle cx="280" cy="400" r="18" fill="#5B8B6A" opacity="0.2" stroke="#5B8B6A" stroke-width="1" />
+  <text x="280" y="404" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D08</text>
+  <text x="280" y="430" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">4 mechanisms</text>
+  <line x1="298" y1="400" x2="330" y2="380" stroke="#5B8B6A" stroke-width="1" stroke-dasharray="4,2" />
+
+  <circle cx="520" cy="400" r="18" fill="#5B8B6A" opacity="0.2" stroke="#5B8B6A" stroke-width="1" />
+  <text x="520" y="404" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" fill="#2C2C2C" font-weight="bold">D13</text>
+  <text x="520" y="430" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="9" fill="#666666">6 philosophical traditions</text>
+  <line x1="502" y1="400" x2="470" y2="380" stroke="#5B8B6A" stroke-width="1" stroke-dasharray="4,2" />
+
+  
+  <rect x="40" y="460" width="720" height="110" rx="8" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1" />
+  <text x="60" y="485" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" fill="#2C2C2C" font-weight="bold">Edge typology of attention domains</text>
+
+  <text x="60" y="507" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">D25 Anthropology: 8 faces (highest density of all areas) | D15 Aesthetics: 8 types (edge ​​catalog)</text>
+  <text x="60" y="527" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">D27 Architecture: Band design type (the only area where edges are designed) | D12 Agriculture: The only area with all three types</text>
+  <text x="60" y="547" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="12" fill="#2C2C2C">D28 Performing Arts: Operational Definition Type (Yes and...) | D01 Mathematics: Boundary Condensation Type (Strongest Constructive Correspondence)</text>
+  <text x="60" y="562" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="11" fill="#666666">Strongest cross-sectional finding: “Edges are bands (not lines)”—the most widely supported of the 30 domains.</text>
+</svg>
