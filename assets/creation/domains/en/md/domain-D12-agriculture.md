@@ -1,6 +1,6 @@
 # Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge
 
-![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — Structural correspondence diagram](../../../img/svg/domains/en/domain-D12-agriculture.svg)
+![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D12-agriculture.svg)
 
 ## 1. Purpose of the Investigation in This Domain
 

@@ -1,6 +1,6 @@
 # Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model
 
-![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D28-performing-arts.svg)
+![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D28-performing-arts.svg)
 
 ## 1. Purpose and Questions of the Investigation
 

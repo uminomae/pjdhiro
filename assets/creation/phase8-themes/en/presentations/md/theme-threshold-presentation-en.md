@@ -24,7 +24,7 @@ slides: 10
 | Indirect | **7** domains |
 | Core question | Does a threshold exist within the bandwidth? |
 
-![T2 Threshold Structure Cross-Domain Pattern Diagram](../../../../img/svg/themes/en/theme-threshold.svg)
+![T2 Threshold Structure Cross-Domain Pattern Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-threshold.svg)
 
 ---
 

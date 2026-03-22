@@ -1,6 +1,6 @@
 # Religion
 
-![Religion — Structural correspondence diagram](../../../img/svg/domains/en/domain-D24-religion.svg)
+![Religion — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D24-religion.svg)
 
 ## 1. Purpose and Questions of the Investigation
 

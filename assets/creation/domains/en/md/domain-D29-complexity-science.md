@@ -1,6 +1,6 @@
 # Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science
 
-![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — Structural correspondence diagram](../../../img/svg/domains/en/domain-D29-complexity-science.svg)
+![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D29-complexity-science.svg)
 
 ## 1. Purpose and Questions of the Investigation
 

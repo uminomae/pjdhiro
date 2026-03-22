@@ -24,7 +24,7 @@ Survey of Structural Correspondence with the 5-Stage Model (Ba / Nami / En / Uzu
 
 ## Structural Correspondence Diagram
 
-![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D28-performing-arts.svg)
+![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D28-performing-arts.svg)
 
 ---
 

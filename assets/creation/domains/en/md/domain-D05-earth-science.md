@@ -1,6 +1,6 @@
 # Earth Science: 4.6 Billion Years of Creation Without Consciousness
 
-![Earth Science: 4.6 Billion Years of Creation Without Consciousness — Structural correspondence diagram](../../../img/svg/domains/en/domain-D05-earth-science.svg)
+![Earth Science: 4.6 Billion Years of Creation Without Consciousness — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D05-earth-science.svg)
 
 ## 1. Purpose of the Investigation in This Domain
 

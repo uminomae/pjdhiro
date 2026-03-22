@@ -24,7 +24,7 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Structural Correspondence Diagram
 
-![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D18-sociology.svg)
+![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D18-sociology.svg)
 
 ---
 

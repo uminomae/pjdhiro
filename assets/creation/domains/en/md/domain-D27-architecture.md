@@ -1,6 +1,6 @@
 # Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model
 
-![Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D27-architecture.svg)
+![Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D27-architecture.svg)
 
 ## 1. Purpose and Question of the Investigation
 

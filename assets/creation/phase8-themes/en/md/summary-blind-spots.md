@@ -1,6 +1,6 @@
 # T7+T9: Blind Spots and Counterexamples — Conclusion Summary
 
-![T7+T9: Blind Spots and Counterexamples — Conclusion Summary](../../../img/svg/themes/en/theme-blind-spots.svg)
+![T7+T9: Blind Spots and Counterexamples — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-blind-spots.svg)
 
 13 domains identify order-dissolution and anti-creative processes as blind spots; 11 domains suggest descriptive limits of the five-stage model.
 

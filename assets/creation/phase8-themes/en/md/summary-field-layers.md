@@ -1,6 +1,6 @@
 # T6: Field Multi-Layering — Conclusion Summary
 
-![T6: Field Multi-Layering — Conclusion Summary](../../../img/svg/themes/en/theme-field-layers.svg)
+![T6: Field Multi-Layering — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-field-layers.svg)
 
 15 of 30 domains directly thematize the multi-layered nature of "field." In stage-definition proposals, 28 of 30 reference "field."
 

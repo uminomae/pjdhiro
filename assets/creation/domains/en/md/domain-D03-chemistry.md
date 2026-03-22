@@ -1,6 +1,6 @@
 # Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model
 
-![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D03-chemistry.svg)
+![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D03-chemistry.svg)
 
 ## 1. Purpose and Question of the Investigation
 

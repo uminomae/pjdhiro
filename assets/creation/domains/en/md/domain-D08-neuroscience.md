@@ -1,6 +1,6 @@
 # Neuroscience: The Predictive Brain and the Body That Feels Lack
 
-![Neuroscience: The Predictive Brain and the Body That Feels Lack — Structural correspondence diagram](../../../img/svg/domains/en/domain-D08-neuroscience.svg)
+![Neuroscience: The Predictive Brain and the Body That Feels Lack — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D08-neuroscience.svg)
 
 ## 1. Purpose of the Investigation
 

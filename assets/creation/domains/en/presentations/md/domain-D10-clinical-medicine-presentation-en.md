@@ -24,7 +24,7 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ## Structural Correspondence Diagram
 
-![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D10-clinical-medicine.svg)
+![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D10-clinical-medicine.svg)
 
 ---
 

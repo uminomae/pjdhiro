@@ -23,7 +23,7 @@ slides: 10
 | 段階化への抵抗 | **4** ドメイン |
 | 全30領域 | 全てが何らかの盲点を提示 |
 
-![T7+T9 盲点と反例 横断的パターン図](../../../../img/svg/themes/ja/theme-blind-spots.svg)
+![T7+T9 盲点と反例 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-blind-spots.svg)
 
 ---
 
