@@ -3,10 +3,10 @@ id: survey-status
 title: "Awareness Model Exploration: Survey Overview"
 lang: en
 audience: survey
-version: 0.3
-generated: 2026-03-21
+version: 0.4
+generated: 2026-03-23
 generator_model: codex:gpt-5
-date: 2026-03-21
+date: 2026-03-23
 ---
 
 # Awareness Model Exploration: Survey Overview
@@ -27,14 +27,13 @@ At present, the main topics are the following:
 2. Its connection to psychology, including developmental psychology
 3. The four-layer model
 4. The survival-trust axis
-5. Phenomena related to not reacting immediately
 
 ## 3. How the Research Proceeds
 
 The method can be divided into three broad steps.
 
 First, existing materials are reread and broken down into phenomenological units.
-Second, possible points of connection to neurophenomenology and developmental psychology are organized.
+Second, neurophenomenology and developmental psychology are reorganized as intake maps.
 Third, the results are separated into guides, survey documents, and component reports so that readers can follow the structure of the project.
 
 ## 4. What Is Currently Public
@@ -51,11 +50,12 @@ The current focus is on the survival-trust axis and the four-layer model.
 
 ## 5. Areas Still Under Review
 
-The following areas are central to the research, but they are not yet fully organized as standalone public explanations or reports:
+The following areas are central to the research, but they are still being organized through survey documents and design memos rather than standalone public reports:
 
-- the connection to neurophenomenology
-- the connection to psychology, including developmental psychology
-- how to describe room for revising response
+- neurophenomenology:
+  embodiment, foregrounding of discrepancy, first-person descriptive units, and prereflective awareness
+- psychology, including developmental psychology:
+  attachment and safe base, internal working models, trust and intersubjectivity, and repairability with relational adjustment
 
 They should therefore be read as open research topics rather than as settled conclusions.
 
@@ -71,12 +71,12 @@ If you want an entry-point list, see the survey index.
 The next tasks include at least the following:
 
 1. Rewriting neurophenomenology into a form suitable for public explanation
-2. Organizing the connection to psychology, including developmental psychology
-3. Re-extracting the "not reacting immediately" phenomena without relying on unstable labels
-4. Clarifying the correspondence between guide claims and component reports
+2. Organizing the connection to psychology, including developmental psychology, from the viewpoint of the trust axis and relational safety
+3. Returning the intake-map results to guides and report navigation
+4. Separating more clearly what is already treated in public reports from what still belongs to survey and design-level work
 5. Distinguishing more clearly between provisional claims and claims still under review
 
 ## 8. Limits and Unresolved Issues
 
 This research is still ongoing.
-The boundaries of key terms, the refinement of the survival-trust axis, and the extent to which neurophenomenological and developmental-psychological findings can be integrated into one model all require further work.
+The boundaries of key terms, the refinement of the survival-trust axis, the extent to which neurophenomenological and developmental-psychological findings can be integrated into one model, and the question of how far they can be made observable all require further work.

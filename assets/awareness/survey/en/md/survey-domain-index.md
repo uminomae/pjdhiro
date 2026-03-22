@@ -3,10 +3,10 @@ id: survey-domain-index
 title: "Awareness Model Exploration: Survey Index"
 lang: en
 audience: survey
-version: 0.2
-generated: 2026-03-21
+version: 0.3
+generated: 2026-03-23
 generator_model: codex:gpt-5
-date: 2026-03-21
+date: 2026-03-23
 ---
 
 # Awareness Model Exploration: Survey Index
@@ -43,4 +43,5 @@ The current focus is on the following two reports:
 ## 6. What Matters Most Right Now
 
 The center of gravity of this project is the exploration of the awareness model itself.
-In particular, it asks how insights from neurophenomenology and psychology can be integrated, and whether the hypothesis that places survival and intersubjectivity at the core is defensible.
+In particular, the project is now organizing neurophenomenology around embodiment, foregrounding of discrepancy, first-person descriptive units, and prereflective awareness, while organizing developmental psychology around attachment, safe base, internal working models, and repairability.
+On that basis, it asks how insights from neurophenomenology and psychology can be integrated, and whether the hypothesis that places survival and intersubjectivity at the core is defensible.
