@@ -1,6 +1,6 @@
 {
   "version": "0.2",
-  "generated_at": "2026-03-21",
+  "generated_at": "2026-03-23",
   "namespace": "awareness",
   "files": [
     {
@@ -8,56 +8,56 @@
       "lang": "ja",
       "format": "md",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-20"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/ja/pdf/survey-domain-index.pdf",
       "lang": "ja",
       "format": "pdf",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-20"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/ja/md/survey-status.md",
       "lang": "ja",
       "format": "md",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-20"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/ja/pdf/survey-status.pdf",
       "lang": "ja",
       "format": "pdf",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-20"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/en/md/survey-domain-index.md",
       "lang": "en",
       "format": "md",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-21"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/en/pdf/survey-domain-index.pdf",
       "lang": "en",
       "format": "pdf",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-21"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/en/md/survey-status.md",
       "lang": "en",
       "format": "md",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-21"
+      "generated": "2026-03-23"
     },
     {
       "path": "survey/en/pdf/survey-status.pdf",
       "lang": "en",
       "format": "pdf",
       "generator_model": "codex:gpt-5",
-      "generated": "2026-03-21"
+      "generated": "2026-03-23"
     }
   ]
 }
