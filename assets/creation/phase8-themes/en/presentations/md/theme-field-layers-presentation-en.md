@@ -23,7 +23,7 @@ slides: 10
 | Stage-definition proposals | **28** domains |
 | Core question | Is the field "emptiness" or "conditioned potentiality"? |
 
-![T6 Field Multi-Layering Cross-Domain Pattern Diagram](../../../../img/svg/themes/en/theme-field-layers.svg)
+![T6 Field Multi-Layering Cross-Domain Pattern Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-field-layers.svg)
 
 ---
 

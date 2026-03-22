@@ -1,6 +1,6 @@
 # 心理学・認知科学
 
-![心理学・認知科学 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D14-clinical-psychology.svg)
+![心理学・認知科学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D14-clinical-psychology.svg)
 
 > **立ち位置明示**
 > 本稿は、心理学・認知科学の主要理論と「5段階モデル（場→波→縁→渦→束）」との

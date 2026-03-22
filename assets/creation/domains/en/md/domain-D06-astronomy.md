@@ -1,6 +1,6 @@
 # Astronomy and Astrophysics: The Spiral of Unconscious Creation
 
-![Astronomy and Astrophysics: The Spiral of Unconscious Creation — Structural correspondence diagram](../../../img/svg/domains/en/domain-D06-astronomy.svg)
+![Astronomy and Astrophysics: The Spiral of Unconscious Creation — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D06-astronomy.svg)
 
 ## 1. Purpose and Question of the Investigation
 

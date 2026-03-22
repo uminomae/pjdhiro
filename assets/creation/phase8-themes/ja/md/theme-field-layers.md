@@ -7,7 +7,7 @@
 
 ---
 
-![T6 場の多層性 横断的パターン図](../../../img/svg/themes/ja/theme-field-layers.svg)
+![T6 場の多層性 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-field-layers.svg)
 
 
 ## §A: テーマを支持する領域とパターン

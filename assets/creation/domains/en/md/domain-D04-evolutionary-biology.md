@@ -1,6 +1,6 @@
 # Evolutionary Biology: Novelty Emerges from Error
 
-![Evolutionary Biology: Novelty Emerges from Error — Structural correspondence diagram](../../../img/svg/domains/en/domain-D04-evolutionary-biology.svg)
+![Evolutionary Biology: Novelty Emerges from Error — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D04-evolutionary-biology.svg)
 
 ## 1. Purpose of the Investigation in This Domain
 

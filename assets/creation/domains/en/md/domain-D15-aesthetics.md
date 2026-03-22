@@ -1,6 +1,6 @@
 # Aesthetics
 
-![Aesthetics — Structural correspondence diagram](../../../img/svg/domains/en/domain-D15-aesthetics.svg)
+![Aesthetics — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D15-aesthetics.svg)
 
 ## 1. Purpose and Question of the Investigation
 

@@ -24,7 +24,7 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 
 ## Structural Correspondence Diagram
 
-![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D01-mathematics.svg)
+![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D01-mathematics.svg)
 
 ---
 

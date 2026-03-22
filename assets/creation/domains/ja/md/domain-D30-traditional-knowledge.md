@@ -1,6 +1,6 @@
 # 伝統知・技芸
 
-![伝統知・技芸 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D30-cognitive-science.svg)
+![伝統知・技芸 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D30-cognitive-science.svg)
 
 > **立ち位置明示**
 > 本稿は、伝統知・技芸の主要理論と「5段階モデル（場→波→縁→渦→束）」との

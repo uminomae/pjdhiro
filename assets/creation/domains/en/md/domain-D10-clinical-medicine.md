@@ -1,6 +1,6 @@
 # Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error
 
-![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — Structural correspondence diagram](../../../img/svg/domains/en/domain-D10-clinical-medicine.svg)
+![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D10-clinical-medicine.svg)
 
 ## 1. Purpose and Questions of the Investigation
 

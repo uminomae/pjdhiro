@@ -1,6 +1,6 @@
 # 物理学
 
-![物理学 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D02-physics.svg)
+![物理学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D02-physics.svg)
 
 > **立ち位置明示**
 > 本稿は、物理学の主要理論と「5段階モデル（場→波→縁→渦→束）」との

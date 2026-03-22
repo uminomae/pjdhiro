@@ -25,7 +25,7 @@ slides: 10
 | T2 | 閾値構造と縁→渦遷移 | 11/30 |
 | T7+T9 | 盲点と反例 | 24/30 |
 
-![Phase 8 5テーマ統合構造図](../../../../img/svg/themes/ja/theme-conclusion-summary.svg)
+![Phase 8 5テーマ統合構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-conclusion-summary.svg)
 
 ---
 

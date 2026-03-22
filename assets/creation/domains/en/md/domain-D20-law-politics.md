@@ -1,6 +1,6 @@
 # Law and Political Science
 
-![Law and Political Science — Structural correspondence diagram](../../../img/svg/domains/en/domain-D20-law-politics.svg)
+![Law and Political Science — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D20-law-politics.svg)
 
 ## 1. Purpose and Question of the Investigation
 

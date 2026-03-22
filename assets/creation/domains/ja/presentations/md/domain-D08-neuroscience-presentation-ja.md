@@ -26,7 +26,7 @@ type: presentation
 
 ## 構造対応図
 
-![構造対応図](../../../../img/svg/domains/ja/domain-D08-neuroscience.svg)
+![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D08-neuroscience.svg)
 
 ---
 

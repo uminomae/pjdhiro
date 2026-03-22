@@ -1,6 +1,6 @@
 # Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter
 
-![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — Structural correspondence diagram](../../../img/svg/domains/en/domain-D11-pharmacy.svg)
+![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D11-pharmacy.svg)
 
 ## 1. Purpose and Question of the Investigation
 

@@ -24,7 +24,7 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 
 ## Structural Correspondence Diagram
 
-![Structural correspondence diagram](../../../../img/svg/domains/en/domain-D05-earth-science.svg)
+![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D05-earth-science.svg)
 
 ---
 

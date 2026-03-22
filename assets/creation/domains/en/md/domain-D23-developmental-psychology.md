@@ -1,6 +1,6 @@
 # Developmental Psychology
 
-![Developmental Psychology — Structural correspondence diagram](../../../img/svg/domains/en/domain-D23-developmental-psychology.svg)
+![Developmental Psychology — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D23-developmental-psychology.svg)
 
 ## 1. Purpose and Question
 

@@ -1,6 +1,6 @@
 # Economics
 
-![Economics — Structural correspondence diagram](../../../img/svg/domains/en/domain-D21-economics.svg)
+![Economics — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D21-economics.svg)
 
 ## 1. Purpose and Research Question
 

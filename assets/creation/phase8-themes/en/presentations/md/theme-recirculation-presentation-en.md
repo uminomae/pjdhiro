@@ -23,7 +23,7 @@ The bundle is not an endpoint but the seed of the next cycle's field.
 | Indirect support | **6** domains |
 | Evidence against circulation | **0** |
 
-![T5 Recirculation Mechanism Cross-Domain Pattern Diagram](../../../../img/svg/themes/en/theme-recirculation.svg)
+![T5 Recirculation Mechanism Cross-Domain Pattern Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-recirculation.svg)
 
 ---
 

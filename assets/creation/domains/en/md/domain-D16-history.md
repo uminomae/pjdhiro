@@ -1,6 +1,6 @@
 # History
 
-![History — Structural correspondence diagram](../../../img/svg/domains/en/domain-D16-history.svg)
+![History — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D16-history.svg)
 
 ## 1. Purpose and Question of the Investigation
 

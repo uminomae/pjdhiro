@@ -1,6 +1,6 @@
 # Philosophy: An Investigation of Structural Similarity with the Five-Stage Model
 
-![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — Structural correspondence diagram](../../../img/svg/domains/en/domain-D13-philosophy.svg)
+![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D13-philosophy.svg)
 
 ## 1. Purpose and Question of the Investigation
 
