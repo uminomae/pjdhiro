@@ -1,6 +1,6 @@
 # Traditional Knowledge
 
-![Traditional Knowledge — Structural correspondence diagram](../../../img/svg/domains/en/domain-D30-traditional-knowledge.svg)
+![Traditional Knowledge — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D30-traditional-knowledge.svg)
 
 ## 1. Purpose and Question of the Investigation
 

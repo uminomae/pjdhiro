@@ -23,7 +23,7 @@ slides: 10
 | 段階定義への提案 | **28** ドメイン |
 | 核心問題 | 場は「空虚」か「条件付き潜在性」か |
 
-![T6 場の多層性 横断的パターン図](../../../../img/svg/themes/ja/theme-field-layers.svg)
+![T6 場の多層性 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-field-layers.svg)
 
 ---
 

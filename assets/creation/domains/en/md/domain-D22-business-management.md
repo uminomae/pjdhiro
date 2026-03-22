@@ -1,6 +1,6 @@
 # Business Management
 
-![Business Management — Structural correspondence diagram](../../../img/svg/domains/en/domain-D22-business-management.svg)
+![Business Management — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D22-business-management.svg)
 
 ## 1. Purpose of the Investigation
 

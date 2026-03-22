@@ -24,7 +24,7 @@ slides: 10
 | 間接的 | **7** ドメイン |
 | 核心問題 | 帯域の中に閾値があるのか |
 
-![T2 閾値構造 横断的パターン図](../../../../img/svg/themes/ja/theme-threshold.svg)
+![T2 閾値構造 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-threshold.svg)
 
 ---
 

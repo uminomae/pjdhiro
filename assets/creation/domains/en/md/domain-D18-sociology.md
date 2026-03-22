@@ -1,6 +1,6 @@
 # Sociology: Weak Ties Generate Structure
 
-![Sociology: Weak Ties Generate Structure — Structural correspondence diagram](../../../img/svg/domains/en/domain-D18-sociology.svg)
+![Sociology: Weak Ties Generate Structure — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D18-sociology.svg)
 
 ## 1. Purpose and Question of the Investigation
 

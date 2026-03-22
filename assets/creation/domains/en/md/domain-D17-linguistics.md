@@ -1,6 +1,6 @@
 # Linguistics: The Five-Stage Structure Seen in Language Change and Emergence
 
-![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — Structural correspondence diagram](../../../img/svg/domains/en/domain-D17-linguistics.svg)
+![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D17-linguistics.svg)
 
 ## 1. Purpose and Question of the Investigation
 

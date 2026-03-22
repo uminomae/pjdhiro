@@ -9,4 +9,4 @@
 
 D13哲学とD24宗教が「経験的/存在論的/究極的」の3レベルを提案するが、自然科学は2カテゴリで十分と示唆しており、3レベル目の射程は保持論点。場の定義を拡張すると波との境界が曖昧になるという構造的緊張が存在する。
 
-![Phase 8 5テーマ統合構造図](../../../img/svg/themes/ja/theme-field-layers.svg)
+![Phase 8 5テーマ統合構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-field-layers.svg)

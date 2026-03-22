@@ -1,6 +1,6 @@
 # 建築・デザイン学
 
-![建築・デザイン学 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D27-architecture.svg)
+![建築・デザイン学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D27-architecture.svg)
 
 > **立ち位置明示**
 > 本稿は、建築・空間デザインの主要理論と「5段階モデル（場→波→縁→渦→束）」との

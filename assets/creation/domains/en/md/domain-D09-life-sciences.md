@@ -1,6 +1,6 @@
 # Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body
 
-![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — Structural correspondence diagram](../../../img/svg/domains/en/domain-D09-life-sciences.svg)
+![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D09-life-sciences.svg)
 
 ## 1. Purpose of the Investigation in This Domain
 

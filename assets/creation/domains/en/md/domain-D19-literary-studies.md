@@ -1,6 +1,6 @@
 # Literary Studies: Narrative Structure and the Five Stages of Creation
 
-![Literary Studies: Narrative Structure and the Five Stages of Creation — Structural correspondence diagram](../../../img/svg/domains/en/domain-D19-literary-studies.svg)
+![Literary Studies: Narrative Structure and the Five Stages of Creation — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D19-literary-studies.svg)
 
 ## 1. Purpose and Question of the Investigation
 

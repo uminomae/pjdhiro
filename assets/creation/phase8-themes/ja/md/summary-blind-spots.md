@@ -9,4 +9,4 @@
 
 5段階の前提として、秩序の生成が起きること、循環すること、段階が区別可能であること、スケール中立性、価値中立性が暗黙に置かれており、それぞれに反例が存在する。各段階に固有の失敗モード体系を付加することが提案された。
 
-![Phase 8 5テーマ統合構造図](../../../img/svg/themes/ja/theme-blind-spots.svg)
+![Phase 8 5テーマ統合構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-blind-spots.svg)

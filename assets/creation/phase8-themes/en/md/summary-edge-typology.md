@@ -1,6 +1,6 @@
 # T1: Edge Typology and Unified Classification — Conclusion Summary
 
-![T1: Edge Typology and Unified Classification — Conclusion Summary](../../../img/svg/themes/en/theme-edge-typology.svg)
+![T1: Edge Typology and Unified Classification — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-edge-typology.svg)
 
 28 of 30 domains thematize the polymorphism of "edge." Five convergent structures emerged from edge descriptions across all 30 domains.
 

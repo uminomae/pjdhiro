@@ -8,7 +8,7 @@
 
 ---
 
-![T5 再循環メカニズム 横断的パターン図](../../../img/svg/themes/ja/theme-recirculation.svg)
+![T5 再循環メカニズム 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-recirculation.svg)
 
 
 ## §A: テーマを支持する領域とパターン

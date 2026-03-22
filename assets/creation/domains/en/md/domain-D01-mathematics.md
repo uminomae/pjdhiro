@@ -1,6 +1,6 @@
 # Mathematics: Structure Condenses at Boundaries and Criticality
 
-![Mathematics: Structure Condenses at Boundaries and Criticality — Structural correspondence diagram](../../../img/svg/domains/en/domain-D01-mathematics.svg)
+![Mathematics: Structure Condenses at Boundaries and Criticality — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D01-mathematics.svg)
 
 ## 1. Purpose and Question of the Investigation
 

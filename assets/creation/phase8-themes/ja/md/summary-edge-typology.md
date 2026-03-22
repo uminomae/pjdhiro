@@ -10,4 +10,4 @@
 
 統一分類は「類型の統合」ではなく「少数の座標軸の同定」を目指すべきであり、縁を6つの座標（いつ/どうやって/どこで/何を通じて/何の上で/誰が）で記述される空間として定義することが提案された。
 
-![Phase 8 5テーマ統合構造図](../../../img/svg/themes/ja/theme-edge-typology.svg)
+![Phase 8 5テーマ統合構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-edge-typology.svg)

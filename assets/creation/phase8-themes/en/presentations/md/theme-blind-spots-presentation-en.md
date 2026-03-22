@@ -23,7 +23,7 @@ slides: 10
 | Resistance to staging | **4** domains |
 | All 30 domains | Each presents some blind spot |
 
-![T7+T9 Blind Spots and Counterexamples Cross-Domain Pattern Diagram](../../../../img/svg/themes/en/theme-blind-spots.svg)
+![T7+T9 Blind Spots and Counterexamples Cross-Domain Pattern Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-blind-spots.svg)
 
 ---
 

@@ -1,6 +1,6 @@
 # T2: Threshold Structure and Edge-to-Vortex Transition — Conclusion Summary
 
-![T2: Threshold Structure and Edge-to-Vortex Transition — Conclusion Summary](../../../img/svg/themes/en/theme-threshold.svg)
+![T2: Threshold Structure and Edge-to-Vortex Transition — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-threshold.svg)
 
 11 domains directly thematize threshold transitions. An additional 10 domains describe non-arrival-at-vortex pathways.
 

@@ -7,7 +7,7 @@
 
 ---
 
-![T1 縁の類型学 横断的パターン図](../../../img/svg/themes/ja/theme-edge-typology.svg)
+![T1 縁の類型学 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-edge-typology.svg)
 
 
 ## §A: テーマを支持する領域とパターン

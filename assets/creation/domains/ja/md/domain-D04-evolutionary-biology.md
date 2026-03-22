@@ -1,6 +1,6 @@
 # 進化生物学
 
-![進化生物学 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D04-evolutionary-biology.svg)
+![進化生物学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D04-evolutionary-biology.svg)
 
 > **立ち位置明示**
 > 本稿は、進化生物学の主要理論と「5段階モデル（場→波→縁→渦→束）」との

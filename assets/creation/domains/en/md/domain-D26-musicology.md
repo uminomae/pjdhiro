@@ -1,6 +1,6 @@
 # Musicology
 
-![Musicology — Structural correspondence diagram](../../../img/svg/domains/en/domain-D26-musicology.svg)
+![Musicology — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D26-musicology.svg)
 
 ## 1. Purpose and Questions of the Investigation
 

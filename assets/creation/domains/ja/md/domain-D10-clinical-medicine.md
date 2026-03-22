@@ -1,6 +1,6 @@
 # 臨床医学・免疫学
 
-![臨床医学・免疫学 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D10-immunology.svg)
+![臨床医学・免疫学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D10-immunology.svg)
 
 > **立ち位置明示**
 > 本稿は、臨床医学・免疫学の主要理論と「5段階モデル（場→波→縁→渦→束）」との

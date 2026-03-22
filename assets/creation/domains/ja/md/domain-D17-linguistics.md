@@ -1,6 +1,6 @@
 # 言語学
 
-![言語学 — 5段階モデルとの構造対応図](../../../img/svg/domains/ja/domain-D17-linguistics.svg)
+![言語学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D17-linguistics.svg)
 
 > **立ち位置明示**
 > 本稿は、言語学の主要理論と「5段階モデル（場→波→縁→渦→束）」との

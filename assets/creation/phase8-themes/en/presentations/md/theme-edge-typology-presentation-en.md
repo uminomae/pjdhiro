@@ -23,7 +23,7 @@ The most powerful cross-cutting finding: 28 of 30 domains independently thematiz
 | Extracted types | **30+** |
 | Core question | Is edge a bandwidth, a threshold, or a family of concepts? |
 
-![T1 Edge Typology Cross-Domain Pattern Diagram](../../../../img/svg/themes/en/theme-edge-typology.svg)
+![T1 Edge Typology Cross-Domain Pattern Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-edge-typology.svg)
 
 ---
 
