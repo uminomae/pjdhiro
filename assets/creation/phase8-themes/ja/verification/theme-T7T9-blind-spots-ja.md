@@ -11,6 +11,7 @@
 ![盲点と反例 収束ネットワーク図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-blind-spots-01-convergence-svg.svg)
 
 ![盲点と反例 分岐・緊張構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-blind-spots-02-divergence-svg.svg)
+
 ## 1. テーマの概要と主張
 
 ### 1.1 テーマの定義
