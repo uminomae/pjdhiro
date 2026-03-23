@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Field / Wave / Edge 
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-01-overview-svg.svg)
+
 - **Survey scope**: 10 major theories in evolutionary biology
 - **Research question**: Do the various theories of evolutionary biology correspond structurally to the five-stage model?
 - **Findings**: Conditional correspondence: 1 case
@@ -35,6 +37,8 @@ Structural correspondence survey with the five-stage model (Field / Wave / Edge 
 ---
 
 ## Overall Picture of Structural Correspondences
+
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-02-theories-map-svg.svg)
 
 | Temperature | Theory Group | Positioning |
 |---|---|---|

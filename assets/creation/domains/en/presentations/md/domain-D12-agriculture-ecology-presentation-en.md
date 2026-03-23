@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-01-overview-svg.svg)
+
 - **Scope**: 10 major theories in agriculture and ecology
 - **Research question**: Do theories in agriculture and ecology structurally correspond to the five-stage model?
 - **Results**: Strong correspondence 9, Partial correspondence 1
@@ -35,6 +37,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ---
 
 ## Overall Structural Correspondence
+
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-02-theories-map-svg.svg)
 
 | # | Theory/Concept | Proponent | Primary Corresponding Stages | Assessment |
 |---|----------|--------|------------|------|

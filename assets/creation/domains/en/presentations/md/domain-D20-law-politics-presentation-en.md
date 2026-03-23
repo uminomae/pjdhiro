@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-01-overview-svg.svg)
+
 - **Scope**: Major theories in law and political science
 - **Research question**: Do theories in law and political science structurally correspond to the five-stage model?
 - **Results**: Strong correspondence 1, Partial correspondence 1, Conditional correspondence 1
@@ -35,6 +37,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ---
 
 ## Overall Structural Correspondence
+
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-02-theories-map-svg.svg)
 
 | Temperature | Theory group | Assessment |
 |---|---|---|

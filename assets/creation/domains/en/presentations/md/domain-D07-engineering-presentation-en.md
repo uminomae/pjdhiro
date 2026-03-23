@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-01-overview-svg.svg)
+
 - **Survey targets**: Major theories in engineering and information science
 - **Research question**: Do the theories of engineering and information science correspond structurally to the five-stage model?
 - **Results**: Partial correspondence in 1 case, conditional correspondence in 1 case

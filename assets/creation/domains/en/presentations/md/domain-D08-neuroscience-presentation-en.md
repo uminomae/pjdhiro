@@ -16,6 +16,8 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-01-overview-svg.svg)
+
 - **Scope**: 11 major theories in neuroscience
 - **Research question**: Do neuroscientific theories correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 10 cases, conditional correspondence in 1 case
