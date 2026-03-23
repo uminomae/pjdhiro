@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="30" font-weight="bold">閾値構造 - 収束ネットワーク</text>
+
+  <!-- Central Hub Glow -->
+  <circle cx="600" cy="400" r="95" fill="#C45B4D" opacity="0.15" />
+  <!-- Central Hub -->
+  <circle cx="600" cy="400" r="80" fill="#2a2a4e" stroke="#C45B4D" stroke-width="4" />
+  <text x="600" y="400" text-anchor="middle" dominant-baseline="middle" fill="#C45B4D" font-size="22" font-weight="bold">閾値構造</text>
+
+  <!-- Lines Glow Layer -->
+  <g>
+    <!-- Convergence 1 Lines (Blue) -->
+    <line x1="776.775" y1="576.775" x2="600" y2="400" stroke="#4a90e2" stroke-width="6" opacity="0.3" />
+    <line x1="912.84" y1="682.84" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="6" opacity="0.3" />
+    <line x1="892.10" y1="711.30" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="6" opacity="0.3" />
+    <line x1="858.70" y1="700.40" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="6" opacity="0.3" />
+    <line x1="858.70" y1="665.20" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="6" opacity="0.3" />
+    <line x1="892.10" y1="654.30" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="6" opacity="0.3" />
+    <!-- Convergence 2 Lines (Red) -->
+    <line x1="423.225" y1="576.775" x2="600" y2="400" stroke="#e24a4a" stroke-width="6" opacity="0.3" />
+    <line x1="347.16" y1="682.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="6" opacity="0.3" />
+    <line x1="317.16" y1="712.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="6" opacity="0.3" />
+    <line x1="287.16" y1="682.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="6" opacity="0.3" />
+    <line x1="317.16" y1="652.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="6" opacity="0.3" />
+    <!-- Convergence 3 Lines (Green/Teal) -->
+    <line x1="423.225" y1="223.225" x2="600" y2="400" stroke="#50e3c2" stroke-width="6" opacity="0.3" />
+    <line x1="347.16" y1="117.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="6" opacity="0.3" />
+    <line x1="317.16" y1="147.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="6" opacity="0.3" />
+    <line x1="287.16" y1="117.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="6" opacity="0.3" />
+    <line x1="317.16" y1="87.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="6" opacity="0.3" />
+    <!-- Convergence 4 Lines (Purple) -->
+    <line x1="776.775" y1="223.225" x2="600" y2="400" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="912.84" y1="117.16" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="901.50" y1="140.60" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="876.00" y1="146.40" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="855.20" y1="130.30" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="855.20" y1="104.00" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="876.00" y1="87.90" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+    <line x1="901.50" y1="93.70" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="6" opacity="0.3" />
+  </g>
+  <!-- Lines Sharp Layer -->
+  <g>
+    <!-- Convergence 1 Lines (Blue) -->
+    <line x1="776.775" y1="576.775" x2="600" y2="400" stroke="#4a90e2" stroke-width="2" />
+    <line x1="912.84" y1="682.84" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="2" />
+    <line x1="892.10" y1="711.30" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="2" />
+    <line x1="858.70" y1="700.40" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="2" />
+    <line x1="858.70" y1="665.20" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="2" />
+    <line x1="892.10" y1="654.30" x2="776.775" y2="576.775" stroke="#4a90e2" stroke-width="2" />
+    <!-- Convergence 2 Lines (Red) -->
+    <line x1="423.225" y1="576.775" x2="600" y2="400" stroke="#e24a4a" stroke-width="2" />
+    <line x1="347.16" y1="682.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="2" />
+    <line x1="317.16" y1="712.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="2" />
+    <line x1="287.16" y1="682.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="2" />
+    <line x1="317.16" y1="652.84" x2="423.225" y2="576.775" stroke="#e24a4a" stroke-width="2" />
+    <!-- Convergence 3 Lines (Green/Teal) -->
+    <line x1="423.225" y1="223.225" x2="600" y2="400" stroke="#50e3c2" stroke-width="2" />
+    <line x1="347.16" y1="117.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="2" />
+    <line x1="317.16" y1="147.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="2" />
+    <line x1="287.16" y1="117.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="2" />
+    <line x1="317.16" y1="87.16" x2="423.225" y2="223.225" stroke="#50e3c2" stroke-width="2" />
+    <!-- Convergence 4 Lines (Purple) -->
+    <line x1="776.775" y1="223.225" x2="600" y2="400" stroke="#b34ae2" stroke-width="2" />
+    <line x1="912.84" y1="117.16" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+    <line x1="901.50" y1="140.60" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+    <line x1="876.00" y1="146.40" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+    <line x1="855.20" y1="130.30" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+    <line x1="855.20" y1="104.00" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+    <line x1="876.00" y1="87.90" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+    <line x1="901.50" y1="93.70" x2="776.775" y2="223.225" stroke="#b34ae2" stroke-width="2" />
+  </g>
+
+  <!-- Convergence Cards -->
+  <g>
+    <!-- Card 1 (Blue) -->
+    <rect x="676.775" y="526.775" width="200" height="100" rx="12" fill="#2a2a4e" />
+    <text x="776.775" y="551.775" text-anchor="middle" fill="#4a90e2" font-size="14" font-weight="bold">縁→渦遷移は閾値的</text>
+    <text x="776.775" y="581.775" text-anchor="middle" fill="white" font-size="13">5 domains</text>
+    <text x="776.775" y="601.775" text-anchor="middle" fill="#cccccc" font-size="12">連続的でなく閾値を超えて遷移</text>
+    <!-- Card 2 (Red) -->
+    <rect x="323.225" y="526.775" width="200" height="100" rx="12" fill="#2a2a4e" />
+    <text x="423.225" y="551.775" text-anchor="middle" fill="#e24a4a" font-size="14" font-weight="bold">閾値超過は不可逆的</text>
+    <text x="423.225" y="581.775" text-anchor="middle" fill="white" font-size="13">4 domains</text>
+    <text x="423.225" y="601.775" text-anchor="middle" fill="#cccccc" font-size="12">一度渦に入ると戻れない</text>
+    <!-- Card 3 (Green/Teal) -->
+    <rect x="323.225" y="173.225" width="200" height="100" rx="12" fill="#2a2a4e" />
+    <text x="423.225" y="198.225" text-anchor="middle" fill="#50e3c2" font-size="14" font-weight="bold">閾値は制御可能</text>
+    <text x="423.225" y="228.225" text-anchor="middle" fill="white" font-size="13">4 domains</text>
+    <text x="423.225" y="248.225" text-anchor="middle" fill="#cccccc" font-size="12">意図的に閾値を上下させる操作が存在</text>
+    <!-- Card 4 (Purple) -->
+    <rect x="676.775" y="173.225" width="200" height="100" rx="12" fill="#2a2a4e" />
+    <text x="776.775" y="198.225" text-anchor="middle" fill="#b34ae2" font-size="14" font-weight="bold">渦に至らない経路</text>
+    <text x="776.775" y="228.225" text-anchor="middle" fill="white" font-size="13">7 domains</text>
+    <text x="776.775" y="248.225" text-anchor="middle" fill="#cccccc" font-size="12">縁で止まる/場に戻る</text>
+  </g>
+
+  <!-- Domain Circles -->
+  <g>
+    <!-- Domains for Card 1 (Blue) -->
+    <circle cx="912.84" cy="682.84" r="14" fill="#4a90e2" opacity="0.3" stroke="#4a90e2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="912.84" y="682.84" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D02</text>
+    <circle cx="892.10" cy="711.30" r="14" fill="#4a90e2" opacity="0.3" stroke="#4a90e2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="892.10" y="711.30" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D03</text>
+    <circle cx="858.70" cy="700.40" r="14" fill="#4a90e2" opacity="0.3" stroke="#4a90e2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="858.70" y="700.40" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D05</text>
+    <circle cx="858.70" cy="665.20" r="14" fill="#4a90e2" opacity="0.3" stroke="#4a90e2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="858.70" y="665.20" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D06</text>
+    <circle cx="892.10" cy="654.30" r="14" fill="#4a90e2" opacity="0.3" stroke="#4a90e2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="892.10" y="654.30" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D29</text>
+    <!-- Domains for Card 2 (Red) -->
+    <circle cx="347.16" cy="682.84" r="14" fill="#e24a4a" opacity="0.3" stroke="#e24a4a" stroke-opacity="0.6" stroke-width="1" />
+    <text x="347.16" y="682.84" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D02</text>
+    <circle cx="317.16" cy="712.84" r="14" fill="#e24a4a" opacity="0.3" stroke="#e24a4a" stroke-opacity="0.6" stroke-width="1" />
+    <text x="317.16" y="712.84" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D04</text>
+    <circle cx="287.16" cy="682.84" r="14" fill="#e24a4a" opacity="0.3" stroke="#e24a4a" stroke-opacity="0.6" stroke-width="1" />
+    <text x="287.16" y="682.84" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D05</text>
+    <circle cx="317.16" cy="652.84" r="14" fill="#e24a4a" opacity="0.3" stroke="#e24a4a" stroke-opacity="0.6" stroke-width="1" />
+    <text x="317.16" y="652.84" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D06</text>
+    <!-- Domains for Card 3 (Green/Teal) -->
+    <circle cx="347.16" cy="117.16" r="14" fill="#50e3c2" opacity="0.3" stroke="#50e3c2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="347.16" y="117.16" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D03</text>
+    <circle cx="317.16" cy="147.16" r="14" fill="#50e3c2" opacity="0.3" stroke="#50e3c2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="317.16" y="147.16" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D12</text>
+    <circle cx="287.16" cy="117.16" r="14" fill="#50e3c2" opacity="0.3" stroke="#50e3c2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="287.16" y="117.16" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D22</text>
+    <circle cx="317.16" cy="87.16" r="14" fill="#50e3c2" opacity="0.3" stroke="#50e3c2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="317.16" y="87.16" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D27</text>
+    <!-- Domains for Card 4 (Purple) -->
+    <circle cx="912.84" cy="117.16" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="912.84" y="117.16" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D02</text>
+    <circle cx="901.50" cy="140.60" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="901.50" y="140.60" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D04</text>
+    <circle cx="876.00" cy="146.40" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="876.00" y="146.40" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D07</text>
+    <circle cx="855.20" cy="130.30" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="855.20" y="130.30" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D09</text>
+    <circle cx="855.20" cy="104.00" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="855.20" y="104.00" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D14</text>
+    <circle cx="876.00" cy="87.90" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="876.00" y="87.90" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D25</text>
+    <circle cx="901.50" cy="93.70" r="14" fill="#b34ae2" opacity="0.3" stroke="#b34ae2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="901.50" y="93.70" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="bold">D28</text>
+  </g>
+
+  <!-- Legend -->
+  <g>
+    <text x="1000" y="700" fill="white" font-size="16" font-weight="bold">凡例</text>
+    <circle cx="990" cy="730" r="7" fill="#2a2a4e" stroke="#C45B4D" stroke-width="2" />
+    <text x="1010" y="730" dominant-baseline="middle" fill="white" font-size="14">収束点</text>
+    <circle cx="990" cy="755" r="7" fill="#4a90e2" opacity="0.3" stroke="#4a90e2" stroke-opacity="0.6" stroke-width="1" />
+    <text x="1010" y="755" dominant-baseline="middle" fill="white" font-size="14">ドメイン</text>
+    <line x1="980" y1="780" x2="1000" y2="780" stroke="#4a90e2" stroke-width="2" />
+    <text x="1010" y="780" dominant-baseline="middle" fill="white" font-size="14">収束線</text>
+  </g>
+</svg>

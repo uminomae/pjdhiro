@@ -1,0 +1,98 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-family="sans-serif" font-size="30px" font-weight="bold">
+    盲点と反例 - 未解決の緊張構造
+  </text>
+
+  <!-- Arrowhead Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="white" />
+    </marker>
+  </defs>
+
+  <!-- Divergence 1: 射程拡張 vs 限界承認 -->
+  <g transform="translate(0, 220)">
+    <!-- Central Tension Label -->
+    <text x="600" y="5" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24px">
+      射程拡張 vs 限界承認
+    </text>
+
+    <!-- Left Viewpoint (A) -->
+    <rect x="30" y="-45" width="450" height="90" fill="#4a90e2" rx="10" ry="10" />
+    <text x="50" y="-15" fill="white" font-family="sans-serif" font-size="18px">
+      <tspan>D29複雑系(5段階を拡張し解体も記述)</tspan>
+      <tspan x="50" dy="30" font-size="14px">D29</tspan>
+    </text>
+
+    <!-- Right Viewpoint (B) -->
+    <rect x="720" y="-45" width="450" height="90" fill="#e24a4a" rx="10" ry="10" />
+    <text x="740" y="-15" fill="white" font-family="sans-serif" font-size="18px">
+      <tspan>D13哲学(5段階は秩序生成に特化と認める)</tspan>
+      <tspan x="740" dy="30" font-size="14px">D13</tspan>
+    </text>
+
+    <!-- Connecting Lines with Arrows -->
+    <line x1="480" y1="0" x2="550" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="720" y1="0" x2="650" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+
+  <!-- Divergence 2: 段階性は本質 vs 便宜 -->
+  <g transform="translate(0, 420)">
+    <!-- Central Tension Label -->
+    <text x="600" y="5" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24px">
+      段階性は本質 vs 便宜
+    </text>
+
+    <!-- Left Viewpoint (A) -->
+    <rect x="30" y="-45" width="450" height="90" fill="#50e3c2" rx="10" ry="10" />
+    <text x="50" y="-15" fill="white" font-family="sans-serif" font-size="18px">
+      <tspan>D02物理(段階=相転移の本質)</tspan>
+      <tspan x="50" dy="30" font-size="14px">D02</tspan>
+    </text>
+
+    <!-- Right Viewpoint (B) -->
+    <rect x="720" y="-45" width="450" height="90" fill="#b34ae2" rx="10" ry="10" />
+    <text x="740" y="-25" fill="white" font-family="sans-serif" font-size="18px">
+      <tspan>D13哲学(リゾーム的思考は段階を拒否)</tspan>
+      <tspan x="740" dy="25">D24宗教(段階数は多様)</tspan>
+      <tspan x="740" dy="30" font-size="14px">D13, D24</tspan>
+    </text>
+
+    <!-- Connecting Lines with Arrows -->
+    <line x1="480" y1="0" x2="550" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="720" y1="0" x2="650" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+
+  <!-- Divergence 3: 価値中立は可能 vs 不可能 -->
+  <g transform="translate(0, 620)">
+    <!-- Central Tension Label -->
+    <text x="600" y="5" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24px">
+      価値中立は可能 vs 不可能
+    </text>
+
+    <!-- Left Viewpoint (A) -->
+    <rect x="30" y="-45" width="450" height="90" fill="#D4A857" rx="10" ry="10" />
+    <text x="50" y="-25" fill="white" font-family="sans-serif" font-size="18px">
+      <tspan>D09生命(癌も束)</tspan>
+      <tspan x="50" dy="25">D18社会(権威主義も束)</tspan>
+      <tspan x="50" dy="30" font-size="14px">D09, D18</tspan>
+    </text>
+
+    <!-- Right Viewpoint (B) -->
+    <rect x="720" y="-45" width="450" height="90" fill="#5B8DB8" rx="10" ry="10" />
+    <text x="740" y="-15" fill="white" font-family="sans-serif" font-size="18px">
+      <tspan>D22経営(ロックインも束) — 等価でよいのか</tspan>
+      <tspan x="740" dy="30" font-size="14px">D22</tspan>
+    </text>
+
+    <!-- Connecting Lines with Arrows -->
+    <line x1="480" y1="0" x2="550" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="720" y1="0" x2="650" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+</svg>
+```
