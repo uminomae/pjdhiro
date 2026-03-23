@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="900" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" font-size="30" fill="#ffffff" text-anchor="middle">10歴史学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <g>
+    <!-- 場 (Field) -->
+    <rect x="230" y="100" width="180" height="50" fill="#8B8682" rx="5" ry="5" />
+    <text x="320" y="131" font-size="18" fill="#ffffff" text-anchor="middle">場 (Field)</text>
+    <!-- 波 (Wave) -->
+    <rect x="420" y="100" width="180" height="50" fill="#5B8DB8" rx="5" ry="5" />
+    <text x="510" y="131" font-size="18" fill="#ffffff" text-anchor="middle">波 (Wave)</text>
+    <!-- 縁 (Edge) -->
+    <rect x="610" y="100" width="180" height="50" fill="#D4A857" rx="5" ry="5" />
+    <text x="700" y="131" font-size="18" fill="#ffffff" text-anchor="middle">縁 (Edge)</text>
+    <!-- 渦 (Vortex) -->
+    <rect x="800" y="100" width="180" height="50" fill="#C45B4D" rx="5" ry="5" />
+    <text x="890" y="131" font-size="18" fill="#ffffff" text-anchor="middle">渦 (Vortex)</text>
+    <!-- 束 (Bundle) -->
+    <rect x="990" y="100" width="180" height="50" fill="#5B8B6A" rx="5" ry="5" />
+    <text x="1080" y="131" font-size="18" fill="#ffffff" text-anchor="middle">束 (Bundle)</text>
+  </g>
+
+  <!-- Matrix Rows -->
+  <g>
+    <!-- Theory 1: 長期持続・三層時間構造 | partial | 場 | 波 | 縁 | 渦 | 束 -->
+    <text x="10" y="193" font-size="16" fill="#ffffff">1. 長期持続・三層時間構造</text>
+    <rect x="230" y="160" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+    <text x="320" y="193" font-size="16" fill="#e0e0e0" text-anchor="middle">場</text>
+    <rect x="420" y="160" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+    <text x="510" y="193" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+    <rect x="610" y="160" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="700" y="193" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="800" y="160" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+    <text x="890" y="193" font-size="16" fill="#e0e0e0" text-anchor="middle">渦</text>
+    <rect x="990" y="160" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+    <text x="1080" y="193" font-size="16" fill="#e0e0e0" text-anchor="middle">束</text>
+
+    <!-- Theory 2: 挑戦と応答 | partial | - | 波 | - | - | - -->
+    <text x="10" y="258" font-size="16" fill="#ffffff">2. 挑戦と応答</text>
+    <rect x="230" y="225" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="258" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="225" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+    <text x="510" y="258" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+    <rect x="610" y="225" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+    <text x="700" y="258" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="800" y="225" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="890" y="258" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="990" y="225" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="258" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 3: 経路依存とクリティカル・ジャンクチャー | partial | - | - | 縁 | 渦 | 束 -->
+    <text x="10" y="323" font-size="16" fill="#ffffff">3. 経路依存とクリティカル・ジャンクチャー</text>
+    <rect x="230" y="290" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="323" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="290" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="510" y="323" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="610" y="290" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="700" y="323" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="800" y="290" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+    <text x="890" y="323" font-size="16" fill="#e0e0e0" text-anchor="middle">渦</text>
+    <rect x="990" y="290" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+    <text x="1080" y="323" font-size="16" fill="#e0e0e0" text-anchor="middle">束</text>
+
+    <!-- Theory 4: アサビーヤ王朝論 | partial | - | - | 縁 | 渦 | - -->
+    <text x="10" y="388" font-size="16" fill="#ffffff">4. アサビーヤ王朝論</text>
+    <rect x="230" y="355" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="388" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="355" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="510" y="388" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="610" y="355" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="700" y="388" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="800" y="355" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+    <text x="890" y="388" font-size="16" fill="#e0e0e0" text-anchor="middle">渦</text>
+    <rect x="990" y="355" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="388" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 5: 世界システム分析 | partial | - | - | 縁 | - | - -->
+    <text x="10" y="453" font-size="16" fill="#ffffff">5. 世界システム分析</text>
+    <rect x="230" y="420" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="453" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="420" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="510" y="453" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="610" y="420" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="700" y="453" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="800" y="420" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="890" y="453" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="990" y="420" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="453" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 6: 大規模技術システムとモメンタム | strong | 場 | 波 | 縁 | 渦 | 束 -->
+    <text x="10" y="518" font-size="16" fill="#ffffff">6. 大規模技術システムとモメンタム</text>
+    <rect x="230" y="485" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+    <text x="320" y="518" font-size="16" fill="#ffffff" text-anchor="middle">場</text>
+    <rect x="420" y="485" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+    <text x="510" y="518" font-size="16" fill="#ffffff" text-anchor="middle">波</text>
+    <rect x="610" y="485" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+    <text x="700" y="518" font-size="16" fill="#ffffff" text-anchor="middle">縁</text>
+    <rect x="800" y="485" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+    <text x="890" y="518" font-size="16" fill="#ffffff" text-anchor="middle">渦</text>
+    <rect x="990" y="485" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+    <text x="1080" y="518" font-size="16" fill="#ffffff" text-anchor="middle">束</text>
+
+    <!-- Theory 7: 概念史と時間構造 | partial | 場 | 波 | - | - | - -->
+    <text x="10" y="583" font-size="16" fill="#ffffff">7. 概念史と時間構造</text>
+    <rect x="230" y="550" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+    <text x="320" y="583" font-size="16" fill="#e0e0e0" text-anchor="middle">場</text>
+    <rect x="420" y="550" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+    <text x="510" y="583" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+    <rect x="610" y="550" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+    <text x="700" y="583" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="800" y="550" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="890" y="583" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="990" y="550" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="583" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 8: メタヒストリー | conditional | - | - | - | - | - -->
+    <text x="10" y="648" font-size="16" fill="#ffffff">8. メタヒストリー</text>
+    <rect x="230" y="615" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="648" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="615" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="510" y="648" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="610" y="615" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+    <text x="700" y="648" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="800" y="615" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="890" y="648" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="990" y="615" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="648" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 9: 歴史の循環（corsi e ricorsi） | partial | - | - | - | - | - -->
+    <text x="10" y="713" font-size="16" fill="#ffffff">9. 歴史の循環（corsi e ricorsi）</text>
+    <rect x="230" y="680" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="713" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="680" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="510" y="713" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="610" y="680" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+    <text x="700" y="713" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="800" y="680" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="890" y="713" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="990" y="680" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="713" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 10: 世俗サイクルとクリオダイナミクス | partial | - | - | 縁 | - | - -->
+    <text x="10" y="778" font-size="16" fill="#ffffff">10. 世俗サイクルとクリオダイナミクス</text>
+    <rect x="230" y="745" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="320" y="778" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="420" y="745" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="510" y="778" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="610" y="745" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="700" y="778" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="800" y="745" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="890" y="778" font-size="16" fill="#888888" text-anchor="middle">-</text>
+    <rect x="990" y="745" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1080" y="778" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  </g>
+
+  <!-- Legend -->
+  <g>
+    <rect x="10" y="830" width="30" height="20" fill="#8B8682" rx="5" ry="5" />
+    <text x="50" y="845" font-size="16" fill="#ffffff">強い対応 (Strong)</text>
+
+    <rect x="10" y="855" width="30" height="20" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+    <text x="50" y="870" font-size="16" fill="#e0e0e0">部分的 (Partial)</text>
+
+    <rect x="10" y="880" width="30" height="20" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+    <text x="50" y="895" font-size="16" fill="#aaaaaa">条件付き/弱い (Conditional/Weak)</text>
+  </g>
+</svg>

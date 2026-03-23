@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D21 経済学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Phase Boxes with Glow -->
+  <!-- Box 1 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="195" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+
+  <!-- Box 2 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="295" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+
+  <!-- Box 3 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="395" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+
+  <!-- Box 4 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="495" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+
+  <!-- Box 5 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="595" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+
+  <!-- Arrows -->
+  <path d="M200,220 L200,240 M190,230 L200,240 L210,230" fill="none" stroke="#F39C12" stroke-width="4" />
+  <path d="M200,320 L200,340 M190,330 L200,340 L210,330" fill="none" stroke="#F39C12" stroke-width="4" />
+  <path d="M200,420 L200,440 M190,430 L200,440 L210,430" fill="none" stroke="#F39C12" stroke-width="4" />
+  <path d="M200,520 L200,540 M190,530 L200,540 L210,530" fill="none" stroke="#F39C12" stroke-width="4" />
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <g id="columnHeaders">
+    <rect x="600" y="150" width="108" height="30" rx="5" fill="#8B8682" />
+    <text x="654" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+    <rect x="710" y="150" width="108" height="30" rx="5" fill="#5B8DB8" />
+    <text x="764" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+    <rect x="820" y="150" width="108" height="30" rx="5" fill="#D4A857" />
+    <text x="874" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+    <rect x="930" y="150" width="108" height="30" rx="5" fill="#C45B4D" />
+    <text x="984" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+    <rect x="1040" y="150" width="108" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1094" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+  </g>
+
+  <g id="theoryGrid">
+    <!-- Row 1: 創造的破壊 (partial) -->
+    <text x="590" y="182 + 30" text-anchor="end" fill="white" font-size="14">創造的破壊</text>
+    <rect x="600" y="182" width="108" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 -->
+    <rect x="710" y="182" width="108" height="50" fill="#5B8DB8" opacity="0.7" /> <!-- 波 -->
+    <rect x="820" y="182" width="108" height="50" fill="#D4A857" opacity="0.7" /> <!-- 縁 -->
+    <rect x="930" y="182" width="108" height="50" fill="#C45B4D" opacity="0.7" /> <!-- 渦 -->
+    <rect x="1040" y="182" width="108" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 -->
+
+    <!-- Row 2: 自生的秩序と価格メカニズム (partial) -->
+    <text x="590" y="182 + 52 + 30" text-anchor="end" fill="white" font-size="14">自生的秩序と価格メカニズム</text>
+    <rect x="600" y="182 + 52" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="182 + 52" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="820" y="182 + 52" width="108" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="930" y="182 + 52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="182 + 52" width="108" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 3: 根本的不確実性とアニマルスピリッツ (partial) -->
+    <text x="590" y="182 + 2*52 + 30" text-anchor="end" fill="white" font-size="14">根本的不確実性とアニマルスピリッツ</text>
+    <rect x="600" y="182 + 2*52" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="182 + 2*52" width="108" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="820" y="182 + 2*52" width="108" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="930" y="182 + 2*52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="182 + 2*52" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 4: リスクと不確実性 (partial) -->
+    <text x="590" y="182 + 3*52 + 30" text-anchor="end" fill="white" font-size="14">リスクと不確実性</text>
+    <rect x="600" y="182 + 3*52" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="182 + 3*52" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="820" y="182 + 3*52" width="108" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="930" y="182 + 3*52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="182 + 3*52" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 5: 進化経済学 (partial) -->
+    <text x="590" y="182 + 4*52 + 30" text-anchor="end" fill="white" font-size="14">進化経済学</text>
+    <rect x="600" y="182 + 4*52" width="108" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="710" y="182 + 4*52" width="108" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="820" y="182 + 4*52" width="108" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="930" y="182 + 4*52" width="108" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1040" y="182 + 4*52" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 6: 複雑系経済学・収穫逓増 (strong) -->
+    <text x="590" y="182 + 5*52 + 30" text-anchor="end" fill="white" font-size="14">複雑系経済学・収穫逓増</text>
+    <rect x="600" y="182 + 5*52" width="108" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="710" y="182 + 5*52" width="108" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="820" y="182 + 5*52" width="108" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="930" y="182 + 5*52" width="108" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1040" y="182 + 5*52" width="108" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 7: 制度経済学 (partial) -->
+    <text x="590" y="182 + 6*52 + 30" text-anchor="end" fill="white" font-size="14">制度経済学</text>
+    <rect x="600" y="182 + 6*52" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="182 + 6*52" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="820" y="182 + 6*52" width="108" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="930" y="182 + 6*52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="182 + 6*52" width="108" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 8: ケイパビリティ・アプローチ (conditional) -->
+    <text x="590" y="182 + 7*52 + 30" text-anchor="end" fill="white" font-size="14">ケイパビリティ・アプローチ</text>
+    <rect x="600" y="182 + 7*52" width="108" height="50" fill="#8B8682" opacity="0.2" />
+    <rect x="710" y="182 + 7*52" width="108" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="820" y="182 + 7*52" width="108" height="50" fill="#D4A857" opacity="0.4" />
+    <rect x="930" y="182 + 7*52" width="108" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1040" y="182 + 7*52" width="108" height="50" fill="#5B8B6A" opacity="0.2" />
+
+    <!-- Row 9: 金融不安定性仮説 (strong) -->
+    <text x="590" y="182 + 8*52 + 30" text-anchor="end" fill="white" font-size="14">金融不安定性仮説</text>
+    <rect x="600" y="182 + 8*52" width="108" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="710" y="182 + 8*52" width="108" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="820" y="182 + 8*52" width="108" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="930" y="182 + 8*52" width="108" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1040" y="182 + 8*52" width="108" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 10: 企業成長の理論 (conditional) -->
+    <text x="590" y="182 + 9*52 + 30" text-anchor="end" fill="white" font-size="14">企業成長の理論</text>
+    <rect x="600" y="182 + 9*52" width="108" height="50" fill="#8B8682" opacity="0.4" />
+    <rect x="710" y="182 + 9*52" width="108" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="820" y="182 + 9*52" width="108" height="50" fill="#D4A857" opacity="0.2" />
+    <rect x="930" y="182 + 9*52" width="108" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1040" y="182 + 9*52" width="108" height="50" fill="#5B8B6A" opacity="0.2" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <g id="judgmentSummary">
+    <rect x="250" y="755" width="20" height="20" fill="#27AE60" />
+    <text x="280" y="770" text-anchor="start" fill="white" font-size="18">強い対応: 2件</text>
+    <rect x="500" y="755" width="20" height="20" fill="#F1C40F" />
+    <text x="530" y="770" text-anchor="start" fill="white" font-size="18">部分的対応: 6件</text>
+    <rect x="750" y="755" width="20" height="20" fill="#E67E22" />
+    <text x="780" y="770" text-anchor="start" fill="white" font-size="18">条件付き: 2件</text>
+  </g>
+</svg>

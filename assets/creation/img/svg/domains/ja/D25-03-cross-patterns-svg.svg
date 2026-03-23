@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text text-anchor="middle" x="600" y="50" fill="white" font-size="32" font-weight="bold">人類学探究における横断的パターンの発見</text>
+
+  <!-- Connecting Lines (Glow Layer) -->
+  <path d="M 600 400 L 300 250" stroke="#D4A857" stroke-width="4" opacity="0.4" fill="none" />
+  <path d="M 600 400 L 900 250" stroke="#D4A857" stroke-width="4" opacity="0.4" fill="none" />
+  <path d="M 600 400 L 300 600" stroke="#D4A857" stroke-width="4" opacity="0.4" fill="none" />
+  <!-- Optional cross-connections between satellites (fainter) -->
+  <path d="M 300 250 L 900 250" stroke="#D4A857" stroke-width="2" opacity="0.3" fill="none" />
+  <path d="M 300 250 L 300 600" stroke="#D4A857" stroke-width="2" opacity="0.3" fill="none" />
+  <path d="M 900 250 L 300 600" stroke="#D4A857" stroke-width="2" opacity="0.3" fill="none" />
+
+  <!-- Connecting Lines (Sharp Layer) -->
+  <path d="M 600 400 L 300 250" stroke="#D4A857" stroke-width="2" fill="none" />
+  <path d="M 600 400 L 900 250" stroke="#D4A857" stroke-width="2" fill="none" />
+  <path d="M 600 400 L 300 600" stroke="#D4A857" stroke-width="2" fill="none" />
+
+  <!-- Center Card (Hub) - Glow -->
+  <rect x="390" y="270" width="420" height="260" rx="10" fill="#D4A857" opacity="0.2" />
+  <rect x="395" y="275" width="410" height="250" rx="10" fill="#D4A857" opacity="0.3" />
+  <!-- Center Card (Hub) - Main -->
+  <rect x="400" y="280" width="400" height="240" rx="10" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+  <!-- Center Card (Hub) - Text -->
+  <text text-anchor="middle" x="600" y="315" fill="#D4A857" font-size="28" font-weight="bold">「縁」の方向決定メカニズム</text>
+  <text text-anchor="middle" x="600" y="345" fill="white" font-size="18">(0/10 theories)</text>
+  <text text-anchor="middle" x="600" y="375" fill="white" font-size="20">
+    <tspan>"複数の理論が、「縁"</tspan>
+  </text>
+  <text text-anchor="start" x="420" y="445" fill="#cccccc" font-size="16">Found in:</text>
+  <text text-anchor="start" x="420" y="470" fill="#D4A857" font-size="14">
+    <tspan></tspan>
+  </text>
+
+  <!-- Satellite 1 (Top-left) - Glow -->
+  <rect x="145" y="155" width="310" height="190" rx="10" fill="#4a90e2" opacity="0.2" />
+  <!-- Satellite 1 (Top-left) - Main -->
+  <rect x="150" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+  <!-- Satellite 1 (Top-left) - Text -->
+  <text text-anchor="middle" x="300" y="195" fill="#4a90e2" font-size="20" font-weight="bold">「縁」の両義性――生成と危険の同時性</text>
+  <text text-anchor="middle" x="300" y="220" fill="white" font-size="14">(1/10)</text>
+  <text text-anchor="middle" x="300" y="250" fill="white" font-size="16">
+    <tspan>Turnerのリミナリティ（生成的側面）とDouglasの汚穢（危険な側面）は、</tspan>
+    <tspan x="300" dy="20">「縁</tspan>
+  </text>
+  <text text-anchor="start" x="170" y="305" fill="#cccccc" font-size="14">Theory: 生成的側面</text>
+
+  <!-- Satellite 2 (Top-right) - Glow -->
+  <rect x="745" y="155" width="310" height="190" rx="10" fill="#e24a4a" opacity="0.2" />
+  <!-- Satellite 2 (Top-right) - Main -->
+  <rect x="750" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+  <!-- Satellite 2 (Top-right) - Text -->
+  <text text-anchor="middle" x="900" y="195" fill="#e24a4a" font-size="20" font-weight="bold">5段階の理論的密度の偏り</text>
+  <text text-anchor="middle" x="900" y="220" fill="white" font-size="14">(0/10)</text>
+  <text text-anchor="middle" x="900" y="250" fill="white" font-size="16">
+    <tspan>"人類学全体で「波→縁→渦"</tspan>
+  </text>
+  <text text-anchor="start" x="770" y="305" fill="#cccccc" font-size="14">Theory:</text>
+
+  <!-- Satellite 3 (Bottom-left) - Glow -->
+  <rect x="145" y="505" width="310" height="190" rx="10" fill="#50e3c2" opacity="0.2" />
+  <!-- Satellite 3 (Bottom-left) - Main -->
+  <rect x="150" y="510" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+  <!-- Satellite 3 (Bottom-left) - Text -->
+  <text text-anchor="middle" x="300" y="545" fill="#50e3c2" font-size="20" font-weight="bold">フラクタル的な反復</text>
+  <text text-anchor="middle" x="300" y="570" fill="white" font-size="14">(1/10)</text>
+  <text text-anchor="middle" x="300" y="590" fill="white" font-size="16">
+    <tspan>通過儀礼の移行期内部の段階化（聖化→移行→脱聖化）、社会劇の局面構造の</tspan>
+    <tspan x="300" dy="18">スケール横断的反復、分類操作の多層性（身体→家庭→社会→宇宙）、操作連鎖の</tspan>
+    <tspan x="300" dy="18">技術横断的反復（石器→陶器→金属加工→現代技術）で、同一構造が異なる</tspan>
+    <tspan x="300" dy="18">スケールで現れるフラクタル性が確認されます</tspan>
+  </text>
+  <text text-anchor="start" x="170" y="665" fill="#cccccc" font-size="14">Theory: 聖化→移行→脱聖化</text>
+
+  <!-- Key Finding Callout -->
+  <rect x="375" y="545" width="450" height="50" rx="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+  <text text-anchor="middle" x="600" y="575" fill="#1a1a2e" font-size="18" font-weight="bold">人類学で最も顕著な発見 = 「縁」の方向決定メカニズム</text>
+
+</svg>

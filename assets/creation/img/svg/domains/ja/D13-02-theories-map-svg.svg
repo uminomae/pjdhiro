@@ -1,0 +1,182 @@
+<svg viewBox="0 0 1200 950" font-family="sans-serif">
+  <rect x="0" y="0" width="1200" height="950" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="600" y="50" font-size="32" fill="#f0f0f0" text-anchor="middle">11哲学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <g text-anchor="middle" font-size="18">
+    <!-- 場 (Field) -->
+    <rect x="240" y="100" width="180" height="50" fill="#8B8682" rx="5" ry="5"/>
+    <text x="330" y="130" fill="#ffffff">場</text>
+    <!-- 波 (Wave) -->
+    <rect x="430" y="100" width="180" height="50" fill="#5B8DB8" rx="5" ry="5"/>
+    <text x="520" y="130" fill="#ffffff">波</text>
+    <!-- 縁 (Edge) -->
+    <rect x="620" y="100" width="180" height="50" fill="#D4A857" rx="5" ry="5"/>
+    <text x="710" y="130" fill="#ffffff">縁</text>
+    <!-- 渦 (Vortex) -->
+    <rect x="810" y="100" width="180" height="50" fill="#C45B4D" rx="5" ry="5"/>
+    <text x="900" y="130" fill="#ffffff">渦</text>
+    <!-- 束 (Bundle) -->
+    <rect x="1000" y="100" width="180" height="50" fill="#5B8B6A" rx="5" ry="5"/>
+    <text x="1090" y="130" fill="#ffffff">束</text>
+  </g>
+
+  <!-- Matrix Cells and Row Labels -->
+  <!-- Row 1: 個体化論（transduction） -->
+  <text x="10" y="192.5" font-size="16" fill="#f0f0f0" text-anchor="start">1. 個体化論（transduction）</text>
+  <rect x="240" y="160" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5"/>
+  <text x="330" y="192.5" font-size="16" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="430" y="160" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5"/>
+  <text x="520" y="192.5" font-size="16" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="620" y="160" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5"/>
+  <text x="710" y="192.5" font-size="16" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="810" y="160" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5"/>
+  <text x="900" y="192.5" font-size="16" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="1000" y="160" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5"/>
+  <text x="1090" y="192.5" font-size="16" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Row 2: 反省的思考の5段階 -->
+  <text x="10" y="257.5" font-size="16" fill="#f0f0f0" text-anchor="start">2. 反省的思考の5段階</text>
+  <rect x="240" y="225" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5"/>
+  <text x="330" y="257.5" font-size="16" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="430" y="225" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5"/>
+  <text x="520" y="257.5" font-size="16" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="620" y="225" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5"/>
+  <text x="710" y="257.5" font-size="16" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="810" y="225" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5"/>
+  <text x="900" y="257.5" font-size="16" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="1000" y="225" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5"/>
+  <text x="1090" y="257.5" font-size="16" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Row 3: 過程哲学（concrescence） -->
+  <text x="10" y="322.5" font-size="16" fill="#f0f0f0" text-anchor="start">3. 過程哲学（concrescence）</text>
+  <rect x="240" y="290" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+  <text x="330" y="322.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="430" y="290" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+  <text x="520" y="322.5" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="620" y="290" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+  <text x="710" y="322.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="810" y="290" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5"/>
+  <text x="900" y="322.5" font-size="16" fill="#e0e0e0" text-anchor="middle">渦</text>
+  <rect x="1000" y="290" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5"/>
+  <text x="1090" y="322.5" font-size="16" fill="#e0e0e0" text-anchor="middle">束</text>
+
+  <!-- Row 4: 自然哲学（Naturphilosophie） -->
+  <text x="10" y="387.5" font-size="16" fill="#f0f0f0" text-anchor="start">4. 自然哲学（Naturphilosophie）</text>
+  <rect x="240" y="355" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+  <text x="330" y="387.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="430" y="355" width="180" height="55" fill="#5B8DB8" opacity="0.3" rx="5" ry="5"/>
+  <text x="520" y="387.5" font-size="16" fill="#aaaaaa" text-anchor="middle">波</text>
+  <rect x="620" y="355" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+  <text x="710" y="387.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="810" y="355" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+  <text x="900" y="387.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="1000" y="355" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+  <text x="1090" y="387.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 5: 受動的総合（passive synthesis） -->
+  <text x="10" y="452.5" font-size="16" fill="#f0f0f0" text-anchor="start">5. 受動的総合（passive synthesis）</text>
+  <rect x="240" y="420" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+  <text x="330" y="452.5" font-size="16" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="430" y="420" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+  <text x="520" y="452.5" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="620" y="420" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+  <text x="710" y="452.5" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="810" y="420" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+  <text x="900" y="452.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="1000" y="420" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+  <text x="1090" y="452.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 6: 「肉」と可逆性 -->
+  <text x="10" y="517.5" font-size="16" fill="#f0f0f0" text-anchor="start">6. 「肉」と可逆性</text>
+  <rect x="240" y="485" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+  <text x="330" y="517.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="430" y="485" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+  <text x="520" y="517.5" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="620" y="485" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+  <text x="710" y="517.5" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="810" y="485" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+  <text x="900" y="517.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="1000" y="485" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+  <text x="1090" y="517.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 7: 地平融合（Horizontverschmelzung） -->
+  <text x="10" y="582.5" font-size="16" fill="#f0f0f0" text-anchor="start">7. 地平融合（Horizontverschmelzung）</text>
+  <rect x="240" y="550" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+  <text x="330" y="582.5" font-size="16" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="430" y="550" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+  <text x="520" y="582.5" font-size="16" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="620" y="550" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+  <text x="710" y="582.5" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="810" y="550" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5"/>
+  <text x="900" y="582.5" font-size="16" fill="#e0e0e0" text-anchor="middle">渦</text>
+  <rect x="1000" y="550" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5"/>
+  <text x="1090" y="582.5" font-size="16" fill="#e0e0e0" text-anchor="middle">束</text>
+
+  <!-- Row 8: リゾーム・脱領土化 -->
+  <text x="10" y="647.5" font-size="16" fill="#f0f0f0" text-anchor="start">8. リゾーム・脱領土化</text>
+  <rect x="240" y="615" width="180" height="55" fill="#8B8682" opacity="0.3" rx="5" ry="5"/>
+  <text x="330" y="647.5" font-size="16" fill="#aaaaaa" text-anchor="middle">場</text>
+  <rect x="430" y="615" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+  <text x="520" y="647.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="620" y="615" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+  <text x="710" y="647.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="810" y="615" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+  <text x="900" y="647.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="1000" y="615" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+  <text x="1090" y="647.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 9: 探究と信念の固定 -->
+  <text x="10" y="712.5" font-size="16" fill="#f0f0f0" text-anchor="start">9. 探究と信念の固定</text>
+  <rect x="240" y="680" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5"/>
+  <text x="330" y="712.5" font-size="16" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="430" y="680" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5"/>
+  <text x="520" y="712.5" font-size="16" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="620" y="680" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5"/>
+  <text x="710" y="712.5" font-size="16" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="810" y="680" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5"/>
+  <text x="900" y="712.5" font-size="16" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="1000" y="680" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5"/>
+  <text x="1090" y="712.5" font-size="16" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Row 10: 否定弁証法 -->
+  <text x="10" y="777.5" font-size="16" fill="#f0f0f0" text-anchor="start">10. 否定弁証法</text>
+  <rect x="240" y="745" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+  <text x="330" y="777.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="430" y="745" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+  <text x="520" y="777.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="620" y="745" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+  <text x="710" y="777.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="810" y="745" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+  <text x="900" y="777.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="1000" y="745" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+  <text x="1090" y="777.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 11: 場所の論理 -->
+  <text x="10" y="842.5" font-size="16" fill="#f0f0f0" text-anchor="start">11. 場所の論理</text>
+  <rect x="240" y="810" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+  <text x="330" y="842.5" font-size="16" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="430" y="810" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+  <text x="520" y="842.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+  <rect x="620" y="810" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+  <text x="710" y="842.5" font-size="16" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="810" y="810" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5"/>
+  <text x="900" y="842.5" font-size="16" fill="#e0e0e0" text-anchor="middle">渦</text>
+  <rect x="1000" y="810" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+  <text x="1090" y="842.5" font-size="16" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Legend -->
+  <g font-size="16" text-anchor="start">
+    <!-- Strong -->
+    <rect x="50" y="905" width="20" height="20" fill="#8B8682" opacity="1" rx="5" ry="5"/>
+    <text x="80" y="917.5" fill="#f0f0f0">強い対応 (Strong)</text>
+    <!-- Partial -->
+    <rect x="300" y="905" width="20" height="20" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+    <text x="330" y="917.5" fill="#f0f0f0">部分的 (Partial)</text>
+    <!-- Conditional/Weak -->
+    <rect x="550" y="905" width="20" height="20" fill="#8B8682" opacity="0.3" rx="5" ry="5"/>
+    <text x="580" y="917.5" fill="#f0f0f0">条件付き/弱い (Conditional/Weak)</text>
+  </g>
+</svg>

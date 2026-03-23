@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Connecting Lines -->
+  <g>
+    <!-- Cross-connections (faint) -->
+    <line x1="300" y1="250" x2="900" y2="250" stroke="#cccccc" stroke-width="1" opacity="0.3" />
+    <line x1="900" y1="250" x2="900" y2="600" stroke="#cccccc" stroke-width="1" opacity="0.3" />
+    <line x1="900" y1="600" x2="300" y2="250" stroke="#cccccc" stroke-width="1" opacity="0.3" />
+
+    <!-- Hub to Satellite Lines (Glow) -->
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="900" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    
+    <!-- Hub to Satellite Lines (Sharp) -->
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="2" />
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="2" />
+    <line x1="600" y1="400" x2="900" y2="600" stroke="#D4A857" stroke-width="2" />
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" font-size="32" font-weight="bold" fill="white">数学探究における横断的パターンの発見</text>
+
+  <!-- Center Card (Hub) -->
+  <g>
+    <rect x="390" y="270" width="420" height="260" rx="15" fill="#D4A857" opacity="0.2" />
+    <rect x="395" y="275" width="410" height="250" rx="15" fill="#D4A857" opacity="0.3" />
+    <rect x="400" y="280" width="400" height="240" rx="15" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+    <text x="600" y="320" text-anchor="middle" font-size="28" font-weight="bold" fill="#D4A857">境界凝縮パターン</text>
+    <text x="600" y="345" text-anchor="middle" font-size="18" fill="white">(11件中6件 theories)</text>
+    <text x="600" y="385" text-anchor="middle" font-size="20" fill="white">
+      <tspan x="600" dy="-1.2em">"全体の構造的情報が境界・臨界・"</tspan>
+      <tspan x="600" dy="1.2em">"整合条件の近傍に凝縮する"</tspan>
+    </text>
+    <text x="600" y="440" text-anchor="middle" font-size="16" fill="#cccccc">Found in:</text>
+    <text x="600" y="470" text-anchor="middle" font-size="14" fill="#D4A857">
+      <tspan x="600" dy="-1.2em">Julia集合, 層/Cech, Milnor, 分岐理論</tspan>
+      <tspan x="600" dy="1.2em">特異摂動, Morse理論</tspan>
+    </text>
+  </g>
+
+  <!-- Satellite Card 1 (Top-Left) -->
+  <g>
+    <rect x="145" y="155" width="310" height="190" rx="10" fill="#4a90e2" opacity="0.2" />
+    <rect x="150" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+    <text x="300" y="190" text-anchor="middle" font-size="20" font-weight="bold" fill="#4a90e2">構成的順序パターン</text>
+    <text x="300" y="210" text-anchor="middle" font-size="14" fill="white">(3件)</text>
+    <text x="300" y="245" text-anchor="middle" font-size="16" fill="white">
+      <tspan x="300" dy="-1.2em">"数学的対象の構成手順が"</tspan>
+      <tspan x="300" dy="1.2em">"5段階の順序(場→束)と一致"</tspan>
+    </text>
+    <text x="300" y="295" text-anchor="middle" font-size="14" fill="#cccccc">層/Cech, Milnor, Morse理論</text>
+  </g>
+
+  <!-- Satellite Card 2 (Top-Right) -->
+  <g>
+    <rect x="745" y="155" width="310" height="190" rx="10" fill="#e24a4a" opacity="0.2" />
+    <rect x="750" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+    <text x="900" y="190" text-anchor="middle" font-size="20" font-weight="bold" fill="#e24a4a">非完遂パターン</text>
+    <text x="900" y="210" text-anchor="middle" font-size="14" fill="white">(3件)</text>
+    <text x="900" y="245" text-anchor="middle" font-size="16" fill="white">
+      <tspan x="900" dy="-1.2em">"場→束の過程が完遂されず"</tspan>
+      <tspan x="900" dy="1.2em">"障害やカオスが生じる場合"</tspan>
+    </text>
+    <text x="900" y="295" text-anchor="middle" font-size="14" fill="#cccccc">ガロア理論, 層理論, 分岐理論</text>
+  </g>
+
+  <!-- Satellite Card 3 (Bottom-Right) -->
+  <g>
+    <rect x="745" y="505" width="310" height="190" rx="10" fill="#50e3c2" opacity="0.2" />
+    <rect x="750" y="510" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+    <text x="900" y="540" text-anchor="middle" font-size="20" font-weight="bold" fill="#50e3c2">生成-消滅の対称性パターン</text>
+    <text x="900" y="560" text-anchor="middle" font-size="14" fill="white">(3件)</text>
+    <text x="900" y="595" text-anchor="middle" font-size="16" fill="white">
+      <tspan x="900" dy="-1.2em">"構造の生成(birth)と消滅(death)が"</tspan>
+      <tspan x="900" dy="1.2em">"対をなして現れる"</tspan>
+    </text>
+    <text x="900" y="645" text-anchor="middle" font-size="14" fill="#cccccc">パーシステントホモロジー, Milnor, 分岐理論</text>
+  </g>
+
+  <!-- Key Finding Callout -->
+  <g>
+    <rect x="400" y="660" width="400" height="50" rx="25" fill="#D4A857" fill-opacity="0.9" stroke="white" stroke-width="1" />
+    <text x="600" y="692" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">数学で最も顕著な発見 = 境界凝縮パターン</text>
+  </g>
+
+</svg>

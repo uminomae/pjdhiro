@@ -1,0 +1,130 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="32" font-weight="bold">
+    生命科学探究における横断的パターンの発見
+  </text>
+
+  <!-- Connecting Lines (Center to Satellites) -->
+  <!-- Center card center: 600, 400 -->
+  <!-- Satellite 1 (TL) center: 300, 250 -->
+  <!-- Satellite 2 (TR) center: 900, 250 -->
+  <!-- Satellite 3 (BL) center: 300, 600 -->
+  <!-- Satellite 4 (BR) center: 900, 600 -->
+
+  <!-- Glow lines -->
+  <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <line x1="600" y1="400" x2="900" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <!-- Sharp lines -->
+  <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="2" />
+  <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="2" />
+  <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="2" />
+  <line x1="600" y1="400" x2="900" y2="600" stroke="#D4A857" stroke-width="2" />
+
+  <!-- Satellite Cross-connections -->
+  <line x1="300" y1="250" x2="900" y2="250" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+  <line x1="300" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+  <line x1="900" y1="250" x2="900" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+  <line x1="300" y1="600" x2="900" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+  <line x1="300" y1="250" x2="900" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+  <line x1="900" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+
+  <!-- Center Card (Hub) -->
+  <g>
+    <!-- Glow -->
+    <rect x="390" y="270" width="420" height="260" fill="#D4A857" opacity="0.2" rx="10" ry="10" />
+    <rect x="395" y="275" width="410" height="250" fill="#D4A857" opacity="0.3" rx="10" ry="10" />
+    <!-- Main Card -->
+    <rect x="400" y="280" width="400" height="240" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" rx="10" ry="10" />
+    <!-- Content -->
+    <text x="600" y="320" text-anchor="middle" fill="#D4A857" font-size="28" font-weight="bold">意識を伴わない5段階</text>
+    <text x="600" y="345" text-anchor="middle" fill="white" font-size="18">(2件 theories)</text>
+    <text x="600" y="380" text-anchor="middle" fill="white" font-size="20">
+      <tspan x="600" dy="0">"11エントリ中、意識を伴うのはドーパミン報酬予測誤差（報酬の主観的体験）</tspan>
+      <tspan x="600" dy="24">とアロスタティック負荷（ストレスの主観的体験）の2件のみです"</tspan>
+    </text>
+    <text x="600" y="450" text-anchor="middle" fill="#cccccc" font-size="16">Found in:</text>
+    <text x="600" y="475" text-anchor="middle" fill="#D4A857" font-size="14">報酬の主観的体験</text>
+  </g>
+
+  <!-- Satellite Cards -->
+
+  <!-- Satellite 1 (Top-left) - Blue -->
+  <g>
+    <!-- Glow -->
+    <rect x="140" y="150" width="320" height="200" fill="#4a90e2" opacity="0.2" rx="8" ry="8" />
+    <!-- Main Card -->
+    <rect x="150" y="160" width="300" height="180" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" rx="8" ry="8" />
+    <!-- Content -->
+    <text x="300" y="195" text-anchor="middle" fill="#4a90e2" font-size="20" font-weight="bold">渦の二方向性</text>
+    <text x="300" y="220" text-anchor="middle" fill="white" font-size="14">1/11</text>
+    <text x="300" y="250" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">"受精（有性生殖）は2つの配偶子が融合して</tspan>
+      <tspan x="300" dy="20">新しい存在が立ち上がる「包摂的な渦"</tspan>
+    </text>
+    <text x="300" y="305" text-anchor="middle" fill="#cccccc" font-size="14">有性生殖</text>
+  </g>
+
+  <!-- Satellite 2 (Top-right) - Red -->
+  <g>
+    <!-- Glow -->
+    <rect x="740" y="150" width="320" height="200" fill="#e24a4a" opacity="0.2" rx="8" ry="8" />
+    <!-- Main Card -->
+    <rect x="750" y="160" width="300" height="180" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" rx="8" ry="8" />
+    <!-- Content -->
+    <text x="900" y="195" text-anchor="middle" fill="#e24a4a" font-size="20" font-weight="bold">縁の実装多様性</text>
+    <text x="900" y="220" text-anchor="middle" fill="white" font-size="14">2件</text>
+    <text x="900" y="245" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="900" dy="0">"強い対応が確認された2件（有性生殖、獲得免疫）に共通する構造は、</tspan>
+      <tspan x="900" dy="20">「異なるもの（雌雄の配偶子、APCとT細胞）が物理的に接触し、</tspan>
+      <tspan x="900" dy="20">その接触の質（性選択、分子認識の特異性）が後続プロセスの成否を直接制御する"</tspan>
+    </text>
+    <text x="900" y="320" text-anchor="middle" fill="#cccccc" font-size="14">有性生殖, 獲得免疫</text>
+  </g>
+
+  <!-- Satellite 3 (Bottom-left) - Teal -->
+  <g>
+    <!-- Glow -->
+    <rect x="140" y="500" width="320" height="200" fill="#50e3c2" opacity="0.2" rx="8" ry="8" />
+    <!-- Main Card -->
+    <rect x="150" y="510" width="300" height="180" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" rx="8" ry="8" />
+    <!-- Content -->
+    <text x="300" y="545" text-anchor="middle" fill="#50e3c2" font-size="20" font-weight="bold">場から波への内発的起動</text>
+    <text x="300" y="570" text-anchor="middle" fill="white" font-size="14">1/11</text>
+    <text x="300" y="595" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">"5段階の通常の記述では波は外部からの摂動で始まりますが、</tspan>
+      <tspan x="300" dy="20">オートファジー（飢餓という内部状態の逸脱）とTuring不安定性</tspan>
+      <tspan x="300" dy="20">（均一状態からの自発的パターン生成）は、波が場の内部から</tspan>
+      <tspan x="300" dy="20">自発的に生じるケースを示しています"</tspan>
+    </text>
+    <text x="300" y="670" text-anchor="middle" fill="#cccccc" font-size="14">飢餓という内部状態の逸脱</text>
+  </g>
+
+  <!-- Satellite 4 (Bottom-right) - Purple -->
+  <g>
+    <!-- Glow -->
+    <rect x="740" y="500" width="320" height="200" fill="#b34ae2" opacity="0.2" rx="8" ry="8" />
+    <!-- Main Card -->
+    <rect x="750" y="510" width="300" height="180" fill="#2a2a4e" stroke="#b34ae2" stroke-width="2" rx="8" ry="8" />
+    <!-- Content -->
+    <text x="900" y="545" text-anchor="middle" fill="#b34ae2" font-size="20" font-weight="bold">スケール横断的な反復</text>
+    <text x="900" y="570" text-anchor="middle" fill="white" font-size="14">4件</text>
+    <text x="900" y="595" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="900" dy="0">"有性生殖、オートファジー、モルフォゲン勾配、獲得免疫の4件で、</tspan>
+      <tspan x="900" dy="20">「多様性/均一性から撹乱/分裂、選別/閾値を経て変換/収束に至り、</tspan>
+      <tspan x="900" dy="20">安定化/記憶として定着する"</tspan>
+    </text>
+    <text x="900" y="670" text-anchor="middle" fill="#cccccc" font-size="14">有性生殖, オートファジー, モルフォゲン勾配, 獲得免疫</text>
+  </g>
+
+  <!-- Key finding callout -->
+  <g>
+    <rect x="350" y="720" width="500" height="50" rx="25" ry="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+    <text x="600" y="750" text-anchor="middle" fill="#1a1a2e" font-size="18" font-weight="bold">生命科学で最も顕著な発見 = 意識を伴わない5段階</text>
+  </g>
+
+</svg>

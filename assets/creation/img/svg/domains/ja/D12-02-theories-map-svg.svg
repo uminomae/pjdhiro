@@ -1,0 +1,184 @@
+<svg viewBox="0 0 1200 900" font-family="sans-serif" text-anchor="middle">
+    <!-- Background -->
+    <rect x="0" y="0" width="1200" height="900" fill="#1a1a2e"/>
+
+    <!-- Title -->
+    <text x="600" y="50" font-size="30" fill="#f0f0f0">
+        10農学・生態学理論と5段階モデルの対応関係マトリクス
+    </text>
+
+    <!-- Stage Definitions (for reference, not in SVG output)
+    const stages = [
+        { name: "場", color: "#8B8682" },
+        { name: "波", color: "#5B8DB8" },
+        { name: "縁", color: "#D4A857" },
+        { name: "渦", color: "#C45B4D" },
+        { name: "束", color: "#5B8B6A" }
+    ];
+    -->
+
+    <!-- Column Headers -->
+    <g>
+        <!-- 場 (Field) -->
+        <rect x="220" y="100" width="180" height="50" rx="5" ry="5" fill="#8B8682"/>
+        <text x="310" y="130" font-size="20" fill="#f0f0f0">場</text>
+        <!-- 波 (Wave) -->
+        <rect x="410" y="100" width="180" height="50" rx="5" ry="5" fill="#5B8DB8"/>
+        <text x="500" y="130" font-size="20" fill="#f0f0f0">波</text>
+        <!-- 縁 (Edge) -->
+        <rect x="600" y="100" width="180" height="50" rx="5" ry="5" fill="#D4A857"/>
+        <text x="690" y="130" font-size="20" fill="#f0f0f0">縁</text>
+        <!-- 渦 (Vortex) -->
+        <rect x="790" y="100" width="180" height="50" rx="5" ry="5" fill="#C45B4D"/>
+        <text x="880" y="130" font-size="20" fill="#f0f0f0">渦</text>
+        <!-- 束 (Bundle) -->
+        <rect x="980" y="100" width="180" height="50" rx="5" ry="5" fill="#5B8B6A"/>
+        <text x="1070" y="130" font-size="20" fill="#f0f0f0">束</text>
+    </g>
+
+    <!-- Row Labels and Matrix Cells -->
+    <g>
+        <!-- Theory 1: 生態遷移 | partial | 場 | 波 | 縁 | 渦 | 束 -->
+        <text x="10" y="187" font-size="18" fill="#f0f0f0" text-anchor="start">1. 生態遷移</text>
+        <rect x="220" y="150" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+        <text x="310" y="187" font-size="18" fill="#e0e0e0">場</text>
+        <rect x="410" y="150" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+        <text x="500" y="187" font-size="18" fill="#e0e0e0">波</text>
+        <rect x="600" y="150" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+        <text x="690" y="187" font-size="18" fill="#e0e0e0">縁</text>
+        <rect x="790" y="150" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.7"/>
+        <text x="880" y="187" font-size="18" fill="#e0e0e0">渦</text>
+        <rect x="980" y="150" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.7"/>
+        <text x="1070" y="187" font-size="18" fill="#e0e0e0">束</text>
+
+        <!-- Theory 2: 農地窒素循環 | partial | 場 | 波 | 縁 | 渦 | 束 -->
+        <text x="10" y="252" font-size="18" fill="#f0f0f0" text-anchor="start">2. 農地窒素循環</text>
+        <rect x="220" y="215" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+        <text x="310" y="252" font-size="18" fill="#e0e0e0">場</text>
+        <rect x="410" y="215" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+        <text x="500" y="252" font-size="18" fill="#e0e0e0">波</text>
+        <rect x="600" y="215" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+        <text x="690" y="252" font-size="18" fill="#e0e0e0">縁</text>
+        <rect x="790" y="215" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.7"/>
+        <text x="880" y="252" font-size="18" fill="#e0e0e0">渦</text>
+        <rect x="980" y="215" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.7"/>
+        <text x="1070" y="252" font-size="18" fill="#e0e0e0">束</text>
+
+        <!-- Theory 3: 総合的病害虫管理（IPM）と経済閾値 | strong | - | - | 縁 | - | - -->
+        <text x="10" y="317" font-size="18" fill="#f0f0f0" text-anchor="start">3. 総合的病害虫管理（IPM）と経済閾値</text>
+        <rect x="220" y="280" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="317" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="280" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="317" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="280" width="180" height="55" rx="5" ry="5" fill="#D4A857"/>
+        <text x="690" y="317" font-size="18" fill="#ffffff">縁</text>
+        <rect x="790" y="280" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+        <text x="880" y="317" font-size="18" fill="#888888">-</text>
+        <rect x="980" y="280" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+        <text x="1070" y="317" font-size="18" fill="#888888">-</text>
+
+        <!-- Theory 4: レジームシフト／複数安定状態 | strong | - | - | 縁 | 渦 | - -->
+        <text x="10" y="382" font-size="18" fill="#f0f0f0" text-anchor="start">4. レジームシフト／複数安定状態</text>
+        <rect x="220" y="345" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="382" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="345" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="382" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="345" width="180" height="55" rx="5" ry="5" fill="#D4A857"/>
+        <text x="690" y="382" font-size="18" fill="#ffffff">縁</text>
+        <rect x="790" y="345" width="180" height="55" rx="5" ry="5" fill="#C45B4D"/>
+        <text x="880" y="382" font-size="18" fill="#ffffff">渦</text>
+        <rect x="980" y="345" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+        <text x="1070" y="382" font-size="18" fill="#888888">-</text>
+
+        <!-- Theory 5: 生態学的境界理論（エコトーン） | strong | - | - | 縁 | - | - -->
+        <text x="10" y="447" font-size="18" fill="#f0f0f0" text-anchor="start">5. 生態学的境界理論（エコトーン）</text>
+        <rect x="220" y="410" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="447" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="410" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="447" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="410" width="180" height="55" rx="5" ry="5" fill="#D4A857"/>
+        <text x="690" y="447" font-size="18" fill="#ffffff">縁</text>
+        <rect x="790" y="410" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+        <text x="880" y="447" font-size="18" fill="#888888">-</text>
+        <rect x="980" y="410" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+        <text x="1070" y="447" font-size="18" fill="#888888">-</text>
+
+        <!-- Theory 6: 景観コネクティビティとパーコレーション閾値 | strong | - | - | 縁 | - | - -->
+        <text x="10" y="512" font-size="18" fill="#f0f0f0" text-anchor="start">6. 景観コネクティビティとパーコレーション閾値</text>
+        <rect x="220" y="475" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="512" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="475" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="512" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="475" width="180" height="55" rx="5" ry="5" fill="#D4A857"/>
+        <text x="690" y="512" font-size="18" fill="#ffffff">縁</text>
+        <rect x="790" y="475" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+        <text x="880" y="512" font-size="18" fill="#888888">-</text>
+        <rect x="980" y="475" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+        <text x="1070" y="512" font-size="18" fill="#888888">-</text>
+
+        <!-- Theory 7: 乾燥地植生の自己組織化パターン | partial | - | - | - | 渦 | 束 -->
+        <text x="10" y="577" font-size="18" fill="#f0f0f0" text-anchor="start">7. 乾燥地植生の自己組織化パターン</text>
+        <rect x="220" y="540" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="577" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="540" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="577" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="540" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+        <text x="690" y="577" font-size="18" fill="#888888">-</text>
+        <rect x="790" y="540" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.7"/>
+        <text x="880" y="577" font-size="18" fill="#e0e0e0">渦</text>
+        <rect x="980" y="540" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.7"/>
+        <text x="1070" y="577" font-size="18" fill="#e0e0e0">束</text>
+
+        <!-- Theory 8: 植物-土壌フィードバック | conditional | - | - | 縁 | 渦 | 束 -->
+        <text x="10" y="642" font-size="18" fill="#f0f0f0" text-anchor="start">8. 植物-土壌フィードバック</text>
+        <rect x="220" y="605" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="642" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="605" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="642" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="605" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.3"/>
+        <text x="690" y="642" font-size="18" fill="#aaaaaa">縁</text>
+        <rect x="790" y="605" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.3"/>
+        <text x="880" y="642" font-size="18" fill="#aaaaaa">渦</text>
+        <rect x="980" y="605" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.3"/>
+        <text x="1070" y="642" font-size="18" fill="#aaaaaa">束</text>
+
+        <!-- Theory 9: 生態系エンジニアリング | conditional | - | - | 縁 | - | - -->
+        <text x="10" y="707" font-size="18" fill="#f0f0f0" text-anchor="start">9. 生態系エンジニアリング</text>
+        <rect x="220" y="670" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="707" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="670" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="707" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="670" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.3"/>
+        <text x="690" y="707" font-size="18" fill="#aaaaaa">縁</text>
+        <rect x="790" y="670" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+        <text x="880" y="707" font-size="18" fill="#888888">-</text>
+        <rect x="980" y="670" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+        <text x="1070" y="707" font-size="18" fill="#888888">-</text>
+
+        <!-- Theory 10: 状態-遷移モデル（STMs） | partial | - | - | 縁 | - | - -->
+        <text x="10" y="772" font-size="18" fill="#f0f0f0" text-anchor="start">10. 状態-遷移モデル（STMs）</text>
+        <rect x="220" y="735" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+        <text x="310" y="772" font-size="18" fill="#888888">-</text>
+        <rect x="410" y="735" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+        <text x="500" y="772" font-size="18" fill="#888888">-</text>
+        <rect x="600" y="735" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+        <text x="690" y="772" font-size="18" fill="#e0e0e0">縁</text>
+        <rect x="790" y="735" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+        <text x="880" y="772" font-size="18" fill="#888888">-</text>
+        <rect x="980" y="735" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+        <text x="1070" y="772" font-size="18" fill="#888888">-</text>
+    </g>
+
+    <!-- Legend -->
+    <g text-anchor="start" font-size="18" fill="#f0f0f0">
+        <!-- Strong -->
+        <rect x="50" y="830" width="30" height="30" rx="5" ry="5" fill="#8B8682"/>
+        <text x="90" y="850">強い対応 (Strong)</text>
+        <!-- Partial -->
+        <rect x="350" y="830" width="30" height="30" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+        <text x="390" y="850">部分的 (Partial)</text>
+        <!-- Conditional/Weak -->
+        <rect x="650" y="830" width="30" height="30" rx="5" ry="5" fill="#8B8682" opacity="0.3"/>
+        <text x="690" y="850">条件付き/弱い (Conditional/Weak)</text>
+    </g>
+</svg>

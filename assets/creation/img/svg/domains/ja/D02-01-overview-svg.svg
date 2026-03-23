@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="sans-serif">
+  <defs>
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34495E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D02 物理学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g id="methodology-flow">
+    <!-- Phase 1 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="195" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+    <line x1="200" y1="220" x2="200" y2="250" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 2 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="295" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+    <line x1="200" y1="320" x2="200" y2="350" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 3 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="395" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+    <line x1="200" y1="420" x2="200" y2="450" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 4 -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="495" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+    <line x1="200" y1="520" x2="200" y2="550" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 5 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="595" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g id="heatmap">
+    <!-- Column Headers -->
+    <g font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      <rect x="420" y="160" width="140" height="30" rx="5" fill="#8B8682" />
+      <text x="490" y="181">場</text>
+      <rect x="562" y="160" width="140" height="30" rx="5" fill="#5B8DB8" />
+      <text x="632" y="181">波</text>
+      <rect x="704" y="160" width="140" height="30" rx="5" fill="#D4A857" />
+      <text x="774" y="181">縁</text>
+      <rect x="846" y="160" width="140" height="30" rx="5" fill="#C45B4D" />
+      <text x="916" y="181">渦</text>
+      <rect x="988" y="160" width="140" height="30" rx="5" fill="#5B8B6A" />
+      <text x="1058" y="181">束</text>
+    </g>
+
+    <!-- Theory Rows -->
+    <g id="theory-rows" font-size="14" fill="white" text-anchor="end">
+      <!-- 1. 場の量子論（QFT） | strong -->
+      <text x="400" y="230">場の量子論（QFT）</text>
+      <rect x="420" y="200" width="140" height="50" fill="#8B8682" opacity="1.0" /><rect x="562" y="200" width="140" height="50" fill="#5B8DB8" opacity="1.0" /><rect x="704" y="200" width="140" height="50" fill="#D4A857" opacity="1.0" /><rect x="846" y="200" width="140" height="50" fill="#C45B4D" opacity="1.0" /><rect x="988" y="200" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+      <!-- 2. BKT転移 | partial -->
+      <text x="400" y="282">BKT転移</text>
+      <rect x="420" y="252" width="140" height="50" fill="#8B8682" opacity="0.7" /><rect x="562" y="252" width="140" height="50" fill="#5B8DB8" opacity="0.7" /><rect x="704" y="252" width="140" height="50" fill="#D4A857" opacity="0.7" /><rect x="846" y="252" width="140" height="50" fill="#C45B4D" opacity="0.7" /><rect x="988" y="252" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+      <!-- 3. アブリコソフ渦糸格子 | strong -->
+      <text x="400" y="334">アブリコソフ渦糸格子</text>
+      <rect x="420" y="304" width="140" height="50" fill="#8B8682" opacity="1.0" /><rect x="562" y="304" width="140" height="50" fill="#5B8DB8" opacity="1.0" /><rect x="704" y="304" width="140" height="50" fill="#D4A857" opacity="1.0" /><rect x="846" y="304" width="140" height="50" fill="#C45B4D" opacity="1.0" /><rect x="988" y="304" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+      <!-- 4. キブル＝ズレック機構 | strong -->
+      <text x="400" y="386">キブル＝ズレック機構</text>
+      <rect x="420" y="356" width="140" height="50" fill="#8B8682" opacity="1.0" /><rect x="562" y="356" width="140" height="50" fill="#5B8DB8" opacity="1.0" /><rect x="704" y="356" width="140" height="50" fill="#D4A857" opacity="1.0" /><rect x="846" y="356" width="140" height="50" fill="#C45B4D" opacity="1.0" /><rect x="988" y="356" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+      <!-- 5. 自発的対称性の破れ＋ヒッグス機構 | partial -->
+      <text x="400" y="438">自発的対称性の破れ＋ヒッグス機構</text>
+      <rect x="420" y="408" width="140" height="50" fill="#8B8682" opacity="0.7" /><rect x="562" y="408" width="140" height="50" fill="#5B8DB8" opacity="0.7" /><rect x="704" y="408" width="140" height="50" fill="#D4A857" opacity="0.7" /><rect x="846" y="408" width="140" height="50" fill="#C45B4D" opacity="0.7" /><rect x="988" y="408" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+      <!-- 6. くりこみ群と臨界現象 | strong -->
+      <text x="400" y="490">くりこみ群と臨界現象</text>
+      <rect x="420" y="460" width="140" height="50" fill="#8B8682" opacity="1.0" /><rect x="562" y="460" width="140" height="50" fill="#5B8DB8" opacity="1.0" /><rect x="704" y="460" width="140" height="50" fill="#D4A857" opacity="1.0" /><rect x="846" y="460" width="140" height="50" fill="#C45B4D" opacity="1.0" /><rect x="988" y="460" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+      <!-- 7. レーザー発振と協同現象 | strong -->
+      <text x="400" y="542">レーザー発振と協同現象</text>
+      <rect x="420" y="512" width="140" height="50" fill="#8B8682" opacity="1.0" /><rect x="562" y="512" width="140" height="50" fill="#5B8DB8" opacity="1.0" /><rect x="704" y="512" width="140" height="50" fill="#D4A857" opacity="1.0" /><rect x="846" y="512" width="140" height="50" fill="#C45B4D" opacity="1.0" /><rect x="988" y="512" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+      <!-- 8. ベナール対流セル | partial -->
+      <text x="400" y="594">ベナール対流セル</text>
+      <rect x="420" y="564" width="140" height="50" fill="#8B8682" opacity="0.7" /><rect x="562" y="564" width="140" height="50" fill="#5B8DB8" opacity="0.7" /><rect x="704" y="564" width="140" height="50" fill="#D4A857" opacity="0.7" /><rect x="846" y="564" width="140" height="50" fill="#C45B4D" opacity="0.7" /><rect x="988" y="564" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+      <!-- 9. 量子デコヒーレンス | conditional -->
+      <text x="400" y="646">量子デコヒーレンス</text>
+      <rect x="420" y="616" width="140" height="50" fill="#8B8682" opacity="0.4" /><rect x="562" y="616" width="140" height="50" fill="#5B8DB8" opacity="0.4" /><rect x="704" y="616" width="140" height="50" fill="#D4A857" opacity="0.4" /><rect x="846" y="616" width="140" height="50" fill="#C45B4D" opacity="0.2" /><rect x="988" y="616" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+      <!-- 10. 古典核生成理論 | strong -->
+      <text x="400" y="698">古典核生成理論</text>
+      <rect x="420" y="668" width="140" height="50" fill="#8B8682" opacity="1.0" /><rect x="562" y="668" width="140" height="50" fill="#5B8DB8" opacity="1.0" /><rect x="704" y="668" width="140" height="50" fill="#D4A857" opacity="1.0" /><rect x="846" y="668" width="140" height="50" fill="#C45B4D" opacity="1.0" /><rect x="988" y="668" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <g id="summary-bar">
+    <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+    <g font-size="16" fill="white" text-anchor="start">
+      <rect x="290" y="746" width="18" height="18" fill="#27AE60" />
+      <text x="315" y="761">強い対応: 6件</text>
+      <rect x="540" y="746" width="18" height="18" fill="#F1C40F" />
+      <text x="565" y="761">部分的対応: 3件</text>
+      <rect x="790" y="746" width="18" height="18" fill="#E67E22" />
+      <text x="815" y="761">条件付き: 1件</text>
+    </g>
+  </g>
+</svg>

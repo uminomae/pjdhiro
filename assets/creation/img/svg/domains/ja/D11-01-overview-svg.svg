@@ -1,0 +1,151 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for gradients and markers -->
+  <defs>
+    <linearGradient id="phaseBoxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D11 薬学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="195" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+  <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="295" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+  <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="395" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+  <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="495" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+  <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="595" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <rect x="400" y="130" width="140" height="30" rx="5" fill="#8B8682" />
+  <text x="470" y="150" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+  <rect x="542" y="130" width="140" height="30" rx="5" fill="#5B8DB8" />
+  <text x="612" y="150" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+  <rect x="684" y="130" width="140" height="30" rx="5" fill="#D4A857" />
+  <text x="754" y="150" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+  <rect x="826" y="130" width="140" height="30" rx="5" fill="#C45B4D" />
+  <text x="896" y="150" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+  <rect x="968" y="130" width="140" height="30" rx="5" fill="#5B8B6A" />
+  <text x="1038" y="150" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+
+  <!-- Theory Rows and Cells -->
+  <!-- Theory 1: 医薬品開発パイプライン (strong) -->
+  <text x="390" y="187" font-size="14" fill="white" text-anchor="end">医薬品開発パイプライン</text>
+  <rect x="400" y="162" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="542" y="162" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="684" y="162" width="140" height="50" fill="#D4A857" opacity="0.3" />
+  <rect x="826" y="162" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="968" y="162" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Theory 2: ADME-PK/PDと用量最適化 (strong) -->
+  <text x="390" y="239" font-size="14" fill="white" text-anchor="end">ADME-PK/PDと用量最適化</text>
+  <rect x="400" y="214" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="542" y="214" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="684" y="214" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="826" y="214" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="968" y="214" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Theory 3: 抗菌薬耐性進化 (strong) -->
+  <text x="390" y="291" font-size="14" fill="white" text-anchor="end">抗菌薬耐性進化</text>
+  <rect x="400" y="266" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="542" y="266" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="684" y="266" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="826" y="266" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="968" y="266" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Theory 4: 経口徐放性製剤の設計・評価 (partial) -->
+  <text x="390" y="343" font-size="14" fill="white" text-anchor="end">経口徐放性製剤の設計・評価</text>
+  <rect x="400" y="318" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="542" y="318" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="684" y="318" width="140" height="50" fill="#D4A857" opacity="0.3" />
+  <rect x="826" y="318" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="968" y="318" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+  <!-- Theory 5: 漢方処方設計原理（君臣佐使） (partial) -->
+  <text x="390" y="395" font-size="14" fill="white" text-anchor="end">漢方処方設計原理（君臣佐使）</text>
+  <rect x="400" y="370" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="542" y="370" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="684" y="370" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="826" y="370" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="968" y="370" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Theory 6: QbD（ICH Q8/Q9/Q10） (strong) -->
+  <text x="390" y="447" font-size="14" fill="white" text-anchor="end">QbD（ICH Q8/Q9/Q10）</text>
+  <rect x="400" y="422" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="542" y="422" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="684" y="422" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="826" y="422" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="968" y="422" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Theory 7: プロドラッグ設計 (partial) -->
+  <text x="390" y="499" font-size="14" fill="white" text-anchor="end">プロドラッグ設計</text>
+  <rect x="400" y="474" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="542" y="474" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="684" y="474" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="826" y="474" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="968" y="474" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Theory 8: ファーマコゲノミクス (partial) -->
+  <text x="390" y="551" font-size="14" fill="white" text-anchor="end">ファーマコゲノミクス</text>
+  <rect x="400" y="526" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="542" y="526" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="684" y="526" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="826" y="526" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="968" y="526" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Theory 9: 薬物相互作用（DDI） (strong) -->
+  <text x="390" y="603" font-size="14" fill="white" text-anchor="end">薬物相互作用（DDI）</text>
+  <rect x="400" y="578" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="542" y="578" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="684" y="578" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="826" y="578" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="968" y="578" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Theory 10: 構造ベース創薬（SBDD） (partial) -->
+  <text x="390" y="655" font-size="14" fill="white" text-anchor="end">構造ベース創薬（SBDD）</text>
+  <rect x="400" y="630" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="542" y="630" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="684" y="630" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="826" y="630" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="968" y="630" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <text x="600" y="765" font-size="20" fill="white" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 5件 / 
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 5件 / 
+    <tspan fill="#E67E22">■</tspan> 条件付き: 0件
+  </text>
+</svg>

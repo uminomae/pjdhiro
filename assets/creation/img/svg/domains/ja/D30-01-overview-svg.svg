@@ -1,0 +1,162 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <defs>
+    <!-- Linear Gradient for Phase Boxes -->
+    <linearGradient id="gradientPhaseBox" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" font-size="36" font-weight="bold" fill="white">D30 伝統知・技芸 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" font-size="20" fill="#cccccc">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#gradientPhaseBox)" stroke="#cccccc" />
+  <text x="200" y="195" text-anchor="middle" font-size="18" fill="white">Phase 1-2: 文献確認・理論選定</text>
+  <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#gradientPhaseBox)" stroke="#cccccc" />
+  <text x="200" y="295" text-anchor="middle" font-size="18" fill="white">Phase 3-4: 構造対応の判定</text>
+  <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#gradientPhaseBox)" stroke="#cccccc" />
+  <text x="200" y="395" text-anchor="middle" font-size="18" fill="white">Phase 5: 論拠監査</text>
+  <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#gradientPhaseBox)" stroke="#cccccc" />
+  <text x="200" y="495" text-anchor="middle" font-size="18" fill="white">Phase 6: 構造再読（4軸再評価）</text>
+  <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#gradientPhaseBox)" stroke="#cccccc" />
+  <text x="200" y="595" text-anchor="middle" font-size="18" fill="white">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <rect x="400" y="140" width="140" height="30" rx="5" fill="#8B8682" />
+  <text x="470" y="162" text-anchor="middle" font-size="16" font-weight="bold" fill="white">場</text>
+  <rect x="550" y="140" width="140" height="30" rx="5" fill="#5B8DB8" />
+  <text x="620" y="162" text-anchor="middle" font-size="16" font-weight="bold" fill="white">波</text>
+  <rect x="700" y="140" width="140" height="30" rx="5" fill="#D4A857" />
+  <text x="770" y="162" text-anchor="middle" font-size="16" font-weight="bold" fill="white">縁</text>
+  <rect x="850" y="140" width="140" height="30" rx="5" fill="#C45B4D" />
+  <text x="920" y="162" text-anchor="middle" font-size="16" font-weight="bold" fill="white">渦</text>
+  <rect x="1000" y="140" width="140" height="30" rx="5" fill="#5B8B6A" />
+  <text x="1070" y="162" text-anchor="middle" font-size="16" font-weight="bold" fill="white">束</text>
+
+  <!-- Theory Rows and Cells -->
+  <!-- Data for heatmap generation -->
+  <!--
+  const theoriesData = [
+    { name: "伝統生態学的知識（TEK）", type: "strong", stages: ["場", "波", "縁", "渦", "束"] },
+    { name: "正統的周辺参加（LPP）", type: "partial", stages: ["場", "縁", "渦"] },
+    { name: "一座建立", type: "partial", stages: ["場", "縁", "渦"] },
+    { name: "守破離", type: "partial", stages: ["波", "縁", "渦"] },
+    { name: "杜氏の知の変換", type: "partial", stages: ["場", "波", "縁", "渦", "束"] },
+    { name: "口承伝統", type: "partial", stages: ["場", "縁", "束"] },
+    { name: "メーティス", type: "conditional", stages: ["場", "束"] },
+    { name: "職人のわざ", type: "partial", stages: ["波", "縁"] },
+    { name: "里山ランドスケープ", type: "strong", stages: ["場", "波", "縁", "渦", "束"] },
+    { name: "民俗芸能", type: "conditional", stages: ["場", "渦", "束"] },
+  ];
+  const stages = ["場", "波", "縁", "渦", "束"];
+  const stageColors = {
+    "場": "#8B8682", "波": "#5B8DB8", "縁": "#D4A857", "渦": "#C45B4D", "束": "#5B8B6A",
+  };
+  -->
+  <text x="390" y="202" text-anchor="end" font-size="14" fill="white">伝統生態学的知識（TEK）</text>
+  <rect x="400" y="172" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="550" y="172" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="700" y="172" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="850" y="172" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="1000" y="172" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <text x="390" y="254" text-anchor="end" font-size="14" fill="white">正統的周辺参加（LPP）</text>
+  <rect x="400" y="224" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="550" y="224" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="700" y="224" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="850" y="224" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="1000" y="224" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <text x="390" y="306" text-anchor="end" font-size="14" fill="white">一座建立</text>
+  <rect x="400" y="276" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="550" y="276" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="700" y="276" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="850" y="276" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="1000" y="276" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <text x="390" y="358" text-anchor="end" font-size="14" fill="white">守破離</text>
+  <rect x="400" y="328" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="550" y="328" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="700" y="328" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="850" y="328" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="1000" y="328" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <text x="390" y="410" text-anchor="end" font-size="14" fill="white">杜氏の知の変換</text>
+  <rect x="400" y="380" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="550" y="380" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="700" y="380" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="850" y="380" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="1000" y="380" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+  <text x="390" y="462" text-anchor="end" font-size="14" fill="white">口承伝統</text>
+  <rect x="400" y="432" width="140" height="50" fill="#8B8682" opacity="0.7" />
+  <rect x="550" y="432" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="700" y="432" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="850" y="432" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="1000" y="432" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+  <text x="390" y="514" text-anchor="end" font-size="14" fill="white">メーティス</text>
+  <rect x="400" y="484" width="140" height="50" fill="#8B8682" opacity="0.4" />
+  <rect x="550" y="484" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+  <rect x="700" y="484" width="140" height="50" fill="#D4A857" opacity="0.2" />
+  <rect x="850" y="484" width="140" height="50" fill="#C45B4D" opacity="0.2" />
+  <rect x="1000" y="484" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+
+  <text x="390" y="566" text-anchor="end" font-size="14" fill="white">職人のわざ</text>
+  <rect x="400" y="536" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="550" y="536" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="700" y="536" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="850" y="536" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+  <rect x="1000" y="536" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <text x="390" y="618" text-anchor="end" font-size="14" fill="white">里山ランドスケープ</text>
+  <rect x="400" y="588" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="550" y="588" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="700" y="588" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="850" y="588" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="1000" y="588" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <text x="390" y="670" text-anchor="end" font-size="14" fill="white">民俗芸能</text>
+  <rect x="400" y="640" width="140" height="50" fill="#8B8682" opacity="0.4" />
+  <rect x="550" y="640" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+  <rect x="700" y="640" width="140" height="50" fill="#D4A857" opacity="0.2" />
+  <rect x="850" y="640" width="140" height="50" fill="#C45B4D" opacity="0.4" />
+  <rect x="1000" y="640" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <rect x="280" y="755" width="15" height="15" fill="#27AE60" />
+  <text x="305" y="768" font-size="18" fill="white">強い対応: 2件</text>
+  <rect x="580" y="755" width="15" height="15" fill="#F1C40F" />
+  <text x="605" y="768" font-size="18" fill="white">部分的対応: 6件</text>
+  <rect x="880" y="755" width="15" height="15" fill="#E67E22" />
+  <text x="905" y="768" font-size="18" fill="white">条件付き: 2件</text>
+</svg>

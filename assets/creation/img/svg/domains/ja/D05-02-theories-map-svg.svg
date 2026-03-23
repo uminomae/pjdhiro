@@ -1,0 +1,150 @@
+<svg viewBox="0 0 1200 950" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <rect x="0" y="0" width="1200" height="950" fill="#1a1a2e" />
+  <text x="600" y="50" font-size="24" fill="#ffffff" text-anchor="middle">10地球科学理論と5段階モデルの対応関係マトリクス</text>
+  <rect x="220" y="100" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+  <text x="310" y="131" font-size="16" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="100" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+  <text x="500" y="131" font-size="16" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="100" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+  <text x="690" y="131" font-size="16" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="100" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+  <text x="880" y="131" font-size="16" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="100" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+  <text x="1070" y="131" font-size="16" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="197.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>1. プレートテクトニクス（ウィルソンサイクル）</tspan>
+  </text>
+  <rect x="220" y="165" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="197.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="165" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="197.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="165" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="197.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="165" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="197.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="165" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="197.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="262.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>2. ENSO（大気海洋結合振動）</tspan>
+  </text>
+  <rect x="220" y="230" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="262.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="230" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="262.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="230" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="262.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="230" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="262.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="230" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="262.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="327.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>3. ミランコビッチサイクル（軌道強制）</tspan>
+  </text>
+  <rect x="220" y="295" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="327.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="295" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="500" y="327.5" font-size="14" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="600" y="295" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="327.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="295" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="327.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="295" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1070" y="327.5" font-size="14" fill="#e0e0e0" text-anchor="middle">束</text>
+  <text x="10" y="392.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>4. 地震発生メカニズム（弾性反跳説）</tspan>
+  </text>
+  <rect x="220" y="360" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="392.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="360" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="392.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="360" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="392.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="360" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="392.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="360" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="392.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="457.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>5. 火山噴火ダイナミクス</tspan>
+  </text>
+  <rect x="220" y="425" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="457.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="425" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="457.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="425" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="457.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="425" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="457.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="425" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="457.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="522.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>6. シーケンス層序学</tspan>
+  </text>
+  <rect x="220" y="490" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="310" y="522.5" font-size="14" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="410" y="490" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="500" y="522.5" font-size="14" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="600" y="490" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="522.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="490" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="522.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="490" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1070" y="522.5" font-size="14" fill="#e0e0e0" text-anchor="middle">束</text>
+  <text x="10" y="587.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>7. 大量絶滅と回復</tspan>
+  </text>
+  <rect x="220" y="555" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="587.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="555" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="587.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="555" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="587.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="555" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="587.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="555" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="587.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="652.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>8. 風化・土壌形成</tspan>
+  </text>
+  <rect x="220" y="620" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="652.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="620" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="652.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="620" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="652.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="620" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="652.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="620" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="652.5" font-size="14" fill="#888888" text-anchor="middle">-</text>
+  <text x="10" y="717.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>9. 地球磁場ダイナモと磁場逆転</tspan>
+  </text>
+  <rect x="220" y="685" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="717.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="685" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="717.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="685" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="717.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="685" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="717.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="685" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="717.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <text x="10" y="782.5" font-size="14" fill="#ffffff" text-anchor="start">
+    <tspan>10. 惑星分化（コア-マントル-地殻形成）</tspan>
+  </text>
+  <rect x="220" y="750" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="782.5" font-size="14" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="750" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="782.5" font-size="14" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="750" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="782.5" font-size="14" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="750" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="782.5" font-size="14" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="750" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1070" y="782.5" font-size="14" fill="#ffffff" text-anchor="middle">束</text>
+  <rect x="100" y="845" width="30" height="20" fill="#8B8682" opacity="1" rx="3" ry="3" />
+  <text x="140" y="860" font-size="14" fill="#ffffff">強い対応 (Strong)</text>
+  <rect x="100" y="875" width="30" height="20" fill="#8B8682" opacity="0.7" rx="3" ry="3" />
+  <text x="140" y="890" font-size="14" fill="#ffffff">部分的 (Partial)</text>
+  <rect x="100" y="905" width="30" height="20" fill="#8B8682" opacity="0.3" rx="3" ry="3" />
+  <text x="140" y="920" font-size="14" fill="#ffffff">条件付き/弱い (Conditional/Weak)</text>
+</svg>

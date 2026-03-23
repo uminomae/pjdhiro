@@ -1,0 +1,159 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <!-- Linear gradient for phase boxes -->
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+    <!-- Arrowhead marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D07 工学・情報科学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">10理論の横断的分析</text>
+
+  <!-- Left Column: Research methodology flow -->
+  <g class="research-flow">
+    <!-- Phase 1-2: 文献確認・理論選定 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="195" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+    <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 3-4: 構造対応の判定 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="295" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+    <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 5: 論拠監査 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="395" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+    <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 6: 構造再読（4軸再評価） -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="495" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+    <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 7: 横断統合 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="595" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory correspondence heat map -->
+  <g class="heat-map">
+    <!-- Column Headers -->
+    <g class="column-headers">
+      <rect x="400" y="150" width="140" height="30" rx="5" fill="#8B8682" />
+      <text x="470" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+      <rect x="550" y="150" width="140" height="30" rx="5" fill="#5B8DB8" />
+      <text x="620" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+      <rect x="700" y="150" width="140" height="30" rx="5" fill="#D4A857" />
+      <text x="770" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+      <rect x="850" y="150" width="140" height="30" rx="5" fill="#C45B4D" />
+      <text x="920" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+      <rect x="1000" y="150" width="140" height="30" rx="5" fill="#5B8B6A" />
+      <text x="1070" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+    </g>
+
+    <!-- Theory Rows and Cells -->
+    <g class="theory-rows">
+      <!-- Row 1: フィードバック制御系 | strong | 場,波,縁,渦,束 -->
+      <text x="390" y="220" text-anchor="end" fill="white" font-size="14">フィードバック制御系</text>
+      <rect x="400" y="190" width="140" height="50" rx="3" fill="#8B8682" opacity="1" />
+      <rect x="550" y="190" width="140" height="50" rx="3" fill="#5B8DB8" opacity="1" />
+      <rect x="700" y="190" width="140" height="50" rx="3" fill="#D4A857" opacity="1" />
+      <rect x="850" y="190" width="140" height="50" rx="3" fill="#C45B4D" opacity="1" />
+      <rect x="1000" y="190" width="140" height="50" rx="3" fill="#5B8B6A" opacity="1" />
+
+      <!-- Row 2: PDCA改善サイクル | partial | 場,波,縁,渦,束 -->
+      <text x="390" y="220 + 52*1" text-anchor="end" fill="white" font-size="14">PDCA改善サイクル</text>
+      <rect x="400" y="190 + 52*1" width="140" height="50" rx="3" fill="#8B8682" opacity="0.7" />
+      <rect x="550" y="190 + 52*1" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.7" />
+      <rect x="700" y="190 + 52*1" width="140" height="50" rx="3" fill="#D4A857" opacity="0.7" />
+      <rect x="850" y="190 + 52*1" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.7" />
+      <rect x="1000" y="190 + 52*1" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Row 3: TCP輻輳制御（AIMD） | partial | 波,渦,束 -->
+      <text x="390" y="220 + 52*2" text-anchor="end" fill="white" font-size="14">TCP輻輳制御（AIMD）</text>
+      <rect x="400" y="190 + 52*2" width="140" height="50" rx="3" fill="#8B8682" opacity="0.3" />
+      <rect x="550" y="190 + 52*2" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.7" />
+      <rect x="700" y="190 + 52*2" width="140" height="50" rx="3" fill="#D4A857" opacity="0.3" />
+      <rect x="850" y="190 + 52*2" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.7" />
+      <rect x="1000" y="190 + 52*2" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Row 4: 深層学習（誤差逆伝播） | strong | 場,波,縁,渦,束 -->
+      <text x="390" y="220 + 52*3" text-anchor="end" fill="white" font-size="14">深層学習（誤差逆伝播）</text>
+      <rect x="400" y="190 + 52*3" width="140" height="50" rx="3" fill="#8B8682" opacity="1" />
+      <rect x="550" y="190 + 52*3" width="140" height="50" rx="3" fill="#5B8DB8" opacity="1" />
+      <rect x="700" y="190 + 52*3" width="140" height="50" rx="3" fill="#D4A857" opacity="1" />
+      <rect x="850" y="190 + 52*3" width="140" height="50" rx="3" fill="#C45B4D" opacity="1" />
+      <rect x="1000" y="190 + 52*3" width="140" height="50" rx="3" fill="#5B8B6A" opacity="1" />
+
+      <!-- Row 5: 情報理論（通信路容量） | partial | 場,縁,束 -->
+      <text x="390" y="220 + 52*4" text-anchor="end" fill="white" font-size="14">情報理論（通信路容量）</text>
+      <rect x="400" y="190 + 52*4" width="140" height="50" rx="3" fill="#8B8682" opacity="0.7" />
+      <rect x="550" y="190 + 52*4" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.3" />
+      <rect x="700" y="190 + 52*4" width="140" height="50" rx="3" fill="#D4A857" opacity="0.7" />
+      <rect x="850" y="190 + 52*4" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.3" />
+      <rect x="1000" y="190 + 52*4" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Row 6: 圧縮センシング | partial | 場,縁 -->
+      <text x="390" y="220 + 52*5" text-anchor="end" fill="white" font-size="14">圧縮センシング</text>
+      <rect x="400" y="190 + 52*5" width="140" height="50" rx="3" fill="#8B8682" opacity="0.7" />
+      <rect x="550" y="190 + 52*5" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.3" />
+      <rect x="700" y="190 + 52*5" width="140" height="50" rx="3" fill="#D4A857" opacity="0.7" />
+      <rect x="850" y="190 + 52*5" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.3" />
+      <rect x="1000" y="190 + 52*5" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.3" />
+
+      <!-- Row 7: 強化学習 | strong | 場,波,縁,渦,束 -->
+      <text x="390" y="220 + 52*6" text-anchor="end" fill="white" font-size="14">強化学習</text>
+      <rect x="400" y="190 + 52*6" width="140" height="50" rx="3" fill="#8B8682" opacity="1" />
+      <rect x="550" y="190 + 52*6" width="140" height="50" rx="3" fill="#5B8DB8" opacity="1" />
+      <rect x="700" y="190 + 52*6" width="140" height="50" rx="3" fill="#D4A857" opacity="1" />
+      <rect x="850" y="190 + 52*6" width="140" height="50" rx="3" fill="#C45B4D" opacity="1" />
+      <rect x="1000" y="190 + 52*6" width="140" height="50" rx="3" fill="#5B8B6A" opacity="1" />
+
+      <!-- Row 8: 進化的計算（遺伝的アルゴリズム） | partial | 波,渦 -->
+      <text x="390" y="220 + 52*7" text-anchor="end" fill="white" font-size="14">進化的計算（遺伝的アルゴリズム）</text>
+      <rect x="400" y="190 + 52*7" width="140" height="50" rx="3" fill="#8B8682" opacity="0.3" />
+      <rect x="550" y="190 + 52*7" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.7" />
+      <rect x="700" y="190 + 52*7" width="140" height="50" rx="3" fill="#D4A857" opacity="0.3" />
+      <rect x="850" y="190 + 52*7" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.7" />
+      <rect x="1000" y="190 + 52*7" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.3" />
+
+      <!-- Row 9: ソフトウェアリファクタリング | conditional | 波 -->
+      <text x="390" y="220 + 52*8" text-anchor="end" fill="white" font-size="14">ソフトウェアリファクタリング</text>
+      <rect x="400" y="190 + 52*8" width="140" height="50" rx="3" fill="#8B8682" opacity="0.2" />
+      <rect x="550" y="190 + 52*8" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.4" />
+      <rect x="700" y="190 + 52*8" width="140" height="50" rx="3" fill="#D4A857" opacity="0.2" />
+      <rect x="850" y="190 + 52*8" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.2" />
+      <rect x="1000" y="190 + 52*8" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.2" />
+
+      <!-- Row 10: 暗号プロトコルと鍵交換 | partial | 場,束 -->
+      <text x="390" y="220 + 52*9" text-anchor="end" fill="white" font-size="14">暗号プロトコルと鍵交換</text>
+      <rect x="400" y="190 + 52*9" width="140" height="50" rx="3" fill="#8B8682" opacity="0.7" />
+      <rect x="550" y="190 + 52*9" width="140" height="50" rx="3" fill="#5B8DB8" opacity="0.3" />
+      <rect x="700" y="190 + 52*9" width="140" height="50" rx="3" fill="#D4A857" opacity="0.3" />
+      <rect x="850" y="190 + 52*9" width="140" height="50" rx="3" fill="#C45B4D" opacity="0.3" />
+      <rect x="1000" y="190 + 52*9" width="140" height="50" rx="3" fill="#5B8B6A" opacity="0.7" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="759" text-anchor="middle" fill="white" font-size="18">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 3件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 6件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 1件
+  </text>
+</svg>

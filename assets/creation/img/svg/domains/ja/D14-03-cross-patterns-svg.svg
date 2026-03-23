@@ -1,0 +1,154 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="32" font-weight="bold">
+    心理学・認知科学探究における横断的パターンの発見
+  </text>
+
+  <!-- Define center card rectangle for reuse with glow effect -->
+  <defs>
+    <rect id="centerCardRect" x="400" y="280" width="400" height="240" rx="15" ry="15" />
+  </defs>
+
+  <!-- Connecting Lines (Glow Layer) -->
+  <g stroke="#D4A857" stroke-width="4" opacity="0.4">
+    <line x1="600" y1="400" x2="300" y2="250" />
+    <line x1="600" y1="400" x2="900" y2="250" />
+    <line x1="600" y1="400" x2="300" y2="600" />
+    <line x1="600" y1="400" x2="900" y2="600" />
+  </g>
+  <!-- Connecting Lines (Sharp Layer) -->
+  <g stroke="#D4A857" stroke-width="2" opacity="1">
+    <line x1="600" y1="400" x2="300" y2="250" />
+    <line x1="600" y1="400" x2="900" y2="250" />
+    <line x1="600" y1="400" x2="300" y2="600" />
+    <line x1="600" y1="400" x2="900" y2="600" />
+  </g>
+
+  <!-- Optional Cross-connections between satellites -->
+  <g stroke="#D4A857" stroke-width="1" opacity="0.3">
+    <line x1="300" y1="250" x2="900" y2="250" />
+    <line x1="300" y1="250" x2="300" y2="600" />
+    <line x1="900" y1="250" x2="900" y2="600" />
+    <line x1="300" y1="600" x2="900" y2="600" />
+    <line x1="300" y1="250" x2="900" y2="600" />
+    <line x1="900" y1="250" x2="300" y2="600" />
+  </g>
+
+  <!-- Center Card (Hub) -->
+  <g>
+    <!-- Glow effect -->
+    <use href="#centerCardRect" fill="#D4A857" opacity="0.2" />
+    <use href="#centerCardRect" fill="#D4A857" opacity="0.3" />
+    <!-- Main card -->
+    <use href="#centerCardRect" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+
+    <!-- Text content -->
+    <text x="600" y="320" text-anchor="middle" fill="#D4A857" font-size="28" font-weight="bold">
+      6.1 縁の三形態——結合・切断・競合
+    </text>
+    <text x="600" y="355" text-anchor="middle" fill="white" font-size="18">
+      (10件 theories)
+    </text>
+    <text x="600" y="390" text-anchor="middle" fill="white" font-size="20">
+      "10件のエントリを横断すると、「縁"
+    </text>
+    <text x="600" y="430" text-anchor="middle" fill="#cccccc" font-size="16">
+      Found in:
+    </text>
+    <text x="600" y="455" text-anchor="middle" fill="#D4A857" font-size="14">
+      <tspan x="600" dy="0">制約緩和による新表象の発見,</tspan>
+      <tspan x="600" dy="18">メタファー写像</tspan>
+    </text>
+  </g>
+
+  <!-- Satellite Cards -->
+  <!-- Satellite 1: 6.2 (Top-left) -->
+  <g>
+    <rect x="150" y="160" width="300" height="180" rx="10" ry="10" fill="#4a90e2" opacity="0.2" />
+    <rect x="150" y="160" width="300" height="180" rx="10" ry="10" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+    <text x="300" y="190" text-anchor="middle" fill="#4a90e2" font-size="20" font-weight="bold">
+      6.2 5段階の起動条件
+    </text>
+    <text x="300" y="215" text-anchor="middle" fill="white" font-size="14">
+      (0/10)
+    </text>
+    <text x="300" y="245" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">スキーマ理論の同化/調節の分析と、</tspan>
+      <tspan x="300" dy="20">アフォーダンスの直接知覚の分析から、</tspan>
+      <tspan x="300" dy="20">5段階は「常に回っている恒常的プロセス</tspan>
+    </text>
+    <!-- No "Found in" for this one -->
+  </g>
+
+  <!-- Satellite 2: 6.3 (Top-right) -->
+  <g>
+    <rect x="750" y="160" width="300" height="180" rx="10" ry="10" fill="#e24a4a" opacity="0.2" />
+    <rect x="750" y="160" width="300" height="180" rx="10" ry="10" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+    <text x="900" y="190" text-anchor="middle" fill="#e24a4a" font-size="20" font-weight="bold">
+      6.3 渦に至らない経路の存在
+    </text>
+    <text x="900" y="215" text-anchor="middle" fill="white" font-size="14">
+      (0/10)
+    </text>
+    <text x="900" y="245" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="900" dy="0">認知的不協和の分析から、</tspan>
+      <tspan x="900" dy="20">「縁から渦に到達しない経路</tspan>
+    </text>
+    <!-- No "Found in" for this one -->
+  </g>
+
+  <!-- Satellite 3: 6.4 (Bottom-left) -->
+  <g>
+    <rect x="150" y="510" width="300" height="180" rx="10" ry="10" fill="#50e3c2" opacity="0.2" />
+    <rect x="150" y="510" width="300" height="180" rx="10" ry="10" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+    <text x="300" y="535" text-anchor="middle" fill="#50e3c2" font-size="20" font-weight="bold">
+      6.4 意識水準の三角測量
+    </text>
+    <text x="300" y="560" text-anchor="middle" fill="white" font-size="14">
+      (1/10)
+    </text>
+    <text x="300" y="585" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">洞察（潜在過程から突然の意識化）、</tspan>
+      <tspan x="300" dy="20">不協和（意識的不快）、フロー</tspan>
+      <tspan x="300" dy="20">（意識的没入だが自己意識なし）</tspan>
+      <tspan x="300" dy="20">という3つの理論が、意識の3つの</tspan>
+      <tspan x="300" dy="20">異なる様態を記述しています</tspan>
+    </text>
+    <text x="300" y="675" text-anchor="middle" fill="#cccccc" font-size="14">
+      潜在過程から突然の意識化
+    </text>
+  </g>
+
+  <!-- Satellite 4: 6.5 (Bottom-right) -->
+  <g>
+    <rect x="750" y="510" width="300" height="180" rx="10" ry="10" fill="#b34ae2" opacity="0.2" />
+    <rect x="750" y="510" width="300" height="180" rx="10" ry="10" fill="#2a2a4e" stroke="#b34ae2" stroke-width="2" />
+    <text x="900" y="535" text-anchor="middle" fill="#b34ae2" font-size="20" font-weight="bold">
+      6.5 場の質——開かれた場と閉じた場
+    </text>
+    <text x="900" y="560" text-anchor="middle" fill="white" font-size="14">
+      (1/10)
+    </text>
+    <text x="900" y="585" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="900" dy="0">洞察問題（誤って構造化された閉じた場）、</tspan>
+      <tspan x="900" dy="20">アフォーダンス空間（行為可能性に</tspan>
+      <tspan x="900" dy="20">開かれた場）、生成モデル（常に予測を</tspan>
+      <tspan x="900" dy="20">生成する動的な場）という3つの理論から、</tspan>
+      <tspan x="900" dy="20">場には質の違いが確認されました</tspan>
+    </text>
+    <text x="900" y="675" text-anchor="middle" fill="#cccccc" font-size="14">
+      誤って構造化された閉じた場
+    </text>
+  </g>
+
+  <!-- Key finding callout -->
+  <g>
+    <rect x="250" y="720" width="700" height="50" rx="25" ry="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+    <text x="600" y="750" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+      心理学・認知科学で最も顕著な発見 = 6.1 縁の三形態——結合・切断・競合
+    </text>
+  </g>
+</svg>

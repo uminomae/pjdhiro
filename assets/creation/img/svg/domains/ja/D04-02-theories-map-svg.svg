@@ -1,0 +1,183 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="900" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" font-size="28" fill="#e0e0e0" text-anchor="middle">10進化生物学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <g id="column-headers">
+    <!-- 場 (Field) -->
+    <rect x="240" y="100" width="180" height="40" fill="#8B8682" rx="5" ry="5" />
+    <text x="330" y="125" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">場 (Field)</text>
+    <!-- 波 (Wave) -->
+    <rect x="430" y="100" width="180" height="40" fill="#5B8DB8" rx="5" ry="5" />
+    <text x="520" y="125" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">波 (Wave)</text>
+    <!-- 縁 (Edge) -->
+    <rect x="620" y="100" width="180" height="40" fill="#D4A857" rx="5" ry="5" />
+    <text x="710" y="125" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">縁 (Edge)</text>
+    <!-- 渦 (Vortex) -->
+    <rect x="810" y="100" width="180" height="40" fill="#C45B4D" rx="5" ry="5" />
+    <text x="900" y="125" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">渦 (Vortex)</text>
+    <!-- 束 (Bundle) -->
+    <rect x="1000" y="100" width="180" height="40" fill="#5B8B6A" rx="5" ry="5" />
+    <text x="1090" y="125" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">束 (Bundle)</text>
+  </g>
+
+  <!-- Matrix Rows -->
+  <g id="matrix-body">
+    <!-- Row 1: 自然選択＋中立説 -->
+    <g transform="translate(0, 150)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">1. 自然選択＋中立説</text>
+      <rect x="240" y="0" width="180" height="55" fill="#53504e" opacity="0.7" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#e0e0e0" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#37556e" opacity="0.7" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#e0e0e0" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#7f6534" opacity="0.7" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#e0e0e0" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#76372e" opacity="0.7" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#e0e0e0" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#375340" opacity="0.7" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#e0e0e0" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 2: 断続平衡説 -->
+    <g transform="translate(0, 215)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">2. 断続平衡説</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 3: ニッチ構築 -->
+    <g transform="translate(0, 280)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">3. ニッチ構築</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#888888" font-size="16" text-anchor="middle" dominant-baseline="middle">-</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#888888" font-size="16" text-anchor="middle" dominant-baseline="middle">-</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#888888" font-size="16" text-anchor="middle" dominant-baseline="middle">-</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 4: 拡張進化的総合説（EES） -->
+    <g transform="translate(0, 345)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">4. 拡張進化的総合説（EES）</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 5: 発生可塑性・遺伝的収容 -->
+    <g transform="translate(0, 410)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">5. 発生可塑性・遺伝的収容</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 6: 共進化とRed Queen仮説 -->
+    <g transform="translate(0, 475)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">6. 共進化とRed Queen仮説</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 7: ハイブリッドゾーン -->
+    <g transform="translate(0, 540)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">7. ハイブリッドゾーン</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 8: 内共生 -->
+    <g transform="translate(0, 605)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">8. 内共生</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 9: 水平遺伝子移動（HGT） -->
+    <g transform="translate(0, 670)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">9. 水平遺伝子移動（HGT）</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 10: 適応放散 -->
+    <g transform="translate(0, 735)">
+      <text x="220" y="27.5" fill="#e0e0e0" font-size="15" text-anchor="end" dominant-baseline="middle">10. 適応放散</text>
+      <rect x="240" y="0" width="180" height="55" fill="#8B8682" rx="5" ry="5" />
+      <text x="330" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="430" y="0" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+      <text x="520" y="27.5" fill="#888888" font-size="16" text-anchor="middle" dominant-baseline="middle">-</text>
+      <rect x="620" y="0" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+      <text x="710" y="27.5" fill="#888888" font-size="16" text-anchor="middle" dominant-baseline="middle">-</text>
+      <rect x="810" y="0" width="180" height="55" fill="#C45B4D" rx="5" ry="5" />
+      <text x="900" y="27.5" fill="#ffffff" font-size="16" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1000" y="0" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+      <text x="1090" y="27.5" fill="#888888" font-size="16" text-anchor="middle" dominant-baseline="middle">-</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g id="legend" transform="translate(0, 830)">
+    <!-- Strong -->
+    <rect x="240" y="0" width="30" height="30" fill="#888888" opacity="1.0" rx="5" ry="5" />
+    <text x="280" y="19" fill="#e0e0e0" font-size="14">強い対応 (Strong)</text>
+    <!-- Partial -->
+    <rect x="460" y="0" width="30" height="30" fill="#888888" opacity="0.7" rx="5" ry="5" />
+    <text x="500" y="19" fill="#e0e0e0" font-size="14">部分的 (Partial)</text>
+    <!-- Conditional -->
+    <rect x="680" y="0" width="30" height="30" fill="#888888" opacity="0.3" rx="5" ry="5" />
+    <text x="720" y="19" fill="#e0e0e0" font-size="14">条件付き/弱い (Conditional/Weak)</text>
+  </g>
+</svg>

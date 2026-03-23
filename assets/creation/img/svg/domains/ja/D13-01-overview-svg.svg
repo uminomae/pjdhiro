@@ -1,0 +1,183 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D13 哲学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">11理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="195" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+  <line x1="200" y1="220" x2="200" y2="240" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,240 205,240 200,250" fill="#F39C12" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="295" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+  <line x1="200" y1="320" x2="200" y2="340" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,340 205,340 200,350" fill="#F39C12" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="395" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+  <line x1="200" y1="420" x2="200" y2="440" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,440 205,440 200,450" fill="#F39C12" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="495" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+  <line x1="200" y1="520" x2="200" y2="540" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,540 205,540 200,550" fill="#F39C12" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="595" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column headers -->
+  <g transform="translate(400, 130)">
+    <rect x="0" y="0" width="148.4" height="30" rx="5" fill="#8B8682" />
+    <text x="74.2" y="20" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+    <rect x="150.4" y="0" width="148.4" height="30" rx="5" fill="#5B8DB8" />
+    <text x="224.6" y="20" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+    <rect x="300.8" y="0" width="148.4" height="30" rx="5" fill="#D4A857" />
+    <text x="375" y="20" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+    <rect x="451.2" y="0" width="148.4" height="30" rx="5" fill="#C45B4D" />
+    <text x="525.4" y="20" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+    <rect x="601.6" y="0" width="148.4" height="30" rx="5" fill="#5B8B6A" />
+    <text x="675.8" y="20" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+  </g>
+
+  <!-- Theory data rows -->
+  <g transform="translate(400, 170)">
+    <!-- Row 0: 個体化論（transduction） - strong -->
+    <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">個体化論（transduction）</text>
+    <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 1: 反省的思考の5段階 - strong -->
+    <g transform="translate(0, 52)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">反省的思考の5段階</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="1.0" />
+    </g>
+
+    <!-- Row 2: 過程哲学（concrescence） - partial -->
+    <g transform="translate(0, 104)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">過程哲学（concrescence）</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.3" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.7" />
+    </g>
+
+    <!-- Row 3: 自然哲学（Naturphilosophie） - conditional -->
+    <g transform="translate(0, 156)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">自然哲学（Naturphilosophie）</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.2" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.4" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.2" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.2" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.2" />
+    </g>
+
+    <!-- Row 4: 受動的総合（passive synthesis） - partial -->
+    <g transform="translate(0, 208)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">受動的総合（passive synthesis）</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.3" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.3" />
+    </g>
+
+    <!-- Row 5: 「肉」と可逆性 - partial -->
+    <g transform="translate(0, 260)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">「肉」と可逆性</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.3" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.3" />
+    </g>
+
+    <!-- Row 6: 地平融合（Horizontverschmelzung） - partial -->
+    <g transform="translate(0, 312)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">地平融合（Horizontverschmelzung）</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.7" />
+    </g>
+
+    <!-- Row 7: リゾーム・脱領土化 - conditional -->
+    <g transform="translate(0, 364)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">リゾーム・脱領土化</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.4" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.2" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.2" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.2" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.2" />
+    </g>
+
+    <!-- Row 8: 探究と信念の固定 - strong -->
+    <g transform="translate(0, 416)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">探究と信念の固定</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="1.0" />
+    </g>
+
+    <!-- Row 9: 否定弁証法 - partial (no stages match) -->
+    <g transform="translate(0, 468)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">否定弁証法</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.3" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.3" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.3" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.3" />
+    </g>
+
+    <!-- Row 10: 場所の論理 - partial -->
+    <g transform="translate(0, 520)">
+      <text x="-10" y="25" text-anchor="end" fill="white" font-size="14">場所の論理</text>
+      <rect x="0" y="0" width="148.4" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="150.4" y="0" width="148.4" height="50" fill="#5B8DB8" opacity="0.3" />
+      <rect x="300.8" y="0" width="148.4" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="451.2" y="0" width="148.4" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="601.6" y="0" width="148.4" height="50" fill="#5B8B6A" opacity="0.3" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="765" text-anchor="middle" fill="white" font-size="20">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 3件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 6件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 2件
+  </text>
+
+</svg>

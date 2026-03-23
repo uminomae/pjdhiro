@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="sans-serif">
+<defs>
+  <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#34495E;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="100%" height="100%" fill="#1a1a2e" />
+
+<!-- Title Section -->
+<text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D04 進化生物学 — 5段階モデルとの構造対応調査</text>
+<text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+<!-- Left Column: Research Methodology Flow -->
+<g id="methodology-flow">
+  <!-- Phase 1 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="195" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 1-2: 文献確認・理論選定</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="200" y1="220" x2="200" y2="250" stroke="#F39C12" stroke-width="4" />
+  <path d="M194 250 L200 260 L206 250 Z" fill="#F39C12" />
+
+  <!-- Phase 2 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="295" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 3-4: 構造対応の判定</text>
+
+  <!-- Arrow 2 -->
+  <line x1="200" y1="320" x2="200" y2="350" stroke="#F39C12" stroke-width="4" />
+  <path d="M194 350 L200 360 L206 350 Z" fill="#F39C12" />
+
+  <!-- Phase 3 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="395" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 5: 論拠監査</text>
+
+  <!-- Arrow 3 -->
+  <line x1="200" y1="420" x2="200" y2="450" stroke="#F39C12" stroke-width="4" />
+  <path d="M194 450 L200 460 L206 450 Z" fill="#F39C12" />
+
+  <!-- Phase 4 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="495" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 6: 構造再読（4軸再評価）</text>
+
+  <!-- Arrow 4 -->
+  <line x1="200" y1="520" x2="200" y2="550" stroke="#F39C12" stroke-width="4" />
+  <path d="M194 550 L200 560 L206 550 Z" fill="#F39C12" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="595" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 7: 横断統合</text>
+</g>
+
+<!-- Right Section: Theory Correspondence Heatmap -->
+<g id="heatmap">
+  <!-- Column Headers -->
+  <g id="column-headers">
+    <rect x="420" y="160" width="140" height="30" rx="8" fill="#8B8682" />
+    <text x="490" y="179" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+    <rect x="562" y="160" width="140" height="30" rx="8" fill="#5B8DB8" />
+    <text x="632" y="179" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+    <rect x="704" y="160" width="140" height="30" rx="8" fill="#D4A857" />
+    <text x="774" y="179" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+    <rect x="846" y="160" width="140" height="30" rx="8" fill="#C45B4D" />
+    <text x="916" y="179" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+    <rect x="988" y="160" width="140" height="30" rx="8" fill="#5B8B6A" />
+    <text x="1058" y="179" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+  </g>
+  
+  <!-- Grid Content -->
+  <g id="grid-rows" font-size="14" fill="white">
+    <!-- Row 1: 自然選択＋中立説 (partial) -->
+    <text x="400" y="225" text-anchor="end" dominant-baseline="middle">自然選択＋中立説</text>
+    <rect x="420" y="200" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="562" y="200" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="704" y="200" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="846" y="200" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="988" y="200" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+    
+    <!-- Row 2: 断続平衡説 (strong) -->
+    <text x="400" y="277" text-anchor="end" dominant-baseline="middle">断続平衡説</text>
+    <rect x="420" y="252" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="252" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="252" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="252" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="252" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 3: ニッチ構築 (strong) -->
+    <text x="400" y="329" text-anchor="end" dominant-baseline="middle">ニッチ構築</text>
+    <rect x="420" y="304" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="304" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="304" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="846" y="304" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="988" y="304" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 4: 拡張進化的総合説（EES） (strong) -->
+    <text x="400" y="381" text-anchor="end" dominant-baseline="middle">拡張進化的総合説（EES）</text>
+    <rect x="420" y="356" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="356" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="356" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="356" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="356" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 5: 発生可塑性・遺伝的収容 (strong) -->
+    <text x="400" y="433" text-anchor="end" dominant-baseline="middle">発生可塑性・遺伝的収容</text>
+    <rect x="420" y="408" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="408" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="408" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="408" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="408" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 6: 共進化とRed Queen仮説 (strong) -->
+    <text x="400" y="485" text-anchor="end" dominant-baseline="middle">共進化とRed Queen仮説</text>
+    <rect x="420" y="460" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="460" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="460" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="460" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="460" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 7: ハイブリッドゾーン (strong) -->
+    <text x="400" y="537" text-anchor="end" dominant-baseline="middle">ハイブリッドゾーン</text>
+    <rect x="420" y="512" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="512" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="512" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="512" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="512" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 8: 内共生 (strong) -->
+    <text x="400" y="589" text-anchor="end" dominant-baseline="middle">内共生</text>
+    <rect x="420" y="564" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="564" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="564" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="564" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="564" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 9: 水平遺伝子移動（HGT） (strong) -->
+    <text x="400" y="641" text-anchor="end" dominant-baseline="middle">水平遺伝子移動（HGT）</text>
+    <rect x="420" y="616" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="616" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="616" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="846" y="616" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="616" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 10: 適応放散 (strong) -->
+    <text x="400" y="693" text-anchor="end" dominant-baseline="middle">適応放散</text>
+    <rect x="420" y="668" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="562" y="668" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="668" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="846" y="668" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="988" y="668" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+  </g>
+</g>
+
+<!-- Bottom Bar: Judgment Summary -->
+<g id="summary-bar">
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <g font-size="16" fill="white">
+    <!-- Strong -->
+    <rect x="250" y="745" width="20" height="20" fill="#27AE60" />
+    <text x="280" y="761" dominant-baseline="middle">強い対応: 9件</text>
+    <!-- Partial -->
+    <rect x="550" y="745" width="20" height="20" fill="#F1C40F" />
+    <text x="580" y="761" dominant-baseline="middle">部分的対応: 1件</text>
+    <!-- Conditional -->
+    <rect x="850" y="745" width="20" height="20" fill="#E67E22" />
+    <text x="880" y="761" dominant-baseline="middle">条件付き: 0件</text>
+  </g>
+</g>
+
+</svg>

@@ -1,0 +1,128 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="32" font-weight="bold">
+    言語学探究における横断的パターンの発見
+  </text>
+
+  <!-- Connecting Lines (Glow Layer) -->
+  <g opacity="0.4" stroke="#D4A857" stroke-width="4">
+    <line x1="600" y1="400" x2="300" y2="250" />
+    <line x1="600" y1="400" x2="900" y2="250" />
+    <line x1="600" y1="400" x2="300" y2="600" />
+  </g>
+
+  <!-- Connecting Lines (Sharp Layer) -->
+  <g stroke="#D4A857" stroke-width="2">
+    <line x1="600" y1="400" x2="300" y2="250" />
+    <line x1="600" y1="400" x2="900" y2="250" />
+    <line x1="600" y1="400" x2="300" y2="600" />
+  </g>
+
+  <!-- Cross-connections between satellites (optional, fainter) -->
+  <g stroke="#D4A857" stroke-width="1" opacity="0.3">
+    <line x1="300" y1="250" x2="900" y2="250" />
+    <line x1="300" y1="250" x2="300" y2="600" />
+    <line x1="900" y1="250" x2="300" y2="600" />
+  </g>
+
+  <!-- Center Card (Hub) -->
+  <g>
+    <!-- Glow Effect -->
+    <rect x="390" y="270" width="420" height="260" rx="21" fill="#D4A857" opacity="0.2" />
+    <rect x="395" y="275" width="410" height="250" rx="18" fill="#D4A857" opacity="0.3" />
+    <!-- Main Card -->
+    <rect x="400" y="280" width="400" height="240" rx="15" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+    <!-- Content -->
+    <text x="600" y="320" text-anchor="middle" fill="#D4A857" font-size="28" font-weight="bold">
+      波→縁の移行を駆動する二重メカニズム
+    </text>
+    <text x="600" y="355" text-anchor="middle" fill="white" font-size="18">
+      (0/10 theories)
+    </text>
+    <text x="600" y="390" text-anchor="middle" fill="white" font-size="20">
+      <tspan x="600" dy="0">"言語学で最も重要な横断的パターンは、</tspan>
+      <tspan x="600" dy="25">波から縁への移行を駆動する二つの異なるメカニズムの並存です"</tspan>
+    </text>
+    <text x="600" y="450" text-anchor="middle" fill="#cccccc" font-size="16">
+      Found in:
+    </text>
+    <!-- Theory names (empty for this pattern) -->
+  </g>
+
+  <!-- Satellite Card 1 (Top-left) -->
+  <g>
+    <!-- Glow Effect -->
+    <rect x="145" y="155" width="310" height="190" rx="13" fill="#4a90e2" opacity="0.2" />
+    <!-- Main Card -->
+    <rect x="150" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+    <!-- Content -->
+    <text x="300" y="200" text-anchor="middle" fill="#4a90e2" font-size="20" font-weight="bold">
+      縁の型の多様性
+    </text>
+    <text x="300" y="225" text-anchor="middle" fill="white" font-size="14">
+      0/10
+    </text>
+    <text x="300" y="250" text-anchor="middle" fill="white" font-size="16">
+      "言語学の10の理論は、10種類の異なる「縁"
+    </text>
+    <text x="300" y="275" text-anchor="middle" fill="#cccccc" font-size="14">
+      <!-- Theory names (empty for this pattern) -->
+    </text>
+  </g>
+
+  <!-- Satellite Card 2 (Top-right) -->
+  <g>
+    <!-- Glow Effect -->
+    <rect x="745" y="155" width="310" height="190" rx="13" fill="#e24a4a" opacity="0.2" />
+    <!-- Main Card -->
+    <rect x="750" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+    <!-- Content -->
+    <text x="900" y="200" text-anchor="middle" fill="#e24a4a" font-size="20" font-weight="bold">
+      場の条件性
+    </text>
+    <text x="900" y="225" text-anchor="middle" fill="white" font-size="14">
+      1/10
+    </text>
+    <text x="900" y="250" text-anchor="middle" fill="white" font-size="16">
+      "5段階モデルの「場"
+    </text>
+    <text x="900" y="275" text-anchor="middle" fill="#cccccc" font-size="14">
+      5.7
+    </text>
+  </g>
+
+  <!-- Satellite Card 3 (Bottom-left) -->
+  <g>
+    <!-- Glow Effect -->
+    <rect x="145" y="505" width="310" height="190" rx="13" fill="#50e3c2" opacity="0.2" />
+    <!-- Main Card -->
+    <rect x="150" y="510" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+    <!-- Content -->
+    <text x="300" y="550" text-anchor="middle" fill="#50e3c2" font-size="20" font-weight="bold">
+      個人獲得と歴史変化の同型性
+    </text>
+    <text x="300" y="575" text-anchor="middle" fill="white" font-size="14">
+      1/10
+    </text>
+    <text x="300" y="600" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">"構文の創発（5.2）、文法化（5.4）、反復的学習モデル（5.3）は、</tspan>
+      <tspan x="300" dy="20">個人の言語獲得（微視的スケール）と言語の歴史変化（巨視的スケール）が</tspan>
+      <tspan x="300" dy="20">類似のパターンを示す事例を提供しています"</tspan>
+    </text>
+    <text x="300" y="675" text-anchor="middle" fill="#cccccc" font-size="14">
+      5.2
+    </text>
+  </g>
+
+  <!-- Key Finding Callout -->
+  <g>
+    <rect x="350" y="680" width="500" height="50" rx="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+    <text x="600" y="710" text-anchor="middle" fill="#1a1a2e" font-size="18" font-weight="bold">
+      言語学で最も顕著な発見 = 波→縁の移行を駆動する二重メカニズム
+    </text>
+  </g>
+
+</svg>

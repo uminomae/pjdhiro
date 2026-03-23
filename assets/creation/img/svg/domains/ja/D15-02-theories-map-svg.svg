@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" font-family="sans-serif">
+    <!-- Background -->
+    <rect x="0" y="0" width="1200" height="950" fill="#1a1a2e" />
+
+    <!-- Title -->
+    <text x="600" y="50" font-size="28" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">10美学における5段階モデルの構造対応に関する調査報告理論と5段階モデルの対応関係マトリクス</text>
+
+    <!-- Column Headers -->
+    <!-- Stage: 場 (Field) -->
+    <rect x="220" y="100" width="180" height="50" fill="#8B8682" rx="5" ry="5" />
+    <text x="310" y="125" font-size="20" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">場</text>
+    <!-- Stage: 波 (Wave) -->
+    <rect x="410" y="100" width="180" height="50" fill="#5B8DB8" rx="5" ry="5" />
+    <text x="500" y="125" font-size="20" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">波</text>
+    <!-- Stage: 縁 (Edge) -->
+    <rect x="600" y="100" width="180" height="50" fill="#D4A857" rx="5" ry="5" />
+    <text x="690" y="125" font-size="20" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <!-- Stage: 渦 (Vortex) -->
+    <rect x="790" y="100" width="180" height="50" fill="#C45B4D" rx="5" ry="5" />
+    <text x="880" y="125" font-size="20" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">渦</text>
+    <!-- Stage: 束 (Bundle) -->
+    <rect x="980" y="100" width="180" height="50" fill="#5B8B6A" rx="5" ry="5" />
+    <text x="1070" y="125" font-size="20" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">束</text>
+
+    <!-- Theory Rows and Matrix Cells -->
+    <!-- Theory 1: 美的葛藤 -->
+    <text x="20" y="187.5" font-size="18" fill="#ffffff" dominant-baseline="middle">1. 美的葛藤</text>
+    <rect x="220" y="160" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="310" y="187.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="410" y="160" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+    <text x="500" y="187.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="160" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="690" y="187.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="160" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="187.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="160" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="187.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 2: 日本美学（侘び寂び・秘すれば花等） -->
+    <text x="20" y="252.5" font-size="18" fill="#ffffff" dominant-baseline="middle">2. 日本美学（侘び寂び・秘すれば花等）</text>
+    <rect x="220" y="225" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="310" y="252.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="410" y="225" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="500" y="252.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="600" y="225" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="690" y="252.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="225" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="252.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="225" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="252.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 3: 判断力批判 -->
+    <text x="20" y="317.5" font-size="18" fill="#ffffff" dominant-baseline="middle">3. 判断力批判</text>
+    <rect x="220" y="290" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="310" y="317.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="410" y="290" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+    <text x="500" y="317.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="290" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="690" y="317.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="290" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+    <text x="880" y="317.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">渦</text>
+    <rect x="980" y="290" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="317.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 4: 芸術作品の根源 -->
+    <text x="20" y="382.5" font-size="18" fill="#ffffff" dominant-baseline="middle">4. 芸術作品の根源</text>
+    <rect x="220" y="355" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+    <text x="310" y="382.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="410" y="355" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="500" y="382.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="600" y="355" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="690" y="382.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="355" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="382.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="355" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="382.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 5: Art as Experience -->
+    <text x="20" y="447.5" font-size="18" fill="#ffffff" dominant-baseline="middle">5. Art as Experience</text>
+    <rect x="220" y="420" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+    <text x="310" y="447.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="410" y="420" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+    <text x="500" y="447.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="420" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+    <text x="690" y="447.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="420" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="447.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="420" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+    <text x="1070" y="447.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">束</text>
+
+    <!-- Theory 6: 複製技術時代の芸術作品 -->
+    <text x="20" y="512.5" font-size="18" fill="#ffffff" dominant-baseline="middle">6. 複製技術時代の芸術作品</text>
+    <rect x="220" y="485" width="180" height="55" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+    <text x="310" y="512.5" font-size="16" fill="#aaaaaa" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="410" y="485" width="180" height="55" fill="#5B8DB8" opacity="0.3" rx="5" ry="5" />
+    <text x="500" y="512.5" font-size="16" fill="#aaaaaa" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="485" width="180" height="55" fill="#D4A857" opacity="0.3" rx="5" ry="5" />
+    <text x="690" y="512.5" font-size="16" fill="#aaaaaa" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="485" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="512.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="485" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="512.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 7: 感性的なものの分配 -->
+    <text x="20" y="577.5" font-size="18" fill="#ffffff" dominant-baseline="middle">7. 感性的なものの分配</text>
+    <rect x="220" y="550" width="180" height="55" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+    <text x="310" y="577.5" font-size="16" fill="#aaaaaa" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="410" y="550" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+    <text x="500" y="577.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="600" y="550" width="180" height="55" fill="#D4A857" opacity="0.3" rx="5" ry="5" />
+    <text x="690" y="577.5" font-size="16" fill="#aaaaaa" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="550" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="577.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="550" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="577.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 8: 美的教育書簡 -->
+    <text x="20" y="642.5" font-size="18" fill="#ffffff" dominant-baseline="middle">8. 美的教育書簡</text>
+    <rect x="220" y="615" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+    <text x="310" y="642.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="410" y="615" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+    <text x="500" y="642.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="615" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+    <text x="690" y="642.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="615" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="642.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="615" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+    <text x="1070" y="642.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">束</text>
+
+    <!-- Theory 9: 美の理論 -->
+    <text x="20" y="707.5" font-size="18" fill="#ffffff" dominant-baseline="middle">9. 美の理論</text>
+    <rect x="220" y="680" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+    <text x="310" y="707.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="410" y="680" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+    <text x="500" y="707.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="680" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+    <text x="690" y="707.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="680" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+    <text x="880" y="707.5" font-size="16" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">渦</text>
+    <rect x="980" y="680" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+    <text x="1070" y="707.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+
+    <!-- Theory 10: 開かれた作品 -->
+    <text x="20" y="772.5" font-size="18" fill="#ffffff" dominant-baseline="middle">10. 開かれた作品</text>
+    <rect x="220" y="745" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+    <text x="310" y="772.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="410" y="745" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+    <text x="500" y="772.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="600" y="745" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+    <text x="690" y="772.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="790" y="745" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+    <text x="880" y="772.5" font-size="16" fill="#888888" text-anchor="middle" dominant-baseline="middle">-</text>
+    <rect x="980" y="745" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+    <text x="1070" y="772.5" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">束</text>
+
+    <!-- Legend -->
+    <!-- Strong -->
+    <rect x="20" y="840" width="20" height="20" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+    <text x="50" y="850" font-size="16" fill="#ffffff" dominant-baseline="middle">強い対応 (Strong)</text>
+    <!-- Partial -->
+    <rect x="20" y="870" width="20" height="20" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+    <text x="50" y="880" font-size="16" fill="#ffffff" dominant-baseline="middle">部分的 (Partial)</text>
+    <!-- Conditional/Weak -->
+    <rect x="20" y="900" width="20" height="20" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+    <text x="50" y="910" font-size="16" fill="#ffffff" dominant-baseline="middle">条件付き/弱い (Conditional/Weak)</text>
+</svg>

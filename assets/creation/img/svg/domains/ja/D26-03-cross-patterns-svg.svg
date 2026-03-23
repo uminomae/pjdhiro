@@ -1,0 +1,116 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="32" font-weight="bold">
+    音楽学探究における横断的パターンの発見
+  </text>
+
+  <!-- Define card dimensions and positions -->
+  <defs>
+    <rect id="centerCardRect" x="400" y="280" width="400" height="240" rx="10" ry="10" />
+    <rect id="satelliteCardRectNormal" width="300" height="180" rx="8" ry="8" />
+    <rect id="satelliteCardRectTall" width="300" height="260" rx="8" ry="8" /> <!-- Taller for Pattern 4 content -->
+  </defs>
+
+  <!-- Center Card (Hub) -->
+  <!-- Glow effect -->
+  <use href="#centerCardRect" fill="#D4A857" opacity="0.2" />
+  <use href="#centerCardRect" fill="#D4A857" opacity="0.3" />
+  <!-- Main card -->
+  <use href="#centerCardRect" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+
+  <!-- Center Card Content -->
+  <g text-anchor="middle">
+    <text x="600" y="320" fill="#D4A857" font-size="28" font-weight="bold">
+      <tspan x="600" dy="0">パターン1: 期待-誤差-再評価の循環構造が</tspan>
+      <tspan x="600" dy="32">全スケールに現れる</tspan>
+    </text>
+    <text x="600" y="380" fill="white" font-size="18">(1/10 theories)</text>
+    <text x="600" y="410" fill="white" font-size="20">
+      <tspan x="600" dy="0">"音楽学で最も顕著な横断パターンは、</tspan>
+      <tspan x="600" dy="24">「期待に対する誤差が創造を駆動する"</tspan>
+    </text>
+    <text x="600" y="460" fill="#cccccc" font-size="16">Found in:</text>
+    <text x="600" y="485" fill="#D4A857" font-size="14">前注意的な予測と逸脱の検出</text>
+  </g>
+
+  <!-- Satellite Cards -->
+  <!-- Pattern 2 (Top-left) -->
+  <g transform="translate(150, 160)">
+    <use href="#satelliteCardRectNormal" fill="#4a90e2" opacity="0.2" />
+    <use href="#satelliteCardRectNormal" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+    <g text-anchor="middle">
+      <text x="150" y="45" fill="#4a90e2" font-size="20" font-weight="bold">
+        <tspan x="150" dy="0">パターン2: 「縁」は複数の</tspan>
+        <tspan x="150" dy="24">実現メカニズムを持つ</tspan>
+      </text>
+      <text x="150" y="90" fill="white" font-size="14">(0/10 theories)</text>
+      <text x="150" y="120" fill="white" font-size="16">"音楽学は「縁"</text>
+      <text x="150" y="150" fill="#cccccc" font-size="14">N/A</text>
+    </g>
+  </g>
+
+  <!-- Pattern 3 (Top-right) -->
+  <g transform="translate(750, 160)">
+    <use href="#satelliteCardRectNormal" fill="#e24a4a" opacity="0.2" />
+    <use href="#satelliteCardRectNormal" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+    <g text-anchor="middle">
+      <text x="150" y="45" fill="#e24a4a" font-size="20" font-weight="bold">
+        <tspan x="150" dy="0">パターン3: 「束」は時間芸術において</tspan>
+        <tspan x="150" dy="24">固有の困難を示す</tspan>
+      </text>
+      <text x="150" y="90" fill="white" font-size="14">(1/10 theories)</text>
+      <text x="150" y="120" fill="white" font-size="16">"音楽学では「束"</text>
+      <text x="150" y="150" fill="#cccccc" font-size="14">意識的再評価</text>
+    </g>
+  </g>
+
+  <!-- Pattern 4 (Bottom-left) -->
+  <g transform="translate(150, 470)"> <!-- Adjusted Y to keep center at (300, 600) for taller card -->
+    <use href="#satelliteCardRectTall" fill="#50e3c2" opacity="0.2" />
+    <use href="#satelliteCardRectTall" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+    <g text-anchor="middle">
+      <text x="150" y="35" fill="#50e3c2" font-size="20" font-weight="bold">
+        <tspan x="150" dy="0">パターン4: 情報処理的記述と</tspan>
+        <tspan x="150" dy="24">生態学的記述の両方から</tspan>
+        <tspan x="150" dy="24">対応が成立する</tspan>
+      </text>
+      <text x="150" y="110" fill="white" font-size="14">(1/10 theories)</text>
+      <text x="150" y="140" fill="white" font-size="16">
+        <tspan x="150" dy="0">"Pressing/Bregman/Huronの情報処理的アプローチ</tspan>
+        <tspan x="150" dy="20">（入力→処理→出力）とClarkeの生態学的アプローチ</tspan>
+        <tspan x="150" dy="20">（有機体-環境結合系の直接知覚）は、</tspan>
+        <tspan x="150" dy="20">音楽知覚の記述枠組みとして対立します"</tspan>
+      </text>
+      <text x="150" y="230" fill="#cccccc" font-size="14">入力→処理→出力</text>
+    </g>
+  </g>
+
+  <!-- Connecting Lines -->
+  <!-- Center card center: (600, 400) -->
+  <!-- Satellite centers: (300, 250), (900, 250), (300, 600) -->
+  <g>
+    <!-- Glow lines -->
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <!-- Sharp lines -->
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="2" />
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="2" />
+    <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="2" />
+
+    <!-- Optional cross-connections between satellites -->
+    <line x1="300" y1="250" x2="900" y2="250" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+    <line x1="300" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+    <line x1="900" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="1" opacity="0.3" />
+  </g>
+
+  <!-- Key Finding Callout -->
+  <rect x="250" y="540" width="700" height="50" rx="25" ry="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+  <text x="600" y="575" text-anchor="middle" fill="#1a1a2e" font-size="18" font-weight="bold">
+    音楽学で最も顕著な発見 = パターン1: 期待-誤差-再評価の循環構造が全スケールに現れる
+  </text>
+
+</svg>

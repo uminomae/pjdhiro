@@ -1,0 +1,161 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" fill="white" font-size="36" font-weight="bold" text-anchor="middle">D09 生命科学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" fill="#cccccc" font-size="20" text-anchor="middle">11理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g transform="translate(50, 0)">
+    <!-- Phase 1-2 -->
+    <rect x="-5" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="0" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="150" y="197" fill="white" font-size="18" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+    <path d="M 150 220 V 240" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 3-4 -->
+    <rect x="-5" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="0" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="150" y="297" fill="white" font-size="18" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+    <path d="M 150 320 V 340" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 5 -->
+    <rect x="-5" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="0" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="150" y="397" fill="white" font-size="18" text-anchor="middle">Phase 5: 論拠監査</text>
+    <path d="M 150 420 V 440" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 6 -->
+    <rect x="-5" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="0" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="150" y="497" fill="white" font-size="18" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+    <path d="M 150 520 V 540" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 7 -->
+    <rect x="-5" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="0" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="150" y="597" fill="white" font-size="18" text-anchor="middle">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g>
+    <!-- Column Headers -->
+    <rect x="451" y="150" width="138" height="30" rx="5" fill="#8B8682" />
+    <text x="451" y="150" dx="69" dy="20" fill="white" font-size="16" font-weight="bold" text-anchor="middle">場</text>
+    <rect x="591" y="150" width="138" height="30" rx="5" fill="#5B8DB8" />
+    <text x="591" y="150" dx="69" dy="20" fill="white" font-size="16" font-weight="bold" text-anchor="middle">波</text>
+    <rect x="731" y="150" width="138" height="30" rx="5" fill="#D4A857" />
+    <text x="731" y="150" dx="69" dy="20" fill="white" font-size="16" font-weight="bold" text-anchor="middle">縁</text>
+    <rect x="871" y="150" width="138" height="30" rx="5" fill="#C45B4D" />
+    <text x="871" y="150" dx="69" dy="20" fill="white" font-size="16" font-weight="bold" text-anchor="middle">渦</text>
+    <rect x="1011" y="150" width="138" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1011" y="150" dx="69" dy="20" fill="white" font-size="16" font-weight="bold" text-anchor="middle">束</text>
+
+    <!-- Theory Rows -->
+    <!-- Theory 1: アストロサイト-ニューロン代謝連関 (partial) -->
+    <text x="440" y="212" fill="white" font-size="14" text-anchor="end">アストロサイト-ニューロン代謝連関</text>
+    <rect x="451" y="182" width="138" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="591" y="182" width="138" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="731" y="182" width="138" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="871" y="182" width="138" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1011" y="182" width="138" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 2: ミトコンドリア代謝と神経信号コスト (conditional) -->
+    <text x="440" y="264" fill="white" font-size="14" text-anchor="end">ミトコンドリア代謝と神経信号コスト</text>
+    <rect x="451" y="234" width="138" height="50" fill="#8B8682" opacity="0.4" />
+    <rect x="591" y="234" width="138" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="731" y="234" width="138" height="50" fill="#D4A857" opacity="0.2" />
+    <rect x="871" y="234" width="138" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1011" y="234" width="138" height="50" fill="#5B8B6A" opacity="0.2" />
+
+    <!-- Theory 3: ミクログリアとシナプス刈り込み (partial) -->
+    <text x="440" y="316" fill="white" font-size="14" text-anchor="end">ミクログリアとシナプス刈り込み</text>
+    <rect x="451" y="286" width="138" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="591" y="286" width="138" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="731" y="286" width="138" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="871" y="286" width="138" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1011" y="286" width="138" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 4: 経験依存的ミエリン化 (conditional) -->
+    <text x="440" y="368" fill="white" font-size="14" text-anchor="end">経験依存的ミエリン化</text>
+    <rect x="451" y="338" width="138" height="50" fill="#8B8682" opacity="0.2" />
+    <rect x="591" y="338" width="138" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="731" y="338" width="138" height="50" fill="#D4A857" opacity="0.2" />
+    <rect x="871" y="338" width="138" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1011" y="338" width="138" height="50" fill="#5B8B6A" opacity="0.4" />
+
+    <!-- Theory 5: アロスタティック負荷 (partial) -->
+    <text x="440" y="420" fill="white" font-size="14" text-anchor="end">アロスタティック負荷</text>
+    <rect x="451" y="390" width="138" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="591" y="390" width="138" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="731" y="390" width="138" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="871" y="390" width="138" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1011" y="390" width="138" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 6: グリンパティック系と睡眠 (conditional) -->
+    <text x="440" y="472" fill="white" font-size="14" text-anchor="end">グリンパティック系と睡眠</text>
+    <rect x="451" y="442" width="138" height="50" fill="#8B8682" opacity="0.4" />
+    <rect x="591" y="442" width="138" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="731" y="442" width="138" height="50" fill="#D4A857" opacity="0.2" />
+    <rect x="871" y="442" width="138" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1011" y="442" width="138" height="50" fill="#5B8B6A" opacity="0.4" />
+
+    <!-- Theory 7: ドーパミン報酬予測誤差 (partial) -->
+    <text x="440" y="524" fill="white" font-size="14" text-anchor="end">ドーパミン報酬予測誤差</text>
+    <rect x="451" y="494" width="138" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="591" y="494" width="138" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="731" y="494" width="138" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="871" y="494" width="138" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1011" y="494" width="138" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Theory 8: 有性生殖の構造 (strong) -->
+    <text x="440" y="576" fill="white" font-size="14" text-anchor="end">有性生殖の構造</text>
+    <rect x="451" y="546" width="138" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="591" y="546" width="138" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="731" y="546" width="138" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="871" y="546" width="138" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1011" y="546" width="138" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Theory 9: オートファジー (partial) -->
+    <text x="440" y="628" fill="white" font-size="14" text-anchor="end">オートファジー</text>
+    <rect x="451" y="598" width="138" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="591" y="598" width="138" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="731" y="598" width="138" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="871" y="598" width="138" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1011" y="598" width="138" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Theory 10: モルフォゲン勾配と形態形成 (partial) -->
+    <text x="440" y="680" fill="white" font-size="14" text-anchor="end">モルフォゲン勾配と形態形成</text>
+    <rect x="451" y="650" width="138" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="591" y="650" width="138" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="731" y="650" width="138" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="871" y="650" width="138" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1011" y="650" width="138" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Theory 11: 獲得免疫のクローン選択 (strong) -->
+    <text x="440" y="732" fill="white" font-size="14" text-anchor="end">獲得免疫のクローン選択</text>
+    <rect x="451" y="702" width="138" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="591" y="702" width="138" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="731" y="702" width="138" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="871" y="702" width="138" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1011" y="702" width="138" height="50" fill="#5B8B6A" opacity="1.0" />
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <text x="600" y="765" fill="white" font-size="20" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 2件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 6件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 3件
+  </text>
+</svg>

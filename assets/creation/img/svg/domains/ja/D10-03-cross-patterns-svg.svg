@@ -1,0 +1,120 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="32" font-weight="bold">
+    臨床医学・免疫学探究における横断的パターンの発見
+  </text>
+
+  <!-- Connecting Lines (Glow) -->
+  <g stroke="#D4A857" stroke-width="4" opacity="0.4">
+    <line x1="600" y1="400" x2="300" y2="250" /> <!-- Center to Sat1 -->
+    <line x1="600" y1="400" x2="900" y2="250" /> <!-- Center to Sat2 -->
+    <line x1="600" y1="400" x2="300" y2="600" /> <!-- Center to Sat3 -->
+  </g>
+
+  <!-- Connecting Lines (Sharp) -->
+  <g stroke="#D4A857" stroke-width="2" opacity="1">
+    <line x1="600" y1="400" x2="300" y2="250" />
+    <line x1="600" y1="400" x2="900" y2="250" />
+    <line x1="600" y1="400" x2="300" y2="600" />
+  </g>
+
+  <!-- Cross-connections between satellites -->
+  <g stroke="#D4A857" stroke-width="1" opacity="0.3">
+    <line x1="300" y1="250" x2="900" y2="250" /> <!-- Sat1 to Sat2 -->
+    <line x1="300" y1="250" x2="300" y2="600" /> <!-- Sat1 to Sat3 -->
+    <line x1="900" y1="250" x2="300" y2="600" /> <!-- Sat2 to Sat3 -->
+  </g>
+
+  <!-- Center Card (Hub) -->
+  <g>
+    <!-- Glow layers -->
+    <rect x="390" y="270" width="420" height="260" fill="#D4A857" opacity="0.2" rx="10" ry="10" />
+    <rect x="395" y="275" width="410" height="250" fill="#D4A857" opacity="0.3" rx="10" ry="10" />
+    <!-- Main card -->
+    <rect x="400" y="280" width="400" height="240" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" rx="10" ry="10" />
+    <!-- Content -->
+    <text x="600" y="320" text-anchor="middle" fill="#D4A857" font-size="28" font-weight="bold">
+      パターン1: 「損傷→炎症→修復→安定化」の変奏
+    </text>
+    <text x="600" y="355" text-anchor="middle" fill="white" font-size="18">
+      (1/10 theories)
+    </text>
+    <text x="600" y="395" text-anchor="middle" fill="white" font-size="20">
+      <tspan x="600" dy="0">急性炎症（5.3）、創傷治癒（5.4）、骨折修復（5.6）は、</tspan>
+      <tspan x="600" dy="28">同一の基底パターン「損傷→炎症→修復→安定化"</tspan>
+    </text>
+    <text x="600" y="460" text-anchor="middle" fill="#cccccc" font-size="16">
+      Found in:
+    </text>
+    <text x="600" y="485" text-anchor="middle" fill="#D4A857" font-size="14">
+      5.3
+    </text>
+  </g>
+
+  <!-- Satellite 1 (Top-left) - パターン2 -->
+  <g>
+    <rect x="145" y="155" width="310" height="190" fill="#4a90e2" opacity="0.2" rx="8" ry="8" />
+    <rect x="150" y="160" width="300" height="180" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" rx="8" ry="8" />
+    <text x="300" y="190" text-anchor="middle" fill="#4a90e2" font-size="20" font-weight="bold">
+      パターン2: 免疫系における縁の多様な実現形態
+    </text>
+    <text x="300" y="220" text-anchor="middle" fill="white" font-size="14">
+      0/10
+    </text>
+    <text x="300" y="250" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">本調査で最も顕著な横断パターンは、縁が単一の概念ではなく、</tspan>
+      <tspan x="300" dy="24">少なくとも4つの異なる形で実現されていることです</tspan>
+    </text>
+    <!-- No "Found in:" as count is 0/10 -->
+  </g>
+
+  <!-- Satellite 2 (Top-right) - パターン3 -->
+  <g>
+    <rect x="745" y="155" width="310" height="190" fill="#e24a4a" opacity="0.2" rx="8" ry="8" />
+    <rect x="750" y="160" width="300" height="180" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" rx="8" ry="8" />
+    <text x="900" y="190" text-anchor="middle" fill="#e24a4a" font-size="20" font-weight="bold">
+      パターン3: 5段階の失敗モード分類
+    </text>
+    <text x="900" y="220" text-anchor="middle" fill="white" font-size="14">
+      0/10
+    </text>
+    <text x="900" y="250" text-anchor="middle" fill="white" font-size="16">
+      臨床医学は、5段階の「うまくいかない場合
+    </text>
+    <!-- No "Found in:" as count is 0/10 -->
+  </g>
+
+  <!-- Satellite 3 (Bottom-left) - パターン4 -->
+  <g>
+    <rect x="145" y="505" width="310" height="190" fill="#50e3c2" opacity="0.2" rx="8" ry="8" />
+    <rect x="150" y="510" width="300" height="180" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" rx="8" ry="8" />
+    <text x="300" y="540" text-anchor="middle" fill="#50e3c2" font-size="20" font-weight="bold">
+      パターン4: 束の可塑性
+    </text>
+    <text x="300" y="570" text-anchor="middle" fill="white" font-size="14">
+      1/10
+    </text>
+    <text x="300" y="600" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">アレルギー脱感作（5.7）と移植寛容誘導（5.8）は、一度完成した安定状態（束）が</tspan>
+      <tspan x="300" dy="24">条件付きで上書き可能であることの臨床的証拠を提供します</tspan>
+    </text>
+    <text x="300" y="660" text-anchor="middle" fill="#cccccc" font-size="14">
+      Found in:
+    </text>
+    <text x="300" y="680" text-anchor="middle" fill="#cccccc" font-size="14">
+      5.7
+    </text>
+  </g>
+
+  <!-- Key finding callout -->
+  <g>
+    <rect x="250" y="545" width="700" height="50" rx="25" ry="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+    <text x="600" y="570" text-anchor="middle" fill="#1a1a2e" font-size="18" font-weight="bold" dominant-baseline="middle">
+      臨床医学・免疫学で最も顕著な発見 = パターン1: 「損傷→炎症→修復→安定化」の変奏
+    </text>
+  </g>
+
+</svg>
