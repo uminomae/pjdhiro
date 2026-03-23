@@ -1,5 +1,7 @@
 # Phase 9 — Deep Exploration Plan
 
+![Phase 9 Deep Exploration Plan — Plan Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/overview-01-overview-svg.svg)
+
 ## Context
 
 Phase 8 identified five structural themes that recur across 30 academic domains. Phase 9 takes these findings deeper: How well do they hold up against existing scholarship? Where do they break down? Can they be extended to new domains? Can they be formalized mathematically?

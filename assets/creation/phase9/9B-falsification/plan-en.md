@@ -1,5 +1,7 @@
 # Track 9B — Falsification Search: Robustness Verification
 
+![Track 9B Falsification Search — Plan Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9B-falsification-01-overview-svg.svg)
+
 ## Purpose
 
 Actively seek counterexamples and failure cases for the Phase 8 structural themes. This track deliberately counters confirmation bias — the tendency to find the patterns we expect — by adopting an adversarial stance toward our own findings.

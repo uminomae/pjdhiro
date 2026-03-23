@@ -1,0 +1,147 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" font-size="40" fill="#f0f0f0" font-weight="bold">Track 9C — 未踏領域探索</text>
+
+  <!-- Central Prediction-Verification Paradigm -->
+  <circle cx="600" cy="400" r="80" fill="#34495E" stroke="#f0f0f0" stroke-width="2"/>
+  <text x="600" y="390" text-anchor="middle" font-size="20" fill="#f0f0f0" font-weight="bold">Prediction-Verification</text>
+  <text x="600" y="420" text-anchor="middle" font-size="20" fill="#f0f0f0" font-weight="bold">Paradigm</text>
+
+  <!-- 5-step cycle -->
+  <g id="cycle-steps">
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#f0f0f0" />
+      </marker>
+    </defs>
+
+    <!-- Coordinates (cx=600, cy=400, r_outer=180, r_inner=90) -->
+    <!-- Angles (standard math, 0=right, 90=up, clockwise for segments): -->
+    <!-- A0=270, A1=342, A2=54, A3=126, A4=198 -->
+
+    <!-- Outer points (r=180) -->
+    <!-- P_o_A0 = (600, 220) -->
+    <!-- P_o_A1 = (771.18, 344.38) -->
+    <!-- P_o_A2 = (705.84, 545.62) -->
+    <!-- P_o_A3 = (494.16, 545.62) -->
+    <!-- P_o_A4 = (428.82, 344.38) -->
+
+    <!-- Inner points (r=90) -->
+    <!-- P_i_A0 = (600, 310) -->
+    <!-- P_i_A1 = (685.59, 372.19) -->
+    <!-- P_i_A2 = (652.92, 472.81) -->
+    <!-- P_i_A3 = (547.08, 472.81) -->
+    <!-- P_i_A4 = (514.41, 372.19) -->
+
+    <!-- Text positions (r=135, mid-angles) -->
+    <!-- T1 (mid 306 deg) = (679.38, 290.785) -->
+    <!-- T2 (mid 18 deg) = (728.385, 441.715) -->
+    <!-- T3 (mid 90 deg) = (600, 535) -->
+    <!-- T4 (mid 162 deg) = (471.615, 441.715) -->
+    <!-- T5 (mid 234 deg) = (520.62, 290.785) -->
+
+    <!-- Step 1: Domain Selection (場) - A0 to A1 -->
+    <path d="M 600 220 A 180 180 0 0 1 771.18 344.38 L 685.59 372.19 A 90 90 0 0 0 600 310 Z" fill="#8B8682" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="679.38" y="290.785" text-anchor="middle" font-size="16" fill="#f0f0f0">Domain Selection</text>
+    <text x="679.38" y="310.785" text-anchor="middle" font-size="16" fill="#f0f0f0">場</text>
+
+    <!-- Step 2: Blind Prediction (波) - A1 to A2 -->
+    <path d="M 771.18 344.38 A 180 180 0 0 1 705.84 545.62 L 652.92 472.81 A 90 90 0 0 0 685.59 372.19 Z" fill="#5B8DB8" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="728.385" y="441.715" text-anchor="middle" font-size="16" fill="#f0f0f0">Blind Prediction</text>
+    <text x="728.385" y="461.715" text-anchor="middle" font-size="16" fill="#f0f0f0">波</text>
+
+    <!-- Step 3: Domain Investigation (縁) - A2 to A3 -->
+    <path d="M 705.84 545.62 A 180 180 0 0 1 494.16 545.62 L 547.08 472.81 A 90 90 0 0 0 652.92 472.81 Z" fill="#D4A857" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="600" y="535" text-anchor="middle" font-size="16" fill="#f0f0f0">Domain Investigation</text>
+    <text x="600" y="555" text-anchor="middle" font-size="16" fill="#f0f0f0">縁</text>
+
+    <!-- Step 4: Prediction Audit (渦) - A3 to A4 -->
+    <path d="M 494.16 545.62 A 180 180 0 0 1 428.82 344.38 L 514.41 372.19 A 90 90 0 0 0 547.08 472.81 Z" fill="#C45B4D" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="471.615" y="441.715" text-anchor="middle" font-size="16" fill="#f0f0f0">Prediction Audit</text>
+    <text x="471.615" y="461.715" text-anchor="middle" font-size="16" fill="#f0f0f0">渦</text>
+
+    <!-- Step 5: Model Update (束) - A4 to A0 -->
+    <path d="M 428.82 344.38 A 180 180 0 0 1 600 220 L 600 310 A 90 90 0 0 0 514.41 372.19 Z" fill="#5B8B6A" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="520.62" y="290.785" text-anchor="middle" font-size="16" fill="#f0f0f0">Model Update</text>
+    <text x="520.62" y="310.785" text-anchor="middle" font-size="16" fill="#f0f0f0">束</text>
+
+    <!-- Arrows on the outer arc -->
+    <path d="M 771.18 344.38 A 180 180 0 0 1 705.84 545.62" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M 705.84 545.62 A 180 180 0 0 1 494.16 545.62" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M 494.16 545.62 A 180 180 0 0 1 428.82 344.38" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M 428.82 344.38 A 180 180 0 0 1 600 220" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M 600 220 A 180 180 0 0 1 771.18 344.38" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  </g>
+
+  <!-- Candidate Domains -->
+  <g id="candidate-domains">
+    <!-- Domain box dimensions: width = 180, height = 80, rx = 10, ry = 10 -->
+    <!-- Center of domains circle: (600, 400), Radius for domain centers: 320 -->
+    <!-- Angles (standard math, 0=right, 90=up): 30, 90, 150, 210, 270, 330 -->
+
+    <!-- Domain 1: Consciousness/Neuroscience (High) - Angle 30 -->
+    <rect x="787.12" y="520" width="180" height="80" rx="10" ry="10" fill="#E74C3C" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="877.12" y="550" text-anchor="middle" font-size="16" fill="#f0f0f0">Consciousness/</text>
+    <text x="877.12" y="570" text-anchor="middle" font-size="16" fill="#f0f0f0">Neuroscience (High)</text>
+
+    <!-- Domain 2: Urban Planning/Architecture (Medium) - Angle 90 -->
+    <rect x="510" y="680" width="180" height="80" rx="10" ry="10" fill="#F1C40F" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="600" y="710" text-anchor="middle" font-size="16" fill="#1a1a2e">Urban Planning/</text>
+    <text x="600" y="730" text-anchor="middle" font-size="16" fill="#1a1a2e">Architecture (Medium)</text>
+
+    <!-- Domain 3: Game Theory (Medium) - Angle 150 -->
+    <rect x="232.88" y="520" width="180" height="80" rx="10" ry="10" fill="#F1C40F" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="322.88" y="550" text-anchor="middle" font-size="16" fill="#1a1a2e">Game Theory</text>
+    <text x="322.88" y="570" text-anchor="middle" font-size="16" fill="#1a1a2e">(Medium)</text>
+
+    <!-- Domain 4: Quantum Information Theory (High) - Angle 210 -->
+    <rect x="232.88" y="200" width="180" height="80" rx="10" ry="10" fill="#E74C3C" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="322.88" y="230" text-anchor="middle" font-size="16" fill="#f0f0f0">Quantum Information</text>
+    <text x="322.88" y="250" text-anchor="middle" font-size="16" fill="#f0f0f0">Theory (High)</text>
+
+    <!-- Domain 5: Culinary Arts/Food Culture (High) - Angle 270 -->
+    <rect x="510" y="40" width="180" height="80" rx="10" ry="10" fill="#E74C3C" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="600" y="70" text-anchor="middle" font-size="16" fill="#f0f0f0">Culinary Arts/</text>
+    <text x="600" y="90" text-anchor="middle" font-size="16" fill="#f0f0f0">Food Culture (High)</text>
+
+    <!-- Domain 6: Law/Jurisprudence (Medium) - Angle 330 -->
+    <rect x="787.12" y="200" width="180" height="80" rx="10" ry="10" fill="#F1C40F" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="877.12" y="230" text-anchor="middle" font-size="16" fill="#1a1a2e">Law/</text>
+    <text x="877.12" y="250" text-anchor="middle" font-size="16" fill="#1a1a2e">Jurisprudence (Medium)</text>
+  </g>
+
+  <!-- Purpose Text Block -->
+  <rect x="50" y="150" width="200" height="120" rx="10" ry="10" fill="#34495E" stroke="#f0f0f0" stroke-width="2"/>
+  <text x="150" y="175" text-anchor="middle" font-size="18" fill="#f0f0f0" font-weight="bold">Purpose</text>
+  <text x="150" y="205" text-anchor="middle" font-size="14" fill="#f0f0f0">
+    <tspan x="150" dy="0">Apply model to domains</tspan>
+    <tspan x="150" dy="18">outside original 30,</tspan>
+    <tspan x="150" dy="18">test predictive power</tspan>
+    <tspan x="150" dy="18">(not just post-hoc</tspan>
+    <tspan x="150" dy="18">explanation)</tspan>
+  </text>
+
+  <!-- Convergence Text Block -->
+  <rect x="950" y="150" width="200" height="120" rx="10" ry="10" fill="#34495E" stroke="#f0f0f0" stroke-width="2"/>
+  <text x="1050" y="175" text-anchor="middle" font-size="18" fill="#f0f0f0" font-weight="bold">Convergence</text>
+  <text x="1050" y="205" text-anchor="middle" font-size="14" fill="#f0f0f0">
+    <tspan x="1050" dy="0">3+ domains completed,</tspan>
+    <tspan x="1050" dy="18">hit rate trends visible,</tspan>
+    <tspan x="1050" dy="18">boundaries identified</tspan>
+  </text>
+
+  <!-- Legend for Difficulty -->
+  <g id="legend">
+    <rect x="50" y="650" width="180" height="100" rx="10" ry="10" fill="#34495E" stroke="#f0f0f0" stroke-width="2"/>
+    <text x="140" y="675" text-anchor="middle" font-size="18" fill="#f0f0f0" font-weight="bold">Difficulty</text>
+    <rect x="70" y="690" width="20" height="20" fill="#E74C3C" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="100" y="705" font-size="16" fill="#f0f0f0">High</text>
+    <rect x="70" y="720" width="20" height="20" fill="#F1C40F" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="100" y="735" font-size="16" fill="#f0f0f0">Medium</text>
+  </g>
+
+</svg>

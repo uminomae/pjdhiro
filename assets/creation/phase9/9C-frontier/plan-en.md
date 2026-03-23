@@ -1,5 +1,7 @@
 # Track 9C — Frontier Domain Exploration: Model Generalizability Test
 
+![Track 9C Frontier Domain Exploration — Plan Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9C-frontier-01-overview-svg.svg)
+
 ## Purpose
 
 Apply the model to domains outside the original 30 to test the generalizability of structural themes. This is the most direct test of whether the model can predict, not just explain after the fact.

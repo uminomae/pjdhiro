@@ -1,5 +1,7 @@
 # Track 9C — 未踏領域探索：モデル汎用性テスト
 
+![Track 9C 未踏領域探索 — 計画概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9C-frontier-01-overview-svg.svg)
+
 ## 目的
 
 現在の30領域外にモデルを適用し、構造テーマの汎用性をテストします。モデルが「事後的に説明する」だけでなく「事前に予測する」能力を持つかを検証する、最も直接的な汎用性テストです。

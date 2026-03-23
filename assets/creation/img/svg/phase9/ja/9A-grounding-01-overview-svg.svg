@@ -1,0 +1,99 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="36" fill="white" font-weight="bold">Track 9A — 実証接地</text>
+
+  <!-- Purpose -->
+  <text x="100" y="100" font-size="18" fill="#f0f0f0">
+    <tspan x="100" dy="0" font-weight="bold">Purpose:</tspan>
+    <tspan x="100" dy="25">Systematically compare Phase 8 structural themes against existing academic scholarship.</tspan>
+    <tspan x="100" dy="25">Separate well-supported claims from untested ones, identify genuine novelty.</tspan>
+  </text>
+
+  <!-- Methodology Cycle -->
+  <!-- Step box size: width=200, height=100 -->
+
+  <!-- Step 1: Hypothesis Extraction (Top) -->
+  <rect x="500" y="200" width="200" height="100" rx="10" ry="10" fill="#3a3a5e" stroke="#f0f0f0" stroke-width="2" />
+  <text x="600" y="240" text-anchor="middle" font-size="18" fill="white" font-weight="bold">1. Hypothesis Extraction</text>
+  <text x="600" y="265" text-anchor="middle" font-size="16" fill="white">(仮説抽出)</text>
+
+  <!-- Step 2: Literature Survey (Right) -->
+  <rect x="750" y="350" width="200" height="100" rx="10" ry="10" fill="#3a3a5e" stroke="#f0f0f0" stroke-width="2" />
+  <text x="850" y="390" text-anchor="middle" font-size="18" fill="white" font-weight="bold">2. Literature Survey</text>
+  <text x="850" y="415" text-anchor="middle" font-size="16" fill="white">(学術調査)</text>
+
+  <!-- Step 3: Alignment Analysis (Bottom) -->
+  <rect x="500" y="500" width="200" height="100" rx="10" ry="10" fill="#3a3a5e" stroke="#f0f0f0" stroke-width="2" />
+  <text x="600" y="540" text-anchor="middle" font-size="18" fill="white" font-weight="bold">3. Alignment Analysis</text>
+  <text x="600" y="565" text-anchor="middle" font-size="16" fill="white">(突合分析)</text>
+
+  <!-- Step 4: Revision & Deepening (Left) -->
+  <rect x="250" y="350" width="200" height="100" rx="10" ry="10" fill="#3a3a5e" stroke="#f0f0f0" stroke-width="2" />
+  <text x="350" y="390" text-anchor="middle" font-size="18" fill="white" font-weight="bold">4. Revision & Deepening</text>
+  <text x="350" y="415" text-anchor="middle" font-size="16" fill="white">(修正・深化)</text>
+
+  <!-- Arrows for cycle flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f0f0f0" />
+    </marker>
+  </defs>
+  <!-- Path 1 (bottom center) to 2 (left center of box 2) -->
+  <path d="M 600 300 C 675 300, 750 325, 750 400" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Path 2 (right center of box 2) to 3 (top center of box 3) -->
+  <path d="M 850 400 C 850 475, 775 500, 600 500" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Path 3 (bottom center of box 3) to 4 (right center of box 4) -->
+  <path d="M 600 600 C 525 600, 450 525, 450 400" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Path 4 (left center of box 4) to 1 (bottom center of box 1) -->
+  <path d="M 250 400 C 250 325, 325 300, 600 300" fill="none" stroke="#f0f0f0" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Target Themes -->
+  <text x="100" y="250" font-size="20" fill="white" font-weight="bold">Initial Target Themes:</text>
+  <rect x="90" y="265" width="250" height="250" rx="10" ry="10" fill="#2a2a4e" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="100" y="290" font-size="18" fill="#D4A857">
+    <tspan x="100" dy="0" font-weight="bold">・Edge Typology</tspan>
+    <tspan x="100" dy="22" font-size="16">(縁の類型学, 28/30 domains)</tspan>
+  </text>
+  <text x="100" y="340" font-size="18" fill="#5B8B6A">
+    <tspan x="100" dy="0" font-weight="bold">・Bundle-to-Field Recirculation</tspan>
+    <tspan x="100" dy="22" font-size="16">(19 domains)</tspan>
+  </text>
+  <text x="100" y="390" font-size="18" fill="#8B8682">
+    <tspan x="100" dy="0" font-weight="bold">・Field Multi-Layering</tspan>
+    <tspan x="100" dy="22" font-size="16">(15 domains)</tspan>
+  </text>
+  <text x="100" y="440" font-size="18" fill="#f0f0f0">
+    <tspan x="100" dy="0" font-weight="bold">・Threshold Structure</tspan>
+    <tspan x="100" dy="22" font-size="16">(11 domains)</tspan>
+  </text>
+  <text x="100" y="490" font-size="18" fill="#f0f0f0">
+    <tspan x="100" dy="0" font-weight="bold">・Blind Spots</tspan>
+    <tspan x="100" dy="22" font-size="16">(24 domains)</tspan>
+  </text>
+
+  <!-- Alignment Analysis Categories -->
+  <text x="600" y="630" text-anchor="middle" font-size="20" fill="white" font-weight="bold">Alignment Categories:</text>
+  <rect x="450" y="645" width="300" height="100" rx="10" ry="10" fill="#2a2a4e" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="460" y="670" font-size="18" fill="#5B8B6A">・Supported</text>
+  <text x="460" y="695" font-size="18" fill="#D4A857">・Partial</text>
+  <text x="600" y="670" font-size="18" fill="#C45B4D">・Contradicted</text>
+  <text x="600" y="695" font-size="18" fill="#5B8DB8">・Novel</text>
+
+  <!-- Deliverables -->
+  <text x="900" y="250" font-size="20" fill="white" font-weight="bold">Deliverables:</text>
+  <rect x="890" y="265" width="250" height="200" rx="10" ry="10" fill="#2a2a4e" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="900" y="290" font-size="18" fill="#f0f0f0">・Proposition list</text>
+  <text x="900" y="320" font-size="18" fill="#f0f0f0">・Literature map</text>
+  <text x="900" y="350" font-size="18" fill="#f0f0f0">・Alignment report</text>
+  <text x="900" y="380" font-size="18" fill="#f0f0f0">・Revised claims</text>
+  <text x="900" y="410" font-size="18" fill="#f0f0f0">・Prediction list</text>
+
+  <!-- Convergence Criteria -->
+  <text x="100" y="550" font-size="20" fill="white" font-weight="bold">Convergence:</text>
+  <rect x="90" y="565" width="250" height="100" rx="10" ry="10" fill="#2a2a4e" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="100" y="590" font-size="18" fill="#f0f0f0">・80%+ propositions judged</text>
+  <text x="100" y="620" font-size="18" fill="#f0f0f0">・5+ loops with no new discoveries</text>
+</svg>
