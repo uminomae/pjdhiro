@@ -22,12 +22,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D22-business-management.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-02-theories-map-svg.svg)
-
 
 | Theory | Structural Similarity (5-stage correspondence) | Points of non-alignment | Strength of evidence |
 |--------|------------------------------------------------|------------------------|----------------------|
@@ -82,7 +75,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-03-cross-patterns-svg.svg)
-
 
 - The Tuckman model shows the most direct 5-stage correspondence, but has the limitation of linearity
 - The validity of treating team-scale theories (Tuckman) and industry-scale theories (Christensen) on the same comparative axis requires re-examination

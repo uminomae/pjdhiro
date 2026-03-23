@@ -1,11 +1,8 @@
 # Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error
 
-![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D10-clinical-medicine.svg)
-
 ## 1. Purpose and Questions of the Investigation
 
 ![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into whether theories in clinical medicine and immunology correspond structurally to the five-stage model of creation: Field (場), Wave (波), Edge (縁), Vortex (渦), and Bundle (束).
 
@@ -60,7 +57,6 @@ If any of these definitions feels discordant, that is itself an important perspe
 ## 4. Findings: Overall View
 
 ![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-02-theories-map-svg.svg)
-
 
 Evaluation of the ten theories and clinical processes showed structural correspondence with the five-stage model in all ten cases. Eight displayed strong correspondence with Edge, which is the highest level observed across the investigation of thirty domains. The reason for this high rate of correspondence is that intercellular interactions in the immune system make the concrete reality of Edge comparatively easy to observe directly.
 
@@ -146,7 +142,6 @@ Allergen immunotherapy, which rewrites Bundle; transplant tolerance induction, w
 ## 6. Cross-Cutting Patterns
 
 ![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-03-cross-patterns-svg.svg)
-
 
 This section reports structural patterns that recurred across the domain of clinical medicine and immunology beyond any individual theory.
 

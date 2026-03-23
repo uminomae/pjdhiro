@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-01-overview-svg.svg)
 
-
 - **調査対象**: 経済学の主要理論 10件
 - **調査の問い**: 経済学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 7件、部分的な対応 3件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D21-economics.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-02-theories-map-svg.svg)
-
 
 | # | 理論/概念 | 提唱者 | 特に強い対応段階 | 判定 |
 |---|----------|--------|-----------------|------|
@@ -96,7 +88,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-03-cross-patterns-svg.svg)
-
 
 - 経済学を横断して繰り返し現れるパターンは四つあります
 - **第一に、「不確実性」が縁の構造を定義しています

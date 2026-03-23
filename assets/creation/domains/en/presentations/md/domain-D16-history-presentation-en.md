@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D16-history.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -88,7 +82,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-03-cross-patterns-svg.svg)
-
 
 - The most prominent feature across history is that En is described through diverse mechanisms
 - This polymorphism means that when reading the five-stage model's En as "the phase where order is reorganized within relationships," history provides the richest set of examples

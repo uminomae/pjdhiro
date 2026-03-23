@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-01-overview-svg.svg)
 
-
 - **調査対象**: 数学の主要理論 11件
 - **調査の問い**: 数学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 7件、部分的な対応 4件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D01-mathematics.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-02-theories-map-svg.svg)
-
 
 | # | 理論/概念 | 提唱者 | 対応段階 | 対応評価 |
 |---|---|---|---|---|
@@ -91,7 +83,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-03-cross-patterns-svg.svg)
-
 
 - 数学で最も厚く現れるのは「縁が生成的である」という点です。重なり、リンク、分岐点、臨界点、境界層はいずれも、変化を止める線ではなく、大域構造を決める作用点として現れます。
 - 強い対応は大きく二系統に分かれます。一方は層論や特異摂動のように局所と大域を接続する系統であり、もう一方は分岐理論やMorse理論のように臨界通過によって再編成が起きる系統です。

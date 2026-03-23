@@ -1,11 +1,8 @@
 # Earth Science: 4.6 Billion Years of Creation Without Consciousness
 
-![Earth Science: 4.6 Billion Years of Creation Without Consciousness — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D05-earth-science.svg)
-
 ## 1. Purpose of the Investigation in This Domain
 
 ![Earth Science: 4.6 Billion Years of Creation Without Consciousness — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into whether structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, can be found in earth science.
 
@@ -36,7 +33,6 @@ If these definitions already produce discomfort, that is itself important for th
 ## 4. Results of the Investigation
 
 ![Earth Science: 4.6 Billion Years of Creation Without Consciousness — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-02-theories-map-svg.svg)
-
 
 ### Overall Picture
 
@@ -117,7 +113,6 @@ Sequence stratigraphy offers one of the most rigorous definitions of Bundle in t
 ## 6. Insights from This Domain
 
 ![Earth Science: 4.6 Billion Years of Creation Without Consciousness — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-03-cross-patterns-svg.svg)
-
 
 ### Five Stages Do Not Require Consciousness
 

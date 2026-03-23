@@ -1,7 +1,5 @@
 # 人類学
 
-![人類学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D25-anthropology.svg)
-
 > **立ち位置明示**
 > 本稿は、人類学の主要理論と「5段階モデル（場→波→縁→渦→束）」との
 > 構造的類似を調査した報告である。特定の理論的立場を主張するものではなく、
@@ -10,7 +8,6 @@
 ## 1. 調査の目的と問い
 
 ![人類学 — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-01-overview-svg.svg)
-
 
 本報告書の目的は、人類学・民族学の主要理論が記述する変容・生成・境界のプロセスが、5段階モデル（場→波→縁→渦→束）と構造的に対応するかどうかを検討することです。
 
@@ -52,7 +49,6 @@
 ## 4. 調査結果: 全体像
 
 ![人類学 — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-02-theories-map-svg.svg)
-
 
 本調査では10の理論を検討し、以下のような分布が確認されました。
 
@@ -166,7 +162,6 @@
 ## 6. 横断的パターン
 
 ![人類学 — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-03-cross-patterns-svg.svg)
-
 
 本調査で確認された、個別理論の枠を超えて人類学全体に見られる横断的パターンを報告します。
 

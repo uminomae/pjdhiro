@@ -1,11 +1,8 @@
 # Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model
 
-![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D03-chemistry.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-01-overview-svg.svg)
-
 
 This report summarizes an investigation into whether major theories of order formation in chemistry correspond structurally to the five-stage model (Field -> Wave -> Edge -> Vortex -> Bundle).
 
@@ -56,7 +53,6 @@ Some readers may already feel discomfort or skepticism about the definitions giv
 ## 4. Results: Overall Picture
 
 ![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-02-theories-map-svg.svg)
-
 
 ### 4.1 List of Cases Investigated
 
@@ -150,7 +146,6 @@ The gel point is one of the most intuitive expressions of Edge as a threshold of
 ## 6. Cross-Domain Patterns
 
 ![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-03-cross-patterns-svg.svg)
-
 
 Across these individual theories, three recurring structural patterns appeared throughout the chemistry domain.
 

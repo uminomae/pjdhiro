@@ -1,11 +1,8 @@
 # Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge
 
-![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D12-agriculture.svg)
-
 ## 1. Purpose of the Investigation in This Domain
 
 ![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into the structural correspondences between the major theoretical and practical frameworks of agriculture and ecology and the five-stage model of creation, namely Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束).
 
@@ -42,7 +39,6 @@ If these definitions produce a sense of incongruity, that itself is an important
 ## 4. Results of the Investigation
 
 ![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-02-theories-map-svg.svg)
-
 
 ### Overall Picture
 
@@ -105,7 +101,6 @@ Climax community structure, in ecological succession; yield levels and residual 
 ## 6. Insights from This Domain
 
 ![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-03-cross-patterns-svg.svg)
-
 
 ### Three Types of Edge
 

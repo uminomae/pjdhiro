@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D14-psychology.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -81,7 +75,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-03-cross-patterns-svg.svg)
-
 
 - The most striking pattern across psychology is the **diverse implementations of En**
 - **Constraint release**: Insight research describes En from the aspect of release — "which constraint to remove"

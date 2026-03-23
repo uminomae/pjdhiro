@@ -1,7 +1,5 @@
 # 建築・デザイン学
 
-![建築・デザイン学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D27-architecture.svg)
-
 > **立ち位置明示**
 > 本稿は、建築・空間デザインの主要理論と「5段階モデル（場→波→縁→渦→束）」との
 > 構造的類似を調査した報告である。特定の理論的立場を主張するものではなく、
@@ -10,7 +8,6 @@
 ## 1. 調査の目的と問い
 
 ![建築・デザイン学 — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-01-overview-svg.svg)
-
 
 本報告書の目的は、建築・空間デザインの主要理論が記述する秩序生成・形態形成・境界概念のプロセスが、5段階モデル（場→波→縁→渦→束）と構造的に対応するかどうかを検討することです。
 
@@ -54,7 +51,6 @@
 ## 4. 調査結果: 全体像
 
 ![建築・デザイン学 — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-02-theories-map-svg.svg)
-
 
 本調査では12の理論を検討し、以下のような分布が確認されました。
 
@@ -180,7 +176,6 @@
 ## 6. 横断的パターン
 
 ![建築・デザイン学 — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-03-cross-patterns-svg.svg)
-
 
 ### パターン1: 「境界は帯域である」の独立収束
 

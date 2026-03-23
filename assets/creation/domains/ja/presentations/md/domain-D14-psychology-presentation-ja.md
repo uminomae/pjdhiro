@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-01-overview-svg.svg)
 
-
 - **調査対象**: 心理学の主要理論 10件
 - **調査の問い**: 心理学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D14-clinical-psychology.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-02-theories-map-svg.svg)
-
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -87,7 +79,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-03-cross-patterns-svg.svg)
-
 
 - 心理学を横断して最も際立つのは、**縁の多様な実装**です
 - **制約の解除**: 洞察研究は「どの制約を外すか」という解除の側面で縁を記述します

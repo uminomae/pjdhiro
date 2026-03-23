@@ -1,11 +1,8 @@
 # Linguistics: The Five-Stage Structure Seen in Language Change and Emergence
 
-![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D17-linguistics.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into the following question, using major theories in linguistics.
 
@@ -48,7 +45,6 @@ If these definitions already feel uncomfortable, that discomfort is itself an im
 ## 4. Results: Overall Picture
 
 ![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-02-theories-map-svg.svg)
-
 
 Of the ten candidates, eight showed strong or partial structural correspondence, while two remained only conditional.
 
@@ -148,7 +144,6 @@ This theory uniquely describes the relation in which linguistic system as Bundle
 ## 6. Cross-Domain Patterns
 
 ![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-03-cross-patterns-svg.svg)
-
 
 The following patterns recur across multiple theories, not only within single cases.
 

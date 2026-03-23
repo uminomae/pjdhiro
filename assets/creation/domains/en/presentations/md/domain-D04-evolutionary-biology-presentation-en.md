@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Field / Wave / Edge 
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D04-evolutionary-biology.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -80,7 +74,6 @@ Structural correspondence survey with the five-stage model (Field / Wave / Edge 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-03-cross-patterns-svg.svg)
-
 
 - The most conspicuous cross-cutting pattern in evolutionary biology is the functional diversity of "Edge"
 - **Maintained Edge**: In hybrid zones, the boundary persists stably while retaining thickness measured by cline width

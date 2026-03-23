@@ -1,11 +1,8 @@
 # Religion
 
-![Religion — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D24-religion.svg)
-
 ## 1. Purpose and Questions of the Investigation
 
 ![Religion — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question:
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that is itself an important per
 ## 4. Investigation Results: Overall Picture
 
 ![Religion — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-02-theories-map-svg.svg)
-
 
 ### List of Evaluated Theories
 
@@ -159,7 +155,6 @@ This belongs in the context of Mahayana Buddhist scholasticism. The ten bhumis w
 ## 6. Cross-Domain Patterns
 
 ![Religion — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-03-cross-patterns-svg.svg)
-
 
 First, as shown by Rambo's seven-stage model of conversion + dynamic force field, Turner's liminality and structure/anti-structure (communitas), and Teresa of Avila's *El Castillo Interior o Las Moradas*: seven mansions, this domain describes difference and conflict not merely as obstacles but as conditions for the emergence of a new order. This means that, within the five-stage model, the transition from Edge to Vortex is especially richly observable in this domain.
 

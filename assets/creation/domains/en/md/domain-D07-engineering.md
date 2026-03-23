@@ -1,11 +1,8 @@
 # Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science
 
-![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D07-engineering.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question.
 
@@ -62,7 +59,6 @@ If these definitions already generate discomfort, that itself is an important pe
 ## 4. Findings: Overall Picture
 
 ![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-02-theories-map-svg.svg)
-
 
 After evaluating ten theories and technologies from engineering and information science, the investigation confirmed strong structural correspondence overall.
 
@@ -156,7 +152,6 @@ However, the correspondence of Vortex depends on whether an iterative algorithm 
 ## 6. Cross-Cutting Patterns
 
 ![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-03-cross-patterns-svg.svg)
-
 
 Across the ten cases investigated, the following patterns were repeatedly confirmed.
 
