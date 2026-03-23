@@ -4,131 +4,122 @@
     <marker id="arrowhead21" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
     </marker>
-    <style>
-      .title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 24px; fill: #2C2C2C; font-weight: 600; }
-      .stage-label { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #FAFAF8; font-weight: 600; }
-      .stage-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #FAFAF8; }
-      .concept { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #2C2C2C; }
-      .summary-title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #2C2C2C; font-weight: 600; }
-      .summary { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #666666; }
-      .strength-label { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #666666; }
-    </style>
-  </defs>
+</defs>
 
   
   <rect width="800" height="600" fill="#FAFAF8" rx="0" />
   <rect x="20" y="20" width="760" height="560" fill="none" stroke="#E0DDD8" stroke-width="1" rx="8" />
 
   
-  <text x="400" y="60" text-anchor="middle" class="title">Economics (D21) — Structural correspondence diagram with the 5-stage model</text>
+  <text x="400" y="60" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="24px" fill="#2C2C2C" font-weight="600">Economics (D21) — Structural correspondence diagram with the 5-stage model</text>
 
   
   
   <rect x="48" y="95" width="120" height="65" rx="8" fill="#8B8682" />
-  <text x="108" y="122" text-anchor="middle" class="stage-label">Field</text>
-  <text x="108" y="140" text-anchor="middle" class="stage-sub">Initial conditions for undifferentiation</text>
+  <text x="108" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Field</text>
+  <text x="108" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Initial conditions for undifferentiation</text>
 
   
   <line x1="168" y1="127" x2="192" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead21)" />
 
   
   <rect x="196" y="95" width="120" height="65" rx="8" fill="#5B8DB8" />
-  <text x="256" y="122" text-anchor="middle" class="stage-label">Wave</text>
-  <text x="256" y="140" text-anchor="middle" class="stage-sub">Divergence/fluctuation</text>
+  <text x="256" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Wave</text>
+  <text x="256" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Divergence/fluctuation</text>
 
   
   <line x1="316" y1="127" x2="340" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead21)" />
 
   
   <rect x="344" y="95" width="120" height="65" rx="8" fill="#D4A857" />
-  <text x="404" y="122" text-anchor="middle" class="stage-label">Edge</text>
-  <text x="404" y="140" text-anchor="middle" class="stage-sub">Criticality of branching and judgment</text>
+  <text x="404" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Edge</text>
+  <text x="404" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Criticality of branching and judgment</text>
 
   
   <line x1="464" y1="127" x2="488" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead21)" />
 
   
   <rect x="492" y="95" width="120" height="65" rx="8" fill="#C45B4D" />
-  <text x="552" y="122" text-anchor="middle" class="stage-label">Vortex</text>
-  <text x="552" y="140" text-anchor="middle" class="stage-sub">self-reinforcing dynamics</text>
+  <text x="552" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Vortex</text>
+  <text x="552" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">self-reinforcing dynamics</text>
 
   
   <line x1="612" y1="127" x2="636" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead21)" />
 
   
   <rect x="640" y="95" width="120" height="65" rx="8" fill="#5B8B6A" />
-  <text x="700" y="122" text-anchor="middle" class="stage-label">Bundle</text>
-  <text x="700" y="140" text-anchor="middle" class="stage-sub">persistent structure</text>
+  <text x="700" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Bundle</text>
+  <text x="700" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">persistent structure</text>
 
   
   
   <line x1="108" y1="160" x2="108" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="108" y="200" text-anchor="middle" class="concept">Latent space of multiple equilibria</text>
-  <text x="108" y="218" text-anchor="middle" class="concept">(Arthur)</text>
-  <text x="108" y="240" text-anchor="middle" class="concept">Circular flow/steady state</text>
-  <text x="108" y="258" text-anchor="middle" class="concept">(Schumpeter)</text>
-  <text x="108" y="280" text-anchor="middle" class="concept">fundamental uncertainty</text>
-  <text x="108" y="298" text-anchor="middle" class="concept">(Keynes)</text>
+  <text x="108" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Latent space of multiple equilibria</text>
+  <text x="108" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Arthur)</text>
+  <text x="108" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Circular flow/steady state</text>
+  <text x="108" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Schumpeter)</text>
+  <text x="108" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">fundamental uncertainty</text>
+  <text x="108" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Keynes)</text>
 
   
   <line x1="256" y1="160" x2="256" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="256" y="200" text-anchor="middle" class="concept">Small fluctuations/accidental events</text>
-  <text x="256" y="218" text-anchor="middle" class="concept">(Arthur)</text>
-  <text x="256" y="240" text-anchor="middle" class="concept">Entrepreneurial entry/new combinations</text>
-  <text x="256" y="258" text-anchor="middle" class="concept">(Schumpeter)</text>
-  <text x="256" y="280" text-anchor="middle" class="concept">Stability breeds optimism</text>
-  <text x="256" y="298" text-anchor="middle" class="concept">(Minsky)</text>
+  <text x="256" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Small fluctuations/accidental events</text>
+  <text x="256" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Arthur)</text>
+  <text x="256" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Entrepreneurial entry/new combinations</text>
+  <text x="256" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Schumpeter)</text>
+  <text x="256" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Stability breeds optimism</text>
+  <text x="256" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Minsky)</text>
 
   
   <line x1="404" y1="160" x2="404" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="404" y="200" text-anchor="middle" class="concept">Tipping point</text>
-  <text x="404" y="218" text-anchor="middle" class="concept">(Arthur)</text>
-  <text x="404" y="240" text-anchor="middle" class="concept">Uncertainty underwriting decisions</text>
-  <text x="404" y="258" text-anchor="middle" class="concept">(Knight)</text>
-  <text x="404" y="280" text-anchor="middle" class="concept">minsky moment</text>
-  <text x="404" y="298" text-anchor="middle" class="concept">(Minsky)</text>
+  <text x="404" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Tipping point</text>
+  <text x="404" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Arthur)</text>
+  <text x="404" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Uncertainty underwriting decisions</text>
+  <text x="404" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Knight)</text>
+  <text x="404" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">minsky moment</text>
+  <text x="404" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Minsky)</text>
 
   
   <line x1="552" y1="160" x2="552" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="552" y="200" text-anchor="middle" class="concept">Self-reinforcement of increasing returns</text>
-  <text x="552" y="218" text-anchor="middle" class="concept">(Arthur)</text>
-  <text x="552" y="240" text-anchor="middle" class="concept">A swarm of innovations</text>
-  <text x="552" y="258" text-anchor="middle" class="concept">(Schumpeter)</text>
-  <text x="552" y="280" text-anchor="middle" class="concept">Chain of credit contraction</text>
-  <text x="552" y="298" text-anchor="middle" class="concept">(Minsky)</text>
+  <text x="552" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Self-reinforcement of increasing returns</text>
+  <text x="552" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Arthur)</text>
+  <text x="552" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">A swarm of innovations</text>
+  <text x="552" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Schumpeter)</text>
+  <text x="552" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Chain of credit contraction</text>
+  <text x="552" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Minsky)</text>
 
   
   <line x1="700" y1="160" x2="700" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="700" y="200" text-anchor="middle" class="concept">technological lock-in</text>
-  <text x="700" y="218" text-anchor="middle" class="concept">(Arthur)</text>
-  <text x="700" y="240" text-anchor="middle" class="concept">Autogenous order/system</text>
-  <text x="700" y="258" text-anchor="middle" class="concept">(Hayek)</text>
-  <text x="700" y="280" text-anchor="middle" class="concept">Post-crisis regulation/new order</text>
-  <text x="700" y="298" text-anchor="middle" class="concept">(Minsky)</text>
+  <text x="700" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">technological lock-in</text>
+  <text x="700" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Arthur)</text>
+  <text x="700" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Autogenous order/system</text>
+  <text x="700" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Hayek)</text>
+  <text x="700" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Post-crisis regulation/new order</text>
+  <text x="700" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Minsky)</text>
 
   
   <rect x="48" y="330" width="712" height="1" fill="#E0DDD8" />
-  <text x="60" y="358" class="strength-label">Strength of response:</text>
+  <text x="60" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">Strength of response:</text>
   <line x1="150" y1="354" x2="180" y2="354" stroke="#2C2C2C" stroke-width="2" />
-  <text x="185" y="358" class="strength-label">strong response</text>
+  <text x="185" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">strong response</text>
   <line x1="260" y1="354" x2="290" y2="354" stroke="#666666" stroke-width="1.5" stroke-dasharray="6,4" />
-  <text x="295" y="358" class="strength-label">Partial response</text>
+  <text x="295" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">Partial response</text>
   <line x1="380" y1="354" x2="410" y2="354" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="2,3" />
-  <text x="415" y="358" class="strength-label">weak response</text>
+  <text x="415" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">weak response</text>
 
   
   <rect x="48" y="378" width="712" height="180" rx="6" fill="none" stroke="#E0DDD8" stroke-width="1" />
-  <text x="68" y="402" class="summary-title">Overall response evaluation summary</text>
+  <text x="68" y="402"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#2C2C2C" font-weight="600">Overall response evaluation summary</text>
 
-  <text x="68" y="428" class="summary">Degree of correspondence: Overall high (strong or partial correspondence confirmed with all 10 theories)</text>
+  <text x="68" y="428"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Degree of correspondence: Overall high (strong or partial correspondence confirmed with all 10 theories)</text>
 
-  <text x="68" y="454" class="summary">Almost definite: Arthur complex systems economics (all 5 stages), Minsky financial instability hypothesis (all 5 stages)</text>
+  <text x="68" y="454"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Almost definite: Arthur complex systems economics (all 5 stages), Minsky financial instability hypothesis (all 5 stages)</text>
 
-  <text x="68" y="478" class="summary">Feature 1: Bifurcation under uncertainty and self-reinforcing dynamics show strong correspondence in the middle to late stages</text>
+  <text x="68" y="478"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Feature 1: Bifurcation under uncertainty and self-reinforcing dynamics show strong correspondence in the middle to late stages</text>
 
-  <text x="68" y="502" class="summary">Feature 2: The direction of the vortex is bipolar — creative self-enhancement (Schumpeter) and destructive self-enhancement (Minsky) are isomorphic structures</text>
+  <text x="68" y="502"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Feature 2: The direction of the vortex is bipolar — creative self-enhancement (Schumpeter) and destructive self-enhancement (Minsky) are isomorphic structures</text>
 
-  <text x="68" y="526" class="summary">Feature 3: Knight's risk/uncertainty classification describes the structure of the "edge" in principle - the boundary between treatable/unmanageable</text>
+  <text x="68" y="526"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Feature 3: Knight's risk/uncertainty classification describes the structure of the "edge" in principle - the boundary between treatable/unmanageable</text>
 
-  <text x="68" y="550" class="summary">Partial response: North institutional economics, Sen capabilities, Penrose corporate growth (overemphasis on specific stages)</text>
+  <text x="68" y="550"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Partial response: North institutional economics, Sen capabilities, Penrose corporate growth (overemphasis on specific stages)</text>
 </svg>

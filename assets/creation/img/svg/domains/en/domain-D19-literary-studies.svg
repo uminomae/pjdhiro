@@ -4,131 +4,122 @@
     <marker id="arrowhead19" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
     </marker>
-    <style>
-      .title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 24px; fill: #2C2C2C; font-weight: 600; }
-      .stage-label { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #FAFAF8; font-weight: 600; }
-      .stage-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #FAFAF8; }
-      .concept { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #2C2C2C; }
-      .summary-title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #2C2C2C; font-weight: 600; }
-      .summary { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #666666; }
-      .strength-label { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #666666; }
-    </style>
-  </defs>
+</defs>
 
   
   <rect width="800" height="600" fill="#FAFAF8" rx="0" />
   <rect x="20" y="20" width="760" height="560" fill="none" stroke="#E0DDD8" stroke-width="1" rx="8" />
 
   
-  <text x="400" y="60" text-anchor="middle" class="title">Literature Study (D19) — Structural correspondence diagram with the 5-stage model</text>
+  <text x="400" y="60" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="24px" fill="#2C2C2C" font-weight="600">Literature Study (D19) — Structural correspondence diagram with the 5-stage model</text>
 
   
   
   <rect x="48" y="95" width="120" height="65" rx="8" fill="#8B8682" />
-  <text x="108" y="122" text-anchor="middle" class="stage-label">Field</text>
-  <text x="108" y="140" text-anchor="middle" class="stage-sub">Initial conditions for undifferentiation</text>
+  <text x="108" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Field</text>
+  <text x="108" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Initial conditions for undifferentiation</text>
 
   
   <line x1="168" y1="127" x2="192" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead19)" />
 
   
   <rect x="196" y="95" width="120" height="65" rx="8" fill="#5B8DB8" />
-  <text x="256" y="122" text-anchor="middle" class="stage-label">Wave</text>
-  <text x="256" y="140" text-anchor="middle" class="stage-sub">Foregrounding differences and fluctuations</text>
+  <text x="256" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Wave</text>
+  <text x="256" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Foregrounding differences and fluctuations</text>
 
   
   <line x1="316" y1="127" x2="340" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead19)" />
 
   
   <rect x="344" y="95" width="120" height="65" rx="8" fill="#D4A857" />
-  <text x="404" y="122" text-anchor="middle" class="stage-label">Edge</text>
-  <text x="404" y="140" text-anchor="middle" class="stage-sub">Organization of relationships and boundaries</text>
+  <text x="404" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Edge</text>
+  <text x="404" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Organization of relationships and boundaries</text>
 
   
   <line x1="464" y1="127" x2="488" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead19)" />
 
   
   <rect x="492" y="95" width="120" height="65" rx="8" fill="#C45B4D" />
-  <text x="552" y="122" text-anchor="middle" class="stage-label">Vortex</text>
-  <text x="552" y="140" text-anchor="middle" class="stage-sub">Establishment of a new form</text>
+  <text x="552" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Vortex</text>
+  <text x="552" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Establishment of a new form</text>
 
   
   <line x1="612" y1="127" x2="636" y2="127" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead19)" />
 
   
   <rect x="640" y="95" width="120" height="65" rx="8" fill="#5B8B6A" />
-  <text x="700" y="122" text-anchor="middle" class="stage-label">Bundle</text>
-  <text x="700" y="140" text-anchor="middle" class="stage-sub">persistent structure</text>
+  <text x="700" y="122" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="600">Bundle</text>
+  <text x="700" y="140" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">persistent structure</text>
 
   
   
   <line x1="108" y1="160" x2="108" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="108" y="200" text-anchor="middle" class="concept">automated perception</text>
-  <text x="108" y="218" text-anchor="middle" class="concept">(Shklovsky)</text>
-  <text x="108" y="240" text-anchor="middle" class="concept">horizon of expectations</text>
-  <text x="108" y="258" text-anchor="middle" class="concept">(Jauss/Iser)</text>
-  <text x="108" y="280" text-anchor="middle" class="concept">Works of predecessors</text>
-  <text x="108" y="298" text-anchor="middle" class="concept">(Bloom)</text>
+  <text x="108" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">automated perception</text>
+  <text x="108" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Shklovsky)</text>
+  <text x="108" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">horizon of expectations</text>
+  <text x="108" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Jauss/Iser)</text>
+  <text x="108" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Works of predecessors</text>
+  <text x="108" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Bloom)</text>
 
   
   <line x1="256" y1="160" x2="256" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="256" y="200" text-anchor="middle" class="concept">Awareness of dulled perception</text>
-  <text x="256" y="218" text-anchor="middle" class="concept">(Shklovsky)</text>
-  <text x="256" y="240" text-anchor="middle" class="concept">Aesthetic distance/betrayal of expectations</text>
-  <text x="256" y="258" text-anchor="middle" class="concept">(Jauss)</text>
-  <text x="256" y="280" text-anchor="middle" class="concept">Conflict of voices/irony</text>
-  <text x="256" y="298" text-anchor="middle" class="concept">(Bakhtin)</text>
+  <text x="256" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Awareness of dulled perception</text>
+  <text x="256" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Shklovsky)</text>
+  <text x="256" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Aesthetic distance/betrayal of expectations</text>
+  <text x="256" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Jauss)</text>
+  <text x="256" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Conflict of voices/irony</text>
+  <text x="256" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Bakhtin)</text>
 
   
   <line x1="404" y1="160" x2="404" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="404" y="200" text-anchor="middle" class="concept">Introduction of catabolic equipment</text>
-  <text x="404" y="218" text-anchor="middle" class="concept">(Shklovsky)</text>
-  <text x="404" y="240" text-anchor="middle" class="concept">Active fill in the blanks</text>
-  <text x="404" y="258" text-anchor="middle" class="concept">(Iser)</text>
-  <text x="404" y="280" text-anchor="middle" class="concept">creative misreading</text>
-  <text x="404" y="298" text-anchor="middle" class="concept">(Bloom)</text>
+  <text x="404" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Introduction of catabolic equipment</text>
+  <text x="404" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Shklovsky)</text>
+  <text x="404" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Active fill in the blanks</text>
+  <text x="404" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Iser)</text>
+  <text x="404" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">creative misreading</text>
+  <text x="404" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Bloom)</text>
 
   
   <line x1="552" y1="160" x2="552" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="552" y="200" text-anchor="middle" class="concept">Delayed sensory recovery</text>
-  <text x="552" y="218" text-anchor="middle" class="concept">(Shklovsky)</text>
-  <text x="552" y="240" text-anchor="middle" class="concept">Formation of new meaning</text>
-  <text x="552" y="258" text-anchor="middle" class="concept">(Jauss/Iser)</text>
-  <text x="552" y="280" text-anchor="middle" class="concept">Formation of polyphonic order</text>
-  <text x="552" y="298" text-anchor="middle" class="concept">(Bakhtin)</text>
+  <text x="552" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Delayed sensory recovery</text>
+  <text x="552" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Shklovsky)</text>
+  <text x="552" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Formation of new meaning</text>
+  <text x="552" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Jauss/Iser)</text>
+  <text x="552" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Formation of polyphonic order</text>
+  <text x="552" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Bakhtin)</text>
 
   
   <line x1="700" y1="160" x2="700" y2="185" stroke="#2C2C2C" stroke-width="2" />
-  <text x="700" y="200" text-anchor="middle" class="concept">Standardization and re-automation of methods</text>
-  <text x="700" y="218" text-anchor="middle" class="concept">(Shklovsky)</text>
-  <text x="700" y="240" text-anchor="middle" class="concept">Establishment of literary historical evaluation</text>
-  <text x="700" y="258" text-anchor="middle" class="concept">(Jauss)</text>
-  <text x="700" y="280" text-anchor="middle" class="concept">Consecration and institutionalization</text>
-  <text x="700" y="298" text-anchor="middle" class="concept">(Bourdieu)</text>
+  <text x="700" y="200" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Standardization and re-automation of methods</text>
+  <text x="700" y="218" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Shklovsky)</text>
+  <text x="700" y="240" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Establishment of literary historical evaluation</text>
+  <text x="700" y="258" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Jauss)</text>
+  <text x="700" y="280" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Consecration and institutionalization</text>
+  <text x="700" y="298" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">(Bourdieu)</text>
 
   
   <rect x="48" y="330" width="712" height="1" fill="#E0DDD8" />
-  <text x="60" y="358" class="strength-label">Strength of response:</text>
+  <text x="60" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">Strength of response:</text>
   <line x1="150" y1="354" x2="180" y2="354" stroke="#2C2C2C" stroke-width="2" />
-  <text x="185" y="358" class="strength-label">strong response</text>
+  <text x="185" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">strong response</text>
   <line x1="260" y1="354" x2="290" y2="354" stroke="#666666" stroke-width="1.5" stroke-dasharray="6,4" />
-  <text x="295" y="358" class="strength-label">Partial response</text>
+  <text x="295" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">Partial response</text>
   <line x1="380" y1="354" x2="410" y2="354" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="2,3" />
-  <text x="415" y="358" class="strength-label">weak response</text>
+  <text x="415" y="358"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#666666">weak response</text>
 
   
   <rect x="48" y="378" width="712" height="180" rx="6" fill="none" stroke="#E0DDD8" stroke-width="1" />
-  <text x="68" y="402" class="summary-title">Overall response evaluation summary</text>
+  <text x="68" y="402"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#2C2C2C" font-weight="600">Overall response evaluation summary</text>
 
-  <text x="68" y="428" class="summary">Compatibility: Overall strong (Shklovsky, Jauss/Iser, Bakhtin are close to confirmed)</text>
+  <text x="68" y="428"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Compatibility: Overall strong (Shklovsky, Jauss/Iser, Bakhtin are close to confirmed)</text>
 
-  <text x="68" y="454" class="summary">Strong correspondence: Shklovsky dissimilation, Jauss/Iser reception aesthetics, Bakhtin interactivity, Bloom influence anxiety, Bourdieu literary field</text>
+  <text x="68" y="454"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Strong correspondence: Shklovsky dissimilation, Jauss/Iser reception aesthetics, Bakhtin interactivity, Bloom influence anxiety, Bourdieu literary field</text>
 
-  <text x="68" y="478" class="summary">Feature 1: Extremely diverse “edges” — 10 theories and 10 different types of edges (dissimilation device, fill-in-the-blank, creative misreading, etc.)</text>
+  <text x="68" y="478"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Feature 1: Extremely diverse “edges” — 10 theories and 10 different types of edges (dissimilation device, fill-in-the-blank, creative misreading, etc.)</text>
 
-  <text x="68" y="502" class="summary">Feature 2: Correspondence confirmed on four scales: perception, text, reception, and system — a good sign of scale independence</text>
+  <text x="68" y="502"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Feature 2: Correspondence confirmed on four scales: perception, text, reception, and system — a good sign of scale independence</text>
 
-  <text x="68" y="526" class="summary">Feature 3: The circulation of bundle → field is manifested in multiple theories — Shklovsky's re-automation, Bloom's new work becomes the field of successors</text>
+  <text x="68" y="526"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Feature 3: The circulation of bundle → field is manifested in multiple theories — Shklovsky's re-automation, Bloom's new work becomes the field of successors</text>
 
-  <text x="68" y="550" class="summary">Conditional: Todorov (original verification not completed), Frye (criticism of arbitrariness of system)</text>
+  <text x="68" y="550"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Conditional: Todorov (original verification not completed), Frye (criticism of arbitrariness of system)</text>
 </svg>
