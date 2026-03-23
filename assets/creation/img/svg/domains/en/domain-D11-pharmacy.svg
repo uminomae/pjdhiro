@@ -4,48 +4,40 @@
     <marker id="arrowD11" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
     </marker>
-    <style>
-      .title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 24px; fill: #2C2C2C; font-weight: bold; }
-      .stage-label { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #FAFAF8; font-weight: bold; }
-      .concept { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #2C2C2C; }
-      .summary-title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #2C2C2C; font-weight: bold; }
-      .summary-text { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #666666; }
-      .stage-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #FAFAF8; }
-    </style>
-  </defs>
+</defs>
 
   
   <rect width="800" height="600" fill="#FAFAF8" rx="8" />
   <rect x="20" y="20" width="760" height="560" fill="none" stroke="#E0DDD8" stroke-width="1" rx="6" />
 
   
-  <text x="400" y="60" text-anchor="middle" class="title">D11 Pharmacy — Structural correspondence diagram with the 5-stage model</text>
+  <text x="400" y="60" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="24px" fill="#2C2C2C" font-weight="bold">D11 Pharmacy — Structural correspondence diagram with the 5-stage model</text>
 
   
   
   <rect x="45" y="100" width="120" height="70" rx="10" fill="#8B8682" />
-  <text x="105" y="128" text-anchor="middle" class="stage-label">Field</text>
-  <text x="105" y="148" text-anchor="middle" class="stage-sub">undifferentiated search space</text>
+  <text x="105" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Field</text>
+  <text x="105" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">undifferentiated search space</text>
 
   
   <rect x="195" y="100" width="120" height="70" rx="10" fill="#5B8DB8" />
-  <text x="255" y="128" text-anchor="middle" class="stage-label">Wave</text>
-  <text x="255" y="148" text-anchor="middle" class="stage-sub">Candidate divergence/competition</text>
+  <text x="255" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Wave</text>
+  <text x="255" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Candidate divergence/competition</text>
 
   
   <rect x="345" y="100" width="120" height="70" rx="10" fill="#D4A857" />
-  <text x="405" y="128" text-anchor="middle" class="stage-label">Edge</text>
-  <text x="405" y="148" text-anchor="middle" class="stage-sub">interaction interface</text>
+  <text x="405" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Edge</text>
+  <text x="405" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">interaction interface</text>
 
   
   <rect x="495" y="100" width="120" height="70" rx="10" fill="#C45B4D" />
-  <text x="555" y="128" text-anchor="middle" class="stage-label">Vortex</text>
-  <text x="555" y="148" text-anchor="middle" class="stage-sub">Spontaneous formation of order</text>
+  <text x="555" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Vortex</text>
+  <text x="555" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Spontaneous formation of order</text>
 
   
   <rect x="645" y="100" width="120" height="70" rx="10" fill="#5B8B6A" />
-  <text x="705" y="128" text-anchor="middle" class="stage-label">Bundle</text>
-  <text x="705" y="148" text-anchor="middle" class="stage-sub">institutional stabilization</text>
+  <text x="705" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Bundle</text>
+  <text x="705" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">institutional stabilization</text>
 
   
   <line x1="165" y1="135" x2="193" y2="135" stroke="#666666" stroke-width="2" marker-end="url(#arrowD11)" />
@@ -57,69 +49,69 @@
   
   <line x1="105" y1="170" x2="105" y2="195" stroke="#8B8682" stroke-width="2" />
   <rect x="40" y="195" width="130" height="90" rx="6" fill="none" stroke="#8B8682" stroke-width="1.5" />
-  <text x="105" y="215" text-anchor="middle" class="concept">Search space/QTPP settings</text>
-  <text x="105" y="235" text-anchor="middle" class="concept">Diversity of microbial populations</text>
-  <text x="105" y="255" text-anchor="middle" class="concept">Polydrug status</text>
+  <text x="105" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Search space/QTPP settings</text>
+  <text x="105" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Diversity of microbial populations</text>
+  <text x="105" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Polydrug status</text>
 
   
   <line x1="255" y1="170" x2="255" y2="195" stroke="#5B8DB8" stroke-width="2" />
   <rect x="190" y="195" width="130" height="90" rx="6" fill="none" stroke="#5B8DB8" stroke-width="1.5" />
-  <text x="255" y="215" text-anchor="middle" class="concept">Emergence of selective pressure</text>
-  <text x="255" y="235" text-anchor="middle" class="concept">Knowledge amplification/variable competition</text>
-  <text x="255" y="255" text-anchor="middle" class="concept">Mutual interference of metabolic pathways</text>
+  <text x="255" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Emergence of selective pressure</text>
+  <text x="255" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Knowledge amplification/variable competition</text>
+  <text x="255" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Mutual interference of metabolic pathways</text>
 
   
   <line x1="405" y1="170" x2="405" y2="195" stroke="#D4A857" stroke-width="2" />
   <rect x="340" y="195" width="130" height="90" rx="6" fill="none" stroke="#D4A857" stroke-width="1.5" />
-  <text x="405" y="215" text-anchor="middle" class="concept">Design Space</text>
-  <text x="405" y="235" text-anchor="middle" class="concept">Drug interactions (DDIs)</text>
-  <text x="405" y="255" text-anchor="middle" class="concept">Lord and Minister Sasuke (Chinese medicine)</text>
+  <text x="405" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Design Space</text>
+  <text x="405" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Drug interactions (DDIs)</text>
+  <text x="405" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Lord and Minister Sasuke (Chinese medicine)</text>
 
   
   <line x1="555" y1="170" x2="555" y2="195" stroke="#C45B4D" stroke-width="2" />
   <rect x="490" y="195" width="130" height="90" rx="6" fill="none" stroke="#C45B4D" stroke-width="1.5" />
-  <text x="555" y="215" text-anchor="middle" class="concept">feedback order</text>
-  <text x="555" y="235" text-anchor="middle" class="concept">Dominance of resistant clones</text>
-  <text x="555" y="255" text-anchor="middle" class="concept">Emergent combination effect</text>
+  <text x="555" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">feedback order</text>
+  <text x="555" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Dominance of resistant clones</text>
+  <text x="555" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Emergent combination effect</text>
 
   
   <line x1="705" y1="170" x2="705" y2="195" stroke="#5B8B6A" stroke-width="2" />
   <rect x="640" y="195" width="130" height="90" rx="6" fill="none" stroke="#5B8B6A" stroke-width="1.5" />
-  <text x="705" y="215" text-anchor="middle" class="concept">Regulatory approval (QbD)</text>
-  <text x="705" y="235" text-anchor="middle" class="concept">Updates to treatment standards</text>
-  <text x="705" y="255" text-anchor="middle" class="concept">Guideline convergence</text>
+  <text x="705" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Regulatory approval (QbD)</text>
+  <text x="705" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Updates to treatment standards</text>
+  <text x="705" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Guideline convergence</text>
 
   
-  <text x="400" y="325" text-anchor="middle" class="summary-title">Strength of response (by theory)</text>
+  <text x="400" y="325" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#2C2C2C" font-weight="bold">Strength of response (by theory)</text>
 
   
   <line x1="60" y1="348" x2="100" y2="348" stroke="#2C2C2C" stroke-width="2" />
-  <text x="108" y="352" class="summary-text">strong response</text>
+  <text x="108" y="352"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">strong response</text>
 
   <line x1="240" y1="348" x2="280" y2="348" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="6,3" />
-  <text x="288" y="352" class="summary-text">Partial response</text>
+  <text x="288" y="352"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Partial response</text>
 
   <line x1="440" y1="348" x2="480" y2="348" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,3" />
-  <text x="488" y="352" class="summary-text">conditional response</text>
+  <text x="488" y="352"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">conditional response</text>
 
   
   <rect x="45" y="370" width="710" height="185" rx="6" fill="none" stroke="#E0DDD8" stroke-width="1" />
 
   
-  <text x="60" y="395" class="concept" font-weight="bold">Almost certain:</text>
+  <text x="60" y="395"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C" font-weight="bold">Almost certain:</text>
   <line x1="60" y1="405" x2="740" y2="405" stroke="#2C2C2C" stroke-width="2" />
-  <text x="60" y="420" class="summary-text">QbD (ICH Q8/Q9/Q10), ADME-PK/PD, antimicrobial resistance evolution, drug interactions, pharmacogenomics</text>
+  <text x="60" y="420"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">QbD (ICH Q8/Q9/Q10), ADME-PK/PD, antimicrobial resistance evolution, drug interactions, pharmacogenomics</text>
 
   
-  <text x="60" y="445" class="concept" font-weight="bold">Potential:</text>
+  <text x="60" y="445"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C" font-weight="bold">Potential:</text>
   <line x1="60" y1="455" x2="740" y2="455" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="6,3" />
-  <text x="60" y="470" class="summary-text">Chinese herbal prescription design (Kimishin Sashi), drug development pipeline, structure-based drug discovery</text>
+  <text x="60" y="470"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Chinese herbal prescription design (Kimishin Sashi), drug development pipeline, structure-based drug discovery</text>
 
   
-  <text x="60" y="495" class="concept" font-weight="bold">Conditional:</text>
+  <text x="60" y="495"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C" font-weight="bold">Conditional:</text>
   <line x1="60" y1="505" x2="740" y2="505" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,3" />
-  <text x="60" y="520" class="summary-text">Oral sustained release formulation, prodrug design</text>
+  <text x="60" y="520"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Oral sustained release formulation, prodrug design</text>
 
   
-  <text x="400" y="545" text-anchor="middle" class="summary-text">Characteristics: The variety of "edges" is outstanding (designed edges/unintentional edges). The cycle of bunch → field (resistant bacteria) is obvious.</text>
+  <text x="400" y="545" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Characteristics: The variety of "edges" is outstanding (designed edges/unintentional edges). The cycle of bunch → field (resistant bacteria) is obvious.</text>
 </svg>
