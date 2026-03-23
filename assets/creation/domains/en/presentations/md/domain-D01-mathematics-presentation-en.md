@@ -18,16 +18,9 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 
 ![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-01-overview-svg.svg)
 
-
 - **Scope**: 11 major theories in mathematics
 - **Research question**: Do mathematical theories correspond structurally with the 5-Stage Model?
 - **Results**: Strong correspondence in 7 cases, partial correspondence in 4 cases
-
----
-
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D01-mathematics.svg)
 
 ---
 
@@ -46,7 +39,6 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-02-theories-map-svg.svg)
-
 
 | # | Theory / Concept | Proponent(s) | Corresponding Stages | Assessment |
 |---|---|---|---|---|
@@ -91,7 +83,6 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-03-cross-patterns-svg.svg)
-
 
 - The pattern that appears most prominently across mathematics is that "Edge is generative." Overlaps, links, bifurcation points, critical points, and boundary layers all appear not as lines that halt change, but as sites of action that determine global structure.
 - Strong correspondences fall broadly into two lineages. One connects the local to the global — as in sheaf theory and singular perturbation. The other involves reorganization through passage through criticality — as in bifurcation theory and Morse theory.

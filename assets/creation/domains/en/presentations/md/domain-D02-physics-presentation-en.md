@@ -18,17 +18,10 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 
 ![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-01-overview-svg.svg)
 
-
 - **Scope**: 11 major theories in physics
 - **Research question**: Do theories of order generation in physics correspond structurally with the 5-Stage Model?
 - **Results**: Strong correspondence in 7 cases (evidence strength: high), moderate correspondence in 3 cases, rejected in 1 case
 - Physics is a domain that describes the process by which order emerges as an observable structure, and dense correspondence with the 5 stages was confirmed
-
----
-
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D02-physics.svg)
 
 ---
 
@@ -47,7 +40,6 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-02-theories-map-svg.svg)
-
 
 | Theory | Core of 5-Stage Correspondence | Evidence Strength |
 |---|---|---|
@@ -91,7 +83,6 @@ A structural correspondence study with the 5-Stage Model (Field · Wave · Edge 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-03-cross-patterns-svg.svg)
-
 
 - In physics, "Edge" is not abstract language but becomes a measurable quantity expressed as an interface, interaction, competition, or flow. This is the defining characteristic of this domain
 - In 7 of the 11 theories, the descriptive strength of Edge is high, and a structure traceable as a causal chain through all 5 stages is found

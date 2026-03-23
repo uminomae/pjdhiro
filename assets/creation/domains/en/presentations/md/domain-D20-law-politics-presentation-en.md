@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D20-law-politics.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -84,7 +78,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-03-cross-patterns-svg.svg)
-
 
 - The most striking feature across law and political science is the diversity of institutional implementations of "En"
 - Ostrom's eight design principles are autonomous En — a relational structure designed by the user group itself

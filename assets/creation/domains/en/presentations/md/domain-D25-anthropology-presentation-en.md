@@ -22,12 +22,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D25-anthropology.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-02-theories-map-svg.svg)
-
 
 | Confidence | Theory group | Positioning |
 |------------|-------------|-------------|
@@ -83,7 +76,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-03-cross-patterns-svg.svg)
-
 
 - The pattern that recurs most overwhelmingly across anthropology is the sheer thickness of En
 - This multifaceted nature shows that En in the 5-stage model is not a simple concept

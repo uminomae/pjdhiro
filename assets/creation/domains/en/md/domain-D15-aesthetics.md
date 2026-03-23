@@ -1,11 +1,8 @@
 # Aesthetics
 
-![Aesthetics — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D15-aesthetics.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Aesthetics — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D15-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question.
 
@@ -54,7 +51,6 @@ If discomfort remains at this point, that is itself an important part of the inv
 ## 4. Results: Overall Picture
 
 ![Aesthetics — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D15-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -160,7 +156,6 @@ Eco is the only entry in D15 that treats reception itself as an essential moment
 ## 6. Cross-Domain Patterns
 
 ![Aesthetics — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D15-03-cross-patterns-svg.svg)
-
 
 First, as Meltzer's aesthetic conflict, Japanese aesthetics, and Kant all show, difference and opposition in this domain are not described merely as obstacles. They are described as conditions for the emergence of new order. This means that in this domain the transition from Edge to Vortex can be observed with unusual richness.
 

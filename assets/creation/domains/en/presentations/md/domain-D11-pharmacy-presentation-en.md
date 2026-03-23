@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D11-pharmacy.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -83,7 +77,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-03-cross-patterns-svg.svg)
-
 
 - The most striking pattern across pharmacy is the "spectrum of En"
 - Second, "institutionalization of relationships" permeates the entire domain

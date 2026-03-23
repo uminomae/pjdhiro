@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D06-astronomy.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D06-02-theories-map-svg.svg)
-
 
 | # | Theory / Phenomenon | Key Researchers | Corresponding Stages | Judgment |
 |---|---------------------|----------------|----------------------|----------|
@@ -90,7 +83,6 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D06-03-cross-patterns-svg.svg)
-
 
 - The most repeatedly appearing pattern across astronomy is the universality of threshold mechanisms
 - Second, the diversity and multi-layered character of the Edge stands out

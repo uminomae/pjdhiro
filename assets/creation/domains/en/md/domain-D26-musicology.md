@@ -1,11 +1,8 @@
 # Musicology
 
-![Musicology — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D26-musicology.svg)
-
 ## 1. Purpose and Questions of the Investigation
 
 ![Musicology — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question:
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that is itself an important per
 ## 4. Investigation Results: Overall Picture
 
 ![Musicology — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-02-theories-map-svg.svg)
-
 
 ### List of Evaluated Theories
 
@@ -159,7 +155,6 @@ Clarke's greatest distinctiveness lies in his **critique of information-processi
 ## 6. Cross-Domain Patterns
 
 ![Musicology — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-03-cross-patterns-svg.svg)
-
 
 First, as shown by Improvisation's information-processing cycle (Pressing), the dialectical structure of sonata form, and emotion generation as expectation, delay, and resolution (Meyer), this domain describes difference and conflict not merely as obstacles but as conditions for the emergence of a new order. This means that, within the five-stage model, the transition from Edge to Vortex is especially richly observable in this domain.
 

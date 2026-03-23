@@ -22,12 +22,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D09-life-sciences.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-02-theories-map-svg.svg)
-
 
 | Temperature | Theory / Concept | Positioning |
 |-------------|-----------------|-------------|
@@ -87,7 +80,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-03-cross-patterns-svg.svg)
-
 
 - Across life sciences, the following four patterns were confirmed
 - The most prominent pattern found in this survey is that the 5-stage structure appears at levels devoid of consciousness

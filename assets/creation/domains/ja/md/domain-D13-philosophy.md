@@ -1,7 +1,5 @@
 # 哲学
 
-![哲学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D13-philosophy.svg)
-
 > **立ち位置明示**
 > 本稿は、哲学の主要理論と「5段階モデル（場→波→縁→渦→束）」との
 > 構造的類似を調査した報告です。特定の理論的立場を主張するものではなく、
@@ -10,7 +8,6 @@
 ## 1. 調査の目的と問い
 
 ![哲学 — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-01-overview-svg.svg)
-
 
 本調査は、西洋・東洋の哲学における主要な過程論・存在論が「5段階モデル（場→波→縁→渦→束）」と構造的に対応するかどうかを検討するものです。
 
@@ -68,7 +65,6 @@
 ## 4. 調査結果: 全体像
 
 ![哲学 — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-02-theories-map-svg.svg)
-
 
 11件の調査対象について、5段階モデルとの構造的対応を評価した結果を以下に示します。
 
@@ -183,7 +179,6 @@
 ## 6. 横断的パターン
 
 ![哲学 — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-03-cross-patterns-svg.svg)
-
 
 哲学領域の11理論を横断して、以下のパターンが確認されました。
 

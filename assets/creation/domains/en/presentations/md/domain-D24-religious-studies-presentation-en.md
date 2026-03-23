@@ -22,12 +22,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D24-religion.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-02-theories-map-svg.svg)
-
 
 | Confidence | Theory group | Positioning |
 |------------|-------------|-------------|
@@ -84,7 +77,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-03-cross-patterns-svg.svg)
-
 
 - The pattern that recurs most frequently across religious studies and mysticism is the intertwining of effort and grace in En
 - Second, two types of Taba are confirmed

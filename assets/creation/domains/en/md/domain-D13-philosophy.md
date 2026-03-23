@@ -1,11 +1,8 @@
 # Philosophy: An Investigation of Structural Similarity with the Five-Stage Model
 
-![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D13-philosophy.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-01-overview-svg.svg)
-
 
 This report is written to answer a single question.
 
@@ -54,7 +51,6 @@ If these definitions already feel uncomfortable, that is itself important for th
 ## 4. Results: Overall Picture
 
 ![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-02-theories-map-svg.svg)
-
 
 ### The Eleven Theories Evaluated
 
@@ -148,7 +144,6 @@ Nishida provides a perspective that relativizes assumptions common to many of th
 ## 6. Cross-Domain Patterns
 
 ![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-03-cross-patterns-svg.svg)
-
 
 When the findings of the eleven theories are viewed together, a number of recurrent structures become visible.
 

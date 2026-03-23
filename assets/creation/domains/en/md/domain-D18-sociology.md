@@ -1,11 +1,8 @@
 # Sociology: Weak Ties Generate Structure
 
-![Sociology: Weak Ties Generate Structure — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D18-sociology.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Sociology: Weak Ties Generate Structure — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into the following question, using major theories in sociology.
 
@@ -58,7 +55,6 @@ If these definitions already feel uncomfortable, that discomfort is itself an im
 ## 4. Results: Overall Picture
 
 ![Sociology: Weak Ties Generate Structure — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-02-theories-map-svg.svg)
-
 
 Of the eleven candidate theories, ten showed structural correspondence with the five-stage model. One was judged only conditionally, because the possibility of correspondence exists but the theory remains too abstract for concrete case-based confirmation.
 
@@ -123,7 +119,6 @@ This theory also has a distinctive implication: institutional isomorphism descri
 ## 6. Cross-Domain Patterns
 
 ![Sociology: Weak Ties Generate Structure — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-03-cross-patterns-svg.svg)
-
 
 ### Diversity of Edge Implementations
 

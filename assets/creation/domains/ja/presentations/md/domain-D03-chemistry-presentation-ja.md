@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-01-overview-svg.svg)
 
-
 - **調査対象**: 化学の主要理論 10件
 - **調査の問い**: 化学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 5件、部分的な対応 4件、条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D03-chemistry.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-02-theories-map-svg.svg)
-
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -95,7 +87,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-03-cross-patterns-svg.svg)
-
 
 - 化学を横断して最も繰り返し現れるのは、「制約が創造を可能にする」という構造です
 - 第二に、化学は「縁」を物理的実体として定量的に記述できる稀有な領域です

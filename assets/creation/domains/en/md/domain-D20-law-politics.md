@@ -1,11 +1,8 @@
 # Law and Political Science
 
-![Law and Political Science — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D20-law-politics.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Law and Political Science — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question.
 
@@ -54,7 +51,6 @@ If discomfort remains at this point, that is itself an important part of the inv
 ## 4. Results: Overall Picture
 
 ![Law and Political Science — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -160,7 +156,6 @@ This is the clearest D20 description of Bundle -> Field -> new Bundle. Where oth
 ## 6. Cross-Domain Patterns
 
 ![Law and Political Science — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-03-cross-patterns-svg.svg)
-
 
 First, Hart, Easton, and Ostrom all show that difference and conflict in this domain are not mere obstacles but conditions under which new order rises. This means that the transition from Edge to Vortex can be observed with particular richness in law and politics.
 

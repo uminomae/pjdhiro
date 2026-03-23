@@ -1,11 +1,8 @@
 # Business Management
 
-![Business Management — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D22-business-management.svg)
-
 ## 1. Purpose of the Investigation
 
 ![Business Management — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-01-overview-svg.svg)
-
 
 This report asks one question.
 
@@ -66,7 +63,6 @@ If some discomfort remains at this point, that discomfort is itself an important
 ## 4. Overall Picture of the Findings
 
 ![Business Management — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-02-theories-map-svg.svg)
-
 
 ### Theories Evaluated
 
@@ -181,7 +177,6 @@ The distinctive contribution of Theory U is that it gives a thick description of
 ## 6. Cross-Cutting Findings
 
 ![Business Management — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-03-cross-patterns-svg.svg)
-
 
 First, Boundary is richly described in this domain. Tuckman gives it the form of norm formation. Weick gives it the form of enactment. Effectuation gives it the form of Crazy Quilt. Design thinking gives it the form of reframing before prototyping. Business management repeatedly returns to the reorganization of relation.
 

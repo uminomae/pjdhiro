@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-01-overview-svg.svg)
 
-
 - **調査対象**: 複雑系の主要理論 10件
 - **調査の問い**: 複雑系の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 9件、条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D29-complexity.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-02-theories-map-svg.svg)
-
 
 | 条件付きの対応 | 概念的には接続するが、仮説の検証困難性やトートロジーのリスクが残る |
 |---|---|---|
@@ -99,7 +91,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-03-cross-patterns-svg.svg)
-
 
 - 複雑系科学の10理論を横断して、以下のパターンが繰り返し確認されました
 - 10理論すべてが、「際」の何らかの側面を中心テーマとしています

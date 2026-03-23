@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D18-sociology.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -89,7 +83,6 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-03-cross-patterns-svg.svg)
-
 
 - Looking across sociology, four patterns repeatedly appear
 - **First, the diversity of types of "En"**

@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-01-overview-svg.svg)
 
-
 - **調査対象**: 農学生態の主要理論 10件
 - **調査の問い**: 農学生態の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 9件、部分的な対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D12-ecology.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-02-theories-map-svg.svg)
-
 
 | # | 理論/概念 | 提唱者 | 主な対応段階 | 判定 |
 |---|----------|--------|------------|------|
@@ -94,7 +86,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-03-cross-patterns-svg.svg)
-
 
 - 農学・生態学を横断して繰り返し現れるパターンを三つ報告します
 - **第一に、縁の三つの型が領域内に揃います

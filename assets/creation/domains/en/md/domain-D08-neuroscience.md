@@ -1,11 +1,8 @@
 # Neuroscience: The Predictive Brain and the Body That Feels Lack
 
-![Neuroscience: The Predictive Brain and the Body That Feels Lack — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D08-neuroscience.svg)
-
 ## 1. Purpose of the Investigation
 
 ![Neuroscience: The Predictive Brain and the Body That Feels Lack — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into whether neuroscience shows structural correspondence with the five-stage model of creation, Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束), and with four associated definitions concerning prediction error, subjective lack, the retention of unresolved discrepancy, and the construction of emotion.
 
@@ -36,7 +33,6 @@ If anything in these definitions feels uneasy, that itself is an important persp
 ## 4. Findings
 
 ![Neuroscience: The Predictive Brain and the Body That Feels Lack — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-02-theories-map-svg.svg)
-
 
 ### Overall Picture
 
@@ -109,7 +105,6 @@ Updated predictive models, as the seed of the next Field, new synaptic connectiv
 ## 6. Insights From This Domain
 
 ![Neuroscience: The Predictive Brain and the Body That Feels Lack — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-03-cross-patterns-svg.svg)
-
 
 ### Creation Is Not the Privilege of Consciousness
 

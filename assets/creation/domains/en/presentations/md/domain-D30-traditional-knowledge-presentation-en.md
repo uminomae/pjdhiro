@@ -22,12 +22,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D30-traditional-knowledge.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-02-theories-map-svg.svg)
-
 
 | # | Theory/Concept | Proponent | Correspondence stages | Assessment |
 |---|----------------|-----------|----------------------|------------|
@@ -90,7 +83,6 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-03-cross-patterns-svg.svg)
-
 
 - Three structural patterns recur repeatedly across the domain of traditional knowledge and arts
 - **First, generation within repetition

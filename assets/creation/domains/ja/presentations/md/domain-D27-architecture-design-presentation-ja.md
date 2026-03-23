@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-01-overview-svg.svg)
 
-
 - **調査対象**: 建築の主要理論 12件
 - **調査の問い**: 建築の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 1件、条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D27-architecture.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-02-theories-map-svg.svg)
-
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -88,7 +80,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-03-cross-patterns-svg.svg)
-
 
 - 建築学を横断して最も繰り返し現れるのは、「境界は線ではなく帯域である」という発見です
 - 第二に、建築学は「縁」を分析概念ではなく設計操作として扱う点で、他の学問領域とは異なる独自の貢献を持ちます

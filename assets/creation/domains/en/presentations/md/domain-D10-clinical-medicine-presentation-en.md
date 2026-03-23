@@ -22,12 +22,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D10-clinical-medicine.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-02-theories-map-svg.svg)
-
 
 | # | Theory / Process | Proponents | Corresponding Stages | Judgment |
 |---|-----------------|------------|---------------------|----------|
@@ -93,7 +86,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-03-cross-patterns-svg.svg)
-
 
 - The most striking cross-cutting feature of clinical medicine is the "observability of the Edge"
 - Second, a "systematicity of failure modes" emerges

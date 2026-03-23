@@ -1,7 +1,5 @@
 # 工学・情報科学
 
-![工学・情報科学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D07-engineering.svg)
-
 > **立ち位置明示**
 > 本稿は、工学・情報科学の主要理論と「5段階モデル（場→波→縁→渦→束）」との
 > 構造的類似を調査した報告です。特定の理論的立場を主張するものではなく、
@@ -10,7 +8,6 @@
 ## 1. 調査の目的と問い
 
 ![工学・情報科学 — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-01-overview-svg.svg)
-
 
 本調査は、工学・情報科学における秩序生成・最適化の諸理論が「5段階モデル（場→波→縁→渦→束）」と構造的に対応するかどうかを検討するものです。
 
@@ -70,7 +67,6 @@
 ## 4. 調査結果: 全体像
 
 ![工学・情報科学 — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-02-theories-map-svg.svg)
-
 
 工学・情報科学領域では、10の理論・概念について5段階モデルとの構造対応を検討しました。結果は以下のとおりです。
 
@@ -178,7 +174,6 @@
 ## 6. 横断的パターン
 
 ![工学・情報科学 — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-03-cross-patterns-svg.svg)
-
 
 本調査で工学・情報科学領域に固有の横断的パターンが5つ確認されました。
 

@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-01-overview-svg.svg)
 
-
 - **調査対象**: 生命科学の主要理論 11件
 - **調査の問い**: 生命科学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 1件、条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D09-life-science.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-02-theories-map-svg.svg)
-
 
 | 温度 | 理論/概念 | 位置づけ |
 |------|-----------|----------|
@@ -90,7 +82,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-03-cross-patterns-svg.svg)
-
 
 - 生命科学を横断して、以下の四つのパターンが確認されました
 - 本調査で最も顕著なパターンは、5段階の構造が意識を伴わない水準で現れることです
