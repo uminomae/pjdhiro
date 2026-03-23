@@ -2,6 +2,8 @@
 
 ![T2: Threshold Structure and Edge-to-Vortex Transition — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-threshold.svg)
 
+![T2 Threshold Structure Convergence Network](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-threshold-01-convergence-svg.svg)
+
 11 domains directly thematize threshold transitions. An additional 10 domains describe non-arrival-at-vortex pathways.
 
 - **The edge-to-vortex transition is threshold-like, not continuous**: One of the most robust cross-domain findings from the physical and chemical sciences

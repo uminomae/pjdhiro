@@ -10,3 +10,5 @@
 束の定義は「安定化した到達点」から「次の場を準備する動態的位相」へ更新されるべきであり、5段階の図示は「直線+矢印」から「螺旋」に変更することが提案された。場には原初的場（type-0）と循環的場（type-1）の二種の区別が必要である。
 
 ![Phase 8 5テーマ統合構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-recirculation.svg)
+
+![T5 再循環メカニズム 収束ネットワーク図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-recirculation-01-convergence-svg.svg)

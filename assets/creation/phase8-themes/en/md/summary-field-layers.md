@@ -2,6 +2,8 @@
 
 ![T6: Field Multi-Layering — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-field-layers.svg)
 
+![T6 Field Multi-Layering Convergence Network](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-field-layers-01-convergence-svg.svg)
+
 15 of 30 domains directly thematize the multi-layered nature of "field." In stage-definition proposals, 28 of 30 reference "field."
 
 - **The distinction between primordial field and circulatory field is universal**: Independently proposed by 10 domains. First-cycle and subsequent-cycle fields differ in nature

@@ -64,6 +64,9 @@
 
 ## §B: 収束点 — 統一分類の候補
 
+
+![T1 縁の類型学 収束ネットワーク図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-edge-typology-01-convergence-svg.svg)
+
 30領域の縁記述から、以下の**収束的構造**が浮上する。
 
 ### 収束1: 縁は「帯域」である（線ではない） [P]
@@ -89,6 +92,9 @@ D14心理学（洞察=制約緩和=「何が外れたか」）と他の全領域
 ---
 
 ## §C: 分岐点 — 統一分類が困難な箇所
+
+
+![T1 縁の類型学 分岐・緊張構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-edge-typology-02-divergence-svg.svg)
 
 ### 分岐1: 縁は「通過するもの」か「留まるもの」か
 
