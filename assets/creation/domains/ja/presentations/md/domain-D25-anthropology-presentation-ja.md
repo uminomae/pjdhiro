@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-01-overview-svg.svg)
+
+
 - **調査対象**: 人類学の主要理論 10件
 - **調査の問い**: 人類学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-02-theories-map-svg.svg)
+
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -78,6 +84,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-03-cross-patterns-svg.svg)
+
 
 - 人類学を横断して最も繰り返し現れるのは、「縁」の圧倒的な厚さです
 - この多面性は、5段階モデルの「縁」が単純な概念ではないことを示しています

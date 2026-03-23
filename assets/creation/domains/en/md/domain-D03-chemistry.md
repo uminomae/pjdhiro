@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-01-overview-svg.svg)
+
+
 This report summarizes an investigation into whether major theories of order formation in chemistry correspond structurally to the five-stage model (Field -> Wave -> Edge -> Vortex -> Bundle).
 
 The five-stage model is a theoretical framework that describes creative processes through five stages: Field, an undifferentiated initial condition in which neither direction nor structure is fixed; Wave, a stage of divergent and competing exploration; Edge, a tense condition in which opposing elements coexist without collapsing into either side; Vortex, the spontaneous emergence of a new coherence from within that tension; and Bundle, the stabilization of that coherence as a reusable structure. This investigation examines how far that framework can be mapped onto the discipline of chemistry.
@@ -51,6 +54,9 @@ This model is not limited to one scale or one discipline. It has been proposed a
 Some readers may already feel discomfort or skepticism about the definitions given so far. That reaction is natural, and is itself relevant to the investigation. The point of the following sections is to make the explanatory power of the framework concrete by testing it against specific findings.
 
 ## 4. Results: Overall Picture
+
+![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-02-theories-map-svg.svg)
+
 
 ### 4.1 List of Cases Investigated
 
@@ -142,6 +148,9 @@ The gel point is one of the most intuitive expressions of Edge as a threshold of
 **Chemical evolution and the RNA world hypothesis**: The staged account inorganic -> organic -> self-replication -> metabolism -> cell could in principle correspond to the five stages. But because the boundaries between stages remain unclear and multiple competing scenarios remain in play, no specific structure corresponding to Edge can yet be identified with confidence. Judgment is therefore withheld for now.
 
 ## 6. Cross-Domain Patterns
+
+![Order Formation in Chemistry and Its Structural Correspondence with the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-03-cross-patterns-svg.svg)
+
 
 Across these individual theories, three recurring structural patterns appeared throughout the chemistry domain.
 

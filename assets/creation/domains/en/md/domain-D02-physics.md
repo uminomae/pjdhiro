@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Structural Correspondence Between Order Formation in Physics and the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question.
 
 > Do theories in physics structurally correspond to the five-stage model (Field (場) → Wave (波) → Edge (縁) → Vortex (渦) → Bundle (束))?
@@ -61,6 +64,9 @@ Some readers may feel discomfort with these definitions themselves as they proce
 ---
 
 ## 4. Results of the Investigation: Overall Picture
+
+![Structural Correspondence Between Order Formation in Physics and the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-02-theories-map-svg.svg)
+
 
 ### Overview
 
@@ -146,6 +152,9 @@ The remaining four theories also display structural correspondence in outline.
 ---
 
 ## 6. Cross-Cutting Patterns
+
+![Structural Correspondence Between Order Formation in Physics and the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-03-cross-patterns-svg.svg)
+
 
 When the ten physical theories are examined across the domain, the following patterns repeatedly appear.
 

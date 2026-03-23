@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Astronomy and Astrophysics: The Spiral of Unconscious Creation — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D06-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into whether theories in astronomy and astrophysics correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束)).
 
 Astronomy is a discipline that describes processes by which order is generated without the intervention of a conscious subject. From the collapse of molecular clouds to the hierarchical growth of galaxies and the formation of large-scale cosmic structure, interactions among gravity, electromagnetic fields, and nuclear forces spontaneously produce structure. This investigation examines whether such processes correspond to the structure of the five-stage model. It does not use astronomical knowledge to justify any particular theory. This report is an investigation report, not a personal essay or an exposition of the author's ideas.
@@ -45,6 +48,9 @@ The following explains the stages of the five-stage model referenced in this inv
 If anything in these definitions feels uneasy, that itself is an important perspective for this investigation. Continuing to read while retaining that unease, or leaving the report at this point, are both meaningful choices.
 
 ## 4. Findings: Overall Picture
+
+![Astronomy and Astrophysics: The Spiral of Unconscious Creation — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D06-02-theories-map-svg.svg)
+
 
 Of the ten theories and phenomena evaluated, all ten showed strong structural correspondence. This makes astronomy one of the domains with the highest rate of correspondence across the full set of thirty domains.
 
@@ -105,6 +111,9 @@ As core collapse progresses, binaries formed and hardened in the central region 
 No one designed the self-regulating mechanism of binary burning; it emerges spontaneously from the collapse process itself. From the perspective of the five stages, this is a structurally interesting case in which Vortex, the self-regulation of binary burning, is generated immanently out of passage through Edge, the branching toward core collapse.
 
 ## 6. Cross-Cutting Patterns
+
+![Astronomy and Astrophysics: The Spiral of Unconscious Creation — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D06-03-cross-patterns-svg.svg)
+
 
 ### Universality of Threshold Mechanisms
 

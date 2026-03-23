@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Research Question
 
+![Economics — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question.
 
 > Do the theories in this academic domain correspond structurally to the five-stage model: Field (場), Wave (波), Edge (縁), Vortex (渦), Bundle (束)?
@@ -49,6 +52,9 @@ This model is not a one-way line; it includes circulation in which Bundle become
 If a sense of incongruity remains at this point, that itself is an important perspective of the present investigation. Readers may proceed while retaining that sense of incongruity.
 
 ## 4. Research Findings: Overall Picture
+
+![Economics — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -151,6 +157,9 @@ The firm's internal pool of resources = the latent polyvalence of productive ser
 This theory is a precursor to the resource-based view (RBV). It directly influenced Barney's RBV and Teece's theory of dynamic capabilities, and it is also continuous with the evolutionary economics of Nelson & Winter. It is historically significant as a pioneering achievement by a woman economist.
 
 ## 6. Cross-Cutting Patterns
+
+![Economics — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-03-cross-patterns-svg.svg)
+
 
 First, as shown by Schumpeter Creative Destruction, Hayek Spontaneous Order and the Price Mechanism, and Keynes Fundamental Uncertainty and Animal Spirits, this domain describes difference and conflict not merely as obstacles but as the conditions under which new order emerges. This means that, among the five stages, the transition from Edge to Vortex can be observed here with particular richness.
 

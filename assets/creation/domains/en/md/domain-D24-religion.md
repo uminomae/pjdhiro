@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Questions of the Investigation
 
+![Religion — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question:
 
 > Do the theories in this academic domain correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束))?
@@ -49,6 +52,9 @@ This model is not a one-way line; it includes a circulation in which Bundle beco
 If a sense of incongruity remains at this point, that is itself an important perspective for the present investigation. Readers may continue while holding on to that incongruity.
 
 ## 4. Investigation Results: Overall Picture
+
+![Religion — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-02-theories-map-svg.svg)
+
 
 ### List of Evaluated Theories
 
@@ -151,6 +157,9 @@ The Buddhist stages of practice show strong structural correspondence with the f
 This belongs in the context of Mahayana Buddhist scholasticism. The ten bhumis were established in early Mahayana Buddhism around the turn of the era and received different interpretations in the Yogacara and Madhyamaka traditions. The five paths are widely shared across both schools, although descriptions of the content of each path differ. The Ten Ox-Herding Pictures stand in a complementary relation to this entry as an experiential description in Zen Buddhism: scholastic doctrine describes what occurs, while the Ten Ox-Herding Pictures depict how it is experienced. Cross-cultural comparison with fana'/baqa' and the maqamat of Sufism raises the question of whether the Buddhist path of preparation/path of seeing, the Sufi maqam/fana', and Teresa's fourth/fifth mansions are structurally isomorphic.
 
 ## 6. Cross-Domain Patterns
+
+![Religion — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-03-cross-patterns-svg.svg)
+
 
 First, as shown by Rambo's seven-stage model of conversion + dynamic force field, Turner's liminality and structure/anti-structure (communitas), and Teresa of Avila's *El Castillo Interior o Las Moradas*: seven mansions, this domain describes difference and conflict not merely as obstacles but as conditions for the emergence of a new order. This means that, within the five-stage model, the transition from Edge to Vortex is especially richly observable in this domain.
 

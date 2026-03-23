@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Literary Studies: Narrative Structure and the Five Stages of Creation — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into the following question, using major theoretical systems in literary studies.
 
 > Do the theories of this academic domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -43,6 +46,9 @@ The five stages do not form a straight line but a cycle. Return from Bundle to F
 If these definitions already feel uncomfortable, that discomfort is itself important for the investigation. It may be meaningful either to continue while holding onto it or to pause at this point.
 
 ## 4. Results: Overall Picture
+
+![Literary Studies: Narrative Structure and the Five Stages of Creation — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-02-theories-map-svg.svg)
+
 
 The investigation of ten theories found structural correspondence with the five-stage model in nine cases, while one remained conditional.
 
@@ -140,6 +146,9 @@ The correspondence with the five-stage model is as follows. Cultural production 
 Bourdieu is distinctive because, unlike entries focusing on textual structure or reader-text relation, he describes the emergence of the literary field itself at institutional scale. He therefore confirms that the five-stage model may correspond across levels from textual microstructure to social macrostructure.
 
 ## 6. Cross-Domain Patterns
+
+![Literary Studies: Narrative Structure and the Five Stages of Creation — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-03-cross-patterns-svg.svg)
+
 
 ### 6.1 The Many Forms of Edge
 

@@ -88,6 +88,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-03-cross-patterns-svg.svg)
+
+
 - Looking across sociology, four patterns repeatedly appear
 - **First, the diversity of types of "En"**
 - **Second, the cycle from Taba back to Ba**

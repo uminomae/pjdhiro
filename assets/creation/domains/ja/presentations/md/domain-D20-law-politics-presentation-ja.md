@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-01-overview-svg.svg)
+
+
 - **調査対象**: 法学・政治学の主要理論
 - **調査の問い**: 法学・政治学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 1件、部分的な対応 1件、条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-02-theories-map-svg.svg)
+
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -82,6 +88,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-03-cross-patterns-svg.svg)
+
 
 - 法学・政治学を横断して最も際立つのは、「縁」の制度的実装の多様さです
 - Ostromの8設計原則は自治型の縁であり、利用者集団が自ら設計する関係構造です

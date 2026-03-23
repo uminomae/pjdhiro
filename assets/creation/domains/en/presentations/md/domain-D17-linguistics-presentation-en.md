@@ -86,6 +86,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-03-cross-patterns-svg.svg)
+
+
 - The most striking pattern across linguistics is the **diversity of implementations of En**
 - Second, the point that **many language changes are unintended creations** is common across multiple theories
 - Third, **isomorphism across scales** is prominent

@@ -83,6 +83,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-03-cross-patterns-svg.svg)
+
+
 - The most striking pattern across literary studies is the diversity of implementations of En
 - Second, the Taba→Ba cycle is explicitly described in multiple theories
 - Third, literary studies naturally provides "separation of scales"

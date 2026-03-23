@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Aesthetics — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D15-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question.
 
 > Do the theories of this academic domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -49,6 +52,9 @@ This model is not a one-way straight line. It includes circulation in which Bund
 If discomfort remains at this point, that is itself an important part of the investigation. Readers can continue while holding onto that discomfort.
 
 ## 4. Results: Overall Picture
+
+![Aesthetics — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D15-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -152,6 +158,9 @@ A field of possibilities corresponds to Field. Intentional indeterminacy and amb
 Eco is the only entry in D15 that treats reception itself as an essential moment of creation. It is not the producer but the receiver who forms Edge. The theory also offers one of the most direct descriptions of a Bundle that does not fully close. By remaining unfinished, the work makes creative participation by the receiver possible.
 
 ## 6. Cross-Domain Patterns
+
+![Aesthetics — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D15-03-cross-patterns-svg.svg)
+
 
 First, as Meltzer's aesthetic conflict, Japanese aesthetics, and Kant all show, difference and opposition in this domain are not described merely as obstacles. They are described as conditions for the emergence of new order. This means that in this domain the transition from Edge to Vortex can be observed with unusual richness.
 

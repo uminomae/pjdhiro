@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Psychology and Cognitive Science: What Happens When Cognition Shifts — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into the following question, using major theoretical systems in psychology and cognitive science.
 
 > Do the theories of this domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -59,6 +62,9 @@ The five-stage model is not limited to a particular scale, individual cognition,
 If these definitions already feel uncomfortable, that is itself an important point for the investigation. Holding onto that discomfort while reading can provide a more critical perspective on the results.
 
 ## 4. Results: Overall Picture
+
+![Psychology and Cognitive Science: What Happens When Cognition Shifts — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-02-theories-map-svg.svg)
+
 
 Structural correspondence with the five-stage model was confirmed for all ten candidate theories. The strength of correspondence is as follows.
 
@@ -172,6 +178,9 @@ In correspondence with the five-stage model, accumulation of bodily experience c
 **Distinctive insight from this theory**: This theory occupies a unique position within the investigation because the vocabulary of the five stages itself, Field, Wave, Edge, Vortex, and Bundle, depends on image schemas such as container, vibration, connection, rotation, and aggregation. Conceptual metaphor theory therefore functions as a mirror reflecting the linguistic basis of the five-stage model itself. Does the five-stage model describe the structure of the world, or the structure by which the world is understood through bodily metaphor? That question remains unresolved.
 
 ## 6. Cross-Domain Patterns
+
+![Psychology and Cognitive Science: What Happens When Cognition Shifts — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-03-cross-patterns-svg.svg)
+
 
 The following patterns recurred across multiple theories.
 

@@ -4,6 +4,9 @@
 
 ## 1. Purpose of the Investigation in This Domain
 
+![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into the structural correspondences between the major theoretical and practical frameworks of agriculture and ecology and the five-stage model of creation, namely Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束).
 
 Agriculture and ecology are domains in which cycles of disturbance and recovery, management and reevaluation, are presupposed. How do ecosystems change, stabilize, and then change again? How do human beings intervene in that process? The purpose of this investigation is to examine how the five-stage model corresponds to this cyclical structure.
@@ -37,6 +40,9 @@ The five-stage model used in this investigation is outlined below.
 If these definitions produce a sense of incongruity, that itself is an important perspective for the investigation. There is meaning both in continuing to read while retaining that sense of incongruity and in pausing here once before proceeding.
 
 ## 4. Results of the Investigation
+
+![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-02-theories-map-svg.svg)
+
 
 ### Overall Picture
 
@@ -97,6 +103,9 @@ Feedback, that is, Vortex, was explicitly confirmed in all 10 cases. In particul
 Climax community structure, in ecological succession; yield levels and residual nitrogen amounts, in nitrogen cycling; regionally standardized IPM protocols, in IPM; new stable states, in regime shifts; and regular spatial patterns, in dryland vegetation: Bundle becomes fixed as a stable structure. In agriculture, Bundle is often institutionalized in the form of management guidance or guidelines. The example of the USDA adopting state-and-transition models as rangeland management guidance succinctly demonstrates the institutionalization of Bundle.
 
 ## 6. Insights from This Domain
+
+![Agriculture and Ecology: A Domain in Which Three Kinds of Edge Converge — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-03-cross-patterns-svg.svg)
+
 
 ### Three Types of Edge
 

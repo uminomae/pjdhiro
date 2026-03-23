@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-02-theories-map-svg.svg)
+
+
 | Confidence | Theory group | Positioning |
 |------------|-------------|-------------|
 | Near-established | Alexander (structure-preserving transformation), Otto (form-finding), van Eyck (in-between), Hertzberger (threshold space), Ma (Japanese spatio-temporal concept) | Correspondence with all 5 stages is clear, with particularly thick description of En |
@@ -80,6 +83,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-03-cross-patterns-svg.svg)
+
 
 - The most recurring discovery across architecture is that "boundaries are not lines but bands"
 - Second, architecture has a unique contribution distinct from other academic domains in treating En not as an analytical concept but as a design operation

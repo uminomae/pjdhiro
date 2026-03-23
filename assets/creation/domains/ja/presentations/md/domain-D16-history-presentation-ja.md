@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-01-overview-svg.svg)
+
+
 - **調査対象**: 歴史学の主要理論 10件
 - **調査の問い**: 歴史学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 4件、部分的な対応 5件、条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-02-theories-map-svg.svg)
+
 
 | # | 理論/概念 | 提唱者 | 主な対応段階 | 判定 |
 |---|----------|--------|-------------|------|
@@ -86,6 +92,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-03-cross-patterns-svg.svg)
+
 
 - 歴史学を横断して最も顕著な特徴は、縁が多彩なメカニズムとして記述されることです
 - この多型性は、5段階モデルの縁を「関係の中で秩序が再編される局面」として読むとき、歴史学が最も豊富な事例群を提供することを意味します

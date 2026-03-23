@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-01-overview-svg.svg)
+
+
 - **調査対象**: 言語学の主要理論 10件
 - **調査の問い**: 言語学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 6件、部分的な対応 2件、条件付きの対応 2件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-02-theories-map-svg.svg)
+
 
 | # | 理論/概念 | 提唱者 | 主な対応段階 | 判定 |
 |---|----------|--------|------------|------|
@@ -85,6 +91,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-03-cross-patterns-svg.svg)
+
 
 - 言語学を横断して最も際立つのは、**縁の実装の多様性**です
 - 第二に、**言語変化の多くが意図なき創造である**という点が、複数の理論に共通しています

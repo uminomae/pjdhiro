@@ -4,6 +4,9 @@
 
 ## 1. Purpose of the Investigation in This Domain
 
+![Evolutionary Biology: Novelty Emerges from Error — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into whether evolutionary biology exhibits structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle.
 
 Evolutionary biology is one of the disciplines that has most fully demonstrated the structure by which novelty emerges from error, or variation. Most mutations are rejected, but some are retained and later become material for new functions or new species. The question of this investigation is whether that structure corresponds to the five-stage model. This document is an investigation report. It does not consume evolution as a metaphor for creation. It treats the specific structure of evolutionary biology on its own terms and identifies correspondence as precisely as possible.
@@ -33,6 +36,9 @@ This section explains the five-stage model used as the reference for the investi
 If these definitions already produce discomfort, that is itself an important point for the investigation. One meaningful option is to keep that discomfort in view and continue reading. Another is to stop here. Both are legitimate responses.
 
 ## 4. Results of the Investigation
+
+![Evolutionary Biology: Novelty Emerges from Error — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-02-theories-map-svg.svg)
+
 
 ### Overall Picture
 
@@ -109,6 +115,9 @@ Bundle is the stage in which a formed structure stabilizes as a reusable pattern
 Niche construction shows most directly how Bundle returns to Field. Organisms modify their environment, and the modified environment redefines the selection pressures on the next generation. The result of creation changes the precondition for the next creation. The extended evolutionary synthesis theorizes this recursive structure as reciprocal causation.
 
 ## 6. Insights from This Domain
+
+![Evolutionary Biology: Novelty Emerges from Error — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-03-cross-patterns-svg.svg)
+
 
 ### The Biological Basis of the Three Fates of Error
 

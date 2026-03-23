@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-01-overview-svg.svg)
+
+
 - **調査対象**: 工学情報の主要理論
 - **調査の問い**: 工学情報の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 部分的な対応 1件、条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-02-theories-map-svg.svg)
+
 
 | 温度 | 理論・技術 | 位置づけ |
 |---|---|---|
@@ -81,6 +87,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-03-cross-patterns-svg.svg)
+
 
 - 工学・情報科学の10の理論・技術を横断して、四つの構造パターンが繰り返し確認されました
 - **第一に、「誤差の精密な定量化」が工学に固有の貢献です

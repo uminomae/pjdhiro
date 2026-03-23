@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-01-overview-svg.svg)
+
+
 - **調査対象**: 神経科学の主要理論 11件
 - **調査の問い**: 神経科学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 10件、条件付きの対応 1件
@@ -43,6 +46,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-02-theories-map-svg.svg)
+
 
 | # | 理論/概念 | 主要な研究者 | 対応段階 | 判定 |
 |---|----------|------------|---------|------|
@@ -125,6 +131,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-03-cross-patterns-svg.svg)
+
 
 - **「関係が方向を決める」構造**: STDPでは発火の時間差、CTCでは位相同期、ポリヴェーガル理論では自律神経的同調が、それぞれ異なる物理量を用いながら構造変化の方向を選別しています。縁は特定のメカニズムではなく「関係による選別」という構造的特徴です
 - **スケール不変性**: 「差異の検出、関係の形成、構造の変化」というパターンが、シナプス（ミリ秒）から対人関係（年）まで同型的に繰り返されます
