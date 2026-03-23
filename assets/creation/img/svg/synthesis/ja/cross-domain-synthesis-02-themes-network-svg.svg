@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" text-anchor="middle">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title and Subtitle -->
+  <text x="600" y="45" fill="white" font-size="28" font-weight="bold">30領域横断分析 — 5テーマ構造関連図</text>
+  <text x="600" y="75" fill="#cccccc" font-size="16">Phase 8 統合的知見</text>
+
+  <!-- Arrow Markers Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <!-- Theme Nodes -->
+  <!-- T1 縁の類型学: Center (x=600, y=350). Largest node (rounded rect 240x120, rx=15). -->
+  <g>
+    <circle cx="600" cy="350" r="150" fill="#D4A857" opacity="0.15" />
+    <rect x="480" y="290" width="240" height="120" rx="15" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+    <text x="600" y="330" fill="#D4A857" font-size="20" font-weight="bold">縁の類型学 (T1)</text>
+    <text x="600" y="355" fill="white" font-size="14">28/30 領域</text>
+    <text x="600" y="370" fill="#cccccc" font-size="11">縁 is a concept family, dynamic selection/generation.</text>
+  </g>
+
+  <!-- T2 閾値構造: Right (x=950, y=300). Rounded rect 200x100, rx=12. -->
+  <g>
+    <rect x="850" y="250" width="200" height="100" rx="12" fill="#2a2a4e" stroke="#C45B4D" stroke-width="3" />
+    <text x="950" y="280" fill="#C45B4D" font-size="20" font-weight="bold">閾値構造 (T2)</text>
+    <text x="950" y="305" fill="white" font-size="14">11 領域</text>
+    <text x="950" y="320" fill="#cccccc" font-size="11">Transition 縁→渦 requires threshold conditions.</text>
+  </g>
+
+  <!-- T5 再循環メカニズム: Right-bottom (x=900, y=550). Rounded rect 200x100, rx=12. -->
+  <g>
+    <rect x="800" y="500" width="200" height="100" rx="12" fill="#2a2a4e" stroke="#5B8B6A" stroke-width="3" />
+    <text x="900" y="530" fill="#5B8B6A" font-size="20" font-weight="bold">再循環メカニズム (T5)</text>
+    <text x="900" y="555" fill="white" font-size="14">19 領域</text>
+    <text x="900" y="570" fill="#cccccc" font-size="11">束 is not endpoint, but seed for next cycle.</text>
+  </g>
+
+  <!-- T6 場の多層性: Left (x=250, y=300). Rounded rect 200x100, rx=12. -->
+  <g>
+    <rect x="150" y="250" width="200" height="100" rx="12" fill="#2a2a4e" stroke="#8B8682" stroke-width="3" />
+    <text x="250" y="280" fill="#8B8682" font-size="20" font-weight="bold">場の多層性 (T6)</text>
+    <text x="250" y="305" fill="white" font-size="14">15 領域</text>
+    <text x="250" y="320" fill="#cccccc" font-size="11">場 is structured potentiality (原初的場, 循環的場).</text>
+  </g>
+
+  <!-- T7+T9 盲点と反例: Bottom-left (x=300, y=600). Rounded rect 200x100, rx=12. -->
+  <g>
+    <rect x="200" y="550" width="200" height="100" rx="12" fill="#2a2a4e" stroke="#5B8DB8" stroke-width="3" stroke-dasharray="8,4" />
+    <text x="300" y="580" fill="#5B8DB8" font-size="20" font-weight="bold">盲点と反例 (T7+T9)</text>
+    <text x="300" y="605" fill="white" font-size="14">13 領域</text>
+    <text x="300" y="620" fill="#cccccc" font-size="11">Model describes order generation, not all change.</text>
+  </g>
+
+  <!-- Flow Arrows -->
+  <!-- T6 → T1: #8B8682, stroke-width 3 (場 conditions shape 縁 types) -->
+  <path d="M 350 300 C 400 300, 430 350, 480 350" stroke="#8B8682" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <!-- T1 → T2: #D4A857, stroke-width 3 (縁 types determine threshold conditions) -->
+  <path d="M 720 350 C 770 350, 800 300, 850 300" stroke="#D4A857" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <!-- T2 → T5: #C45B4D, stroke-width 2 (threshold passage leads to recirculation) -->
+  <path d="M 950 350 C 950 420, 900 450, 900 500" stroke="#C45B4D" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <!-- T5 → T6: #5B8B6A, stroke-width 2, curved (束→場 spiral return) -->
+  <path d="M 800 550 C 700 650, 150 500, 250 350" stroke="#5B8B6A" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <!-- T7+T9 → T1: #5B8DB8, stroke-width 1.5, stroke-dasharray="6,4" (critique of 縁 universality) -->
+  <path d="M 300 550 C 400 500, 500 450, 600 410" stroke="#5B8DB8" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowhead)" />
+  <!-- T7+T9 → T2: #5B8DB8, stroke-width 1.5, stroke-dasharray="6,4" (渦不到達 critique) -->
+  <path d="M 400 550 C 550 500, 700 400, 850 350" stroke="#5B8DB8" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- Stage distribution bar chart -->
+  <g transform="translate(0, 720)"> <!-- Shift group up so baseline is at 760 -->
+    <!-- Bars (y values are relative to group's y=720, so 760-720=40 is the baseline) -->
+    <rect x="400" y="40 - 42.857" width="80" height="42.857" fill="#8B8682" />
+    <rect x="480" y="40 - 25.714" width="80" height="25.714" fill="#5B8DB8" />
+    <rect x="560" y="40 - 80" width="80" height="80" fill="#D4A857" />
+    <rect x="640" y="40 - 31.428" width="80" height="31.428" fill="#C45B4D" />
+    <rect x="720" y="40 - 62.857" width="80" height="62.857" fill="#5B8B6A" />
+
+    <!-- Labels -->
+    <text x="440" y="55" fill="white" font-size="12">場 (15)</text>
+    <text x="520" y="55" fill="white" font-size="12">波 (9)</text>
+    <text x="600" y="55" fill="white" font-size="12">縁 (28)</text>
+    <text x="680" y="55" fill="white" font-size="12">渦 (11)</text>
+    <text x="760" y="55" fill="white" font-size="12">束 (22)</text>
+  </g>
+
+  <!-- Note at bottom -->
+  <text x="600" y="785" fill="#5B8DB8" font-size="12" font-style="italic">波 (9) は5テーマ中主題化されず — 最大の未開拓領域</text>
+
+</svg>

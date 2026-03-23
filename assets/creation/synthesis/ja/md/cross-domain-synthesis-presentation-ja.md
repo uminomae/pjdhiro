@@ -33,6 +33,8 @@ slides: 15
 
 ## 段階別の分布
 
+![30領域 x 5段階 対応強度ヒートマップ](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-01-distribution-svg.svg)
+
 - **縁**: 28領域。最多。概念族として多型化
 - **束**: 22領域。循環駆動と動態性が集中
 - **場**: 15領域。多層性と条件付き潜在性が主題化
@@ -115,6 +117,8 @@ slides: 15
 ---
 
 ## 5テーマの関係
+
+![5テーマ構造関連図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-02-themes-network-svg.svg)
 
 - 場の多層性: どの生成条件から始まるかを規定
 - 縁の類型学: どのような接触面が働くかを記述
