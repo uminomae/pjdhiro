@@ -16,6 +16,8 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-01-overview-svg.svg)
+
 - **Survey target**: 10 major theories in economics
 - **Research question**: Do the various theories of economics correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 7 cases, partial correspondence in 3 cases

@@ -16,6 +16,8 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-01-overview-svg.svg)
+
 - **Survey target**: 11 major theories in business management
 - **Research question**: Do the various theories of business management correspond structurally to the 5-stage model?
 - **Results**: Structural correspondence confirmed in all 11 cases, ranging from high alignment to partial correspondence

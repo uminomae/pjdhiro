@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-01-overview-svg.svg)
+
 - **Scope**: 10 major theories in history
 - **Research question**: Do theories in history structurally correspond to the five-stage model?
 - **Results**: Strong correspondence 4, Partial correspondence 5, Conditional correspondence 1
@@ -35,6 +37,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ---
 
 ## Overall Structural Correspondence
+
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-02-theories-map-svg.svg)
 
 | # | Theory/Concept | Proponent | Primary Corresponding Stages | Assessment |
 |---|----------------|----------|---------------------------|-----------|

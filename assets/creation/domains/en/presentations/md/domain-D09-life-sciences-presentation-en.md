@@ -16,6 +16,8 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-01-overview-svg.svg)
+
 - **Scope**: 11 major theories in life sciences
 - **Research question**: Do life-science theories correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 1 case, conditional correspondence in 1 case

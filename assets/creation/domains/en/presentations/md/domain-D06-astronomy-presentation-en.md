@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D06-01-overview-svg.svg)
+
 - **Survey targets**: 10 major theories in astronomy
 - **Research question**: Do the theories of astronomy correspond structurally to the five-stage model?
 - **Results**: Strong correspondence in 9 cases, partial correspondence in 1 case
