@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歴史学 - 5段階モデルとの構造対応</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">歴史学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">5段階モデル（場・波・縁・渦・束）との構造対応調査</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">調査の概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-01-overview-svg.svg" alt="Domain — 調査概要インフォグラフィック"></p>
+<ul>
+<li class="animate-in delay-4"><strong>調査対象</strong>: 歴史学の主要理論 10件</li>
+<li class="animate-in delay-5"><strong>調査の問い</strong>: 歴史学の諸理論は、5段階モデルと構造的に対応するか</li>
+<li class="animate-in delay-5"><strong>判定結果</strong>: 強い対応 4件、部分的な対応 5件、条件付きの対応 1件</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">5段階モデルの概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>段階</th><th>定義</th></tr><tr><td>場（ば）</td><td>未分化の状態。方向も構造もまだ定まっていない初期条件</td></tr><tr><td>波（なみ）</td><td>複数の方向性が発散・競合する探索の段階</td></tr><tr><td>縁（えん）</td><td>対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所</td></tr><tr><td>渦（うず）</td><td>緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階</td></tr><tr><td>束（たば）</td><td>形が確定し、再利用可能な構造として安定する段階</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">構造対応の全体像</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-02-theories-map-svg.svg" alt="Domain — 理論×5段階対応マトリクス"></p>
+<table class="animate-in delay-4"><tr><th>#</th><th>理論/概念</th><th>提唱者</th><th>主な対応段階</th><th>判定</th></tr><tr><td>1</td><td>長期持続・三層構造</td><td>Braudel (1949)</td><td>場（時間的基盤）、波-縁（層間相互作用）</td><td>部分的な対応</td></tr><tr><td>2</td><td>挑戦と応答</td><td>Toynbee (1934)</td><td>波（挑戦）、縁（応答の編成）、束（文明秩序）</td><td>部分的な対応</td></tr><tr><td>3</td><td>経路依存とクリティカル・ジャンクチャー</td><td>Pierson, Mahoney, North</td><td>縁（分岐点）、渦（自己強化）、束（ロックイン）</td><td>強い対応</td></tr><tr><td>4</td><td>アサビーヤ王朝論</td><td>Ibn Khaldun (1377)</td><td>縁（凝集の統合）、渦（拡張）、束→場（循環）</td><td>強い対応</td></tr><tr><td>5</td><td>世界システム分析</td><td>Wallerstein (1974)</td><td>縁（中核-周辺-半周辺の関係構造）</td><td>部分的な対応</td></tr><tr><td>6</td><td>大規模技術システム</td><td>Hughes (1983)</td><td>全5段階に高い対応。束（モメンタム）</td><td>強い対応</td></tr><tr><td>7</td><td>概念史と時間構造</td><td>Koselleck (1979)</td><td>場→波（経験と期待の乖離）、縁（鞍型期）</td><td>部分的な対応</td></tr><tr><td>8</td><td>メタヒストリー</td><td>White (1973)</td><td>限定的（叙述の構造を記述する理論）</td><td>限定的な対応</td></tr><tr><td>9</td><td>歴史の循環</td><td>Vico (1725)</td><td>全段階に対応。束→場（ricorso）</td><td>部分的な対応</td></tr><tr><td>10</td><td>世俗サイクルとクリオダイナミクス</td><td>Turchin (2003)</td><td>縁（エリート過剰生産）、束→場（循環）</td><td>強い対応</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 1: 経路依存とクリティカル・ジャンクチャー（Pierson, Mahoney, North）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">経路依存とは、初期の選択が制度の経路を固定し、正のフィードバックによって自己強化・長期持続するという考え方です。Pierson（2000）は4つの自己強化メカニズムを整理しました。サンクコスト効果（すでに投じた資源が撤退を困難にする）、学習効果（使い続けるほど習熟が進む）、調整効果（他者も同じ制度を使うほど便益が増す）、適応的期待（将来も続くと予想されるほど採用が進む）の四つです。</li>
+<li class="animate-in delay-4">クリティカル・ジャンクチャーとは、制度的柔軟性が一時的に高まり、複数の経路が開かれる瞬間を指します。この瞬間に行われた選択が、その後の長期的な制度の方向を決定します。</li>
+<li class="animate-in delay-5"><strong>事実として</strong>: Pierson（2000）とMahoney（2000）は、歴史的制度論の枠組みで、初期選択が正のフィードバックにより制度経路を固定すること、またクリティカル・ジャンクチャーにおいて複数の経路が一時的に開かれることを記述しました。North（1990）は、制度変化が経済パフォーマンスを規定するメカニズムを分析しました。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、制度の分岐・固定化・危機による再分岐という一連のプロセスを読み取ります。類似の水準はプロセスです。特に、クリティカル・ジャンクチャーという「複数の経路が競合し、いずれにも確定しない瞬間」が、分岐点の構造として最も鮮明に現れています。また、ロックインという「自己強化によって経路が不可逆的に固定される」構造は、持続性のメカニズムとして際立ちます。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 複数の制度オプションが並存する状態は場に、危機や政変によって選択圧が上昇する局面は波に対応します。クリティカル・ジャンクチャー——アクターの連合と制度案が競合し、いずれにも確定しない分岐点——は、5段階モデルの縁と構造的に対応します。選択後に正のフィードバックが作動し制度が自己強化する過程は渦に、正当化規範と実務慣行が累積しロックインが成立する段階は束に対応します。制度危機による再分岐（束→場への回帰）が理論に内蔵されている点も特徴的です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 2: Ibn Khaldun アサビーヤ王朝論（1377）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Ibn Khaldunは14世紀の北アフリカの思想家で、『ムカッディマ（歴史序説）』において、集団の凝集力（アサビーヤ）が王朝の盛衰を駆動するメカニズムを記述しました。近代社会科学に数世紀先立つ構造的歴史分析として、20世紀後半に再評価されています。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: Ibn Khaldunは、アサビーヤ（集団の凝集力）が統率を超えて王権へ至ること、王朝は凝集→王権獲得→拡張→奢侈化→凝集摩耗→交替のサイクルを辿ること（約3-4世代、120年前後）、奢侈と繁栄への沈潜が凝集を弱める構造的要因であることを記述しました。また交替後も制度（徴税・支配慣行）は残存し、次の王朝が再利用すると述べています。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、凝集の生成・統合・拡張・摩耗・交替という循環的プロセスを読み取ります。類似の水準はプロセスと構造の両面です。特に注目すべきは二点あります。一つは、「多凝集が合流してより大きな凝集になる」という関係形成のメカニズムです。もう一つは、「奢侈による凝集の摩耗」という、成功がシステムを弱体化させる逆説的な崩壊メカニズムです。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 凝集が散在する社会空間は場に、ある凝集が優越を志向し競合が強まる局面は波に対応します。凝集の統合——従属・併合・同盟による関係網の形成——は縁に対応し、この対応は高いと判断されます。王朝支配の拡張と制度の自己強化は渦に、凝集摩耗による交替と制度の残存は束→場への回帰に対応します。ただし、前王朝の制度が次の王朝に再利用されるため、完全な初期状態への回帰ではなく、前サイクルの遺産が次の初期条件を形成する螺旋的な回帰です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 3: Hughes 大規模技術システムとモメンタム（1983, 1987）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Hughesは、電力網・電話網・鉄道などの大規模技術システムの歴史を、「発明・開発・革新・移転・成長/競争/統合」の相として提示しました。これらの相は単純な直列ではなく、重なりや逆行がありうると明示しています。代表的業績である『Networks of Power』（1983）は電化の比較史（アメリカ・ドイツ・イギリス）を扱い、科学技術社会論（STS）の基盤的業績として広く参照されています。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: Hughes（1987）は、技術システムが成熟すると「自律」ではなく「モメンタム」を獲得すると述べました。モメンタムとは、組織・人・固定資産・沈没費用が束になって将来へ投影される状態です。また、システム構築に関与する主体は、発明期には発明家型、成長期には管理者型、統合期には金融・政治的主体へと変化すると整理しました。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、技術要素と社会要素が接合され、自己増殖し、慣性として残存するプロセスを読み取ります。類似の水準は構造です。特にモメンタムの概念は注目に値します。「方向を持った構造の残存」という記述は、5段階モデルの束の定義をほぼそのまま技術史の語彙で語っています。また、段階の重なり・逆行を認める点は、5段階の「厳密な一方向ではない順序性」と整合します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 技術要素・制度要素が散在する未分化状態は場に、ラディカルな発明の発生は波に対応します。開発・移転・適応——技術要素と社会要素（法・市場・組織）の接合——は縁に、成長・競争・統合によるシステムの自己増殖と拡大は渦に、モメンタム——固定資産・組織・規制・人材の束としての残存——は束に対応します。全5段階への対応が高く、10の理論の中で最も自然に5段階と並ぶ事例です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">横断的パターン</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-03-cross-patterns-svg.svg" alt="Domain — 横断的パターン図"></p>
+<ul>
+<li class="animate-in delay-4">歴史学を横断して最も顕著な特徴は、縁が多彩なメカニズムとして記述されることです</li>
+<li class="animate-in delay-5">この多型性は、5段階モデルの縁を「関係の中で秩序が再編される局面」として読むとき、歴史学が最も豊富な事例群を提供することを意味します</li>
+<li class="animate-in delay-5">Ibn Khaldun（奢侈による凝集の摩耗）、Turchin（エリート過剰生産）、Vico（文明の腐敗による野蛮への回帰）は、独立に「成功がシステムを不安定化させる」パターンを記述しています</li>
+<li class="animate-in delay-5">歴史学の10理論のうち、少なくとも5理論（Ibn Khaldun, Vico, Turchin, 経路依存, Wallerstein）が束→場への回帰を理論に内蔵しています</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">未解決の問い</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">歴史学における循環モデル（Ibn Khaldun, Vico, Turchin）と5段階モデルの関係をどう整理するかは、まだ決着していません。5段階が順次的展開を記述するのに対し、循環モデルは反復を記述します。両者の関係は「循環の一周が5段階の一回分に対応する」と読めますが、周期の切り方に裁量が残ります。</li>
+<li class="animate-in delay-4">「場」を歴史学でどう捉えるかは、引き続き検討が必要です。未分化な初期状態という理解を保つのか、Koselleckの「経験空間」やBraudelの「長期持続」のように、すでに配向を持つ前提条件として読み直すのかで、モデルの射程が変わります。</li>
+<li class="animate-in delay-5">モメンタム（Hughes）とロックイン（経路依存）は、束の異なる側面を記述しているのかもしれません。モメンタムは「方向を持った慣性」であり、ロックインは「経路の固定化」です。両者の関係は、束の内部構造を理解する手がかりになりえます。</li>
+<li class="animate-in delay-5">White（メタヒストリー）との対応が弱いことは、5段階モデルの射程を逆照射します。5段階が記述するのは「存在の創造」であり、「理解の生成」（歴史叙述の構造化）は射程外であるのか、それとも射程の拡張が必要なのかは、方法論上の課題として残ります。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">結論</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">本調査では、歴史学は5段階モデルとの構造類似が全体として中程度から高い領域であることが確認されました</li>
+<li class="animate-in delay-4">特に強い対応を示したのは、Hughes（大規模技術システム）、経路依存、Ibn Khaldun（アサビーヤ王朝論）、Turchin（クリオダイナミクス）です</li>
+<li class="animate-in delay-5">歴史学から得られる最大の知見は二つです</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">歴史学 - 5段階モデルとの構造対応</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>

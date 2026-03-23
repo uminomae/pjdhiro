@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文芸学 - 5段階モデルとの構造対応</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">文芸学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">5段階モデル（場・波・縁・渦・束）との構造対応調査</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">調査の概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-01-overview-svg.svg" alt="Domain — 調査概要インフォグラフィック"></p>
+<ul>
+<li class="animate-in delay-4"><strong>調査対象</strong>: 文芸学の主要理論 10件</li>
+<li class="animate-in delay-5"><strong>調査の問い</strong>: 文芸学の諸理論は、5段階モデルと構造的に対応するか</li>
+<li class="animate-in delay-5"><strong>判定結果</strong>: 部分的な対応 1件、条件付きの対応 1件</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">5段階モデルの概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>段階</th><th>定義</th></tr><tr><td>場（ば）</td><td>未分化の状態。方向も構造もまだ定まっていない初期条件</td></tr><tr><td>波（なみ）</td><td>複数の方向性が発散・競合する探索の段階</td></tr><tr><td>縁（えん）</td><td>対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所</td></tr><tr><td>渦（うず）</td><td>緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階</td></tr><tr><td>束（たば）</td><td>形が確定し、再利用可能な構造として安定する段階</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">構造対応の全体像</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-02-theories-map-svg.svg" alt="Domain — 理論×5段階対応マトリクス"></p>
+<table class="animate-in delay-4"><tr><th>温度</th><th>理論群</th><th>位置づけ</th></tr><tr><td>確定に近い</td><td>Shklovsky（異化）、Jauss/Iser（受容美学）、Bakhtin（対話性）</td><td>移行の記述が具体的で、5段階全体への対応が明瞭です</td></tr><tr><td>有力</td><td>Propp（物語機能）、Barthes（テクストの多元的読解）、Bourdieu（文学場）、Bloom（影響の不安）、Genette（ナラトロジー）</td><td>対応はありますが、特定の段階に厚みが偏るか、圧縮を伴います</td></tr><tr><td>条件付き</td><td>Todorov（物語構造）、Frye（原型批評）</td><td>部分的な対応は見られますが、原典照合が未完了（Todorov）、あるいは体系の恣意性への批判がある（Frye）ため、慎重な扱いが必要です</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 1: Shklovskyの異化（ostranenie）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">ロシアフォルマリズムの創始者の一人であるShklovskyは、1917年の論文「手法としての芸術」で「異化」（ostranenie）の概念を提唱しました。芸術の目的は、事物を「既知として」ではなく「知覚として」回復させることにあり、反復によって「自動化」した知覚に対して、対象を「不慣れ」にし、知覚の時間を引き延ばす技法が異化であると論じています。詩的言語は理解の効率性ではなく、形式の「粗化」（zatrudnenie）と遅延によって知覚の回復を実現します。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: Shklovskyは、日常的な反復により知覚が自動化すると、世界は「生きられなくなる」と指摘しました。芸術はこの自動化への抵抗であり、対象を見慣れないものとして提示し直す技法（異化）によって、知覚そのものを更新する営みです（Shklovsky, 1917 "Art as Technique"）。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、習慣化と脱習慣化のサイクルという知覚の動態構造を読み取ります。類似の水準はプロセスであり、特に「自動化した知覚が異化によって回復し、やがて再び自動化する」という循環の順序に着目します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 習慣化された知覚、すなわち世界が「既知」に溶けた状態は、5段階の場に対応します。自動化への気づきと鈍化の感知が波です。異化装置の導入——散文と詩的言語の境界設定、技法と知覚の間に緊張を生む操作——が縁に当たります。遅延された知覚の中で対象が「新しく」立ち上がる瞬間が渦です。そして手法が共有・規範化され、やがて再び自動化圧力にさらされる状態が束であり、この束は新たな場へと回帰します。</li>
+<li class="animate-in delay-5">この理論が興味深いのは、創造を「新しいものを作る」ことだけでなく、「既知のものを新しく知覚する」こととして捉えている点です。5段階モデルが記述する構造変化は、生産だけでなく知覚の更新にも適用できることを、異化は示唆しています。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 2: Jauss/Iserの受容美学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Jauss（1967）とIser（1972）に代表されるコンスタンツ学派の受容美学は、文学作品の意味を作者の意図に求めるのではなく、読者と作品の相互作用の中に見出す理論です。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: Jaussは「期待の地平」（Erwartungshorizont）の概念を提示しました。読者はジャンル、先行作品、社会的文脈から予期の枠組みを形成しており、作品の価値は期待の地平とのずれ（美的距離）によって測定されます。一方、Iserは「空所」（Leerstellen）の概念を提示しました。テクストは意図的に省略する箇所を含み、読者はこの空所を能動的に補完して意味を生成します（Iser, 1972 <em>Der implizite Leser</em>）。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、読者の予期構造と作品の間に生じるずれが意味生成を駆動するという動態を読み取ります。類似の水準はプロセスであり、「既存の予期枠 → 作品によるずれの導入 → 読者による能動的補完 → 新しい意味の成立」という生成順序に着目します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 読者が先行作品やジャンル経験から形成した期待の地平は、5段階の場に対応します。作品が期待を裏切ることで生じる美的距離が波です。テクストの空所を読者が能動的に補完し、テクストと読者が関係として接合される局面が縁です。補完を通じて新しい意味がまとまりとして成立する瞬間が渦であり、解釈が批評共同体で共有・蓄積され、文学史的評価として定着する局面が束に当たります。</li>
+<li class="animate-in delay-5">たとえば、推理小説の読者が「犯人はこの人物だろう」という予期を持ち、その予期が覆されたとき、読者は手がかりを読み直し、物語全体を新しい視点で再構成します。この再構成は、作者が「答え」を渡すのではなく、テクストの空所を読者が自ら埋めることで成立します。</li>
+<li class="animate-in delay-5">受容美学の重要な貢献は、「意味の生成主体」を作者から読者に移した点にあります。5段階モデルにとっては、創造が個人内で完結するのではなく、作品と受容者の界面で生じることを具体的に示す事例です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 3: Bakhtinの対話性とヘテログロシア</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Bakhtinは、言語は本質的に対話的であり、すべての発話は他者の発話への応答を含むと論じました。「ヘテログロシア」（heteroglossia / raznorechie）は、社会的に階層化された言語の多様性を指し、小説はこの多声的言語が交渉・衝突する場として機能します。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: Bakhtinは、小説を単一の声で統御されるモノローグ的形式ではなく、異なる社会言語が交渉し衝突する多声的構造として分析しました（Bakhtin, 1934-35/1981 "Discourse in the Novel"）。「対話性」（dialogism）の概念では、すべての言語は他者の言語に応答し、他者の言語を含むとされ、モノローグ的言語は対話を抑圧した人為的産物とみなされます（Bakhtin, 1929/1984）。また「カーニバル」の概念では、公的秩序の一時的転倒と、権威的言葉と内的説得的言葉の緊張が記述されます。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、異なる社会言語（声）が共存し、交渉する場における関係編成の構造を読み取ります。類似の水準は構造であり、「多声性の中から対話的関係が編まれ、作品固有の秩序が立ち上がる」という配置関係に着目します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 社会的に階層化された言語が未分化に共存するヘテログロシア空間が場です。声の対立やアイロニーによって差異が可視化される局面が波です。対話場面において言説が交差し、異なる「声」が関係として接合される局面が縁です。作品固有の多声的秩序が形成される局面が渦であり、ジャンル慣習として文芸体系に編入される局面が束に当たります。</li>
+<li class="animate-in delay-5">対話性の概念は、縁を「接触点」としてだけでなく、「あらゆる発話がすでに他者への応答である」という、より根本的な関係性として記述します。この点で、縁は単なる段階ではなく、言語の存在様態そのものに組み込まれた構造として理解されます。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">横断的パターン</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-03-cross-patterns-svg.svg" alt="Domain — 横断的パターン図"></p>
+<ul>
+<li class="animate-in delay-4">文学研究を横断して最も際立つのは、縁の実装の多様性です</li>
+<li class="animate-in delay-5">第二に、束→場の循環が複数の理論で明示的に記述されています</li>
+<li class="animate-in delay-5">第三に、文学研究は「スケールの分離」を自然に提供します</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">未解決の問い</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Todorovの物語構造における「均衡→撹乱→認知→対処→新均衡」の5要素が、5段階モデルとの偶然の数的一致なのか構造的必然なのかは、一次文献の照合が完了するまで判断を保留しています。二次資料では広く流通していますが、原典での列挙形式は未確認です。</li>
+<li class="animate-in delay-4">Bloomの6つの修正比と5段階の数的不一致をどう扱うかは、方法論的な問題として残ります。6修正比は5段階に対する反例なのか、5段階の内部で異なる位相として整理できるのかは、さらなる検討が必要です。</li>
+<li class="animate-in delay-5">文学研究の理論が記述するのは「分析的な生成」（読解・理解の中で構造が見えてくること）なのか、「存在的な生成」（作品そのものが生まれること）なのかという問いは、Bloomのような創造行為を直接記述する理論と、Genetteのような分析枠組みでは回答が異なります。この区別が5段階モデルの射程をどう限定するかは、未整理です。</li>
+<li class="animate-in delay-5">縁の型が10種類あることは多様性を示しますが、それらが構造的に同一のものなのか、類似しているが異なるものなのかの判別基準は、まだ確立していません。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">結論</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">本調査では、文学研究は5段階モデルとの構造類似が全体として有力な領域であると確認されました</li>
+<li class="animate-in delay-4">確定に近いのは、Shklovsky、Jauss/Iser、Bakhtinの系統です</li>
+<li class="animate-in delay-5">文学研究から得られる最大の示唆は、5段階モデルが個人の創造過程だけでなく、知覚の更新（Shklovsky）、テクストと読者の相互作用（Jauss/Iser）、社会制度の自律化（Bourdieu）という複数のスケールで構造対応を示すことです</li>
+<li class="animate-in delay-5">本調査の知見は、確定に近い知見から条件付きの仮説まで分布しています</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">文芸学 - 5段階モデルとの構造対応</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>

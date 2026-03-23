@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宗教学 - 5段階モデルとの構造対応</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">宗教学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">5段階モデル（場・波・縁・渦・束）との構造対応調査</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">調査の概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-01-overview-svg.svg" alt="Domain — 調査概要インフォグラフィック"></p>
+<ul>
+<li class="animate-in delay-4"><strong>調査対象</strong>: 宗教学の主要理論 10件</li>
+<li class="animate-in delay-5"><strong>調査の問い</strong>: 宗教学の諸理論は、5段階モデルと構造的に対応するか</li>
+<li class="animate-in delay-5"><strong>判定結果</strong>: 強い対応 1件、部分的な対応 1件、条件付きの対応 2件</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">5段階モデルの概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>段階</th><th>定義</th></tr><tr><td>場（ば）</td><td>未分化の状態。方向も構造もまだ定まっていない初期条件</td></tr><tr><td>波（なみ）</td><td>複数の方向性が発散・競合する探索の段階</td></tr><tr><td>縁（えん）</td><td>対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所</td></tr><tr><td>渦（うず）</td><td>緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階</td></tr><tr><td>束（たば）</td><td>形が確定し、再利用可能な構造として安定する段階</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">構造対応の全体像</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-02-theories-map-svg.svg" alt="Domain — 理論×5段階対応マトリクス"></p>
+<table class="animate-in delay-4"><tr><th>温度</th><th>理論群</th><th>位置づけ</th></tr><tr><td>強い対応</td><td>ランボーの回心7段階、エリアーデの聖と俗、十牛図、菩薩十地・五道、ファナー/バカー、マカーマート</td><td>5段階の全体構造との対応が明瞭です</td></tr><tr><td>部分的な対応</td><td>テレサの七つの住まい、ターナーのリミナリティ、錬金術マグヌム・オプス</td><td>全体構造の対応はあるが、前半または後半で圧縮や解釈上の飛躍が残ります</td></tr><tr><td>条件付きの対応</td><td>ジェイムズの宗教的経験</td><td>段階モデルを提示していないため、構造対応は分析者による構成的読みに依存します</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 1: ランボーの回心7段階モデル（Lewis R. Rambo）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">ランボーは、宗教的回心を7段階の統合モデルとして記述しました。文脈（context）、危機（crisis）、探究（quest）、出会い（encounter）、相互作用（interaction）、献身（commitment）、帰結（consequences）の7段階です。1993年の著書 <em>Understanding Religious Conversion</em> で提示されたこのモデルは、回心を心理学・社会学・神学の複数の視点から統合的に捉えたもので、段階は順行固定ではなく相互作用的であると明記されています。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: ランボーは回心プロセスを「動的な力場（dynamic force field）」の中で起こる現象として位置づけています。クルト・レヴィンの場理論の影響を受けた概念枠であり、個人の内的動機、社会的ネットワーク、文化的コンテキストが「力場」を構成します。7段階は「環境→攪乱→探索→接触→関係編成→収束→定着」という全体構造を持ちます。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、変容の全体過程が「環境（前提条件）→攪乱（既存秩序の揺らぎ）→境界での関係編成→新たな秩序への収束→持続的定着」として読み取れることに注目します。類似の水準はプロセスです。特に「動的力場」概念が変容の前提条件として明示的に記述されている点、および「出会い」と「相互作用」が関係の成立と編み替えの過程として分節されている点に着目します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 7段階の全体構造は5段階と高い対応を示します。「文脈」は回心が生起する「動的力場」として「場」に対応します。「危機＋探究」は既存の意味秩序が揺らぎ差異が立ち上がる局面であり「波」に対応します。「出会い＋相互作用」は体現者との境界接触と関係編成であり「縁」に対応します。「献身」は誓約による収束であり「渦」に、「帰結」は変容の持続的定着であり「束」に対応します。ランボー自身が回心を「動的力場の中で起こるプロセス」と位置づけていることは、「場」との対応が表面的な命名の一致ではなく構造的であることを示しています。</li>
+<li class="animate-in delay-5">なお、7段階から5段階への圧縮では「探究（quest）」の位置が揺れやすいという問題があります。波に含めるか縁の前半として扱うかで読みが変わります。「探究」は波と縁の間にある能動的探索の段階であり、5段階が暗黙に含んでいる「差異が立った後、関係が成立するまでの間」を明示化しているとも読めます。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 2: ターナーのリミナリティと構造/反構造（Victor Turner）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">ターナーは、人類学者ファン・ヘネップが提示した通過儀礼の三段階（分離-境界-統合）を拡張し、境界期（liminality）を「betwixt and between（あちらでもこちらでもない）」として独自に概念化しました。1969年の著書 <em>The Ritual Process</em> で提示されたこの理論は、コムニタス（communitas）――社会的構造の外部に位置する非構造的な共同性――の概念とともに、宗教人類学の基礎理論となっています。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: ターナーは構造（structure）→反構造（anti-structure, communitas）→再構造化（re-structuration）の弁証法的循環を提示しました。リミナリティの参加者は既存の社会的分類が停止された状態に置かれ、通常の身分・役割を剥奪されます。コムニタスには三つの類型があります。自発的コムニタス（spontaneous communitas）は構造によって媒介されない直接的な人間同士の出会いであり、規範的コムニタス、イデオロギー的コムニタスへと制度化されていきます。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、旧い秩序が停止され新たな関係質が出現する「際（きわ）」の構造を読み取ります。類似の水準は構造であり、特に「既存の構造的区分が一時的に解除され、その解除の中から新たな関係が編まれる」という配置関係に注目します。ターナーがリミナリティ/コムニタスそのものに聖的・創造的価値を見出している点は、境界状態が単なる通過点ではなく、それ自体が社会の根源的エネルギーの源泉だという主張として読めます。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 分離→境界期→統合の三段階は、5段階の「波（揺れ・分離）→縁（境界・関係）→渦（立ち上がり・統合）」と構造的に対応します。リミナリティの「あちらでもこちらでもない」状態は「縁」の強い実現です。さらに、構造→反構造→再構造化の弁証法的循環は、5段階の「束→場」循環に接続しうるものです。ただし、3段階から5段階への写像では「場」と「束」の対応が解釈に依存します。儀礼以前の社会構造を「場」とするか「束」とするかは、循環モデルとして読むことで解消可能ですが、この点は留意が必要です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 3: アビラのテレサ『霊魂の城』七つの住まい</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">テレサ（1515-1582）は、人間の内面を城に喩え、七つの住まい（moradas）を通じた霊的進行を記述しました。1577年に執筆された <em>El Castillo Interior</em>（霊魂の城）は、キリスト教神秘主義の古典的著作であり、十字架のヨハネの『暗夜』と並ぶスペイン神秘主義の双璧です。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: 第一の住まいは魂の尊厳の認識から始まり、「城に入る門は祈りである」と明記されています。第二から第三の住まいは忍耐と闘争の段階であり、修行の継続を妨げる力との対峙が続きます。第四の住まいで決定的な転換が起きます。テレサはここで「慰め（contentos）」と「霊的味わい（gustos）」を明確に区別しました。前者は人間の努力によって得られるもの、後者は神から与えられるものです。収心の祈り（oración de recogimiento）が始まるこの段階が、「能動的祈り」から「受動的祈り」への転換点です。第五から第六の住まいでは神との一致の祈り、恍惚（éxtasis）、忘我が生じ、第六の住まいでは試練が最も激しくなります。第七の住まいでは霊的結婚（matrimonio espiritual）に至り、テレサはマルタとマリアが共にある必要――観想と行為の統合――を述べています。恍惚が消え、安定した平和の中での日常的行為が営まれるようになります。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、第四の住まいにおける「能動から受動への質的転換」を、変容プロセスの構造的な転換点として読み取ります。類似の水準はプロセスであり、特に「主体の努力の限界を超えた先で、異なる質のものが与えられる」という転換の順序に注目します。また、第七の住まいにおける観想と行為の統合を、変容が日常に定着する構造として読み取ります。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 七つの住まいの全体構造は5段階と対応します。第一の住まい（場への入場）→第二から三の住まい（試練と闘争＝波）→第四の住まい（祈りの質的転換＝縁）→第五から六の住まい（神秘的合一＝渦）→第七の住まい（霊的結婚＝束）。最も強い対応は第七の住まいと「束」の間にあります。マルタとマリアの統合――観想的生活と行為的生活が一つになること――は、「渦どうしが影響し合い構造として残る集まり」としての「束」を、精神的な領域で明瞭に実現しています。ただし、7段階から5段階への圧縮では、テレサが精緻に区別したcontentos/gustosの質的差異が5段階の抽象語に覆い隠される危険があります。この情報の喪失は方法論的な留意点です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">横断的パターン</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-03-cross-patterns-svg.svg" alt="Domain — 横断的パターン図"></p>
+<ul>
+<li class="animate-in delay-4">宗教学・神秘主義を横断して最も繰り返し現れるパターンは、「縁」における努力と恩寵の交錯です</li>
+<li class="animate-in delay-5">第二に、「束」の二つの型が確認されます</li>
+<li class="animate-in delay-5">第三に、段階数の多様性そのものが重要な知見です</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">未解決の問い</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>「縁」における努力と恩寵の関係</strong>: テレサ、スーフィ、仏教で共通に見られる「努力で到達するもの/恩寵として与えられるもの」の区別は、5段階の「縁」にどう反映されるべきでしょうか。「縁」は能動的プロセスか受動的プロセスか――おそらく両方ですが、その統合の仕方は未解決です。</li>
+<li class="animate-in delay-4"><strong>「空」の位置づけ</strong>: 十牛図の「人牛俱忘」とファナーと加行道から見道への転換は、渦に至る過程に「完全な解除」の段階を含んでいます。5段階ではこの「空」は明示されていません。束→場循環の中間に位置するのか、渦の極限なのか、あるいは5段階の外にある別の次元なのかは、対立する解釈が残る問いです。</li>
+<li class="animate-in delay-5"><strong>段階数圧縮の正当性</strong>: 7→5、10→5、100→5の圧縮は構造的に許容されますが、各段階固有の質的差異――テレサの contentos/gustos、加行道の四加行、マカーマートの個別マカーム――が失われます。この情報喪失がどの程度許容可能かは方法論上の課題です。</li>
+<li class="animate-in delay-5"><strong>エリアーデの方法論的批判との自己参照性</strong>: 5段階モデルが宗教的修行階梯との「構造類似」を指摘する方法は、エリアーデの比較宗教学の方法と構造的に同型です。エリアーデが受けてきた「恣意的比較」批判は、5段階モデルにも適用されうるものであり、この自己参照的な緊張は認識しておく必要があります。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">結論</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">本調査では、宗教学・神秘主義は5段階モデルとの構造類似が全体として高い領域であると確認されました</li>
+<li class="animate-in delay-4">構造対応が特に強いのは、ランボーの回心7段階（「動的力場」概念が場と構造的に対応）、菩薩十地・五道（加行道が縁の内部構造を精緻に記述）、十牛図（入鄽垂手が束→場循環を図像的に表現）、エリアーデの永劫回帰（束→場循環の文明規模の記述）です</li>
+<li class="animate-in delay-5">本調査の知見は、「縁」における努力と恩寵の交錯パターン、「束」の持続型/循環型の二面性については有力な温度帯にあると考えられます</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">宗教学 - 5段階モデルとの構造対応</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>

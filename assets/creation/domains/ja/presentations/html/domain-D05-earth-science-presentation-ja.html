@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地球科学 - 5段階モデルとの構造対応</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">地球科学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">5段階モデル（場・波・縁・渦・束）との構造対応調査</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">調査の概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-01-overview-svg.svg" alt="Domain — 調査概要インフォグラフィック"></p>
+<ul>
+<li class="animate-in delay-4"><strong>調査対象</strong>: 地球科学の主要理論 14件</li>
+<li class="animate-in delay-5"><strong>調査の問い</strong>: 地球科学の諸理論は、5段階モデルと構造的に対応するか</li>
+<li class="animate-in delay-5"><strong>判定結果</strong>: 強い対応 7件、条件付きの対応 3件</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">5段階モデルの概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>段階</th><th>定義</th></tr><tr><td>場（ば）</td><td>未分化の状態。方向も構造もまだ定まっていない初期条件</td></tr><tr><td>波（なみ）</td><td>複数の方向性が発散・競合する探索の段階</td></tr><tr><td>縁（えん）</td><td>対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所</td></tr><tr><td>渦（うず）</td><td>緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階</td></tr><tr><td>束（たば）</td><td>形が確定し、再利用可能な構造として安定する段階</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">構造対応の全体像</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-02-theories-map-svg.svg" alt="Domain — 理論×5段階対応マトリクス"></p>
+<table class="animate-in delay-4"><tr><th>#</th><th>サブトピック群</th><th>理論/概念</th><th>提唱者・時代</th><th>中心概念</th><th>5段階との接続見込み</th><th>反例リスク</th><th>仮分類</th></tr><tr><td>1</td><td>固体地球の循環</td><td>プレートテクトニクスとウィルソンサイクル</td><td>Wilson, Morgan, Le Pichon, 1960年代</td><td>分裂と再集合の長期循環</td><td>場から束まで全体像が見えます</td><td>低</td><td>強い構造対応</td></tr><tr><td>2</td><td>固体地球の循環</td><td>スラブプル・リッジプッシュ</td><td>Conrad and Lithgow-Bertelloni, 2000年代</td><td>駆動力の配分</td><td>波と渦の駆動を細かく読めます</td><td>中</td><td>監査枠</td></tr><tr><td>3</td><td>大気海洋結合</td><td>ENSO と Bjerknes feedback</td><td>Bjerknes, Cane and Zebiak, 1969-1985年</td><td>結合振動と正帰還</td><td>縁と渦が特に鮮明です</td><td>低</td><td>強い構造対応</td></tr><tr><td>4</td><td>大気海洋結合</td><td>Walker循環</td><td>Walker, 1920年代</td><td>背景大気海洋循環</td><td>場の定義には有効ですが全5段階は薄いです</td><td>中</td><td>監査枠</td></tr><tr><td>5</td><td>古気候と軌道強制</td><td>ミランコビッチサイクル</td><td>Milankovitch, Hays, Imbrie, 20世紀</td><td>軌道変動による日射強制</td><td>波と束は強く、縁は条件付きです</td><td>中</td><td>有力</td></tr><tr><td>6</td><td>古気候と軌道強制</td><td>氷床非線形応答と100kyr問題</td><td>Lisiecki and Raymo, 2005年前後</td><td>小さな外因と大きな応答の不一致</td><td>縁の所在を問う理論として有効です</td><td>高</td><td>条件付き</td></tr><tr><td>7</td><td>地震・臨界現象</td><td>弾性反跳説</td><td>Reid, 1910年</td><td>応力蓄積と突然解放</td><td>縁の閾値が極めて明確です</td><td>低</td><td>強い構造対応</td></tr><tr><td>8</td><td>地震・臨界現象</td><td>速度・状態依存摩擦法則</td><td>Dieterich, Ruina, 1979-1983年</td><td>すべり安定性の条件</td><td>縁の機構説明を補強します</td><td>低</td><td>有力</td></tr><tr><td>9</td><td>地震・火山</td><td>火山過圧とダイク伝播</td><td>Cashman and Sparks, Gudmundsson, 1980-2010年代</td><td>過圧閾値と噴火様式</td><td>臨界型の独立検証になります</td><td>低</td><td>強い構造対応</td></tr><tr><td>10</td><td>堆積・記録形成</td><td>シーケンス層序学</td><td>Vail, Posamentier, 1970-1980年代</td><td>境界面と堆積パッケージ</td><td>束の定義が最も明確です</td><td>中</td><td>強い構造対応</td></tr><tr><td>11</td><td>地球史再編</td><td>大量絶滅と回復</td><td>Raup, Sepkoski, Erwin, 1980-2000年代</td><td>崩壊と再編</td><td>破壊的な渦を読む候補です</td><td>中</td><td>有力</td></tr><tr><td>12</td><td>表層過程</td><td>風化・土壌形成</td><td>Goldich, Jenny, 1938-1941年</td><td>漸進的変質と土壌成熟</td><td>場・波・束は読めますが縁が薄いです</td><td>中</td><td>条件付き</td></tr><tr><td>13</td><td>深部地球</td><td>地球磁場ダイナモと磁場逆転</td><td>Elsasser, Glatzmaier and Roberts, 1946-1995年</td><td>逆転遷移とエクスカーション</td><td>failed 事例を伴う縁が見えます</td><td>低</td><td>強い構造対応</td></tr><tr><td>14</td><td>惑星形成</td><td>惑星分化</td><td>Kleine, Solomatov, Elkins-Tanton, 2000年代</td><td>不可逆な成層化</td><td>場をつくる5段階として重要です</td><td>低</td><td>強い構造対応</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 1: 惑星分化</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>事実として</strong>、原始地球は集積エネルギーと短寿命放射性核種の崩壊熱により大規模に融解し、マグマオーシャンを経験したと考えられています（Elkins-Tanton 2012）。その後、鉄ニッケル合金がケイ酸塩から重力分離してコアを形成し、Hf-W 同位体系はこの分化が地球形成後数千万年以内におおむね進んだことを示します（Kleine et al. 2002）。さらに、マグマオーシャンの固化と火成活動の反復は、マントルの成層や地殻の長期成長をもたらしました（Solomatov 2000; Taylor and McLennan 1985）。</li>
+<li class="animate-in delay-4"><strong>読み取りとして</strong>、ここで重要なのは、均質な混合状態が、熱・組成・密度の結合条件を通じて不可逆な成層構造へ変わる点です。類似水準は構造です。特に縁は、鉄とケイ酸塩の不混和が働き始め、分離が始まるかどうかがまだ確定していない局面として読めます。月のように不完全分化にとどまる天体が存在することは、縁が単純な境界名ではなく、運命分岐の条件集合であることを示します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>、惑星分化では、5段階が既存の場の内部で回るのではなく、以後の地球システムが立ち上がる基盤そのものを作っていると読めます。ここでの縁は、単なる境界ではなく、後続の全過程の可動域を決める生成条件です。</li>
+<li class="animate-in delay-5"><strong>写像として</strong>、場は原始惑星体の混合状態、波は加熱と融解の進行、縁は金属相とケイ酸塩相の分離開始条件、渦は鉄沈降と加熱の相互強化、束はコア・マントル・地殻という成層構造に対応します。</li>
+<li class="animate-in delay-5"><strong>含意として</strong>、惑星分化は、5段階が単に場の上で起きる変化を記述するだけでなく、その場そのものを作ることもあると教えます。後続のプレート運動、磁場生成、火山活動は、すべてこの束の上でしか成立しません。</li>
+<li class="animate-in delay-5"><strong>限界として</strong>、惑星分化は一回限りで、観測ではなく地球化学的再構成に依存する部分が大きいです。そのため、場から束までが明快であっても、縁の通過過程を時系列で直接追えるわけではありません。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 2: プレートテクトニクスとウィルソンサイクル</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>事実として</strong>、リソスフェアは複数のプレートに分かれ、マントル対流、スラブプル、リッジプッシュなどの複合的駆動で移動します（Morgan 1968; Le Pichon 1968）。その結果として、<code>大陸分裂 → 海洋底拡大 → 沈み込み → 海洋閉鎖 → 大陸衝突 → 超大陸形成</code> が数億年単位で繰り返されるウィルソンサイクルが提案され、ロディニアやパンゲアがその代表例とみなされています（Wilson 1966; Dewey and Bird 1970）。また、オーラコジェンのような failed rift は、分裂が始まりながら海洋底拡大まで進まなかった記録です。</li>
+<li class="animate-in delay-4"><strong>読み取りとして</strong>、この理論の骨格は、長い安定のあとに揺らぎが集積し、リフトが成立するか修復されるかの分岐点を通って、自己維持的な拡大と沈み込みが始まり、最終的に大規模な配置として固定されるところにあります。類似水準は構造とプロセスの中間です。特に縁は、大陸リフトが成功するか failed rift に終わるかが長期間未確定な局面であり、熱流、応力、地殻の弱線が関係として組み上がる点にあります。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>、プレートテクトニクスでは、縁が一度きりの切断点ではなく、循環を次の位相へ進めるヒンジとして働きます。そのため、5段階の後半が終点ではなく、次の場への折り返しを含むことがはっきり見えます。</li>
+<li class="animate-in delay-5"><strong>写像として</strong>、場は超大陸安定期のマントル・リソスフェア系、波はプルームや熱的擾乱によるリフト前兆、縁は成功リフトと failed rift の分岐、渦は海洋底拡大と沈み込みが互いを強める自己維持ループ、束は超大陸や海洋盆地の配置に対応します。</li>
+<li class="animate-in delay-5"><strong>含意として</strong>、プレートテクトニクスは、5段階が最大スケールでも循環として回りうることを示します。また、束が終点ではなく、次の場に折り返すことを地球史レベルで見せる理論でもあります。</li>
+<li class="animate-in delay-5"><strong>限界として</strong>、プレート駆動力の比重はなお議論中であり、渦の駆動を一つの機構に還元することはできません。したがって、5段階との対応は明快でも、各段階を単一原因で説明するのは無理があります。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 3: ENSO</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>事実として</strong>、熱帯太平洋では、海面水温偏差、貿易風、湧昇、温度躍層が結合し、エルニーニョとラニーニャが2年から10年程度の不規則な間隔で生じます（Philander 1983）。Bjerknes は海面水温偏差が風応力偏差を生み、それがさらに海洋応答を通じて海面水温偏差を強める正帰還を示しました（Bjerknes 1969）。Cane and Zebiak 1985 の結合モデルと Suarez and Schopf 1988 の遅延振動子は、この正帰還と位相転換を再現します。</li>
+<li class="animate-in delay-4"><strong>読み取りとして</strong>、ここで読めるのは、複数の独立変数が結びついたときだけ、揺らぎが自己維持的なイベントへ変わるという構造です。類似水準はメカニズムです。縁は、海面水温、大気加熱、風応力、海洋波動が単独要因ではなく関係網として結ばれ、Bjerknes feedback が実際に発動するかどうかがまだ決まっていない局面です。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>、ENSO では、縁は境界線よりもむしろ結合の成立条件として振る舞います。単発の擾乱がイベントへ変わるかどうかは、要素が連結されたかどうかにかかっており、この点で5段階の縁の関係性が最もよく見えます。</li>
+<li class="animate-in delay-5"><strong>写像として</strong>、場は通常時の Walker 循環と平均海洋状態、波は西風バーストや Kelvin 波・Rossby 波による初期擾乱、縁は SST と大気と海洋力学の結合点、渦は正帰還によるイベントの増幅、束は El Nino または La Nina として完成した全球パターンに対応します。</li>
+<li class="animate-in delay-5"><strong>含意として</strong>、ENSO は、縁が単一の閾値ではなく、関係の網としてしか成立しないことを最も明快に示します。5段階モデルの縁を、境界線ではなく結合された界面として理解するうえで、地球科学の中でも特に有力な事例です。</li>
+<li class="animate-in delay-5"><strong>限界として</strong>、ENSO には不規則性と事象間多様性が大きく、各イベントが同じ順序で進むわけではありません。そのため、5段階への対応は強いものの、同一の時系列テンプレートとして固定しすぎると説明力を失います。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">横断的パターン</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-03-cross-patterns-svg.svg" alt="Domain — 横断的パターン図"></p>
+<ul>
+<li class="animate-in delay-4">ENSO では海面水温、風応力、海洋波動が結びつき、地震では応力、摩擦、間隙水圧が絡み合い、惑星分化では温度、圧力、組成、密度が同時に効きます</li>
+<li class="animate-in delay-5">failed rift、磁場逆転のエクスカーション、噴火に至らず貫入岩として固化したマグマは、いずれも「波までは進んだが、縁を越え切らなかった」例です</li>
+<li class="animate-in delay-5">ENSO や地震では、渦は正帰還による急速な増幅として見えます</li>
+<li class="animate-in delay-5">地球科学では、束が地層、磁化、大陸配置、震源メカニズム、火山堆積物として残ります</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">未解決の問い</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">風化や土壌形成のような漸進的変換では、縁を閾値として定義すべきなのか、それとも厚い反応界面として定義し直すべきなのかが未解決です。</li>
+<li class="animate-in delay-4">ミランコビッチサイクルにおける100kyr問題は、縁が氷床内部の閾値なのか、軌道・海洋・大気を含む結合系全体なのかをまだ決め切れていません。</li>
+<li class="animate-in delay-5">大量絶滅が示す破壊的な渦と、ENSO や地震が示す組織化の渦を、一つの定義でどこまで統一できるかは保留です。</li>
+<li class="animate-in delay-5">シーケンス層序学の境界面のように、観測位置によって時間幅が変わる縁を、5段階の中でどう位置づけるかは今後の整理が必要です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">結論</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">本調査では、地球科学は5段階モデルとの構造類似が非常に強い領域だと確認されました</li>
+<li class="animate-in delay-4">一方で、すべてが同じ強さで対応するわけではありません</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">地球科学 - 5段階モデルとの構造対応</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>
