@@ -1,11 +1,8 @@
 # Traditional Knowledge
 
-![Traditional Knowledge — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D30-traditional-knowledge.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Traditional Knowledge — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question:
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that itself is an important per
 ## 4. Findings: Overall Picture
 
 ![Traditional Knowledge — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -169,7 +165,6 @@ The significance of this theory lies in showing which moments of the five stages
 ## 6. Cross-Cutting Patterns
 
 ![Traditional Knowledge — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-03-cross-patterns-svg.svg)
-
 
 First, as shown by TEK: Traditional Ecological Knowledge, LPP: Legitimate Peripheral Participation, and Ichiza Konryu: co-creation of the gathering, this domain describes difference and conflict not merely as obstacles but as conditions under which a new order can arise. This means that, among the five stages, the transition from Edge (縁) to Vortex (渦) can be observed here with particular richness.
 

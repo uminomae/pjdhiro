@@ -1,11 +1,8 @@
 # Mathematics: Structure Condenses at Boundaries and Criticality
 
-![Mathematics: Structure Condenses at Boundaries and Criticality — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D01-mathematics.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Mathematics: Structure Condenses at Boundaries and Criticality — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-01-overview-svg.svg)
-
 
 This report summarizes the results of an investigation into whether a range of mathematical theories structurally correspond to the five-stage model, consisting of Field (場), Wave (波), Edge (縁), Vortex (渦), and Bundle (束).
 
@@ -64,7 +61,6 @@ If these definitions feel strange, that is itself an important perspective for t
 ## 4. Results of the Investigation: Overall Picture
 
 ![Mathematics: Structure Condenses at Boundaries and Criticality — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-02-theories-map-svg.svg)
-
 
 Evaluation of the 11 theories yielded the following distribution.
 
@@ -152,7 +148,6 @@ It should also be noted that matching, the connection between the inner and oute
 ## 6. Cross-Cutting Patterns
 
 ![Mathematics: Structure Condenses at Boundaries and Criticality — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D01-03-cross-patterns-svg.svg)
-
 
 Across the 11 theories, the following patterns repeatedly appeared.
 

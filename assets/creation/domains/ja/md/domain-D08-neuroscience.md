@@ -1,7 +1,5 @@
 # 神経科学
 
-![神経科学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D08-neuroscience.svg)
-
 > **立ち位置明示**
 > 本稿は、神経科学の主要理論と「5段階モデル（場→波→縁→渦→束）」との
 > 構造的類似を調査した報告である。特定の理論的立場を主張するものではなく、
@@ -10,7 +8,6 @@
 ## 1. 調査の目的と問い
 
 ![神経科学 — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-01-overview-svg.svg)
-
 
 本調査は、神経科学の主要理論が記述する脳の情報処理・学習・意識のプロセスと、5段階モデル（場→波→縁→渦→束）の間に構造的な類似が存在するかを検討したものです。
 
@@ -65,7 +62,6 @@
 ## 4. 調査結果: 全体像
 
 ![神経科学 — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-02-theories-map-svg.svg)
-
 
 本調査では、11の理論・概念について5段階モデルとの構造対応を検討しました。結果の概要を以下に示します。
 
@@ -194,7 +190,6 @@
 ## 6. 横断的パターン
 
 ![神経科学 — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-03-cross-patterns-svg.svg)
-
 
 本調査を通じて、複数の理論に共通する構造的パターンがいくつか浮かび上がりました。
 

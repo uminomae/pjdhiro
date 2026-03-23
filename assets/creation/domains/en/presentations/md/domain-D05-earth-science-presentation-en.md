@@ -22,12 +22,6 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D05-earth-science.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-02-theories-map-svg.svg)
-
 
 | # | Subtopic Group | Theory/Concept | Proponents / Era | Core Concept | Projected 5-Stage Linkage | Counterexample Risk | Provisional Classification |
 |---|---|---|---|---|---|---|---|
@@ -100,7 +93,6 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-03-cross-patterns-svg.svg)
-
 
 - In ENSO, sea surface temperature, wind stress, and ocean waves become linked; in earthquakes, stress, friction, and pore water pressure intertwine; in planetary differentiation, temperature, pressure, composition, and density all operate simultaneously
 - Failed rifts, geomagnetic excursions that did not complete a reversal, and magma that solidified as intrusive rock without erupting are all examples of "advancing through the Wave but not clearing the Edge"

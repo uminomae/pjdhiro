@@ -1,11 +1,8 @@
 # Psychology and Cognitive Science: What Happens When Cognition Shifts
 
-![Psychology and Cognitive Science: What Happens When Cognition Shifts — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D14-psychology.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Psychology and Cognitive Science: What Happens When Cognition Shifts — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into the following question, using major theoretical systems in psychology and cognitive science.
 
@@ -64,7 +61,6 @@ If these definitions already feel uncomfortable, that is itself an important poi
 ## 4. Results: Overall Picture
 
 ![Psychology and Cognitive Science: What Happens When Cognition Shifts — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-02-theories-map-svg.svg)
-
 
 Structural correspondence with the five-stage model was confirmed for all ten candidate theories. The strength of correspondence is as follows.
 
@@ -180,7 +176,6 @@ In correspondence with the five-stage model, accumulation of bodily experience c
 ## 6. Cross-Domain Patterns
 
 ![Psychology and Cognitive Science: What Happens When Cognition Shifts — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-03-cross-patterns-svg.svg)
-
 
 The following patterns recurred across multiple theories.
 

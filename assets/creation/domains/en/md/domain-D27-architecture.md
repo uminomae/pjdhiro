@@ -1,11 +1,8 @@
 # Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model
 
-![Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D27-architecture.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question.
 
@@ -54,7 +51,6 @@ If a sense of discomfort remains at this point, that itself is an important pers
 ## 4. Results: Overall Picture
 
 ![Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-02-theories-map-svg.svg)
-
 
 ### List of Evaluated Theories
 
@@ -177,7 +173,6 @@ What is distinctive here is the methodology by which Edge is extracted from citi
 ## 6. Cross-Cutting Patterns
 
 ![Boundary Design in Architecture and Spatial Design and Its Correspondence to the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D27-03-cross-patterns-svg.svg)
-
 
 First, as shown by Pattern Language / Nature of Order: mutual support among centers and unfolding (Alexander), Finding Form: exploration of equilibrium forms through physical models (Frei Otto), and in-between realm / doorstep: boundary as mediation between binary oppositions (van Eyck), this domain describes difference and opposition not merely as obstacles but as conditions for the rise of new order. This means that, within the five stages, the transition from Edge to Vortex is especially richly observable in this domain.
 

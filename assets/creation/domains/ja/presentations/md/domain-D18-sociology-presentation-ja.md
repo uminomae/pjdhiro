@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-01-overview-svg.svg)
 
-
 - **調査対象**: 社会学の主要理論 11件
 - **調査の問い**: 社会学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 8件、部分的な対応 2件、条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D18-sociology.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-02-theories-map-svg.svg)
-
 
 | # | 理論/概念 | 提唱者 | 対応段階 | 判定 |
 |---|----------|--------|---------|------|
@@ -95,7 +87,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-03-cross-patterns-svg.svg)
-
 
 - 社会学を横断して見たとき、4つのパターンが繰り返し現れます
 - **第一に、「縁」の型の多様性です

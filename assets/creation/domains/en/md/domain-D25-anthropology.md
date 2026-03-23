@@ -1,11 +1,8 @@
 # Boundary Processes and the Five-Stage Model in Anthropology and Ethnology
 
-![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D25-anthropology.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question:
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that itself is an important per
 ## 4. Findings: Overall Picture
 
 ![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -159,7 +155,6 @@ This discussion belongs to the shared terrain of sociology and anthropology. Gid
 ## 6. Cross-Cutting Patterns
 
 ![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-03-cross-patterns-svg.svg)
-
 
 First, as shown by the three phases of rites of passage, social drama, and liminality and communitas, this domain describes difference and conflict not merely as obstacles but as conditions under which new order comes into being. This means that, within the five stages, the transition from Edge to Vortex is especially richly observable in this domain.
 

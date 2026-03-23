@@ -1,11 +1,8 @@
 # Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model
 
-![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D28-performing-arts.svg)
-
 ## 1. Purpose and Questions of the Investigation
 
 ![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question:
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that itself is an important con
 ## 4. Results of the Investigation: Overall Picture
 
 ![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -159,7 +155,6 @@ Distinctive features that remain are as follows. (1) The broad-spectrum definiti
 ## 6. Cross-Cutting Patterns
 
 ![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-03-cross-patterns-svg.svg)
-
 
 First, as shown by Zeami's treatises on flower and the training process (practice -> mastery -> flower), improvisational theatre (Johnstone / Spolin / Nachmanovitch), and Fischer-Lichte's aesthetics of performance (autopoietic feedback loop), this domain describes difference and opposition not merely as obstacles but as conditions for the emergence of a new order. This means that, among the five stages, the transition from Edge to Vortex can be observed here with particular richness.
 

@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-01-overview-svg.svg)
 
-
 - **調査対象**: 経営学の主要理論 11件
 - **調査の問い**: 経営学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 高整合の理論から部分的対応まで、11件すべてで何らかの構造対応を確認
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D22-business-management.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-02-theories-map-svg.svg)
-
 
 | 理論 | 構造類似（5段階対応） | 一致しない点 | 根拠強度 |
 |---|---|---|---|
@@ -85,7 +77,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-03-cross-patterns-svg.svg)
-
 
 - タックマンモデルが最も直接的な5段階対応を示しますが、線形性の限界があります
 - チームスケール理論（タックマン）と産業スケール理論（クリステンセン）を同じ比較軸で扱う妥当性は再検証が必要です

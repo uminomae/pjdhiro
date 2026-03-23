@@ -1,11 +1,8 @@
 # Literary Studies: Narrative Structure and the Five Stages of Creation
 
-![Literary Studies: Narrative Structure and the Five Stages of Creation — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D19-literary-studies.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Literary Studies: Narrative Structure and the Five Stages of Creation — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into the following question, using major theoretical systems in literary studies.
 
@@ -48,7 +45,6 @@ If these definitions already feel uncomfortable, that discomfort is itself impor
 ## 4. Results: Overall Picture
 
 ![Literary Studies: Narrative Structure and the Five Stages of Creation — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-02-theories-map-svg.svg)
-
 
 The investigation of ten theories found structural correspondence with the five-stage model in nine cases, while one remained conditional.
 
@@ -148,7 +144,6 @@ Bourdieu is distinctive because, unlike entries focusing on textual structure or
 ## 6. Cross-Domain Patterns
 
 ![Literary Studies: Narrative Structure and the Five Stages of Creation — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D19-03-cross-patterns-svg.svg)
-
 
 ### 6.1 The Many Forms of Edge
 

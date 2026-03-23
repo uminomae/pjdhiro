@@ -1,11 +1,8 @@
 # Evolutionary Biology: Novelty Emerges from Error
 
-![Evolutionary Biology: Novelty Emerges from Error — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D04-evolutionary-biology.svg)
-
 ## 1. Purpose of the Investigation in This Domain
 
 ![Evolutionary Biology: Novelty Emerges from Error — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into whether evolutionary biology exhibits structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle.
 
@@ -38,7 +35,6 @@ If these definitions already produce discomfort, that is itself an important poi
 ## 4. Results of the Investigation
 
 ![Evolutionary Biology: Novelty Emerges from Error — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-02-theories-map-svg.svg)
-
 
 ### Overall Picture
 
@@ -117,7 +113,6 @@ Niche construction shows most directly how Bundle returns to Field. Organisms mo
 ## 6. Insights from This Domain
 
 ![Evolutionary Biology: Novelty Emerges from Error — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-03-cross-patterns-svg.svg)
-
 
 ### The Biological Basis of the Three Fates of Error
 

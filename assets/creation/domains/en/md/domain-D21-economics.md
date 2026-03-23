@@ -1,11 +1,8 @@
 # Economics
 
-![Economics — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D21-economics.svg)
-
 ## 1. Purpose and Research Question
 
 ![Economics — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question.
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that itself is an important per
 ## 4. Research Findings: Overall Picture
 
 ![Economics — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -159,7 +155,6 @@ This theory is a precursor to the resource-based view (RBV). It directly influen
 ## 6. Cross-Cutting Patterns
 
 ![Economics — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D21-03-cross-patterns-svg.svg)
-
 
 First, as shown by Schumpeter Creative Destruction, Hayek Spontaneous Order and the Price Mechanism, and Keynes Fundamental Uncertainty and Animal Spirits, this domain describes difference and conflict not merely as obstacles but as the conditions under which new order emerges. This means that, among the five stages, the transition from Edge to Vortex can be observed here with particular richness.
 

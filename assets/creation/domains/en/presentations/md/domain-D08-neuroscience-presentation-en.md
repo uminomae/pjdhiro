@@ -24,12 +24,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D08-neuroscience.svg)
-
----
-
 ## Overview of the 5-Stage Model
 
 | Stage | Definition |
@@ -45,7 +39,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-02-theories-map-svg.svg)
-
 
 | # | Theory / Concept | Key Researchers | Corresponding Stages | Judgment |
 |---|-----------------|-----------------|---------------------|----------|
@@ -130,7 +123,6 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-03-cross-patterns-svg.svg)
-
 
 - **"Relationship determines direction" structure**: In STDP, the time difference in firing; in CTC, phase synchrony; in polyvagal theory, autonomic entrainment — each uses a different physical quantity to select the direction of structural change. The Edge is not a specific mechanism but a structural feature: "selection through relationship"
 - **Scale invariance**: The pattern of "detection of difference, formation of relationship, structural change" repeats isomorphically from the synapse (milliseconds) to interpersonal relationships (years)

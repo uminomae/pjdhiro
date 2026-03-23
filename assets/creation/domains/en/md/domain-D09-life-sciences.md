@@ -1,11 +1,8 @@
 # Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body
 
-![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D09-life-sciences.svg)
-
 ## 1. Purpose of the Investigation in This Domain
 
 ![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into whether structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, can be found in the life sciences, including biochemistry, metabolism, cell biology, developmental biology, and immunology.
 
@@ -36,7 +33,6 @@ If these definitions already produce discomfort, that is itself an important poi
 ## 4. Results of the Investigation
 
 ![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-02-theories-map-svg.svg)
-
 
 ### Overall Picture
 
@@ -105,7 +101,6 @@ Long-term memory, myelin structure, offspring, reuse of degradation products, sp
 ## 6. Insights from This Domain
 
 ![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-03-cross-patterns-svg.svg)
-
 
 ### Creation Has a Cost
 

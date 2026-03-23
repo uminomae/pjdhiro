@@ -1,11 +1,8 @@
 # Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter
 
-![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D11-pharmacy.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-01-overview-svg.svg)
-
 
 This report presents the results of an investigation into the structural correspondence between the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, and major theories and practical systems in pharmacy.
 
@@ -46,7 +43,6 @@ Readers may already feel some discomfort with these definitions. That discomfort
 ## 4. Results: Overall Picture
 
 ![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-02-theories-map-svg.svg)
-
 
 All ten candidates evaluated in the pharmacy domain showed some structural correspondence with the five-stage model. Six of them showed strong correspondence with Edge, meaning that all three Edge conditions, relational network, indeterminacy, and connection to Vortex, were strongly present. The remaining four showed partial correspondence. No candidate showed no correspondence at all.
 
@@ -118,7 +114,6 @@ The complexity of the relational network, the indeterminacy created by combinato
 ## 6. Cross-Domain Patterns
 
 ![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-03-cross-patterns-svg.svg)
-
 
 ### The Edge Spectrum: A Gradient of Controllability
 

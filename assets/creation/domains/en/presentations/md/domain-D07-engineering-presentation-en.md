@@ -22,12 +22,6 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 
 ---
 
-## Structural Correspondence Diagram
-
-![Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D07-engineering.svg)
-
----
-
 ## Overview of the Five-Stage Model
 
 | Stage | Definition |
@@ -43,7 +37,6 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 ## Overview of Structural Correspondences
 
 ![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-02-theories-map-svg.svg)
-
 
 | Confidence | Theory / Technology | Assessment |
 |------------|---------------------|------------|
@@ -86,7 +79,6 @@ Structural correspondence survey with the five-stage model (Field · Wave · Edg
 ## Cross-Cutting Patterns
 
 ![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-03-cross-patterns-svg.svg)
-
 
 - Four structural patterns were confirmed repeatedly across 10 theories and technologies in engineering and information science
 - **First, "precise quantification of error" is the distinctive contribution of engineering**

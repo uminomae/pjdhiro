@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-01-overview-svg.svg)
 
-
 - **調査対象**: 舞台芸術の主要理論
 - **調査の問い**: 舞台芸術の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 条件付きの対応 2件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D28-improvisation.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-02-theories-map-svg.svg)
-
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -88,7 +80,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-03-cross-patterns-svg.svg)
-
 
 - 舞台芸術を横断して最も顕著なのは、「縁」の多層性です
 - 第一に、**演者間の身体的関係**です

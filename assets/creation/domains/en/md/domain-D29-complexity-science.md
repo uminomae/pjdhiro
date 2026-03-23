@@ -1,11 +1,8 @@
 # Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science
 
-![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D29-complexity-science.svg)
-
 ## 1. Purpose and Questions of the Investigation
 
 ![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question:
 
@@ -54,7 +51,6 @@ If a sense of incongruity remains at this point, that itself is an important con
 ## 4. Results of the Investigation: Overall Picture
 
 ![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -159,7 +155,6 @@ Whereas the other entries ask what happens at Edge, such as selection at bifurca
 ## 6. Cross-Cutting Patterns
 
 ![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-03-cross-patterns-svg.svg)
-
 
 First, as shown by dissipative structures and order from fluctuations (Prigogine), self-organized criticality (SOC) and scale-invariant avalanches (Per Bak), and autocatalytic sets and the origin of order (Kauffman / Hordijk-Steel), this domain describes difference and opposition not merely as obstacles but as conditions for the rise of a new order. This means that, among the five stages, the transition from Edge to Vortex can be observed here with particular richness.
 

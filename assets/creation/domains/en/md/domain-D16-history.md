@@ -1,11 +1,8 @@
 # History
 
-![History — Structural correspondence diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/en/domain-D16-history.svg)
-
 ## 1. Purpose and Question of the Investigation
 
 ![History — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-01-overview-svg.svg)
-
 
 This report was prepared to answer the following question.
 
@@ -54,7 +51,6 @@ If discomfort remains at this point, that is itself an important part of the inv
 ## 4. Results: Overall Picture
 
 ![History — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-02-theories-map-svg.svg)
-
 
 ### List of Theories Evaluated
 
@@ -162,7 +158,6 @@ Turchin is the only entry in D16 that attempts mathematical modeling of historic
 ## 6. Cross-Domain Patterns
 
 ![History — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-03-cross-patterns-svg.svg)
-
 
 First, Braudel, Toynbee, and path dependence all show that difference and conflict in this domain are not merely obstacles, but conditions under which new order can emerge. This means that the transition from Edge to Vortex can be observed in particularly rich form in historical theory.
 

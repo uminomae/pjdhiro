@@ -18,16 +18,9 @@ type: presentation
 
 ![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-01-overview-svg.svg)
 
-
 - **調査対象**: 進化生物学の主要理論 10件
 - **調査の問い**: 進化生物学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 条件付きの対応 1件
-
----
-
-## 構造対応図
-
-![構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D04-evolutionary-biology.svg)
 
 ---
 
@@ -46,7 +39,6 @@ type: presentation
 ## 構造対応の全体像
 
 ![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-02-theories-map-svg.svg)
-
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -86,7 +78,6 @@ type: presentation
 ## 横断的パターン
 
 ![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-03-cross-patterns-svg.svg)
-
 
 - 進化生物学を横断して最も顕著なパターンは、「縁」の機能多様性です
 - **維持される縁**: ハイブリッドゾーンでは、cline width で測定される厚みを保ちながら境界が安定的に存続します
