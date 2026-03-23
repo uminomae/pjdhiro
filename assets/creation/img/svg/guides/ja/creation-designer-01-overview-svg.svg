@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#111122" />
+    </linearGradient>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cccccc" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#backgroundGradient)" />
+
+  <!-- Title and Subtitle -->
+  <text x="600" y="50" font-family="sans-serif" font-size="30" font-weight="bold" fill="#f0f0f0" text-anchor="middle">創造の5段階——プロセスの診断</text>
+  <text x="600" y="80" font-family="sans-serif" font-size="16" fill="#cccccc" text-anchor="middle">デザイナー・PM向け</text>
+
+  <!-- Card Data -->
+  <!-- Stage 1: 場 Field -->
+  <rect x="50" y="310" width="190" height="180" rx="10" fill="#2a2a4e" stroke="#8B8682" stroke-width="3" />
+  <text x="145" y="350" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f0f0f0" text-anchor="middle">1. 場</text>
+  <text x="145" y="375" font-family="sans-serif" font-size="14" fill="#f0f0f0" text-anchor="middle">Field</text>
+  <text x="145" y="415" font-family="sans-serif" font-size="12" fill="#f0f0f0" text-anchor="middle">チームで何が起きるか: 全員がぼんやりしている</text>
+  <text x="145" y="440" font-family="sans-serif" font-size="12" fill="#D4A857" text-anchor="middle">よくあるミス: すぐにスコープを定義</text>
+
+  <!-- Stage 2: 波 Wave -->
+  <rect x="280" y="310" width="190" height="180" rx="10" fill="#2a2a4e" stroke="#5B8DB8" stroke-width="3" />
+  <text x="375" y="350" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f0f0f0" text-anchor="middle">2. 波</text>
+  <text x="375" y="375" font-family="sans-serif" font-size="14" fill="#f0f0f0" text-anchor="middle">Wave</text>
+  <text x="375" y="415" font-family="sans-serif" font-size="12" fill="#f0f0f0" text-anchor="middle">チームで何が起きるか: 意見が割れ始める</text>
+  <text x="375" y="440" font-family="sans-serif" font-size="12" fill="#D4A857" text-anchor="middle">よくあるミス: 一方に早く決着</text>
+
+  <!-- Stage 3: 縁 Relation (Highlighted) -->
+  <!-- Glow effect simulation -->
+  <rect x="490" y="295" width="220" height="210" rx="15" fill="#D4A857" opacity="0.1" />
+  <rect x="485" y="290" width="230" height="220" rx="20" fill="#D4A857" opacity="0.05" />
+  <rect x="495" y="300" width="210" height="200" rx="10" fill="#2a2a4e" stroke="#D4A857" stroke-width="5" />
+  <text x="600" y="350" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f0f0f0" text-anchor="middle">3. 縁</text>
+  <text x="600" y="375" font-family="sans-serif" font-size="14" fill="#f0f0f0" text-anchor="middle">Relation</text>
+  <text x="600" y="415" font-family="sans-serif" font-size="12" fill="#f0f0f0" text-anchor="middle">チームで何が起きるか: 「早く決めよう」の声</text>
+  <text x="600" y="440" font-family="sans-serif" font-size="12" fill="#D4A857" text-anchor="middle">よくあるミス: 矛盾を切り捨て</text>
+
+  <!-- Stage 4: 渦 Vortex -->
+  <rect x="730" y="310" width="190" height="180" rx="10" fill="#2a2a4e" stroke="#C45B4D" stroke-width="3" />
+  <text x="825" y="350" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f0f0f0" text-anchor="middle">4. 渦</text>
+  <text x="825" y="375" font-family="sans-serif" font-size="14" fill="#f0f0f0" text-anchor="middle">Vortex</text>
+  <text x="825" y="415" font-family="sans-serif" font-size="12" fill="#f0f0f0" text-anchor="middle">チームで何が起きるか: 「こういうことか」が共有される</text>
+  <text x="825" y="440" font-family="sans-serif" font-size="12" fill="#D4A857" text-anchor="middle">よくあるミス: 生まれた形を守りすぎ</text>
+
+  <!-- Stage 5: 束 Bundle -->
+  <rect x="960" y="310" width="190" height="180" rx="10" fill="#2a2a4e" stroke="#5B8B6A" stroke-width="3" />
+  <text x="1055" y="350" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f0f0f0" text-anchor="middle">5. 束</text>
+  <text x="1055" y="375" font-family="sans-serif" font-size="14" fill="#f0f0f0" text-anchor="middle">Bundle</text>
+  <text x="1055" y="415" font-family="sans-serif" font-size="12" fill="#f0f0f0" text-anchor="middle">チームで何が起きるか: 成果物が形になる</text>
+  <text x="1055" y="440" font-family="sans-serif" font-size="12" fill="#D4A857" text-anchor="middle">よくあるミス: 終点だと思うこと</text>
+
+  <!-- Flow Arrows -->
+  <!-- Arrow 1: 場 -> 波 -->
+  <line x1="240" y1="400" x2="280" y2="400" stroke="#cccccc" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Arrow 2: 波 -> 縁 -->
+  <line x1="470" y1="400" x2="495" y2="400" stroke="#cccccc" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Arrow 3: 縁 -> 渦 -->
+  <line x1="705" y1="400" x2="730" y2="400" stroke="#cccccc" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Arrow 4: 渦 -> 束 -->
+  <line x1="920" y1="400" x2="960" y2="400" stroke="#cccccc" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Loop-back Arrow: 束 -> 場 -->
+  <!-- Path: Start from mid-right of 束, curve right and down, go left, curve up and left to mid-left of 場 -->
+  <path d="M 1150 400 C 1180 400, 1180 600, 1000 600 L 200 600 C 20 600, 20 400, 50 400"
+        fill="none" stroke="#cccccc" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Bottom Note -->
+  <text x="600" y="700" font-family="sans-serif" font-size="14" font-style="italic" fill="#D4A857" text-anchor="middle">発散と収束の間の名前のない時間——それが縁である</text>
+
+</svg>
