@@ -21,6 +21,12 @@ This deck summarizes the common structure of the five-stage model found across 3
 
 ---
 
+
+## Stage-Level Distribution
+
+![30 Domains x 5 Stages Correspondence Heatmap](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-01-distribution-svg.svg)
+
+---
 ## Scale of Investigation
 
 - **Fields covered**: 30 academic fields (D01-D30)
@@ -111,6 +117,12 @@ This deck summarizes the common structure of the five-stage model found across 3
 - **Representative case**: mass extinction in earth science as destructive Uzu
 
 **Core insight**: The five-stage model describes order generation, not every kind of change.
+
+---
+
+## Five-Theme Structural Network
+
+![5-Theme Structural Relationship Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-02-themes-network-svg.svg)
 
 ---
 

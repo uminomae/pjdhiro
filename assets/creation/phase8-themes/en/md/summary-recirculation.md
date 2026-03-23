@@ -2,6 +2,8 @@
 
 ![T5: Recirculation Mechanism — Conclusion Summary](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/en/theme-recirculation.svg)
 
+![T5 Recirculation Mechanism Convergence Network](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-recirculation-01-convergence-svg.svg)
+
 19 of 30 domains explicitly reference bundle-to-field circulation (recirculation). Four convergence points were confirmed.
 
 - **A bundle is not an endpoint but a seed for the next cycle's field**: The most robust proposition, converging across 15+ domains
