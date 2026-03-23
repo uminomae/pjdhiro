@@ -4,43 +4,35 @@
     <marker id="arrowD15" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
     </marker>
-    <style>
-      .title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 24px; fill: #2C2C2C; font-weight: bold; }
-      .stage-label { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #FAFAF8; font-weight: bold; }
-      .concept { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #2C2C2C; }
-      .summary-title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #2C2C2C; font-weight: bold; }
-      .summary-text { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 12px; fill: #666666; }
-      .stage-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #FAFAF8; }
-    </style>
-  </defs>
+</defs>
 
   
   <rect width="800" height="600" fill="#FAFAF8" rx="8" />
   <rect x="20" y="20" width="760" height="560" fill="none" stroke="#E0DDD8" stroke-width="1" rx="6" />
 
   
-  <text x="400" y="60" text-anchor="middle" class="title">D15 Aesthetics — Structural correspondence diagram with the 5-stage model</text>
+  <text x="400" y="60" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="24px" fill="#2C2C2C" font-weight="bold">D15 Aesthetics — Structural correspondence diagram with the 5-stage model</text>
 
   
   <rect x="45" y="100" width="120" height="70" rx="10" fill="#8B8682" />
-  <text x="105" y="128" text-anchor="middle" class="stage-label">Field</text>
-  <text x="105" y="148" text-anchor="middle" class="stage-sub">Opening up aesthetic possibilities</text>
+  <text x="105" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Field</text>
+  <text x="105" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Opening up aesthetic possibilities</text>
 
   <rect x="195" y="100" width="120" height="70" rx="10" fill="#5B8DB8" />
-  <text x="255" y="128" text-anchor="middle" class="stage-label">Wave</text>
-  <text x="255" y="148" text-anchor="middle" class="stage-sub">Creating tension and conflict</text>
+  <text x="255" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Wave</text>
+  <text x="255" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Creating tension and conflict</text>
 
   <rect x="345" y="100" width="120" height="70" rx="10" fill="#D4A857" />
-  <text x="405" y="128" text-anchor="middle" class="stage-label">Edge</text>
-  <text x="405" y="148" text-anchor="middle" class="stage-sub">Coexistence and joining of conflicts</text>
+  <text x="405" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Edge</text>
+  <text x="405" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Coexistence and joining of conflicts</text>
 
   <rect x="495" y="100" width="120" height="70" rx="10" fill="#C45B4D" />
-  <text x="555" y="128" text-anchor="middle" class="stage-label">Vortex</text>
-  <text x="555" y="148" text-anchor="middle" class="stage-sub">Spontaneous formation of form</text>
+  <text x="555" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Vortex</text>
+  <text x="555" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Spontaneous formation of form</text>
 
   <rect x="645" y="100" width="120" height="70" rx="10" fill="#5B8B6A" />
-  <text x="705" y="128" text-anchor="middle" class="stage-label">Bundle</text>
-  <text x="705" y="148" text-anchor="middle" class="stage-sub">Complete without closing</text>
+  <text x="705" y="128" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#FAFAF8" font-weight="bold">Bundle</text>
+  <text x="705" y="148" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="11px" fill="#FAFAF8">Complete without closing</text>
 
   
   <line x1="165" y1="135" x2="193" y2="135" stroke="#666666" stroke-width="2" marker-end="url(#arrowD15)" />
@@ -52,63 +44,63 @@
   
   <line x1="105" y1="170" x2="105" y2="195" stroke="#8B8682" stroke-width="2" />
   <rect x="40" y="195" width="130" height="90" rx="6" fill="none" stroke="#8B8682" stroke-width="1.5" />
-  <text x="105" y="215" text-anchor="middle" class="concept">Definability (Schiller)</text>
-  <text x="105" y="235" text-anchor="middle" class="concept">A place of possibility (Eco)</text>
-  <text x="105" y="255" text-anchor="middle" class="concept">Relationship between living things and the environment</text>
+  <text x="105" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Definability (Schiller)</text>
+  <text x="105" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">A place of possibility (Eco)</text>
+  <text x="105" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Relationship between living things and the environment</text>
 
   
   <line x1="255" y1="170" x2="255" y2="195" stroke="#5B8DB8" stroke-width="2" />
   <rect x="190" y="195" width="130" height="90" rx="6" fill="none" stroke="#5B8DB8" stroke-width="1.5" />
-  <text x="255" y="215" text-anchor="middle" class="concept">Conflict between sensibility/form impulse</text>
-  <text x="255" y="235" text-anchor="middle" class="concept">Curiosity and Fear (Meltzer)</text>
-  <text x="255" y="255" text-anchor="middle" class="concept">ambiguity/uncertainty</text>
+  <text x="255" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Conflict between sensibility/form impulse</text>
+  <text x="255" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Curiosity and Fear (Meltzer)</text>
+  <text x="255" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">ambiguity/uncertainty</text>
 
   
   <line x1="405" y1="170" x2="405" y2="195" stroke="#D4A857" stroke-width="2" />
   <rect x="340" y="195" width="130" height="90" rx="6" fill="none" stroke="#D4A857" stroke-width="1.5" />
-  <text x="405" y="215" text-anchor="middle" class="concept">Play impulse (Schiller)</text>
-  <text x="405" y="235" text-anchor="middle" class="concept">Riss (Heidegger)</text>
-  <text x="405" y="255" text-anchor="middle" class="concept">Action and Suffering (Dewey)</text>
+  <text x="405" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Play impulse (Schiller)</text>
+  <text x="405" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Riss (Heidegger)</text>
+  <text x="405" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Action and Suffering (Dewey)</text>
 
   
   <line x1="555" y1="170" x2="555" y2="195" stroke="#C45B4D" stroke-width="2" />
   <rect x="490" y="195" width="130" height="90" rx="6" fill="none" stroke="#C45B4D" stroke-width="1.5" />
-  <text x="555" y="215" text-anchor="middle" class="concept">Living form (Schiller)</text>
-  <text x="555" y="235" text-anchor="middle" class="concept">Arise of truth (Heidegger)</text>
-  <text x="555" y="255" text-anchor="middle" class="concept">PS→D integration (Meltzer)</text>
+  <text x="555" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Living form (Schiller)</text>
+  <text x="555" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Arise of truth (Heidegger)</text>
+  <text x="555" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">PS→D integration (Meltzer)</text>
 
   
   <line x1="705" y1="170" x2="705" y2="195" stroke="#5B8B6A" stroke-width="2" />
   <rect x="640" y="195" width="130" height="90" rx="6" fill="none" stroke="#5B8B6A" stroke-width="1.5" />
-  <text x="705" y="215" text-anchor="middle" class="concept">Form Gestalt</text>
-  <text x="705" y="235" text-anchor="middle" class="concept">Open structure (Eco)</text>
-  <text x="705" y="255" text-anchor="middle" class="concept">Completion of aesthetic education</text>
+  <text x="705" y="215" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Form Gestalt</text>
+  <text x="705" y="235" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Open structure (Eco)</text>
+  <text x="705" y="255" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C">Completion of aesthetic education</text>
 
   
-  <text x="400" y="325" text-anchor="middle" class="summary-title">Strength of response (by theory)</text>
+  <text x="400" y="325" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14px" fill="#2C2C2C" font-weight="bold">Strength of response (by theory)</text>
 
   <line x1="60" y1="348" x2="100" y2="348" stroke="#2C2C2C" stroke-width="2" />
-  <text x="108" y="352" class="summary-text">strong response</text>
+  <text x="108" y="352"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">strong response</text>
   <line x1="240" y1="348" x2="280" y2="348" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="6,3" />
-  <text x="288" y="352" class="summary-text">Partial response</text>
+  <text x="288" y="352"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Partial response</text>
   <line x1="440" y1="348" x2="480" y2="348" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,3" />
-  <text x="488" y="352" class="summary-text">conditional response</text>
+  <text x="488" y="352"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">conditional response</text>
 
   
   <rect x="45" y="370" width="710" height="185" rx="6" fill="none" stroke="#E0DDD8" stroke-width="1" />
 
-  <text x="60" y="395" class="concept" font-weight="bold">Strong response:</text>
+  <text x="60" y="395"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C" font-weight="bold">Strong response:</text>
   <line x1="60" y1="405" x2="740" y2="405" stroke="#2C2C2C" stroke-width="2" />
-  <text x="60" y="420" class="summary-text">Meltzer aesthetic conflict, Japanese aesthetics (Zeami, Norinaga, Hisamatsu), Dewey aesthetic experience, Schiller aesthetic education, Eco-open works</text>
+  <text x="60" y="420"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Meltzer aesthetic conflict, Japanese aesthetics (Zeami, Norinaga, Hisamatsu), Dewey aesthetic experience, Schiller aesthetic education, Eco-open works</text>
 
-  <text x="60" y="445" class="concept" font-weight="bold">Partial response:</text>
+  <text x="60" y="445"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C" font-weight="bold">Partial response:</text>
   <line x1="60" y1="455" x2="740" y2="455" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="6,3" />
-  <text x="60" y="470" class="summary-text">Kant's Critique of Judgment, the Roots of Heidegger's Artwork, Adorno's Theory of Beauty</text>
+  <text x="60" y="470"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Kant's Critique of Judgment, the Roots of Heidegger's Artwork, Adorno's Theory of Beauty</text>
 
-  <text x="60" y="495" class="concept" font-weight="bold">Conditional:</text>
+  <text x="60" y="495"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#2C2C2C" font-weight="bold">Conditional:</text>
   <line x1="60" y1="505" x2="740" y2="505" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,3" />
-  <text x="60" y="520" class="summary-text">Benjamin, a work of art from the era of reproduction technology, the distribution of the sensuous by Ranciere</text>
+  <text x="60" y="520"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Benjamin, a work of art from the era of reproduction technology, the distribution of the sensuous by Ranciere</text>
 
   
-  <text x="400" y="545" text-anchor="middle" class="summary-text">Characteristics: "Edge" is described in 8 different types. The “bundle” is unique as a non-closed conclusion (mysterious character/open structure).</text>
+  <text x="400" y="545" text-anchor="middle"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12px" fill="#666666">Characteristics: "Edge" is described in 8 different types. The “bundle” is unique as a non-closed conclusion (mysterious character/open structure).</text>
 </svg>
