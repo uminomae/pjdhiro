@@ -1,0 +1,189 @@
+<svg viewBox="0 0 1200 950" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="950" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" font-size="28" font-weight="bold" text-anchor="middle" fill="#e0e0e0">11数学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <g id="column-headers">
+    <rect x="230" y="100" width="180" height="40" rx="5" ry="5" fill="#8B8682" />
+    <text x="320" y="125" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">場</text>
+    <rect x="420" y="100" width="180" height="40" rx="5" ry="5" fill="#5B8DB8" />
+    <text x="510" y="125" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">波</text>
+    <rect x="610" y="100" width="180" height="40" rx="5" ry="5" fill="#D4A857" />
+    <text x="700" y="125" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+    <rect x="800" y="100" width="180" height="40" rx="5" ry="5" fill="#C45B4D" />
+    <text x="890" y="125" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">渦</text>
+    <rect x="990" y="100" width="180" height="40" rx="5" ry="5" fill="#5B8B6A" />
+    <text x="1080" y="125" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">束</text>
+  </g>
+
+  <!-- Matrix Rows -->
+  <g id="matrix-rows">
+    <!-- Row 1: スピノルと720度回転 | partial -->
+    <g transform="translate(0, 150)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">1. スピノルと720度回転</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#e0e0e0" dominant-baseline="middle">場</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.7" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#e0e0e0" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 2: Julia集合と境界上の動態 | strong -->
+    <g transform="translate(0, 215)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">2. Julia集合と境界上の動態</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+    </g>
+    <!-- Row 3: 層とCechコホモロジーによる束の構成 | strong -->
+    <g transform="translate(0, 280)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">3. 層とCechコホモロジーによる束の構成</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="1.0" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">場</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="1.0" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">波</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="1.0" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">渦</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1.0" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 4: Milnorファイブレーション | strong -->
+    <g transform="translate(0, 345)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">4. Milnorファイブレーション</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="1.0" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">渦</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1.0" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 5: 高次圏 | conditional -->
+    <g transform="translate(0, 410)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">5. 高次圏</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.3" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#aaaaaa" dominant-baseline="middle">場</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.3" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#aaaaaa" dominant-baseline="middle">波</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+    </g>
+    <!-- Row 6: ガロア理論 | conditional -->
+    <g transform="translate(0, 475)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">6. ガロア理論</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.3" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#aaaaaa" dominant-baseline="middle">場</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.3" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#aaaaaa" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 7: 分岐理論 | strong -->
+    <g transform="translate(0, 540)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">7. 分岐理論</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+    </g>
+    <!-- Row 8: パーシステントホモロジー | partial -->
+    <g transform="translate(0, 605)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">8. パーシステントホモロジー</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#e0e0e0" dominant-baseline="middle">場</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#e0e0e0" dominant-baseline="middle">波</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+    </g>
+    <!-- Row 9: 特異摂動と境界層 | strong -->
+    <g transform="translate(0, 670)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">9. 特異摂動と境界層</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1.0" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">束</text>
+    </g>
+    <!-- Row 10: ホッジ理論 | conditional -->
+    <g transform="translate(0, 735)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">10. ホッジ理論</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.3" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#aaaaaa" dominant-baseline="middle">場</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+    </g>
+    <!-- Row 11: Morse理論 | strong -->
+    <g transform="translate(0, 800)">
+      <text x="210" y="32.5" font-size="14" text-anchor="end" fill="#c0c0c0" dominant-baseline="middle">11. Morse理論</text>
+      <rect x="230" y="0" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2" />
+      <text x="320" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="420" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2" />
+      <text x="510" y="27.5" font-size="15" text-anchor="middle" fill="#888888" dominant-baseline="middle">-</text>
+      <rect x="610" y="0" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+      <text x="700" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">縁</text>
+      <rect x="800" y="0" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="1.0" />
+      <text x="890" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">渦</text>
+      <rect x="990" y="0" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1.0" />
+      <text x="1080" y="27.5" font-size="15" text-anchor="middle" fill="#ffffff" dominant-baseline="middle">束</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g id="legend" transform="translate(0, 885)">
+    <rect x="280" y="0" width="30" height="30" rx="5" ry="5" fill="#D4A857" opacity="1.0" />
+    <text x="320" y="19" font-size="14" fill="#c0c0c0" dominant-baseline="middle">強い対応 (Strong)</text>
+    <rect x="500" y="0" width="30" height="30" rx="5" ry="5" fill="#D4A857" opacity="0.7" />
+    <text x="540" y="19" font-size="14" fill="#c0c0c0" dominant-baseline="middle">部分的 (Partial)</text>
+    <rect x="700" y="0" width="30" height="30" rx="5" ry="5" fill="#D4A857" opacity="0.3" />
+    <text x="740" y="19" font-size="14" fill="#c0c0c0" dominant-baseline="middle">条件付き/弱い (Conditional/Weak)</text>
+  </g>
+</svg>

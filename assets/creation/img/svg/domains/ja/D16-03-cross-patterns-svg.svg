@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="32" font-weight="bold">歴史学探究における横断的パターンの発見</text>
+
+  <!-- Connecting Lines (Glow Layer) -->
+  <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+  <!-- Cross-connections between satellites -->
+  <line x1="300" y1="250" x2="900" y2="250" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+  <line x1="300" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+  <line x1="900" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+
+  <!-- Connecting Lines (Sharp Layer) -->
+  <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="2" />
+  <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="2" />
+  <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="2" />
+
+  <!-- Center Card (Hub) -->
+  <!-- Glow effect -->
+  <rect x="390" y="270" width="420" height="260" fill="#D4A857" opacity="0.2" rx="10" ry="10" />
+  <rect x="395" y="275" width="410" height="250" fill="#D4A857" opacity="0.3" rx="10" ry="10" />
+  <!-- Main card -->
+  <rect x="400" y="280" width="400" height="240" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" rx="10" ry="10" />
+  <!-- Content -->
+  <text x="600" y="320" text-anchor="middle" fill="#D4A857" font-size="28" font-weight="bold">縁の多型性</text>
+  <text x="600" y="350" text-anchor="middle" fill="white" font-size="18">(1/10 theories)</text>
+  <text x="600" y="385" text-anchor="middle" fill="white" font-size="20">
+    <tspan x="600" dy="0">"本調査の最大の発見は、歴史学が10の理論で</tspan>
+    <tspan x="600" dy="25">10タイプの縁を記述していることです"</tspan>
+  </text>
+  <text x="600" y="450" text-anchor="middle" fill="#cccccc" font-size="16">Found in:</text>
+  <text x="600" y="475" text-anchor="middle" fill="#D4A857" font-size="14">ブローデル</text>
+
+  <!-- Satellite Card 1 (Top-left) -->
+  <g>
+    <rect x="145" y="155" width="310" height="190" fill="#4a90e2" opacity="0.2" rx="8" ry="8" />
+    <rect x="150" y="160" width="300" height="180" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" rx="8" ry="8" />
+    <text x="300" y="190" text-anchor="middle" fill="#4a90e2" font-size="20" font-weight="bold">「成功→自壊」メカニズムの独立的収束</text>
+    <text x="300" y="215" text-anchor="middle" fill="white" font-size="14">1/10</text>
+    <text x="300" y="245" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">"成功がシステムを弱体化させる。</tspan>
+      <tspan x="300" dy="20">奢侈による凝集の摩耗。"</tspan>
+    </text>
+    <text x="300" y="295" text-anchor="middle" fill="#cccccc" font-size="14">
+      <tspan x="300" dy="0">イブン・ハルドゥーン, ターチン</tspan>
+      <tspan x="300" dy="18">ヴィーコ</tspan>
+    </text>
+  </g>
+
+  <!-- Satellite Card 2 (Top-right) -->
+  <g>
+    <rect x="745" y="155" width="310" height="190" fill="#e24a4a" opacity="0.2" rx="8" ry="8" />
+    <rect x="750" y="160" width="300" height="180" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" rx="8" ry="8" />
+    <text x="900" y="190" text-anchor="middle" fill="#e24a4a" font-size="20" font-weight="bold">場の消極性</text>
+    <text x="900" y="215" text-anchor="middle" fill="white" font-size="14">10件</text>
+    <text x="900" y="245" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="900" dy="0">"10件の理論のうち、場に積極的な内容を与えるのは</tspan>
+      <tspan x="900" dy="20">コゼレック（経験空間）のみです"</tspan>
+    </text>
+    <text x="900" y="295" text-anchor="middle" fill="#cccccc" font-size="14">コゼレック (経験空間)</text>
+  </g>
+
+  <!-- Satellite Card 3 (Bottom-left) -->
+  <g>
+    <rect x="145" y="505" width="310" height="190" fill="#50e3c2" opacity="0.2" rx="8" ry="8" />
+    <rect x="150" y="510" width="300" height="180" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" rx="8" ry="8" />
+    <text x="300" y="540" text-anchor="middle" fill="#50e3c2" font-size="20" font-weight="bold">5段階との対応の段階別強弱</text>
+    <text x="300" y="565" text-anchor="middle" fill="white" font-size="14">0/10</text>
+    <text x="300" y="595" text-anchor="middle" fill="white" font-size="16">"歴史学全体での段階別の対応強度は以下のとおりです"</text>
+    <!-- No explicit theorists mentioned for this pattern -->
+  </g>
+
+  <!-- Key finding callout -->
+  <rect x="350" y="545" width="500" height="50" rx="25" ry="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+  <text x="600" y="575" text-anchor="middle" fill="#1a1a2e" font-size="18" font-weight="bold">歴史学で最も顕著な発見 = 縁の多型性</text>
+
+</svg>

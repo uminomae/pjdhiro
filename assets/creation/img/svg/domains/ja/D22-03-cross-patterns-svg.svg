@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="32" font-weight="bold">経営学探究における横断的パターンの発見</text>
+
+  <!-- Center Card (Hub) -->
+  <g id="center-card">
+    <!-- Glow layers -->
+    <rect x="390" y="270" width="420" height="260" rx="10" fill="#D4A857" opacity="0.2" />
+    <rect x="395" y="275" width="410" height="250" rx="10" fill="#D4A857" opacity="0.3" />
+    <!-- Main card -->
+    <rect x="400" y="280" width="400" height="240" rx="10" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+    <!-- Content -->
+    <text x="420" y="310" fill="#D4A857" font-size="28" font-weight="bold">遷移阻害メカニズムの体系</text>
+    <text x="420" y="345" fill="white" font-size="18">(0/11 theories)</text>
+    <text x="420" y="380" fill="white" font-size="20">
+      <tspan x="420" dy="0">経営学は30領域の中でも「5段階の遷移が</tspan>
+      <tspan x="420" dy="24">なぜ止まるか</tspan>
+    </text>
+    <text x="420" y="450" fill="#cccccc" font-size="16">Found in:</text>
+    <!-- Theory names are empty for center card as per data -->
+  </g>
+
+  <!-- Satellite Cards -->
+  <!-- Satellite 1: 縁の三つの現れ方 (Top-left) -->
+  <g id="satellite-1">
+    <rect x="150" y="160" width="300" height="180" rx="8" fill="#4a90e2" opacity="0.2" />
+    <rect x="155" y="165" width="290" height="170" rx="8" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+    <text x="170" y="195" fill="#4a90e2" font-size="20" font-weight="bold">縁の三つの現れ方</text>
+    <text x="170" y="220" fill="white" font-size="14">(0/11)</text>
+    <text x="170" y="250" fill="white" font-size="16">
+      <tspan x="170" dy="0">縁の記述が強い3つの理論から、</tspan>
+      <tspan x="170" dy="19.2">縁には異なる類型があることが</tspan>
+      <tspan x="170" dy="19.2">示唆されます</tspan>
+    </text>
+    <text x="170" y="315" fill="#cccccc" font-size="14"></text> <!-- Theory names empty as per data -->
+  </g>
+
+  <!-- Satellite 2: 経営学は「束の理論」が豊富 (Top-right) -->
+  <g id="satellite-2">
+    <rect x="750" y="160" width="300" height="180" rx="8" fill="#e24a4a" opacity="0.2" />
+    <rect x="755" y="165" width="290" height="170" rx="8" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+    <text x="770" y="195" fill="#e24a4a" font-size="20" font-weight="bold">経営学は「束の理論」が豊富</text>
+    <text x="770" y="220" fill="white" font-size="14">(1/11)</text>
+    <text x="770" y="250" fill="white" font-size="16">
+      <tspan x="770" dy="0">11理論を俯瞰すると、経営学は</tspan>
+      <tspan x="770" dy="19.2">他領域と比較して「束</tspan>
+    </text>
+    <text x="770" y="315" fill="#cccccc" font-size="14">構造化・制度化・標準化</text>
+  </g>
+
+  <!-- Satellite 3: フラクタル的反復の経営学的証拠 (Bottom-left) -->
+  <g id="satellite-3">
+    <rect x="150" y="510" width="300" height="180" rx="8" fill="#50e3c2" opacity="0.2" />
+    <rect x="155" y="515" width="290" height="170" rx="8" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+    <text x="170" y="545" fill="#50e3c2" font-size="20" font-weight="bold">フラクタル的反復の経営学的証拠</text>
+    <text x="170" y="570" fill="white" font-size="14">(1/11)</text>
+    <text x="170" y="600" fill="white" font-size="16">
+      <tspan x="170" dy="0">5段階の同じ構造が異なるスケールで</tspan>
+      <tspan x="170" dy="19.2">反復するフラクタル性を、経営学は</tspan>
+      <tspan x="170" dy="19.2">最も明確に例証します</tspan>
+    </text>
+    <text x="170" y="665" fill="#cccccc" font-size="14">TPS/アジャイル</text>
+  </g>
+
+  <!-- Connecting Lines (Center to Satellites) -->
+  <g id="connections-center-to-satellites">
+    <!-- Center (600, 400) -->
+    <!-- S1 (300, 250) -->
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="2" />
+    <!-- S2 (900, 250) -->
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="2" />
+    <!-- S3 (300, 600) -->
+    <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="2" />
+  </g>
+
+  <!-- Optional Cross-connections between Satellites -->
+  <g id="connections-satellites-to-satellites">
+    <!-- S1 (300, 250) to S2 (900, 250) -->
+    <line x1="300" y1="250" x2="900" y2="250" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+    <!-- S1 (300, 250) to S3 (300, 600) -->
+    <line x1="300" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+    <!-- S2 (900, 250) to S3 (300, 600) -->
+    <line x1="900" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+  </g>
+
+  <!-- Key Finding Callout -->
+  <g id="key-finding-callout">
+    <rect x="436" y="545" width="328" height="50" rx="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="1" />
+    <text x="600" y="570" text-anchor="middle" fill="#1a1a2e" font-size="18" font-weight="bold">経営学で最も顕著な発見 = 遷移阻害メカニズムの体系</text>
+  </g>
+
+</svg>

@@ -1,0 +1,169 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="methodologyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D25 人類学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g>
+    <!-- Phase 1-2 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#methodologyGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="196" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+
+    <!-- Arrow 1 -->
+    <line x1="200" y1="220" x2="200" y2="240" stroke="#F39C12" stroke-width="4" />
+    <polygon points="195,240 205,240 200,250" fill="#F39C12" />
+
+    <!-- Phase 3-4 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#methodologyGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="296" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+
+    <!-- Arrow 2 -->
+    <line x1="200" y1="320" x2="200" y2="340" stroke="#F39C12" stroke-width="4" />
+    <polygon points="195,340 205,340 200,350" fill="#F39C12" />
+
+    <!-- Phase 5 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#methodologyGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="396" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+
+    <!-- Arrow 3 -->
+    <line x1="200" y1="420" x2="200" y2="440" stroke="#F39C12" stroke-width="4" />
+    <polygon points="195,440 205,440 200,450" fill="#F39C12" />
+
+    <!-- Phase 6 -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#methodologyGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="496" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+
+    <!-- Arrow 4 -->
+    <line x1="200" y1="520" x2="200" y2="540" stroke="#F39C12" stroke-width="4" />
+    <polygon points="195,540 205,540 200,550" fill="#F39C12" />
+
+    <!-- Phase 7 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#methodologyGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="596" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g>
+    <!-- Column Headers -->
+    <rect x="405" y="150" width="140" height="30" rx="5" fill="#8B8682" />
+    <text x="475" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+    <rect x="555" y="150" width="140" height="30" rx="5" fill="#5B8DB8" />
+    <text x="625" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+    <rect x="705" y="150" width="140" height="30" rx="5" fill="#D4A857" />
+    <text x="775" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+    <rect x="855" y="150" width="140" height="30" rx="5" fill="#C45B4D" />
+    <text x="925" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+    <rect x="1005" y="150" width="140" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1075" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+
+    <!-- Theory Rows and Cells -->
+    <!-- Theory 1: 通過儀礼の三段階 | strong | 場,波,縁,渦,束 -->
+    <text x="390" y="219" text-anchor="end" fill="white" font-size="14">通過儀礼の三段階</text>
+    <rect x="405" y="190" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="555" y="190" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="705" y="190" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="855" y="190" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1005" y="190" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Theory 2: 社会劇の四局面 | strong | 場,波,縁,渦,束 -->
+    <text x="390" y="271" text-anchor="end" fill="white" font-size="14">社会劇の四局面</text>
+    <rect x="405" y="242" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="555" y="242" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="705" y="242" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="855" y="242" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1005" y="242" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Theory 3: リミナリティとコミュニタス | strong | 縁 -->
+    <text x="390" y="323" text-anchor="end" fill="white" font-size="14">リミナリティとコミュニタス</text>
+    <rect x="405" y="294" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="555" y="294" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="705" y="294" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="855" y="294" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1005" y="294" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Theory 4: 汚穢と禁忌 | partial | 場,波,縁,渦,束 -->
+    <text x="390" y="375" text-anchor="end" fill="white" font-size="14">汚穢と禁忌</text>
+    <rect x="405" y="346" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="555" y="346" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="705" y="346" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="855" y="346" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1005" y="346" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 5: 民族境界 | partial | 縁,束 -->
+    <text x="390" y="427" text-anchor="end" fill="white" font-size="14">民族境界</text>
+    <rect x="405" y="398" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="555" y="398" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="705" y="398" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="855" y="398" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1005" y="398" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 6: 贈与論 | partial | 場,波,縁,渦,束 -->
+    <text x="390" y="479" text-anchor="end" fill="white" font-size="14">贈与論</text>
+    <rect x="405" y="450" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="555" y="450" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="705" y="450" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="855" y="450" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1005" y="450" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 7: 操作連鎖 | partial | 場 -->
+    <text x="390" y="531" text-anchor="end" fill="white" font-size="14">操作連鎖</text>
+    <rect x="405" y="502" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="555" y="502" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="705" y="502" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="855" y="502" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1005" y="502" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Theory 8: 象徴境界と社会境界 | partial | 波,縁,渦,束 -->
+    <text x="390" y="583" text-anchor="end" fill="white" font-size="14">象徴境界と社会境界</text>
+    <rect x="405" y="554" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="555" y="554" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="705" y="554" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="855" y="554" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1005" y="554" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Theory 9: コンタクト・ゾーン | conditional | 縁 -->
+    <text x="390" y="635" text-anchor="end" fill="white" font-size="14">コンタクト・ゾーン</text>
+    <rect x="405" y="606" width="140" height="50" fill="#8B8682" opacity="0.2" />
+    <rect x="555" y="606" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="705" y="606" width="140" height="50" fill="#D4A857" opacity="0.4" />
+    <rect x="855" y="606" width="140" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1005" y="606" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
+
+    <!-- Theory 10: 構造化理論/実践感覚 | partial | 場,縁,束 -->
+    <text x="390" y="687" text-anchor="end" fill="white" font-size="14">構造化理論/実践感覚</text>
+    <rect x="405" y="658" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="555" y="658" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="705" y="658" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="855" y="658" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1005" y="658" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <g text-anchor="middle" fill="white" font-size="18">
+    <text x="450" y="761">
+      <tspan fill="#27AE60">■</tspan> 強い対応: 3件
+    </text>
+    <text x="600" y="761">
+      <tspan fill="#F1C40F">■</tspan> 部分的対応: 6件
+    </text>
+    <text x="750" y="761">
+      <tspan fill="#E67E22">■</tspan> 条件付き: 1件
+    </text>
+  </g>
+</svg>

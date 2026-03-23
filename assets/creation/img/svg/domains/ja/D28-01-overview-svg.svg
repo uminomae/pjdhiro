@@ -1,0 +1,173 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <!-- Gradient for left column boxes -->
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" fill="white" font-size="36" font-weight="bold" text-anchor="middle">D28 舞台芸術 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" fill="#cccccc" font-size="20" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="197" fill="white" font-size="18" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+  <path d="M200,220 L200,260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="297" fill="white" font-size="18" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+  <path d="M200,320 L200,360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="397" fill="white" font-size="18" text-anchor="middle">Phase 5: 論拠監査</text>
+  <path d="M200,420 L200,460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="497" fill="white" font-size="18" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+  <path d="M200,520 L200,560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="597" fill="white" font-size="18" text-anchor="middle">Phase 7: 横断統合</text>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <rect x="420" y="150" width="140" height="30" rx="5" fill="#8B8682" />
+  <text x="490" y="171" fill="white" font-size="16" font-weight="bold" text-anchor="middle">場</text>
+  <rect x="562" y="150" width="140" height="30" rx="5" fill="#5B8DB8" />
+  <text x="632" y="171" fill="white" font-size="16" font-weight="bold" text-anchor="middle">波</text>
+  <rect x="704" y="150" width="140" height="30" rx="5" fill="#D4A857" />
+  <text x="774" y="171" fill="white" font-size="16" font-weight="bold" text-anchor="middle">縁</text>
+  <rect x="846" y="150" width="140" height="30" rx="5" fill="#C45B4D" />
+  <text x="916" y="171" fill="white" font-size="16" font-weight="bold" text-anchor="middle">渦</text>
+  <rect x="988" y="150" width="140" height="30" rx="5" fill="#5B8B6A" />
+  <text x="1058" y="171" fill="white" font-size="16" font-weight="bold" text-anchor="middle">束</text>
+
+  <!-- Theory Data -->
+  <!-- Theories array for reference:
+  [
+    {"name": "花伝書・修行過程", "type": "strong", "matches": ["場", "波", "縁", "渦", "束"]},
+    {"name": "即興演劇", "type": "strong", "matches": ["場", "波", "縁", "渦", "束"]},
+    {"name": "パフォーマティヴ美学", "type": "strong", "matches": ["場", "波", "縁", "渦"]},
+    {"name": "貧しい演劇 / via negativa", "type": "partial", "matches": ["波", "渦"]},
+    {"name": "システム", "type": "partial", "matches": ["波", "渦"]},
+    {"name": "バイオメカニクス", "type": "partial", "matches": ["波", "渦"]},
+    {"name": "身体動作分析（LMA）", "type": "conditional", "matches": ["場", "波"]},
+    {"name": "Viewpoints", "type": "strong", "matches": ["場", "波", "縁", "渦", "束"]},
+    {"name": "被抑圧者の演劇", "type": "partial", "matches": ["縁", "渦"]},
+    {"name": "パフォーマンス研究", "type": "conditional", "matches": ["波", "渦"]}
+  ]
+  Stages = ["場", "波", "縁", "渦", "束"]
+  StageColors = {"場": "#8B8682", "波": "#5B8DB8", "縁": "#D4A857", "渦": "#C45B4D", "束": "#5B8B6A"}
+  OpacityRules = {"strong": {"match": 1.0, "unmatch": 0.3}, "partial": {"match": 0.7, "unmatch": 0.3}, "conditional": {"match": 0.4, "unmatch": 0.2}}
+  -->
+  
+  <!-- Row 0: 花伝書・修行過程 (strong) -->
+  <text x="410" y="215" fill="white" font-size="14" text-anchor="end">花伝書・修行過程</text>
+  <rect x="420" y="190" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="562" y="190" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="704" y="190" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="846" y="190" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="988" y="190" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Row 1: 即興演劇 (strong) -->
+  <text x="410" y="267" fill="white" font-size="14" text-anchor="end">即興演劇</text>
+  <rect x="420" y="242" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="562" y="242" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="704" y="242" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="846" y="242" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="988" y="242" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Row 2: パフォーマティヴ美学 (strong) -->
+  <text x="410" y="319" fill="white" font-size="14" text-anchor="end">パフォーマティヴ美学</text>
+  <rect x="420" y="294" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="562" y="294" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="704" y="294" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="846" y="294" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="988" y="294" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Row 3: 貧しい演劇 / via negativa (partial) -->
+  <text x="410" y="371" fill="white" font-size="14" text-anchor="end">貧しい演劇 / via negativa</text>
+  <rect x="420" y="346" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="562" y="346" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="704" y="346" width="140" height="50" fill="#D4A857" opacity="0.3" />
+  <rect x="846" y="346" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="988" y="346" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Row 4: システム (partial) -->
+  <text x="410" y="423" fill="white" font-size="14" text-anchor="end">システム</text>
+  <rect x="420" y="398" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="562" y="398" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="704" y="398" width="140" height="50" fill="#D4A857" opacity="0.3" />
+  <rect x="846" y="398" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="988" y="398" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Row 5: バイオメカニクス (partial) -->
+  <text x="410" y="475" fill="white" font-size="14" text-anchor="end">バイオメカニクス</text>
+  <rect x="420" y="450" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="562" y="450" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+  <rect x="704" y="450" width="140" height="50" fill="#D4A857" opacity="0.3" />
+  <rect x="846" y="450" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="988" y="450" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Row 6: 身体動作分析（LMA） (conditional) -->
+  <text x="410" y="527" fill="white" font-size="14" text-anchor="end">身体動作分析（LMA）</text>
+  <rect x="420" y="502" width="140" height="50" fill="#8B8682" opacity="0.4" />
+  <rect x="562" y="502" width="140" height="50" fill="#5B8DB8" opacity="0.4" />
+  <rect x="704" y="502" width="140" height="50" fill="#D4A857" opacity="0.2" />
+  <rect x="846" y="502" width="140" height="50" fill="#C45B4D" opacity="0.2" />
+  <rect x="988" y="502" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
+
+  <!-- Row 7: Viewpoints (strong) -->
+  <text x="410" y="579" fill="white" font-size="14" text-anchor="end">Viewpoints</text>
+  <rect x="420" y="554" width="140" height="50" fill="#8B8682" opacity="1.0" />
+  <rect x="562" y="554" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+  <rect x="704" y="554" width="140" height="50" fill="#D4A857" opacity="1.0" />
+  <rect x="846" y="554" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+  <rect x="988" y="554" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+  <!-- Row 8: 被抑圧者の演劇 (partial) -->
+  <text x="410" y="631" fill="white" font-size="14" text-anchor="end">被抑圧者の演劇</text>
+  <rect x="420" y="606" width="140" height="50" fill="#8B8682" opacity="0.3" />
+  <rect x="562" y="606" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+  <rect x="704" y="606" width="140" height="50" fill="#D4A857" opacity="0.7" />
+  <rect x="846" y="606" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+  <rect x="988" y="606" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+  <!-- Row 9: パフォーマンス研究 (conditional) -->
+  <text x="410" y="683" fill="white" font-size="14" text-anchor="end">パフォーマンス研究</text>
+  <rect x="420" y="658" width="140" height="50" fill="#8B8682" opacity="0.2" />
+  <rect x="562" y="658" width="140" height="50" fill="#5B8DB8" opacity="0.4" />
+  <rect x="704" y="658" width="140" height="50" fill="#D4A857" opacity="0.2" />
+  <rect x="846" y="658" width="140" height="50" fill="#C45B4D" opacity="0.4" />
+  <rect x="988" y="658" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <text x="600" y="755" fill="white" font-size="18" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 4件 / 
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 4件 / 
+    <tspan fill="#E67E22">■</tspan> 条件付き: 2件
+  </text>
+
+</svg>

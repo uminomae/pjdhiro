@@ -1,0 +1,181 @@
+<svg viewBox="0 0 1200 950" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <rect x="0" y="0" width="1200" height="950" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" font-size="30" font-weight="bold" fill="#ffffff" text-anchor="middle">11神経科学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <rect x="220" y="100" width="180" height="50" fill="#8B8682" rx="5" ry="5" />
+  <text x="310" y="133" font-size="20" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="100" width="180" height="50" fill="#5B8DB8" rx="5" ry="5" />
+  <text x="500" y="133" font-size="20" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="100" width="180" height="50" fill="#D4A857" rx="5" ry="5" />
+  <text x="690" y="133" font-size="20" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="100" width="180" height="50" fill="#C45B4D" rx="5" ry="5" />
+  <text x="880" y="133" font-size="20" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="100" width="180" height="50" fill="#5B8B6A" rx="5" ry="5" />
+  <text x="1070" y="133" font-size="20" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Matrix Rows -->
+  <!-- Row 1: 予測符号化・自由エネルギー原理 | strong | - | - | - | - | - -->
+  <text x="10" y="195.5" font-size="16" fill="#ffffff" text-anchor="start">1.</text>
+  <text x="40" y="195.5" font-size="16" fill="#ffffff" text-anchor="start">予測符号化・自由エネルギー原理</text>
+  <rect x="220" y="160" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="195.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="160" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="195.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="160" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="195.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="160" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="195.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="160" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="195.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 2: 内受容感覚と内受容的推論 | strong | 場 | 波 | - | 渦 | - -->
+  <text x="10" y="260.5" font-size="16" fill="#ffffff" text-anchor="start">2.</text>
+  <text x="40" y="260.5" font-size="16" fill="#ffffff" text-anchor="start">内受容感覚と内受容的推論</text>
+  <rect x="220" y="225" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="260.5" font-size="18" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="225" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="260.5" font-size="18" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="225" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="260.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="225" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="260.5" font-size="18" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="225" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="260.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 3: 情動の構成理論 | strong | - | - | - | 渦 | - -->
+  <text x="10" y="325.5" font-size="16" fill="#ffffff" text-anchor="start">3.</text>
+  <text x="40" y="325.5" font-size="16" fill="#ffffff" text-anchor="start">情動の構成理論</text>
+  <rect x="220" y="290" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="325.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="290" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="325.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="290" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="325.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="290" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="880" y="325.5" font-size="18" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="980" y="290" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="325.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 4: 実行機能と認知制御 | strong | - | - | 縁 | - | - -->
+  <text x="10" y="390.5" font-size="16" fill="#ffffff" text-anchor="start">4.</text>
+  <text x="40" y="390.5" font-size="16" fill="#ffffff" text-anchor="start">実行機能と認知制御</text>
+  <rect x="220" y="355" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="390.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="355" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="390.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="355" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="390.5" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="355" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="390.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="355" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="390.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 5: 意識とグローバルワークスペース | partial | - | - | - | - | - -->
+  <text x="10" y="455.5" font-size="16" fill="#ffffff" text-anchor="start">5.</text>
+  <text x="40" y="455.5" font-size="16" fill="#ffffff" text-anchor="start">意識とグローバルワークスペース</text>
+  <rect x="220" y="420" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="455.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="420" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="455.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="420" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="455.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="420" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="455.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="420" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="455.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 6: 睡眠・夢と予測-誤差ループ | partial | 場 | 波 | - | - | - -->
+  <text x="10" y="520.5" font-size="16" fill="#ffffff" text-anchor="start">6.</text>
+  <text x="40" y="520.5" font-size="16" fill="#ffffff" text-anchor="start">睡眠・夢と予測-誤差ループ</text>
+  <rect x="220" y="485" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="310" y="520.5" font-size="18" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="410" y="485" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="500" y="520.5" font-size="18" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="600" y="485" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="520.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="485" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="520.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="485" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="520.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 7: ポリヴェーガル理論 | strong | 場 | - | 縁 | - | - -->
+  <text x="10" y="585.5" font-size="16" fill="#ffffff" text-anchor="start">7.</text>
+  <text x="40" y="585.5" font-size="16" fill="#ffffff" text-anchor="start">ポリヴェーガル理論</text>
+  <rect x="220" y="550" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="310" y="585.5" font-size="18" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="410" y="550" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="585.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="550" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="585.5" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="550" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="585.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="550" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="585.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 8: 身体化された認知・エナクティヴィズム | strong | - | - | - | - | - -->
+  <text x="10" y="650.5" font-size="16" fill="#ffffff" text-anchor="start">8.</text>
+  <text x="40" y="650.5" font-size="16" fill="#ffffff" text-anchor="start">身体化された認知・エナクティヴィズム</text>
+  <rect x="220" y="615" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="650.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="615" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="650.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="615" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="650.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="615" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="650.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="615" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="650.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 9: シナプス可塑性・STDP | strong | - | - | 縁 | - | - -->
+  <text x="10" y="715.5" font-size="16" fill="#ffffff" text-anchor="start">9.</text>
+  <text x="40" y="715.5" font-size="16" fill="#ffffff" text-anchor="start">シナプス可塑性・STDP</text>
+  <rect x="220" y="680" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="715.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="680" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="715.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="680" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="715.5" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="680" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="715.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="680" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="715.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 10: θ-γカップリングとコヒーレンス通信 | strong | - | 波 | 縁 | - | - -->
+  <text x="10" y="780.5" font-size="16" fill="#ffffff" text-anchor="start">10.</text>
+  <text x="40" y="780.5" font-size="16" fill="#ffffff" text-anchor="start">θ-γカップリングとコヒーレンス通信</text>
+  <rect x="220" y="745" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="310" y="780.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="410" y="745" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="500" y="780.5" font-size="18" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="600" y="745" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="690" y="780.5" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="790" y="745" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="780.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="745" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="780.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Row 11: 神経雪崩とクリティカリティ | conditional | 場 | - | - | - | - -->
+  <text x="10" y="845.5" font-size="16" fill="#ffffff" text-anchor="start">11.</text>
+  <text x="40" y="845.5" font-size="16" fill="#ffffff" text-anchor="start">神経雪崩とクリティカリティ</text>
+  <rect x="220" y="810" width="180" height="55" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+  <text x="310" y="845.5" font-size="18" fill="#aaaaaa" text-anchor="middle">場</text>
+  <rect x="410" y="810" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="500" y="845.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="600" y="810" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="690" y="845.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="790" y="810" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="880" y="845.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="980" y="810" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1070" y="845.5" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Legend -->
+  <rect x="220" y="895" width="50" height="30" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="280" y="916" font-size="16" fill="#ffffff" text-anchor="start">強い対応 (Strong)</text>
+  <rect x="450" y="895" width="50" height="30" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="510" y="916" font-size="16" fill="#ffffff" text-anchor="start">部分的 (Partial)</text>
+  <rect x="680" y="895" width="50" height="30" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+  <text x="740" y="916" font-size="16" fill="#ffffff" text-anchor="start">条件付き/弱い (Conditional/Weak)</text>
+</svg>

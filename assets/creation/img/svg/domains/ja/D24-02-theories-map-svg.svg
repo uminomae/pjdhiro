@@ -1,0 +1,166 @@
+<svg viewBox="0 0 1200 900" font-family="sans-serif">
+  <rect x="0" y="0" width="1200" height="900" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" font-size="32" fill="#ffffff" text-anchor="middle">10宗教学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <!-- Dimensions: header_y=100, header_rect_height=40, header_font_size=20 -->
+  <!-- col_width=180, col_gap=10, col_pitch=190, row_label_width=220 -->
+  <rect x="230" y="100" width="180" height="40" fill="#8B8682" rx="5" ry="5" />
+  <text x="320" y="126.66" font-size="20" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="420" y="100" width="180" height="40" fill="#5B8DB8" rx="5" ry="5" />
+  <text x="510" y="126.66" font-size="20" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="610" y="100" width="180" height="40" fill="#D4A857" rx="5" ry="5" />
+  <text x="700" y="126.66" font-size="20" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="800" y="100" width="180" height="40" fill="#C45B4D" rx="5" ry="5" />
+  <text x="890" y="126.66" font-size="20" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="990" y="100" width="180" height="40" fill="#5B8B6A" rx="5" ry="5" />
+  <text x="1080" y="126.66" font-size="20" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Matrix Rows and Cells -->
+  <!-- matrix_start_y = 100 (header_y) + 40 (header_rect_height) + 10 (row_gap) = 150 -->
+  <!-- row_height=55, row_gap=10, row_pitch=65 -->
+  <!-- col_width=180, col_gap=10, col_pitch=190, row_label_width=220 -->
+  <!-- row_label_font_size=18, cell_font_size=18 -->
+
+  <!-- Theory 1: 回心7段階モデル -->
+  <text x="10" y="188.33" font-size="18" fill="#ffffff" text-anchor="start">1. 回心7段階モデル</text>
+  <rect x="230" y="160" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="320" y="188.33" font-size="18" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="420" y="160" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="510" y="188.33" font-size="18" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="610" y="160" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="700" y="188.33" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="800" y="160" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="890" y="188.33" font-size="18" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="990" y="160" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1080" y="188.33" font-size="18" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Theory 2: リミナリティと構造/反構造 -->
+  <text x="10" y="253.33" font-size="18" fill="#ffffff" text-anchor="start">2. リミナリティと構造/反構造</text>
+  <rect x="230" y="225" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="320" y="253.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="420" y="225" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="510" y="253.33" font-size="18" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="610" y="225" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="253.33" font-size="18" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="800" y="225" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="890" y="253.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="990" y="225" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1080" y="253.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Theory 3: 七つの住まい -->
+  <text x="10" y="318.33" font-size="18" fill="#ffffff" text-anchor="start">3. 七つの住まい</text>
+  <rect x="230" y="290" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="320" y="318.33" font-size="18" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="420" y="290" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="510" y="318.33" font-size="18" fill="#e0e0e0" text-anchor="middle">波</text>
+  <rect x="610" y="290" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="318.33" font-size="18" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="800" y="290" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+  <text x="890" y="318.33" font-size="18" fill="#e0e0e0" text-anchor="middle">渦</text>
+  <rect x="990" y="290" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="318.33" font-size="18" fill="#e0e0e0" text-anchor="middle">束</text>
+
+  <!-- Theory 4: 十牛図 -->
+  <text x="10" y="383.33" font-size="18" fill="#ffffff" text-anchor="start">4. 十牛図</text>
+  <rect x="230" y="355" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="320" y="383.33" font-size="18" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="420" y="355" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="510" y="383.33" font-size="18" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="610" y="355" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="700" y="383.33" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="800" y="355" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="890" y="383.33" font-size="18" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="990" y="355" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1080" y="383.33" font-size="18" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Theory 5: ファナー/バカー -->
+  <text x="10" y="448.33" font-size="18" fill="#ffffff" text-anchor="start">5. ファナー/バカー</text>
+  <rect x="230" y="420" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="320" y="448.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="420" y="420" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="510" y="448.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="610" y="420" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="700" y="448.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="800" y="420" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+  <text x="890" y="448.33" font-size="18" fill="#e0e0e0" text-anchor="middle">渦</text>
+  <rect x="990" y="420" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="448.33" font-size="18" fill="#e0e0e0" text-anchor="middle">束</text>
+
+  <!-- Theory 6: 錬金術マグヌム・オプス -->
+  <text x="10" y="513.33" font-size="18" fill="#ffffff" text-anchor="start">6. 錬金術マグヌム・オプス</text>
+  <rect x="230" y="485" width="180" height="55" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+  <text x="320" y="513.33" font-size="18" fill="#aaaaaa" text-anchor="middle">場</text>
+  <rect x="420" y="485" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="510" y="513.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="610" y="485" width="180" height="55" fill="#D4A857" opacity="0.3" rx="5" ry="5" />
+  <text x="700" y="513.33" font-size="18" fill="#aaaaaa" text-anchor="middle">縁</text>
+  <rect x="800" y="485" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="890" y="513.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="990" y="485" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1080" y="513.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Theory 7: 宗教的経験の諸相 -->
+  <text x="10" y="578.33" font-size="18" fill="#ffffff" text-anchor="start">7. 宗教的経験の諸相</text>
+  <rect x="230" y="550" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="320" y="578.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="420" y="550" width="180" height="55" fill="#5B8DB8" opacity="0.3" rx="5" ry="5" />
+  <text x="510" y="578.33" font-size="18" fill="#aaaaaa" text-anchor="middle">波</text>
+  <rect x="610" y="550" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="700" y="578.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="800" y="550" width="180" height="55" fill="#C45B4D" opacity="0.3" rx="5" ry="5" />
+  <text x="890" y="578.33" font-size="18" fill="#aaaaaa" text-anchor="middle">渦</text>
+  <rect x="990" y="550" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1080" y="578.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Theory 8: 聖と俗 -->
+  <text x="10" y="643.33" font-size="18" fill="#ffffff" text-anchor="start">8. 聖と俗</text>
+  <rect x="230" y="615" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="320" y="643.33" font-size="18" fill="#e0e0e0" text-anchor="middle">場</text>
+  <rect x="420" y="615" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="510" y="643.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="610" y="615" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="700" y="643.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="800" y="615" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="890" y="643.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="990" y="615" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="643.33" font-size="18" fill="#e0e0e0" text-anchor="middle">束</text>
+
+  <!-- Theory 9: マカーマート -->
+  <text x="10" y="708.33" font-size="18" fill="#ffffff" text-anchor="start">9. マカーマート</text>
+  <rect x="230" y="680" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="320" y="708.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="420" y="680" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="510" y="708.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="610" y="680" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="708.33" font-size="18" fill="#e0e0e0" text-anchor="middle">縁</text>
+  <rect x="800" y="680" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="890" y="708.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+  <rect x="990" y="680" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1080" y="708.33" font-size="18" fill="#888888" text-anchor="middle">-</text>
+
+  <!-- Theory 10: 菩薩十地と五道 -->
+  <text x="10" y="773.33" font-size="18" fill="#ffffff" text-anchor="start">10. 菩薩十地と五道</text>
+  <rect x="230" y="745" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="320" y="773.33" font-size="18" fill="#ffffff" text-anchor="middle">場</text>
+  <rect x="420" y="745" width="180" height="55" fill="#5B8DB8" opacity="1" rx="5" ry="5" />
+  <text x="510" y="773.33" font-size="18" fill="#ffffff" text-anchor="middle">波</text>
+  <rect x="610" y="745" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+  <text x="700" y="773.33" font-size="18" fill="#ffffff" text-anchor="middle">縁</text>
+  <rect x="800" y="745" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+  <text x="890" y="773.33" font-size="18" fill="#ffffff" text-anchor="middle">渦</text>
+  <rect x="990" y="745" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+  <text x="1080" y="773.33" font-size="18" fill="#ffffff" text-anchor="middle">束</text>
+
+  <!-- Legend -->
+  <!-- legend_start_y = 150 (matrix_start_y) + (10 * 65) (matrix_height) + 10 (row_gap) = 810 -->
+  <!-- legend_x_offset=50, legend_swatch_size=30, legend_text_offset=40, legend_item_spacing=40, legend_font_size=18 -->
+  <rect x="50" y="810" width="30" height="30" fill="#8B8682" opacity="1" rx="5" ry="5" />
+  <text x="90" y="831.66" font-size="18" fill="#ffffff" text-anchor="start">強い対応 (Strong)</text>
+  <rect x="50" y="850" width="30" height="30" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="90" y="871.66" font-size="18" fill="#e0e0e0" text-anchor="start">部分的 (Partial)</text>
+  <rect x="50" y="890" width="30" height="30" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+  <text x="90" y="911.66" font-size="18" fill="#aaaaaa" text-anchor="start">条件付き/弱い (Conditional/Weak)</text>
+</svg>

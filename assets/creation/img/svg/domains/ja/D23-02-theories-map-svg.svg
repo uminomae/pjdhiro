@@ -1,0 +1,550 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1250" font-family="sans-serif">
+    <!-- Background -->
+    <rect x="0" y="0" width="1200" height="1250" fill="#1a1a2e" />
+
+    <!-- Title -->
+    <text x="600" y="60" font-size="30" font-weight="bold" fill="#f0f0f0" text-anchor="middle" dominant-baseline="middle">
+        15発達心理学理論と5段階モデルの対応関係マトリクス
+    </text>
+
+    <!-- Column Headers -->
+    <g>
+        
+                <rect x="220" y="100" width="180" height="50" fill="#8B8682" rx="5" ry="5" />
+                <text x="310" y="122" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">場</text>
+                <text x="310" y="142" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">(Field)</text>
+            
+                <rect x="410" y="100" width="180" height="50" fill="#5B8DB8" rx="5" ry="5" />
+                <text x="500" y="122" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">波</text>
+                <text x="500" y="142" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">(Wave)</text>
+            
+                <rect x="600" y="100" width="180" height="50" fill="#D4A857" rx="5" ry="5" />
+                <text x="690" y="122" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">縁</text>
+                <text x="690" y="142" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">(Edge)</text>
+            
+                <rect x="790" y="100" width="180" height="50" fill="#C45B4D" rx="5" ry="5" />
+                <text x="880" y="122" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">渦</text>
+                <text x="880" y="142" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">(Vortex)</text>
+            
+                <rect x="980" y="100" width="180" height="50" fill="#5B8B6A" rx="5" ry="5" />
+                <text x="1070" y="122" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">束</text>
+                <text x="1070" y="142" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">(Bundle)</text>
+            
+    </g>
+
+    <!-- Matrix Rows -->
+    <g>
+        
+                <!-- Theory Label -->
+                <text x="20" y="197.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    1. 構造発達理論
+                </text>
+                
+                        <rect x="220" y="170" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="197.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="170" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="197.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="170" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="197.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="170" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="197.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="170" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="197.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="262.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    2. 5レベル自己認知モデル
+                </text>
+                
+                        <rect x="220" y="235" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+                        <text x="310" y="262.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            場
+                        </text>
+                    
+                        <rect x="410" y="235" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="262.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="235" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="262.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="235" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+                        <text x="880" y="262.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            渦
+                        </text>
+                    
+                        <rect x="980" y="235" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+                        <text x="1070" y="262.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            束
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="327.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    3. DIDS アイデンティティ発達次元尺度
+                </text>
+                
+                        <rect x="220" y="300" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="327.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="300" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="327.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="300" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="327.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="300" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="327.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="300" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="327.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="392.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    4. 動的システムアプローチ
+                </text>
+                
+                        <rect x="220" y="365" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="392.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="365" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="392.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="365" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="392.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="365" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="392.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="365" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="392.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="457.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    5. 認知発達段階理論
+                </text>
+                
+                        <rect x="220" y="430" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="457.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="430" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="457.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="430" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="457.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="430" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="457.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="430" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="457.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="522.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    6. 最近接発達領域（ZPD）
+                </text>
+                
+                        <rect x="220" y="495" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="522.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="495" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="522.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="495" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+                        <text x="690" y="522.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            縁
+                        </text>
+                    
+                        <rect x="790" y="495" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="522.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="495" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="522.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="587.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    7. 愛着理論
+                </text>
+                
+                        <rect x="220" y="560" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+                        <text x="310" y="587.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            場
+                        </text>
+                    
+                        <rect x="410" y="560" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="587.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="560" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="587.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="560" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="587.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="560" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="587.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="652.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    8. 心理社会的発達段階
+                </text>
+                
+                        <rect x="220" y="625" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="652.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="625" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+                        <text x="500" y="652.5" font-size="18" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle">
+                            波
+                        </text>
+                    
+                        <rect x="600" y="625" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="652.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="625" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="652.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="625" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="652.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="717.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    9. 欲求階層説
+                </text>
+                
+                        <rect x="220" y="690" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="717.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="690" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="717.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="690" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="717.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="690" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="717.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="690" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="717.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="782.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    10. 自我発達理論
+                </text>
+                
+                        <rect x="220" y="755" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="782.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="755" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="782.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="755" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="782.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="755" width="180" height="55" fill="#C45B4D" opacity="1" rx="5" ry="5" />
+                        <text x="880" y="782.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            渦
+                        </text>
+                    
+                        <rect x="980" y="755" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+                        <text x="1070" y="782.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            束
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="847.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    11. AQAL
+                </text>
+                
+                        <rect x="220" y="820" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="847.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="820" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="847.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="820" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="847.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="820" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="847.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="820" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="847.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="912.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    12. 動的スキル理論
+                </text>
+                
+                        <rect x="220" y="885" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="912.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="885" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="912.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="885" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="912.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="885" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="912.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="885" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="912.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="977.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    13. 乳児の対人的世界
+                </text>
+                
+                        <rect x="220" y="950" width="180" height="55" fill="#8B8682" opacity="1" rx="5" ry="5" />
+                        <text x="310" y="977.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            場
+                        </text>
+                    
+                        <rect x="410" y="950" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="977.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="950" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+                        <text x="690" y="977.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            縁
+                        </text>
+                    
+                        <rect x="790" y="950" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="977.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="950" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="977.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="1042.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    14. 共有志向性・共同注意
+                </text>
+                
+                        <rect x="220" y="1015" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="1042.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="1015" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="1042.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="1015" width="180" height="55" fill="#D4A857" opacity="1" rx="5" ry="5" />
+                        <text x="690" y="1042.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            縁
+                        </text>
+                    
+                        <rect x="790" y="1015" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="1042.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="1015" width="180" height="55" fill="#5B8B6A" opacity="1" rx="5" ry="5" />
+                        <text x="1070" y="1042.5" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+                            束
+                        </text>
+                    
+            `;
+        }).join('')}
+    
+                <!-- Theory Label -->
+                <text x="20" y="1107.5" font-size="18" fill="#f0f0f0" dominant-baseline="middle">
+                    15. 道徳発達段階理論
+                </text>
+                
+                        <rect x="220" y="1080" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+                        <text x="310" y="1107.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="410" y="1080" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+                        <text x="500" y="1107.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="600" y="1080" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+                        <text x="690" y="1107.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="790" y="1080" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+                        <text x="880" y="1107.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+                        <rect x="980" y="1080" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+                        <text x="1070" y="1107.5" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">
+                            -
+                        </text>
+                    
+            `;
+        }).join('')}
+    </g>
+
+    <!-- Legend -->
+    <g>
+        <text x="20" y="1155" font-size="20" fill="#f0f0f0" font-weight="bold">凡例 (Legend)</text>
+
+        <!-- Strong -->
+        <rect x="20" y="1185" width="30" height="30" fill="#8B8682" opacity="1" rx="5" ry="5" />
+        <text x="60" y="1200" font-size="18" fill="#f0f0f0" dominant-baseline="middle">強い対応 (Strong)</text>
+
+        <!-- Partial -->
+        <rect x="270" y="1185" width="30" height="30" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+        <text x="310" y="1200" font-size="18" fill="#f0f0f0" dominant-baseline="middle">部分的 (Partial)</text>
+
+        <!-- Conditional -->
+        <rect x="520" y="1185" width="30" height="30" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+        <text x="560" y="1200" font-size="18" fill="#f0f0f0" dominant-baseline="middle">条件付き/弱い (Conditional/Weak)</text>
+    </g>
+</svg>

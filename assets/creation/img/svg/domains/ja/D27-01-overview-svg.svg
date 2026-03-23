@@ -1,0 +1,171 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for gradients and markers -->
+  <defs>
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D27 建築・デザイン学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">12理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="196" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+  <path d="M 200 220 L 200 260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="296" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+  <path d="M 200 320 L 200 360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="396" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+  <path d="M 200 420 L 200 460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="496" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+  <path d="M 200 520 L 200 560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="596" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory correspondence heat map -->
+  <!-- Column Headers -->
+  <g>
+    <rect x="400" y="150" width="145" height="30" rx="5" fill="#8B8682" />
+    <text x="472.5" y="171" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+    <rect x="550" y="150" width="145" height="30" rx="5" fill="#5B8DB8" />
+    <text x="622.5" y="171" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+    <rect x="700" y="150" width="145" height="30" rx="5" fill="#D4A857" />
+    <text x="772.5" y="171" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+    <rect x="850" y="150" width="145" height="30" rx="5" fill="#C45B4D" />
+    <text x="922.5" y="171" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+    <rect x="1000" y="150" width="145" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1072.5" y="171" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+  </g>
+
+  <!-- Theory Rows and Cells -->
+  <g>
+    <!-- Row 1: 構造保持変換と生成プロセス (strong, all stages) -->
+    <text x="390" y="210" text-anchor="end" fill="white" font-size="14">構造保持変換と生成プロセス</text>
+    <rect x="400" y="185" width="145" height="40" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="185" width="145" height="40" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="185" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="185" width="145" height="40" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="185" width="145" height="40" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 2: 形態発見（form-finding） (strong, all stages) -->
+    <text x="390" y="255" text-anchor="end" fill="white" font-size="14">形態発見（form-finding）</text>
+    <rect x="400" y="230" width="145" height="40" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="230" width="145" height="40" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="230" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="230" width="145" height="40" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="230" width="145" height="40" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 3: 中間領域（in-between） (strong, 縁) -->
+    <text x="390" y="300" text-anchor="end" fill="white" font-size="14">中間領域（in-between）</text>
+    <rect x="400" y="275" width="145" height="40" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="275" width="145" height="40" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="275" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="275" width="145" height="40" fill="#C45B4D" opacity="0.3" />
+    <rect x="1000" y="275" width="145" height="40" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 4: 閾空間（threshold space） (strong, 縁) -->
+    <text x="390" y="345" text-anchor="end" fill="white" font-size="14">閾空間（threshold space）</text>
+    <rect x="400" y="320" width="145" height="40" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="320" width="145" height="40" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="320" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="320" width="145" height="40" fill="#C45B4D" opacity="0.3" />
+    <rect x="1000" y="320" width="145" height="40" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 5: 都市の多様性条件 (strong, all stages) -->
+    <text x="390" y="390" text-anchor="end" fill="white" font-size="14">都市の多様性条件</text>
+    <rect x="400" y="365" width="145" height="40" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="365" width="145" height="40" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="365" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="365" width="145" height="40" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="365" width="145" height="40" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 6: 間（ma） (strong, all stages) -->
+    <text x="390" y="435" text-anchor="end" fill="white" font-size="14">間（ma）</text>
+    <rect x="400" y="410" width="145" height="40" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="410" width="145" height="40" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="410" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="410" width="145" height="40" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="410" width="145" height="40" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 7: 計算形態生成 (partial, all stages) -->
+    <text x="390" y="480" text-anchor="end" fill="white" font-size="14">計算形態生成</text>
+    <rect x="400" y="455" width="145" height="40" fill="#8B8682" opacity="0.7" />
+    <rect x="550" y="455" width="145" height="40" fill="#5B8DB8" opacity="0.7" />
+    <rect x="700" y="455" width="145" height="40" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="455" width="145" height="40" fill="#C45B4D" opacity="0.7" />
+    <rect x="1000" y="455" width="145" height="40" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 8: インクリメンタル建築 (partial, all stages) -->
+    <text x="390" y="525" text-anchor="end" fill="white" font-size="14">インクリメンタル建築</text>
+    <rect x="400" y="500" width="145" height="40" fill="#8B8682" opacity="0.7" />
+    <rect x="550" y="500" width="145" height="40" fill="#5B8DB8" opacity="0.7" />
+    <rect x="700" y="500" width="145" height="40" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="500" width="145" height="40" fill="#C45B4D" opacity="0.7" />
+    <rect x="1000" y="500" width="145" height="40" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 9: 身体感覚建築 (partial, 場) -->
+    <text x="390" y="570" text-anchor="end" fill="white" font-size="14">身体感覚建築</text>
+    <rect x="400" y="545" width="145" height="40" fill="#8B8682" opacity="0.7" />
+    <rect x="550" y="545" width="145" height="40" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="545" width="145" height="40" fill="#D4A857" opacity="0.3" />
+    <rect x="850" y="545" width="145" height="40" fill="#C45B4D" opacity="0.3" />
+    <rect x="1000" y="545" width="145" height="40" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 10: パラメトリシズム (conditional, 縁) -->
+    <text x="390" y="615" text-anchor="end" fill="white" font-size="14">パラメトリシズム</text>
+    <rect x="400" y="590" width="145" height="40" fill="#8B8682" opacity="0.2" />
+    <rect x="550" y="590" width="145" height="40" fill="#5B8DB8" opacity="0.2" />
+    <rect x="700" y="590" width="145" height="40" fill="#D4A857" opacity="0.4" />
+    <rect x="850" y="590" width="145" height="40" fill="#C45B4D" opacity="0.2" />
+    <rect x="1000" y="590" width="145" height="40" fill="#5B8B6A" opacity="0.2" />
+
+    <!-- Row 11: 壁の厚み（poché） (strong, 縁) -->
+    <text x="390" y="660" text-anchor="end" fill="white" font-size="14">壁の厚み（poché）</text>
+    <rect x="400" y="635" width="145" height="40" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="635" width="145" height="40" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="635" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="635" width="145" height="40" fill="#C45B4D" opacity="0.3" />
+    <rect x="1000" y="635" width="145" height="40" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 12: 都市の認知的境界 (strong, 縁) -->
+    <text x="390" y="705" text-anchor="end" fill="white" font-size="14">都市の認知的境界</text>
+    <rect x="400" y="680" width="145" height="40" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="680" width="145" height="40" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="680" width="145" height="40" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="680" width="145" height="40" fill="#C45B4D" opacity="0.3" />
+    <rect x="1000" y="680" width="145" height="40" fill="#5B8B6A" opacity="0.3" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="50" y="750" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="781" text-anchor="middle" fill="white" font-size="18">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 8件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 3件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 1件
+  </text>
+</svg>

@@ -1,0 +1,164 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <linearGradient id="phaseBoxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D29 複雑系科学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="197" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+
+  <!-- Arrow 1 -->
+  <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="297" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+
+  <!-- Arrow 2 -->
+  <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="397" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+
+  <!-- Arrow 3 -->
+  <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="497" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+
+  <!-- Arrow 4 -->
+  <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+  <text x="200" y="597" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <g transform="translate(400, 150)">
+    <rect x="0" y="0" width="140" height="30" rx="5" fill="#8B8682" />
+    <text x="70" y="20" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+    <rect x="142" y="0" width="140" height="30" rx="5" fill="#5B8DB8" />
+    <text x="212" y="20" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+    <rect x="284" y="0" width="140" height="30" rx="5" fill="#D4A857" />
+    <text x="354" y="20" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+    <rect x="426" y="0" width="140" height="30" rx="5" fill="#C45B4D" />
+    <text x="496" y="20" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+    <rect x="568" y="0" width="140" height="30" rx="5" fill="#5B8B6A" />
+    <text x="638" y="20" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+  </g>
+
+  <!-- Theory Rows and Cells -->
+  <g transform="translate(400, 182)">
+    <!-- Row 0: 散逸構造 (strong) -->
+    <text x="-10" y="30" font-size="14" fill="white" text-anchor="end">散逸構造</text>
+    <rect x="0" y="0" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="142" y="0" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="284" y="0" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="426" y="0" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="568" y="0" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 1: 自己組織化臨界（SOC） (strong) -->
+    <text x="-10" y="30 + 52" font-size="14" fill="white" text-anchor="end">自己組織化臨界（SOC）</text>
+    <rect x="0" y="52" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="142" y="52" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="284" y="52" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="426" y="52" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="568" y="52" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 2: 自己触媒集合 (strong) -->
+    <text x="-10" y="30 + 104" font-size="14" fill="white" text-anchor="end">自己触媒集合</text>
+    <rect x="0" y="104" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="142" y="104" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="284" y="104" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="426" y="104" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="568" y="104" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 3: シナジェティクス (partial) -->
+    <text x="-10" y="30 + 156" font-size="14" fill="white" text-anchor="end">シナジェティクス</text>
+    <rect x="0" y="156" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="142" y="156" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="284" y="156" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="426" y="156" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="568" y="156" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 4: 臨界現象 (strong) -->
+    <text x="-10" y="30 + 208" font-size="14" fill="white" text-anchor="end">臨界現象</text>
+    <rect x="0" y="208" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="142" y="208" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="284" y="208" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="426" y="208" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="568" y="208" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 5: パーコレーション (strong) -->
+    <text x="-10" y="30 + 260" font-size="14" fill="white" text-anchor="end">パーコレーション</text>
+    <rect x="0" y="260" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="142" y="260" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="284" y="260" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="426" y="260" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="568" y="260" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 6: オートポイエーシス (partial) -->
+    <text x="-10" y="30 + 312" font-size="14" fill="white" text-anchor="end">オートポイエーシス</text>
+    <rect x="0" y="312" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="142" y="312" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="284" y="312" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="426" y="312" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="568" y="312" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 7: 反応拡散 (partial) -->
+    <text x="-10" y="30 + 364" font-size="14" fill="white" text-anchor="end">反応拡散</text>
+    <rect x="0" y="364" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="142" y="364" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="284" y="364" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="426" y="364" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="568" y="364" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 8: カオスの縁 (conditional) -->
+    <text x="-10" y="30 + 416" font-size="14" fill="white" text-anchor="end">カオスの縁</text>
+    <rect x="0" y="416" width="140" height="50" fill="#8B8682" opacity="0.2" />
+    <rect x="142" y="416" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="284" y="416" width="140" height="50" fill="#D4A857" opacity="0.4" />
+    <rect x="426" y="416" width="140" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="568" y="416" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
+
+    <!-- Row 9: ネットワーク科学 (partial) -->
+    <text x="-10" y="30 + 468" font-size="14" fill="white" text-anchor="end">ネットワーク科学</text>
+    <rect x="0" y="468" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="142" y="468" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="284" y="468" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="426" y="468" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="568" y="468" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <text x="100" y="760" font-size="18" fill="white">
+    <tspan>■</tspan>
+    <tspan fill="#27AE60" dx="5">強い対応: 5件</tspan>
+    <tspan dx="30">■</tspan>
+    <tspan fill="#F1C40F" dx="5">部分的対応: 4件</tspan>
+    <tspan dx="30">■</tspan>
+    <tspan fill="#E67E22" dx="5">条件付き: 1件</tspan>
+  </text>
+</svg>

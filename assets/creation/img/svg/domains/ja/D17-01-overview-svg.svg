@@ -1,0 +1,164 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D17 言語学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g id="methodology-flow">
+    <!-- Phase 1-2 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+    <text x="200" y="195" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 1-2: 文献確認・理論選定</text>
+
+    <!-- Phase 3-4 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+    <text x="200" y="295" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 3-4: 構造対応の判定</text>
+
+    <!-- Phase 5 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+    <text x="200" y="395" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 5: 論拠監査</text>
+
+    <!-- Phase 6 -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+    <text x="200" y="495" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 6: 構造再読（4軸再評価）</text>
+
+    <!-- Phase 7 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+    <text x="200" y="595" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 7: 横断統合</text>
+
+    <!-- Arrows -->
+    <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g id="theory-heatmap">
+    <!-- Stage Column Headers -->
+    <g id="stage-headers">
+      <!-- Calculated x_start_headers = 446, cell_width = 140, gap = 2 -->
+      <rect x="446" y="130" width="140" height="30" rx="10" fill="#8B8682" />
+      <text x="516" y="145" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">場</text>
+      <rect x="588" y="130" width="140" height="30" rx="10" fill="#5B8DB8" />
+      <text x="658" y="145" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">波</text>
+      <rect x="730" y="130" width="140" height="30" rx="10" fill="#D4A857" />
+      <text x="800" y="145" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">縁</text>
+      <rect x="872" y="130" width="140" height="30" rx="10" fill="#C45B4D" />
+      <text x="942" y="145" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">渦</text>
+      <rect x="1014" y="130" width="140" height="30" rx="10" fill="#5B8B6A" />
+      <text x="1084" y="145" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">束</text>
+    </g>
+
+    <!-- Theory Rows and Cells -->
+    <g id="theory-rows">
+      <!-- Row y_start_theories = 170, row_step = 52 (50 height + 2 gap) -->
+      <!-- Theory label x = 436 (446 - 10 for right alignment) -->
+
+      <!-- Theory 1: 文法化の連鎖 (partial) -->
+      <text x="436" y="170 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">文法化の連鎖</text>
+      <rect x="446" y="170" width="140" height="50" fill="#8B8682" opacity="0.7" /> <!-- 場 -->
+      <rect x="588" y="170" width="140" height="50" fill="#5B8DB8" opacity="0.7" /> <!-- 波 -->
+      <rect x="730" y="170" width="140" height="50" fill="#D4A857" opacity="0.3" /> <!-- 縁 -->
+      <rect x="872" y="170" width="140" height="50" fill="#C45B4D" opacity="0.3" /> <!-- 渦 -->
+      <rect x="1014" y="170" width="140" height="50" fill="#5B8B6A" opacity="0.7" /> <!-- 束 -->
+
+      <!-- Theory 2: 音変化の拡散モデル (partial) -->
+      <text x="436" y="170 + 52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">音変化の拡散モデル</text>
+      <rect x="446" y="170 + 52" width="140" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 -->
+      <rect x="588" y="170 + 52" width="140" height="50" fill="#5B8DB8" opacity="0.7" /> <!-- 波 -->
+      <rect x="730" y="170 + 52" width="140" height="50" fill="#D4A857" opacity="0.7" /> <!-- 縁 -->
+      <rect x="872" y="170 + 52" width="140" height="50" fill="#C45B4D" opacity="0.3" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 52" width="140" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 -->
+
+      <!-- Theory 3: クレオール形成 (conditional) -->
+      <text x="436" y="170 + 2*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">クレオール形成</text>
+      <rect x="446" y="170 + 2*52" width="140" height="50" fill="#8B8682" opacity="0.4" /> <!-- 場 -->
+      <rect x="588" y="170 + 2*52" width="140" height="50" fill="#5B8DB8" opacity="0.2" /> <!-- 波 -->
+      <rect x="730" y="170 + 2*52" width="140" height="50" fill="#D4A857" opacity="0.2" /> <!-- 縁 -->
+      <rect x="872" y="170 + 2*52" width="140" height="50" fill="#C45B4D" opacity="0.2" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 2*52" width="140" height="50" fill="#5B8B6A" opacity="0.2" /> <!-- 束 -->
+
+      <!-- Theory 4: 臨界期仮説 (partial) -->
+      <text x="436" y="170 + 3*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">臨界期仮説</text>
+      <rect x="446" y="170 + 3*52" width="140" height="50" fill="#8B8682" opacity="0.7" /> <!-- 場 -->
+      <rect x="588" y="170 + 3*52" width="140" height="50" fill="#5B8DB8" opacity="0.3" /> <!-- 波 -->
+      <rect x="730" y="170 + 3*52" width="140" height="50" fill="#D4A857" opacity="0.3" /> <!-- 縁 -->
+      <rect x="872" y="170 + 3*52" width="140" height="50" fill="#C45B4D" opacity="0.3" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 3*52" width="140" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 -->
+
+      <!-- Theory 5: ニカラグア手話の出現・体系化 (strong) -->
+      <text x="436" y="170 + 4*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">ニカラグア手話の出現・体系化</text>
+      <rect x="446" y="170 + 4*52" width="140" height="50" fill="#8B8682" opacity="1.0" /> <!-- 場 -->
+      <rect x="588" y="170 + 4*52" width="140" height="50" fill="#5B8DB8" opacity="1.0" /> <!-- 波 -->
+      <rect x="730" y="170 + 4*52" width="140" height="50" fill="#D4A857" opacity="1.0" /> <!-- 縁 -->
+      <rect x="872" y="170 + 4*52" width="140" height="50" fill="#C45B4D" opacity="1.0" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 4*52" width="140" height="50" fill="#5B8B6A" opacity="1.0" /> <!-- 束 -->
+
+      <!-- Theory 6: 構文の創発 (strong) -->
+      <text x="436" y="170 + 5*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">構文の創発</text>
+      <rect x="446" y="170 + 5*52" width="140" height="50" fill="#8B8682" opacity="1.0" /> <!-- 場 -->
+      <rect x="588" y="170 + 5*52" width="140" height="50" fill="#5B8DB8" opacity="1.0" /> <!-- 波 -->
+      <rect x="730" y="170 + 5*52" width="140" height="50" fill="#D4A857" opacity="1.0" /> <!-- 縁 -->
+      <rect x="872" y="170 + 5*52" width="140" height="50" fill="#C45B4D" opacity="1.0" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 5*52" width="140" height="50" fill="#5B8B6A" opacity="1.0" /> <!-- 束 -->
+
+      <!-- Theory 7: 語用論的推論と意味変化 (partial) -->
+      <text x="436" y="170 + 6*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">語用論的推論と意味変化</text>
+      <rect x="446" y="170 + 6*52" width="140" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 -->
+      <rect x="588" y="170 + 6*52" width="140" height="50" fill="#5B8DB8" opacity="0.7" /> <!-- 波 -->
+      <rect x="730" y="170 + 6*52" width="140" height="50" fill="#D4A857" opacity="0.7" /> <!-- 縁 -->
+      <rect x="872" y="170 + 6*52" width="140" height="50" fill="#C45B4D" opacity="0.3" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 6*52" width="140" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 -->
+
+      <!-- Theory 8: 言語相対性 (conditional) -->
+      <text x="436" y="170 + 7*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">言語相対性</text>
+      <rect x="446" y="170 + 7*52" width="140" height="50" fill="#8B8682" opacity="0.4" /> <!-- 場 -->
+      <rect x="588" y="170 + 7*52" width="140" height="50" fill="#5B8DB8" opacity="0.2" /> <!-- 波 -->
+      <rect x="730" y="170 + 7*52" width="140" height="50" fill="#D4A857" opacity="0.2" /> <!-- 縁 -->
+      <rect x="872" y="170 + 7*52" width="140" height="50" fill="#C45B4D" opacity="0.2" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 7*52" width="140" height="50" fill="#5B8B6A" opacity="0.4" /> <!-- 束 -->
+
+      <!-- Theory 9: 最適性理論 (partial) -->
+      <text x="436" y="170 + 8*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">最適性理論</text>
+      <rect x="446" y="170 + 8*52" width="140" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 -->
+      <rect x="588" y="170 + 8*52" width="140" height="50" fill="#5B8DB8" opacity="0.3" /> <!-- 波 -->
+      <rect x="730" y="170 + 8*52" width="140" height="50" fill="#D4A857" opacity="0.7" /> <!-- 縁 -->
+      <rect x="872" y="170 + 8*52" width="140" height="50" fill="#C45B4D" opacity="0.7" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 8*52" width="140" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 -->
+
+      <!-- Theory 10: 反復的学習モデル (strong) -->
+      <text x="436" y="170 + 9*52 + 25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">反復的学習モデル</text>
+      <rect x="446" y="170 + 9*52" width="140" height="50" fill="#8B8682" opacity="1.0" /> <!-- 場 -->
+      <rect x="588" y="170 + 9*52" width="140" height="50" fill="#5B8DB8" opacity="1.0" /> <!-- 波 -->
+      <rect x="730" y="170 + 9*52" width="140" height="50" fill="#D4A857" opacity="1.0" /> <!-- 縁 -->
+      <rect x="872" y="170 + 9*52" width="140" height="50" fill="#C45B4D" opacity="1.0" /> <!-- 渦 -->
+      <rect x="1014" y="170 + 9*52" width="140" height="50" fill="#5B8B6A" opacity="1.0" /> <!-- 束 -->
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="730 + 35" font-size="20" fill="white" text-anchor="middle" dominant-baseline="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 3件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 5件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 2件
+  </text>
+</svg>

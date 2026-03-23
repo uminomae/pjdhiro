@@ -1,0 +1,165 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="36" font-weight="bold">D20 法学・政治学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" dominant-baseline="middle" fill="#cccccc" font-size="20">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g id="methodology-flow">
+    <!-- Phase 1-2 -->
+    <rect x="47.5" y="157.5" width="305" height="65" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="190" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+    <!-- Arrow 1 -->
+    <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 3-4 -->
+    <rect x="47.5" y="257.5" width="305" height="65" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="290" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+    <!-- Arrow 2 -->
+    <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 5 -->
+    <rect x="47.5" y="357.5" width="305" height="65" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="390" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+    <!-- Arrow 3 -->
+    <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 6 -->
+    <rect x="47.5" y="457.5" width="305" height="65" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="490" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+    <!-- Arrow 4 -->
+    <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 7 -->
+    <rect x="47.5" y="557.5" width="305" height="65" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="590" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g id="heat-map">
+    <!-- Column Headers -->
+    <g id="column-headers">
+      <!-- Stage order: 場, 波, 縁, 渦, 束 -->
+      <rect x="550" y="160" width="120" height="30" rx="5" fill="#8B8682" />
+      <text x="610" y="175" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="16" font-weight="bold">場</text>
+      <rect x="670" y="160" width="120" height="30" rx="5" fill="#5B8DB8" />
+      <text x="730" y="175" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="16" font-weight="bold">波</text>
+      <rect x="790" y="160" width="120" height="30" rx="5" fill="#D4A857" />
+      <text x="850" y="175" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+      <rect x="910" y="160" width="120" height="30" rx="5" fill="#C45B4D" />
+      <text x="970" y="175" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+      <rect x="1030" y="160" width="120" height="30" rx="5" fill="#5B8B6A" />
+      <text x="1090" y="175" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="16" font-weight="bold">束</text>
+    </g>
+
+    <!-- Theory Rows -->
+    <g id="theory-rows">
+      <!-- Theory 1: 一次ルール/二次ルールの結合 | partial | 場,波,縁,渦,束 -->
+      <text x="540" y="217" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">一次ルール/二次ルールの結合</text>
+      <rect x="550" y="192" width="120" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="670" y="192" width="120" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="790" y="192" width="120" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="910" y="192" width="120" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1030" y="192" width="120" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Theory 2: 政治システムの入力-出力-フィードバック | partial | 場,波,縁,渦,束 -->
+      <text x="540" y="269" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">政治システムの入力-出力-フィードバック</text>
+      <rect x="550" y="244" width="120" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="670" y="244" width="120" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="790" y="244" width="120" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="910" y="244" width="120" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1030" y="244" width="120" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Theory 3: 共有資源ガバナンスの制度形成 | strong | 場,波,縁,渦,束 -->
+      <text x="540" y="321" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">共有資源ガバナンスの制度形成</text>
+      <rect x="550" y="296" width="120" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="670" y="296" width="120" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="790" y="296" width="120" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="910" y="296" width="120" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1030" y="296" width="120" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Theory 4: 憲法制定過程と制憲権力 | strong | 場,波,縁,渦,束 -->
+      <text x="540" y="373" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">憲法制定過程と制憲権力</text>
+      <rect x="550" y="348" width="120" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="670" y="348" width="120" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="790" y="348" width="120" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="910" y="348" width="120" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1030" y="348" width="120" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Theory 5: 多層ADR（交渉→調停→仲裁→訴訟） | partial | 波,縁,渦 -->
+      <text x="540" y="425" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">多層ADR（交渉→調停→仲裁→訴訟）</text>
+      <rect x="550" y="400" width="120" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 (unmatched) -->
+      <rect x="670" y="400" width="120" height="50" fill="#5B8DB8" opacity="0.7" /> <!-- 波 (matched) -->
+      <rect x="790" y="400" width="120" height="50" fill="#D4A857" opacity="0.7" /> <!-- 縁 (matched) -->
+      <rect x="910" y="400" width="120" height="50" fill="#C45B4D" opacity="0.7" /> <!-- 渦 (matched) -->
+      <rect x="1030" y="400" width="120" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 (unmatched) -->
+
+      <!-- Theory 6: 国際レジーム形成 | partial | 場,波,縁,渦,束 -->
+      <text x="540" y="477" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">国際レジーム形成</text>
+      <rect x="550" y="452" width="120" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="670" y="452" width="120" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="790" y="452" width="120" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="910" y="452" width="120" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1030" y="452" width="120" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Theory 7: 正義論（原初状態と無知のヴェール） | partial | 場,波,縁,渦,束 -->
+      <text x="540" y="529" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">正義論（原初状態と無知のヴェール）</text>
+      <rect x="550" y="504" width="120" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="670" y="504" width="120" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="790" y="504" width="120" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="910" y="504" width="120" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1030" y="504" width="120" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Theory 8: 討議民主主義と手続的正当性 | strong | 波,縁,渦 -->
+      <text x="540" y="581" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">討議民主主義と手続的正当性</text>
+      <rect x="550" y="556" width="120" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 (unmatched) -->
+      <rect x="670" y="556" width="120" height="50" fill="#5B8DB8" opacity="1.0" /> <!-- 波 (matched) -->
+      <rect x="790" y="556" width="120" height="50" fill="#D4A857" opacity="1.0" /> <!-- 縁 (matched) -->
+      <rect x="910" y="556" width="120" height="50" fill="#C45B4D" opacity="1.0" /> <!-- 渦 (matched) -->
+      <rect x="1030" y="556" width="120" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 (unmatched) -->
+
+      <!-- Theory 9: 政策の窓（多重流れモデル） | conditional | 場,縁,渦,束 -->
+      <text x="540" y="633" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">政策の窓（多重流れモデル）</text>
+      <rect x="550" y="608" width="120" height="50" fill="#8B8682" opacity="0.4" /> <!-- 場 (matched) -->
+      <rect x="670" y="608" width="120" height="50" fill="#5B8DB8" opacity="0.2" /> <!-- 波 (unmatched) -->
+      <rect x="790" y="608" width="120" height="50" fill="#D4A857" opacity="0.4" /> <!-- 縁 (matched) -->
+      <rect x="910" y="608" width="120" height="50" fill="#C45B4D" opacity="0.4" /> <!-- 渦 (matched) -->
+      <rect x="1030" y="608" width="120" height="50" fill="#5B8B6A" opacity="0.4" /> <!-- 束 (matched) -->
+
+      <!-- Theory 10: 移行期正義 | conditional | 場,波,縁,渦,束 -->
+      <text x="540" y="685" text-anchor="end" dominant-baseline="middle" fill="white" font-size="14">移行期正義</text>
+      <rect x="550" y="660" width="120" height="50" fill="#8B8682" opacity="0.4" />
+      <rect x="670" y="660" width="120" height="50" fill="#5B8DB8" opacity="0.4" />
+      <rect x="790" y="660" width="120" height="50" fill="#D4A857" opacity="0.4" />
+      <rect x="910" y="660" width="120" height="50" fill="#C45B4D" opacity="0.4" />
+      <rect x="1030" y="660" width="120" height="50" fill="#5B8B6A" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <text x="600" y="765" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18">
+    <tspan fill="#27AE60">■ 強い対応: 3件</tspan>
+    <tspan> / </tspan>
+    <tspan fill="#F1C40F">■ 部分的対応: 5件</tspan>
+    <tspan> / </tspan>
+    <tspan fill="#E67E22">■ 条件付き: 2件</tspan>
+  </text>
+
+</svg>

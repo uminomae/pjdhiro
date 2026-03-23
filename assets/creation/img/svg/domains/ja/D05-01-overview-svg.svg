@@ -1,0 +1,172 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D05 地球科学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g id="methodology-flow">
+    <!-- Box 1 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="190" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 1-2: 文献確認・理論選定</text>
+    <!-- Arrow 1 -->
+    <line x1="200" y1="220" x2="200" y2="250" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <!-- Box 2 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="290" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 3-4: 構造対応の判定</text>
+    <!-- Arrow 2 -->
+    <line x1="200" y1="320" x2="200" y2="350" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <!-- Box 3 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="390" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 5: 論拠監査</text>
+    <!-- Arrow 3 -->
+    <line x1="200" y1="420" x2="200" y2="450" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <!-- Box 4 -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="490" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 6: 構造再読（4軸再評価）</text>
+    <!-- Arrow 4 -->
+    <line x1="200" y1="520" x2="200" y2="550" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    <!-- Box 5 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+    <text x="200" y="590" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g id="heatmap">
+    <!-- Headers -->
+    <rect x="450" y="160" width="140" height="30" rx="5" fill="#8B8682" />
+    <text x="520" y="175" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">場</text>
+    <rect x="592" y="160" width="140" height="30" rx="5" fill="#5B8DB8" />
+    <text x="662" y="175" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">波</text>
+    <rect x="734" y="160" width="140" height="30" rx="5" fill="#D4A857" />
+    <text x="804" y="175" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">縁</text>
+    <rect x="876" y="160" width="140" height="30" rx="5" fill="#C45B4D" />
+    <text x="946" y="175" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">渦</text>
+    <rect x="1018" y="160" width="140" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1088" y="175" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">束</text>
+
+    <!-- Data Rows -->
+    <!-- Row 1: プレートテクトニクス（ウィルソンサイクル） | strong -->
+    <g transform="translate(0, 200)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">プレートテクトニクス（ウィルソンサイクル）</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+    <!-- Row 2: ENSO（大気海洋結合振動） | strong -->
+    <g transform="translate(0, 252)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">ENSO（大気海洋結合振動）</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+    <!-- Row 3: ミランコビッチサイクル（軌道強制） | partial -->
+    <g transform="translate(0, 304)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">ミランコビッチサイクル（軌道強制）</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="0.3" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="0.7" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="0.3" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="0.3" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="0.7" />
+    </g>
+    <!-- Row 4: 地震発生メカニズム（弾性反跳説） | strong -->
+    <g transform="translate(0, 356)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">地震発生メカニズム（弾性反跳説）</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+    <!-- Row 5: 火山噴火ダイナミクス | strong -->
+    <g transform="translate(0, 408)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">火山噴火ダイナミクス</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+    <!-- Row 6: シーケンス層序学 | partial -->
+    <g transform="translate(0, 460)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">シーケンス層序学</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="0.7" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="0.7" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="0.3" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="0.3" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="0.7" />
+    </g>
+    <!-- Row 7: 大量絶滅と回復 | strong -->
+    <g transform="translate(0, 512)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">大量絶滅と回復</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+    <!-- Row 8: 風化・土壌形成 | conditional -->
+    <g transform="translate(0, 564)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">風化・土壌形成</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="0.2" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="0.2" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="0.2" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="0.2" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="0.2" />
+    </g>
+    <!-- Row 9: 地球磁場ダイナモと磁場逆転 | strong -->
+    <g transform="translate(0, 616)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">地球磁場ダイナモと磁場逆転</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+    <!-- Row 10: 惑星分化（コア-マントル-地殻形成） | strong -->
+    <g transform="translate(0, 668)">
+      <text x="440" y="25" font-size="14" fill="white" text-anchor="end" dominant-baseline="middle">惑星分化（コア-マントル-地殻形成）</text>
+      <rect x="450" y="0" width="140" height="50" fill="#8B8682" fill-opacity="1.0" />
+      <rect x="592" y="0" width="140" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+      <rect x="734" y="0" width="140" height="50" fill="#D4A857" fill-opacity="1.0" />
+      <rect x="876" y="0" width="140" height="50" fill="#C45B4D" fill-opacity="1.0" />
+      <rect x="1018" y="0" width="140" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Summary -->
+  <g id="summary-bar">
+    <rect x="50" y="730" width="1108" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+    <!-- Strong -->
+    <rect x="150" y="745" width="20" height="20" fill="#27AE60" />
+    <text x="180" y="755" font-size="18" fill="white" dominant-baseline="middle">強い対応: 7件</text>
+    <!-- Partial -->
+    <rect x="500" y="745" width="20" height="20" fill="#F1C40F" />
+    <text x="530" y="755" font-size="18" fill="white" dominant-baseline="middle">部分的対応: 2件</text>
+    <!-- Conditional -->
+    <rect x="850" y="745" width="20" height="20" fill="#E67E22" />
+    <text x="880" y="755" font-size="18" fill="white" dominant-baseline="middle">条件付き: 1件</text>
+  </g>
+
+</svg>

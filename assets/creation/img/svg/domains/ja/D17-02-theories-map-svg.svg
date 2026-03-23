@@ -1,0 +1,177 @@
+<svg viewBox="0 0 1200 900" font-family="sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="100%" height="100%" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="600" y="50" font-size="30" text-anchor="middle" fill="#ffffff">10言語学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers (Stages) -->
+  <!-- Constants: MATRIX_START_X = 230, COL_PITCH = 190, COL_WIDTH = 180 -->
+  <!-- HEADER_RECT_Y = 105, HEADER_RECT_HEIGHT = 40 -->
+  <!-- HEADER_TEXT_Y = 130 -->
+  <rect x="230" y="105" width="180" height="40" rx="5" ry="5" fill="#8B8682"/>
+  <text x="320" y="130" font-size="20" text-anchor="middle" fill="#ffffff">場</text>
+
+  <rect x="420" y="105" width="180" height="40" rx="5" ry="5" fill="#5B8DB8"/>
+  <text x="510" y="130" font-size="20" text-anchor="middle" fill="#ffffff">波</text>
+
+  <rect x="610" y="105" width="180" height="40" rx="5" ry="5" fill="#D4A857"/>
+  <text x="700" y="130" font-size="20" text-anchor="middle" fill="#ffffff">縁</text>
+
+  <rect x="800" y="105" width="180" height="40" rx="5" ry="5" fill="#C45B4D"/>
+  <text x="890" y="130" font-size="20" text-anchor="middle" fill="#ffffff">渦</text>
+
+  <rect x="990" y="105" width="180" height="40" rx="5" ry="5" fill="#5B8B6A"/>
+  <text x="1080" y="130" font-size="20" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Matrix Rows -->
+  <!-- Constants: MATRIX_START_Y = 150, ROW_PITCH = 65, ROW_HEIGHT = 55 -->
+  <!-- CELL_TEXT_OFFSET_Y = 32.5 (ROW_HEIGHT / 2 + 5 for baseline adjustment) -->
+
+  <!-- Theory 1: 文法化の連鎖 | partial | 場 | 波 | - | - | 束 -->
+  <text x="10" y="150 + 32.5" font-size="18" fill="#ffffff">1. 文法化の連鎖</text>
+  <rect x="230" y="150" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+  <text x="320" y="150 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">場</text>
+  <rect x="420" y="150" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+  <text x="510" y="150 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">波</text>
+  <rect x="610" y="150" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+  <text x="700" y="150 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="800" y="150" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+  <text x="890" y="150 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="990" y="150" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.7"/>
+  <text x="1080" y="150 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">束</text>
+
+  <!-- Theory 2: 音変化の拡散モデル | partial | - | 波 | 縁 | - | - -->
+  <text x="10" y="150 + 65 + 32.5" font-size="18" fill="#ffffff">2. 音変化の拡散モデル</text>
+  <rect x="230" y="150 + 65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+  <text x="320" y="150 + 65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="420" y="150 + 65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+  <text x="510" y="150 + 65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">波</text>
+  <rect x="610" y="150 + 65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+  <text x="700" y="150 + 65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="800" y="150 + 65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+  <text x="890" y="150 + 65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="990" y="150 + 65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+  <text x="1080" y="150 + 65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 3: クレオール形成 | conditional | 場 | - | - | - | - -->
+  <text x="10" y="150 + 2*65 + 32.5" font-size="18" fill="#ffffff">3. クレオール形成</text>
+  <rect x="230" y="150 + 2*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.3"/>
+  <text x="320" y="150 + 2*65 + 32.5" font-size="18" text-anchor="middle" fill="#aaaaaa">場</text>
+  <rect x="420" y="150 + 2*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+  <text x="510" y="150 + 2*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="610" y="150 + 2*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+  <text x="700" y="150 + 2*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="800" y="150 + 2*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+  <text x="890" y="150 + 2*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="990" y="150 + 2*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+  <text x="1080" y="150 + 2*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 4: 臨界期仮説 | partial | 場 | - | - | - | - -->
+  <text x="10" y="150 + 3*65 + 32.5" font-size="18" fill="#ffffff">4. 臨界期仮説</text>
+  <rect x="230" y="150 + 3*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+  <text x="320" y="150 + 3*65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">場</text>
+  <rect x="420" y="150 + 3*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+  <text x="510" y="150 + 3*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="610" y="150 + 3*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+  <text x="700" y="150 + 3*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="800" y="150 + 3*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+  <text x="890" y="150 + 3*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="990" y="150 + 3*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+  <text x="1080" y="150 + 3*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 5: ニカラグア手話の出現・体系化 | strong | 場 | 波 | 縁 | 渦 | 束 -->
+  <text x="10" y="150 + 4*65 + 32.5" font-size="18" fill="#ffffff">5. ニカラグア手話の出現・体系化</text>
+  <rect x="230" y="150 + 4*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="1"/>
+  <text x="320" y="150 + 4*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="420" y="150 + 4*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="1"/>
+  <text x="510" y="150 + 4*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="610" y="150 + 4*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+  <text x="700" y="150 + 4*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="800" y="150 + 4*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="1"/>
+  <text x="890" y="150 + 4*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="990" y="150 + 4*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1"/>
+  <text x="1080" y="150 + 4*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Theory 6: 構文の創発 | strong | 場 | 波 | 縁 | 渦 | 束 -->
+  <text x="10" y="150 + 5*65 + 32.5" font-size="18" fill="#ffffff">6. 構文の創発</text>
+  <rect x="230" y="150 + 5*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="1"/>
+  <text x="320" y="150 + 5*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="420" y="150 + 5*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="1"/>
+  <text x="510" y="150 + 5*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="610" y="150 + 5*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+  <text x="700" y="150 + 5*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="800" y="150 + 5*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="1"/>
+  <text x="890" y="150 + 5*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="990" y="150 + 5*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1"/>
+  <text x="1080" y="150 + 5*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Theory 7: 語用論的推論と意味変化 | partial | - | 波 | 縁 | - | - -->
+  <text x="10" y="150 + 6*65 + 32.5" font-size="18" fill="#ffffff">7. 語用論的推論と意味変化</text>
+  <rect x="230" y="150 + 6*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+  <text x="320" y="150 + 6*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="420" y="150 + 6*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+  <text x="510" y="150 + 6*65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">波</text>
+  <rect x="610" y="150 + 6*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+  <text x="700" y="150 + 6*65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="800" y="150 + 6*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+  <text x="890" y="150 + 6*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="990" y="150 + 6*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+  <text x="1080" y="150 + 6*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 8: 言語相対性 | conditional | 場 | - | - | - | 束 -->
+  <text x="10" y="150 + 7*65 + 32.5" font-size="18" fill="#ffffff">8. 言語相対性</text>
+  <rect x="230" y="150 + 7*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.3"/>
+  <text x="320" y="150 + 7*65 + 32.5" font-size="18" text-anchor="middle" fill="#aaaaaa">場</text>
+  <rect x="420" y="150 + 7*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+  <text x="510" y="150 + 7*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="610" y="150 + 7*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+  <text x="700" y="150 + 7*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="800" y="150 + 7*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+  <text x="890" y="150 + 7*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="990" y="150 + 7*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.3"/>
+  <text x="1080" y="150 + 7*65 + 32.5" font-size="18" text-anchor="middle" fill="#aaaaaa">束</text>
+
+  <!-- Theory 9: 最適性理論 | partial | - | - | 縁 | 渦 | - -->
+  <text x="10" y="150 + 8*65 + 32.5" font-size="18" fill="#ffffff">9. 最適性理論</text>
+  <rect x="230" y="150 + 8*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+  <text x="320" y="150 + 8*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="420" y="150 + 8*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+  <text x="510" y="150 + 8*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="610" y="150 + 8*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+  <text x="700" y="150 + 8*65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="800" y="150 + 8*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.7"/>
+  <text x="890" y="150 + 8*65 + 32.5" font-size="18" text-anchor="middle" fill="#e0e0e0">渦</text>
+  <rect x="990" y="150 + 8*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+  <text x="1080" y="150 + 8*65 + 32.5" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 10: 反復的学習モデル | strong | 場 | 波 | 縁 | 渦 | 束 -->
+  <text x="10" y="150 + 9*65 + 32.5" font-size="18" fill="#ffffff">10. 反復的学習モデル</text>
+  <rect x="230" y="150 + 9*65" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="1"/>
+  <text x="320" y="150 + 9*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="420" y="150 + 9*65" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="1"/>
+  <text x="510" y="150 + 9*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="610" y="150 + 9*65" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+  <text x="700" y="150 + 9*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="800" y="150 + 9*65" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="1"/>
+  <text x="890" y="150 + 9*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="990" y="150 + 9*65" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="1"/>
+  <text x="1080" y="150 + 9*65 + 32.5" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Legend -->
+  <!-- LEGEND_Y = 820 -->
+  <!-- Swatch size 30x30 -->
+  <!-- Text font-size="18", fill="#ffffff" -->
+
+  <!-- Strong -->
+  <rect x="50" y="820" width="30" height="30" rx="5" ry="5" fill="#5B8DB8"/>
+  <text x="90" y="820 + 15 + 5" font-size="18" fill="#ffffff">強い対応 (Strong)</text>
+
+  <!-- Partial -->
+  <rect x="300" y="820" width="30" height="30" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+  <text x="340" y="820 + 15 + 5" font-size="18" fill="#ffffff">部分的 (Partial)</text>
+
+  <!-- Conditional -->
+  <rect x="550" y="820" width="30" height="30" rx="5" ry="5" fill="#5B8DB8" opacity="0.3"/>
+  <text x="590" y="820 + 15 + 5" font-size="18" fill="#ffffff">条件付き/弱い (Conditional/Weak)</text>
+</svg>
