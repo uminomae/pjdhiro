@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Religious Studies - Structural Correspondence with the 5-Stage Model</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Religious Studies</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / Taba)</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Survey Overview</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-01-overview-svg.svg" alt="Domain — Research Overview Infographic"></p>
+<ul>
+<li class="animate-in delay-4"><strong>Survey target</strong>: 10 major theories in religious studies</li>
+<li class="animate-in delay-5"><strong>Research question</strong>: Do the various theories of religious studies correspond structurally to the 5-stage model?</li>
+<li class="animate-in delay-5"><strong>Results</strong>: Strong correspondence in 1 case, partial correspondence in 1 case, conditional correspondence in 2 cases</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overview of the 5-Stage Model</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>Stage</th><th>Definition</th></tr><tr><td>Ba (Field)</td><td>An undifferentiated state. The initial condition in which no direction or structure has yet been established</td></tr><tr><td>Wave</td><td>The exploratory stage in which multiple directions diverge and compete</td></tr><tr><td>En (Edge)</td><td>A state of tension in which opposing elements coexist without converging on either side. The place where they meet at the boundary, influence each other, and relationships emerge</td></tr><tr><td>Uzu (Vortex)</td><td>The stage in which a new coherence (order) arises spontaneously from within the tension</td></tr><tr><td>Taba (Bundle)</td><td>The stage in which the form is fixed and stabilizes as a reusable structure</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overview of Structural Correspondences</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-02-theories-map-svg.svg" alt="Domain — Theory x 5-Stage Correspondence Matrix"></p>
+<table class="animate-in delay-4"><tr><th>Confidence</th><th>Theory group</th><th>Positioning</th></tr><tr><td>Strong correspondence</td><td>Rambo's 7-stage conversion model, Eliade's sacred and profane, Oxherding Pictures, Bodhisattva ten stages / five paths, Fana/Baqa, Maqamat</td><td>The correspondence with the overall 5-stage structure is clear</td></tr><tr><td>Partial correspondence</td><td>Teresa of Avila's seven mansions, Turner's liminality, Alchemical Magnum Opus</td><td>The overall structural correspondence exists, but compression or interpretive leaps remain in the first or second half</td></tr><tr><td>Conditional correspondence</td><td>James's religious experience</td><td>The theory does not present a stage model, so structural correspondence depends on a constructive reading by the analyst</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 1: Rambo's 7-Stage Conversion Model (Lewis R. Rambo)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Rambo described religious conversion as an integrated 7-stage model: context, crisis, quest, encounter, interaction, commitment, and consequences. Presented in his 1993 book <em>Understanding Religious Conversion</em>, this model integrates conversion from multiple perspectives — psychological, sociological, and theological — and explicitly states that the stages are interactive rather than sequentially fixed.</li>
+<li class="animate-in delay-4"><strong>As a matter of fact</strong>: Rambo positioned the conversion process as a phenomenon occurring within a "dynamic force field," a conceptual framework influenced by Kurt Lewin's field theory, in which individual inner motivation, social networks, and cultural context constitute the "force field." The 7 stages have the overall structure of "environment → disruption → quest → contact → relational reorganization → convergence → consolidation."</li>
+<li class="animate-in delay-5"><strong>As an interpretation of structure</strong>: Here we attend to the fact that the overall process of transformation can be read as "environment (preconditions) → disruption (turbulence in existing order) → relational reorganization at the boundary → convergence toward a new order → sustained consolidation." The level of similarity is process. Particular attention is given to the point that the concept of "dynamic force field" is explicitly described as the precondition for transformation, and that "encounter" and "interaction" are articulated as the process of establishing and reweaving relationships.</li>
+<li class="animate-in delay-5"><strong>As an interpretive reading</strong>: The overall 7-stage structure shows high correspondence with the 5 stages. "Context" corresponds to Ba as the "dynamic force field" in which conversion occurs. "Crisis + Quest" is the phase in which existing meaning order is shaken and differences emerge, corresponding to Wave. "Encounter + Interaction" is boundary contact with embodied others and relational reorganization, corresponding to En. "Commitment" is convergence through pledge, corresponding to Uzu, and "Consequences" is the sustained consolidation of transformation, corresponding to Taba. The fact that Rambo himself positions conversion as "a process occurring within a dynamic force field" shows that the correspondence with Ba is structural rather than a superficial naming coincidence.</li>
+<li class="animate-in delay-5">It should be noted that in compressing 7 stages to 5, the position of "Quest" is prone to wobble. Whether it is included in Wave or treated as the first half of En changes the reading. "Quest" is the stage of active searching between Wave and En, and can also be read as making explicit what the 5 stages implicitly contain: "the interval between when difference has arisen and when relationship has been established."</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 2: Turner's Liminality and Structure/Anti-Structure (Victor Turner)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Turner extended the three phases of rites of passage (separation-threshold-incorporation) proposed by anthropologist van Gennep, and uniquely conceptualized the threshold period (liminality) as "betwixt and between." Presented in his 1969 book <em>The Ritual Process</em>, this theory, together with the concept of communitas — the non-structural communality located outside social structure — has become a foundational theory in the anthropology of religion.</li>
+<li class="animate-in delay-4"><strong>As a matter of fact</strong>: Turner presented a dialectical cycle of structure → anti-structure (communitas) → re-structuration. Participants in liminality are placed in a state where existing social classifications are suspended and normal status and roles are stripped away. There are three types of communitas: spontaneous communitas — a direct encounter between people unmediated by structure; normative communitas; and ideological communitas, which becomes progressively institutionalized.</li>
+<li class="animate-in delay-5"><strong>As an interpretation of structure</strong>: Here we read the structure of the "threshold" (kiwa) at which old order is suspended and new relational qualities emerge. The level of similarity is structure, with particular attention to the relational arrangement in which "existing structural distinctions are temporarily lifted, and new relationships are woven within that lifting." The fact that Turner finds sacred and creative value in liminality/communitas itself can be read as the claim that the boundary state is not merely a passage but is itself the source of society's fundamental energy.</li>
+<li class="animate-in delay-5"><strong>As an interpretive reading</strong>: The three phases of separation → threshold → incorporation correspond structurally to the 5-stage "Wave (turbulence, separation) → En (threshold, relationship) → Uzu (arising, incorporation)." The "betwixt and between" state of liminality is a strong realization of En. Furthermore, the dialectical cycle of structure → anti-structure → re-structuration can be connected to the 5-stage Taba → Ba cycle. However, in mapping 3 stages onto 5, the correspondence of "Ba" and "Taba" depends on interpretation. Whether the social structure prior to the ritual is taken as "Ba" or "Taba" can be resolved by reading it as a cyclic model, but this point requires attention.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 3: Teresa of Avila's <em>Interior Castle</em> — Seven Mansions</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Teresa (1515-1582) used the metaphor of a castle to describe the interior of the human being, and described spiritual progression through seven mansions (moradas). Written in 1577, <em>El Castillo Interior</em> (Interior Castle) is a classic work of Christian mysticism, paired with John of the Cross's <em>Dark Night</em> as the twin pillars of Spanish mysticism.</li>
+<li class="animate-in delay-4"><strong>As a matter of fact</strong>: The first mansion begins with recognition of the soul's dignity, and it is explicitly stated that "the gate to enter the castle is prayer." The second through third mansions are stages of patience and struggle, continuing the confrontation with forces that obstruct the continuation of practice. A decisive turning point occurs in the fourth mansion. Teresa here made a clear distinction between "consolations (contentos)" and "spiritual delights (gustos)." The former are obtained through human effort; the latter are given by God. This stage, where the prayer of recollection (oración de recogimiento) begins, is the turning point from "active prayer" to "passive prayer." In the fifth through sixth mansions, prayer of union with God, ecstasy (éxtasis), and rapture occur, and trials are most intense in the sixth mansion. In the seventh mansion, spiritual marriage (matrimonio espiritual) is reached, and Teresa speaks of the necessity that Martha and Mary be together — the integration of contemplation and action. Ecstasy disappears, and ordinary acts are conducted in stable peace.</li>
+<li class="animate-in delay-5"><strong>As an interpretation of structure</strong>: Here we read the "qualitative shift from active to passive" in the fourth mansion as a structural turning point in the transformation process. The level of similarity is process, with particular attention to the order of the shift in which "something of a different quality is given beyond the limit of the subject's effort." We also read the integration of contemplation and action in the seventh mansion as the structure in which transformation becomes consolidated into daily life.</li>
+<li class="animate-in delay-5"><strong>As an interpretive reading</strong>: The overall structure of the seven mansions corresponds to the 5 stages. The first mansion (entry into Ba) → the second through third mansions (trials and struggle = Wave) → the fourth mansion (qualitative shift in prayer = En) → the fifth through sixth mansions (mystical union = Uzu) → the seventh mansion (spiritual marriage = Taba). The strongest correspondence is between the seventh mansion and Taba. The integration of Martha and Mary — contemplative life and active life becoming one — clearly realizes Taba as "a gathering where vortices influence each other and remain as structure," in the spiritual domain. However, in compressing 7 stages to 5, there is a danger that the qualitative difference between contentos/gustos that Teresa painstakingly distinguished is concealed under the abstract language of the 5 stages. This loss of information is a methodological point of caution.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Cross-Cutting Patterns</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D24-03-cross-patterns-svg.svg" alt="Domain — Cross-Cutting Patterns Diagram"></p>
+<ul>
+<li class="animate-in delay-4">The pattern that recurs most frequently across religious studies and mysticism is the intertwining of effort and grace in En</li>
+<li class="animate-in delay-5">Second, two types of Taba are confirmed</li>
+<li class="animate-in delay-5">Third, the diversity of stage counts itself is an important finding</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Unresolved Questions</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>The relationship between effort and grace in En</strong>: The distinction between "what is reached by effort / what is given as grace" seen commonly in Teresa, Sufism, and Buddhism — how should this be reflected in En of the 5 stages? Whether En is an active or passive process — probably both — but how to integrate them remains unresolved.</li>
+<li class="animate-in delay-4"><strong>The positioning of "emptiness"</strong>: The "forgetting of both person and ox" in the Oxherding Pictures, Fana, and the transition from the path of preparation to the path of seeing all contain a stage of "complete dissolution" in the process leading to Uzu. This "emptiness" is not explicitly present in the 5 stages. Whether it is located between Taba and Ba in the cycle, or is the extreme of Uzu, or is a different dimension outside the 5 stages, is a question with conflicting interpretations remaining.</li>
+<li class="animate-in delay-5"><strong>The legitimacy of compressing stage counts</strong>: Compression from 7→5, 10→5, 100→5 is structurally permissible, but the qualitative differences unique to each stage — Teresa's contentos/gustos, the four preparations of the path of preparation, individual maqams in Maqamat — are lost. How much this loss of information is permissible is a methodological challenge.</li>
+<li class="animate-in delay-5"><strong>Self-referentiality with Eliade's methodological critique</strong>: The method of the 5-stage model pointing to "structural similarities" with religious practice hierarchies is structurally isomorphic with the method of Eliade's comparative religion. The critique of "arbitrary comparison" that Eliade has faced is applicable to the 5-stage model as well, and this self-referential tension needs to be recognized.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Conclusion</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">This survey confirmed that religious studies and mysticism is a domain with overall high structural similarity to the 5-stage model</li>
+<li class="animate-in delay-4">The structural correspondence is particularly strong in: Rambo's 7-stage conversion model (the "dynamic force field" concept corresponds structurally to Ba), Bodhisattva ten stages/five paths (the path of preparation describes the internal structure of En in detail), the Oxherding Pictures (the "entering the world with helping hands" pictorially expresses the Taba → Ba cycle), and Eliade's eternal return (a civilization-scale description of the Taba → Ba cycle)</li>
+<li class="animate-in delay-5">The findings of this survey are considered to be in the compelling confidence band regarding the intertwining pattern of effort and grace in En, and the dual nature of Taba as persistent/cyclic</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">Religious Studies - Structural Correspondence with the 5-Stage Model</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>

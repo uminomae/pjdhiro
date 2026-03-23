@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agriculture and Ecology - Structural Correspondence with the Five-Stage Model</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Agriculture and Ecology</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, Taba)</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Survey Overview</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-01-overview-svg.svg" alt="Domain — Research Overview Infographic"></p>
+<ul>
+<li class="animate-in delay-4"><strong>Scope</strong>: 10 major theories in agriculture and ecology</li>
+<li class="animate-in delay-5"><strong>Research question</strong>: Do theories in agriculture and ecology structurally correspond to the five-stage model?</li>
+<li class="animate-in delay-5"><strong>Results</strong>: Strong correspondence 9, Partial correspondence 1</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overview of the Five-Stage Model</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>Stage</th><th>Definition</th></tr><tr><td>Ba (Field)</td><td>An undifferentiated state. Initial conditions where neither direction nor structure has yet been determined</td></tr><tr><td>Nami (Wave)</td><td>A stage of exploration where multiple directions diverge and compete</td></tr><tr><td>En (Edge)</td><td>A state of tension where opposing elements coexist without converging to either side. A place where elements meet at boundaries, influence each other, and relationships emerge</td></tr><tr><td>Uzu (Vortex)</td><td>A stage where new coherence (order) spontaneously arises from within tension</td></tr><tr><td>Taba (Bundle)</td><td>A stage where form is established and stabilizes as a reusable structure</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overall Structural Correspondence</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-02-theories-map-svg.svg" alt="Domain — Theory x 5-Stage Correspondence Matrix"></p>
+<table class="animate-in delay-4"><tr><th>#</th><th>Theory/Concept</th><th>Proponent</th><th>Primary Corresponding Stages</th><th>Assessment</th></tr><tr><td>1</td><td>Ecological succession</td><td>Clements (1916), Connell & Slatyer (1977), Holling (1973)</td><td>All 5 stages</td><td>Strong correspondence</td></tr><tr><td>2</td><td>Agricultural nitrogen cycle</td><td>Robertson & Vitousek (2009)</td><td>All 5 stages</td><td>Strong correspondence</td></tr><tr><td>3</td><td>Integrated Pest Management (IPM) and economic thresholds</td><td>Stern et al. (1959), Pedigo et al. (1986)</td><td>En→Uzu→Taba</td><td>Strong correspondence</td></tr><tr><td>4</td><td>Regime shifts / multiple stable states</td><td>Scheffer et al. (2001), Scheffer & Carpenter (2003)</td><td>En (threshold) as core</td><td>Strong correspondence</td></tr><tr><td>5</td><td>Ecological boundary theory (ecotone)</td><td>Cadenasso et al. (2003)</td><td>En as theoretical center</td><td>Strong correspondence</td></tr><tr><td>6</td><td>Landscape connectivity and percolation thresholds</td><td>With & Crist (1995), Taylor et al. (1993)</td><td>En (threshold + connection)</td><td>Strong correspondence</td></tr><tr><td>7</td><td>Self-organizing vegetation patterns in drylands</td><td>Klausmeier (1999), Rietkerk et al. (2002)</td><td>Uzu (self-organization) as core</td><td>Strong correspondence</td></tr><tr><td>8</td><td>Plant-soil feedback</td><td>Bever (1994; 1997), Klironomos (2002)</td><td>En→Uzu→Taba</td><td>Strong correspondence</td></tr><tr><td>9</td><td>Ecosystem engineering</td><td>Jones et al. (1994; 1997)</td><td>En (constructed boundary)</td><td>Partial correspondence</td></tr><tr><td>10</td><td>State-and-transition models (STMs)</td><td>Westoby et al. (1989), Briske et al. (2003)</td><td>En (institutionalization of thresholds)</td><td>Strong correspondence</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 1: Ecological Succession (Clements, Connell & Slatyer, Holling)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Ecological succession is the process by which an ecosystem that has been disturbed changes in species composition and community structure over time. Clements (1916) classically formalized succession in plant communities, after which Connell & Slatyer (1977) proposed three mechanisms: facilitation, tolerance, and inhibition. Holling (1973) introduced the concept of resilience (the capacity to recover from disturbance) and supplemented the quantitative framework of succession.</li>
+<li class="animate-in delay-4"><strong>As fact</strong>: In a disturbed ecosystem, pioneer species first invade bare ground, species composition becomes more complex through interspecific competition, and eventually a relatively stable state called the climax community is reached. This process was organized by Connell & Slatyer (1977) into three mechanisms: "facilitation," in which pioneer species help establish later species; "tolerance," in which later species establish regardless of whether pioneer species are present; and "inhibition," in which pioneer species prevent the establishment of later species. Stepwise changes in species composition have been empirically documented through long-term observational data.</li>
+<li class="animate-in delay-5"><strong>As reading</strong>: Here we read a structure in which multiple different mechanisms operate in stages through the process from disturbed bare ground to climax community. The level of similarity is process. In particular, we focus on the sequential structure of "disturbance → pioneer species invasion → interspecific interaction → community formation → stabilization." Connell & Slatyer's three mechanisms show that the intermediate stage (the phase of interspecific interaction) has multiple modes rather than a single mechanism, and this diversity is structurally important.</li>
+<li class="animate-in delay-5"><strong>As interpretation</strong>: Bare ground after disturbance corresponds to Ba (the undifferentiated state of initial conditions). The phase in which pioneer species invade and differences expand through resource competition corresponds to Nami. The phase in which interspecific interactions such as facilitation, competition, and predation mediate community structure corresponds to En, where multiple succession mechanisms coexist. The phase in which dominant species form stable community patterns corresponds to Uzu, and the phase in which the ecosystem stabilizes as a climax community corresponds to Taba. Furthermore, the natural observation of regression from Taba to Ba through disturbance concretely demonstrates the cyclical nature of the five stages.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 2: Regime Shifts / Multiple Stable States (Scheffer, Carpenter)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">A regime shift is a phenomenon in which an ecosystem rapidly transitions from one stable state to another across a threshold. Scheffer et al. (2001) theoretically integrated this phenomenon, and Scheffer & Carpenter (2003) clarified the importance of hysteresis (irreversibility).</li>
+<li class="animate-in delay-4"><strong>As fact</strong>: Ecosystems do not always respond continuously to changes in environmental conditions. In lakes where nutrient loading gradually increases, once a certain threshold (tipping point) is exceeded, the water rapidly transitions from clear to turbid, and it does not easily recover even when conditions are returned to their original state. Carpenter & Brock (2006) proposed statistical signs accompanying threshold approach (increased variance, increased autocorrelation) as "early warning signals."</li>
+<li class="animate-in delay-5"><strong>As reading</strong>: Here we read the structure in which a system undergoing continuous change undergoes a discontinuous sudden shift at a threshold. The level of similarity is structure. Rather than merely a difference in the speed of change, we focus on the placement relationship in which the qualitative character of the system switches before and after the threshold. Additionally, hysteresis — the property of "once the threshold is crossed, there is no going back" — gives this structure direction and irreversibility.</li>
+<li class="animate-in delay-5"><strong>As interpretation</strong>: The phase in which external conditions (nutrient loading or climate) determine the state of the system corresponds to Ba. The phase in which condition fluctuations or disturbances destabilize the system corresponds to Nami. The branching point where behavior changes discontinuously at the threshold (tipping point) corresponds to En, and in this theory En functions most clearly as the central variable. The self-reinforcing feedback that maintains each stable state (for example, the opposition of aquatic plants maintaining clear water and phytoplankton maintaining turbid water) corresponds to Uzu. Convergence to a new stable state corresponds to Taba.</li>
+<li class="animate-in delay-5">What makes regime shifts particularly important in terms of correspondence with the five stages is that the position of the threshold is difficult to determine in advance. The indeterminacy of "where the sudden change will occur can only be known after the fact" ecologically supports the essential uncertainty of En in the five stages.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 3: Integrated Pest Management (IPM) and Economic Thresholds (Stern, Pedigo)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Integrated Pest Management (IPM) is a decision-making model that integrates pest density, natural enemy dynamics, and the economic damage to crops to determine the timing of intervention. Stern et al. (1959) proposed the concept of the Economic Injury Level (EIL), and Pedigo et al. (1986) refined the framework of intervention decision-making as the Economic Threshold (ET).</li>
+<li class="animate-in delay-4"><strong>As fact</strong>: The EIL is the pest density at which economic losses from pests and control costs balance. The ET is the decision level at which control measures should be initiated before the EIL is reached. Farmers monitor pest density and intervene only when the ET is exceeded. This framework has been incorporated into agricultural policy in various countries and institutionalized.</li>
+<li class="animate-in delay-5"><strong>As reading</strong>: Here we read a structure in which a formally defined branching point is incorporated into a cyclical management cycle running from monitoring through threshold judgment, intervention, and re-evaluation. The level of similarity is process, and we particularly focus on the decision-making structure of a "Go/No-Go judgment based on thresholds." In contrast to the regime shift threshold, which is a natural branching point inherent in the system, the IPM threshold is a branching point that humans have set based on economic rationality; this contrast is important.</li>
+<li class="animate-in delay-5"><strong>As interpretation</strong>: The initial distribution of pests and natural enemies in the field and the economic conditions correspond to Ba. The phase in which pest populations increase or decrease due to environmental changes and the difference from the damage threshold becomes apparent corresponds to Nami. The EIL/ET Go/No-Go judgment corresponds to En, where the decision branching point is formally institutionalized as En. The management strategy integrating biological, chemical, and cultural control corresponds to Uzu, with feedback cycling to the next judgment based on intervention results. Institutionalization as a regionally standard IPM protocol corresponds to Taba.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Cross-Cutting Patterns</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-03-cross-patterns-svg.svg" alt="Domain — Cross-Cutting Patterns Diagram"></p>
+<ul>
+<li class="animate-in delay-4">Three patterns that repeatedly appear across agriculture and ecology are reported here</li>
+<li class="animate-in delay-5"><strong>First, three types of En are present within the domain</strong></li>
+<li class="animate-in delay-5"><strong>Second, a contrast between "designed En" and "discovered En" emerges</strong></li>
+<li class="animate-in delay-5"><strong>Third, Uzu (feedback) is explicitly present in all 10 theories</strong></li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Unresolved Questions</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Whether threshold-type En (branching point), boundary-type En (interface), and relational En (network) can be integrated as the same "En" within the five-stage model, or should be separated as different stages, has not yet been resolved.</li>
+<li class="animate-in delay-4">Whether it is appropriate to treat "thresholds designed by humans" (IPM, STMs) and "thresholds inherent in the system" (regime shifts, percolation) as the same "En" is subject to opposing views. The question is whether a designed threshold is an imitation of En or an implementation of En.</li>
+<li class="animate-in delay-5">The tension between the nature of regime shifts — "the position of the threshold is difficult to determine in advance" — and IPM — "thresholds are defined based on economic rationality" — relates to the essential nature of the uncertainty that En in the five-stage model possesses.</li>
+<li class="animate-in delay-5">How to incorporate ecosystem engineering's perspective that "En is not given but constructed" into the five stages requires examination as an important correction to the static understanding of the model.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Conclusion</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">This survey confirmed that agriculture and ecology is a domain with strong structural correspondence to the five-stage model overall</li>
+<li class="animate-in delay-4">Near-definitive are ecological succession, regime shifts, percolation thresholds, and self-organizing vegetation patterns in drylands</li>
+<li class="animate-in delay-5">The greatest insight gained from this domain is that the "En" of the five-stage model is not a single concept but is realized in at least three types (threshold, boundary, relational)</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">Agriculture and Ecology - Structural Correspondence with the Five-Stage Model</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>

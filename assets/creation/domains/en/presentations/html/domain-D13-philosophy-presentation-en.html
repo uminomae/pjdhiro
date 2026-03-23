@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philosophy - Structural Correspondence with the Five-Stage Model</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Philosophy</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, Taba)</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Survey Overview</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-01-overview-svg.svg" alt="Domain — Research Overview Infographic"></p>
+<ul>
+<li class="animate-in delay-4"><strong>Scope</strong>: 11 major theories in philosophy</li>
+<li class="animate-in delay-5"><strong>Research question</strong>: Do theories in philosophy structurally correspond to the five-stage model?</li>
+<li class="animate-in delay-5"><strong>Results</strong>: Strong correspondence 5, Partial correspondence 5, Conditional correspondence 1</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overview of the Five-Stage Model</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>Stage</th><th>Definition</th></tr><tr><td>Ba (Field)</td><td>An undifferentiated state. Initial conditions where neither direction nor structure has yet been determined</td></tr><tr><td>Nami (Wave)</td><td>A stage of exploration where multiple directions diverge and compete</td></tr><tr><td>En (Edge)</td><td>A state of tension where opposing elements coexist without converging to either side. A place where elements meet at boundaries, influence each other, and relationships emerge</td></tr><tr><td>Uzu (Vortex)</td><td>A stage where new coherence (order) spontaneously arises from within tension</td></tr><tr><td>Taba (Bundle)</td><td>A stage where form is established and stabilizes as a reusable structure</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overall Structural Correspondence</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-02-theories-map-svg.svg" alt="Domain — Theory x 5-Stage Correspondence Matrix"></p>
+<table class="animate-in delay-4"><tr><th>Temperature</th><th>Theory group</th><th>Assessment</th></tr><tr><td>1</td><td>Individuation theory (transduction)</td><td>Simondon</td><td>Ba, Nami, En, Uzu, Taba</td><td>Strong correspondence</td></tr><tr><td>2</td><td>Five stages of reflective thought</td><td>Dewey</td><td>Ba, Nami, En, Uzu, Taba</td><td>Strong correspondence</td></tr><tr><td>3</td><td>Process philosophy (concrescence)</td><td>Whitehead</td><td>Strong in Nami, Uzu, Taba; partial in Ba and En</td><td>Partial correspondence</td></tr><tr><td>4</td><td>Philosophy of nature (Naturphilosophie)</td><td>Schelling</td><td>Strong in Nami, En absent</td><td>Conditional correspondence</td></tr><tr><td>5</td><td>Passive synthesis</td><td>Husserl</td><td>Strong in Ba, Nami, En; partial in Uzu, Taba</td><td>Partial correspondence</td></tr><tr><td>6</td><td>"Flesh" and reversibility</td><td>Merleau-Ponty</td><td>Strong in Ba, Nami, En; partial in Uzu, Taba</td><td>Partial correspondence</td></tr><tr><td>7</td><td>Fusion of horizons (Horizontverschmelzung)</td><td>Gadamer</td><td>Ba, Nami, En, Uzu, Taba</td><td>Strong correspondence</td></tr><tr><td>8</td><td>Rhizome and deterritorialization</td><td>Deleuze-Guattari</td><td>Partial in Uzu; intrinsic resistance to stage sequencing</td><td>Conditional correspondence</td></tr><tr><td>9</td><td>Inquiry and fixation of belief</td><td>Peirce</td><td>Ba, Nami, En, Uzu, Taba</td><td>Strong correspondence</td></tr><tr><td>10</td><td>Negative dialectics</td><td>Adorno</td><td>Functions as critical illumination (reflective control toward Taba)</td><td>Partial correspondence</td></tr><tr><td>11</td><td>Logic of place</td><td>Nishida Kitaro</td><td>Ba, Nami, En, Uzu, Taba</td><td>Strong correspondence</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 1: Simondon's Theory of Individuation</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Simondon was a French philosopher who directly reexamined the question of "how does what exists come to be?" Traditional philosophy had conceived of individuals as arising from the encounter of matter and form (hylomorphism). Simondon rejected this premise and argued that the individual is described as a continuous process of generation through transduction from a pre-individual metastable field (<em>L'individuation</em>, Introduction, §I).</li>
+<li class="animate-in delay-4">Transduction is the operation by which local structural resolution propagates to adjacent regions. The paradigmatic case is the process by which a seed crystal in crystallization successively induces structuring in adjacent supersaturated solution. Even more important is the point that pre-individual surplus is not exhausted by individuation. Even after individuation is complete, the possibility of re-individuation is retained (ibid., §I.2).</li>
+<li class="animate-in delay-5"><strong>As fact</strong>: Simondon describes the process of individuation as a series of phases: a pre-individual metastable state, destabilization through a potential difference, propagation of local structuring through transduction to adjacent regions, the simultaneous generation of the individual and its environment, and a stable structure that retains pre-individual surplus. The individual is generated simultaneously with the environment (milieu), and the two are inseparable.</li>
+<li class="animate-in delay-5"><strong>As reading</strong>: Here we note the breadth of scope in describing the entire generation of existence as a single process. The level of similarity is structure. Simondon's description targets the same problem domain as the five-stage model — the creation of existence itself — and the correspondence is not a partial match of concepts but a correspondence of the structure of the process as a whole. In particular, transduction's structure of "local resolution propagating to adjacent regions" can be read not merely as label similarity but as an operational principle that connects multiple elements as a chain of relationships.</li>
+<li class="animate-in delay-5"><strong>As interpretation</strong>: The pre-individual metastable state corresponds to Ba; destabilization through a potential difference corresponds to Nami; the propagation of local structuring through transduction to adjacent regions corresponds to En; the simultaneous generation of the individual and its environment corresponds to Uzu; and the stable structure retaining pre-individual surplus corresponds to Taba. Furthermore, the point that pre-individual surplus is not exhausted constitutes an ontological answer to the question of why the process from Taba back to Ba — that is, why the process never ends. This correspondence does not arise from an accidental coincidence of stage counts but from the fact that both theories describe the same problem domain of "the generation of existence" in different vocabulary systems.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 2: Dewey's Reflective Thought</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Dewey is a philosopher representative of American pragmatism, widely known also for his philosophy of education and theory of democracy. In <em>How We Think</em> (1910, Chapter 6), he explicitly enumerated "five logically distinct steps" of reflective thought: (i) a felt difficulty, (ii) its location and definition, (iii) suggestion of a possible solution, (iv) development of the suggestion by reasoning, and (v) further observation and experiment leading to acceptance or rejection.</li>
+<li class="animate-in delay-4">Dewey himself attached an important caveat: these steps are not in a rigid linear order and may overlap with one another. He noted that "uneasiness or shock may come first, with the problem becoming clarified only later" (ibid., ch.6, p.72).</li>
+<li class="animate-in delay-5"><strong>As fact</strong>: In <em>Logic: The Theory of Inquiry</em> (1938, ch.6), he formulated inquiry more generally as "the controlled or directed transformation of an indeterminate situation into one that is so determinate in its constituent distinctions and relations as to convert the elements of the original situation into a unified whole." The starting point of inquiry is a "feeling of something amiss" — a pre-reflective qualitative experience that precedes conceptual formulation. Furthermore, in Dewey's pragmatism, inquiry does not merely recognize the situation but transforms it.</li>
+<li class="animate-in delay-5"><strong>As reading</strong>: Here we note that Dewey explicitly enumerated the process of reflective thought as five stages in the primary literature, and that it is formulated as a transformation from "indeterminate to determinate." The level of similarity is process. In particular, "the location and definition of the difficulty" — the operation of identifying relationships among elements and formulating a question — is structurally characterized as a relational operation.</li>
+<li class="animate-in delay-5"><strong>As interpretation</strong>: The indeterminate situation corresponds to Ba; the felt difficulty corresponds to Nami; the location and definition of the difficulty corresponds to En; the suggestion of a possible solution through to development by reasoning corresponds to Uzu; and acceptance or rejection through further observation and experiment corresponds to Taba. This correspondence has the lowest arbitrariness in mapping among all 30 domains because Dewey himself enumerated five stages. However, it should be noted that Dewey's five stages are a description of "reflective thought," and views may differ on extension to "the creation of existence in general." Dewey himself, from a pragmatist standpoint, rejected the separation of cognition and action, and separately discussed the relationship between artistic creation and problem-solving reflection in <em>Art as Experience</em> (1934).</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 3: Merleau-Ponty's "Flesh" and Reversibility</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Merleau-Ponty was a French philosopher who extended Husserl's phenomenology into a theory of the body. In his posthumous work <em>Le visible et l'invisible</em> (1964), he introduced the concept of "flesh" (chair). Flesh is neither matter nor spirit but a pre-differential "element" shared by subject and world. "The flesh is not matter, is not mind, is not substance. To designate it, we should need the old term 'element,' in the sense it was used to speak of water, air, earth, and fire," Merleau-Ponty wrote (VI, p.184).</li>
+<li class="animate-in delay-4"><strong>As fact</strong>: Merleau-Ponty calls the minimal difference within flesh "dehiscence" (ecart). He also described "reversibility" (reversibilite) — the touching hand is also touched — and the "chiasm" (chiasme), where the visible and the invisible intersect. Reversibility is not perfect coincidence; it always contains dehiscence — a slight divergence (VI, pp.179, 194-195). The body is neither a pure subject nor a pure object but the site of intentional projection toward the world as "a third mode of being."</li>
+<li class="animate-in delay-5"><strong>As reading</strong>: Here we note the structure in which, from a shared medium prior to the separation of subject and world, reversible mutual transformation arises through the trigger of a minimal difference. The level of similarity is structure, and in particular, "mutual transformation at a boundary" depicted by reversibility/chiasm can be read not as unidirectional causality but as the establishment of bidirectional relationship.</li>
+<li class="animate-in delay-5"><strong>As interpretation</strong>: Flesh corresponds to Ba — as a pre-differential element prior to the separation of subject and world. Dehiscence corresponds to Nami — initiating differentiation as the minimal difference within flesh. Reversibility and the chiasm correspond to En. The interface where the touching and the touched intersect is one of the most profound philosophical descriptions of En in the five stages. The body's creative formative capacity (expression) corresponds to Uzu; the sedimented cultural world corresponds to Taba; and the cycle is completed as cultural sedimentation becomes the horizon (Ba) of the next perception.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Cross-Cutting Patterns</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-03-cross-patterns-svg.svg" alt="Domain — Cross-Cutting Patterns Diagram"></p>
+<ul>
+<li class="animate-in delay-4">The most striking pattern across philosophy is the philosophical diversity of "En"</li>
+<li class="animate-in delay-5"><strong>Transduction (Simondon)</strong>: A chain of relationships in which local structuring propagates to adjacent regions. En as "dynamics."</li>
+<li class="animate-in delay-5"><strong>Problem formulation (Dewey)</strong>: The operation of identifying relationships among elements of a felt difficulty. En as "problematization."</li>
+<li class="animate-in delay-5"><strong>Abduction (Peirce)</strong>: The operation of creatively leaping to generate a hypothesis from a surprising fact. En as "creative leap."</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Unresolved Questions</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">At which level the five-stage "Ba" is located — experiential (Husserlian), ontological (Simondonian), or ultimate (Nishidian) — has not yet been settled. Nishida's "place of absolute nothingness" may exceed the scope of the five-stage Ba, and examination of whether Ba has a hierarchy of depth is needed.</li>
+<li class="animate-in delay-4">Deleuze-Guattari's rhizomatic thinking principally rejects linear stage models. If the five-stage model is understood not as "linear stages" but as a "spectrum," this criticism may be mitigated, but this tension has not been resolved.</li>
+<li class="animate-in delay-5">Schelling's philosophy of nature powerfully describes "Nami" (polarity) but lacks an intermediate term corresponding to "En." This suggests that the transition from binary opposition (polarity) to multiple relationships (En) is a non-trivial requirement of the five-stage model, but the validity of this structural requirement needs to be verified against findings from other domains.</li>
+<li class="animate-in delay-5">The distinction between analytic generation (the generation of understanding) and existential generation (the generation of existence) tends to be resolved from within by multiple theories, but the scope difference remains with theories like Husserl and Gadamer that thematize the generation of consciousness and understanding.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Conclusion</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">This survey confirmed that philosophy is a domain where structural similarity to the five-stage model is near-definitive overall</li>
+<li class="animate-in delay-4">Philosophy's greatest contribution is the multifaceted description of "En"</li>
+<li class="animate-in delay-5">Another important contribution is the critical illumination of the five-stage model</li>
+<li class="animate-in delay-5">The findings of this survey are distributed across near-definitive and probable temperature bands</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">Philosophy - Structural Correspondence with the Five-Stage Model</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>

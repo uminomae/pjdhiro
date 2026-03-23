@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complexity Science - Structural Correspondence with the 5-Stage Model</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Complexity Science</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / Taba)</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Survey Overview</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-01-overview-svg.svg" alt="Domain — Research Overview Infographic"></p>
+<ul>
+<li class="animate-in delay-4"><strong>Survey target</strong>: 10 major theories in complexity science</li>
+<li class="animate-in delay-5"><strong>Research question</strong>: Do the various theories of complexity science correspond structurally to the 5-stage model?</li>
+<li class="animate-in delay-5"><strong>Results</strong>: Strong correspondence in 9 cases, conditional correspondence in 1 case</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overview of the 5-Stage Model</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>Stage</th><th>Definition</th></tr><tr><td>Ba (Field)</td><td>An undifferentiated state. The initial condition in which no direction or structure has yet been established</td></tr><tr><td>Wave</td><td>The exploratory stage in which multiple directions diverge and compete</td></tr><tr><td>En (Edge)</td><td>A state of tension in which opposing elements coexist without converging on either side. The place where they meet at the boundary, influence each other, and relationships emerge</td></tr><tr><td>Uzu (Vortex)</td><td>The stage in which a new coherence (order) arises spontaneously from within the tension</td></tr><tr><td>Taba (Bundle)</td><td>The stage in which the form is fixed and stabilizes as a reusable structure</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Overview of Structural Correspondences</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-02-theories-map-svg.svg" alt="Domain — Theory x 5-Stage Correspondence Matrix"></p>
+<table class="animate-in delay-4"><tr><th>Conditional correspondence</th><th>Conceptually connects, but difficulties in hypothesis verification and risk of tautology remain</th></tr><tr><td>1</td><td>Dissipative structures</td><td>Prigogine</td><td>Ba→Wave→En→Uzu→Taba</td><td>Strong correspondence</td></tr><tr><td>2</td><td>Self-organized criticality (SOC)</td><td>Bak, Tang & Wiesenfeld</td><td>Ba→Wave→En→Uzu→Taba (cyclic)</td><td>Strong correspondence</td></tr><tr><td>3</td><td>Reflexively autocatalytic and food-generated sets (RAF)</td><td>Kauffman / Hordijk & Steel</td><td>En→Uzu particularly strong</td><td>Strong correspondence</td></tr><tr><td>4</td><td>Synergetics</td><td>Haken</td><td>Wave→En→Uzu particularly strong</td><td>Strong correspondence</td></tr><tr><td>5</td><td>Critical phenomena and universality</td><td>Wilson</td><td>En and Taba particularly strong</td><td>Strong correspondence</td></tr><tr><td>6</td><td>Percolation</td><td>Broadbent & Hammersley</td><td>Ba→Wave→En→Uzu</td><td>Strong correspondence</td></tr><tr><td>7</td><td>Autopoiesis</td><td>Maturana & Varela</td><td>En⇔Uzu cycle</td><td>Strong correspondence</td></tr><tr><td>8</td><td>Reaction-diffusion (Turing mechanism)</td><td>Turing</td><td>Ba→Wave→Uzu→Taba</td><td>Strong correspondence</td></tr><tr><td>9</td><td>Edge of chaos</td><td>Langton / Kauffman</td><td>Specialized in En</td><td>Conditional correspondence</td></tr><tr><td>10</td><td>Network science</td><td>Watts-Strogatz / Barabasi-Albert</td><td>Structural theory of En</td><td>Strong correspondence</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 1: Dissipative Structures and Order from Fluctuation (Prigogine)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Prigogine's theory of dissipative structures describes the process by which open systems, under the influx of energy and matter, transition to a new steady-state structure through amplification of fluctuations. The research that became the subject of the 1977 Nobel Prize in Chemistry provided a physicochemical formulation of the counter-intuitive phenomenon of "order from chaos."</li>
+<li class="animate-in delay-4">The Benard convection cell is a representative example that visually demonstrates this process. A layer of liquid uniformly heated from below remains uniformly at rest while the temperature gradient is small. But when the temperature gradient exceeds a critical value, the liquid spontaneously forms a hexagonal convection pattern. A qualitative transition occurs from a uniform state to a state with structure.</li>
+<li class="animate-in delay-5"><strong>As a matter of fact</strong>: In open systems far from equilibrium, a transition to a new steady-state structure (dissipative structure) occurs through amplification of fluctuations and bifurcation. Bifurcation points occur when a control parameter (temperature gradient, etc.) exceeds a critical value, and the post-bifurcation path is selected through symmetry breaking (Prigogine 1977).</li>
+<li class="animate-in delay-5"><strong>As an interpretation of structure</strong>: Here we focus on the sequence in which fluctuations are amplified from a homogeneous state near equilibrium, and a new structure arises after passing through a bifurcation point. The level of similarity is process. In particular, the structural feature is read that the bifurcation point functions as a threshold structure that "occurs only in the nonlinear domain and in which path selection takes place."</li>
+<li class="animate-in delay-5"><strong>As an interpretive reading</strong>: A homogeneous Ba near equilibrium → amplification of fluctuations (Wave) → the moment of symmetry breaking at the bifurcation point (En) → a pattern spontaneously arising as a dissipative structure (Uzu) → the structure is maintained under flux (Taba). The intensity with which the bifurcation point corresponds to En is high — as a qualitative transition point occurring only in the nonlinear domain, it is structurally isomorphic with the 5-stage model's "state of tension in which opposing elements coexist without converging on either side."</li>
+<li class="animate-in delay-5">However, Taba in dissipative structures has its own distinctive property. If the influx of energy stops, the structure disappears. The maintenance conditions differ from the "repetition and stabilization" implied by Taba in the 5 stages, which suggests that "there are different types of Taba as well." Also, dissipative structures have been confirmed in chemical and biological systems, but direct application to social systems requires verification of whether thermodynamic strict conditions are guaranteed.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 2: Self-Organized Criticality (SOC) and Scale-Invariant Avalanches (Bak)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Self-organized criticality (SOC) is a theory in which systems spontaneously approach a critical state under slow external driving, and avalanche events of various scales occur. The sandpile model proposed by Bak, Tang & Wiesenfeld in 1987 is its prototype. When grains of sand are dropped one by one, the sandpile spontaneously reaches a critical state, and avalanches of various sizes occur. The size distribution of avalanches follows a power law.</li>
+<li class="animate-in delay-4"><strong>As a matter of fact</strong>: Under slow external driving, systems self-organize to a critical state and events (avalanches) occur at various scales (Bak, Tang & Wiesenfeld 1987, 1988). However, detection of power-law distributions itself is statistically difficult and requires the combined use of likelihood-based comparison and goodness-of-fit tests (Clauset et al. 2009).</li>
+<li class="animate-in delay-5"><strong>As an interpretation of structure</strong>: Here we focus on the dynamics of the system spontaneously approaching criticality and the process in which groups of events arising from the critical state accumulate as a statistical structure. The level of similarity is structure. In particular, the structural feature is read that correspondence with all phases of the 5 stages is visible, and that the cycle from Taba back to Ba is built into the theory.</li>
+<li class="animate-in delay-5"><strong>As an interpretive reading</strong>: From the background near criticality (Ba), local threshold-crossing (Wave) occurs, propagates through local interactions (En), avalanche events arise as coherence (Uzu), and numerous events remain as a power-law statistical structure (Taba). What is decisive is that after the avalanche, the system is again subjected to slow driving toward the next criticality — a cycle that is naturally inherent. The theory itself describes the cyclic nature of Taba → Ba in the 5 stages.</li>
+<li class="animate-in delay-5">Taba in SOC is qualitatively different from the maintained-structure type of dissipative structures. A power law is "the statistical footprint of numerous generation events" — even if individual events disappear, the statistical structure remains. This can be called a statistical-structure type of Taba. However, facile claims of power-law distributions risk falling into "can explain anything = explains nothing," and strict statistical testing procedures are indispensable.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Key Entry 3: Critical Phenomena and Universality (Wilson)</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Critical phenomena are the rigorous physical theory of phase transitions. With Wilson's renormalization group theory (1971, Nobel Prize in Physics 1982), the behavior of systems at critical points came to be described in a unified manner.</li>
+<li class="animate-in delay-4">Singular phenomena occur at critical points. Correlations between the constituent elements of a system reach infinitely far, and the system as a whole becomes scale-invariant. Imagine the moment water reaches its boiling point, or the moment a ferromagnet passes through its Curie temperature. At that single point, microscopic fluctuations determine macroscopic behavior.</li>
+<li class="animate-in delay-5"><strong>As a matter of fact</strong>: At the critical point, the correlation length diverges and the whole system becomes scale-invariant. Systems that share the same critical exponents exist across different substances (water and ferromagnets, etc.). This is universality. The renormalization group is a mathematical method for tracing the behavior of systems under scale transformation, and the flow to a fixed point characterizes critical phenomena (Wilson 1971, 1983).</li>
+<li class="animate-in delay-5"><strong>As an interpretation of structure</strong>: Here we focus on two structural features. First, that the critical point functions as "the threshold where all scales couple." Second, that universality classes function as "common structures beyond microscopic details." The level of similarity is structure, reading both the mathematically formulated threshold structure and the common pattern beyond details.</li>
+<li class="animate-in delay-5"><strong>As an interpretive reading</strong>: A steady state staying in one phase (Ba) → fluctuations growing near criticality (Wave) → the critical point, the "threshold" where all scales couple (En) → the new phase being established (Uzu) → the structure beyond microscopic details remaining as a universality class (Taba). The critical point is the most rigorous physical description of En. There, all elements of the system are connected, the outcome is undetermined, and passing through directly gives birth to a new phase.</li>
+<li class="animate-in delay-5">The concept of universality is suggestive for the survey as a whole. The question "why do different systems show the same behavior" is structurally congruent with the fundamental question of the survey "why does the same 5-stage structure appear in different academic domains." However, this analogy itself is at the hypothesis stage, and whether the concept of universality in physics can be directly applied to creative processes remains unresolved.</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Cross-Cutting Patterns</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-03-cross-patterns-svg.svg" alt="Domain — Cross-Cutting Patterns Diagram"></p>
+<ul>
+<li class="animate-in delay-4">The following patterns were repeatedly confirmed across the 10 theories of complexity science</li>
+<li class="animate-in delay-5">All 10 theories have some aspect of the "threshold" as their central theme</li>
+<li class="animate-in delay-5">Particularly strong correspondence is confirmed in 4 theories (autocatalytic sets, critical phenomena, percolation, autopoiesis), and complexity science can be said to be the domain in which En of the 5-stage model is most thickly illuminated</li>
+<li class="animate-in delay-5">Across the 10 theories, it is confirmed that En is realized in at least 5 different forms</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Unresolved Questions</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Whether the 3 types of Taba (maintained-structure type, statistical-structure type, topological type) should be reflected in the definition of Taba in the 5-stage model. The current definition encompasses all of these, but explicitly distinguishing them may improve precision.</li>
+<li class="animate-in delay-4">Whether the "universality classes of creation" suggested by the universality of critical phenomena can become a verifiable hypothesis. While it is attractive as a physical explanation for why the same 5-stage pattern appears across different scales and domains, it remains at the hypothesis stage.</li>
+<li class="animate-in delay-5">There is a gap between the conceptual insight and mathematical formulation of autopoiesis. The finding of "self-production of boundaries" is structurally important, but in terms of formal verifiability it does not match other theories.</li>
+<li class="animate-in delay-5">The edge of chaos is the most directly connected conceptually to "remaining at the threshold" in the 5-stage model, but the operational definition of the hypothesis itself has not been established, and the risk of tautology that "the interesting thing about interesting places is that they are interesting" has been pointed out (Mitchell et al. 1993).</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Conclusion</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">This survey examined the structural similarity of 10 theories in complexity science to the 5-stage model</li>
+<li class="animate-in delay-4">The most established finding is that complexity science is "the study of En"</li>
+<li class="animate-in delay-5">As compelling findings: that En has at least 5 realization types, that Taba has at least 3 types, and that multiple different mechanism descriptions exist for the En→Uzu transition</li>
+<li class="animate-in delay-5">Remaining at the hypothesis stage are the question of whether the universality concept from critical phenomena can explain structural similarities across 30 domains, and whether the operational definition of the edge of chaos will be established</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">Complexity Science - Structural Correspondence with the 5-Stage Model</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>
