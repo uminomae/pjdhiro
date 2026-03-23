@@ -1,0 +1,536 @@
+<svg viewBox="0 0 1200 900" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="40" fill="white" font-size="28" font-weight="bold" text-anchor="middle">30領域 x 5段階 対応強度ヒートマップ</text>
+
+  <!-- Column Headers -->
+  <g text-anchor="middle" font-size="14" font-weight="bold">
+    <text x="480" y="80" fill="#8B8682">場</text>
+    <text x="560" y="80" fill="#5B8DB8">波</text>
+    <text x="640" y="80" fill="#D4A857">縁</text>
+    <text x="720" y="80" fill="#C45B4D">渦</text>
+    <text x="800" y="80" fill="#5B8B6A">束</text>
+  </g>
+
+  <!-- Data and Grid Generation -->
+  <!-- Define data -->
+  <g>
+    <!-- Stage Colors -->
+    <!-- 場 (Ba): #8B8682 -->
+    <!-- 波 (Nami): #5B8DB8 -->
+    <!-- 縁 (En): #D4A857 -->
+    <!-- 渦 (Uzu): #C45B4D -->
+    <!-- 束 (Taba): #5B8B6A -->
+    <defs>
+      <g id="stageColors">
+        <rect id="colorBa" fill="#8B8682" />
+        <rect id="colorNami" fill="#5B8DB8" />
+        <rect id="colorEn" fill="#D4A857" />
+        <rect id="colorUzu" fill="#C45B4D" />
+        <rect id="colorTaba" fill="#5B8B6A" />
+      </g>
+    </defs>
+
+    <!-- Data Processing (conceptual, actual data embedded below) -->
+    <!--
+    const domainsData = [
+        { id: "D01", name: "数学", strengths: [6, 3, 9, 5, 7] },
+        // ...
+    ];
+    const stageColorsArray = ["#8B8682", "#5B8DB8", "#D4A857", "#C45B4D", "#5B8B6A"];
+    const colXPositions = [445, 525, 605, 685, 765]; // X for rects
+    const cellWidth = 70;
+    const cellHeight = 20;
+    const rowHeight = 24;
+    const gridStartY = 100;
+
+    function getOpacity(strength) {
+        if (strength === 0) return 0.05;
+        if (strength >= 1 && strength <= 2) return 0.15;
+        if (strength >= 3 && strength <= 4) return 0.30;
+        if (strength >= 5 && strength <= 6) return 0.50;
+        if (strength >= 7 && strength <= 8) return 0.70;
+        if (strength >= 9 && strength <= 10) return 0.90;
+        return 0;
+    }
+    -->
+
+    <!-- Row 1 (D01) -->
+    <text x="30" y="113" fill="#cccccc" font-size="11">D01</text>
+    <text x="70" y="113" fill="white" font-size="11">数学</text>
+    <rect x="445" y="100" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="113" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="100" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="113" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="100" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="113" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="685" y="100" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="113" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="100" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="113" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="105" width="120" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 2 (D02) -->
+    <text x="30" y="137" fill="#cccccc" font-size="11">D02</text>
+    <text x="70" y="137" fill="white" font-size="11">物理学</text>
+    <rect x="445" y="124" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="137" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="525" y="124" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="137" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="124" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="137" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="124" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.70" />
+    <text x="720" y="137" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="765" y="124" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="137" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="129" width="124" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 3 (D03) -->
+    <text x="30" y="161" fill="#cccccc" font-size="11">D03</text>
+    <text x="70" y="161" fill="white" font-size="11">化学</text>
+    <rect x="445" y="148" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="161" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="148" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="161" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="148" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="161" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="148" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="161" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="148" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="161" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="153" width="120" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 4 (D04) -->
+    <text x="30" y="185" fill="#cccccc" font-size="11">D04</text>
+    <text x="70" y="185" fill="white" font-size="11">進化生物学</text>
+    <rect x="445" y="172" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="185" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="525" y="172" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="185" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="605" y="172" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="185" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="172" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="185" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="172" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.90" />
+    <text x="800" y="185" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="870" y="177" width="140" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 5 (D05) -->
+    <text x="30" y="209" fill="#cccccc" font-size="11">D05</text>
+    <text x="70" y="209" fill="white" font-size="11">地球科学</text>
+    <rect x="445" y="196" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="209" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="525" y="196" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="209" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="196" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="209" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="196" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.70" />
+    <text x="720" y="209" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="765" y="196" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="209" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="201" width="124" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 6 (D06) -->
+    <text x="30" y="233" fill="#cccccc" font-size="11">D06</text>
+    <text x="70" y="233" fill="white" font-size="11">天文学</text>
+    <rect x="445" y="220" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="233" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="525" y="220" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="233" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="220" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.50" />
+    <text x="640" y="233" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="685" y="220" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="233" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="220" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="233" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="225" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 7 (D07) -->
+    <text x="30" y="257" fill="#cccccc" font-size="11">D07</text>
+    <text x="70" y="257" fill="white" font-size="11">情報科学</text>
+    <rect x="445" y="244" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="257" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="244" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="257" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="244" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="257" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="244" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.30" />
+    <text x="720" y="257" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="765" y="244" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="257" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="249" width="92" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 8 (D08) -->
+    <text x="30" y="281" fill="#cccccc" font-size="11">D08</text>
+    <text x="70" y="281" fill="white" font-size="11">工学</text>
+    <rect x="445" y="268" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="281" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="268" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="281" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="268" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="281" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="268" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="281" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="268" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="281" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="870" y="273" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 9 (D09) -->
+    <text x="30" y="305" fill="#cccccc" font-size="11">D09</text>
+    <text x="70" y="305" fill="white" font-size="11">生命科学</text>
+    <rect x="445" y="292" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="305" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="525" y="292" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="305" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="292" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="305" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="685" y="292" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="305" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="292" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="305" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="870" y="297" width="140" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 10 (D10) -->
+    <text x="30" y="329" fill="#cccccc" font-size="11">D10</text>
+    <text x="70" y="329" fill="white" font-size="11">環境科学</text>
+    <rect x="445" y="316" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="329" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="316" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="329" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="316" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="329" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="316" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="329" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="316" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="329" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="321" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 11 (D11) -->
+    <text x="30" y="353" fill="#cccccc" font-size="11">D11</text>
+    <text x="70" y="353" fill="white" font-size="11">医学</text>
+    <rect x="445" y="340" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="353" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="340" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="353" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="340" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="353" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="340" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="353" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="340" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="353" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="345" width="96" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 12 (D12) -->
+    <text x="30" y="377" fill="#cccccc" font-size="11">D12</text>
+    <text x="70" y="377" fill="white" font-size="11">農学</text>
+    <rect x="445" y="364" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="377" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="364" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="377" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="364" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="377" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="364" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="377" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="364" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="377" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="870" y="369" width="96" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 13 (D13) -->
+    <text x="30" y="401" fill="#cccccc" font-size="11">D13</text>
+    <text x="70" y="401" fill="white" font-size="11">哲学</text>
+    <rect x="445" y="388" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="401" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="525" y="388" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="401" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="388" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="401" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="685" y="388" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.30" />
+    <text x="720" y="401" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="765" y="388" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="401" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="393" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 14 (D14) -->
+    <text x="30" y="425" fill="#cccccc" font-size="11">D14</text>
+    <text x="70" y="425" fill="white" font-size="11">心理学</text>
+    <rect x="445" y="412" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="425" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="412" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="425" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="412" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="425" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="412" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="425" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="412" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="425" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="417" width="104" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 15 (D15) -->
+    <text x="30" y="449" fill="#cccccc" font-size="11">D15</text>
+    <text x="70" y="449" fill="white" font-size="11">美学</text>
+    <rect x="445" y="436" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="449" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="436" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="449" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="436" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="449" fill="white" font-size="10" text-anchor="middle">10</text>
+    <rect x="685" y="436" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="449" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="436" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="449" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="441" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 16 (D16) -->
+    <text x="30" y="473" fill="#cccccc" font-size="11">D16</text>
+    <text x="70" y="473" fill="white" font-size="11">歴史学</text>
+    <rect x="445" y="460" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="473" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="460" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="473" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="460" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="473" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="460" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="473" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="460" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="473" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="465" width="96" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 17 (D17) -->
+    <text x="30" y="497" fill="#cccccc" font-size="11">D17</text>
+    <text x="70" y="497" fill="white" font-size="11">社会学</text>
+    <rect x="445" y="484" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="497" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="484" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="497" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="484" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="497" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="484" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.30" />
+    <text x="720" y="497" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="765" y="484" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="497" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="489" width="96" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 18 (D18) -->
+    <text x="30" y="521" fill="#cccccc" font-size="11">D18</text>
+    <text x="70" y="521" fill="white" font-size="11">政治学</text>
+    <rect x="445" y="508" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="521" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="508" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="521" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="508" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="521" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="508" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="521" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="508" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="521" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="870" y="513" width="92" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 19 (D19) -->
+    <text x="30" y="545" fill="#cccccc" font-size="11">D19</text>
+    <text x="70" y="545" fill="white" font-size="11">文芸学</text>
+    <rect x="445" y="532" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.30" />
+    <text x="480" y="545" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="525" y="532" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="545" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="532" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="545" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="532" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="545" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="532" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="545" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="537" width="88" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 20 (D20) -->
+    <text x="30" y="569" fill="#cccccc" font-size="11">D20</text>
+    <text x="70" y="569" fill="white" font-size="11">言語学</text>
+    <rect x="445" y="556" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="569" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="556" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="569" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="556" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="569" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="556" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.30" />
+    <text x="720" y="569" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="765" y="556" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="569" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="561" width="88" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 21 (D21) -->
+    <text x="30" y="593" fill="#cccccc" font-size="11">D21</text>
+    <text x="70" y="593" fill="white" font-size="11">経済学</text>
+    <rect x="445" y="580" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="593" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="580" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="593" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="580" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="593" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="580" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="593" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="580" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="593" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="585" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 22 (D22) -->
+    <text x="30" y="617" fill="#cccccc" font-size="11">D22</text>
+    <text x="70" y="617" fill="white" font-size="11">法学</text>
+    <rect x="445" y="604" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.30" />
+    <text x="480" y="617" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="525" y="604" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="617" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="604" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="617" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="604" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.30" />
+    <text x="720" y="617" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="765" y="604" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="617" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="870" y="609" width="88" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 23 (D23) -->
+    <text x="30" y="641" fill="#cccccc" font-size="11">D23</text>
+    <text x="70" y="641" fill="white" font-size="11">発達心理</text>
+    <rect x="445" y="628" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="641" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="628" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="641" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="628" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="641" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="628" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="641" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="628" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="641" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="633" width="104" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 24 (D24) -->
+    <text x="30" y="665" fill="#cccccc" font-size="11">D24</text>
+    <text x="70" y="665" fill="white" font-size="11">宗教学</text>
+    <rect x="445" y="652" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="665" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="525" y="652" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="665" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="652" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="665" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="685" y="652" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="665" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="652" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="665" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="657" width="104" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 25 (D25) -->
+    <text x="30" y="689" fill="#cccccc" font-size="11">D25</text>
+    <text x="70" y="689" fill="white" font-size="11">人類学</text>
+    <rect x="445" y="676" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="689" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="676" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="689" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="676" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="689" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="685" y="676" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="689" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="676" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="689" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="681" width="108" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 26 (D26) -->
+    <text x="30" y="713" fill="#cccccc" font-size="11">D26</text>
+    <text x="70" y="713" fill="white" font-size="11">教育学</text>
+    <rect x="445" y="700" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="713" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="700" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="713" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="700" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="713" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="685" y="700" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.30" />
+    <text x="720" y="713" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="765" y="700" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="713" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="705" width="92" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 27 (D27) -->
+    <text x="30" y="737" fill="#cccccc" font-size="11">D27</text>
+    <text x="70" y="737" fill="white" font-size="11">建築</text>
+    <rect x="445" y="724" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="737" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="724" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="737" fill="white" font-size="10" text-anchor="middle">3</text>
+    <rect x="605" y="724" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="737" fill="white" font-size="10" text-anchor="middle">9</text>
+    <rect x="685" y="724" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="737" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="724" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="737" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="729" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 28 (D28) -->
+    <text x="30" y="761" fill="#cccccc" font-size="11">D28</text>
+    <text x="70" y="761" fill="white" font-size="11">舞台芸術</text>
+    <rect x="445" y="748" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="761" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="525" y="748" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="761" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="748" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="640" y="761" fill="white" font-size="10" text-anchor="middle">10</text>
+    <rect x="685" y="748" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="761" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="748" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.50" />
+    <text x="800" y="761" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="870" y="753" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 29 (D29) -->
+    <text x="30" y="785" fill="#cccccc" font-size="11">D29</text>
+    <text x="70" y="785" fill="white" font-size="11">複雑系</text>
+    <rect x="445" y="772" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.70" />
+    <text x="480" y="785" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="525" y="772" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.50" />
+    <text x="560" y="785" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="605" y="772" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="785" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="772" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="785" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="765" y="772" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="785" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="870" y="777" width="128" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+
+    <!-- Row 30 (D30) -->
+    <text x="30" y="809" fill="#cccccc" font-size="11">D30</text>
+    <text x="70" y="809" fill="white" font-size="11">伝統知</text>
+    <rect x="445" y="796" width="70" height="20" rx="3" fill="#8B8682" fill-opacity="0.50" />
+    <text x="480" y="809" fill="white" font-size="10" text-anchor="middle">6</text>
+    <rect x="525" y="796" width="70" height="20" rx="3" fill="#5B8DB8" fill-opacity="0.30" />
+    <text x="560" y="809" fill="white" font-size="10" text-anchor="middle">4</text>
+    <rect x="605" y="796" width="70" height="20" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <text x="640" y="809" fill="white" font-size="10" text-anchor="middle">8</text>
+    <rect x="685" y="796" width="70" height="20" rx="3" fill="#C45B4D" fill-opacity="0.50" />
+    <text x="720" y="809" fill="white" font-size="10" text-anchor="middle">5</text>
+    <rect x="765" y="796" width="70" height="20" rx="3" fill="#5B8B6A" fill-opacity="0.70" />
+    <text x="800" y="809" fill="white" font-size="10" text-anchor="middle">7</text>
+    <rect x="870" y="801" width="100" height="14" rx="3" fill="#D4A857" fill-opacity="0.5" />
+  </g>
+
+  <!-- Bottom Totals Row -->
+  <g>
+    <text x="70" y="843" fill="white" font-size="14" font-weight="bold">主題化</text>
+    <rect x="445" y="830" width="70" height="20" rx="3" fill="#3a3a4e" />
+    <text x="480" y="843" fill="white" font-size="14" font-weight="bold" text-anchor="middle">15</text>
+    <rect x="525" y="830" width="70" height="20" rx="3" fill="#3a3a4e" />
+    <text x="560" y="843" fill="white" font-size="14" font-weight="bold" text-anchor="middle">9</text>
+    <rect x="605" y="830" width="70" height="20" rx="3" fill="#3a3a4e" />
+    <text x="640" y="843" fill="white" font-size="14" font-weight="bold" text-anchor="middle">28</text>
+    <rect x="685" y="830" width="70" height="20" rx="3" fill="#3a3a4e" />
+    <text x="720" y="843" fill="white" font-size="14" font-weight="bold" text-anchor="middle">11</text>
+    <rect x="765" y="830" width="70" height="20" rx="3" fill="#3a3a4e" />
+    <text x="800" y="843" fill="white" font-size="14" font-weight="bold" text-anchor="middle">22</text>
+  </g>
+
+  <!-- Color Legend -->
+  <g>
+    <text x="950" y="870" fill="white" font-size="10" text-anchor="start">弱 (0)</text>
+    <rect x="980" y="860" width="20" height="14" rx="3" fill="#D4A857" fill-opacity="0.15" />
+    <rect x="1005" y="860" width="20" height="14" rx="3" fill="#D4A857" fill-opacity="0.30" />
+    <rect x="1030" y="860" width="20" height="14" rx="3" fill="#D4A857" fill-opacity="0.50" />
+    <rect x="1055" y="860" width="20" height="14" rx="3" fill="#D4A857" fill-opacity="0.70" />
+    <rect x="1080" y="860" width="20" height="14" rx="3" fill="#D4A857" fill-opacity="0.90" />
+    <text x="1130" y="870" fill="white" font-size="10" text-anchor="start">強 (10)</text>
+  </g>
+
+</svg>

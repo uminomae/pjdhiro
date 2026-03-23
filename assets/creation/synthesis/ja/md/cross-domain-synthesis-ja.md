@@ -10,6 +10,8 @@ source: "evidence/investigation/phase8/"
 
 # 30領域横断分析 — 構造類似探索の統合的知見
 
+![30領域 x 5段階 対応強度ヒートマップ](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-01-distribution-svg.svg)
+
 ## §1 本レポートの位置づけ
 
 本レポートは、数学から伝統知まで30の学術領域を横断して実施した構造類似探索（Phase 1-8）の統合的知見をまとめたものである。各領域の個別調査（ドメインレポート）と、Phase 8 で抽出した5つの横断的テーマを統合し、5段階モデル（場→波→縁→渦→束）がどのような構造的特徴を領域横断的に示すかを記述する。
@@ -112,6 +114,8 @@ source: "evidence/investigation/phase8/"
 **統合的知見**: 「破壊的渦」（D05 地球科学）や「渦に到達しない経路」（D01 数学）の存在は、5段階モデルが**秩序生成の記述枠組みであり、あらゆる変化の記述を射程に含むわけではない**ことを示す。この射程の限定は弱点ではなく、記述の誠実さとして積極的に位置づけられる。
 
 ---
+
+![5テーマ構造関連図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-02-themes-network-svg.svg)
 
 ## §4 テーマ間の構造的関連
 
