@@ -1,0 +1,126 @@
+```xml
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for linear gradients for tension zones -->
+  <defs>
+    <!-- Gradient for Divergence 1: 量的閾値 vs 質的閾値 -->
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a90e2" />
+      <stop offset="100%" stop-color="#e24a4a" />
+    </linearGradient>
+    <!-- Gradient for Divergence 2: 単一閾値 vs 複数/帯域閾値 -->
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#50e3c2" />
+      <stop offset="100%" stop-color="#b34ae2" />
+    </linearGradient>
+    <!-- Gradient for Divergence 3: 創造的渦 vs 破壊的渦 -->
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A857" />
+      <stop offset="100%" stop-color="#5B8DB8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="white">
+    閾値構造 - 未解決の緊張構造
+  </text>
+
+  <!-- Divergence 1: 量的閾値 vs 質的閾値 -->
+  <!-- Group translated to center the band vertically at y=220 -->
+  <g transform="translate(0, 220)">
+    <!-- Pole A Label -->
+    <text x="150" y="0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">
+      量的閾値
+    </text>
+    <!-- Pole B Label -->
+    <text x="1050" y="0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">
+      質的閾値
+    </text>
+
+    <!-- Tension Zone Background (using gradient) -->
+    <rect x="300" y="-75" width="600" height="150" fill="url(#gradient1)" opacity="0.7"/>
+
+    <!-- Dashed Midline -->
+    <line x1="600" y1="-75" x2="600" y2="75" stroke="white" stroke-width="2" stroke-dasharray="5 5" />
+
+    <!-- Domain Circles for Divergence 1 -->
+    <!-- D02 (Pole A) -->
+    <circle cx="450" cy="0" r="30" fill="#4a90e2" />
+    <text x="450" y="5" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D02</text>
+
+    <!-- D24 (Pole B) -->
+    <circle cx="750" cy="-30" r="30" fill="#e24a4a" />
+    <text x="750" y="-25" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D24</text>
+
+    <!-- D14 (Pole B) -->
+    <circle cx="750" cy="30" r="30" fill="#e24a4a" />
+    <text x="750" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D14</text>
+  </g>
+
+  <!-- Divergence 2: 単一閾値 vs 複数/帯域閾値 -->
+  <!-- Group translated to center the band vertically at y=420 -->
+  <g transform="translate(0, 420)">
+    <!-- Pole A Label -->
+    <text x="150" y="0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">
+      単一閾値
+    </text>
+    <!-- Pole B Label -->
+    <text x="1050" y="0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">
+      複数/帯域閾値
+    </text>
+
+    <!-- Tension Zone Background (using gradient) -->
+    <rect x="300" y="-75" width="600" height="150" fill="url(#gradient2)" opacity="0.7"/>
+
+    <!-- Dashed Midline -->
+    <line x1="600" y1="-75" x2="600" y2="75" stroke="white" stroke-width="2" stroke-dasharray="5 5" />
+
+    <!-- Domain Circles for Divergence 2 -->
+    <!-- D02 (Pole A) -->
+    <circle cx="450" cy="0" r="30" fill="#50e3c2" />
+    <text x="450" y="5" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D02</text>
+
+    <!-- D29 (Pole B) -->
+    <circle cx="750" cy="-30" r="30" fill="#b34ae2" />
+    <text x="750" y="-25" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D29</text>
+
+    <!-- D25 (Pole B) -->
+    <circle cx="750" cy="30" r="30" fill="#b34ae2" />
+    <text x="750" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D25</text>
+  </g>
+
+  <!-- Divergence 3: 創造的渦 vs 破壊的渦 -->
+  <!-- Group translated to center the band vertically at y=620 -->
+  <g transform="translate(0, 620)">
+    <!-- Pole A Label -->
+    <text x="150" y="0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">
+      創造的渦
+    </text>
+    <!-- Pole B Label -->
+    <text x="1050" y="0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">
+      破壊的渦
+    </text>
+
+    <!-- Tension Zone Background (using gradient) -->
+    <rect x="300" y="-75" width="600" height="150" fill="url(#gradient3)" opacity="0.7"/>
+
+    <!-- Dashed Midline -->
+    <line x1="600" y1="-75" x2="600" y2="75" stroke="white" stroke-width="2" stroke-dasharray="5 5" />
+
+    <!-- Domain Circles for Divergence 3 -->
+    <!-- D02 (Pole A) -->
+    <circle cx="450" cy="0" r="30" fill="#D4A857" />
+    <text x="450" y="5" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D02</text>
+
+    <!-- D05 (Pole B) -->
+    <circle cx="750" cy="-30" r="30" fill="#5B8DB8" />
+    <text x="750" y="-25" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D05</text>
+
+    <!-- D21 (Pole B) -->
+    <circle cx="750" cy="30" r="30" fill="#5B8DB8" />
+    <text x="750" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white">D21</text>
+  </g>
+</svg>
+```
