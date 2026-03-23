@@ -87,6 +87,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D12-03-cross-patterns-svg.svg)
+
+
 - Three patterns that repeatedly appear across agriculture and ecology are reported here
 - **First, three types of En are present within the domain**
 - **Second, a contrast between "designed En" and "discovered En" emerges**

@@ -82,6 +82,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-03-cross-patterns-svg.svg)
+
+
 - The most striking pattern across pharmacy is the "spectrum of En"
 - Second, "institutionalization of relationships" permeates the entire domain
 - Third, the Taba-to-Ba cycle appears explicitly at multiple timescales

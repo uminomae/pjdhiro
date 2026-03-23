@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Sociology: Weak Ties Generate Structure — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into the following question, using major theories in sociology.
 
 > Do the theories of this academic domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -53,6 +56,9 @@ The model is not restricted to a single scale, whether individual, organization,
 If these definitions already feel uncomfortable, that discomfort is itself an important point for the investigation. Readers may continue while retaining it.
 
 ## 4. Results: Overall Picture
+
+![Sociology: Weak Ties Generate Structure — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-02-theories-map-svg.svg)
+
 
 Of the eleven candidate theories, ten showed structural correspondence with the five-stage model. One was judged only conditionally, because the possibility of correspondence exists but the theory remains too abstract for concrete case-based confirmation.
 
@@ -115,6 +121,9 @@ In terms of the five-stage model, an unstructured population of organizations co
 This theory also has a distinctive implication: institutional isomorphism describes movement from diversity toward homogeneity, which can look like the reverse of the usual creative path from undifferentiated condition toward articulated structure. It therefore clarifies one mechanism by which Bundle constrains diversity.
 
 ## 6. Cross-Domain Patterns
+
+![Sociology: Weak Ties Generate Structure — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D18-03-cross-patterns-svg.svg)
+
 
 ### Diversity of Edge Implementations
 

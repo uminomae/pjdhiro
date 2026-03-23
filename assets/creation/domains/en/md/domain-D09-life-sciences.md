@@ -4,6 +4,9 @@
 
 ## 1. Purpose of the Investigation in This Domain
 
+![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into whether structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, can be found in the life sciences, including biochemistry, metabolism, cell biology, developmental biology, and immunology.
 
 Where neuroscience (D08) treats the brain as information processing, the life sciences considered here deal with life as energy, metabolism, and material process. Retaining a question requires energy. Learning changes the brain's physical structure. Cells digest parts of themselves and reuse them. This document is an investigation report. It does not use findings from the life sciences to justify the theory.
@@ -31,6 +34,9 @@ This section explains the five-stage model used as the reference for the investi
 If these definitions already produce discomfort, that is itself an important point for the investigation. One meaningful option is to continue reading while holding onto that discomfort. Another is to stop here. Both are legitimate choices.
 
 ## 4. Results of the Investigation
+
+![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-02-theories-map-svg.svg)
+
 
 ### Overall Picture
 
@@ -97,6 +103,9 @@ Maintenance of long-term potentiation, microglial phagocytosis as a destructive 
 Long-term memory, myelin structure, offspring, reuse of degradation products, spatial pattern, and immune memory all correspond to Bundle. In the life sciences, Bundle is materially recorded and often circulates into the next Field.
 
 ## 6. Insights from This Domain
+
+![Life Sciences: Creation Supported by Metabolism, Structure Recorded by the Body — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-03-cross-patterns-svg.svg)
+
 
 ### Creation Has a Cost
 

@@ -4,6 +4,9 @@
 
 ## 1. Purpose of the Investigation in This Domain
 
+![Earth Science: 4.6 Billion Years of Creation Without Consciousness — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into whether structural correspondence with the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, can be found in earth science.
 
 Earth science describes processes in which order is generated without the intervention of a conscious subject, across scales ranging from planetary history over billions of years to weather and climate over years. Plates, atmospheres, and magma do not decide to create. The question of this investigation is whether the same structure nevertheless appears repeatedly. This document is an investigation report. It does not use the authority of earth science to justify any theory.
@@ -31,6 +34,9 @@ This section explains the five-stage model used as the reference for the investi
 If these definitions already produce discomfort, that is itself important for the investigation. One meaningful option is to continue reading while holding onto that discomfort. Another is to stop here. Both are legitimate choices.
 
 ## 4. Results of the Investigation
+
+![Earth Science: 4.6 Billion Years of Creation Without Consciousness — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-02-theories-map-svg.svg)
+
 
 ### Overall Picture
 
@@ -109,6 +115,9 @@ Bundle in earth science remains literally as matter. It appears as the assembly 
 Sequence stratigraphy offers one of the most rigorous definitions of Bundle in the domain: genetically related strata bounded by unconformities. It is, in effect, the geological definition of a package of creation delimited by boundaries.
 
 ## 6. Insights from This Domain
+
+![Earth Science: 4.6 Billion Years of Creation Without Consciousness — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-03-cross-patterns-svg.svg)
+
 
 ### Five Stages Do Not Require Consciousness
 

@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Questions of the Investigation
 
+![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into whether theories in clinical medicine and immunology correspond structurally to the five-stage model of creation: Field (場), Wave (波), Edge (縁), Vortex (渦), and Bundle (束).
 
 The immune system is a system that "institutionally produces, selects, and remembers error." Molecular mechanisms such as V(D)J recombination and somatic hypermutation are mechanisms of "planned error production" that intentionally cut and rejoin DNA to generate diversity. Clinical medicine further encompasses a wide range of processes, including wound healing, fracture repair, cancer immunity, sepsis, autoimmunity, immunotherapy, and transplant tolerance, thereby providing a comprehensive view within a single domain of normal, pathological, and interventional variations of the five stages.
@@ -55,6 +58,9 @@ This section explains the five-stage model used as the reference framework in th
 If any of these definitions feels discordant, that is itself an important perspective for this investigation. It is meaningful either to continue reading while holding that sense of discordance or to step away from the report at this point.
 
 ## 4. Findings: Overall View
+
+![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-02-theories-map-svg.svg)
+
 
 Evaluation of the ten theories and clinical processes showed structural correspondence with the five-stage model in all ten cases. Eight displayed strong correspondence with Edge, which is the highest level observed across the investigation of thirty domains. The reason for this high rate of correspondence is that intercellular interactions in the immune system make the concrete reality of Edge comparatively easy to observe directly.
 
@@ -138,6 +144,9 @@ Autoimmune disease (Rosenblum et al., 2015) shows plasticity in the opposite dir
 Allergen immunotherapy, which rewrites Bundle; transplant tolerance induction, which accepts non-self and thus expands the boundary; and autoimmunity, which misrecognizes the self and thus contracts the boundary: what these three show is that the boundary between self and non-self is not fixed, but dynamically constituted and reconstituted according to conditions.
 
 ## 6. Cross-Cutting Patterns
+
+![Clinical Medicine and Immunology: The Wisdom of Life That Institutionalizes Error — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-03-cross-patterns-svg.svg)
+
 
 This section reports structural patterns that recurred across the domain of clinical medicine and immunology beyond any individual theory.
 

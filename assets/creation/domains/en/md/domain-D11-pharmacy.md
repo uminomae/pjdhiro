@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into the structural correspondence between the five-stage model of creation, Field -> Wave -> Edge -> Vortex -> Bundle, and major theories and practical systems in pharmacy.
 
 Pharmacy is a practical discipline that manages processes across multiple scales, from molecular interaction to public-health systems. Finding a new drug, designing it, ensuring quality, and delivering it to patients are all part of one continuous chain. The aim of this investigation is to examine how the structure of the five-stage model appears across that chain.
@@ -41,6 +44,9 @@ The five stages do not proceed only in a straight line. They circulate. The retu
 Readers may already feel some discomfort with these definitions. That discomfort is directly connected to the question being tested here, and it may be worth carrying it forward while reading.
 
 ## 4. Results: Overall Picture
+
+![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-02-theories-map-svg.svg)
+
 
 All ten candidates evaluated in the pharmacy domain showed some structural correspondence with the five-stage model. Six of them showed strong correspondence with Edge, meaning that all three Edge conditions, relational network, indeterminacy, and connection to Vortex, were strongly present. The remaining four showed partial correspondence. No candidate showed no correspondence at all.
 
@@ -110,6 +116,9 @@ The complexity of the relational network, the indeterminacy created by combinato
 **Structure-based drug design (SBDD)** determines the three-dimensional structure of a target protein and designs molecules that fit its binding site. The stereochemical complementarity between ligand and protein is one of the most precisely controlled examples of Edge at molecular scale.
 
 ## 6. Cross-Domain Patterns
+
+![Pharmacy: One Domain Contains the Full Spectrum of Edge, from Precision Design to Unintended Encounter — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-03-cross-patterns-svg.svg)
+
 
 ### The Edge Spectrum: A Gradient of Controllability
 

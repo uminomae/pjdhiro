@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![History — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question.
 
 > Do the theories of this academic domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -49,6 +52,9 @@ This model is not a one-way straight line. It includes circulation in which Bund
 If discomfort remains at this point, that is itself an important part of the investigation. Readers can continue while holding onto that discomfort.
 
 ## 4. Results: Overall Picture
+
+![History — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -154,6 +160,9 @@ A condition in which population remains below available resources corresponds to
 Turchin is the only entry in D16 that attempts mathematical modeling of historical patterns. It can be read as a quantitative reformulation of Ibn Khaldun's more qualitative theory, and elite overproduction provides a particularly concrete mechanism for Edge.
 
 ## 6. Cross-Domain Patterns
+
+![History — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-03-cross-patterns-svg.svg)
+
 
 First, Braudel, Toynbee, and path dependence all show that difference and conflict in this domain are not merely obstacles, but conditions under which new order can emerge. This means that the transition from Edge to Vortex can be observed in particularly rich form in historical theory.
 

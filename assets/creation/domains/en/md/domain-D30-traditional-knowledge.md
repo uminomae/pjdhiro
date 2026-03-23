@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Traditional Knowledge — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question:
 
 > Do the theories in this academic domain correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束))?
@@ -49,6 +52,9 @@ This model is not a one-way line; it includes circulation in which Bundle (束) 
 If a sense of incongruity remains at this point, that itself is an important perspective for the present investigation. Readers may continue while retaining that sense of incongruity.
 
 ## 4. Findings: Overall Picture
+
+![Traditional Knowledge — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -161,6 +167,9 @@ In this theory as well, correspondence with the five stages appears in the movem
 The significance of this theory lies in showing which moments of the five stages are described in greatest density through the vocabulary specific to the domain.
 
 ## 6. Cross-Cutting Patterns
+
+![Traditional Knowledge — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-03-cross-patterns-svg.svg)
+
 
 First, as shown by TEK: Traditional Ecological Knowledge, LPP: Legitimate Peripheral Participation, and Ichiza Konryu: co-creation of the gathering, this domain describes difference and conflict not merely as obstacles but as conditions under which a new order can arise. This means that, among the five stages, the transition from Edge (縁) to Vortex (渦) can be observed here with particular richness.
 

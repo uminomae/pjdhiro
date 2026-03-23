@@ -90,6 +90,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-03-cross-patterns-svg.svg)
+
+
 - The most striking pattern across philosophy is the philosophical diversity of "En"
 - **Transduction (Simondon)**: A chain of relationships in which local structuring propagates to adjacent regions. En as "dynamics."
 - **Problem formulation (Dewey)**: The operation of identifying relationships among elements of a felt difficulty. En as "problematization."

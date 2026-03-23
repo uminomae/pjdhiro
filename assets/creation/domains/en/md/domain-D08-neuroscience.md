@@ -4,6 +4,9 @@
 
 ## 1. Purpose of the Investigation
 
+![Neuroscience: The Predictive Brain and the Body That Feels Lack — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into whether neuroscience shows structural correspondence with the five-stage model of creation, Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束), and with four associated definitions concerning prediction error, subjective lack, the retention of unresolved discrepancy, and the construction of emotion.
 
 Neuroscience occupies a core position within the thirty domains investigated here. Every one of the associated definitions, from the stance of taking up prediction error as a question, to the subjective experience of discrepancy as lack, to the function of retaining discrepancy without reflexively processing it, to the way discrepancy is evaluated and constructed as emotion, finds a direct frame of reference in neuroscience. This document is an investigation report. It does not present neuroscientific facts as the "grounds" of the theory, but as corresponding structures.
@@ -31,6 +34,9 @@ The five-stage model referenced in this investigation is explained below. It is 
 If anything in these definitions feels uneasy, that itself is an important perspective for this investigation. Continuing to read while retaining that unease, or leaving the report at this point, are both meaningful choices.
 
 ## 4. Findings
+
+![Neuroscience: The Predictive Brain and the Body That Feels Lack — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-02-theories-map-svg.svg)
+
 
 ### Overall Picture
 
@@ -101,6 +107,9 @@ Reorganization of predictive models, self-reinforcing loops of plasticity, phase
 Updated predictive models, as the seed of the next Field, new synaptic connectivity patterns, as traces of memory, coordinated information patterns, formed emotional experience, and the establishment of a secure base all correspond to Bundle. In neuroscience, Bundle has a cyclical character, functioning as the Field of the next five-stage cycle.
 
 ## 6. Insights From This Domain
+
+![Neuroscience: The Predictive Brain and the Body That Feels Lack — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D08-03-cross-patterns-svg.svg)
+
 
 ### Creation Is Not the Privilege of Consciousness
 

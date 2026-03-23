@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-02-theories-map-svg.svg)
+
+
 | Confidence | Theory group | Positioning |
 |------------|-------------|-------------|
 | Near-established | Rites of passage (van Gennep), Social drama (Turner), Liminality and communitas (Turner), Purity and taboo (Douglas) | Direct structural correspondence of Wave→En→Uzu is confirmed at the level of primary sources |
@@ -78,6 +81,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-03-cross-patterns-svg.svg)
+
 
 - The pattern that recurs most overwhelmingly across anthropology is the sheer thickness of En
 - This multifaceted nature shows that En in the 5-stage model is not a simple concept

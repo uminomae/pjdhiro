@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-01-overview-svg.svg)
+
+
 - **調査対象**: 音楽学の主要理論 7件
 - **調査の問い**: 音楽学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 1件、部分的な対応 1件、条件付きの対応 2件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-02-theories-map-svg.svg)
+
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -78,6 +84,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-03-cross-patterns-svg.svg)
+
 
 - 音楽学を横断して、以下の構造的パターンが繰り返し現れます
 - **第一に、「期待→偏差→再評価」の再帰的構造です

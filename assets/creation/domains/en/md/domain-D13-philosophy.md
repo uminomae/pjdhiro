@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-01-overview-svg.svg)
+
+
 This report is written to answer a single question.
 
 > Do the theories of philosophy correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -49,6 +52,9 @@ This model is not a one-way linear sequence. It includes a cyclical structure in
 If these definitions already feel uncomfortable, that is itself important for the present investigation. Readers can continue while holding onto that discomfort, or pause here and examine it directly.
 
 ## 4. Results: Overall Picture
+
+![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-02-theories-map-svg.svg)
+
 
 ### The Eleven Theories Evaluated
 
@@ -140,6 +146,9 @@ His notion of acting intuition, seeing is making and making is seeing, also sugg
 Nishida provides a perspective that relativizes assumptions common to many of the Western theories treated in the report, especially subject-predicate logic and substance ontology.
 
 ## 6. Cross-Domain Patterns
+
+![Philosophy: An Investigation of Structural Similarity with the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-03-cross-patterns-svg.svg)
+
 
 When the findings of the eleven theories are viewed together, a number of recurrent structures become visible.
 

@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-01-overview-svg.svg)
+
+
 - **調査対象**: 地球科学の主要理論 14件
 - **調査の問い**: 地球科学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 7件、条件付きの対応 3件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-02-theories-map-svg.svg)
+
 
 | # | サブトピック群 | 理論/概念 | 提唱者・時代 | 中心概念 | 5段階との接続見込み | 反例リスク | 仮分類 |
 |---|---|---|---|---|---|---|---|
@@ -95,6 +101,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-03-cross-patterns-svg.svg)
+
 
 - ENSO では海面水温、風応力、海洋波動が結びつき、地震では応力、摩擦、間隙水圧が絡み合い、惑星分化では温度、圧力、組成、密度が同時に効きます
 - failed rift、磁場逆転のエクスカーション、噴火に至らず貫入岩として固化したマグマは、いずれも「波までは進んだが、縁を越え切らなかった」例です

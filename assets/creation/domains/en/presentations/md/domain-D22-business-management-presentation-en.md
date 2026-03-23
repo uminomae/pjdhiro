@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-02-theories-map-svg.svg)
+
+
 | Theory | Structural Similarity (5-stage correspondence) | Points of non-alignment | Strength of evidence |
 |--------|------------------------------------------------|------------------------|----------------------|
 | Tuckman | Forming→Storming→Norming→Performing→Adjourning highly aligns with Ba→Wave→En→Uzu→Taba | Actual teams show recursion and stagnation; linear progression is not guaranteed | High |
@@ -77,6 +80,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-03-cross-patterns-svg.svg)
+
 
 - The Tuckman model shows the most direct 5-stage correspondence, but has the limitation of linearity
 - The validity of treating team-scale theories (Tuckman) and industry-scale theories (Christensen) on the same comparative axis requires re-examination

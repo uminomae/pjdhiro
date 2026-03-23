@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-01-overview-svg.svg)
+
+
 This report presents the results of an investigation into the following question, using major theories in linguistics.
 
 > Do the theories of this academic domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -43,6 +46,9 @@ This model is not limited to a specific scale, whether individual, collective, o
 If these definitions already feel uncomfortable, that discomfort is itself an important part of the investigation. It is equally legitimate to continue reading while keeping that discomfort in view or to stop at this point.
 
 ## 4. Results: Overall Picture
+
+![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-02-theories-map-svg.svg)
+
 
 Of the ten candidates, eight showed strong or partial structural correspondence, while two remained only conditional.
 
@@ -140,6 +146,9 @@ Linguistic relativity, in its contemporary form, holds that linguistic systems i
 This theory uniquely describes the relation in which linguistic system as Bundle constrains the framework of the next cognitive cycle as Field. Yet because it is closer to a theory of states of constraint than a theory of process, its correspondence with the sequential unfolding of the five stages is limited.
 
 ## 6. Cross-Domain Patterns
+
+![Linguistics: The Five-Stage Structure Seen in Language Change and Emergence — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D17-03-cross-patterns-svg.svg)
+
 
 The following patterns recur across multiple theories, not only within single cases.
 

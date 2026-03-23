@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Questions of the Investigation
 
+![Musicology — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question:
 
 > Do the theories in this academic domain correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束))?
@@ -49,6 +52,9 @@ This model is not a one-way line; it includes a circulation in which Bundle beco
 If a sense of incongruity remains at this point, that is itself an important perspective for the present investigation. Readers may continue while holding on to that incongruity.
 
 ## 4. Investigation Results: Overall Picture
+
+![Musicology — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-02-theories-map-svg.svg)
+
 
 ### List of Evaluated Theories
 
@@ -151,6 +157,9 @@ Clarke's ecological music perception and the five stages describe the following 
 Clarke's greatest distinctiveness lies in his **critique of information-processing approaches**. Bregman ASA, Pressing, and Huron all stand within information-processing frameworks. Clarke criticizes these approaches for reducing perception to internal processing and instead describes perception as an ecological relation between organism and environment. This belongs to the application of ecological psychology, derived from Gibson (1979), to music perception. Clarke (2005) is the representative work, and later developments include DenPys (2012) on the ecological dynamics of music performance. It should be read in contrast with Bregman ASA.
 
 ## 6. Cross-Domain Patterns
+
+![Musicology — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-03-cross-patterns-svg.svg)
+
 
 First, as shown by Improvisation's information-processing cycle (Pressing), the dialectical structure of sonata form, and emotion generation as expectation, delay, and resolution (Meyer), this domain describes difference and conflict not merely as obstacles but as conditions for the emergence of a new order. This means that, within the five-stage model, the transition from Edge to Vortex is especially richly observable in this domain.
 

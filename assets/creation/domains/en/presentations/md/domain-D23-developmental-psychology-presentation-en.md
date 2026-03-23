@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D23-02-theories-map-svg.svg)
+
+
 | Confidence | Theory group | Positioning |
 |------------|-------------|-------------|
 | Near-established | Kegan, Thelen & Smith's dynamic systems, Vygotsky's Zone of Proximal Development, Fischer's dynamic skill theory, Tomasello's shared intentionality | The description of transitions is concrete, and En→Uzu→Taba is clearly delineated |
@@ -77,6 +80,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D23-03-cross-patterns-svg.svg)
+
 
 - The pattern that recurs most frequently across developmental psychology is the thickness of En→Uzu
 - Second, the understanding of Ba is revised

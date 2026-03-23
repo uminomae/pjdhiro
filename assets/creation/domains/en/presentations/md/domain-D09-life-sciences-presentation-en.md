@@ -42,6 +42,9 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-02-theories-map-svg.svg)
+
+
 | Temperature | Theory / Concept | Positioning |
 |-------------|-----------------|-------------|
 | Near-confirmed | Structure of sexual reproduction, clonal selection of adaptive immunity, morphogen gradients and morphogenesis | Correspondence across all 5 stages is specific and the sequential ordering of the process is clear |
@@ -82,6 +85,9 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D09-03-cross-patterns-svg.svg)
+
 
 - Across life sciences, the following four patterns were confirmed
 - The most prominent pattern found in this survey is that the 5-stage structure appears at levels devoid of consciousness
