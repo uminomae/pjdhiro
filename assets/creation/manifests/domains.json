@@ -1,16 +1,103 @@
 {
-  "version": "1.1",
-  "generated_at": "2026-03-21",
-  "namespace": "creation",
-  "total": 30,
-  "domains": [
+  "version": "3.0",
+  "generated_at": "2026-03-23T17:10:29.920Z",
+  "namespace": "domains",
+  "progress_taxonomy": [
+    {
+      "id": "not_surveyed",
+      "label_ja": "調査前",
+      "label_en": "Not yet surveyed",
+      "description_ja": "AI支援調査が未実施",
+      "description_en": "No AI-assisted survey conducted yet",
+      "order": 10,
+      "tone": "secondary"
+    },
+    {
+      "id": "initial_scan",
+      "label_ja": "初期スキャン済",
+      "label_en": "Initial scan",
+      "description_ja": "幅優先スキャンで候補理論を抽出した（Phase 1-2）",
+      "description_en": "Candidate theories extracted via breadth-first scan (Phase 1-2)",
+      "order": 20,
+      "tone": "warning"
+    },
+    {
+      "id": "cross_reviewed",
+      "label_ja": "独立照合済",
+      "label_en": "Cross-reviewed",
+      "description_ja": "複数AIエンジンによる独立レビューと突き合わせを実施した（Phase 3-4）",
+      "description_en": "Independent review and cross-check by multiple AI engines (Phase 3-4)",
+      "order": 30,
+      "tone": "primary"
+    },
+    {
+      "id": "deep_investigated",
+      "label_ja": "多段階検証済",
+      "label_en": "Multi-stage verified",
+      "description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "order": 40,
+      "tone": "primary"
+    },
+    {
+      "id": "cross_explored",
+      "label_ja": "領域横断探索済",
+      "label_en": "Cross-domain explored",
+      "description_ja": "領域横断的な構造探索を実施した（Phase 8）",
+      "description_en": "Cross-domain structural exploration conducted (Phase 8)",
+      "order": 50,
+      "tone": "primary"
+    },
+    {
+      "id": "human_reviewed",
+      "label_ja": "人間レビュー済",
+      "label_en": "Human-reviewed",
+      "description_ja": "著者による最終確認を実施した",
+      "description_en": "Author final confirmation conducted",
+      "order": 60,
+      "tone": "success"
+    }
+  ],
+  "quality_taxonomy": [
+    {
+      "id": "not_generated",
+      "label_ja": "未生成",
+      "description": "MD が存在しない",
+      "order": 0
+    },
+    {
+      "id": "generated",
+      "label_ja": "生成済み",
+      "description": "MD が存在するが品質テスト未実施",
+      "order": 10
+    },
+    {
+      "id": "self_tested",
+      "label_ja": "自己テスト済み",
+      "description": "quality-test-domain-report.md で PASS",
+      "order": 20
+    },
+    {
+      "id": "independent_reviewed",
+      "label_ja": "独立レビュー済み",
+      "description": "生成者と別エンジンでレビュー PASS",
+      "order": 30
+    },
+    {
+      "id": "pjdhiro_reviewed",
+      "label_ja": "pjdhiro レビュー済み",
+      "description": "pjdhiro しっくり感チェック PASS",
+      "order": 40
+    }
+  ],
+  "reports": [
     {
       "id": "D01",
-      "name": "mathematics",
       "name_ja": "数学",
-      "name_en": "Mathematics",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D01-mathematics",
+      "slug": "mathematics",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D01-mathematics.md",
         "en": "domains/en/md/domain-D01-mathematics.md"
@@ -19,15 +106,21 @@
         "ja": "domains/ja/pdf/domain-D01-mathematics.pdf",
         "en": "domains/en/pdf/domain-D01-mathematics.pdf"
       },
-      "thumbnail": "domains/img/domain-D01-mathematics.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "codex:gpt-5 xhigh",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D02",
-      "name": "physics",
       "name_ja": "物理学",
-      "name_en": "Physics",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D02-physics",
+      "slug": "physics",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D02-physics.md",
         "en": "domains/en/md/domain-D02-physics.md"
@@ -36,15 +129,21 @@
         "ja": "domains/ja/pdf/domain-D02-physics.pdf",
         "en": "domains/en/pdf/domain-D02-physics.pdf"
       },
-      "thumbnail": "domains/img/domain-D02-physics.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D03",
-      "name": "chemistry",
       "name_ja": "化学",
-      "name_en": "Chemistry",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D03-chemistry",
+      "slug": "chemistry",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D03-chemistry.md",
         "en": "domains/en/md/domain-D03-chemistry.md"
@@ -53,15 +152,21 @@
         "ja": "domains/ja/pdf/domain-D03-chemistry.pdf",
         "en": "domains/en/pdf/domain-D03-chemistry.pdf"
       },
-      "thumbnail": "domains/img/domain-D03-chemistry.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D04",
-      "name": "evolutionary-biology",
       "name_ja": "進化生物学",
-      "name_en": "Evolutionary Biology",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D04-evolutionary-biology",
+      "slug": "evolutionary-biology",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D04-evolutionary-biology.md",
         "en": "domains/en/md/domain-D04-evolutionary-biology.md"
@@ -70,15 +175,21 @@
         "ja": "domains/ja/pdf/domain-D04-evolutionary-biology.pdf",
         "en": "domains/en/pdf/domain-D04-evolutionary-biology.pdf"
       },
-      "thumbnail": "domains/img/domain-D04-evolutionary-biology.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D05",
-      "name": "earth-science",
       "name_ja": "地球科学",
-      "name_en": "Earth Science",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D05-earth-science",
+      "slug": "earth-science",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D05-earth-science.md",
         "en": "domains/en/md/domain-D05-earth-science.md"
@@ -87,15 +198,21 @@
         "ja": "domains/ja/pdf/domain-D05-earth-science.pdf",
         "en": "domains/en/pdf/domain-D05-earth-science.pdf"
       },
-      "thumbnail": "domains/img/domain-D05-earth-science.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "gpt:gpt-5.4-high",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D06",
-      "name": "astronomy",
-      "name_ja": "天文学・宇宙物理学",
-      "name_en": "Astronomy",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D06-astronomy",
+      "name_ja": "天文学",
+      "slug": "astronomy",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D06-astronomy.md",
         "en": "domains/en/md/domain-D06-astronomy.md"
@@ -104,15 +221,21 @@
         "ja": "domains/ja/pdf/domain-D06-astronomy.pdf",
         "en": "domains/en/pdf/domain-D06-astronomy.pdf"
       },
-      "thumbnail": "domains/img/domain-D06-astronomy.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D07",
-      "name": "engineering",
-      "name_ja": "工学・情報科学",
-      "name_en": "Engineering",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D07-engineering",
+      "name_ja": "工学情報",
+      "slug": "engineering",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D07-engineering.md",
         "en": "domains/en/md/domain-D07-engineering.md"
@@ -121,15 +244,21 @@
         "ja": "domains/ja/pdf/domain-D07-engineering.pdf",
         "en": "domains/en/pdf/domain-D07-engineering.pdf"
       },
-      "thumbnail": "domains/img/domain-D07-engineering.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D08",
-      "name": "neuroscience",
       "name_ja": "神経科学",
-      "name_en": "Neuroscience",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D08-neuroscience",
+      "slug": "neuroscience",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D08-neuroscience.md",
         "en": "domains/en/md/domain-D08-neuroscience.md"
@@ -138,15 +267,21 @@
         "ja": "domains/ja/pdf/domain-D08-neuroscience.pdf",
         "en": "domains/en/pdf/domain-D08-neuroscience.pdf"
       },
-      "thumbnail": "domains/img/domain-D08-neuroscience.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D09",
-      "name": "life-sciences",
       "name_ja": "生命科学",
-      "name_en": "Life Sciences",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D09-life-sciences",
+      "slug": "life-sciences",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D09-life-sciences.md",
         "en": "domains/en/md/domain-D09-life-sciences.md"
@@ -155,15 +290,21 @@
         "ja": "domains/ja/pdf/domain-D09-life-sciences.pdf",
         "en": "domains/en/pdf/domain-D09-life-sciences.pdf"
       },
-      "thumbnail": "domains/img/domain-D09-life-sciences.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D10",
-      "name": "clinical-medicine",
-      "name_ja": "臨床医学・免疫学",
-      "name_en": "Clinical Medicine",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D10-clinical-medicine",
+      "name_ja": "臨床免疫",
+      "slug": "clinical-medicine",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D10-clinical-medicine.md",
         "en": "domains/en/md/domain-D10-clinical-medicine.md"
@@ -172,15 +313,21 @@
         "ja": "domains/ja/pdf/domain-D10-clinical-medicine.pdf",
         "en": "domains/en/pdf/domain-D10-clinical-medicine.pdf"
       },
-      "thumbnail": "domains/img/domain-D10-clinical-medicine.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D11",
-      "name": "pharmacy",
       "name_ja": "薬学",
-      "name_en": "Pharmacy",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D11-pharmacy",
+      "slug": "pharmacy",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D11-pharmacy.md",
         "en": "domains/en/md/domain-D11-pharmacy.md"
@@ -189,15 +336,21 @@
         "ja": "domains/ja/pdf/domain-D11-pharmacy.pdf",
         "en": "domains/en/pdf/domain-D11-pharmacy.pdf"
       },
-      "thumbnail": "domains/img/domain-D11-pharmacy.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D12",
-      "name": "agriculture",
-      "name_ja": "農学・生態学",
-      "name_en": "Agriculture",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D12-agriculture",
+      "name_ja": "農学生態",
+      "slug": "agriculture",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D12-agriculture.md",
         "en": "domains/en/md/domain-D12-agriculture.md"
@@ -206,15 +359,21 @@
         "ja": "domains/ja/pdf/domain-D12-agriculture.pdf",
         "en": "domains/en/pdf/domain-D12-agriculture.pdf"
       },
-      "thumbnail": "domains/img/domain-D12-agriculture.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D13",
-      "name": "philosophy",
       "name_ja": "哲学",
-      "name_en": "Philosophy",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D13-philosophy",
+      "slug": "philosophy",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D13-philosophy.md",
         "en": "domains/en/md/domain-D13-philosophy.md"
@@ -223,15 +382,21 @@
         "ja": "domains/ja/pdf/domain-D13-philosophy.pdf",
         "en": "domains/en/pdf/domain-D13-philosophy.pdf"
       },
-      "thumbnail": "domains/img/domain-D13-philosophy.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D14",
-      "name": "psychology",
-      "name_ja": "心理学・認知科学",
-      "name_en": "Psychology",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D14-psychology",
+      "name_ja": "心理学",
+      "slug": "psychology",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D14-psychology.md",
         "en": "domains/en/md/domain-D14-psychology.md"
@@ -240,15 +405,21 @@
         "ja": "domains/ja/pdf/domain-D14-psychology.pdf",
         "en": "domains/en/pdf/domain-D14-psychology.pdf"
       },
-      "thumbnail": "domains/img/domain-D14-psychology.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D15",
-      "name": "aesthetics",
       "name_ja": "美学",
-      "name_en": "Aesthetics",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D15-aesthetics",
+      "slug": "aesthetics",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D15-aesthetics.md",
         "en": "domains/en/md/domain-D15-aesthetics.md"
@@ -257,15 +428,21 @@
         "ja": "domains/ja/pdf/domain-D15-aesthetics.pdf",
         "en": "domains/en/pdf/domain-D15-aesthetics.pdf"
       },
-      "thumbnail": "domains/img/domain-D15-aesthetics.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D16",
-      "name": "history",
       "name_ja": "歴史学",
-      "name_en": "History",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D16-history",
+      "slug": "history",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D16-history.md",
         "en": "domains/en/md/domain-D16-history.md"
@@ -274,15 +451,21 @@
         "ja": "domains/ja/pdf/domain-D16-history.pdf",
         "en": "domains/en/pdf/domain-D16-history.pdf"
       },
-      "thumbnail": "domains/img/domain-D16-history.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D17",
-      "name": "linguistics",
       "name_ja": "言語学",
-      "name_en": "Linguistics",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D17-linguistics",
+      "slug": "linguistics",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D17-linguistics.md",
         "en": "domains/en/md/domain-D17-linguistics.md"
@@ -291,15 +474,21 @@
         "ja": "domains/ja/pdf/domain-D17-linguistics.pdf",
         "en": "domains/en/pdf/domain-D17-linguistics.pdf"
       },
-      "thumbnail": "domains/img/domain-D17-linguistics.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D18",
-      "name": "sociology",
       "name_ja": "社会学",
-      "name_en": "Sociology",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D18-sociology",
+      "slug": "sociology",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D18-sociology.md",
         "en": "domains/en/md/domain-D18-sociology.md"
@@ -308,15 +497,21 @@
         "ja": "domains/ja/pdf/domain-D18-sociology.pdf",
         "en": "domains/en/pdf/domain-D18-sociology.pdf"
       },
-      "thumbnail": "domains/img/domain-D18-sociology.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D19",
-      "name": "literary-studies",
-      "name_ja": "文学・文芸学",
-      "name_en": "Literary Studies",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D19-literary-studies",
+      "name_ja": "文芸学",
+      "slug": "literary-studies",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D19-literary-studies.md",
         "en": "domains/en/md/domain-D19-literary-studies.md"
@@ -325,15 +520,21 @@
         "ja": "domains/ja/pdf/domain-D19-literary-studies.pdf",
         "en": "domains/en/pdf/domain-D19-literary-studies.pdf"
       },
-      "thumbnail": "domains/img/domain-D19-literary-studies.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D20",
-      "name": "law-politics",
       "name_ja": "法学・政治学",
-      "name_en": "Law & Politics",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D20-law-politics",
+      "slug": "law-politics",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D20-law-politics.md",
         "en": "domains/en/md/domain-D20-law-politics.md"
@@ -342,15 +543,21 @@
         "ja": "domains/ja/pdf/domain-D20-law-politics.pdf",
         "en": "domains/en/pdf/domain-D20-law-politics.pdf"
       },
-      "thumbnail": "domains/img/domain-D20-law-politics.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D21",
-      "name": "economics",
       "name_ja": "経済学",
-      "name_en": "Economics",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D21-economics",
+      "slug": "economics",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D21-economics.md",
         "en": "domains/en/md/domain-D21-economics.md"
@@ -359,15 +566,21 @@
         "ja": "domains/ja/pdf/domain-D21-economics.pdf",
         "en": "domains/en/pdf/domain-D21-economics.pdf"
       },
-      "thumbnail": "domains/img/domain-D21-economics.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D22",
-      "name": "business-management",
       "name_ja": "経営学",
-      "name_en": "Business Management",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D22-business-management",
+      "slug": "business-management",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D22-business-management.md",
         "en": "domains/en/md/domain-D22-business-management.md"
@@ -376,15 +589,21 @@
         "ja": "domains/ja/pdf/domain-D22-business-management.pdf",
         "en": "domains/en/pdf/domain-D22-business-management.pdf"
       },
-      "thumbnail": "domains/img/domain-D22-business-management.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6+gpt:deep-research+codex:codex-5.4x-high",
+      "quality_level": "independent_reviewed",
+      "quality_rules_version": "",
+      "review_engine": "codex:codex-5.4x-high",
+      "review_result": "PASS"
     },
     {
       "id": "D23",
-      "name": "developmental-psychology",
-      "name_ja": "発達心理学",
-      "name_en": "Developmental Psychology",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D23-developmental-psychology",
+      "name_ja": "発達心理",
+      "slug": "developmental-psychology",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D23-developmental-psychology.md",
         "en": "domains/en/md/domain-D23-developmental-psychology.md"
@@ -393,15 +612,21 @@
         "ja": "domains/ja/pdf/domain-D23-developmental-psychology.pdf",
         "en": "domains/en/pdf/domain-D23-developmental-psychology.pdf"
       },
-      "thumbnail": "domains/img/domain-D23-developmental-psychology.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "codex:gpt-5",
+      "quality_level": "independent_reviewed",
+      "quality_rules_version": "",
+      "review_engine": "codex:gpt-5",
+      "review_result": "PASS"
     },
     {
       "id": "D24",
-      "name": "religion",
       "name_ja": "宗教学",
-      "name_en": "Religion",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D24-religion",
+      "slug": "religion",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D24-religion.md",
         "en": "domains/en/md/domain-D24-religion.md"
@@ -410,15 +635,21 @@
         "ja": "domains/ja/pdf/domain-D24-religion.pdf",
         "en": "domains/en/pdf/domain-D24-religion.pdf"
       },
-      "thumbnail": "domains/img/domain-D24-religion.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D25",
-      "name": "anthropology",
       "name_ja": "人類学",
-      "name_en": "Anthropology",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D25-anthropology",
+      "slug": "anthropology",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D25-anthropology.md",
         "en": "domains/en/md/domain-D25-anthropology.md"
@@ -427,15 +658,21 @@
         "ja": "domains/ja/pdf/domain-D25-anthropology.pdf",
         "en": "domains/en/pdf/domain-D25-anthropology.pdf"
       },
-      "thumbnail": "domains/img/domain-D25-anthropology.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D26",
-      "name": "musicology",
       "name_ja": "音楽学",
-      "name_en": "Musicology",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D26-musicology",
+      "slug": "musicology",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D26-musicology.md",
         "en": "domains/en/md/domain-D26-musicology.md"
@@ -444,15 +681,21 @@
         "ja": "domains/ja/pdf/domain-D26-musicology.pdf",
         "en": "domains/en/pdf/domain-D26-musicology.pdf"
       },
-      "thumbnail": "domains/img/domain-D26-musicology.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D27",
-      "name": "architecture",
-      "name_ja": "建築・デザイン学",
-      "name_en": "Architecture",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D27-architecture",
+      "name_ja": "建築",
+      "slug": "architecture",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D27-architecture.md",
         "en": "domains/en/md/domain-D27-architecture.md"
@@ -461,15 +704,21 @@
         "ja": "domains/ja/pdf/domain-D27-architecture.pdf",
         "en": "domains/en/pdf/domain-D27-architecture.pdf"
       },
-      "thumbnail": "domains/img/domain-D27-architecture.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D28",
-      "name": "performing-arts",
       "name_ja": "舞台芸術",
-      "name_en": "Performing Arts",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D28-performing-arts",
+      "slug": "performing-arts",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D28-performing-arts.md",
         "en": "domains/en/md/domain-D28-performing-arts.md"
@@ -478,15 +727,21 @@
         "ja": "domains/ja/pdf/domain-D28-performing-arts.pdf",
         "en": "domains/en/pdf/domain-D28-performing-arts.pdf"
       },
-      "thumbnail": "domains/img/domain-D28-performing-arts.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D29",
-      "name": "complexity-science",
-      "name_ja": "複雑系科学",
-      "name_en": "Complexity Science",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D29-complexity-science",
+      "name_ja": "複雑系",
+      "slug": "complexity-science",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D29-complexity-science.md",
         "en": "domains/en/md/domain-D29-complexity-science.md"
@@ -495,15 +750,21 @@
         "ja": "domains/ja/pdf/domain-D29-complexity-science.pdf",
         "en": "domains/en/pdf/domain-D29-complexity-science.pdf"
       },
-      "thumbnail": "domains/img/domain-D29-complexity-science.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     },
     {
       "id": "D30",
-      "name": "traditional-knowledge",
-      "name_ja": "伝統知・技芸",
-      "name_en": "Traditional Knowledge",
-      "progress_level": "cross_explored",
-      "file_base": "domain-D30-traditional-knowledge",
+      "name_ja": "伝統知",
+      "slug": "traditional-knowledge",
+      "status": "published",
+      "progress_level": "deep_investigated",
+      "generated": "",
       "md": {
         "ja": "domains/ja/md/domain-D30-traditional-knowledge.md",
         "en": "domains/en/md/domain-D30-traditional-knowledge.md"
@@ -512,7 +773,13 @@
         "ja": "domains/ja/pdf/domain-D30-traditional-knowledge.pdf",
         "en": "domains/en/pdf/domain-D30-traditional-knowledge.pdf"
       },
-      "thumbnail": "domains/img/domain-D30-traditional-knowledge.png"
+      "label_description_ja": "複数AIエンジンによる論拠監査・構造再読・統合検証を実施した（Phase 5-7）",
+      "label_description_en": "Multi-stage verification by multiple AI engines: audit, structural re-reading, and integration (Phase 5-7)",
+      "generator_model": "claude:claude-opus-4-6",
+      "quality_level": "generated",
+      "quality_rules_version": "",
+      "review_engine": "",
+      "review_result": ""
     }
   ]
 }
