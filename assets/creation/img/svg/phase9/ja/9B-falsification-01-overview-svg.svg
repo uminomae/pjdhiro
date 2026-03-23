@@ -1,0 +1,162 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" fill="white">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#1a1a2e" />
+
+    <!-- Title -->
+    <text x="600" y="60" font-size="40" text-anchor="middle" font-weight="bold">Track 9B — 反証探索</text>
+    <text x="600" y="95" font-size="24" text-anchor="middle" font-weight="bold">Falsification Search: Robustness Verification</text>
+
+    <!-- Purpose -->
+    <rect x="50" y="120" width="280" height="100" rx="10" ry="10" fill="#3a3a5e" stroke="#8B8682" stroke-width="2"/>
+    <text x="190" y="145" font-size="20" text-anchor="middle" font-weight="bold">Purpose</text>
+    <text x="190" y="170" font-size="16" text-anchor="middle">Actively seek counterexamples</text>
+    <text x="190" y="190" font-size="16" text-anchor="middle">and failure cases to eliminate</text>
+    <text x="190" y="210" font-size="16" text-anchor="middle">confirmation bias.</text>
+
+    <!-- Core Questions -->
+    <rect x="870" y="120" width="280" height="140" rx="10" ry="10" fill="#3a3a5e" stroke="#5B8DB8" stroke-width="2"/>
+    <text x="1010" y="145" font-size="20" text-anchor="middle" font-weight="bold">Core Questions</text>
+    <text x="1010" y="170" font-size="16" text-anchor="middle">Is Edge Typology genuinely universal</text>
+    <text x="1010" y="190" font-size="16" text-anchor="middle">or artifact of analysis framework?</text>
+    <text x="1010" y="210" font-size="16" text-anchor="middle">Which themes most fragile/robust?</text>
+    <text x="1010" y="230" font-size="16" text-anchor="middle">Under what conditions do themes fail?</text>
+
+    <!-- Dependency on Track 9A -->
+    <rect x="50" y="270" width="150" height="50" rx="10" ry="10" fill="#5a5a7e" stroke="#D4A857" stroke-width="2"/>
+    <text x="125" y="300" font-size="16" text-anchor="middle">Track 9A Results</text>
+    <path d="M200 295 L220 295 L220 410" stroke="#D4A857" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Define arrowhead marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+        </marker>
+    </defs>
+
+    <!-- Methodology Steps (Horizontal Flow) -->
+    <g transform="translate(270, 350)">
+        <!-- Themes entering the process -->
+        <g transform="translate(-50, 60)">
+            <circle cx="0" cy="-40" r="8" fill="#8B8682" />
+            <circle cx="0" cy="-20" r="8" fill="#5B8DB8" />
+            <circle cx="0" cy="0" r="8" fill="#D4A857" />
+            <circle cx="0" cy="20" r="8" fill="#C45B4D" />
+            <circle cx="0" cy="40" r="8" fill="#5B8B6A" />
+            <path d="M10 0 L-10 0" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+        </g>
+
+        <!-- Step 1: Attack Hypothesis Generation -->
+        <rect x="0" y="0" width="200" height="120" rx="10" ry="10" fill="#3a3a5e" stroke="#C45B4D" stroke-width="2"/>
+        <text x="100" y="25" font-size="18" text-anchor="middle" font-weight="bold">1. 攻撃仮説生成</text>
+        <text x="100" y="50" font-size="14" text-anchor="middle">(Attack Hypothesis Generation)</text>
+        <text x="100" y="75" font-size="14" text-anchor="middle">Generate 5+ hypotheses</text>
+        <text x="100" y="95" font-size="14" text-anchor="middle">negating each theme.</text>
+
+        <!-- Themes after Step 1 (Attacked) -->
+        <g transform="translate(200, 60)">
+            <circle cx="0" cy="-40" r="8" fill="#8B8682" />
+            <circle cx="0" cy="-20" r="8" fill="#5B8DB8" />
+            <circle cx="0" cy="0" r="8" fill="#D4A857" />
+            <circle cx="0" cy="20" r="8" fill="#C45B4D" />
+            <circle cx="0" cy="40" r="8" fill="#5B8B6A" />
+            <!-- Attack lines -->
+            <path d="M-7 0 L7 0" stroke="red" stroke-width="2" />
+            <path d="M0 -7 L0 7" stroke="red" stroke-width="2" />
+        </g>
+        <path d="M200 60 L250 60" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 2: Counterexample Search -->
+        <rect x="270" y="0" width="200" height="120" rx="10" ry="10" fill="#3a3a5e" stroke="#C45B4D" stroke-width="2"/>
+        <text x="370" y="25" font-size="18" text-anchor="middle" font-weight="bold">2. 反例探索</text>
+        <text x="370" y="50" font-size="14" text-anchor="middle">(Counterexample Search)</text>
+        <text x="370" y="75" font-size="14" text-anchor="middle">Find concrete</text>
+        <text x="370" y="95" font-size="14" text-anchor="middle">counterexamples.</text>
+
+        <!-- Themes after Step 2 (Searching) -->
+        <g transform="translate(470, 60)">
+            <circle cx="0" cy="-40" r="8" fill="#8B8682" />
+            <circle cx="0" cy="-20" r="8" fill="#5B8DB8" />
+            <circle cx="0" cy="0" r="8" fill="#D4A857" />
+            <circle cx="0" cy="20" r="8" fill="#C45B4D" />
+            <circle cx="0" cy="40" r="8" fill="#5B8B6A" />
+            <!-- Magnifying glass icon -->
+            <circle cx="15" cy="15" r="10" stroke="white" stroke-width="1" fill="none"/>
+            <line x1="22" y1="22" x2="30" y2="30" stroke="white" stroke-width="1"/>
+        </g>
+        <path d="M470 60 L520 60" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 3: Stress Testing -->
+        <rect x="540" y="0" width="200" height="120" rx="10" ry="10" fill="#3a3a5e" stroke="#C45B4D" stroke-width="2"/>
+        <text x="640" y="25" font-size="18" text-anchor="middle" font-weight="bold">3. ストレステスト</text>
+        <text x="640" y="50" font-size="14" text-anchor="middle">(Stress Testing)</text>
+        <text x="640" y="75" font-size="14" text-anchor="middle">3 impact levels:</text>
+        <text x="640" y="95" font-size="14" text-anchor="middle">Destructive/Limiting/Strengthening</text>
+        <!-- Stress levels legend within the box -->
+        <g transform="translate(550, 130)">
+            <circle cx="0" cy="0" r="5" fill="#C45B4D"/>
+            <text x="10" y="3" font-size="12">Destructive</text>
+            <circle cx="0" cy="20" r="5" fill="#D4A857"/>
+            <text x="10" y="23" font-size="12">Limiting</text>
+            <circle cx="0" cy="40" r="5" fill="#5B8B6A"/>
+            <text x="10" y="43" font-size="12">Strengthening</text>
+        </g>
+
+        <!-- Themes after Step 3 (Stressed) -->
+        <g transform="translate(740, 60)">
+            <circle cx="0" cy="-40" r="8" fill="#8B8682" />
+            <circle cx="0" cy="-20" r="8" fill="#5B8DB8" />
+            <circle cx="0" cy="0" r="8" fill="#D4A857" />
+            <circle cx="0" cy="20" r="8" fill="#C45B4D" />
+            <circle cx="0" cy="40" r="8" fill="#5B8B6A" />
+            <!-- Generic stress symbol (e.g., a crack) -->
+            <path d="M-5 -5 L0 0 L5 -5 M-5 5 L0 0 L5 5" stroke="white" stroke-width="1" fill="none"/>
+        </g>
+        <path d="M740 60 L790 60" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 4: Robustness Scoring -->
+        <rect x="810" y="0" width="200" height="120" rx="10" ry="10" fill="#3a3a5e" stroke="#C45B4D" stroke-width="2"/>
+        <text x="910" y="25" font-size="18" text-anchor="middle" font-weight="bold">4. 堅牢性スコアリング</text>
+        <text x="910" y="50" font-size="14" text-anchor="middle">(Robustness Scoring)</text>
+        <text x="910" y="75" font-size="14" text-anchor="middle">1-10 scale per theme.</text>
+
+        <!-- Robustness Scoring Scale (output of the process) -->
+        <g transform="translate(1020, 20)">
+            <text x="-10" y="0" font-size="12" fill="#8B8682">場</text>
+            <rect x="0" y="-10" width="100" height="10" fill="#3a3a5e" stroke="white" stroke-width="1"/>
+            <rect x="0" y="-10" width="70" height="10" fill="#8B8682"/>
+            <text x="110" y="0" font-size="12">7</text>
+
+            <text x="-10" y="20" font-size="12" fill="#5B8DB8">波</text>
+            <rect x="0" y="10" width="100" height="10" fill="#3a3a5e" stroke="white" stroke-width="1"/>
+            <rect x="0" y="10" width="50" height="10" fill="#5B8DB8"/>
+            <text x="110" y="20" font-size="12">5</text>
+
+            <text x="-10" y="40" font-size="12" fill="#D4A857">縁</text>
+            <rect x="0" y="30" width="100" height="10" fill="#3a3a5e" stroke="white" stroke-width="1"/>
+            <rect x="0" y="30" width="80" height="10" fill="#D4A857"/>
+            <text x="110" y="40" font-size="12">8</text>
+
+            <text x="-10" y="60" font-size="12" fill="#C45B4D">渦</text>
+            <rect x="0" y="50" width="100" height="10" fill="#3a3a5e" stroke="white" stroke-width="1"/>
+            <rect x="0" y="50" width="30" height="10" fill="#C45B4D"/>
+            <text x="110" y="60" font-size="12">3</text>
+
+            <text x="-10" y="80" font-size="12" fill="#5B8B6A">束</text>
+            <rect x="0" y="70" width="100" height="10" fill="#3a3a5e" stroke="white" stroke-width="1"/>
+            <rect x="0" y="70" width="90" height="10" fill="#5B8B6A"/>
+            <text x="110" y="80" font-size="12">9</text>
+
+            <text x="0" y="100" font-size="10">1</text>
+            <text x="95" y="100" font-size="10">10</text>
+        </g>
+    </g>
+
+    <!-- Deliverables -->
+    <rect x="870" y="650" width="280" height="120" rx="10" ry="10" fill="#3a3a5e" stroke="#5B8B6A" stroke-width="2"/>
+    <text x="1010" y="675" font-size="20" text-anchor="middle" font-weight="bold">Deliverables</text>
+    <text x="1010" y="700" font-size="16" text-anchor="middle">Attack hypotheses</text>
+    <text x="1010" y="720" font-size="16" text-anchor="middle">Counterexample collection</text>
+    <text x="1010" y="740" font-size="16" text-anchor="middle">Stress test results</text>
+    <text x="1010" y="760" font-size="16" text-anchor="middle">Robustness scores, Revised scope</text>
+
+</svg>

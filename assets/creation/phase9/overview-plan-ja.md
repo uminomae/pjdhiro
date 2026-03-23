@@ -1,5 +1,7 @@
 # Phase 9 — 深層探索計画
 
+![Phase 9 深層探索計画 — 計画概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/overview-01-overview-svg.svg)
+
 ## 位置づけ
 
 Phase 8 の領域横断分析で抽出された5つの構造テーマを、さらに深く掘り下げる段階です。Phase 8 が「30領域に共通する構造パターンの発見」であったのに対し、Phase 9 は「その発見がどこまで確かで、どこまで通用し、どこまで形式化できるか」を検証します。

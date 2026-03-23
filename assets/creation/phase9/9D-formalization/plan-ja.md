@@ -1,5 +1,7 @@
 # Track 9D — 数理形式化：定式化と定理導出
 
+![Track 9D 数理形式化 — 計画概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9D-formalization-01-overview-svg.svg)
+
 ## 目的
 
 Phase 8 の構造テーマを数学的に表現し、自然言語の曖昧さを排除します。形式化に成功すれば、演繹的な定理導出や反直感的な予測の生成が可能になります。最も野心的なアプローチですが、成功時のインパクトは最大です。
