@@ -52,6 +52,10 @@
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/survival-trust-axis.md",
         "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/en/md/survival-trust-axis.md"
+      },
+      "pdf": {
+        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/survival-trust-axis.pdf",
+        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/en/pdf/survival-trust-axis.pdf"
       }
     },
     {
@@ -74,6 +78,10 @@
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/four-layers.md",
         "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/en/md/four-layers.md"
+      },
+      "pdf": {
+        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/four-layers.pdf",
+        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/en/pdf/four-layers.pdf"
       }
     }
   ]
