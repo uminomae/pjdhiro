@@ -1,0 +1,95 @@
+```svg
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="80" fill="white" font-family="sans-serif" font-size="30" font-weight="bold" text-anchor="middle">縁の類型学 - 未解決の緊張構造</text>
+
+  <!-- Band 1: 通過 vs 留まる -->
+  <g>
+    <!-- Description -->
+    <text x="600" y="250" fill="white" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">通過 vs 留まる</text>
+
+    <!-- Pole A -->
+    <rect x="160" y="260" width="180" height="80" rx="10" fill="#4a90e2" />
+    <text x="250" y="295" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">通過</text>
+
+    <!-- Pole B -->
+    <rect x="860" y="260" width="180" height="80" rx="10" fill="#e24a4a" />
+    <text x="950" y="295" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">留まる</text>
+
+    <!-- Tension Zone -->
+    <rect x="280" y="260" width="320" height="80" fill="#4a90e2" opacity="0.3" />
+    <rect x="600" y="260" width="320" height="80" fill="#e24a4a" opacity="0.3" />
+    <line x1="600" y1="260" x2="600" y2="340" stroke="white" stroke-dasharray="5,5" stroke-width="2" />
+
+    <!-- Domain Circles -->
+    <circle cx="380" cy="300" r="20" fill="white" />
+    <text x="380" y="305" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D25</text>
+
+    <circle cx="800" cy="300" r="20" fill="white" />
+    <text x="800" y="305" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D29</text>
+    <circle cx="840" cy="300" r="20" fill="white" />
+    <text x="840" y="305" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D24</text>
+  </g>
+
+  <!-- Band 2: 意識的縁 vs 無意識的縁 -->
+  <g>
+    <!-- Description -->
+    <text x="600" y="450" fill="white" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">意識的縁 vs 無意識的縁</text>
+
+    <!-- Pole A -->
+    <rect x="160" y="460" width="180" height="80" rx="10" fill="#50e3c2" />
+    <text x="250" y="495" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">意識的縁</text>
+
+    <!-- Pole B -->
+    <rect x="860" y="460" width="180" height="80" rx="10" fill="#b34ae2" />
+    <text x="950" y="495" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">無意識的縁</text>
+
+    <!-- Tension Zone -->
+    <rect x="280" y="460" width="320" height="80" fill="#50e3c2" opacity="0.3" />
+    <rect x="600" y="460" width="320" height="80" fill="#b34ae2" opacity="0.3" />
+    <line x1="600" y1="460" x2="600" y2="540" stroke="white" stroke-dasharray="5,5" stroke-width="2" />
+
+    <!-- Domain Circles -->
+    <circle cx="380" cy="500" r="20" fill="white" />
+    <text x="380" y="505" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D22</text>
+
+    <circle cx="800" cy="500" r="20" fill="white" />
+    <text x="800" y="505" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D06</text>
+    <circle cx="840" cy="500" r="20" fill="white" />
+    <text x="840" y="505" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D26</text>
+  </g>
+
+  <!-- Band 3: 設計される縁 vs 発見される縁 -->
+  <g>
+    <!-- Description -->
+    <text x="600" y="650" fill="white" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">設計される縁 vs 発見される縁</text>
+
+    <!-- Pole A -->
+    <rect x="160" y="660" width="180" height="80" rx="10" fill="#D4A857" />
+    <text x="250" y="695" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">設計される縁</text>
+
+    <!-- Pole B -->
+    <rect x="860" y="660" width="180" height="80" rx="10" fill="#5B8DB8" />
+    <text x="950" y="695" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">発見される縁</text>
+
+    <!-- Tension Zone -->
+    <rect x="280" y="660" width="320" height="80" fill="#D4A857" opacity="0.3" />
+    <rect x="600" y="660" width="320" height="80" fill="#5B8DB8" opacity="0.3" />
+    <line x1="600" y1="660" x2="600" y2="740" stroke="white" stroke-dasharray="5,5" stroke-width="2" />
+
+    <!-- Domain Circles -->
+    <circle cx="360" cy="700" r="20" fill="white" />
+    <text x="360" y="705" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D27</text>
+    <circle cx="400" cy="700" r="20" fill="white" />
+    <text x="400" y="705" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D22</text>
+
+    <circle cx="800" cy="700" r="20" fill="white" />
+    <text x="800" y="705" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D02</text>
+    <circle cx="840" cy="700" r="20" fill="white" />
+    <text x="840" y="705" fill="black" font-family="sans-serif" font-size="12" text-anchor="middle">D05</text>
+  </g>
+</svg>
+```

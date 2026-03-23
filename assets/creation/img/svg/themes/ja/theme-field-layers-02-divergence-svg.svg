@@ -1,0 +1,87 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-family="sans-serif" font-size="30" font-weight="bold">
+    場の多層性 - 未解決の緊張構造
+  </text>
+
+  <!-- Divergence 1: 2レベル vs 3レベル (Band centered at y=220) -->
+  <text x="600" y="130" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24">
+    1. 2レベル vs 3レベル
+  </text>
+
+  <!-- Divergence 1 - Side A -->
+  <rect x="100" y="160" width="450" height="120" rx="15" ry="15" fill="#4a90e2" />
+  <text x="325" y="200" text-anchor="middle" fill="white" font-family="sans-serif" font-size="18">
+    <tspan x="325" dy="0">D02, D29</tspan>
+    <tspan x="325" dy="25">原初/循環の2カテゴリで十分</tspan>
+  </text>
+
+  <!-- Divergence 1 - Side B -->
+  <rect x="650" y="160" width="450" height="120" rx="15" ry="15" fill="#e24a4a" />
+  <text x="875" y="200" text-anchor="middle" fill="white" font-family="sans-serif" font-size="18">
+    <tspan x="875" dy="0">D13, D24</tspan>
+    <tspan x="875" dy="25">経験/存在論/究極の3レベル</tspan>
+  </text>
+
+  <!-- Divergence 1 - Tension Visual -->
+  <path d="M570 190 L590 200 L570 210 L590 220 L570 230 L590 240 L570 250"
+        stroke="white" stroke-width="3" fill="none" />
+  <path d="M630 190 L610 200 L630 210 L610 220 L630 230 L610 240 L630 250"
+        stroke="white" stroke-width="3" fill="none" />
+
+  <!-- Divergence 2: 場は前提 vs 到達物 (Band centered at y=420) -->
+  <text x="600" y="330" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24">
+    2. 場は前提 vs 到達物
+  </text>
+
+  <!-- Divergence 2 - Side A -->
+  <rect x="100" y="360" width="450" height="120" rx="15" ry="15" fill="#50e3c2" />
+  <text x="325" y="400" text-anchor="middle" fill="white" font-family="sans-serif" font-size="18">
+    <tspan x="325" dy="0">D06</tspan>
+    <tspan x="325" dy="25">天文(場は所与の初期条件)</tspan>
+  </text>
+
+  <!-- Divergence 2 - Side B -->
+  <rect x="650" y="360" width="450" height="120" rx="15" ry="15" fill="#b34ae2" />
+  <text x="875" y="400" text-anchor="middle" fill="white" font-family="sans-serif" font-size="18">
+    <tspan x="875" dy="0">D28, D22</tspan>
+    <tspan x="875" dy="25">舞台芸術(場は実践的達成)</tspan>
+    <tspan x="875" dy="25">経営(3つの敵が場への到達を阻む)</tspan>
+  </text>
+
+  <!-- Divergence 2 - Tension Visual -->
+  <path d="M570 390 L590 400 L570 410 L590 420 L570 430 L590 440 L570 450"
+        stroke="white" stroke-width="3" fill="none" />
+  <path d="M630 390 L610 400 L630 410 L610 420 L630 430 L610 440 L630 450"
+        stroke="white" stroke-width="3" fill="none" />
+
+  <!-- Divergence 3: 場の拡張と波の境界曖昧化 (Band centered at y=620) -->
+  <text x="600" y="530" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24">
+    3. 場の拡張と波の境界曖昧化
+  </text>
+
+  <!-- Divergence 3 - Side A -->
+  <rect x="100" y="560" width="450" height="120" rx="15" ry="15" fill="#D4A857" />
+  <text x="325" y="600" text-anchor="middle" fill="white" font-family="sans-serif" font-size="18">
+    <tspan x="325" dy="0">D02, D15, D08</tspan>
+    <tspan x="325" dy="25">場を動的均衡に拡張</tspan>
+  </text>
+
+  <!-- Divergence 3 - Side B -->
+  <rect x="650" y="560" width="450" height="120" rx="15" ry="15" fill="#5B8DB8" />
+  <text x="875" y="600" text-anchor="middle" fill="white" font-family="sans-serif" font-size="18">
+    <tspan x="875" dy="0">D13</tspan>
+    <tspan x="875" dy="25">哲学(段階化への内在的抵抗)</tspan>
+  </text>
+
+  <!-- Divergence 3 - Tension Visual -->
+  <path d="M570 590 L590 600 L570 610 L590 620 L570 630 L590 640 L570 650"
+        stroke="white" stroke-width="3" fill="none" />
+  <path d="M630 590 L610 600 L630 610 L610 620 L630 630 L610 640 L630 650"
+        stroke="white" stroke-width="3" fill="none" />
+</svg>
+```

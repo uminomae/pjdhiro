@@ -1,0 +1,141 @@
+```xml
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Hub Glow -->
+  <circle cx="600" cy="400" r="95" fill="#8B8682" opacity="0.15" />
+
+  <!-- Lines (Domain to Hub) - Drawn first so they appear behind cards -->
+  <g id="domain-lines">
+    <!-- Card 1 Domains (D01,D06,D04,D05,D16,D17,D29) -->
+    <line x1="724.5" y1="233" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <line x1="759.5" y1="233" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <line x1="794.5" y1="233" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <line x1="829.5" y1="233" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <line x1="742" y1="258" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <line x1="777" y1="258" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <line x1="812" y1="258" x2="600" y2="400" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+
+    <!-- Card 2 Domains (D02,D15,D08,D27) -->
+    <line x1="759.5" y1="587" x2="600" y2="400" stroke="#e24a4a" stroke-width="1" opacity="0.7" />
+    <line x1="794.5" y1="587" x2="600" y2="400" stroke="#e24a4a" stroke-width="1" opacity="0.7" />
+    <line x1="759.5" y1="612" x2="600" y2="400" stroke="#e24a4a" stroke-width="1" opacity="0.7" />
+    <line x1="794.5" y1="612" x2="600" y2="400" stroke="#e24a4a" stroke-width="1" opacity="0.7" />
+
+    <!-- Card 3 Domains (D25,D13,D30) -->
+    <line x1="388" y1="597" x2="600" y2="400" stroke="#50e3c2" stroke-width="1" opacity="0.7" />
+    <line x1="423" y1="597" x2="600" y2="400" stroke="#50e3c2" stroke-width="1" opacity="0.7" />
+    <line x1="458" y1="597" x2="600" y2="400" stroke="#50e3c2" stroke-width="1" opacity="0.7" />
+
+    <!-- Card 4 Domains (D04,D08,D22) -->
+    <line x1="388" y1="243" x2="600" y2="400" stroke="#b34ae2" stroke-width="1" opacity="0.7" />
+    <line x1="423" y1="243" x2="600" y2="400" stroke="#b34ae2" stroke-width="1" opacity="0.7" />
+    <line x1="458" y1="243" x2="600" y2="400" stroke="#b34ae2" stroke-width="1" opacity="0.7" />
+  </g>
+
+  <!-- Lines (Hub to Card) - Drawn after domain lines but before cards -->
+  <g id="convergence-lines">
+    <line x1="600" y1="400" x2="777" y2="223" stroke="#4a90e2" stroke-width="2" />
+    <line x1="600" y1="400" x2="777" y2="577" stroke="#e24a4a" stroke-width="2" />
+    <line x1="600" y1="400" x2="423" y2="577" stroke="#50e3c2" stroke-width="2" />
+    <line x1="600" y1="400" x2="423" y2="223" stroke="#b34ae2" stroke-width="2" />
+  </g>
+
+  <!-- Hub -->
+  <circle cx="600" cy="400" r="80" fill="#2a2a4e" stroke="#8B8682" stroke-width="4" />
+  <text x="600" y="400" text-anchor="middle" dominant-baseline="middle" fill="#8B8682" font-size="22" font-weight="bold" font-family="sans-serif">場の多層性</text>
+
+  <!-- Convergence Cards -->
+  <!-- Card 1: 原初的場vs循環的場 -->
+  <g>
+    <rect x="677" y="173" width="200" height="100" rx="12" fill="#4a90e2" />
+    <text x="777" y="195" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="sans-serif">原初的場vs循環的場</text>
+
+    <!-- Domains for Card 1 (max 7 from 10: D01,D06,D04,D05,D16,D17,D29) -->
+    <!-- Row 1 (4 domains) -->
+    <circle cx="724.5" cy="233" r="14" fill="white" />
+    <text x="724.5" y="233" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D01</text>
+    <circle cx="759.5" cy="233" r="14" fill="white" />
+    <text x="759.5" y="233" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D06</text>
+    <circle cx="794.5" cy="233" r="14" fill="white" />
+    <text x="794.5" y="233" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D04</text>
+    <circle cx="829.5" cy="233" r="14" fill="white" />
+    <text x="829.5" y="233" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D05</text>
+
+    <!-- Row 2 (3 domains) -->
+    <circle cx="742" cy="258" r="14" fill="white" />
+    <text x="742" y="258" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D16</text>
+    <circle cx="777" cy="258" r="14" fill="white" />
+    <text x="777" y="258" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D17</text>
+    <circle cx="812" cy="258" r="14" fill="white" />
+    <text x="812" y="258" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D29</text>
+  </g>
+
+  <!-- Card 2: 場は条件付き潜在性 -->
+  <g>
+    <rect x="677" y="527" width="200" height="100" rx="12" fill="#e24a4a" />
+    <text x="777" y="549" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="sans-serif">場は条件付き潜在性</text>
+
+    <!-- Domains for Card 2 (4 domains: D02,D15,D08,D27) -->
+    <!-- Row 1 (2 domains) -->
+    <circle cx="759.5" cy="587" r="14" fill="white" />
+    <text x="759.5" y="587" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D02</text>
+    <circle cx="794.5" cy="587" r="14" fill="white" />
+    <text x="794.5" y="587" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D15</text>
+
+    <!-- Row 2 (2 domains) -->
+    <circle cx="759.5" cy="612" r="14" fill="white" />
+    <text x="759.5" y="612" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D08</text>
+    <circle cx="794.5" cy="612" r="14" fill="white" />
+    <text x="794.5" y="612" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D27</text>
+  </g>
+
+  <!-- Card 3: 場は全段階の基盤条件 -->
+  <g>
+    <rect x="323" y="527" width="200" height="100" rx="12" fill="#50e3c2" />
+    <text x="423" y="549" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="sans-serif">場は全段階の基盤条件</text>
+
+    <!-- Domains for Card 3 (3 domains: D25,D13,D30) -->
+    <!-- Single Row (3 domains) -->
+    <circle cx="388" cy="597" r="14" fill="white" />
+    <text x="388" y="597" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D25</text>
+    <circle cx="423" cy="597" r="14" fill="white" />
+    <text x="423" y="597" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D13</text>
+    <circle cx="458" cy="597" r="14" fill="white" />
+    <text x="458" y="597" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D30</text>
+  </g>
+
+  <!-- Card 4: 循環的場の質が創造を決定 -->
+  <g>
+    <rect x="323" y="173" width="200" height="100" rx="12" fill="#b34ae2" />
+    <text x="423" y="195" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="sans-serif">循環的場の質が創造を決定</text>
+
+    <!-- Domains for Card 4 (3 domains: D04,D08,D22) -->
+    <!-- Single Row (3 domains) -->
+    <circle cx="388" cy="243" r="14" fill="white" />
+    <text x="388" y="243" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D04</text>
+    <circle cx="423" cy="243" r="14" fill="white" />
+    <text x="423" y="243" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D08</text>
+    <circle cx="458" cy="243" r="14" fill="white" />
+    <text x="458" y="243" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="10" font-family="sans-serif">D22</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="30" font-weight="bold" font-family="sans-serif">場の多層性 - 収束ネットワーク</text>
+
+  <!-- Legend -->
+  <g transform="translate(980, 680)">
+    <text x="0" y="0" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">凡例 (Legend)</text>
+
+    <circle cx="10" cy="30" r="10" fill="white" stroke="black" stroke-width="1" />
+    <text x="30" y="30" dominant-baseline="middle" fill="white" font-size="14" font-family="sans-serif">ドメイン (e.g., D01)</text>
+
+    <line x1="0" y1="60" x2="20" y2="60" stroke="#4a90e2" stroke-width="2" />
+    <text x="30" y="60" dominant-baseline="middle" fill="white" font-size="14" font-family="sans-serif">収束ライン (Hub to Card)</text>
+
+    <line x1="0" y1="90" x2="20" y2="90" stroke="#4a90e2" stroke-width="1" opacity="0.7" />
+    <text x="30" y="90" dominant-baseline="middle" fill="white" font-size="14" font-family="sans-serif">ドメインライン (Domain to Hub)</text>
+  </g>
+</svg>
+```
