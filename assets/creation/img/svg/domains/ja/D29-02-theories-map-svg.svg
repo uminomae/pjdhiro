@@ -1,0 +1,130 @@
+<svg viewBox="0 0 1200 900" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1200" height="900" fill="#1a1a2e" />
+  <text x="600" y="50" text-anchor="middle" font-size="32" fill="#ffffff">10複雑系科学理論と5段階モデルの対応関係マトリクス</text>
+  <rect x="230" y="100" width="180" height="50" fill="#8B8682" rx="5" ry="5" />
+  <text x="320" y="132" text-anchor="middle" font-size="20" fill="#ffffff">場</text>
+  <rect x="420" y="100" width="180" height="50" fill="#5B8DB8" rx="5" ry="5" />
+  <text x="510" y="132" text-anchor="middle" font-size="20" fill="#ffffff">波</text>
+  <rect x="610" y="100" width="180" height="50" fill="#D4A857" rx="5" ry="5" />
+  <text x="700" y="132" text-anchor="middle" font-size="20" fill="#ffffff">縁</text>
+  <rect x="800" y="100" width="180" height="50" fill="#C45B4D" rx="5" ry="5" />
+  <text x="890" y="132" text-anchor="middle" font-size="20" fill="#ffffff">渦</text>
+  <rect x="990" y="100" width="180" height="50" fill="#5B8B6A" rx="5" ry="5" />
+  <text x="1080" y="132" text-anchor="middle" font-size="20" fill="#ffffff">束</text>
+  <text x="10" y="191" font-size="18" fill="#ffffff">1. 散逸構造</text>
+  <rect x="230" y="160" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="320" y="192" text-anchor="middle" font-size="16" fill="#ffffff">場</text>
+  <rect x="420" y="160" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="510" y="192" text-anchor="middle" font-size="16" fill="#ffffff">波</text>
+  <rect x="610" y="160" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="700" y="192" text-anchor="middle" font-size="16" fill="#ffffff">縁</text>
+  <rect x="800" y="160" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="890" y="192" text-anchor="middle" font-size="16" fill="#ffffff">渦</text>
+  <rect x="990" y="160" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1080" y="192" text-anchor="middle" font-size="16" fill="#ffffff">束</text>
+  <text x="10" y="256" font-size="18" fill="#ffffff">2. 自己組織化臨界（SOC）</text>
+  <rect x="230" y="225" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="320" y="257" text-anchor="middle" font-size="16" fill="#ffffff">場</text>
+  <rect x="420" y="225" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="510" y="257" text-anchor="middle" font-size="16" fill="#ffffff">波</text>
+  <rect x="610" y="225" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="700" y="257" text-anchor="middle" font-size="16" fill="#ffffff">縁</text>
+  <rect x="800" y="225" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="890" y="257" text-anchor="middle" font-size="16" fill="#ffffff">渦</text>
+  <rect x="990" y="225" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1080" y="257" text-anchor="middle" font-size="16" fill="#ffffff">束</text>
+  <text x="10" y="321" font-size="18" fill="#ffffff">3. 自己触媒集合</text>
+  <rect x="230" y="290" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="320" y="322" text-anchor="middle" font-size="16" fill="#ffffff">場</text>
+  <rect x="420" y="290" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="510" y="322" text-anchor="middle" font-size="16" fill="#ffffff">波</text>
+  <rect x="610" y="290" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="700" y="322" text-anchor="middle" font-size="16" fill="#ffffff">縁</text>
+  <rect x="800" y="290" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="890" y="322" text-anchor="middle" font-size="16" fill="#ffffff">渦</text>
+  <rect x="990" y="290" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1080" y="322" text-anchor="middle" font-size="16" fill="#ffffff">束</text>
+  <text x="10" y="386" font-size="18" fill="#ffffff">4. シナジェティクス</text>
+  <rect x="230" y="355" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="320" y="387" text-anchor="middle" font-size="16" fill="#e0e0e0">場</text>
+  <rect x="420" y="355" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="510" y="387" text-anchor="middle" font-size="16" fill="#e0e0e0">波</text>
+  <rect x="610" y="355" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="387" text-anchor="middle" font-size="16" fill="#e0e0e0">縁</text>
+  <rect x="800" y="355" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+  <text x="890" y="387" text-anchor="middle" font-size="16" fill="#e0e0e0">渦</text>
+  <rect x="990" y="355" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="387" text-anchor="middle" font-size="16" fill="#e0e0e0">束</text>
+  <text x="10" y="451" font-size="18" fill="#ffffff">5. 臨界現象</text>
+  <rect x="230" y="420" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="320" y="452" text-anchor="middle" font-size="16" fill="#ffffff">場</text>
+  <rect x="420" y="420" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="510" y="452" text-anchor="middle" font-size="16" fill="#ffffff">波</text>
+  <rect x="610" y="420" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="700" y="452" text-anchor="middle" font-size="16" fill="#ffffff">縁</text>
+  <rect x="800" y="420" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="890" y="452" text-anchor="middle" font-size="16" fill="#ffffff">渦</text>
+  <rect x="990" y="420" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1080" y="452" text-anchor="middle" font-size="16" fill="#ffffff">束</text>
+  <text x="10" y="516" font-size="18" fill="#ffffff">6. パーコレーション</text>
+  <rect x="230" y="485" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="320" y="517" text-anchor="middle" font-size="16" fill="#ffffff">場</text>
+  <rect x="420" y="485" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="510" y="517" text-anchor="middle" font-size="16" fill="#ffffff">波</text>
+  <rect x="610" y="485" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="700" y="517" text-anchor="middle" font-size="16" fill="#ffffff">縁</text>
+  <rect x="800" y="485" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="890" y="517" text-anchor="middle" font-size="16" fill="#ffffff">渦</text>
+  <rect x="990" y="485" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1080" y="517" text-anchor="middle" font-size="16" fill="#ffffff">束</text>
+  <text x="10" y="581" font-size="18" fill="#ffffff">7. オートポイエーシス</text>
+  <rect x="230" y="550" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="320" y="582" text-anchor="middle" font-size="16" fill="#e0e0e0">場</text>
+  <rect x="420" y="550" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="510" y="582" text-anchor="middle" font-size="16" fill="#e0e0e0">波</text>
+  <rect x="610" y="550" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="582" text-anchor="middle" font-size="16" fill="#e0e0e0">縁</text>
+  <rect x="800" y="550" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+  <text x="890" y="582" text-anchor="middle" font-size="16" fill="#e0e0e0">渦</text>
+  <rect x="990" y="550" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="582" text-anchor="middle" font-size="16" fill="#e0e0e0">束</text>
+  <text x="10" y="646" font-size="18" fill="#ffffff">8. 反応拡散</text>
+  <rect x="230" y="615" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="320" y="647" text-anchor="middle" font-size="16" fill="#e0e0e0">場</text>
+  <rect x="420" y="615" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="510" y="647" text-anchor="middle" font-size="16" fill="#e0e0e0">波</text>
+  <rect x="610" y="615" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="647" text-anchor="middle" font-size="16" fill="#e0e0e0">縁</text>
+  <rect x="800" y="615" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5" />
+  <text x="890" y="647" text-anchor="middle" font-size="16" fill="#e0e0e0">渦</text>
+  <rect x="990" y="615" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="647" text-anchor="middle" font-size="16" fill="#e0e0e0">束</text>
+  <text x="10" y="711" font-size="18" fill="#ffffff">9. カオスの縁</text>
+  <rect x="230" y="680" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="320" y="712" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <rect x="420" y="680" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="510" y="712" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <rect x="610" y="680" width="180" height="55" fill="#D4A857" opacity="0.3" rx="5" ry="5" />
+  <text x="700" y="712" text-anchor="middle" font-size="16" fill="#aaaaaa">縁</text>
+  <rect x="800" y="680" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="890" y="712" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <rect x="990" y="680" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1080" y="712" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <text x="10" y="776" font-size="18" fill="#ffffff">10. ネットワーク科学</text>
+  <rect x="230" y="745" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="320" y="777" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <rect x="420" y="745" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="510" y="777" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <rect x="610" y="745" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="700" y="777" text-anchor="middle" font-size="16" fill="#e0e0e0">縁</text>
+  <rect x="800" y="745" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="890" y="777" text-anchor="middle" font-size="16" fill="#888888">-</text>
+  <rect x="990" y="745" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1080" y="777" text-anchor="middle" font-size="16" fill="#e0e0e0">束</text>
+  <rect x="100" y="840" width="30" height="30" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="140" y="861" font-size="16" fill="#ffffff">強い対応 (Strong)</text>
+  <rect x="100" y="880" width="30" height="30" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="140" y="901" font-size="16" fill="#e0e0e0">部分的 (Partial)</text>
+  <rect x="100" y="920" width="30" height="30" fill="#8B8682" opacity="0.3" rx="5" ry="5" />
+  <text x="140" y="941" font-size="16" fill="#aaaaaa">条件付き/弱い (Conditional/Weak)</text>
+</svg>

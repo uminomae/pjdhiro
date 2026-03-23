@@ -1,0 +1,204 @@
+<svg viewBox="0 0 1200 1050" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="1050" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="30" fill="#ffffff">12建築・デザイン学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <g>
+    <!-- 場 (Field) -->
+    <rect x="230" y="100" width="180" height="50" rx="5" ry="5" fill="#8B8682"/>
+    <text x="320" y="125" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#ffffff">場 (Field)</text>
+
+    <!-- 波 (Wave) -->
+    <rect x="420" y="100" width="180" height="50" rx="5" ry="5" fill="#5B8DB8"/>
+    <text x="510" y="125" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#ffffff">波 (Wave)</text>
+
+    <!-- 縁 (Edge) -->
+    <rect x="610" y="100" width="180" height="50" rx="5" ry="5" fill="#D4A857"/>
+    <text x="700" y="125" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#ffffff">縁 (Edge)</text>
+
+    <!-- 渦 (Vortex) -->
+    <rect x="800" y="100" width="180" height="50" rx="5" ry="5" fill="#C45B4D"/>
+    <text x="890" y="125" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#ffffff">渦 (Vortex)</text>
+
+    <!-- 束 (Bundle) -->
+    <rect x="990" y="100" width="180" height="50" rx="5" ry="5" fill="#5B8B6A"/>
+    <text x="1080" y="125" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#ffffff">束 (Bundle)</text>
+  </g>
+
+  <!-- Matrix Rows and Cells -->
+  <g>
+    <!-- Row 0: 構造保持変換と生成プロセス | strong | - | - | - | - | - -->
+    <text x="10" y="187.5" font-size="18" fill="#ffffff" dominant-baseline="middle">1. 構造保持変換と生成プロセス</text>
+    <rect x="230" y="160" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="187.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="160" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="187.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="160" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+    <text x="700" y="187.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="800" y="160" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="187.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="160" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="187.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 1: 形態発見（form-finding） | strong | - | - | - | - | - -->
+    <text x="10" y="252.5" font-size="18" fill="#ffffff" dominant-baseline="middle">2. 形態発見（form-finding）</text>
+    <rect x="230" y="225" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="252.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="225" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="252.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="225" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+    <text x="700" y="252.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="800" y="225" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="252.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="225" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="252.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 2: 中間領域（in-between） | strong | - | - | 縁 | - | - -->
+    <text x="10" y="317.5" font-size="18" fill="#ffffff" dominant-baseline="middle">3. 中間領域（in-between）</text>
+    <rect x="230" y="290" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="317.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="290" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="317.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="290" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+    <text x="700" y="317.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#ffffff">縁</text>
+    <rect x="800" y="290" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="317.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="290" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="317.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 3: 閾空間（threshold space） | strong | - | - | 縁 | - | - -->
+    <text x="10" y="382.5" font-size="18" fill="#ffffff" dominant-baseline="middle">4. 閾空間（threshold space）</text>
+    <rect x="230" y="355" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="382.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="355" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="382.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="355" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+    <text x="700" y="382.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#ffffff">縁</text>
+    <rect x="800" y="355" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="382.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="355" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="382.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 4: 都市の多様性条件 | strong | - | - | - | - | - -->
+    <text x="10" y="447.5" font-size="18" fill="#ffffff" dominant-baseline="middle">5. 都市の多様性条件</text>
+    <rect x="230" y="420" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="447.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="420" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="447.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="420" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+    <text x="700" y="447.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="800" y="420" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="447.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="420" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="447.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 5: 間（ma） | strong | - | - | - | - | - -->
+    <text x="10" y="512.5" font-size="18" fill="#ffffff" dominant-baseline="middle">6. 間（ma）</text>
+    <rect x="230" y="485" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="512.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="485" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="512.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="485" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+    <text x="700" y="512.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="800" y="485" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="512.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="485" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="512.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 6: 計算形態生成 | partial | 場 | 波 | 縁 | 渦 | 束 -->
+    <text x="10" y="577.5" font-size="18" fill="#ffffff" dominant-baseline="middle">7. 計算形態生成</text>
+    <rect x="230" y="550" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+    <text x="320" y="577.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#e0e0e0">場</text>
+    <rect x="420" y="550" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.7"/>
+    <text x="510" y="577.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#e0e0e0">波</text>
+    <rect x="610" y="550" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.7"/>
+    <text x="700" y="577.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#e0e0e0">縁</text>
+    <rect x="800" y="550" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.7"/>
+    <text x="890" y="577.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#e0e0e0">渦</text>
+    <rect x="990" y="550" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.7"/>
+    <text x="1080" y="577.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#e0e0e0">束</text>
+
+    <!-- Row 7: インクリメンタル建築 | partial | - | - | - | - | - -->
+    <text x="10" y="642.5" font-size="18" fill="#ffffff" dominant-baseline="middle">8. インクリメンタル建築</text>
+    <rect x="230" y="615" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="642.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="615" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="642.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="615" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+    <text x="700" y="642.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="800" y="615" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="642.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="615" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="642.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 8: 身体感覚建築 | partial | 場 | - | - | - | - -->
+    <text x="10" y="707.5" font-size="18" fill="#ffffff" dominant-baseline="middle">9. 身体感覚建築</text>
+    <rect x="230" y="680" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+    <text x="320" y="707.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#e0e0e0">場</text>
+    <rect x="420" y="680" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="707.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="680" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.2"/>
+    <text x="700" y="707.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="800" y="680" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="707.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="680" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="707.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 9: パラメトリシズム | conditional | - | - | 縁 | - | - -->
+    <text x="10" y="772.5" font-size="18" fill="#ffffff" dominant-baseline="middle">10. パラメトリシズム</text>
+    <rect x="230" y="745" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="772.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="745" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="772.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="745" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="0.3"/>
+    <text x="700" y="772.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#aaaaaa">縁</text>
+    <rect x="800" y="745" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="772.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="745" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="772.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 10: 壁の厚み（poché） | strong | - | - | 縁 | - | - -->
+    <text x="10" y="837.5" font-size="18" fill="#ffffff" dominant-baseline="middle">11. 壁の厚み（poché）</text>
+    <rect x="230" y="810" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="837.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="810" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="837.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="810" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+    <text x="700" y="837.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#ffffff">縁</text>
+    <rect x="800" y="810" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="837.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="810" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="837.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+
+    <!-- Row 11: 都市の認知的境界 | strong | - | - | 縁 | - | - -->
+    <text x="10" y="902.5" font-size="18" fill="#ffffff" dominant-baseline="middle">12. 都市の認知的境界</text>
+    <rect x="230" y="875" width="180" height="55" rx="5" ry="5" fill="#8B8682" opacity="0.2"/>
+    <text x="320" y="902.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="420" y="875" width="180" height="55" rx="5" ry="5" fill="#5B8DB8" opacity="0.2"/>
+    <text x="510" y="902.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="610" y="875" width="180" height="55" rx="5" ry="5" fill="#D4A857" opacity="1"/>
+    <text x="700" y="902.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#ffffff">縁</text>
+    <rect x="800" y="875" width="180" height="55" rx="5" ry="5" fill="#C45B4D" opacity="0.2"/>
+    <text x="890" y="902.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+    <rect x="990" y="875" width="180" height="55" rx="5" ry="5" fill="#5B8B6A" opacity="0.2"/>
+    <text x="1080" y="902.5" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#888888">-</text>
+  </g>
+
+  <!-- Legend -->
+  <g>
+    <!-- Strong -->
+    <rect x="50" y="970" width="30" height="20" rx="5" ry="5" fill="#8B8682" opacity="1"/>
+    <text x="90" y="980" dominant-baseline="middle" font-size="16" fill="#ffffff">強い対応 (Strong)</text>
+
+    <!-- Partial -->
+    <rect x="280" y="970" width="30" height="20" rx="5" ry="5" fill="#8B8682" opacity="0.7"/>
+    <text x="320" y="980" dominant-baseline="middle" font-size="16" fill="#e0e0e0">部分的 (Partial)</text>
+
+    <!-- Conditional/Weak -->
+    <rect x="510" y="970" width="30" height="20" rx="5" ry="5" fill="#8B8682" opacity="0.3"/>
+    <text x="550" y="980" dominant-baseline="middle" font-size="16" fill="#aaaaaa">条件付き/弱い (Conditional/Weak)</text>
+  </g>
+</svg>

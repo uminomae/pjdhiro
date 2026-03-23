@@ -1,0 +1,179 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions -->
+  <defs>
+    <!-- Gradient for methodology boxes -->
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+
+    <!-- Arrowhead marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D18 社会学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">11理論の横断的分析</text>
+
+  <!-- Left Column: Research methodology flow -->
+  <g class="methodology-flow">
+    <!-- Phase 1-2 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="196" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+    <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 3-4 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="296" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+    <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 5 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="396" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+    <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 6 -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="496" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+    <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Phase 7 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="596" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory correspondence heat map -->
+  <g class="heat-map">
+    <!-- Column Headers -->
+    <g class="column-headers">
+      <rect x="400" y="160" width="148" height="30" rx="5" fill="#8B8682" />
+      <text x="474" y="180.33" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+      <rect x="550" y="160" width="148" height="30" rx="5" fill="#5B8DB8" />
+      <text x="624" y="180.33" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+      <rect x="700" y="160" width="148" height="30" rx="5" fill="#D4A857" />
+      <text x="774" y="180.33" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+      <rect x="850" y="160" width="148" height="30" rx="5" fill="#C45B4D" />
+      <text x="924" y="180.33" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+      <rect x="1000" y="160" width="148" height="30" rx="5" fill="#5B8B6A" />
+      <text x="1074" y="180.33" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+    </g>
+
+    <!-- Theory Rows and Cells -->
+    <g class="theory-rows">
+      <!-- Row 0: 社会システム論 (conditional) -->
+      <text x="380" y="219.66" text-anchor="end" fill="white" font-size="14">社会システム論</text>
+      <rect x="400" y="192" width="148" height="50" fill="#8B8682" opacity="0.4" />
+      <rect x="550" y="192" width="148" height="50" fill="#5B8DB8" opacity="0.4" />
+      <rect x="700" y="192" width="148" height="50" fill="#D4A857" opacity="0.4" />
+      <rect x="850" y="192" width="148" height="50" fill="#C45B4D" opacity="0.4" />
+      <rect x="1000" y="192" width="148" height="50" fill="#5B8B6A" opacity="0.4" />
+
+      <!-- Row 1: 構造化理論 (strong) -->
+      <text x="380" y="271.66" text-anchor="end" fill="white" font-size="14">構造化理論</text>
+      <rect x="400" y="244" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="244" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="244" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="244" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="244" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 2: イノベーションの普及 (partial) -->
+      <text x="380" y="323.66" text-anchor="end" fill="white" font-size="14">イノベーションの普及</text>
+      <rect x="400" y="296" width="148" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="550" y="296" width="148" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="700" y="296" width="148" height="50" fill="#D4A857" opacity="0.3" />
+      <rect x="850" y="296" width="148" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1000" y="296" width="148" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Row 3: 制度的同型化 (strong) -->
+      <text x="380" y="375.66" text-anchor="end" fill="white" font-size="14">制度的同型化</text>
+      <rect x="400" y="348" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="348" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="348" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="348" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="348" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 4: 現実の社会的構成 (strong) -->
+      <text x="380" y="427.66" text-anchor="end" fill="white" font-size="14">現実の社会的構成</text>
+      <rect x="400" y="400" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="400" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="400" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="400" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="400" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 5: 社会運動の動員過程 (partial) -->
+      <text x="380" y="479.66" text-anchor="end" fill="white" font-size="14">社会運動の動員過程</text>
+      <rect x="400" y="452" width="148" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="550" y="452" width="148" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="700" y="452" width="148" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="850" y="452" width="148" height="50" fill="#C45B4D" opacity="0.3" />
+      <rect x="1000" y="452" width="148" height="50" fill="#5B8B6A" opacity="0.3" />
+
+      <!-- Row 6: 弱い紐帯の強さ (strong) -->
+      <text x="380" y="531.66" text-anchor="end" fill="white" font-size="14">弱い紐帯の強さ</text>
+      <rect x="400" y="504" width="148" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="550" y="504" width="148" height="50" fill="#5B8DB8" opacity="0.3" />
+      <rect x="700" y="504" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="504" width="148" height="50" fill="#C45B4D" opacity="0.3" />
+      <rect x="1000" y="504" width="148" height="50" fill="#5B8B6A" opacity="0.3" />
+
+      <!-- Row 7: 場・資本・ハビトゥス (partial) -->
+      <text x="380" y="583.66" text-anchor="end" fill="white" font-size="14">場・資本・ハビトゥス</text>
+      <rect x="400" y="556" width="148" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="550" y="556" width="148" height="50" fill="#5B8DB8" opacity="0.7" />
+      <rect x="700" y="556" width="148" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="850" y="556" width="148" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1000" y="556" width="148" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Row 8: 社会的事実・連帯・アノミー (partial) -->
+      <text x="380" y="635.66" text-anchor="end" fill="white" font-size="14">社会的事実・連帯・アノミー</text>
+      <rect x="400" y="608" width="148" height="50" fill="#8B8682" opacity="0.7" />
+      <rect x="550" y="608" width="148" height="50" fill="#5B8DB8" opacity="0.3" />
+      <rect x="700" y="608" width="148" height="50" fill="#D4A857" opacity="0.7" />
+      <rect x="850" y="608" width="148" height="50" fill="#C45B4D" opacity="0.3" />
+      <rect x="1000" y="608" width="148" height="50" fill="#5B8B6A" opacity="0.7" />
+
+      <!-- Row 9: 相互作用儀礼連鎖 (strong) -->
+      <text x="380" y="687.66" text-anchor="end" fill="white" font-size="14">相互作用儀礼連鎖</text>
+      <rect x="400" y="660" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="660" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="660" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="660" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="660" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 10: 正統性の3類型とカリスマのルーティン化 (partial) -->
+      <text x="380" y="739.66" text-anchor="end" fill="white" font-size="14">正統性の3類型とカリスマのルーティン化</text>
+      <rect x="400" y="712" width="148" height="50" fill="#8B8682" opacity="0.3" />
+      <rect x="550" y="712" width="148" height="50" fill="#5B8DB8" opacity="0.3" />
+      <rect x="700" y="712" width="148" height="50" fill="#D4A857" opacity="0.3" />
+      <rect x="850" y="712" width="148" height="50" fill="#C45B4D" opacity="0.7" />
+      <rect x="1000" y="712" width="148" height="50" fill="#5B8B6A" opacity="0.7" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <g class="judgment-summary">
+    <!-- Strong -->
+    <rect x="390" y="761" width="20" height="20" fill="#27AE60" />
+    <text x="415" y="777" fill="white" font-size="18">強い対応: 5件</text>
+
+    <!-- Partial -->
+    <rect x="540" y="761" width="20" height="20" fill="#F1C40F" />
+    <text x="565" y="777" fill="white" font-size="18">部分的対応: 5件</text>
+
+    <!-- Conditional -->
+    <rect x="690" y="761" width="20" height="20" fill="#E67E22" />
+    <text x="715" y="777" fill="white" font-size="18">条件付き: 1件</text>
+  </g>
+</svg>

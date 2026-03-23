@@ -1,0 +1,172 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D06 天文学・宇宙物理学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase boxes and arrows -->
+  <g class="methodology-flow">
+    <!-- Phase 1 -->
+    <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="197" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+    <path d="M 200 220 L 200 260" stroke="#F39C12" stroke-width="4" />
+
+    <!-- Phase 2 -->
+    <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="297" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+    <path d="M 200 320 L 200 360" stroke="#F39C12" stroke-width="4" />
+
+    <!-- Phase 3 -->
+    <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="397" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+    <path d="M 200 420 L 200 460" stroke="#F39C12" stroke-width="4" />
+
+    <!-- Phase 4 -->
+    <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="497" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+    <path d="M 200 520 L 200 560" stroke="#F39C12" stroke-width="4" />
+
+    <!-- Phase 5 -->
+    <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="597" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g class="heat-map">
+    <!-- Column Headers -->
+    <rect x="400" y="160" width="148" height="30" rx="5" fill="#8B8682" />
+    <text x="474" y="181" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+    <rect x="550" y="160" width="148" height="30" rx="5" fill="#5B8DB8" />
+    <text x="624" y="181" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+    <rect x="700" y="160" width="148" height="30" rx="5" fill="#D4A857" />
+    <text x="774" y="181" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+    <rect x="850" y="160" width="148" height="30" rx="5" fill="#C45B4D" />
+    <text x="924" y="181" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+    <rect x="1000" y="160" width="148" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1074" y="181" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+
+    <!-- Theory Rows and Cells -->
+    <!-- Data:
+    星形成と恒星進化 | strong | 場,波,縁,渦,束
+    銀河形成の階層的成長 | strong | 場,波,縁,渦,束
+    宇宙バリオンサイクル | conditional | 場,波,縁,渦,束
+    降着円盤とジェット形成 | strong | 場,波,縁,渦,束
+    惑星系形成 | strong | 場,波,縁,渦,束
+    超新星残骸と星間物質相互作用 | strong | 場,波,縁,渦,束
+    太陽磁気活動サイクル | strong | 場,波,縁,渦,束
+    宇宙大規模構造形成 | strong | 場,波,縁,渦,束
+    中性子星合体とキロノバ | strong | 場,波,縁,渦,束
+    球状星団の力学進化 | conditional | 場,波,縁,渦,束
+    -->
+    <g class="theory-rows">
+      <!-- Row 1: 星形成と恒星進化 (strong) -->
+      <text x="390" y="224" text-anchor="end" fill="white" font-size="14">星形成と恒星進化</text>
+      <rect x="400" y="192" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="192" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="192" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="192" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="192" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 2: 銀河形成の階層的成長 (strong) -->
+      <text x="390" y="276" text-anchor="end" fill="white" font-size="14">銀河形成の階層的成長</text>
+      <rect x="400" y="244" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="244" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="244" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="244" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="244" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 3: 宇宙バリオンサイクル (conditional) -->
+      <text x="390" y="328" text-anchor="end" fill="white" font-size="14">宇宙バリオンサイクル</text>
+      <rect x="400" y="296" width="148" height="50" fill="#8B8682" opacity="0.4" />
+      <rect x="550" y="296" width="148" height="50" fill="#5B8DB8" opacity="0.4" />
+      <rect x="700" y="296" width="148" height="50" fill="#D4A857" opacity="0.4" />
+      <rect x="850" y="296" width="148" height="50" fill="#C45B4D" opacity="0.4" />
+      <rect x="1000" y="296" width="148" height="50" fill="#5B8B6A" opacity="0.4" />
+
+      <!-- Row 4: 降着円盤とジェット形成 (strong) -->
+      <text x="390" y="380" text-anchor="end" fill="white" font-size="14">降着円盤とジェット形成</text>
+      <rect x="400" y="348" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="348" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="348" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="348" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="348" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 5: 惑星系形成 (strong) -->
+      <text x="390" y="432" text-anchor="end" fill="white" font-size="14">惑星系形成</text>
+      <rect x="400" y="400" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="400" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="400" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="400" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="400" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 6: 超新星残骸と星間物質相互作用 (strong) -->
+      <text x="390" y="484" text-anchor="end" fill="white" font-size="14">超新星残骸と星間物質相互作用</text>
+      <rect x="400" y="452" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="452" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="452" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="452" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="452" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 7: 太陽磁気活動サイクル (strong) -->
+      <text x="390" y="536" text-anchor="end" fill="white" font-size="14">太陽磁気活動サイクル</text>
+      <rect x="400" y="504" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="504" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="504" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="504" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="504" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 8: 宇宙大規模構造形成 (strong) -->
+      <text x="390" y="588" text-anchor="end" fill="white" font-size="14">宇宙大規模構造形成</text>
+      <rect x="400" y="556" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="556" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="556" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="556" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="556" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 9: 中性子星合体とキロノバ (strong) -->
+      <text x="390" y="640" text-anchor="end" fill="white" font-size="14">中性子星合体とキロノバ</text>
+      <rect x="400" y="608" width="148" height="50" fill="#8B8682" opacity="1.0" />
+      <rect x="550" y="608" width="148" height="50" fill="#5B8DB8" opacity="1.0" />
+      <rect x="700" y="608" width="148" height="50" fill="#D4A857" opacity="1.0" />
+      <rect x="850" y="608" width="148" height="50" fill="#C45B4D" opacity="1.0" />
+      <rect x="1000" y="608" width="148" height="50" fill="#5B8B6A" opacity="1.0" />
+
+      <!-- Row 10: 球状星団の力学進化 (conditional) -->
+      <text x="390" y="692" text-anchor="end" fill="white" font-size="14">球状星団の力学進化</text>
+      <rect x="400" y="660" width="148" height="50" fill="#8B8682" opacity="0.4" />
+      <rect x="550" y="660" width="148" height="50" fill="#5B8DB8" opacity="0.4" />
+      <rect x="700" y="660" width="148" height="50" fill="#D4A857" opacity="0.4" />
+      <rect x="850" y="660" width="148" height="50" fill="#C45B4D" opacity="0.4" />
+      <rect x="1000" y="660" width="148" height="50" fill="#5B8B6A" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <g class="judgment-summary">
+    <rect x="250" y="747" width="15" height="15" fill="#27AE60" />
+    <text x="275" y="760" text-anchor="start" fill="white" font-size="18">強い対応: 8件</text>
+
+    <rect x="500" y="747" width="15" height="15" fill="#F1C40F" />
+    <text x="525" y="760" text-anchor="start" fill="white" font-size="18">部分的対応: 0件</text>
+
+    <rect x="750" y="747" width="15" height="15" fill="#E67E22" />
+    <text x="775" y="760" text-anchor="start" fill="white" font-size="18">条件付き: 2件</text>
+  </g>
+</svg>

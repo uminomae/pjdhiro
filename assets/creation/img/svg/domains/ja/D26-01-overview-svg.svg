@@ -1,0 +1,153 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Define Gradients -->
+  <defs>
+    <linearGradient id="phaseBoxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D26 音楽学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2: 文献確認・理論選定 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" />
+  <text x="200" y="195" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+  <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,250 205,250 200,260" fill="#F39C12" />
+
+  <!-- Phase 3-4: 構造対応の判定 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" />
+  <text x="200" y="295" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+  <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,350 205,350 200,360" fill="#F39C12" />
+
+  <!-- Phase 5: 論拠監査 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" />
+  <text x="200" y="395" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+  <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,450 205,450 200,460" fill="#F39C12" />
+
+  <!-- Phase 6: 構造再読（4軸再評価） -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" />
+  <text x="200" y="495" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+  <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,550 205,550 200,560" fill="#F39C12" />
+
+  <!-- Phase 7: 横断統合 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" />
+  <text x="200" y="595" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g id="heatmap">
+    <!-- Column Headers -->
+    <rect x="400" y="120" width="148.4" height="30" rx="5" fill="#8B8682" />
+    <text x="474.2" y="140.33" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+    <rect x="550.4" y="120" width="148.4" height="30" rx="5" fill="#5B8DB8" />
+    <text x="624.6" y="140.33" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+    <rect x="700.8" y="120" width="148.4" height="30" rx="5" fill="#D4A857" />
+    <text x="775" y="140.33" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+    <rect x="851.2" y="120" width="148.4" height="30" rx="5" fill="#C45B4D" />
+    <text x="925.4" y="140.33" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+    <rect x="1001.6" y="120" width="148.4" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1075.8" y="140.33" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+
+    <!-- Theory Rows -->
+    <!-- Theory 1: 即興の情報処理サイクル (partial) -->
+    <text x="390" y="181.66" font-size="14" fill="white" text-anchor="end">即興の情報処理サイクル</text>
+    <rect x="400" y="152" width="148.4" height="50" fill="#8B8682" fill-opacity="0.7" />
+    <rect x="550.4" y="152" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.7" />
+    <rect x="700.8" y="152" width="148.4" height="50" fill="#D4A857" fill-opacity="0.7" />
+    <rect x="851.2" y="152" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.7" />
+    <rect x="1001.6" y="152" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.7" />
+
+    <!-- Theory 2: ソナタ形式の弁証法的構造 (partial) -->
+    <text x="390" y="233.66" font-size="14" fill="white" text-anchor="end">ソナタ形式の弁証法的構造</text>
+    <rect x="400" y="204" width="148.4" height="50" fill="#8B8682" fill-opacity="0.7" />
+    <rect x="550.4" y="204" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.7" />
+    <rect x="700.8" y="204" width="148.4" height="50" fill="#D4A857" fill-opacity="0.7" />
+    <rect x="851.2" y="204" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.7" />
+    <rect x="1001.6" y="204" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.7" />
+
+    <!-- Theory 3: 期待・遅延・解決としての情動生成 (strong) -->
+    <text x="390" y="285.66" font-size="14" fill="white" text-anchor="end">期待・遅延・解決としての情動生成</text>
+    <rect x="400" y="256" width="148.4" height="50" fill="#8B8682" fill-opacity="1.0" />
+    <rect x="550.4" y="256" width="148.4" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+    <rect x="700.8" y="256" width="148.4" height="50" fill="#D4A857" fill-opacity="1.0" />
+    <rect x="851.2" y="256" width="148.4" height="50" fill="#C45B4D" fill-opacity="1.0" />
+    <rect x="1001.6" y="256" width="148.4" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+
+    <!-- Theory 4: 歌の普遍性と多様性のデータ駆動研究 (conditional) -->
+    <text x="390" y="337.66" font-size="14" fill="white" text-anchor="end">歌の普遍性と多様性のデータ駆動研究</text>
+    <rect x="400" y="308" width="148.4" height="50" fill="#8B8682" fill-opacity="0.4" />
+    <rect x="550.4" y="308" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.4" />
+    <rect x="700.8" y="308" width="148.4" height="50" fill="#D4A857" fill-opacity="0.4" />
+    <rect x="851.2" y="308" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.4" />
+    <rect x="1001.6" y="308" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.4" />
+
+    <!-- Theory 5: ITPRA理論 (strong) -->
+    <text x="390" y="389.66" font-size="14" fill="white" text-anchor="end">ITPRA理論</text>
+    <rect x="400" y="360" width="148.4" height="50" fill="#8B8682" fill-opacity="1.0" />
+    <rect x="550.4" y="360" width="148.4" height="50" fill="#5B8DB8" fill-opacity="1.0" />
+    <rect x="700.8" y="360" width="148.4" height="50" fill="#D4A857" fill-opacity="1.0" />
+    <rect x="851.2" y="360" width="148.4" height="50" fill="#C45B4D" fill-opacity="1.0" />
+    <rect x="1001.6" y="360" width="148.4" height="50" fill="#5B8B6A" fill-opacity="1.0" />
+
+    <!-- Theory 6: グルーヴ理論 (partial) -->
+    <text x="390" y="441.66" font-size="14" fill="white" text-anchor="end">グルーヴ理論</text>
+    <rect x="400" y="412" width="148.4" height="50" fill="#8B8682" fill-opacity="0.7" />
+    <rect x="550.4" y="412" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.7" />
+    <rect x="700.8" y="412" width="148.4" height="50" fill="#D4A857" fill-opacity="0.7" />
+    <rect x="851.2" y="412" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.7" />
+    <rect x="1001.6" y="412" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.7" />
+
+    <!-- Theory 7: Tonal Pitch Space (conditional) -->
+    <text x="390" y="493.66" font-size="14" fill="white" text-anchor="end">Tonal Pitch Space</text>
+    <rect x="400" y="464" width="148.4" height="50" fill="#8B8682" fill-opacity="0.2" />
+    <rect x="550.4" y="464" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.2" />
+    <rect x="700.8" y="464" width="148.4" height="50" fill="#D4A857" fill-opacity="0.4" />
+    <rect x="851.2" y="464" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.2" />
+    <rect x="1001.6" y="464" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.2" />
+
+    <!-- Theory 8: ラーガの段階構造 (conditional) -->
+    <text x="390" y="545.66" font-size="14" fill="white" text-anchor="end">ラーガの段階構造</text>
+    <rect x="400" y="516" width="148.4" height="50" fill="#8B8682" fill-opacity="0.4" />
+    <rect x="550.4" y="516" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.4" />
+    <rect x="700.8" y="516" width="148.4" height="50" fill="#D4A857" fill-opacity="0.2" />
+    <rect x="851.2" y="516" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.2" />
+    <rect x="1001.6" y="516" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.2" />
+
+    <!-- Theory 9: 聴覚景分析（ASA） (partial) -->
+    <text x="390" y="597.66" font-size="14" fill="white" text-anchor="end">聴覚景分析（ASA）</text>
+    <rect x="400" y="568" width="148.4" height="50" fill="#8B8682" fill-opacity="0.7" />
+    <rect x="550.4" y="568" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.7" />
+    <rect x="700.8" y="568" width="148.4" height="50" fill="#D4A857" fill-opacity="0.7" />
+    <rect x="851.2" y="568" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.7" />
+    <rect x="1001.6" y="568" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.7" />
+
+    <!-- Theory 10: 生態学的音楽知覚 (conditional) -->
+    <text x="390" y="649.66" font-size="14" fill="white" text-anchor="end">生態学的音楽知覚</text>
+    <rect x="400" y="620" width="148.4" height="50" fill="#8B8682" fill-opacity="0.4" />
+    <rect x="550.4" y="620" width="148.4" height="50" fill="#5B8DB8" fill-opacity="0.2" />
+    <rect x="700.8" y="620" width="148.4" height="50" fill="#D4A857" fill-opacity="0.2" />
+    <rect x="851.2" y="620" width="148.4" height="50" fill="#C45B4D" fill-opacity="0.4" />
+    <rect x="1001.6" y="620" width="148.4" height="50" fill="#5B8B6A" fill-opacity="0.2" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="771.66" font-size="20" fill="white" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 2件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 4件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 4件
+  </text>
+</svg>

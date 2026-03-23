@@ -1,0 +1,165 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <!-- Gradient for left column boxes -->
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+    <!-- Arrowhead marker -->
+    <marker id="arrowhead" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7 z" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="white" font-size="36" font-weight="bold">D22 経営学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" text-anchor="middle" fill="#cccccc" font-size="20">11理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="195" text-anchor="middle" fill="white" font-size="18">Phase 1-2: 文献確認・理論選定</text>
+  <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="295" text-anchor="middle" fill="white" font-size="18">Phase 3-4: 構造対応の判定</text>
+  <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="395" text-anchor="middle" fill="white" font-size="18">Phase 5: 論拠監査</text>
+  <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="495" text-anchor="middle" fill="white" font-size="18">Phase 6: 構造再読（4軸再評価）</text>
+  <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" />
+  <text x="200" y="595" text-anchor="middle" fill="white" font-size="18">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g>
+    <!-- Column Headers -->
+    <rect x="500" y="150" width="120" height="30" rx="5" fill="#8B8682" />
+    <text x="560" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">場</text>
+    <rect x="630" y="150" width="120" height="30" rx="5" fill="#5B8DB8" />
+    <text x="690" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">波</text>
+    <rect x="760" y="150" width="120" height="30" rx="5" fill="#D4A857" />
+    <text x="820" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">縁</text>
+    <rect x="890" y="150" width="120" height="30" rx="5" fill="#C45B4D" />
+    <text x="950" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">渦</text>
+    <rect x="1020" y="150" width="120" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1080" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">束</text>
+
+    <!-- Theory Rows and Cells -->
+    <!-- Data for theories -->
+    <!-- Opacity rules: strong (matched: 1.0, unmatched: 0.3), partial (matched: 0.7, unmatched: 0.3), conditional (matched: 0.4, unmatched: 0.2) -->
+    <!-- Stage colors: 場 (#8B8682), 波 (#5B8DB8), 縁 (#D4A857), 渦 (#C45B4D), 束 (#5B8B6A) -->
+    
+    <!-- Theory 1: 組織的知識創造5フェーズ | strong | 場,波,縁,渦,束 -->
+    <text x="480" y="212" text-anchor="end" fill="white" font-size="14">組織的知識創造5フェーズ</text>
+    <rect x="500" y="190" width="120" height="40" fill="#8B8682" fill-opacity="1.0" rx="3" />
+    <rect x="630" y="190" width="120" height="40" fill="#5B8DB8" fill-opacity="1.0" rx="3" />
+    <rect x="760" y="190" width="120" height="40" fill="#D4A857" fill-opacity="1.0" rx="3" />
+    <rect x="890" y="190" width="120" height="40" fill="#C45B4D" fill-opacity="1.0" rx="3" />
+    <rect x="1020" y="190" width="120" height="40" fill="#5B8B6A" fill-opacity="1.0" rx="3" />
+
+    <!-- Theory 2: デザイン思考5モード | partial | 場,波,縁,渦,束 -->
+    <text x="480" y="254" text-anchor="end" fill="white" font-size="14">デザイン思考5モード</text>
+    <rect x="500" y="232" width="120" height="40" fill="#8B8682" fill-opacity="0.7" rx="3" />
+    <rect x="630" y="232" width="120" height="40" fill="#5B8DB8" fill-opacity="0.7" rx="3" />
+    <rect x="760" y="232" width="120" height="40" fill="#D4A857" fill-opacity="0.7" rx="3" />
+    <rect x="890" y="232" width="120" height="40" fill="#C45B4D" fill-opacity="0.7" rx="3" />
+    <rect x="1020" y="232" width="120" height="40" fill="#5B8B6A" fill-opacity="0.7" rx="3" />
+
+    <!-- Theory 3: 小集団発達5段階 | strong | 場,波,縁,渦 -->
+    <text x="480" y="296" text-anchor="end" fill="white" font-size="14">小集団発達5段階</text>
+    <rect x="500" y="274" width="120" height="40" fill="#8B8682" fill-opacity="1.0" rx="3" />
+    <rect x="630" y="274" width="120" height="40" fill="#5B8DB8" fill-opacity="1.0" rx="3" />
+    <rect x="760" y="274" width="120" height="40" fill="#D4A857" fill-opacity="1.0" rx="3" />
+    <rect x="890" y="274" width="120" height="40" fill="#C45B4D" fill-opacity="1.0" rx="3" />
+    <rect x="1020" y="274" width="120" height="40" fill="#5B8B6A" fill-opacity="0.3" rx="3" />
+
+    <!-- Theory 4: 破壊的イノベーション | partial | 場,波,縁,渦,束 -->
+    <text x="480" y="338" text-anchor="end" fill="white" font-size="14">破壊的イノベーション</text>
+    <rect x="500" y="316" width="120" height="40" fill="#8B8682" fill-opacity="0.7" rx="3" />
+    <rect x="630" y="316" width="120" height="40" fill="#5B8DB8" fill-opacity="0.7" rx="3" />
+    <rect x="760" y="316" width="120" height="40" fill="#D4A857" fill-opacity="0.7" rx="3" />
+    <rect x="890" y="316" width="120" height="40" fill="#C45B4D" fill-opacity="0.7" rx="3" />
+    <rect x="1020" y="316" width="120" height="40" fill="#5B8B6A" fill-opacity="0.7" rx="3" />
+
+    <!-- Theory 5: 学習する組織 + 精神分析的組織論 | partial | 場,波,縁 -->
+    <text x="480" y="380" text-anchor="end" fill="white" font-size="14">学習する組織 + 精神分析的組織論</text>
+    <rect x="500" y="358" width="120" height="40" fill="#8B8682" fill-opacity="0.7" rx="3" />
+    <rect x="630" y="358" width="120" height="40" fill="#5B8DB8" fill-opacity="0.7" rx="3" />
+    <rect x="760" y="358" width="120" height="40" fill="#D4A857" fill-opacity="0.7" rx="3" />
+    <rect x="890" y="358" width="120" height="40" fill="#C45B4D" fill-opacity="0.3" rx="3" />
+    <rect x="1020" y="358" width="120" height="40" fill="#5B8B6A" fill-opacity="0.3" rx="3" />
+
+    <!-- Theory 6: 探索/活用 + 両利き経営 | partial | 場,波,渦,束 -->
+    <text x="480" y="422" text-anchor="end" fill="white" font-size="14">探索/活用 + 両利き経営</text>
+    <rect x="500" y="400" width="120" height="40" fill="#8B8682" fill-opacity="0.7" rx="3" />
+    <rect x="630" y="400" width="120" height="40" fill="#5B8DB8" fill-opacity="0.7" rx="3" />
+    <rect x="760" y="400" width="120" height="40" fill="#D4A857" fill-opacity="0.3" rx="3" />
+    <rect x="890" y="400" width="120" height="40" fill="#C45B4D" fill-opacity="0.7" rx="3" />
+    <rect x="1020" y="400" width="120" height="40" fill="#5B8B6A" fill-opacity="0.7" rx="3" />
+
+    <!-- Theory 7: センスメイキング + HRO | strong | 場,波,縁,渦,束 -->
+    <text x="480" y="464" text-anchor="end" fill="white" font-size="14">センスメイキング + HRO</text>
+    <rect x="500" y="442" width="120" height="40" fill="#8B8682" fill-opacity="1.0" rx="3" />
+    <rect x="630" y="442" width="120" height="40" fill="#5B8DB8" fill-opacity="1.0" rx="3" />
+    <rect x="760" y="442" width="120" height="40" fill="#D4A857" fill-opacity="1.0" rx="3" />
+    <rect x="890" y="442" width="120" height="40" fill="#C45B4D" fill-opacity="1.0" rx="3" />
+    <rect x="1020" y="442" width="120" height="40" fill="#5B8B6A" fill-opacity="1.0" rx="3" />
+
+    <!-- Theory 8: TPS/リーン + アジャイル | partial | 場,波,渦,束 -->
+    <text x="480" y="506" text-anchor="end" fill="white" font-size="14">TPS/リーン + アジャイル</text>
+    <rect x="500" y="484" width="120" height="40" fill="#8B8682" fill-opacity="0.7" rx="3" />
+    <rect x="630" y="484" width="120" height="40" fill="#5B8DB8" fill-opacity="0.7" rx="3" />
+    <rect x="760" y="484" width="120" height="40" fill="#D4A857" fill-opacity="0.3" rx="3" />
+    <rect x="890" y="484" width="120" height="40" fill="#C45B4D" fill-opacity="0.7" rx="3" />
+    <rect x="1020" y="484" width="120" height="40" fill="#5B8B6A" fill-opacity="0.7" rx="3" />
+
+    <!-- Theory 9: エフェクチュエーション | strong | 場,波,縁 -->
+    <text x="480" y="548" text-anchor="end" fill="white" font-size="14">エフェクチュエーション</text>
+    <rect x="500" y="526" width="120" height="40" fill="#8B8682" fill-opacity="1.0" rx="3" />
+    <rect x="630" y="526" width="120" height="40" fill="#5B8DB8" fill-opacity="1.0" rx="3" />
+    <rect x="760" y="526" width="120" height="40" fill="#D4A857" fill-opacity="1.0" rx="3" />
+    <rect x="890" y="526" width="120" height="40" fill="#C45B4D" fill-opacity="0.3" rx="3" />
+    <rect x="1020" y="526" width="120" height="40" fill="#5B8B6A" fill-opacity="0.3" rx="3" />
+
+    <!-- Theory 10: アンチフラジャイル | conditional | 波,渦,束 -->
+    <text x="480" y="590" text-anchor="end" fill="white" font-size="14">アンチフラジャイル</text>
+    <rect x="500" y="568" width="120" height="40" fill="#8B8682" fill-opacity="0.2" rx="3" />
+    <rect x="630" y="568" width="120" height="40" fill="#5B8DB8" fill-opacity="0.4" rx="3" />
+    <rect x="760" y="568" width="120" height="40" fill="#D4A857" fill-opacity="0.2" rx="3" />
+    <rect x="890" y="568" width="120" height="40" fill="#C45B4D" fill-opacity="0.4" rx="3" />
+    <rect x="1020" y="568" width="120" height="40" fill="#5B8B6A" fill-opacity="0.4" rx="3" />
+
+    <!-- Theory 11: U理論 | partial | 場,波,縁,渦,束 -->
+    <text x="480" y="632" text-anchor="end" fill="white" font-size="14">U理論</text>
+    <rect x="500" y="610" width="120" height="40" fill="#8B8682" fill-opacity="0.7" rx="3" />
+    <rect x="630" y="610" width="120" height="40" fill="#5B8DB8" fill-opacity="0.7" rx="3" />
+    <rect x="760" y="610" width="120" height="40" fill="#D4A857" fill-opacity="0.7" rx="3" />
+    <rect x="890" y="610" width="120" height="40" fill="#C45B4D" fill-opacity="0.7" rx="3" />
+    <rect x="1020" y="610" width="120" height="40" fill="#5B8B6A" fill-opacity="0.7" rx="3" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="70" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="765" text-anchor="middle" fill="white" font-size="18">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 4件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 6件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 1件
+  </text>
+</svg>

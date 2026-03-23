@@ -1,0 +1,158 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <defs>
+    <!-- Gradient for left column boxes -->
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+
+    <!-- Marker for arrows -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+    </marker>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+    D10 臨床医学・免疫学 — 5段階モデルとの構造対応調査
+  </text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">
+    10理論の横断的分析
+  </text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <g class="left-column">
+    <!-- Box 1: Phase 1-2 -->
+    <rect x="45" y="155" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="196" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+    <path d="M200 220 L200 260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Box 2: Phase 3-4 -->
+    <rect x="45" y="255" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="296" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+    <path d="M200 320 L200 360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Box 3: Phase 5 -->
+    <rect x="45" y="355" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="396" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+    <path d="M200 420 L200 460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Box 4: Phase 6 -->
+    <rect x="45" y="455" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="496" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+    <path d="M200 520 L200 560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+
+    <!-- Box 5: Phase 7 -->
+    <rect x="45" y="555" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+    <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#boxGradient)" stroke="#cccccc" stroke-width="1" />
+    <text x="200" y="596" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+  </g>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <g class="heat-map">
+    <!-- Column Headers -->
+    <rect x="400" y="160" width="140" height="30" rx="5" fill="#8B8682" />
+    <text x="470" y="180" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+    <rect x="542" y="160" width="140" height="30" rx="5" fill="#5B8DB8" />
+    <text x="612" y="180" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+    <rect x="684" y="160" width="140" height="30" rx="5" fill="#D4A857" />
+    <text x="754" y="180" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+    <rect x="826" y="160" width="140" height="30" rx="5" fill="#C45B4D" />
+    <text x="896" y="180" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+    <rect x="968" y="160" width="140" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1038" y="180" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+
+    <!-- Theory Rows -->
+    <!-- Row 0: クローン選択説による適応免疫応答 (strong, 全段階) -->
+    <text x="390" y="222" font-size="14" fill="white" text-anchor="end">クローン選択説による適応免疫応答</text>
+    <rect x="400" y="192" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="542" y="192" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="684" y="192" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="826" y="192" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="968" y="192" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 1: がん免疫編集3E (strong, 縁) -->
+    <text x="390" y="274" font-size="14" fill="white" text-anchor="end">がん免疫編集3E</text>
+    <rect x="400" y="244" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="244" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="244" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="826" y="244" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="968" y="244" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 2: 急性炎症と能動的収束 (strong, 束) -->
+    <text x="390" y="326" font-size="14" fill="white" text-anchor="end">急性炎症と能動的収束</text>
+    <rect x="400" y="296" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="296" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="296" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="826" y="296" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="968" y="296" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 3: 創傷治癒プロセス (strong, 全段階) -->
+    <text x="390" y="378" font-size="14" fill="white" text-anchor="end">創傷治癒プロセス</text>
+    <rect x="400" y="348" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="542" y="348" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="684" y="348" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="826" y="348" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="968" y="348" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 4: 敗血症における免疫麻痺と回復 (partial, 渦) -->
+    <text x="390" y="430" font-size="14" fill="white" text-anchor="end">敗血症における免疫麻痺と回復</text>
+    <rect x="400" y="400" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="400" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="400" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="826" y="400" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="968" y="400" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 5: 骨折修復プロセス (strong, 縁) -->
+    <text x="390" y="482" font-size="14" fill="white" text-anchor="end">骨折修復プロセス</text>
+    <rect x="400" y="452" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="452" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="452" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="826" y="452" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="968" y="452" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 6: アレルギー感作と脱感作 (strong, 束) -->
+    <text x="390" y="534" font-size="14" fill="white" text-anchor="end">アレルギー感作と脱感作</text>
+    <rect x="400" y="504" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="504" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="504" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="826" y="504" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="968" y="504" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 7: 移植免疫拒絶と寛容誘導 (strong, 縁) -->
+    <text x="390" y="586" font-size="14" fill="white" text-anchor="end">移植免疫拒絶と寛容誘導</text>
+    <rect x="400" y="556" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="556" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="556" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="826" y="556" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="968" y="556" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 8: 自己免疫疾患の発症プロセス (partial, 渦) -->
+    <text x="390" y="638" font-size="14" fill="white" text-anchor="end">自己免疫疾患の発症プロセス</text>
+    <rect x="400" y="608" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="542" y="608" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="684" y="608" width="140" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="826" y="608" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="968" y="608" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 9: 胚中心反応と親和性成熟 (strong, 全段階) -->
+    <text x="390" y="690" font-size="14" fill="white" text-anchor="end">胚中心反応と親和性成熟</text>
+    <rect x="400" y="660" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="542" y="660" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="684" y="660" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="826" y="660" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="968" y="660" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="730" width="1200" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+  <text x="600" y="761" font-size="18" fill="white" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 8件 / <tspan fill="#F1C40F">■</tspan> 部分的対応: 2件 / <tspan fill="#E67E22">■</tspan> 条件付き: 0件
+  </text>
+</svg>

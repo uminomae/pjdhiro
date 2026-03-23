@@ -1,0 +1,165 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#1a1a2e" />
+
+    <!-- Definitions for gradients and markers -->
+    <defs>
+        <linearGradient id="phaseBoxGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#2C3E50" />
+            <stop offset="100%" stop-color="#34495E" />
+        </linearGradient>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#F39C12" />
+        </marker>
+    </defs>
+
+    <!-- Title Section -->
+    <text x="600" y="60" text-anchor="middle" font-size="36" fill="white" font-weight="bold">D12 農学・生態学 — 5段階モデルとの構造対応調査</text>
+    <text x="600" y="95" text-anchor="middle" font-size="20" fill="#cccccc">10理論の横断的分析</text>
+
+    <!-- Left Column: Research methodology flow -->
+    <g class="methodology-flow">
+        <!-- Glow rects -->
+        <rect x="45" y="155" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+        <rect x="45" y="255" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+        <rect x="45" y="355" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+        <rect x="45" y="455" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+        <rect x="45" y="555" width="310" height="70" rx="10" fill="#4A90E2" opacity="0.2" />
+
+        <!-- Phase boxes -->
+        <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+        <text x="200" y="195" text-anchor="middle" font-size="18" fill="white">Phase 1-2: 文献確認・理論選定</text>
+
+        <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+        <text x="200" y="295" text-anchor="middle" font-size="18" fill="white">Phase 3-4: 構造対応の判定</text>
+
+        <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+        <text x="200" y="395" text-anchor="middle" font-size="18" fill="white">Phase 5: 論拠監査</text>
+
+        <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+        <text x="200" y="495" text-anchor="middle" font-size="18" fill="white">Phase 6: 構造再読（4軸再評価）</text>
+
+        <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseBoxGradient)" stroke="#cccccc" stroke-width="1" />
+        <text x="200" y="595" text-anchor="middle" font-size="18" fill="white">Phase 7: 横断統合</text>
+
+        <!-- Arrows -->
+        <path d="M 200 220 L 200 260" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+        <path d="M 200 320 L 200 360" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+        <path d="M 200 420 L 200 460" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+        <path d="M 200 520 L 200 560" stroke="#F39C12" stroke-width="4" marker-end="url(#arrowhead)" />
+    </g>
+
+    <!-- Right Section: Theory correspondence heat map -->
+    <g class="heatmap">
+        <!-- Column Headers -->
+        <rect x="400" y="150" width="140" height="30" rx="5" fill="#8B8682" />
+        <text x="470" y="170" text-anchor="middle" font-size="16" fill="white" font-weight="bold">場</text>
+        <rect x="542" y="150" width="140" height="30" rx="5" fill="#5B8DB8" />
+        <text x="612" y="170" text-anchor="middle" font-size="16" fill="white" font-weight="bold">波</text>
+        <rect x="684" y="150" width="140" height="30" rx="5" fill="#D4A857" />
+        <text x="754" y="170" text-anchor="middle" font-size="16" fill="white" font-weight="bold">縁</text>
+        <rect x="826" y="150" width="140" height="30" rx="5" fill="#C45B4D" />
+        <text x="896" y="170" text-anchor="middle" font-size="16" fill="white" font-weight="bold">渦</text>
+        <rect x="968" y="150" width="140" height="30" rx="5" fill="#5B8B6A" />
+        <text x="1038" y="170" text-anchor="middle" font-size="16" fill="white" font-weight="bold">束</text>
+
+        <!-- Theory Rows -->
+        <g class="theory-rows">
+            <!-- Row 0: 生態遷移 | partial | 場,波,縁,渦,束 -->
+            <text x="390" y="220" text-anchor="end" font-size="14" fill="white">生態遷移</text>
+            <rect x="400" y="190" width="140" height="50" fill="#8B8682" opacity="0.7" />
+            <rect x="542" y="190" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+            <rect x="684" y="190" width="140" height="50" fill="#D4A857" opacity="0.7" />
+            <rect x="826" y="190" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+            <rect x="968" y="190" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+            <!-- Row 1: 農地窒素循環 | partial | 場,波,縁,渦,束 -->
+            <text x="390" y="220 + 52" text-anchor="end" font-size="14" fill="white">農地窒素循環</text>
+            <rect x="400" y="190 + 52" width="140" height="50" fill="#8B8682" opacity="0.7" />
+            <rect x="542" y="190 + 52" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+            <rect x="684" y="190 + 52" width="140" height="50" fill="#D4A857" opacity="0.7" />
+            <rect x="826" y="190 + 52" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+            <rect x="968" y="190 + 52" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+            <!-- Row 2: 総合的病害虫管理（IPM）と経済閾値 | strong | 縁 -->
+            <text x="390" y="220 + 52*2" text-anchor="end" font-size="14" fill="white">総合的病害虫管理（IPM）と経済閾値</text>
+            <rect x="400" y="190 + 52*2" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="190 + 52*2" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="190 + 52*2" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="190 + 52*2" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="190 + 52*2" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+            <!-- Row 3: レジームシフト／複数安定状態 | strong | 縁,渦 -->
+            <text x="390" y="220 + 52*3" text-anchor="end" font-size="14" fill="white">レジームシフト／複数安定状態</text>
+            <rect x="400" y="190 + 52*3" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="190 + 52*3" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="190 + 52*3" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="190 + 52*3" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+            <rect x="968" y="190 + 52*3" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+            <!-- Row 4: 生態学的境界理論（エコトーン） | strong | 縁 -->
+            <text x="390" y="220 + 52*4" text-anchor="end" font-size="14" fill="white">生態学的境界理論（エコトーン）</text>
+            <rect x="400" y="190 + 52*4" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="190 + 52*4" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="190 + 52*4" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="190 + 52*4" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="190 + 52*4" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+            <!-- Row 5: 景観コネクティビティとパーコレーション閾値 | strong | 縁 -->
+            <text x="390" y="220 + 52*5" text-anchor="end" font-size="14" fill="white">景観コネクティビティとパーコレーション閾値</text>
+            <rect x="400" y="190 + 52*5" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="190 + 52*5" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="190 + 52*5" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="190 + 52*5" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="190 + 52*5" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+            <!-- Row 6: 乾燥地植生の自己組織化パターン | partial | 渦,束 -->
+            <text x="390" y="220 + 52*6" text-anchor="end" font-size="14" fill="white">乾燥地植生の自己組織化パターン</text>
+            <rect x="400" y="190 + 52*6" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="190 + 52*6" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="190 + 52*6" width="140" height="50" fill="#D4A857" opacity="0.3" />
+            <rect x="826" y="190 + 52*6" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+            <rect x="968" y="190 + 52*6" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+            <!-- Row 7: 植物-土壌フィードバック | conditional | 縁,渦,束 -->
+            <text x="390" y="220 + 52*7" text-anchor="end" font-size="14" fill="white">植物-土壌フィードバック</text>
+            <rect x="400" y="190 + 52*7" width="140" height="50" fill="#8B8682" opacity="0.2" />
+            <rect x="542" y="190 + 52*7" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+            <rect x="684" y="190 + 52*7" width="140" height="50" fill="#D4A857" opacity="0.4" />
+            <rect x="826" y="190 + 52*7" width="140" height="50" fill="#C45B4D" opacity="0.4" />
+            <rect x="968" y="190 + 52*7" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+
+            <!-- Row 8: 生態系エンジニアリング | conditional | 縁 -->
+            <text x="390" y="220 + 52*8" text-anchor="end" font-size="14" fill="white">生態系エンジニアリング</text>
+            <rect x="400" y="190 + 52*8" width="140" height="50" fill="#8B8682" opacity="0.2" />
+            <rect x="542" y="190 + 52*8" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+            <rect x="684" y="190 + 52*8" width="140" height="50" fill="#D4A857" opacity="0.4" />
+            <rect x="826" y="190 + 52*8" width="140" height="50" fill="#C45B4D" opacity="0.2" />
+            <rect x="968" y="190 + 52*8" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
+
+            <!-- Row 9: 状態-遷移モデル（STMs） | partial | 縁 -->
+            <text x="390" y="220 + 52*9" text-anchor="end" font-size="14" fill="white">状態-遷移モデル（STMs）</text>
+            <rect x="400" y="190 + 52*9" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="190 + 52*9" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="190 + 52*9" width="140" height="50" fill="#D4A857" opacity="0.7" />
+            <rect x="826" y="190 + 52*9" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="190 + 52*9" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+        </g>
+    </g>
+
+    <!-- Bottom Bar -->
+    <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" stroke-width="1" />
+    <g class="summary">
+        <!-- ■ 強い対応: 4件 -->
+        <rect x="150" y="745" width="15" height="15" fill="#27AE60" />
+        <text x="175" y="760" text-anchor="start" font-size="18" fill="white">強い対応: 4件</text>
+
+        <!-- ■ 部分的対応: 4件 -->
+        <rect x="475" y="745" width="15" height="15" fill="#F1C40F" />
+        <text x="500" y="760" text-anchor="start" font-size="18" fill="white">部分的対応: 4件</text>
+
+        <!-- ■ 条件付き: 2件 -->
+        <rect x="800" y="745" width="15" height="15" fill="#E67E22" />
+        <text x="825" y="760" text-anchor="start" font-size="18" fill="white">条件付き: 2件</text>
+    </g>
+</svg>

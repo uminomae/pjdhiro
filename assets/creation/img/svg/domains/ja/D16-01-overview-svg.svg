@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2C3E50" />
+      <stop offset="100%" style="stop-color:#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D16 歴史学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2: 文献確認・理論選定 -->
+  <rect x="45" y="155" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="197" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+  <line x1="200" y1="220" x2="200" y2="240" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,235 200,245 205,235" fill="#F39C12" />
+
+  <!-- Phase 3-4: 構造対応の判定 -->
+  <rect x="45" y="255" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="297" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+  <line x1="200" y1="320" x2="200" y2="340" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,335 200,345 205,335" fill="#F39C12" />
+
+  <!-- Phase 5: 論拠監査 -->
+  <rect x="45" y="355" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="397" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+  <line x1="200" y1="420" x2="200" y2="440" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,435 200,445 205,435" fill="#F39C12" />
+
+  <!-- Phase 6: 構造再読（4軸再評価） -->
+  <rect x="45" y="455" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="497" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+  <line x1="200" y1="520" x2="200" y2="540" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,535 200,545 205,535" fill="#F39C12" />
+
+  <!-- Phase 7: 横断統合 -->
+  <rect x="45" y="555" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" />
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="597" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <g class="column-headers">
+    <rect x="400" y="150" width="150" height="30" rx="5" fill="#8B8682" />
+    <text x="475" y="171" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+    <rect x="552" y="150" width="150" height="30" rx="5" fill="#5B8DB8" />
+    <text x="627" y="171" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+    <rect x="704" y="150" width="150" height="30" rx="5" fill="#D4A857" />
+    <text x="779" y="171" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+    <rect x="856" y="150" width="150" height="30" rx="5" fill="#C45B4D" />
+    <text x="931" y="171" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+    <rect x="1008" y="150" width="150" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1083" y="171" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+  </g>
+
+  <!-- Theory Rows and Cells -->
+  <g class="theory-grid">
+    <!-- Row 1: 長期持続・三層時間構造 (partial, 場,波,縁,渦,束) -->
+    <text x="390" y="214" font-size="14" fill="white" text-anchor="end">長期持続・三層時間構造</text>
+    <rect x="400" y="182" width="150" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="552" y="182" width="150" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="704" y="182" width="150" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="856" y="182" width="150" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1008" y="182" width="150" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 2: 挑戦と応答 (partial, 波) -->
+    <text x="390" y="266" font-size="14" fill="white" text-anchor="end">挑戦と応答</text>
+    <rect x="400" y="234" width="150" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="552" y="234" width="150" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="704" y="234" width="150" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="856" y="234" width="150" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1008" y="234" width="150" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 3: 経路依存とクリティカル・ジャンクチャー (partial, 縁,渦,束) -->
+    <text x="390" y="318" font-size="14" fill="white" text-anchor="end">経路依存とクリティカル・ジャンクチャー</text>
+    <rect x="400" y="286" width="150" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="552" y="286" width="150" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="286" width="150" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="856" y="286" width="150" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1008" y="286" width="150" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 4: アサビーヤ王朝論 (partial, 縁,渦) -->
+    <text x="390" y="370" font-size="14" fill="white" text-anchor="end">アサビーヤ王朝論</text>
+    <rect x="400" y="338" width="150" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="552" y="338" width="150" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="338" width="150" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="856" y="338" width="150" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1008" y="338" width="150" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 5: 世界システム分析 (partial, 縁) -->
+    <text x="390" y="422" font-size="14" fill="white" text-anchor="end">世界システム分析</text>
+    <rect x="400" y="390" width="150" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="552" y="390" width="150" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="390" width="150" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="856" y="390" width="150" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1008" y="390" width="150" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 6: 大規模技術システムとモメンタム (strong, 場,波,縁,渦,束) -->
+    <text x="390" y="474" font-size="14" fill="white" text-anchor="end">大規模技術システムとモメンタム</text>
+    <rect x="400" y="442" width="150" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="552" y="442" width="150" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="704" y="442" width="150" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="856" y="442" width="150" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1008" y="442" width="150" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 7: 概念史と時間構造 (partial, 場,波) -->
+    <text x="390" y="526" font-size="14" fill="white" text-anchor="end">概念史と時間構造</text>
+    <rect x="400" y="494" width="150" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="552" y="494" width="150" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="704" y="494" width="150" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="856" y="494" width="150" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1008" y="494" width="150" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 8: メタヒストリー (conditional, ―) -->
+    <text x="390" y="578" font-size="14" fill="white" text-anchor="end">メタヒストリー</text>
+    <rect x="400" y="546" width="150" height="50" fill="#8B8682" opacity="0.2" />
+    <rect x="552" y="546" width="150" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="704" y="546" width="150" height="50" fill="#D4A857" opacity="0.2" />
+    <rect x="856" y="546" width="150" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1008" y="546" width="150" height="50" fill="#5B8B6A" opacity="0.2" />
+
+    <!-- Row 9: 歴史の循環（corsi e ricorsi） (partial, 循環構造に対応) -->
+    <text x="390" y="630" font-size="14" fill="white" text-anchor="end">歴史の循環（corsi e ricorsi）</text>
+    <rect x="400" y="598" width="150" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="552" y="598" width="150" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="598" width="150" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="856" y="598" width="150" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1008" y="598" width="150" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 10: 世俗サイクルとクリオダイナミクス (partial, 縁) -->
+    <text x="390" y="682" font-size="14" fill="white" text-anchor="end">世俗サイクルとクリオダイナミクス</text>
+    <rect x="400" y="650" width="150" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="552" y="650" width="150" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="704" y="650" width="150" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="856" y="650" width="150" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1008" y="650" width="150" height="50" fill="#5B8B6A" opacity="0.3" />
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="50" y="730" width="1100" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="758" font-size="18" fill="white" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 1件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 8件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 1件
+  </text>
+</svg>

@@ -1,0 +1,160 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="phaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title Section -->
+  <text x="600" y="60" font-size="36" font-weight="bold" fill="white" text-anchor="middle">D19 文学・文芸学 — 5段階モデルとの構造対応調査</text>
+  <text x="600" y="95" font-size="20" fill="#cccccc" text-anchor="middle">10理論の横断的分析</text>
+
+  <!-- Left Column: Research Methodology Flow -->
+  <!-- Phase 1-2 -->
+  <rect x="45" y="155" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" /> <!-- Glow -->
+  <rect x="50" y="160" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="197" font-size="18" fill="white" text-anchor="middle">Phase 1-2: 文献確認・理論選定</text>
+  <!-- Arrow 1 -->
+  <line x1="200" y1="220" x2="200" y2="260" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,250 200,260 205,250" fill="#F39C12" />
+
+  <!-- Phase 3-4 -->
+  <rect x="45" y="255" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" /> <!-- Glow -->
+  <rect x="50" y="260" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="297" font-size="18" fill="white" text-anchor="middle">Phase 3-4: 構造対応の判定</text>
+  <!-- Arrow 2 -->
+  <line x1="200" y1="320" x2="200" y2="360" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,350 200,360 205,350" fill="#F39C12" />
+
+  <!-- Phase 5 -->
+  <rect x="45" y="355" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" /> <!-- Glow -->
+  <rect x="50" y="360" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="397" font-size="18" fill="white" text-anchor="middle">Phase 5: 論拠監査</text>
+  <!-- Arrow 3 -->
+  <line x1="200" y1="420" x2="200" y2="460" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,450 200,460 205,450" fill="#F39C12" />
+
+  <!-- Phase 6 -->
+  <rect x="45" y="455" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" /> <!-- Glow -->
+  <rect x="50" y="460" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="497" font-size="18" fill="white" text-anchor="middle">Phase 6: 構造再読（4軸再評価）</text>
+  <!-- Arrow 4 -->
+  <line x1="200" y1="520" x2="200" y2="560" stroke="#F39C12" stroke-width="4" />
+  <polygon points="195,550 200,560 205,550" fill="#F39C12" />
+
+  <!-- Phase 7 -->
+  <rect x="45" y="555" width="310" height="70" rx="15" fill="#4A90E2" opacity="0.2" /> <!-- Glow -->
+  <rect x="50" y="560" width="300" height="60" rx="10" fill="url(#phaseGradient)" stroke="#cccccc" />
+  <text x="200" y="597" font-size="18" fill="white" text-anchor="middle">Phase 7: 横断統合</text>
+
+  <!-- Right Section: Theory Correspondence Heat Map -->
+  <!-- Column Headers -->
+  <g id="column-headers">
+    <rect x="400" y="140" width="140" height="30" rx="5" fill="#8B8682" />
+    <text x="470" y="160" font-size="16" font-weight="bold" fill="white" text-anchor="middle">場</text>
+    <rect x="550" y="140" width="140" height="30" rx="5" fill="#5B8DB8" />
+    <text x="620" y="160" font-size="16" font-weight="bold" fill="white" text-anchor="middle">波</text>
+    <rect x="700" y="140" width="140" height="30" rx="5" fill="#D4A857" />
+    <text x="770" y="160" font-size="16" font-weight="bold" fill="white" text-anchor="middle">縁</text>
+    <rect x="850" y="140" width="140" height="30" rx="5" fill="#C45B4D" />
+    <text x="920" y="160" font-size="16" font-weight="bold" fill="white" text-anchor="middle">渦</text>
+    <rect x="1000" y="140" width="140" height="30" rx="5" fill="#5B8B6A" />
+    <text x="1070" y="160" font-size="16" font-weight="bold" fill="white" text-anchor="middle">束</text>
+  </g>
+
+  <!-- Heat Map Grid -->
+  <g id="heat-map-grid">
+    <!-- Row 0: 物語機能の連鎖構造 (partial) -->
+    <text x="390" y="199" font-size="14" fill="white" text-anchor="end">物語機能の連鎖構造</text>
+    <rect x="400" y="172" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="550" y="172" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="700" y="172" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="172" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1000" y="172" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 1: 対話性とヘテログロシア (partial) -->
+    <text x="390" y="251" font-size="14" fill="white" text-anchor="end">対話性とヘテログロシア</text>
+    <rect x="400" y="224" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="224" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="700" y="224" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="224" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1000" y="224" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 2: 受容美学（期待の地平と読みの行為） (partial) -->
+    <text x="390" y="303" font-size="14" fill="white" text-anchor="end">受容美学（期待の地平と読みの行為）</text>
+    <rect x="400" y="276" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="276" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="700" y="276" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="276" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1000" y="276" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 3: 異化（ostranenie） (strong) -->
+    <text x="390" y="355" font-size="14" fill="white" text-anchor="end">異化（ostranenie）</text>
+    <rect x="400" y="328" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="328" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="328" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="328" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="328" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 4: 物語構造の基本原理 (strong) -->
+    <text x="390" y="407" font-size="14" fill="white" text-anchor="end">物語構造の基本原理</text>
+    <rect x="400" y="380" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="380" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="380" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="380" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="380" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 5: 文学場（象徴財市場と自律化） (strong) -->
+    <text x="390" y="459" font-size="14" fill="white" text-anchor="end">文学場（象徴財市場と自律化）</text>
+    <rect x="400" y="432" width="140" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="550" y="432" width="140" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="700" y="432" width="140" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="850" y="432" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1000" y="432" width="140" height="50" fill="#5B8B6A" opacity="1.0" />
+
+    <!-- Row 6: テクストの多元的読解 (partial) -->
+    <text x="390" y="511" font-size="14" fill="white" text-anchor="end">テクストの多元的読解</text>
+    <rect x="400" y="484" width="140" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="550" y="484" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="484" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="484" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1000" y="484" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+
+    <!-- Row 7: 原型批評（四季のサイクル） (conditional) -->
+    <text x="390" y="563" font-size="14" fill="white" text-anchor="end">原型批評（四季のサイクル）</text>
+    <rect x="400" y="536" width="140" height="50" fill="#8B8682" opacity="0.4" />
+    <rect x="550" y="536" width="140" height="50" fill="#5B8DB8" opacity="0.4" />
+    <rect x="700" y="536" width="140" height="50" fill="#D4A857" opacity="0.4" />
+    <rect x="850" y="536" width="140" height="50" fill="#C45B4D" opacity="0.4" />
+    <rect x="1000" y="536" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+
+    <!-- Row 8: ナラトロジー（物語の時間・声・焦点化） (partial) -->
+    <text x="390" y="615" font-size="14" fill="white" text-anchor="end">ナラトロジー（物語の時間・声・焦点化）</text>
+    <rect x="400" y="588" width="140" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="550" y="588" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="700" y="588" width="140" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="850" y="588" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1000" y="588" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+
+    <!-- Row 9: 影響の不安（創造的誤読） (conditional) -->
+    <text x="390" y="667" font-size="14" fill="white" text-anchor="end">影響の不安（創造的誤読）</text>
+    <rect x="400" y="640" width="140" height="50" fill="#8B8682" opacity="0.4" />
+    <rect x="550" y="640" width="140" height="50" fill="#5B8DB8" opacity="0.4" />
+    <rect x="700" y="640" width="140" height="50" fill="#D4A857" opacity="0.4" />
+    <rect x="850" y="640" width="140" height="50" fill="#C45B4D" opacity="0.4" />
+    <rect x="1000" y="640" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+  </g>
+
+  <!-- Bottom Bar: Judgment Summary -->
+  <rect x="0" y="730" width="1200" height="50" rx="20" fill="#2C3E50" stroke="#cccccc" />
+  <text x="600" y="760" font-size="18" fill="white" text-anchor="middle">
+    <tspan fill="#27AE60">■</tspan> 強い対応: 3件 /
+    <tspan fill="#F1C40F">■</tspan> 部分的対応: 5件 /
+    <tspan fill="#E67E22">■</tspan> 条件付き: 2件
+  </text>
+</svg>

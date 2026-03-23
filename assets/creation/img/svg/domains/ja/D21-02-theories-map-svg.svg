@@ -1,0 +1,176 @@
+<svg viewBox="0 0 1200 900" font-family="sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="900" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="600" y="60" font-size="36" fill="#ffffff" text-anchor="middle">10経済学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Stage Colors -->
+  <!-- 場: #8B8682 -->
+  <!-- 波: #5B8DB8 -->
+  <!-- 縁: #D4A857 -->
+  <!-- 渦: #C45B4D -->
+  <!-- 束: #5B8B6A -->
+
+  <!-- Column Headers -->
+  <g font-size="20" fill="#ffffff" text-anchor="middle">
+    <rect x="240" y="120" width="180" height="50" fill="#8B8682" rx="5" ry="5"/>
+    <text x="330" y="152">場 (Field)</text>
+    <rect x="430" y="120" width="180" height="50" fill="#5B8DB8" rx="5" ry="5"/>
+    <text x="520" y="152">波 (Wave)</text>
+    <rect x="620" y="120" width="180" height="50" fill="#D4A857" rx="5" ry="5"/>
+    <text x="710" y="152">縁 (Edge)</text>
+    <rect x="810" y="120" width="180" height="50" fill="#C45B4D" rx="5" ry="5"/>
+    <text x="900" y="152">渦 (Vortex)</text>
+    <rect x="1000" y="120" width="180" height="50" fill="#5B8B6A" rx="5" ry="5"/>
+    <text x="1090" y="152">束 (Bundle)</text>
+  </g>
+
+  <!-- Matrix Rows and Cells -->
+  <g font-size="18">
+    <!-- Theory 1: 創造的破壊 -->
+    <text x="20" y="222" fill="#ffffff" text-anchor="start">1. 創造的破壊</text>
+    <rect x="240" y="190" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+    <text x="330" y="222" fill="#888888" text-anchor="middle">-</text>
+    <rect x="430" y="190" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+    <text x="520" y="222" fill="#e0e0e0" text-anchor="middle">波</text>
+    <rect x="620" y="190" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+    <text x="710" y="222" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="810" y="190" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5"/>
+    <text x="900" y="222" fill="#e0e0e0" text-anchor="middle">渦</text>
+    <rect x="1000" y="190" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+    <text x="1090" y="222" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 2: 自生的秩序と価格メカニズム -->
+    <text x="20" y="287" fill="#ffffff" text-anchor="start">2. 自生的秩序と価格メカニズム</text>
+    <rect x="240" y="255" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+    <text x="330" y="287" fill="#e0e0e0" text-anchor="middle">場</text>
+    <rect x="430" y="255" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+    <text x="520" y="287" fill="#888888" text-anchor="middle">-</text>
+    <rect x="620" y="255" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+    <text x="710" y="287" fill="#888888" text-anchor="middle">-</text>
+    <rect x="810" y="255" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+    <text x="900" y="287" fill="#888888" text-anchor="middle">-</text>
+    <rect x="1000" y="255" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5"/>
+    <text x="1090" y="287" fill="#e0e0e0" text-anchor="middle">束</text>
+
+    <!-- Theory 3: 根本的不確実性とアニマルスピリッツ -->
+    <text x="20" y="352" fill="#ffffff" text-anchor="start">3. 根本的不確実性とアニマルスピリッツ</text>
+    <rect x="240" y="320" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+    <text x="330" y="352" fill="#e0e0e0" text-anchor="middle">場</text>
+    <rect x="430" y="320" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+    <text x="520" y="352" fill="#e0e0e0" text-anchor="middle">波</text>
+    <rect x="620" y="320" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+    <text x="710" y="352" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="810" y="320" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+    <text x="900" y="352" fill="#888888" text-anchor="middle">-</text>
+    <rect x="1000" y="320" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+    <text x="1090" y="352" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 4: リスクと不確実性 -->
+    <text x="20" y="417" fill="#ffffff" text-anchor="start">4. リスクと不確実性</text>
+    <rect x="240" y="385" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+    <text x="330" y="417" fill="#e0e0e0" text-anchor="middle">場</text>
+    <rect x="430" y="385" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+    <text x="520" y="417" fill="#888888" text-anchor="middle">-</text>
+    <rect x="620" y="385" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+    <text x="710" y="417" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="810" y="385" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+    <text x="900" y="417" fill="#888888" text-anchor="middle">-</text>
+    <rect x="1000" y="385" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+    <text x="1090" y="417" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 5: 進化経済学 -->
+    <text x="20" y="482" fill="#ffffff" text-anchor="start">5. 進化経済学</text>
+    <rect x="240" y="450" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+    <text x="330" y="482" fill="#888888" text-anchor="middle">-</text>
+    <rect x="430" y="450" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5"/>
+    <text x="520" y="482" fill="#e0e0e0" text-anchor="middle">波</text>
+    <rect x="620" y="450" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5"/>
+    <text x="710" y="482" fill="#e0e0e0" text-anchor="middle">縁</text>
+    <rect x="810" y="450" width="180" height="55" fill="#C45B4D" opacity="0.7" rx="5" ry="5"/>
+    <text x="900" y="482" fill="#e0e0e0" text-anchor="middle">渦</text>
+    <rect x="1000" y="450" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+    <text x="1090" y="482" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 6: 複雑系経済学・収穫逓増 -->
+    <text x="20" y="547" fill="#ffffff" text-anchor="start">6. 複雑系経済学・収穫逓増</text>
+    <rect x="240" y="515" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5"/>
+    <text x="330" y="547" fill="#ffffff" text-anchor="middle">場</text>
+    <rect x="430" y="515" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5"/>
+    <text x="520" y="547" fill="#ffffff" text-anchor="middle">波</text>
+    <rect x="620" y="515" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5"/>
+    <text x="710" y="547" fill="#ffffff" text-anchor="middle">縁</text>
+    <rect x="810" y="515" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5"/>
+    <text x="900" y="547" fill="#ffffff" text-anchor="middle">渦</text>
+    <rect x="1000" y="515" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5"/>
+    <text x="1090" y="547" fill="#ffffff" text-anchor="middle">束</text>
+
+    <!-- Theory 7: 制度経済学 -->
+    <text x="20" y="612" fill="#ffffff" text-anchor="start">7. 制度経済学</text>
+    <rect x="240" y="580" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+    <text x="330" y="612" fill="#e0e0e0" text-anchor="middle">場</text>
+    <rect x="430" y="580" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+    <text x="520" y="612" fill="#888888" text-anchor="middle">-</text>
+    <rect x="620" y="580" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+    <text x="710" y="612" fill="#888888" text-anchor="middle">-</text>
+    <rect x="810" y="580" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+    <text x="900" y="612" fill="#888888" text-anchor="middle">-</text>
+    <rect x="1000" y="580" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5"/>
+    <text x="1090" y="612" fill="#e0e0e0" text-anchor="middle">束</text>
+
+    <!-- Theory 8: ケイパビリティ・アプローチ -->
+    <text x="20" y="677" fill="#ffffff" text-anchor="start">8. ケイパビリティ・アプローチ</text>
+    <rect x="240" y="645" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5"/>
+    <text x="330" y="677" fill="#888888" text-anchor="middle">-</text>
+    <rect x="430" y="645" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+    <text x="520" y="677" fill="#888888" text-anchor="middle">-</text>
+    <rect x="620" y="645" width="180" height="55" fill="#D4A857" opacity="0.3" rx="5" ry="5"/>
+    <text x="710" y="677" fill="#aaaaaa" text-anchor="middle">縁</text>
+    <rect x="810" y="645" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+    <text x="900" y="677" fill="#888888" text-anchor="middle">-</text>
+    <rect x="1000" y="645" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+    <text x="1090" y="677" fill="#888888" text-anchor="middle">-</text>
+
+    <!-- Theory 9: 金融不安定性仮説 -->
+    <text x="20" y="742" fill="#ffffff" text-anchor="start">9. 金融不安定性仮説</text>
+    <rect x="240" y="710" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5"/>
+    <text x="330" y="742" fill="#ffffff" text-anchor="middle">場</text>
+    <rect x="430" y="710" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5"/>
+    <text x="520" y="742" fill="#ffffff" text-anchor="middle">波</text>
+    <rect x="620" y="710" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5"/>
+    <text x="710" y="742" fill="#ffffff" text-anchor="middle">縁</text>
+    <rect x="810" y="710" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5"/>
+    <text x="900" y="742" fill="#ffffff" text-anchor="middle">渦</text>
+    <rect x="1000" y="710" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5"/>
+    <text x="1090" y="742" fill="#ffffff" text-anchor="middle">束</text>
+
+    <!-- Theory 10: 企業成長の理論 -->
+    <text x="20" y="807" fill="#ffffff" text-anchor="start">10. 企業成長の理論</text>
+    <rect x="240" y="775" width="180" height="55" fill="#8B8682" opacity="0.3" rx="5" ry="5"/>
+    <text x="330" y="807" fill="#aaaaaa" text-anchor="middle">場</text>
+    <rect x="430" y="775" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5"/>
+    <text x="520" y="807" fill="#888888" text-anchor="middle">-</text>
+    <rect x="620" y="775" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5"/>
+    <text x="710" y="807" fill="#888888" text-anchor="middle">-</text>
+    <rect x="810" y="775" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5"/>
+    <text x="900" y="807" fill="#888888" text-anchor="middle">-</text>
+    <rect x="1000" y="775" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5"/>
+    <text x="1090" y="807" fill="#888888" text-anchor="middle">-</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="16" text-anchor="start">
+    <!-- Strong -->
+    <rect x="240" y="870" width="30" height="20" fill="#8B8682" rx="5" ry="5"/>
+    <text x="280" y="885" fill="#ffffff">強い対応 (Strong)</text>
+
+    <!-- Partial -->
+    <rect x="450" y="870" width="30" height="20" fill="#8B8682" opacity="0.7" rx="5" ry="5"/>
+    <text x="490" y="885" fill="#e0e0e0">部分的 (Partial)</text>
+
+    <!-- Conditional -->
+    <rect x="660" y="870" width="30" height="20" fill="#8B8682" opacity="0.3" rx="5" ry="5"/>
+    <text x="700" y="885" fill="#aaaaaa">条件付き/弱い (Conditional/Weak)</text>
+  </g>
+</svg>

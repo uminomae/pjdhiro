@@ -1,0 +1,134 @@
+<svg viewBox="0 0 1200 800" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-size="32" font-weight="bold">
+    複雑系科学探究における横断的パターンの発見
+  </text>
+
+  <!-- Card Definitions -->
+  <!-- Center Card (Hub) -->
+  <g id="center-card">
+    <!-- Glow layers -->
+    <rect x="390" y="270" width="420" height="260" rx="15" fill="#D4A857" opacity="0.2" />
+    <rect x="395" y="275" width="410" height="250" rx="15" fill="#D4A857" opacity="0.3" />
+    <!-- Main card -->
+    <rect x="400" y="280" width="400" height="240" rx="15" fill="#2a2a4e" stroke="#D4A857" stroke-width="4" />
+    <!-- Content -->
+    <text x="600" y="320" text-anchor="middle" fill="#D4A857" font-size="28" font-weight="bold">
+      拮抗構造が縁の前提条件となる
+    </text>
+    <text x="600" y="355" text-anchor="middle" fill="white" font-size="18">
+      (10件 theories)
+    </text>
+    <text x="600" y="390" text-anchor="middle" fill="white" font-size="20">
+      <tspan x="600" dy="0">「10件中少なくとも7件で、「縁」の成立には</tspan>
+      <tspan x="600" dy="25">拮抗構造が前提条件となることが示唆されている。」</tspan>
+    </text>
+    <text x="600" y="450" text-anchor="middle" fill="#cccccc" font-size="16">
+      Found in:
+    </text>
+    <!-- No theory names for center card as per data -->
+  </g>
+
+  <!-- Satellite Card 1 (Top-left) -->
+  <g id="satellite-card-1">
+    <!-- Glow layer -->
+    <rect x="140" y="150" width="320" height="200" rx="10" fill="#4a90e2" opacity="0.2" />
+    <!-- Main card -->
+    <rect x="150" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#4a90e2" stroke-width="2" />
+    <!-- Content -->
+    <text x="300" y="190" text-anchor="middle" fill="#4a90e2" font-size="20" font-weight="bold">
+      <tspan x="300" dy="0">束の多型性——</tspan>
+      <tspan x="300" dy="24">安定化メカニズムは複数ある</tspan>
+    </text>
+    <text x="300" y="245" text-anchor="middle" fill="white" font-size="14">
+      (0件 theories)
+    </text>
+    <text x="300" y="270" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">「5段階の「束」の概念が、</tspan>
+      <tspan x="300" dy="20">複雑系の安定化メカニズムとして</tspan>
+      <tspan x="300" dy="20">多様な形で現れる。」</tspan>
+    </text>
+    <!-- No theory names for satellite 1 -->
+  </g>
+
+  <!-- Satellite Card 2 (Top-right) -->
+  <g id="satellite-card-2">
+    <!-- Glow layer -->
+    <rect x="740" y="150" width="320" height="200" rx="10" fill="#e24a4a" opacity="0.2" />
+    <!-- Main card -->
+    <rect x="750" y="160" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#e24a4a" stroke-width="2" />
+    <!-- Content -->
+    <text x="900" y="190" text-anchor="middle" fill="#e24a4a" font-size="20" font-weight="bold">
+      縁の5つの実現型
+    </text>
+    <text x="900" y="225" text-anchor="middle" fill="white" font-size="14">
+      (0件 theories)
+    </text>
+    <text x="900" y="250" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="900" dy="0">「複雑系科学の各理論に現れる「縁」には、</tspan>
+      <tspan x="900" dy="20">少なくとも5つの異なる実現型が存在する。」</tspan>
+    </text>
+    <!-- No theory names for satellite 2 -->
+  </g>
+
+  <!-- Satellite Card 3 (Bottom-left) -->
+  <g id="satellite-card-3">
+    <!-- Glow layer -->
+    <rect x="140" y="500" width="320" height="200" rx="10" fill="#50e3c2" opacity="0.2" />
+    <!-- Main card -->
+    <rect x="150" y="510" width="300" height="180" rx="10" fill="#2a2a4e" stroke="#50e3c2" stroke-width="2" />
+    <!-- Content -->
+    <text x="300" y="540" text-anchor="middle" fill="#50e3c2" font-size="20" font-weight="bold">
+      <tspan x="300" dy="0">束→場の循環が</tspan>
+      <tspan x="300" dy="24">複数理論に内蔵されている</tspan>
+    </text>
+    <text x="300" y="595" text-anchor="middle" fill="white" font-size="14">
+      (1件 theories)
+    </text>
+    <text x="300" y="620" text-anchor="middle" fill="white" font-size="16">
+      <tspan x="300" dy="0">「SOC、散逸構造、臨界現象、</tspan>
+      <tspan x="300" dy="20">オートポイエーシスの各理論に、</tspan>
+      <tspan x="300" dy="20">束→場の循環構造が確認されます。」</tspan>
+    </text>
+    <text x="300" y="685" text-anchor="middle" fill="#cccccc" font-size="14">
+      Found in: SOC, 散逸構造, 臨界現象, オートポイエーシス
+    </text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <!-- Center card center: (600, 400) -->
+  <!-- Satellite 1 center: (300, 250) -->
+  <!-- Satellite 2 center: (900, 250) -->
+  <!-- Satellite 3 center: (300, 600) -->
+
+  <g id="connections">
+    <!-- Center to Satellite 1 -->
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="300" y2="250" stroke="#D4A857" stroke-width="2" />
+    <!-- Center to Satellite 2 -->
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="900" y2="250" stroke="#D4A857" stroke-width="2" />
+    <!-- Center to Satellite 3 -->
+    <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="4" opacity="0.4" />
+    <line x1="600" y1="400" x2="300" y2="600" stroke="#D4A857" stroke-width="2" />
+
+    <!-- Optional cross-connections between satellites -->
+    <!-- S1 to S2 -->
+    <line x1="300" y1="250" x2="900" y2="250" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+    <!-- S1 to S3 -->
+    <line x1="300" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+    <!-- S2 to S3 -->
+    <line x1="900" y1="250" x2="300" y2="600" stroke="#D4A857" stroke-width="2" opacity="0.3" />
+  </g>
+
+  <!-- Key Finding Callout -->
+  <g id="key-finding">
+    <rect x="300" y="550" width="600" height="50" rx="25" fill="#D4A857" opacity="0.9" stroke="white" stroke-width="2" />
+    <text x="600" y="581" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+      複雑系科学で最も顕著な発見 = 拮抗構造が縁の前提条件となる
+    </text>
+  </g>
+</svg>

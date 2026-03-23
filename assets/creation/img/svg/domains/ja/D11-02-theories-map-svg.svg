@@ -1,0 +1,168 @@
+<svg viewBox="0 0 1200 880" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="880" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" font-size="36" text-anchor="middle" fill="#ffffff">10薬学理論と5段階モデルの対応関係マトリクス</text>
+
+  <!-- Column Headers -->
+  <!-- Stage: 場 (Field) -->
+  <rect x="240" y="100" width="180" height="40" fill="#8B8682" rx="5" ry="5" />
+  <text x="330" y="128" font-size="20" text-anchor="middle" fill="#ffffff">場</text>
+  <!-- Stage: 波 (Wave) -->
+  <rect x="430" y="100" width="180" height="40" fill="#5B8DB8" rx="5" ry="5" />
+  <text x="520" y="128" font-size="20" text-anchor="middle" fill="#ffffff">波</text>
+  <!-- Stage: 縁 (Edge) -->
+  <rect x="620" y="100" width="180" height="40" fill="#D4A857" rx="5" ry="5" />
+  <text x="710" y="128" font-size="20" text-anchor="middle" fill="#ffffff">縁</text>
+  <!-- Stage: 渦 (Vortex) -->
+  <rect x="810" y="100" width="180" height="40" fill="#C45B4D" rx="5" ry="5" />
+  <text x="900" y="128" font-size="20" text-anchor="middle" fill="#ffffff">渦</text>
+  <!-- Stage: 束 (Bundle) -->
+  <rect x="1000" y="100" width="180" height="40" fill="#5B8B6A" rx="5" ry="5" />
+  <text x="1090" y="128" font-size="20" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Matrix Rows -->
+  <!-- Theory 1: 医薬品開発パイプライン -->
+  <text x="20" y="185" font-size="18" fill="#ffffff">1. 医薬品開発パイプライン</text>
+  <rect x="240" y="150" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="330" y="185" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="430" y="150" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="520" y="185" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="620" y="150" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="710" y="185" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="810" y="150" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="900" y="185" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="1000" y="150" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1090" y="185" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Theory 2: ADME-PK/PDと用量最適化 -->
+  <text x="20" y="250" font-size="18" fill="#ffffff">2. ADME-PK/PDと用量最適化</text>
+  <rect x="240" y="215" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="330" y="250" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="430" y="215" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="520" y="250" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="620" y="215" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="710" y="250" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="810" y="215" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="900" y="250" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="1000" y="215" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1090" y="250" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Theory 3: 抗菌薬耐性進化 -->
+  <text x="20" y="315" font-size="18" fill="#ffffff">3. 抗菌薬耐性進化</text>
+  <rect x="240" y="280" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="330" y="315" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="430" y="280" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="520" y="315" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="620" y="280" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="710" y="315" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="810" y="280" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="900" y="315" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="1000" y="280" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1090" y="315" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Theory 4: 経口徐放性製剤の設計・評価 -->
+  <text x="20" y="380" font-size="18" fill="#ffffff">4. 経口徐放性製剤の設計・評価</text>
+  <rect x="240" y="345" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="330" y="380" font-size="18" text-anchor="middle" fill="#e0e0e0">場</text>
+  <rect x="430" y="345" width="180" height="55" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="520" y="380" font-size="18" text-anchor="middle" fill="#e0e0e0">波</text>
+  <rect x="620" y="345" width="180" height="55" fill="#D4A857" opacity="0.2" rx="5" ry="5" />
+  <text x="710" y="380" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="810" y="345" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="900" y="380" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="1000" y="345" width="180" height="55" fill="#5B8B6A" opacity="0.7" rx="5" ry="5" />
+  <text x="1090" y="380" font-size="18" text-anchor="middle" fill="#e0e0e0">束</text>
+
+  <!-- Theory 5: 漢方処方設計原理（君臣佐使） -->
+  <text x="20" y="445" font-size="18" fill="#ffffff">5. 漢方処方設計原理（君臣佐使）</text>
+  <rect x="240" y="410" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="330" y="445" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="430" y="410" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="520" y="445" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="620" y="410" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="710" y="445" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="810" y="410" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="900" y="445" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="1000" y="410" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1090" y="445" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 6: QbD（ICH Q8/Q9/Q10） -->
+  <text x="20" y="510" font-size="18" fill="#ffffff">6. QbD（ICH Q8/Q9/Q10）</text>
+  <rect x="240" y="475" width="180" height="55" fill="#8B8682" opacity="1.0" rx="5" ry="5" />
+  <text x="330" y="510" font-size="18" text-anchor="middle" fill="#ffffff">場</text>
+  <rect x="430" y="475" width="180" height="55" fill="#5B8DB8" opacity="1.0" rx="5" ry="5" />
+  <text x="520" y="510" font-size="18" text-anchor="middle" fill="#ffffff">波</text>
+  <rect x="620" y="475" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="710" y="510" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="810" y="475" width="180" height="55" fill="#C45B4D" opacity="1.0" rx="5" ry="5" />
+  <text x="900" y="510" font-size="18" text-anchor="middle" fill="#ffffff">渦</text>
+  <rect x="1000" y="475" width="180" height="55" fill="#5B8B6A" opacity="1.0" rx="5" ry="5" />
+  <text x="1090" y="510" font-size="18" text-anchor="middle" fill="#ffffff">束</text>
+
+  <!-- Theory 7: プロドラッグ設計 -->
+  <text x="20" y="575" font-size="18" fill="#ffffff">7. プロドラッグ設計</text>
+  <rect x="240" y="540" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="330" y="575" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="430" y="540" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="520" y="575" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="620" y="540" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="710" y="575" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="810" y="540" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="900" y="575" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="1000" y="540" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1090" y="575" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 8: ファーマコゲノミクス -->
+  <text x="20" y="640" font-size="18" fill="#ffffff">8. ファーマコゲノミクス</text>
+  <rect x="240" y="605" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="330" y="640" font-size="18" text-anchor="middle" fill="#e0e0e0">場</text>
+  <rect x="430" y="605" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="520" y="640" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="620" y="605" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="710" y="640" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="810" y="605" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="900" y="640" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="1000" y="605" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1090" y="640" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 9: 薬物相互作用（DDI） -->
+  <text x="20" y="705" font-size="18" fill="#ffffff">9. 薬物相互作用（DDI）</text>
+  <rect x="240" y="670" width="180" height="55" fill="#8B8682" opacity="0.2" rx="5" ry="5" />
+  <text x="330" y="705" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="430" y="670" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="520" y="705" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="620" y="670" width="180" height="55" fill="#D4A857" opacity="1.0" rx="5" ry="5" />
+  <text x="710" y="705" font-size="18" text-anchor="middle" fill="#ffffff">縁</text>
+  <rect x="810" y="670" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="900" y="705" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="1000" y="670" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1090" y="705" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Theory 10: 構造ベース創薬（SBDD） -->
+  <text x="20" y="770" font-size="18" fill="#ffffff">10. 構造ベース創薬（SBDD）</text>
+  <rect x="240" y="735" width="180" height="55" fill="#8B8682" opacity="0.7" rx="5" ry="5" />
+  <text x="330" y="770" font-size="18" text-anchor="middle" fill="#e0e0e0">場</text>
+  <rect x="430" y="735" width="180" height="55" fill="#5B8DB8" opacity="0.2" rx="5" ry="5" />
+  <text x="520" y="770" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="620" y="735" width="180" height="55" fill="#D4A857" opacity="0.7" rx="5" ry="5" />
+  <text x="710" y="770" font-size="18" text-anchor="middle" fill="#e0e0e0">縁</text>
+  <rect x="810" y="735" width="180" height="55" fill="#C45B4D" opacity="0.2" rx="5" ry="5" />
+  <text x="900" y="770" font-size="18" text-anchor="middle" fill="#888888">-</text>
+  <rect x="1000" y="735" width="180" height="55" fill="#5B8B6A" opacity="0.2" rx="5" ry="5" />
+  <text x="1090" y="770" font-size="18" text-anchor="middle" fill="#888888">-</text>
+
+  <!-- Legend -->
+  <!-- Strong -->
+  <rect x="20" y="830" width="20" height="20" fill="#5B8DB8" rx="5" ry="5" />
+  <text x="50" y="846" font-size="16" fill="#ffffff">強い対応 (Strong)</text>
+
+  <!-- Partial -->
+  <rect x="220" y="830" width="20" height="20" fill="#5B8DB8" opacity="0.7" rx="5" ry="5" />
+  <text x="250" y="846" font-size="16" fill="#e0e0e0">部分的 (Partial)</text>
+
+  <!-- Conditional/Weak -->
+  <rect x="420" y="830" width="20" height="20" fill="#5B8DB8" opacity="0.3" rx="5" ry="5" />
+  <text x="450" y="846" font-size="16" fill="#aaaaaa">条件付き/弱い (Conditional/Weak)</text>
+</svg>
