@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>進化生物学 - 5段階モデルとの構造対応</title>
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --bg-card: rgba(17, 24, 39, 0.74);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --glass-blur: 16px;
+    --font-heading: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans JP", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --radius-sm: 8px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* === DECK CONTAINER === */
+  .deck {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === SLIDE === */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .slide-bg--blue {
+    background:
+      radial-gradient(ellipse at 18% 40%, rgba(96, 165, 250, 0.10), transparent 50%),
+      radial-gradient(ellipse at 82% 20%, rgba(167, 139, 250, 0.08), transparent 40%),
+      linear-gradient(180deg, #0c1220, #0a0e17);
+  }
+  .slide-bg--violet {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.12), transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0e0c20, #0a0e17);
+  }
+  .slide-bg--green {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(52, 211, 153, 0.10), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(96, 165, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #0a1218, #0a0e17);
+  }
+  .slide-bg--amber {
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(251, 191, 36, 0.08), transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(167, 139, 250, 0.06), transparent 40%),
+      linear-gradient(180deg, #12100a, #0a0e17);
+  }
+
+  /* === SLIDE CONTENT AREA === */
+  .slide-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* === TYPOGRAPHY === */
+  h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-weight: 500;
+    color: var(--accent-violet);
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+  }
+  .text-muted { color: var(--text-secondary); }
+  .text-accent-blue { color: var(--accent-blue); }
+  .text-accent-violet { color: var(--accent-violet); }
+  .text-accent-green { color: var(--accent-green); }
+
+  /* === ACCENT LINE === */
+  .accent-line {
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    margin: 1rem 0;
+  }
+  .accent-line--center { margin: 1rem auto; }
+  .accent-line--green {
+    background: linear-gradient(90deg, var(--accent-green), transparent);
+  }
+
+  /* === GLASS CARD === */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+  .glass-card--accent-left {
+    border-left: 3px solid var(--accent-blue);
+  }
+  .glass-card--glow {
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.08),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* === METRIC BOX === */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  .metric-value {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+  }
+  th {
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    text-align: left;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* === CODE BLOCK === */
+  pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--accent-green);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: rgba(52, 211, 153, 0.08);
+    color: var(--accent-green);
+  }
+  pre code { padding: 0; background: none; }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--accent-blue);
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-blue);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+  /* === LIST === */
+  ul, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+  ul li, ol li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+  ol { counter-reset: slide-ol; }
+  ol li { counter-increment: slide-ol; }
+  ol li::before {
+    content: counter(slide-ol);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+  }
+
+  /* ======================= */
+  /* === LAYOUT VARIANTS === */
+  /* ======================= */
+
+  /* --- TITLE SLIDE --- */
+  .layout-title .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .layout-title h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .layout-title .subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+  .layout-title .meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
+  }
+
+  /* --- SECTION DIVIDER --- */
+  .layout-section .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .layout-section h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 600;
+  }
+  .layout-section .section-number {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* --- CONTENT SLIDE --- */
+  .layout-content .slide-content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .layout-content .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* --- SPLIT SLIDE (two columns) --- */
+  .layout-split .slide-content {
+    gap: 1rem;
+  }
+  .split-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .split-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .split-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--glass-border), transparent);
+  }
+
+  /* --- DATA / METRICS SLIDE --- */
+  .layout-data .slide-content {
+    gap: 1.5rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    flex: 1;
+    align-content: center;
+  }
+
+  /* --- QUOTE SLIDE --- */
+  .layout-quote .slide-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 6rem;
+  }
+  .layout-quote blockquote {
+    border: none;
+    border-left: none;
+    background: none;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.6;
+    max-width: 80%;
+    color: var(--text-primary);
+  }
+  .layout-quote .attribution {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* --- VISUAL SLIDE (full image) --- */
+  .layout-visual .slide-content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+  .layout-visual img, .layout-visual svg {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- CONCLUSION SLIDE --- */
+  .layout-conclusion .slide-content {
+    gap: 1.2rem;
+  }
+  .layout-conclusion ul li::before {
+    background: var(--accent-green);
+    width: 8px;
+    height: 8px;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .animate-in {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+  .slide.active .delay-5 { animation-delay: 0.40s; }
+
+  /* === NAVIGATION === */
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+  }
+  .nav-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  .nav-btn:hover { background: rgba(96, 165, 250, 0.12); border-color: rgba(96, 165, 250, 0.3); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    min-width: 5rem;
+    text-align: center;
+  }
+  .nav-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-fullscreen {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .nav-fullscreen:hover { color: var(--text-primary); background: rgba(96, 165, 250, 0.12); }
+
+  /* === PROGRESS BAR === */
+  .progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    transition: width 0.3s ease;
+    z-index: 101;
+  }
+
+  /* === PRINT === */
+  @media print {
+    .nav-bar, .progress-bar { display: none; }
+    .slide {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      page-break-after: always;
+      height: 100vh;
+    }
+    .slide-inner {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .slide-content { padding: 2rem 2.5rem; }
+    .layout-title h1 { font-size: 2rem; }
+    .split-columns { grid-template-columns: 1fr; }
+    .nav-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">進化生物学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3">5段階モデル（場・波・縁・渦・束）との構造対応調査</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">調査の概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-01-overview-svg.svg" alt="Domain — 調査概要インフォグラフィック"></p>
+<ul>
+<li class="animate-in delay-4"><strong>調査対象</strong>: 進化生物学の主要理論 10件</li>
+<li class="animate-in delay-5"><strong>調査の問い</strong>: 進化生物学の諸理論は、5段階モデルと構造的に対応するか</li>
+<li class="animate-in delay-5"><strong>判定結果</strong>: 条件付きの対応 1件</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-data">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">5段階モデルの概要</h2>
+<div class="accent-line animate-in delay-2"></div>
+<table class="animate-in delay-3"><tr><th>段階</th><th>定義</th></tr><tr><td>場（ば）</td><td>未分化の状態。方向も構造もまだ定まっていない初期条件</td></tr><tr><td>波（なみ）</td><td>複数の方向性が発散・競合する探索の段階</td></tr><tr><td>縁（えん）</td><td>対立する要素が共存し、どちらにも収束しない緊張状態。境界で接し、影響し合い、関係が生まれる場所</td></tr><tr><td>渦（うず）</td><td>緊張の中から新たなまとまり（秩序）が自発的に立ち上がる段階</td></tr><tr><td>束（たば）</td><td>形が確定し、再利用可能な構造として安定する段階</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">構造対応の全体像</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-02-theories-map-svg.svg" alt="Domain — 理論×5段階対応マトリクス"></p>
+<table class="animate-in delay-4"><tr><th>温度</th><th>理論群</th><th>位置づけ</th></tr><tr><td>確定に近い</td><td>自然選択+中立説、発生可塑性・遺伝的収容、ハイブリッドゾーン、内共生</td><td>5段階全体に対して具体的な対応が確認されます</td></tr><tr><td>有力</td><td>断続平衡説、拡張進化的総合説（EES）、共進化とRed Queen仮説、水平遺伝子移動</td><td>対応はありますが、特定の段階に議論の焦点があります</td></tr><tr><td>条件つき</td><td>ニッチ構築、適応放散</td><td>対応は確認されますが、5段階全体の生成過程というよりは特定の構造パターン（循環性や空白からの創造）に対応が集中します</td></tr></table>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 1: 自然選択と中立説（Darwin / Fisher / Kimura / Ohta）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">自然選択は、変異・遺伝・適応度差の三条件が揃ったときに作動するメカニズムです。Darwinが1859年に提唱し、1930〜50年代の現代総合説でMendel遺伝学と統合されました。木村資生の中立説（1968年）は、分子レベルの進化変化の多くは自然選択ではなく遺伝的浮動によるとする理論です。太田朋子のほぼ中立説（1973年）はこれをさらに精緻化し、弱い選択効果（|N_e s| が1程度以下の変異）は集団サイズに依存して中立的に振る舞うことを示しました。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: 突然変異はDNA複製・修復・組換えなどの過程で生じます。新生変異の多くは中立から弱有害であり、強い有害変異は浄化選択で除去されます。有益変異は相対的に稀ですが、条件次第で選択により集団に固定されることがあります。遺伝子重複は新機能進化の素材になりえますが、多くは失活・欠失します。保存される場合も、新機能化（neofunctionalization）だけでなくサブ機能化（subfunctionalization）など複数のメカニズムが提案されています。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、変異の供給から選択・浮動を経て固定に至る段階的なプロセスを読み取ります。類似の水準はプロセスです。特に、変異が棄却されずに保持され、後に新しい機能の素材となるという順序構造に注目します。中立的な遺伝子重複が後に新機能化するパターンは、「棄却されなかった変異が創造の素材になる」という構造を分子レベルで実証しています。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 遺伝的・表現型的多様性のプールが場に対応します。環境圧によって適応度差が顕在化する局面が波です。この理論では縁の対応は背景的であり、交配・競争・共生などの個体間相互作用がそれにあたります。適応形質を持つ系統の拡大が渦、形質分布や種特性としての定着が束に対応します。この理論は5段階の基盤構造——変異の供給（場）から定着（束）への流れ——を最もデータが厚い形で示す理論です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 2: 断続平衡説（Eldredge & Gould）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">Eldredge と Gould が1972年に提唱した理論です。形態進化は長い停滞期（stasis）と短い急速変化の組み合わせで進む、という主張を化石記録から導きました。従来の漸進主義——進化は緩やかで連続的に進む——に対して、「化石記録の不連続は記録の不完全さではなく、進化の実態を正しく映している」という認識論的反転を提起した点が重要です。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: 化石記録において、多くの系統で長い形態的停滞（10万〜1000万年規模）と短い急速変化（1000〜10万年規模）のパターンが文書化されています。停滞は安定化選択や発生的制約による方向性のない変動で維持されます。急速変化は周辺の隔離集団での異所的種分化として説明されます。ただし、すべての系統でこのパターンが普遍的かどうかは議論が続いており、漸進的なパターンも存在することから「スペクトル」として扱う見解もあります。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、安定と急変のリズム構造、および「中心ではなく周辺で新しいものが生まれる」という空間的パターンを読み取ります。類似の水準はプロセスであり、特に停滞→急変という時間的リズムと、周辺隔離集団という空間的境界性に注目します。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 形態停滞期の基盤集団が場です。環境変動や地理的隔離によって変化圧が上昇する局面が波です。周辺隔離集団と母集団の地理的・遺伝的境界——種分化が起こる場所——が縁に対応します。新形態の急速な成立（地質学的には「瞬間」にあたる1000〜10万年）が渦、新種としての安定が束です。束がそのまま次の停滞期の場に回帰する点が、この理論の構造的特徴です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">主要エントリ 3: 発生可塑性と遺伝的収容（West-Eberhard / Waddington）</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">発生可塑性とは、同一の遺伝子型が環境条件に応じて複数の表現型を産み出す性質です。West-Eberhard（2003年）が体系化し、Waddingtonの遺伝的同化実験（1953年）がその先駆として知られます。遺伝的同化とは、環境によって誘導された形質が、選択を経て遺伝的に安定化する現象です。さらに広い概念として遺伝的収容があります。</li>
+<li class="animate-in delay-4"><strong>事実として</strong>: 表現型可塑性では、遺伝子型と環境の相互作用（G×E）によって、同一の遺伝子型から異なる表現型が産出されます。Waddingtonの1953年の実験では、熱ショックで誘導した表現型が、選択を繰り返すことで熱ショックなしでも発現するようになりました。また、deep homologyの研究は、Pax6やHoxなど共通の発生遺伝子セットから多様な構造が独立に生成可能であることを示しています。</li>
+<li class="animate-in delay-5"><strong>読み取りとして</strong>: ここでは、環境が発生の境界条件として表現型を切り替える閾値構造を読み取ります。類似の水準はメカニズムです。特に、G×E相互作用という遺伝子型と環境の界面に注目し、この界面が「どの変異が可視化されるか」を環境側から偏らせる構造を捉えます。</li>
+<li class="animate-in delay-5"><strong>解釈として</strong>: 発生システムの可能空間——可塑的応答のレパートリー——が場に対応します。deep homologyはこの場の深層構造です。環境刺激による可塑的応答の誘導が波、G×E相互作用の界面——環境が発生の境界条件となり、閾値を越えると別の表現型が発現する——が縁です。新規表現型の発現と集団内での広がりが渦、遺伝的収容による固定化が束に対応します。可塑性から固定への移行という段階性が、5段階に直接的に対応する構造です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">横断的パターン</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D04-03-cross-patterns-svg.svg" alt="Domain — 横断的パターン図"></p>
+<ul>
+<li class="animate-in delay-4">進化生物学を横断して最も顕著なパターンは、「縁」の機能多様性です</li>
+<li class="animate-in delay-5"><strong>維持される縁</strong>: ハイブリッドゾーンでは、cline width で測定される厚みを保ちながら境界が安定的に存続します</li>
+<li class="animate-in delay-5"><strong>駆動する縁</strong>: Red Queen仮説では、種間境界が選択圧を生成し続ける動的な装置として機能します</li>
+<li class="animate-in delay-5"><strong>融合する縁</strong>: 内共生では、境界（細胞膜）が消失することによって新しい階層が創発します</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">未解決の問い</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">「縁」の四パターン（維持・駆動・融合・生成）は、進化生物学に固有の多様性なのか、それとも他の領域でも同様に確認されるのかは、横断的な検証が必要です。</li>
+<li class="animate-in delay-4">場に「種類」があるという知見——共同体的場と個体化した場の区別——を5段階モデルにどう反映するかは、未整理です。場が単なる「未分化な初期条件」を超えて質的な多様性を持つならば、モデルの前半部分を拡張する必要が生じます。</li>
+<li class="animate-in delay-5">Red Queen仮説が示す「束が安定しない」パターンをどう扱うかは開かれた問いです。束を「暫定的安定」として定義し直すのか、それとも束に至らない循環を別のカテゴリとして扱うのかの判断が必要です。</li>
+<li class="animate-in delay-5">進化生物学における構造対応を論じる際、自然選択に意図がないという基本的事実と、5段階モデルの各局面を「プロセス」として記述することの間にある緊張は、常に意識しておくべき方法論的課題です。</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">結論</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">本調査では、進化生物学は5段階モデルとの構造類似が全体として強い領域であることが確認されました</li>
+<li class="animate-in delay-4">確定的に近いのは、自然選択+中立説（変異→選択→固定の基盤構造）、発生可塑性と遺伝的収容（G×Eの閾値構造と段階的固定化）、ハイブリッドゾーン（縁の定量化と二つの帰結）、内共生（境界消失による階層創発）です</li>
+<li class="animate-in delay-5">進化生物学から得られる最大の示唆は、「縁」が単一の機能ではなく少なくとも四つのパターンを示すこと、そして「束」が次の「場」の前提を書き換える循環構造が理論の中核に位置することです</li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="nav-bar">
+  <button class="nav-btn" id="prevBtn" onclick="go(-1)">Prev</button>
+  <span class="nav-title" id="deckTitle">進化生物学 - 5段階モデルとの構造対応</span>
+  <span class="nav-counter" id="counter">1 / N</span>
+  <button class="nav-btn" id="nextBtn" onclick="go(1)">Next</button>
+  <button class="nav-fullscreen" onclick="toggleFS()" title="Fullscreen">&#x26F6;</button>
+</div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === slides.length - 1;
+  }
+  function go(d) {
+    const next = Math.max(0, Math.min(slides.length - 1, cur + d));
+    if (next !== cur) { cur = next; show(cur); }
+  }
+  function toggleFS() {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    if (e.key === 'f' || e.key === 'F') toggleFS();
+    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+  });
+  // Touch swipe
+  let touchX = 0;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+  show(0);
+</script>
+</body>
+</html>
