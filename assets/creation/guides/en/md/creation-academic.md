@@ -1,5 +1,7 @@
 # 1. Framing the Question
 
+![The 5-Stage Model — Structural Comparison with Prior Research](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/guides/ja/creation-academic-01-overview-svg.svg)
+
 Creativity research, cognitive science, organizational theory, psychoanalysis, complexity science — these domains have used different labels and described creative processes at different scales. Wallas's four stages, Guilford's divergent/convergent thinking, Bion's negative capability, Prigogine's dissipative structures, Nonaka's SECI model. Are these describing different things, or are they pointing to different facets of the same structure?
 
 This paper presents the five-stage model (Field → Wave → Relation → Vortex → Bundle) as an analytical framework, and reports the results of an investigation spanning 30 academic domains. The analysis has three objectives:
