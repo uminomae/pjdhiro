@@ -16,6 +16,8 @@ Survey of Structural Correspondence with the 5-Stage Model (Ba / Nami / En / Uzu
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-01-overview-svg.svg)
+
 - **Subject**: Major theories of performing arts
 - **Research question**: Do the various theories of performing arts correspond structurally to the 5-stage model?
 - **Findings**: 2 cases of conditional correspondence
@@ -35,6 +37,8 @@ Survey of Structural Correspondence with the 5-Stage Model (Ba / Nami / En / Uzu
 ---
 
 ## Overview of Structural Correspondence
+
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-02-theories-map-svg.svg)
 
 | Confidence | Theory Group | Assessment |
 |---|---|---|
@@ -74,6 +78,8 @@ Survey of Structural Correspondence with the 5-Stage Model (Ba / Nami / En / Uzu
 ---
 
 ## Cross-Domain Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-03-cross-patterns-svg.svg)
 
 - The most prominent pattern across performing arts is the multilayered nature of "En"
 - First, **physical relationships among performers**

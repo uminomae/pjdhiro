@@ -16,6 +16,8 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-01-overview-svg.svg)
+
 - **Survey target**: 7 major theories in musicology
 - **Research question**: Do the various theories of musicology correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 1 case, partial correspondence in 1 case, conditional correspondence in 2 cases

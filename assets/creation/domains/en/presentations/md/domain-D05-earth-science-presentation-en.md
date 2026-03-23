@@ -16,6 +16,8 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-01-overview-svg.svg)
+
 - **Subjects examined**: 14 major theories in earth science
 - **Research question**: Do the various theories of earth science correspond structurally to the 5-stage model?
 - **Findings**: 7 strong correspondences, 3 conditional correspondences

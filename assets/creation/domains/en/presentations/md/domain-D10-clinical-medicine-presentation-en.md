@@ -16,6 +16,8 @@ Survey of structural correspondence with the 5-stage model (Field · Wave · Edg
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D10-01-overview-svg.svg)
+
 - **Scope**: 10 major theories in clinical immunology
 - **Research question**: Do clinical-immunology theories correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 8 cases, partial correspondence in 2 cases

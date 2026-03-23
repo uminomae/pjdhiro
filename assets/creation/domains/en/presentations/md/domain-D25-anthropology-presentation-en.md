@@ -16,6 +16,8 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-01-overview-svg.svg)
+
 - **Survey target**: 10 major theories in anthropology
 - **Research question**: Do the various theories of anthropology correspond structurally to the 5-stage model?
 - **Results**: Conditional correspondence in 1 case

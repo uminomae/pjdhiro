@@ -16,6 +16,8 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-01-overview-svg.svg)
+
 - **Survey target**: 10 major theories in complexity science
 - **Research question**: Do the various theories of complexity science correspond structurally to the 5-stage model?
 - **Results**: Strong correspondence in 9 cases, conditional correspondence in 1 case

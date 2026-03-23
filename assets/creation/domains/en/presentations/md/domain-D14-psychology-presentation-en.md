@@ -16,6 +16,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Survey Overview
 
+![Domain — Research Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-01-overview-svg.svg)
+
 - **Scope**: 10 major theories in psychology
 - **Research question**: Do theories in psychology structurally correspond to the five-stage model?
 - **Results**: Conditional correspondence 1
@@ -35,6 +37,8 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 ---
 
 ## Overall Structural Correspondence
+
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D14-02-theories-map-svg.svg)
 
 | Temperature | Theory group | Assessment |
 |---|---|---|
