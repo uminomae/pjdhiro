@@ -87,6 +87,9 @@ Structural correspondence survey with the five-stage model (Ba, Nami, En, Uzu, T
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D16-03-cross-patterns-svg.svg)
+
+
 - The most prominent feature across history is that En is described through diverse mechanisms
 - This polymorphism means that when reading the five-stage model's En as "the phase where order is reorganized within relationships," history provides the richest set of examples
 - Ibn Khaldun (erosion of cohesion through luxury), Turchin (elite overproduction), and Vico (return to barbarism through civilizational corruption) independently describe the pattern of "success destabilizing the system"

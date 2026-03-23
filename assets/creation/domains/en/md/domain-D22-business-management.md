@@ -4,6 +4,9 @@
 
 ## 1. Purpose of the Investigation
 
+![Business Management — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-01-overview-svg.svg)
+
+
 This report asks one question.
 
 > Do the major theories of business management correspond structurally to the five-stage model: Field (場), Wave (波), Boundary (縁), Vortex (渦), Bundle (束)?
@@ -61,6 +64,9 @@ The model is not linear. Bundle becomes the condition for the next Field, and ci
 If some discomfort remains at this point, that discomfort is itself an important perspective for the investigation. Readers may continue while keeping it in view.
 
 ## 4. Overall Picture of the Findings
+
+![Business Management — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-02-theories-map-svg.svg)
+
 
 ### Theories Evaluated
 
@@ -173,6 +179,9 @@ The grounds for compressing seven stages into five can be stated clearly. Seeing
 The distinctive contribution of Theory U is that it gives a thick description of the path into Field. The five-stage model begins from Field, whereas Theory U asks how existing patterns are relinquished so that Field becomes reachable. At the same time, its empirical grounding is weaker than that of the strongest theories in this domain, so interpretive caution remains necessary.
 
 ## 6. Cross-Cutting Findings
+
+![Business Management — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D22-03-cross-patterns-svg.svg)
+
 
 First, Boundary is richly described in this domain. Tuckman gives it the form of norm formation. Weick gives it the form of enactment. Effectuation gives it the form of Crazy Quilt. Design thinking gives it the form of reframing before prototyping. Business management repeatedly returns to the reorganization of relation.
 

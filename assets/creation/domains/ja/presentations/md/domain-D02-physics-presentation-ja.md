@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-01-overview-svg.svg)
+
+
 - **調査対象**: 物理学の主要理論 11件
 - **調査の問い**: 物理学の秩序生成理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 7件（根拠強度「高」）、中程度の対応 3件、棄却 1件
@@ -42,6 +45,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-02-theories-map-svg.svg)
+
 
 | 理論 | 5段階対応の核 | 根拠強度 |
 |---|---|---|
@@ -83,6 +89,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D02-03-cross-patterns-svg.svg)
+
 
 - 物理学では「縁」が抽象語ではなく、界面・相互作用・競合・流れとして測定可能な量になります。これがこの領域の最大の特徴です
 - 11理論中7理論で縁の記述強度が高く、5段階全体に因果連鎖として追える構造が見られます

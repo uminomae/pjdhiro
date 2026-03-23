@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-02-theories-map-svg.svg)
+
+
 | Confidence | Theory group | Positioning |
 |------------|-------------|-------------|
 | Near-established | Meyer's expectation theory, Huron's ITPRA theory | The process of "expectation→deviation→re-evaluation" corresponds with high precision to all 5 stages |
@@ -78,6 +81,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D26-03-cross-patterns-svg.svg)
+
 
 - The following structural patterns recur across musicology
 - **First, the recursive structure of "expectation → deviation → re-evaluation"

@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-01-overview-svg.svg)
+
+
 - **調査対象**: 伝統知の主要理論 10件
 - **調査の問い**: 伝統知の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 4件、部分的な対応 5件、条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-02-theories-map-svg.svg)
+
 
 | # | 理論/概念 | 提唱者 | 対応段階 | 判定 |
 |---|----------|--------|---------|------|
@@ -85,6 +91,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D30-03-cross-patterns-svg.svg)
+
 
 - 伝統知・技芸の領域を横断して、三つの構造的パターンが繰り返し現れます
 - **第一に、反復の中にある生成です

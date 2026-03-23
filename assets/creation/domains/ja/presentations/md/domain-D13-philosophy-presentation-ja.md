@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-01-overview-svg.svg)
+
+
 - **調査対象**: 哲学の主要理論 11件
 - **調査の問い**: 哲学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 強い対応 5件、部分的な対応 5件、条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-02-theories-map-svg.svg)
+
 
 | 温度 | 理論群 | 位置づけ |
 |---|---|---|
@@ -89,6 +95,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D13-03-cross-patterns-svg.svg)
+
 
 - 哲学を横断して最も際立つのは、「縁」の哲学的多様性です
 - **transduction（シモンドン）**: 局所構造化が隣接領域に伝播する関係の連鎖。「動力学」としての縁。

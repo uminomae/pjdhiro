@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Questions of the Investigation
 
+![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question:
 
 > Do the various theories in this academic domain correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束))?
@@ -49,6 +52,9 @@ This model is not a one-way line but includes a cycle in which Bundle becomes th
 If a sense of incongruity remains at this point, that itself is an important concern of the present investigation. Readers may continue with that sense of incongruity still intact.
 
 ## 4. Results of the Investigation: Overall Picture
+
+![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -151,6 +157,9 @@ Correspondences are clear at the level of individual concepts: broad spectrum (F
 Distinctive features that remain are as follows. (1) The broad-spectrum definition of performance supports the view that the five stages are applicable beyond the frame of the performing arts to all forms of human action. Schechner argues that any action can be analyzed as performance, while this report argues that creation in any domain proceeds through five stages. This parallel deserves attention. (2) The distinction between transportation and transformation offers a perspective from which to ask under what conditions the five-stage process is completed, reaching Vortex, and under what conditions it stops midway and returns after Wave. This work emerged from the interdisciplinary intersection of American theatre studies and cultural anthropology from the 1960s onward. Schechner was also a theatre practitioner through The Performance Group (1967-1980) and developed Environmental Theater. His dialogue with Turner on ritual liminality formed part of the academic foundation of Performance Studies. Fischer-Lichte (#3) independently constructed an aesthetics and theory of performance, but Turner served as a shared point of reference. Boal's (#9) Theatre of the Oppressed can also be included within Schechner's framework of Performance Studies.
 
 ## 6. Cross-Cutting Patterns
+
+![Bodily Generation in Performing Arts and Performance and Its Correspondence to the Five-Stage Model — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D28-03-cross-patterns-svg.svg)
+
 
 First, as shown by Zeami's treatises on flower and the training process (practice -> mastery -> flower), improvisational theatre (Johnstone / Spolin / Nachmanovitch), and Fischer-Lichte's aesthetics of performance (autopoietic feedback loop), this domain describes difference and opposition not merely as obstacles but as conditions for the emergence of a new order. This means that, among the five stages, the transition from Edge to Vortex can be observed here with particular richness.
 

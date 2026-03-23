@@ -16,6 +16,9 @@ type: presentation
 
 ## 調査の概要
 
+![Domain — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-01-overview-svg.svg)
+
+
 - **調査対象**: 薬学の主要理論 10件
 - **調査の問い**: 薬学の諸理論は、5段階モデルと構造的に対応するか
 - **判定結果**: 条件付きの対応 1件
@@ -41,6 +44,9 @@ type: presentation
 ---
 
 ## 構造対応の全体像
+
+![Domain — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-02-theories-map-svg.svg)
+
 
 | 温度 | 理論・概念 | 位置づけ |
 |---|---|---|
@@ -81,6 +87,9 @@ type: presentation
 ---
 
 ## 横断的パターン
+
+![Domain — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D11-03-cross-patterns-svg.svg)
+
 
 - 薬学を横断して最も際立つのは、「縁のスペクトラム」です
 - 第二に、「関係の制度化」が領域全体に浸透しています

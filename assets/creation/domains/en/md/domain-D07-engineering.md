@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question.
 
 > Do theories in engineering and information science correspond structurally to the five-stage model (Field, Wave, Edge, Vortex, Bundle)?
@@ -57,6 +60,9 @@ This model has been proposed as a description of a structure common to creative 
 If these definitions already generate discomfort, that itself is an important perspective for the investigation. Retaining that discomfort while reading may make it possible to assess the findings more critically.
 
 ## 4. Findings: Overall Picture
+
+![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-02-theories-map-svg.svg)
+
 
 After evaluating ten theories and technologies from engineering and information science, the investigation confirmed strong structural correspondence overall.
 
@@ -148,6 +154,9 @@ What is unique about this theory is exact reconstruction from an underdetermined
 However, the correspondence of Vortex depends on whether an iterative algorithm is adopted. When `l1` optimization has a closed-form solution, the process corresponding to Vortex is absent. For that reason, the correspondence here is judged to be conditional.
 
 ## 6. Cross-Cutting Patterns
+
+![Investigation of Structural Similarity Between the Five-Stage Model and Engineering / Information Science — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D07-03-cross-patterns-svg.svg)
+
 
 Across the ten cases investigated, the following patterns were repeatedly confirmed.
 

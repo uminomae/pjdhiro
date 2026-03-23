@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question
 
+![Developmental Psychology — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D23-01-overview-svg.svg)
+
+
 This report examines whether major theories in developmental psychology structurally correspond to the five-stage model of Field, Wave, Relation, Vortex, and Bundle. The question is not which theory is superior, nor whether every theory can be merged into one system. The question is narrower: do these theories describe change as a sequence in which an undifferentiated state gives way to difference, difference is reorganized through relations, a coherent structure emerges, and that structure is then retained?
 
 For that reason, this report does not treat developmental psychology as a single voice. It asks where the correspondence is strong, where it is partial, and what kind of vocabulary developmental psychology offers for making the five-stage model more precise.
@@ -23,6 +26,9 @@ In this report, the five-stage model is defined as follows. Field is a still-und
 These stages are read as a cycle rather than a straight line. Bundle is not a terminal point. It becomes the support for the next Field. If these definitions feel unfamiliar, that tension is itself part of what the survey is testing. The findings below show where that tension is resolved by developmental psychology and where it remains open.
 
 ## 4. Findings: Overall Picture
+
+![Developmental Psychology — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D23-02-theories-map-svg.svg)
+
 
 Across the 15 theories, 9 showed strong structural correspondence and 6 showed conditional correspondence. As a whole, developmental psychology tends to describe development as transformation of structure rather than accumulation of content, and that makes it broadly compatible with the five-stage model.
 
@@ -85,6 +91,9 @@ On that basis, the tensions of difference and norm that come to the foreground f
 The implication is that the five-stage model should not be read as a ladder with a final endpoint. Developmental psychology gives a vocabulary for understanding Bundle as reflexive retention that can reopen the cycle.
 
 ## 6. Cross-Domain Patterns
+
+![Developmental Psychology — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D23-03-cross-patterns-svg.svg)
+
 
 First, developmental psychology repeatedly describes development as the reorganization of structure rather than the accumulation of content. Kegan, Cook-Greuter, Piaget, and Fischer all focus on how experience is organized, not simply on what is learned.
 

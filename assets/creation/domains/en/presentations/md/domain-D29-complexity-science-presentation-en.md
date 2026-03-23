@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-02-theories-map-svg.svg)
+
+
 | Conditional correspondence | Conceptually connects, but difficulties in hypothesis verification and risk of tautology remain |
 |---|---|---|
 |---|----------|--------|------------|------|
@@ -91,6 +94,9 @@ Structural correspondence survey with the 5-stage model (Ba / Wave / En / Uzu / 
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-03-cross-patterns-svg.svg)
+
 
 - The following patterns were repeatedly confirmed across the 10 theories of complexity science
 - All 10 theories have some aspect of the "threshold" as their central theme

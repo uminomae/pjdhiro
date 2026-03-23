@@ -88,6 +88,9 @@ Structural correspondence survey with the five-stage model (Field / Wave / Edge 
 
 ## Cross-Cutting Patterns
 
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D03-03-cross-patterns-svg.svg)
+
+
 - The structure that appears most repeatedly across chemistry is "constraint enables creation"
 - Second, chemistry is a rare domain that can quantitatively describe the "Edge" as a physical entity
 - Third, the same mathematical structure traverses multiple scales

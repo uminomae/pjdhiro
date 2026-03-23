@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Questions of the Investigation
 
+![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question:
 
 > Do the various theories in this academic domain correspond structurally to the five-stage model (Field (場) -> Wave (波) -> Edge (縁) -> Vortex (渦) -> Bundle (束))?
@@ -49,6 +52,9 @@ This model is not a one-way line but includes a cycle in which Bundle becomes th
 If a sense of incongruity remains at this point, that itself is an important concern of the present investigation. Readers may continue with that sense of incongruity still intact.
 
 ## 4. Results of the Investigation: Overall Picture
+
+![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -151,6 +157,9 @@ Network science takes as its central thesis that the structure of interactions d
 Whereas the other entries ask what happens at Edge, such as selection at bifurcation points, transformation at thresholds, and boundary production at interfaces, network science asks what kind of structure Edge has. It is therefore a structural theory of Edge, complementary to the process theories of Edge represented by the other entries. Higher-order interactions (Battiston et al. 2020) are especially important, because they formalize collective interactions involving three or more nodes, rather than only pairwise interactions, by means of hypergraphs and simplicial complexes. This provides theoretical support for the possibility that condition (1) of Edge's three conditions, namely the relational network, need not be reducible to simple pairs but may instead be genuinely many-body. This work belongs to the trajectory from graph theory to social network analysis to the science of complex networks. It developed explosively through the data-driven approaches of the late 1990s, especially Watts-Strogatz and Barabasi-Albert. It is closely connected with percolation (CX-006) and critical phenomena (CX-005). Network percolation, that is, the threshold disappearance of the giant connected component under node removal, is foundational for network robustness.
 
 ## 6. Cross-Cutting Patterns
+
+![Criticality, Boundaries, Self-Organization, and Their Correspondence to the Five-Stage Model in Complexity Science — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D29-03-cross-patterns-svg.svg)
+
 
 First, as shown by dissipative structures and order from fluctuations (Prigogine), self-organized criticality (SOC) and scale-invariant avalanches (Per Bak), and autocatalytic sets and the origin of order (Kauffman / Hordijk-Steel), this domain describes difference and opposition not merely as obstacles but as conditions for the rise of a new order. This means that, among the five stages, the transition from Edge to Vortex can be observed here with particular richness.
 

@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question:
 
 > Do the theories in this academic domain correspond structurally to the five-stage model, namely Field (場) → Wave (波) → Edge (縁) → Vortex (渦) → Bundle (束)?
@@ -49,6 +52,9 @@ This model is not a one-directional line; it includes a circulation in which Bun
 If a sense of incongruity remains at this point, that itself is an important perspective for the present investigation. Readers may continue with that incongruity intact.
 
 ## 4. Findings: Overall Picture
+
+![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -151,6 +157,9 @@ The circuit in which repeated practice reproduces structure while also transform
 This discussion belongs to the shared terrain of sociology and anthropology. Giddens (1984) belongs to sociology, while Bourdieu (1980) is deeply tied to anthropological fieldwork, with *Le sens pratique* grounded in research on Kabyle society. Both share the problem of overcoming the dualism of objectivism and subjectivism, though their approaches differ: Giddens pursues abstract theoretical construction, whereas Bourdieu remains rooted in ethnographic inquiry. Overlap management with sociology is necessary here as well.
 
 ## 6. Cross-Cutting Patterns
+
+![Boundary Processes and the Five-Stage Model in Anthropology and Ethnology — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D25-03-cross-patterns-svg.svg)
+
 
 First, as shown by the three phases of rites of passage, social drama, and liminality and communitas, this domain describes difference and conflict not merely as obstacles but as conditions under which new order comes into being. This means that, within the five stages, the transition from Edge to Vortex is especially richly observable in this domain.
 

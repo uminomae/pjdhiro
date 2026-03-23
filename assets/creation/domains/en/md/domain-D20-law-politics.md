@@ -4,6 +4,9 @@
 
 ## 1. Purpose and Question of the Investigation
 
+![Law and Political Science — 調査概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-01-overview-svg.svg)
+
+
 This report was prepared to answer the following question.
 
 > Do the theories of this academic domain correspond structurally to the five-stage model, Field -> Wave -> Edge -> Vortex -> Bundle?
@@ -49,6 +52,9 @@ This model is not a one-way straight line. It includes circulation in which Bund
 If discomfort remains at this point, that is itself an important part of the investigation. Readers can continue while holding onto that discomfort.
 
 ## 4. Results: Overall Picture
+
+![Law and Political Science — 理論×5段階対応マトリクス](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-02-theories-map-svg.svg)
+
 
 ### List of Theories Evaluated
 
@@ -152,6 +158,9 @@ Collapse of the old regime, dissolution of the previous Bundle, corresponds to F
 This is the clearest D20 description of Bundle -> Field -> new Bundle. Where other entries describe generation of institutions, transitional justice describes rebuilding after the collapse of an older institutional order.
 
 ## 6. Cross-Domain Patterns
+
+![Law and Political Science — 横断的パターン図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D20-03-cross-patterns-svg.svg)
+
 
 First, Hart, Easton, and Ostrom all show that difference and conflict in this domain are not mere obstacles but conditions under which new order rises. This means that the transition from Edge to Vortex can be observed with particular richness in law and politics.
 

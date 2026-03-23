@@ -42,6 +42,9 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 
 ## Overview of Structural Correspondences
 
+![Domain — Theory x 5-Stage Correspondence Matrix](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-02-theories-map-svg.svg)
+
+
 | # | Subtopic Group | Theory/Concept | Proponents / Era | Core Concept | Projected 5-Stage Linkage | Counterexample Risk | Provisional Classification |
 |---|---|---|---|---|---|---|---|
 | 1 | Solid Earth Circulation | Plate Tectonics and the Wilson Cycle | Wilson, Morgan, Le Pichon, 1960s | Long-term cycle of rifting and reassembly | Full picture from Field to Bundle visible | Low | Strong structural correspondence |
@@ -95,6 +98,9 @@ Structural correspondence survey with the 5-stage model (Field, Wave, Edge, Vort
 ---
 
 ## Cross-Cutting Patterns
+
+![Domain — Cross-Cutting Patterns Diagram](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/D05-03-cross-patterns-svg.svg)
+
 
 - In ENSO, sea surface temperature, wind stress, and ocean waves become linked; in earthquakes, stress, friction, and pore water pressure intertwine; in planetary differentiation, temperature, pressure, composition, and density all operate simultaneously
 - Failed rifts, geomagnetic excursions that did not complete a reversal, and magma that solidified as intrusive rock without erupting are all examples of "advancing through the Wave but not clearing the Edge"
