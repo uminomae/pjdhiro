@@ -1,5 +1,7 @@
 # Track 9A — Academic Grounding: Literature Alignment Study
 
+![Track 9A Academic Grounding — Plan Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9A-grounding-01-overview-svg.svg)
+
 ## Purpose
 
 Systematically investigate how well the structural themes extracted in Phase 8 align with existing academic scholarship. The goal is to clearly separate well-supported claims from untested ones, and to identify where genuine novelty exists.

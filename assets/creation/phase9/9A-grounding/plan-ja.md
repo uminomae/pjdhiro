@@ -1,5 +1,7 @@
 # Track 9A — 実証接地：学術的根拠調査
 
+![Track 9A 実証接地 — 計画概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9A-grounding-01-overview-svg.svg)
+
 ## 目的
 
 Phase 8 で抽出した構造テーマが、既存の学術知見とどの程度一致し、どこに新規性があるのかを体系的に調査します。根拠のある主張と未検証の主張を明確に分離することが目標です。

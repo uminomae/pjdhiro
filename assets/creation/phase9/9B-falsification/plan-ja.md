@@ -1,5 +1,7 @@
 # Track 9B — 反証探索：堅牢性検証
 
+![Track 9B 反証探索 — 計画概要インフォグラフィック](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9B-falsification-01-overview-svg.svg)
+
 ## 目的
 
 Phase 8 の構造テーマに対し、積極的に反例と破綻ケースを探索します。「確証バイアス」（自分が見たいパターンを見出してしまう傾向）を自覚的に排除し、モデルの堅牢性を検証します。

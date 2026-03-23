@@ -1,5 +1,7 @@
 # Track 9D — Mathematical Formalization: Formalization & Theorem Derivation
 
+![Track 9D Mathematical Formalization — Plan Overview Infographic](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/phase9/ja/9D-formalization-01-overview-svg.svg)
+
 ## Purpose
 
 Express the Phase 8 structural themes in mathematical notation, eliminating the ambiguity of natural language. Successful formalization enables deductive theorem derivation and generation of counterintuitive predictions. This is the most ambitious track, but its potential impact is the greatest.

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a2e" />
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">Phase 9 — 深層探索計画</text>
+
+  <!-- Phase 8 Findings Introduction -->
+  <text x="600" y="120" text-anchor="middle" font-size="20" fill="#8B8682">
+    <tspan x="600" dy="0">Phase 9 takes Phase 8 findings deeper</tspan>
+    <tspan x="600" dy="25">(5 structural themes from 30 domains)</tspan>
+  </text>
+
+  <!-- Node 9A: Academic Grounding -->
+  <rect x="250" y="200" width="280" height="120" fill="#5B8DB8" rx="10" ry="10" />
+  <text x="390" y="235" text-anchor="middle" font-size="22" fill="white" font-weight="bold">9A: Academic Grounding</text>
+  <text x="390" y="265" text-anchor="middle" font-size="18" fill="white">実証接地</text>
+  <text x="390" y="295" text-anchor="middle" font-size="16" fill="white">Compare themes against scholarship</text>
+
+  <!-- Node 9B: Falsification Search -->
+  <rect x="250" y="380" width="280" height="120" fill="#C45B4D" rx="10" ry="10" />
+  <text x="390" y="415" text-anchor="middle" font-size="22" fill="white" font-weight="bold">9B: Falsification Search</text>
+  <text x="390" y="445" text-anchor="middle" font-size="18" fill="white">反証探索</text>
+  <text x="390" y="475" text-anchor="middle" font-size="16" fill="white">Seek counterexamples, eliminate confirmation bias</text>
+
+  <!-- Node 9D: Mathematical Formalization -->
+  <rect x="250" y="560" width="280" height="120" fill="#5B8B6A" rx="10" ry="10" />
+  <text x="390" y="595" text-anchor="middle" font-size="22" fill="white" font-weight="bold">9D: Mathematical Formalization</text>
+  <text x="390" y="625" text-anchor="middle" font-size="18" fill="white">数理形式化</text>
+  <text x="390" y="655" text-anchor="middle" font-size="16" fill="white">Express themes mathematically, derive theorems</text>
+
+  <!-- Node 9C: Frontier Exploration (Independent/Parallel) -->
+  <rect x="670" y="380" width="280" height="120" fill="#D4A857" rx="10" ry="10" />
+  <text x="810" y="415" text-anchor="middle" font-size="22" fill="white" font-weight="bold">9C: Frontier Exploration</text>
+  <text x="810" y="445" text-anchor="middle" font-size="18" fill="white">未踏領域探索</text>
+  <text x="810" y="475" text-anchor="middle" font-size="16" fill="white">Apply model to new domains, test predictive power</text>
+
+  <!-- Arrows -->
+  <!-- Arrow from Phase 8 Intro to 9A -->
+  <line x1="390" y1="155" x2="390" y2="200" stroke="white" stroke-width="2" />
+  <polygon points="390,190 385,200 395,200" fill="white" />
+
+  <!-- Arrow from 9A to 9B -->
+  <line x1="390" y1="320" x2="390" y2="380" stroke="white" stroke-width="2" />
+  <polygon points="390,370 385,380 395,380" fill="white" />
+
+  <!-- Arrow from 9B to 9D -->
+  <line x1="390" y1="500" x2="390" y2="560" stroke="white" stroke-width="2" />
+  <polygon points="390,550 385,560 395,560" fill="white" />
+
+  <!-- Indication for 9C being parallel -->
+  <text x="810" y="340" text-anchor="middle" font-size="18" fill="#D4A857">Independent / Parallel Track</text>
+  <line x1="810" y1="350" x2="810" y2="380" stroke="#D4A857" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="810,370 805,380 815,380" fill="#D4A857" />
+
+  <!-- Recommended Order Text -->
+  <text x="600" y="720" text-anchor="middle" font-size="20" fill="white">
+    <tspan x="600" dy="0" font-weight="bold">Recommended Order:</tspan>
+    <tspan x="600" dy="25">9A first, 9C parallel, 9B after 9A, 9D last</tspan>
+  </text>
+</svg>
