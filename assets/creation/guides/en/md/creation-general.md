@@ -2,6 +2,8 @@
 
 ## What This Is
 
+![The 5-Stage Model of Creation — Structural Overview](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/guides/ja/creation-general-01-overview-svg.svg)
+
 This document describes a model of the structure common to creation.
 
 If we think of creation as "the ability to come up with good ideas," we end up talking about something we cannot observe. Here, we take a different perspective. We describe creation as a transformation from one state to another. This transformation has five stages: Field, Wave, Relation, Vortex, and Bundle.

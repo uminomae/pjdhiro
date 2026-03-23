@@ -1,5 +1,7 @@
 # The Unnamed Place Between Divergence and Convergence
 
+![The 5-Stage Model — Process Diagnosis for Designers](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/guides/ja/creation-designer-01-overview-svg.svg)
+
 As a designer or PM, you have likely cycled through divergence and convergence many times. Double Diamond, sprints, iterations. Expand, then narrow. Within that rhythm, was there ever a time that was neither?
 
 Not the expanding phase. Not the narrowing phase. Contradictory things existing simultaneously, where choosing either means losing something. Your hands stop in that discomfort.
