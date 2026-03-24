@@ -123,7 +123,7 @@ The investigation across 30 domains revealed the following cross-domain patterns
 
 ## 5.1 Ubiquity of a Stage Corresponding to Relation
 
-The most striking finding is that "a state where contradiction peaks and refuses to converge" has been independently described in many domains. Bion's negative capability, the critical point in complexity science, Turner's liminality in anthropology, Ando's in-between in architecture — these likely point to the same structure under different labels.
+The most striking finding is that "a state where contradiction peaks and refuses to converge" has been independently described in many domains. Bion's negative capability, the critical point in complexity science, Turner's liminality in anthropology, van Eyck's in-between in architecture — these likely point to the same structure under different labels.
 
 Meanwhile, existing stage models rarely describe this stage explicitly. Wallas's four stages, Guilford's divergent/convergent thinking, the Double Diamond of design thinking — none independently name a stage corresponding to Relation. This is likely because Relation is a stage that is difficult to measure and operationalize.
 
