@@ -51,7 +51,7 @@ The five-stage model describes creation not as "the ability to produce good idea
 
 The five stages are cyclical, not linear. The return from Bundle to Field — taking the generated structure as a given and letting the next unease drift — sustains creation.
 
-A note on scope: while the five-stage model is presented here as a model of "the creative process," the investigation revealed structural correspondences with broader phenomena including self-organization, individuation, and phase transitions. The distinction between physical, biological, and psychological individuation may be no more than labels on a spectrum. This breadth of scope is examined further in §6.
+A note on scope: while the five-stage model — articulated by the author from lived experience — is presented here as a model of "the creative process," the investigation found structural correspondences with broader phenomena including self-organization, individuation, and phase transitions. The distinction between physical, biological, and psychological individuation may be no more than labels on a spectrum. This breadth of scope is examined further in §6.
 
 The connection to Kesson-Driven Thinking is as follows. Field is a state of zero, of void. Not even unease has arisen. The first faint stirring marks the beginning of the transition to Wave. Withhold — the function of not processing reflexively but holding errors as questions — operates from Wave onward. At Wave, F-O evaluation (survival axis / attachment axis) gives rise to opposition. At Relation, multiple evaluations intersect. At Vortex, a new structure emerges as errors are reintegrated. At Bundle, reusable knowledge stabilizes.
 

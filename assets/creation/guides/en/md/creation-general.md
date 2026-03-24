@@ -70,7 +70,7 @@ The appropriate action differs by stage.
 
 # Evidence and Limitations
 
-This five-stage structure has been investigated across 30 academic domains. In fields as diverse as complexity science, neuroscience, architecture, music, organizational theory, and anthropology, similar stage structures have been repeatedly observed. In particular, the finding that a stage where contradictions coexist (corresponding to Relation) determines the quality of creation has been consistent across many domains.
+The five-stage structure was articulated by the author from lived experience. It has since been investigated across 30 academic domains to explore structural correspondences with established concepts in each field. In fields as diverse as complexity science, neuroscience, architecture, music, organizational theory, and anthropology, similar stage structures have been repeatedly observed. In particular, the finding that a stage where contradictions coexist (corresponding to Relation) determines the quality of creation has been consistent across many domains.
 
 However, the following points remain at the hypothesis stage.
 
