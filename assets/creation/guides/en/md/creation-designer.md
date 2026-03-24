@@ -32,7 +32,7 @@ What happens to the team here: "Let's just decide" — that voice rises. The F-a
 
 Remaining at Relation means weaving relationships while holding contradictions. Not rushing to conclusions, but finding new connections between opposing elements. This is the structural meaning of "not rushing to a conclusion."
 
-However, remaining at Relation requires a condition. The team needs a relationship where it feels safe that "not having an answer yet is okay." Without that sense of being held — psychological safety — the team cannot endure the discomfort of contradiction.
+However, remaining at Relation requires a condition. The team needs a relationship where it feels safe that "not having an answer yet is okay." Without that sense of being held — psychological safety — the team may find it difficult to endure the discomfort of contradiction.
 
 ## Vortex — The Prototype Emerges
 
@@ -50,7 +50,7 @@ If these five stages do not match your team's experience so far, that is natural
 
 # The Art of Not Fleeing at Relation
 
-Of the five stages, the one where teams struggle most is Relation.
+Of the five stages, the one where teams often encounter the greatest difficulty is Relation.
 
 Contradiction is at its peak, and everyone feels the discomfort. "Let's just decide" sounds rational. But it means discarding the information contained in the opposition.
 
@@ -58,7 +58,7 @@ Let us look at remaining at Relation from two perspectives.
 
 **The individual perspective**: When you encounter a gap between expectation and reality — that "this isn't it" feeling — instead of immediately correcting it, you hold that gap as a question. You do not rush to a conclusion. You remain in contradiction. This is called "Withhold."
 
-**The team perspective**: For individuals to Withhold, the team needs a relationship that can receive it. A relationship that does not blame "not having an answer." The quality of this relationship determines how long the team can remain at Relation, which in turn determines the quality of the Vortex.
+**The team perspective**: For individuals to Withhold, the team needs a relationship that can receive it. A relationship that does not blame "not having an answer." The quality of this relationship is closely connected to how long the team can remain at Relation, which in turn plays a significant role in the quality of the Vortex.
 
 Questions held through Withhold are transformed into structure through the five stages. This is where Kesson-Driven Thinking connects.
 

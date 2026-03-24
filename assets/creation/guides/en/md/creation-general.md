@@ -50,7 +50,7 @@ If anything in this explanation so far feels off, that may be an important persp
 
 # Why We Get Stuck in the Middle
 
-Of the five stages, the one where most people get stuck is the Relation stage.
+Of the five stages, the one where teams often encounter difficulty is the Relation stage.
 
 The reason is clear. At Relation, contradiction reaches its maximum. Choosing one side of the opposition would bring relief, but that means returning to the Wave stage. Starting over returns you to the Field, but the information accumulated so far is lost.
 
@@ -70,7 +70,7 @@ The appropriate action differs by stage.
 
 # Evidence and Limitations
 
-The five-stage structure was articulated by the author from lived experience. It has since been investigated across 30 academic domains to explore structural correspondences with established concepts in each field. In fields as diverse as complexity science, neuroscience, architecture, music, organizational theory, and anthropology, similar stage structures have been repeatedly observed. In particular, the finding that a stage where contradictions coexist (corresponding to Relation) determines the quality of creation has been consistent across many domains.
+The five-stage structure was articulated by the author from lived experience. It has since been investigated across 30 academic domains to explore structural correspondences with established concepts in each field. In fields as diverse as complexity science, neuroscience, architecture, music, organizational theory, and anthropology, similar stage structures have been repeatedly observed. In particular, a stage where contradictions coexist (corresponding to Relation) has been consistently identified as playing a significant role in creation across many domains.
 
 However, the following points remain at the hypothesis stage.
 
