@@ -74,7 +74,7 @@ The five-stage structure was articulated by the author from lived experience. It
 
 However, the following points remain at the hypothesis stage.
 
-Whether the order of the five stages is universal has not been confirmed. Cycling, reversal, and overlap between stages are all considered possible. The extent to which individual differences, cultural differences, and domain differences affect the structure requires further investigation.
+Whether the order of the five stages is universal has not been confirmed. Overlap between stages is considered possible. The extent to which individual differences, cultural differences, and domain differences affect the structure requires further investigation.
 
 The findings suggest that this structure may correspond not only to human creative processes but also to broader phenomena such as self-organization and individuation. This breadth of scope is still under investigation and discussion.
 
