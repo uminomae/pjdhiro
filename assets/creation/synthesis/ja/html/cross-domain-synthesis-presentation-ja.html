@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30領域横断分析 — 構造類似探索の統合的知見</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; background: #0a0e17; color: #f1f5f9; font-family: "Inter", "Noto Sans JP", system-ui, sans-serif; overflow: hidden; }
+.deck { width: 100vw; height: 100vh; position: relative; }
+.slide { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity 0.28s ease, visibility 0.28s ease; }
+.slide.active { opacity: 1; visibility: visible; }
+.slide-inner { width: min(92vw, calc(88vh * 16 / 9)); aspect-ratio: 16 / 9; border-radius: 16px; border: 1px solid rgba(148,163,184,0.14); overflow: hidden; position: relative; box-shadow: 0 24px 80px rgba(0,0,0,0.5); }
+.slide-bg { position: absolute; inset: 0; background: linear-gradient(180deg, #0c1220, #0a0e17); }
+.slide-content { position: relative; z-index: 1; width: 100%; height: 100%; padding: 3.5rem 4rem; display: flex; flex-direction: column; }
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem; }
+p { font-size: 1rem; line-height: 1.8; margin-bottom: 0.8rem; }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+<div class="slide layout-title active">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--violet"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">30領域横断分析</h2>
+<div class="accent-line animate-in delay-2"></div>
+<h3 class="animate-in delay-3">構造類似探索の統合的知見</h3>
+<p class="animate-in delay-4">数学から伝統知まで、30領域を横断して見えた5段階モデルの共通構造を要約する。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-visual">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">Phase 8 5テーマ統合構造図</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/ja/theme-conclusion-summary.svg" alt="Phase 8 5テーマ統合構造図"></p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">調査の規模</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>対象領域</strong>: 30学術領域（D01-D30）</li>
+<li class="animate-in delay-4"><strong>抽出パターン</strong>: 150件（各領域5件）</li>
+<li class="animate-in delay-5"><strong>横断テーマ</strong>: 5テーマ</li>
+<li class="animate-in delay-5"><strong>最大収束</strong>: 28/30領域が単一テーマに収束</li>
+<li class="animate-in delay-5"><strong>位置づけ</strong>: Phase 1-8 の統合要約</li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">段階別の分布</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-01-distribution-svg.svg" alt="30領域 x 5段階 対応強度ヒートマップ"></p>
+<ul>
+<li class="animate-in delay-4"><strong>縁</strong>: 28領域。最多。概念族として多型化</li>
+<li class="animate-in delay-5"><strong>束</strong>: 22領域。循環駆動と動態性が集中</li>
+<li class="animate-in delay-5"><strong>場</strong>: 15領域。多層性と条件付き潜在性が主題化</li>
+<li class="animate-in delay-5"><strong>渦</strong>: 11領域。創造的/破壊的の二方向性が出現</li>
+<li class="animate-in delay-5"><strong>波</strong>: 9領域。最も理論化が薄い</li>
+</ul>
+<p class="animate-in delay-5"><strong>結論</strong>: 縁が中核で、波が最大の未開拓領域。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">テーマ1: 縁の類型学</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>支持</strong>: 28/30領域</li>
+<li class="animate-in delay-4"><strong>主張</strong>: 縁は単一概念ではなく概念族</li>
+<li class="animate-in delay-5"><strong>代表類型</strong>:</li>
+</ul>
+<p class="animate-in delay-5">数学: 境界凝縮</p>
+<p class="animate-in delay-5">地球科学・物理学: 相転移</p>
+<p class="animate-in delay-5">建築: 帯域設計</p>
+<p class="animate-in delay-5">舞台芸術: 操作的定義</p>
+<p class="animate-in delay-5">宗教学: 受動性転換</p>
+<p class="animate-in delay-5"><strong>核心</strong>: 縁は静的境界ではなく、選別と生成が同時に起きる動的プロセス。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">テーマ2: 閾値構造</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>支持</strong>: 11領域</li>
+<li class="animate-in delay-4"><strong>主張</strong>: 縁→渦には不連続な転換条件がある</li>
+<li class="animate-in delay-5"><strong>代表パターン</strong>:</li>
+</ul>
+<p class="animate-in delay-5">定量的: 物理学・天文学</p>
+<p class="animate-in delay-5">制御可能: 化学</p>
+<p class="animate-in delay-5">確率的: 複雑系</p>
+<p class="animate-in delay-5">発達的: 宗教学・発達心理学</p>
+<ul>
+<li class="animate-in delay-5"><strong>重要点</strong>: 10領域が「渦不到達経路」を記述</li>
+</ul>
+<p class="animate-in delay-5"><strong>核心</strong>: 全ての縁が渦に至るわけではない。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">テーマ3: 再循環メカニズム</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>支持</strong>: 19領域</li>
+<li class="animate-in delay-4"><strong>主張</strong>: 束は終点ではなく次の場の種</li>
+<li class="animate-in delay-5"><strong>代表モード</strong>:</li>
+</ul>
+<p class="animate-in delay-5">自然な回帰</p>
+<p class="animate-in delay-5">能動的回帰</p>
+<p class="animate-in delay-5">劇的回帰</p>
+<p class="animate-in delay-5">不安定な束</p>
+<p class="animate-in delay-5">分岐する束</p>
+<p class="animate-in delay-5"><strong>核心</strong>: 束→場は「同じ場への回帰」ではなく不可逆的螺旋。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">テーマ4: 場の多層性</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>支持</strong>: 15領域</li>
+<li class="animate-in delay-4"><strong>主張</strong>: 場は「無」ではなく構造化された潜在性</li>
+<li class="animate-in delay-5"><strong>二類型</strong>:</li>
+</ul>
+<p class="animate-in delay-5">原初的場: まだ構造が存在しない</p>
+<p class="animate-in delay-5">循環的場: 前の束が作った条件付き状態</p>
+<ul>
+<li class="animate-in delay-5"><strong>代表</strong>: 天文学、地球科学、進化生物学</li>
+</ul>
+<p class="animate-in delay-5"><strong>核心</strong>: 場は受動的前提ではなく、後続の生成を方向づける能動的構造。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">テーマ5: 盲点と反例</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>指摘</strong>: 13領域</li>
+<li class="animate-in delay-4"><strong>盲点</strong>:</li>
+</ul>
+<p class="animate-in delay-5">秩序解体の扱い</p>
+<p class="animate-in delay-5">段階化への抵抗</p>
+<p class="animate-in delay-5">暗黙の前提（時間性・意識・エネルギー）</p>
+<ul>
+<li class="animate-in delay-5"><strong>代表例</strong>: 地球科学の大量絶滅は「破壊的渦」</li>
+</ul>
+<p class="animate-in delay-5"><strong>核心</strong>: 5段階モデルは秩序生成の記述枠組みであり、あらゆる変化を包摂しない。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">5テーマの関係</h2>
+<div class="accent-line animate-in delay-2"></div>
+<p class="animate-in delay-3"><img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-02-themes-network-svg.svg" alt="5テーマ構造関連図"></p>
+<ul>
+<li class="animate-in delay-4">場の多層性: どの生成条件から始まるかを規定</li>
+<li class="animate-in delay-5">縁の類型学: どのような接触面が働くかを記述</li>
+<li class="animate-in delay-5">閾値構造: 縁から渦へ進む条件を明示</li>
+<li class="animate-in delay-5">再循環メカニズム: 束が次の場へ戻る論理を説明</li>
+<li class="animate-in delay-5">盲点と反例: モデルの射程外と失敗経路を示す</li>
+</ul>
+<p class="animate-in delay-5"><strong>読み方</strong>: 5テーマは独立項目ではなく、場→縁→渦→束→場の各局面を分担して記述している。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">段階定義への提案</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>場</strong>: 原初的場 / 循環的場 を区別</li>
+<li class="animate-in delay-4"><strong>縁</strong>: 単一定義から概念族へ拡張</li>
+<li class="animate-in delay-5"><strong>渦</strong>: 創造的渦 / 破壊的渦 の二方向性を導入</li>
+<li class="animate-in delay-5"><strong>束</strong>: 安定到達点ではなく螺旋循環の種として再定義</li>
+</ul>
+<p class="animate-in delay-5"><strong>最も堅固な更新</strong>: 束の循環性。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">繰り返し出現した保持論点</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">場の定義問題</li>
+<li class="animate-in delay-4">縁の統合的類型化</li>
+<li class="animate-in delay-5">渦の定義精緻化</li>
+<li class="animate-in delay-5">束の動態性</li>
+<li class="animate-in delay-5">分析生成 vs 存在生成</li>
+<li class="animate-in delay-5">波の独立段階性</li>
+<li class="animate-in delay-5">失敗モードの体系化</li>
+</ul>
+<p class="animate-in delay-5"><strong>含意</strong>: 横断分析は完了したが、段階定義の理論化はまだ続く。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">次フェーズ候補</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3">波の独立的理論化</li>
+<li class="animate-in delay-4">意識関与スペクトラムの精緻化</li>
+<li class="animate-in delay-5">非西洋理論の拡充</li>
+<li class="animate-in delay-5">失敗モードの体系化</li>
+<li class="animate-in delay-5">外部専門家レビュー</li>
+</ul>
+<p class="animate-in delay-5"><strong>判断事項</strong>: 段階定義の改訂は pjdhiro 判断。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-content">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--blue"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">このモデルの射程</h2>
+<div class="accent-line animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>できること</strong>: 異なる領域の理論が同じ構造を指しているかを見る</li>
+<li class="animate-in delay-4"><strong>できないこと</strong>: あらゆる変化や解体過程を一つで説明する</li>
+<li class="animate-in delay-5"><strong>強み</strong>: 横断比較の共通座標を提供する</li>
+<li class="animate-in delay-5"><strong>弱み</strong>: 波・失敗モード・非西洋視座がまだ薄い</li>
+</ul>
+<p class="animate-in delay-5"><strong>位置づけ</strong>: 万能理論ではなく、比較のための構造的レンズ。</p>
+    </div>
+  </div>
+</div>
+<div class="slide layout-conclusion">
+  <div class="slide-inner">
+    <div class="slide-bg slide-bg--green"></div>
+    <div class="slide-content">
+<h2 class="animate-in delay-1">まとめ</h2>
+<div class="accent-line accent-line--green animate-in delay-2"></div>
+<ul>
+<li class="animate-in delay-3"><strong>縁の普遍性</strong>: 28/30領域が多型性を記述</li>
+<li class="animate-in delay-4"><strong>再循環の堅固さ</strong>: 束→場の螺旋を15領域以上が支持</li>
+<li class="animate-in delay-5"><strong>場の再定義</strong>: 場は無ではなく条件付き潜在性</li>
+<li class="animate-in delay-5"><strong>誠実な限界</strong>: 盲点と反例を明示</li>
+</ul>
+<p class="animate-in delay-5">30領域横断分析は、5段階モデルが領域固有理論を通約する<strong>共通構造の候補</strong>であることを示した。</p>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+const slides=document.querySelectorAll('.slide');let cur=0;
+function show(i){slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));}
+function go(d){const n=Math.max(0,Math.min(slides.length-1,cur+d));if(n!==cur){cur=n;show(cur);}}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(1);}if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}}); show(0);
+</script>
+</body>
+</html>
