@@ -1,14 +1,14 @@
 {
   "version": "0.3",
-  "generated_at": "2026-03-23",
+  "generated_at": "2026-03-25",
   "namespace": "awareness",
   "progress_taxonomy": [
     {
       "id": "planned",
       "label_ja": "設計中",
       "label_en": "Planned",
-      "description_ja": "domain 定義のみ。読者向け report は未配置",
-      "description_en": "Domain defined, but no reader-facing report yet",
+      "description_ja": "topic 定義のみ。読者向け report は未配置",
+      "description_en": "Topic defined, but no reader-facing report yet",
       "order": 10,
       "tone": "secondary"
     },
@@ -50,12 +50,12 @@
         "en": "2026-03-23"
       },
       "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/survival-trust-axis.md",
-        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/en/md/survival-trust-axis.md"
+        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/ja/md/survival-trust-axis.md",
+        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/en/md/survival-trust-axis.md"
       },
       "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/survival-trust-axis.pdf",
-        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/en/pdf/survival-trust-axis.pdf"
+        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/pdf/survival-trust-axis.pdf",
+        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/pdf/survival-trust-axis.pdf"
       }
     },
     {
@@ -76,12 +76,12 @@
         "en": "2026-03-23"
       },
       "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/ja/md/four-layers.md",
-        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/domains/en/md/four-layers.md"
+        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/ja/md/four-layers.md",
+        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/en/md/four-layers.md"
       },
       "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/pdf/four-layers.pdf",
-        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/domains/en/pdf/four-layers.pdf"
+        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/pdf/four-layers.pdf",
+        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/pdf/four-layers.pdf"
       }
     }
   ]
