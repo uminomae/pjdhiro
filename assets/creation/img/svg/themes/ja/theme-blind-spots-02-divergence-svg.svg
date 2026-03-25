@@ -1,4 +1,3 @@
-```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
   <!-- Background -->
   <rect width="100%" height="100%" fill="#1a1a2e" />
@@ -95,4 +94,3 @@
     <line x1="720" y1="0" x2="650" y2="0" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
   </g>
 </svg>
-```
