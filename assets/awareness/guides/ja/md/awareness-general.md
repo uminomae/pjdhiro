@@ -28,6 +28,10 @@ date: 2026-03-23
 
 ## モデルの基本構成
 
+![生存-信頼軸の概要図](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/ja/survival-trust-axis-01-overview-svg.svg)
+
+![4層モデルの概要図](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/ja/four-layers-01-overview-svg.svg)
+
 このモデルでは、
 人の経験を読むときに
 **生存** と **間主観性** の二つの向きが重要ではないか、

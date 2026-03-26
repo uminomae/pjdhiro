@@ -23,6 +23,10 @@ Its purpose is to clarify the central hypothesis, the comparison axes used in th
 
 ## Model Overview
 
+![Survival-Trust Axis overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/survival-trust-axis-01-overview-svg.svg)
+
+![Four-Layer Model overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/four-layers-01-overview-svg.svg)
+
 The current working hypothesis is that the direction of experience can be read through two axes.
 
 - Survival axis: survival, safety, defense, self-protection
