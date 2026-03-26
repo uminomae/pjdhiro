@@ -1,6 +1,8 @@
 main:
   - title: "Project design"
     url: /project-design/
+  - title: "AWARENESS"
+    url: https://uminomae.github.io/awareness-space/
   - title: "Posts"
     url: /posts/
   - title: "Pages"
