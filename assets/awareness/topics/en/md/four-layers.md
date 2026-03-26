@@ -11,6 +11,8 @@ date: 2026-03-23
 
 ## 1. Purpose of This Document
 
+![Four-Layer Model overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/four-layers-01-overview-svg.svg)
+
 This document explains a way of describing awareness not as a static collection of contents, but as a process.
 It organizes that minimal structure as a chain composed of four layers.
 

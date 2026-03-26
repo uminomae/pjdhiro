@@ -11,6 +11,8 @@ date: 2026-03-23
 
 ## 1. この文書の目的
 
+![4層モデルの概要図](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/ja/four-layers-01-overview-svg.svg)
+
 この文書は、
 意識を静的な内容の集まりとしてではなく、
 どのような作動の流れとして記述できるかを説明するためのものです。
