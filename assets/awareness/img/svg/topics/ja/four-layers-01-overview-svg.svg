@@ -1,31 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
-  <rect x="0" y="0" width="1200" height="800" fill="#f6f3ee"/>
-  <text x="80" y="92" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="38" fill="#1f2430">4層モデル</text>
-  <text x="80" y="130" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="18" fill="#5f6672">身体状態から差異の前景化、方向づけ、見直しの余地までを読む構造枠</text>
-  <rect x="96" y="240" width="220" height="330" rx="22" fill="#d7e4f3" stroke="#7ba1c9" stroke-width="2"/>
-  <text x="122" y="286" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="26" fill="#243447">Layer 0</text>
-  <text x="122" y="324" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="22" fill="#243447">身体の足場</text>
-  <text x="122" y="368" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#425466">呼吸・緊張・心拍</text>
-  <text x="122" y="394" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#425466">意識経験の背景条件</text>
-  <rect x="360" y="240" width="220" height="330" rx="22" fill="#efe4cd" stroke="#c9a45e" stroke-width="2"/>
-  <text x="386" y="286" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="26" fill="#3d3424">Layer 1</text>
-  <text x="386" y="324" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="22" fill="#3d3424">差異の選別</text>
-  <text x="386" y="368" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#5a503d">予測と現実の差</text>
-  <text x="386" y="394" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#5a503d">一部だけが前景化する</text>
-  <rect x="624" y="240" width="220" height="330" rx="22" fill="#f0ddd2" stroke="#c4835f" stroke-width="2"/>
-  <text x="650" y="286" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="26" fill="#3d2d26">Layer 2</text>
-  <text x="650" y="324" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="22" fill="#3d2d26">方向づけ</text>
-  <text x="650" y="368" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#5c4337">生存か信頼か</text>
-  <text x="650" y="394" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#5c4337">情動と行動準備の向き</text>
-  <rect x="888" y="240" width="220" height="330" rx="22" fill="#dceadf" stroke="#6f9573" stroke-width="2"/>
-  <text x="914" y="286" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="26" fill="#274033">Layer 3</text>
-  <text x="914" y="324" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="22" fill="#274033">見直しの余地</text>
-  <text x="914" y="368" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#446050">反応を固定しすぎない</text>
-  <text x="914" y="394" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="16" fill="#446050">再評価へ開く</text>
-  <line x1="316" y1="405" x2="360" y2="405" stroke="#2f3d4c" stroke-width="3"/>
-  <line x1="580" y1="405" x2="624" y2="405" stroke="#2f3d4c" stroke-width="3"/>
-  <line x1="844" y1="405" x2="888" y2="405" stroke="#2f3d4c" stroke-width="3"/>
-  <polygon points="360,405 344,396 344,414" fill="#2f3d4c"/>
-  <polygon points="624,405 608,396 608,414" fill="#2f3d4c"/>
-  <polygon points="888,405 872,396 872,414" fill="#2f3d4c"/>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FAF8F5" />
+
+  <!-- Title and Subtitle -->
+  <text x="600" y="85" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#333333">4層モデル</text>
+  <text x="600" y="135" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="20" text-anchor="middle" fill="#555555">意識を作動の流れとして捉える構造的モデル</text>
+
+  <!-- Layer Panels -->
+  <g id="layer-0">
+    <rect x="50" y="200" width="220" height="400" rx="12" ry="12" fill="#E6F0F9" stroke="#A8C5E1" stroke-width="1.5" />
+    <text x="160" y="245" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#3D6A98">Layer 0</text>
+    <text x="160" y="300" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#1C4973">身体的足場</text>
+    <line x1="110" y1="335" x2="210" y2="335" stroke="#A8C5E1" stroke-width="1" />
+    <text x="160" y="380" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" line-height="1.6" text-anchor="middle" fill="#1C4973">
+      <tspan x="160" dy="0">呼吸、緊張、心拍など、</tspan>
+      <tspan x="160" dy="1.6em">一人称経験が立ち上がる</tspan>
+      <tspan x="160" dy="1.6em">土台となる身体の状態。</tspan>
+    </text>
+  </g>
+
+  <g id="layer-1">
+    <rect x="343" y="200" width="220" height="400" rx="12" ry="12" fill="#E6F5F0" stroke="#A8D6C1" stroke-width="1.5" />
+    <text x="453" y="245" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#2A7C5B">Layer 1</text>
+    <text x="453" y="300" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#16593D">差異の検出</text>
+    <line x1="403" y1="335" x2="503" y2="335" stroke="#A8D6C1" stroke-width="1" />
+    <text x="453" y="380" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" line-height="1.6" text-anchor="middle" fill="#16593D">
+      <tspan x="453" dy="0">予測と現実のズレを検出し、</tspan>
+      <tspan x="453" dy="1.6em">一部を違和感や欠けとして</tspan>
+      <tspan x="453" dy="1.6em">前景化させるプロセス。</tspan>
+    </text>
+  </g>
+
+  <g id="layer-2">
+    <rect x="636" y="200" width="220" height="400" rx="12" ry="12" fill="#FFF2E6" stroke="#FFD1A8" stroke-width="1.5" />
+    <text x="746" y="245" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#B36F2D">Layer 2</text>
+    <text x="746" y="300" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#8C5215">意味の方向づけ</text>
+    <line x1="686" y1="335" x2="806" y2="335" stroke="#FFD1A8" stroke-width="1" />
+    <text x="746" y="380" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" line-height="1.6" text-anchor="middle" fill="#8C5215">
+      <tspan x="746" dy="0">検出された差が何を意味</tspan>
+      <tspan x="746" dy="1.6em">するかを解釈し、情動と</tspan>
+      <tspan x="746" dy="1.6em">行動の方向を定める。</tspan>
+    </text>
+  </g>
+
+  <g id="layer-3">
+    <rect x="929" y="200" width="220" height="400" rx="12" ry="12" fill="#F0EAF7" stroke="#C9B2E1" stroke-width="1.5" />
+    <text x="1039" y="245" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#6C4A8B">Layer 3</text>
+    <text x="1039" y="300" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#4E2E6E">見直しの余地</text>
+    <line x1="989" y1="335" x2="1089" y2="335" stroke="#C9B2E1" stroke-width="1" />
+    <text x="1039" y="380" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" line-height="1.6" text-anchor="middle" fill="#4E2E6E">
+      <tspan x="1039" dy="0">自動的な反応を保留し、</tspan>
+      <tspan x="1039" dy="1.6em">再評価や更新を可能に</tspan>
+      <tspan x="1039" dy="1.6em">する認知的な余地。</tspan>
+    </text>
+  </g>
+
+  <!-- Connectors -->
+  <g id="arrows" fill="#888888" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 280 400 L 333 400" />
+    <path d="M 333 400 L 323 395 L 323 405 Z" />
+
+    <path d="M 573 400 L 626 400" />
+    <path d="M 626 400 L 616 395 L 616 405 Z" />
+
+    <path d="M 866 400 L 919 400" />
+    <path d="M 919 400 L 909 395 L 909 405 Z" />
+  </g>
+
+  <!-- Footer Note -->
+  <text x="600" y="750" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="14" text-anchor="middle" fill="#777777">
+    ※これは意識の作動を理解するための一つの構造的モデルであり、確定した理論ではありません。
+  </text>
 </svg>
