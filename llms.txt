@@ -1,0 +1,82 @@
+# llms.txt — pjdhiro (Project Design Hub)
+
+> This file helps AI assistants and language models understand the structure and content of this site.
+
+## Site Overview
+
+This is the personal project site of pjdhiro, exploring **Project Design Theory** — an approach to project envisioning, design, and execution that encompasses both Doing (actions) and Being (phenomena).
+
+- **Primary Language**: Japanese (日本語), with English summaries
+- **Site URL**: https://uminomae.github.io/pjdhiro/
+- **Topics**: Project Design, Love-Driven Development, Emotional Processing, Kesson-Driven Thinking, Creativity, Intersubjectivity, Business Design
+
+## Core Concepts
+
+### Project Design (プロジェクトデザイン)
+A framework for designing not just projects but the methods of project execution themselves. It extends traditional project management (PMBOK) by incorporating emotional processing and communication as first-class design concerns.
+
+### Love-Driven Development (Love駆動開発)
+A phenomenon where relationships, emotions, and intent become the driving forces of a project — beyond rational planning and resource allocation.
+
+### Kesson-Driven Thinking (欠損駆動思考)
+A thinking framework that takes meaninglessness, absence, and discomfort as input. While design thinking starts from empathy, Kesson-Driven Thinking starts from noticing what is missing.
+
+### Five-Stage Model of Creation (創造の5段階モデル)
+Field (場) → Wave (波) → Edge (縁) → Vortex (渦) → Bundle (束)
+A structural pattern observed across 30 academic domains describing how creative processes emerge.
+
+### Intersubjectivity (間主観性)
+The shared experiential space between subjects — a foundation for understanding consciousness and communication in project contexts.
+
+## Site Structure
+
+### Main Hub
+- /project-design/ — Project Design Theory overview (hub page)
+
+### Dialogue Series (対話)
+- /dialogue-project-design/ — Dialogue on Project Design
+- /dialogueCreation/ — Dialogue on Creation and the Five-Stage Model
+- /dialogueBaJidai/ — Dialogue on Field (Ba) and Era (Jidai)
+- /dialogue-acceptance/ — Dialogue on Acceptance
+- /dialogue-sharing-concepts/ — Dialogue on Sharing Concepts
+- /dialogueSpilit/ — Dialogue on Spirit
+- /dialogue2025/ — Dialogue 2025
+
+### Emotional Processing (感情処理)
+- /emotional-processing/ — Overview
+- /meditation/ — Meditation as emotional processing
+- /emotional-metacognition/ — Emotional metacognition
+- /emotional-contagion/ — Emotional contagion
+- /personal-boundaries/ — Personal boundaries
+- /acceptance/ — Acceptance
+- /value/ — Value
+
+### Thinking Methods (思考法)
+- /thinking-bi/ — BI Thinking
+- /meditation/ — Kesson-Driven Thinking (deficiency-driven)
+
+### Terminology (用語)
+- /word-project/ — Project-related definitions
+- /word-other/ — Other key terms
+
+## Related Projects
+
+| Project | URL | Focus |
+|---------|-----|-------|
+| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
+| awareness-space | https://uminomae.github.io/awareness-space/ | Consciousness structure through intersubjectivity |
+| kesson-space | https://uminomae.github.io/kesson-space/ | Kesson-Driven Thinking framework |
+| project-design | https://uminomae.github.io/pjdhiro/project-design/ | Project Design Theory (this hub) |
+
+## Key Differentiators from Traditional PM
+
+1. **Scope**: Encompasses Being (phenomena) alongside Doing (actions)
+2. **Emotional Processing**: Treats emotions as a design concern, not a side effect
+3. **Creation Model**: Integrates creativity theory (Five-Stage Model) into project lifecycle
+4. **Intersubjectivity**: Grounds communication theory in phenomenological foundations
+5. **Human-AI Collaboration**: Practices and documents real-time human-AI project co-design
+
+## Author
+- Name: pjdhiro
+- Site: https://uminomae.github.io/pjdhiro/
+- Focus: Project Design, Emotional Processing, Human-AI Collaboration
