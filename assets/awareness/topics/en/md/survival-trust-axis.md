@@ -11,6 +11,8 @@ date: 2026-03-23
 
 ## 1. Purpose and Guiding Question
 
+![Survival-Trust Axis overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/survival-trust-axis-01-overview-svg.svg)
+
 This document explains how far human experience can be described through two directions of interpretation: survival and trust.
 
 Its central question is what the survival-trust axis can explain as a working hypothesis of the awareness model, and how far the trust axis can be written in a more concrete way.

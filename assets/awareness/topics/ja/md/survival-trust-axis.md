@@ -11,6 +11,8 @@ date: 2026-03-23
 
 ## 1. この文書の目的と問い
 
+![生存-信頼軸の概要図](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/ja/survival-trust-axis-01-overview-svg.svg)
+
 この文書は、
 人の経験がどのような問題として受け止められているかを、
 生存と信頼の二軸からどこまで記述できるかを整理するための報告です。
