@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#f6f3ee"/>
+  <text x="80" y="92" font-family="Inter, Helvetica Neue, sans-serif" font-size="38" fill="#1f2430">Four-Layer Model</text>
+  <text x="80" y="130" font-family="Inter, Helvetica Neue, sans-serif" font-size="18" fill="#5f6672">A structural frame that reads awareness from bodily footing through discrepancy, direction, and revisability.</text>
+  <rect x="96" y="240" width="220" height="330" rx="22" fill="#d7e4f3" stroke="#7ba1c9" stroke-width="2"/>
+  <text x="122" y="286" font-family="Inter, Helvetica Neue, sans-serif" font-size="26" fill="#243447">Layer 0</text>
+  <text x="122" y="324" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" fill="#243447">Bodily footing</text>
+  <text x="122" y="368" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#425466">breath, tension, heartbeat</text>
+  <text x="122" y="394" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#425466">background of experience</text>
+  <rect x="360" y="240" width="220" height="330" rx="22" fill="#efe4cd" stroke="#c9a45e" stroke-width="2"/>
+  <text x="386" y="286" font-family="Inter, Helvetica Neue, sans-serif" font-size="26" fill="#3d3424">Layer 1</text>
+  <text x="386" y="324" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" fill="#3d3424">Discrepancy selection</text>
+  <text x="386" y="368" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#5a503d">prediction vs reality</text>
+  <text x="386" y="394" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#5a503d">only some come forward</text>
+  <rect x="624" y="240" width="220" height="330" rx="22" fill="#f0ddd2" stroke="#c4835f" stroke-width="2"/>
+  <text x="650" y="286" font-family="Inter, Helvetica Neue, sans-serif" font-size="26" fill="#3d2d26">Layer 2</text>
+  <text x="650" y="324" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" fill="#3d2d26">Direction</text>
+  <text x="650" y="368" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#5c4337">survival or trust</text>
+  <text x="650" y="394" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#5c4337">emotion and action readiness</text>
+  <rect x="888" y="240" width="220" height="330" rx="22" fill="#dceadf" stroke="#6f9573" stroke-width="2"/>
+  <text x="914" y="286" font-family="Inter, Helvetica Neue, sans-serif" font-size="26" fill="#274033">Layer 3</text>
+  <text x="914" y="324" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" fill="#274033">Revision margin</text>
+  <text x="914" y="368" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#446050">response not fixed too early</text>
+  <text x="914" y="394" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" fill="#446050">keeps re-evaluation open</text>
+  <line x1="316" y1="405" x2="360" y2="405" stroke="#2f3d4c" stroke-width="3"/>
+  <line x1="580" y1="405" x2="624" y2="405" stroke="#2f3d4c" stroke-width="3"/>
+  <line x1="844" y1="405" x2="888" y2="405" stroke="#2f3d4c" stroke-width="3"/>
+  <polygon points="360,405 344,396 344,414" fill="#2f3d4c"/>
+  <polygon points="624,405 608,396 608,414" fill="#2f3d4c"/>
+  <polygon points="888,405 872,396 872,414" fill="#2f3d4c"/>
+</svg>
