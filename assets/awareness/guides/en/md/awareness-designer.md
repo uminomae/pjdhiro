@@ -23,6 +23,10 @@ Its role is to provide a structured way to read reactions without reducing them 
 
 ## Model Overview
 
+![Survival-Trust Axis overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/survival-trust-axis-01-overview-svg.svg)
+
+![Four-Layer Model overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/four-layers-01-overview-svg.svg)
+
 The model reads awareness as a four-layer process.
 
 - Layer 0: bodily state

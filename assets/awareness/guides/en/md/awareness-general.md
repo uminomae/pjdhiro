@@ -23,6 +23,10 @@ Its purpose is to present the current hypothesis, the research assumptions behin
 
 ## Model Overview
 
+![Survival-Trust Axis overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/survival-trust-axis-01-overview-svg.svg)
+
+![Four-Layer Model overview](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/en/four-layers-01-overview-svg.svg)
+
 The model starts from the hypothesis that two orientations matter when we read experience.
 
 - Survival: avoiding danger, securing safety, protecting oneself
