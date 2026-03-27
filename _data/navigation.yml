@@ -11,16 +11,18 @@ main:
 docs:
   - title: "プロジェクトデザインとは"
     url: /project-design/
+  - title: "プロジェクトデザイン｜AI協働"
+    url: https://uminomae.github.io/project-design/
   - title: "創造とは"
     url: /dialogueCreation/
     children:
-      - title: "創造とは｜Three.js"
+      - title: "創造とは｜AI協働"
         url: https://uminomae.github.io/creation-space/
   - title: "デザイン思考"
     children:
       - title: "欠損駆動思考"
         url: /thinking-kesson/
-      - title: "欠損駆動思考｜Three.js"
+      - title: "欠損駆動思考｜AI協働"
         url: https://uminomae.github.io/kesson-space/
       - title: "美駆動思考"
         url: /thinking-bi/
