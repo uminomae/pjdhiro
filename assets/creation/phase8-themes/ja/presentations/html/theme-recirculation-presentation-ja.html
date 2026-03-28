@@ -721,7 +721,7 @@
     if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(1); }
     if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
     if (e.key === 'f' || e.key === 'F') toggleFS();
-    if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
+    if (e.key === 'Escape') { if (document.fullscreenElement) document.exitFullscreen(); else if (window.parent !== window) window.parent.postMessage({type:'slide-escape'}, '*'); }
   });
   // Touch swipe
   let touchX = 0;
