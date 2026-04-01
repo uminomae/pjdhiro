@@ -74,76 +74,76 @@
             <rect x="968" y="190" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
 
             <!-- Row 1: 農地窒素循環 | partial | 場,波,縁,渦,束 -->
-            <text x="390" y="220 + 52" text-anchor="end" font-size="14" fill="white">農地窒素循環</text>
-            <rect x="400" y="190 + 52" width="140" height="50" fill="#8B8682" opacity="0.7" />
-            <rect x="542" y="190 + 52" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
-            <rect x="684" y="190 + 52" width="140" height="50" fill="#D4A857" opacity="0.7" />
-            <rect x="826" y="190 + 52" width="140" height="50" fill="#C45B4D" opacity="0.7" />
-            <rect x="968" y="190 + 52" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+            <text x="390" y="272" text-anchor="end" font-size="14" fill="white">農地窒素循環</text>
+            <rect x="400" y="242" width="140" height="50" fill="#8B8682" opacity="0.7" />
+            <rect x="542" y="242" width="140" height="50" fill="#5B8DB8" opacity="0.7" />
+            <rect x="684" y="242" width="140" height="50" fill="#D4A857" opacity="0.7" />
+            <rect x="826" y="242" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+            <rect x="968" y="242" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
 
             <!-- Row 2: 総合的病害虫管理（IPM）と経済閾値 | strong | 縁 -->
-            <text x="390" y="220 + 52*2" text-anchor="end" font-size="14" fill="white">総合的病害虫管理（IPM）と経済閾値</text>
-            <rect x="400" y="190 + 52*2" width="140" height="50" fill="#8B8682" opacity="0.3" />
-            <rect x="542" y="190 + 52*2" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
-            <rect x="684" y="190 + 52*2" width="140" height="50" fill="#D4A857" opacity="1.0" />
-            <rect x="826" y="190 + 52*2" width="140" height="50" fill="#C45B4D" opacity="0.3" />
-            <rect x="968" y="190 + 52*2" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+            <text x="390" y="324" text-anchor="end" font-size="14" fill="white">総合的病害虫管理（IPM）と経済閾値</text>
+            <rect x="400" y="294" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="294" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="294" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="294" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="294" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
 
             <!-- Row 3: レジームシフト／複数安定状態 | strong | 縁,渦 -->
-            <text x="390" y="220 + 52*3" text-anchor="end" font-size="14" fill="white">レジームシフト／複数安定状態</text>
-            <rect x="400" y="190 + 52*3" width="140" height="50" fill="#8B8682" opacity="0.3" />
-            <rect x="542" y="190 + 52*3" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
-            <rect x="684" y="190 + 52*3" width="140" height="50" fill="#D4A857" opacity="1.0" />
-            <rect x="826" y="190 + 52*3" width="140" height="50" fill="#C45B4D" opacity="1.0" />
-            <rect x="968" y="190 + 52*3" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+            <text x="390" y="376" text-anchor="end" font-size="14" fill="white">レジームシフト／複数安定状態</text>
+            <rect x="400" y="346" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="346" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="346" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="346" width="140" height="50" fill="#C45B4D" opacity="1.0" />
+            <rect x="968" y="346" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
 
             <!-- Row 4: 生態学的境界理論（エコトーン） | strong | 縁 -->
-            <text x="390" y="220 + 52*4" text-anchor="end" font-size="14" fill="white">生態学的境界理論（エコトーン）</text>
-            <rect x="400" y="190 + 52*4" width="140" height="50" fill="#8B8682" opacity="0.3" />
-            <rect x="542" y="190 + 52*4" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
-            <rect x="684" y="190 + 52*4" width="140" height="50" fill="#D4A857" opacity="1.0" />
-            <rect x="826" y="190 + 52*4" width="140" height="50" fill="#C45B4D" opacity="0.3" />
-            <rect x="968" y="190 + 52*4" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+            <text x="390" y="428" text-anchor="end" font-size="14" fill="white">生態学的境界理論（エコトーン）</text>
+            <rect x="400" y="398" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="398" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="398" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="398" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="398" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
 
             <!-- Row 5: 景観コネクティビティとパーコレーション閾値 | strong | 縁 -->
-            <text x="390" y="220 + 52*5" text-anchor="end" font-size="14" fill="white">景観コネクティビティとパーコレーション閾値</text>
-            <rect x="400" y="190 + 52*5" width="140" height="50" fill="#8B8682" opacity="0.3" />
-            <rect x="542" y="190 + 52*5" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
-            <rect x="684" y="190 + 52*5" width="140" height="50" fill="#D4A857" opacity="1.0" />
-            <rect x="826" y="190 + 52*5" width="140" height="50" fill="#C45B4D" opacity="0.3" />
-            <rect x="968" y="190 + 52*5" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+            <text x="390" y="480" text-anchor="end" font-size="14" fill="white">景観コネクティビティとパーコレーション閾値</text>
+            <rect x="400" y="450" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="450" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="450" width="140" height="50" fill="#D4A857" opacity="1.0" />
+            <rect x="826" y="450" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="450" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
 
             <!-- Row 6: 乾燥地植生の自己組織化パターン | partial | 渦,束 -->
-            <text x="390" y="220 + 52*6" text-anchor="end" font-size="14" fill="white">乾燥地植生の自己組織化パターン</text>
-            <rect x="400" y="190 + 52*6" width="140" height="50" fill="#8B8682" opacity="0.3" />
-            <rect x="542" y="190 + 52*6" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
-            <rect x="684" y="190 + 52*6" width="140" height="50" fill="#D4A857" opacity="0.3" />
-            <rect x="826" y="190 + 52*6" width="140" height="50" fill="#C45B4D" opacity="0.7" />
-            <rect x="968" y="190 + 52*6" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
+            <text x="390" y="532" text-anchor="end" font-size="14" fill="white">乾燥地植生の自己組織化パターン</text>
+            <rect x="400" y="502" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="502" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="502" width="140" height="50" fill="#D4A857" opacity="0.3" />
+            <rect x="826" y="502" width="140" height="50" fill="#C45B4D" opacity="0.7" />
+            <rect x="968" y="502" width="140" height="50" fill="#5B8B6A" opacity="0.7" />
 
             <!-- Row 7: 植物-土壌フィードバック | conditional | 縁,渦,束 -->
-            <text x="390" y="220 + 52*7" text-anchor="end" font-size="14" fill="white">植物-土壌フィードバック</text>
-            <rect x="400" y="190 + 52*7" width="140" height="50" fill="#8B8682" opacity="0.2" />
-            <rect x="542" y="190 + 52*7" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
-            <rect x="684" y="190 + 52*7" width="140" height="50" fill="#D4A857" opacity="0.4" />
-            <rect x="826" y="190 + 52*7" width="140" height="50" fill="#C45B4D" opacity="0.4" />
-            <rect x="968" y="190 + 52*7" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
+            <text x="390" y="584" text-anchor="end" font-size="14" fill="white">植物-土壌フィードバック</text>
+            <rect x="400" y="554" width="140" height="50" fill="#8B8682" opacity="0.2" />
+            <rect x="542" y="554" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+            <rect x="684" y="554" width="140" height="50" fill="#D4A857" opacity="0.4" />
+            <rect x="826" y="554" width="140" height="50" fill="#C45B4D" opacity="0.4" />
+            <rect x="968" y="554" width="140" height="50" fill="#5B8B6A" opacity="0.4" />
 
             <!-- Row 8: 生態系エンジニアリング | conditional | 縁 -->
-            <text x="390" y="220 + 52*8" text-anchor="end" font-size="14" fill="white">生態系エンジニアリング</text>
-            <rect x="400" y="190 + 52*8" width="140" height="50" fill="#8B8682" opacity="0.2" />
-            <rect x="542" y="190 + 52*8" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
-            <rect x="684" y="190 + 52*8" width="140" height="50" fill="#D4A857" opacity="0.4" />
-            <rect x="826" y="190 + 52*8" width="140" height="50" fill="#C45B4D" opacity="0.2" />
-            <rect x="968" y="190 + 52*8" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
+            <text x="390" y="636" text-anchor="end" font-size="14" fill="white">生態系エンジニアリング</text>
+            <rect x="400" y="606" width="140" height="50" fill="#8B8682" opacity="0.2" />
+            <rect x="542" y="606" width="140" height="50" fill="#5B8DB8" opacity="0.2" />
+            <rect x="684" y="606" width="140" height="50" fill="#D4A857" opacity="0.4" />
+            <rect x="826" y="606" width="140" height="50" fill="#C45B4D" opacity="0.2" />
+            <rect x="968" y="606" width="140" height="50" fill="#5B8B6A" opacity="0.2" />
 
             <!-- Row 9: 状態-遷移モデル（STMs） | partial | 縁 -->
-            <text x="390" y="220 + 52*9" text-anchor="end" font-size="14" fill="white">状態-遷移モデル（STMs）</text>
-            <rect x="400" y="190 + 52*9" width="140" height="50" fill="#8B8682" opacity="0.3" />
-            <rect x="542" y="190 + 52*9" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
-            <rect x="684" y="190 + 52*9" width="140" height="50" fill="#D4A857" opacity="0.7" />
-            <rect x="826" y="190 + 52*9" width="140" height="50" fill="#C45B4D" opacity="0.3" />
-            <rect x="968" y="190 + 52*9" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
+            <text x="390" y="688" text-anchor="end" font-size="14" fill="white">状態-遷移モデル（STMs）</text>
+            <rect x="400" y="658" width="140" height="50" fill="#8B8682" opacity="0.3" />
+            <rect x="542" y="658" width="140" height="50" fill="#5B8DB8" opacity="0.3" />
+            <rect x="684" y="658" width="140" height="50" fill="#D4A857" opacity="0.7" />
+            <rect x="826" y="658" width="140" height="50" fill="#C45B4D" opacity="0.3" />
+            <rect x="968" y="658" width="140" height="50" fill="#5B8B6A" opacity="0.3" />
         </g>
     </g>
 

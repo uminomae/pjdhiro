@@ -63,7 +63,7 @@
 
   <g id="theoryGrid">
     <!-- Row 1: 創造的破壊 (partial) -->
-    <text x="590" y="182 + 30" text-anchor="end" fill="white" font-size="14">創造的破壊</text>
+    <text x="590" y="212" text-anchor="end" fill="white" font-size="14">創造的破壊</text>
     <rect x="600" y="182" width="108" height="50" fill="#8B8682" opacity="0.3" /> <!-- 場 -->
     <rect x="710" y="182" width="108" height="50" fill="#5B8DB8" opacity="0.7" /> <!-- 波 -->
     <rect x="820" y="182" width="108" height="50" fill="#D4A857" opacity="0.7" /> <!-- 縁 -->
@@ -71,76 +71,76 @@
     <rect x="1040" y="182" width="108" height="50" fill="#5B8B6A" opacity="0.3" /> <!-- 束 -->
 
     <!-- Row 2: 自生的秩序と価格メカニズム (partial) -->
-    <text x="590" y="182 + 52 + 30" text-anchor="end" fill="white" font-size="14">自生的秩序と価格メカニズム</text>
-    <rect x="600" y="182 + 52" width="108" height="50" fill="#8B8682" opacity="0.7" />
-    <rect x="710" y="182 + 52" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
-    <rect x="820" y="182 + 52" width="108" height="50" fill="#D4A857" opacity="0.3" />
-    <rect x="930" y="182 + 52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
-    <rect x="1040" y="182 + 52" width="108" height="50" fill="#5B8B6A" opacity="0.7" />
+    <text x="590" y="264" text-anchor="end" fill="white" font-size="14">自生的秩序と価格メカニズム</text>
+    <rect x="600" y="234" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="234" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="820" y="234" width="108" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="930" y="234" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="234" width="108" height="50" fill="#5B8B6A" opacity="0.7" />
 
     <!-- Row 3: 根本的不確実性とアニマルスピリッツ (partial) -->
-    <text x="590" y="182 + 2*52 + 30" text-anchor="end" fill="white" font-size="14">根本的不確実性とアニマルスピリッツ</text>
-    <rect x="600" y="182 + 2*52" width="108" height="50" fill="#8B8682" opacity="0.7" />
-    <rect x="710" y="182 + 2*52" width="108" height="50" fill="#5B8DB8" opacity="0.7" />
-    <rect x="820" y="182 + 2*52" width="108" height="50" fill="#D4A857" opacity="0.7" />
-    <rect x="930" y="182 + 2*52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
-    <rect x="1040" y="182 + 2*52" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
+    <text x="590" y="316" text-anchor="end" fill="white" font-size="14">根本的不確実性とアニマルスピリッツ</text>
+    <rect x="600" y="286" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="286" width="108" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="820" y="286" width="108" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="930" y="286" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="286" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
 
     <!-- Row 4: リスクと不確実性 (partial) -->
-    <text x="590" y="182 + 3*52 + 30" text-anchor="end" fill="white" font-size="14">リスクと不確実性</text>
-    <rect x="600" y="182 + 3*52" width="108" height="50" fill="#8B8682" opacity="0.7" />
-    <rect x="710" y="182 + 3*52" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
-    <rect x="820" y="182 + 3*52" width="108" height="50" fill="#D4A857" opacity="0.7" />
-    <rect x="930" y="182 + 3*52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
-    <rect x="1040" y="182 + 3*52" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
+    <text x="590" y="368" text-anchor="end" fill="white" font-size="14">リスクと不確実性</text>
+    <rect x="600" y="338" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="338" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="820" y="338" width="108" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="930" y="338" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="338" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
 
     <!-- Row 5: 進化経済学 (partial) -->
-    <text x="590" y="182 + 4*52 + 30" text-anchor="end" fill="white" font-size="14">進化経済学</text>
-    <rect x="600" y="182 + 4*52" width="108" height="50" fill="#8B8682" opacity="0.3" />
-    <rect x="710" y="182 + 4*52" width="108" height="50" fill="#5B8DB8" opacity="0.7" />
-    <rect x="820" y="182 + 4*52" width="108" height="50" fill="#D4A857" opacity="0.7" />
-    <rect x="930" y="182 + 4*52" width="108" height="50" fill="#C45B4D" opacity="0.7" />
-    <rect x="1040" y="182 + 4*52" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
+    <text x="590" y="420" text-anchor="end" fill="white" font-size="14">進化経済学</text>
+    <rect x="600" y="390" width="108" height="50" fill="#8B8682" opacity="0.3" />
+    <rect x="710" y="390" width="108" height="50" fill="#5B8DB8" opacity="0.7" />
+    <rect x="820" y="390" width="108" height="50" fill="#D4A857" opacity="0.7" />
+    <rect x="930" y="390" width="108" height="50" fill="#C45B4D" opacity="0.7" />
+    <rect x="1040" y="390" width="108" height="50" fill="#5B8B6A" opacity="0.3" />
 
     <!-- Row 6: 複雑系経済学・収穫逓増 (strong) -->
-    <text x="590" y="182 + 5*52 + 30" text-anchor="end" fill="white" font-size="14">複雑系経済学・収穫逓増</text>
-    <rect x="600" y="182 + 5*52" width="108" height="50" fill="#8B8682" opacity="1.0" />
-    <rect x="710" y="182 + 5*52" width="108" height="50" fill="#5B8DB8" opacity="1.0" />
-    <rect x="820" y="182 + 5*52" width="108" height="50" fill="#D4A857" opacity="1.0" />
-    <rect x="930" y="182 + 5*52" width="108" height="50" fill="#C45B4D" opacity="1.0" />
-    <rect x="1040" y="182 + 5*52" width="108" height="50" fill="#5B8B6A" opacity="1.0" />
+    <text x="590" y="472" text-anchor="end" fill="white" font-size="14">複雑系経済学・収穫逓増</text>
+    <rect x="600" y="442" width="108" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="710" y="442" width="108" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="820" y="442" width="108" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="930" y="442" width="108" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1040" y="442" width="108" height="50" fill="#5B8B6A" opacity="1.0" />
 
     <!-- Row 7: 制度経済学 (partial) -->
-    <text x="590" y="182 + 6*52 + 30" text-anchor="end" fill="white" font-size="14">制度経済学</text>
-    <rect x="600" y="182 + 6*52" width="108" height="50" fill="#8B8682" opacity="0.7" />
-    <rect x="710" y="182 + 6*52" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
-    <rect x="820" y="182 + 6*52" width="108" height="50" fill="#D4A857" opacity="0.3" />
-    <rect x="930" y="182 + 6*52" width="108" height="50" fill="#C45B4D" opacity="0.3" />
-    <rect x="1040" y="182 + 6*52" width="108" height="50" fill="#5B8B6A" opacity="0.7" />
+    <text x="590" y="524" text-anchor="end" fill="white" font-size="14">制度経済学</text>
+    <rect x="600" y="494" width="108" height="50" fill="#8B8682" opacity="0.7" />
+    <rect x="710" y="494" width="108" height="50" fill="#5B8DB8" opacity="0.3" />
+    <rect x="820" y="494" width="108" height="50" fill="#D4A857" opacity="0.3" />
+    <rect x="930" y="494" width="108" height="50" fill="#C45B4D" opacity="0.3" />
+    <rect x="1040" y="494" width="108" height="50" fill="#5B8B6A" opacity="0.7" />
 
     <!-- Row 8: ケイパビリティ・アプローチ (conditional) -->
-    <text x="590" y="182 + 7*52 + 30" text-anchor="end" fill="white" font-size="14">ケイパビリティ・アプローチ</text>
-    <rect x="600" y="182 + 7*52" width="108" height="50" fill="#8B8682" opacity="0.2" />
-    <rect x="710" y="182 + 7*52" width="108" height="50" fill="#5B8DB8" opacity="0.2" />
-    <rect x="820" y="182 + 7*52" width="108" height="50" fill="#D4A857" opacity="0.4" />
-    <rect x="930" y="182 + 7*52" width="108" height="50" fill="#C45B4D" opacity="0.2" />
-    <rect x="1040" y="182 + 7*52" width="108" height="50" fill="#5B8B6A" opacity="0.2" />
+    <text x="590" y="576" text-anchor="end" fill="white" font-size="14">ケイパビリティ・アプローチ</text>
+    <rect x="600" y="546" width="108" height="50" fill="#8B8682" opacity="0.2" />
+    <rect x="710" y="546" width="108" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="820" y="546" width="108" height="50" fill="#D4A857" opacity="0.4" />
+    <rect x="930" y="546" width="108" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1040" y="546" width="108" height="50" fill="#5B8B6A" opacity="0.2" />
 
     <!-- Row 9: 金融不安定性仮説 (strong) -->
-    <text x="590" y="182 + 8*52 + 30" text-anchor="end" fill="white" font-size="14">金融不安定性仮説</text>
-    <rect x="600" y="182 + 8*52" width="108" height="50" fill="#8B8682" opacity="1.0" />
-    <rect x="710" y="182 + 8*52" width="108" height="50" fill="#5B8DB8" opacity="1.0" />
-    <rect x="820" y="182 + 8*52" width="108" height="50" fill="#D4A857" opacity="1.0" />
-    <rect x="930" y="182 + 8*52" width="108" height="50" fill="#C45B4D" opacity="1.0" />
-    <rect x="1040" y="182 + 8*52" width="108" height="50" fill="#5B8B6A" opacity="1.0" />
+    <text x="590" y="628" text-anchor="end" fill="white" font-size="14">金融不安定性仮説</text>
+    <rect x="600" y="598" width="108" height="50" fill="#8B8682" opacity="1.0" />
+    <rect x="710" y="598" width="108" height="50" fill="#5B8DB8" opacity="1.0" />
+    <rect x="820" y="598" width="108" height="50" fill="#D4A857" opacity="1.0" />
+    <rect x="930" y="598" width="108" height="50" fill="#C45B4D" opacity="1.0" />
+    <rect x="1040" y="598" width="108" height="50" fill="#5B8B6A" opacity="1.0" />
 
     <!-- Row 10: 企業成長の理論 (conditional) -->
-    <text x="590" y="182 + 9*52 + 30" text-anchor="end" fill="white" font-size="14">企業成長の理論</text>
-    <rect x="600" y="182 + 9*52" width="108" height="50" fill="#8B8682" opacity="0.4" />
-    <rect x="710" y="182 + 9*52" width="108" height="50" fill="#5B8DB8" opacity="0.2" />
-    <rect x="820" y="182 + 9*52" width="108" height="50" fill="#D4A857" opacity="0.2" />
-    <rect x="930" y="182 + 9*52" width="108" height="50" fill="#C45B4D" opacity="0.2" />
-    <rect x="1040" y="182 + 9*52" width="108" height="50" fill="#5B8B6A" opacity="0.2" />
+    <text x="590" y="680" text-anchor="end" fill="white" font-size="14">企業成長の理論</text>
+    <rect x="600" y="650" width="108" height="50" fill="#8B8682" opacity="0.4" />
+    <rect x="710" y="650" width="108" height="50" fill="#5B8DB8" opacity="0.2" />
+    <rect x="820" y="650" width="108" height="50" fill="#D4A857" opacity="0.2" />
+    <rect x="930" y="650" width="108" height="50" fill="#C45B4D" opacity="0.2" />
+    <rect x="1040" y="650" width="108" height="50" fill="#5B8B6A" opacity="0.2" />
   </g>
 
   <!-- Bottom Bar -->
