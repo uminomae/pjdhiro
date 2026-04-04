@@ -8,7 +8,7 @@ This is the personal project site of pjdhiro, exploring **Project Design Theory*
 
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/pjdhiro/
-- **Topics**: Project Design, Love-Driven Development, Emotional Processing, Kesson-Driven Thinking, Creativity, Intersubjectivity, Business Design
+- **Topics**: Project Design, Love-Driven Development, Emotional Processing, Kesson-Driven Thinking, Negative Capability, Creativity, Intersubjectivity, Business Design
 
 ## Core Concepts
 
