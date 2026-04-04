@@ -69,15 +69,15 @@ Withhold is not sustained by individual willpower alone; it is supported by mult
 
 The output of Withhold is re-entered into lower layers, creating a circular structure in which the meaning of kesson is updated. Through this process, the quality of "not knowing" transforms. The distinctiveness of Withhold lies not in stopping action but in retaining error and cyclically updating its meaning.
 
-### D3: Affective Constitution (F-O Axis)
+### D3: Affective Constitution (Survival-Trust Axis)
 
-The process by which kesson is evaluated along the F-axis (survival) and O-axis (attachment) and constituted as affect.
+The process by which kesson is evaluated along the Survival-axis (survival) and Trust-axis (attachment) and constituted as affect.
 
-The F-axis (Fear/Fight) is the pathway that evaluates kesson as a survival threat, with the amygdala as its neural substrate. The O-axis (Others/Attachment) is the pathway that evaluates kesson in the context of relationships and belonging, with the vmPFC (ventromedial prefrontal cortex) as its neural substrate.
+The Survival-axis (Fear/Fight) is the pathway that evaluates kesson as a survival threat, with the amygdala as its neural substrate. The Trust-axis (Others/Attachment) is the pathway that evaluates kesson in the context of relationships and belonging, with the vmPFC (ventromedial prefrontal cortex) as its neural substrate.
 
-The F-O axis functions as a diagnostic tool for Kesson-Driven Thinking. By observing "which signal is stronger right now," one can check whether Withhold is occurring. When the F-axis is dominant, kesson is processed as a threat and driven toward immediate resolution. When the O-axis is responding, room opens for retaining kesson as a question.
+The Survival-Trust axis functions as a diagnostic tool for Kesson-Driven Thinking. By observing "which signal is stronger right now," one can check whether Withhold is occurring. When the Survival-axis is dominant, kesson is processed as a threat and driven toward immediate resolution. When the Trust-axis is responding, room opens for retaining kesson as a question.
 
-Falling into a dualism that equates the F-axis with evil and the O-axis with good is one of the misreadings this paper most guards against. Both are necessary, and Withhold is the stance that stands between them. What the F-O axis describes is the structure of how kesson is constituted as affect, not a prescription for a desirable balance.
+Falling into a dualism that equates the Survival-axis with evil and the Trust-axis with good is one of the misreadings this paper most guards against. Both are necessary, and Withhold is the stance that stands between them. What the Survival-Trust axis describes is the structure of how kesson is constituted as affect, not a prescription for a desirable balance.
 
 ### D4: Container
 
@@ -85,7 +85,7 @@ The relational foundation that makes Withhold possible.
 
 Container includes not only external, physical relationships (people present here and now) but also internalized relationships (memories of the deceased, of past mentors, of childhood caregivers) and symbolic relationships (institutions, culture, texts).
 
-"One cannot wait alone" is an important proposition of this paper. Withhold is not an individual capacity but a function that arises within relationships. When the memory of someone who said "it's going to be all right" has been internalized, the capacity to maintain Withhold against the pressure of the F-axis emerges.
+"One cannot wait alone" is an important proposition of this paper. Withhold is not an individual capacity but a function that arises within relationships. When the memory of someone who said "it's going to be all right" has been internalized, the capacity to maintain Withhold against the pressure of the Survival-axis emerges.
 
 The mechanism of internalization can be described in developmental-psychological terms. External relationships (interactions with caregivers) are formed through repeated experience as internal working models (Bowlby), pass through introjection (Klein), and become internalized containers (Bion). This process constitutes the developmental foundation of Withhold capacity.
 
@@ -139,11 +139,11 @@ John Bowlby described how patterns of relationship between infants and caregiver
 
 Organization theorist Karl Weick analyzed the case of the Mann Gulch wildfire (1949), in which firefighters could not let go of their tools, describing the collapse of sensemaking in organizations.
 
-**Similarity**: The Mann Gulch case describes the structure of Withhold collapsing when F-axis pressure reaches its extreme. The firefighters' inability to let go of their familiar tools — this is a state of clinging to an existing model (prediction) and being unable to accept the discrepancy with reality, and it appears to point to the same structure as Withhold collapse under F-axis dominance in this paper. Weick's emphasis on the importance of "psychological safety" corresponds to the organizational manifestation of Container (D4) in this paper.
+**Similarity**: The Mann Gulch case describes the structure of Withhold collapsing when Survival-axis pressure reaches its extreme. The firefighters' inability to let go of their familiar tools — this is a state of clinging to an existing model (prediction) and being unable to accept the discrepancy with reality, and it appears to point to the same structure as Withhold collapse under Survival-axis dominance in this paper. Weick's emphasis on the importance of "psychological safety" corresponds to the organizational manifestation of Container (D4) in this paper.
 
 **Distinctiveness**: Weick's sensemaking focuses on "retrospective meaning-making" (retrospective sensemaking). Withhold in this paper is "meaning-updating while retaining," a process in progress rather than retrospective. This temporal difference may be structurally significant.
 
-**Lessons**: Weick's concept of "loose coupling" — the idea that flexibility arises from elements of an organization being loosely connected — can be read as an organizational buffer against F-axis dominance. It is a useful reference frame for describing Withhold at the organizational level.
+**Lessons**: Weick's concept of "loose coupling" — the idea that flexibility arises from elements of an organization being loosely connected — can be read as an organizational buffer against Survival-axis dominance. It is a useful reference frame for describing Withhold at the organizational level.
 
 **Context**: Weick's analysis belongs to the framework of organizational behavior. It describes meaning formation and collapse at the collective level, not individual cognitive processes. When extending Withhold, which this paper describes as an individual internal process, to the organizational level, attention to this difference in level of analysis is required.
 
@@ -165,7 +165,7 @@ Here we cite just four examples from individual investigations across 30 domains
 
 **Physics (D02)**: The perspective of discrepancies arising at the interface of interaction, and the conditions under which those discrepancies are retained rather than immediately eliminated, appears to serve as scaffolding for thinking about the structure of kesson and Withhold. However, since physics does not describe subjective experience, it is more appropriate to treat this as a reference frame for seeing where "discrepancies emerge" rather than as kesson itself.
 
-**Business Management (D22)**: Situations in which organizations fail to pick up weak signals and are pulled back by the pressure of existing KPIs and deadlines appear to show the structure of Withhold collapsing under F-axis dominance. What matters here is not that "management theory supports Kesson-Driven Thinking" but that the same pattern of collapse is described in a different vocabulary.
+**Business Management (D22)**: Situations in which organizations fail to pick up weak signals and are pulled back by the pressure of existing KPIs and deadlines appear to show the structure of Withhold collapsing under Survival-axis dominance. What matters here is not that "management theory supports Kesson-Driven Thinking" but that the same pattern of collapse is described in a different vocabulary.
 
 **Developmental Psychology (D23)**: The mutual regulation between infants and caregivers, rupture and repair, and the formation of internal working models provide strong scaffolding for examining how the Container is developmentally established. This paper's position of understanding Withhold not as individual capacity but as a function within relationships points in a direction close to this domain.
 
@@ -197,18 +197,18 @@ These describe different functions in different contexts, but a common structure
 
 Container (D4) in this paper definitionally positions this cross-cutting structure as "the condition for the establishment of Withhold." However, each domain's Container carries its own specific context, and we must be cautious about translating them into this paper's terminology and treating them as identical.
 
-### 5.3 The Cross-Cutting Structure of the F-O Axis
+### 5.3 The Cross-Cutting Structure of the Survival-Trust Axis
 
-The dual evaluation structure of the F-axis (evaluation as survival threat) and O-axis (evaluation as relational) also has corresponding descriptions across multiple domains.
+The dual evaluation structure of the Survival-axis (evaluation as survival threat) and Trust-axis (evaluation as relational) also has corresponding descriptions across multiple domains.
 
-| Domain | Description corresponding to F-axis | Description corresponding to O-axis |
-|--------|-------------------------------------|-------------------------------------|
+| Domain | Description corresponding to Survival-axis | Description corresponding to Trust-axis |
+|--------|---------------------------------------------|------------------------------------------|
 | Neuroscience | Amygdala threat detection | vmPFC social evaluation |
 | Psychoanalysis (Klein) | Paranoid-schizoid position (PS) | Depressive position (D) |
 | Attachment theory | Fight-flight response | Attachment behavioral system |
 | Constructionist emotion theory (Barrett) | Body budgeting | Social context-based emotion construction |
 
-Whether the F-O axis structurally corresponds to these descriptions remains at the hypothesis stage. Each domain's concepts carry their own theoretical contexts, and translation into the F-O axis is an act of interpretation.
+Whether the Survival-Trust axis structurally corresponds to these descriptions remains at the hypothesis stage. Each domain's concepts carry their own theoretical contexts, and translation into the Survival-Trust axis is an act of interpretation.
 
 ## 6. State of Evidence and Unresolved Questions
 
@@ -218,8 +218,8 @@ Whether the F-O axis structurally corresponds to these descriptions remains at t
 |-------------|---------|
 | Established | D1–D4 definitions (provisional but currently adopted) |
 | Strong | Structural correspondence with prior research (Bion, Bowlby). The observation that "error retention" is treated peripherally in prior research |
-| Hypothesis | Correspondence between the F-O axis and neuroscientific findings. Computational reference frame for Withhold (description as operation on policy precision). Structural comparison between Wallas's incubation and Withhold |
-| Unresolved | Whether the absence of "error retention" signifies the distinctiveness of this paper or the limitations of the search scope. Details of the developmental mechanism of internalized Container. Whether the dual evaluation structure of the F-O axis is empirically testable |
+| Hypothesis | Correspondence between the Survival-Trust axis and neuroscientific findings. Computational reference frame for Withhold (description as operation on policy precision). Structural comparison between Wallas's incubation and Withhold |
+| Unresolved | Whether the absence of "error retention" signifies the distinctiveness of this paper or the limitations of the search scope. Details of the developmental mechanism of internalized Container. Whether the dual evaluation structure of the Survival-Trust axis is empirically testable |
 
 ### Unresolved Questions (Held Open)
 
@@ -227,7 +227,7 @@ Whether the F-O axis structurally corresponds to these descriptions remains at t
 
 2. **Conditions for Container internalization**: The conditions under which external relationships are internalized to function as Container are grounded in Bowlby's attachment theory and Klein's object relations theory, but the degree of internalization required as a condition for the establishment of Withhold is unresolved.
 
-3. **Constructionist positioning of the F-O axis**: Barrett's (2017) constructionist theory of emotion takes the position that affect is constructed from sensory input. The F-O axis attempts to describe the structure of this construction process, but how the F-O axis is positioned within the constructionist theory of emotion requires examination.
+3. **Constructionist positioning of the Survival-Trust axis**: Barrett's (2017) constructionist theory of emotion takes the position that affect is constructed from sensory input. The Survival-Trust axis attempts to describe the structure of this construction process, but how the Survival-Trust axis is positioned within the constructionist theory of emotion requires examination.
 
 4. **Scope of N=1**: The observations of this paper are based on pjdhiro's individual N=1 phenomenological self-observation. The extent to which these descriptions correspond to the experience of others has not been tested. If they do not correspond, criteria are needed to distinguish whether the descriptions hold value as a characterization of pjdhiro's individual cognitive traits or whether the issue lies in the precision of the descriptions.
 

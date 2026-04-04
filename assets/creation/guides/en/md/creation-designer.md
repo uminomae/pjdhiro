@@ -28,7 +28,7 @@ The oppositions born at Wave can no longer be resolved by choosing A or B. You c
 
 This is the "unnamed place between divergence and convergence."
 
-What happens to the team here: "Let's just decide" — that voice rises. The F-axis — deadline pressure, sprint pressure, the signal to get something tangible quickly — works most strongly at this place. If the team yields to that signal and cuts away one side to resolve the contradiction, the quality of what emerges next decreases.
+What happens to the team here: "Let's just decide" — that voice rises. The Survival-axis — deadline pressure, sprint pressure, the signal to get something tangible quickly — works most strongly at this place. If the team yields to that signal and cuts away one side to resolve the contradiction, the quality of what emerges next decreases.
 
 Remaining at Relation means weaving relationships while holding contradictions. Not rushing to conclusions, but finding new connections between opposing elements. This is the structural meaning of "not rushing to a conclusion."
 
