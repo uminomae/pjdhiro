@@ -53,7 +53,7 @@ The five stages are cyclical, not linear. The return from Bundle to Field — ta
 
 A note on scope: while the five-stage model — articulated by the author from lived experience — is presented here as a model of "the creative process," the investigation found structural correspondences with broader phenomena including self-organization, individuation, and phase transitions. The distinction between physical, biological, and psychological individuation may be no more than labels on a spectrum. This breadth of scope is examined further in §6.
 
-The connection to Kesson-Driven Thinking is as follows. Field is a state of zero, of void. Not even unease has arisen. The first faint stirring marks the beginning of the transition to Wave. Withhold — the function of not processing reflexively but holding errors as questions — operates from Wave onward. At Wave, Survival-Trust evaluation (survival axis / attachment axis) gives rise to opposition. At Relation, multiple evaluations intersect. At Vortex, a new structure emerges as errors are reintegrated. At Bundle, reusable knowledge stabilizes.
+The connection to Kesson-Driven Thinking is as follows. Field is a state of zero, of void. Not even unease has arisen. The first faint stirring marks the beginning of the transition to Wave. Containment — the function of not processing reflexively but holding errors as questions — operates from Wave onward. At Wave, Survival-Trust evaluation (survival axis / attachment axis) gives rise to opposition. At Relation, multiple evaluations intersect. At Vortex, a new structure emerges as errors are reintegrated. At Bundle, reusable knowledge stabilizes.
 
 # 4. Structural Comparison with Prior Research
 
@@ -113,7 +113,7 @@ This analysis illustrates both why the divergent/convergent dichotomy has been w
 | Facet | Analysis |
 |-------|----------|
 | Similarity | Strong structural correspondence was confirmed between the formation process of dissipative structures — systems far from equilibrium generating new order through fluctuation — and the five stages. Field corresponds to equilibrium, Wave to amplification of fluctuation, Relation to the metastable state near the critical point, Vortex to spontaneous formation of new order, and Bundle to stable structure |
-| Uniqueness | Physical descriptions of self-organization lack a volitional element of "remaining at Relation." The five-stage model introduces Withhold — a volitional function of holding — at this stage |
+| Uniqueness | Physical descriptions of self-organization lack a volitional element of "remaining at Relation." The five-stage model introduces Containment — a volitional function of holding — at this stage |
 | Learning | Quantitative findings on behavior near critical points are useful as auxiliary lines for understanding the characteristics of the Relation stage |
 | Context | These are descriptions of physicochemical phenomena. The correspondence with human creative processes is at the stage of structural similarity. Whether this correspondence represents structural identity or superficial similarity remains an open question |
 
@@ -151,7 +151,7 @@ The following are declared as holding points.
 
 **The scale problem**: There appear to be scale differences between physical critical phenomena and human creative processes. Whether this correspondence represents structural identity or superficial similarity has not been resolved in this analysis. Verifying the scope of the five-stage model — the hypothesis that it describes "creation of existence itself" — is the most important task ahead.
 
-**Operational definition of Withhold**: The description "holding contradiction and not processing reflexively" is not yet sufficient as an operational definition. Quantitative descriptions of the conditions under which holding is possible and the conditions under which it breaks down are needed.
+**Operational definition of Containment**: The description "holding contradiction and not processing reflexively" is not yet sufficient as an operational definition. Quantitative descriptions of the conditions under which holding is possible and the conditions under which it breaks down are needed.
 
 **Connection to the social dimension**: The five-stage model originates from intra-individual process, but integration with the social dimensions described by organizational theory (SECI) and social psychology remains incomplete. The nested structure of individual "Field to Bundle" and team "Field to Bundle" remains at the level of theoretical description.
 

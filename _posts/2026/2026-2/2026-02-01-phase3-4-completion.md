@@ -94,7 +94,7 @@ excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論
 | Layer 0 | 内受容感覚 | 身体内部の生理的状態を感知 |
 | Layer 1 | 予測-誤差ループ | 予測と観測の照合、誤差の検出 |
 | Layer 2 | 生存-信頼評価 | 生存(生存軸)と愛着(信頼軸)での評価 |
-| Layer 3 | Withhold | 衝動と行動の間に空間を作る |
+| Layer 3 | 抱持 | 衝動と行動の間に空間を作る |
 
 ### Phase 4: 臨床・発達心理学との統合
 
@@ -106,7 +106,7 @@ excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論
 | Part 2 | 間主観性と内受容感覚 | Layer 0の社会的起源 |
 | Part 3 | 分裂・統合と生存-信頼軸 | Kleinの再解釈 |
 | Part 4 | 愛着パターンの再解釈 | Bowlbyの4層モデル的理解 |
-| Part 5 | 美的葛藤とWithhold | Meltzer、bi-driven論文との接続 |
+| Part 5 | 美的葛藤と抱持 | Meltzer、bi-driven論文との接続 |
 | Part 6 | 精神疾患と4層機能不全 | 臨床応用 |
 
 ---
@@ -127,7 +127,7 @@ excerpt: "Bion、Klein、Meltzer、Bowlbyの精神分析・発達心理学理論
 4. **愛着パターン = α機能 + 生存-信頼統合能力**
    - 安全型愛着 = 高いα機能 + 生存-信頼統合
 
-5. **Withhold = 美的葛藤の保持**
+5. **抱持 = 美的葛藤の保持**
    - 衝動と行動の間の意識的空間
 
 6. **精神疾患 = 4層機能不全パターン**

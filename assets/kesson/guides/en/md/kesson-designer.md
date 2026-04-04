@@ -34,15 +34,15 @@ The **Trust-axis** is the pull that says, "I want to hold this question a little
 
 The Survival-axis is not evil and the Trust-axis is not good. Without the Survival-axis, a project does not move. Without the Trust-axis, nothing genuinely new appears. Both signals are necessary. The problem is that the signal of the Survival-axis tends to structurally swallow the signal of the Trust-axis.
 
-### Withhold — Not solving it immediately
+### Containment — Not solving it immediately
 
 Sometimes we remain with the pull of the Trust-axis. "I want to stay with this user a little longer." The gap is not resolved, but held.
 
-Kesson-Driven Thinking calls this function of holding **Withhold**.
+Kesson-Driven Thinking calls this function of holding **Containment**.
 
-Withhold is not endurance. It is not the act of ignoring the signal of the Survival-axis. It is the state of feeling the pressure of the Survival-axis while still responding to the pull of the Trust-axis. The mismatch is held as a question, and one waits for its meaning to update.
+Containment is not endurance. It is not the act of ignoring the signal of the Survival-axis. It is the state of feeling the pressure of the Survival-axis while still responding to the pull of the Trust-axis. The mismatch is held as a question, and one waits for its meaning to update.
 
-Donald Schon, who studied the thinking of designers and architects at MIT, described a similar structure with the phrase **reflection-in-action**. One keeps moving while also pausing. One responds to the material, receives an unexpected answer, and revises the next action. Schon and Withhold seem to point in a similar direction, but Withhold places special emphasis on not rushing immediately toward the next move.
+Donald Schon, who studied the thinking of designers and architects at MIT, described a similar structure with the phrase **reflection-in-action**. One keeps moving while also pausing. One responds to the material, receives an unexpected answer, and revises the next action. Schon and Containment seem to point in a similar direction, but Containment places special emphasis on not rushing immediately toward the next move.
 
 ---
 
@@ -72,17 +72,17 @@ In your current team, which signal is dominant? At what stage of the project is 
 
 But this does not become a simple story of "we just need more Trust-axis." The balance between the two changes with the situation. Early in a project, more room for the Trust-axis may be needed. Right before release, tighter Survival-axis focus may be necessary. The Survival-Trust axis is a tool for seeing where you are now, not for dictating where you should go.
 
-Karl Weick, in organizational theory, analyzed the Mann Gulch fire, where firefighters could not let go of their tools. In a crisis, when the pressure of the Survival-axis reaches its limit, how difficult is it to release familiar tools, or familiar methods, and respond differently? Weick's description and the collapse of Withhold under Survival-axis dominance seem to point in the same direction.
+Karl Weick, in organizational theory, analyzed the Mann Gulch fire, where firefighters could not let go of their tools. In a crisis, when the pressure of the Survival-axis reaches its limit, how difficult is it to release familiar tools, or familiar methods, and respond differently? Weick's description and the collapse of Containment under Survival-axis dominance seem to point in the same direction.
 
 ## Act 3: You Cannot Wait Alone
 
-### The relational basis that supports Withhold
+### The relational basis that supports Containment
 
-Withhold is not a matter of individual willpower.
+Containment is not a matter of individual willpower.
 
-Even if you feel, "I want to hold this question a little longer," Withhold is crushed if the atmosphere of the team says, "Why is there still no answer?" On the other hand, if there is a relationship in which you can say, "I still do not know, but something is catching," Withhold can continue.
+Even if you feel, "I want to hold this question a little longer," Containment is crushed if the atmosphere of the team says, "Why is there still no answer?" On the other hand, if there is a relationship in which you can say, "I still do not know, but something is catching," Containment can continue.
 
-Kesson-Driven Thinking calls the relational basis that supports Withhold **Container**.
+Kesson-Driven Thinking calls the relational basis that supports Containment **Container**.
 
 ### The structure of Container
 
@@ -96,7 +96,7 @@ Container overlaps with what many people call psychological safety, but it is a 
 
 It is not only the support of the colleague sitting next to you. The attitude of a late mentor, the words left by a designer you respect: as long as they remain alive inside you, they can function as Container.
 
-What matters is that Container is not merely "helpful to have." It is a condition for Withhold to come into being. Without Container, it is nearly impossible to withstand the pressure of the Survival-axis alone. "You cannot wait alone" is not a confession of weakness. It is a structural description.
+What matters is that Container is not merely "helpful to have." It is a condition for Containment to come into being. Without Container, it is nearly impossible to withstand the pressure of the Survival-axis alone. "You cannot wait alone" is not a confession of weakness. It is a structural description.
 
 ### Container inside a team
 
@@ -104,11 +104,11 @@ Is there an atmosphere in the team where someone can say, "I still do not know"?
 
 | Question | What to observe |
 |----------|-----------------|
-| Is there an atmosphere where people can say, "I still do not know"? | Whether the basis for Withhold exists |
+| Is there an atmosphere where people can say, "I still do not know"? | Whether the basis for Containment exists |
 | Has "produce the answer quickly" become the default? | A sign of Survival-axis dominance |
 | Is there someone who can receive another person's snagging sensation? | The presence of Container |
 
-These are clues for observing whether Container exists. In a team that has Container, a designer's Withhold is less likely to be crushed. As a result, it becomes easier to see the structure beneath the label.
+These are clues for observing whether Container exists. In a team that has Container, a designer's Containment is less likely to be crushed. As a result, it becomes easier to see the structure beneath the label.
 
 ## Exit
 
@@ -120,6 +120,6 @@ The structural description of Kesson-Driven Thinking comes from my own inquiry. 
 
 | Temperature | Content |
 |-------------|---------|
-| What seems relatively solid | Under the label "empathy," there is both the detection of mismatch and the operation of Survival-axis and Trust-axis signals. Withhold takes place inside relationships. |
+| What seems relatively solid | Under the label "empathy," there is both the detection of mismatch and the operation of Survival-axis and Trust-axis signals. Containment takes place inside relationships. |
 | What seems promising but is still under examination | The hypothesis that the Survival-Trust axis lets us observe which signal is dominant at a given moment. Structural correspondences with prior work by Schon, Klein, and Weick. |
-| What remains unclear | The full relation between organizational time structure and Withhold. The concrete conditions under which Container is built at the team level. |
+| What remains unclear | The full relation between organizational time structure and Containment. The concrete conditions under which Container is built at the team level. |
