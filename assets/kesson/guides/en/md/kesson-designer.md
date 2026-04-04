@@ -24,23 +24,23 @@ The moment we write "I empathized," the detection of that gap gets folded into t
 
 Psychoanalyst Melanie Klein, while observing children playing with blocks, saw a structure in which another person's feelings enter one's own mind. In the sense of decomposing the structure hidden under the label "empathy," Klein's observation and Kesson-Driven Thinking seem to point in a similar direction.
 
-### The F-O Axis — Two signals
+### The Survival-Trust Axis — Two signals
 
-When a Kesson is detected, two signals run through the body at the same time. In Kesson-Driven Thinking, these are called the **F-axis** and the **O-axis**.
+When a Kesson is detected, two signals run through the body at the same time. In Kesson-Driven Thinking, these are called the **Survival-axis** and the **Trust-axis**.
 
-The **F-axis** is the bodily agitation that says, "We have to produce an answer quickly." There is a deadline. The sprint is ending. The team is waiting for an answer. This signal is strong, fast, and charged with urgency.
+The **Survival-axis** is the bodily agitation that says, "We have to produce an answer quickly." There is a deadline. The sprint is ending. The team is waiting for an answer. This signal is strong, fast, and charged with urgency.
 
-The **O-axis** is the pull that says, "I want to hold this question a little longer." It feels as if something not yet visible is still there. It feels as if something important is hidden inside this user's different way of using the thing. This signal is weaker, slower, and harder to put into words.
+The **Trust-axis** is the pull that says, "I want to hold this question a little longer." It feels as if something not yet visible is still there. It feels as if something important is hidden inside this user's different way of using the thing. This signal is weaker, slower, and harder to put into words.
 
-The F-axis is not evil and the O-axis is not good. Without the F-axis, a project does not move. Without the O-axis, nothing genuinely new appears. Both signals are necessary. The problem is that the signal of the F-axis tends to structurally swallow the signal of the O-axis.
+The Survival-axis is not evil and the Trust-axis is not good. Without the Survival-axis, a project does not move. Without the Trust-axis, nothing genuinely new appears. Both signals are necessary. The problem is that the signal of the Survival-axis tends to structurally swallow the signal of the Trust-axis.
 
 ### Withhold — Not solving it immediately
 
-Sometimes we remain with the pull of the O-axis. "I want to stay with this user a little longer." The gap is not resolved, but held.
+Sometimes we remain with the pull of the Trust-axis. "I want to stay with this user a little longer." The gap is not resolved, but held.
 
 Kesson-Driven Thinking calls this function of holding **Withhold**.
 
-Withhold is not endurance. It is not the act of ignoring the signal of the F-axis. It is the state of feeling the pressure of the F-axis while still responding to the pull of the O-axis. The mismatch is held as a question, and one waits for its meaning to update.
+Withhold is not endurance. It is not the act of ignoring the signal of the Survival-axis. It is the state of feeling the pressure of the Survival-axis while still responding to the pull of the Trust-axis. The mismatch is held as a question, and one waits for its meaning to update.
 
 Donald Schon, who studied the thinking of designers and architects at MIT, described a similar structure with the phrase **reflection-in-action**. One keeps moving while also pausing. One responds to the material, receives an unexpected answer, and revises the next action. Schon and Withhold seem to point in a similar direction, but Withhold places special emphasis on not rushing immediately toward the next move.
 
@@ -52,27 +52,27 @@ Everything I have written so far comes from observation. Some parts feel relativ
 
 ## Act 2: Why We Cannot Wait
 
-### Pressure on the F-axis — The time structure of organizations
+### Pressure on the Survival-axis — The time structure of organizations
 
-The everyday life of designers is full of pressure on the F-axis.
+The everyday life of designers is full of pressure on the Survival-axis.
 
 Sprint deadlines. Client presentations. The question, "So what are we going to do?" Teams ask for output. The time structure of the organization itself says, "Produce an answer quickly."
 
-This does not mean the organization is bad. The F-axis is a necessary signal for survival. Inquiry without deadlines often never takes shape.
+This does not mean the organization is bad. The Survival-axis is a necessary signal for survival. Inquiry without deadlines often never takes shape.
 
-The problem is that the signal of the O-axis is easily crushed by structure. In user research, you may feel that "something is catching." But the next workshop is already waiting. That snagging sensation is labeled "needs review" and never reopened.
+The problem is that the signal of the Trust-axis is easily crushed by structure. In user research, you may feel that "something is catching." But the next workshop is already waiting. That snagging sensation is labeled "needs review" and never reopened.
 
-A designer's "I want to wait a little longer" is often an early warning signal. A problem that is not yet visible on the surface of the product has already reached the designer's body as a mismatch. The pressure of the F-axis erases that warning.
+A designer's "I want to wait a little longer" is often an early warning signal. A problem that is not yet visible on the surface of the product has already reached the designer's body as a mismatch. The pressure of the Survival-axis erases that warning.
 
-### The F-O axis is a diagnostic tool
+### The Survival-Trust axis is a diagnostic tool
 
-The F-O axis is a tool for observing which signal is stronger. It is not a prescription.
+The Survival-Trust axis is a tool for observing which signal is stronger. It is not a prescription.
 
-In your current team, which signal is dominant? At what stage of the project is the O-axis being crushed? If "let us get to the answer quickly" has become the default mode, that may be a sign of F-axis dominance.
+In your current team, which signal is dominant? At what stage of the project is the Trust-axis being crushed? If "let us get to the answer quickly" has become the default mode, that may be a sign of Survival-axis dominance.
 
-But this does not become a simple story of "we just need more O-axis." The balance between the two changes with the situation. Early in a project, more room for the O-axis may be needed. Right before release, tighter F-axis focus may be necessary. The F-O axis is a tool for seeing where you are now, not for dictating where you should go.
+But this does not become a simple story of "we just need more Trust-axis." The balance between the two changes with the situation. Early in a project, more room for the Trust-axis may be needed. Right before release, tighter Survival-axis focus may be necessary. The Survival-Trust axis is a tool for seeing where you are now, not for dictating where you should go.
 
-Karl Weick, in organizational theory, analyzed the Mann Gulch fire, where firefighters could not let go of their tools. In a crisis, when the pressure of the F-axis reaches its limit, how difficult is it to release familiar tools, or familiar methods, and respond differently? Weick's description and the collapse of Withhold under F-axis dominance seem to point in the same direction.
+Karl Weick, in organizational theory, analyzed the Mann Gulch fire, where firefighters could not let go of their tools. In a crisis, when the pressure of the Survival-axis reaches its limit, how difficult is it to release familiar tools, or familiar methods, and respond differently? Weick's description and the collapse of Withhold under Survival-axis dominance seem to point in the same direction.
 
 ## Act 3: You Cannot Wait Alone
 
@@ -96,7 +96,7 @@ Container overlaps with what many people call psychological safety, but it is a 
 
 It is not only the support of the colleague sitting next to you. The attitude of a late mentor, the words left by a designer you respect: as long as they remain alive inside you, they can function as Container.
 
-What matters is that Container is not merely "helpful to have." It is a condition for Withhold to come into being. Without Container, it is nearly impossible to withstand the pressure of the F-axis alone. "You cannot wait alone" is not a confession of weakness. It is a structural description.
+What matters is that Container is not merely "helpful to have." It is a condition for Withhold to come into being. Without Container, it is nearly impossible to withstand the pressure of the Survival-axis alone. "You cannot wait alone" is not a confession of weakness. It is a structural description.
 
 ### Container inside a team
 
@@ -105,21 +105,21 @@ Is there an atmosphere in the team where someone can say, "I still do not know"?
 | Question | What to observe |
 |----------|-----------------|
 | Is there an atmosphere where people can say, "I still do not know"? | Whether the basis for Withhold exists |
-| Has "produce the answer quickly" become the default? | A sign of F-axis dominance |
+| Has "produce the answer quickly" become the default? | A sign of Survival-axis dominance |
 | Is there someone who can receive another person's snagging sensation? | The presence of Container |
 
 These are clues for observing whether Container exists. In a team that has Container, a designer's Withhold is less likely to be crushed. As a result, it becomes easier to see the structure beneath the label.
 
 ## Exit
 
-Where in your team was the O-axis crushed most recently?
+Where in your team was the Trust-axis crushed most recently?
 
-A moment when the voice saying, "Something is catching," was swallowed by the question, "So what are we going to do?" Or a moment when you yourself followed the pressure of the F-axis and let that snagging sensation pass.
+A moment when the voice saying, "Something is catching," was swallowed by the question, "So what are we going to do?" Or a moment when you yourself followed the pressure of the Survival-axis and let that snagging sensation pass.
 
 The structural description of Kesson-Driven Thinking comes from my own inquiry. What remains is to see what happens when you test it inside your own team.
 
 | Temperature | Content |
 |-------------|---------|
-| What seems relatively solid | Under the label "empathy," there is both the detection of mismatch and the operation of F-axis and O-axis signals. Withhold takes place inside relationships. |
-| What seems promising but is still under examination | The hypothesis that the F-O axis lets us observe which signal is dominant at a given moment. Structural correspondences with prior work by Schon, Klein, and Weick. |
+| What seems relatively solid | Under the label "empathy," there is both the detection of mismatch and the operation of Survival-axis and Trust-axis signals. Withhold takes place inside relationships. |
+| What seems promising but is still under examination | The hypothesis that the Survival-Trust axis lets us observe which signal is dominant at a given moment. Structural correspondences with prior work by Schon, Klein, and Weick. |
 | What remains unclear | The full relation between organizational time structure and Withhold. The concrete conditions under which Container is built at the team level. |
