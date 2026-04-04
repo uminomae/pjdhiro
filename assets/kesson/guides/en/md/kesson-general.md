@@ -67,7 +67,7 @@ Waiting with an unresolved feeling is genuinely difficult. It is not something y
 
 What seems to make it possible is having someone in your heart. Not necessarily someone physically present. It could be a person who has passed away. A teacher from years ago. A parent's voice remembered from childhood. The relationship lives on inside you, and it holds you steady.
 
-I am calling this Withhold (保持) — the ability to hold something without rushing to resolve it. And what I have come to believe is that this ability does not come from willpower. It comes from relationships. Specifically, from the quiet presence of someone you trust, carried inside.
+I am calling this Containment (抱持) — the ability to hold something without rushing to resolve it. And what I have come to believe is that this ability does not come from willpower. It comes from relationships. Specifically, from the quiet presence of someone you trust, carried inside.
 
 A stable relationship cultivates the capacity to wait. But you cannot wait alone. You need someone — even if that someone lives only in your memory.
 

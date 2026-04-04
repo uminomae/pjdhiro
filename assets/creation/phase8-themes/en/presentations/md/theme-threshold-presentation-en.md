@@ -64,7 +64,7 @@ Operations exist to intentionally lower or raise the threshold.
 | **Lower** the threshold | Catalyst | Chemistry |
 | **Manage** the threshold | IPM intervention | Agriculture |
 | **Design** the threshold | Jidoka (autonomation) | Management science |
-| **Raise** the threshold | Withhold (hoji) | D3 (holding) |
+| **Raise** the threshold | Containment (hoji) | D3 (holding) |
 
 ---
 
@@ -107,7 +107,7 @@ Whether the boundary of the bandwidth is the threshold — an open question.
 
 1. **Explicating threshold character**: Adding transition properties to "vortex — coherence arises"
 2. **Incorporating non-arrival-at-vortex pathways**: Theorizing phenomena that halt at the edge or return to the field
-3. **Connection to D3 Withhold**: Catalyst = lowering the threshold; Withhold = raising the threshold
+3. **Connection to D3 Containment**: Catalyst = lowering the threshold; Containment = raising the threshold
 4. **Natural-science bias of thresholds**: Caution is needed for application in humanities and social sciences
 
 ---
@@ -116,6 +116,6 @@ Whether the boundary of the bandwidth is the threshold — an open question.
 
 **The edge-to-vortex transition is not continuous but threshold-like, and that threshold can in some cases be controlled.**
 
-The existence of non-arrival-at-vortex pathways shows that the five stages are not a "model that must always complete its full course." D3 Withhold can be theoretically positioned as threshold manipulation.
+The existence of non-arrival-at-vortex pathways shows that the five stages are not a "model that must always complete its full course." D3 Containment can be theoretically positioned as threshold manipulation.
 
 Integration of bandwidth and threshold remains an important formalization challenge.

@@ -56,11 +56,11 @@ Contradiction is at its peak, and everyone feels the discomfort. "Let's just dec
 
 Let us look at remaining at Relation from two perspectives.
 
-**The individual perspective**: When you encounter a gap between expectation and reality — that "this isn't it" feeling — instead of immediately correcting it, you hold that gap as a question. You do not rush to a conclusion. You remain in contradiction. This is called "Withhold."
+**The individual perspective**: When you encounter a gap between expectation and reality — that "this isn't it" feeling — instead of immediately correcting it, you hold that gap as a question. You do not rush to a conclusion. You remain in contradiction. This is called "Containment."
 
-**The team perspective**: For individuals to Withhold, the team needs a relationship that can receive it. A relationship that does not blame "not having an answer." The quality of this relationship is closely connected to how long the team can remain at Relation, which in turn plays a significant role in the quality of the Vortex.
+**The team perspective**: For individuals to practice Containment, the team needs a relationship that can receive it. A relationship that does not blame "not having an answer." The quality of this relationship is closely connected to how long the team can remain at Relation, which in turn plays a significant role in the quality of the Vortex.
 
-Questions held through Withhold are transformed into structure through the five stages. This is where Kesson-Driven Thinking connects.
+Questions held through Containment are transformed into structure through the five stages. This is where Kesson-Driven Thinking connects.
 
 # Seeing Your Team's Creative Process
 
