@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 543" role="img" aria-label="信頼調査リサーチマップ: 3フェーズの調査構造、必要条件5要素、タイムライン" font-family="'Helvetica Neue', 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', Arial, sans-serif">
+  <title>信頼調査リサーチマップ</title>
+  <defs>
+    <filter id="s" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.10"/>
+    </filter>
+    <marker id="a" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#999"/>
+    </marker>
+  </defs>
+  <g transform="scale(0.875)">
+    <rect width="800" height="620" fill="#f8f9fa" rx="6"/>
+
+    <rect x="0" y="0" width="800" height="44" fill="#1a1a2e" rx="6"/>
+    <text x="20" y="29" fill="#fff" font-size="17" font-weight="700">信頼調査リサーチマップ</text>
+    <text x="780" y="29" fill="#778" font-size="11" text-anchor="end">2026-02 - 2026-03 / 20 files / 約400KB</text>
+
+    <!-- Phase 1 -->
+    <rect x="12" y="56" width="248" height="195" fill="#e8f4f8" rx="6" filter="url(#s)"/>
+    <rect x="12" y="56" width="248" height="26" fill="#0c7b93" rx="6"/>
+    <rect x="12" y="76" width="248" height="6" fill="#0c7b93"/>
+    <text x="24" y="74" fill="#fff" font-size="12" font-weight="600">Phase 1: 概念基盤</text>
+    <text x="248" y="74" fill="#b8e6f0" font-size="9" text-anchor="end">2月</text>
+    <rect x="22" y="90" width="228" height="34" fill="#fff" rx="4" stroke="#0c7b93" stroke-width="0.7"/>
+    <text x="32" y="106" fill="#1a1a2e" font-size="10.5" font-weight="600">CN-005 信頼仮説インベントリ</text>
+    <text x="32" y="118" fill="#777" font-size="9">17仮説 / 精神分析・F-O軸・BSPL</text>
+    <rect x="22" y="130" width="228" height="34" fill="#fff" rx="4" stroke="#0c7b93" stroke-width="0.7"/>
+    <text x="32" y="146" fill="#1a1a2e" font-size="10.5" font-weight="600">CN-006 信頼分析軸</text>
+    <text x="32" y="158" fill="#777" font-size="9">4軸: 時間・内容・状態・F-O直交性</text>
+    <rect x="22" y="170" width="228" height="34" fill="#fff" rx="4" stroke="#0c7b93" stroke-width="0.7"/>
+    <text x="32" y="186" fill="#1a1a2e" font-size="10.5" font-weight="600">PROMPT.md</text>
+    <text x="32" y="198" fill="#777" font-size="9">3 LLM 共通プロンプト (8KB)</text>
+    <rect x="22" y="212" width="228" height="30" fill="#e0f7fa" rx="4" stroke="#0c7b93" stroke-width="0.7" stroke-dasharray="3"/>
+    <text x="32" y="231" fill="#0c7b93" font-size="9.5">「信頼に単一の固定定義は存在しない」</text>
+
+    <!-- Phase 2 -->
+    <rect x="276" y="56" width="248" height="195" fill="#fff8e7" rx="6" filter="url(#s)"/>
+    <rect x="276" y="56" width="248" height="26" fill="#d4a017" rx="6"/>
+    <rect x="276" y="76" width="248" height="6" fill="#d4a017"/>
+    <text x="288" y="74" fill="#fff" font-size="12" font-weight="600">Phase 2: マルチLLM調査</text>
+    <text x="512" y="74" fill="#fff8dc" font-size="9" text-anchor="end">3/26</text>
+    <rect x="286" y="90" width="228" height="28" fill="#fff" rx="4" stroke="#d4a017" stroke-width="0.7"/>
+    <circle cx="298" cy="104" r="5" fill="#74b9ff"/>
+    <text x="310" y="108" fill="#1a1a2e" font-size="10">Codex 62KB / 12分野横断</text>
+    <rect x="286" y="124" width="228" height="28" fill="#fff" rx="4" stroke="#d4a017" stroke-width="0.7"/>
+    <circle cx="298" cy="138" r="5" fill="#a29bfe"/>
+    <text x="310" y="142" fill="#1a1a2e" font-size="10">ChatGPT 53KB / 神経経済学</text>
+    <rect x="286" y="158" width="228" height="28" fill="#fff" rx="4" stroke="#d4a017" stroke-width="0.7"/>
+    <circle cx="298" cy="172" r="5" fill="#fd79a8"/>
+    <text x="310" y="176" fill="#1a1a2e" font-size="10">ChatGPT Pro 41KB / 分野別詳細</text>
+    <rect x="286" y="196" width="228" height="22" fill="#fff8dc" rx="4" stroke="#d4a017" stroke-width="0.7" stroke-dasharray="3"/>
+    <text x="296" y="211" fill="#d4a017" font-size="9.5" font-weight="600">--> trust-integrated.md (16KB)</text>
+    <rect x="286" y="222" width="228" height="22" fill="#fff8dc" rx="4" stroke="#d4a017" stroke-width="0.7" stroke-dasharray="3"/>
+    <text x="296" y="237" fill="#d4a017" font-size="9" font-weight="600">--> 必要十分条件 (14KB, techo#60)</text>
+
+    <!-- Phase 3 -->
+    <rect x="540" y="56" width="248" height="195" fill="#eaf7ee" rx="6" filter="url(#s)"/>
+    <rect x="540" y="56" width="248" height="26" fill="#27ae60" rx="6"/>
+    <rect x="540" y="76" width="248" height="6" fill="#27ae60"/>
+    <text x="552" y="74" fill="#fff" font-size="12" font-weight="600">Phase 3: 9本の深掘り</text>
+    <text x="776" y="74" fill="#d4efdf" font-size="9" text-anchor="end">3/26-27</text>
+    <g font-size="9.5" fill="#1a1a2e">
+      <rect x="550" y="88" width="228" height="18" fill="#fff" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="101"><tspan fill="#27ae60" font-weight="700">#8</tspan> 愛着と信頼 (13KB)</text>
+      <rect x="550" y="108" width="228" height="18" fill="#f0faf3" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="121"><tspan fill="#27ae60" font-weight="700">#9</tspan> AI信頼: 依拠・較正 (11KB)</text>
+      <rect x="550" y="128" width="228" height="18" fill="#fff" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="141"><tspan fill="#27ae60" font-weight="700">#10</tspan> 神経現象学 (12KB)</text>
+      <rect x="550" y="148" width="228" height="18" fill="#f0faf3" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="161"><tspan fill="#27ae60" font-weight="700">#20</tspan> 信頼修復: 横断的6条件 (16KB)</text>
+      <rect x="550" y="168" width="228" height="18" fill="#fff" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="181"><tspan fill="#27ae60" font-weight="700">#21</tspan> 自己信頼 (15KB)</text>
+      <rect x="550" y="188" width="228" height="18" fill="#f0faf3" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="201"><tspan fill="#27ae60" font-weight="700">#22</tspan> ガスライティング三層損傷 (14KB)</text>
+      <rect x="550" y="208" width="228" height="18" fill="#fff" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="221"><tspan fill="#27ae60" font-weight="700">#23</tspan> 経験分類体系: 9次元 (10KB)</text>
+      <rect x="550" y="228" width="228" height="18" fill="#f0faf3" rx="2" stroke="#27ae60" stroke-width="0.4"/>
+      <text x="556" y="241"><tspan fill="#27ae60" font-weight="700">#25</tspan> AI測定再設計: 5層 (11KB)</text>
+    </g>
+
+    <!-- 矢印 -->
+    <line x1="260" y1="150" x2="276" y2="150" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="524" y1="150" x2="540" y2="150" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+
+    <!-- 必要条件 -->
+    <rect x="12" y="264" width="516" height="115" fill="#fff" rx="6" filter="url(#s)" stroke="#ddd" stroke-width="0.7"/>
+    <rect x="12" y="264" width="516" height="24" fill="#1a1a2e" rx="6"/>
+    <rect x="12" y="282" width="516" height="6" fill="#1a1a2e"/>
+    <text x="24" y="282" fill="#fff" font-size="11" font-weight="600">主要な到達点</text>
+    <text x="24" y="306" fill="#1a1a2e" font-size="10.5" font-weight="700">必要条件（12+分野で収束）</text>
+    <g font-size="10" fill="#444">
+      <rect x="24" y="314" width="88" height="22" fill="#e8f4f8" rx="11" stroke="#0c7b93" stroke-width="0.7"/>
+      <text x="68" y="329" text-anchor="middle" font-weight="600">N1 脆弱性</text>
+      <rect x="120" y="314" width="92" height="22" fill="#e8f4f8" rx="11" stroke="#0c7b93" stroke-width="0.7"/>
+      <text x="166" y="329" text-anchor="middle" font-weight="600">N2 不確実性</text>
+      <rect x="220" y="314" width="78" height="22" fill="#e8f4f8" rx="11" stroke="#0c7b93" stroke-width="0.7"/>
+      <text x="259" y="329" text-anchor="middle" font-weight="600">N3 期待</text>
+      <rect x="306" y="314" width="78" height="22" fill="#e8f4f8" rx="11" stroke="#0c7b93" stroke-width="0.7"/>
+      <text x="345" y="329" text-anchor="middle" font-weight="600">N4 依存</text>
+      <rect x="392" y="314" width="120" height="22" fill="#e8f4f8" rx="11" stroke="#0c7b93" stroke-width="0.7"/>
+      <text x="452" y="329" text-anchor="middle" font-weight="600">N5 監視の限界</text>
+    </g>
+    <text x="24" y="356" fill="#1a1a2e" font-size="10.5" font-weight="700">十分条件（領域依存）</text>
+    <g font-size="9.5" fill="#666">
+      <rect x="24" y="362" width="56" height="18" fill="#fff3cd" rx="9" stroke="#d4a017" stroke-width="0.7"/>
+      <text x="52" y="375" text-anchor="middle">対人</text>
+      <rect x="86" y="362" width="56" height="18" fill="#fff3cd" rx="9" stroke="#d4a017" stroke-width="0.7"/>
+      <text x="114" y="375" text-anchor="middle">自己</text>
+      <rect x="148" y="362" width="56" height="18" fill="#fff3cd" rx="9" stroke="#d4a017" stroke-width="0.7"/>
+      <text x="176" y="375" text-anchor="middle">制度</text>
+      <rect x="210" y="362" width="44" height="18" fill="#fff3cd" rx="9" stroke="#d4a017" stroke-width="0.7"/>
+      <text x="232" y="375" text-anchor="middle">AI</text>
+      <text x="264" y="375" fill="#999" font-size="9" font-style="italic">普遍的セットなし</text>
+    </g>
+
+    <!-- 未踏領域 -->
+    <rect x="540" y="264" width="248" height="115" fill="#fdf0f0" rx="6" filter="url(#s)"/>
+    <rect x="540" y="264" width="248" height="24" fill="#c0392b" rx="6"/>
+    <rect x="540" y="282" width="248" height="6" fill="#c0392b"/>
+    <text x="552" y="282" fill="#fff" font-size="11" font-weight="600">未踏領域</text>
+    <g font-size="10" fill="#5a1a1a">
+      <circle cx="558" cy="304" r="3.5" fill="#c0392b"/>
+      <text x="568" y="308">9本 --> 統一フレームワーク</text>
+      <circle cx="558" cy="322" r="3.5" fill="#c0392b"/>
+      <text x="568" y="326">分類体系の実データ検証</text>
+      <circle cx="558" cy="340" r="3.5" fill="#c0392b"/>
+      <text x="568" y="344">制度修復の十分条件</text>
+      <circle cx="558" cy="358" r="3.5" fill="#c0392b"/>
+      <text x="568" y="362">神経現象学の研究設計</text>
+      <circle cx="558" cy="376" r="3.5" fill="#c0392b"/>
+      <text x="568" y="380">欠損駆動思考との接続</text>
+    </g>
+
+    <!-- タイムライン -->
+    <rect x="12" y="392" width="776" height="70" fill="#fff" rx="6" filter="url(#s)" stroke="#ddd" stroke-width="0.7"/>
+    <text x="24" y="412" fill="#1a1a2e" font-size="11" font-weight="600">タイムライン</text>
+    <line x1="40" y1="434" x2="760" y2="434" stroke="#ddd" stroke-width="1.5"/>
+    <circle cx="80" cy="434" r="5" fill="#0c7b93"/>
+    <text x="80" y="426" text-anchor="middle" fill="#0c7b93" font-size="9" font-weight="600">2/8</text>
+    <text x="80" y="452" text-anchor="middle" fill="#666" font-size="8.5">概念基盤</text>
+    <circle cx="260" cy="434" r="5" fill="#d4a017"/>
+    <text x="260" y="426" text-anchor="middle" fill="#d4a017" font-size="9" font-weight="600">3/26</text>
+    <text x="260" y="452" text-anchor="middle" fill="#666" font-size="8.5">3 LLM + 深掘り#1-3</text>
+    <circle cx="400" cy="434" r="5" fill="#27ae60"/>
+    <text x="400" y="426" text-anchor="middle" fill="#27ae60" font-size="9" font-weight="600">3/27</text>
+    <text x="400" y="452" text-anchor="middle" fill="#666" font-size="8.5">深掘り#4-9 + 統合</text>
+    <circle cx="540" cy="434" r="5" fill="#8e44ad"/>
+    <text x="540" y="426" text-anchor="middle" fill="#8e44ad" font-size="9" font-weight="600">3/28</text>
+    <text x="540" y="452" text-anchor="middle" fill="#666" font-size="8.5">公開 (PDF+SEO)</text>
+    <circle cx="660" cy="434" r="5" fill="#e74c3c"/>
+    <text x="660" y="426" text-anchor="middle" fill="#e74c3c" font-size="9" font-weight="600">3/31</text>
+    <text x="660" y="452" text-anchor="middle" fill="#666" font-size="8.5">必要十分条件</text>
+    <circle cx="740" cy="434" r="4" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="2"/>
+    <text x="740" y="426" text-anchor="middle" fill="#c0392b" font-size="9" font-weight="600">次</text>
+    <text x="740" y="452" text-anchor="middle" fill="#999" font-size="8.5">統合 v2</text>
+
+    <!-- 修復6条件 -->
+    <rect x="12" y="474" width="776" height="54" fill="#f0faf3" rx="6" filter="url(#s)" stroke="#27ae60" stroke-width="0.7"/>
+    <text x="24" y="494" fill="#1a1a2e" font-size="10.5" font-weight="700">信頼修復の横断的6条件</text>
+    <g font-size="9.5" fill="#27ae60">
+      <text x="24" y="516">1. 違反タイプの診断</text>
+      <text x="168" y="516">2. 責任の明確化</text>
+      <text x="296" y="516">3. 感情的承認</text>
+      <text x="412" y="516">4. 実質的変化</text>
+      <text x="528" y="516">5. 反復的一貫性</text>
+      <text x="660" y="516">6. 再依存の再学習</text>
+    </g>
+
+    <!-- ディレクトリ -->
+    <rect x="12" y="540" width="776" height="68" fill="#1a1a2e" rx="6"/>
+    <g font-family="'SF Mono', 'Menlo', monospace" font-size="9.5" fill="#8899aa">
+      <text x="24" y="558" fill="#74b9ff">knowledge/</text>
+      <text x="24" y="572">  concepts/ CN-005 (仮説) CN-006 (分析軸)</text>
+      <text x="24" y="586">  research/trust/ PROMPT + 3広域調査 + 統合 + 必要十分条件 + 9深掘り</text>
+      <text x="440" y="558" fill="#74b9ff">content/</text>
+      <text x="440" y="572">  knowledge/trust-ja.md (公開用)</text>
+      <text x="440" y="600" fill="#556">合計: 20 files / 約400KB / 12+ 学術分野 / 3 LLM</text>
+    </g>
+  </g>
+</svg>
