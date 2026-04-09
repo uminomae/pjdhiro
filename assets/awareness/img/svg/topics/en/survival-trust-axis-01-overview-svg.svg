@@ -1,89 +1,89 @@
 <svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background -->
-    <rect width="1200" height="800" fill="#FAF8F5" />
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#FDFBF8" />
 
-    <!-- Typography: English: "Inter", "Helvetica Neue", sans-serif -->
-    <!-- Main Title -->
-    <text x="600" y="65" font-family="Inter, sans-serif" font-size="36" font-weight="600" text-anchor="middle" fill="#333333">
-        Survival-Trust Axis
+  <!-- Main Title & Core Hypothesis -->
+  <text x="600" y="80" font-family="Inter, Helvetica Neue, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#1C1917">
+    The Survival-Trust Axis
+  </text>
+  <text x="600" y="125" font-family="Inter, Helvetica Neue, sans-serif" font-size="18" text-anchor="middle" fill="#57534E">
+    <tspan x="600" dy="0">Core Hypothesis: Signals for intersubjectivity (trust) are processed with roughly</tspan>
+    <tspan x="600" dy="1.3em">the same weight as signals for survival.</tspan>
+  </text>
+
+  <!-- Axes -->
+  <g transform="translate(420, 480)">
+    <!-- Horizontal: Survival Axis -->
+    <line x1="-300" y1="0" x2="300" y2="0" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="310,0 300,-6 300,6" fill="#B45309"/>
+    <polygon points="-310,0 -300,-6 -300,6" fill="#B45309"/>
+    <text x="0" y="45" font-family="Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#B45309">
+      Survival Axis
     </text>
-    <text x="600" y="100" font-family="Inter, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#555555">
-        Two directions for interpreting experience
+    <text x="0" y="75" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" text-anchor="middle" fill="#57534E">
+      Self-preservation, safety, resource security
     </text>
 
-    <!-- Axes -->
-    <g stroke="#888888" stroke-width="1.5">
-        <!-- Vertical Axis (Survival) -->
-        <line x1="600" y1="150" x2="600" y2="680" />
-        <path d="M 600 145 L 595 155 L 605 155 Z" fill="#888888" stroke="none"/>
-        <path d="M 600 685 L 595 675 L 605 675 Z" fill="#888888" stroke="none"/>
-        <!-- Horizontal Axis (Trust) -->
-        <line x1="100" y1="415" x2="1100" y2="415" />
-        <path d="M 1105 415 L 1095 410 L 1095 420 Z" fill="#888888" stroke="none"/>
-        <path d="M 95 415 L 105 410 L 105 420 Z" fill="#888888" stroke="none"/>
-    </g>
+    <!-- Vertical: Trust Axis -->
+    <line x1="0" y1="250" x2="0" y2="-250" stroke="#0E7490" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="0,-260 -6,-250 6,-250" fill="#0E7490"/>
+    <polygon points="0,260 -6,250 6,250" fill="#0E7490"/>
+    <text x="-45" y="0" font-family="Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#0E7490" transform="rotate(-90, -45, 0)">
+      Trust / Intersubjectivity Axis
+    </text>
+    <text x="-75" y="0" font-family="Inter, Helvetica Neue, sans-serif" font-size="16" text-anchor="middle" fill="#57534E" transform="rotate(-90, -75, 0)">
+      Connection, belonging, repairability
+    </text>
 
-    <!-- Axis Labels & Descriptions -->
-    <g font-family="Inter, sans-serif" fill="#333333">
-        <!-- Survival Axis Content -->
-        <g fill="#B95750">
-            <text x="600" y="180" font-size="18" font-weight="500" text-anchor="middle">High Survival Concern</text>
-            <text font-size="15" text-anchor="middle" fill="#B95750" opacity="0.9">
-                <tspan x="600" y="205">Danger avoidance, defense,</tspan>
-                <tspan x="600" dy="1.2em">securing safety, preservation</tspan>
-            </text>
-            <text transform="rotate(-90, 560, 415)" x="560" y="415" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="1">SURVIVAL AXIS</text>
-            <text x="600" y="655" font-size="18" font-weight="500" text-anchor="middle">Low Survival Concern</text>
-            <text font-size="15" text-anchor="middle" fill="#B95750" opacity="0.9">
-                <tspan x="600" y="625">Safety, stability, exploration</tspan>
-            </text>
-        </g>
+    <!-- Center Point -->
+    <circle cx="0" cy="0" r="8" fill="#FDFBF8" stroke="#78716c" stroke-width="2"/>
+  </g>
 
-        <!-- Trust Axis Content -->
-        <g fill="#4A82A1">
-            <text x="1080" y="390" font-size="18" font-weight="500" text-anchor="end">High Trust / Connection</text>
-            <text font-size="15" text-anchor="end" fill="#4A82A1" opacity="0.9">
-                <tspan x="1080" y="445">Relational safety, viable connection,</tspan>
-                <tspan x="1080" dy="1.2em">repairable field</tspan>
-            </text>
-            <text x="600" y="720" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="1">TRUST / INTERSUBJECTIVITY AXIS</text>
-            <text x="120" y="390" font-size="18" font-weight="500" text-anchor="start">Low Trust / Disconnection</text>
-            <text font-size="15" text-anchor="start" fill="#4A82A1" opacity="0.9">
-                <tspan x="120" y="445">Rupture, unresolved, isolation</tspan>
-            </text>
-        </g>
-    </g>
+  <!-- Findings Panel -->
+  <g transform="translate(780, 220)">
+    <rect x="0" y="0" width="380" height="450" rx="12" fill="#F7F6F4" />
+    <text x="30" y="50" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="600" fill="#1C1917">
+      Current Findings
+    </text>
 
-    <!-- Findings Panel -->
-    <g>
-        <rect x="120" y="490" width="440" height="240" rx="12" ry="12" fill="#F5F2EE" stroke="#DCD9D5" stroke-width="1"/>
-        <text x="145" y="525" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">Current Findings</text>
-        
-        <g font-family="Inter, sans-serif" font-size="15" fill="#444444" line-height="1.5">
-            <!-- Finding 1 -->
-            <text x="145" y="565">
-                <tspan font-weight="600">• Developmental Basis:</tspan>
-                <tspan dx="5">The trust axis is grounded in</tspan>
-                <tspan x="160" dy="1.4em">attachment and secure base experiences.</tspan>
-            </text>
-            <!-- Finding 2 -->
-            <text x="145" y="615">
-                <tspan font-weight="600">• Internalized Resources:</tspan>
-                <tspan dx="5">Relational safety is sustained by</tspan>
-                <tspan x="160" dy="1.4em">internalized models, not just present others.</tspan>
-            </text>
-            <!-- Finding 3 -->
-            <text x="145" y="665">
-                <tspan font-weight="600">• Repairability as an Indicator:</tspan>
-                <tspan dx="5">The expectation that rupture</tspan>
-                <tspan x="160" dy="1.4em">can be repaired is a candidate route to observability.</tspan>
-            </text>
-            <!-- Finding 4 -->
-            <text x="145" y="715">
-                <tspan font-weight="600">• Central Term Unsettled:</tspan>
-                <tspan dx="5">The core concept of the trust axis</tspan>
-                <tspan x="160" dy="1.4em">(trust, attachment, etc.) is not yet fixed.</tspan>
-            </text>
-        </g>
-    </g>
+    <!-- Finding 1: Developmental Basis -->
+    <circle cx="40" cy="95" r="4" fill="#0E7490"/>
+    <text x="60" y="100" font-family="Inter, Helvetica Neue, sans-serif" font-size="17" fill="#1C1917" font-weight="500">
+      Developmental Basis
+    </text>
+    <text x="60" y="125" font-family="Inter, Helvetica Neue, sans-serif" font-size="15" fill="#57534E">
+      <tspan x="60" dy="0">Grounded in early attachment and</tspan>
+      <tspan x="60" dy="1.3em">relational experiences.</tspan>
+    </text>
+
+    <!-- Finding 2: Internalized Resources -->
+    <circle cx="40" cy="180" r="4" fill="#0E7490"/>
+    <text x="60" y="185" font-family="Inter, Helvetica Neue, sans-serif" font-size="17" fill="#1C1917" font-weight="500">
+      Internalized Relational Resources
+    </text>
+    <text x="60" y="210" font-family="Inter, Helvetica Neue, sans-serif" font-size="15" fill="#57534E">
+      <tspan x="60" dy="0">Stability is supported by internalized</tspan>
+      <tspan x="60" dy="1.3em">"working models" of relationships.</tspan>
+    </text>
+
+    <!-- Finding 3: Repairability -->
+    <circle cx="40" cy="265" r="4" fill="#0E7490"/>
+    <text x="60" y="270" font-family="Inter, Helvetica Neue, sans-serif" font-size="17" fill="#1C1917" font-weight="500">
+      Repairability as an Observable
+    </text>
+    <text x="60" y="295" font-family="Inter, Helvetica Neue, sans-serif" font-size="15" fill="#57534E">
+      <tspan x="60" dy="0">The expectation that relational damage</tspan>
+      <tspan x="60" dy="1.3em">can be repaired is a key indicator.</tspan>
+    </text>
+
+    <!-- Finding 4: Unsettled Term -->
+    <circle cx="40" cy="350" r="4" fill="#0E7490"/>
+    <text x="60" y="355" font-family="Inter, Helvetica Neue, sans-serif" font-size="17" fill="#1C1917" font-weight="500">
+      Central Term Remains Unsettled
+    </text>
+    <text x="60" y="380" font-family="Inter, Helvetica Neue, sans-serif" font-size="15" fill="#57534E">
+      <tspan x="60" dy="0">Candidates include Trust, Attachment,</tspan>
+      <tspan x="60" dy="1.3em">and Intersubjectivity.</tspan>
+    </text>
+  </g>
 </svg>
