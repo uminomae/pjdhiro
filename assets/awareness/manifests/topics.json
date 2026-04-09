@@ -42,12 +42,12 @@
       "summary_ja": "経験の向きを生存と信頼の二軸から捉えるための報告。",
       "summary_en": "A report on the two-axis model of survival and intersubjectivity.",
       "generator_model": {
-        "ja": "codex:gpt-5",
-        "en": "codex:gpt-5"
+        "ja": "claude:claude-opus-4-6",
+        "en": "claude:claude-opus-4-6"
       },
       "generated": {
-        "ja": "2026-03-23",
-        "en": "2026-03-23"
+        "ja": "2026-04-09",
+        "en": "2026-04-09"
       },
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/ja/md/survival-trust-axis.md",
