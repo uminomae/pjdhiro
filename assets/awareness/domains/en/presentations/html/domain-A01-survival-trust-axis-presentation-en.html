@@ -1,0 +1,376 @@
+<\!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survival-Trust Axis (A01)</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-elevated: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #64748b;
+    --accent-blue: #60a5fa;
+    --accent-violet: #a78bfa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --glass-bg: rgba(17, 24, 39, 0.74);
+    --glass-border: rgba(148, 163, 184, 0.14);
+    --font-heading: "Inter", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 16px;
+    --transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html, body { width: 100%; height: 100%; background: var(--bg-deep); color: var(--text-primary); font-family: var(--font-body); overflow: hidden; }
+
+  .deck { width: 100vw; height: 100vh; position: relative; overflow: hidden; }
+
+  .slide {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+  .slide.active { opacity: 1; visibility: visible; }
+
+  .slide-inner {
+    width: min(92vw, calc(88vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    overflow: hidden; position: relative;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  }
+
+  .slide-bg { position: absolute; inset: 0; z-index: 0; }
+  .slide-bg--blue { background: radial-gradient(ellipse at 18% 40%, rgba(96,165,250,0.10), transparent 50%), radial-gradient(ellipse at 82% 20%, rgba(167,139,250,0.08), transparent 40%), linear-gradient(180deg, #0c1220, #0a0e17); }
+  .slide-bg--violet { background: radial-gradient(ellipse at 70% 30%, rgba(167,139,250,0.12), transparent 50%), radial-gradient(ellipse at 20% 70%, rgba(96,165,250,0.06), transparent 40%), linear-gradient(180deg, #0e0c20, #0a0e17); }
+  .slide-bg--green { background: radial-gradient(ellipse at 50% 40%, rgba(52,211,153,0.10), transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(96,165,250,0.06), transparent 40%), linear-gradient(180deg, #0a1218, #0a0e17); }
+  .slide-bg--amber { background: radial-gradient(ellipse at 30% 30%, rgba(251,191,36,0.08), transparent 50%), radial-gradient(ellipse at 75% 60%, rgba(167,139,250,0.06), transparent 40%), linear-gradient(180deg, #12100a, #0a0e17); }
+
+  .slide-content { position: relative; z-index: 1; width: 100%; height: 100%; padding: min(3.5rem,4.8vw) min(4rem,5.4vw); display: flex; flex-direction: column; }
+
+  h1 { font-family: var(--font-heading); font-size: min(3rem,3.2vw); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+  h2 { font-family: var(--font-heading); font-size: min(2rem,2.2vw); font-weight: 600; line-height: 1.3; letter-spacing: -0.01em; margin-bottom: 1.2rem; border-bottom: 2px solid transparent; border-image: linear-gradient(90deg,var(--accent-blue),var(--accent-violet)) 1; padding-bottom: 0.3em; }
+  h3 { font-family: var(--font-heading); font-size: min(1.3rem,1.4vw); font-weight: 500; color: var(--accent-violet); margin-bottom: 0.6rem; }
+  p { font-size: min(1.05rem,1.15vw); line-height: 1.8; color: var(--text-primary); margin-bottom: 0.6rem; }
+
+  .accent-line { width: 80px; height: 3px; border-radius: 2px; background: linear-gradient(90deg,var(--accent-blue),var(--accent-violet)); margin: 1rem 0; }
+  .accent-line--center { margin: 1rem auto; }
+
+  .glass-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 1rem 1.4rem; margin-bottom: 0.6rem; }
+  .glass-card--blue { border-left: 3px solid var(--accent-blue); }
+  .glass-card--amber { border-left: 3px solid var(--accent-amber); }
+  .glass-card--green { border-left: 3px solid var(--accent-green); }
+
+  .metric-box { text-align: center; padding: 1rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: var(--radius); }
+  .metric-value { font-family: var(--font-mono); font-size: min(2.6rem,2.8vw); font-weight: 700; background: linear-gradient(135deg,var(--accent-blue),var(--accent-violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .metric-label { font-size: min(0.75rem,0.85vw); color: var(--text-secondary); margin-top: 0.3rem; letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.4; }
+
+  .metrics-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.8rem; flex: 1; align-content: center; }
+
+  .layout-title .slide-content { align-items: center; justify-content: center; text-align: center; gap: 0.5rem; }
+  .layout-title h1 { font-size: min(3.4rem,3.8vw); max-width: 80%; }
+  .layout-title .subtitle { font-size: min(1.2rem,1.4vw); color: var(--text-secondary); max-width: 70%; }
+  .layout-title .domain-tag { font-family: var(--font-mono); font-size: min(0.85rem,0.95vw); color: var(--accent-blue); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.5rem; }
+
+  .layout-content .body { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+
+  ul { padding-left: 0; list-style: none; }
+  ul li { padding: 0.35rem 0 0.35rem 1.4rem; position: relative; line-height: 1.65; font-size: min(1rem,1.1vw); }
+  ul li::before { content: ""; position: absolute; left: 0; top: 0.85rem; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-blue); }
+  .list--green li::before { background: var(--accent-green); }
+  .list--small li { font-size: min(0.82rem,0.92vw); padding: 0.2rem 0 0.2rem 1.2rem; }
+  .list--small li::before { width: 4px; height: 4px; top: 0.75rem; background: var(--accent-violet); }
+
+  .cite { font-family: var(--font-mono); font-size: min(0.7rem,0.8vw); color: var(--text-tertiary); display: block; margin-top: 0.3rem; }
+
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .slide.active .animate-in { animation: fadeInUp 0.4s cubic-bezier(0.4,0,0.2,1) both; }
+  .slide.active .delay-1 { animation-delay: 0.08s; }
+  .slide.active .delay-2 { animation-delay: 0.16s; }
+  .slide.active .delay-3 { animation-delay: 0.24s; }
+  .slide.active .delay-4 { animation-delay: 0.32s; }
+
+  .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 0.55rem 1rem; background: rgba(10,14,23,0.85); border-top: 1px solid var(--glass-border); }
+  .nav-btn { padding: 0.35rem 1.1rem; border: 1px solid var(--glass-border); border-radius: 999px; background: var(--glass-bg); color: var(--text-primary); font-family: var(--font-mono); font-size: 0.72rem; cursor: pointer; transition: background 0.2s ease, border-color 0.2s ease; text-transform: uppercase; }
+  .nav-btn:hover:not(:disabled) { background: rgba(96,165,250,0.12); border-color: var(--accent-blue); }
+  .nav-btn:disabled { opacity: 0.35; cursor: default; }
+  .nav-counter { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-tertiary); min-width: 5rem; text-align: center; }
+  .nav-title { font-size: 0.72rem; color: var(--text-secondary); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .progress-bar { position: fixed; bottom: 0; left: 0; height: 2px; background: linear-gradient(90deg,var(--accent-blue),var(--accent-violet)); transition: width 0.3s ease; z-index: 101; }
+
+  @media print { .nav-bar, .progress-bar { display: none; } .slide { position: relative; opacity: 1; visibility: visible; page-break-after: always; height: 100vh; } }
+  @media (max-width: 768px) { .slide-content { padding: 2rem 2.5rem; } .layout-title h1 { font-size: 2rem; } .metrics-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck" role="region" aria-label="Survival-Trust Axis Slide Deck">
+
+  <\!-- Slide 1: Title -->
+  <div class="slide layout-title" id="slide-1" role="group" aria-label="Slide 1" aria-hidden="false">
+    <div class="slide-inner">
+      <div class="slide-bg slide-bg--violet"></div>
+      <div class="slide-content">
+        <div class="domain-tag animate-in">Domain A01</div>
+        <h1 class="animate-in delay-1">Survival-Trust Axis</h1>
+        <div class="accent-line accent-line--center animate-in delay-2"></div>
+        <p class="subtitle animate-in delay-3">
+          Intersubjective signals matter at the same level as survival
+        </p>
+        <p style="font-size:min(0.85rem,0.95vw);color:var(--text-tertiary);margin-top:1.5rem;" class="animate-in delay-4">
+          Source: what-is-consciousness.md &middot; DRAFT-awareness-model-v3.md
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Slide 2: Overview & Definition -->
+  <div class="slide layout-content" id="slide-2" role="group" aria-label="Slide 2" aria-hidden="true">
+    <div class="slide-inner">
+      <div class="slide-bg slide-bg--blue"></div>
+      <div class="slide-content">
+        <h2 class="animate-in">Overview &amp; Definition</h2>
+        <div class="body">
+          <div class="glass-card glass-card--blue animate-in delay-1">
+            <h3>Core Hypothesis</h3>
+            <p>
+              Among cognitive signals that rise from the nervous system into awareness,
+              signals related to intersubjectivity (trust) are processed with approximately
+              the same weight as survival-related signals.
+            </p>
+            <p style="font-size:min(0.9rem,1vw);color:var(--text-secondary);">
+              Not "second most important after money," but important at the level of life itself — this is the antithesis of Domain A01.
+            </p>
+          </div>
+          <div class="glass-card animate-in delay-2">
+            <h3>Definition of the Two Axes</h3>
+            <ul>
+              <li><strong style="color:var(--accent-blue);">Survival Axis</strong>: Orientation toward avoiding danger, securing safety, defense, and protecting resources or standing</li>
+              <li><strong style="color:var(--accent-violet);">Trust Axis</strong>: Orientation toward reading whether relationships are maintained, whether connection can continue, whether repair is possible</li>
+            </ul>
+          </div>
+          <p class="animate-in delay-3" style="font-size:min(0.9rem,1vw);color:var(--text-secondary);">
+            These two axes are not a list of emotion names, but coordinates for discerning what a person is trying to protect and which relationships they are trying to maintain. The axes can be distinguished but, like yin and yang, cannot ultimately be separated.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Slide 3: Social Connection and Survival -->
+  <div class="slide layout-content" id="slide-3" role="group" aria-label="Slide 3" aria-hidden="true">
+    <div class="slide-inner">
+      <div class="slide-bg slide-bg--blue"></div>
+      <div class="slide-content">
+        <h2 class="animate-in">Social Connection and Survival</h2>
+        <div class="body">
+          <div class="metrics-grid animate-in delay-1">
+            <div class="metric-box">
+              <div class="metric-value">3.4M</div>
+              <div class="metric-label">Holt-Lunstad 2015<br>Participants in meta-analysis</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">OR 1.50</div>
+              <div class="metric-label">Holt-Lunstad 2010<br>Survival odds ratio (rich social ties)</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">30,000+</div>
+              <div class="metric-label">Baumeister &amp; Leary 1995<br>Citation count</div>
+            </div>
+          </div>
+          <div class="glass-card animate-in delay-2">
+            <ul>
+              <li>
+                <strong>Holt-Lunstad et al. (2010, 2015)</strong>: Meta-analyses of 70&ndash;148 studies. Social isolation, loneliness, and living alone each significantly increase mortality risk (probabilistic; treated as circumstantial evidence).
+                <span class="cite">Holt-Lunstad et al., PLoS Medicine 2010; Perspectives Psychol Sci 2015</span>
+              </li>
+              <li>
+                <strong>Baumeister &amp; Leary (1995)</strong>: The need to belong satisfies all 9 criteria for a fundamental motive (universality, emotional consequences, health impacts when thwarted, etc.).
+                <span class="cite">Baumeister &amp; Leary, Psychological Bulletin 1995</span>
+              </li>
+              <li>
+                <strong>Coan &amp; Sbarra (2015) Social Baseline Theory</strong>: Social resources are treated as "bioenergeticresources equivalent to oxygen or glucose." Holding a partner's hand reduces threat-related neural activity (Coan et al. 2006).
+                <span class="cite">Coan &amp; Sbarra, Current Opinion in Psychology 2015</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Slide 4: Shared Neural Circuitry -->
+  <div class="slide layout-content" id="slide-4" role="group" aria-label="Slide 4" aria-hidden="true">
+    <div class="slide-inner">
+      <div class="slide-bg slide-bg--violet"></div>
+      <div class="slide-content">
+        <h2 class="animate-in">Shared Neural Circuitry: Physical and Social Pain</h2>
+        <div class="body">
+          <div class="glass-card glass-card--blue animate-in delay-1">
+            <h3>Eisenberger et al. (2003)</h3>
+            <p>
+              During social exclusion (Cyberball task), neural circuits partially shared with physical pain (dACC) were activated.
+              fMRI study, N=13.
+            </p>
+            <span class="cite">Eisenberger et al., Science, 302(5643), 290-292. (2003)</span>
+          </div>
+          <div class="glass-card animate-in delay-2">
+            <h3>Debate and Current Consensus</h3>
+            <ul>
+              <li>Role of dACC: debate continues (general salience detection vs. shared pain)</li>
+              <li>Woo et al. (2014) MVPA: patterns are separable at pattern level (92% classification accuracy)</li>
+              <li>Current consensus: "different signals that partially share the same urgency channel" (v3 §2.2)</li>
+            </ul>
+          </div>
+          <div class="glass-card glass-card--amber animate-in delay-3">
+            <p style="font-size:min(0.9rem,1vw);">
+              More important than the definitional debate of "pain vs. suffering" is the antithesis: physical survival is not the only thing required for life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Slide 5: PANIC/GRIEF System -->
+  <div class="slide layout-content" id="slide-5" role="group" aria-label="Slide 5" aria-hidden="true">
+    <div class="slide-inner">
+      <div class="slide-bg slide-bg--blue"></div>
+      <div class="slide-content">
+        <h2 class="animate-in">PANIC/GRIEF System and Separation Distress</h2>
+        <div class="body">
+          <div class="glass-card glass-card--blue animate-in delay-1">
+            <h3>Panksepp (1998)</h3>
+            <p>
+              Among 7 evolutionarily conserved primary emotional systems, the PANIC/GRIEF system
+              responds to separation from attachment figures.
+              Loss of social connection triggers biological distress responses.
+            </p>
+            <span class="cite">Panksepp, Affective Neuroscience. Oxford University Press. (1998)</span>
+          </div>
+          <div class="glass-card animate-in delay-2">
+            <h3>Neural Substrates</h3>
+            <ul>
+              <li>Regions: PAG (periaqueductal gray), ACC, BNST</li>
+              <li>Modulators: endogenous opioids, oxytocin, prolactin</li>
+              <li>Separation distress vocalizations are evolutionarily conserved indicators</li>
+            </ul>
+          </div>
+          <div class="glass-card animate-in delay-3">
+            <h3>The Debate with Barrett</h3>
+            <p style="font-size:min(0.9rem,1vw);">
+              van Heijst et al. (2025): Panksepp and Barrett are "irreconcilable but complementary."
+              Even under Barrett's constructionist interpretation, the survival-level importance of intersubjective signals is not contested.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Slide 6: Summary + References -->
+  <div class="slide layout-content" id="slide-6" role="group" aria-label="Slide 6" aria-hidden="true">
+    <div class="slide-inner">
+      <div class="slide-bg slide-bg--green"></div>
+      <div class="slide-content">
+        <h2 class="animate-in">Summary</h2>
+        <div class="body">
+          <div class="glass-card animate-in delay-1">
+            <h3>Established Findings</h3>
+            <ul class="list--green">
+              <li>Social relationships directly relate to survival and health (Holt-Lunstad; Baumeister &amp; Leary)</li>
+              <li>The brain defaults to assuming social proximity (Coan &amp; Sbarra SBT)</li>
+              <li>Social exclusion and separation trigger biological distress responses (Eisenberger; Panksepp)</li>
+            </ul>
+          </div>
+          <div class="glass-card glass-card--blue animate-in delay-2">
+            <h3>Position of the Core Hypothesis</h3>
+            <p style="font-size:min(0.9rem,1vw);">
+              These findings converge like blind scholars describing an elephant: from different angles, each points to the same intersection.
+              They provide circumstantial support for the core hypothesis that intersubjective signals matter at the level of life itself.
+              No research directly refuting this hypothesis has been found across 30 fields of investigation (v3 §2.3).
+            </p>
+          </div>
+          <div class="animate-in delay-3">
+            <h3 style="margin-bottom:0.4rem;">References</h3>
+            <ul class="list--small">
+              <li>Baumeister &amp; Leary (1995). Psychological Bulletin, 117(3), 497-529.</li>
+              <li>Coan &amp; Sbarra (2015). Current Opinion in Psychology, 1, 87-91.</li>
+              <li>Eisenberger et al. (2003). Science, 302(5643), 290-292.</li>
+              <li>Holt-Lunstad et al. (2010). PLoS Medicine, 7(7), e1000316.</li>
+              <li>Holt-Lunstad et al. (2015). Perspectives on Psychological Science, 10(2), 227-237.</li>
+              <li>Panksepp (1998). Affective Neuroscience. Oxford University Press.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><\!-- .deck -->
+
+<nav class="nav-bar" aria-label="Slide Navigation">
+  <button class="nav-btn" id="prevBtn" aria-label="Previous slide">Prev</button>
+  <span class="nav-title">Survival-Trust Axis (A01)</span>
+  <span class="nav-counter" id="counter">1 / 6</span>
+  <button class="nav-btn" id="nextBtn" aria-label="Next slide">Next</button>
+</nav>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+(function () {
+  'use strict';
+  var slides = document.querySelectorAll('.slide');
+  var cur = 0;
+  var total = slides.length;
+
+  function show(i) {
+    slides.forEach(function (s, idx) {
+      var active = idx === i;
+      s.classList.toggle('active', active);
+      s.setAttribute('aria-hidden', active ? 'false' : 'true');
+    });
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + total;
+    var pct = total > 1 ? (i / (total - 1)) * 100 : 100;
+    document.getElementById('progress').style.width = pct + '%';
+    document.getElementById('prevBtn').disabled = (i === 0);
+    document.getElementById('nextBtn').disabled = (i === total - 1);
+  }
+
+  function go(d) {
+    var next = Math.max(0, Math.min(total - 1, cur + d));
+    if (next \!== cur) { cur = next; show(cur); }
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function () { go(-1); });
+  document.getElementById('nextBtn').addEventListener('click', function () { go(1); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      try { parent.postMessage({ type: 'slide-escape' }, '*'); } catch (_) {}
+      return;
+    }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); return; }
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); go(1); }
+  });
+
+  var touchX = 0;
+  document.addEventListener('touchstart', function (e) { touchX = e.touches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+
+  show(0);
+}());
+</script>
+</body>
+</html>
