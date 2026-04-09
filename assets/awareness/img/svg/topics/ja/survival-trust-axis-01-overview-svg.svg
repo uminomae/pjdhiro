@@ -1,103 +1,113 @@
 <svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-  <!--
-    Infographic: Survival-Trust Axis Overview (ja)
-    Generated based on the provided topic report.
-    Style: Clean, editorial, publication-quality.
-  -->
-
-  <!-- Defs for markers -->
-  <defs>
-    <marker id="arrowhead-survival" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B35A5A"/>
-    </marker>
-    <marker id="arrowhead-trust" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A8AB3"/>
-    </marker>
-  </defs>
-
   <!-- Background -->
-  <rect width="1200" height="800" fill="#FDFBF7" />
+  <rect width="1200" height="800" fill="#FAF8F5" />
 
-  <!-- Typography -->
-  <text x="600" y="80" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#333333">生存-信頼軸</text>
-  <text x="600" y="125" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" text-anchor="middle" fill="#555555">人の経験を読み解くための2つの視点</text>
+  <!-- Typography definitions (applied via attributes) -->
+  <!-- font-family: 'Hiragino Sans', 'Noto Sans JP', 'Inter', 'Helvetica Neue', sans-serif -->
+  <!-- text color: #333333 -->
+  <!-- survival color: #D95F4A -->
+  <!-- trust color: #4A9D9A -->
 
-  <!-- Main Axis Diagram -->
-  <g id="axis-diagram">
-    <!-- Axes Lines -->
-    <line x1="375" y1="650" x2="375" y2="200" stroke="#B35A5A" stroke-width="2.5" marker-end="url(#arrowhead-survival)" />
-    <line x1="100" y1="450" x2="650" y2="450" stroke="#5A8AB3" stroke-width="2.5" marker-start="url(#arrowhead-trust)" marker-end="url(#arrowhead-trust)" />
+  <!-- Main Title -->
+  <text x="600" y="80" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="42" font-weight="600" text-anchor="middle" fill="#333333">
+    生存-信頼軸の概要
+  </text>
+  <text x="600" y="115" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="18" text-anchor="middle" fill="#666666">
+    Overview of the Survival-Trust Axis
+  </text>
 
-    <!-- Survival Axis (Vertical) -->
-    <g id="survival-axis-content">
-      <text x="375" y="170" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#B35A5A">生存軸</text>
-      <text x="400" y="240" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" text-anchor="start" fill="#444444">
-        <tspan x="400" dy="0">危険の回避</tspan>
-        <tspan x="400" dy="1.4em">安全の確保</tspan>
-        <tspan x="400" dy="1.4em">防衛・保身</tspan>
-        <tspan x="400" dy="1.4em">資源や立場の保全</tspan>
-      </text>
-      <g transform="translate(200, 300)">
-        <rect x="-10" y="-25" width="220" height="60" rx="5" fill="#FDFBF7" stroke="#B35A5A" stroke-width="1" stroke-dasharray="4 2"/>
-        <text font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" text-anchor="middle" fill="#B35A5A">
-          <tspan x="100" y="0">何を守ろうとしているか</tspan>
-        </text>
-      </g>
-    </g>
+  <!-- Axis System -->
+  <g transform="translate(400, 450)">
+    <!-- Trust Axis (Vertical) -->
+    <line x1="0" y1="-300" x2="0" y2="300" stroke="#4A9D9A" stroke-width="2.5" />
+    <path d="M 0 -300 l -6 12 h 12 z" fill="#4A9D9A" /> <!-- Arrowhead -->
+    <text x="-30" y="-290" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="20" font-weight="600" text-anchor="end" fill="#4A9D9A">関係・つながり</text>
+    <text x="-30" y="-265" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14" text-anchor="end" fill="#4A9D9A">Connection</text>
 
-    <!-- Trust Axis (Horizontal) -->
-    <g id="trust-axis-content">
-      <text x="675" y="455" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="28" font-weight="600" text-anchor="end" dominant-baseline="middle" fill="#5A8AB3">信頼軸</text>
-      <text x="375" y="500" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" text-anchor="middle" fill="#444444">
-        <tspan>関係の継続・つながりの修復可能性</tspan>
-      </text>
-      <text x="375" y="530" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="15" text-anchor="middle" fill="#666666">
-        <tspan>(候補群: 愛着・所属・信頼・間主観性)</tspan>
-      </text>
-      <g transform="translate(375, 600)">
-         <rect x="-160" y="-25" width="320" height="60" rx="5" fill="#FDFBF7" stroke="#5A8AB3" stroke-width="1" stroke-dasharray="4 2"/>
-        <text font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="18" text-anchor="middle" fill="#5A8AB3">
-          <tspan x="0" y="0">どの関係条件が失われているか</tspan>
-        </text>
-      </g>
-    </g>
+    <!-- Survival Axis (Horizontal) -->
+    <line x1="-350" y1="0" x2="350" y2="0" stroke="#D95F4A" stroke-width="2.5" />
+    <path d="M 350 0 l -12 -6 v 12 z" fill="#D95F4A" /> <!-- Arrowhead -->
+    <text x="340" y="30" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="20" font-weight="600" text-anchor="end" fill="#D95F4A">防衛・保全</text>
+    <text x="340" y="55" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14" text-anchor="end" fill="#D95F4A">Defense</text>
+  </g>
+
+  <!-- Axis Descriptions -->
+  <!-- Trust Axis Description -->
+  <g transform="translate(50, 450) rotate(-90)">
+    <text x="0" y="0" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#4A9D9A">
+      信頼軸 (Trust Axis)
+    </text>
+    <text x="0" y="25" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" text-anchor="middle" fill="#555555">
+      関係の維持、つながりの継続、修復可能性に関わる向き
+    </text>
+  </g>
+
+  <!-- Survival Axis Description -->
+  <g transform="translate(400, 740)">
+    <text x="0" y="0" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#D95F4A">
+      生存軸 (Survival Axis)
+    </text>
+    <text x="0" y="25" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" text-anchor="middle" fill="#555555">
+      危険の回避、安全の確保、防衛、資源や立場の保全に関わる向き
+    </text>
   </g>
 
   <!-- Findings Panel -->
-  <g id="findings-panel" transform="translate(750, 180)">
-    <rect width="400" height="520" rx="10" fill="#F7F4EF" stroke="#E0DACE" stroke-width="1"/>
-    <text x="200" y="50" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">現時点での知見</text>
-    
-    <!-- Finding 1 -->
-    <circle cx="40" cy="110" r="5" fill="#5A8AB3"/>
-    <text x="60" y="105" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">発達的な基盤</text>
-    <text x="60" y="135" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#555555">
-      <tspan>信頼軸は、愛着と安全基地の</tspan>
-      <tspan x="60" dy="1.4em">経験に支えられている。</tspan>
+  <g transform="translate(820, 180)">
+    <rect x="0" y="0" width="340" height="440" rx="8" ry="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="170" y="45" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#333333">
+      現在の知見
+    </text>
+    <text x="170" y="70" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14" text-anchor="middle" fill="#666666">
+      Current Findings
     </text>
 
-    <!-- Finding 2 -->
-    <circle cx="40" cy="205" r="5" fill="#5A8AB3"/>
-    <text x="60" y="200" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">内在化された関係資源</text>
-    <text x="60" y="230" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#555555">
-      <tspan>内的作業モデルが、物理的な同席なしでも</tspan>
-      <tspan x="60" dy="1.4em">関係安全性を支えることがある。</tspan>
-    </text>
+    <!-- Finding 1: Developmental Basis -->
+    <g transform="translate(30, 120)">
+      <circle cx="0" cy="8" r="4" fill="#4A9D9A"/>
+      <text x="20" y="0" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">
+        発達的基盤
+      </text>
+      <text x="20" y="25" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="15" fill="#555555">
+        <tspan x="20" dy="0">愛着や安全基地が信頼軸の</tspan>
+        <tspan x="20" dy="1.4em">基盤を形成する。</tspan>
+      </text>
+    </g>
 
-    <!-- Finding 3 -->
-    <circle cx="40" cy="310" r="5" fill="#5A8AB3"/>
-    <text x="60" y="305" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">観測可能性への候補</text>
-    <text x="60" y="335" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#555555">
-      <tspan>「修復可能性」への予期が、信頼軸を</tspan>
-      <tspan x="60" dy="1.4em">観測可能にする有力な候補となる。</tspan>
-    </text>
+    <!-- Finding 2: Internalized Resources -->
+    <g transform="translate(30, 205)">
+      <circle cx="0" cy="8" r="4" fill="#4A9D9A"/>
+      <text x="20" y="0" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">
+        内在化された関係資源
+      </text>
+      <text x="20" y="25" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="15" fill="#555555">
+        <tspan x="20" dy="0">経験を通じて内在化された関係性が</tspan>
+        <tspan x="20" dy="1.4em">信頼の安定を支える。</tspan>
+      </text>
+    </g>
 
-    <!-- Finding 4 -->
-    <circle cx="40" cy="415" r="5" fill="#5A8AB3"/>
-    <text x="60" y="410" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">中心語はなお未確定</text>
-    <text x="60" y="440" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="16" fill="#555555">
-      <tspan>信頼軸の上位表現は、信頼・愛着・</tspan>
-      <tspan x="60" dy="1.4em">間主観性などをまたぐものとして保留中。</tspan>
-    </text>
+    <!-- Finding 3: Repairability -->
+    <g transform="translate(30, 290)">
+      <circle cx="0" cy="8" r="4" fill="#4A9D9A"/>
+      <text x="20" y="0" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">
+        修復可能性の観測
+      </text>
+      <text x="20" y="25" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="15" fill="#555555">
+        <tspan x="20" dy="0">関係の修復可能性が、信頼を観測</tspan>
+        <tspan x="20" dy="1.4em">する上での有力な候補となる。</tspan>
+      </text>
+    </g>
+
+    <!-- Finding 4: Unsettled Term -->
+    <g transform="translate(30, 375)">
+      <circle cx="0" cy="8" r="4" fill="#888888"/>
+      <text x="20" y="0" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="17" font-weight="600" fill="#333333">
+        中心語の未確定
+      </text>
+      <text x="20" y="25" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="15" fill="#555555">
+        <tspan x="20" dy="0">軸を代表する中心語（信頼、愛着、</tspan>
+        <tspan x="20" dy="1.4em">間主観性など）は未だ定まっていない。</tspan>
+      </text>
+    </g>
   </g>
 </svg>
