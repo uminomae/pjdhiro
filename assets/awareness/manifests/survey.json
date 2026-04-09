@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "0.2",
   "generated_at": "2026-04-09",
   "namespace": "awareness",
   "files": [
@@ -12,10 +12,26 @@
       "generated": "2026-04-09"
     },
     {
+      "path": "survey/ja/pdf/survey-status.pdf",
+      "logical_id": "survey-status",
+      "lang": "ja",
+      "format": "pdf",
+      "generator_model": "claude:claude-opus-4-6",
+      "generated": "2026-04-09"
+    },
+    {
       "path": "survey/ja/md/survey-topic-index.md",
       "logical_id": "survey-topic-index",
       "lang": "ja",
       "format": "md",
+      "generator_model": "claude:claude-opus-4-6",
+      "generated": "2026-04-09"
+    },
+    {
+      "path": "survey/ja/pdf/survey-topic-index.pdf",
+      "logical_id": "survey-topic-index",
+      "lang": "ja",
+      "format": "pdf",
       "generator_model": "claude:claude-opus-4-6",
       "generated": "2026-04-09"
     },
@@ -28,10 +44,26 @@
       "generated": "2026-04-09"
     },
     {
+      "path": "survey/en/pdf/survey-status.pdf",
+      "logical_id": "survey-status",
+      "lang": "en",
+      "format": "pdf",
+      "generator_model": "claude:claude-opus-4-6",
+      "generated": "2026-04-09"
+    },
+    {
       "path": "survey/en/md/survey-topic-index.md",
       "logical_id": "survey-topic-index",
       "lang": "en",
       "format": "md",
+      "generator_model": "claude:claude-opus-4-6",
+      "generated": "2026-04-09"
+    },
+    {
+      "path": "survey/en/pdf/survey-topic-index.pdf",
+      "logical_id": "survey-topic-index",
+      "lang": "en",
+      "format": "pdf",
       "generator_model": "claude:claude-opus-4-6",
       "generated": "2026-04-09"
     }
