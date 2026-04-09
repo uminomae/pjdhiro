@@ -1,47 +1,44 @@
 ---
-id: survey-domain-index
+id: survey-topic-index
 title: "Awareness Model Exploration: Survey Index"
 lang: en
 audience: survey
-version: 0.3
-generated: 2026-03-23
-generator_model: codex:gpt-5
-date: 2026-03-23
+version: 2.0
+generated: 2026-04-09
+generator_model: claude:claude-opus-4-6
+date: 2026-04-09
 ---
 
 # Awareness Model Exploration: Survey Index
 
 ## About This Index
 
-This index organizes the public materials by reading purpose.
-Use it as an entry point based on the kind of question you want to pursue first.
+This index organizes the available materials by where to start reading, depending on your interest. Begin wherever feels closest to you.
 
-## 1. If You Want the Overall Picture First
+## 1. For an Overview First
 
-- general guide
+- **General Introduction** — A map tracing the path from established findings on body, prediction, emotion, and sociality to the question of intersubjectivity
 
-## 2. If You Want to See Links to Observation and Support
+## 2. For Connections to Observation and Practice
 
-- designer guide
+- **Practitioner Guide** — Observational cues that can be used in education, support, and team design settings
 
-## 3. If You Want the Analytical and Comparative Frame
+## 3. For the Theoretical Evidence Structure
 
-- academic guide
+- **Interdisciplinary Review** — Multi-level circumstantial evidence from the molecular to the philosophical, and examination of the core hypothesis
 
-## 4. If You Want the Current Research Status
+## 4. For the Current State of the Investigation
 
-- survey overview
+- **Survey Overview** — What has been completed, what is in progress, and what has not yet been started
 
-## 5. Component Reports
+## 5. For Individual Researchers and Findings
 
-Detailed component reports are available through the REPORTS section in awareness-space itself.
-The current focus is on the following two reports:
+- **Source Wiki** — Individual entries on Craig, Damasio, Friston, Barrett, Panksepp, Coan, Eisenberger, Holt-Lunstad, and others
 
-- survival-trust axis
-- four-layer model
+## 6. The Weight of This Exploration
 
-## 6. What Matters Most Right Now
+The center of gravity of this exploration is the examination of the validity of a view that places intersubjectivity at the core of awareness, building on existing findings from neurophenomenology and psychology.
 
-The center of gravity of this project is the exploration of the awareness model itself.
-In particular, the project is now organizing neurophenomenology around embodiment, foregrounding of discrepancy, first-person descriptive units, and prereflective awareness, while organizing developmental psychology around attachment, safe base, internal working models, and repairability.
-On that basis, it asks how insights from neurophenomenology and psychology can be integrated, and whether the hypothesis that places survival and intersubjectivity at the core is defensible.
+On the foundation of established findings — bodily signals, prediction and error, the construction of emotion, the social brain — the core hypothesis is placed: "signals related to intersubjectivity carry the same weight as survival signals." Circumstantial evidence is gathered from multiple fields.
+
+Philosophical and clinical traditions (Merleau-Ponty, Stolorow, Nagarjuna) are positioned not as "evidence" but as "perspectives pointing in the same direction."
