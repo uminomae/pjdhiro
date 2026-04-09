@@ -1,6 +1,6 @@
 {
-  "version": "0.3",
-  "generated_at": "2026-03-26",
+  "version": "2.0",
+  "generated_at": "2026-04-09",
   "namespace": "awareness",
   "progress_taxonomy": [
     {
@@ -52,37 +52,14 @@
       "md": {
         "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/ja/md/survival-trust-axis.md",
         "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/en/md/survival-trust-axis.md"
-      },
-      "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/pdf/survival-trust-axis.pdf",
-        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/pdf/survival-trust-axis.pdf"
       }
-    },
+    }
+  ],
+  "removed": [
     {
       "id": "A02",
       "slug": "four-layers",
-      "name_ja": "4層モデル",
-      "name_en": "Four Layers",
-      "progress_level": "report_ready",
-      "progress_note": "公開本文あり",
-      "summary_ja": "意識を身体状態から見直しの余地までの流れとして捉える報告。",
-      "summary_en": "A report on awareness as a processing chain from bodily state to response margin.",
-      "generator_model": {
-        "ja": "codex:gpt-5",
-        "en": "codex:gpt-5"
-      },
-      "generated": {
-        "ja": "2026-03-23",
-        "en": "2026-03-23"
-      },
-      "md": {
-        "ja": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/ja/md/four-layers.md",
-        "en": "https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/awareness/topics/en/md/four-layers.md"
-      },
-      "pdf": {
-        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/pdf/four-layers.pdf",
-        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/pdf/four-layers.pdf"
-      }
+      "reason": "LLM構成物として v3 (techo#105, #121) で除外。2026-04-09 削除"
     }
   ]
 }
