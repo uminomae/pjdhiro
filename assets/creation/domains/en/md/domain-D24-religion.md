@@ -54,6 +54,8 @@ If a sense of incongruity remains at this point, that is itself an important per
 
 ### List of Evaluated Theories
 
+> **About this table:** the structural-correspondence column is this model's own interpretive mapping. The theory names (author, year) are standard references in the field; the table does not claim verification by close reading of the primary sources.
+
 | Theory | Proponent | Structural Correspondence |
 |------|--------|----------|
 | Rambo's seven-stage model of conversion + dynamic force field (Rambo) | Lewis R. Rambo (1993). Psychology of religion and conversion studies | Strong |
@@ -80,6 +82,8 @@ Rambo's seven stages show a high structural correspondence with the five stages 
 
 This belongs in the context of the psychology of religion and conversion studies. Conversion research in the second half of the twentieth century developed from the psychological descriptions of Starbuck (1899) and James (1902), through the sociological model of Lofland-Stark (1965), to Rambo's integrated model (1993). Rambo integrates these earlier studies while introducing the concept of the "force field" in order to make explicit the structural role of context. It shares with D24's section 5.7 on James a concern with the psychology of conversion, but Rambo's scope is broader in that it treats social context and process in an integrated manner.
 
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
+
 ### 5.2 Turner's Liminality and Structure/Anti-Structure (Communitas)
 
 "Turner's liminality and structure/anti-structure (communitas)," associated with Victor Turner (1920-1983), is presented in Turner (1969) *The Ritual Process: Structure and Anti-Structure*. There Turner extends Van Gennep's three-stage model of rites of passage (separation-liminality-incorporation) and uniquely conceptualizes the liminal phase as "betwixt and between." Published by Cornell University Press, the work also formulates communitas as a non-structured mode of togetherness positioned outside, or at the opposite pole of, social structure. Turner distinguishes three types: spontaneous communitas, normative communitas, and ideological communitas.
@@ -87,6 +91,8 @@ This belongs in the context of the psychology of religion and conversion studies
 Turner's concept of liminality corresponds strongly to Edge in the five-stage model. "Betwixt and between" describes precisely what happens at a boundary: the old structure is suspended, and a new relation is recomposed in the in-between. The three stages of separation -> liminality -> incorporation are structurally parallel to Wave (oscillation and separation) -> Edge (boundary and relation) -> Vortex (emergence and integration). Further, the dialectical circulation of structure -> anti-structure -> restructuring can connect to the model's circulation from Bundle to Field.
 
 This belongs in the context of social anthropology and the anthropology of religion. Turner builds on Van Gennep's three-stage theory of rites of passage (1909) while adding his own theoretical content to the liminal phase. Van Gennep's more general principle is deferred to D25 (anthropology). Within D24, the focus is narrowed to Turner's distinctive emphasis on the sacredness of communitas. There is a point of contact with Rambo, insofar as "crisis -> encounter" corresponds to a liminal period. Teresa's "fourth mansion" may also be readable as one form of liminality.
+
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
 
 ### 5.3 Teresa of Avila's *El Castillo Interior o Las Moradas*: Seven Mansions (Including Spiritual Marriage)
 

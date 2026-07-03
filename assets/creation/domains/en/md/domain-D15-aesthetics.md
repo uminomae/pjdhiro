@@ -54,6 +54,8 @@ If discomfort remains at this point, that is itself an important part of the inv
 
 ### List of Theories Evaluated
 
+> **About this table:** the structural-correspondence column is this model's own interpretive mapping. The theory names (author, year) are standard references in the field; the table does not claim verification by close reading of the primary sources.
+
 | Theory | Proponent | Structural Correspondence |
 |------|--------|----------|
 | Meltzer's aesthetic conflict | Meltzer & Harris Williams (1988), Klein, Bion | Strong correspondence |

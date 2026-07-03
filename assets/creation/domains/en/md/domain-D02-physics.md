@@ -133,6 +133,8 @@ Its correspondence with the five stages is intuitive. The metastable phase is th
 
 The distinctive value of this case lies in the fact that Edge appears not as a conceptual metaphor, but as a spatially real physical interface. The interface of the critical nucleus has a thickness of several molecular layers, and within it the old and new phases coexist. This is a physical example showing that Edge is not a line but a region. Whereas Edge in other cases in physics, such as renormalization-group flow, mode competition, and interaction terms, is a conceptual structure, the Edge of nucleation is a spatial interface that can be physically defined.
 
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
+
 ### 5-6. Other Theories
 
 The remaining four theories also display structural correspondence in outline.

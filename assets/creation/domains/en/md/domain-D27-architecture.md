@@ -54,6 +54,8 @@ If a sense of discomfort remains at this point, that itself is an important pers
 
 ### List of Evaluated Theories
 
+> **About this table:** the structural-correspondence column is this model's own interpretive mapping. The theory names (author, year) are standard references in the field; the table does not claim verification by close reading of the primary sources.
+
 | Theory | Proponent | Structural Correspondence |
 |------|--------|----------|
 | Pattern Language / Nature of Order: mutual support among centers and unfolding (Alexander) | Alexander, C. (2002-2005) *The Nature of Order* 全4巻, Center for Environmental Structure; Alexander, C. et al. (1977) *A Pattern Language*, Oxford University Press | Strong |
@@ -130,6 +132,8 @@ Material computation extends Frei Otto's form-finding into computational environ
 
 What is distinctive in Menges is the formulation that materials act. It is neither that the designer decides form nor that physical law alone determines form, but that the inherent properties of materials actively participate in morphogenesis. This is computational-architectural evidence that Field, as the latency of material, is not merely a passive substrate but an active participant in generation. This belongs to computational design and digital fabrication. Menges / ICD Stuttgart (2008-), Oxman / MIT (2010-). The lineage from Frei Otto's IL is explicitly inherited. The Research Pavilions series (2010-present) is the representative body of work. It also connects with research centers such as the AA Design Research Lab and ETH Zurich.
 
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
+
 ### 5.8 Half-house / incremental architecture: progressive generation over time (Aravena / ELEMENTAL)
 
 The theory "Half-house / incremental architecture: progressive generation over time (Aravena / ELEMENTAL)," associated with Aravena, A. / ELEMENTAL. Quinta Monroy (2004, Iquique, Chile), proposes the half-house (half a good house): a strategy in which public funding supplies one high-quality half of a dwelling, while residents expand the remaining half through their own efforts (Aravena & Iacobelli, 2012, *ELEMENTAL: Incremental Housing and Participatory Design Manual*). This "half" is not an arbitrary half. Rather, professionals provide those parts that residents cannot easily produce on their own, such as the structural frame, service core, and shared areas, while leaving to residents those parts they can build themselves, such as partitions, finishes, and extension space.
@@ -137,6 +141,8 @@ The theory "Half-house / incremental architecture: progressive generation over t
 The half-house is an implementation of the five stages on the time axis. Professionals provide the Field, that is, the framework, and residents carry out the process of Wave to Edge to Vortex to Bundle over time. This structure is a social implementation of Alexander's unfolding, or stepwise generation, and it also gives architectural embodiment to the continuous transformation of the five stages as a design that does not finish. The interface between the first "half" and the second "half" is a temporal design of Edge. The joint between the structural frame and the extension space is a physical Edge at which residents' acts of living generate form over time.
 
 What is distinctive in Aravena is the design of incompleteness. While other architectural theories aim at a finished form, Aravena positively adopts "not being complete" as a design strategy. This corresponds to the fact that the five stages describe a return from Bundle to Field, that is, a circulation, and it is an architectural expression of a process in which no final completion exists. This belongs to social architecture. Aravena / ELEMENTAL (2001-). He received the Pritzker Prize in 2016. Beginning from the context of Chilean social housing policy, this work developed internationally as a methodology of incremental design. Including the direction of the 2016 Venice Biennale ("Reporting from the Front"), it forms part of a movement to redefine the social role of architecture.
+
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
 
 ### 5.9 Bodily sensation and architecture: phenomenology of tactile perception and spatial experience (Pallasmaa)
 
