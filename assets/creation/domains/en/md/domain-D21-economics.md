@@ -54,6 +54,8 @@ If a sense of incongruity remains at this point, that itself is an important per
 
 ### List of Theories Evaluated
 
+> **About this table:** the structural-correspondence column is this model's own interpretive mapping. The theory names (author, year) are standard references in the field; the table does not claim verification by close reading of the primary sources.
+
 | Theory | Proponent | Structural Correspondence |
 |------|--------|----------|
 | Schumpeter Creative Destruction | Schumpeter (1912, 1942) | Strong |
@@ -111,6 +113,8 @@ Nelson & Winter Evolutionary Economics, proposed by Nelson & Winter (1982), argu
 The totality of existing routines = the tacit knowledge and capability base of the organization (Field) -> performance gap = deviation from the satisfactory level (Wave) -> the search process = the branching point between old and new routines (Edge) -> organizational settlement and self-reinforcement of new routines (Vortex) -> stabilization of industrial structure and technological trajectories (Bundle). This theory corresponds to all five stages. "Performance gap -> search" is the clearest organizational implementation, in D21, of starting from a perceived shortfall.
 
 "Routine" is an organizational description of Field. Field is not empty; it is filled with the organization's tacit knowledge and capabilities. "Satisficing" means stopping at a solution that is good enough rather than pursuing optimization. This may be regarded as an organizational version of maintaining tension, though care is required because it is closer to compromise than to active suspension of closure, in line with its attribution to Simon. As a direct successor to Schumpeter, the theory shifts the focus from the "heroic entrepreneur" to "organizational search." It is a foundational text of evolutionary economics, integrating Schumpeter, Simon, and biological evolutionary theory (Darwin-Lamarck). It is positioned as a critique of the optimization assumptions of neoclassical economics and is continuous with Penrose's concept of resources.
+
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
 
 ### 5.6 Arthur Complexity Economics and Increasing Returns
 

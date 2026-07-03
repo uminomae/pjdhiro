@@ -88,6 +88,8 @@ The sequence "breach → crisis → redress → reintegration/schism" in social 
 
 This theory belongs to the context of social anthropology. Turner (1974) systematized it. It provides a framework for extending the reach of rites of passage and liminality/communitas to social processes more generally. It develops out of Gluckman's "rituals of rebellion." Although the risk of overgeneralizing the social drama model is recognized, the basic four-phase structure remains widely referenced across the social sciences.
 
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
+
 ### 5.3 Liminality and Communitas
 
 In Turner, V. (1969 *The Ritual Process: Structure and Anti-Structure*), "liminality and communitas" take the tripartite structure of rites of passage as a premise while making the properties of the liminal phase itself the central topic. Liminal beings deviate from the network of classifications and are placed in an ambiguous condition that is "betwixt and between" (Turner 1969). Liminal beings are likened to "death, the womb, invisibility, darkness, bisexuality, and the wilderness," among other figures, because they do not fit into any existing classificatory category.
@@ -96,6 +98,8 @@ The sequence "deviation from the classificatory system → communitas → reform
 
 This theory belongs to cultural anthropology and the study of religion. Turner (1969) deepened van Gennep's (1909) tripartite scheme at a theoretical level. It has been criticized for underestimating power and exclusion through its emphasis on "anti-structure." The extension to postindustrial society through the concept of the liminoid (Turner 1974) broadens its scope, but direct confirmation of the original text remains partial.
 
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
+
 ### 5.4 Purity and Taboo: Boundary Operations in Classificatory Systems
 
 In Douglas, M. (1966 *Purity and Danger: An Analysis of Concepts of Pollution and Taboo*), "purity and taboo" define dirt as "matter out of place." Dirt is not essentially impure; rather, it is regarded as impure because it occupies a position that transgresses the boundaries of a classificatory system (Douglas 1966). The maintenance of classificatory systems produces order, boundary transgression produces pollution, and responses to pollution, such as taboo and purification rituals, restore order.
@@ -103,6 +107,8 @@ In Douglas, M. (1966 *Purity and Danger: An Analysis of Concepts of Pollution an
 "Matter out of place," as a transgression of classificatory boundaries, corresponds directly to the definition of Wave as a disturbance of existing order. The process through which pollution makes boundaries visible is structurally similar to the emergence of Edge. Purification and taboo correspond to Bundle as devices for maintaining order. The larger cycle of maintaining a classificatory system, violating it, and restoring it overlaps with the circulation Field → Wave → Edge → Vortex → Bundle in the five-stage model.
 
 This theory belongs to social anthropology and the study of religion. Douglas (1966), while influenced by the structuralism of Levi-Strauss, analyzed the functioning of classificatory systems through the concrete phenomenon of pollution. It has been criticized for excessive universalization, particularly in the strong generalization of pollution as boundary violation. Its complementary relation to liminality is particularly important.
+
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
 
 ### 5.5 Ethnic Boundaries: Groups Are Made at the Boundary
 
@@ -128,6 +134,8 @@ The sequence "selection of materials → chain of processing operations → form
 
 This theory belongs to the context of the anthropology of technology and archaeology. Leroi-Gourhan (1964-65) was the pioneer, and Lemonnier (1986, 1992) developed the theory. In archaeology, it became the standard framework for debitage, the analysis of lithic production flakes. It connects with the attention to things found in the theory of the gift, yet differs in that gift theory treats the movement and circulation of things, whereas chaine operatoire treats their production and transformation. It also has a strong point of contact with traditional knowledge and techniques.
 
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
+
 ### 5.8 Symbolic Boundaries and Social Boundaries: A Two-Layer Model of Boundaries
 
 In Lamont, M. & Molnar, V. (2002 "The Study of Boundaries in the Social Sciences." *Annual Review of Sociology* 28: 167-195), "symbolic boundaries and social boundaries" distinguishes symbolic boundaries as "intersubjectively agreed-upon cognitive distinctions" from social boundaries as "institutionalized social differences," that is, objectified divisions involving unequal access to resources and opportunities (Lamont & Molnar 2002). Symbolic boundaries are a necessary condition for social boundaries, but not a sufficient one. When symbolic boundaries become widely shared and institutionally supported, they are converted into social boundaries.
@@ -135,6 +143,8 @@ In Lamont, M. & Molnar, V. (2002 "The Study of Boundaries in the Social Sciences
 The process "symbolic boundary → institutionalization as social boundary" corresponds structurally to the transition "Edge → Vortex → Bundle" in the five-stage model. The conversion of symbolic boundaries, understood as cognitive distinctions, into social boundaries, understood as institutional divisions, is precisely the process through which relations generated in Edge arise as Vortex and become institutionalized as Bundle. The conditional nature of the conversion, necessary but not sufficient, resonates with the possibility that Edge does not always lead to Vortex, as also seen in schism.
 
 This is a review article spanning sociology and anthropology. Lamont & Molnar (2002) extend and organize Barth's (1969) concept of ethnic boundary across the social sciences more broadly. Published in the *Annual Review of Sociology*, it has become a standard reference in boundary studies. It requires overlap management with sociology, but in the present entry it is positioned as an application of boundary concepts in anthropological context.
+
+*Grounding note: this account reflects the standard secondary and textbook understanding of the theory. The primary work has no accessible open-access edition and was not directly read in this project, so the description is background rather than a verification by close reading of the original.*
 
 ### 5.9 Contact Zone: The Boundary as a Space of Contact
 

@@ -48,6 +48,8 @@ If these definitions already feel uncomfortable, that discomfort is itself impor
 
 The investigation of ten theories found structural correspondence with the five-stage model in nine cases, while one remained conditional.
 
+> **About this table:** the strength-of-correspondence and distinctive-feature columns are this model's own interpretive mapping. The theory names (author, year) are standard references in the field; the table does not claim verification by close reading of the primary sources.
+
 | Theory | Proponent | Strength of Correspondence | Distinctive Feature |
 |------|--------|-----------|-----------|
 | Chain structure of narrative functions | Propp (1928) | Strong | Staged unfolding of narrative structure |
