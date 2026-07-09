@@ -95,6 +95,11 @@
   .o{color:#e7e9f0;font-weight:700}   /* ○ ふつう */
   .x{color:#8890a0}                   /* △ 苦手 */
   .legend{font-size:13px;color:var(--muted);margin:8px 0 0}
+  /* list thumbnails + map links */
+  .thumb{width:44px;height:27px;flex:0 0 auto;opacity:.92;vertical-align:middle}
+  .model{display:inline-flex;align-items:center;gap:11px}
+  .chartcard svg a{cursor:pointer}
+  .chartcard svg a:hover circle{stroke:#ffffff;stroke-width:2}
   footer{border-top:1px solid var(--line);margin-top:64px;padding-top:22px;color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -110,6 +115,8 @@
 </header>
 
 <div class="wrap">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="moto" viewBox="0 0 48 30"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="21" r="6.5"/><circle cx="37" cy="21" r="6.5"/><path d="M11 21 L18 21 L24 13 L31 13"/><path d="M24 13 L27.5 21"/><path d="M31 13 L37 21"/><path d="M28.5 12 L34 10.5"/></g></symbol></svg>
 
   <div class="note"><strong>AI（Claude）が構成・執筆</strong></div>
 
@@ -167,18 +174,18 @@
         <circle cx="740" cy="92" r="6" fill="#e0a53a"/><text x="752" y="97">Harley-Davidson</text>
         <circle cx="740" cy="114" r="6" fill="#2fb3ab"/><text x="752" y="119">Benelli</text>
       </g>
-      <circle cx="116.5" cy="91" r="9" fill="#c8453a"/><text x="116.5" y="76" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ブリット350</text>
-      <circle cx="209.4" cy="142" r="9" fill="#c8453a"/><text x="209.4" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">クラシック350</text>
-      <circle cx="255.9" cy="193" r="9" fill="#4a86e8"/><text x="255.9" y="178" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">GB350</text>
-      <circle cx="255.9" cy="244" r="9" fill="#5aa84a"/><text x="255.9" y="264" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メグロS1</text>
-      <circle cx="348.8" cy="142" r="9" fill="#c8453a"/><text x="348.8" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メテオ350</text>
-      <circle cx="488" cy="346" r="9" fill="#a568d6"/><text x="488" y="331" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スピード400</text>
-      <circle cx="581" cy="346" r="9" fill="#a568d6"/><text x="581" y="366" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラー400X</text>
-      <circle cx="395.4" cy="448" r="9" fill="#e0a53a"/><text x="395.4" y="433" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text>
-      <circle cx="534.6" cy="499" r="9" fill="#5aa84a"/><text x="534.6" y="520" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">エリミネーター400</text>
-      <circle cx="720.6" cy="397" r="9" fill="#4a86e8"/><text x="720.6" y="382" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CL250</text>
-      <circle cx="813.6" cy="397" r="9" fill="#4a86e8"/><text x="813.6" y="418" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レブル250</text>
-      <circle cx="646" cy="397" r="9" fill="#2fb3ab"/><text x="646" y="417" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レオンチーノ250</text>
+      <a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener"><circle cx="116.5" cy="91" r="9" fill="#c8453a"/><text x="116.5" y="76" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ブリット350</text></a>
+      <a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener"><circle cx="209.4" cy="142" r="9" fill="#c8453a"/><text x="209.4" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">クラシック350</text></a>
+      <a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener"><circle cx="255.9" cy="193" r="9" fill="#4a86e8"/><text x="255.9" y="178" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">GB350</text></a>
+      <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener"><circle cx="255.9" cy="244" r="9" fill="#5aa84a"/><text x="255.9" y="264" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メグロS1</text></a>
+      <a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener"><circle cx="348.8" cy="142" r="9" fill="#c8453a"/><text x="348.8" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メテオ350</text></a>
+      <a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener"><circle cx="488" cy="346" r="9" fill="#a568d6"/><text x="488" y="331" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スピード400</text></a>
+      <a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener"><circle cx="581" cy="346" r="9" fill="#a568d6"/><text x="581" y="366" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラー400X</text></a>
+      <a href="https://www.harley-davidson.com/us/en/motorcycles/x-350.html" target="_blank" rel="noopener"><circle cx="395.4" cy="448" r="9" fill="#e0a53a"/><text x="395.4" y="433" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text></a>
+      <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener"><circle cx="534.6" cy="499" r="9" fill="#5aa84a"/><text x="534.6" y="520" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">エリミネーター400</text></a>
+      <a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener"><circle cx="720.6" cy="397" r="9" fill="#4a86e8"/><text x="720.6" y="382" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CL250</text></a>
+      <a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener"><circle cx="813.6" cy="397" r="9" fill="#4a86e8"/><text x="813.6" y="418" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レブル250</text></a>
+      <a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener"><circle cx="646" cy="397" r="9" fill="#2fb3ab"/><text x="646" y="417" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レオンチーノ250</text></a>
     </svg>
   </div>
 
@@ -222,18 +229,18 @@
     <table>
       <thead><tr><th>モデル</th><th>鼓動感</th><th>エンジン音</th></tr></thead>
       <tbody>
-        <tr><td><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350</a></td><td class="pulse">9</td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">クラシック350</a></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">メテオ350</a></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">GB350</a></td><td class="pulse">7</td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">メグロS1</a></td><td class="pulse">6</td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener">スピード400</a></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener">スクランブラー400X</a></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=aFx_qIl5Qak" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">CL250</a></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">レブル250</a></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener">レオンチーノ250</a></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=s6Gxv7N3BDI" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><a href="https://www.harley-davidson.com/us/en/motorcycles/x-350.html" target="_blank" rel="noopener">ハーレーX350</a></td><td class="pulse">2</td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
-        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">エリミネーター400</a></td><td class="pulse">1</td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350</a></span></td><td class="pulse">9</td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">クラシック350</a></span></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">メテオ350</a></span></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">GB350</a></span></td><td class="pulse">7</td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">メグロS1</a></span></td><td class="pulse">6</td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener">スピード400</a></span></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener">スクランブラー400X</a></span></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=aFx_qIl5Qak" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">CL250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">レブル250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener">レオンチーノ250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=s6Gxv7N3BDI" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.harley-davidson.com/us/en/motorcycles/x-350.html" target="_blank" rel="noopener">ハーレーX350</a></span></td><td class="pulse">2</td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">エリミネーター400</a></span></td><td class="pulse">1</td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
       </tbody>
     </table>
   </div>
