@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ガレージ計画：原付+400+250 — レトロ度×鼓動感マップ</title>
+<meta name="description" content="バイク購入計画の個人メモ。350/250クラスをレトロ度×鼓動感でマッピングし、エンジン形式・エンジン音との相関で整理した1枚ページ。">
+<style>
+  :root{
+    --bg:#121319;
+    --bg2:#191b23;
+    --card:#1e212b;
+    --line:#2c303c;
+    --text:#e7e9f0;
+    --muted:#9aa0b0;
+    --accent:#e0894a;      /* engine orange */
+    --accent2:#ffb877;
+    --re:#c8453a;          /* Royal Enfield */
+    --ho:#4a86e8;          /* Honda */
+    --ka:#5aa84a;          /* Kawasaki */
+    --hd:#e0a53a;          /* Harley */
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Yu Gothic UI",sans-serif;
+    line-height:1.75;
+    font-size:16px;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px 96px}
+  header.hero{
+    background:linear-gradient(160deg,#1b1d26 0%,#14151b 100%);
+    border-bottom:1px solid var(--line);
+    padding:56px 20px 40px;
+    margin-bottom:8px;
+  }
+  header.hero .inner{max-width:860px;margin:0 auto}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);border:1px solid var(--accent);border-radius:99px;
+    padding:4px 12px;margin-bottom:18px;
+  }
+  h1{font-size:clamp(24px,5vw,34px);line-height:1.35;margin:0 0 14px;font-weight:800}
+  .lede{color:var(--muted);font-size:16px;margin:0;max-width:60ch}
+  h2{
+    font-size:clamp(19px,4vw,24px);margin:56px 0 4px;font-weight:800;
+    padding-bottom:10px;border-bottom:2px solid var(--line);
+  }
+  h2 .ja{color:var(--accent2)}
+  h3{font-size:18px;margin:34px 0 6px;font-weight:700;color:var(--accent2)}
+  p{margin:14px 0}
+  a{color:var(--accent2);text-decoration:none;border-bottom:1px solid rgba(255,184,119,.35)}
+  a:hover{border-bottom-color:var(--accent2)}
+  strong{color:#fff}
+  ul{padding-left:1.25em;margin:14px 0}
+  li{margin:6px 0}
+  .muted{color:var(--muted)}
+  .note{
+    background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:8px;padding:14px 18px;margin:22px 0;color:var(--muted);font-size:15px;
+  }
+  .note strong{color:var(--text)}
+  /* direction cards */
+  .dirs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
+  .dir{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .dir .tag{font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--accent)}
+  .dir h4{margin:6px 0 6px;font-size:17px}
+  .dir p{margin:0;font-size:14px;color:var(--muted)}
+  @media(max-width:560px){.dirs{grid-template-columns:1fr}}
+  /* chart card */
+  .chartcard{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:16px;margin:22px 0;overflow-x:auto;
+  }
+  .chartcard svg{display:block;width:100%;height:auto;min-width:520px}
+  /* tables */
+  .tablewrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:12px}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{background:var(--bg2);color:var(--accent2);font-weight:700;white-space:nowrap}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:rgba(224,137,74,.05)}
+  td small{color:var(--muted)}
+  .pulse{font-weight:800;color:var(--accent2)}
+  .cell-list{white-space:pre-line}
+  footer{border-top:1px solid var(--line);margin-top:64px;padding-top:22px;color:var(--muted);font-size:13px}
+  .kv{color:var(--muted);font-size:13px;margin-top:4px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <span class="eyebrow">個人メモ / bike garage</span>
+    <h1>ガレージ計画：原付 + 400 + 250<br>レトロ度 × 鼓動感で並べてみた</h1>
+    <p class="lede">3台体制のバイク購入計画。最初はJazzのような原付アメリカンを考えていたが、
+    「鼓動感」を軸に据えたら景色が変わった。エンジン形式・エンジン音・鼓動感の相関で候補を整理した、友人向けの1枚メモ。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h2>経緯：<span class="ja">Jazzから、2つの方向へ</span></h2>
+  <ul>
+    <li>最初は Honda Jazz やマグナ50 のような<strong>原付アメリカン ＋ 400 ＋ 250</strong> の3台体制で考えていた。</li>
+    <li>ただし Jazz・マグナ50 は、見た目こそアメリカンだが乗り味は非常にスムーズで大人しい（後述）。</li>
+    <li>そこで、より良い選択肢として2つの方向を検討し始めた。</li>
+    <li>さらに深掘りするうちに <strong>SR400への思い入れ</strong> が強いと気づいた。ただしSR400は2021年に国内生産終了、
+    2026年3月にタイ向け最終700台をもって本当に終了。今は中古のみでプレミア価格化している。</li>
+    <li>そのまま買う道は現実的でなくなったので、<strong>「400/250クラスの中でSR400に近い何か」</strong>を探す方向に切り替えた。</li>
+  </ul>
+
+  <div class="dirs">
+    <div class="dir">
+      <div class="tag">方向 A</div>
+      <h4>250/350cc 空冷シングル</h4>
+      <p>乗り味＝鼓動感を求める。SR400の代替を探す軸。</p>
+    </div>
+    <div class="dir">
+      <div class="tag">方向 B</div>
+      <h4>おしゃれストリート</h4>
+      <p>見た目のスタイルを求める。乗り味はスムーズでOK。</p>
+    </div>
+  </div>
+
+  <h2>400/250クラスを<span class="ja">マッピング</span>してみた</h2>
+  <p>候補を「レトロ ⇔ おしゃれストリート」（見た目の系統）と「エンジンの鼓動感」（乗った時の主観的な体感、0-10）の
+  2軸でマッピングした。鼓動感は試乗レビューやオーナーの声からの主観推定。</p>
+
+  <div class="chartcard">
+    <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" role="img" aria-label="400/250ccバイク比較マップ：横軸レトロ⇔ストリート、縦軸 鼓動感">
+      <rect x="70" y="40" width="790" height="510" fill="#232733" stroke="#3a4050"/>
+      <g stroke="#2c3140" stroke-width="1">
+        <line x1="162.9" y1="40" x2="162.9" y2="550"/><line x1="255.9" y1="40" x2="255.9" y2="550"/>
+        <line x1="348.8" y1="40" x2="348.8" y2="550"/><line x1="441.7" y1="40" x2="441.7" y2="550"/>
+        <line x1="534.6" y1="40" x2="534.6" y2="550"/><line x1="627.5" y1="40" x2="627.5" y2="550"/>
+        <line x1="720.6" y1="40" x2="720.6" y2="550"/><line x1="813.6" y1="40" x2="813.6" y2="550"/>
+        <line x1="70" y1="142" x2="860" y2="142"/><line x1="70" y1="244" x2="860" y2="244"/>
+        <line x1="70" y1="346" x2="860" y2="346"/><line x1="70" y1="448" x2="860" y2="448"/>
+      </g>
+      <line x1="70" y1="550" x2="860" y2="550" stroke="#5a6070" stroke-width="1.5"/>
+      <line x1="70" y1="40" x2="70" y2="550" stroke="#5a6070" stroke-width="1.5"/>
+      <text x="465" y="595" text-anchor="middle" font-size="18" fill="#cdd2dd" font-weight="600">レトロ ⇔ おしゃれストリート</text>
+      <text x="200" y="30" text-anchor="middle" font-size="13" fill="#8a90a0">← レトロ</text>
+      <text x="740" y="30" text-anchor="middle" font-size="13" fill="#8a90a0">ストリート →</text>
+      <text x="30" y="295" text-anchor="middle" font-size="18" fill="#cdd2dd" font-weight="600" transform="rotate(-90 30 295)">鼓動感（主観推定・0-10）</text>
+      <text x="55" y="45" text-anchor="end" font-size="12" fill="#8a90a0">高10</text>
+      <text x="55" y="555" text-anchor="end" font-size="12" fill="#8a90a0">低0</text>
+      <g font-size="13" fill="#cdd2dd">
+        <circle cx="600" cy="70" r="6" fill="#c8453a"/><text x="612" y="75">Royal Enfield</text>
+        <circle cx="600" cy="92" r="6" fill="#4a86e8"/><text x="612" y="97">Honda</text>
+        <circle cx="600" cy="114" r="6" fill="#a568d6"/><text x="612" y="119">Triumph</text>
+        <circle cx="740" cy="70" r="6" fill="#5aa84a"/><text x="752" y="75">Kawasaki</text>
+        <circle cx="740" cy="92" r="6" fill="#e0a53a"/><text x="752" y="97">Harley-Davidson</text>
+      </g>
+      <circle cx="116.5" cy="91" r="9" fill="#c8453a"/><text x="116.5" y="76" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ブリット350</text>
+      <circle cx="209.4" cy="142" r="9" fill="#c8453a"/><text x="209.4" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">クラシック350</text>
+      <circle cx="255.9" cy="193" r="9" fill="#4a86e8"/><text x="255.9" y="178" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">GB350</text>
+      <circle cx="255.9" cy="244" r="9" fill="#5aa84a"/><text x="255.9" y="264" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メグロS1</text>
+      <circle cx="348.8" cy="142" r="9" fill="#c8453a"/><text x="348.8" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メテオ350</text>
+      <circle cx="488" cy="346" r="9" fill="#a568d6"/><text x="488" y="331" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スピード400</text>
+      <circle cx="395.4" cy="448" r="9" fill="#e0a53a"/><text x="395.4" y="433" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text>
+      <circle cx="534.6" cy="499" r="9" fill="#5aa84a"/><text x="534.6" y="520" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">エリミネーター400</text>
+      <circle cx="720.6" cy="397" r="9" fill="#4a86e8"/><text x="720.6" y="382" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CL250</text>
+      <circle cx="813.6" cy="397" r="9" fill="#4a86e8"/><text x="813.6" y="418" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レブル250</text>
+    </svg>
+  </div>
+
+  <h3>鼓動感の正体：エンジン形式とエンジン音の相関</h3>
+  <p>バイクに詳しくない人に「鼓動感」を説明するのは難しい。一番手っ取り早いのは、<strong>エンジン音を聴いてもらうこと</strong>。
+  エンジン音・エンジン形式・鼓動感は相関が高い。</p>
+  <ul>
+    <li><strong>排気量が大きく、低回転でトルクを出す空冷シングル</strong>（1気筒）→ 一発一発の爆発が体に伝わる。ドコドコという音、鼓動感が高い。</li>
+    <li><strong>水冷・高回転型・多気筒</strong>（2気筒以上）→ 振動を打ち消し合い、滑らかに回る。音は高く滑らかで、鼓動感は低い。</li>
+  </ul>
+  <p>実際のスペックで並べるとこう見える。</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>モデル</th><th>排気量</th><th>気筒 / 冷却</th><th>最高出力回転数</th><th>鼓動感</th></tr></thead>
+      <tbody>
+        <tr><td>ブリット350</td><td>349cc</td><td>空冷 単気筒</td><td>6,100rpm</td><td class="pulse">9</td></tr>
+        <tr><td>クラシック350</td><td>349cc</td><td>空冷 単気筒</td><td>6,100rpm</td><td class="pulse">8</td></tr>
+        <tr><td>メテオ350</td><td>349cc</td><td>空冷 単気筒</td><td>6,100rpm</td><td class="pulse">8</td></tr>
+        <tr><td>GB350</td><td>348cc</td><td>空冷 単気筒</td><td>5,500rpm</td><td class="pulse">7</td></tr>
+        <tr><td>メグロS1</td><td>232cc</td><td>空冷 単気筒</td><td>7,000rpm</td><td class="pulse">6</td></tr>
+        <tr><td>スピード400</td><td>398cc</td><td>水冷 単気筒</td><td>8,000rpm</td><td class="pulse">4</td></tr>
+        <tr><td>CL250 / レブル250</td><td>249cc</td><td>水冷 単気筒</td><td>8,500rpm</td><td class="pulse">3</td></tr>
+        <tr><td>ハーレーX350</td><td>353cc</td><td>水冷 2気筒</td><td>9,000rpm</td><td class="pulse">2</td></tr>
+        <tr><td>エリミネーター400</td><td>398cc</td><td>水冷 2気筒</td><td>10,000rpm</td><td class="pulse">1</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>ここで面白いのは、<strong>「空冷単気筒」というだけでは鼓動感は決まらない</strong>こと。
+  同じ空冷単気筒でも、ブリット350（349cc・6,100rpm）とメグロS1（232cc・7,000rpm）では体感がかなり違う。
+  排気量が小さく高回転寄りにセッティングされると、単気筒でも滑らかで大人しい音になる。</p>
+  <p>最初に候補にしていた <strong>Jazz・マグナ50 も、実はカブ系の空冷単気筒</strong>（49-50cc）。
+  ただし排気量が小さく低出力なので、鼓動感はほぼゼロ。乗り味の系統としては水冷シングルのCL250・レブル250に近い（＝スムーズ系）。
+  つまり「Jazz・マグナ50を買うくらいなら、カブか250のCL250・レブル250にする」というのは、
+  乗り味の系統をそのままに実用性や車格を上げる選択、ということになる。</p>
+  <p>逆に、Jazzにはなかった「鼓動感」そのものを求めるなら、
+  ブリット350のような大排気量・低回転型の空冷シングルに乗り換える必要がある。これが <strong>方向A</strong> の正体。</p>
+
+  <h3>鼓動感のメリット・デメリット</h3>
+  <p>鼓動感は「良い/悪い」ではなく好みの問題。整理するとこうなる。</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th></th><th>メリット</th><th>デメリット</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>鼓動感が高い</strong><br><small>大排気量・空冷シングル</small></td>
+          <td class="cell-list">・低回転からトルクが出て、のんびり流すのが気持ちいい
+・エンジンの鼓動が「乗ってる実感」になる
+・排気音に味がある</td>
+          <td class="cell-list">・高回転は苦手、高速巡航や追い越しはやや不利
+・振動で長距離は疲れやすい
+・空冷ゆえ夏の渋滞で熱に弱め</td>
+        </tr>
+        <tr>
+          <td><strong>鼓動感が低い</strong><br><small>水冷・多気筒・高回転</small></td>
+          <td class="cell-list">・振動が少なく、長距離・高速が楽
+・高回転までスムーズに伸びて速い
+・熱管理が安定</td>
+          <td class="cell-list">・良くも悪くも「優等生」で乗ってる実感は薄い
+・排気音は大人しく、味を求める人には物足りない</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>つまり <strong>方向A（鼓動感）は「移動そのものを味わう」</strong>、
+  <strong>方向B（スムーズ系）は「移動を快適にこなす」</strong> という性格の違い。SR400への思い入れは、明らかに前者。</p>
+
+  <h3>スクーター・カブ・Jazz・TZR50との違い（原付の乗り味）</h3>
+  <p>「鼓動感」の感覚を、身近な原付との比較で掴んでおく。同じ50ccでも中身の機構でまったく別物になる。</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>乗り物</th><th>エンジン / 機構</th><th>乗り味</th><th>鼓動感</th><th>エンジン音</th></tr></thead>
+      <tbody>
+        <tr><td>スクーター<br><small>（原付）</small></td><td>空冷4スト単気筒＋CVT無段変速</td><td>変速ショックゼロ、ただ滑らかに進む。エンジンと車体が離れていて振動も遠い</td><td class="pulse">ほぼ0</td><td><small>—</small></td></tr>
+        <tr><td>スーパーカブ50</td><td>空冷4スト単気筒＋自動遠心クラッチ4速</td><td>トコトコと軽快。多少のリズムはあるが穏やかで実用的</td><td class="pulse">1〜2</td><td><a href="https://www.youtube.com/watch?v=UZt5EoP76uw" target="_blank" rel="noopener">▶ 走行音</a></td></tr>
+        <tr><td>Jazz / マグナ50</td><td>カブ系の空冷4スト単気筒＋マニュアル4速</td><td>見た目はアメリカンだが中身はカブ。鼓動は控えめ</td><td class="pulse">1〜2</td><td><a href="https://www.youtube.com/watch?v=4blQ2heXPy8" target="_blank" rel="noopener">▶ Jazz</a> / <a href="https://www.youtube.com/watch?v=p5LaOfjMmXw" target="_blank" rel="noopener">▶ マグナ50</a></td></tr>
+        <tr><td>TZR50</td><td><strong>水冷2スト</strong>単気筒・10,000rpm</td><td>「キーン」というカン高い2ストサウンド。低速は薄く、高回転で一気に伸びる。鼓動というより“ヒュイーン”と滑らかにパワーが立ち上がる真逆の性格</td><td class="pulse">0<br><small>別ベクトル</small></td><td><a href="https://www.youtube.com/watch?v=2mxYC27ivsg" target="_blank" rel="noopener">▶ 2スト</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul>
+    <li>スクーター・カブ・Jazzは、いずれも <strong>振動を抑えた「スムーズ系」</strong>。鼓動感を求める用途には向かない。</li>
+    <li>TZR50は面白い例。同じ単気筒でも <strong>2ストは高回転で滑らかに回る</strong>ので、鼓動感（低回転のドコドコ）とは真逆。速さと軽さの気持ちよさで、味わいの方向が違う。</li>
+    <li><strong>鼓動感（ドコドコ感）は、基本的に「大排気量・低回転・空冷4ストのシングル」でしか得られない</strong>。だから原付では味わえず、350ccクラスの空冷シングルまで上がる必要がある — これが方向Aで350ccを見ている理由。</li>
+  </ul>
+
+  <h3>一番の発見：見た目のレトロ度と鼓動感は一致しない</h3>
+  <ul>
+    <li><strong>メテオ350</strong>：見た目はアメリカンなのに鼓動感は高い（外れ値）。ブリット350・クラシック350と同じ349cc空冷シングルを積んでいるため。</li>
+    <li><strong>CL250</strong>：見た目はレトロなのに鼓動感は低め。水冷・高回転型のシングルで、系統としてはレブル250に近い。当初はレトロ側に置いていたが、ストリート寄りに再配置した。</li>
+    <li><strong>スピード400</strong>：モダンクラシックなおしゃれロードスター（＝ストリート寄りの見た目）だが、中身は398ccの水冷シングル。だから鼓動感は「空冷シングルほどではないが、水冷ツインより明確にある」中間。当初の仮説だった<strong>「鼓動感は空冷シングル寄り／スタイルは水冷ツインっぽいおしゃれ感」</strong>に一番近い折衷案かもしれない。</li>
+  </ul>
+  <p>見た目だけで選ぶと、実際に乗った時の体感とズレる可能性がある、という当たり前のようで見落としがちなポイント。</p>
+
+  <h2>候補一覧：<span class="ja">公式サイト ＋ エンジン音</span></h2>
+  <p>エンジン音は排気音重視・ユーザーの声がなるべく入らない動画を選んだ。実車の前に、まず耳で比較してみてほしい。</p>
+  <div class="note">
+    基準として <a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350の公式サイト</a> を挙げておく。
+    ここで聴けるのが典型的な「空冷シングル」の音。<strong>クラシック350・メテオ350は同じ349ccエンジンなので音もほぼ同じ</strong>。
+    GB350は別エンジンだが同じ「空冷単気筒」カテゴリで、音の系統は近い。
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>モデル</th><th>鼓動感</th><th>価格帯</th><th>公式サイト</th><th>エンジン音</th></tr></thead>
+      <tbody>
+        <tr><td>ブリット350</td><td class="pulse">9</td><td>69.4-70.2万円</td><td><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">Royal Enfield</a></td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td>クラシック350</td><td class="pulse">8</td><td>70万円台〜</td><td><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">Royal Enfield</a></td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td>GB350</td><td class="pulse">7</td><td>64.9-67.1万円</td><td><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">Honda</a></td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td>メグロS1</td><td class="pulse">6</td><td>74.25万円</td><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">Kawasaki</a></td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td>メテオ350</td><td class="pulse">8</td><td>76.23万円</td><td><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">Royal Enfield</a></td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
+        <tr><td>スピード400</td><td class="pulse">4</td><td>69.9万円</td><td><a href="https://www.triumphmotorcycles.com/motorcycles/classic/speed-400/speed-400-2024" target="_blank" rel="noopener">Triumph</a></td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td>ハーレーX350</td><td class="pulse">2</td><td>69.98万円</td><td><a href="https://www.harley-davidson.com/us/en/motorcycles/x-350.html" target="_blank" rel="noopener">Harley-Davidson</a></td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
+        <tr><td>エリミネーター400</td><td class="pulse">1</td><td>85.8万円</td><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">Kawasaki</a></td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
+        <tr><td>CL250</td><td class="pulse">3</td><td>62.15-64.9万円</td><td><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">Honda</a></td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+        <tr><td>レブル250</td><td class="pulse">3</td><td>61.0-64.9万円</td><td><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">Honda</a></td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>原付枠は<span class="ja">別途検討中</span></h2>
+  <p>Jazz・マグナ50のようなアメリカン原付は候補から外し、スーパーカブ50・クロスカブ50を検討中。
+  こちらは日常の足として、上のマップとは違う基準（実用性・維持費）で選ぶ予定。
+  「乗り味の系統」で見れば、カブ系はJazz・マグナ50・CL250・レブル250と同じスムーズ系に属する。</p>
+
+  <h2>次に<span class="ja">やること</span></h2>
+  <ul>
+    <li><strong>方向A（鼓動感優先）</strong>：ブリット350かメテオ350を実車で試乗する。</li>
+    <li><strong>方向B（スタイル優先）</strong>：CL250・レブル250・GB350あたりを実車で試乗する。</li>
+    <li><strong>折衷案</strong>：スピード400（おしゃれストリート × 水冷シングルの中間的な鼓動）も試乗候補。当初の仮説に一番近い。</li>
+    <li>中古SR400の相場も並行してウォッチ。急に手が届く個体が出るかもしれない。</li>
+  </ul>
+
+  <footer>
+    <p>個人的なバイク購入計画メモ。価格・スペックは調査時点のもので、正確性は各公式サイトで要確認。鼓動感の数値は主観推定です。</p>
+  </footer>
+
+</div>
+</body>
+</html>
