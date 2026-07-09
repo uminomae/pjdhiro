@@ -71,6 +71,13 @@
   .dir h4{margin:6px 0 6px;font-size:17px}
   .dir p{margin:0;font-size:14px;color:var(--muted)}
   @media(max-width:560px){.dirs{grid-template-columns:1fr}}
+  /* picks */
+  .picks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
+  .pick{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent2);border-radius:12px;padding:16px 18px}
+  .pick .tag{font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--accent)}
+  .pick .name{margin:6px 0 4px;font-size:17px;font-weight:800;color:#fff}
+  .pick p{margin:0;font-size:13px;color:var(--muted)}
+  @media(max-width:640px){.picks{grid-template-columns:1fr}}
   /* chart card */
   .chartcard{
     background:var(--card);border:1px solid var(--line);border-radius:14px;
@@ -100,6 +107,16 @@
   .model{display:inline-flex;align-items:center;gap:11px}
   .chartcard svg a{cursor:pointer}
   .chartcard svg a:hover circle{stroke:#ffffff;stroke-width:2}
+  /* combined table + accordions */
+  #list table{min-width:780px}
+  details.acc{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
+  details.acc>summary{cursor:pointer;list-style:none;padding:15px 46px 15px 20px;font-weight:700;color:var(--accent2);position:relative}
+  details.acc>summary::-webkit-details-marker{display:none}
+  details.acc>summary::after{content:"＋";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:400;font-size:18px}
+  details.acc[open]>summary::after{content:"−"}
+  details.acc>summary:hover{background:var(--bg2)}
+  details.acc .body{padding:2px 20px 10px}
+  details.acc .body>*:first-child{margin-top:6px}
   footer{border-top:1px solid var(--line);margin-top:64px;padding-top:22px;color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -181,7 +198,7 @@
       <a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener"><circle cx="348.8" cy="142" r="9" fill="#c8453a"/><text x="348.8" y="127" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メテオ350</text></a>
       <a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener"><circle cx="488" cy="346" r="9" fill="#a568d6"/><text x="488" y="331" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スピード400</text></a>
       <a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener"><circle cx="581" cy="346" r="9" fill="#a568d6"/><text x="581" y="366" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラー400X</text></a>
-      <a href="https://www.harley-davidson.com/us/en/motorcycles/x-350.html" target="_blank" rel="noopener"><circle cx="395.4" cy="448" r="9" fill="#e0a53a"/><text x="395.4" y="433" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text></a>
+      <a href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener"><circle cx="395.4" cy="448" r="9" fill="#e0a53a"/><text x="395.4" y="433" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text></a>
       <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener"><circle cx="534.6" cy="499" r="9" fill="#5aa84a"/><text x="534.6" y="520" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">エリミネーター400</text></a>
       <a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener"><circle cx="720.6" cy="397" r="9" fill="#4a86e8"/><text x="720.6" y="382" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CL250</text></a>
       <a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener"><circle cx="813.6" cy="397" r="9" fill="#4a86e8"/><text x="813.6" y="418" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レブル250</text></a>
@@ -189,111 +206,121 @@
     </svg>
   </div>
 
-  <h3>使い道 × スニーカー適合（中型）</h3>
-  <p>マップ（見た目×鼓動感）だけでは分からない「使い道」と「似合う感」を別表に。想定する使い道は
-  <strong>キャンプ場（未舗装に乗り入れ）／国道（巡航・ロングツーリング）／街中（交差点や取り回し）</strong>の3つ。
-  ファッションは<strong>スニーカーに合うか</strong>で見る。◎得意・○ふつう・△苦手、あくまで主観。</p>
-  <div class="tablewrap matrix">
+  <h3>中型・全比較（1枚）</h3>
+  <p>中型候補を1枚の表に。<strong>モデル名は各公式サイト</strong>へのリンク、<strong>エンジン音</strong>は排気音重視の動画（まず耳で比べてほしい）。
+  使い道（キャンプ場／国道／街中）とスニーカー適合は <strong>◎得意・○ふつう・△苦手</strong>、あくまで主観。鼓動感の高い順。</p>
+  <div class="tablewrap matrix" id="list">
     <table>
-      <thead><tr><th>モデル</th><th>キャンプ場</th><th>国道</th><th>街中</th><th>スニーカー適合</th></tr></thead>
+      <thead><tr><th>モデル</th><th>鼓動感</th><th>エンジン音</th><th>キャンプ場</th><th>国道</th><th>街中</th><th>スニーカー</th></tr></thead>
       <tbody>
-        <tr><td>ブリット350</td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
-        <tr><td>クラシック350</td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
-        <tr><td>メテオ350</td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="o">○</td></tr>
-        <tr><td>GB350</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td><td class="o">○</td></tr>
-        <tr><td>メグロS1</td><td class="o">○</td><td class="x">△</td><td class="g">◎</td><td class="o">○</td></tr>
-        <tr><td>スピード400</td><td class="o">○</td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td>スクランブラー400X</td><td class="g">◎</td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td>CL250</td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td><td class="g">◎</td></tr>
-        <tr><td>レブル250</td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td>レオンチーノ250</td><td class="o">○</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td>ハーレーX350</td><td class="o">○</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td>エリミネーター400</td><td class="x">△</td><td class="g">◎</td><td class="x">△</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350</a></span></td><td class="pulse">9</td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">クラシック350</a></span></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">メテオ350</a></span></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">GB350</a></span></td><td class="pulse">7</td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="g">◎</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">メグロS1</a></span></td><td class="pulse">6</td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="o">○</td><td class="x">△</td><td class="g">◎</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener">スピード400</a></span></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener">スクランブラー400X</a></span></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=aFx_qIl5Qak" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="g">◎</td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">CL250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">レブル250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="x">△</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener">レオンチーノ250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=s6Gxv7N3BDI" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener">ハーレーX350</a></span></td><td class="pulse">2</td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td><td class="o">○</td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">エリミネーター400</a></span></td><td class="pulse">1</td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td><td class="x">△</td><td class="g">◎</td><td class="x">△</td><td class="g">◎</td></tr>
       </tbody>
     </table>
   </div>
   <div class="note">
     <strong>使い道のクセ：</strong>キャンプ場（未舗装）はオフ寄りの <strong>スクランブラー系（スクランブラー400X・CL250）</strong> が強い。国道の巡航は排気量の大きい水冷勢（スピード400・スクランブラー400X・エリミネーター400）が楽。街中の取り回しは軽くてアップライトな GB350・メグロS1・CL250 が得意で、低く長いクルーザー（エリミネーター400）は苦手。<br>
-    <strong>スニーカー適合：</strong>スクランブラー／モダンストリート系（スクランブラー400X・CL250・スピード400・ハーレーX350）に加え、<strong>現行のモダンクルーザー（レブル250・エリミネーター400）もカジュアルでスニーカーが似合う</strong>。一方 <strong>ブーツ／レザーが似合うのは、英国クラシック系（ブリット350・クラシック350）や、中古で狙う旧車ハーレー的なワイルドスタイル</strong>のほう。
+    <strong>スニーカー適合：</strong>スクランブラー／モダンストリート系（スクランブラー400X・CL250・スピード400・ハーレーX350）や、<strong>現行のモダンクルーザー（レブル250・エリミネーター400）はカジュアルでスニーカーが似合う</strong>。逆に <strong>英国クラシック系（ブリット350・クラシック350）と、レトロ調のメテオ350は、スニーカーよりブーツ／レザーが似合う</strong>（メテオが一番スニーカーから遠い）。
   </div>
 
-  <h3>鼓動感の正体：エンジン形式とエンジン音の相関</h3>
-  <p>バイクに詳しくない人に「鼓動感」を説明するのは難しい。一番手っ取り早いのは、<strong>エンジン音を聴いてもらうこと</strong>。
-  エンジン音・エンジン形式・鼓動感は相関が高い。</p>
-  <ul>
-    <li><strong>排気量が大きく、低回転でトルクを出す空冷シングル</strong>（1気筒）→ 一発一発の爆発が体に伝わる。ドコドコという音、鼓動感が高い。</li>
-    <li><strong>水冷・高回転型・多気筒</strong>（2気筒以上）→ 振動を打ち消し合い、滑らかに回る。音は高く滑らかで、鼓動感は低い。</li>
-  </ul>
-  <p>鼓動感の順に並べるとこう見える。<strong>モデル名は各公式サイト</strong>へのリンク、エンジン音は排気音重視の動画（実車の前に、まず耳で比べてほしい）。</p>
-  <div class="tablewrap" id="list">
-    <table>
-      <thead><tr><th>モデル</th><th>鼓動感</th><th>エンジン音</th></tr></thead>
-      <tbody>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350</a></span></td><td class="pulse">9</td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">クラシック350</a></span></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">メテオ350</a></span></td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">GB350</a></span></td><td class="pulse">7</td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">メグロS1</a></span></td><td class="pulse">6</td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener">スピード400</a></span></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener">スクランブラー400X</a></span></td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=aFx_qIl5Qak" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">CL250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">レブル250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener">レオンチーノ250</a></span></td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=s6Gxv7N3BDI" target="_blank" rel="noopener">▶ 水冷シングル</a></td></tr>
-        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.harley-davidson.com/us/en/motorcycles/x-350.html" target="_blank" rel="noopener">ハーレーX350</a></span></td><td class="pulse">2</td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
-        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">エリミネーター400</a></span></td><td class="pulse">1</td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td></tr>
-      </tbody>
-    </table>
+  <h3>現時点の本命（中型）</h3>
+  <div class="picks">
+    <div class="pick">
+      <div class="tag">ストリート系</div>
+      <div class="name">レブル250</div>
+      <p>本命。カジュアル・街乗り軸で。</p>
+    </div>
+    <div class="pick">
+      <div class="tag">ダートも入るなら</div>
+      <div class="name">スクランブラー400X</div>
+      <p>キャンプ・林道もいける二刀流。</p>
+    </div>
+    <div class="pick">
+      <div class="tag">鼓動感なら</div>
+      <div class="name">GB350 / ブリット350</div>
+      <p>ドコドコの空冷シングル。</p>
+    </div>
   </div>
-  <div class="note">
-    基準として <a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350の公式サイト</a> の音が典型的な「空冷シングル」。<strong>クラシック350・メテオ350は同じ349ccエンジンで音もほぼ同じ</strong>、GB350も同じ空冷単気筒で系統が近い。スピード400とスクランブラー400Xも同じ398ccエンジンなので音は同系。
-  </div>
-  <p>面白いのは、<strong>「空冷単気筒」というだけでは鼓動感は決まらない</strong>こと。
-  同じ空冷単気筒でも、ブリット350（349cc・6,100rpm）とメグロS1（232cc・7,000rpm）では体感がかなり違う。
-  排気量が小さく高回転寄りにセッティングされると、単気筒でも滑らかで大人しい音になる。</p>
 
-  <h3>鼓動感のメリット・デメリット</h3>
-  <p>鼓動感は「良い/悪い」ではなく好みの問題。整理するとこうなる。</p>
-  <div class="tablewrap">
-    <table>
-      <thead><tr><th></th><th>メリット</th><th>デメリット</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><strong>鼓動感が高い</strong><br><small>大排気量・空冷シングル</small></td>
-          <td class="cell-list">・低回転からトルクが出て、のんびり流すのが気持ちいい
+  <details class="acc">
+    <summary>鼓動感って何？ ── エンジン形式・音との相関</summary>
+    <div class="body">
+      <p>バイクに詳しくない人に「鼓動感」を説明するのは難しい。一番手っ取り早いのは、<strong>エンジン音を聴いてもらうこと</strong>。エンジン音・エンジン形式・鼓動感は相関が高い。</p>
+      <ul>
+        <li><strong>排気量が大きく、低回転でトルクを出す空冷シングル</strong>（1気筒）→ 一発一発の爆発が体に伝わる。ドコドコという音、鼓動感が高い。</li>
+        <li><strong>水冷・高回転型・多気筒</strong>（2気筒以上）→ 振動を打ち消し合い、滑らかに回る。音は高く滑らかで、鼓動感は低い。</li>
+      </ul>
+      <div class="note">
+        基準として <a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350の公式サイト</a> の音が典型的な「空冷シングル」。<strong>クラシック350・メテオ350は同じ349ccエンジンで音もほぼ同じ</strong>、GB350も同じ空冷単気筒で系統が近い。スピード400とスクランブラー400Xも同じ398ccエンジンなので音は同系。
+      </div>
+      <p>面白いのは、<strong>「空冷単気筒」というだけでは鼓動感は決まらない</strong>こと。同じ空冷単気筒でも、ブリット350（349cc・6,100rpm）とメグロS1（232cc・7,000rpm）では体感がかなり違う。排気量が小さく高回転寄りにセッティングされると、単気筒でも滑らかで大人しい音になる。</p>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary>鼓動感のメリット・デメリット</summary>
+    <div class="body">
+      <p>鼓動感は「良い/悪い」ではなく好みの問題。整理するとこうなる。</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th></th><th>メリット</th><th>デメリット</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>鼓動感が高い</strong><br><small>大排気量・空冷シングル</small></td>
+              <td class="cell-list">・低回転からトルクが出て、のんびり流すのが気持ちいい
 ・エンジンの鼓動が「乗ってる実感」になる
 ・排気音に味がある</td>
-          <td class="cell-list">・高回転は苦手、高速巡航や追い越しはやや不利
+              <td class="cell-list">・高回転は苦手、高速巡航や追い越しはやや不利
 ・振動で長距離は疲れやすい
 ・空冷ゆえ夏の渋滞で熱に弱め</td>
-        </tr>
-        <tr>
-          <td><strong>鼓動感が低い</strong><br><small>水冷・多気筒・高回転</small></td>
-          <td class="cell-list">・振動が少なく、長距離・高速が楽
+            </tr>
+            <tr>
+              <td><strong>鼓動感が低い</strong><br><small>水冷・多気筒・高回転</small></td>
+              <td class="cell-list">・振動が少なく、長距離・高速が楽
 ・高回転までスムーズに伸びて速い
 ・熱管理が安定</td>
-          <td class="cell-list">・良くも悪くも「優等生」で乗ってる実感は薄い
+              <td class="cell-list">・良くも悪くも「優等生」で乗ってる実感は薄い
 ・排気音は大人しく、味を求める人には物足りない</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p>つまり <strong>方向A（鼓動感）は「移動そのものを味わう」</strong>、
-  <strong>方向B（スムーズ系）は「移動を快適にこなす」</strong> という性格の違い。SR400への思い入れは、明らかに前者。</p>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>つまり <strong>方向A（鼓動感）は「移動そのものを味わう」</strong>、<strong>方向B（スムーズ系）は「移動を快適にこなす」</strong> という性格の違い。SR400への思い入れは、明らかに前者。</p>
+    </div>
+  </details>
 
-  <h3>一番の発見：見た目のレトロ度と鼓動感は一致しない</h3>
-  <ul>
-    <li><strong>メテオ350</strong>：見た目はアメリカンなのに鼓動感は高い（外れ値）。ブリット350・クラシック350と同じ349cc空冷シングルを積んでいるため。</li>
-    <li><strong>CL250</strong>：見た目はレトロなのに鼓動感は低め。水冷・高回転型のシングルで、系統としてはレブル250に近い。当初はレトロ側に置いていたが、ストリート寄りに再配置した。</li>
-    <li><strong>スピード400</strong>：モダンクラシックなおしゃれロードスター（＝ストリート寄りの見た目）だが、中身は398ccの水冷シングル。だから鼓動感は「空冷シングルほどではないが、水冷ツインより明確にある」中間。当初の仮説だった<strong>「鼓動感は空冷シングル寄り／スタイルは水冷ツインっぽいおしゃれ感」</strong>に一番近い折衷案かもしれない。</li>
-    <li><strong>スクランブラー400X</strong>：<strong>「スクランブラー」はオフ風タイヤ＋アップした車体の、おしゃれストリート系ジャンル</strong>。中身はスピード400と同じ398cc水冷シングルなので鼓動感も同じ（4）。見た目のジャンルで選べる一台。同じスクランブラー系では Honda CL250・ベネリ レオンチーノ250 も候補。</li>
-  </ul>
-  <p>見た目だけで選ぶと、実際に乗った時の体感とズレる可能性がある、という当たり前のようで見落としがちなポイント。</p>
+  <details class="acc">
+    <summary>見た目のレトロ度と鼓動感は一致しない</summary>
+    <div class="body">
+      <ul>
+        <li><strong>メテオ350</strong>：見た目はアメリカンなのに鼓動感は高い（外れ値）。ブリット350・クラシック350と同じ349cc空冷シングルを積んでいるため。</li>
+        <li><strong>CL250</strong>：見た目はレトロなのに鼓動感は低め。水冷・高回転型のシングルで、系統としてはレブル250に近い。当初はレトロ側に置いていたが、ストリート寄りに再配置した。</li>
+        <li><strong>スピード400</strong>：モダンクラシックなおしゃれロードスター（＝ストリート寄りの見た目）だが、中身は398ccの水冷シングル。だから鼓動感は「空冷シングルほどではないが、水冷ツインより明確にある」中間。当初の仮説だった<strong>「鼓動感は空冷シングル寄り／スタイルは水冷ツインっぽいおしゃれ感」</strong>に一番近い折衷案かもしれない。</li>
+        <li><strong>スクランブラー400X</strong>：<strong>「スクランブラー」はオフ風タイヤ＋アップした車体の、おしゃれストリート系ジャンル</strong>。中身はスピード400と同じ398cc水冷シングルなので鼓動感も同じ（4）。見た目のジャンルで選べる一台。同じスクランブラー系では Honda CL250・ベネリ レオンチーノ250 も候補。</li>
+      </ul>
+      <p>見た目だけで選ぶと、実際に乗った時の体感とズレる可能性がある、という当たり前のようで見落としがちなポイント。</p>
+    </div>
+  </details>
 
-  <h3>ジャンル別・街乗りと実用の向き</h3>
-  <ul>
-    <li><strong>アメリカン（クルーザー）は日本の街乗りで取り回しがしんどいかも</strong>。車体が低くて長く、ハンドルの切れ角も小さめ。交差点の右左折、歩道での押し引きやUターンなど、日常の細かい取り回しで気を使う場面がありそう。</li>
-    <li><strong>スクランブラーはキャンプ場にそのまま入れるのが強み</strong>。姿勢がアップライトで軽快なうえ、オフ路面もこなせるので、未舗装の林道やキャンプサイトにも乗り入れやすい。街乗り＋アウトドアの二刀流。</li>
-  </ul>
+  <details class="acc">
+    <summary>ジャンル別・街乗りとキャンプの向き</summary>
+    <div class="body">
+      <ul>
+        <li><strong>アメリカン（クルーザー）は日本の街乗りで取り回しがしんどいかも</strong>。車体が低くて長く、ハンドルの切れ角も小さめ。交差点の右左折、歩道での押し引きやUターンなど、日常の細かい取り回しで気を使う場面がありそう。</li>
+        <li><strong>スクランブラーはキャンプ場にそのまま入れるのが強み</strong>。姿勢がアップライトで軽快なうえ、オフ路面もこなせるので、未舗装の林道やキャンプサイトにも乗り入れやすい。街乗り＋アウトドアの二刀流。</li>
+      </ul>
+    </div>
+  </details>
 
   <h2>原付（50cc）の1台：<span class="ja">もう一台の相棒</span></h2>
   <p>2台のうち片方は原付。スタンスは「<strong>原付免許で乗れれば何でもいい</strong>」。ざっくり
@@ -317,19 +344,23 @@
     <strong>※ 50ccの今後：</strong>50cc（原付一種）は2025年10月末の排ガス規制で生産終了。今後は125ccベースを最高出力4.0kW以下に制御した「<strong>新基準原付</strong>」が原付一種に加わる（法定30km/h・二段階右折などのルールは従来どおり）。中古の従来50ccを狙うか、新基準原付にするかも選択軸。
   </div>
 
-  <h3>50ccの乗り味比較（スクーター・カブ・Jazz・TZR50）</h3>
-  <p>参考までに、原付は同じ50ccでも中身の機構でまったく別物。「鼓動感」の感覚を身近な例で掴んでおく。</p>
-  <div class="tablewrap">
-    <table>
-      <thead><tr><th>乗り物</th><th>エンジン / 機構</th><th>乗り味</th><th>鼓動感</th><th>エンジン音</th></tr></thead>
-      <tbody>
-        <tr><td>スクーター<br><small>（ジョルノ等）</small></td><td>空冷4スト単気筒＋CVT無段変速</td><td>変速ショックゼロ、ただ滑らかに進む。エンジンと車体が離れていて振動も遠い</td><td class="pulse">ほぼ0</td><td><small>—</small></td></tr>
-        <tr><td>スーパーカブ50</td><td>空冷4スト単気筒＋自動遠心クラッチ4速</td><td>トコトコと軽快。多少のリズムはあるが穏やかで実用的</td><td class="pulse">1〜2</td><td><a href="https://www.youtube.com/watch?v=UZt5EoP76uw" target="_blank" rel="noopener">▶ 走行音</a></td></tr>
-        <tr><td>Jazz / マグナ50</td><td>カブ系の空冷4スト単気筒＋マニュアル4速</td><td>見た目はアメリカンだが中身はカブ。鼓動は控えめ</td><td class="pulse">1〜2</td><td><a href="https://www.youtube.com/watch?v=4blQ2heXPy8" target="_blank" rel="noopener">▶ Jazz</a> / <a href="https://www.youtube.com/watch?v=p5LaOfjMmXw" target="_blank" rel="noopener">▶ マグナ50</a></td></tr>
-        <tr><td>TZR50</td><td><strong>水冷2スト</strong>単気筒・10,000rpm</td><td>「キーン」というカン高い2ストサウンド。低速は薄く、高回転で一気に伸びる。鼓動というより“ヒュイーン”と滑らかにパワーが立ち上がる真逆の性格</td><td class="pulse">0<br><small>別ベクトル</small></td><td><a href="https://www.youtube.com/watch?v=2mxYC27ivsg" target="_blank" rel="noopener">▶ 2スト</a></td></tr>
-      </tbody>
-    </table>
-  </div>
+  <details class="acc">
+    <summary>50ccの乗り味比較（スクーター・カブ・Jazz・TZR50）</summary>
+    <div class="body">
+      <p>参考までに、原付は同じ50ccでも中身の機構でまったく別物。「鼓動感」の感覚を身近な例で掴んでおく。</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>乗り物</th><th>エンジン / 機構</th><th>乗り味</th><th>鼓動感</th><th>エンジン音</th></tr></thead>
+          <tbody>
+            <tr><td>スクーター<br><small>（ジョルノ等）</small></td><td>空冷4スト単気筒＋CVT無段変速</td><td>変速ショックゼロ、ただ滑らかに進む。エンジンと車体が離れていて振動も遠い</td><td class="pulse">ほぼ0</td><td><small>—</small></td></tr>
+            <tr><td>スーパーカブ50</td><td>空冷4スト単気筒＋自動遠心クラッチ4速</td><td>トコトコと軽快。多少のリズムはあるが穏やかで実用的</td><td class="pulse">1〜2</td><td><a href="https://www.youtube.com/watch?v=UZt5EoP76uw" target="_blank" rel="noopener">▶ 走行音</a></td></tr>
+            <tr><td>Jazz / マグナ50</td><td>カブ系の空冷4スト単気筒＋マニュアル4速</td><td>見た目はアメリカンだが中身はカブ。鼓動は控えめ</td><td class="pulse">1〜2</td><td><a href="https://www.youtube.com/watch?v=4blQ2heXPy8" target="_blank" rel="noopener">▶ Jazz</a> / <a href="https://www.youtube.com/watch?v=p5LaOfjMmXw" target="_blank" rel="noopener">▶ マグナ50</a></td></tr>
+            <tr><td>TZR50</td><td><strong>水冷2スト</strong>単気筒・10,000rpm</td><td>「キーン」というカン高い2ストサウンド。低速は薄く、高回転で一気に伸びる。鼓動というより“ヒュイーン”と滑らかにパワーが立ち上がる真逆の性格</td><td class="pulse">0<br><small>別ベクトル</small></td><td><a href="https://www.youtube.com/watch?v=2mxYC27ivsg" target="_blank" rel="noopener">▶ 2スト</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </details>
 
   <footer>
     <p>個人的なバイク購入計画メモ。スペック・価格・現行/生産状況は調査時点のもので、正確性は各公式サイトで要確認。鼓動感・使い道・スニーカー適合の評価はすべて主観です。</p>
