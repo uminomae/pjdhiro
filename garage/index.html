@@ -118,7 +118,6 @@
   details.acc .body{padding:2px 20px 10px}
   details.acc .body>*:first-child{margin-top:6px}
   /* hover image float */
-  .model[data-hover]{cursor:help}
   #imgfloat{position:fixed;z-index:50;width:250px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:8px;box-shadow:0 12px 34px rgba(0,0,0,.55);pointer-events:none;opacity:0;transition:opacity .12s;font-size:12px}
   #imgfloat.on{opacity:1}
   #imgfloat img{width:100%;height:140px;object-fit:cover;border-radius:6px;display:block;background:#0d0e12}
@@ -381,27 +380,26 @@
   f.innerHTML='<img alt=""><div class="cap"></div><div class="sub"></div>';
   document.body.appendChild(f);
   var fimg=f.querySelector('img'), cap=f.querySelector('.cap'), sub=f.querySelector('.sub');
-  function ytid(u){ var m=u&&u.match(/[?&]v=([\w-]+)/)||u&&u.match(/\/vi\/([\w-]+)/); return m?m[1]:null; }
+  function ytid(u){ var m=u&&(u.match(/[?&]v=([\w-]+)/)||u.match(/\/vi\/([\w-]+)/)||u.match(/youtu\.be\/([\w-]+)/)); return m?m[1]:null; }
   function place(el){
     var r=el.getBoundingClientRect(), w=250, h=205;
     var left=r.left; if(left+w>window.innerWidth-8) left=window.innerWidth-8-w; if(left<8) left=8;
     var top=r.top-h-10; if(top<8) top=r.bottom+10;
     f.style.left=left+'px'; f.style.top=top+'px';
   }
-  document.querySelectorAll('.model').forEach(function(el){
-    var tr=el.closest('tr'); if(!tr) return;
-    var snd=tr.querySelector('a[href*="youtube.com"],a[href*="youtu.be"]');
-    var id=snd?ytid(snd.getAttribute('href')):null; if(!id) return;
-    var link=el.querySelector('a'); var name=link?link.textContent:''; var url=link?link.getAttribute('href'):'';
-    el.setAttribute('data-hover','1');
-    el.addEventListener('mouseenter',function(){
+  document.querySelectorAll('table a[href*="youtube.com"], table a[href*="youtu.be"]').forEach(function(a){
+    var id=ytid(a.getAttribute('href')); if(!id) return;
+    var tr=a.closest('tr');
+    var mEl=tr&&(tr.querySelector('.model a')||tr.querySelector('td'));
+    var name=mEl?mEl.textContent.trim():'';
+    a.addEventListener('mouseenter',function(){
       fimg.src='https://img.youtube.com/vi/'+id+'/hqdefault.jpg';
       cap.textContent=name;
-      sub.textContent='画像=エンジン音動画のサムネ / 公式: '+url;
-      f.classList.add('on'); place(el);
+      sub.textContent='エンジン音の動画サムネ / '+a.href;
+      f.classList.add('on'); place(a);
     });
-    el.addEventListener('mousemove',function(){place(el);});
-    el.addEventListener('mouseleave',function(){f.classList.remove('on');});
+    a.addEventListener('mousemove',function(){place(a);});
+    a.addEventListener('mouseleave',function(){f.classList.remove('on');});
   });
 })();
 </script>
