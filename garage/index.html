@@ -108,7 +108,7 @@
   .chartcard svg a{cursor:pointer}
   .chartcard svg a:hover circle{stroke:#ffffff;stroke-width:2}
   /* combined table + accordions */
-  #list table{min-width:800px}
+  #list table{min-width:860px}
   details.acc{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
   details.acc>summary{cursor:pointer;list-style:none;padding:15px 46px 15px 20px;font-weight:700;color:var(--accent2);position:relative}
   details.acc>summary::-webkit-details-marker{display:none}
@@ -205,7 +205,7 @@
   <h2>中型マップ：<span class="ja">レトロ度 × 鼓動感</span></h2>
   <p>中型候補を「見た目のレトロ度」と「エンジンの鼓動感」、<strong>それぞれ独立した0-10の2軸</strong>でマッピング。
   以前は横軸を「レトロ⇔おしゃれストリート」という1本の対立軸にしていたが、レトロ度と鼓動感は本来別物（例：メテオ350は見た目も乗り味もレトロ寄り、CL250は見た目はレトロ寄りでも乗り味はモダン）なので、素直に2軸に分けた。
-  どちらも試乗レビューやオーナーの声からの主観推定。<strong>街乗り／遠乗りとファッション適合はこの下の別表、取り回し力・オフロード性能はマップ②、砂利路（釣り適性）は「釣りに向いてるか？徹底比較」章</strong>で見る。</p>
+  どちらも試乗レビューやオーナーの声からの主観推定。<strong>走行性能（機動性・直進安定性・オフロード）はスペック算出のマップ②、釣り適性は「釣りに向いてるか？徹底比較」章</strong>で見る。</p>
 
   <div class="chartcard">
     <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" role="img" aria-label="中型バイク比較マップ：横軸レトロ度、縦軸 鼓動感（独立した2軸）">
@@ -256,13 +256,12 @@
     </svg>
   </div>
 
-  <h2>中型マップ②：<span class="ja">取り回し力 × オフロード性能</span></h2>
-  <p>もう1枚は実用面のマップ。<strong>取り回し力</strong>（ホイールベース・キャスター角・車重）と<strong>オフロード性能</strong>（前輪サイズ・サスストローク・タイヤ種別）、それぞれ<strong>公表スペックから算出した0-10の指数</strong>。
-  レトロ度・鼓動感と違い、こちらは主観推定ではなく実測値ベース——ただしキャスター角など一部未公表の車種は近縁車種・同ジャンル典型値で補っている（詳細は下の「算出根拠」参照）。
-  取り回し力は裏を返せば<strong>直進安定性</strong>（数値が低いほど高速巡航が安定）、街乗りは取り回し力側、遠乗り（ツーリング）は直進安定性側の話として読める。</p>
+  <h2>中型マップ②：<span class="ja">直進安定性 × オフロード性能</span></h2>
+  <p>2枚目は「どんな道に向くか」のマップ。横軸に<strong>直進安定性</strong>（まっすぐ・高速が安定＝ツーリング向き）、縦軸に<strong>オフロード性能</strong>（砂利・悪路）。どちらも<strong>公表スペックからの算出値</strong>で、主観ではない（式は下の「算出根拠」）。
+  この2軸で読むと <strong>「オン⇔ネイキッド⇔オフ」の使い分け</strong> がそのまま見える——<strong>右下＝直進安定に振ったクルーザー</strong>（低重心＋長ホイールベース＋寝たフォーク。北海道・高速の直線向き）、<strong>上＝悪路に振ったオフ系</strong>（釣り場アクセス向き）、<strong>左下の低ストローク勢＝軽くて機動性の高いネイキッド系</strong>（日本の一般道でバランスが良い）。ネイキッドの強みである<strong>機動性（小回り）そのものは、この軸には出ないので下の別表</strong>で見る。</p>
 
   <div class="chartcard">
-    <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" role="img" aria-label="中型バイク比較マップ2：横軸 取り回し力、縦軸 オフロード性能（スペック算出）">
+    <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" role="img" aria-label="中型バイク比較マップ2：横軸 直進安定性、縦軸 オフロード性能（スペック算出）">
       <rect x="70" y="40" width="790" height="510" fill="#232733" stroke="#3a4050"/>
       <g stroke="#2c3140" stroke-width="1">
         <line x1="246" y1="40" x2="246" y2="550"/><line x1="392" y1="40" x2="392" y2="550"/>
@@ -272,12 +271,14 @@
       </g>
       <line x1="70" y1="550" x2="860" y2="550" stroke="#5a6070" stroke-width="1.5"/>
       <line x1="70" y1="40" x2="70" y2="550" stroke="#5a6070" stroke-width="1.5"/>
-      <text x="465" y="595" text-anchor="middle" font-size="18" fill="#cdd2dd" font-weight="600">取り回し力（ホイールベース・キャスター角・車重から算出・0-10）</text>
+      <text x="465" y="595" text-anchor="middle" font-size="18" fill="#cdd2dd" font-weight="600">直進安定性（ホイールベース・キャスター角・重心の低さから算出・0-10）</text>
       <text x="100" y="30" text-anchor="middle" font-size="12" fill="#8a90a0">低0</text>
       <text x="830" y="30" text-anchor="middle" font-size="12" fill="#8a90a0">高10</text>
       <text x="30" y="295" text-anchor="middle" font-size="18" fill="#cdd2dd" font-weight="600" transform="rotate(-90 30 295)">オフロード性能（前輪サイズ・サス・タイヤから算出・0-10）</text>
       <text x="55" y="45" text-anchor="end" font-size="12" fill="#8a90a0">高10</text>
       <text x="55" y="555" text-anchor="end" font-size="12" fill="#8a90a0">低0</text>
+      <text x="770" y="490" text-anchor="middle" font-size="13" fill="#7a828f" font-weight="600" opacity="0.75">オン向き（巡航）</text>
+      <text x="150" y="92" text-anchor="middle" font-size="13" fill="#7a828f" font-weight="600" opacity="0.75">オフ向き（悪路・釣り）</text>
       <g font-size="13" fill="#cdd2dd">
         <circle cx="600" cy="70" r="6" fill="#c8453a"/><text x="612" y="75">Royal Enfield</text>
         <circle cx="740" cy="70" r="6" fill="#5aa84a"/><text x="752" y="75">Kawasaki</text>
@@ -290,92 +291,121 @@
         <circle cx="600" cy="158" r="6" fill="#c9cf3a"/><text x="612" y="163">Fantic</text>
         <circle cx="740" cy="158" r="6" fill="#3aa8c9"/><text x="752" y="163">Yamaha</text>
       </g>
-      <a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener"><circle cx="400" cy="474" r="9" fill="#c8453a"/><text x="400" y="494" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">クラシック350</text></a>
-      <a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener"><circle cx="460" cy="474" r="9" fill="#c8453a"/><text x="460" y="459" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ブリット350</text></a>
-      <a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener"><circle cx="520" cy="474" r="9" fill="#c8453a"/><text x="520" y="494" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メテオ350</text></a>
-      <a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener"><circle cx="340" cy="474" r="9" fill="#4a86e8"/><text x="340" y="459" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">GB350</text></a>
-      <a href="https://www.goobike.com/maker-ducati/car-ducati_scrambler_sixty2/used/index.html" target="_blank" rel="noopener"><circle cx="421" cy="257" r="9" fill="#e8323c"/><text x="421" y="277" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラーSixty2</text></a>
-      <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener"><circle cx="573" cy="512" r="9" fill="#5aa84a"/><text x="586" y="517" text-anchor="start" font-size="14" fill="#f0f2f8" font-weight="600">メグロS1</text></a>
-      <a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener"><circle cx="538" cy="550" r="9" fill="#a568d6"/><text x="538" y="535" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スピード400</text></a>
-      <a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener"><circle cx="441" cy="157" r="9" fill="#a568d6"/><text x="441" y="142" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラー400X</text></a>
-      <a href="https://www.bikebros.co.jp/catalog/38/999_2/" target="_blank" rel="noopener"><circle cx="559" cy="234" r="9" fill="#dfe4ee"/><text x="559" y="219" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スヴァルトピレン401</text></a>
-      <a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener"><circle cx="345" cy="157" r="9" fill="#4a86e8"/><text x="345" y="177" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CL250</text></a>
-      <a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener"><circle cx="441" cy="512" r="9" fill="#4a86e8"/><text x="454" y="517" text-anchor="start" font-size="14" fill="#f0f2f8" font-weight="600">レブル250</text></a>
-      <a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener"><circle cx="535" cy="295" r="9" fill="#2fb3ab"/><text x="535" y="315" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レオンチーノ250</text></a>
-      <a href="https://caballero.jp/scrambler" target="_blank" rel="noopener"><circle cx="520" cy="157" r="9" fill="#c9cf3a"/><text x="520" y="177" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">キャバレロ250</text></a>
-      <a href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener"><circle cx="388" cy="550" r="9" fill="#e0a53a"/><text x="388" y="535" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text></a>
-      <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener"><circle cx="282" cy="512" r="9" fill="#5aa84a"/><text x="269" y="517" text-anchor="end" font-size="14" fill="#f0f2f8" font-weight="600">エリミネーター400</text></a>
-      <a href="https://www.honda.co.jp/CRF250L/" target="_blank" rel="noopener"><circle cx="437" cy="40" r="9" fill="#4a86e8"/><text x="437" y="60" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CRF250L</text></a>
-      <a href="https://www.goobike.com/maker-yamaha/car-serow250/used/index.html" target="_blank" rel="noopener"><circle cx="565" cy="40" r="9" fill="#3aa8c9"/><text x="565" y="60" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">セロー250</text></a>
+      <a href="https://www.goobike.com/maker-yamaha/car-serow250/used/index.html" target="_blank" rel="noopener"><circle cx="226" cy="40" r="9" fill="#3aa8c9"/><text x="226" y="60" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">セロー250</text></a>
+      <a href="https://www.honda.co.jp/CRF250L/" target="_blank" rel="noopener"><circle cx="366" cy="40" r="9" fill="#4a86e8"/><text x="366" y="60" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CRF250L</text></a>
+      <a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener"><circle cx="191" cy="157" r="9" fill="#a568d6"/><text x="191" y="142" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラー400X</text></a>
+      <a href="https://caballero.jp/scrambler" target="_blank" rel="noopener"><circle cx="301" cy="157" r="9" fill="#c9cf3a"/><text x="301" y="177" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">キャバレロ250</text></a>
+      <a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener"><circle cx="502" cy="157" r="9" fill="#4a86e8"/><text x="502" y="142" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">CL250</text></a>
+      <a href="https://www.bikebros.co.jp/catalog/38/999_2/" target="_blank" rel="noopener"><circle cx="166" cy="234" r="9" fill="#dfe4ee"/><text x="180" y="238" text-anchor="start" font-size="14" fill="#f0f2f8" font-weight="600">スヴァルトピレン401</text></a>
+      <a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener"><circle cx="254" cy="295" r="9" fill="#2fb3ab"/><text x="254" y="315" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レオンチーノ250</text></a>
+      <a href="https://www.goobike.com/maker-ducati/car-ducati_scrambler_sixty2/used/index.html" target="_blank" rel="noopener"><circle cx="356" cy="257" r="9" fill="#e8323c"/><text x="356" y="277" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">スクランブラーSixty2</text></a>
+      <a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener"><circle cx="222" cy="474" r="9" fill="#c8453a"/><text x="222" y="459" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">クラシック350</text></a>
+      <a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener"><circle cx="222" cy="446" r="9" fill="#c8453a"/><text x="209" y="443" text-anchor="end" font-size="14" fill="#f0f2f8" font-weight="600">ブリット350</text></a>
+      <a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener"><circle cx="307" cy="474" r="9" fill="#c8453a"/><text x="307" y="494" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メテオ350</text></a>
+      <a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener"><circle cx="434" cy="474" r="9" fill="#4a86e8"/><text x="434" y="459" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">GB350</text></a>
+      <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener"><circle cx="479" cy="512" r="9" fill="#5aa84a"/><text x="479" y="532" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">メグロS1</text></a>
+      <a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener"><circle cx="235" cy="546" r="9" fill="#a568d6"/><text x="222" y="540" text-anchor="end" font-size="14" fill="#f0f2f8" font-weight="600">スピード400</text></a>
+      <a href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener"><circle cx="300" cy="546" r="9" fill="#e0a53a"/><text x="313" y="540" text-anchor="start" font-size="14" fill="#f0f2f8" font-weight="600">ハーレーX350</text></a>
+      <a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener"><circle cx="713" cy="512" r="9" fill="#4a86e8"/><text x="713" y="497" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">レブル250</text></a>
+      <a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener"><circle cx="754" cy="512" r="9" fill="#5aa84a"/><text x="754" y="532" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">エリミネーター400</text></a>
     </svg>
   </div>
 
-  <details class="acc">
-    <summary>算出根拠：取り回し力・オフロード性能の出し方（実測値つき）</summary>
+  <details class="acc" open>
+    <summary>機動性ランキング：最小回転半径（＝取り回し・Uターンのしやすさ）</summary>
     <div class="body">
-      <p><strong>取り回し力</strong> ＝ ホイールベース・キャスター角・車重・<strong>シート高</strong>（重心の高さの代理指標）の4つを17台内で正規化して平均（各項目は小さい／軽いほど高スコア）。裏を返すと、スコアが低い車種ほど直進安定性が高い（＝遠乗り・高速巡航が安定）。シート高を加えたことで、<strong>レブル250はシート高690mmの低さが効いて中位まで上昇</strong>（追加前は下位）。</p>
-      <p><strong>オフロード性能</strong> ＝ <strong>タイヤ種別</strong>（ブロックタイヤを履くスクランブラー・エンデューロ系ジャンルか否か、50%）を主要因に、<strong>前輪サイズ</strong>（17〜21インチ、30%）、確認できた車種の<strong>サスストローク量</strong>（20%）を加重平均。当初は前輪サイズを主要因にしていたが、それだと街乗り専用のメグロS1（18インチ・ストリートタイヤ）とスクランブラーのスヴァルトピレン401（17インチだがブロックタイヤ）が同スコアになってしまい、砂利路の基本的なグリップを左右するのはタイヤ種別の方が大きいと判断して重みを組み替えた。車重は取り回し力側で評価済みのため、ここでは加点していない。</p>
+      <p>取り回し（狭所でのUターン）は、ホイールベース単体ではなく <strong>最小回転半径</strong> で見るのが正しい——切れ角・ホイールベース・トレール・タイヤ径をすべて織り込んだ完成値だから。Honda勢は公表値（＋ハンドル切れ角）があり、それ以外は物理式（回転半径 ≒ ホイールベース ÷ sin切れ角 ＋ 補正0.18m）で推定した。<strong>これで以前の誤りが直った</strong>：GB350は切れ角43°で回転半径2.3mと最小級なのに、旧モデルはホイールベースの長さだけを見て最下位に誤判定していた。CL250も切れ角38°でホイールベースの長さを相殺している。</p>
       <div class="tablewrap matrix">
         <table>
-          <thead><tr><th>モデル</th><th>ホイールベース</th><th>キャスター角</th><th>車重</th><th>シート高</th><th>前輪</th><th>取り回し力</th><th>オフロード性能</th></tr></thead>
+          <thead><tr><th>モデル</th><th>ハンドル切れ角</th><th>最小回転半径</th><th>実測/推定</th><th>機動性スコア</th></tr></thead>
           <tbody>
-            <tr><td>メグロS1</td><td>1415mm</td><td>27.0°</td><td>143kg</td><td>740mm</td><td>18"</td><td class="pulse">6.5</td><td class="pulse">0.8</td></tr>
-            <tr><td>セロー250</td><td>1360mm</td><td>26.5°~</td><td>133kg</td><td>830mm</td><td>21"</td><td class="pulse">6.4</td><td class="pulse">10.0</td></tr>
-            <tr><td>スヴァルトピレン401</td><td>1368mm</td><td>24°~</td><td>159kg</td><td>820mm</td><td>17"</td><td class="pulse">6.3</td><td class="pulse">6.2</td></tr>
-            <tr><td>スピード400</td><td>1377mm</td><td>24.6°</td><td>170kg</td><td>790mm</td><td>17"~</td><td class="pulse">6.0</td><td class="pulse">0.0</td></tr>
-            <tr><td>レオンチーノ250</td><td>1380mm</td><td>25°~</td><td>162kg</td><td>800mm</td><td>17"</td><td class="pulse">6.0</td><td class="pulse">5.0</td></tr>
-            <tr><td>キャバレロ250</td><td>1410mm~</td><td>26°~</td><td>130〜140kg</td><td>820mm</td><td>19"</td><td class="pulse">5.7</td><td class="pulse">7.7</td></tr>
-            <tr><td>メテオ350</td><td>1400mm</td><td>24°~</td><td>191kg</td><td>765mm</td><td>19"</td><td class="pulse">5.4</td><td class="pulse">1.5</td></tr>
-            <tr><td>ブリット350</td><td>1390mm</td><td>24°~</td><td>195kg</td><td>805mm</td><td>19"~</td><td class="pulse">4.8</td><td class="pulse">1.5</td></tr>
-            <tr><td>クラシック350</td><td>1390mm</td><td>24.0°</td><td>195kg</td><td>805mm</td><td>19"</td><td class="pulse">4.8</td><td class="pulse">1.5</td></tr>
-            <tr><td>レブル250</td><td>1490mm</td><td>28.0°</td><td>171kg</td><td>690mm</td><td>18"~</td><td class="pulse">4.7</td><td class="pulse">0.8</td></tr>
-            <tr><td>スクランブラー400X</td><td>1420mm</td><td>23.2°</td><td>180kg</td><td>835mm</td><td>19"</td><td class="pulse">4.7</td><td class="pulse">7.7</td></tr>
-            <tr><td>CRF250L</td><td>1440mm</td><td>27°~</td><td>141kg</td><td>830mm</td><td>21"</td><td class="pulse">4.6</td><td class="pulse">10.0</td></tr>
-            <tr><td>スクランブラーSixty2</td><td>1460mm</td><td>24.0°</td><td>183kg</td><td>790mm</td><td>18"</td><td class="pulse">4.4</td><td class="pulse">5.8</td></tr>
-            <tr><td>ハーレーX350</td><td>1410mm</td><td>24.8°</td><td>195kg</td><td>817mm</td><td>17"~</td><td class="pulse">3.9</td><td class="pulse">0.0</td></tr>
-            <tr><td>GB350</td><td>1440mm</td><td>27.5°</td><td>179kg</td><td>800mm</td><td>19"~</td><td class="pulse">3.4</td><td class="pulse">1.5</td></tr>
-            <tr><td>CL250</td><td>1485mm</td><td>27.0°</td><td>172kg</td><td>790mm</td><td>19"</td><td class="pulse">3.4</td><td class="pulse">7.7</td></tr>
-            <tr><td>エリミネーター400</td><td>1520mm</td><td>30.0°</td><td>176kg</td><td>735mm</td><td>18"~</td><td class="pulse">2.5</td><td class="pulse">0.8</td></tr>
+            <tr><td>セロー250</td><td>42°~</td><td>2.21m</td><td>推定</td><td class="pulse">10.0</td></tr>
+            <tr><td>キャバレロ250</td><td>42°~</td><td>2.29m</td><td>推定</td><td class="pulse">9.0</td></tr>
+            <tr><td>GB350</td><td><strong>43°</strong></td><td><strong>2.3m</strong></td><td>実測</td><td class="pulse">8.9</td></tr>
+            <tr><td>CRF250L</td><td>—</td><td><strong>2.3m</strong></td><td>実測</td><td class="pulse">8.9</td></tr>
+            <tr><td>スヴァルトピレン401</td><td>40°~</td><td>2.31m</td><td>推定</td><td class="pulse">8.8</td></tr>
+            <tr><td>スピード400</td><td>40°~</td><td>2.32m</td><td>推定</td><td class="pulse">8.7</td></tr>
+            <tr><td>レオンチーノ250</td><td>40°~</td><td>2.33m</td><td>推定</td><td class="pulse">8.6</td></tr>
+            <tr><td>ブリット350</td><td>40°~</td><td>2.34m</td><td>推定</td><td class="pulse">8.5</td></tr>
+            <tr><td>クラシック350</td><td>40°~</td><td>2.34m</td><td>推定</td><td class="pulse">8.5</td></tr>
+            <tr><td>メグロS1</td><td>40°~</td><td>2.38m</td><td>推定</td><td class="pulse">8.0</td></tr>
+            <tr><td>スクランブラー400X</td><td>38°~</td><td>2.49m</td><td>推定</td><td class="pulse">6.7</td></tr>
+            <tr><td>ハーレーX350</td><td>36°~</td><td>2.58m</td><td>推定</td><td class="pulse">5.6</td></tr>
+            <tr><td>CL250</td><td><strong>38°</strong></td><td><strong>2.6m</strong></td><td>実測</td><td class="pulse">5.4</td></tr>
+            <tr><td>スクランブラーSixty2</td><td>35°~</td><td>2.73m</td><td>推定</td><td class="pulse">3.8</td></tr>
+            <tr><td>メテオ350</td><td>33°~</td><td>2.75m</td><td>推定</td><td class="pulse">3.6</td></tr>
+            <tr><td>レブル250</td><td><strong>35°</strong></td><td><strong>2.8m</strong></td><td>実測</td><td class="pulse">3.0</td></tr>
+            <tr><td>エリミネーター400</td><td>32°~</td><td>3.05m</td><td>推定</td><td class="pulse">0.0</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="muted" style="font-size:13px">「~」は非公表のため近縁車種・同ジャンル典型値で推定。全データと出典URLは <a href="data.md" target="_blank" rel="noopener">data.md</a> を参照。</p>
-      <p>数値に出ない要素（ハンドル幅・シート形状・視界の良さなど）は含めていないので、既存の「街乗り」欄の主観評価とは別物として併読してほしい——たとえば<strong>CL250・GB350はホイールベースが長め（1485mm・1440mm）で取り回し力は数値上低いが</strong>、アップライトな姿勢と軽い操作感で「街乗りしやすい」という評判につながっている。ここは意図的にモデル化していない領域で、数値と評判の両方を見てほしい。</p>
+      <p class="muted" style="font-size:13px">切れ角はGB350 43°・CL250 38°・レブル250 35°が公表値、CRF250Lは回転半径2.3mが公表値（切れ角は非公表）。「~」の切れ角は同ジャンル典型値からの推定で、そこから回転半径を算出。全出典は <a href="data.md" target="_blank" rel="noopener">data.md</a>。</p>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary>算出根拠：直進安定性・オフロード性能の出し方（実測スペック）</summary>
+    <div class="body">
+      <p><strong>直進安定性</strong> ＝ ホイールベース（長いほど安定）＋キャスター角（寝ているほど安定）＋重心の低さ（シート高が低いほど安定）を正規化平均。クルーザー（エリミネーター400・レブル250）が上位で、<strong>「アメリカンは低重心＋長ホイールベース＋寝たフォークで直進安定に振っている（直線の多い道・高速向き）」という見立て通り</strong>の結果になった。</p>
+      <p><strong>オフロード性能</strong> ＝ タイヤ種別（ブロックタイヤ＝スクランブラー/エンデューロか、50%）＋前輪サイズ（17〜21インチ、30%）＋サスストローク（20%）の加重平均。</p>
+      <div class="tablewrap matrix">
+        <table>
+          <thead><tr><th>モデル</th><th>ホイールベース</th><th>キャスター角</th><th>シート高</th><th>前輪</th><th>機動性</th><th>直進安定性</th><th>オフロード</th></tr></thead>
+          <tbody>
+            <tr><td>エリミネーター400</td><td>1520mm</td><td>30.0°</td><td>735mm</td><td>18"~</td><td class="pulse">0.0</td><td class="pulse">9.0</td><td class="pulse">0.8</td></tr>
+            <tr><td>レブル250</td><td>1490mm</td><td>28.0°</td><td>690mm</td><td>18"~</td><td class="pulse">3.0</td><td class="pulse">8.4</td><td class="pulse">0.8</td></tr>
+            <tr><td>CL250</td><td>1485mm</td><td>27.0°</td><td>790mm</td><td>19"</td><td class="pulse">5.4</td><td class="pulse">5.5</td><td class="pulse">7.7</td></tr>
+            <tr><td>メグロS1</td><td>1415mm</td><td>27.0°</td><td>740mm</td><td>18"~</td><td class="pulse">8.0</td><td class="pulse">5.2</td><td class="pulse">0.8</td></tr>
+            <tr><td>GB350</td><td>1440mm</td><td>27.5°</td><td>800mm</td><td>19"~</td><td class="pulse">8.9</td><td class="pulse">4.6</td><td class="pulse">1.5</td></tr>
+            <tr><td>CRF250L</td><td>1440mm</td><td>27°~</td><td>830mm</td><td>21"</td><td class="pulse">8.9</td><td class="pulse">3.6</td><td class="pulse">10.0</td></tr>
+            <tr><td>スクランブラーSixty2</td><td>1460mm</td><td>24.0°</td><td>790mm</td><td>18"</td><td class="pulse">3.8</td><td class="pulse">3.5</td><td class="pulse">5.8</td></tr>
+            <tr><td>メテオ350</td><td>1400mm</td><td>24°~</td><td>765mm</td><td>19"</td><td class="pulse">3.6</td><td class="pulse">2.8</td><td class="pulse">1.5</td></tr>
+            <tr><td>キャバレロ250</td><td>1410mm~</td><td>26°~</td><td>820mm</td><td>19"</td><td class="pulse">9.0</td><td class="pulse">2.8</td><td class="pulse">7.7</td></tr>
+            <tr><td>ハーレーX350</td><td>1410mm</td><td>24.8°</td><td>817mm</td><td>17"~</td><td class="pulse">5.6</td><td class="pulse">2.2</td><td class="pulse">0.0</td></tr>
+            <tr><td>スピード400</td><td>1377mm</td><td>24.6°</td><td>790mm</td><td>17"~</td><td class="pulse">8.7</td><td class="pulse">2.1</td><td class="pulse">0.0</td></tr>
+            <tr><td>レオンチーノ250</td><td>1380mm</td><td>25°~</td><td>800mm</td><td>17"</td><td class="pulse">8.6</td><td class="pulse">2.1</td><td class="pulse">5.0</td></tr>
+            <tr><td>ブリット350</td><td>1390mm</td><td>24°~</td><td>805mm</td><td>19"~</td><td class="pulse">8.5</td><td class="pulse">1.7</td><td class="pulse">1.5</td></tr>
+            <tr><td>クラシック350</td><td>1390mm</td><td>24.0°</td><td>805mm</td><td>19"</td><td class="pulse">8.5</td><td class="pulse">1.7</td><td class="pulse">1.5</td></tr>
+            <tr><td>セロー250</td><td>1360mm</td><td>26.5°~</td><td>830mm</td><td>21"</td><td class="pulse">10.0</td><td class="pulse">1.7</td><td class="pulse">10.0</td></tr>
+            <tr><td>スクランブラー400X</td><td>1420mm</td><td>23.2°</td><td>835mm</td><td>19"</td><td class="pulse">6.7</td><td class="pulse">1.2</td><td class="pulse">7.7</td></tr>
+            <tr><td>スヴァルトピレン401</td><td>1368mm</td><td>24°~</td><td>820mm</td><td>17"</td><td class="pulse">8.8</td><td class="pulse">0.9</td><td class="pulse">6.2</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:13px">「~」は非公表のため近縁車種・同ジャンル典型値で推定。数値に出ないエルゴノミクス（ハンドル幅・視界・シート形状）は含まない。全データ・出典URLは <a href="data.md" target="_blank" rel="noopener">data.md</a>。</p>
     </div>
   </details>
 
   <h3>中型・全比較（1枚）</h3>
   <p>中型候補を1枚の表に。<strong>モデル名は各公式サイト</strong>へのリンク、<strong>エンジン音</strong>は排気音重視の動画（まず耳で比べてほしい）。
-  使い道（街乗り／遠乗り）とスニーカー適合は <strong>◎得意・○ふつう・△苦手</strong>、あくまで主観。鼓動感の高い順。
-  <strong>砂利路（オフロード性能）は主観ではなくスペック算出のマップ②、釣り適性としての一覧は「釣りに向いてるか？徹底比較」章</strong>を参照——このメイン表からは重複を避けるため外した。
+  <strong>鼓動感</strong>は乗り味の主観推定（高いほどドコドコ）、<strong>スニーカー</strong>は◎○△の主観。<strong>機動性・直進安定性・オフロードは0-10のスペック算出値</strong>（機動性＝最小回転半径、直進安定性＝WB・キャスター・重心、オフロード＝タイヤ・前輪・サス。詳細はマップ②とその算出根拠アコーディオン）。鼓動感の高い順。
   <strong>ジャンル</strong>は見た目の系統を6つに分類：<strong>欧州クラシック</strong>（英国調の空冷シングル系＝ブリット350・クラシック350・GB350・メグロS1）、<strong>米国クラシック</strong>（クルーザー体型のレトロ＝メテオ350のみ）、<strong>スクランブラー</strong>（前輪19インチ・ロードベースのオフ風）、<strong>エンデューロ</strong>（前輪21インチ・本格オフロード＝キャバレロ250・CRF250L・セロー250）、<strong>ネイキッド</strong>（フェアリング無しのモダン系）、<strong>クルーザー</strong>（低床・ロングホイールベースのモダン勢）。スクランブラーとエンデューロの違いは下のアコーディオンで解説。</p>
   <div class="tablewrap matrix" id="list">
     <table>
-      <thead><tr><th>モデル</th><th>ジャンル</th><th>鼓動感</th><th>エンジン音</th><th>街乗り</th><th>遠乗り</th><th>スニーカー</th></tr></thead>
+      <thead><tr><th>モデル</th><th>ジャンル</th><th>鼓動感</th><th>エンジン音</th><th>機動性</th><th>直進安定性</th><th>オフロード</th><th>スニーカー</th></tr></thead>
       <tbody>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350</a></span></td><td>欧州クラシック</td><td class="pulse">9</td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">クラシック350</a></span></td><td>欧州クラシック</td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">メテオ350</a></span></td><td>米国クラシック</td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">GB350</a></span></td><td>欧州クラシック</td><td class="pulse">7</td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="g">◎</td><td class="o">○</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#e8323c"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.goobike.com/maker-ducati/car-ducati_scrambler_sixty2/used/index.html" target="_blank" rel="noopener">スクランブラーSixty2</a></span></td><td>スクランブラー</td><td class="pulse">6</td><td><a href="https://www.youtube.com/results?search_query=ducati+scrambler+sixty2+exhaust+sound" target="_blank" rel="noopener">▶ 空冷Lツイン</a></td><td class="o">○</td><td class="g">◎</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">メグロS1</a></span></td><td>欧州クラシック</td><td class="pulse">6</td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="g">◎</td><td class="x">△</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener">スピード400</a></span></td><td>ネイキッド</td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="g">◎</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener">スクランブラー400X</a></span></td><td>スクランブラー</td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=aFx_qIl5Qak" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="g">◎</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#dfe4ee"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.bikebros.co.jp/catalog/38/999_2/" target="_blank" rel="noopener">スヴァルトピレン401</a></span></td><td>スクランブラー</td><td class="pulse">4</td><td><a href="https://www.youtube.com/results?search_query=husqvarna+svartpilen+401+exhaust+sound" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="g">◎</td><td class="g">◎</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">CL250</a></span></td><td>スクランブラー</td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="g">◎</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">レブル250</a></span></td><td>クルーザー</td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener">レオンチーノ250</a></span></td><td>スクランブラー</td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=s6Gxv7N3BDI" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#c9cf3a"><svg class="thumb"><use href="#moto"/></svg><a href="https://caballero.jp/scrambler" target="_blank" rel="noopener">キャバレロ250</a></span></td><td>エンデューロ</td><td class="pulse">3</td><td><a href="https://www.youtube.com/results?search_query=fantic+caballero+250+exhaust+sound" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CRF250L/" target="_blank" rel="noopener">CRF250L</a></span></td><td>エンデューロ</td><td class="pulse">2</td><td><a href="https://www.youtube.com/results?search_query=honda+crf250l+exhaust+sound" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="o">○</td><td class="x">△</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#3aa8c9"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.goobike.com/maker-yamaha/car-serow250/used/index.html" target="_blank" rel="noopener">セロー250</a></span></td><td>エンデューロ</td><td class="pulse">2</td><td><a href="https://www.youtube.com/results?search_query=yamaha+serow250+exhaust+sound" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="g">◎</td><td class="x">△</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener">ハーレーX350</a></span></td><td>ネイキッド</td><td class="pulse">2</td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td><td class="o">○</td><td class="o">○</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">エリミネーター400</a></span></td><td>クルーザー</td><td class="pulse">1</td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td><td class="x">△</td><td class="g">◎</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/bullet350/index.html" target="_blank" rel="noopener">ブリット350</a></span></td><td>欧州クラシック</td><td class="pulse">9</td><td><a href="https://www.youtube.com/watch?v=gKU1zwU1G9M" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="pulse">8.5</td><td class="pulse">1.7</td><td class="pulse">1.5</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/classic350/" target="_blank" rel="noopener">クラシック350</a></span></td><td>欧州クラシック</td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=gmIP3hbWOBQ" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="pulse">8.5</td><td class="pulse">1.7</td><td class="pulse">1.5</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.royalenfield.co.jp/lineup/meteor/" target="_blank" rel="noopener">メテオ350</a></span></td><td>米国クラシック</td><td class="pulse">8</td><td><a href="https://www.youtube.com/watch?v=Ori-fyfkc5c" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="pulse">3.6</td><td class="pulse">2.8</td><td class="pulse">1.5</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/GB350/" target="_blank" rel="noopener">GB350</a></span></td><td>欧州クラシック</td><td class="pulse">7</td><td><a href="https://www.youtube.com/watch?v=7HEAZAtWGbg" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="pulse">8.9</td><td class="pulse">4.6</td><td class="pulse">1.5</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#e8323c"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.goobike.com/maker-ducati/car-ducati_scrambler_sixty2/used/index.html" target="_blank" rel="noopener">スクランブラーSixty2</a></span></td><td>スクランブラー</td><td class="pulse">6</td><td><a href="https://www.youtube.com/results?search_query=ducati+scrambler+sixty2+exhaust+sound" target="_blank" rel="noopener">▶ 空冷Lツイン</a></td><td class="pulse">3.8</td><td class="pulse">3.5</td><td class="pulse">5.8</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/meguro/retro-classic/meguro-s1" target="_blank" rel="noopener">メグロS1</a></span></td><td>欧州クラシック</td><td class="pulse">6</td><td><a href="https://www.youtube.com/watch?v=xEDz1_f8FZ0" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="pulse">8.0</td><td class="pulse">5.2</td><td class="pulse">0.8</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/speed-400" target="_blank" rel="noopener">スピード400</a></span></td><td>ネイキッド</td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=PFn2a83iBfo" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">8.7</td><td class="pulse">2.1</td><td class="pulse">0.0</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.triumphmotorcycles.jp/bikes/classic/scrambler/scrambler-400-x" target="_blank" rel="noopener">スクランブラー400X</a></span></td><td>スクランブラー</td><td class="pulse">4</td><td><a href="https://www.youtube.com/watch?v=aFx_qIl5Qak" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">6.7</td><td class="pulse">1.2</td><td class="pulse">7.7</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#dfe4ee"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.bikebros.co.jp/catalog/38/999_2/" target="_blank" rel="noopener">スヴァルトピレン401</a></span></td><td>スクランブラー</td><td class="pulse">4</td><td><a href="https://www.youtube.com/results?search_query=husqvarna+svartpilen+401+exhaust+sound" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">8.8</td><td class="pulse">0.9</td><td class="pulse">6.2</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CL250/" target="_blank" rel="noopener">CL250</a></span></td><td>スクランブラー</td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=Y4wFmeFluLc" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">5.4</td><td class="pulse">5.5</td><td class="pulse">7.7</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/Rebel250/" target="_blank" rel="noopener">レブル250</a></span></td><td>クルーザー</td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=b_txCP2bztk" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">3.0</td><td class="pulse">8.4</td><td class="pulse">0.8</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.plotonline.com/benellimotorcycle/lineup_leoncino_250.html" target="_blank" rel="noopener">レオンチーノ250</a></span></td><td>スクランブラー</td><td class="pulse">3</td><td><a href="https://www.youtube.com/watch?v=s6Gxv7N3BDI" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">8.6</td><td class="pulse">2.1</td><td class="pulse">5.0</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#c9cf3a"><svg class="thumb"><use href="#moto"/></svg><a href="https://caballero.jp/scrambler" target="_blank" rel="noopener">キャバレロ250</a></span></td><td>エンデューロ</td><td class="pulse">3</td><td><a href="https://www.youtube.com/results?search_query=fantic+caballero+250+exhaust+sound" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">9.0</td><td class="pulse">2.8</td><td class="pulse">7.7</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.honda.co.jp/CRF250L/" target="_blank" rel="noopener">CRF250L</a></span></td><td>エンデューロ</td><td class="pulse">2</td><td><a href="https://www.youtube.com/results?search_query=honda+crf250l+exhaust+sound" target="_blank" rel="noopener">▶ 水冷シングル</a></td><td class="pulse">8.9</td><td class="pulse">3.6</td><td class="pulse">10.0</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#3aa8c9"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.goobike.com/maker-yamaha/car-serow250/used/index.html" target="_blank" rel="noopener">セロー250</a></span></td><td>エンデューロ</td><td class="pulse">2</td><td><a href="https://www.youtube.com/results?search_query=yamaha+serow250+exhaust+sound" target="_blank" rel="noopener">▶ 空冷シングル</a></td><td class="pulse">10.0</td><td class="pulse">1.7</td><td class="pulse">10.0</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener">ハーレーX350</a></span></td><td>ネイキッド</td><td class="pulse">2</td><td><a href="https://www.youtube.com/watch?v=1IL37WLPqNc" target="_blank" rel="noopener">▶ 水冷2気筒</a></td><td class="pulse">5.6</td><td class="pulse">2.2</td><td class="pulse">0.0</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/eliminator/street-cruiser/eliminator" target="_blank" rel="noopener">エリミネーター400</a></span></td><td>クルーザー</td><td class="pulse">1</td><td><a href="https://www.youtube.com/watch?v=TKQforQ9Hug" target="_blank" rel="noopener">▶ 水冷2気筒</a></td><td class="pulse">0.0</td><td class="pulse">9.0</td><td class="pulse">0.8</td><td class="g">◎</td></tr>
       </tbody>
     </table>
   </div>
   <div class="note">
-    <strong>街乗り：</strong>軽くてアップライトな <strong>GB350・メグロS1・CL250</strong> が得意。低く長いクルーザー（エリミネーター400）は交差点や押し引きで取り回しがしんどい。<br>
-    <strong>遠乗り：</strong>排気量の大きい400cc勢（スピード400・スクランブラー400X・スヴァルトピレン401・Sixty2・エリミネーター400）の巡航が楽。<br>
+    <strong>機動性が高い＝日本の一般道で扱いやすい：</strong>GB350・スヴァルトピレン401・スピード400・レオンチーノ250・キャバレロ250 など。逆に<strong>直進安定性が高い＝直線・高速で楽</strong>だが小回りは苦手なクルーザー（エリミネーター400・レブル250）。<strong>ネイキッド系はその中間でバランス型</strong>。<br>
     <strong>スニーカー適合：</strong>スクランブラー／モダンストリート系（スクランブラー400X・CL250・スピード400・ハーレーX350）や、<strong>現行のモダンクルーザー（レブル250・エリミネーター400）はカジュアルでスニーカーが似合う</strong>。逆に <strong>英国クラシック系（ブリット350・クラシック350）と、レトロ調のメテオ350は、スニーカーよりブーツ／レザーが似合う</strong>（メテオが一番スニーカーから遠い）。
   </div>
 
@@ -423,34 +453,34 @@
   </details>
 
   <h2>釣りに向いてるか？<span class="ja">徹底比較</span></h2>
-  <p>ここまでの評価軸のうち、<strong>海の岸壁釣りに直結する3点（積載・オフロード性能・取り回し力）を1つの表に集約</strong>する。
-  オフロード性能・取り回し力はマップ②のスペック算出スコア（0-10）をそのまま引用。<strong>積載</strong>は新規に主観評価——リアキャリア・パニアの付けやすさ、シート後端の形状（フラットだとロッド・クーラーを縛りやすい）、純正／社外アクセサリーの充実度から◎○△で判定（これは公表スペックに出ない要素なので主観であることを明記する）。</p>
+  <p>ここまでの評価軸のうち、<strong>海の岸壁釣りに直結する3点（積載・オフロード性能・機動性）を1つの表に集約</strong>する。
+  オフロード性能（砂利道）と機動性（岸壁での狭所Uターン＝最小回転半径ベース）はマップ②のスペック算出スコア（0-10）をそのまま引用。<strong>積載</strong>は新規に主観評価——リアキャリア・パニアの付けやすさ、シート後端の形状（フラットだとロッド・クーラーを縛りやすい）、純正／社外アクセサリーの充実度から◎○△で判定（これは公表スペックに出ない要素なので主観であることを明記する）。オフロード性能の高い順。</p>
   <div class="tablewrap matrix">
     <table>
-      <thead><tr><th>モデル</th><th>ジャンル</th><th>オフロード性能</th><th>取り回し力</th><th>積載</th></tr></thead>
+      <thead><tr><th>モデル</th><th>ジャンル</th><th>オフロード性能</th><th>機動性</th><th>積載</th></tr></thead>
       <tbody>
-        <tr><td><span class="model" style="color:#3aa8c9"><svg class="thumb"><use href="#moto"/></svg>セロー250</span></td><td>エンデューロ</td><td class="pulse">10.0</td><td class="pulse">6.4</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>CRF250L</span></td><td>エンデューロ</td><td class="pulse">10.0</td><td class="pulse">4.6</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg>スクランブラー400X</span></td><td>スクランブラー</td><td class="pulse">7.7</td><td class="pulse">4.7</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>CL250</span></td><td>スクランブラー</td><td class="pulse">7.7</td><td class="pulse">3.4</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#c9cf3a"><svg class="thumb"><use href="#moto"/></svg>キャバレロ250</span></td><td>エンデューロ</td><td class="pulse">7.7</td><td class="pulse">5.7</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#dfe4ee"><svg class="thumb"><use href="#moto"/></svg>スヴァルトピレン401</span></td><td>スクランブラー</td><td class="pulse">6.2</td><td class="pulse">6.3</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#e8323c"><svg class="thumb"><use href="#moto"/></svg>スクランブラーSixty2</span></td><td>スクランブラー</td><td class="pulse">5.8</td><td class="pulse">4.4</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg>レオンチーノ250</span></td><td>スクランブラー</td><td class="pulse">5.0</td><td class="pulse">6.0</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg>メテオ350</span></td><td>米国クラシック</td><td class="pulse">1.5</td><td class="pulse">5.4</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg>ブリット350</span></td><td>欧州クラシック</td><td class="pulse">1.5</td><td class="pulse">4.8</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg>クラシック350</span></td><td>欧州クラシック</td><td class="pulse">1.5</td><td class="pulse">4.8</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>GB350</span></td><td>欧州クラシック</td><td class="pulse">1.5</td><td class="pulse">3.4</td><td class="g">◎</td></tr>
-        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg>メグロS1</span></td><td>欧州クラシック</td><td class="pulse">0.8</td><td class="pulse">6.5</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>レブル250</span></td><td>クルーザー</td><td class="pulse">0.8</td><td class="pulse">4.7</td><td class="o">○</td></tr>
-        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg>エリミネーター400</span></td><td>クルーザー</td><td class="pulse">0.8</td><td class="pulse">2.5</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg>スピード400</span></td><td>ネイキッド</td><td class="pulse">0.0</td><td class="pulse">6.0</td><td class="x">△</td></tr>
-        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg>ハーレーX350</span></td><td>ネイキッド</td><td class="pulse">0.0</td><td class="pulse">3.9</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#3aa8c9"><svg class="thumb"><use href="#moto"/></svg>セロー250</span></td><td>エンデューロ</td><td class="pulse">10.0</td><td class="pulse">10.0</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>CRF250L</span></td><td>エンデューロ</td><td class="pulse">10.0</td><td class="pulse">8.9</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg>スクランブラー400X</span></td><td>スクランブラー</td><td class="pulse">7.7</td><td class="pulse">6.7</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>CL250</span></td><td>スクランブラー</td><td class="pulse">7.7</td><td class="pulse">5.4</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#c9cf3a"><svg class="thumb"><use href="#moto"/></svg>キャバレロ250</span></td><td>エンデューロ</td><td class="pulse">7.7</td><td class="pulse">9.0</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#dfe4ee"><svg class="thumb"><use href="#moto"/></svg>スヴァルトピレン401</span></td><td>スクランブラー</td><td class="pulse">6.2</td><td class="pulse">8.8</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#e8323c"><svg class="thumb"><use href="#moto"/></svg>スクランブラーSixty2</span></td><td>スクランブラー</td><td class="pulse">5.8</td><td class="pulse">3.8</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#2fb3ab"><svg class="thumb"><use href="#moto"/></svg>レオンチーノ250</span></td><td>スクランブラー</td><td class="pulse">5.0</td><td class="pulse">8.6</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg>メテオ350</span></td><td>米国クラシック</td><td class="pulse">1.5</td><td class="pulse">3.6</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg>ブリット350</span></td><td>欧州クラシック</td><td class="pulse">1.5</td><td class="pulse">8.5</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#c8453a"><svg class="thumb"><use href="#moto"/></svg>クラシック350</span></td><td>欧州クラシック</td><td class="pulse">1.5</td><td class="pulse">8.5</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>GB350</span></td><td>欧州クラシック</td><td class="pulse">1.5</td><td class="pulse">8.9</td><td class="g">◎</td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg>メグロS1</span></td><td>欧州クラシック</td><td class="pulse">0.8</td><td class="pulse">8.0</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#4a86e8"><svg class="thumb"><use href="#moto"/></svg>レブル250</span></td><td>クルーザー</td><td class="pulse">0.8</td><td class="pulse">3.0</td><td class="o">○</td></tr>
+        <tr><td><span class="model" style="color:#5aa84a"><svg class="thumb"><use href="#moto"/></svg>エリミネーター400</span></td><td>クルーザー</td><td class="pulse">0.8</td><td class="pulse">0.0</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#a568d6"><svg class="thumb"><use href="#moto"/></svg>スピード400</span></td><td>ネイキッド</td><td class="pulse">0.0</td><td class="pulse">8.7</td><td class="x">△</td></tr>
+        <tr><td><span class="model" style="color:#e0a53a"><svg class="thumb"><use href="#moto"/></svg>ハーレーX350</span></td><td>ネイキッド</td><td class="pulse">0.0</td><td class="pulse">5.6</td><td class="x">△</td></tr>
       </tbody>
     </table>
   </div>
   <div class="note">
-    <strong>総合すると：</strong>オフロード性能・取り回し力・積載のバランスが一番良いのは<strong>スクランブラー400X</strong>（7.7／4.7／◎）。<strong>CL250</strong>も同じオフロード性能7.7・積載◎で、取り回し力の数値は控えめでも街乗り中心なら実用最強格（前のアコーディオンの通り、これは幾何学指標には出ないアップライト姿勢の恩恵）。<strong>CRF250L・セロー250</strong>はオフロード性能満点だが積載は工夫が要り、性能が「釣りには過剰」な面もある。<strong>メグロS1</strong>は取り回し力トップ級（6.5）だが街乗り専用車でオフロード性能は最下位クラス（0.8）——軽快さと悪路対応はまったく別物という好例。逆に<strong>スピード400・ハーレーX350</strong>はオフロード性能0.0で、岸壁までの砂利道次第では気を使う場面がありそう。
+    <strong>総合すると：</strong>オフロード性能・機動性・積載の3拍子がそろうのは<strong>スクランブラー400X</strong>（オフ7.7／機動6.7／積載◎）と<strong>CL250</strong>（7.7／5.4／◎）——釣り用途の総合力ではこの2台が本命。<strong>キャバレロ250</strong>はオフ7.7・機動9.0と走行性能は最強クラスだが積載△。<strong>CRF250L・セロー250</strong>はオフロード満点＋機動性も高いが積載△で、性能が「岸壁釣りには過剰」な面もある。逆に<strong>スピード400・ハーレーX350</strong>はオフロード0.0で、岸壁までの砂利道次第では気を使う。<strong>エリミネーター400</strong>は機動性0.0（3.05mの大回り）＋オフ0.8で、釣り用途では最も不利。
   </div>
 
   <h3>現時点の本命（中型）</h3>
