@@ -117,6 +117,20 @@
   details.acc>summary:hover{background:var(--bg2)}
   details.acc .body{padding:2px 20px 10px}
   details.acc .body>*:first-child{margin-top:6px}
+  /* section-level accordions (collapse whole sections for mobile) */
+  details.sec{margin:0 0 2px}
+  details.sec>summary{cursor:pointer;list-style:none;position:relative;
+    font-size:clamp(19px,4vw,24px);font-weight:800;color:var(--text);
+    padding:30px 44px 10px 0;margin-bottom:6px;border-bottom:2px solid var(--line)}
+  details.sec>summary::-webkit-details-marker{display:none}
+  details.sec>summary::after{content:"＋";position:absolute;right:8px;bottom:12px;color:var(--accent);font-weight:400;font-size:22px}
+  details.sec[open]>summary::after{content:"−"}
+  details.sec>summary .ja{color:var(--accent2)}
+  details.sec>summary:hover{color:var(--accent2)}
+  details.sec>summary:hover .ja{color:var(--accent)}
+  details.sec .secbody{padding:2px 0 10px}
+  details.sec .secbody>*:first-child{margin-top:14px}
+  details.sec .secbody h3:first-child{margin-top:18px}
   /* hover image float */
   #imgfloat{position:fixed;z-index:50;width:250px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:8px;box-shadow:0 12px 34px rgba(0,0,0,.55);pointer-events:none;opacity:0;transition:opacity .12s;font-size:12px}
   #imgfloat.on{opacity:1}
@@ -133,7 +147,7 @@
     <span class="eyebrow">個人メモ / bike garage</span>
     <h1>ガレージ計画：中型1台 ＋ 原付1台<br>レトロ度 × 鼓動感 × 使い道で選ぶ</h1>
     <p class="lede">中型バイク1台と原付（50cc）1台、役割の違う2台を選ぶ計画。見た目のレトロ度と乗り味の鼓動感に、
-    「街乗り／遠乗り／砂利路」の使い道、そして「スニーカーに合う」ファッション感を重ねて整理した、友人向けの1枚メモ。</p>
+    走行性能（機動性・直進安定性・オフロード）と「スニーカーに合う」ファッション感、そして海の岸壁釣りへの適性を重ねて整理した、友人向けの1枚メモ。スペック算出値は公表諸元ベース。</p>
   </div>
 </header>
 
@@ -142,8 +156,11 @@
   <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="moto" viewBox="0 0 48 30"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="21" r="6.5"/><circle cx="37" cy="21" r="6.5"/><path d="M11 21 L18 21 L24 13 L31 13"/><path d="M24 13 L27.5 21"/><path d="M31 13 L37 21"/><path d="M28.5 12 L34 10.5"/></g></symbol></svg>
 
   <div class="note"><strong>AI（Claude）が構成・執筆</strong></div>
+  <p class="muted" style="font-size:13px;margin-top:10px">各セクションは見出しをタップで開閉できます（モバイル向けに折りたたみ式）。<strong>まずは「バイク選び」と「現時点の本命」から。</strong></p>
 
-  <h2>ヘルメット：<span class="ja">本命は Arai / SHOEI</span></h2>
+
+  <details class="sec"><summary>ヘルメット：<span class="ja">本命は Arai / SHOEI</span></summary>
+  <div class="secbody">
   <p>ヘルメットは <strong>Arai・SHOEI が好み</strong>（かぶり心地・品質・所有感）。特に今回のレトロ／クラシック系バイクには、ネオクラシックの
   <strong>SHOEI Glamster・Arai Rapide-Neo</strong> がよく似合う。スクランブラー系にはバイザー付きの <strong>Arai XD</strong>。
   5万円前後・コスパ重視なら日本製の <strong>OGK Kabuto</strong>。モデル名は公式サイトへのリンク。</p>
@@ -177,8 +194,10 @@
     <strong>選び方：</strong>好み＆品質なら <strong>Arai / SHOEI</strong>——レトロ車には Glamster・Rapide-Neo、スクランブラーには Arai XD、ロング快適重視は GT-Air 3。予算・コスパ最優先なら <strong>OGK Kabuto</strong>（機能は必要十分）。<br>
     <strong>どれもサイズは実店舗で試着してから。</strong>頭の形との相性（一般に Arai は丸め、SHOEI はやや面長と言われる）があるので、試着で合うほうを選ぶのが確実。
   </div>
+  </div></details>
 
-  <h2>バイク選び：<span class="ja">2台の役割分担</span></h2>
+  <details class="sec" open><summary>バイク選び：<span class="ja">2台の役割分担（なぜ2台か）</span></summary>
+  <div class="secbody">
   <p class="muted" style="margin-top:0">ここからバイク本体の検討。</p>
   <ul>
     <li>結論から言うと <strong>中型1台 ＋ 原付（50cc）1台</strong> の計2台。<strong>近場・普段の足は原付、遠出は中型</strong>という役割分担。</li>
@@ -201,8 +220,10 @@
       <p>見た目のスタイルと使い勝手を求める。乗り味はスムーズでOK。</p>
     </div>
   </div>
+  </div></details>
 
-  <h2>中型マップ：<span class="ja">レトロ度 × 鼓動感</span></h2>
+  <details class="sec"><summary>マップ①：<span class="ja">レトロ度 × 鼓動感</span></summary>
+  <div class="secbody">
   <p>中型候補を「見た目のレトロ度」と「エンジンの鼓動感」、<strong>それぞれ独立した0-10の2軸</strong>でマッピング。
   以前は横軸を「レトロ⇔おしゃれストリート」という1本の対立軸にしていたが、レトロ度と鼓動感は本来別物（例：メテオ350は見た目も乗り味もレトロ寄り、CL250は見た目はレトロ寄りでも乗り味はモダン）なので、素直に2軸に分けた。
   どちらも試乗レビューやオーナーの声からの主観推定。<strong>走行性能（機動性・直進安定性・オフロード）はスペック算出のマップ②、釣り適性は「釣りに向いてるか？徹底比較」章</strong>で見る。</p>
@@ -255,8 +276,10 @@
       <a href="https://www.goobike.com/maker-yamaha/car-serow250/used/index.html" target="_blank" rel="noopener"><circle cx="580" cy="448" r="9" fill="#3aa8c9"/><text x="580" y="468" text-anchor="middle" font-size="14" fill="#f0f2f8" font-weight="600">セロー250</text></a>
     </svg>
   </div>
+  </div></details>
 
-  <h2>中型マップ②：<span class="ja">直進安定性 × オフロード性能</span></h2>
+  <details class="sec"><summary>マップ②：<span class="ja">走行性能（機動性・直進安定性・オフロード）</span></summary>
+  <div class="secbody">
   <p>2枚目は「どんな道に向くか」のマップ。横軸に<strong>直進安定性</strong>（まっすぐ・高速が安定＝ツーリング向き）、縦軸に<strong>オフロード性能</strong>（砂利・悪路）。どちらも<strong>公表スペックからの算出値</strong>で、主観ではない（式は下の「算出根拠」）。
   この2軸で読むと <strong>「オン⇔ネイキッド⇔オフ」の使い分け</strong> がそのまま見える——<strong>右下＝直進安定に振ったクルーザー</strong>（低重心＋長ホイールベース＋寝たフォーク。北海道・高速の直線向き）、<strong>上＝悪路に振ったオフ系</strong>（釣り場アクセス向き）、<strong>左下の低ストローク勢＝軽くて機動性の高いネイキッド系</strong>（日本の一般道でバランスが良い）。ネイキッドの強みである<strong>機動性（小回り）そのものは、この軸には出ないので下の別表</strong>で見る。</p>
 
@@ -375,8 +398,10 @@
       <p class="muted" style="font-size:13px">「~」は非公表のため近縁車種・同ジャンル典型値で推定。数値に出ないエルゴノミクス（ハンドル幅・視界・シート形状）は含まない。全データ・出典URLは <a href="data.md" target="_blank" rel="noopener">data.md</a>。</p>
     </div>
   </details>
+  </div></details>
 
-  <h3>中型・全比較（1枚）</h3>
+  <details class="sec"><summary>中型・全比較（1枚の表）</summary>
+  <div class="secbody">
   <p>中型候補を1枚の表に。<strong>モデル名は各公式サイト</strong>へのリンク、<strong>エンジン音</strong>は排気音重視の動画（まず耳で比べてほしい）。
   <strong>鼓動感</strong>は乗り味の主観推定（高いほどドコドコ）、<strong>スニーカー</strong>は◎○△の主観。<strong>機動性・直進安定性・オフロードは0-10のスペック算出値</strong>（機動性＝最小回転半径、直進安定性＝WB・キャスター・重心、オフロード＝タイヤ・前輪・サス。詳細はマップ②とその算出根拠アコーディオン）。鼓動感の高い順。
   <strong>ジャンル</strong>は見た目の系統を6つに分類：<strong>欧州クラシック</strong>（英国調の空冷シングル系＝ブリット350・クラシック350・GB350・メグロS1）、<strong>米国クラシック</strong>（クルーザー体型のレトロ＝メテオ350のみ）、<strong>スクランブラー</strong>（前輪19インチ・ロードベースのオフ風）、<strong>エンデューロ</strong>（前輪21インチ・本格オフロード＝キャバレロ250・CRF250L・セロー250）、<strong>ネイキッド</strong>（フェアリング無しのモダン系）、<strong>クルーザー</strong>（低床・ロングホイールベースのモダン勢）。スクランブラーとエンデューロの違いは下のアコーディオンで解説。</p>
@@ -408,8 +433,10 @@
     <strong>機動性が高い＝日本の一般道で扱いやすい：</strong>GB350・スヴァルトピレン401・スピード400・レオンチーノ250・キャバレロ250 など。逆に<strong>直進安定性が高い＝直線・高速で楽</strong>だが小回りは苦手なクルーザー（エリミネーター400・レブル250）。<strong>ネイキッド系はその中間でバランス型</strong>。<br>
     <strong>スニーカー適合：</strong>スクランブラー／モダンストリート系（スクランブラー400X・CL250・スピード400・ハーレーX350）や、<strong>現行のモダンクルーザー（レブル250・エリミネーター400）はカジュアルでスニーカーが似合う</strong>。逆に <strong>英国クラシック系（ブリット350・クラシック350）と、レトロ調のメテオ350は、スニーカーよりブーツ／レザーが似合う</strong>（メテオが一番スニーカーから遠い）。
   </div>
+  </div></details>
 
-  <h3>オフロード系深掘り：スクランブラー・エンデューロ、新しめの中古まで含めて</h3>
+  <details class="sec"><summary>オフロード系深掘り：<span class="ja">スクランブラー・エンデューロ</span></summary>
+  <div class="secbody">
   <p>スクランブラー・エンデューロ枠を厚めに検討する。国産だけでなく<strong>ドゥカティをはじめとした外車も候補に入れる</strong>。
   <strong>現実的な範囲＝普通二輪免許（〜400cc）で乗れて、日本で普通に買える</strong>車種に絞り、
   新車だけでなく<strong>年式が新しく走行距離の少ない中古</strong>も視野に入れる。相場は2026年時点の店頭価格の目安（実際は要現地確認）。前輪サイズはオフロード性能の主要因（詳しくは下のアコーディオン）。</p>
@@ -451,8 +478,10 @@
       <p>つまり、釣りだけが目的ならスクランブラーで機能十分。エンデューロを選ぶ理由は「もっと本格的な林道・悪路も走ってみたい」という、釣り以外の動機がある場合、という整理になる。</p>
     </div>
   </details>
+  </div></details>
 
-  <h2>釣りに向いてるか？<span class="ja">徹底比較</span></h2>
+  <details class="sec"><summary>釣りに向いてるか？<span class="ja">徹底比較</span></summary>
+  <div class="secbody">
   <p>ここまでの評価軸のうち、<strong>海の岸壁釣りに直結する3点（積載・オフロード性能・機動性）を1つの表に集約</strong>する。
   オフロード性能（砂利道）と機動性（岸壁での狭所Uターン＝最小回転半径ベース）はマップ②のスペック算出スコア（0-10）をそのまま引用。<strong>積載</strong>は新規に主観評価——リアキャリア・パニアの付けやすさ、シート後端の形状（フラットだとロッド・クーラーを縛りやすい）、純正／社外アクセサリーの充実度から◎○△で判定（これは公表スペックに出ない要素なので主観であることを明記する）。オフロード性能の高い順。</p>
   <div class="tablewrap matrix">
@@ -482,8 +511,10 @@
   <div class="note">
     <strong>総合すると：</strong>オフロード性能・機動性・積載の3拍子がそろうのは<strong>スクランブラー400X</strong>（オフ7.7／機動6.7／積載◎）と<strong>CL250</strong>（7.7／5.4／◎）——釣り用途の総合力ではこの2台が本命。<strong>キャバレロ250</strong>はオフ7.7・機動9.0と走行性能は最強クラスだが積載△。<strong>CRF250L・セロー250</strong>はオフロード満点＋機動性も高いが積載△で、性能が「岸壁釣りには過剰」な面もある。逆に<strong>スピード400・ハーレーX350</strong>はオフロード0.0で、岸壁までの砂利道次第では気を使う。<strong>エリミネーター400</strong>は機動性0.0（3.05mの大回り）＋オフ0.8で、釣り用途では最も不利。
   </div>
+  </div></details>
 
-  <h3>現時点の本命（中型）</h3>
+  <details class="sec" open><summary>現時点の本命（中型）</summary>
+  <div class="secbody">
   <div class="picks">
     <div class="pick">
       <div class="tag">カジュアル系</div>
@@ -501,8 +532,10 @@
       <p>ドコドコの空冷シングル。</p>
     </div>
   </div>
+  </div></details>
 
-  <details class="acc">
+  <details class="sec"><summary>用語・深掘り解説（鼓動感とは・ジャンル別の向き ほか）</summary>
+  <div class="secbody">  <details class="acc">
     <summary>鼓動感って何？ ── エンジン形式・音との相関</summary>
     <div class="body">
       <p>バイクに詳しくない人に「鼓動感」を説明するのは難しい。一番手っ取り早いのは、<strong>エンジン音を聴いてもらうこと</strong>。エンジン音・エンジン形式・鼓動感は相関が高い。</p>
@@ -573,8 +606,10 @@
       </ul>
     </div>
   </details>
+  </div></details>
 
-  <h2>原付（50cc）の1台：<span class="ja">もう一台の相棒</span></h2>
+  <details class="sec"><summary>原付（50cc）の1台：<span class="ja">もう一台の相棒</span></summary>
+  <div class="secbody">
   <p>2台のうち片方は原付。スタンスは「<strong>原付免許で乗れれば何でもいい</strong>」。ざっくり
   <strong>レトロスクーター系／カブ系／ワイルドなアメリカン系</strong>の3グループで、これも使い道と見た目で選ぶ。
   スニーカー適合は中型と同じ考え方——<strong>ワイルドなアメリカン（Jazz・マグナ50）はスニーカーより武骨なブーツ寄り</strong>。
@@ -615,6 +650,7 @@
       </div>
     </div>
   </details>
+  </div></details>
 
   <footer>
     <p>個人的なバイク購入計画メモ。スペック・価格・現行/生産状況は調査時点のもので、正確性は各公式サイトで要確認。鼓動感・使い道・スニーカー適合の評価はすべて主観です。</p>
