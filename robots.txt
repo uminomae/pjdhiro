@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /pjdhiro/garage/
+Disallow: /garage/
 Allow: /
 
 Sitemap: https://uminomae.github.io/pjdhiro/sitemap.xml

@@ -118,6 +118,11 @@ footer:
 # デフォルト値設定
 # ---------------------------------------------------
 defaults:
+  # garage/ は検索エンジンに載せない（noindex + サイトマップ除外）
+  - scope:
+      path: "garage"
+    values:
+      sitemap: false
   # BLOG投稿 (_posts)
   - scope:
       path: "" # 全ての投稿に適用
