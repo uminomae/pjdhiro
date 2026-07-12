@@ -55,6 +55,10 @@ exclude: # 除外するフォルダ
   - _posts/old/
   - _posts/edit/
   - minimal-mistakes-theme/
+  - vendor/          # CI(Actions)で bundler-cache が置く gem を Jekyll がスキャンしないように
+  - .bundle/
+  - Gemfile
+  - Gemfile.lock
 # ---------------------------------------------------
 # SNS アカウント
 # ---------------------------------------------------
