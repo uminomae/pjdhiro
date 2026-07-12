@@ -932,7 +932,7 @@
   </details>
   </div></details>
 
-  <details class="sec"><summary>釣りで選ぶ② ― <span class="ja">スクランブラー・エンデューロ深掘り</span></summary>
+  <details class="sec"><summary data-sub="オフロード性能">釣りで選ぶ② ― <span class="ja">スクランブラー・エンデューロ深掘り</span></summary>
   <div class="secbody">
   <p>スクランブラー・エンデューロ枠を厚めに検討する。国産だけでなく<strong>ドゥカティをはじめとした外車も候補に入れる</strong>。
   <strong>現実的な範囲＝普通二輪免許（〜400cc）で乗れる</strong>車種に絞った。前輪サイズはオフロード性能の主要因（詳しくは下のアコーディオン）。</p>
@@ -1183,6 +1183,7 @@
     var sum=sec.querySelector(':scope>summary');
     var full=sum? sum.textContent.replace(/\s+/g,' ').trim() : ('章'+(i+1));
     var p=tocParts(full);
+    if(sum && sum.dataset.sub){ p.sub=sum.dataset.sub; } /* 見出しに無い語をサブに使いたい章は data-sub で上書き */
     var li=document.createElement('li');
     var a=document.createElement('a'); a.href='#'+id; a.title=full; a.dataset.target=id;
     var mEl=document.createElement('span'); mEl.className='toc-main'; mEl.textContent=p.main; a.appendChild(mEl);
