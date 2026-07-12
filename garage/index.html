@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="referrer" content="no-referrer">
@@ -792,11 +795,16 @@
   <footer>
     <p><strong>※ このページは検索エンジンには掲載されません。</strong>個人的なメモとして、<code>noindex</code> 指定・<code>robots.txt</code> でのクロール拒否・サイトマップからの除外を設定しています。</p>
     <p>個人的なバイク購入計画メモ。スペック・価格・現行/生産状況は調査時点のもので、正確性は各公式サイトで要確認。鼓動感・使い道・スニーカー適合の評価はすべて主観です。</p>
+    <p class="muted" style="font-size:12px">この版の取得時刻（サーバー最終更新）：<span id="pagever">—</span>。<strong>内容が古いままの場合はブラウザのキャッシュです</strong>——強制再読み込み（スマホは「更新」長押し／プライベートタブ）か、URL末尾に <code>?v=</code>＋任意の数字を付けて開くと最新版が取得できます。</p>
   </footer>
 
 </div>
 
 <script>
+(function(){
+  var pv=document.getElementById('pagever');
+  if(pv){ try{ pv.textContent=document.lastModified; }catch(e){ pv.textContent='取得不可'; } }
+})();
 (function(){
   var f=document.createElement('div'); f.id='imgfloat';
   f.innerHTML='<img alt=""><div class="cap"></div><div class="sub"></div>';
