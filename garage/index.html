@@ -190,6 +190,9 @@
   #toc a:hover{background:var(--bg2)}
   #toc a.active{background:var(--bg2);color:var(--accent2);box-shadow:inset 3px 0 0 var(--accent)}
   #toc a.active::before{color:var(--accent)}
+  #toc .toc-main{display:inline}
+  #toc .toc-sub2{display:block;font-size:11px;font-weight:400;color:var(--muted);margin:1px 0 0 1.4em;line-height:1.35}
+  #toc a.active .toc-sub2{color:var(--accent2)}
   #toc li.toc-sub{counter-increment:none}
   #toc li.toc-sub a{padding:7px 10px 7px 22px;font-size:13px;color:var(--muted)}
   #toc li.toc-sub a::before{content:"📷";margin-right:7px;font-weight:400}
@@ -1166,13 +1169,24 @@
   var xbtn=document.createElement('button'); xbtn.className='toc-x'; xbtn.setAttribute('aria-label','閉じる'); xbtn.innerHTML='×';
   head.appendChild(xbtn); nav.appendChild(head);
   var ol=document.createElement('ol'); nav.appendChild(ol);
-  function shorten(t){ return t.split(/[―—–：:]/)[0].trim() || t; }
+  /* 見出しを「主タイトル」＋「短いサブタイトル」に分解する */
+  function tocParts(t){
+    var m=t.split(/[―—–：:]/);
+    var main=(m[0]||t).trim();
+    var sub=m.slice(1).join(' ').replace(/（[^）]*）/g,'').replace(/\([^)]*\)/g,'').trim();
+    if(sub){ if(sub.length>7 && /[・/／]/.test(sub)){ sub=sub.split(/[・/／]/)[0].trim(); }
+             else if(sub.length>12){ sub=sub.slice(0,12)+'…'; } }
+    return {main:main,sub:sub};
+  }
   secs.forEach(function(sec,i){
     var id=sec.id||('sec-'+(i+1)); sec.id=id;
     var sum=sec.querySelector(':scope>summary');
     var full=sum? sum.textContent.replace(/\s+/g,' ').trim() : ('章'+(i+1));
+    var p=tocParts(full);
     var li=document.createElement('li');
-    var a=document.createElement('a'); a.href='#'+id; a.textContent=shorten(full); a.title=full; a.dataset.target=id;
+    var a=document.createElement('a'); a.href='#'+id; a.title=full; a.dataset.target=id;
+    var mEl=document.createElement('span'); mEl.className='toc-main'; mEl.textContent=p.main; a.appendChild(mEl);
+    if(p.sub){ var sEl=document.createElement('span'); sEl.className='toc-sub2'; sEl.textContent=p.sub; a.appendChild(sEl); }
     li.appendChild(a); ol.appendChild(li);
     a.addEventListener('click',function(e){
       e.preventDefault();
