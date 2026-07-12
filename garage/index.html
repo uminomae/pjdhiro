@@ -155,6 +155,35 @@
   #imgfloat .cap{margin-top:7px;color:var(--text);font-weight:700}
   #imgfloat .sub{color:var(--muted);font-size:11px;margin-top:2px;word-break:break-all}
   footer{border-top:1px solid var(--line);margin-top:64px;padding-top:22px;color:var(--muted);font-size:13px}
+  /* ===== 目次（TOC）: PC=常設サイドバー / モバイル=開閉メニュー ===== */
+  #toc-btn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#160f05;
+    border:none;border-radius:99px;padding:12px 18px;font-weight:800;font-size:14px;font-family:inherit;
+    box-shadow:0 4px 16px rgba(0,0,0,.45);cursor:pointer}
+  #toc-btn:active{transform:scale(.96)}
+  #toc-bd{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:59;opacity:0;visibility:hidden;transition:opacity .2s}
+  body.toc-open #toc-bd{opacity:1;visibility:visible}
+  #toc{position:fixed;top:0;right:0;height:100%;width:min(84vw,330px);z-index:61;
+    background:var(--card);border-left:1px solid var(--line);padding:20px 14px;overflow-y:auto;
+    transform:translateX(105%);transition:transform .26s ease;box-shadow:-8px 0 24px rgba(0,0,0,.4)}
+  body.toc-open #toc{transform:translateX(0)}
+  #toc .toc-h{display:flex;justify-content:space-between;align-items:center;
+    font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:800;margin:0 0 10px;padding:0 8px}
+  #toc .toc-x{background:none;border:none;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;padding:0 4px}
+  #toc ol{list-style:none;margin:0;padding:0;counter-reset:toc}
+  #toc li{counter-increment:toc}
+  #toc a{display:block;padding:10px 10px;border-radius:8px;color:var(--text);border:none;
+    font-size:14px;line-height:1.45}
+  #toc a::before{content:counter(toc)".";color:var(--muted);font-weight:800;margin-right:8px}
+  #toc a:hover{background:var(--bg2)}
+  #toc a.active{background:var(--bg2);color:var(--accent2);box-shadow:inset 3px 0 0 var(--accent)}
+  #toc a.active::before{color:var(--accent)}
+  @media(min-width:1260px){
+    /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
+    #toc{left:20px;right:auto;top:92px;height:auto;max-height:calc(100vh - 116px);width:206px;
+      transform:none;box-shadow:none;border:1px solid var(--line);border-radius:12px}
+    #toc .toc-x{display:none}
+    #toc-btn,#toc-bd{display:none}
+  }
 </style>
 </head>
 <body>
@@ -831,6 +860,55 @@
     a.addEventListener('mousemove',function(){place(a);});
     a.addEventListener('mouseleave',function(){f.classList.remove('on');});
   });
+})();
+/* ===== 目次（TOC）: 章から自動生成。PC=常設サイドバー / モバイル=開閉メニュー ===== */
+(function(){
+  var secs=[].slice.call(document.querySelectorAll('details.sec'));
+  if(!secs.length) return;
+  var nav=document.createElement('nav'); nav.id='toc'; nav.setAttribute('aria-label','目次');
+  var head=document.createElement('div'); head.className='toc-h';
+  head.innerHTML='<span>目次</span>';
+  var xbtn=document.createElement('button'); xbtn.className='toc-x'; xbtn.setAttribute('aria-label','閉じる'); xbtn.innerHTML='×';
+  head.appendChild(xbtn); nav.appendChild(head);
+  var ol=document.createElement('ol'); nav.appendChild(ol);
+  function shorten(t){ return t.split(/[―—–：:]/)[0].trim() || t; }
+  secs.forEach(function(sec,i){
+    var id=sec.id||('sec-'+(i+1)); sec.id=id;
+    var sum=sec.querySelector(':scope>summary');
+    var full=sum? sum.textContent.replace(/\s+/g,' ').trim() : ('章'+(i+1));
+    var li=document.createElement('li');
+    var a=document.createElement('a'); a.href='#'+id; a.textContent=shorten(full); a.title=full; a.dataset.target=id;
+    li.appendChild(a); ol.appendChild(li);
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      sec.open=true;
+      document.body.classList.remove('toc-open');
+      requestAnimationFrame(function(){
+        var y=sec.getBoundingClientRect().top+window.pageYOffset-12;
+        window.scrollTo({top:y,behavior:'smooth'});
+      });
+      if(history.replaceState) history.replaceState(null,'','#'+id);
+    });
+  });
+  document.body.appendChild(nav);
+  var btn=document.createElement('button'); btn.id='toc-btn'; btn.setAttribute('aria-label','目次を開く'); btn.textContent='☰ 目次';
+  var bd=document.createElement('div'); bd.id='toc-bd';
+  document.body.appendChild(btn); document.body.appendChild(bd);
+  function close(){ document.body.classList.remove('toc-open'); }
+  btn.addEventListener('click',function(){ document.body.classList.toggle('toc-open'); });
+  bd.addEventListener('click',close); xbtn.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+  /* スクロール位置に応じて現在地をハイライト */
+  var links=[].slice.call(ol.querySelectorAll('a'));
+  var ticking=false;
+  function spy(){
+    ticking=false;
+    var cur=secs[0].id, best=-1e9;
+    secs.forEach(function(s){ var t=s.getBoundingClientRect().top; if(t<=140 && t>best){ best=t; cur=s.id; } });
+    links.forEach(function(l){ l.classList.toggle('active', l.dataset.target===cur); });
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(spy); } },{passive:true});
+  spy();
 })();
 </script>
 </body>
