@@ -115,6 +115,19 @@
     .matrix.wrap td{border:none;padding:2px 14px}
     .matrix.wrap td:first-child{font-weight:800;font-size:15px;color:var(--accent2);padding:12px 14px 3px}
   }
+  /* 比較(メリット/デメリット)テーブル: モバイルは列ラベル付きカードに */
+  @media(max-width:640px){
+    .tablewrap.vs table{min-width:0}
+    .tablewrap.vs table,.tablewrap.vs tbody,.tablewrap.vs tr,.tablewrap.vs td{display:block;width:auto}
+    .tablewrap.vs thead{display:none}
+    .tablewrap.vs tr{border-bottom:1px solid var(--line);padding:8px 0}
+    .tablewrap.vs tr:last-child{border-bottom:none}
+    .tablewrap.vs td{border:none;padding:3px 14px}
+    .tablewrap.vs td.cell-list{white-space:pre-line}
+    .tablewrap.vs td:first-child{font-weight:800;font-size:15px;color:var(--accent2);padding:12px 14px 4px}
+    .tablewrap.vs td:nth-child(2)::before{content:"◎ メリット";display:block;font-size:12px;color:#79c98b;font-weight:700;margin-bottom:2px}
+    .tablewrap.vs td:nth-child(3)::before{content:"△ デメリット";display:block;font-size:12px;color:#9aa0b0;font-weight:700;margin:6px 0 2px}
+  }
   .g{color:#79c98b;font-weight:800}   /* ◎ 得意 */
   .o{color:#e7e9f0;font-weight:700}   /* ○ ふつう */
   .x{color:#8890a0}                   /* △ 苦手 */
@@ -453,8 +466,8 @@
   <details class="acc">
     <summary>鼓動感のメリット・デメリット</summary>
     <div class="body">
-      <p>鼓動感は「良い/悪い」ではなく好みの問題。整理するとこうなる。</p>
-      <div class="tablewrap">
+      <p>鼓動感は「<strong>高いほど良い</strong>」ではなく、<strong>好み＋バランス</strong>の問題。しかも<strong>強すぎる鼓動は振動＝手の痺れ・疲労として跳ね返る</strong>ので、毎日・長距離で乗るなら“適度”がちょうどいい、という見方もできる。高い／適度／低いで整理するとこう。</p>
+      <div class="tablewrap vs">
         <table>
           <thead><tr><th></th><th>メリット</th><th>デメリット</th></tr></thead>
           <tbody>
@@ -463,9 +476,16 @@
               <td class="cell-list">・低回転からトルクが出て、のんびり流すのが気持ちいい
 ・エンジンの鼓動が「乗ってる実感」になる
 ・排気音に味がある</td>
-              <td class="cell-list">・高回転は苦手、高速巡航や追い越しはやや不利
-・振動で長距離は疲れやすい
+              <td class="cell-list">・<strong>振動で手が痺れる・長距離は疲れやすい</strong>
+・高回転は苦手、高速巡航や追い越しはやや不利
 ・空冷ゆえ夏の渋滞で熱に弱め</td>
+            </tr>
+            <tr>
+              <td><strong>適度（中間）</strong><br><small>ツイン／穏やかなシングル・バランサー付き</small></td>
+              <td class="cell-list">・鼓動の「味」と快適さのバランスが良い
+・長距離でも痺れ・疲れが出にくい
+・普段使いで扱いやすい</td>
+              <td class="cell-list">・「もっと濃いドコドコ」を求める人には物足りない場合も</td>
             </tr>
             <tr>
               <td><strong>鼓動感が低い</strong><br><small>水冷・多気筒・高回転</small></td>
@@ -478,7 +498,10 @@
           </tbody>
         </table>
       </div>
-      <p>つまり <strong>方向A（鼓動感）は「移動そのものを味わう」</strong>、<strong>方向B（スムーズ系）は「移動を快適にこなす」</strong> という性格の違い。SR400への思い入れは、明らかに前者。</p>
+      <div class="note">
+        <strong>「デメリットにならない程度の鼓動」がちょうどいい、という考え方。</strong>強い鼓動は魅力だが、そのまま振動＝手の痺れ・疲労に直結するので、味と快適さのバランスを取った“適度”を狙うのは合理的。<strong>その分かりやすい基準が現行の大型ハーレー（例：ミルウォーキーエイト）</strong>——バランサーやラバーマウントで、アイドルの「ドコドコ」という味は残しつつ巡航の不快な高周波振動を抑え、<strong>“味と快適の両立”に振っている</strong>（大型なので今回の対象外だが、ちょうど良い鼓動の目安として参考になる）。<br>
+        中型候補でこの“適度”の帯に近いのは、不等間隔爆発のLツインで鼓動がありつつ多気筒でスムーズな<strong>スクランブラーSixty2（鼓動6）</strong>や、空冷シングルでも小排気量・高回転寄りで穏やかな<strong>メグロS1（6）</strong>あたり。逆に<strong>RE350系（8〜9）・GB350（7）</strong>は鼓動最強クラスだが、そのぶん長距離では振動の代償（痺れ・疲れ）も大きい。SR400への思い入れは強い鼓動＝“高い”寄りだが、毎日の相棒として見れば<strong>中庸（適度）も十分アリ</strong>——「高ければ高いほど良い」ではない。
+      </div>
     </div>
   </details>
 
