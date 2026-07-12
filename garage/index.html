@@ -197,6 +197,17 @@
     #toc .toc-x{display:none}
     #toc-btn,#toc-bd{display:none}
   }
+  /* 実車フォトギャラリー */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
+  .gallery figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--bg2)}
+  .gallery figcaption{padding:10px 12px 12px;font-size:13px;color:var(--muted);flex:1}
+  .gallery figcaption .gm{display:block;font-size:15px;font-weight:700;color:var(--text);margin-bottom:2px}
+  .gallery figcaption .gm .gp{font-size:12px;font-weight:700;color:var(--accent2);margin-left:6px}
+  .gallery .credit{display:block;margin-top:8px;font-size:11px;color:#6b7080}
+  .gallery .credit a{color:#7f869a}
+  @media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);gap:10px}}
+  @media(max-width:420px){.gallery{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -366,6 +377,40 @@
   <p><strong>バイク選びの1本目の柱＝「乗り味＝鼓動感」。</strong>中型に求める本質はここ（アメリカンクラシックの鼓動を現行中型で探す＝SR400のような空冷シングルが出発点）。中型候補を「見た目のレトロ度」と「エンジンの鼓動感」、<strong>それぞれ独立した0-10の2軸</strong>でマッピングして俯瞰する。
   以前は横軸を「レトロ⇔おしゃれストリート」という1本の対立軸にしていたが、レトロ度と鼓動感は本来別物（例：メテオ350は見た目も乗り味もレトロ寄り、CL250は見た目はレトロ寄りでも乗り味はモダン）なので、素直に2軸に分けた。どちらも試乗レビューやオーナーの声からの主観推定。
   <strong>鼓動感そのものの掘り下げ（エンジン形式・音との相関／メリット・デメリット／見た目のレトロ度とは一致しないこと）は下のアコーディオン</strong>にまとめた。もう1本の柱＝走行性能・釣り適性は次章「釣りで選ぶ①〜③」で見る。</p>
+
+  <p class="muted" style="margin:6px 0 2px">まず実車の顔ぶれを。<strong>起点の SR400</strong> と、その鼓動を現行で追う<strong>高鼓動クラシック</strong>、対極の<strong>モダン側</strong>を並べた（写真は Wikimedia Commons）。</p>
+  <div class="gallery">
+    <figure>
+      <img src="/pjdhiro/assets/garage/sr400.jpg" alt="Yamaha SR400 の実車" loading="lazy" width="960" height="720">
+      <figcaption><span class="gm">SR400<span class="gp">起点・鼓動◎</span></span>アメリカンクラシックの鼓動の代表格。空冷シングルの原点。
+        <span class="credit">© Chanokchon / <a href="https://commons.wikimedia.org/wiki/File:2023_Yamaha_SR400.jpg" target="_blank" rel="noopener">Wikimedia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></span></figcaption>
+    </figure>
+    <figure>
+      <img src="/pjdhiro/assets/garage/meteor350.jpg" alt="Royal Enfield Meteor 350 の実車" loading="lazy" width="960" height="720">
+      <figcaption><span class="gm">メテオ350<span class="gp">米国クラシック・鼓動8</span></span>唯一の「米国クラシック」系。低く長い車体に空冷シングルの鼓動。
+        <span class="credit">© Corvettec6r / <a href="https://commons.wikimedia.org/wiki/File:Royal_Enfield_Meteor_350.jpg" target="_blank" rel="noopener">Wikimedia</a>, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a></span></figcaption>
+    </figure>
+    <figure>
+      <img src="/pjdhiro/assets/garage/classic350.jpg" alt="Royal Enfield Classic 350 の実車" loading="lazy" width="960" height="720">
+      <figcaption><span class="gm">クラシック350<span class="gp">欧州クラシック・鼓動8</span></span>鼓動最強クラス。見た目も乗り味も素直にレトロ。
+        <span class="credit">© Tirthrajnbarot / <a href="https://commons.wikimedia.org/wiki/File:Royal_Enfield_Classic_350.jpg" target="_blank" rel="noopener">Wikimedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a></span></figcaption>
+    </figure>
+    <figure>
+      <img src="/pjdhiro/assets/garage/gb350.jpg" alt="Honda GB350 の実車" loading="lazy" width="960" height="720">
+      <figcaption><span class="gm">GB350<span class="gp">国産・鼓動7</span></span>国産の空冷シングル。鼓動と機動性のバランスが良い現実解。
+        <span class="credit">© AVMOTO / <a href="https://commons.wikimedia.org/wiki/File:Honda_GB350.jpg" target="_blank" rel="noopener">Wikimedia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></span></figcaption>
+    </figure>
+    <figure>
+      <img src="/pjdhiro/assets/garage/rebel250.jpg" alt="Honda Rebel 250 の実車" loading="lazy" width="960" height="720">
+      <figcaption><span class="gm">レブル250<span class="gp">モダン・鼓動3</span></span>現行モダンクルーザー。鼓動は控えめ、スニーカーが似合う対極。
+        <span class="credit">© Tokumeigakarinoaoshima / <a href="https://commons.wikimedia.org/wiki/File:Honda_Rebel_250_(2BK-MC49)_front.jpg" target="_blank" rel="noopener">Wikimedia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></span></figcaption>
+    </figure>
+    <figure>
+      <img src="/pjdhiro/assets/garage/svartpilen401.jpg" alt="Husqvarna Svartpilen 401 の実車" loading="lazy" width="960" height="720">
+      <figcaption><span class="gm">スヴァルトピレン401<span class="gp">最モダン・鼓動4</span></span>見た目は最もモダン。水冷シングルだが鼓動は意外と効く。
+        <span class="credit">© KTM AG / <a href="https://commons.wikimedia.org/wiki/File:Husqvarna_Svartpilen_401.jpg" target="_blank" rel="noopener">Wikimedia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></span></figcaption>
+    </figure>
+  </div>
 
   <div class="chartcard">
     <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" role="img" aria-label="中型バイク比較マップ：横軸レトロ度、縦軸 鼓動感（独立した2軸）">
