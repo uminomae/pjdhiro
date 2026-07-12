@@ -212,6 +212,13 @@
   .ti-label .star{font-size:10px;font-weight:800;color:#12131a;background:var(--accent2);
     border-radius:99px;padding:1px 7px;letter-spacing:.02em}
   .thumb-item--star{border-color:#4a3f24}
+  /* 画像を持たず公式サイトへリンクするプレースホルダー枠 */
+  .thumb-item--ext{cursor:pointer;text-decoration:none}
+  .ti-ph{width:100%;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:6px;background:var(--bg2);color:var(--muted);text-align:center;padding:8px;font-size:12px;line-height:1.45}
+  .ti-ph .ico{font-size:26px;opacity:.7}
+  .ti-ph .lnk{color:var(--accent2);font-weight:700}
+  .thumb-item--ext:hover .ti-ph .lnk{text-decoration:underline}
   /* デスクトップ：ホバーでフロート拡大 */
   .hovzoom{display:none}
   @media (hover:hover) and (pointer:fine){
@@ -557,6 +564,11 @@
       <span class="ti-label">セロー250</span>
       <span class="hovzoom" aria-hidden="true"><img src="/pjdhiro/assets/garage/serow250.jpg" alt=""><b>セロー250 — エンデューロ・鼓動2</b></span>
     </button>
+    <a class="thumb-item thumb-item--ext" href="https://www.harley-davidson.com/jp/ja/motorcycles/x-350.html" target="_blank" rel="noopener"
+      title="ハーレーX350の写真を公式サイトで見る">
+      <span class="ti-ph"><span class="ico">📷</span><span>CC写真が未発見<br><span class="lnk">公式サイトで見る ↗</span></span></span>
+      <span class="ti-label">ハーレーX350</span>
+    </a>
     <button type="button" class="thumb-item"
       data-full="/pjdhiro/assets/garage/eliminator400.jpg" data-name="エリミネーター400" data-tag="クルーザー・鼓動1"
       data-desc="現行の国産中型アメリカン（クルーザー）。水冷2気筒で鼓動は最下位だが、低く長い車体でスニーカー◎。"
@@ -1113,7 +1125,8 @@
   function close(){ lb.hidden=true; lImg.src=''; document.body.style.overflow='';
     if(lastFocus) try{lastFocus.focus();}catch(e){} }
   gal.addEventListener('click',function(e){
-    var btn=e.target.closest('.thumb-item'); if(btn) open(btn);
+    var btn=e.target.closest('.thumb-item');
+    if(btn && btn.dataset.full) open(btn); /* 画像なしの外部リンク枠(X350)はそのままリンク遷移 */
   });
   lClose.addEventListener('click',close);
   lBd.addEventListener('click',close);
