@@ -100,6 +100,18 @@
   .matrix table{min-width:600px}
   .matrix th,.matrix td{text-align:center;white-space:nowrap}
   .matrix th:first-child,.matrix td:first-child{text-align:left;white-space:normal}
+  /* long-text matrix tables (根拠・メモ列あり): 画面幅で折り返し＋モバイルはカード表示 */
+  .matrix.wrap table{min-width:0}
+  .matrix.wrap th{text-align:left}          /* 見出しは短いので折り返さない（nowrapは継承） */
+  .matrix.wrap td{white-space:normal;text-align:left}
+  @media (max-width:640px){
+    .matrix.wrap table,.matrix.wrap tbody,.matrix.wrap tr,.matrix.wrap td{display:block;width:auto}
+    .matrix.wrap thead{display:none}
+    .matrix.wrap tr{border-bottom:1px solid var(--line);padding:6px 0}
+    .matrix.wrap tr:last-child{border-bottom:none}
+    .matrix.wrap td{border:none;padding:2px 14px}
+    .matrix.wrap td:first-child{font-weight:800;font-size:15px;color:var(--accent2);padding:12px 14px 3px}
+  }
   .g{color:#79c98b;font-weight:800}   /* ◎ 得意 */
   .o{color:#e7e9f0;font-weight:700}   /* ○ ふつう */
   .x{color:#8890a0}                   /* △ 苦手 */
@@ -379,7 +391,7 @@
     <summary>取り回しの実際：試乗レビューが伝える低速の扱いやすさ（定性）</summary>
     <div class="body">
       <p>回転半径スコアはジオメトリだけの値なので、<strong>車重・シート高・ハンドル幅・乗車姿勢まで含めた「実際の取り回し」は試乗レビューで補う</strong>。以下は各車の試乗インプレ・オーナーレビューから拾った定性評価（主観・複数記事の総合）。上の機動性スコア順（高い順）に並べているので、<strong>数字と体感が食い違う車</strong>が読み取れる。裏の取れない車種は「-」。</p>
-      <div class="tablewrap matrix">
+      <div class="tablewrap matrix wrap">
         <table>
           <thead><tr><th>モデル</th><th>取り回しの実際（試乗評）</th><th>ひとことメモ</th></tr></thead>
           <tbody>
@@ -557,7 +569,7 @@
     <summary>積載評価の根拠：なぜ◎／○／△なのか（具体例と参照URL）</summary>
     <div class="body">
       <p>積載は公表スペックに出ない要素なので<strong>主観評価</strong>だが、判定の根拠は「純正・社外リアキャリアやパニアの選択肢」「シート後端がフラットでロッド・クーラーを縛りやすいか」の2点。以下、各車の◎○△の<strong>根拠となった具体的なアクセサリー例と参照URL</strong>を示す。裏の取れない車種は「-」。</p>
-      <div class="tablewrap matrix">
+      <div class="tablewrap matrix wrap">
         <table>
           <thead><tr><th>モデル</th><th>積載</th><th>根拠となった具体例</th><th>参照</th></tr></thead>
           <tbody>
