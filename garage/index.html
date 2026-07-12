@@ -190,6 +190,10 @@
   #toc a:hover{background:var(--bg2)}
   #toc a.active{background:var(--bg2);color:var(--accent2);box-shadow:inset 3px 0 0 var(--accent)}
   #toc a.active::before{color:var(--accent)}
+  #toc li.toc-sub{counter-increment:none}
+  #toc li.toc-sub a{padding:7px 10px 7px 22px;font-size:13px;color:var(--muted)}
+  #toc li.toc-sub a::before{content:"📷";margin-right:7px;font-weight:400}
+  #toc li.toc-sub a:hover{color:var(--text)}
   @media(min-width:1260px){
     /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
     #toc{left:20px;right:auto;top:92px;height:auto;max-height:calc(100vh - 116px);width:206px;
@@ -1063,6 +1067,27 @@
       });
       if(history.replaceState) history.replaceState(null,'','#'+id);
     });
+    /* ギャラリーを含む章の直後に「車両画像」サブ項目を追加（再訪しやすいように） */
+    var gallery=sec.querySelector('#gallery');
+    if(gallery){
+      var gli=document.createElement('li'); gli.className='toc-sub';
+      var ga=document.createElement('a'); ga.href='#gallery'; ga.textContent='車両画像';
+      ga.title='実車フォトギャラリー'; ga.dataset.target=id;
+      gli.appendChild(ga); ol.appendChild(gli);
+      ga.addEventListener('click',function(e){
+        e.preventDefault();
+        sec.open=true;
+        document.body.classList.remove('toc-open');
+        function go(smooth){
+          var y=gallery.getBoundingClientRect().top+window.pageYOffset-12;
+          window.scrollTo({top:y,behavior:smooth?'smooth':'auto'});
+        }
+        requestAnimationFrame(function(){ go(true); });
+        /* 遅延読み込み画像のリフローで着地がズレるので補正 */
+        setTimeout(function(){ go(false); },420);
+        if(history.replaceState) history.replaceState(null,'','#gallery');
+      });
+    }
   });
   document.body.appendChild(nav);
   var btn=document.createElement('button'); btn.id='toc-btn'; btn.setAttribute('aria-label','目次を開く'); btn.textContent='☰ 目次';
