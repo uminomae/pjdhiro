@@ -137,6 +137,8 @@
   .model{display:inline-flex;align-items:center;gap:11px}
   .chartcard svg a{cursor:pointer}
   .chartcard svg a:hover circle{stroke:#ffffff;stroke-width:2}
+  /* レーサー章の7列表: 641px以上は横スクロールで各セルを詰める（640px以下はカード化） */
+  @media(min-width:641px){.matrix.wrap.racer table{min-width:780px}}
   /* combined table + accordions */
   #list table{min-width:860px}
   details.acc{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
@@ -1022,18 +1024,18 @@
     <strong>ひとことで言うと：</strong>レーサー系は<strong>「パワーバンドが上（高回転）にあるほどサーキット的でピーキー、下（低回転）にあるほど一般道で気楽」</strong>という一本の軸でほぼ整理できる。<strong>並列4気筒（ZX-25R・ZX-4R）は1万回転超が本領＝回して咆哮を味わうレーサーそのもの</strong>、<strong>並列2気筒はそれより下でトルクが出て一般道で扱いやすい</strong>。同じ「フルカウルのスポーツ」でも中身の性格は大きく違う。
   </div>
 
-  <div class="tablewrap matrix wrap">
+  <div class="tablewrap matrix wrap racer">
     <table>
       <thead><tr><th>モデル</th><th>気筒・排気量</th><th>最高出力</th><th>最大トルク</th><th>パワーバンド</th><th>一般道</th><th>楽しみ方</th></tr></thead>
       <tbody>
-        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-zx-25r" target="_blank" rel="noopener">Ninja ZX-25R</a><br><small>Kawasaki</small></td><td><strong>並列4気筒</strong><br>249cc</td><td>45PS<br><small>(ラム46)/15,500</small></td><td>22.9N·m<br><small>/14,500</small></td><td>超高回転（1.3万〜）。常用域はトルク細く、パワーは天井近くに集中</td><td class="x">△</td><td>回して伸びと4気筒サウンドを使い切る。250最強のレーサー体験</td></tr>
-        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-zx-4r" target="_blank" rel="noopener">Ninja ZX-4R</a><br><small>Kawasaki</small></td><td><strong>並列4気筒</strong><br>399cc</td><td>77PS<br><small>(ラム80)/14,500</small></td><td>超高回転だが、4気筒の割に低中速も残す。真価は1.3万以上</td><td class="o">○</td><td>史上最強400の伸び＋咆哮。走行モードでビギナーにも懐が深い</td></tr>
-        <tr><td><a href="https://www.honda.co.jp/CBR250RR/" target="_blank" rel="noopener">CBR250RR</a><br><small>Honda</small></td><td>並列2気筒<br>249cc</td><td>42PS<br><small>/13,500</small></td><td>ツインでは最も上まで回る高回転型。それでも4気筒よりは下も使える</td><td class="o">○</td><td>「回す楽しさ」と日常の実用を両立した最強2気筒。ライバル比で最上級</td></tr>
-        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-250" target="_blank" rel="noopener">Ninja 250</a><br><small>Kawasaki</small></td><td>並列2気筒<br>248cc</td><td>37PS<br><small>/12,500</small></td><td>中〜高回転バランス型。街も回してもそこそこ</td><td class="o">○</td><td>初めてのフルカウルの定番。無理なくスポーツを楽しめる万能さ</td></tr>
-        <tr><td><a href="https://www.yamaha-motor.co.jp/mc/lineup/yzf-r25/" target="_blank" rel="noopener">YZF-R25</a><br><small>Yamaha</small></td><td>並列2気筒<br>249cc</td><td>35PS<br><small>/12,000</small></td><td>中〜高回転バランス型。滑らかで扱いやすい特性</td><td class="o">○</td><td>ハンドリングと軽快感で「曲がる楽しさ」。ワインディング派の定番</td></tr>
-        <tr><td><a href="https://www.yamaha-motor.co.jp/mc/lineup/yzf-r3/" target="_blank" rel="noopener">YZF-R3</a><br><small>Yamaha</small></td><td>並列2気筒<br>320cc</td><td>42PS<br><small>/10,750</small></td><td>中回転トルク型。320ccで低中速に厚みがあり回し切らなくても速い</td><td class="g">◎</td><td>250より一段ラクに流せて、いざとなればスポーツも。ちょうどいい中庸</td></tr>
-        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-400" target="_blank" rel="noopener">Ninja 400</a><br><small>Kawasaki</small></td><td>並列2気筒<br>399cc</td><td>48PS<br><small>/10,000</small></td><td>低中速トルク型（38N·m/8,000）。常用域でグイグイ出る扱いやすさ随一</td><td class="g">◎</td><td>街・ツーリング・峠を1台でこなす万能王。飛ばさなくても気持ちいい</td></tr>
-        <tr><td><a href="https://www1.suzuki.co.jp/motor/lineup/gsx250rrlzm6/" target="_blank" rel="noopener">GSX250R</a><br><small>Suzuki</small></td><td>並列2気筒<br>248cc</td><td>24PS<br><small>/8,000</small></td><td>フラットな低回転型。パワーバンドを意識せず全域で穏やか</td><td class="g">◎</td><td>見た目はSSでも中身はツアラー。肩の力を抜いて長く流すのが持ち味</td></tr>
+        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-zx-25r" target="_blank" rel="noopener">Ninja ZX-25R</a><br><small>Kawasaki</small></td><td><strong>並列4気筒</strong><br>249cc</td><td>45PS<br><small>(ラム46)/15,500</small></td><td>22.9N·m<br><small>/14,500</small></td><td>超高回転型（1.3万〜）。低回転はスカスカ</td><td class="x">△</td><td>回して4気筒サウンドを味わう。250最強のレーサー</td></tr>
+        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-zx-4r" target="_blank" rel="noopener">Ninja ZX-4R</a><br><small>Kawasaki</small></td><td><strong>並列4気筒</strong><br>399cc</td><td>77PS<br><small>(ラム80)/14,500</small></td><td>39N·m<br><small>/13,000</small></td><td>超高回転型。4気筒だが低中速も残す</td><td class="o">○</td><td>史上最強400の伸び＋咆哮。モードで懐も深い</td></tr>
+        <tr><td><a href="https://www.honda.co.jp/CBR250RR/" target="_blank" rel="noopener">CBR250RR</a><br><small>Honda</small></td><td>並列2気筒<br>249cc</td><td>42PS<br><small>/13,500</small></td><td>25N·m<br><small>/11,000</small></td><td>ツイン最高の高回転型。下も4気筒より使える</td><td class="o">○</td><td>回す楽しさと実用を両立した最強2気筒</td></tr>
+        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-250" target="_blank" rel="noopener">Ninja 250</a><br><small>Kawasaki</small></td><td>並列2気筒<br>248cc</td><td>37PS<br><small>/12,500</small></td><td>23N·m<br><small>/10,000</small></td><td>中〜高回転バランス型。街も回しも無難</td><td class="o">○</td><td>初フルカウルの定番。無理なく楽しめる万能さ</td></tr>
+        <tr><td><a href="https://www.yamaha-motor.co.jp/mc/lineup/yzf-r25/" target="_blank" rel="noopener">YZF-R25</a><br><small>Yamaha</small></td><td>並列2気筒<br>249cc</td><td>35PS<br><small>/12,000</small></td><td>23N·m<br><small>/10,000</small></td><td>中〜高回転バランス型。滑らかで扱いやすい</td><td class="o">○</td><td>軽快な「曲がる楽しさ」。ワインディング派の定番</td></tr>
+        <tr><td><a href="https://www.yamaha-motor.co.jp/mc/lineup/yzf-r3/" target="_blank" rel="noopener">YZF-R3</a><br><small>Yamaha</small></td><td>並列2気筒<br>320cc</td><td>42PS<br><small>/10,750</small></td><td>30N·m<br><small>/9,000</small></td><td>中回転トルク型。320ccで低中速に厚み</td><td class="g">◎</td><td>一段ラクに流せていざスポーツも。ちょうどいい中庸</td></tr>
+        <tr><td><a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-400" target="_blank" rel="noopener">Ninja 400</a><br><small>Kawasaki</small></td><td>並列2気筒<br>399cc</td><td>48PS<br><small>/10,000</small></td><td>38N·m<br><small>/8,000</small></td><td>低中速トルク型。常用域の扱いやすさ随一</td><td class="g">◎</td><td>街・ツーリング・峠の万能王。飛ばさず気持ちいい</td></tr>
+        <tr><td><a href="https://www1.suzuki.co.jp/motor/lineup/gsx250rrlzm6/" target="_blank" rel="noopener">GSX250R</a><br><small>Suzuki</small></td><td>並列2気筒<br>248cc</td><td>24PS<br><small>/8,000</small></td><td>22N·m<br><small>/6,500</small></td><td>フラットな低回転型。全域で穏やか</td><td class="g">◎</td><td>見た目SS・中身ツアラー。肩の力を抜いて流す</td></tr>
       </tbody>
     </table>
   </div>
