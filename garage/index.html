@@ -1399,6 +1399,9 @@
     <summary>カスタムの方向性 早わかり ── ボバー／カフェレーサー／トラッカー…（検索ワード付き）</summary>
     <div class="body">
       <p>カスタムには定番の「型」があり、<strong>型の名前を知っていると事例探しが一気に楽になる</strong>。探し方は「<strong>車種名 × スタイル名（＋カスタム）</strong>」——例えば「<strong>メテオ350 ボバー カスタム</strong>」で画像・動画検索すると、下のギャラリーのような事例がいくらでも出てくる。主要な型は次の6つ（詳しくは<a href="https://www.bikekan.jp/media/1068" target="_blank" rel="noopener">バイク館のSR400カスタム解説</a>も参考になる）。</p>
+      <div class="note">
+        <strong>なぜどの型も「剥き出し」なのか：</strong>型の多く（ボバー・チョッパー・カフェレーサー・トラッカー）の出発点はレースや公道の速さ競いで、<strong>削ぎ落として軽くすることがパワーウェイトレシオ改善＝そのまま速さだった時代</strong>の産物——だから剥き出しになっている。今は速さをカウルの空力やエンジン・電子制御で作る時代なので、剥ぎ取りは性能ではなく<strong>様式美として</strong>残っている——「速くするための引き算」が「かっこよくするための引き算」に意味を変えて生き続けている、というのがこの世界の面白さ。
+      </div>
       <div class="tablewrap wrap">
         <table>
           <thead><tr><th>スタイル</th><th>特徴（見分け方）</th><th>検索例</th></tr></thead>
@@ -1801,6 +1804,27 @@
         /* 遅延読み込み画像のリフローで着地がズレるので補正 */
         setTimeout(function(){ go(false); },420);
         if(history.replaceState) history.replaceState(null,'','#gallery');
+      });
+    }
+    /* カスタム事例ギャラリー（アコーディオン）を含む章にもサブ項目を追加 */
+    var cgal=sec.querySelector('#custom-gallery');
+    if(cgal){
+      var cli=document.createElement('li'); cli.className='toc-sub';
+      var ca=document.createElement('a'); ca.href='#custom-gallery'; ca.textContent='カスタム事例';
+      ca.title='カスタム事例ギャラリー（動画）'; ca.dataset.target=id;
+      cli.appendChild(ca); ol.appendChild(cli);
+      ca.addEventListener('click',function(e){
+        e.preventDefault();
+        sec.open=true; cgal.open=true;
+        document.body.classList.remove('toc-open');
+        function go2(smooth){
+          var y=cgal.getBoundingClientRect().top+window.pageYOffset-12;
+          window.scrollTo({top:y,behavior:smooth?'smooth':'auto'});
+        }
+        requestAnimationFrame(function(){ go2(true); });
+        /* 埋め込みプレーヤーのリフローで着地がズレるので補正 */
+        setTimeout(function(){ go2(false); },420);
+        if(history.replaceState) history.replaceState(null,'','#custom-gallery');
       });
     }
   });
