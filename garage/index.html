@@ -246,6 +246,18 @@
   .ti-ig .ico::before{content:"";position:absolute;inset:5px;border:2.5px solid #f4ecf1;border-radius:99px}
   .ti-ig .ico::after{content:"";position:absolute;top:3px;right:3px;width:4px;height:4px;background:#f4ecf1;border-radius:99px}
   .thumb-item--media .ti-label small{font-weight:600;color:var(--muted);margin-left:auto;font-size:10px}
+  /* 動画modal（ギャラリータイルのページ内再生） */
+  .vlb[hidden]{display:none}
+  .vlb{position:fixed;inset:0;z-index:95;display:flex;align-items:center;justify-content:center;padding:16px}
+  .vlb-bd{position:absolute;inset:0;background:rgba(8,9,13,.88)}
+  .vlb-card{position:relative;z-index:1;width:min(94vw,400px);background:var(--card);border:1px solid var(--line);
+    border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);display:flex;flex-direction:column}
+  .vlb-card.wide{width:min(94vw,720px)}
+  .vlb-frame{position:relative;width:100%;height:min(70vh,600px);background:#000}
+  .vlb-card.wide .vlb-frame{height:auto;aspect-ratio:16/9;max-height:70vh}
+  .vlb-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .vlb-foot{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:12px;color:var(--muted)}
+  .vlb-foot a{color:var(--accent2);font-weight:700;margin-left:auto;white-space:nowrap}
   /* デスクトップ：ホバーでフロート拡大 */
   .hovzoom{display:none}
   @media (hover:hover) and (pointer:fine){
@@ -1368,25 +1380,25 @@
   </div>
 
   <h4 id="custom-gallery">カスタム事例ギャラリー ― 完成車の空気を動画で掴む</h4>
-  <p class="muted" style="margin:2px 0 10px">この章の「あの空気」を一番手っ取り早く掴めるのが完成車の動画。広島の<a href="https://www.instagram.com/flat_group_/" target="_blank" rel="noopener">FLAT GROUP</a>は、グラストラッカー（絶版）から現行GB350まで、国産単気筒をベースにしたスクランブラー／ブラットの<strong>コンプリート車（完成車）を製作・全国販売</strong>していて、「新しめの国産＋引き算カスタム」の完成形がそのまま見られる（自分で組まずに買う、という③の別ルートでもある）。③で触れた<strong>K-SPEED</strong>のGB350カスタムも並べた。サムネイルをタップすると各投稿・動画が開く（Instagramは画像の転載ができないためリンクカード表示）。</p>
+  <p class="muted" style="margin:2px 0 10px">この章の「あの空気」を一番手っ取り早く掴めるのが完成車の動画。広島の<a href="https://www.instagram.com/flat_group_/" target="_blank" rel="noopener">FLAT GROUP</a>は、グラストラッカー（絶版）から現行GB350まで、国産単気筒をベースにしたスクランブラー／ブラットの<strong>コンプリート車（完成車）を製作・全国販売</strong>していて、「新しめの国産＋引き算カスタム」の完成形がそのまま見られる（自分で組まずに買う、という③の別ルートでもある）。③で触れた<strong>K-SPEED</strong>のGB350カスタムも並べた。サムネイルをタップすると<strong>その場（ページ内）で再生</strong>できる（Instagram公式の埋め込みプレーヤー。音を出す・続きを見るときはプレーヤー内のリンクからInstagramへ）。</p>
   <div class="gallery">
-    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/reel/DDxmu2uz9es/" target="_blank" rel="noopener">
-      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラストラッカーBB<br>スクランブラー</b><span class="see">リールを見る →</span><span class="ti-badge">リール</span></span>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/reel/DDxmu2uz9es/" data-embed="https://www.instagram.com/reel/DDxmu2uz9es/embed/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラストラッカーBB<br>スクランブラー</b><span class="see">タップで再生 ▶</span><span class="ti-badge">リール</span></span>
       <span class="ti-label">グラトラBB 完成車<small>FLAT GROUP</small></span>
     </a>
-    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/reel/DArajJCssAj/" target="_blank" rel="noopener">
-      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラストラッカー<br>ビンテージオフ塗装</b><span class="see">リールを見る →</span><span class="ti-badge">リール</span></span>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/reel/DArajJCssAj/" data-embed="https://www.instagram.com/reel/DArajJCssAj/embed/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラストラッカー<br>ビンテージオフ塗装</b><span class="see">タップで再生 ▶</span><span class="ti-badge">リール</span></span>
       <span class="ti-label">グラトラ 塗装カスタム<small>FLAT GROUP</small></span>
     </a>
-    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/p/DB7OtQBTbQr/" target="_blank" rel="noopener">
-      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラトラビッグボーイ<br>スカチューン</b><span class="see">投稿を見る →</span><span class="ti-badge">投稿</span></span>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/p/DB7OtQBTbQr/" data-embed="https://www.instagram.com/p/DB7OtQBTbQr/embed/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラトラビッグボーイ<br>スカチューン</b><span class="see">タップで表示 ▶</span><span class="ti-badge">投稿</span></span>
       <span class="ti-label">グラトラBB スカチューン<small>FLAT GROUP</small></span>
     </a>
-    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/reel/DYYFPIuTS3i/" target="_blank" rel="noopener">
-      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>GB350<br>スクランブラー</b><span class="see">リールを見る →</span><span class="ti-badge">リール</span></span>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/reel/DYYFPIuTS3i/" data-embed="https://www.instagram.com/reel/DYYFPIuTS3i/embed/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>GB350<br>スクランブラー</b><span class="see">タップで再生 ▶</span><span class="ti-badge">リール</span></span>
       <span class="ti-label">GB350 スクランブラー<small>FLAT GROUP</small></span>
     </a>
-    <a class="thumb-item thumb-item--media" href="https://www.youtube.com/watch?v=T9qwAMZVgHw" target="_blank" rel="noopener">
+    <a class="thumb-item thumb-item--media" href="https://www.youtube.com/watch?v=T9qwAMZVgHw" data-embed="https://www.youtube-nocookie.com/embed/T9qwAMZVgHw?autoplay=1" data-wide="1" target="_blank" rel="noopener">
       <span class="ti-media"><img src="https://img.youtube.com/vi/T9qwAMZVgHw/hqdefault.jpg" alt="K-SPEEDによるHonda GB350スクランブラーカスタムの動画サムネイル" loading="lazy" width="480" height="360"><span class="ti-play" aria-hidden="true"><i>▶</i></span><span class="ti-badge">YouTube</span></span>
       <span class="ti-label">GB350 スクランブラー<small>K-SPEED</small></span>
     </a>
@@ -1676,6 +1688,46 @@
   lClose.addEventListener('click',close);
   lBd.addEventListener('click',close);
   document.addEventListener('keydown',function(e){ if(!lb.hidden&&e.key==='Escape') close(); });
+})();
+/* ===== カスタム事例ギャラリー: タイル → ページ内modalで埋め込み再生 ===== */
+(function(){
+  var tiles=document.querySelectorAll('.thumb-item--media[data-embed]');
+  if(!tiles.length) return;
+  var lb=document.createElement('div'); lb.className='vlb'; lb.hidden=true;
+  lb.innerHTML='<div class="vlb-bd"></div>'
+    +'<div class="vlb-card">'
+    +'<button type="button" class="lb-x" aria-label="閉じる">×</button>'
+    +'<div class="vlb-frame"></div>'
+    +'<div class="vlb-foot"><span>音声・続きは元の投稿で</span><a href="#" target="_blank" rel="noopener">元の投稿を開く ↗</a></div>'
+    +'</div>';
+  document.body.appendChild(lb);
+  var card=lb.querySelector('.vlb-card'), frame=lb.querySelector('.vlb-frame'),
+      out=lb.querySelector('.vlb-foot a'), xbtn=lb.querySelector('.lb-x'),
+      bd=lb.querySelector('.vlb-bd'), lastFocus=null;
+  function close(){
+    lb.hidden=true; frame.innerHTML='';
+    document.documentElement.style.overflow='';
+    if(lastFocus&&lastFocus.focus) lastFocus.focus();
+  }
+  tiles.forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      lastFocus=a;
+      card.classList.toggle('wide', a.dataset.wide==='1');
+      var ifr=document.createElement('iframe');
+      ifr.src=a.dataset.embed;
+      ifr.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+      ifr.setAttribute('allowfullscreen','');
+      frame.innerHTML=''; frame.appendChild(ifr);
+      out.href=a.href;
+      lb.hidden=false;
+      document.documentElement.style.overflow='hidden';
+      xbtn.focus();
+    });
+  });
+  xbtn.addEventListener('click',close);
+  bd.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!lb.hidden) close(); });
 })();
 /* ===== 目次（TOC）: 章から自動生成。PC=常設サイドバー / モバイル=開閉メニュー ===== */
 (function(){
