@@ -248,10 +248,9 @@
   .embed-cap{display:flex;align-items:center;gap:8px;margin:0;font-size:13.5px;font-weight:700;color:var(--text)}
   .embed-cap .style-tag{flex:none;font-size:10.5px;font-weight:800;color:#12131a;background:var(--accent2);
     border-radius:99px;padding:1px 9px;letter-spacing:.03em}
-  .embed-item--yt{grid-column:1/-1;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
-  .embed-item--yt iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;background:#000}
-  .embed-item--yt .ecap{display:flex;align-items:center;gap:8px;margin:0;padding:8px 11px;font-size:12.5px;font-weight:700}
-  .embed-item--yt .ecap a{margin-left:auto;font-size:11.5px;white-space:nowrap;font-weight:600}
+  .embed-item--wide{grid-column:1/-1}
+  .embeds .yt-embed{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:12px;
+    background:#000;box-shadow:0 0 0 1px var(--line)}
   /* デスクトップ：ホバーでフロート拡大 */
   .hovzoom{display:none}
   @media (hover:hover) and (pointer:fine){
@@ -1398,6 +1397,10 @@
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C67RJDKSXa1/" data-instgrm-version="14">
         <a href="https://www.instagram.com/reel/C67RJDKSXa1/" target="_blank" rel="noopener">ヤマハ SR400（@yohei_sawamura・リール）を見る</a>
       </blockquote>
+    </figure>
+    <figure class="embed-item embed-item--wide">
+      <figcaption class="embed-cap"><span class="style-tag">ボバー</span>メテオ350</figcaption>
+      <iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/zatmny-RiX8" title="メテオ350 ボバーカスタム紹介 | ShuchanRider" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
     </figure>
   </div>
   <script async src="https://www.instagram.com/embed.js"></script>
