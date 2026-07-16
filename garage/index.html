@@ -224,6 +224,28 @@
   .ti-ph .ico{font-size:26px;opacity:.7}
   .ti-ph .lnk{color:var(--accent2);font-weight:700}
   .thumb-item--ext:hover .ti-ph .lnk{text-decoration:underline}
+  /* カスタム事例ギャラリー：外部の動画・投稿へのサムネイルリンク */
+  .thumb-item--media{cursor:pointer;text-decoration:none}
+  .ti-media{position:relative;width:100%;aspect-ratio:4/3;background:var(--bg2);overflow:hidden;display:block}
+  .ti-media>img{width:100%;height:100%;object-fit:cover;display:block}
+  .ti-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-size:15px;font-weight:800;color:#fff;pointer-events:none}
+  .ti-play i{font-style:normal;width:44px;height:32px;display:flex;align-items:center;justify-content:center;
+    background:rgba(10,11,16,.62);border:1px solid rgba(255,255,255,.35);border-radius:9px;
+    text-shadow:0 1px 6px rgba(0,0,0,.7)}
+  .thumb-item--media:hover .ti-play i{background:var(--accent);border-color:var(--accent2)}
+  .ti-badge{position:absolute;left:8px;top:8px;font-size:10px;font-weight:800;letter-spacing:.05em;
+    color:#fff;background:rgba(10,11,16,.72);border:1px solid rgba(255,255,255,.28);border-radius:99px;padding:2px 9px}
+  .ti-ig{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+    background:radial-gradient(130% 130% at 6% 100%,#41305c 0%,#54284a 36%,#65303a 66%,#6d4a2e 100%);
+    color:#f4ecf1;text-align:center;padding:26px 10px 10px;font-size:11.5px;line-height:1.5}
+  .ti-ig b{font-size:13px;line-height:1.4}
+  .ti-ig .see{color:#ffd9b3;font-weight:700}
+  .thumb-item--media:hover .ti-ig .see{text-decoration:underline}
+  .ti-ig .ico{width:30px;height:30px;border:2.5px solid #f4ecf1;border-radius:9px;position:relative;opacity:.92;flex:none}
+  .ti-ig .ico::before{content:"";position:absolute;inset:5px;border:2.5px solid #f4ecf1;border-radius:99px}
+  .ti-ig .ico::after{content:"";position:absolute;top:3px;right:3px;width:4px;height:4px;background:#f4ecf1;border-radius:99px}
+  .thumb-item--media .ti-label small{font-weight:600;color:var(--muted);margin-left:auto;font-size:10px}
   /* デスクトップ：ホバーでフロート拡大 */
   .hovzoom{display:none}
   @media (hover:hover) and (pointer:fine){
@@ -1342,7 +1364,40 @@
     <strong>ベースの本命はGB350：</strong>空冷単の金属感は素で英国クラシック調。そして<strong>SR400が何十年も担ってきた「国産カスタムベースの王」の座を継ぎつつある</strong>——シート・フェンダーレス・ロングフェンダー類の社外パーツ（デイトナ、K-SPEEDなど）が既に厚く、<strong>フラットシートに替えるだけで一気に「あの空気」になる</strong>。<strong>W230／メグロS1</strong>は出たばかりで社外はこれから増える段階だが、そもそもメッキフェンダー・バフがけ済みで<strong>ノーマルの完成度が高く、替える必要が少ない</strong>という別の正解。<br>
     <strong>SR400という別解：</strong>どうしてもSRなら<strong>'16〜'21のFI最終期が10年落ち圏内</strong>で、パーツと専門店の厚みは今も王者。ただし中古のみ＆Final Editionは高騰（70万超も）——「新車で始めるGB350」と比べてから決める。それより古い中古を探し回るのは、この章のノリではない。<br>
     <strong>事例を眺める：</strong>新車勢のカスタム事例は②表の「カスタム事例」列から。SR400は
-    <a href="https://www.google.com/search?q=SR400+%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0&udm=2" target="_blank" rel="noopener">▶ SR400 カスタム（画像検索）</a>——何十年ぶんの事例の厚みが一目で分かる。
+    <a href="https://www.google.com/search?q=SR400+%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0&udm=2" target="_blank" rel="noopener">▶ SR400 カスタム（画像検索）</a>——何十年ぶんの事例の厚みが一目で分かる。<strong>完成車の空気は直下のギャラリー</strong>で。
+  </div>
+
+  <h4 id="custom-gallery">カスタム事例ギャラリー ― 完成車の空気を動画で掴む</h4>
+  <p class="muted" style="margin:2px 0 10px">この章の「あの空気」を一番手っ取り早く掴めるのが完成車の動画。広島の<a href="https://www.instagram.com/flat_group_/" target="_blank" rel="noopener">FLAT GROUP</a>は、グラストラッカー（絶版）から現行GB350まで、国産単気筒をベースにしたスクランブラー／ブラットの<strong>コンプリート車（完成車）を製作・全国販売</strong>していて、「新しめの国産＋引き算カスタム」の完成形がそのまま見られる（自分で組まずに買う、という③の別ルートでもある）。③で触れた<strong>K-SPEED</strong>のGB350カスタムも並べた。サムネイルをタップすると各投稿・動画が開く（Instagramは画像の転載ができないためリンクカード表示）。</p>
+  <div class="gallery">
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/reel/DDxmu2uz9es/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラストラッカーBB<br>スクランブラー</b><span class="see">リールを見る →</span><span class="ti-badge">リール</span></span>
+      <span class="ti-label">グラトラBB 完成車<small>FLAT GROUP</small></span>
+    </a>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/reel/DArajJCssAj/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラストラッカー<br>ビンテージオフ塗装</b><span class="see">リールを見る →</span><span class="ti-badge">リール</span></span>
+      <span class="ti-label">グラトラ 塗装カスタム<small>FLAT GROUP</small></span>
+    </a>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/p/DB7OtQBTbQr/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>グラトラビッグボーイ<br>スカチューン</b><span class="see">投稿を見る →</span><span class="ti-badge">投稿</span></span>
+      <span class="ti-label">グラトラBB スカチューン<small>FLAT GROUP</small></span>
+    </a>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/reel/DYYFPIuTS3i/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>GB350<br>スクランブラー</b><span class="see">リールを見る →</span><span class="ti-badge">リール</span></span>
+      <span class="ti-label">GB350 スクランブラー<small>FLAT GROUP</small></span>
+    </a>
+    <a class="thumb-item thumb-item--media" href="https://www.youtube.com/watch?v=T9qwAMZVgHw" target="_blank" rel="noopener">
+      <span class="ti-media"><img src="https://img.youtube.com/vi/T9qwAMZVgHw/hqdefault.jpg" alt="K-SPEEDによるHonda GB350スクランブラーカスタムの動画サムネイル" loading="lazy" width="480" height="360"><span class="ti-play" aria-hidden="true"><i>▶</i></span><span class="ti-badge">YouTube</span></span>
+      <span class="ti-label">GB350 スクランブラー<small>K-SPEED</small></span>
+    </a>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/flat_group_/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>@flat_group_<br>事例をもっと見る</b><span class="see">アカウントへ →</span><span class="ti-badge">アカウント</span></span>
+      <span class="ti-label">FLAT GROUP<small>Instagram</small></span>
+    </a>
+    <a class="thumb-item thumb-item--media" href="https://www.instagram.com/eakkspeed/" target="_blank" rel="noopener">
+      <span class="ti-media ti-ig"><span class="ico" aria-hidden="true"></span><b>@eakkspeed<br>K-SPEED公式</b><span class="see">アカウントへ →</span><span class="ti-badge">アカウント</span></span>
+      <span class="ti-label">K-SPEED Official<small>Instagram</small></span>
+    </a>
   </div>
 
   <h3>④ 直進性能をジオメトリで見る ― WB・キャスター・フォーク・ブレーキ</h3>
