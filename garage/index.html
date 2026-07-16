@@ -242,8 +242,9 @@
   .thumb-item--media .ti-label small{font-weight:600;color:var(--muted);margin-left:auto;font-size:10px}
   /* 埋め込みプレーヤーをページに直接並べる（Instagram embed.js / YouTube iframe） */
   .embeds{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:16px 0;align-items:start}
-  .embeds .instagram-media{margin:0 auto !important;min-width:0 !important;max-width:100% !important;width:100%;
+  .embeds .instagram-media,.embeds .tiktok-embed{margin:0 auto !important;min-width:0 !important;max-width:100% !important;width:100%;
     border-radius:12px !important;box-shadow:0 0 0 1px var(--line) !important}
+  .embeds .tiktok-embed iframe{border-radius:12px}
   .embed-item--yt{grid-column:1/-1;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
   .embed-item--yt iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;background:#000}
   .embed-item--yt .ecap{display:flex;align-items:center;gap:8px;margin:0;padding:8px 11px;font-size:12.5px;font-weight:700}
@@ -1377,8 +1378,12 @@
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYYFPIuTS3i/" data-instgrm-version="14">
       <a href="https://www.instagram.com/flat_group_/reel/DYYFPIuTS3i/" target="_blank" rel="noopener">GB350 スクランブラーカスタム（FLAT GROUP・リール）を見る</a>
     </blockquote>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yu_______ki86/video/7559148478409100551" data-video-id="7559148478409100551">
+      <section><a href="https://www.tiktok.com/@yu_______ki86/video/7559148478409100551" target="_blank" rel="noopener">トライアンフ 朝活ライド（@yu_______ki86・TikTok）を見る</a></section>
+    </blockquote>
   </div>
   <script async src="https://www.instagram.com/embed.js"></script>
+  <script async src="https://www.tiktok.com/embed.js"></script>
 
   <h3>④ 直進性能をジオメトリで見る ― WB・キャスター・フォーク・ブレーキ</h3>
   <p class="muted" style="margin:2px 0 10px">アメリカン章と同じ流儀で、この章の5台＋基準MT-03を車体の数字で比較する。読み方も同じ：<strong>ホイールベース（WB）が長い・キャスター角が寝ている（大きい）・トレールが大きいほど直進安定</strong>、短く立っているほどキビキビ。フォークは<strong>倒立ほど高剛性</strong>（詳しくは「釣りで選ぶ①」章のアコーディオン）、ブレーキはディスク径が大きいほど強力。数値は各社公表諸元（キャスター非公表の車種は—）。</p>
