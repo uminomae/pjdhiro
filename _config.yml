@@ -3,7 +3,7 @@
 # ---------------------------------------------------
 baseurl: "/pjdhiro" # リポジトリ名
 url: "https://uminomae.github.io" # GitHub PagesのURL
-port: 3001 # ローカル `jekyll serve` の固定ポート（本番Pagesでは無視される）
+port: 3005 # ローカル `rake go` / `jekyll serve` の固定ポート（本番Pagesでは無視される）
 
 title: "Emotion Processing in Project Design" # サイトのタイトル
 email: # サイトに関する連絡先メールアドレス
