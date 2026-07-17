@@ -245,14 +245,14 @@
   .ti-ig .ico::after{content:"";position:absolute;top:3px;right:3px;width:4px;height:4px;background:#f4ecf1;border-radius:99px}
   .thumb-item--media .ti-label small{font-weight:600;color:var(--muted);margin-left:auto;font-size:10px}
   /* 埋め込みプレーヤーをページに直接並べる（Instagram embed.js / YouTube iframe） */
-  .embeds{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:16px 0;align-items:start}
+  .embeds{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:16px 0;align-items:start}
   .embeds .instagram-media{margin:0 auto !important;min-width:0 !important;max-width:100% !important;width:100%;
     border-radius:12px !important;box-shadow:0 0 0 1px var(--line) !important}
   .embed-item{display:flex;flex-direction:column;gap:7px;min-width:0;margin:0}
   .embed-cap{display:flex;align-items:center;gap:8px;margin:0;font-size:13.5px;font-weight:700;color:var(--text)}
   .embed-cap .style-tag{flex:none;font-size:10.5px;font-weight:800;color:#12131a;background:var(--accent2);
     border-radius:99px;padding:1px 9px;letter-spacing:.03em}
-  .embed-item--wide{grid-column:1/-1}
+  .embed-item--wide{grid-column:span 2}
   .embeds .yt-embed{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:12px;
     background:#000;box-shadow:0 0 0 1px var(--line)}
   .embeds .yt-embed--short{aspect-ratio:9/16;max-height:680px}
