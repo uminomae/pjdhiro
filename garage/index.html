@@ -200,6 +200,9 @@
   #toc li.toc-sub a::before{content:"📷";margin-right:7px;font-weight:400}
   #toc li.toc-sub.toc-acc a::before{content:"▸";margin-right:7px;font-weight:400}
   #toc li.toc-sub a:hover{color:var(--text)}
+  /* 再発防止ガード: サブ項目は誤って.activeが付いてもカード化させない（現在地カードは章リンク専用） */
+  #toc li.toc-sub a.active{background:none;box-shadow:none;color:var(--muted)}
+  #toc li.toc-sub a.active::before{color:var(--muted)}
   @media(min-width:1260px){
     /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
     #toc{left:20px;right:auto;top:92px;height:auto;max-height:calc(100vh - 116px);width:206px;
@@ -1858,8 +1861,8 @@
   btn.addEventListener('click',function(){ document.body.classList.toggle('toc-open'); });
   bd.addEventListener('click',close); xbtn.addEventListener('click',close);
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
-  /* スクロール位置に応じて現在地をハイライト */
-  var links=[].slice.call(ol.querySelectorAll('a'));
+  /* スクロール位置に応じて現在地をハイライト（章リンクのみ。サブ項目に付けると全部カード化して崩れる） */
+  var links=[].slice.call(ol.querySelectorAll('li:not(.toc-sub) > a'));
   var ticking=false;
   function spy(){
     ticking=false;
