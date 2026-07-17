@@ -198,6 +198,7 @@
   #toc li.toc-sub{counter-increment:none}
   #toc li.toc-sub a{padding:7px 10px 7px 22px;font-size:13px;color:var(--muted)}
   #toc li.toc-sub a::before{content:"📷";margin-right:7px;font-weight:400}
+  #toc li.toc-sub.toc-acc a::before{content:"▸";margin-right:7px;font-weight:400}
   #toc li.toc-sub a:hover{color:var(--text)}
   @media(min-width:1260px){
     /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
@@ -1824,27 +1825,30 @@
         if(history.replaceState) history.replaceState(null,'','#gallery');
       });
     }
-    /* カスタム事例ギャラリー（アコーディオン）を含む章にもサブ項目を追加 */
-    var cgal=sec.querySelector('#custom-gallery');
-    if(cgal){
-      var cli=document.createElement('li'); cli.className='toc-sub';
-      var ca=document.createElement('a'); ca.href='#custom-gallery'; ca.textContent='カスタム事例';
-      ca.title='カスタム事例ギャラリー（動画）'; ca.dataset.target=id;
-      cli.appendChild(ca); ol.appendChild(cli);
-      ca.addEventListener('click',function(e){
+    /* 章内のアコーディオン（details.acc）の主タイトルをサブ項目として追加 */
+    var accs=[].slice.call(sec.querySelectorAll('details.acc'));
+    accs.forEach(function(acc,j){
+      var asum=acc.querySelector(':scope>summary'); if(!asum) return;
+      var aid=acc.id||(id+'-acc-'+(j+1)); acc.id=aid;
+      var afull=asum.textContent.replace(/\s+/g,' ').trim();
+      var amain=(afull.split(/[―—–─：:]/)[0]||afull).trim();
+      var ali=document.createElement('li'); ali.className='toc-sub toc-acc';
+      var aa=document.createElement('a'); aa.href='#'+aid; aa.textContent=amain; aa.title=afull; aa.dataset.target=id;
+      ali.appendChild(aa); ol.appendChild(ali);
+      aa.addEventListener('click',function(e){
         e.preventDefault();
-        sec.open=true; cgal.open=true;
+        sec.open=true; acc.open=true;
         document.body.classList.remove('toc-open');
-        function go2(smooth){
-          var y=cgal.getBoundingClientRect().top+window.pageYOffset-12;
+        function goA(smooth){
+          var y=acc.getBoundingClientRect().top+window.pageYOffset-12;
           window.scrollTo({top:y,behavior:smooth?'smooth':'auto'});
         }
-        requestAnimationFrame(function(){ go2(true); });
-        /* 埋め込みプレーヤーのリフローで着地がズレるので補正 */
-        setTimeout(function(){ go2(false); },420);
-        if(history.replaceState) history.replaceState(null,'','#custom-gallery');
+        requestAnimationFrame(function(){ goA(true); });
+        /* 折りたたみ展開・埋め込みのリフローで着地がズレるので補正 */
+        setTimeout(function(){ goA(false); },420);
+        if(history.replaceState) history.replaceState(null,'','#'+aid);
       });
-    }
+    });
   });
   document.body.appendChild(nav);
   var btn=document.createElement('button'); btn.id='toc-btn'; btn.setAttribute('aria-label','目次を開く'); btn.textContent='☰ 目次';
