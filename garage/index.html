@@ -142,6 +142,9 @@
   .chartcard svg a:hover circle{stroke:#ffffff;stroke-width:2}
   /* レーサー章の7列表: 641px以上は横スクロールで各セルを詰める（640px以下はカード化） */
   @media(min-width:641px){.matrix.wrap.racer table{min-width:780px}}
+  @media(min-width:641px){.matrix.wrap.numb table{min-width:0}
+    .matrix.wrap.numb th,.matrix.wrap.numb td{padding:10px 8px;font-size:13.5px}
+    .matrix.wrap.numb td small{font-size:11.5px}}
   /* combined table + accordions */
   #list table{min-width:860px}
   details.acc{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
@@ -1831,20 +1834,78 @@
   </div>
 
   <h3>5. この軸だけで並べ直すと</h3>
-  <p>ここまでの判定条件は4つである。<strong>①1気筒あたりの排気量 ②常用回転数 ③クラッチの軽さ ④アップライトな乗車姿勢</strong>。以下はページ全体の結論ではなく、痺れという1つの指標だけで評価した場合の順位である。</p>
-  <div class="tablewrap matrix wrap">
+  <p>ここまでに出た因子をすべて列にして並べる。<strong>右手が①1気筒あたりの排気量・②常用回転数・③乗車姿勢、左手がクラッチの軽さ</strong>である。以下はページ全体の結論ではなく、痺れという1つの指標だけで評価した場合の順位である。</p>
+  <div class="tablewrap matrix wrap numb">
     <table>
-      <thead><tr><th>車種</th><th>この軸での評価</th></tr></thead>
+      <thead><tr><th>車種</th><th>① 1気筒あたり</th><th>② 60km/h</th><th>①×② 振動指数</th><th>③ 乗車姿勢</th><th>左手（クラッチ）</th><th>総合</th></tr></thead>
       <tbody>
-        <tr><td data-label="車種"><strong>Z400</strong></td><td data-label="この軸での評価" class="o"><strong>この指標では最有力になる。</strong>MT-03との6%差は対策部品で埋まり、クラッチは20%軽い。37N·mのトルクの余裕から来る3,500rpm巡航も効く</td></tr>
-        <tr><td data-label="車種"><strong>MT-03</strong><small>（本ページの軸）</small></td><td data-label="この軸での評価" class="o">振動は6%有利だが、<strong>知覚できる閾値を下回る</strong>。トルクが23%低く、常用回転数は290rpm高い</td></tr>
-        <tr><td data-label="車種">エリミネーター</td><td data-label="この軸での評価" class="g">振動は3車中<strong>最良</strong>。Z400と同一エンジンでギアリングだけが高い。ただしキャスター30°・トレール121mm・WB1,520mmで、ストリートファイターの外観にはならない</td></tr>
-        <tr><td data-label="車種">Ninja400</td><td data-label="この軸での評価" class="x">防風性能は最良。ただし<strong>前傾姿勢で手に体重が乗る</strong>ため、最も避けたい経路に該当する</td></tr>
-        <tr><td data-label="車種">NX400 E-Clutch</td><td data-label="この軸での評価" class="o">左手の問題は<strong>完全に消える</strong>。ただし111.1万円である</td></tr>
-        <tr><td data-label="車種">単気筒勢<small>（GB350・スピード400・スヴァルトピレン401・CL250 ほか）</small></td><td data-label="この軸での評価" class="x"><strong>原理的に不利</strong>。振動を打ち消す相手の気筒が存在しない</td></tr>
+        <tr>
+          <td data-label="車種"><strong>Z400</strong></td>
+          <td data-label="① 1気筒あたり">199cc<br><small>並列2気筒</small></td>
+          <td data-label="② 60km/h">3,500rpm</td>
+          <td data-label="①×② 振動指数">106</td>
+          <td data-label="③ 乗車姿勢" class="g">アップライト</td>
+          <td data-label="左手（クラッチ）" class="g"><strong>最も軽い</strong><br><small>従来のアシスト＆スリッパーより20%軽い</small></td>
+          <td data-label="総合" class="g"><strong>◎</strong></td>
+        </tr>
+        <tr>
+          <td data-label="車種"><strong>MT-03</strong><br><small>本ページの軸</small></td>
+          <td data-label="① 1気筒あたり"><strong>160cc</strong><br><small>並列2気筒</small></td>
+          <td data-label="② 60km/h">3,790rpm</td>
+          <td data-label="①×② 振動指数"><strong>100</strong><br><small>基準</small></td>
+          <td data-label="③ 乗車姿勢" class="g">アップライト</td>
+          <td data-label="左手（クラッチ）" class="o">軽い<br><small>2025年4月24日以降。それ以前は重い</small></td>
+          <td data-label="総合" class="g"><strong>◎</strong></td>
+        </tr>
+        <tr>
+          <td data-label="車種">エリミネーター</td>
+          <td data-label="① 1気筒あたり">199cc<br><small>並列2気筒</small></td>
+          <td data-label="② 60km/h"><strong>約3,300rpm</strong></td>
+          <td data-label="①×② 振動指数"><strong>94</strong></td>
+          <td data-label="③ 乗車姿勢" class="g">アップライト<br><small>クルーザー</small></td>
+          <td data-label="左手（クラッチ）" class="o">軽い<br><small>アシスト＆スリッパー</small></td>
+          <td data-label="総合" class="g"><strong>◎</strong></td>
+        </tr>
+        <tr>
+          <td data-label="車種">Ninja400</td>
+          <td data-label="① 1気筒あたり">199cc<br><small>並列2気筒</small></td>
+          <td data-label="② 60km/h">3,500rpm</td>
+          <td data-label="①×② 振動指数">106</td>
+          <td data-label="③ 乗車姿勢" class="x"><strong>前傾</strong><br><small>手に体重が乗る</small></td>
+          <td data-label="左手（クラッチ）" class="g"><strong>最も軽い</strong><br><small>Z400と同一</small></td>
+          <td data-label="総合" class="x"><strong>△</strong></td>
+        </tr>
+        <tr>
+          <td data-label="車種">NX400 E-Clutch</td>
+          <td data-label="① 1気筒あたり">199.5cc<br><small>並列2気筒</small></td>
+          <td data-label="② 60km/h">—</td>
+          <td data-label="①×② 振動指数">—</td>
+          <td data-label="③ 乗車姿勢" class="g">アップライト</td>
+          <td data-label="左手（クラッチ）" class="g"><strong>なし</strong><br><small>レバー操作が不要</small></td>
+          <td data-label="総合" class="o"><strong>○</strong></td>
+        </tr>
+        <tr>
+          <td data-label="車種">単気筒勢<br><small>GB350・スピード400・スヴァルトピレン401・CL250 ほか</small></td>
+          <td data-label="① 1気筒あたり" class="x"><strong>249〜398cc</strong><br><small>単気筒</small></td>
+          <td data-label="② 60km/h">—</td>
+          <td data-label="①×② 振動指数">—</td>
+          <td data-label="③ 乗車姿勢" class="g">アップライト</td>
+          <td data-label="左手（クラッチ）">車種による</td>
+          <td data-label="総合" class="x"><strong>△</strong></td>
+        </tr>
+        <tr>
+          <td data-label="車種">CB400SF<br><small>教習車・生産終了</small></td>
+          <td data-label="① 1気筒あたり" class="g"><strong>100cc</strong><br><small>直列4気筒</small></td>
+          <td data-label="② 60km/h">—</td>
+          <td data-label="①×② 振動指数">—</td>
+          <td data-label="③ 乗車姿勢" class="g">アップライト</td>
+          <td data-label="左手（クラッチ）" class="x"><strong>重い</strong><br><small>アシスト機構なし</small></td>
+          <td data-label="総合" class="o"><strong>○</strong></td>
+        </tr>
       </tbody>
     </table>
   </div>
+  <p class="legend"><strong>①×②の振動指数</strong>は、（ボア²×ストローク）×（60km/h時の回転数）²をMT-03＝100として指数化したもの。<strong>6%以内の差は知覚できる閾値を下回る</strong>ため、Z400とMT-03は実質同点として扱う。<strong>③はこの指数を上書きする</strong>——前傾では手に体重が乗るため、①②がどれだけ良くても相殺される。ギア比の公表がなく指数を算出できない車種は「—」。<br><strong>総合の補足：</strong>エリミネーターは振動が最良だが、キャスター30°・トレール121mm・WB1,520mmでストリートファイターの外観にはならない。Ninja400は①②とクラッチがZ400と同一でも、③の前傾がそれを上書きする。NX400 E-Clutchは左手が完全に消えるが111.1万円。CB400SFは①③が良く左手だけが重く、この偏りがあるからこそ教習で左右を判定できる。</p>
 
   <div class="note">
     <strong>この指標は、他の章の評価とは逆を向く。</strong>「乗り味で選ぶ」章で最上位となった単気筒の鼓動感は、ここでは原理的に不利になる。鼓動感と痺れは、同じ振動を別の側面から見たものだからである。<br>
