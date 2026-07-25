@@ -1,0 +1,76 @@
+<svg viewBox="0 0 900 372" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect x="0" y="0" width="900" height="372" fill="#232733"/>
+  <text x="40" y="28" fill="#e6e6e6" font-size="17" font-weight="700">バイク × スプラ武器特性 ── 強みと弱点の分布（一長一短）</text>
+  <text x="40" y="46" fill="#9aa0aa" font-size="11">同じ6因子で並べると、各タイプが別の武器クラスに対応する。レーダーの"形"が、そのまま性格。</text>
+
+  <!-- ==== grid + spokes generator (per card) ==== -->
+  <g stroke="#2a323c" stroke-width="1" fill="none">
+    <!-- A -->
+    <polygon points="100,112 141.6,136 141.6,184 100,208 58.4,184 58.4,136"/>
+    <polygon points="100,131.2 124.9,145.6 124.9,174.4 100,188.8 75.1,174.4 75.1,145.6"/>
+    <line x1="100" y1="112" x2="100" y2="208"/><line x1="141.6" y1="136" x2="58.4" y2="184"/><line x1="58.4" y1="136" x2="141.6" y2="184"/>
+    <!-- B -->
+    <polygon points="260,112 301.6,136 301.6,184 260,208 218.4,184 218.4,136"/>
+    <polygon points="260,131.2 284.9,145.6 284.9,174.4 260,188.8 235.1,174.4 235.1,145.6"/>
+    <line x1="260" y1="112" x2="260" y2="208"/><line x1="301.6" y1="136" x2="218.4" y2="184"/><line x1="218.4" y1="136" x2="301.6" y2="184"/>
+    <!-- C -->
+    <polygon points="420,112 461.6,136 461.6,184 420,208 378.4,184 378.4,136"/>
+    <polygon points="420,131.2 444.9,145.6 444.9,174.4 420,188.8 395.1,174.4 395.1,145.6"/>
+    <line x1="420" y1="112" x2="420" y2="208"/><line x1="461.6" y1="136" x2="378.4" y2="184"/><line x1="378.4" y1="136" x2="461.6" y2="184"/>
+    <!-- D -->
+    <polygon points="580,112 621.6,136 621.6,184 580,208 538.4,184 538.4,136"/>
+    <polygon points="580,131.2 604.9,145.6 604.9,174.4 580,188.8 555.1,174.4 555.1,145.6"/>
+    <line x1="580" y1="112" x2="580" y2="208"/><line x1="621.6" y1="136" x2="538.4" y2="184"/><line x1="538.4" y1="136" x2="621.6" y2="184"/>
+    <!-- E -->
+    <polygon points="740,112 781.6,136 781.6,184 740,208 698.4,184 698.4,136"/>
+    <polygon points="740,131.2 764.9,145.6 764.9,174.4 740,188.8 715.1,174.4 715.1,145.6"/>
+    <line x1="740" y1="112" x2="740" y2="208"/><line x1="781.6" y1="136" x2="698.4" y2="184"/><line x1="698.4" y1="136" x2="781.6" y2="184"/>
+  </g>
+
+  <!-- axis numbers on card A only -->
+  <g fill="#6b7480" font-size="9" text-anchor="middle">
+    <text x="100" y="106">①</text><text x="149" y="134">②</text><text x="149" y="192">③</text>
+    <text x="100" y="220">④</text><text x="51" y="192">⑤</text><text x="51" y="134">⑥</text>
+  </g>
+
+  <!-- ==== data polygons ==== -->
+  <!-- A 125 / フデ (teal) [射1,火1,安2,快4,扱4,取5] -->
+  <polygon points="100,150.4 108.3,155.2 116.6,169.6 100,198.4 66.7,179.2 58.4,136" fill="#35c4c4" fill-opacity="0.32" stroke="#35c4c4" stroke-width="2"/>
+  <!-- B 250 / スシコラ (green) [射3,火2,安4,快5,扱5,取4] -->
+  <polygon points="260,131.2 276.6,150.4 293.3,179.2 260,208 218.4,184 226.7,140.8" fill="#47d16c" fill-opacity="0.32" stroke="#47d16c" stroke-width="2.4"/>
+  <!-- C Ninja400 / シューター (blue) all 4 -->
+  <polygon points="420,121.6 453.3,140.8 453.3,179.2 420,198.4 386.7,179.2 386.7,140.8" fill="#4aa3ff" fill-opacity="0.30" stroke="#4aa3ff" stroke-width="2"/>
+  <!-- D ZX-4R / チャージャー (red) [射5,火5,安4,快2,扱1,取2] -->
+  <polygon points="580,112 621.6,136 613.3,179.2 580,179.2 571.7,164.8 563.4,150.4" fill="#ff5a5a" fill-opacity="0.30" stroke="#ff5a5a" stroke-width="2"/>
+  <!-- E クルーザー / ローラー (purple) [射2,火3,安5,快4,扱5,取2] -->
+  <polygon points="740,140.8 764.9,145.6 781.6,184 740,198.4 698.4,184 723.4,150.4" fill="#b06bd6" fill-opacity="0.30" stroke="#b06bd6" stroke-width="2"/>
+
+  <!-- ==== labels ==== -->
+  <g text-anchor="middle">
+    <text x="100" y="72" fill="#35c4c4" font-size="14" font-weight="700">フデ（筆）</text>
+    <text x="100" y="88" fill="#cfd3da" font-size="10.5">GSX-R125</text>
+    <text x="260" y="72" fill="#47d16c" font-size="14" font-weight="700">スシコラ</text>
+    <text x="260" y="88" fill="#cfd3da" font-size="10.5">CBR250R / GSX250R</text>
+    <text x="420" y="72" fill="#4aa3ff" font-size="14" font-weight="700">シューター（汎用）</text>
+    <text x="420" y="88" fill="#cfd3da" font-size="10.5">Ninja400</text>
+    <text x="580" y="72" fill="#ff5a5a" font-size="14" font-weight="700">チャージャー</text>
+    <text x="580" y="88" fill="#cfd3da" font-size="10.5">ZX-4R / ZX-25R</text>
+    <text x="740" y="72" fill="#b06bd6" font-size="14" font-weight="700">ローラー</text>
+    <text x="740" y="88" fill="#cfd3da" font-size="10.5">クルーザー / GB350型</text>
+  </g>
+
+  <!-- tradeoff one-liners -->
+  <g text-anchor="middle" fill="#9aa0aa" font-size="9.5">
+    <text x="100" y="248" fill="#9aa0aa">軽快・最安。だが火力/射程</text><text x="100" y="261" fill="#9aa0aa">は最弱、直進・高速に弱い</text>
+    <text x="260" y="248" fill="#9aa0aa">穴が無い万能。突出は無いが</text><text x="260" y="261" fill="#9aa0aa">どこでも腐らない＝今日の主役</text>
+    <text x="420" y="248" fill="#9aa0aa">全項目が高い優等生。</text><text x="420" y="261" fill="#9aa0aa">価格・車格は一段上</text>
+    <text x="580" y="248" fill="#9aa0aa">一撃は最強。要チャージ（高回転）</text><text x="580" y="261" fill="#9aa0aa">近距離（低速）は死にスキル</text>
+    <text x="740" y="248" fill="#9aa0aa">低速の制圧力と直進安定は随一。</text><text x="740" y="261" fill="#9aa0aa">伸び（射程）と機動は捨てる</text>
+  </g>
+
+  <!-- axis legend -->
+  <line x1="40" y1="292" x2="860" y2="292" stroke="#2a2f38" stroke-width="1"/>
+  <text x="40" y="316" fill="#9aa0aa" font-size="11">軸（頂点＝上から時計回り）：① 射程＝速度域の広さ　② 火力＝加速　③ 直進安定　④ 快適・維持＝痺れ無/安い　⑤ 扱いやすさ＝リニア・低回転　⑥ 取り回し＝低速機動</text>
+  <text x="40" y="338" fill="#7fe39a" font-size="11">読み筋：チャージャー(ZX-4R)は"当たれば最強"だが状況を選ぶ。公道の日常戦を制するのは、穴の無いスシコラ(250低回転)。</text>
+  <text x="40" y="358" fill="#6b7480" font-size="10">※スコアは本ページの評価軸に基づく相対値（模式）。§9のルートは フデ→スシコラ→シューター→チャージャー と武器を持ち替える旅。</text>
+</svg>

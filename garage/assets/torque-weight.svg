@@ -1,0 +1,67 @@
+<svg viewBox="0 0 1010 630" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect x="0" y="0" width="1010" height="630" fill="#232733"/>
+<text x="40" y="30" fill="#e6e6e6" font-size="18" font-weight="700">≤60km/hの“低速の力” ── トルク ÷ (車重＋体重60kg) でアルファードと比べる</text>
+<text x="40" y="50" fill="#9aa0aa" font-size="12">≤60km/hは“<tspan fill="#e6e6e6">トルク(力)</tspan>”が効く。<tspan fill="#e6e6e6" font-weight="600">体重60kgの人が乗った総重量</tspan>で割る（軽い車ほど体重の影響大）。基準＝アルファード。色＝クラス。</text>
+<rect x="443.9" y="80" width="466.1" height="446" fill="#47d16c" opacity="0.06"/>
+<line x1="443.9" y1="80" x2="443.9" y2="526" stroke="#e6e6e6" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.85"/>
+<text x="593.9" y="76" fill="#e6e6e6" font-size="11.5" text-anchor="middle">アルファード基準　→これより右＝この指標で車超え</text>
+<line x1="150" y1="532" x2="920" y2="532" stroke="#5a6070" stroke-width="1.2"/>
+<line x1="150.0" y1="80" x2="150.0" y2="532" stroke="#2c313d" stroke-width="1"/>
+<text x="150.0" y="548" fill="#9aa0aa" font-size="11" text-anchor="middle">0.00</text>
+<line x1="285.7" y1="80" x2="285.7" y2="532" stroke="#2c313d" stroke-width="1"/>
+<text x="285.7" y="548" fill="#9aa0aa" font-size="11" text-anchor="middle">0.05</text>
+<line x1="421.4" y1="80" x2="421.4" y2="532" stroke="#2c313d" stroke-width="1"/>
+<text x="421.4" y="548" fill="#9aa0aa" font-size="11" text-anchor="middle">0.10</text>
+<line x1="557.1" y1="80" x2="557.1" y2="532" stroke="#2c313d" stroke-width="1"/>
+<text x="557.1" y="548" fill="#9aa0aa" font-size="11" text-anchor="middle">0.15</text>
+<line x1="692.9" y1="80" x2="692.9" y2="532" stroke="#2c313d" stroke-width="1"/>
+<text x="692.9" y="548" fill="#9aa0aa" font-size="11" text-anchor="middle">0.20</text>
+<line x1="828.6" y1="80" x2="828.6" y2="532" stroke="#2c313d" stroke-width="1"/>
+<text x="828.6" y="548" fill="#9aa0aa" font-size="11" text-anchor="middle">0.25</text>
+<text x="530" y="566" fill="#9aa0aa" font-size="12" text-anchor="middle">トルク ÷ (車重＋体重60kg)（Nm/kg・大きいほど低速で力強い）</text>
+<text x="142" y="104" fill="#cfd3da" font-size="12" text-anchor="end">JOG 50</text>
+<rect x="150" y="90" width="78.6" height="19" rx="3" fill="#9aa0aa" opacity="0.9"/>
+<text x="234.6" y="104" fill="#9aa0aa" font-size="11">0.029</text>
+<text x="142" y="135" fill="#cfd3da" font-size="12" text-anchor="end">TZR50 2st</text>
+<rect x="150" y="121" width="108.6" height="19" rx="3" fill="#9aa0aa" opacity="0.9"/>
+<text x="264.6" y="135" fill="#9aa0aa" font-size="11">0.040</text>
+<text x="142" y="166" fill="#cfd3da" font-size="12" text-anchor="end">125クラス</text>
+<rect x="150" y="152" width="158.4" height="19" rx="3" fill="#35c4c4" opacity="0.9"/>
+<text x="314.4" y="166" fill="#35c4c4" font-size="11">0.058</text>
+<text x="142" y="197" fill="#cfd3da" font-size="12" text-anchor="end">GSX250R</text>
+<rect x="150" y="183" width="250.9" height="19" rx="3" fill="#e0a83a" opacity="0.9"/>
+<text x="406.9" y="197" fill="#e0a83a" font-size="11">0.092</text>
+<text x="142" y="228" fill="#cfd3da" font-size="12" text-anchor="end">ZX-25R</text>
+<rect x="150" y="214" width="256.9" height="19" rx="3" fill="#e0a83a" opacity="0.9"/>
+<text x="412.9" y="228" fill="#e0a83a" font-size="11">0.095</text>
+<text x="142" y="259" fill="#cfd3da" font-size="12" text-anchor="end">Ninja250 / R25</text>
+<rect x="150" y="245" width="275.0" height="19" rx="3" fill="#e0a83a" opacity="0.9"/>
+<text x="431.0" y="259" fill="#e0a83a" font-size="11">0.101</text>
+<text x="142" y="290" fill="#e6e6e6" font-size="12" text-anchor="end" font-weight="700">アルファード2.5(2.1t)</text>
+<rect x="150" y="276" width="293.9" height="19" rx="3" fill="none" stroke="#e6e6e6" stroke-width="2"/>
+<text x="449.9" y="290" fill="#e6e6e6" font-size="11">0.108</text>
+<text x="142" y="321" fill="#cfd3da" font-size="12" text-anchor="end">CBR250RR</text>
+<rect x="150" y="307" width="297.6" height="19" rx="3" fill="#e0a83a" opacity="0.9"/>
+<text x="453.6" y="321" fill="#e0a83a" font-size="11">0.110</text>
+<text x="142" y="352" fill="#cfd3da" font-size="12" text-anchor="end">YZF-R3(320)</text>
+<rect x="150" y="338" width="355.6" height="19" rx="3" fill="#5a9be0" opacity="0.9"/>
+<text x="511.6" y="352" fill="#5a9be0" font-size="11">0.131</text>
+<text x="142" y="383" fill="#cfd3da" font-size="12" text-anchor="end">CB400SF 教習</text>
+<rect x="150" y="369" width="405.6" height="19" rx="3" fill="#5a9be0" opacity="0.9"/>
+<text x="561.6" y="383" fill="#5a9be0" font-size="11">0.149</text>
+<text x="142" y="414" fill="#cfd3da" font-size="12" text-anchor="end">エリミSE カウル</text>
+<rect x="150" y="400" width="423.7" height="19" rx="3" fill="#5a9be0" opacity="0.9"/>
+<text x="579.7" y="414" fill="#5a9be0" font-size="11">0.156</text>
+<text x="142" y="445" fill="#cfd3da" font-size="12" text-anchor="end">ZX-4R</text>
+<rect x="150" y="431" width="425.1" height="19" rx="3" fill="#5a9be0" opacity="0.9"/>
+<text x="581.1" y="445" fill="#5a9be0" font-size="11">0.157</text>
+<text x="142" y="476" fill="#cfd3da" font-size="12" text-anchor="end">Ninja400</text>
+<rect x="150" y="462" width="454.4" height="19" rx="3" fill="#5a9be0" opacity="0.9"/>
+<text x="610.4" y="476" fill="#5a9be0" font-size="11">0.167</text>
+<text x="142" y="507" fill="#cfd3da" font-size="12" text-anchor="end">ZX-6R 636</text>
+<rect x="150" y="493" width="699.8" height="19" rx="3" fill="#e0603a" opacity="0.9"/>
+<text x="855.8" y="507" fill="#e0603a" font-size="11">0.258</text>
+<rect x="40" y="580" width="930" height="62" rx="6" fill="#1b1f27" stroke="#3a4050"/>
+<text x="54" y="600" fill="#cfd3da" font-size="12">60kgを乗せると<tspan fill="#e6e6e6" font-weight="700">軽いバイクほど不利</tspan>。この指標でアルファード超えは<tspan fill="#7fe39a" font-weight="700">CBR250RR(回る250)以上・400以上</tspan>。GSX250R/Ninja250は乗車後アルファード以下。</text>
+<text x="54" y="622" fill="#ff9a6a" font-size="11.5">※これは素のエンジントルク/総重量。<tspan font-weight="700">バイクは減速比が車の2〜3倍大きい</tspan>ので、同じ数値でも実際の加速はバイクが遥かに上。“順位”より“桁感”で見る。</text>
+</svg>

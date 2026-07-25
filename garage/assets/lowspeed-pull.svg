@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1010 640" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect x="0" y="0" width="1010" height="640" fill="#232733"/>
+<text x="40" y="32" fill="#e6e6e6" font-size="18" font-weight="700">一般道での“本当の速さ” ── トップギア巡航の押し出す力 vs 速度（≤80km/h）</text>
+<text x="40" y="52" fill="#9aa0aa" font-size="12">縦＝roll-onの力＝トルク÷(車重+60kg)／横＝速度。回転数は速度比例で近似（トップギア巡航・概算）。<tspan fill="#e6e6e6">ピークspecでは見えない一般道の実力</tspan>。</text>
+<line x1="120" y1="415.0" x2="880" y2="415.0" stroke="#2c313d" stroke-width="1"/><text x="112" y="419.0" fill="#9aa0aa" font-size="11" text-anchor="end">0.04</text>
+<line x1="120" y1="310.0" x2="880" y2="310.0" stroke="#2c313d" stroke-width="1"/><text x="112" y="314.0" fill="#9aa0aa" font-size="11" text-anchor="end">0.08</text>
+<line x1="120" y1="205.0" x2="880" y2="205.0" stroke="#2c313d" stroke-width="1"/><text x="112" y="209.0" fill="#9aa0aa" font-size="11" text-anchor="end">0.12</text>
+<line x1="120" y1="100.0" x2="880" y2="100.0" stroke="#2c313d" stroke-width="1"/><text x="112" y="104.0" fill="#9aa0aa" font-size="11" text-anchor="end">0.16</text>
+<line x1="120" y1="520" x2="880" y2="520" stroke="#5a6070" stroke-width="1.5"/>
+<line x1="120" y1="100" x2="120" y2="520" stroke="#5a6070" stroke-width="1.5"/>
+<line x1="120.0" y1="100" x2="120.0" y2="520" stroke="#2c313d" stroke-width="1"/><text x="120.0" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">20</text>
+<line x1="246.7" y1="100" x2="246.7" y2="520" stroke="#2c313d" stroke-width="1"/><text x="246.7" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">30</text>
+<line x1="373.3" y1="100" x2="373.3" y2="520" stroke="#2c313d" stroke-width="1"/><text x="373.3" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">40</text>
+<line x1="500.0" y1="100" x2="500.0" y2="520" stroke="#2c313d" stroke-width="1"/><text x="500.0" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">50</text>
+<line x1="626.7" y1="100" x2="626.7" y2="520" stroke="#2c313d" stroke-width="1"/><text x="626.7" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">60</text>
+<line x1="753.3" y1="100" x2="753.3" y2="520" stroke="#2c313d" stroke-width="1"/><text x="753.3" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">70</text>
+<line x1="880.0" y1="100" x2="880.0" y2="520" stroke="#2c313d" stroke-width="1"/><text x="880.0" y="540" fill="#cdd2dd" font-size="12" text-anchor="middle">80</text>
+<text x="500" y="562" fill="#9aa0aa" font-size="12" text-anchor="middle">速度 km/h（トップギア巡航・概算）</text>
+<text x="30" y="310" fill="#cdd2dd" font-size="13" font-weight="600" text-anchor="middle" transform="rotate(-90 30 310)">押し出す力 ＝ トルク/(車重+60kg)</text>
+<polyline fill="none" stroke="#47d16c" stroke-width="5" points="120.0,232.0 246.7,232.0 373.3,196.6 500.0,160.0 626.7,139.0 753.3,125.1 880.0,115.4"/>
+<polyline fill="none" stroke="#4aa3ff" stroke-width="2.6" points="120.0,311.9 246.7,311.9 373.3,265.6 500.0,219.3 626.7,173.1 753.3,142.2 880.0,119.1"/>
+<polyline fill="none" stroke="#cd7be0" stroke-width="2.6" points="120.0,309.2 246.7,267.0 373.3,224.8 500.0,203.7 626.7,182.7 753.3,166.8 880.0,151.0"/>
+<polyline fill="none" stroke="#9aa0aa" stroke-width="2.2" stroke-dasharray="6 4" points="120.0,318.9 246.7,318.9 373.3,292.0 500.0,265.2 626.7,238.4 753.3,218.3 880.0,198.2"/>
+<polyline fill="none" stroke="#e0a83a" stroke-width="2.6" points="120.0,343.5 246.7,336.9 373.3,305.3 500.0,289.8 626.7,281.2 753.3,277.4 880.0,277.4"/>
+<polyline fill="none" stroke="#ff5a5a" stroke-width="4.5" points="120.0,472.5 246.7,454.1 373.3,435.7 500.0,417.4 626.7,394.7 753.3,370.2 880.0,345.7"/>
+<text x="436.7" y="165.5" fill="#47d16c" font-size="12" font-weight="700">エリミSE（最強）</text>
+<text x="886.0" y="123.1" fill="#4aa3ff" font-size="12" font-weight="400">Ninja400</text>
+<text x="886.0" y="155.0" fill="#cd7be0" font-size="12" font-weight="400">ZX-4R</text>
+<text x="886.0" y="202.2" fill="#9aa0aa" font-size="12" font-weight="400">CB400SF教習</text>
+<text x="886.0" y="281.4" fill="#e0a83a" font-size="12" font-weight="400">GSX250R</text>
+<text x="886.0" y="349.7" fill="#ff5a5a" font-size="12" font-weight="700">ZX-25R（最弱！）</text>
+<rect x="40" y="560" width="930" height="64" rx="6" fill="#1b1f27" stroke="#3a4050"/>
+<text x="54" y="582" fill="#cfd3da" font-size="12.5">ピークは <tspan fill="#ff8a8a" font-weight="700">ZX-25R 45PS / ZX-4R 77PS</tspan>。だが≤80km/hの押し出す力は <tspan fill="#7fe39a" font-weight="700">エリミネーター(48PS)が全域で最強・ZX-25Rが最弱</tspan>。</text>
+<text x="54" y="604" fill="#9aa0aa" font-size="11.5">回さない一般道では“回してナンボ”の高回転4気筒がいちばん遅い＝スペックの順位が逆転する。※トップギア巡航の概算・減速比未反映。</text>
+</svg>

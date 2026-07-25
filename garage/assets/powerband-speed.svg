@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1180 566" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect x="0" y="0" width="1180" height="566" fill="#232733"/>
+  <text x="40" y="32" fill="#e6e6e6" font-size="18" font-weight="700">一般国道の“車の流れ”に、どう合わせるか ── パワーバンドが来る速度と、流れ対応</text>
+  <text x="40" y="52" fill="#9aa0aa" font-size="12">バー＝“回して楽しい”速度域（トップギア概算）。<tspan fill="#8ab4e6">青帯＝車の流れ(巡航40〜60km/h)</tspan>、<tspan fill="#7fe39a">緑帯＝そこで回せたら理想の60〜80</tspan>。右＝流れへの対応。</text>
+
+  <!-- car-flow band 40-60 -->
+  <rect x="302.7" y="84" width="77.3" height="362" fill="#4aa3ff" opacity="0.13"/>
+  <text x="341.3" y="78" fill="#8ab4e6" font-size="11.5" font-weight="700" text-anchor="middle">車の流れ 40〜60</text>
+  <!-- target zone 60-80 -->
+  <rect x="380" y="84" width="77.4" height="362" fill="#47d16c" opacity="0.12"/>
+  <text x="418.7" y="78" fill="#7fe39a" font-size="11.5" font-weight="700" text-anchor="middle">狙い 60〜80</text>
+
+  <g stroke="#2c313d" stroke-width="1">
+    <line x1="341.3" y1="88" x2="341.3" y2="446"/><line x1="534.7" y1="88" x2="534.7" y2="446"/>
+    <line x1="728" y1="88" x2="728" y2="446"/><line x1="921.4" y1="88" x2="921.4" y2="446"/>
+  </g>
+  <line x1="148" y1="452" x2="960" y2="452" stroke="#5a6070" stroke-width="1.5"/>
+  <line x1="960" y1="70" x2="960" y2="452" stroke="#3a4050" stroke-width="1"/>
+  <g fill="#9aa0aa" font-size="11" text-anchor="middle">
+    <text x="148" y="470">0</text><text x="341.3" y="470">50</text><text x="534.7" y="470">100</text><text x="728" y="470">150</text><text x="921.4" y="470">200</text>
+  </g>
+  <text x="554" y="492" fill="#9aa0aa" font-size="12" text-anchor="middle">速度 km/h（トップギアでパワーバンドが来る速度・概算／低いギアなら低速でも回せる）</text>
+  <text x="970" y="80" fill="#cdd2dd" font-size="11.5" font-weight="600">流れ(40〜60)への対応</text>
+
+  <rect x="100" y="323" width="860" height="22" fill="#35c4c4" opacity="0.10"/>
+
+  <g font-size="12">
+    <text x="138" y="108" fill="#cfd3da" text-anchor="end">ZX-6R 636</text>
+    <rect x="728" y="93" width="232" height="22" rx="4" fill="#ff8a5a" opacity="0.9"/>
+    <text x="720" y="108" fill="#ff8a5a" text-anchor="end" font-size="11">150〜（枠外）</text>
+    <text x="970" y="108" fill="#9aa0aa" font-size="11">余裕すぎ＝過剰</text>
+
+    <text x="138" y="154" fill="#cfd3da" text-anchor="end">ZX-4R 400</text>
+    <rect x="650.7" y="139" width="251.3" height="22" rx="4" fill="#cd7be0" opacity="0.9"/>
+    <text x="908" y="154" fill="#cd7be0" font-size="11">130–195</text>
+    <text x="970" y="154" fill="#9aa0aa" font-size="11">余裕＝過剰ぎみ</text>
+
+    <text x="138" y="200" fill="#cfd3da" text-anchor="end">CB400SF 教習</text>
+    <rect x="554" y="185" width="174" height="22" rx="4" fill="#4aa3ff" opacity="0.9"/>
+    <text x="734" y="200" fill="#4aa3ff" font-size="11">105–150</text>
+    <text x="970" y="200" fill="#cfd3da" font-size="11">低回転で楽・大きな余力</text>
+
+    <text x="138" y="246" fill="#cfd3da" text-anchor="end">ZX-25R 250直4</text>
+    <rect x="496" y="231" width="174" height="22" rx="4" fill="#ff5a5a" opacity="0.9"/>
+    <text x="676" y="246" fill="#ff5a5a" font-size="11">90–135</text>
+    <text x="970" y="246" fill="#ff8a8a" font-size="11">下スカスカ→加速に要回転</text>
+
+    <text x="138" y="292" fill="#cfd3da" text-anchor="end">Ninja250 / GSX250R</text>
+    <rect x="476.7" y="277" width="154.7" height="22" rx="4" fill="#47d16c" opacity="0.9"/>
+    <text x="637" y="292" fill="#47d16c" font-size="11">85–125</text>
+    <text x="970" y="292" fill="#7fe39a" font-size="11" font-weight="700">低回転トルクで楽 ◎</text>
+
+    <text x="138" y="338" fill="#e6e6e6" font-weight="700" text-anchor="end">125クラス ★</text>
+    <rect x="360.7" y="323" width="88.9" height="22" rx="4" fill="#35c4c4"/>
+    <text x="455" y="338" fill="#35c4c4" font-weight="700" font-size="11">55–78（回して楽しい）</text>
+    <text x="970" y="338" fill="#8fd6d6" font-size="11">合わせられるが要回転（忙しい）</text>
+
+    <text x="138" y="384" fill="#cfd3da" text-anchor="end">TZR50 50・2st</text>
+    <rect x="322" y="369" width="50.3" height="22" rx="4" fill="#ffd24a" opacity="0.9"/>
+    <text x="318" y="384" fill="#ffd24a" text-anchor="end" font-size="11">45–58</text>
+    <text x="970" y="384" fill="#9aa0aa" font-size="11">小さく余力が薄い</text>
+
+    <text x="138" y="430" fill="#cfd3da" text-anchor="end">JOG 50</text>
+    <circle cx="360.7" cy="425" r="6" fill="#8a90a0"/>
+    <text x="374" y="430" fill="#8a90a0" font-size="11">≈55・CVTで回す楽しみ無し</text>
+    <text x="970" y="430" fill="#ff8a8a" font-size="11">流れに乗り切れない ✗</text>
+  </g>
+
+  <rect x="40" y="504" width="1100" height="54" rx="6" fill="#1b1f27" stroke="#3a4050"/>
+  <text x="54" y="524" fill="#cfd3da" font-size="12.5"><tspan fill="#7fe39a" font-weight="700">● 車の流れ(40〜60km/h)に“余力で楽に”乗れるのは 低回転トルク型（250低回転・400twin・CB400SF）</tspan>。roll-onだけで流れの加速に付いていける。</text>
+  <text x="54" y="546" fill="#cfd3da" font-size="12.5"><tspan fill="#8fd6d6" font-weight="700">● 125</tspan>は乗れるが要回転（忙しい）。<tspan fill="#ff8a8a" font-weight="700">ZX-25R等は流れの下で回さないと加速せず、50cc(JOG)は流れに乗り切れない</tspan>。「回して60〜80が楽しい」は125のみ。</text>
+</svg>
