@@ -4,7 +4,12 @@ Jekyll ブログ（GitHub Pages）。kesson-driven-thinking の成果物を公�
 
 ## ブランチ
 
-- **main**: 公開ブランチ（GitHub Pages デプロイ先）
+- **develop**: 統合・プレビュー用ブランチ（localhost:3005 が develop ワークツリーを配信）。feature を develop に merge して確認する
+- **main**: 公開ブランチ（GitHub Pages デプロイ先）。develop から流す
+
+### garage の編集は develop で直接行う
+
+`garage/` 配下の編集は、feature ブランチを切らず **develop ワークツリーで直接行う**（2026-07-18 指示）。3005 でそのままプレビューでき、余計な merge を挟まない。
 
 ## 配置ルール
 
