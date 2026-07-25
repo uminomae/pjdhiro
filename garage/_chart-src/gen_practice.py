@@ -3,13 +3,13 @@
 S=7.6  # px/m
 PADW,PADH=int(50*S),int(25*S)  # 380x190
 o=[]
-W,H=1000,860
+W,H=1000,806
 o.append('<svg viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg" font-family="\'Hiragino Sans\',\'Noto Sans JP\',sans-serif">'%(W,H))
 o.append('<rect width="%d" height="%d" fill="#232733"/>'%(W,H))
-o.append('<text x="24" y="34" fill="#e6e6e6" font-size="19" font-weight="700">近場でできる低速練習プラン ── 50m×25m の舗装パッド</text>')
-o.append('<text x="24" y="56" fill="#9aa0aa" font-size="12.5"><tspan fill="#ffb27a" font-weight="700">●</tspan> ペットボトル（水を少量＝重り・柔らかい目印）／外周 <tspan fill="#8ab4e6" font-weight="700">5m</tspan> は転倒時の緩衝帯として空ける／<tspan fill="#7fe39a">破線＝走行ライン</tspan>／速度は低速限定・明るく乾いた路面で</text>')
+o.append('<text x="24" y="34" fill="#e6e6e6" font-size="19" font-weight="700">ペットボトルだけ、近場でできるお手軽・低速練習プラン</text>')
+o.append('<text x="24" y="58" fill="#9aa0aa" font-size="12.5">目印は<tspan fill="#ffb27a" font-weight="700">ペットボトル5〜6本</tspan>（水を少量＝重り）だけ。場所は <tspan fill="#e6e6e6" font-weight="700">50m×25m の舗装パッド</tspan>（キャンプ場の駐車場ほど）・外周<tspan fill="#8ab4e6" font-weight="700">5m</tspan>は緩衝帯／<tspan fill="#7fe39a">破線＝走行ライン</tspan>／低速限定</text>')
 
-panels=[(24,86),(514,86),(24,470),(514,470)]
+panels=[(24,120),(514,120),(24,490),(514,490)]
 titles=["① 8の字（リーンアウト）＋定常円（リーンイン）","② スラローム（左右の体重移動を刷り込む）",
         "③ フルロックUターン（リーンアウト・左右）","④ 発進→フルブレーキ（丁寧さ）"]
 notes=["まず上体を起こし正確に→1本だけ一定速度で回れば定常円＝ハングオフ練習",
@@ -65,8 +65,8 @@ bottle(px,py,42,12.5)
 o.append('<text x="%.1f" y="%.1f" fill="#9aa0aa" font-size="10.5" text-anchor="middle">停止</text>'%(X(px,42),Y(py,7)))
 
 # footer: bottle count / gear
-o.append('<rect x="24" y="812" width="952" height="34" rx="5" fill="#1b1f27" stroke="#3a4050"/>')
-o.append('<text x="38" y="833" fill="#cfd3da" font-size="12">必要なペットボトル＝<tspan fill="#ffb27a" font-weight="700">5〜6本</tspan>（ドリルは一度に一つ・使い回す）。装備＝ヘルメット/グローブ/プロテクター/ブーツ。1本30〜45分×数本で休憩を挟む。膝の接地は狙わない。</text>')
+o.append('<rect x="24" y="758" width="952" height="34" rx="5" fill="#1b1f27" stroke="#3a4050"/>')
+o.append('<text x="38" y="779" fill="#cfd3da" font-size="12">必要なペットボトル＝<tspan fill="#ffb27a" font-weight="700">5〜6本</tspan>（ドリルは一度に一つ・使い回す）。装備＝ヘルメット/グローブ/プロテクター/ブーツ。1本30〜45分×数本で休憩を挟む。膝の接地は狙わない。</text>')
 o.append('</svg>')
 open("/Users/uminomae/dev/pjdhiro/.claude/worktrees/develop/garage/assets/practice-pad.svg","w").write("\n".join(o))
 print("OK")
