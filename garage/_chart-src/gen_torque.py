@@ -47,7 +47,7 @@ for _cl,_l in _bc.items():
 def col2(n,br):
     if br=="MIX": return "hsl(0,0%,60%)"
     h,s=HS[br]; return "hsl(%d,%d%%,%d%%)"%(h,s,SHADE.get(n,50))
-VBH=TOP+PLOTH+150; o=[]
+VBH=TOP+PLOTH+95; o=[]
 o.append('<svg viewBox="0 0 1140 %d" xmlns="http://www.w3.org/2000/svg" font-family="\'Hiragino Sans\',\'Noto Sans JP\',sans-serif">'%VBH)
 o.append('<rect x="0" y="0" width="1140" height="%d" fill="#232733"/>'%VBH)
 o.append('<text x="90" y="32" fill="#e6e6e6" font-size="18" font-weight="700">低速の“加速の力” ── トルク÷(車重+体重60kg) の立ち上がり（模式図）</text>')
@@ -83,10 +83,8 @@ for n,pts,w,br,wd,dash,k60,lab in B:
     ls+='<text x="%d" y="%.1f" fill="%s" text-anchor="%s"%s>%s</text>'%(lx,base,c,anc,' font-weight="700"' if bold else '',txt)
 o.append('<g font-size="11">%s</g>'%ls)
 by=TOP+PLOTH+58
-o.append('<rect x="90" y="%d" width="1044" height="86" rx="6" fill="#1b1f27" stroke="#3a4050"/>'%by)
-o.append('<text x="104" y="%d" fill="#cfd3da" font-size="12"><tspan fill="#8ab4e6" font-weight="700">●＝60km/h(トップ)の位置。</tspan><tspan fill="#7fe39a" font-weight="700">●が頂点(平ら)上＝力が出きってる＝リニア</tspan>／<tspan fill="#ff8a8a" font-weight="700">●が坂の途中で低い＝しょぼしょぼ</tspan>。</text>'%(by+20))
-o.append('<text x="104" y="%d" fill="#cfd3da" font-size="12">白破線の<tspan fill="#e6e6e6" font-weight="700">アルファード基準より上＝低速で車より力強い</tspan>。60kg乗車込みでもCBR250RR/400以上は車超え（GSX250R/125は下）。</text>'%(by+42))
-o.append('<text x="104" y="%d" fill="#ff9a6a" font-size="11.5">※減速比未反映。バイクは減速比が車の2〜3倍大きく、実際の車輪トルク/重量はこの図よりさらに上。</text>'%(by+64))
+o.append('<rect x="90" y="%d" width="1044" height="30" rx="6" fill="#1b1f27" stroke="#3a4050"/>'%by)
+o.append('<text x="104" y="%d" fill="#ff9a6a" font-size="11.5">※減速比未反映。バイクは減速比が車の2〜3倍大きく、実際の車輪トルク/重量はこの図よりさらに上。</text>'%(by+20))
 o.append('</svg>')
 open("/Users/uminomae/dev/pjdhiro/.claude/worktrees/develop/garage/assets/lowrev-torque.svg","w").write("\n".join(o))
 print("OK")
