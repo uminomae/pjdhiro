@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="1000" height="470" fill="#232733"/>
+<text x="24" y="34" fill="#e6e6e6" font-size="19" font-weight="700">最小プラン ── 30m×20m（民家が最も遠い区画）</text>
+<text x="24" y="56" fill="#9aa0aa" font-size="12.5">狭いぶん<tspan fill="#ff9a6a" font-weight="700">低速厳守</tspan>。<tspan fill="#7fe39a" font-weight="700">小さい円ほど低速で深く倒せる</tspan>（バンク角＝速度²÷半径）＝リーンインを安全に刻める。スラローム・直線ブレーキ・高速は不可</text>
+<text x="40" y="84" fill="#cdd2dd" font-size="13.5" font-weight="700">① 定常円でリーンイン（中核・必須）</text>
+<rect x="40" y="110" width="258" height="172" rx="4" fill="#1b1f27" stroke="#3a4050"/>
+<rect x="65.8" y="135.8" width="206.4" height="120.4" fill="none" stroke="#3a4050" stroke-dasharray="4 4"/>
+<text x="169.0" y="297" fill="#9aa0aa" font-size="10" text-anchor="middle">← 30m →</text>
+<text x="30" y="196.0" fill="#9aa0aa" font-size="10" text-anchor="middle" transform="rotate(-90 30 196.0)">20m</text>
+<text x="40" y="315" fill="#8ab4e6" font-size="10.5">直径8〜10mを一定速度で。尻をずらし内膝を開く</text>
+<circle cx="169.0" cy="196.0" r="38.7" fill="none" stroke="#7fe39a" stroke-width="1.8" stroke-dasharray="6 4"/>
+<rect x="167.7" y="188.0" width="2.6" height="4" fill="#ffb27a"/><circle cx="169.0" cy="196.0" r="4.6" fill="#ffb27a" stroke="#232733" stroke-width="0.8"/>
+<text x="169.0" y="212.0" fill="#7fe39a" font-size="10" text-anchor="middle">定常円</text>
+<text x="390" y="84" fill="#cdd2dd" font-size="13.5" font-weight="700">② 8の字（リーンアウト土台）</text>
+<rect x="390" y="110" width="258" height="172" rx="4" fill="#1b1f27" stroke="#3a4050"/>
+<rect x="415.8" y="135.8" width="206.4" height="120.4" fill="none" stroke="#3a4050" stroke-dasharray="4 4"/>
+<text x="519.0" y="297" fill="#9aa0aa" font-size="10" text-anchor="middle">← 30m →</text>
+<text x="380" y="196.0" fill="#9aa0aa" font-size="10" text-anchor="middle" transform="rotate(-90 380 196.0)">20m</text>
+<text x="390" y="315" fill="#8ab4e6" font-size="10.5">2本を小さく回る。上体を起こして正確に</text>
+<circle cx="476.0" cy="196.0" r="37.0" fill="none" stroke="#7fe39a" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="474.7" y="188.0" width="2.6" height="4" fill="#ffb27a"/><circle cx="476.0" cy="196.0" r="4.6" fill="#ffb27a" stroke="#232733" stroke-width="0.8"/>
+<circle cx="562.0" cy="196.0" r="37.0" fill="none" stroke="#7fe39a" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="560.7" y="188.0" width="2.6" height="4" fill="#ffb27a"/><circle cx="562.0" cy="196.0" r="4.6" fill="#ffb27a" stroke="#232733" stroke-width="0.8"/>
+<text x="720" y="84" fill="#cdd2dd" font-size="13.5" font-weight="700">③ フルロックUターン（左右）</text>
+<rect x="720" y="110" width="258" height="172" rx="4" fill="#1b1f27" stroke="#3a4050"/>
+<rect x="745.8" y="135.8" width="206.4" height="120.4" fill="none" stroke="#3a4050" stroke-dasharray="4 4"/>
+<text x="849.0" y="297" fill="#9aa0aa" font-size="10" text-anchor="middle">← 30m →</text>
+<text x="710" y="196.0" fill="#9aa0aa" font-size="10" text-anchor="middle" transform="rotate(-90 710 196.0)">20m</text>
+<text x="720" y="315" fill="#8ab4e6" font-size="10.5">切れ角一杯・首を出口へ・リアブレーキ</text>
+<rect x="804.7" y="188.0" width="2.6" height="4" fill="#ffb27a"/><circle cx="806.0" cy="196.0" r="4.6" fill="#ffb27a" stroke="#232733" stroke-width="0.8"/>
+<rect x="890.7" y="188.0" width="2.6" height="4" fill="#ffb27a"/><circle cx="892.0" cy="196.0" r="4.6" fill="#ffb27a" stroke="#232733" stroke-width="0.8"/>
+<path d="M 806.0 170.2 L 892.0 170.2 A 25.8 25.8 0 0 1 892.0 221.8 L 806.0 221.8 A 25.8 25.8 0 0 1 806.0 170.2 Z" fill="none" stroke="#7fe39a" stroke-width="1.8" stroke-dasharray="6 4"/>
+<rect x="24" y="424" width="952" height="32" rx="5" fill="#1b1f27" stroke="#3a4050"/>
+<text x="38" y="444" fill="#cfd3da" font-size="12"><tspan fill="#ffb27a" font-weight="700">●</tspan> ペットボトル3〜4本。外周3mは緩衝帯（狭いぶん<tspan fill="#ff9a6a" font-weight="700">速度を落として</tspan>補う）。膝接地は狙わない。許可した私有/自治体区画・乾いた明るい路面で。</text>
+</svg>
