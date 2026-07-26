@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 図A「トップギアでは、トルクの山に届かない」
+# 図A「トップギアでは、トルクのピークに届かない」
 # 捏造ゼロ。公式諸元（最大トルクの発生回転数）＋公式ギア比＋タイヤ表記のみから計算する。
 #   速度[km/h] = 回転数 ÷ 総減速比 × 円周[m] × 60 / 1000
 # データの正本は garage/data-drivetrain.md（出典URL付き）。
@@ -15,7 +15,7 @@ B=[
  ("YZF-R3",          3.043,3.071,0.800,(140,70,17), 9000,169,YAM,""),
  ("Ninja ZX-25R",    2.900,3.571,1.037,(150,60,17),13000,183,KAW,""),
  ("CB400SF（教習車の世代）",2.171,2.933,1.130,(160,60,17),9500,194,"#aeb4c0",""),
- ("GSX250R",         3.238,3.285,0.807,(140,70,17), 6500,181,SUZ,"唯一、常用域に山がある"),
+ ("GSX250R",         3.238,3.285,0.807,(140,70,17), 6500,181,SUZ,"唯一、現実の速度域にピークがある"),
  ("Ninja ZX-4R",     2.029,3.428,1.037,(160,60,17),13000,190,RED,"公道では絶対に届かない"),
 ]
 def speed_at(rpm, p,f,t, tire):
@@ -35,9 +35,9 @@ def X(v): return PX + v/VMAXKMH*PW
 o=[]
 o.append('<svg viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg" font-family="\'Hiragino Sans\',\'Noto Sans JP\',sans-serif">'%(VBW,VBH))
 o.append('<rect x="0" y="0" width="%d" height="%d" fill="#232733"/>'%(VBW,VBH))
-o.append('<text x="40" y="42" fill="#e6e6e6" font-size="26" font-weight="800">トップギアでは、トルクの山に届かない</text>')
+o.append('<text x="40" y="42" fill="#e6e6e6" font-size="26" font-weight="800">トップギアでは、トルクのピークに届かない</text>')
 o.append('<text x="40" y="70" fill="#9aa0aa" font-size="16">バーの右端＝<tspan fill="#e6e6e6" font-weight="700">最大トルクが出る速度</tspan>（6速）。公式諸元の発生回転数と公式ギア比から計算した実数値。</text>')
-o.append('<text x="40" y="92" fill="#9aa0aa" font-size="16">オレンジの帯＝一般道で実際に使う速度。<tspan fill="#f0883a" font-weight="700">どの車も、山は帯のはるか右にある。</tspan></text>')
+o.append('<text x="40" y="92" fill="#9aa0aa" font-size="16">オレンジの帯＝一般道で実際に使う速度。<tspan fill="#f0883a" font-weight="700">どの車も、ピークは帯のはるか右にある。</tspan></text>')
 
 # 一般道帯（〜60km/h）
 o.append('<rect x="%.1f" y="%d" width="%.1f" height="%d" fill="#f0883a" opacity="0.13"/>'%(X(0),TOP-8,X(60)-X(0),len(rows)*STEP+6))

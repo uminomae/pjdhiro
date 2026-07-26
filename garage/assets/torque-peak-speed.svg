@@ -1,8 +1,8 @@
 <svg viewBox="0 0 980 642" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
 <rect x="0" y="0" width="980" height="642" fill="#232733"/>
-<text x="40" y="42" fill="#e6e6e6" font-size="26" font-weight="800">トップギアでは、トルクの山に届かない</text>
+<text x="40" y="42" fill="#e6e6e6" font-size="26" font-weight="800">トップギアでは、トルクのピークに届かない</text>
 <text x="40" y="70" fill="#9aa0aa" font-size="16">バーの右端＝<tspan fill="#e6e6e6" font-weight="700">最大トルクが出る速度</tspan>（6速）。公式諸元の発生回転数と公式ギア比から計算した実数値。</text>
-<text x="40" y="92" fill="#9aa0aa" font-size="16">オレンジの帯＝一般道で実際に使う速度。<tspan fill="#f0883a" font-weight="700">どの車も、山は帯のはるか右にある。</tspan></text>
+<text x="40" y="92" fill="#9aa0aa" font-size="16">オレンジの帯＝一般道で実際に使う速度。<tspan fill="#f0883a" font-weight="700">どの車も、ピークは帯のはるか右にある。</tspan></text>
 <rect x="250.0" y="110" width="156.5" height="422" fill="#f0883a" opacity="0.13"/>
 <line x1="406.5" y1="110" x2="406.5" y2="532" stroke="#f0883a" stroke-width="2" stroke-dasharray="6 4"/>
 <text x="406.5" y="102" fill="#f0883a" font-size="15" font-weight="700" text-anchor="middle">60km/h</text>
@@ -21,7 +21,7 @@
 <text x="234" y="140" fill="#e0a83a" font-size="18" font-weight="700" text-anchor="end">GSX250R</text>
 <rect x="250.0" y="122" width="233.8" height="22" rx="4" fill="#e0a83a" opacity="0.85"/>
 <text x="493.8" y="140" fill="#e0a83a" font-size="18" font-weight="800">90 km/h</text>
-<text x="603.8" y="140" fill="#9aa0aa" font-size="14">唯一、常用域に山がある</text>
+<text x="603.8" y="140" fill="#9aa0aa" font-size="14">唯一、現実の速度域にピークがある</text>
 <text x="234" y="192" fill="#5fcf5f" font-size="18" font-weight="700" text-anchor="end">Ninja 400</text>
 <rect x="250.0" y="174" width="357.4" height="22" rx="4" fill="#5fcf5f" opacity="0.85"/>
 <text x="617.4" y="192" fill="#5fcf5f" font-size="18" font-weight="800">137 km/h</text>
