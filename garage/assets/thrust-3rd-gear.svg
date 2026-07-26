@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1000 724" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect x="0" y="0" width="1000" height="724" fill="#232733"/>
+<text x="40" y="42" fill="#e6e6e6" font-size="26" font-weight="800">60km/hから加速するときの、本当の力</text>
+<text x="40" y="70" fill="#9aa0aa" font-size="16">巡航の6速ではなく、実際に加速に使う<tspan fill="#e6e6e6" font-weight="700">3速</tspan>と<tspan fill="#9aa0aa">4速</tspan>で計算。駆動力＝トルク×総減速比÷タイヤ半径。</text>
+<text x="40" y="94" fill="#9aa0aa" font-size="16">それを（車重＋体重60kg）で割った値。<tspan fill="#7fe39a" font-weight="700">●＝実測トルク</tspan>／<tspan fill="#9aa0aa">無印＝推定トルク</tspan>。</text>
+<text x="40" y="118" fill="#e0a83a" font-size="15">差は小さい。上位4台は4.4〜3.8の範囲に収まる。</text>
+<line x1="260.0" y1="130" x2="260.0" y2="610" stroke="#2c313d" stroke-width="1"/>
+<text x="260.0" y="634" fill="#9aa0aa" font-size="15" text-anchor="middle">0</text>
+<line x1="372.0" y1="130" x2="372.0" y2="610" stroke="#2c313d" stroke-width="1"/>
+<text x="372.0" y="634" fill="#9aa0aa" font-size="15" text-anchor="middle">1</text>
+<line x1="484.0" y1="130" x2="484.0" y2="610" stroke="#2c313d" stroke-width="1"/>
+<text x="484.0" y="634" fill="#9aa0aa" font-size="15" text-anchor="middle">2</text>
+<line x1="596.0" y1="130" x2="596.0" y2="610" stroke="#2c313d" stroke-width="1"/>
+<text x="596.0" y="634" fill="#9aa0aa" font-size="15" text-anchor="middle">3</text>
+<line x1="708.0" y1="130" x2="708.0" y2="610" stroke="#2c313d" stroke-width="1"/>
+<text x="708.0" y="634" fill="#9aa0aa" font-size="15" text-anchor="middle">4</text>
+<line x1="820.0" y1="130" x2="820.0" y2="610" stroke="#2c313d" stroke-width="1"/>
+<text x="820.0" y="634" fill="#9aa0aa" font-size="15" text-anchor="middle">5</text>
+<line x1="260.0" y1="610" x2="820.0" y2="610" stroke="#5a6070" stroke-width="1.4"/>
+<text x="540.0" y="660" fill="#9aa0aa" font-size="16" text-anchor="middle">加速の力（駆動力 ÷ 総重量）N/kg</text>
+<text x="244" y="164" fill="#5fcf5f" font-size="18" font-weight="700" text-anchor="end">Ninja 400</text>
+<rect x="260.0" y="144" width="498.6" height="18" rx="3" fill="#5fcf5f" opacity="0.9"/>
+<rect x="260.0" y="165" width="395.6" height="12" rx="3" fill="#5fcf5f" opacity="0.35"/>
+<text x="768.6" y="159" fill="#5fcf5f" font-size="18" font-weight="800">4.45</text>
+<text x="665.6" y="176" fill="#9aa0aa" font-size="14">3.53（4速）</text>
+<circle cx="254" cy="158" r="6" fill="#7fe39a"/>
+<text x="244" y="222" fill="#5fcf5f" font-size="18" font-weight="700" text-anchor="end">エリミネーター400</text>
+<rect x="260.0" y="202" width="470.4" height="18" rx="3" fill="#5fcf5f" opacity="0.9"/>
+<rect x="260.0" y="223" width="373.6" height="12" rx="3" fill="#5fcf5f" opacity="0.35"/>
+<text x="740.4" y="217" fill="#5fcf5f" font-size="18" font-weight="800">4.20</text>
+<text x="643.6" y="234" fill="#9aa0aa" font-size="14">3.34（4速）</text>
+<text x="244" y="280" fill="#aeb4c0" font-size="18" font-weight="700" text-anchor="end">CB400SF（教習車）</text>
+<rect x="260.0" y="260" width="469.0" height="18" rx="3" fill="#aeb4c0" opacity="0.9"/>
+<rect x="260.0" y="281" width="344.7" height="12" rx="3" fill="#aeb4c0" opacity="0.35"/>
+<text x="739.0" y="275" fill="#aeb4c0" font-size="18" font-weight="800">4.19</text>
+<text x="614.7" y="292" fill="#9aa0aa" font-size="14">3.08（4速）</text>
+<text x="244" y="338" fill="#e8685f" font-size="18" font-weight="700" text-anchor="end">ZX-4R</text>
+<rect x="260.0" y="318" width="430.6" height="18" rx="3" fill="#e8685f" opacity="0.9"/>
+<rect x="260.0" y="339" width="336.3" height="12" rx="3" fill="#e8685f" opacity="0.35"/>
+<text x="700.6" y="333" fill="#e8685f" font-size="18" font-weight="800">3.84</text>
+<text x="606.3" y="350" fill="#9aa0aa" font-size="14">3.00（4速）</text>
+<text x="244" y="396" fill="#b98ae0" font-size="18" font-weight="700" text-anchor="end">YZF-R3</text>
+<rect x="260.0" y="376" width="422.4" height="18" rx="3" fill="#b98ae0" opacity="0.9"/>
+<rect x="260.0" y="397" width="323.7" height="12" rx="3" fill="#b98ae0" opacity="0.35"/>
+<text x="692.4" y="391" fill="#b98ae0" font-size="18" font-weight="800">3.77</text>
+<text x="593.7" y="408" fill="#9aa0aa" font-size="14">2.89（4速）</text>
+<circle cx="254" cy="390" r="6" fill="#7fe39a"/>
+<text x="244" y="454" fill="#5fcf5f" font-size="18" font-weight="700" text-anchor="end">ZX-25R</text>
+<rect x="260.0" y="434" width="415.0" height="18" rx="3" fill="#5fcf5f" opacity="0.9"/>
+<rect x="260.0" y="455" width="329.0" height="12" rx="3" fill="#5fcf5f" opacity="0.35"/>
+<text x="685.0" y="449" fill="#5fcf5f" font-size="18" font-weight="800">3.71</text>
+<text x="599.0" y="466" fill="#9aa0aa" font-size="14">2.94（4速）</text>
+<text x="244" y="512" fill="#5a90e8" font-size="18" font-weight="700" text-anchor="end">CBR400R</text>
+<rect x="260.0" y="492" width="410.9" height="18" rx="3" fill="#5a90e8" opacity="0.9"/>
+<rect x="260.0" y="513" width="318.7" height="12" rx="3" fill="#5a90e8" opacity="0.35"/>
+<text x="680.9" y="507" fill="#5a90e8" font-size="18" font-weight="800">3.67</text>
+<text x="588.7" y="524" fill="#9aa0aa" font-size="14">2.85（4速）</text>
+<text x="244" y="570" fill="#e0a83a" font-size="18" font-weight="700" text-anchor="end">GSX250R</text>
+<rect x="260.0" y="550" width="369.5" height="18" rx="3" fill="#e0a83a" opacity="0.9"/>
+<rect x="260.0" y="571" width="304.2" height="12" rx="3" fill="#e0a83a" opacity="0.35"/>
+<text x="639.5" y="565" fill="#e0a83a" font-size="18" font-weight="800">3.30</text>
+<text x="574.2" y="582" fill="#9aa0aa" font-size="14">2.72（4速）</text>
+<rect x="40" y="676" width="920" height="52" rx="6" fill="#1b1f27" stroke="#3a4050"/>
+<text x="54" y="697" fill="#cfd3da" font-size="15">実測トルクがあるのはNinja400とYZF-R3のみ。他はこの2台の曲線の形を、各車の公式最大トルクに合わせて当てはめた推定。</text>
+<text x="54" y="718" fill="#ff9a6a" font-size="14">※直4（CB400SF・ZX-4R）は並列2気筒の形を当てているため甘めに出る。細かい順位の差は断定できない。</text>
+</svg>
