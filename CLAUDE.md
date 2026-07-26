@@ -21,6 +21,7 @@ Jekyll ブログ（GitHub Pages）。kesson-driven-thinking の成果物を公�
 
 - commit には `Co-Authored-By: Claude <noreply@anthropic.com>` を含める
 - push 前に `bundle exec jekyll build` でビルド確認
+- **公開ページに生活圏が特定できる固有名詞を書かない**（近所のキャンプ場名・施設名・サーキット名・道路番号など）。「キャンプ場の駐車場」「近くのサーキット」のような一般名詞に置き換える（2026-07-27 指示。例: キャンプ場→キャンプ場）
 
 ## 関連リポジトリ
 
