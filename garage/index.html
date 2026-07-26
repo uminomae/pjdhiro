@@ -69,6 +69,28 @@
     border-radius:8px;padding:14px 18px;margin:22px 0;color:var(--muted);font-size:15px;
   }
   .note strong{color:var(--text)}
+  /* 50ccスクーターに置き換えて説明する囲み（原付しか乗ったことのない読者向け） */
+  .sc{
+    background:rgba(90,144,232,.07);border:1px solid var(--line);border-left:3px solid #5a90e8;
+    border-radius:8px;padding:12px 18px 14px;margin:20px 0;color:var(--muted);font-size:15px;
+  }
+  .sc::before{
+    content:"50ccのスクーターで言うと";display:block;font-size:12.5px;font-weight:700;
+    letter-spacing:.04em;color:#5a90e8;margin-bottom:5px;
+  }
+  .sc strong{color:var(--text)}
+  /* 身近な物事に置き換えるたとえ */
+  .ex{
+    background:rgba(224,137,74,.07);border:1px solid var(--line);border-left:3px solid var(--accent2);
+    border-radius:8px;padding:12px 18px 14px;margin:20px 0;color:var(--muted);font-size:15px;
+  }
+  .ex::before{
+    content:"たとえるなら";display:block;font-size:12.5px;font-weight:700;
+    letter-spacing:.04em;color:var(--accent2);margin-bottom:5px;
+  }
+  .ex strong{color:var(--text)}
+  .ex p{margin:0 0 10px}
+  .ex p:last-child{margin-bottom:0}
   /* role/direction cards */
   .dirs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
   .dir{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
@@ -88,7 +110,8 @@
     background:var(--card);border:1px solid var(--line);border-radius:14px;
     padding:16px;margin:22px 0;overflow-x:auto;
   }
-  .chartcard svg{display:block;width:100%;height:auto;min-width:520px}
+  /* 図の文字が潰れないよう最低幅を確保（狭い画面ではカード内を横スクロール） */
+  .chartcard svg,.chartcard img{display:block;width:100%;height:auto;min-width:720px}
   /* tables */
   .tablewrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:12px}
   table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
@@ -427,11 +450,49 @@
   </div>
   </div></details>
 
-  <details class="sec" id="lowspeed-route"><summary data-sub="サーキットか、公道最速か">暴走族をやらずにZX-4Rに乗るために ― <span class="ja">高回転で遊ぶか、暴走にならず公道最速か</span></summary>
+  <details class="sec" id="lowspeed-route"><summary data-sub="カタログに書かれていないこと">暴走族をやらずにZX-4Rに乗るために ― <span class="ja">サーキット以外ではずっと1速で走りたい、その自覚がある人だけが買っていい</span></summary>
   <div class="secbody">
 
-  <p><strong>ZX-4Rが欲しい。</strong>理由はスペックが語る2つ——<strong>高回転を維持して楽しむ</strong>ことと、<strong>最速</strong>であること。</p>
-  <div class="note"><strong>だが、それを楽しむ場所がない。</strong>サーキットは遠い。普段は一車線の国道。車は少ないが、すぐ前が詰まる。公道でZX-4Rの性能を出せば、暴走運転になる。</div>
+  <p><strong>ZX-4Rが欲しい。</strong>理由はスペックが語る2つ——<strong>高回転を維持して楽しむ</strong>ことと、<strong>最速</strong>であること。<strong>モンスターマシンである。</strong>公道では<strong>1速縛りプレー</strong>。ギアなんてめんどくさいものは無視する男気。エンジンを痛めつける？<strong>それがどうした。</strong></p>
+  <div class="chartcard"><img src="assets/zx-monster-1soku.jpg" alt="白装束に『一速一筋』と刺繍した憤怒のライダーが、緑のスーパースポーツを1速のまま田舎の一本道で走らせ、急減速で前のめりになっている。道端の牛と鹿と猫は無関心" style="width:100%;height:auto;display:block"></div>
+  <p class="muted" style="text-align:center;font-size:14px;margin:4px 0 14px"><strong>一速一筋。モンスターバイク。</strong></p>
+  <div class="note"><strong>それほどまでに公道は狭く、それほどまでに、サーキットでないと出し切れない。</strong>そのサーキットは遠い。普段は一車線の国道。車は少ないが、すぐ前が詰まる。公道でZX-4Rの性能を出せば、暴走運転になる。</div>
+  <div class="ex">釣りで言えば、<strong>マグロ狙いの船釣りセット</strong>。<strong>沖に出るつもりはない。おかっぱりがメインなのに。</strong><br>防波堤で釣るのに、マグロ用の道具を買う。<strong>常識的に考えて、かなり変な趣味である。</strong></div>
+  <div class="sc">原付で、自転車に合わせて走るようなもの。<strong>単純に、無駄。</strong></div>
+  <div class="note"><strong>教習所の一本橋は、好きでしたか？</strong><br>ZX-4Rはホイールベース1,380mm・キャスター23.5°。エリミネーター（1,520mm・30.0°）より短く、立っている。<strong>短いホイールベースと前傾のセパレートハンドルで、低速の一定速度を保ち続けようとするなら直進が安定したバイクと比べれば走りづらい。</strong>教習所の一本橋を楽しめる人でなければ、これはストレスになる。</div>
+  <p><strong>そしてもう一つ。冒頭の「1速縛りプレー」も、冗談で書いたのではない。</strong>高回転の維持と最速——この2つを公道でそのまま実行すると、<strong>本当にずっと1速で走ることになる。</strong>なぜそうなるかは、この章で数字を出して示す。</p>
+  <p>教習所には、もう一つ思い出すものがある。<strong>1速のまま、アクセルを開けて戻しての、ギッコンバッコン。</strong>あれに、いまの<strong>一本橋のフラフラ</strong>が重なる。<strong>その両方を、毎日の国道でやり続けることになる。</strong></p>
+  <div class="note"><strong>それが楽しいなら、ZX-4Rは正解だ。</strong>ただし——<strong>ギアを上げず、ギッコンバッコンと一本橋を続けるために100万円を払う。</strong>かなり特殊な趣味である。少なくとも、そういう人を私は見たことがない。<br><strong>公道をずっと1速で走ることが、楽しいのか。それが「最速」を味わうことなのか。</strong>この問いを、一本橋の問いと一緒に最後まで持っていてほしい。</div>
+
+  <h3>なぜ初心者は、ZX-4Rに“騙される”のか。</h3>
+  <p>先に断っておくと、<strong>誰かが嘘をついているわけではない。</strong>カタログの数字は正確だし、雑誌の記事も間違ってはいない。問題は<strong>いちばん大事なことが、どこにも書かれていない</strong>ことのほうにある。</p>
+  <p>その大事なこととは、これだ。<strong>ZX-4Rは、サーキットで楽しむために作られた機械である。</strong></p>
+  <p>カタログに載っているのは「77PS」「14,500rpm」「クラス唯一の並列4気筒」といった数字と、<strong>公道を走るきれいな写真</strong>だけだ。<strong>どこで使う機械なのかは、書かれていない。</strong>乗り慣れた人にとっては言うまでもないことなので、わざわざ説明されないからだ。</p>
+  <div class="note"><strong>だから初めてバイクを選ぶ人ほど、「速い＝良いバイク」とそのまま受け取ってしまう。</strong>知っている人だけが黙って避けていく——という構造になっている。<strong>この章がまずやりたいのは、その黙っている部分を言葉にすることだ。</strong></div>
+
+  <h3>使わなければ無駄金。使えば、違反と事故。</h3>
+  <p>サーキット用の機械なのに、走る場所は公道しかない。すると<strong>買ったあとの行き先は、二つに一つ</strong>しかなくなる。そしてどちらも、あまり良い場所ではない。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>その後</th><th>何が起きるか</th></tr></thead>
+    <tbody>
+      <tr><td><strong>サーキットに行かない</strong></td><td>77PSは一度も使われずに終わる。<strong>100万円超のうち、使わない性能に払った分は戻ってこない</strong>。ただの高い買い物になる</td></tr>
+      <tr><td><strong>公道で性能を出す</strong></td><td>それは<strong>速度超過であり、暴走運転</strong>だ。捕まるだけで済めばまだいい。統計はもっと厳しいことを示している</td></tr>
+    </tbody>
+  </table></div>
+  <p>後者について、数字を先に見てもらいたい。米IIHSの車種タイプ別データだ。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>車種タイプ</th><th>ライダー死亡率<br><small>（登録1万台あたり）</small></th></tr></thead>
+    <tbody>
+      <tr><td><strong>スーパースポーツ</strong>（ZX-4R系）</td><td class="pulse"><strong>22.5</strong></td></tr>
+      <tr><td>スポーツ（それ以外）</td><td>10.7</td></tr>
+      <tr><td>ツアラー</td><td>6.5</td></tr>
+      <tr><td>スタンダード・クルーザー（直立）</td><td class="g">5.7</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted" style="font-size:13px;margin:2px 0 10px">出典：<a href="https://www.iihs.org/research-areas/motorcycles" target="_blank" rel="noopener">IIHS（米国道路安全保険協会）</a>。車名別ではなく車種タイプ別。2000年代半ばの米国登録データに基づく。スーパースポーツは乗り手が若年層に偏るため、この差には乗り手側の要因も含まれる。ABS付きは致死事故が22%低いというデータもある。</p>
+  <div class="note"><strong>スーパースポーツの死亡率は、直立姿勢のネイキッドやクルーザーの約4倍。</strong>この差はマシンの性能そのものより、<strong>軽量ハイパワーを公道で日常使いする組み合わせ</strong>と、そういう車を選ぶ乗り手の層が生む。</div>
+  <p>並べると、こうなる。<strong>使わなければ無駄金。使えば違反と、この数字。</strong>——お金を払って、その道に入る意義はどこにあるのか。</p>
+  <div class="note"><strong>これがこの章の出発点だ。</strong>以下では、ZX-4Rに付いている「速い」というイメージを、一つずつ数字で確かめていく。そのうえで最後に、<strong>ではどうすればZX-4Rに乗れるのか</strong>を考える。<strong>結論から言えば、答えはある。</strong>ただしそれは「いま買う」ではない。</div>
 
   <p>乗ったことのない1台を、スペックだけで選び切ることはできない。間違えたくないと気負うほど、かえって外しやすい。ここに並べる表や物差しは、正解を当てる道具ではなく、<strong>一番良い1台にたどり着くための“正しい失敗の仕方”——その最初の一歩を踏み出すためのもの</strong>である。決め切らず数多く乗るほど、自分の物差しは育っていく。</p>
   <details class="acc"><summary>「選ぶ」という経験について</summary>
@@ -439,20 +500,25 @@
 
   <h3>回してナンボは、暴走族の走り。</h3>
   <p>高回転型は、回し続ければ速い。だが公道でそれをやれば——<strong>加速で前を煽り、減速で後ろへ嫌がらせブレーキ</strong>。思いやりの一定速度では、性能は出ない。</p>
+  <div class="sc">原付を、20km/hまでで走らせるようなもの。<strong>もっと出せる、と分かる。それが罠になる。</strong></div>
   <div class="chartcard"><img src="assets/road-menace.svg" alt="高回転型を使う走りは加速で煽り減速で嫌がらせブレーキ＝暴走。低回転型は一定速度で力が出る" style="width:100%;height:auto;display:block"></div>
   <details class="acc"><summary>なぜ両立しないのか（回転数とギア）</summary>
-  <div class="body"><p>加速→制限速度→アクセルを戻す→回転が落ちる→シフトダウン、の繰り返し。前を追い越さず後ろに迷惑をかけないなら一定速度＝約4,000rpm。そこは高回転型のパワーバンド外で、力は出ない。ギアを落として回せば力は出るが、それは一定速度を捨てる走り＝暴走側になる。</p></div></details>
+  <div class="body"><p>前を追い越さず、後ろにも迷惑をかけずに流すと、6速で60km/hなら<strong>回転は3,200〜3,800rpm程度</strong>（実際のギア比から計算した値。ZX-4Rは3,680rpm）。ここでも普通に走れるが、<strong>高回転型が本領を出すパワーバンドはこのはるか上</strong>にある。ギアを落として回せばその領域に入れる——が、それは一定速度を捨てる走り＝暴走側になる。<strong>だから「流しながら本領を使う」は成立しない。</strong></p></div></details>
 
-  <h3>“クルーザー”のエリミが、公道では最速。</h3>
-  <p>カタログの最高出力は、サーキットの数字だ。見るべきは一般道（≤80km/h）の“押し出す力”——そこで並べ直すと、順位は逆転する。のんびり流す<strong>クルーザー</strong>扱いのエリミネーターが、実は全域で最強。ピーク77PSのZX-4Rを、公道では上回る。</p>
-  <div class="chartcard"><img src="assets/lowspeed-pull.svg" alt="一般道の押し出す力。ZX-25Rが最下位、低回転トルクのエリミネーターが全域最強" style="width:100%;height:auto;display:block"></div>
-  <div class="note"><strong>低回転トルクのエリミネーター（48PS）が全域で最強。</strong>ピーク77PSのZX-4Rも、一般道ではこれを下回る（最下位はZX-25R・45PS）。<strong>カタログの馬力は、公道の速さと逆さになる。</strong></div>
-  <h3>図の左上に頂点がある車が、1車線国道では最速。</h3>
-  <p>≤60km/hの加速は、パワーでなく<strong>トルク（力）</strong>が効く。回転数は速度そのものではなく、ギアを介して速度になる。トルクを縦・回転数を横に取り、各車が60km/hになる点（●）を打つ。<strong>●が左上——低い回転で力が出きった頂点に乗る車ほど、アクセルを開けるだけで流れに乗れて速い。</strong>●が坂の途中で低い車は、開けても力が湧かず、しょぼしょぼ＝ZX-25RやTZR50、125クラスの小排気量高回転型だ。</p>
-  <div class="chartcard"><img src="assets/lowrev-torque.svg" alt="トルク÷(車重+60kg) vs rpm。MT-07・W650(大型)が低回転で最上位、ZX-4Rの60km/h点は下位に沈む。アルファード基準" style="width:100%;height:auto;display:block"></div>
-  <div class="note">ここから身も蓋もない結論が出る。<strong>ZX-4Rの「速さ」に憧れて公道で使いたいだけなら、大型二輪免許を取って低回転トルクの大型に乗る方が、公道では実質速い。</strong>ZX-4Rの最高出力が本当に活きる場は、やはりサーキットの側にある。</div>
-  <details class="acc"><summary>大型を3台混ぜた理由（と、我慢の話）</summary>
+  <h3>カタログの最高出力は、公道の速さではない。</h3>
+  <p>ではカタログの数字で選べばいいかというと、そうはならない。<strong>最高出力はサーキットの数字だ。</strong>ZX-4Rの77PSは14,500rpmで出る値で、一般道でその回転を使うことはない。公道で効くのは、<strong>低い回転で出るトルクと、それをタイヤに伝えるギア</strong>のほうだ。</p>
+  <p>ただし——ここは正直に書いておく。<strong>「では公道では何が一番速いのか」を数字で確かめようとすると、途中で壁に当たる。</strong>メーカーは低回転のトルクを公表していないからだ。以下、確かめられるところまで順に確かめていく。まず、確実に言えることから。</p>
+  <details class="acc"><summary>トルクと馬力の関係（回転数を介した言い換え）</summary>
+  <div class="body"><p>馬力はトルクに回転数を掛けた量で、<strong>同じトルクでも、回せば回すほど馬力の数字は大きくなる</strong>。だから高回転型は馬力が大きく出る。しかし一般道では回さないので、掛け算の相手（回転数）が小さいままだ。残るのはトルクそのものと、それを何倍に増幅してタイヤへ渡すか＝ギア比になる。</p></div></details>
+  <div class="sc">アクセルを少し開けたときの、じわっと押し出される力。<strong>あれが車の流れの速さまで続く</strong>。それが低速トルク。</div>
+  <div class="note"><strong>そしてもう一つ、身も蓋もない事実がある。</strong>ZX-4Rの「速さ」に憧れて公道で使いたいだけなら、<strong>大型二輪免許を取って低回転トルクの大型に乗るほうが、公道では実質速い</strong>。ZX-4Rの最高出力が本当に活きる場は、やはりサーキットの側にある。</div>
+  <details class="acc"><summary>全体の傾向を、概形の図で見ておく（大型を3台混ぜた理由）</summary>
   <div class="body">
+  <p>トルクを縦・回転数を横に取ると、<strong>左上——低い回転で力が出きった頂点に乗る車ほど、回さずに流れに乗れる</strong>。逆に頂点が右にある高回転型は、常用回転では坂の途中にいる。<strong>ギアを上げるほど頂点から離れるので、力を保とうとすれば低いギアのままになる。</strong></p>
+  <p><strong>ZX-4Rの頂点は、この図のいちばん右上にある。</strong>それを走り方に直すと、こうなる。<strong>1速のまま84km/hまで引っ張って、そこでやっと本領に入る。</strong>言い換えれば、<strong>84km/hに達するまでシフトチェンジしない</strong>ということだ。</p>
+  <div class="note"><strong>つまり高回転型とは、ギアを上げてはいけないバイクのことだ。</strong>それが「高回転を楽しむ」の中身である。<strong>楽しいだろうか。</strong></div>
+  <div class="chartcard"><img src="assets/lowrev-torque.svg" alt="トルク÷(車重+60kg) vs rpm。MT-07・W650(大型)が低回転で最上位、ZX-4Rは下位。概形" style="width:100%;height:auto;display:block"></div>
+  <p><strong>ただしこの図は概形（推定）である。</strong>メーカーが公表するトルクは2点だけなので、曲線の形は各社の性格から描いた模式図にすぎない。<strong>細かい上下を読み取ってはいけない。</strong>読み取ってよいのは「排気量が大きく低回転型のものほど左上に来る」という傾向だけだ。</p>
   <p>図には<strong>大型（要・大型二輪免許）</strong>を3台——トルク型のMT-07・W650と、高回転スーパースポーツのZX-6R（いわば“大型版ZX-4R”）を混ぜてある。MT-07・W650は見出しの馬力こそ地味でも、●は左上の頂点に乗る。回して速いはずの<strong>ZX-4R（77PS）だけが、はるか下に沈む</strong>——排気量が小さいうえ高回転型で、低速の力が最も乏しいからだ。</p>
   <p>結局、<strong>大型を取れないうちは我慢するしかない</strong>。もっとも公道でなら、ZX-4Rの400ですら要らないほどのパワーがある。<strong>250でも十分、125がちょうどいいくらい</strong>だ。</p>
   </div></details>
@@ -461,6 +527,141 @@
   <p><strong>トルク÷(車重＋体重60kg)</strong>で、家族を乗せた重い車＝アルファードを1とした倍率で並べる。ここで見たいのは、<strong>普段をストレスなく走れるか＝オレンジの「低速トルク比」</strong>のほう。青の「総合パワー比」は最高速200km/hを目指す世界の指標で、日常とは別物だ。ここまでの結論が腑に落ちない人への念押しとして置いておく。</p>
   <div class="chartcard"><img src="assets/weight-ratio.svg" alt="アルファード基準の倍率。低速トルク比と総合パワー比" style="width:100%;height:auto;display:block"></div>
   </div></details>
+
+  <h3>60km/hでパワーを楽しむなら、1速で。それでもピークには届かない。</h3>
+  <p>ここからは、推定を入れずに確かめる。各社が公表しているのは「最大トルクが何回転で出るか」という数字だ。これに公式のギア比とタイヤ外径を掛ければ、<strong>そのピークが時速何キロに当たるかが計算で出る</strong>。</p>
+  <p>まずZX-4Rを、ギアごとに見る。<strong>同じ60km/hでも、何速で走るかで回転数はまるで違う。</strong></p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>ギア</th><th>60km/hでの回転数</th><th>トルクのピーク（13,000rpm）に届く速度</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1速</strong></td><td class="g"><strong>10,392rpm</strong></td><td>75km/h</td></tr>
+      <tr><td>2速</td><td>7,294rpm</td><td>107km/h</td></tr>
+      <tr><td>3速</td><td>5,746rpm</td><td>136km/h</td></tr>
+      <tr><td>4速</td><td>4,731rpm</td><td>165km/h</td></tr>
+      <tr><td>5速</td><td>4,092rpm</td><td>191km/h</td></tr>
+      <tr><td><strong>6速</strong></td><td class="x"><strong>3,680rpm</strong></td><td>212km/h</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>いちばん回転が上がるのは1速で、それでも10,392rpm。</strong>ピークは13,000rpmなので、<strong>まだ届いていない。</strong>届かせるには1速のまま75km/hまで引っ張ることになり、その時点で速度超過だ。</p>
+  <p>そして<strong>ギアを上げれば回転は下がる</strong>。つまりピークから遠ざかる。<strong>上げるという選択肢は無い。</strong></p>
+  <p>これが「回してナンボ」の正体だ。60km/hを1速で引っ張れば、エンジンは1万回転で鳴き続ける。<strong>速度は法定内でも、やっていることは暴走と変わらない。しかもそれで、まだ本領には届いていない。</strong></p>
+  <div class="note"><strong>結論。ZX-4Rの性能を引き出したいなら、公道ではずっと1速で、しかも制限速度を超えて走ろう。それがサーキットの走り方だ。</strong></div>
+  <p>冗談に見えるが、<strong>仕様から素直に導くとこうなる。</strong>しかも<strong>1速のままで84km/hまで出る</strong>ので、<strong>一般道の速度は1速だけで足りてしまう</strong>。ギアを変える必要が、そもそも無い。</p>
+  <p>そのうえ、アクセルを戻した途端に<strong>強烈なエンジンブレーキ</strong>が来る。前後輪にブレーキを掛けたような減速だ。前の車に合わせようとすれば、開けて、戻して、また開けて。<strong>反復横跳びをしながら走るような忙しさになる。</strong></p>
+  <p>これをスポーティと呼べば聞こえはいい。だが<strong>アクセルも減速も、全開か全閉かしかない走り方</strong>は、教習所で「悪い運転の見本」として教わったはずのものだ。</p>
+  <div class="ex"><strong>スプラで言うなら、イカ速フル積み。</strong>ギアパワーを一つに全部盛る。たしかに速いが、動きはカクカクして、滑らかさはどこにもない。<strong>そういう世界である。</strong></div>
+  <p>もちろん誰もやらない。1万回転の音は住宅地で通せないし、<strong>エンジンは2.8倍多く回る</strong>。</p>
+  <p>カワサキのZXは、モンスターバイクと呼ばれる。もし田舎の一本道を1速のまま1万回転で走っている人がいたら、たしかにモンスターだ。<strong>人外である。人間にできる所業ではない。</strong>冒頭の絵が、まさにあれである。</p>
+  <div class="note"><strong>そして、1速しか使わないなら変速機は要らない。</strong>日本の制限速度でZX-4Rの性能を使おうとすると、行き着くのは<strong>「うるさいオートマ車」</strong>だ。6速もクラッチも、使わないまま終わる。</div>
+  <p><strong>ここで当然の疑問が出る。では、なぜ買うのか。答えは単純だ。知らされていないからである。</strong>冒頭に書いたとおり、これがサーキット用の機械だとはどこにも書かれていない。だから「速いバイク」として買ってしまう。</p>
+  <p>試しに、サーキットに行かない前提で、考えられる理由を並べてみる。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>買う理由</th><th>実際にはどうなるか</th></tr></thead>
+    <tbody>
+      <tr><td><strong>速いから</strong></td><td>公道では他の400と差が出ない（前節のとおり）</td></tr>
+      <tr><td><strong>直4の音とフィールが良いから</strong></td><td>味わうには回すしかない。<strong>つまり1速＝暴走の走り</strong></td></tr>
+      <tr><td><strong>いつかサーキットに行くから</strong></td><td>行かなければ、ただ持っているだけになる</td></tr>
+      <tr><td><strong>見た目が好きだから</strong></td><td>フルカウルの400は、並べても見分けにくい。ライムグリーンのKRTカラーはNinja400にもあり、外装もカラーも後から変えられる。<strong>36万円は、その細部の差に払うことになる</strong></td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><strong>サーキットに行かない人がZX-4Rを選ぶ実質的な理由は、突き詰めると「1速で回して走りたい」しか残らない。</strong>そしてそれは、この章がずっと言ってきた暴走の走り方そのものだ。</div>
+  <p>ここまでを一言にすると、こうなる。<strong>ZX-4Rが公道で似合うのは、1速だけで走り、ずっと一本橋を渡っていたい人だ。</strong></p>
+  <p>ならば、買っていい条件も定まる。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>この2つに「はい」と言えるか</th><th>答え</th></tr></thead>
+    <tbody>
+      <tr><td><strong>「サーキット以外では、ずっと1速で走りたい。ギアなんて変えたくない」</strong><br><strong>「短いホイールベースとセパレートハンドルで、低速の一本橋をずっと渡っていたい」</strong></td><td class="g"><strong>→ ZX-4Rを買っていい</strong></td></tr>
+      <tr><td>どちらかでも「そうは思わない」</td><td class="x"><strong>→ 他の400にすべき</strong></td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>その前に、1速で走り続けると何が起きるかを並べておく。</strong>これを読んでも「はい」と言えるなら、それは本物だ。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>起きること</th><th>中身</th></tr></thead>
+    <tbody>
+      <tr><td><strong>うるさい</strong></td><td>60km/hで1万回転。住宅地では通報されてもおかしくない。周囲からは暴走にしか見えない</td></tr>
+      <tr><td><strong>エンジンが減る</strong></td><td>同じ1kmでも6速の2.8倍回る。走行距離は同じでも、中身は3倍近く痛む</td></tr>
+      <tr><td><strong>ギッコンバッコン走る</strong></td><td>1速はアクセルの動きがそのまま速度に出る。前の車に合わせようとすると、<strong>開けて、戻して、また開けて</strong>の繰り返しになる。スクーターで全開と戻しを繰り返すのと同じ動きだ</td></tr>
+      <tr><td><strong>減速が急になる</strong></td><td>1万回転でアクセルを戻すと、エンジンブレーキが強く効く。後ろの車は驚く</td></tr>
+      <tr><td><strong>一定速度を保ちにくい</strong></td><td>わずかなアクセルの動きで回転が大きく振れる。まっすぐ流すだけで気を使う</td></tr>
+      <tr><td><strong>燃費が悪い・熱い</strong></td><td>回転が高いぶん燃料を使い、エンジンも熱を持つ</td></tr>
+      <tr><td><strong>楽しくない</strong></td><td>6速もクラッチも使わない。変速して走る楽しみは、そこには無い</td></tr>
+    </tbody>
+  </table></div>
+  <p>この痛みを覚悟の上で、無理矢理、無茶苦茶なことをするのが<strong>男らしいといえば男らしい。モンスターだ。</strong>たとえるなら、朝早く起きて学校までの15kmをチャリンコで全力で走る。そんな苦しさが、カワサキの男らしさだ。<strong>モンスターである。</strong>あるいは、学校を中退して、働きながら大学院まで行く。そんな苦行が楽しい。<strong>モンスターである。</strong>もしくは、冬の朝、日の出前に起きて海で漁をするような過酷さだ。<strong>男らしいといえば男らしい。</strong>レアキャラすぎて、見たことがない。風変わりな趣味である。</p>
+  <div class="note"><strong>気づかずに買うか、気づいたうえで買うか。差はそこだけだ。</strong>「1速で走り続ける乗り物を買う」と分かったうえで選ぶなら、筋は通っている。分からずに「速いバイク」として買うと、冒頭の二択に落ちる。<strong>自覚のある人だけが買えばいい。</strong></div>
+  <p>見た目も、突き詰めれば他の400で代替できる。<strong>それでもZX-4Rが欲しいなら、理由は性能でも外観でもない。憧れそのものだ。</strong>それが悪いわけではない。ただし、憧れを性能と取り違えなければの話である。<strong>この点は章の後半で扱う。</strong></p>
+  <h3>性能を使うほど、機械は減る。だから中古が難しい。</h3>
+  <p>ここは見落とされやすい。<strong>同じ60km/hを1km走っても、1速なら6速の2.8倍エンジンが回っている。</strong>走行距離は同じでも、エンジンにとっては3倍近く走ったことになる。<strong>性能を使うとは、そういうことだ。</strong></p>
+  <p>4気筒は点検箇所もツインの倍ある。プラグは4本、バルブは16個。<strong>回して楽しんだ個体ほど、中身は進んでいる。</strong></p>
+  <div class="note"><strong>「性能を絞り出す」と「エンジンを痛めつける」は、同じ走りの言い換えである。</strong>回し切る走りがクールなのは本当だ。そして機械の側から言い直せば、同じ1kmを3倍近く余計に回し、熱と摩耗を先払いする走りだというのも本当だ。<strong>クールと取るか、マゾいと取るか。</strong>どちらの受け取り方も、同じ事実の上に立っている。痛むと知ったうえで、なお回す。それがこの趣味の中身である。</div>
+  <div class="note"><strong>だから中古は、走行距離だけでは判断できない。</strong>目安として<strong>5万kmを超えたあたりからは、距離よりも「どう使われたか」を見ないと危ない</strong>。ZX-4R自体はまだ新しく高走行の個体は少ないが、いずれ同じ話になる。<strong>安く手に入れるという逃げ道も、そのままでは使えない。</strong></div>
+  <p>皮肉なことに、<strong>痛めずに乗る方法はある。静かに流すことだ。</strong>だがそれは性能を使っていない状態で、また最初の二択に戻る。</p>
+  <p>回し切って遊びたいなら、答えは1速ではない。<strong>回し切っても速度が出ない車体に乗ることだ。</strong>それが125で、この章の後半で扱う。</p>
+  <p>では静かに流そうとすると、どうなるか。<strong>普通は6速に入れる。</strong>回転が下がって静かになり、燃費もよく、振動も減る。教習所でも早めのシフトアップを教わる。周囲に配慮した運転とは、そういうものだ。<strong>すると回転は3,680rpm。本領には、遠く届かない。</strong></p>
+  <div class="note"><strong>ここがZX-4Rの構造だ。静かに走れば性能は眠り、性能を使えば暴走になる。</strong>どちらかしか選べない。</div>
+  <p>この「6速で流したとき、ピークがどれだけ遠いか」を他車と並べると、ZX-4Rの極端さがはっきりする。</p>
+  <div class="chartcard"><img src="assets/torque-peak-speed.svg" alt="トップギアで最大トルクが出る速度。ZX-4Rは212km/h、他の400は137〜155km/h、GSX250Rのみ90km/h" style="width:100%;height:auto;display:block"></div>
+  <p>他の400は137〜155km/h。<strong>ZX-4Rだけが212km/hと、群を抜いて遠い。</strong>現実に出しうる速度にピークがあるのはGSX250R（90km/h）だけだった。どの車も6速で流すかぎりピークには届かないが、<strong>その遠さがいちばん極端なのがZX-4Rだ</strong>。これは推定ではなく、公式諸元とギア比から出る数字である。</p>
+  <div class="note"><strong>ここでGSX250Rだけが、ピークを現実の速度域に置いている。</strong>最高出力は24PSと控えめで、カタログでは地味な車だ。90km/hは一車線国道の60km/hよりまだ上だが、高速道路なら合法に届く速度で、60km/h・6速（4,352rpm）でも性能のおいしいところに入り始めている。<strong>公道でピークに手が届くのは、この1台だけだ。</strong>しかもフルカウルで前傾の格好は手に入る。<strong>スズキは、カタログの数字を捨てて、公道寄りの特性を取っている。</strong></div>
+  <div class="ex">おかっぱりに、長い竿はいらない。<strong>足元に落とした方が釣れる。</strong>250であることまで含めて、GSX250Rは正しい。</div>
+  <div class="note"><strong>逆に、岸壁でマグロ釣りセットを振って粘る。</strong>ある意味、よく言えば男らしい。<strong>「カワサキの男らしさ」とは、言い得て妙である。</strong><br>
+  ずっと1速で走るのが男らしいといえば、男らしい。<br>
+  一本橋を渡り続けるのが男らしいといえば、男らしい。<br>
+  高回転の振動で手が痺れるのを我慢するのが男らしいといえば、男らしい。<br>
+  <strong>かなり変わった趣味だと思う。モンスターである。</strong></div>
+  <p>乱暴にまとめると、4社の性格はこう出ている。</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>メーカー</th><th>性格</th><th>この章での現れ方</th></tr></thead>
+    <tbody>
+      <tr><td><strong>スズキ</strong></td><td>実用</td><td>GSX250R＝唯一、ピークが現実の速度域（90km/h）。250で車検も不要</td></tr>
+      <tr><td><strong>ヤマハ</strong></td><td>値段とかっこよさのバランス</td><td>YZF-R3＝320ccという割り切りで、SSの格好と手頃さを両立</td></tr>
+      <tr><td><strong>ホンダ</strong></td><td>国内に合わせた最適化</td><td>CBR400R＝トルクのピークが最も低い7,500rpm。Eクラッチも国内向け</td></tr>
+      <tr><td><strong>カワサキ</strong></td><td>無茶苦茶</td><td>ZX-4R＝77PS/14,500rpm。ピークは212km/h相当</td></tr>
+    </tbody>
+  </table></div>
+  <details class="acc"><summary>この計算の中身（と、60km/hで何回転か）</summary>
+  <div class="body">
+  <p>速度＝回転数÷（一次減速比×二次減速比×6速比）×タイヤ外周。タイヤ外径はカタログ表記から算出した。逆算すると、<strong>トップギアで60km/hを流すときの回転数</strong>はこうなる——CBR400R 3,240／エリミネーター 3,478／Ninja400 3,504／CB400SF 3,672／<strong>ZX-4R 3,680</strong>／YZF-R3 3,791／GSX250R 4,352／ZX-25R 5,587rpm。</p>
+  <p><strong>6速で流すかぎり、ZX-4Rの回転数は他の400とほとんど変わらない。</strong>持て余すのは「高回転を強いられるから」ではなく、<strong>その回転では本領の入口にも入っていないから</strong>だ。数値と出典は<a class="jump" href="data-drivetrain.html">駆動系データの一覧</a>にまとめてある。</p>
+  </div></details>
+
+  <h3>3〜4速で比べても、ZX-4Rである必要はない。</h3>
+  <p>「ピークに届かないのはトップギアの話だろう」と思うかもしれない。そのとおりだ。<strong>実際に前へ出るときは3速か4速に落とす。</strong>そして<strong>駆動力はギアで増幅される</strong>——同じエンジントルクでも、3速なら6速の1.5倍以上の力がタイヤに掛かる。ならば、その条件で比べればいい。</p>
+  <div class="sc"><strong>そもそもギアとは何か。</strong>自転車の変速と同じで、<strong>速さと力を交換する装置</strong>だ。軽いギアは坂を登れるが、一こぎで少ししか進まない。重いギアは一こぎでよく進むが、坂では重くて踏めない。スクーターが坂で勝手に回転を上げる、あれが自動のシフトダウン＝速さを力に交換した瞬間。<strong>手で3速に落とすと、力は1.5倍以上になる。</strong></div>
+  <div class="note"><strong>駆動力 ＝ エンジントルク × 総減速比（一次×二次×そのギア） ÷ タイヤ半径。</strong>これを（車重＋体重60kg）で割れば、体で感じる加速の強さになる。ギア比は全車とも公式諸元にある。</div>
+  <div class="chartcard"><img src="assets/thrust-3rd-gear.svg" alt="60km/hから3速・4速で加速するときの駆動力÷総重量。上位4台は僅差で、ZX-4Rは教習車CB400SFを下回る" style="width:100%;height:auto;display:block"></div>
+  <p>結果はこうなる。<strong>上位4台は3.8〜4.5N/kgの範囲に、ぜんぶ収まってしまう。</strong>そして——</p>
+  <div class="note"><strong>77PSのZX-4Rと、53PSの教習車CB400SFが、ほぼ並ぶ。</strong>（CB400SF 4.19／ZX-4R 3.84 N/kg）この2台はどちらも直4で、同じやり方で見積もった値だから、比べるには公平な組み合わせだ。<strong>カタログでは24PSの差がある2台なのに、一般道で前へ出る力ではその差が消える。</strong>実は、おっさんバイクと同じである。</div>
+  <p>理由は単純だ。ZX-4Rの77PSは14,500rpmの数字で、<strong>3速60km/hでもエンジンはまだ5,700rpm——本領の半分にも達していない</strong>。<strong>使わない回転域の出力は、カタログの上にしか存在しない。</strong></p>
+  <p>誤解のないように書いておく。<strong>これはZX-4Rの低速が弱いという話ではない。</strong>この4.4〜3.8N/kgという値は、どれも一般道で不足のない範囲にある。ZX-4Rも例外ではなく、<strong>低速から普通に走る万能型</strong>だ。言えるのは<strong>「一般道では、その差が出ない」</strong>ということだけである。</p>
+  <details class="acc"><summary>この数字の限界（低速のトルクは、実は誰も公表していない）</summary>
+  <div class="body">
+  <p>正直に書いておく。<strong>一般道で実際に使う3,200〜5,600rpmで各車が何N·m出しているのか、その数字はどこにも無い。</strong>メーカーが公表するトルクは「最大トルク点」と「最高出力点」の2つだけで、どちらも常用域のはるか上にある。実測（シャシダイ）も、国内仕様で見つかったのはNinja400とYZF-R3の2台だけだった。</p>
+  <div class="chartcard"><img src="assets/measured-peaks.svg" alt="実測ダイノのピーク値。後輪実測とカタログ値の差は約8%。一般道の常用回転数には実測点が1つも無い" style="width:100%;height:auto;display:block"></div>
+  <p>それでも、この点から読み取れることはある。<strong>カタログ37N·mのNinja400は、後輪では33.9N·m——約8%が駆動系で失われている。</strong>そして各誌はNinja400もZX-4Rも「<strong>トルクはフラット</strong>」と書いている。フラットなら、常用域でもそれなりに出ているということだ。</p>
+  <p>上の図は、この実測2台の曲線の形を、各車の公式トルク値に合わせて当てはめた推定である。<strong>細かい順位の上下を競わせる意味は薄い。</strong>言えるのは「<strong>一般道の加速では、どれを選んでも決定的な差はつかない</strong>」ということのほうだ。なお直4は並列2気筒より低回転が細い傾向があるので、<strong>ZX-4Rの実際の値はこの推定よりさらに低い可能性が高い</strong>。数値と出典は<a class="jump" href="data-drivetrain.html">駆動系データの一覧</a>にまとめてある。</p>
+  </div></details>
+
+  <h3>弱点は一つだけ。コスパが悪すぎる。</h3>
+  <p>先に断っておく。<strong>ZX-4Rは、乗って困る車ではない。</strong>実用域のトルクは不足しないし、足回りも文句のつけようがない。前傾がきついのは事実だが、<strong>それはフルカウル全部に言えること</strong>で、ZX-4Rだけの欠点ではない。日常で使っても、普通によくできたバイクだ。</p>
+  <p>問題は、そこではない。<strong>その「普通によくできている」に、いくら払うのかという一点だ。</strong></p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>車種</th><th>価格（税込）</th><th>3速の加速力<br><small>60km/hから・N/kg</small></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Ninja ZX-4R SE</strong></td><td class="x"><strong>117万7,000円</strong></td><td>3.84</td></tr>
+      <tr><td>CBR400R E-Clutch</td><td>99万9,900円〜</td><td>3.67</td></tr>
+      <tr><td>エリミネーター</td><td>85万8,000円</td><td>4.20</td></tr>
+      <tr><td><strong>Ninja 400</strong></td><td class="g"><strong>81万4,000円</strong></td><td class="g"><strong>4.45</strong></td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><strong>ZX-4RとNinja400の差は、36万3,000円。</strong>そして一般道で前へ出る力は、<strong>安いほうのNinja400とほとんど変わらない</strong>（数字の上ではNinja400が少し上に出るが、推定を含むので差は無いと見るのが妥当だ）。同じカワサキの、同じ売り場に並ぶ2台でこれだ。<strong>36万円は、公道では一度も使わない回転域に対して払っている。</strong>もしくは、エンジンを痛めてまで1速縛りプレーをするという、特殊な趣味のために。それなら、たしかに「ZX-4Rとして」走ることにはなる。</div>
+  <p>4気筒であることの費用は、車両価格だけでは終わらない。<strong>整備費も保険も一段高く、プラグもオイル量も4気筒ぶん</strong>かかる。そして77PSが本当に活きるのはサーキットだけなので、<strong>そこへ行く時間・走行料・タイヤ</strong>まで含めて初めて元が取れる。行かなければ、その差額は永久に回収されない。</p>
+  <div class="ex"><p><strong>ZX-4R</strong>＝240Hzのゲーミングモニターで、60fps上限のゲームを遊ぶ。<strong>上限は、機械の外で決まっている。</strong></p>
+  <p><strong>ZX-25R</strong>＝こちらは別。マウス感度を上げすぎて、近くの的が合わない状態。</p>
+  <p><strong>スクーターなら</strong>＝30km/hの道に、100km/h仕様を積む。</p></div>
+  <div class="note"><strong>つまりZX-4Rの問題は「使えない」ではなく、「使わない部分にお金を払っている」ことに尽きる。</strong>公道で得られるものは他の400と大差がないのに、値段だけがはっきり違う。<strong>ここまでが、イメージを外して見たときのZX-4Rだ。</strong></div>
+  <p class="muted" style="font-size:13px;margin:2px 0 10px">価格は各社公式の2026年モデル（<a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/supersport/ninja-zx-4r/2026-ninja-zx-4r-se" target="_blank" rel="noopener">ZX-4R SE</a>／<a href="https://www.kawasaki-motors.com/ja-jp/motorcycle/ninja/sport/ninja-400/2026-ninja-400" target="_blank" rel="noopener">Ninja 400</a>／<a href="https://faq.kawasaki-motors.com/faq/show/4404" target="_blank" rel="noopener">エリミネーター</a>／<a href="https://global.honda/jp/news/2026/2260515-cbr400r-nx400.html" target="_blank" rel="noopener">CBR400R E-Clutch</a>）。加速力は3速60km/hの駆動力÷総重量で、Ninja400以外は推定値。</p>
+  <p>ただし——<strong>これはZX-4Rを諦めろという話ではない。</strong>ここまでで分かったのは「<strong>公道でZX-4Rを速く走らせようとするのが間違い</strong>」ということであって、ZX-4Rが悪い車だという話ではない。問題は場所のほうにある。ではどうするか。</p>
 
   <h3>道は、二つ。</h3>
   <p>ZX-4Rの2つの魅力は、公道では別々の道に分かれる。</p>
@@ -476,6 +677,7 @@
 
   <h3>方向1：サーキットへ。高回転は、小さな排気量で。</h3>
   <p>排気量が小さいほど、回し切っても速度が出ない＝合法。高回転を“合法に”楽しめるのは、この小排気量高回転型だけだ。</p>
+  <div class="sc">スクーターは全開でも速度が知れているから、遠慮なく開けられる。<strong>それができる最後が125。</strong></div>
   <p>そしてこれは、ZX-4Rの技術の練習になる——<strong>軽さのフラフラ制御・高回転を維持するシフト操作・前傾姿勢への耐性</strong>。安く、転んでも痛くない練習車で、サーキットの走り方を身体に入れる。</p>
   <p><strong>ただしこの「練習」は、場所で2つに割れる。</strong>広い道や走行会で身につける<strong>全開の作法（合法で回し切る）</strong>と、30m×20mほど（建設会社の駐車場のような場所）の空き区画で刻む<strong>低速の型（取り回し・リーンイン）</strong>だ。後者はコーンの間を這う速度で、回し切る作法とは<strong>別の練習車</strong>が要る。</p>
   <p><strong>まず、全開の作法用の1台。</strong>現実的にサーキットに通えるならこうだ。</p>
@@ -492,9 +694,10 @@
   <div class="note"><strong>全開の作法の推しは、125だ。</strong>練習の核心は“合法で回し切る”こと——開けて即戻す・レッドまで回す・フラフラする軽い車体を御す、という<strong>全開の作法を、速度超過にならずに積めるのは125だけ</strong>。250以上は本気で回すと即・違反速度になる。しかも軽く・安く・転んでも痛くない。高速道路に乗れない／非力という弱点も、練習用と割り切れば消える。</div>
   <p><strong>本命＝GSX-R125</strong>（フルカウル・最軽量級・現行新車で確実に手に入る）。前傾をもっと強くしたいなら<strong>KTM RC125</strong>、高回転単の官能なら<strong>Aprilia RS125</strong>（やや高価）、<strong>YZF-R125</strong>は逆輸入で割高。ネイキッドでよければ<strong>MT-125・KTM 125 Duke</strong>も同じ土俵だ。いずれも15PS前後・約135〜160kgで、“回してナンボ”を合法で味わえる。</p>
   <p>旧車2スト（NSR250R・TZR250・RGV-Γ）や旧CBR250RR（MC22＝19,000rpmの直4）は高回転の理想形だが、いまは高騰・希少で<strong>現実的に手に入らない</strong>。だから練習用は現行の125で組み、本領はいつかサーキットで解く。</p>
+  <p><strong>理屈を突き詰めれば、その先に50ccフルカウル（NSR50・TZR50）がある。</strong>高回転を維持して走る難しさそのものを楽しむなら、これが究極だ。回し切っても、速度がいちばん出ない。ただし原付の法定速度は30km/hで、公道では流れに乗れず、かえって危険になる。<strong>サーキットのような場所があって初めて成立する選択で、そんな場所は近くにない。</strong>だから、公道も走れる現実解は125に戻る。</p>
   </div></details>
 
-  <p><strong>とはいえ、その125を全開で回せる場所すら、近くにはない。</strong>250はなおさら、サーキットは遠く、似た場所も見つからない。——だが、<strong>どのみち避けて通れない練習がある。低速でのリーンインだ。</strong>これはZX-4Rに乗るなら必ず通る道で、しかも<strong>近所の直線と30m×25mのパッドさえあれば、いま始められる。</strong>場所が限られている今こそ、これを真っ先にやろう。</p>
+  <p><strong>とはいえ、その125を全開で回せる場所すら、近くにはない。</strong>250はなおさら、サーキットは遠く、似た場所も見つからない。——だが、<strong>どのみち避けて通れない練習がある。低速でのリーンインだ。</strong>これはZX-4Rに乗るなら必ず通る道で、しかも<strong>近所の直線と30m×20mのパッドさえあれば、いま始められる。</strong>場所が限られている今こそ、これを真っ先にやろう。</p>
 
   <h3>低速でリーンインを刻む ― これがZX-4Rへの必須練習。</h3>
   <p>ZX-4Rの高速コーナーは、体を内側に落とす、<strong>ヒザをするようなリーンイン（ハングオフ）</strong>が前提だ。だが高速の恐怖の中では、練習していない体は固まって動かない。<strong>だから低速のうちに、リーンインの体の型を“考えずにできる”まで刷り込む</strong>——これが方向1の練習の最重要ミッションであり、ZX-4Rを買う前に必ず通る道になる。</p>
@@ -518,7 +721,7 @@
   <div class="note"><strong>タイヤと消音で、二役をこなす。</strong>畑の日は<strong>強力なブロックタイヤ（ノビー）</strong>に履き替えて泥をしのぎ、パッド練習は素直なロード寄りタイヤに戻す（ノビーは舗装で倒し込むとブロックがよじれて練習に向かない／履き替えが面倒なら60:40級のデュアルパーパスで通す手も）。音は<strong>インナーバッフル／dBキラーを現地で差す</strong>だけ——低速練習も登坂も高回転を使わないので、絞っても使う性能は削れない（普段は爆音でも困らない）。公道往復で装着するなら<strong>JMCA認証・保安基準適合</strong>を選ぶ。</div>
   <div class="note"><strong>“膝を擦る仕上げ”までは、この1台で追わない。</strong>寝かせて膝を出す機械の感触は、17インチのZX-4Rで最後に覚える一歩——だが<strong>尻ずらし・内膝・視線・一定スロットルという“体の型”は、定常円でちゃんと刷り込める</strong>。なお<strong>モンキー125／GROM</strong>（12インチで実車と別物・非力・赤土も登れない）と<strong>TW225</strong>（太リアの丸断面が倒し込みに抵抗）は、ダイヤルをどこへ回しても外れる。</div>
   <h3>練習場は、近場のパッドで足りる。</h3>
-  <p>大げさな施設は要らない。近場の<strong>空いた舗装パッド</strong>（キャンプ場の駐車場のような場所）に、<strong>ペットボトルを5〜6本</strong>置くだけ。まずは下の50m×25mの配置を、上から順にこなせばいい。詳しいメニューや、狭い区画向けの縮小版は、下のアコーディオンにまとめた。</p>
+  <p>大げさな施設は要らない。近場の<strong>空いた舗装パッド</strong>（キャンプ場の駐車場のような場所や、建設業者の駐車場など）に、<strong>ペットボトルを5〜6本</strong>置くだけ。まずは下の50m×25mの配置を、上から順にこなせばいい。詳しいメニューや、狭い区画向けの縮小版は、下のアコーディオンにまとめた。</p>
   <div class="chartcard"><img src="assets/practice-pad.svg" alt="50m×25mパッドの低速練習配置。ペットボトルで8の字・定常円リーンイン・スラローム・フルロックUターン・発進ブレーキ" style="width:100%;height:auto;display:block"></div>
   <details class="acc"><summary>練習メニューと時間割（順番）</summary>
   <div class="body">
@@ -547,18 +750,26 @@
 
   <h3>方向2：暴走にならず、公道最速。</h3>
   <p>回さず、一定速度のまま速い。アクセル操作だけで完結する低回転トルク型は、オートマ車のように扱え、暴走車両になりにくい。</p>
-  <div class="note"><strong>教習車CB400SF（＝おっさんバイク）より一般道で速いのは、Ninja400・エリミネーター・CBR400Rの3台だけ。</strong></div>
+  <div class="sc">スクーターと同じで、開ければ進む。<strong>それが60km/hの流れまで続く。</strong></div>
+  <div class="note"><strong>候補に挙がる400クラスは6台。そのうち普段使いに選べるのは4台。</strong></div>
+  <p>条件は「低回転で扱えて、いま普通二輪で買える400クラス」。これで挙がるのが<strong>6台</strong>——エリミネーター・Ninja400・CBR400R・YZF-R3、そして<strong>ZX-4RとCBR400R FOUR</strong>だ。</p>
+  <p>後ろの2台は候補から外れる。<strong>ZX-4R</strong>はこの章の出発点そのもので、公道で性能を出せば暴走になる本命。<strong>CBR400R FOUR</strong>は直4の新型だが、まだコンセプト公開の段階で発売されていない。<strong>だから残る4台——エリミネーター・Ninja400・CBR400R・YZF-R3を比べる。</strong></p>
+  <div class="note"><strong>ただし、先に見たとおり加速の力に決定的な差はない。</strong>3速の駆動力で並べても4台は僅差で、教習車CB400SF（前世代・2010年式ごろの型。2026年8月に出る新型とは別物）も同じ範囲に入る。<strong>つまりこの4台は「どれを選んでも速さでは失敗しない」。</strong>だから以下の比較は、速さではなく<strong>姿勢・扱いやすさ・見た目</strong>で読んでほしい。</div>
+  <details class="acc"><summary>「CBR400R」は3つある（紛らわしいので先に整理）</summary>
+  <div class="body"><p>①<strong>CBR400R</strong>＝399cc<strong>並列2気筒</strong>のフルカウル。ここで候補に挙げているのはこれ。②<strong>CBR400R E-Clutch</strong>＝①にクラッチ操作を自動化するホンダのEクラッチを付けた仕様で、2026年5月発売（99万9,900円〜）。中身は①と同じ並列2気筒なので、この章の物差し（低速の力）では①と同じ位置に来る。③<strong>CBR400R FOUR</strong>＝新設計の<strong>直4</strong>を積むフルカウルで、CB400SFのカウル付き兄弟にあたる。2026年春に公開されたがまだ発売前。<strong>この章で「CBR400R」と書くときは、断りがなければ①（並列2気筒）を指す。</strong></p></div></details>
   <div class="tablewrap"><table>
-    <thead><tr><th></th><th>エリミネーター</th><th>CBR400R</th><th>Ninja400</th></tr></thead>
+    <thead><tr><th></th><th>エリミネーター</th><th>CBR400R<br><small>並列2気筒</small></th><th>Ninja400</th><th>YZF-R3</th></tr></thead>
     <tbody>
-      <tr><td><strong>性格</strong></td><td>クルーザー</td><td>スポーツツアラー</td><td>スポーツ</td></tr>
-      <tr><td><strong>姿勢</strong></td><td>直立（最も楽）</td><td>やや前傾・快適</td><td>前傾</td></tr>
-      <tr><td><strong>低速の力</strong></td><td class="g">◎ 全域最強</td><td class="o">○</td><td class="o">○</td></tr>
-      <tr><td><strong>寝かせて攻める（膝擦り）</strong></td><td class="x">△ 倒し込み遊びは苦手</td><td class="o">○ 穏やか</td><td class="g">◎ 攻められる</td></tr>
-      <tr><td><strong>扱い</strong></td><td>アクセルだけ</td><td>ツアラーで穏やか</td><td>ギアを使えば速い</td></tr>
+      <tr><td><strong>性格</strong></td><td>クルーザー</td><td>スポーツツアラー</td><td>スポーツ</td><td>スポーツ（320cc）</td></tr>
+      <tr><td><strong>姿勢</strong></td><td>直立（最も楽）</td><td>やや前傾・快適</td><td>前傾</td><td>前傾（最もSS的）</td></tr>
+      <tr><td><strong>低速の力</strong></td><td class="o">○ 4台では上位</td><td class="o">○</td><td class="g">◎ 4台では最上位</td><td class="x">△ 320ccぶん細い</td></tr>
+      <tr><td><strong>曲がりやすさ</strong></td><td class="x">△ 倒し込み遊びは苦手</td><td class="o">○ 穏やか</td><td class="g">◎ 攻められる</td><td class="g">◎ 軽くよく曲がる</td></tr>
+      <tr><td><strong>裏返すと</strong><br><small>同じ性質の別の呼び方</small></td><td class="g">◎ 直進が最も落ち着く<br><small>WB1,520mm</small></td><td class="g">◎ 重さで落ち着いている<br><small>192kg</small></td><td class="x">△ 軽いぶんフラフラしやすい<br><small>167kg</small></td><td class="x">△ 同じく落ち着きは薄い<br><small>169kg</small></td></tr>
+      <tr><td><strong>扱い</strong></td><td>アクセルだけ</td><td>ツアラーで穏やか</td><td>ギアを使えば速い</td><td>回して乗る（方向1寄り）</td></tr>
     </tbody>
   </table></div>
-  <p><strong>エリミネーター</strong>はアクセルだけで低速最強——交差点の実用は十分こなすが、前傾がないぶん<strong>膝を擦るように寝かせて攻める遊び（低速でパタッと倒して起こす）は苦手</strong>（もっとも、その低速の倒し込みテク自体そう簡単には身につかない）。<strong>CBR400R</strong>はツアラー寄りで、性格はむしろエリミに近い穏やかさ。<strong>Ninja400</strong>は前傾があり、寝かせて攻めるのも守備範囲＝コーナーも走るならこれ。</p>
+  <div class="note"><strong>「よく曲がる」と「フラフラする」は、同じ性質の言い換えである。</strong>軽くて短いバイクは向きを変えやすい。裏返せば、まっすぐ走らせるのに気を使うということだ。<br><strong>教習所の一本橋の、あの不安定さ。あれは単純に怖い。</strong>逆に、CBR400Rのような<strong>どっしりした落ち着きは、そのまま安心になる</strong>。<strong>毎日流す道具として選ぶなら、効いてくるのはこちらのほうだ。</strong></div>
+  <p><strong>エリミネーター</strong>はアクセルだけで扱える——交差点の実用は十分こなすが、前傾がないぶん<strong>膝を擦るように寝かせて攻める遊び（低速でパタッと倒して起こす）は苦手</strong>（もっとも、その低速の倒し込みテク自体そう簡単には身につかない）。<strong>CBR400R</strong>はツアラー寄りで、性格はむしろエリミに近い穏やかさ。トルクは最大の38N·mだが、192kgと重くギアも高いので、加速の力に直すと4台では下位に来る。<strong>Ninja400</strong>は前傾があり、寝かせて攻めるのも守備範囲＝コーナーも走るならこれ。軽さとギアが効いて、<strong>加速の力ではこの4台の最上位</strong>だった。<strong>YZF-R3</strong>は320ccで低速の力は4台で最も細い——そのぶん軽くてよく曲がり、性格は方向1（回して遊ぶ）に寄る。</p>
   <details class="acc"><summary>諸元で見る ― トルクのピーク回転数（回さず力が出るか）</summary>
   <div class="body">
   <p>公道で「回さず力が出る」かは、<strong>最大トルクの出る回転数</strong>が目安になる。低いほど、常用域でトルクの頂点に届く＝アクセルだけで流れに乗れる。高いほど、力を出すには回す＝暴走側の走りが要る。方向2の候補を、この回転数が低い順に並べる。</p>
@@ -581,20 +792,15 @@
   <p>ここで、教習車でおなじみのCB400SFを見直したい。地味な「おっさんバイク」に見えて、中身は<strong>ZX-4Rと同じ直4</strong>だ。新型は58PS・187kgで、パワーも重量もNinja400と同等以上。しかも直4は、1回の燃焼が小さく細かく続くので<strong>低回転でも力が途切れない“きめ”</strong>を持つ——ツインが「トトト」と粒が粗いのに対し、絹のように滑らかに低速から出る。つまりCB400SFは、<strong>ZX-4Rの官能（直4）を、公道で使える姿で持ち込んだ“公道版ZX-4R”</strong>だ。弱点は前傾がなくサーキットに向かないことと、重いことだけ。公道で直4を味わうなら、これがほぼ答えになる。</p>
   <div class="note"><strong>それでも、我々はZX-4Rが欲しい。</strong>公道版の直4（CB400SF）が手の届くところにあるのに、あえて公道では使えないZX-4Rに焦がれる。ここで白状しておくべきことがある——<strong>我々はZX-4Rを“性能”で選んでいない。“憧れ”で選んでいる。</strong>それ自体は悪くない。ただ、憧れを性能と取り違えると、判断を誤る。</div>
   <p><strong>憧れを性能と取り違えた先にいるのが、「陸（おか）サーファー」だ。</strong>ボードを車に積み、ウェットスーツを揃え、海には入らない人のこと。<strong>サーキットに一度も行かないZX-4R乗りは、これと同じ</strong>——道具と見た目だけ手に入れて、本番をやらない“なんちゃって”になる。ZX-4Rの本番はサーキットにしかない。そこへ行かないなら、その77馬力は1車線の国道でただ持て余され、憧れのバイクは陸サーファーのボードになる。</p>
+  <div class="ex">
+  <p><strong>シューティングなら</strong>＝ゲーミングデバイスを一式揃えて、ランクマッチには行かない。</p>
+  <p>冒頭の釣りと同じだ。<strong>道具だけ揃えて、やらない。やる場所にも行かない。</strong></p>
+  </div>
+  <div class="note"><strong>なんちゃってを恥ずかしいと思う人に、ZX-4Rは向かない。堂々と自慢できる人に向いている。</strong></div>
 
   <h3>だから、公道用とサーキット用は分ける。</h3>
   <p>方向1と方向2は「どちらか」ではない。ZX-4Rの2つの魅力＝<strong>サーキットの高回転</strong>と<strong>公道の速さ</strong>は、そもそも別の場所のものだ。1台で両取りしようとするから、公道で暴走になる。答えは、場所ごとにバイクを分ける——<strong>2台持ち</strong>だ。</p>
-  <p>統計もそれを裏づける。米IIHSの車種タイプ別データで、<strong>スーパースポーツの死亡率は登録1万台あたり22.5＝直立姿勢のネイキッド／クルーザー（5.7）の約4倍</strong>。この差はマシンの性能そのものより、<strong>軽量ハイパワーを公道で日常使いする組み合わせ</strong>が生む。ZX-4Rを毎日の国道で走らせることは、統計的にこの最も危険な使い方へ自ら入っていくことだ。</p>
-  <div class="tablewrap"><table>
-    <thead><tr><th>車種タイプ</th><th>ライダー死亡率<br><small>（登録1万台あたり）</small></th></tr></thead>
-    <tbody>
-      <tr><td><strong>スーパースポーツ</strong>（ZX-4R系）</td><td class="pulse"><strong>22.5</strong></td></tr>
-      <tr><td>スポーツ（それ以外）</td><td>10.7</td></tr>
-      <tr><td>ツアラー</td><td>6.5</td></tr>
-      <tr><td>スタンダード・クルーザー（直立）</td><td class="g">5.7</td></tr>
-    </tbody>
-  </table></div>
-  <p class="muted" style="font-size:13px;margin:2px 0 10px">出典：<a href="https://www.iihs.org/research-areas/motorcycles" target="_blank" rel="noopener">IIHS（米国道路安全保険協会）</a>。車名別ではなく車種タイプ別。同じ車種でもABS付きは致死事故が22%低いというデータもあり、車の素性と装備がリスクを大きく分ける。</p>
+  <p><strong>冒頭で見た数字を、もう一度思い出してほしい。</strong>スーパースポーツのライダー死亡率は登録1万台あたり22.5——直立姿勢のネイキッドやクルーザー（5.7）の約4倍だった。この差を生むのは<strong>軽量ハイパワーを公道で日常使いする組み合わせ</strong>であって、サーキットで走ること自体ではない。<strong>ZX-4Rを毎日の国道で走らせることは、統計的にいちばん危ない使い方へ自ら入っていくことになる。</strong>だから、日常と本気を1台に混ぜない。</p>
   <p>だから、答えは<strong>2台持ち</strong>だ。ただし今すぐ買うのはZX-4Rではなく、次の2台——</p>
   <div class="tablewrap"><table>
     <thead><tr><th></th><th>①練習用</th><th>②普段使い用</th></tr></thead>
@@ -610,18 +816,28 @@
   <div class="tablewrap matrix wrap"><table>
     <thead><tr><th>選ぶ基準</th><th>候補</th><th>個性</th><th>難点</th></tr></thead>
     <tbody>
-      <tr><td data-label="選ぶ基準"><strong>楽さ</strong></td><td data-label="候補">エリミネーター</td><td data-label="個性">直立姿勢でいちばん楽ちん。低速トルクは全域最強</td><td data-label="難点">膝を擦るような倒し込み遊びは苦手（交差点の実用は十分）</td></tr>
-      <tr><td data-label="選ぶ基準"><strong>気分</strong></td><td data-label="候補">Ninja400</td><td data-label="個性">前傾で気分はレーサー。コーナーも攻められる</td><td data-label="難点">軽い（167kg）ぶん横風に弱い</td></tr>
-      <tr><td data-label="選ぶ基準"><strong>スタイル</strong></td><td data-label="候補">CBR400R</td><td data-label="個性">フルカウルの見た目。直進安定は随一</td><td data-label="難点">重い（192kg）のが取り回しの難点</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>楽さ</strong></td><td data-label="候補">エリミネーター</td><td data-label="個性">直立姿勢でいちばん楽ちん。ホイールベース1,520mm＝この4台で最も直進が据わる</td><td data-label="難点">フルカウルではない。膝を擦るような倒し込み遊びは苦手（交差点の実用は十分）</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>スタイル</strong></td><td data-label="候補">CBR400R</td><td data-label="個性">フルカウルの見た目。192kgと重く、直進の据わりはエリミネーターに次ぐ</td><td data-label="難点">重いぶん、取り回しは4台で最もかったるい</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>気分</strong></td><td data-label="候補">Ninja400</td><td data-label="個性">同じフルカウルで前傾もあり、コーナーも攻められる</td><td data-label="難点">軽い（167kg）ぶん横風に弱く、直進の据わりはこの3台で最も浅い</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>フラフラ感</strong></td><td data-label="候補">YZF-R3</td><td data-label="個性">前傾が最もSSに近い。軽くよく曲がる</td><td data-label="難点">320ccで低速の力は4台で最も細く、性格が方向1（回して遊ぶ）に寄る</td></tr>
     </tbody>
   </table></div>
+  <div class="note"><strong>直進安定だけで並べると、順番は変わる。</strong>高速の直線が据わるのは<strong>エリミネーター＞CBR400R＞Ninja400</strong>——ホイールベースが長いほど、車体が重いほど据わるからだ。<strong>フルカウルのスタイルを取るならCBR400R、直進の据わりを取るならエリミネーター</strong>、という関係になる。</div>
+  <div class="note"><strong>フルカウルと前傾の実利も、疑っておく。</strong>ZX-4RをやめてYZF-R3まで下ろしたとしても、SSの形が公道にもたらす実利は<strong>「膝を擦る遊びをしたい」だけ</strong>だ。カウルの防風が効くのは高速巡航からで、<strong>80km/hまでの風はさほどでもない</strong>。体感は原付スクーターで受ける風圧の延長で、耐えられる範囲だ。そもそも100km/hを出すわけではない。一般道しか走らないなら、カウルは実用ではなく、スタイルと気分の話になる。</div>
+  <div class="note"><strong>それでも前傾を楽しみたいなら、素直なのはGSXとYZFだ。</strong>ピークを現実の速度域に置くGSX250Rと、軽くよく曲がるYZF-R3。高回転型で同じことをやると、低いギアで開けて閉じてのギッコンバッコンになる。<strong>もっと手軽なのは125（GSX-R125）</strong>で、前傾の型だけならいちばん安く楽しめる——ただし軽さのぶん直進が浮つき、毎日の国道では<strong>安全面で一段劣る</strong>。</div>
+  <div class="note"><strong>ここまで並べて気づくのは、「バランスがいい」は珍しくないということだ。</strong>YZF-R3がバランスがいいと言うなら、ピークを常用域に置くGSX250Rも、重さが悪いことに思われがちだが倒そうと思えば寝かせられるくせに直進で安定しているCBR400Rも、それぞれの物差しでバランスがいい。合法で回し切れる125も、ある意味いちばんバランスがいい。公道で乗るかぎり、たいていの車はどこかで釣り合っている。<strong>釣り合っていないのはZX-4Rだけだ。1速で楽しむという変な趣味用のバイクである。</strong></div>
+  <div class="note"><strong>だから現実的には、2択に絞れる。</strong>前傾の疲れを引き受けてでも、フルカウルの気分を買うなら<strong>CBR400R</strong>。テクニックのない初心者でも、安心して加速感を味わうなら<strong>エリミネーター</strong>。中間のNinja400は軽くて直進が浅く、この章の物差し（整備された一車線国道）では両者に譲る。</div>
+  <p>そして練習用は、サーキットに通えないなら<strong>17インチの125（GSX-R125やYZF-R125）</strong>。ヒラヒラ感はここで存分に味わえるし、前傾も車格も、低速で刻んだ型がそのままZX-4Rへ移る。</p>
+  <p>では、YZF-R3はどこへ行ったのか。たしかにバランスはいい。ただ、一車線国道ではCBR400Rよりフラフラ感を感じやすく、交差点のキビキビ感では同じ顔のYZF-R125のほうが上だ。<strong>両側から挟まれて、どちらの持ち味でも一番になれない。</strong>普段使いも練習も1台で間に合わせたいなら候補に戻ってくるが、ZX-4Rの練習用としてふさわしいかは疑問が残る。練習の核心は合法で回し切ることで、<strong>320ccは本気で回せば即・違反速度になる</strong>からだ。</p>
+  <div class="note"><strong>つまりYZF-R3を選ぶ理由は、突き詰めれば一つになる。元も子もないが、ZX-4Rを諦めるためにある。</strong>SSの形も前傾もここで十分に手に入り、公道とも釣り合っている。この1台で満足してしまえば、ZX-4Rへ向かう理由のほうが消える。そして、諦めるためにR3を買った人も、その経験を踏まえて次を考えると、行き着く先は同じになる。<strong>練習用と一車線国道用の、2台持ちだ。</strong>どの入り口から入っても、答えはここへ戻ってくる。</div>
+  <div class="ex"><p><strong>2台持ち</strong>＝おかっぱりの落とし釣り用の短い竿と、遠くを狙う長い竿。2本持って釣りに行く。もっとも、防波堤からマグロ釣りキットで大物を狙うのも、男らしいといえば男らしいけどね。</p></div>
 
-  <p><strong>②は、練習車と受け持つ領域が違う。</strong>キビキビ・ヒラヒラの身のこなしや、倒して攻める感覚は<strong>練習車で掴める</strong>——低速の型はそちらの担当だ。②が受け持つのは、練習車では味わえない<strong>もう一つの領域＝高速の加速感と、直線を高い速度で据わって走る「バックストレート感」</strong>だ。これはZX-4Rでいずれ出会う世界だが、味わう場は遠いサーキットとは限らない——<strong>整備された一車線の国道が、そのまま高速直線の練習場になる</strong>。②の普段使いは、その予行を毎日兼ねる。</p>
-  <p><strong>だから走る道が「整備された一車線」なら、重さは美点に変わる。</strong>国道398号のように平滑で直線主体の道では、車体が重いほど直進が据わって<strong>最速感</strong>が高い。この物差しでは、軽くて横風に弱いNinja400より、重い<strong>CBR400R（192kg・直進安定随一）</strong>や<strong>エリミネーター（177kg）</strong>が上に来る。0-100の実加速はNinja400でも十分掴めるが、直進の据わりも高速の伸びも、車体が重く力があるほど増していく——その世界を存分に味わえるのが、いつか迎えるZX-4Rだ。</p>
+  <p><strong>②（普段使い用）は、①（練習用）と受け持つ領域が違う。</strong>低速の型は①の担当。②の担当は、<strong>高速の加速感と、直線を高い速度で据わって走る「バックストレート感」</strong>だ。その練習場は遠いサーキットではなく、<strong>毎日の整備された一車線国道</strong>でいい。</p>
+  <p><strong>直線主体の道では、重さは美点になる。</strong>重いほど直進が据わるからだ。国道398号のような平滑な道なら、<strong>CBR400R（192kg）とエリミネーター（177kg）が、軽いNinja400より上</strong>に来る。そしてその先に、いつか迎えるZX-4Rがいる。</p>
 
-  <p><strong>だから、冒頭のとおりだ。</strong>ここまでの表も物差しも、最初の一歩を絞る地図にすぎない。決め切ろうと気負わず、まず1台、軽い気持ちで乗り出せばいい。<strong>理想が高いのはいいことだ</strong>——ZX-4Rを目指していい。ただ一つ落とし穴があるとすれば、その理想に目を奪われて<strong>足元の現実を見失うこと</strong>だ。だから2台、3台と使い分け、一歩ずつ階段を登る。その一歩の分だけ、理想には確実に近づいていく。</p>
+  <p><strong>最後に。</strong>ここまでの表も物差しも、最初の1台を絞る地図にすぎない。決め切ろうと気負わず、軽い気持ちで乗り出せばいい。<strong>ZX-4Rを目指すのはいい。ただ、理想に目を奪われて足元を見失わないこと。</strong>2台、3台と乗り継ぐ一歩ずつが、理想への距離を確実に縮める。</p>
 
-  <div class="note"><strong>ZX-4Rは、いつかサーキットで。</strong>それまでは①高回転・低排気量で練習し、②低回転トルクで普段を走る2台持ち。——②の3台がそうだったように、どちらのバイクも残る問いは「姿勢」だ。前傾はどこまで楽にできるのか。次章のネイキッドへ。</div>
+  <div class="note"><strong>ZX-4Rは、いつかサーキットで。</strong>それまでは①高回転・低排気量で練習し、②低回転トルクで普段を走る2台持ち。どちらの1台にも、最後に残る問いは<strong>乗車姿勢</strong>だ。前傾はどこまで楽にできるのか。次章のネイキッドへ。</div>
 
   </div></details>
 
