@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+OUT = os.environ.get("OUT_DIR") or os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "assets"))
 X0,RPMMAX,XW=90,14000,790
 TOP,PLOTH,VMAX=90,900,0.30
 def X(r): return X0+r/RPMMAX*XW
@@ -55,21 +57,21 @@ o.append('<text x="90" y="52" fill="#9aa0aa" font-size="12"><tspan fill="#c7ccd6
 kx=90
 for br,lb in [("KAW","Kawasaki"),("HON","Honda"),("YAM","Yamaha"),("SUZ","Suzuki"),("CAR","アルファード")]:
     c=col(br,40) if br in HS else "#e6e6e6"
-    o.append('<line x1="%d" y1="66" x2="%d" y2="66" stroke="%s" stroke-width="3.5"/><text x="%d" y="70" fill="%s" font-size="11.5">%s</text>'%(kx,kx+26,c,kx+31,c,lb)); kx+=len(lb)*8+58
+    o.append('<line x1="%d" y1="66" x2="%d" y2="66" stroke="%s" stroke-width="3.5"/><text x="%d" y="70" fill="%s" font-size="15">%s</text>'%(kx,kx+26,c,kx+31,c,lb)); kx+=len(lb)*8+58
 x4,x75=X(4000),X(7500)
 o.append('<rect x="%.1f" y="%d" width="%.1f" height="%d" fill="#4aa3ff" opacity="0.06"/>'%(x4,TOP,x75-x4,PLOTH))
 for xx in (x4,x75): o.append('<line x1="%.1f" y1="%d" x2="%.1f" y2="%d" stroke="#4aa3ff" stroke-width="1" stroke-dasharray="5 4" opacity="0.4"/>'%(xx,TOP,xx,TOP+PLOTH))
-o.append('<text x="%.1f" y="%d" fill="#8ab4e6" font-size="11.5" font-weight="600">60km/h(トップ)が来る回転域＝約4,000〜7,500rpm（●）</text>'%(x4+6,TOP+16))
+o.append('<text x="%.1f" y="%d" fill="#8ab4e6" font-size="15" font-weight="600">60km/h(トップ)が来る回転域＝約4,000〜7,500rpm（●）</text>'%(x4+6,TOP+16))
 gl=[0.05,0.10,0.15,0.20,0.25,0.30]
 o.append('<g stroke="#2c313d" stroke-width="1">%s</g>'%"".join('<line x1="90" y1="%.1f" x2="880" y2="%.1f"/>'%(Y(v),Y(v)) for v in gl))
 o.append('<line x1="90" y1="%d" x2="880" y2="%d" stroke="#5a6070" stroke-width="1.5"/>'%(TOP+PLOTH,TOP+PLOTH))
 o.append('<line x1="90" y1="%d" x2="90" y2="%d" stroke="#5a6070" stroke-width="1.5"/>'%(TOP,TOP+PLOTH))
-o.append('<g fill="#9aa0aa" font-size="12" text-anchor="end"><text x="80" y="%d">0</text>%s</g>'%(TOP+PLOTH+4,"".join('<text x="80" y="%.1f">%.2f</text>'%(Y(v)+4,v) for v in gl)))
-o.append('<text x="30" y="%d" fill="#cdd2dd" font-size="13" font-weight="600" text-anchor="middle" transform="rotate(-90 30 %d)">加速の力＝トルク/(車重+60kg) [Nm/kg]</text>'%(TOP+PLOTH//2,TOP+PLOTH//2))
-o.append('<g fill="#cdd2dd" font-size="13" text-anchor="middle">%s</g>'%"".join('<text x="%.1f" y="%d">%dk</text>'%(X(k*1000),TOP+PLOTH+21,k) for k in [2,4,6,8,10,12,14]))
+o.append('<g fill="#9aa0aa" font-size="15.6" text-anchor="end"><text x="80" y="%d">0</text>%s</g>'%(TOP+PLOTH+4,"".join('<text x="80" y="%.1f">%.2f</text>'%(Y(v)+4,v) for v in gl)))
+o.append('<text x="30" y="%d" fill="#cdd2dd" font-size="16.9" font-weight="600" text-anchor="middle" transform="rotate(-90 30 %d)">加速の力＝トルク/(車重+60kg) [Nm/kg]</text>'%(TOP+PLOTH//2,TOP+PLOTH//2))
+o.append('<g fill="#cdd2dd" font-size="16.9" text-anchor="middle">%s</g>'%"".join('<text x="%.1f" y="%d">%dk</text>'%(X(k*1000),TOP+PLOTH+21,k) for k in [2,4,6,8,10,12,14]))
 o.append('<text x="485" y="%d" fill="#9aa0aa" font-size="12" text-anchor="middle">エンジン回転数（rpm）　※60km/hに達する回転数は車種で違う（●）</text>'%(TOP+PLOTH+44))
 o.append('<line x1="90" y1="%.1f" x2="880" y2="%.1f" stroke="#e6e6e6" stroke-width="2" stroke-dasharray="8 5" opacity="0.85"/>'%(Y(ALP),Y(ALP)))
-o.append('<text x="884" y="%.1f" fill="#e6e6e6" font-size="11.5" font-weight="700">アルファード ≈%.2f</text>'%(Y(ALP)+4,ALP))
+o.append('<text x="884" y="%.1f" fill="#e6e6e6" font-size="15" font-weight="700">アルファード ≈%.2f</text>'%(Y(ALP)+4,ALP))
 for n,pts,w,br,wd,dash,k60,lab in B:
     c=col2(n,br)
     p=" ".join("%.1f,%.1f"%(X(r),Y(v/(w+R))) for r,v in pts)
@@ -81,10 +83,10 @@ for n,pts,w,br,wd,dash,k60,lab in B:
     lx,yoff,anc,txt,bold=lab; c=col2(n,br)
     base=Y(interp(pts,rpm_at(lx))/(w+R))+yoff
     ls+='<text x="%d" y="%.1f" fill="%s" text-anchor="%s"%s>%s</text>'%(lx,base,c,anc,' font-weight="700"' if bold else '',txt)
-o.append('<g font-size="11">%s</g>'%ls)
+o.append('<g font-size="14.3">%s</g>'%ls)
 by=TOP+PLOTH+58
 o.append('<rect x="90" y="%d" width="1044" height="30" rx="6" fill="#1b1f27" stroke="#3a4050"/>'%by)
 o.append('<text x="104" y="%d" fill="#ff9a6a" font-size="11.5">※減速比未反映。バイクは減速比が車の2〜3倍大きく、実際の車輪トルク/重量はこの図よりさらに上。</text>'%(by+20))
 o.append('</svg>')
-open("/Users/uminomae/dev/pjdhiro/.claude/worktrees/develop/garage/assets/lowrev-torque.svg","w").write("\n".join(o))
+open(os.path.join(OUT,"lowrev-torque.svg"),"w").write("\n".join(o))
 print("OK")
