@@ -1,0 +1,52 @@
+<svg viewBox="0 0 980 650" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect x="0" y="0" width="980" height="650" fill="#232733"/>
+<text x="40" y="42" fill="#e6e6e6" font-size="26" font-weight="800">実測で分かっているのは、この点だけ</text>
+<text x="40" y="70" fill="#9aa0aa" font-size="16">シャシダイ実測（Dynojet 250i）のピーク値。<tspan fill="#e6e6e6" font-weight="700">●＝後輪の実測</tspan>／<tspan fill="#e6e6e6" font-weight="700">○＝カタログ（クランク）</tspan>。曲線は引けない。</text>
+<text x="40" y="94" fill="#9aa0aa" font-size="15"><tspan fill="#e8685f" font-weight="700">赤・橙・灰＝仕様が違う参考値</tspan>（米国仕様／451cc／他社）。国内仕様の値ではない。</text>
+<line x1="110" y1="120" x2="110" y2="520" stroke="#5a6070" stroke-width="1.5"/>
+<line x1="110" y1="520" x2="870" y2="520" stroke="#5a6070" stroke-width="1.5"/>
+<line x1="110" y1="486.7" x2="870" y2="486.7" stroke="#2c313d" stroke-width="1"/>
+<text x="100" y="491.7" fill="#9aa0aa" font-size="15" text-anchor="end">20</text>
+<line x1="110" y1="403.3" x2="870" y2="403.3" stroke="#2c313d" stroke-width="1"/>
+<text x="100" y="408.3" fill="#9aa0aa" font-size="15" text-anchor="end">25</text>
+<line x1="110" y1="320.0" x2="870" y2="320.0" stroke="#2c313d" stroke-width="1"/>
+<text x="100" y="325.0" fill="#9aa0aa" font-size="15" text-anchor="end">30</text>
+<line x1="110" y1="236.7" x2="870" y2="236.7" stroke="#2c313d" stroke-width="1"/>
+<text x="100" y="241.7" fill="#9aa0aa" font-size="15" text-anchor="end">35</text>
+<line x1="110" y1="153.3" x2="870" y2="153.3" stroke="#2c313d" stroke-width="1"/>
+<text x="100" y="158.3" fill="#9aa0aa" font-size="15" text-anchor="end">40</text>
+<line x1="110.0" y1="120" x2="110.0" y2="520" stroke="#2c313d" stroke-width="1"/>
+<text x="110.0" y="546" fill="#cdd2dd" font-size="15" text-anchor="middle">6,000</text>
+<line x1="300.0" y1="120" x2="300.0" y2="520" stroke="#2c313d" stroke-width="1"/>
+<text x="300.0" y="546" fill="#cdd2dd" font-size="15" text-anchor="middle">8,000</text>
+<line x1="490.0" y1="120" x2="490.0" y2="520" stroke="#2c313d" stroke-width="1"/>
+<text x="490.0" y="546" fill="#cdd2dd" font-size="15" text-anchor="middle">10,000</text>
+<line x1="680.0" y1="120" x2="680.0" y2="520" stroke="#2c313d" stroke-width="1"/>
+<text x="680.0" y="546" fill="#cdd2dd" font-size="15" text-anchor="middle">12,000</text>
+<line x1="870.0" y1="120" x2="870.0" y2="520" stroke="#2c313d" stroke-width="1"/>
+<text x="870.0" y="546" fill="#cdd2dd" font-size="15" text-anchor="middle">14,000</text>
+<text x="490.0" y="572" fill="#9aa0aa" font-size="16" text-anchor="middle">最大トルクが出る回転数（rpm）</text>
+<text x="34" y="320" fill="#cdd2dd" font-size="16" font-weight="600" text-anchor="middle" transform="rotate(-90 34 320)">最大トルク（N·m）</text>
+<text x="116" y="506" fill="#f0883a" font-size="15" font-weight="700">← 一般道の60km/hは3,200〜5,600rpm。この図の左端より外側で、実測点は1つも無い</text>
+<line x1="300.0" y1="203.3" x2="300.0" y2="255.0" stroke="#5fcf5f" stroke-width="1.6" stroke-dasharray="4 3" opacity="0.7"/>
+<circle cx="300.0" cy="203.3" r="7" fill="none" stroke="#5fcf5f" stroke-width="2.4"/>
+<circle cx="300.0" cy="255.0" r="8" fill="#5fcf5f" stroke="#232733" stroke-width="2"/>
+<text x="300.0" y="279.0" fill="#5fcf5f" font-size="17" font-weight="700" text-anchor="middle">Ninja 400</text>
+<line x1="300.0" y1="203.3" x2="323.8" y2="251.7" stroke="#5fcf5f" stroke-width="1.6" stroke-dasharray="4 3" opacity="0.7"/>
+<circle cx="300.0" cy="203.3" r="7" fill="none" stroke="#5fcf5f" stroke-width="2.4"/>
+<circle cx="323.8" cy="251.7" r="8" fill="#5fcf5f" stroke="#232733" stroke-width="2"/>
+<text x="323.8" y="235.7" fill="#5fcf5f" font-size="17" font-weight="700" text-anchor="middle">Z400（同エンジン）</text>
+<line x1="775.0" y1="470.0" x2="746.5" y2="473.3" stroke="#5fcf5f" stroke-width="1.6" stroke-dasharray="4 3" opacity="0.7"/>
+<circle cx="775.0" cy="470.0" r="7" fill="none" stroke="#5fcf5f" stroke-width="2.4"/>
+<circle cx="746.5" cy="473.3" r="8" fill="#5fcf5f" stroke="#232733" stroke-width="2"/>
+<text x="746.5" y="497.3" fill="#5fcf5f" font-size="17" font-weight="700" text-anchor="middle">ZX-25R</text>
+<circle cx="613.5" cy="236.7" r="8" fill="#e8685f" stroke="#232733" stroke-width="2"/>
+<text x="613.5" y="220.7" fill="#e8685f" font-size="17" font-weight="700" text-anchor="middle">ZX-4RR（米国仕様）</text>
+<circle cx="253.4" cy="163.3" r="8" fill="#f0883a" stroke="#232733" stroke-width="2"/>
+<text x="253.4" y="187.3" fill="#f0883a" font-size="17" font-weight="700" text-anchor="middle">エリミネーターSE（451cc）</text>
+<circle cx="195.5" cy="268.3" r="8" fill="#aeb4c0" stroke="#232733" stroke-width="2"/>
+<text x="195.5" y="292.3" fill="#aeb4c0" font-size="17" font-weight="700" text-anchor="middle">KTM RC390（参考）</text>
+<rect x="40" y="592" width="900" height="52" rx="6" fill="#1b1f27" stroke="#3a4050"/>
+<text x="54" y="613" fill="#cfd3da" font-size="15">Ninja400とZ400はカタログ37N·mに対し実測33.9／34.1N·m＝<tspan fill="#7fe39a" font-weight="700">後輪までの損失は約8%</tspan>。実測カーブは各誌とも「フラット」と記述。</text>
+<text x="54" y="634" fill="#9aa0aa" font-size="14">※国内仕様の実測が存在するのはNinja400とZX-25Rのみ。ZX-4Rは米国仕様(56hp)、エリミは451ccの値しか無く、国内仕様の証拠にはならない。</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect x="0" y="0" width="900" height="700" fill="#232733"/>
+<text x="92" y="40" fill="#e6e6e6" font-size="27" font-weight="800">教習車より速いのは6台、普段使いの候補は4台</text>
+<text x="92" y="68" fill="#9aa0aa" font-size="16">●＝各車が60km/hを流すときの力。<tspan fill="#c7ccd6" font-weight="700">教習車の●より上が6台</tspan>、<tspan fill="#e8685f" font-weight="700">赤の2台は候補外</tspan>。</text>
+<rect x="92" y="470.5" width="590" height="111.5" fill="#aeb4c0" opacity="0.05"/>
+<line x1="92" y1="470.5" x2="682" y2="470.5" stroke="#aeb4c0" stroke-width="1.6" stroke-dasharray="7 5" opacity="0.75"/>
+<text x="432" y="494.5" fill="#9aa0aa" font-size="16">↓ この線より下は教習車に届かない</text>
+<line x1="92" y1="96" x2="92" y2="582" stroke="#5a6070" stroke-width="1.6"/>
+<line x1="92" y1="582" x2="682" y2="582" stroke="#5a6070" stroke-width="1.6"/>
+<line x1="92.0" y1="96" x2="92.0" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="92.0" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">2,000</text>
+<line x1="190.3" y1="96" x2="190.3" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="190.3" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">3,000</text>
+<line x1="288.7" y1="96" x2="288.7" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="288.7" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">4,000</text>
+<line x1="387.0" y1="96" x2="387.0" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="387.0" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">5,000</text>
+<line x1="485.3" y1="96" x2="485.3" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="485.3" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">6,000</text>
+<line x1="583.7" y1="96" x2="583.7" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="583.7" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">7,000</text>
+<line x1="682.0" y1="96" x2="682.0" y2="582" stroke="#2c313d" stroke-width="1"/>
+<text x="682.0" y="608" fill="#cdd2dd" font-size="16" text-anchor="middle">8,000</text>
+<text x="387.0" y="634" fill="#9aa0aa" font-size="16" text-anchor="middle">エンジン回転数（rpm）　●＝60km/hで流すときの回転</text>
+<text x="30" y="339" fill="#cdd2dd" font-size="16" font-weight="600" text-anchor="middle" transform="rotate(-90 30 339)">加速の力（トルク/重量）→</text>
+<polyline fill="none" stroke="#aeb4c0" stroke-width="3.4" stroke-dasharray="9 6" stroke-linejoin="round" points="92.0,647.8 190.3,559.1 288.7,470.5 485.3,337.4 682.0,248.8"/>
+<polyline fill="none" stroke="#5fcf5f" stroke-width="5.4" stroke-linejoin="round" points="92.0,456.4 190.3,309.9 288.7,236.7 387.0,200.1 485.3,187.9 682.0,236.7"/>
+<polyline fill="none" stroke="#b7d84a" stroke-width="5.4" stroke-linejoin="round" points="92.0,632.4 190.3,479.4 288.7,326.5 387.0,224.6 485.3,173.6 682.0,122.6"/>
+<polyline fill="none" stroke="#5a90e8" stroke-width="5.4" stroke-linejoin="round" points="92.0,654.9 190.3,517.2 288.7,379.4 387.0,287.6 485.3,241.7 632.8,218.7 682.0,227.9"/>
+<polyline fill="none" stroke="#b98ae0" stroke-width="5.4" stroke-linejoin="round" points="92.0,737.4 190.3,611.1 288.7,510.0 387.0,434.2 485.3,383.7 682.0,333.2"/>
+<polyline fill="none" stroke="#e8685f" stroke-width="2.4" stroke-dasharray="4 4" opacity="0.65" stroke-linejoin="round" points="92.0,626.4 288.7,440.5 485.3,347.6 682.0,277.9"/>
+<polyline fill="none" stroke="#e8685f" stroke-width="2.4" stroke-dasharray="4 4" opacity="0.65" stroke-linejoin="round" points="92.0,690.6 190.3,579.3 288.7,468.1 485.3,356.8 682.0,290.0"/>
+<circle cx="288.7" cy="470.5" r="7.5" fill="#aeb4c0" stroke="#232733" stroke-width="2"/>
+<circle cx="269.0" cy="251.4" r="7.5" fill="#5fcf5f" stroke="#232733" stroke-width="2"/>
+<circle cx="288.7" cy="326.5" r="7.5" fill="#b7d84a" stroke="#232733" stroke-width="2"/>
+<circle cx="308.3" cy="361.0" r="7.5" fill="#5a90e8" stroke="#232733" stroke-width="2"/>
+<circle cx="357.5" cy="457.0" r="7.5" fill="#b98ae0" stroke="#232733" stroke-width="2"/>
+<circle cx="485.3" cy="347.6" r="6" fill="#e8685f" stroke="#232733" stroke-width="2"/>
+<circle cx="337.8" cy="440.2" r="6" fill="#e8685f" stroke="#232733" stroke-width="2"/>
+<text x="110" y="110" fill="#9aa0aa" font-size="15" font-weight="700">■ 普段使いの候補（4台）</text>
+<line x1="110" y1="134" x2="150" y2="134" stroke="#5fcf5f" stroke-width="5.4"/>
+<text x="160" y="140" fill="#5fcf5f" font-size="18" font-weight="800">エリミネーター</text>
+<line x1="110" y1="165" x2="150" y2="165" stroke="#b7d84a" stroke-width="5.4"/>
+<text x="160" y="171" fill="#b7d84a" font-size="18" font-weight="800">Ninja 400</text>
+<line x1="110" y1="196" x2="150" y2="196" stroke="#5a90e8" stroke-width="5.4"/>
+<text x="160" y="202" fill="#5a90e8" font-size="18" font-weight="800">CBR400R（並列2気筒）</text>
+<line x1="110" y1="227" x2="150" y2="227" stroke="#b98ae0" stroke-width="5.4"/>
+<text x="160" y="233" fill="#b98ae0" font-size="18" font-weight="800">YZF-R3</text>
+<text x="110" y="260" fill="#e8685f" font-size="15" font-weight="700">■ 上回るが候補外（2台）</text>
+<line x1="110" y1="276" x2="150" y2="276" stroke="#e8685f" stroke-width="2.6" stroke-dasharray="4 4"/>
+<text x="160" y="281" fill="#e8685f" font-size="16">ZX-4R<tspan fill="#9aa0aa" font-size="14">（公道で使えない本命）</tspan></text>
+<line x1="110" y1="303" x2="150" y2="303" stroke="#e8685f" stroke-width="2.6" stroke-dasharray="4 4"/>
+<text x="160" y="308" fill="#e8685f" font-size="16">CBR400R FOUR<tspan fill="#9aa0aa" font-size="14">（直4・まだ発売前）</tspan></text>
+<line x1="110" y1="338" x2="150" y2="338" stroke="#aeb4c0" stroke-width="3.4" stroke-dasharray="9 6"/>
+<text x="160" y="343" fill="#aeb4c0" font-size="16" font-weight="700">CB400SF（教習車・前世代＝基準）</text>
+</svg>
