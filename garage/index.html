@@ -452,6 +452,16 @@
   <p>≤60km/hの加速は、パワーでなく<strong>トルク（力）</strong>が効く。回転数は速度そのものではなく、ギアを介して速度になる。トルクを縦・回転数を横に取り、各車が60km/hになる点（●）を打つ。<strong>●が左上——低い回転で力が出きった頂点に乗る車ほど、アクセルを開けるだけで流れに乗れて速い。</strong>●が坂の途中で低い車は、開けても力が湧かず、しょぼしょぼ＝ZX-25RやTZR50、125クラスの小排気量高回転型だ。</p>
   <div class="chartcard"><img src="assets/lowrev-torque.svg" alt="トルク÷(車重+60kg) vs rpm。MT-07・W650(大型)が低回転で最上位、ZX-4Rの60km/h点は下位に沈む。アルファード基準" style="width:100%;height:auto;display:block"></div>
   <div class="note">ここから身も蓋もない結論が出る。<strong>ZX-4Rの「速さ」に憧れて公道で使いたいだけなら、大型二輪免許を取って低回転トルクの大型に乗る方が、公道では実質速い。</strong>ZX-4Rの最高出力が本当に活きる場は、やはりサーキットの側にある。</div>
+
+  <h3>トップギアでは、トルクの山に届かない。</h3>
+  <p>ここまでは曲線の概形で話してきた。<strong>ここからは、推定を一切入れずに確かめる。</strong>各社が公表しているのは「最大トルクが何回転で出るか」という数字だ。これに公式のギア比（一次×二次×6速）とタイヤ外径を掛ければ、<strong>その山が時速何キロに当たるかは、計算で確定する</strong>。</p>
+  <div class="chartcard"><img src="assets/torque-peak-speed.svg" alt="トップギアで最大トルクが出る速度。ZX-4Rは212km/h、他の400は137〜155km/h、GSX250Rのみ90km/h" style="width:100%;height:auto;display:block"></div>
+  <p>結果ははっきりしている。<strong>ZX-4Rが最大トルクを出すのは、6速で212km/hに相当する回転数だ。</strong>他の400は137〜155km/hで、それでも一般道のはるか外側にある。常用域に山があるのはGSX250R（90km/h）だけだった。<strong>つまり公道では、どの車もトルクの山に届かないまま走っている。</strong>その「届かなさ」が最も極端なのがZX-4Rで、これは推定ではなく公式諸元から出る数字である。</p>
+  <details class="acc"><summary>この計算の中身（と、60km/hで何回転か）</summary>
+  <div class="body">
+  <p>速度＝回転数÷（一次減速比×二次減速比×6速比）×タイヤ外周。タイヤ外径はカタログ表記から算出した。逆算すると、<strong>トップギアで60km/hを流すときの回転数</strong>はこうなる——CBR400R 3,240／エリミネーター 3,478／Ninja400 3,504／CB400SF 3,672／<strong>ZX-4R 3,680</strong>／YZF-R3 3,791／GSX250R 4,352／ZX-25R 5,587rpm。</p>
+  <p><strong>意外なことに、60km/hでの回転数はZX-4Rも他の400とほとんど変わらない。</strong>ZX-4Rが公道で持て余すのは「そこで高回転を強いられるから」ではなく、<strong>その回転数ではまだ本領の入口にすら入っていないから</strong>だ。数値と出典は<a class="jump" href="data-drivetrain.html">駆動系データの一覧</a>にまとめてある。</p>
+  </div></details>
   <details class="acc"><summary>大型を3台混ぜた理由（と、我慢の話）</summary>
   <div class="body">
   <p>図には<strong>大型（要・大型二輪免許）</strong>を3台——トルク型のMT-07・W650と、高回転スーパースポーツのZX-6R（いわば“大型版ZX-4R”）を混ぜてある。MT-07・W650は見出しの馬力こそ地味でも、●は左上の頂点に乗る。回して速いはずの<strong>ZX-4R（77PS）だけが、はるか下に沈む</strong>——排気量が小さいうえ高回転型で、低速の力が最も乏しいからだ。</p>
@@ -615,11 +625,13 @@
   <div class="tablewrap matrix wrap"><table>
     <thead><tr><th>選ぶ基準</th><th>候補</th><th>個性</th><th>難点</th></tr></thead>
     <tbody>
-      <tr><td data-label="選ぶ基準"><strong>楽さ</strong></td><td data-label="候補">エリミネーター</td><td data-label="個性">直立姿勢でいちばん楽ちん。低速トルクは全域最強</td><td data-label="難点">膝を擦るような倒し込み遊びは苦手（交差点の実用は十分）</td></tr>
-      <tr><td data-label="選ぶ基準"><strong>気分</strong></td><td data-label="候補">Ninja400</td><td data-label="個性">前傾で気分はレーサー。コーナーも攻められる</td><td data-label="難点">軽い（167kg）ぶん横風に弱い</td></tr>
-      <tr><td data-label="選ぶ基準"><strong>スタイル</strong></td><td data-label="候補">CBR400R</td><td data-label="個性">フルカウルの見た目。直進安定は随一</td><td data-label="難点">重い（192kg）のが取り回しの難点</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>楽さ</strong></td><td data-label="候補">エリミネーター</td><td data-label="個性">直立姿勢でいちばん楽ちん。低速トルクは全域最強で、ホイールベース1,520mm＝この4台で最も直進が据わる</td><td data-label="難点">フルカウルではない。膝を擦るような倒し込み遊びは苦手（交差点の実用は十分）</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>スタイル</strong></td><td data-label="候補">CBR400R</td><td data-label="個性">フルカウルの見た目。192kgと重く、直進の据わりはエリミネーターに次ぐ</td><td data-label="難点">重いぶん、取り回しは4台で最もかったるい</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>気分</strong></td><td data-label="候補">Ninja400</td><td data-label="個性">同じフルカウルで前傾もあり、コーナーも攻められる</td><td data-label="難点">軽い（167kg）ぶん横風に弱く、直進の据わりはこの3台で最も浅い</td></tr>
+      <tr><td data-label="選ぶ基準"><strong>スポーツ度</strong></td><td data-label="候補">YZF-R3</td><td data-label="個性">前傾が最もSSに近い。軽くよく曲がる</td><td data-label="難点">320ccで低速の力は4台で最も細く、性格が方向1（回して遊ぶ）に寄る</td></tr>
     </tbody>
   </table></div>
+  <div class="note"><strong>直進安定だけで並べると、順番は変わる。</strong>高速の直線が据わるのは<strong>エリミネーター＞CBR400R＞Ninja400</strong>——ホイールベースが長いほど、車体が重いほど据わるからだ。<strong>フルカウルのスタイルを取るならCBR400R、直進の据わりを取るならエリミネーター</strong>、という関係になる。</div>
 
   <p><strong>②は、練習車と受け持つ領域が違う。</strong>キビキビ・ヒラヒラの身のこなしや、倒して攻める感覚は<strong>練習車で掴める</strong>——低速の型はそちらの担当だ。②が受け持つのは、練習車では味わえない<strong>もう一つの領域＝高速の加速感と、直線を高い速度で据わって走る「バックストレート感」</strong>だ。これはZX-4Rでいずれ出会う世界だが、味わう場は遠いサーキットとは限らない——<strong>整備された一車線の国道が、そのまま高速直線の練習場になる</strong>。②の普段使いは、その予行を毎日兼ねる。</p>
   <p><strong>だから走る道が「整備された一車線」なら、重さは美点に変わる。</strong>国道398号のように平滑で直線主体の道では、車体が重いほど直進が据わって<strong>最速感</strong>が高い。この物差しでは、軽くて横風に弱いNinja400より、重い<strong>CBR400R（192kg・直進安定随一）</strong>や<strong>エリミネーター（177kg）</strong>が上に来る。0-100の実加速はNinja400でも十分掴めるが、直進の据わりも高速の伸びも、車体が重く力があるほど増していく——その世界を存分に味わえるのが、いつか迎えるZX-4Rだ。</p>
