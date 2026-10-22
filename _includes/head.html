@@ -6,7 +6,29 @@ Google Analytics
 <meta charset="utf-8">
 <meta name="google-site-verification" content="KkiB1MGI2Z-s7NcokG6KM8nEIj2xRIb5SZhgO56VChE" />
 
-{% include seo.html %}
+{%- comment -%}
+  creation-space の報告ページ（assets/creation 配下・creation-space#264）:
+  題名の後半をサイト名から理論名に、説明文をサイト全体の説明から報告の説明に差し替える。
+  題名の前半（各ページの見出し）は seo.html が作ったまま。差し替え先が見つからなければ何も変わらない
+{%- endcomment -%}
+{%- if page.path contains 'assets/creation/' -%}
+  {%- capture seo_head -%}{% include seo.html %}{%- endcapture -%}
+  {%- assign title_separator = site.title_separator | default: '-' -%}
+  {%- assign site_title_text = site.title | markdownify | strip_html | strip_newlines | escape_once -%}
+  {%- assign site_title_tail = ' ' | append: title_separator | append: ' ' | append: site_title_text | append: '</title>' -%}
+  {%- assign site_description_text = site.description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
+  {%- assign site_description_attr = 'content="' | append: site_description_text | append: '"' -%}
+  {%- if page.path contains '/en/' -%}
+    {%- assign creation_title_tail = ' — Five-Stage Model of Creation (Field, Wave, Edge, Vortex, Bundle): 30-Domain Survey</title>' -%}
+    {%- assign creation_description_attr = 'content="A report from creation-space, which explores what creation is across 30 academic domains. It examines structural similarities between each field’s theories and the Five-Stage Model of Creation (Field → Wave → Edge → Vortex → Bundle)."' -%}
+  {%- else -%}
+    {%- assign creation_title_tail = ' — 創造の5段階モデル（場・波・縁・渦・束）30領域調査</title>' -%}
+    {%- assign creation_description_attr = 'content="「創造とは何か」を30の学術領域から探る creation-space の調査報告。各領域の理論と、創造の5段階モデル（場→波→縁→渦→束）との構造の類似を検討する。"' -%}
+  {%- endif -%}
+  {{ seo_head | replace: site_title_tail, creation_title_tail | replace: site_description_attr, creation_description_attr }}
+{%- else -%}
+  {% include seo.html %}
+{%- endif %}
 
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
