@@ -10,21 +10,21 @@ If we think of creation as "the ability to come up with good ideas," we end up t
 
 These five stages are not a set of instructions for "how to succeed." They are a structure for seeing "what is happening right now." When you are trying to make something and find yourself stuck, this model helps you distinguish whether something is broken or whether you are simply standing at a particular stage.
 
-# The Five Stages
+## The Five Stages
 
-## Field — Nothing Has Arisen
+### Field — Nothing Has Arisen
 
 Field is a state of nothing. Not even unease. No direction, no structure, not even the faintest sense that "something is off." It can be described as zero, as void.
 
 From this "nothing," something will eventually emerge. The first faint stirring — a vague sense of "something is on my mind" — marks the beginning of the transition to the next stage (Wave). Field is before that. Complete stillness.
 
-## Wave — Multiple Directions Emerge
+### Wave — Multiple Directions Emerge
 
 From within the unease, opposing directions begin to emerge. "Maybe this way." "Or maybe that way." An oscillation arises.
 
 At the Wave stage, multiple directions exist simultaneously. The temptation is to settle on one quickly, but the role of this stage is to maintain the opposition. You carry the information contained in the tension forward to the next stage.
 
-## Relation — Contradictions Coexist
+### Relation — Contradictions Coexist
 
 The oppositions born in the Wave stage can no longer be resolved by simple either/or choices. Contradictory elements exist simultaneously, refusing to converge in either direction. Relationships multiply. Complexity reaches its peak.
 
@@ -32,13 +32,13 @@ Relation is the most uncomfortable place in the five stages. It demands that you
 
 Remaining in contradiction. Not resolving it immediately, but weaving relationships within it. This is the essence of the Relation stage.
 
-## Vortex — A New Coherence Emerges
+### Vortex — A New Coherence Emerges
 
 From the contradictions held in the Relation stage, a new coherence spontaneously arises. Elements that were in opposition become integrated at a higher dimension. A structure that was previously invisible appears in an explicable form.
 
 What matters at the Vortex stage is not to over-protect the emerging form. The Vortex is not yet a settled structure. Articulating the conditions under which this coherence holds — where it is valid and where it is not — supports the transition to the next stage.
 
-## Bundle — Stabilized as Structure
+### Bundle — Stabilized as Structure
 
 The coherence that arose in the Vortex stabilizes as a reusable structure. Direction is established, and a form that can be applied in other contexts remains.
 
@@ -48,7 +48,7 @@ The five stages are not linear but cyclical.
 
 If anything in this explanation so far feels off, that may be an important perspective related to the scope of this model. Holding that sense of unease while reading on, or pausing here, are both meaningful choices.
 
-# Why We Get Stuck in the Middle
+## Why We Get Stuck in the Middle
 
 Of the five stages, the one where teams often encounter difficulty is the Relation stage.
 
@@ -58,7 +58,7 @@ Remaining in contradiction is uncomfortable. But this discomfort has structural 
 
 Being stuck in the middle is not a malfunction. It means you are standing at a particular stage.
 
-# What This Is Useful For
+## What This Is Useful For
 
 What this model provides is a way to know "where you are right now."
 
@@ -68,7 +68,7 @@ The five stages also help you judge "what to do now." At Field, don't rush to de
 
 The appropriate action differs by stage.
 
-# Evidence and Limitations
+## Evidence and Limitations
 
 The five-stage structure was articulated by the author from lived experience. It has since been investigated across 30 academic domains to explore structural correspondences with established concepts in each field. In fields as diverse as complexity science, neuroscience, architecture, music, organizational theory, and anthropology, similar stage structures have been repeatedly observed. In particular, a stage where contradictions coexist (corresponding to Relation) has been consistently identified as playing a significant role in creation across many domains.
 

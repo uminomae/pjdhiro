@@ -8,21 +8,21 @@ Not the expanding phase. Not the narrowing phase. Contradictory things existing 
 
 This document starts from the hypothesis that this "unnamed place" has a structure. It does not claim correctness. It presents a map for seeing your team's creative process.
 
-# Where Are You in the Five Stages?
+## Where Are You in the Five Stages?
 
 Divergence and convergence describe two stages. But when you look at what actually happens, five stages can be distinguished.
 
-## Field — Nothing Has Arisen
+### Field — Nothing Has Arisen
 
 Before a project begins. Nothing exists yet. Not even "What should we build?" is visible, nor is there any sense that "something is off." Zero, void. When the first stirring — "something is on my mind" — arises from this stillness, the transition to Wave has already begun. The pitfall is being unable to endure this stillness and rushing to define scope.
 
-## Wave — Opposing Axes Emerge
+### Wave — Opposing Axes Emerge
 
 Directions emerge from the unease. User needs versus technical constraints. Short-term wins versus long-term vision. Competing stakeholder expectations. Multiple axes of opposition arise simultaneously.
 
 The divergence phase is close to this stage, but the key point at Wave is not "expanding" but "maintaining the opposition." The temptation is to settle on one direction quickly, but you carry the information within the tension forward.
 
-## Relation — Contradiction Reaches Its Peak
+### Relation — Contradiction Reaches Its Peak
 
 The oppositions born at Wave can no longer be resolved by choosing A or B. You cannot discard either A or B. Then C and D appear as well. Contradictory elements coexist, and complexity reaches its maximum.
 
@@ -34,13 +34,13 @@ Remaining at Relation means weaving relationships while holding contradictions. 
 
 However, remaining at Relation requires a condition. The team needs a relationship where it feels safe that "not having an answer yet is okay." Without that sense of being held — psychological safety — the team may find it difficult to endure the discomfort of contradiction.
 
-## Vortex — The Prototype Emerges
+### Vortex — The Prototype Emerges
 
 From the contradictions held at Relation, a new coherence spontaneously arises. The moment when "Ah, so that's what it is" takes form. Elements that were in opposition become integrated at a higher dimension.
 
 Something recognizable as a prototype appears, but it is not yet a settled structure. What matters at this stage is not to over-protect the form. Articulating the conditions under which the Vortex holds — where it is valid and where it breaks down — supports the transition to the next stage.
 
-## Bundle — Reusable Patterns Remain
+### Bundle — Reusable Patterns Remain
 
 The coherence that arose in the Vortex stabilizes as a deliverable. Reusable patterns and insights remain within the team.
 
@@ -48,7 +48,7 @@ The Bundle is not an endpoint. A stabilized structure becomes the starting point
 
 If these five stages do not match your team's experience so far, that is natural. This map is one way of seeing, and your team's reality may show a different structure.
 
-# The Art of Not Fleeing at Relation
+## The Art of Not Fleeing at Relation
 
 Of the five stages, the one where teams often encounter the greatest difficulty is Relation.
 
@@ -62,7 +62,7 @@ Let us look at remaining at Relation from two perspectives.
 
 Questions held through Containment are transformed into structure through the five stages. This is where Kesson-Driven Thinking connects.
 
-# Seeing Your Team's Creative Process
+## Seeing Your Team's Creative Process
 
 The five stages manifest in both individuals and teams with the same structure.
 
@@ -72,7 +72,7 @@ Asking "Where are we as a team in the five stages?" is how this map is used.
 
 The hardest part is the return from Bundle to Field. Letting go of what has been made. Opening to the next unease while taking "what was decided" as a given. The difference between teams that hold and teams that do not becomes significant over time.
 
-# To Close
+## To Close
 
 The last time your team said "let's just decide" — which stage was that?
 
