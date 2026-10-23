@@ -1,4 +1,6 @@
-# 1. Framing the Question
+# Structural Comparison of the Five-Stage Model and Prior Theories
+
+## 1. Framing the Question
 
 ![The 5-Stage Model — Structural Comparison with Prior Research](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/guides/ja/creation-academic-01-overview-svg.svg)
 
@@ -12,13 +14,13 @@ This paper presents the five-stage model (Field → Wave → Relation → Vortex
 
 This is an exercise in what we term "finger-pointing-at-the-moon" description. The five-stage model and prior theories are each fingers pointing at the moon. The goal is not to judge which finger is better, but to analyze whether they point at the same moon.
 
-# 2. Method
+## 2. Method
 
-## 2.1 Study Design
+### 2.1 Study Design
 
 Thirty academic domains were selected, with ten theories or concepts chosen from each domain. Selection criteria were: inclusion of stage-based or structural descriptions of creative processes, and established influence within the domain.
 
-## 2.2 Evaluation Method
+### 2.2 Evaluation Method
 
 For each theory, structural correspondence with the five-stage model was evaluated across eight dimensions (E-1 through E-8). Evaluations were structured using four-facet description:
 
@@ -31,13 +33,13 @@ For each theory, structural correspondence with the five-stage model was evaluat
 
 Quality checks included non-duality checks (preventing facile identification), fractal checks (preventing scale conflation), and blind-men-and-elephant checks (confirmation across three or more domains).
 
-## 2.3 Methodological Limitations
+### 2.3 Methodological Limitations
 
 This analysis has the following limitations. First, evaluators were AI systems (multiple models providing multi-perspective evaluation) and the author; expert review within each domain has not been conducted. Second, correspondence judgments are qualitative, and no statistical verification has been performed. Third, the selection of 30 domains itself may contain author bias.
 
 These limitations indicate that this analysis is at the hypothesis-generation phase. Hypothesis testing is a task for the future and falls outside the scope of this paper.
 
-# 3. Definition of the Five-Stage Model
+## 3. Definition of the Five-Stage Model
 
 The five-stage model describes creation not as "the ability to produce good ideas" but as a continuous transformation from one state to another.
 
@@ -55,9 +57,9 @@ A note on scope: while the five-stage model — articulated by the author from l
 
 The connection to Kesson-Driven Thinking is as follows. Field is a state of zero, of void. Not even unease has arisen. The first faint stirring marks the beginning of the transition to Wave. Containment — the function of not processing reflexively but holding errors as questions — operates from Wave onward. At Wave, Survival-Trust evaluation (survival axis / attachment axis) gives rise to opposition. At Relation, multiple evaluations intersect. At Vortex, a new structure emerges as errors are reintegrated. At Bundle, reusable knowledge stabilizes.
 
-# 4. Structural Comparison with Prior Research
+## 4. Structural Comparison with Prior Research
 
-## 4.1 Wallas's Four-Stage Model
+### 4.1 Wallas's Four-Stage Model
 
 Wallas's preparation → incubation → illumination → verification remains the most influential stage model in creativity research.
 
@@ -70,7 +72,7 @@ Wallas's preparation → incubation → illumination → verification remains th
 
 Whether Wallas's description contains an explicit stage corresponding to Relation: structural similarity is observable in late incubation, but it is not described as an independent stage.
 
-## 4.2 Guilford's Divergent/Convergent Thinking
+### 4.2 Guilford's Divergent/Convergent Thinking
 
 | Facet | Analysis |
 |-------|----------|
@@ -81,7 +83,7 @@ Whether Wallas's description contains an explicit stage corresponding to Relatio
 
 This analysis illustrates both why the divergent/convergent dichotomy has been widely adopted (operationally definable, easily measured) and its cost (the invisibility of Relation).
 
-## 4.3 SECI Model (Nonaka & Takeuchi)
+### 4.3 SECI Model (Nonaka & Takeuchi)
 
 | Facet | Analysis |
 |-------|----------|
@@ -90,7 +92,7 @@ This analysis illustrates both why the divergent/convergent dichotomy has been w
 | Learning | SECI's description as an organizational knowledge-creation process. The five-stage model originates from intra-individual process and requires connection to SECI's social dimension |
 | Context | SECI is an organizational theory / management framework describing organizational knowledge transformation, not individual cognitive process |
 
-## 4.4 Flow Experience (Csikszentmihalyi)
+### 4.4 Flow Experience (Csikszentmihalyi)
 
 | Facet | Analysis |
 |-------|----------|
@@ -99,7 +101,7 @@ This analysis illustrates both why the divergent/convergent dichotomy has been w
 | Learning | Conditions for optimal experience (clear goals, immediate feedback, challenge/skill balance) are informative as conditions for smooth transitions between the five stages |
 | Context | Csikszentmihalyi's research is a phenomenological description of subjective experience, not a structural model |
 
-## 4.5 Bion's Negative Capability
+### 4.5 Bion's Negative Capability
 
 | Facet | Analysis |
 |-------|----------|
@@ -108,7 +110,7 @@ This analysis illustrates both why the divergent/convergent dichotomy has been w
 | Learning | Bion's container/contained concept is useful as an auxiliary concept describing the conditions for remaining at Relation — the quality of relationships that can hold contradiction |
 | Context | Bion's descriptions are situated in the clinical context of psychoanalysis, and their application to individual cognitive processes requires interpretation |
 
-## 4.6 Complexity Science (Dissipative Structures, Self-Organization)
+### 4.6 Complexity Science (Dissipative Structures, Self-Organization)
 
 | Facet | Analysis |
 |-------|----------|
@@ -117,35 +119,35 @@ This analysis illustrates both why the divergent/convergent dichotomy has been w
 | Learning | Quantitative findings on behavior near critical points are useful as auxiliary lines for understanding the characteristics of the Relation stage |
 | Context | These are descriptions of physicochemical phenomena. The correspondence with human creative processes is at the stage of structural similarity. Whether this correspondence represents structural identity or superficial similarity remains an open question |
 
-# 5. Cross-Domain Findings
+## 5. Cross-Domain Findings
 
 The investigation across 30 domains revealed the following cross-domain patterns.
 
-## 5.1 Ubiquity of a Stage Corresponding to Relation
+### 5.1 Ubiquity of a Stage Corresponding to Relation
 
 The most striking finding is that "a state where contradiction peaks and refuses to converge" has been independently described in many domains. Bion's negative capability, the critical point in complexity science, Turner's liminality in anthropology, van Eyck's in-between in architecture — these likely point to the same structure under different labels.
 
 Meanwhile, existing stage models rarely describe this stage explicitly. Wallas's four stages, Guilford's divergent/convergent thinking, the Double Diamond of design thinking — none independently name a stage corresponding to Relation. This is likely because Relation is a stage that is difficult to measure and operationalize.
 
-## 5.2 "Boundaries Are Thick"
+### 5.2 "Boundaries Are Thick"
 
 Across multiple domains, findings confirmed that boundary regions in creative processes are not mere transition points but "thick" regions with their own structure. The critical region of phase transitions in complexity science, the thickness of walls in architecture (where the boundary becomes a place), the liminal phase of rites of passage in anthropology — all suggest that the boundary itself is a site of creation.
 
-## 5.3 Universality of Cyclical Structure
+### 5.3 Universality of Cyclical Structure
 
 The return from Bundle to Field — where a stable structure becomes the starting point of the next instability — is observed at different scales: feedback loops in complexity science, the knowledge spiral in SECI, and development-and-reorganization in biology. Linear stage models (Wallas) have structural difficulty describing this cycling.
 
-# 6. Status of Evidence and Open Questions
+## 6. Status of Evidence and Open Questions
 
-## 6.1 What Is Confirmed
+### 6.1 What Is Confirmed
 
 The structural definition of the five stages and the basic characterization of each stage are confirmed. The finding that structural correspondence was confirmed across the majority of the 30 domains can be reported as fact.
 
-## 6.2 Promising but Under Verification
+### 6.2 Promising but Under Verification
 
 The finding that Relation has the highest discriminative power for structural similarity has been consistently confirmed across multiple domains and is considered a promising hypothesis. The pattern that "boundaries are thick" is similarly supported.
 
-## 6.3 Open Questions
+### 6.3 Open Questions
 
 The following are declared as holding points.
 
@@ -157,13 +159,13 @@ The following are declared as holding points.
 
 **Blind spots in the five-stage model itself**: Because this analysis uses the five-stage model as its framework, it has a methodological limitation in detecting structures that the five-stage model itself overlooks. This limitation is partially addressed by analyzing the "Uniqueness" facet of prior theories (what is present in prior theories but absent in the five-stage model), though this is not sufficient.
 
-## 6.4 Disclosure of Temperature
+### 6.4 Disclosure of Temperature
 
 The results of this analysis report that structural correspondence between prior theories across different domains and the five-stage model has been widely confirmed. Concluding that this correspondence means "they point to the same structure" requires expert verification within individual domains, introduction of quantitative analytical methods, and refinement of the operational definitions of the five-stage model itself.
 
 Rather than hiding what is not yet confirmed, disclosing the state of evidence as it stands is the honest form of reporting for this analysis.
 
-# References
+## References
 
 - Wallas, G. (1926). *The Art of Thought*. Harcourt Brace.
 - Guilford, J. P. (1950). Creativity. *American Psychologist*, 5(9), 444–454.
