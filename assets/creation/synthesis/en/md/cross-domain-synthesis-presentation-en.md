@@ -27,6 +27,7 @@ This deck summarizes the common structure of the five-stage model found across 3
 ![30 Domains x 5 Stages Correspondence Heatmap](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/synthesis/ja/cross-domain-synthesis-01-distribution-svg.svg)
 
 ---
+
 ## Scale of Investigation
 
 - **Fields covered**: 30 academic fields (D01-D30)
