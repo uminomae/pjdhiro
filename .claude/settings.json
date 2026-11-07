@@ -1,5 +1,13 @@
 {
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "deny": [
+      "Read(//Users/uminomae/dev-private/**)",
+      "Edit(//Users/uminomae/dev-private/**)",
+      "Write(//Users/uminomae/dev-private/**)",
+      "Bash(*dev-private*)"
+    ]
   }
 }
