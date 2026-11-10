@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{{ page.title }} — 移転しました</title>
+<link rel="canonical" href="{{ page.redirect_to }}">
+<script>
+  // 移った先へ送る（project-design-theory の redirects/ の雛形に倣う）
+  location.replace("{{ page.redirect_to }}");
+</script>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 4rem 1rem; color: #222; background: #fff; text-align: center; }
+  a { color: #2a5db0; word-break: break-all; }
+  @media (prefers-color-scheme: dark) { body { color: #ddd; background: #111; } a { color: #8ab4f8; } }
+</style>
+</head>
+<body>
+{{ content }}
+<p><a href="{{ page.redirect_to }}">{{ page.redirect_to }}</a></p>
+</body>
+</html>
